@@ -19,6 +19,52 @@ A production-ready knowledge base containing **10,595 culture media recipes** fr
 | **Specialized** | 99 | KOMODO |
 | **Archaea** | 63 | MediaDive, TOGO |
 
+## 📈 Detailed Statistics
+
+### Recipes by Source
+
+| Source | Recipes | Type | Description |
+|--------|---------|------|-------------|
+| **KOMODO** | 3,637 | Bacterial | Korean microbial media database |
+| **MediaDive** | 3,327 | Multi-kingdom | DSMZ comprehensive collection |
+| **TOGO Medium** | 2,917 | Multi-kingdom | Japanese BRCs curated database |
+| **MediaDB** | 469 | Defined | Chemically defined media |
+| **CCAP** | 113 | Algae | UK algae & protozoa collection |
+| **UTEX** | 99 | Algae | University of Texas algae |
+| **SAG** | 30 | Algae | German algae culture collection |
+| **NBRC** | 2 | Bacterial | Japanese biological resources |
+| **BacDive** | 1 | Bacterial | DSMZ cultivation conditions |
+
+### Medium Composition
+
+| Medium Type | Recipes | Percentage |
+|-------------|---------|------------|
+| **Complex** | 8,399 | 79.3% |
+| **Defined** | 2,196 | 20.7% |
+
+Complex media contain undefined components (e.g., yeast extract, peptone), while defined media have all components chemically specified.
+
+### Physical State
+
+| State | Recipes | Percentage |
+|-------|---------|------------|
+| **Liquid** | 10,593 | 99.98% |
+| **Solid (Agar)** | 2 | 0.02% |
+
+### Data Quality Metrics
+
+| Metric | Value | Percentage |
+|--------|-------|------------|
+| **Recipes with ingredients** | 6,815 | 64.3% |
+| **CHEBI-grounded ingredients** | 3,548 | 33.5% |
+| **Average ingredients/recipe** | 15.7 | - |
+| **LinkML validated** | 10,595 | 100% |
+
+**Ontology Grounding:**
+- Chemicals: CHEBI (Chemical Entities of Biological Interest)
+- Organisms: NCBITaxon (NCBI Taxonomy)
+- Media databases: DSMZ, TOGO, ATCC prefixes
+
 ## ✨ Features
 
 ✅ **10,595 recipes** - Production-ready dataset from 10 authoritative sources
@@ -93,16 +139,23 @@ CultureMech integrates culture media recipes from 10 major international reposit
 
 | Source | Recipes | Description | Status |
 |--------|---------|-------------|--------|
+| **KOMODO** | 3,637 | Korean microbial media database | ✅ Complete |
 | **MediaDive** (DSMZ) | 3,327 | German Collection, comprehensive bacterial/fungal media | ✅ Complete |
-| **TOGO Medium** | 2,922 | Japanese BRCs, curated media database | ✅ Complete |
-| **BacDive** | 2,569 | DSMZ cultivation conditions, organism-specific | ✅ Complete |
-| **ATCC** | 891 | American Type Culture Collection | ✅ Complete |
-| **NBRC** | 423 | Japanese NITE Biological Resource Center | ✅ Complete |
-| **KOMODO** | 221 | Korean media database | ✅ Complete |
-| **UTEX** | 99 | University of Texas algae collection | ✅ Complete |
+| **TOGO Medium** | 2,917 | Japanese BRCs, curated media database | ✅ Complete |
+| **MediaDB** | 469 | Chemically defined media database | ✅ Complete |
 | **CCAP** | 113 | UK Culture Collection of Algae and Protozoa | ✅ Complete |
-| **SAG** | 30 | German algae culture collection | ✅ Complete |
-| **MediaDB** | ~100 | Defined media database | 🔄 Partial |
+| **UTEX** | 99 | University of Texas algae collection | ✅ Complete |
+| **SAG** | 30 | German algae culture collection (Göttingen) | ✅ Complete |
+| **NBRC** | 2 | Japanese NITE Biological Resource Center | 🔄 Initial |
+| **BacDive** | 1 | DSMZ cultivation conditions database | 🔄 Initial |
+
+### Planned Expansions 🚀
+
+| Source | Potential | Description | Notes |
+|--------|-----------|-------------|-------|
+| **BacDive** | ~2,500+ | Additional organism-specific cultivation conditions | Requires API access |
+| **ATCC** | ~900 | American Type Culture Collection media | Web scraping needed |
+| **NBRC** | ~420 | Additional NITE media formulations | Incremental import |
 
 ### Algae Collections (New! 🎉)
 
