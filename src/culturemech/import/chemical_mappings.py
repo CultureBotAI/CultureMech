@@ -2,17 +2,25 @@
 Chemical Mappings Loader
 
 Loads and provides lookup for chemical/ingredient mappings from:
-1. MicrobeMediaParam compound_mappings_strict_final.tsv
-2. MicrobeMediaParam compound_mappings_strict_final_hydrate.tsv
+1. MicrobeMediaParam compound_mappings_strict_final_hydrate.tsv (HIGHEST PRIORITY)
+2. MicrobeMediaParam compound_mappings_strict_final.tsv
 3. MediaDive mediadive_ingredients.json
 
 Provides unified interface for retrieving CHEBI terms, formulas, and metadata
 for media ingredients across all sources.
 
+Priority Order (highest to lowest):
+1. HYDRATES (compound_mappings_strict_final_hydrate.tsv) - Most specific forms
+2. STRICT (compound_mappings_strict_final.tsv) - Base compounds
+3. MediaDive (mediadive_ingredients.json) - Fallback
+
+Rationale: Hydrated forms are more specific (e.g., CaCl2·2H2O vs CaCl2) and
+should be preferred when matching ingredient names that include hydration states.
+
 Integration:
 - MicrobeMediaParam: ~3,000+ ingredient mappings with CHEBI IDs
 - MediaDive: 1,235 ingredients with ChEBI, CAS-RN, PubChem IDs
-- Merge strategy: Prefer high-confidence MicrobeMediaParam mappings
+- Merge strategy: Hydrates always win > High-confidence strict > MediaDive
 """
 
 import csv
@@ -54,27 +62,42 @@ class ChemicalMapper:
         logger.info(f"Loaded {len(self.mappings)} chemical mappings")
 
     def _load_microbe_media_param(self, data_dir: Path):
-        """Load MicrobeMediaParam compound mappings."""
+        """Load MicrobeMediaParam compound mappings.
+
+        Load order (highest to lowest priority):
+        1. compound_mappings_strict_final_hydrate.tsv (HYDRATES - highest priority)
+        2. compound_mappings_strict_final.tsv (STRICT - base compounds)
+        3. high_confidence_compound_mappings.tsv (alternative)
+
+        Hydrates have top priority because they are more specific (e.g., CaCl2·2H2O vs CaCl2).
+        """
         data_dir = Path(data_dir)
 
-        # Try both files
+        # Load in reverse priority order (later files overwrite earlier ones if better)
+        # CHANGED: Load hydrates FIRST, then strict
         for filename in [
-            "compound_mappings_strict_final.tsv",
-            "compound_mappings_strict_final_hydrate.tsv",
-            "high_confidence_compound_mappings.tsv"
+            "compound_mappings_strict_final.tsv",           # Loaded first (base compounds)
+            "compound_mappings_strict_final_hydrate.tsv",  # Loaded second (overwrites with hydrates)
+            "high_confidence_compound_mappings.tsv"        # Alternative fallback
         ]:
             file_path = data_dir / filename
             if not file_path.exists():
                 continue
 
-            logger.info(f"Loading {filename}...")
+            is_hydrate_file = 'hydrate' in filename.lower()
+            logger.info(f"Loading {filename}{'  [HYDRATES - TOP PRIORITY]' if is_hydrate_file else ''}...")
             with open(file_path) as f:
                 reader = csv.DictReader(f, delimiter='\t')
                 for row in reader:
-                    self._add_mapping_from_microbe_media_param(row)
+                    self._add_mapping_from_microbe_media_param(row, is_hydrate=is_hydrate_file)
 
-    def _add_mapping_from_microbe_media_param(self, row: dict):
-        """Add mapping from MicrobeMediaParam TSV row."""
+    def _add_mapping_from_microbe_media_param(self, row: dict, is_hydrate: bool = False):
+        """Add mapping from MicrobeMediaParam TSV row.
+
+        Args:
+            row: TSV row data
+            is_hydrate: True if from hydrate file (gets top priority)
+        """
         # Normalize ingredient name
         original = row.get('original', '').lower().strip()
         if not original:
@@ -92,7 +115,8 @@ class ChemicalMapper:
             'confidence': row.get('match_confidence'),
             'quality': row.get('mapping_quality'),
             'hydration_state': row.get('hydration_state'),
-            'source': 'MicrobeMediaParam'
+            'source': 'MicrobeMediaParam',
+            'is_hydrate': is_hydrate  # Track if from hydrate file
         }
 
         # Extract CHEBI ID
@@ -112,8 +136,27 @@ class ChemicalMapper:
             mapping['hydrated_chebi_id'] = row['hydrated_chebi_id']
             mapping['hydrated_chebi_label'] = row.get('hydrated_chebi_label')
 
-        # Store mapping (don't overwrite if already exists with higher confidence)
-        if original not in self.mappings or self._is_better_mapping(mapping, self.mappings[original]):
+        # Store mapping with priority logic:
+        # 1. If no existing mapping, add it
+        # 2. If new mapping is from hydrate file, ALWAYS overwrite (top priority)
+        # 3. If existing mapping is from hydrate file, NEVER overwrite (protect top priority)
+        # 4. Otherwise, only overwrite if new mapping is "better"
+        should_add = False
+
+        if original not in self.mappings:
+            # No existing mapping, add it
+            should_add = True
+        elif is_hydrate:
+            # Hydrate file ALWAYS overwrites (top priority)
+            should_add = True
+        elif self.mappings[original].get('is_hydrate'):
+            # Existing mapping is from hydrate file, DON'T overwrite (protect top priority)
+            should_add = False
+        elif self._is_better_mapping(mapping, self.mappings[original]):
+            # New mapping is better, overwrite
+            should_add = True
+
+        if should_add:
             self.mappings[original] = mapping
             self.sources[original] = 'MicrobeMediaParam'
 

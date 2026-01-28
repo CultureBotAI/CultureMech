@@ -75,9 +75,14 @@ mapping = loader.lookup("Glucose")
 
 ## Mapping Priority
 
-When both MediaDive and MicrobeMediaParam have mappings:
-1. MicrobeMediaParam (higher curation quality)
-2. MediaDive (fallback)
+When multiple sources have mappings for the same ingredient:
+1. **HYDRATES** (compound_mappings_strict_final_hydrate.tsv) - HIGHEST PRIORITY
+2. **STRICT** (compound_mappings_strict_final.tsv) - Base compounds
+3. **MediaDive** (mediadive_ingredients.json) - Fallback
+
+**Rationale**: Hydrated forms are more specific (e.g., CaCl2·2H2O vs CaCl2). When an
+ingredient is listed with its hydration state, we should prefer the hydrated CHEBI ID
+for maximum accuracy.
 
 ## How to Update
 
