@@ -1,4 +1,4 @@
-# 🧫 CultureMech
+# ⚗️ CultureMech
 
 **Comprehensive Microbial Culture Media Knowledge Graph**
 
