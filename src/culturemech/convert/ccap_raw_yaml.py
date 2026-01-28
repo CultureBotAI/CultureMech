@@ -162,13 +162,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/ccap",
+        default="data/raw/ccap",
         help="Input directory with CCAP JSON files (default: raw/ccap)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/ccap",
+        default="data/raw_yaml/ccap",
         help="Output directory for raw YAML files (default: raw_yaml/ccap)"
     )
     parser.add_argument(

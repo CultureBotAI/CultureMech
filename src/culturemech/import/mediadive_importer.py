@@ -861,13 +861,13 @@ def main():
         "-i", "--input",
         type=Path,
         required=True,
-        help="MediaDive raw data directory (Layer 1: raw/mediadive/)"
+        help="MediaDive raw data directory (Layer 1: data/raw/mediadive/)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: normalized_yaml/)"
+        default="data/normalized_yaml",
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)"
     )
     parser.add_argument(
         "-c", "--compositions",

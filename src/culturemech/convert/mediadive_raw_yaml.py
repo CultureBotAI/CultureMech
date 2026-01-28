@@ -81,13 +81,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/mediadive",
+        default="data/raw/mediadive",
         help="Input directory with MediaDive JSON files (default: raw/mediadive)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/mediadive",
+        default="data/raw_yaml/mediadive",
         help="Output directory for raw YAML files (default: raw_yaml/mediadive)"
     )
     parser.add_argument(

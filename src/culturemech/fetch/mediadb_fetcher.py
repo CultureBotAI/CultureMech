@@ -483,7 +483,7 @@ def main():
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw/mediadb",
+        default="data/raw/mediadb",
         help="Output directory for fetched data"
     )
     parser.add_argument(

@@ -340,7 +340,7 @@ def main():
         "-o",
         "--output",
         type=Path,
-        default="raw/bacdive",
+        default="data/raw/bacdive",
         help="Output directory for fetched data",
     )
     parser.add_argument(

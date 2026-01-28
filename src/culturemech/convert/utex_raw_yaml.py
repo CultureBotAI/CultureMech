@@ -99,13 +99,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/utex",
+        default="data/raw/utex",
         help="Input directory with UTEX JSON files (default: raw/utex)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/utex",
+        default="data/raw_yaml/utex",
         help="Output directory for raw YAML files (default: raw_yaml/utex)"
     )
     parser.add_argument(

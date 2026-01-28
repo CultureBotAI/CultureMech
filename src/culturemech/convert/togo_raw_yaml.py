@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/togo",
+        default="data/raw/togo",
         help="Input directory with TOGO JSON files (default: raw/togo)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/togo",
+        default="data/raw_yaml/togo",
         help="Output directory for raw YAML files (default: raw_yaml/togo)"
     )
     parser.add_argument(

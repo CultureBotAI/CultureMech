@@ -162,13 +162,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/sag",
+        default="data/raw/sag",
         help="Input directory with SAG JSON files (default: raw/sag)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/sag",
+        default="data/raw_yaml/sag",
         help="Output directory for raw YAML files (default: raw_yaml/sag)"
     )
     parser.add_argument(

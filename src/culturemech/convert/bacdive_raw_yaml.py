@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/bacdive",
+        default="data/raw/bacdive",
         help="Input directory with BacDive JSON files (default: raw/bacdive)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/bacdive",
+        default="data/raw_yaml/bacdive",
         help="Output directory for raw YAML files (default: raw_yaml/bacdive)"
     )
     parser.add_argument(

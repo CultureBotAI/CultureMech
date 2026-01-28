@@ -596,7 +596,7 @@ Data sources:
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw/komodo",
+        default="data/raw/komodo",
         help="Output directory for fetched data"
     )
     parser.add_argument(

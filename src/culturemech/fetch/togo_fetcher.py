@@ -273,7 +273,7 @@ def main():
         "-o",
         "--output",
         type=Path,
-        default="raw/togo",
+        default="data/raw/togo",
         help="Output directory for fetched data",
     )
     parser.add_argument(

@@ -9,9 +9,9 @@ app_dir := "app"
 
 # Data layer paths (see DATA_LAYERS.md)
 # Three-tier system: raw/ → raw_yaml/ → normalized_yaml/
-raw_dir := "raw"
-raw_yaml_dir := "raw_yaml"
-normalized_yaml_dir := "normalized_yaml"
+raw_dir := "data/raw"
+raw_yaml_dir := "data/raw_yaml"
+normalized_yaml_dir := "data/normalized_yaml"
 processed_data_dir := "data/processed"
 cmm_automation_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/cmm-ai-automation/data"
 microbe_media_param_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MicrobeMediaParam/MicroMediaParam/pipeline_output/merge_mappings"

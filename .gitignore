@@ -69,33 +69,34 @@ docs/schema/
 *.bak
 .cache/
 
-# Data layers (see DATA_LAYERS.md)
-# Three-tier system: raw/ → raw_yaml/ → normalized_yaml/
+# Data layers (see docs/DATA_LAYERS.md)
+# Three-tier system: data/raw/ → data/raw_yaml/ → data/normalized_yaml/
 
 # Layer 1: Raw data files (large, can be regenerated or fetched)
-raw/**/*.json
-raw/**/*.tsv
-raw/**/*.csv
-raw/**/*.tar.gz
-raw/**/*.zip
-raw/**/*.html
-raw/**/*.sql
-raw/**/.DS_Store
+data/raw/**/*.json
+data/raw/**/*.tsv
+data/raw/**/*.csv
+data/raw/**/*.tar.gz
+data/raw/**/*.zip
+data/raw/**/*.html
+data/raw/**/*.sql
+data/raw/**/.DS_Store
 
 # Keep provenance documentation
-!raw/**/README.md
+!data/raw/**/README.md
 
 # NBRC scraped HTML cache
-raw/nbrc/scraped/
+data/raw/nbrc/scraped/
 
-# Layer 2: Raw YAML (unnormalized, regenerable from raw/)
-raw_yaml/**/*.yaml
-raw_yaml/**/.DS_Store
+# Layer 2: Raw YAML (unnormalized, regenerable from data/raw/)
+data/raw_yaml/**/*.yaml
+data/raw_yaml/**/.DS_Store
 
 # Layer 3: Normalized YAML is VERSION CONTROLLED (curated recipes)
-# Keep all normalized_yaml/ in git
-!normalized_yaml/**/*.yaml
-normalized_yaml/**/.DS_Store
+# Keep all data/normalized_yaml/ in git
+!data/normalized_yaml/**/*.yaml
+data/normalized_yaml/**/.DS_Store
 
 # Processed data (regenerable)
 data/processed/
+dismech/

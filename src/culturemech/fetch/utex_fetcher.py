@@ -271,7 +271,7 @@ def main():
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw/utex",
+        default="data/raw/utex",
         help="Output directory for fetched data (default: raw/utex)"
     )
     parser.add_argument(

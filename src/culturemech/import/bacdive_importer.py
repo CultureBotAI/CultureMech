@@ -379,15 +379,15 @@ def main():
         "-i",
         "--input",
         type=Path,
-        default="raw/bacdive",
-        help="Input directory with BacDive raw JSON files (Layer 1: raw/bacdive/)",
+        default="data/raw/bacdive",
+        help="Input directory with BacDive raw JSON files (Layer 1: data/raw/bacdive/)",
     )
     parser.add_argument(
         "-o",
         "--output",
         type=Path,
-        default="normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: normalized_yaml/)",
+        default="data/normalized_yaml",
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)",
     )
     parser.add_argument(
         "-l", "--limit", type=int, help="Limit number of media to import (for testing)"

@@ -213,7 +213,7 @@ curl "https://togomedium.org/sparqlist/api/gmdb_medium_by_gmid?gm_id=M443" \
 1. **Fetch raw data** (this directory)
    - API calls to get all media (paginated)
    - API calls to get component details
-   - Store as JSON in `raw/togo/`
+   - Store as JSON in `data/raw/togo/`
 
 2. **Process to intermediate** (`data/processed/`)
    - Enrich with ChEBI IDs

@@ -385,7 +385,7 @@ def main():
         "-o",
         "--output",
         type=Path,
-        default="raw/nbrc",
+        default="data/raw/nbrc",
         help="Output directory",
     )
     parser.add_argument(

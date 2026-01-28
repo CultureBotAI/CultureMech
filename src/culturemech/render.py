@@ -130,7 +130,7 @@ def main():
     parser.add_argument(
         "-i", "--input-dir",
         type=Path,
-        default="normalized_yaml",
+        default="data/normalized_yaml",
         help="Input directory containing normalized recipe YAML files (Layer 3, for --all)"
     )
     parser.add_argument(

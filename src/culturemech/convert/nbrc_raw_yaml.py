@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/nbrc",
+        default="data/raw/nbrc",
         help="Input directory with NBRC JSON files (default: raw/nbrc)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/nbrc",
+        default="data/raw_yaml/nbrc",
         help="Output directory for raw YAML files (default: raw_yaml/nbrc)"
     )
     parser.add_argument(

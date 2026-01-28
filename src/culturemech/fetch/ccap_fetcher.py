@@ -223,7 +223,7 @@ def main():
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw/ccap",
+        default="data/raw/ccap",
         help="Output directory for fetched data (default: raw/ccap)"
     )
     parser.add_argument(

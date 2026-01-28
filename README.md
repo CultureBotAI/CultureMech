@@ -46,13 +46,13 @@ just serve-browser
 
 ```bash
 # Validate a single recipe (3 layers)
-just validate normalized_yaml/bacterial/LB_Broth.yaml
+just validate data/normalized_yaml/bacterial/LB_Broth.yaml
 
 # Validate all recipes
 just validate-all
 
 # Schema validation only
-just validate-schema normalized_yaml/bacterial/LB_Broth.yaml
+just validate-schema data/normalized_yaml/bacterial/LB_Broth.yaml
 ```
 
 ### Generate HTML Pages
@@ -62,7 +62,7 @@ just validate-schema normalized_yaml/bacterial/LB_Broth.yaml
 just gen-pages
 
 # Generate page for single recipe
-just gen-page normalized_yaml/bacterial/LB_Broth.yaml
+just gen-page data/normalized_yaml/bacterial/LB_Broth.yaml
 
 # View generated pages in pages/
 ```
@@ -102,7 +102,7 @@ CultureMech integrates media recipes from multiple authoritative sources:
 **Total Coverage (Current)**: ~3,500 unique media recipes
 **Projected Coverage (After Integration)**: ~6,400 unique recipes + 70,000 organism associations
 
-See `data/MEDIA_SOURCES.tsv` for complete source tracking and `data/DATA_SOURCES_SUMMARY.md` for detailed integration strategy.
+See `data/MEDIA_SOURCES.tsv` for complete source tracking and `docs/DATA_SOURCES_SUMMARY.md` for detailed integration strategy.
 
 ### Fetching Data
 
@@ -123,36 +123,52 @@ just import-nbrc
 
 ```
 CultureMech/
-├── src/
-│   └── culturemech/
-│       ├── schema/
-│       │   └── culturemech.yaml          # LinkML schema (1800 lines)
-│       ├── export/
-│       │   ├── kgx_export.py             # KG transform
-│       │   └── browser_export.py         # Browser data generation
-│       ├── templates/
-│       │   └── recipe.html.j2            # Jinja2 template
-│       └── render.py                     # HTML page generator
-├── kb/
-│   └── media/
-│       ├── bacterial/                    # Bacterial media recipes
-│       │   ├── LB_Broth.yaml
-│       │   └── M9_Minimal_Medium.yaml
-│       ├── fungal/                       # Fungal media recipes
-│       ├── archaea/                      # Archaeal media recipes
-│       └── specialized/                  # Specialized media
-├── app/
-│   ├── index.html                        # Faceted search browser
-│   ├── schema.js                         # Browser configuration
-│   └── data.js                           # Generated data (do not edit)
-├── pages/                                # Generated HTML pages
-├── tests/
-│   └── test_kgx_export.py                # Unit tests
-├── conf/
-│   └── oak_config.yaml                   # Ontology adapter config
-├── project.justfile                      # Build recipes
-└── pyproject.toml                        # Python dependencies
+├── src/culturemech/              # Python package
+│   ├── schema/                   # LinkML schema definitions
+│   ├── fetch/                    # Data fetchers (10 sources)
+│   ├── convert/                  # Raw YAML converters
+│   ├── import/                   # Normalized importers
+│   ├── export/                   # Browser & KGX exporters
+│   ├── templates/                # HTML templates
+│   └── render.py                 # Page generator
+├── data/                         # Three-tier data architecture
+│   ├── raw/                      # Layer 1: Source files (git ignored)
+│   ├── raw_yaml/                 # Layer 2: Unnormalized YAML (git ignored)
+│   └── normalized_yaml/          # Layer 3: Curated recipes (version controlled)
+│       ├── algae/               # 242 algae media recipes
+│       ├── bacterial/           # 10,072 bacterial media recipes
+│       ├── fungal/              # 119 fungal media recipes
+│       ├── archaea/             # 63 archaeal media recipes
+│       └── specialized/         # 99 specialized media recipes
+├── docs/                         # Documentation
+│   ├── DATA_LAYERS.md           # Three-tier architecture guide
+│   ├── QUICK_START.md           # Getting started guide
+│   └── *.md                     # Additional documentation
+├── app/                          # Browser interface
+│   ├── index.html               # Faceted search UI
+│   └── schema.js                # Browser configuration
+├── tests/                        # Test suite
+├── conf/                         # Configuration files
+├── project.justfile              # Build automation
+└── pyproject.toml               # Python project config
 ```
+
+## Documentation
+
+Comprehensive documentation is available in the `docs/` directory:
+
+- **[Quick Start Guide](docs/QUICK_START.md)** - Get up and running in 5 minutes
+- **[Quick Reference](docs/QUICK_REFERENCE.md)** - Command cheat sheet
+- **[Data Layers](docs/DATA_LAYERS.md)** - Three-tier architecture explained
+- **[Implementation Status](docs/IMPLEMENTATION_STATUS.md)** - Current integration progress
+- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute recipes and code
+- **[Enrichment Guide](docs/ENRICHMENT_GUIDE.md)** - Data quality improvement workflow
+
+### Key Documentation
+
+- **Algae Pipeline**: [ALGAE_PIPELINE_COMPLETE.md](docs/ALGAE_PIPELINE_COMPLETE.md) - Full algae collections integration
+- **Three-Tier Migration**: [MIGRATION_GUIDE.md](docs/MIGRATION_GUIDE.md) - Old to new directory structure
+- **Data Sources**: [DATA_SOURCES_SUMMARY.md](docs/DATA_SOURCES_SUMMARY.md) - Source repository details
 
 ## Recipe Format
 

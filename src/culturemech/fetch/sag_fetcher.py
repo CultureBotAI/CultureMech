@@ -229,7 +229,7 @@ def main():
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw/sag",
+        default="data/raw/sag",
         help="Output directory for fetched data (default: raw/sag)"
     )
     parser.add_argument(

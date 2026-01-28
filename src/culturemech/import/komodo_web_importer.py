@@ -337,13 +337,13 @@ def main():
         "-i", "--input",
         type=Path,
         default=Path("raw/komodo_web"),
-        help="Input directory with KOMODO web raw JSON files (Layer 1: raw/komodo_web/)"
+        help="Input directory with KOMODO web raw JSON files (Layer 1: data/raw/komodo_web/)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
         default=Path("normalized_yaml"),
-        help="Output directory for normalized YAML files (Layer 3: normalized_yaml/)"
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)"
     )
     parser.add_argument(
         "-l", "--limit",

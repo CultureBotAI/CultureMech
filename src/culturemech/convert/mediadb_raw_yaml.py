@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/mediadb",
+        default="data/raw/mediadb",
         help="Input directory with MediaDB JSON files (default: raw/mediadb)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/mediadb",
+        default="data/raw_yaml/mediadb",
         help="Output directory for raw YAML files (default: raw_yaml/mediadb)"
     )
     parser.add_argument(

@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/atcc",
+        default="data/raw/atcc",
         help="Input directory with ATCC JSON files (default: raw/atcc)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/atcc",
+        default="data/raw_yaml/atcc",
         help="Output directory for raw YAML files (default: raw_yaml/atcc)"
     )
     parser.add_argument(

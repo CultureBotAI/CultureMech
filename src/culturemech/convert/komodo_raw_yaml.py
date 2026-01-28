@@ -25,13 +25,13 @@ def main():
     parser.add_argument(
         "-i", "--input",
         type=Path,
-        default="raw/komodo",
+        default="data/raw/komodo",
         help="Input directory with KOMODO JSON files (default: raw/komodo)"
     )
     parser.add_argument(
         "-o", "--output",
         type=Path,
-        default="raw_yaml/komodo",
+        default="data/raw_yaml/komodo",
         help="Output directory for raw YAML files (default: raw_yaml/komodo)"
     )
     parser.add_argument(

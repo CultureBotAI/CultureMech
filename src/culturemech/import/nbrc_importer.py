@@ -387,15 +387,15 @@ def main():
         "-i",
         "--input",
         type=Path,
-        default="raw/nbrc",
-        help="Input directory with NBRC raw JSON files (Layer 1: raw/nbrc/)",
+        default="data/raw/nbrc",
+        help="Input directory with NBRC raw JSON files (Layer 1: data/raw/nbrc/)",
     )
     parser.add_argument(
         "-o",
         "--output",
         type=Path,
-        default="normalized_yaml",
-        help="Output directory for normalized YAML files (Layer 3: normalized_yaml/)",
+        default="data/normalized_yaml",
+        help="Output directory for normalized YAML files (Layer 3: data/normalized_yaml/)",
     )
     parser.add_argument(
         "-l", "--limit", type=int, help="Limit number of media to import"
