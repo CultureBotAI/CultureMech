@@ -76,6 +76,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Na2CO3
   term:
     id: CHEBI:29377
@@ -172,3 +175,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 371'
+- timestamp: '2026-01-28T19:48:24.721875Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

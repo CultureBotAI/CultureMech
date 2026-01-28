@@ -15,6 +15,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -42,3 +45,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1750'
+- timestamp: '2026-01-28T19:48:37.137665Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

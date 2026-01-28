@@ -26,6 +26,9 @@ ingredients:
   concentration:
     value: '0.285714'
     unit: G_PER_L
+  term:
+    id: CHEBI:16991
+    label: deoxyribonucleic acid
 - preferred_term: Phenol red
   term:
     id: CHEBI:31991
@@ -65,3 +68,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1096'
+- timestamp: '2026-01-28T19:48:10.636634Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

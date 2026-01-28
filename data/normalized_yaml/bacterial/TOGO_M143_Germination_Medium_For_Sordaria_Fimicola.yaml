@@ -10,28 +10,43 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sucrose
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Corn meal agar (BD-Difco)
   concentration:
     value: '4'
@@ -54,3 +69,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M143'
+- timestamp: '2026-01-28T19:48:34.010754Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

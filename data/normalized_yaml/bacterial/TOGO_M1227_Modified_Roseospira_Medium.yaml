@@ -20,6 +20,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1.5'
@@ -37,6 +40,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
@@ -49,29 +55,44 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Sodium pyruvate
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Micronutrient solution (SL7) (see Medium [M572])
   concentration:
     value: '1'
     unit: G_PER_L
 - preferred_term: NaHCO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2S・9H2O
   notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
     compound'
 - preferred_term: Na2S2O3
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
 media_term:
   preferred_term: TOGO Medium M1227
   term:
@@ -89,3 +110,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M1227'
+- timestamp: '2026-01-28T19:48:15.222585Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

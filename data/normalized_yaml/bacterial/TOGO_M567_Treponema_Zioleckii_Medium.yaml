@@ -15,6 +15,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
@@ -26,18 +29,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
     compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: NaHCO3
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Cellobiose
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Clarified rumen fluid
   concentration:
     value: '300'
@@ -68,6 +80,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: CO2
   notes: 'Properties: Gas'
 - preferred_term: Distilled water
@@ -76,18 +91,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: K2HPO4
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2.5'
@@ -100,6 +124,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1.6'
@@ -112,12 +139,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 media_term:
   preferred_term: TOGO Medium M567
   term:
@@ -135,3 +168,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M567'
+- timestamp: '2026-01-28T19:48:17.761983Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

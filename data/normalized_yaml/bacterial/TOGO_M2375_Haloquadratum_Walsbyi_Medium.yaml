@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
@@ -27,59 +33,89 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.03'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '35'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: KCl
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaNO3
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:63005
+    label: ''
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Tris buffer 1M
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+  term:
+    id: CHEBI:9754
+    label: tris
 media_term:
   preferred_term: TOGO Medium M2375
   term:
@@ -95,3 +131,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2375'
+- timestamp: '2026-01-28T19:48:10.072500Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

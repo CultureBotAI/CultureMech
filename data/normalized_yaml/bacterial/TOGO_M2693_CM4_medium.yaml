@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -21,30 +24,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '2.9'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: CaCl2
   concentration:
     value: '13.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Carbon source (i.e. cellobiose)
   concentration:
     value: '6'
@@ -57,6 +75,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: FeSO4 (1.25% solution)
   concentration:
     value: '0.1'
@@ -73,11 +94,17 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Sodium thioglycollate
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycollate
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
 - preferred_term: Hydrogen gas
@@ -97,3 +124,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2693'
+- timestamp: '2026-01-28T19:48:10.176993Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

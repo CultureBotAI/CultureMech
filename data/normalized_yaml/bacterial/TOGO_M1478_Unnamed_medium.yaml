@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -21,24 +24,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '0.13'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '160'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: K2SO4
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
 - preferred_term: Soluble starch
   concentration:
     value: '2'
@@ -71,3 +86,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1478'
+- timestamp: '2026-01-28T19:48:35.454007Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

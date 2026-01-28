@@ -54,6 +54,9 @@ ingredients:
   concentration:
     value: '0.7'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -129,3 +132,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C56'
+- timestamp: '2026-01-28T19:48:20.337639Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

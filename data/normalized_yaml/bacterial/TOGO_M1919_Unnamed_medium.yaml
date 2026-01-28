@@ -15,6 +15,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17632
+    label: nitrate
 - preferred_term: Artificial sea water
   concentration:
     value: '999'
@@ -32,6 +35,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
+  term:
+    id: CHEBI:1185531
+    label: ''
 - preferred_term: Tryptone (Difco 0123)
   concentration:
     value: '2'
@@ -47,18 +53,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '25.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
   concentration:
     value: '2.85'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '1.8'
@@ -77,24 +92,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
   concentration:
     value: '20.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: Na-tartrate
   concentration:
     value: '1.77'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:30924
+    label: L-tartrate(2-)
 - preferred_term: FeSO4
   concentration:
     value: '1.36'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 media_term:
   preferred_term: TOGO Medium M1919
   term:
@@ -112,3 +139,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1919'
+- timestamp: '2026-01-28T19:48:38.948932Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

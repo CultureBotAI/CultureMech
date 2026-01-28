@@ -16,42 +16,63 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: NaCl
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: FeSO4 x 7 H2O
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
 - preferred_term: Na2HPO4 x 12 H2O
   concentration:
     value: '4.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: NH4NO3
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63038
+    label: ''
 - preferred_term: Trace element solution
   concentration:
     value: '0.5'
@@ -74,36 +95,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35696
+    label: cobalt dichloride
 - preferred_term: ZnSO4 x 7 H2O
   concentration:
     value: '28'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 x 5 H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4 x 5 H2O
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
 - preferred_term: MoO3
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:30627
+    label: molybdenum trioxide
 media_term:
   preferred_term: TOGO Medium M3125
   term:
@@ -119,3 +158,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M3125'
+- timestamp: '2026-01-28T19:48:18.512211Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

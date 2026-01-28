@@ -10,30 +10,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '16'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: NaHCO3
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Na2CO3
   concentration:
     value: '190'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: 10% Yeast extract solution
   concentration:
     value: '0.2'
@@ -50,6 +65,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Solution, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: 1 M MgSO4 solution
   concentration:
     value: '1'
@@ -60,6 +78,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:64103
+    label: sodium butyrate
 - preferred_term: Trace vitamins (see Medium [M190])
   concentration:
     value: '10'
@@ -93,3 +114,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M928'
+- timestamp: '2026-01-28T19:48:27.449123Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

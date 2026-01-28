@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Resazurin (0.1% w/v in water)
   concentration:
     value: '0.1'
@@ -27,6 +30,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
 - preferred_term: Yeast Extract (BD 211928)
   concentration:
     value: '0.25'
@@ -42,6 +48,9 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycollate
 - preferred_term: Heart Infusion Broth (BD 238400)
   concentration:
     value: '1.25'
@@ -98,24 +107,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:17418
+    label: valeric acid
 - preferred_term: Isovaleric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:28484
+    label: isovaleric acid
 - preferred_term: Isobutyric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:16135
+    label: isobutyric acid
 - preferred_term: 2-Methylbutyric acid
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:37070
+    label: 2-methylbutyric acid
 media_term:
   preferred_term: TOGO Medium M2577
   term:
@@ -131,3 +152,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2577'
+- timestamp: '2026-01-28T19:48:36.100427Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

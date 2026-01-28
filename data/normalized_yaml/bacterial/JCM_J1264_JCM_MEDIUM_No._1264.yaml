@@ -69,6 +69,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: KCl
   term:
     id: CHEBI:32588
@@ -122,3 +125,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1264'
+- timestamp: '2026-01-28T19:48:29.839890Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

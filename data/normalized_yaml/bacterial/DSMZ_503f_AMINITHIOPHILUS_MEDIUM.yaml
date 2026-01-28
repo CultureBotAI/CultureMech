@@ -75,6 +75,9 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Yeast extract
   concentration:
     value: '20'
@@ -263,3 +266,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 503f'
+- timestamp: '2026-01-28T19:48:26.023224Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

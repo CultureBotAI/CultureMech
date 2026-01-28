@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: CaCO3
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
     component, Inorganic compound'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: V8 canned vegetable juice (Campbell)
   concentration:
     value: '200'
@@ -26,6 +32,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M58
   term:
@@ -43,3 +52,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M58'
+- timestamp: '2026-01-28T19:48:32.354621Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

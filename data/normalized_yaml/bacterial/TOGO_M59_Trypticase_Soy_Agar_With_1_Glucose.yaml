@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Trypticase soy agar (see Medium [M66])
   concentration:
     value: '1'
@@ -31,3 +34,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M59'
+- timestamp: '2026-01-28T19:48:08.570062Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

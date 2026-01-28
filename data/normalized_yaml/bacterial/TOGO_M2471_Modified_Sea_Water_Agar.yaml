@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '4.46'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '1.5'
@@ -27,34 +33,52 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.98'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: MgCl2 x 6 H2O
   concentration:
     value: '3.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: KCl
   concentration:
     value: '0.48'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Hexadecane
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:45296
+    label: hexadecane
 - preferred_term: Peptone
   concentration:
     value: '2.5'
@@ -74,3 +98,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2471'
+- timestamp: '2026-01-28T19:48:17.175336Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

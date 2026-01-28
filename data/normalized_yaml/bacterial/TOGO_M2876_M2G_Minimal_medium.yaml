@@ -10,47 +10,71 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '9.3'
     unit: MILLIMOLAR
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: CaCl2
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: Na2HPO4
   concentration:
     value: '20'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: MgSO4
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: FeSO4
   concentration:
     value: '1'
     unit: MICROMOLAR
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: glucose
   concentration:
     value: '0.2'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: EDTA
   concentration:
     value: '1'
     unit: MICROMOLAR
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:64755
+    label: EDTA(2-)
 media_term:
   preferred_term: TOGO Medium M2876
   term:
@@ -64,3 +88,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2876'
+- timestamp: '2026-01-28T19:48:21.884936Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

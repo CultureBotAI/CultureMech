@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Glycerol
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Cow's milk (whole fat)
   concentration:
     value: '10'
@@ -32,11 +38,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '12'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
@@ -52,11 +64,17 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:75456
+    label: 2-stearoylglycerol
 - preferred_term: Tween 60
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:53425
+    label: polysorbate 60
 media_term:
   preferred_term: TOGO Medium M144
   term:
@@ -74,3 +92,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M144'
+- timestamp: '2026-01-28T19:48:16.773477Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

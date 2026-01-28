@@ -10,80 +10,122 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: p-aminobenzoic acid
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: CaCl2
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: CuSO4
   concentration:
     value: '2.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: FeCl3
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
 - preferred_term: MgCl2
   concentration:
     value: '200'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: Histidine
   concentration:
     value: '0.15'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:27570
+    label: histidine
 - preferred_term: Asparagine
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:22653
+    label: Asparagine
 - preferred_term: Arginine
   concentration:
     value: '0.125'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32696
+    label: argininium(1+)
 - preferred_term: Ammonium citrate
   concentration:
     value: '0.6'
@@ -96,23 +138,35 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
 - preferred_term: Thiamine
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
 - preferred_term: FeCl2
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:30812
+    label: iron dichloride
 - preferred_term: Cysteine
   concentration:
     value: '0.13'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
 - preferred_term: Methionine
   concentration:
     value: '0.125'
@@ -137,45 +191,69 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:57305
+    label: glycine zwitterion
 - preferred_term: MnCl2
   concentration:
     value: '16'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:7773015
+    label: ''
 - preferred_term: Pantothenate
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
 - preferred_term: pyridoxamine-HCl
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Pyridoxine
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16709
+    label: pyridoxine
 - preferred_term: Uracil
   concentration:
     value: '22'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17568
+    label: uracil
 - preferred_term: Lipoic acid
   concentration:
     value: '2.5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
 - preferred_term: ZnSO4
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
 - preferred_term: Aspartic acid
   concentration:
     value: '0.42'
@@ -188,6 +266,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:18237
+    label: glutamic acid
 - preferred_term: Glutamine
   concentration:
     value: '0.2'
@@ -241,35 +322,53 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:29073
+    label: L-ascorbic acid
 - preferred_term: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Thymidine
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17748
+    label: Thymidine
 - preferred_term: Acetate
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:30089
+    label: Acetate
 - preferred_term: CoSO4
   concentration:
     value: '2.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: D-biotin
   concentration:
     value: '2.5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: (NH4)6Mo7O24
   concentration:
     value: '2.5'
@@ -316,8 +415,14 @@ ingredients:
     value: '0.675'
     unit: G_PER_L
   notes: 'Role: Nitrogen source'
+  term:
+    id: CHEBI:26271
+    label: Proline
 - preferred_term: MOPS buffer
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:44115
+    label: ''
 media_term:
   preferred_term: TOGO Medium M2239
   term:
@@ -331,3 +436,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2239'
+- timestamp: '2026-01-28T19:48:36.009793Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

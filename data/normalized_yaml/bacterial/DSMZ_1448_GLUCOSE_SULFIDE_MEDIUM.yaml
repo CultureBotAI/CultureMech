@@ -85,6 +85,9 @@ ingredients:
   concentration:
     value: '0.0001'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Co Carboxylase
   term:
     id: CHEBI:45395
@@ -165,3 +168,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1448'
+- timestamp: '2026-01-28T19:48:37.311246Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

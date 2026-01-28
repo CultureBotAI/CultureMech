@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -52,6 +55,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.25'
@@ -64,24 +70,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.348'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
     component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
@@ -126,12 +144,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Fructose
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: N2
   notes: 'Properties: ガス'
 - preferred_term: 8% NaHCO3 solution
@@ -160,3 +184,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M656'
+- timestamp: '2026-01-28T19:48:11.409934Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

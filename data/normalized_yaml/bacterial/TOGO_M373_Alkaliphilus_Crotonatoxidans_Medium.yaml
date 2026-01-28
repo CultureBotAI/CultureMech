@@ -26,12 +26,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '0.4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
@@ -44,18 +50,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.4'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
     component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.33'
@@ -68,6 +83,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -96,18 +114,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Crotonic acid
   concentration:
     value: '0.86'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:41131
+    label: crotonic acid
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.02'
@@ -144,6 +171,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '1'
@@ -162,20 +192,32 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63940
+    label: sodium tungstate
 - preferred_term: Na2SeO4
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: Distilled water
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: L--Cysteine・HCL・H2O
   concentration:
     value: '0.5'
@@ -187,6 +229,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
@@ -210,3 +255,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M373'
+- timestamp: '2026-01-28T19:48:38.648769Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

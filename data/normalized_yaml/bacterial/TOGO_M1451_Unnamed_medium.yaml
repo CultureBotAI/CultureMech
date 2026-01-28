@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -27,12 +33,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Glucose
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Fe2(SO4)3·(NH4)2SO4·24H2O
   concentration:
     value: '0.1'
@@ -67,3 +79,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1451'
+- timestamp: '2026-01-28T19:48:14.116817Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

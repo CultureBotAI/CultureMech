@@ -11,12 +11,18 @@ ingredients:
     value: '6.25'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Sodium nitrate
   concentration:
     value: '10'
     unit: MILLIMOLAR
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63005
+    label: sodium nitrate
 - preferred_term: Bicarbonate-buffered basal medium (BBM)
   concentration:
     value: '1'
@@ -27,30 +33,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: KCl
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: NaHCO3
   concentration:
     value: '2.52'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaH2PO4
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
 - preferred_term: Vitamins
   concentration:
     value: '10'
@@ -65,69 +86,108 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Pyridoxine HCl
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Folic acid
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Thiamine
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
 - preferred_term: Pantothenic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:7916
+    label: pantothenic acid
 - preferred_term: Thioctic acid
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:30314
+    label: (R)-lipoic acid
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2.2H2O
   concentration:
     value: '0.1'
@@ -140,12 +200,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4.7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75836
+    label: iron(2+) sulfate heptahydrate
 - preferred_term: CoCl2.6H2O
   concentration:
     value: '0.1'
@@ -164,6 +230,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: AlK(SO4)2.12H2O
   concentration:
     value: '0.01'
@@ -176,6 +245,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: Na2WO4.2H2O
   concentration:
     value: '0.025'
@@ -194,18 +266,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CuSO4
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
 - preferred_term: Na2MoO4
   concentration:
     value: '0.025'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 media_term:
   preferred_term: TOGO Medium M2185
   term:
@@ -220,3 +301,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2185'
+- timestamp: '2026-01-28T19:48:22.406853Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

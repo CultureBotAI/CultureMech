@@ -10,29 +10,44 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: CaCO3
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
   notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Inorganic
     compound, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: glycerol
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: glucose
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: agar
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: yeast extract (BD Difco)
   concentration:
     value: '3'
@@ -65,3 +80,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2843'
+- timestamp: '2026-01-28T19:48:17.747352Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

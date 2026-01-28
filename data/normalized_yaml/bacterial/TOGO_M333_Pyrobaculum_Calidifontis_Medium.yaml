@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -27,6 +30,9 @@ ingredients:
   notes: 'Properties: Undefined component'
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M333
   term:
@@ -44,3 +50,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M333'
+- timestamp: '2026-01-28T19:48:28.025152Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

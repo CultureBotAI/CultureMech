@@ -10,41 +10,62 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CaCl2 x 2 H2O
   concentration:
     value: '0.07'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
   concentration:
     value: '0.28'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3 x 6 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
 - preferred_term: Gelrite
   concentration:
     value: '0.7'
     unit: PERCENT_W_V
   notes: 'Role: Solidifying component; Properties: Simple component'
+  term:
+    id: CHEBI:85248
+    label: Gelrite
 - preferred_term: Yeast extract (OXOID)
   concentration:
     value: '0.5'
@@ -57,18 +78,27 @@ ingredients:
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: Distilled water
   concentration:
     value: '1000'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2MoO4 x 2 H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: MnCl2 x 4 H2O
   concentration:
     value: '180'
@@ -81,18 +111,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuCl2 x 2 H2O
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
 - preferred_term: VOSO4 x 2 H2O
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:87014
+    label: vanadyl sulfate hexahydrate
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
     value: '450'
@@ -105,9 +144,15 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
     compound'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 media_term:
   preferred_term: TOGO Medium M2396
   term:
@@ -123,3 +168,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2396'
+- timestamp: '2026-01-28T19:48:36.635735Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

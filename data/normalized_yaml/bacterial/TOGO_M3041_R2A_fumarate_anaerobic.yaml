@@ -10,30 +10,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: K2HPO4
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Glucose
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.5'
@@ -59,6 +74,9 @@ ingredients:
     value: '1.4'
     unit: G_PER_L
   notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:115156
+    label: disodium fumarate
 - preferred_term: Bacto Casamino Acids (Difco)
   concentration:
     value: '0.5'
@@ -81,3 +99,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M3041'
+- timestamp: '2026-01-28T19:48:12.821755Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

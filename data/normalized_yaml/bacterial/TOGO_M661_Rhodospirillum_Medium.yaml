@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.5'
@@ -27,12 +30,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: Sodium pyruvate
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Na2S・9H2O (final conc.)
   concentration:
     value: '0.5'
@@ -60,3 +69,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M661'
+- timestamp: '2026-01-28T19:48:31.799935Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

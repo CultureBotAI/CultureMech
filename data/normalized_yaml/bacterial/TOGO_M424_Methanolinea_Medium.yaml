@@ -31,6 +31,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
@@ -43,18 +46,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.54'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
     compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.2'
@@ -67,11 +79,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: sodium acetate
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.1'
@@ -99,11 +117,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: sodium formate
   concentration:
     value: '2.72'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
+  term:
+    id: CHEBI:62965
+    label: sodium formate
 - preferred_term: N2
   notes: 'Properties: ガス'
 media_term:
@@ -123,3 +147,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M424'
+- timestamp: '2026-01-28T19:48:17.051838Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

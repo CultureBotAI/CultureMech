@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2HPO4
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: L--Cystine
   concentration:
     value: '0.2'
@@ -33,6 +39,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Soluble starch
   concentration:
     value: '0.5'
@@ -43,6 +52,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -66,6 +78,9 @@ ingredients:
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 media_term:
   preferred_term: TOGO Medium M7
   term:
@@ -83,3 +98,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M7'
+- timestamp: '2026-01-28T19:48:25.729027Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

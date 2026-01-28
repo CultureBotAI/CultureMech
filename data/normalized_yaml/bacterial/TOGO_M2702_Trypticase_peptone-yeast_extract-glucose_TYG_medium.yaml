@@ -10,6 +10,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.2'
@@ -21,6 +24,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Trypticase (BBL)
   concentration:
     value: '0.2'
@@ -39,3 +45,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2702'
+- timestamp: '2026-01-28T19:48:26.214142Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

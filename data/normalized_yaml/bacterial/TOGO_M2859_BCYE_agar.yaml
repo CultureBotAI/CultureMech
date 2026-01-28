@@ -9,6 +9,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
+  term:
+    id: CHEBI:2509
+    label: BCYE agar
 media_term:
   preferred_term: TOGO Medium M2859
   term:
@@ -22,3 +25,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2859'
+- timestamp: '2026-01-28T19:48:33.447855Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

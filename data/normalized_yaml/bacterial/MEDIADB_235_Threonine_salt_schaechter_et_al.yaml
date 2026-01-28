@@ -25,6 +25,9 @@ ingredients:
   concentration:
     value: '9.92605'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Magnesium sulfate
   term:
     id: CHEBI:32599
@@ -52,6 +55,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 235, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:29.437862Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 235
   term:

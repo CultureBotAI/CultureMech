@@ -10,24 +10,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
     component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.18'
@@ -46,6 +58,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -73,11 +88,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Biotin
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p--Aminobenzoic acid
   concentration:
     value: '50'
@@ -93,6 +114,9 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Pyridoxine・HCl
   concentration:
     value: '100'
@@ -103,33 +127,51 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: Vitamin B12
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Riboflavin
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: Nicotinic acid
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Thioctic acid
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:30314
+    label: (R)-lipoic acid
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '3'
@@ -142,6 +184,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.01'
@@ -154,6 +199,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.1'
@@ -178,12 +226,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
 - preferred_term: CaCl2
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '0.5'
@@ -196,12 +250,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86463
+    label: potassium aluminium sulfate
 - preferred_term: Na2SeO3
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '0.1'
@@ -210,6 +270,9 @@ ingredients:
     Simple component'
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 - preferred_term: 0.2 N NaOH
   concentration:
     value: '200'
@@ -247,3 +310,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M214'
+- timestamp: '2026-01-28T19:48:37.499820Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

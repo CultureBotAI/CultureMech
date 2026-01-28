@@ -10,36 +10,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na2MoO4·2H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
 - preferred_term: NaHCO3
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: CoCl2·6H2O
   concentration:
     value: '0.001'
@@ -52,18 +70,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4·4H2O
   concentration:
     value: '2'
@@ -102,3 +129,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1934'
+- timestamp: '2026-01-28T19:48:12.129787Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

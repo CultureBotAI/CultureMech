@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: CaCl2 × 2 H2O
   concentration:
     value: '0.14'
@@ -28,6 +31,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Na2HPO4 × 12 H2O
   concentration:
     value: '25'
@@ -51,6 +57,9 @@ ingredients:
     value: '0.4'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:84997
+    label: sodium gluconate
 media_term:
   preferred_term: TOGO Medium M3208
   term:
@@ -64,3 +73,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M3208'
+- timestamp: '2026-01-28T19:48:10.779030Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

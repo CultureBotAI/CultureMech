@@ -15,6 +15,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Deionized water
   concentration:
     value: '1'
@@ -29,8 +32,14 @@ ingredients:
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 media_term:
   preferred_term: TOGO Medium M3210
   term:
@@ -44,3 +53,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M3210'
+- timestamp: '2026-01-28T19:48:34.021008Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

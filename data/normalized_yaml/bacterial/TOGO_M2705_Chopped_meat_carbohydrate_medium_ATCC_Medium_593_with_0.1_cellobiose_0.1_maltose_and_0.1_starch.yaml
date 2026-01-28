@@ -12,6 +12,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: N NaOH
   concentration:
     value: '25'
@@ -38,24 +41,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Starch
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Complex
     component'
+  term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Cellobiose
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Maltose
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Peptone
   concentration:
     value: '30'
@@ -85,3 +100,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2705'
+- timestamp: '2026-01-28T19:48:28.701824Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

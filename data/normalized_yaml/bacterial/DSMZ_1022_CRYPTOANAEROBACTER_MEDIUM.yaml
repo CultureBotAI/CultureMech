@@ -40,6 +40,9 @@ ingredients:
   concentration:
     value: '0.996016'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000498008'
@@ -262,3 +265,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1022'
+- timestamp: '2026-01-28T19:48:23.906649Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

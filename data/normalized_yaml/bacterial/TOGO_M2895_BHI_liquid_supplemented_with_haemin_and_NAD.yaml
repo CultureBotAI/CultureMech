@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:50385
+    label: Haemin
 - preferred_term: NAD
   concentration:
     value: '2'
@@ -34,3 +37,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2895'
+- timestamp: '2026-01-28T19:48:43.306361Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

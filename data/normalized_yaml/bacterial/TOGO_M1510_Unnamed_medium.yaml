@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '5'
@@ -18,6 +21,9 @@ ingredients:
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
 media_term:
   preferred_term: TOGO Medium M1510
   term:
@@ -35,3 +41,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1510'
+- timestamp: '2026-01-28T19:48:41.901176Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

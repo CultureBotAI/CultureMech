@@ -9,11 +9,17 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2511
+    label: agarose
 - preferred_term: water
   concentration:
     value: '900'
     unit: G_PER_L
   notes: 'Role: Solvating media'
+  term:
+    id: CHEBI:15377
+    label: Water
 - preferred_term: Leptospira Medium Base EMJH (Difco)
   concentration:
     value: '2.3'
@@ -38,3 +44,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2409'
+- timestamp: '2026-01-28T19:48:28.541346Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

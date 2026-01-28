@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.06'
@@ -33,12 +36,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '4'
@@ -51,11 +60,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Sodium citrate
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: 6.0% Sodium lactate solution (filter--sterilized)
   concentration:
     value: '100'
@@ -80,3 +95,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M670'
+- timestamp: '2026-01-28T19:48:26.738680Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

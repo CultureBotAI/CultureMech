@@ -10,6 +10,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: tryptic soy agar (Merck KGaA, Darmstadt, Germany)
 media_term:
   preferred_term: TOGO Medium M2411
@@ -24,3 +27,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2411'
+- timestamp: '2026-01-28T19:48:10.515681Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

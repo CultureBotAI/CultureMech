@@ -9,6 +9,9 @@ ingredients:
     value: '8'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent'
+  term:
+    id: CHEBI:2682
+    label: Amphotericin B
 - preferred_term: calf blood
   concentration:
     value: '10'
@@ -47,3 +50,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2854'
+- timestamp: '2026-01-28T19:48:29.227425Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Acid-hydrolyzed casein
   concentration:
     value: '1'
@@ -25,23 +28,35 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Nicotinic acid
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
 - preferred_term: Pantothenic acid
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:7916
+    label: pantothenic acid
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '10'
@@ -77,3 +92,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2788'
+- timestamp: '2026-01-28T19:48:34.298104Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

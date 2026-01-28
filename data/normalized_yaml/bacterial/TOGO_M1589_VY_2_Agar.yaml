@@ -10,17 +10,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '1.36'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: Vitamin B12
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Baker's yeast
   concentration:
     value: '5'
@@ -33,6 +42,9 @@ ingredients:
   notes: 'Role: Solidifying component'
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 media_term:
   preferred_term: TOGO Medium M1589
   term:
@@ -50,3 +62,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1589'
+- timestamp: '2026-01-28T19:48:22.722014Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

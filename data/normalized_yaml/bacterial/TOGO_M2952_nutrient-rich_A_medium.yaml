@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.5'
@@ -27,12 +30,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: FeSO4 · 7H2O
   concentration:
     value: '6'
@@ -44,12 +53,18 @@ ingredients:
     value: '0.2'
     unit: MG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: (NH4)2SO4
   concentration:
     value: '7'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: MnSO4 · H2O
   concentration:
     value: '4.2'
@@ -61,6 +76,9 @@ ingredients:
     value: '0.2'
     unit: MG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
 - preferred_term: chloramphenicol (if needed)
   concentration:
     value: '5'
@@ -79,6 +97,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: gentamicin (if needed)
   concentration:
     value: '50'
@@ -90,6 +111,9 @@ ingredients:
     value: '7'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: (NH2)2CO
   concentration:
     value: '2'
@@ -108,3 +132,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2952'
+- timestamp: '2026-01-28T19:48:28.270375Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

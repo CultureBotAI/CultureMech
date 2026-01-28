@@ -50,6 +50,9 @@ ingredients:
   concentration:
     value: '3.96396'
     unit: G_PER_L
+  term:
+    id: CHEBI:184335
+    label: ''
 - preferred_term: NaHCO3
   term:
     id: CHEBI:32139
@@ -252,3 +255,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J600'
+- timestamp: '2026-01-28T19:48:36.830871Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

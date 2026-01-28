@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '26.64'
@@ -22,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:14258
+    label: ''
 - preferred_term: Modified UBS solution (see Medium [M896])
   concentration:
     value: '50'
@@ -29,6 +35,9 @@ ingredients:
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: 1.0 M FeSO4 solution (pH 2.0)
   concentration:
     value: '10'
@@ -61,3 +70,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M898'
+- timestamp: '2026-01-28T19:48:29.374657Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

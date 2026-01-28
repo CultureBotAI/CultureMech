@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '1'
@@ -22,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: FeCl3・6H2O
   concentration:
     value: '2'
@@ -40,11 +46,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto peptone (BD-Difco)
   concentration:
     value: '10'
@@ -52,6 +64,9 @@ ingredients:
   notes: 'Properties: Undefined component'
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
 media_term:
   preferred_term: TOGO Medium M706
   term:
@@ -69,3 +84,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M706'
+- timestamp: '2026-01-28T19:48:27.457484Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

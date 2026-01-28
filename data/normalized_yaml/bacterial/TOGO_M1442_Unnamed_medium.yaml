@@ -16,12 +16,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
     component, Inorganic compound'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Glycerol
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Press yeast
   concentration:
     value: '30'
@@ -33,6 +39,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -75,3 +84,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1442'
+- timestamp: '2026-01-28T19:48:24.532705Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

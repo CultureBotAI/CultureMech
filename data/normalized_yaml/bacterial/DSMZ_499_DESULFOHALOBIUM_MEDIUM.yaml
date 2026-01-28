@@ -86,6 +86,9 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:232798
+    label: ''
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
@@ -202,3 +205,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 499'
+- timestamp: '2026-01-28T19:48:29.288584Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

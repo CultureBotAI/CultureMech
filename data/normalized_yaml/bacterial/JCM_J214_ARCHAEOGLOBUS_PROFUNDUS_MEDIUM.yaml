@@ -78,6 +78,9 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
   term:
     id: CHEBI:86149
@@ -211,3 +214,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J214'
+- timestamp: '2026-01-28T19:48:30.449809Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

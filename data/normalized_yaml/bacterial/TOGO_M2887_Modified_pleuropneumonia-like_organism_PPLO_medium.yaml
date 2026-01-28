@@ -27,6 +27,9 @@ ingredients:
 - preferred_term: Penicillin
   notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:17334
+    label: Penicillin
 media_term:
   preferred_term: TOGO Medium M2887
   term:
@@ -40,3 +43,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2887'
+- timestamp: '2026-01-28T19:48:26.802884Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -17,10 +17,16 @@ ingredients:
   concentration:
     value: '20.0'
     unit: G_PER_L
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15.0'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -30,11 +36,15 @@ preparation_steps:
   description: Adjust pH to 7.0
 - step_number: 3
   action: AUTOCLAVE
-  description: "Autoclave at 121\xB0C for 15 minutes"
+  description: Autoclave at 121°C for 15 minutes
 curation_history:
 - timestamp: '2026-01-24T16:10:12.689728Z'
   curator: nbrc-import
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. No. 802, URL: https://www.nite.go.jp/en/nbrc/cultures/media/802.html.
     Imported via ethical web scraping.'
+- timestamp: '2026-01-28T19:48:11.589602Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 notes: General purpose medium for yeasts

@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '0.2'
@@ -22,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '10'
@@ -33,6 +39,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '10'
@@ -45,6 +54,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:18222
+    label: xylose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -72,3 +84,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M2'
+- timestamp: '2026-01-28T19:48:38.337194Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

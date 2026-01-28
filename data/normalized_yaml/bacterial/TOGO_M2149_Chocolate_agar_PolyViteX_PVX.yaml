@@ -10,18 +10,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Dipotassium phosphate
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Hemoglobin
   concentration:
     value: '10'
@@ -32,11 +41,17 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Corn starch
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: PolyViteX
   concentration:
     value: '10'
@@ -70,3 +85,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M2149'
+- timestamp: '2026-01-28T19:48:17.046534Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

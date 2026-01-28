@@ -78,6 +78,9 @@ ingredients:
   concentration:
     value: '0.0098912'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: PIPES
   term:
     id: CHEBI:39033
@@ -192,3 +195,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1297'
+- timestamp: '2026-01-28T19:48:09.542309Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

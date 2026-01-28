@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
 - preferred_term: Tryptone
   concentration:
     value: '5'
@@ -41,6 +44,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:63076
+    label: ''
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -78,3 +84,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 775'
+- timestamp: '2026-01-28T19:48:08.006319Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

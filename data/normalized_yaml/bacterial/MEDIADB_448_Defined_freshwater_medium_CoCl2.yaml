@@ -103,6 +103,9 @@ ingredients:
   concentration:
     value: '0.0004863'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Calcium pantothenate
   term:
     id: CHEBI:31345
@@ -129,6 +132,9 @@ ingredients:
   concentration:
     value: '1.341'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -140,6 +146,9 @@ ingredients:
   concentration:
     value: '29.76'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -189,6 +198,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 448, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:29.112333Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 448
   term:

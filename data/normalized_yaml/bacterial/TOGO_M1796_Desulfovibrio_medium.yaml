@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -27,24 +33,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
     component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.5'
@@ -57,12 +75,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Sodium lactate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Thioglycolate solution*
   concentration:
     value: '10'
@@ -75,17 +99,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 media_term:
   preferred_term: TOGO Medium M1796
   term:
@@ -103,3 +136,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1796'
+- timestamp: '2026-01-28T19:48:18.500302Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,42 +10,63 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: NaCl
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: CaCO3
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
     compound, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: CaSO4·2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32583
+    label: calcium sulfate dihydrate
 - preferred_term: Mannitol
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:29864
+    label: mannitol
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -68,3 +89,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1443'
+- timestamp: '2026-01-28T19:48:23.821559Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

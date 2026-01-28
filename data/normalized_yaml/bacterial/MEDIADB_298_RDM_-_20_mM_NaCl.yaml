@@ -38,6 +38,9 @@ ingredients:
   concentration:
     value: '0.528'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Molybdic acid ammonium salt tetrahydrate
   concentration:
     value: 3e-06
@@ -299,6 +302,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 298, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:41.936693Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 298
   term:

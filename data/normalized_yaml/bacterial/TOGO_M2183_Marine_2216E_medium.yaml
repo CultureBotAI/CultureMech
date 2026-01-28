@@ -10,6 +10,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
@@ -21,12 +24,18 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FePO4
   concentration:
     value: '0.01'
     unit: PERCENT_W_V
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:131371
+    label: iron(3+) phosphate
 - preferred_term: Tryptone
   concentration:
     value: '0.5'
@@ -45,3 +54,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2183'
+- timestamp: '2026-01-28T19:48:37.436623Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -9,6 +9,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:46756
+    label: HEPES
 - preferred_term: CaCl2 solution
   concentration:
     value: '600'
@@ -43,3 +46,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M3294'
+- timestamp: '2026-01-28T19:48:08.449016Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

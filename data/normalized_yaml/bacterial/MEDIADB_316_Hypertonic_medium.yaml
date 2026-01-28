@@ -46,6 +46,9 @@ ingredients:
   concentration:
     value: '22.99'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Sodium chloride
   term:
     id: CHEBI:26710
@@ -57,6 +60,9 @@ ingredients:
   concentration:
     value: '0.4695'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Tromethamine
   concentration:
     value: '99.06'
@@ -77,6 +83,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 316, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:14.837053Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 316
   term:

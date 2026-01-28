@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: NaNO3
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:63005
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '1'
@@ -55,3 +61,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M770'
+- timestamp: '2026-01-28T19:48:30.423157Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

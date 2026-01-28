@@ -16,6 +16,9 @@ ingredients:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Todd–Hewitt (TH) broth (Difco)
   concentration:
     value: '1'
@@ -35,3 +38,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2909'
+- timestamp: '2026-01-28T19:48:26.252585Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

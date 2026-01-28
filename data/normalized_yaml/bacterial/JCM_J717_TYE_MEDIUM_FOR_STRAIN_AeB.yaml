@@ -64,6 +64,9 @@ ingredients:
   concentration:
     value: '1.96464'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -243,3 +246,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J717'
+- timestamp: '2026-01-28T19:48:18.993979Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

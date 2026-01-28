@@ -86,6 +86,9 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
+  term:
+    id: CHEBI:64700
+    label: ''
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -266,3 +269,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1218'
+- timestamp: '2026-01-28T19:48:44.511995Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

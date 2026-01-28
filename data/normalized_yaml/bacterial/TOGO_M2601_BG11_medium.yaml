@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
 - preferred_term: CaCl2. 2H2O
   concentration:
     value: '0.036'
@@ -22,12 +25,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: NaNO3
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
 - preferred_term: K2HPO4.3H2O
   concentration:
     value: '0.04'
@@ -40,6 +49,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
 - preferred_term: Deionized water
   concentration:
     value: '1000'
@@ -51,6 +63,9 @@ ingredients:
     value: '0.006'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: EDTA (disodium magnesium salt)
   concentration:
     value: '0.001'
@@ -72,6 +87,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2.4H2O
   concentration:
     value: '1.81'
@@ -84,6 +102,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: CuSO4 .5H2O
   concentration:
     value: '0.079'
@@ -115,3 +136,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2601'
+- timestamp: '2026-01-28T19:48:07.903705Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

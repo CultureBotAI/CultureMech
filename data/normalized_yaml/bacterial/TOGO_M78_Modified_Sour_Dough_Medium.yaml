@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '3'
@@ -21,12 +24,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Maltose
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Trypticase peptone (BD-BBL)
   concentration:
     value: '6'
@@ -52,3 +61,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M78'
+- timestamp: '2026-01-28T19:48:10.233365Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

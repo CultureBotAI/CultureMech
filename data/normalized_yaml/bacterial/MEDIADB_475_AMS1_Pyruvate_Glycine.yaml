@@ -24,6 +24,9 @@ ingredients:
   concentration:
     value: '6.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
 - preferred_term: 4-Amino-5-hydroxymethyl-2-methylpyrimidine
   concentration:
     value: 1e-05
@@ -45,6 +48,9 @@ ingredients:
   concentration:
     value: '27.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Nickel chloride
   concentration:
     value: 1e-06
@@ -60,6 +66,9 @@ ingredients:
   concentration:
     value: '9.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: '''Iron(III'
   concentration:
     value: '0.000117'
@@ -128,6 +137,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 475, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:33.473703Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 475
   term:

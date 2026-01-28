@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Tween 80
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
   notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: BHI (HiMedia)
   concentration:
     value: '37'
@@ -33,3 +39,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2889'
+- timestamp: '2026-01-28T19:48:14.003100Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

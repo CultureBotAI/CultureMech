@@ -44,6 +44,9 @@ ingredients:
   concentration:
     value: '0.0657895'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Co(NO3)2 x 6 H2O
   term:
     id: CHEBI:86214
@@ -148,3 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 527'
+- timestamp: '2026-01-28T19:48:19.845972Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Na2MoO4 · 2H2O
   concentration:
     value: '0.08'
@@ -28,6 +31,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: MnCl2 · 4H2O
   concentration:
     value: '0.5'
@@ -46,6 +52,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
 - preferred_term: FeCl3 · 6H2O
   concentration:
     value: '0.05'
@@ -58,18 +67,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
 - preferred_term: Na2SO4
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: KNO3
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:17632
+    label: nitrate
 - preferred_term: Ca(NO3)2 · 4H2O
   concentration:
     value: '5'
@@ -87,6 +105,9 @@ ingredients:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:39065
+    label: Bicine
 - preferred_term: Na2EDTA· 2H2O
   concentration:
     value: '0.5'
@@ -107,3 +128,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2368'
+- timestamp: '2026-01-28T19:48:37.285541Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: m TGE BROTH MEDIUM (see Medium [M828])
   concentration:
     value: '1'
@@ -17,6 +20,9 @@ ingredients:
 - preferred_term: KH2PO4
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 media_term:
   preferred_term: TOGO Medium M887
   term:
@@ -34,3 +40,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M887'
+- timestamp: '2026-01-28T19:48:15.763935Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -107,6 +107,9 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: CoCl2 x 6 H2O
   term:
     id: CHEBI:35696
@@ -251,3 +254,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1238'
+- timestamp: '2026-01-28T19:48:12.006758Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

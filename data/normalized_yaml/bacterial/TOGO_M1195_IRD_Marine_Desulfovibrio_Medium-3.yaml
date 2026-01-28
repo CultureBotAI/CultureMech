@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '0.5'
@@ -21,6 +24,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.15'
@@ -33,18 +39,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: NH4Cl
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
     compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.4'
@@ -57,12 +72,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Na2SO4
   concentration:
     value: '2.8'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -86,6 +107,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: N2
   notes: 'Properties: ガス'
 - preferred_term: 5% Na2S・9H2O solution
@@ -111,3 +135,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M1195'
+- timestamp: '2026-01-28T19:48:31.577610Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

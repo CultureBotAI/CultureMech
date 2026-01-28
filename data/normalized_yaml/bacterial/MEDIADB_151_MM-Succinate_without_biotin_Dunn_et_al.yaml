@@ -42,6 +42,9 @@ ingredients:
   concentration:
     value: '6.50468'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -58,6 +61,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 151, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:42.803845Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 151
   term:

@@ -10,24 +10,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NH4Cl
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Glycerol
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Calcium malate
   concentration:
     value: '10'
@@ -39,6 +51,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M54
   term:
@@ -56,3 +71,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M54'
+- timestamp: '2026-01-28T19:48:40.411883Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

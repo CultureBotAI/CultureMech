@@ -10,18 +10,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: NaNO3
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
 - preferred_term: Sulfur (powder)
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:14258
+    label: ''
 - preferred_term: Na2S2O3・5H2O
   concentration:
     value: '1'
@@ -37,6 +46,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
 - preferred_term: Hydrogen gas
@@ -58,3 +70,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M419'
+- timestamp: '2026-01-28T19:48:33.884191Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

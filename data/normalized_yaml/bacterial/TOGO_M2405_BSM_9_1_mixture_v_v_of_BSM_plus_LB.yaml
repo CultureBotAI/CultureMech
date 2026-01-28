@@ -18,6 +18,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 . 7H2O
   concentration:
     value: '0.25'
@@ -30,12 +33,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: KH2PO4
   concentration:
     value: '1.36'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: FeSO4 . 7H2O
   concentration:
     value: '0.28'
@@ -54,6 +63,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
 - preferred_term: CaCl2 . 7H2O
   concentration:
     value: '10.69'
@@ -65,6 +77,9 @@ ingredients:
     value: '1.5'
     unit: PERCENT_W_V
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 media_term:
   preferred_term: TOGO Medium M2405
   term:
@@ -78,3 +93,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2405'
+- timestamp: '2026-01-28T19:48:37.572303Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

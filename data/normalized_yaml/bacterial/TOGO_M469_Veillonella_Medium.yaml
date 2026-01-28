@@ -10,36 +10,54 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
     component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Putrescine
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:326268
+    label: 1,4-butanediammonium
 - preferred_term: Sodium DL-lactate
   concentration:
     value: '7.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
 - preferred_term: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '3'
@@ -55,8 +73,14 @@ ingredients:
     value: '0.75'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 - preferred_term: K2CO3
   notes: 'Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:131526
+    label: potassium carbonate
 media_term:
   preferred_term: TOGO Medium M469
   term:
@@ -74,3 +98,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M469'
+- timestamp: '2026-01-28T19:48:10.682071Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

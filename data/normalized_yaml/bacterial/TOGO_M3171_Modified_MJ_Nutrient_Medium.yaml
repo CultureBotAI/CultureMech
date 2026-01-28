@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
     value: '1'
@@ -21,51 +24,78 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '2.9'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: KH2PO4
   concentration:
     value: '1.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
     component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2·6H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Biotin
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: p-Aminobenzoic Acid
   concentration:
     value: '40'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
 - preferred_term: Sodium Citrate
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
 - preferred_term: MOPS
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:39074
+    label: MOPS
 - preferred_term: FeSO4·6H2O
   concentration:
     value: '1.25'
@@ -78,16 +108,25 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
 - preferred_term: Cyanocobalamin
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Vitamin'
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
 - preferred_term: Urea
   concentration:
     value: '2.1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:16199
+    label: urea
 media_term:
   preferred_term: TOGO Medium M3171
   term:
@@ -101,3 +140,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M3171'
+- timestamp: '2026-01-28T19:48:32.454188Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

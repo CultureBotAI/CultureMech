@@ -10,30 +10,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: K2HPO4
   concentration:
     value: '0.15'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Tween 80
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MgCl2
   concentration:
     value: '0.05'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: glucose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: yeast extract (Difco)
   concentration:
     value: '0.25'
@@ -67,3 +82,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2989'
+- timestamp: '2026-01-28T19:48:19.135049Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

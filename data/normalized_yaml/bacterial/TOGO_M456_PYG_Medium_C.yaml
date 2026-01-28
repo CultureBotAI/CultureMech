@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: L--cysteine・HCl・H2O
   concentration:
     value: '0.5'
@@ -38,3 +41,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M456'
+- timestamp: '2026-01-28T19:48:11.712920Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -21,35 +21,53 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: Distilled water
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: hemin
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Distilled water
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: ethanol
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: menadione
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:28869
+    label: Menadione
 media_term:
   preferred_term: TOGO Medium M470
   term:
@@ -67,3 +85,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M470'
+- timestamp: '2026-01-28T19:48:25.958239Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

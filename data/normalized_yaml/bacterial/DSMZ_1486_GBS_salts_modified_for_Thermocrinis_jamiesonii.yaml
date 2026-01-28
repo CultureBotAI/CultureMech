@@ -78,6 +78,9 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
 - preferred_term: Na2-EDTA
   term:
     id: CHEBI:64734
@@ -163,3 +166,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1486'
+- timestamp: '2026-01-28T19:48:15.244768Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '6.78766'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '3.43424'
@@ -62,6 +65,9 @@ ingredients:
   concentration:
     value: '2.14617'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Potassium dihydrogen phosphate
   concentration:
     value: '3.67414'
@@ -135,6 +141,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 144, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:06.782970Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 144
   term:

@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast Extract
   concentration:
     value: '2'
@@ -21,12 +24,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Hemin
   concentration:
     value: '0.005'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Sheep Blood, defibrinated
   concentration:
     value: '5'
@@ -38,16 +47,25 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Vitamin K1
   concentration:
     value: '0.01'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Sodium Bisulfite
   concentration:
     value: '0.1'
@@ -76,3 +94,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2694'
+- timestamp: '2026-01-28T19:48:16.049710Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,40 +10,61 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: L-Leucine
   concentration:
     value: '60'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:15603
+    label: L-leucine
 - preferred_term: L-Tryptophan
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:16828
+    label: L-tryptophan
 - preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: L-Histidine
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:15971
+    label: L-histidine
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: L-Methionine
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Nitrogen source'
+  term:
+    id: CHEBI:16643
+    label: L-methionine
 - preferred_term: Bacto-Yeast Nitrogen Base w/o Amino acids (Difco)
   concentration:
     value: '6.7'
@@ -66,3 +87,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1436'
+- timestamp: '2026-01-28T19:48:11.927761Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

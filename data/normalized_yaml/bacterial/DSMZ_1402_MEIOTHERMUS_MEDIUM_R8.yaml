@@ -19,6 +19,9 @@ ingredients:
   concentration:
     value: '5.1'
     unit: G_PER_L
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -53,3 +56,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1402'
+- timestamp: '2026-01-28T19:48:26.828439Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

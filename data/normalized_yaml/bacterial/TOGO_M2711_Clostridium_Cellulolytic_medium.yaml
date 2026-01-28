@@ -21,24 +21,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: Resazurin
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
     compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: MgCl2 x 6H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: K2HPO4 x 3H2O
   concentration:
     value: '2.9'
@@ -51,12 +63,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:18246
+    label: Cellulose
 - preferred_term: FeSO4
   concentration:
     value: '1.25'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
+  term:
+    id: CHEBI:75832
+    label: iron(2+) sulfate (anhydrous)
 - preferred_term: DI Water
   concentration:
     value: '1'
@@ -85,3 +103,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2711'
+- timestamp: '2026-01-28T19:48:17.214152Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

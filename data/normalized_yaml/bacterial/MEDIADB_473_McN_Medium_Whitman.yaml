@@ -35,10 +35,16 @@ ingredients:
   concentration:
     value: '59.52'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
 - preferred_term: Potassium chloride
   concentration:
     value: '4.493'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Resazurin
   term:
     id: CHEBI:8806
@@ -108,6 +114,9 @@ ingredients:
   concentration:
     value: '13.53'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Cobalt chloride
   concentration:
     value: '0.004203'
@@ -152,6 +161,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 473, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:14.528452Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 473
   term:

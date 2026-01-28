@@ -15,17 +15,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Tap water
   concentration:
     value: '1000'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
 - preferred_term: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Meat extract
   concentration:
     value: '5'
@@ -36,6 +45,9 @@ ingredients:
     value: '2.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Peptone
   concentration:
     value: '7.5'
@@ -55,3 +67,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2316'
+- timestamp: '2026-01-28T19:48:24.577695Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

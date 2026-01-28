@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '2'
@@ -33,18 +36,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Resazurin
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
     component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '0.5'
@@ -57,24 +69,39 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
 - preferred_term: Sodium lactate
   concentration:
     value: '2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
 - preferred_term: Ascorbic acid
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
 - preferred_term: N2
   notes: 'Properties: Gas'
 media_term:
@@ -94,3 +121,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M384'
+- timestamp: '2026-01-28T19:48:10.286223Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

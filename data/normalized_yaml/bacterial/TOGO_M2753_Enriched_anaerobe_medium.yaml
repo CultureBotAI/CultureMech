@@ -15,6 +15,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -26,27 +29,42 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Hemin
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Vitamin K1
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Trypticase
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
 - preferred_term: Oxoid Lab-Lemco Powder
   concentration:
     value: '20'
@@ -60,6 +78,9 @@ ingredients:
 - preferred_term: Ethanol
   notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:16236
+    label: ethanol
 - preferred_term: N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Carbon dioxide gas
@@ -83,3 +104,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2753'
+- timestamp: '2026-01-28T19:48:33.866227Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

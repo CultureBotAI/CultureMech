@@ -25,6 +25,9 @@ ingredients:
     value: '6'
     unit: G_PER_L
   notes: ' ( vitamin assay)'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -46,3 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J219'
+- timestamp: '2026-01-28T19:48:43.135838Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -10,23 +10,35 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Sodium acetate
   concentration:
     value: '0.3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: CaCO3
   concentration:
     value: '0.02'
     unit: G_PER_L
   notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
     compound, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '0.6'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Casamino acids (BD-Difco)
   concentration:
     value: '0.3'
@@ -46,6 +58,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '10'
@@ -64,12 +79,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: (NH4)2SO4
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: 0.5 M Na2HPO4--NaH2PO4 buffer (pH 7.3)
   concentration:
     value: '2'
@@ -90,6 +111,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Simple component, Defined component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: FeCl3・6H2O
   concentration:
     value: '0.15'
@@ -113,3 +137,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M1100'
+- timestamp: '2026-01-28T19:48:06.840686Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

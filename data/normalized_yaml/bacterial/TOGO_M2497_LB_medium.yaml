@@ -10,11 +10,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: H2O
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media'
+  term:
+    id: CHEBI:15377
+    label: water
 - preferred_term: Bacto-yeast
   concentration:
     value: '5'
@@ -25,6 +31,9 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
 media_term:
   preferred_term: TOGO Medium M2497
   term:
@@ -38,3 +47,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2497'
+- timestamp: '2026-01-28T19:48:14.409408Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

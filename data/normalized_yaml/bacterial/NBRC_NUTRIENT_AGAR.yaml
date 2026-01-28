@@ -17,17 +17,24 @@ ingredients:
   concentration:
     value: '15.0'
     unit: G_PER_L
+  term:
+    id: CHEBI:2509
+    label: agar
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
   description: Dissolve all ingredients in 1000 ml distilled water
 - step_number: 2
   action: AUTOCLAVE
-  description: "Autoclave at 121\xB0C for 20 minutes"
+  description: Autoclave at 121°C for 20 minutes
 curation_history:
 - timestamp: '2026-01-24T16:10:12.690885Z'
   curator: nbrc-import
   action: Imported from NBRC
   notes: 'Source: NBRC, Media No. No. 1, URL: https://www.nite.go.jp/en/nbrc/cultures/media/1.html.
     Imported via ethical web scraping.'
+- timestamp: '2026-01-28T19:48:21.502301Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 notes: General purpose medium for bacteria

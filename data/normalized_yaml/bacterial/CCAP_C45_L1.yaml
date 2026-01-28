@@ -111,6 +111,9 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+  term:
+    id: CHEBI:75249
+    label: ''
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -159,3 +162,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C45'
+- timestamp: '2026-01-28T19:48:33.873611Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

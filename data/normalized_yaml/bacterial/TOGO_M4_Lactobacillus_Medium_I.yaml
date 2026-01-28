@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Tween 80
   concentration:
     value: '50'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: Tomato juice, filtered, pH 7.0
   concentration:
     value: '200'
@@ -27,17 +33,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:36218
+    label: beta-lactose
 - preferred_term: Glucose
   concentration:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '5'
@@ -75,3 +90,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M4'
+- timestamp: '2026-01-28T19:48:34.257506Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: Trisodium citrate
   term:
     id: CHEBI:53258
@@ -69,3 +72,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J166'
+- timestamp: '2026-01-28T19:48:28.147815Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

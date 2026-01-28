@@ -9,11 +9,17 @@ ingredients:
     value: '750'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Beef extract
   concentration:
     value: '3'
@@ -32,6 +38,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
 - preferred_term: air-dried garden soil
   concentration:
     value: '400'
@@ -54,3 +63,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M94'
+- timestamp: '2026-01-28T19:48:42.652658Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

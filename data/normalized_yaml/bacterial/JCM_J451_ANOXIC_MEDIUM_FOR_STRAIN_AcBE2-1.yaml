@@ -173,6 +173,9 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
@@ -223,3 +226,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J451'
+- timestamp: '2026-01-28T19:48:20.037016Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

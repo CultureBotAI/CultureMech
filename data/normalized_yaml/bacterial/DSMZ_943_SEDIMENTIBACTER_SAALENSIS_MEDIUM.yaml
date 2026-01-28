@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
+  term:
+    id: CHEBI:184335
+    label: ''
 - preferred_term: CaCl2 x 2 H2O
   term:
     id: CHEBI:86158
@@ -59,6 +62,9 @@ ingredients:
   concentration:
     value: '2.11'
     unit: G_PER_L
+  term:
+    id: CHEBI:31235
+    label: ''
 - preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
@@ -222,3 +228,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 943'
+- timestamp: '2026-01-28T19:48:13.498538Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

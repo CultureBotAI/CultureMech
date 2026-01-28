@@ -20,24 +20,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Starch
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Complex
     component'
+  term:
+    id: CHEBI:85248
+    label: gellan gum
 - preferred_term: Cellobiose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
 - preferred_term: Maltose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Rumen fluid
   concentration:
     value: '150'
@@ -49,11 +61,17 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '30'
@@ -68,6 +86,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
 - preferred_term: Nitrogen gas
   notes: 'Properties: Gas'
 - preferred_term: NaOH (1N)
@@ -101,3 +122,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2713'
+- timestamp: '2026-01-28T19:48:28.005555Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

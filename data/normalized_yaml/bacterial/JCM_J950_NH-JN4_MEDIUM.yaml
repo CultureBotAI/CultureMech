@@ -71,6 +71,9 @@ ingredients:
   concentration:
     value: '0.001998'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '2.997'
@@ -188,3 +191,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J950'
+- timestamp: '2026-01-28T19:48:31.063040Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

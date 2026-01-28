@@ -22,18 +22,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Monopotassium Phosphate
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
 - preferred_term: Dipotassium Phosphate
   concentration:
     value: '4'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: DI Water
   concentration:
     value: '500'
@@ -45,6 +54,9 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: 'Proteose Peptone #3'
   concentration:
     value: '15'
@@ -76,3 +88,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2207'
+- timestamp: '2026-01-28T19:48:19.441792Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

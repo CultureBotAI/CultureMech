@@ -71,6 +71,9 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 - preferred_term: HCl
   term:
     id: CHEBI:17883
@@ -186,3 +189,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 765'
+- timestamp: '2026-01-28T19:48:28.802062Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

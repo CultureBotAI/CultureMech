@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Simple component,
     Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -21,6 +24,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.05'
@@ -33,6 +39,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.2'
@@ -45,12 +54,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
     Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: Sodium pyruvate
   concentration:
     value: '2.2'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Trace element solution SL8 (see Medium [M183])
   concentration:
     value: '1'
@@ -72,3 +87,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M185'
+- timestamp: '2026-01-28T19:48:31.376447Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

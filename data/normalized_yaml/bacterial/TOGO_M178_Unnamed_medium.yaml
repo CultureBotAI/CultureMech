@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:14258
+    label: ''
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.02'
@@ -22,6 +25,9 @@ ingredients:
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: CO2
   notes: 'Properties: Gas'
 media_term:
@@ -41,3 +47,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M178'
+- timestamp: '2026-01-28T19:48:13.231452Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

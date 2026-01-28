@@ -121,6 +121,9 @@ ingredients:
   concentration:
     value: '2.94'
     unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: FeCl3 x 6 H2O
   term:
     id: CHEBI:86254
@@ -145,3 +148,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J704'
+- timestamp: '2026-01-28T19:48:38.084217Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

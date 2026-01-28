@@ -9,6 +9,9 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:48923
+    label: Erythromycin
 - preferred_term: MRS medium (Difco)
   concentration:
     value: '1'
@@ -27,3 +30,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2490'
+- timestamp: '2026-01-28T19:48:28.000280Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

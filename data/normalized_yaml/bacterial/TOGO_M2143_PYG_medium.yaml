@@ -15,12 +15,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
 - preferred_term: Glycerol
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
 - preferred_term: Glycine betaine
   concentration:
     value: '1.25'
@@ -32,6 +38,9 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Peptone
   concentration:
     value: '3'
@@ -53,3 +62,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M2143'
+- timestamp: '2026-01-28T19:48:31.528873Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

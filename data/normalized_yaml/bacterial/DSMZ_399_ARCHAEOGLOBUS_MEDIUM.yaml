@@ -68,6 +68,9 @@ ingredients:
   concentration:
     value: '1.48221'
     unit: G_PER_L
+  term:
+    id: CHEBI:232798
+    label: ''
 - preferred_term: Fe(NH4)2(SO4)2 x 7 H2O
   term:
     id: CHEBI:131378
@@ -222,3 +225,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 399'
+- timestamp: '2026-01-28T19:48:17.503802Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

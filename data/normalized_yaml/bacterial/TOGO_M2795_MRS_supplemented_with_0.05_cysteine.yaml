@@ -10,6 +10,9 @@ ingredients:
     unit: PERCENT_W_V
   notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
 - preferred_term: MRS broth
   concentration:
     value: '1'
@@ -27,3 +30,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2795'
+- timestamp: '2026-01-28T19:48:18.488911Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

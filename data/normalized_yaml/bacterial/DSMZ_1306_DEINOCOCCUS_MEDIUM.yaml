@@ -86,6 +86,9 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 - preferred_term: Vitamin B12
   term:
     id: CHEBI:17439
@@ -185,3 +188,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1306'
+- timestamp: '2026-01-28T19:48:40.867140Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

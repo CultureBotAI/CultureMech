@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -66,3 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 376'
+- timestamp: '2026-01-28T19:48:37.849836Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

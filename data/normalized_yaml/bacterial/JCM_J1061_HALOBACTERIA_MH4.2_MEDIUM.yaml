@@ -21,6 +21,9 @@ ingredients:
   concentration:
     value: '9.90099'
     unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Yeast extract
   concentration:
     value: '19.802'
@@ -149,3 +152,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1061'
+- timestamp: '2026-01-28T19:48:27.267412Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

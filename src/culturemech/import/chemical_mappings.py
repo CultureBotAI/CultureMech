@@ -248,6 +248,11 @@ class ChemicalMapper:
             return None
 
         chebi_id = mapping['chebi_id']
+
+        # Convert to string if it's an integer (handle both string and int IDs)
+        if not isinstance(chebi_id, str):
+            chebi_id = str(chebi_id)
+
         # Ensure proper CURIE format
         if not chebi_id.startswith('CHEBI:'):
             chebi_id = f"CHEBI:{chebi_id}"

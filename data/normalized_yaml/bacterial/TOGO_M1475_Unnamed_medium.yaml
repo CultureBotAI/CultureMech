@@ -16,6 +16,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '10'
@@ -27,6 +30,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '0.05'
@@ -39,6 +45,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: MnSO4·nH2O
   concentration:
     value: '0.2'
@@ -50,6 +59,9 @@ ingredients:
     value: '3'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: Agar (if needed)*
   concentration:
     value: '20'
@@ -77,3 +89,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1475'
+- timestamp: '2026-01-28T19:48:33.083166Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -16,17 +16,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
     compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '50'
@@ -39,12 +48,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Simple component, Defined component,
     Organic compound'
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: hopped beer
   concentration:
     value: '1'
@@ -82,3 +97,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M426'
+- timestamp: '2026-01-28T19:48:38.569630Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

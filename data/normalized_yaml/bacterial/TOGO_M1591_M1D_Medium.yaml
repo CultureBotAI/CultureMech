@@ -10,30 +10,45 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Water
 - preferred_term: Sucrose
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Fructose
   concentration:
     value: '0.1'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
 - preferred_term: Phenol red
   concentration:
     value: '6'
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:31991
+    label: Phenol red
 - preferred_term: Sorbitol
   concentration:
     value: '7.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:30911
+    label: glucitol
 - preferred_term: Fetal bovine serum (heat-inactivated)
   concentration:
     value: '50'
@@ -45,6 +60,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Penicillin G (100,000 U/ml)
   concentration:
     value: '2.5'
@@ -86,3 +104,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M1591'
+- timestamp: '2026-01-28T19:48:22.927186Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

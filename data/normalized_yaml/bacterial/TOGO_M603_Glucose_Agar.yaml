@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -21,17 +24,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Inorganic
     compound, Defined component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Agar
   concentration:
     value: '15'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Bacto peptone
   concentration:
     value: '3'
@@ -54,3 +66,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M603'
+- timestamp: '2026-01-28T19:48:35.696796Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

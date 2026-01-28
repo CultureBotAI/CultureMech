@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '5'
@@ -27,17 +33,26 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
 - preferred_term: Tween 80
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
 - preferred_term: MnSO4·nH2O
   concentration:
     value: '0.05'
@@ -50,6 +65,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Nutrient source; Properties: Organic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
 - preferred_term: Gellan gum (if needed)
   concentration:
     value: '8'
@@ -61,6 +79,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
 - preferred_term: Meat extract
   concentration:
     value: '10'
@@ -87,3 +108,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M3049'
+- timestamp: '2026-01-28T19:48:36.236339Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

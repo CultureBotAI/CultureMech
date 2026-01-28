@@ -25,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
 - preferred_term: Tryptone
   concentration:
     value: '10'
@@ -45,3 +48,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2199'
+- timestamp: '2026-01-28T19:48:31.597263Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

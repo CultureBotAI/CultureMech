@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4・7H2O
   concentration:
     value: '7.4'
@@ -22,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1'
@@ -40,12 +46,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium succinate
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic
     compound'
+  term:
+    id: CHEBI:63675
+    label: sodium succinate (anhydrous)
 - preferred_term: Noble Agar (BD-Difco)
   concentration:
     value: '20'
@@ -77,3 +89,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M163'
+- timestamp: '2026-01-28T19:48:26.776556Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

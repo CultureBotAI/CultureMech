@@ -29,6 +29,9 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
 - preferred_term: MgSO4 x 7 H2O
   term:
     id: CHEBI:31795
@@ -79,3 +82,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J904'
+- timestamp: '2026-01-28T19:48:32.568265Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

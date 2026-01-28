@@ -61,6 +61,9 @@ ingredients:
   concentration:
     value: '5930'
     unit: G_PER_L
+  term:
+    id: CHEBI:183882
+    label: ''
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -132,3 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J438'
+- timestamp: '2026-01-28T19:48:42.593505Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

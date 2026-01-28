@@ -15,6 +15,9 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
 - preferred_term: Na2HPO4 x 12 H2O
   term:
     id: CHEBI:34683
@@ -114,3 +117,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 533'
+- timestamp: '2026-01-28T19:48:44.751998Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

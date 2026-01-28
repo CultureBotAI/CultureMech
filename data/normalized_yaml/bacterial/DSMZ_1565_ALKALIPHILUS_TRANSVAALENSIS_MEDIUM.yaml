@@ -48,6 +48,9 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
+  term:
+    id: CHEBI:77732
+    label: ''
 - preferred_term: Na2SO4
   term:
     id: CHEBI:32149
@@ -136,6 +139,9 @@ ingredients:
   concentration:
     value: '0.00990099'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -262,3 +268,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1565'
+- timestamp: '2026-01-28T19:48:14.740309Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

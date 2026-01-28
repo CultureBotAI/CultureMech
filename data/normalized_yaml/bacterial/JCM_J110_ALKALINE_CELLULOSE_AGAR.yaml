@@ -22,6 +22,9 @@ ingredients:
   concentration:
     value: '2.22222'
     unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
 - preferred_term: K2HPO4
   term:
     id: CHEBI:131527
@@ -83,3 +86,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J110'
+- timestamp: '2026-01-28T19:48:13.603269Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

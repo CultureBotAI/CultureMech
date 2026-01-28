@@ -23,6 +23,9 @@ ingredients:
   concentration:
     value: '27.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Sodium acetate
   term:
     id: CHEBI:32954
@@ -71,6 +74,9 @@ ingredients:
   concentration:
     value: '175.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
@@ -87,6 +93,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 175, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:15.638622Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 175
   term:

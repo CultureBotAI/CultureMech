@@ -70,6 +70,9 @@ ingredients:
   concentration:
     value: '0.0098912'
     unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
 - preferred_term: NH4Cl
   term:
     id: CHEBI:31206
@@ -204,3 +207,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1115'
+- timestamp: '2026-01-28T19:48:06.831769Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

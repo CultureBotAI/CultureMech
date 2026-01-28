@@ -10,12 +10,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
 - preferred_term: Sheep blood
   concentration:
     value: '50'
@@ -26,11 +32,17 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Corn Starch
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:28017
+    label: ''
 - preferred_term: Casein peptone
   concentration:
     value: '10'
@@ -59,3 +71,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: NBRC, ID: M2148'
+- timestamp: '2026-01-28T19:48:16.161875Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

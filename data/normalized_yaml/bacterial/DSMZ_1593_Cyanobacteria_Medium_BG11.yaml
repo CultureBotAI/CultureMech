@@ -32,6 +32,9 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
+  term:
+    id: CHEBI:32142
+    label: ''
 - preferred_term: Na-EDTA x 2 H2O
   term:
     id: CHEBI:64734
@@ -131,3 +134,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1593'
+- timestamp: '2026-01-28T19:48:07.861471Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

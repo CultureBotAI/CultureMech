@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '0.6'
@@ -26,6 +29,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Tris base
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:9754
+    label: tris
 media_term:
   preferred_term: TOGO Medium M938
   term:
@@ -43,3 +49,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M938'
+- timestamp: '2026-01-28T19:48:16.339601Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

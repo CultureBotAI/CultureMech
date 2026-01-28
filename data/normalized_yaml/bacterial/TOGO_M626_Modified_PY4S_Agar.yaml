@@ -9,12 +9,18 @@ ingredients:
     value: '10'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: hemin
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: PY4S AGAR (see Medium [M357])
   concentration:
     value: '1'
@@ -36,3 +42,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M626'
+- timestamp: '2026-01-28T19:48:39.767926Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

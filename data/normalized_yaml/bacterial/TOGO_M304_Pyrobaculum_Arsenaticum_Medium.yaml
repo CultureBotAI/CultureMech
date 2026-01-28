@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
     compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
 - preferred_term: Na2S・9H2O
   concentration:
     value: '0.5'
@@ -31,6 +34,9 @@ ingredients:
     value: '2'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
 - preferred_term: Modified Brock's salt base solution (see Medium [M156])
   concentration:
     value: '1'
@@ -38,6 +44,9 @@ ingredients:
 - preferred_term: H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
 - preferred_term: N2
   notes: 'Properties: Gas'
 media_term:
@@ -57,3 +66,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M304'
+- timestamp: '2026-01-28T19:48:34.726803Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

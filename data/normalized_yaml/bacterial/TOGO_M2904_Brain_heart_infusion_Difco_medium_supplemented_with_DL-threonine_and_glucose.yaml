@@ -17,6 +17,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
     compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
 - preferred_term: Brain heart infusion (Difco) medium
   concentration:
     value: '1'
@@ -36,3 +39,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2904'
+- timestamp: '2026-01-28T19:48:10.901058Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

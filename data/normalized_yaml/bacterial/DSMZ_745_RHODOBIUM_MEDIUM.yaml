@@ -123,6 +123,9 @@ ingredients:
   concentration:
     value: '0.036'
     unit: G_PER_L
+  term:
+    id: CHEBI:75213
+    label: ''
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
@@ -138,3 +141,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 745'
+- timestamp: '2026-01-28T19:48:12.892847Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

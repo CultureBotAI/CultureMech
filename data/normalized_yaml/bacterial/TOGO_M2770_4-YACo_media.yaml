@@ -12,6 +12,9 @@ ingredients:
 - preferred_term: maltose
   notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
     component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
 - preferred_term: Hydrogen gas
@@ -19,7 +22,13 @@ ingredients:
 - preferred_term: Vitamin B7
 - preferred_term: Vitamin B6
 - preferred_term: Vitamin B12
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
 - preferred_term: biotin (Sigma Aldrich, St Louis, MO, USA)
   notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: pyridoxal-phosphate (Sigma Aldrich)
@@ -51,3 +60,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2770'
+- timestamp: '2026-01-28T19:48:37.003151Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

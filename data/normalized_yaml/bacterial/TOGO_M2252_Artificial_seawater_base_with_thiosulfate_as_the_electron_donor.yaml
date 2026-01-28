@@ -16,6 +16,9 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:26977
+    label: Thiosulfate
 - preferred_term: O2
   notes: 'Properties: Gas'
 media_term:
@@ -31,3 +34,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2252'
+- timestamp: '2026-01-28T19:48:40.656861Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

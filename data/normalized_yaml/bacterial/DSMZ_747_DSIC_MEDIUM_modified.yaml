@@ -68,6 +68,9 @@ ingredients:
   concentration:
     value: '2.18295'
     unit: G_PER_L
+  term:
+    id: CHEBI:44115
+    label: ''
 - preferred_term: MgCl2 x 6 H2O
   term:
     id: CHEBI:86345
@@ -183,3 +186,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 747'
+- timestamp: '2026-01-28T19:48:07.383963Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

@@ -8,6 +8,9 @@ ingredients:
   concentration:
     value: '1.0'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
 - preferred_term: Boric acid
   term:
     id: CHEBI:33118
@@ -38,6 +41,9 @@ ingredients:
   concentration:
     value: '1.34'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
 - preferred_term: Ammonium chloride
   term:
     id: CHEBI:31206
@@ -107,6 +113,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 183, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:16.260213Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 183
   term:

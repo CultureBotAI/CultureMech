@@ -33,21 +33,33 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MES
   concentration:
     value: '1.95'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:39010
+    label: MES
 - preferred_term: Gellan gum
   concentration:
     value: '8'
     unit: G_PER_L
   notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
+  term:
+    id: CHEBI:85248
+    label: Gellan Gum
 - preferred_term: Xylan
   concentration:
     value: '0.5'
     unit: G_PER_L
   notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:37166
+    label: xylan
 - preferred_term: Selenite--tungstate solution (see Medium [M558])
   concentration:
     value: '1'
@@ -73,3 +85,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: JCM, ID: M1099'
+- timestamp: '2026-01-28T19:48:43.377924Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

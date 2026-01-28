@@ -10,24 +10,36 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
 - preferred_term: CaCl2·2H2O
   concentration:
     value: '20'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
 - preferred_term: K2HPO4
   concentration:
     value: '87'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na2MoO4.2H2O
   concentration:
     value: '100'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
 - preferred_term: MnCl2·4H2O
   concentration:
     value: '200'
@@ -46,12 +58,18 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: Ammonium sulfate
   concentration:
     value: '1.32'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: DI water
   concentration:
     value: '1'
@@ -100,6 +118,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: pH indicator; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:31991
+    label: Phenol red
 - preferred_term: DI Water
   concentration:
     value: '99'
@@ -117,6 +138,9 @@ ingredients:
     value: '6.91'
     unit: G_PER_L
   notes: 'Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:131526
+    label: potassium carbonate
 media_term:
   preferred_term: TOGO Medium M2371
   term:
@@ -132,3 +156,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2371'
+- timestamp: '2026-01-28T19:48:23.631159Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

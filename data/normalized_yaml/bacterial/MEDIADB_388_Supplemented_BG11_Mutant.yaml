@@ -90,6 +90,9 @@ ingredients:
   concentration:
     value: '1.887'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 - preferred_term: Sodium nitrate
   term:
     id: CHEBI:63005
@@ -129,6 +132,10 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 388, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:26.932814Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 media_term:
   preferred_term: MediaDB Medium 388
   term:

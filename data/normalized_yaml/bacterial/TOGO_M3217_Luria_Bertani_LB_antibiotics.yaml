@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
     Simple component'
+  term:
+    id: CHEBI:28971
+    label: Ampicillin
 - preferred_term: Kanamycin
   concentration:
     value: '50'
@@ -22,6 +25,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
     Organic compound'
+  term:
+    id: CHEBI:28077
+    label: Rifampicin
 - preferred_term: Tetracycline
   concentration:
     value: '15'
@@ -50,3 +56,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M3217'
+- timestamp: '2026-01-28T19:48:32.071791Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

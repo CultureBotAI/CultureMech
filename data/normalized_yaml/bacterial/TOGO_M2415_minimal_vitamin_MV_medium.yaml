@@ -10,6 +10,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
 - preferred_term: MgSO4 · 7H2O
   concentration:
     value: '0.5'
@@ -28,6 +31,9 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
 - preferred_term: Na2MoO4 · 2H2O
   concentration:
     value: '47'
@@ -40,6 +46,9 @@ ingredients:
     unit: MICROG_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
 - preferred_term: FeSO4·7H2O
   concentration:
     value: '2'
@@ -58,43 +67,67 @@ ingredients:
     unit: MICROG_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
 - preferred_term: biotin
   concentration:
     value: '20'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
 - preferred_term: thiamine hydrochloride
   concentration:
     value: '50'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: Thiamine hydrochloride
 - preferred_term: (NH4)2SO4
   concentration:
     value: '3.6'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
 - preferred_term: folic acid
   concentration:
     value: '20'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
 - preferred_term: vitamin B12
   concentration:
     value: '1'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
 - preferred_term: riboflavin
   concentration:
     value: '50'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
 - preferred_term: CuSO4·5H2O
   concentration:
     value: '40'
     unit: MICROG_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
 - preferred_term: MnSO4·H2O
   concentration:
     value: '200'
@@ -107,6 +140,9 @@ ingredients:
     unit: MICROG_PER_L
   notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
     component'
+  term:
+    id: CHEBI:17154
+    label: nicotinamide
 - preferred_term: NaH2PO4·H2O
   concentration:
     value: '2.8'
@@ -118,6 +154,9 @@ ingredients:
     value: '50'
     unit: MICROG_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
 media_term:
   preferred_term: TOGO Medium M2415
   term:
@@ -131,3 +170,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2415'
+- timestamp: '2026-01-28T19:48:10.764024Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

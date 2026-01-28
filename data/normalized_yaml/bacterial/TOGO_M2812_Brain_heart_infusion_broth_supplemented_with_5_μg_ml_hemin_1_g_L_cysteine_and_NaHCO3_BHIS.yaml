@@ -12,18 +12,27 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
     component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
 - preferred_term: Hemin
   concentration:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
     component'
+  term:
+    id: CHEBI:50385
+    label: hemin
 - preferred_term: Cysteine
   concentration:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
     component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
 - preferred_term: Brain heart infusion broth
   concentration:
     value: '1'
@@ -43,3 +52,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2812'
+- timestamp: '2026-01-28T19:48:07.150940Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

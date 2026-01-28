@@ -33,6 +33,9 @@ ingredients:
   concentration:
     value: '1.9403'
     unit: G_PER_L
+  term:
+    id: CHEBI:39005
+    label: 2-(N-morpholino)ethanesulfonic acid
 - preferred_term: Sodium resazurin
   concentration:
     value: '0.000497512'
@@ -281,3 +284,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 829'
+- timestamp: '2026-01-28T19:48:40.912167Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

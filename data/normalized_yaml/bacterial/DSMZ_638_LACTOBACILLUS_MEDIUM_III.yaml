@@ -59,6 +59,9 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
+  term:
+    id: CHEBI:63076
+    label: ''
 - preferred_term: K2HPO4 x 3 H2O
   term:
     id: CHEBI:131527
@@ -105,3 +108,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 638'
+- timestamp: '2026-01-28T19:48:16.726914Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings

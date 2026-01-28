@@ -47,6 +47,9 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
 preparation_steps:
 - step_number: 1
   action: MIX
@@ -58,3 +61,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1214'
+- timestamp: '2026-01-28T19:48:34.875134Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
