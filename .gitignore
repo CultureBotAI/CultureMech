@@ -85,6 +85,10 @@ data/raw/**/.DS_Store
 # Keep provenance documentation
 !data/raw/**/README.md
 
+# Keep MicrobeMediaParam chemical mappings (essential for CHEBI grounding)
+!data/raw/microbe-media-param/compound_mappings_strict_final.tsv
+!data/raw/microbe-media-param/compound_mappings_strict_final_hydrate.tsv
+
 # NBRC scraped HTML cache
 data/raw/nbrc/scraped/
 
