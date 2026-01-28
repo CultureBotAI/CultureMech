@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1500",
+  "medium_name": "Media for maintenance of infected amoeba cultures",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Media for maintenance of infected amoeba cultures",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trypticase Soy Broth with Yeast Extract (TSY)",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trypticase Soy Broth",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

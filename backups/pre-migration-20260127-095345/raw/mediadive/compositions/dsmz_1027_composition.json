@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1027",
+  "medium_name": "Medium dsmz_1027",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "yeast extract",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "soluble starch",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "agar",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

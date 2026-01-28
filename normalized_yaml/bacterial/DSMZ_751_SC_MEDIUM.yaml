@@ -1,0 +1,87 @@
+name: SC MEDIUM
+original_name: SC MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.6
+media_term:
+  preferred_term: DSMZ Medium 751
+  term:
+    id: mediadive.medium:751
+    label: SC MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium751.pdf'
+ingredients:
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (fraction V)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized
+    components:'
+- step_number: 2
+  action: MIX
+  description: For liquid medium, omit corn meal agar and change the phosphate concentration
+    to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.138863Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 751'

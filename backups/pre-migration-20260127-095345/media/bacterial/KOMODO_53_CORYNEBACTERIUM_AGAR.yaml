@@ -1,0 +1,21 @@
+name: CORYNEBACTERIUM AGAR
+original_name: CORYNEBACTERIUM AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 53
+  term:
+    id: komodo.medium:53
+    label: CORYNEBACTERIUM AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 53 | DSMZ Medium: 53 (mediadive.medium:53)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 53'

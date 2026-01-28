@@ -1,0 +1,63 @@
+{
+  "medium_id": "dsmz_632",
+  "medium_name": "Methanol",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Methanol",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 6 H2O",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fe(III)NH4-EDTA",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KNO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution (see below)",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.272,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2HPO4 x 12 H2O",
+      "concentration": 0.717,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Purified agar (e.g. Oxoid L28)",
+      "concentration": 12.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

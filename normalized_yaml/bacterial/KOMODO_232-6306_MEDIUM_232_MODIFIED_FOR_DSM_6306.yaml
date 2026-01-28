@@ -1,0 +1,20 @@
+name: MEDIUM 232 MODIFIED FOR DSM 6306
+original_name: MEDIUM 232 MODIFIED FOR DSM 6306
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 232_6306
+  term:
+    id: komodo.medium:232_6306
+    label: MEDIUM 232 MODIFIED FOR DSM 6306
+notes: 'Source: KOMODO ModelSEED | ID: 232_6306 | DSMZ Medium: 232 (mediadive.medium:232)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 232_6306'

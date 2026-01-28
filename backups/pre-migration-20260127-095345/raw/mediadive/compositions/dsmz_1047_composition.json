@@ -1,0 +1,99 @@
+{
+  "medium_id": "dsmz_1047",
+  "medium_name": "Yeast extract",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tryptone",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Liver Concentrate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Maltose",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fructose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Betaine Hydrochloride",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Diammonium Citrate",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Potassium Aspartate",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Magnesium Sulfate",
+      "concentration": 0.98,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Manganese Sulfate",
+      "concentration": 0.42,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Dipotassium Phosphate",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "N-Acetyl Glucosamine",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Potassium Glutamate",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 16.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

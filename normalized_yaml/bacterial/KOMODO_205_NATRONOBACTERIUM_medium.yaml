@@ -1,0 +1,21 @@
+name: NATRONOBACTERIUM medium
+original_name: NATRONOBACTERIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 205 | DSMZ Medium: 205
+  (mediadive.medium:205) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 205
+  term:
+    id: komodo.medium:205
+    label: NATRONOBACTERIUM medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 205'

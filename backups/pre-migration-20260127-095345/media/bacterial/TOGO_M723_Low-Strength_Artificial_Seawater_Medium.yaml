@@ -1,0 +1,56 @@
+name: Low-Strength Artificial Seawater Medium
+original_name: Low-Strength Artificial Seawater Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M723
+  term:
+    id: TOGO:M723
+    label: Low-Strength Artificial Seawater Medium
+notes: 'Source: https://togomedium.org/medium/M723
+
+  Original source: JCM - JCM_M701
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=701'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.601082Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M723'

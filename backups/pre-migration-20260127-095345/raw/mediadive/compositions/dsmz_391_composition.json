@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_391",
+  "medium_name": "Mineral solution 2xW",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral solution 2xW",
+      "concentration": 500.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Modified Wolin's mineral solution",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "LIP-solution",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-acetate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "TYC-solution",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Cysteine HCl x H2O",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

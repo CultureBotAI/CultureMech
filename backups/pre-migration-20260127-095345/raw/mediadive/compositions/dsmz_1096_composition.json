@@ -1,0 +1,51 @@
+{
+  "medium_id": "dsmz_1096",
+  "medium_name": "Solution A:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "PPLO-Broth",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution A:"
+    },
+    {
+      "name": "L-Cystein HCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution A:"
+    },
+    {
+      "name": "Fish-Sperm DNA",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution A:"
+    },
+    {
+      "name": "2% Yeastolate (BD)",
+      "concentration": 2.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution B:"
+    },
+    {
+      "name": "Isovitalex",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution B:"
+    },
+    {
+      "name": "Cool to room temperature and aseptically add solution B filter sterilised.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution B:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,45 @@
+name: GINGER BEER PLANT MEDIUM
+original_name: GINGER BEER PLANT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 267
+  term:
+    id: mediadive.medium:267
+    label: GINGER BEER PLANT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium267.pdf'
+ingredients:
+- preferred_term: Sugar beet molasses
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Ginger
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Inoculate with c. 20 ml of grains of "ginger beer plant".
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.621230Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 267'

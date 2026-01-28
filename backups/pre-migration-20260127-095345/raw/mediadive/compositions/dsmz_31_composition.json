@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_31",
+  "medium_name": "Medium dsmz_31",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Na-sesquicarbonate solution:",
+      "concentration": 4.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaHCO3",
+      "concentration": 5.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3 anhydrous",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

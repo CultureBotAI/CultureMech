@@ -1,0 +1,23 @@
+name: QUARTER STRENGTH MARINE BROTH 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1049
+  term:
+    id: JCM:J1049
+    label: QUARTER STRENGTH MARINE BROTH 2216
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1049'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.332030Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1049'

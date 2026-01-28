@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_775",
+  "medium_name": "Trypticase",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypticase",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tryptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-acetate",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "(NH4)2 citrate",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MnSO4 x H2O",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

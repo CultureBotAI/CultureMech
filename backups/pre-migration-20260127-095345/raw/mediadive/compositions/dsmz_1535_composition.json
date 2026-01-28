@@ -1,0 +1,51 @@
+{
+  "medium_id": "dsmz_1535",
+  "medium_name": "D (20.6%NACL)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCL",
+      "concentration": 206.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KCL",
+      "concentration": 0.37,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4x7H2O",
+      "concentration": 36.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2x2H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MnCl2",
+      "concentration": 0.013,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

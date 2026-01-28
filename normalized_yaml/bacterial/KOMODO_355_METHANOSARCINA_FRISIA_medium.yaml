@@ -1,0 +1,21 @@
+name: METHANOSARCINA FRISIA medium
+original_name: METHANOSARCINA FRISIA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 355
+  term:
+    id: komodo.medium:355
+    label: METHANOSARCINA FRISIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 355 | DSMZ Medium: 355 (mediadive.medium:355)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 355'

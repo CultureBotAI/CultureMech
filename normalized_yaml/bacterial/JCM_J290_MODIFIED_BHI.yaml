@@ -1,0 +1,32 @@
+name: MODIFIED BHI
+original_name: MODIFIED BHI
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J290
+  term:
+    id: mediadive.medium:J290
+    label: MODIFIED BHI
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=290'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 2
+  action: COOL
+  description: After autoclaving, cool to 50C and add aseptically 20% (final) sterile
+    defibrinated horse serum.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.197677Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J290'

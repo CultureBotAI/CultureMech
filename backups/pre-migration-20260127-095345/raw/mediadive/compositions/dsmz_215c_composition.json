@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_215c",
+  "medium_name": "FOR STRICT ANAEROBES",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Brain heart infusion (DIFCO)",
+      "concentration": 37.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Cysteine HCl x H2O",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

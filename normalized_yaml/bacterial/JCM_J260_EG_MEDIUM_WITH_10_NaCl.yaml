@@ -1,0 +1,29 @@
+name: EG MEDIUM WITH 10% NaCl
+original_name: EG MEDIUM WITH 10% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J260
+  term:
+    id: mediadive.medium:J260
+    label: EG MEDIUM WITH 10% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=260'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit
+    horse blood.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.110446Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J260'

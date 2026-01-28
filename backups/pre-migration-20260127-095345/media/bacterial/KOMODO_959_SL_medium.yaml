@@ -1,0 +1,21 @@
+name: SL medium
+original_name: SL medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 959
+  term:
+    id: komodo.medium:959
+    label: SL medium
+notes: 'Source: KOMODO ModelSEED | ID: 959 | DSMZ Medium: 959 (mediadive.medium:959)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 959'

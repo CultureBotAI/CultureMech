@@ -1,0 +1,239 @@
+name: HALODESULFURIARCHAEUM MEDIUM
+original_name: HALODESULFURIARCHAEUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1479
+  term:
+    id: mediadive.medium:1479
+    label: HALODESULFURIARCHAEUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1479.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '240'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sulfur powder
+  term:
+    id: CHEBI:14258
+    label: Sulfur powder
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.609909'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.420035'
+    unit: G_PER_L
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: Sodium formate
+  concentration:
+    value: '3.40035'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Disodium sulfide
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4
+  term:
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2
+  term:
+    id: CHEBI:7773015
+    label: MnCl2
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Thiamin
+  term:
+    id: CHEBI:18385
+    label: Thiamin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: PABA
+  term:
+    id: CHEBI:30753
+    label: PABA
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: B12
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: 'Prepare the liquid medium. Dispense the medium into Hungate tubes
+    or serum bottles under gassing with N2. Steam medium for 3h on each of 3 successive
+    days. Before inoculation add from sterile stock solutions:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 3.0-4.0 with HCl.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 4
+  action: AUTOCLAVE
+  description: 'Note: autoclave in closed bottles'
+- step_number: 5
+  action: MIX
+  description: '1: acidic solution (HCl, pH3; 100ml)'
+- step_number: 6
+  action: MIX
+  description: '2: basic solution (100ml 0.1N NaOH)'
+- step_number: 7
+  action: MIX
+  description: '3: Neutral solution in 100 ml demi water'
+- step_number: 8
+  action: MIX
+  description: '4: neutral solution in 100 ml demi water'
+- step_number: 9
+  action: MIX
+  description: Sterilize by filtration.
+- step_number: 10
+  action: MIX
+  description: Mix 1:1:1:1 just after addition or add separatlely, each 1ml/L.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.556838Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1479'

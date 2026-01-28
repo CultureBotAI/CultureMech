@@ -1,0 +1,27 @@
+name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM 15243,
+  DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763 and
+  DSM 22608
+original_name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176,
+  DSM 15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
+  17763 and DSM 22608
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.0-7.4
+media_term:
+  preferred_term: KOMODO Medium 339.1
+  term:
+    id: komodo.medium:339.1
+    label: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM
+      15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM
+      17763 and DSM 22608
+notes: 'Source: KOMODO ModelSEED | ID: 339.1 | DSMZ Medium: 339 (mediadive.medium:339)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 339.1'

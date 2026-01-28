@@ -1,0 +1,21 @@
+name: MY medium
+original_name: MY medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 753
+  term:
+    id: komodo.medium:753
+    label: MY medium
+notes: 'Source: KOMODO ModelSEED | ID: 753 | DSMZ Medium: 753 (mediadive.medium:753)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 753'

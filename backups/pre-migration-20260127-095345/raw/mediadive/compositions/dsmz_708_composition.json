@@ -1,0 +1,93 @@
+{
+  "medium_id": "dsmz_708",
+  "medium_name": "Na2HPO4 x 2 H2O",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Na2HPO4 x 2 H2O",
+      "concentration": 0.53,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.41,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.11,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2SO4",
+      "concentration": 2.8,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution SL-10",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Selenite-tungstate solution",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Wolin's vitamin solution (10x)",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Seven vitamins solution",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-propionate",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

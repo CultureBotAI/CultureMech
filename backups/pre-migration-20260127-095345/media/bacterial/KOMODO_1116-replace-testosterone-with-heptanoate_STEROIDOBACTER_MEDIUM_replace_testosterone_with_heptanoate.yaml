@@ -1,0 +1,21 @@
+name: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
+original_name: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1116_replace_testosterone_with_heptanoate
+  term:
+    id: komodo.medium:1116_replace_testosterone_with_heptanoate
+    label: STEROIDOBACTER MEDIUM_replace_testosterone_with_heptanoate
+notes: 'Source: KOMODO ModelSEED | ID: 1116_replace_testosterone_with_heptanoate |
+  DSMZ Medium: 1116 (mediadive.medium:1116) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1116_replace_testosterone_with_heptanoate'

@@ -1,0 +1,75 @@
+name: Liquid mm with galactose; hodgson et al
+original_name: Liquid mm with galactose; hodgson et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Galactose
+  term:
+    id: CHEBI:12936
+    label: D-Galactose
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gal'
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '3.78444'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asn-L'
+- preferred_term: Ethylene glycol
+  term:
+    id: CHEBI:30742
+    label: Ethylene glycol
+  concentration:
+    value: '0.134257'
+    unit: MILLIMOLAR
+- preferred_term: Potassium hydroxide
+  concentration:
+    value: '5.34706'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '2.87026'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.811458'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0359648'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.025173Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 262, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 262
+  term:
+    id: MEDIADB:262
+    label: Liquid mm with galactose; hodgson et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

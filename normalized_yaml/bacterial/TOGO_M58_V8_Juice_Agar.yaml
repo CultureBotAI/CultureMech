@@ -1,0 +1,45 @@
+name: V8 Juice Agar
+original_name: V8 Juice Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
+    component, Inorganic compound'
+- preferred_term: V8 canned vegetable juice (Campbell)
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M58
+  term:
+    id: TOGO:M58
+    label: V8 Juice Agar
+notes: 'Source: https://togomedium.org/medium/M58
+
+  Original source: JCM - JCM_M66
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=66'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.341010Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M58'

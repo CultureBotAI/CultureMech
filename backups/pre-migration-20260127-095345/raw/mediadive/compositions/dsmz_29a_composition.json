@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_29a",
+  "medium_name": "FOR CHLOROBIUM FERROOXIDANS",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 29",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "29"
+    },
+    {
+      "name": "Mm Bicarbonate",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

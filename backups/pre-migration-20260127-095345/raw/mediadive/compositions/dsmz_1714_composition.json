@@ -1,0 +1,69 @@
+{
+  "medium_id": "dsmz_1714",
+  "medium_name": "Vitamin B12",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "(NH4)2SO4",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Allen's trace element solution",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S2O3 x 5 H2O",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (OXOID)",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Wolin's vitamin solution (10x)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Cysteine HCl x H2O",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

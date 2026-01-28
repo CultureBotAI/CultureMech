@@ -1,0 +1,21 @@
+name: METHANOSPHAERA medium II
+original_name: METHANOSPHAERA medium II
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 404
+  term:
+    id: komodo.medium:404
+    label: METHANOSPHAERA medium II
+notes: 'Source: KOMODO ModelSEED | ID: 404 | DSMZ Medium: 404 (mediadive.medium:404)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 404'

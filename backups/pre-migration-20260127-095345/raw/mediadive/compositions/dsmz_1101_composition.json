@@ -1,0 +1,93 @@
+{
+  "medium_id": "dsmz_1101",
+  "medium_name": "Final pH: 10.0",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 10.0",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1003 ml",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 95.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaHCO3",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace elements solution (Pfennig, 1965)",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Selenite-tungstate solution",
+      "concentration": 2.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-L-lactate",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2SO3",
+      "concentration": 0.24,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Wolin's vitamin solution (10x)",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

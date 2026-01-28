@@ -1,0 +1,20 @@
+name: MEDIUM 343 MODIFIED FOR DSM 5068
+original_name: MEDIUM 343 MODIFIED FOR DSM 5068
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 343_5068
+  term:
+    id: komodo.medium:343_5068
+    label: MEDIUM 343 MODIFIED FOR DSM 5068
+notes: 'Source: KOMODO ModelSEED | ID: 343_5068 | DSMZ Medium: 343 (mediadive.medium:343)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 343_5068'

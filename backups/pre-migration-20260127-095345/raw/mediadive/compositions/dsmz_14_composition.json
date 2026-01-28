@@ -1,0 +1,51 @@
+{
+  "medium_id": "dsmz_14",
+  "medium_name": "Yeast extract",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution SL-4",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Pyridoxine hydrochloride (0.1% w/v)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-thioglycolate",
+      "concentration": 0.75,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "D-Fructose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

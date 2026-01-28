@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_698",
+  "medium_name": "Glucose",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Glucose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casein hydrolysate",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

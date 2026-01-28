@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_1468",
+  "medium_name": "NaCl",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCl",
+      "concentration": 41.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 203.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 29.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KCl",
+      "concentration": 7.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casamino acids (with vitamins)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Soluble starch",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar, if necessary",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

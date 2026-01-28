@@ -1,0 +1,69 @@
+{
+  "medium_id": "dsmz_829c",
+  "medium_name": "Final pH: 6.0 - 6.5",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 6.0 - 6.5",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1011 ml",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Sea Salt (SIGMA, must not show signs of caking)",
+      "concentration": 0.35,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 1.95,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MES [2-(N-morpholino) ethane sulfonic acid]",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Modified Wolin's mineral solution",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2CO3",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Wolin's vitamin solution (10x)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

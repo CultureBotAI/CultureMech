@@ -1,0 +1,21 @@
+name: For DSM 16504
+original_name: For DSM 16504
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.5-9.7
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 898.1 | DSMZ Medium: 898
+  (mediadive.medium:898) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 898.1
+  term:
+    id: komodo.medium:898.1
+    label: For DSM 16504
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 898.1'

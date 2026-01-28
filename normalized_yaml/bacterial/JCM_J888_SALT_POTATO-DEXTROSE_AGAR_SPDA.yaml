@@ -1,0 +1,56 @@
+name: SALT POTATO-DEXTROSE AGAR (SPDA)
+original_name: SALT POTATO-DEXTROSE AGAR (SPDA)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J888
+  term:
+    id: mediadive.medium:J888
+    label: SALT POTATO-DEXTROSE AGAR (SPDA)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=888'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Boil potatoes for 20 min. Strain through a fine sieve. Add glucose,
+    NaCl and agar, and boil until dissolved. Do not use new potatoes. Adjust pH to
+    5.4 - 5.6.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Commercial potato dextrose agar (BD-Difco or Oxoid) supplemented
+    with NaCl can be used.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.909307Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J888'

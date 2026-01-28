@@ -1,0 +1,24 @@
+name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J660
+  term:
+    id: JCM:J660
+    label: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=660'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.111522Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J660'

@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_225",
+  "medium_name": "Maltose",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Maltose",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fresh yeast extract",
+      "concentration": 15.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casein peptone, tryptic digest",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

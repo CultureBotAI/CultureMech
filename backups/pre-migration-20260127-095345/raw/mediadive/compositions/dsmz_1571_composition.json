@@ -1,0 +1,63 @@
+{
+  "medium_id": "dsmz_1571",
+  "medium_name": "KH2PO4",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KH2PO4",
+      "concentration": 0.41,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2HPO4 x2 H2O",
+      "concentration": 0.53,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S x 9 H2O",
+      "concentration": 0.36,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution SL-10",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

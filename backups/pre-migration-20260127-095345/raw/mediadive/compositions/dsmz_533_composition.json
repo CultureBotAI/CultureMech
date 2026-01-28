@@ -1,0 +1,105 @@
+{
+  "medium_id": "dsmz_533",
+  "medium_name": "NH4NO3",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NH4NO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2HPO4 x 12 H2O",
+      "concentration": 4.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "FeSO4 x 7 H2O",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "H2O (deionized)",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution:",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "H2O (deionized)",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MoO3",
+      "concentration": 28.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "ZnSO4 x 7 H2O",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CuSO4 x 5 H2O",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MnSO4 x 5 H2O",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,20 @@
+name: METHANOCOCCUS DELTAE MEDIUM
+original_name: METHANOCOCCUS DELTAE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 288
+  term:
+    id: komodo.medium:288
+    label: METHANOCOCCUS DELTAE MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 288 | DSMZ Medium: 288 (mediadive.medium:288)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 288'

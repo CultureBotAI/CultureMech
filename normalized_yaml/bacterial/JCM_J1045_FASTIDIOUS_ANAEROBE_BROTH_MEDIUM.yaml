@@ -1,0 +1,104 @@
+name: FASTIDIOUS ANAEROBE BROTH MEDIUM
+original_name: FASTIDIOUS ANAEROBE BROTH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1045
+  term:
+    id: mediadive.medium:J1045
+    label: FASTIDIOUS ANAEROBE BROTH MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1045'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '22.9084'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.398406'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.498008'
+    unit: G_PER_L
+- preferred_term: Sodium pyrophosphate
+  term:
+    id: CHEBI:71240
+    label: Sodium pyrophosphate
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.00996016'
+    unit: G_PER_L
+- preferred_term: Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: Dithiothreitol
+  concentration:
+    value: '4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components, adjust pH 7.2 and autoclave. Cool medium under a N2-CO2
+    (4:1, v/v) gas stream and add anaerobically the following solution (filter-sterilized).
+- step_number: 2
+  action: ADJUST_PH
+  description: Aseptically and anaerobically distribute the medium into culture vessels
+    under the same gas mixture and seal with butyl rubber stoppers. Readjust pH to
+    7.0 - 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.433033Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1045'

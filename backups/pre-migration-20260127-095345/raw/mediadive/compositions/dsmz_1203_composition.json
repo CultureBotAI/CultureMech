@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1203",
+  "medium_name": "Medium dsmz_1203",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Fastidious Anaerobe Agar (acumedia)",
+      "concentration": 45.7,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

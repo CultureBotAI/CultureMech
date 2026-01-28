@@ -1,0 +1,23 @@
+name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J51
+  term:
+    id: JCM:J51
+    label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.772483Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J51'

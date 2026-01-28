@@ -1,0 +1,81 @@
+{
+  "medium_id": "dsmz_1420",
+  "medium_name": "Mineral Salts Solution A:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral Salts Solution A:",
+      "concentration": 0.65,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 1.34,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2HPO4 x 2H2O",
+      "concentration": 1.69,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Methylamine-HCl",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Mineral Salts Solution B:",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "(NH4)2SO4",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7H2O",
+      "concentration": 0.125,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Bacto Peptone",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace Element Solution (see below)",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Hutner`s Basal Salts Solution (see below)",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamine Solution (add after autoclaving, see below)",
+      "concentration": 1.25,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin B12 (0.1%)(add after autoclaving)",
+      "concentration": 1000.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,29 @@
+name: MARICHROMATIUM IMHOFFII MEDIUM
+original_name: MARICHROMATIUM IMHOFFII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J517
+  term:
+    id: mediadive.medium:J517
+    label: MARICHROMATIUM IMHOFFII MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=517'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Rhodobium gokurnum medium (see Medium No. 516) with 0.5 to 1.0
+    mM Na2S.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.818696Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J517'

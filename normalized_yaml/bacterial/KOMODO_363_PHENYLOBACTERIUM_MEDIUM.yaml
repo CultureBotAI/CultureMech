@@ -1,0 +1,20 @@
+name: PHENYLOBACTERIUM MEDIUM
+original_name: PHENYLOBACTERIUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 363
+  term:
+    id: komodo.medium:363
+    label: PHENYLOBACTERIUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 363 | DSMZ Medium: 363 (mediadive.medium:363)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 363'

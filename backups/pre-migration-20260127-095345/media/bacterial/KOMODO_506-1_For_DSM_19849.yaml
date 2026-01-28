@@ -1,0 +1,21 @@
+name: For DSM 19849
+original_name: For DSM 19849
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 506.1
+  term:
+    id: komodo.medium:506.1
+    label: For DSM 19849
+notes: 'Source: KOMODO ModelSEED | ID: 506.1 | DSMZ Medium: 506 (mediadive.medium:506)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 506.1'

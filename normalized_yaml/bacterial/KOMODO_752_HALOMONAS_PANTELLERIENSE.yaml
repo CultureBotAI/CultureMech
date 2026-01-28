@@ -1,0 +1,21 @@
+name: HALOMONAS PANTELLERIENSE
+original_name: HALOMONAS PANTELLERIENSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: KOMODO Medium 752
+  term:
+    id: komodo.medium:752
+    label: HALOMONAS PANTELLERIENSE
+notes: 'Source: KOMODO ModelSEED | ID: 752 | DSMZ Medium: 752 (mediadive.medium:752)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 752'

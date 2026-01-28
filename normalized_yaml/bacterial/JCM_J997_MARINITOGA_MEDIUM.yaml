@@ -1,0 +1,74 @@
+name: MARINITOGA MEDIUM
+original_name: MARINITOGA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J997
+  term:
+    id: mediadive.medium:J997
+    label: MARINITOGA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=997'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except glucose and reducing agents. Prepare medium
+    anaerobically under a 100% N2 gas-atmosphere, adjust pH to 7.0, dispense in anaerobic
+    vials (1/3 vol.) and autoclave. Add glucose, cysteine and sulfide from sterile,
+    anoxic stock solutions prepared under N2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.263614Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J997'

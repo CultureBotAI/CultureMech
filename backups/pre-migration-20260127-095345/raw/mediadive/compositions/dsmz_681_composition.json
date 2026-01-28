@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_681",
+  "medium_name": "Tryptone (Bacto)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone (Bacto)",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

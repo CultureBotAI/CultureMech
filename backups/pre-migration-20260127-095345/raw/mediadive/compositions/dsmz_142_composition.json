@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_142",
+  "medium_name": "25.00",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

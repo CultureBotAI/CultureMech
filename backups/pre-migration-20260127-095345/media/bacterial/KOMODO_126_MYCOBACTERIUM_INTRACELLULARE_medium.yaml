@@ -1,0 +1,20 @@
+name: MYCOBACTERIUM INTRACELLULARE medium
+original_name: MYCOBACTERIUM INTRACELLULARE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 126
+  term:
+    id: komodo.medium:126
+    label: MYCOBACTERIUM INTRACELLULARE medium
+notes: 'Source: KOMODO ModelSEED | ID: 126 | DSMZ Medium: 126 (mediadive.medium:126)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 126'

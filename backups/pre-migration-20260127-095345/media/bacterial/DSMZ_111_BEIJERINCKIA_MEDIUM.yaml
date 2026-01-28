@@ -1,0 +1,95 @@
+name: BEIJERINCKIA MEDIUM
+original_name: BEIJERINCKIA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 111
+  term:
+    id: mediadive.medium:111
+    label: BEIJERINCKIA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium111.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10.5263'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.842105'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.210526'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0210526'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 6 H2O
+  term:
+    id: CHEBI:131523
+    label: MnSO4 x 6 H2O
+  concentration:
+    value: '0.00210526'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 6 H2O
+  term:
+    id: CHEBI:132762
+    label: ZnSO4 x 6 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 6 H2O
+  term:
+    id: CHEBI:91246
+    label: CuSO4 x 6 H2O
+  concentration:
+    value: '0.00421053'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15.7895'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5. Sterilize glucose separately (10 g in 50 ml H2O)
+    and mix after cooling.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.191170Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 111'

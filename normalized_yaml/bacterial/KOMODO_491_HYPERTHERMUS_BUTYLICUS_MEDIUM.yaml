@@ -1,0 +1,21 @@
+name: HYPERTHERMUS BUTYLICUS MEDIUM
+original_name: HYPERTHERMUS BUTYLICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 491 | DSMZ Medium: 491 (mediadive.medium:491)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 491
+  term:
+    id: komodo.medium:491
+    label: HYPERTHERMUS BUTYLICUS MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 491'

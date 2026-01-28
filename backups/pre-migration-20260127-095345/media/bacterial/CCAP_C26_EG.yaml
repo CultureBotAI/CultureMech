@@ -1,0 +1,56 @@
+name: EG
+original_name: EG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C26
+  term:
+    id: mediadive.medium:C26
+    label: EG
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_EG.pdf'
+ingredients:
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lab Lemco powder
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Add constituents above and make up to 1 litre with deionized water.\
+    \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
+    \ 15 psi for 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.552375Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C26'

@@ -1,0 +1,63 @@
+name: GLYCEROL-SOIL MEDIUM
+original_name: GLYCEROL-SOIL MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J384
+  term:
+    id: mediadive.medium:J384
+    label: GLYCEROL-SOIL MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Soil extract
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '850'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Suspend 400 g of air-dried garden soil in 960 ml of tap water and autoclave
+    at 121C for 1 hr. After the mixture is cooled and settled, the supernatant is
+    decanted, filtered through paper, autoclaved, and stored at room temperature until
+    cleared by sedimentation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.465655Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J384'

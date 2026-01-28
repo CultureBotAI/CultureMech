@@ -1,0 +1,67 @@
+name: 9K WITH SULFUR MEDIUM
+original_name: 9K WITH SULFUR MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.5
+media_term:
+  preferred_term: JCM Medium J1321
+  term:
+    id: mediadive.medium:J1321
+    label: 9K WITH SULFUR MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1321'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2
+  term:
+    id: CHEBI:10124375
+    label: Ca(NO3)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components except sulfur, adjust pH to 2.5 with H2SO4 and autoclave.
+    Separately sterilize sulfur by steaming for 3 hr on each of 3 successive days.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.443266Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1321'

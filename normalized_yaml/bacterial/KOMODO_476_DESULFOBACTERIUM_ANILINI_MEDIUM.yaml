@@ -1,0 +1,20 @@
+name: DESULFOBACTERIUM ANILINI MEDIUM
+original_name: DESULFOBACTERIUM ANILINI MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 476
+  term:
+    id: komodo.medium:476
+    label: DESULFOBACTERIUM ANILINI MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 476 | DSMZ Medium: 476 (mediadive.medium:476)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 476'

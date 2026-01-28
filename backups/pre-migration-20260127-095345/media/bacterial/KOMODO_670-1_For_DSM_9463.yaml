@@ -1,0 +1,21 @@
+name: For DSM 9463
+original_name: For DSM 9463
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.5
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.1 | DSMZ Medium: 670
+  (mediadive.medium:670) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 670.1
+  term:
+    id: komodo.medium:670.1
+    label: For DSM 9463
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 670.1'

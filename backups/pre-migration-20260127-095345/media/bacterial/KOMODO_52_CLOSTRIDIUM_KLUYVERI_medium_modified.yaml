@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM KLUYVERI medium (modified)
+original_name: CLOSTRIDIUM KLUYVERI medium (modified)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 52
+  term:
+    id: komodo.medium:52
+    label: CLOSTRIDIUM KLUYVERI medium (modified)
+notes: 'Source: KOMODO ModelSEED | ID: 52 | DSMZ Medium: 52 (mediadive.medium:52)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 52'

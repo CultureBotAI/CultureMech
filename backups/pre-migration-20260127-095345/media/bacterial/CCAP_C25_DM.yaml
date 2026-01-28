@@ -1,0 +1,111 @@
+name: DM
+original_name: DM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: CCAP Medium C25
+  term:
+    id: mediadive.medium:C25
+    label: DM
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_DM.pdf'
+ingredients:
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2.34'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.48'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.39'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Na2SiO3 x 9 H2O
+  term:
+    id: CHEBI:132108
+    label: Na2SiO3 x 9 H2O
+  concentration:
+    value: '57'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with deionized water. Adjust to pH 6.9 with 1M\
+    \ NaOH or 1M HCl, prior to\r\nautoclaving. Autoclave at 15 psi for 15 minutes."
+- step_number: 2
+  action: STORE
+  description: "Silicate can react with glass, ensure this stock solution is stored\
+    \ in plastic\r\nbottles."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.549760Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C25'

@@ -1,0 +1,23 @@
+name: LSR1 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1260
+  term:
+    id: JCM:J1260
+    label: LSR1 MEDIUM
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1260'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.452462Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1260'

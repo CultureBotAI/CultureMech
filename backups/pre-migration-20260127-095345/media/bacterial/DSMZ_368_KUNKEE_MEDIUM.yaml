@@ -1,0 +1,57 @@
+name: KUNKEE MEDIUM
+original_name: KUNKEE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: DSMZ Medium 368
+  term:
+    id: mediadive.medium:368
+    label: KUNKEE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium368.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '250'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.5.
+- step_number: 2
+  action: MIX
+  description: After sterilization aseptically add 10% (v/v) ethanol
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.918715Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 368'

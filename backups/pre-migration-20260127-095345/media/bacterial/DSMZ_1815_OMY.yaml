@@ -1,0 +1,38 @@
+name: OMY
+original_name: OMY
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1815
+  term:
+    id: mediadive.medium:1815
+    label: OMY
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Oat flakes
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Malt extract broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.487466Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1815'

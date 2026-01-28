@@ -1,0 +1,74 @@
+name: R-CW AGAR
+original_name: R-CW AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J162
+  term:
+    id: mediadive.medium:J162
+    label: R-CW AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=162'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Diammonium hydrogen citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium hydrogen citrate
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cheese whey
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.851009Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J162'

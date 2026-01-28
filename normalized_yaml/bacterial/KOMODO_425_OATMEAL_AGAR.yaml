@@ -1,0 +1,21 @@
+name: OATMEAL AGAR
+original_name: OATMEAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 425
+  term:
+    id: komodo.medium:425
+    label: OATMEAL AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 425 | DSMZ Medium: 425 (mediadive.medium:425)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 425'

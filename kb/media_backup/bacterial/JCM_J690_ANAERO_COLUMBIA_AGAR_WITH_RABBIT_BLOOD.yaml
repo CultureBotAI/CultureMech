@@ -1,0 +1,23 @@
+name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J690
+  term:
+    id: JCM:J690
+    label: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=690'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.128472Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J690'

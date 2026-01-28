@@ -1,0 +1,27 @@
+name: Gauze's Synthetic Medium NO. 1 (pH 5.3)
+original_name: Gauze's Synthetic Medium NO. 1 (pH 5.3)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Gauze's synthetic medium No. 1 (see Medium [M72])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M996
+  term:
+    id: TOGO:M996
+    label: Gauze's Synthetic Medium NO. 1 (pH 5.3)
+notes: 'Source: https://togomedium.org/medium/M996
+
+  Original source: JCM - JCM_M949
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=949'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.111992Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M996'

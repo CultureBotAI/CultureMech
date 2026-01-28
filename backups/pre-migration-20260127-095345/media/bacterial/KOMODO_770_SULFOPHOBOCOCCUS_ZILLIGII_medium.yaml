@@ -1,0 +1,21 @@
+name: SULFOPHOBOCOCCUS ZILLIGII medium
+original_name: SULFOPHOBOCOCCUS ZILLIGII medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: KOMODO Medium 770
+  term:
+    id: komodo.medium:770
+    label: SULFOPHOBOCOCCUS ZILLIGII medium
+notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 770'

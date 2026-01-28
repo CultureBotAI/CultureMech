@@ -1,0 +1,24 @@
+name: R3 A MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1153
+  term:
+    id: DSMZ:1153
+    label: R3 A MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1153.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.367437Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1153'

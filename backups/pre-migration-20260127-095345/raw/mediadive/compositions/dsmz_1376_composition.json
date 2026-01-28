@@ -1,0 +1,195 @@
+{
+  "medium_id": "dsmz_1376",
+  "medium_name": "KNO3",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KNO3",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.02,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KBr",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution (see below)",
+      "concentration": 0.1,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution (see below)",
+      "concentration": 0.1,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Selenite-Tungstate Solution (see below)",
+      "concentration": 0.1,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "FeNa-EDTA (see below)",
+      "concentration": 0.1,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Phosphate Buffer (see below)",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace Element Solution:",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2 EDTA",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "ZnSO4 x 7 H2O",
+      "concentration": 0.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 0.02,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 0.02,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 0.04,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NiCl2 x 2 H2O",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CuSO4 x 5 H2O",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution:",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Nicotinic acid",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Pyridoxamine-HCl",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Selenite-Tungstate Solution:",
+      "concentration": 1.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaOH",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2SeO3 x 5 H2O",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "concentration": 0.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Phosphate Buffer:",
+      "concentration": 0.006,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.008,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2HPO4",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

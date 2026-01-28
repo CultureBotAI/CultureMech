@@ -1,0 +1,111 @@
+name: MODIFIED MAKKAR'S MEDIUM C
+original_name: MODIFIED MAKKAR'S MEDIUM C
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1212
+  term:
+    id: mediadive.medium:J1212
+    label: MODIFIED MAKKAR'S MEDIUM C
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1212'
+ingredients:
+- preferred_term: Rumen fluid
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: ' ( clarified)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.45098'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '5.88235'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000980392'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components, except L-cysteine x HCl x H2O, and heat the medium
+    to 60C with stirring. Bubble the medium with O2-free CO2 vigorously, then add
+    L-cysteine x HCl x H2O to reduce the medium. Dispense the medium into culture
+    vessels (e.g., 10 ml in Balch type tubes) under a stream of CO2, seal with butyl
+    rubber stoppers and autoclave. Aseptically and anaerobically add per liter the
+    following solution (autoclaved and stored under a N2 atmosphere):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.039543Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1212'

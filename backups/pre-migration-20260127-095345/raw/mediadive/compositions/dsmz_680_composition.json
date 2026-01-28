@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_680",
+  "medium_name": "Medium dsmz_680",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

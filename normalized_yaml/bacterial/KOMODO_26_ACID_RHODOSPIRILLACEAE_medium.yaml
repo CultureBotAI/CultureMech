@@ -1,0 +1,21 @@
+name: ACID RHODOSPIRILLACEAE medium
+original_name: ACID RHODOSPIRILLACEAE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.7
+media_term:
+  preferred_term: KOMODO Medium 26
+  term:
+    id: komodo.medium:26
+    label: ACID RHODOSPIRILLACEAE medium
+notes: 'Source: KOMODO ModelSEED | ID: 26 | DSMZ Medium: 26 (mediadive.medium:26)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 26'

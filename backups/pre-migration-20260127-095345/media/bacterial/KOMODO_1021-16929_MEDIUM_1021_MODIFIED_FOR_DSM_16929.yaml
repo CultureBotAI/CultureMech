@@ -1,0 +1,20 @@
+name: MEDIUM 1021 MODIFIED FOR DSM 16929
+original_name: MEDIUM 1021 MODIFIED FOR DSM 16929
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1021_16929
+  term:
+    id: komodo.medium:1021_16929
+    label: MEDIUM 1021 MODIFIED FOR DSM 16929
+notes: 'Source: KOMODO ModelSEED | ID: 1021_16929 | DSMZ Medium: 1021 (mediadive.medium:1021)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1021_16929'

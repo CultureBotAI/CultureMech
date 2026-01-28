@@ -1,0 +1,24 @@
+name: CALDICELLULOSIRUPTOR MEDIUM WITH 2.5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J947
+  term:
+    id: JCM:J947
+    label: CALDICELLULOSIRUPTOR MEDIUM WITH 2.5% NaCl
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=947'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.274288Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J947'

@@ -1,0 +1,159 @@
+{
+  "medium_id": "dsmz_1306",
+  "medium_name": "Tryptone",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Dextrose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Maltose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "DL-Methionine",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace elements (see below)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution (see below)",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution:",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Pyridoxine-HCl",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Nicotinic acid",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "D-Ca-pantothenate",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution SL-10:",
+      "concentration": 0.1,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "HCl (25%; 7.7 M)",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 70.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 100.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 6.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 190.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

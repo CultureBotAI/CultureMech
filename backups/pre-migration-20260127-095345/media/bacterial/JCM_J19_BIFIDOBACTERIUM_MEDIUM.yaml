@@ -1,0 +1,64 @@
+name: BIFIDOBACTERIUM MEDIUM
+original_name: BIFIDOBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J19
+  term:
+    id: mediadive.medium:J19
+    label: BIFIDOBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=19'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  notes: ' ( tryptic digest)'
+- preferred_term: Beef extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.997'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: HEAT
+  description: After sterilization, aseptically add solutions of sodium ascorbate
+    and L-cysteine x HCl to final concentration of 1.0% and 0.05%, respectively. Heat
+    medium not freshly prepared in a steamer for 10 min before addition of the reducing
+    substances.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.593283Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J19'

@@ -1,0 +1,154 @@
+name: Middlebrook 7H11 agar (Difco)
+original_name: Middlebrook 7H11 agar (Difco)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: Biotin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Monosodium Glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Magnesium Sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Copper Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Sodium Citrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Ferric Ammonium Citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Pyridoxine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Zinc Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Malachite Green
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: pH indicator, Selective agent; Properties: Organic compound, Defined
+    component, Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '13.5'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Pancreatic Digest of Casein
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: OADC Enrichment (Difco)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Sodium chloride
+  concentration:
+    value: '8.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Dextrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Bovine Albumin (Fraction V)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Oleic Acid
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Catalase
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2407
+  term:
+    id: TOGO:M2407
+    label: Middlebrook 7H11 agar (Difco)
+notes: 'Source: https://togomedium.org/medium/M2407'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.474494Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2407'

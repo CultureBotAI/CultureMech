@@ -1,0 +1,54 @@
+name: GERMINATION MEDIUM FOR SORDARIA FIMICOLA
+original_name: GERMINATION MEDIUM FOR SORDARIA FIMICOLA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J152
+  term:
+    id: mediadive.medium:J152
+    label: GERMINATION MEDIUM FOR SORDARIA FIMICOLA
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=152'
+ingredients:
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.830349Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J152'

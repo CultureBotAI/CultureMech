@@ -1,0 +1,21 @@
+{
+  "medium_id": "atcc_2432",
+  "medium_name": "Medium atcc_2432",
+  "source": "atcc",
+  "composition": [
+    {
+      "name": "Yeast extract",
+      "concentration": 0.002,
+      "unit": "g",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "Malt extract",
+      "concentration": 0.002,
+      "unit": "g",
+      "extraction_method": "atcc_dotted_line_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

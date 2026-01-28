@@ -1,0 +1,21 @@
+name: THERMOANAEROVIBRIO medium
+original_name: THERMOANAEROVIBRIO medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.3
+media_term:
+  preferred_term: KOMODO Medium 873
+  term:
+    id: komodo.medium:873
+    label: THERMOANAEROVIBRIO medium
+notes: 'Source: KOMODO ModelSEED | ID: 873 | DSMZ Medium: 873 (mediadive.medium:873)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 873'

@@ -1,0 +1,21 @@
+name: RE-101/102 medium
+original_name: RE-101/102 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: KOMODO Medium 1130
+  term:
+    id: komodo.medium:1130
+    label: RE-101/102 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1130 | DSMZ Medium: 1130 (mediadive.medium:1130)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1130'

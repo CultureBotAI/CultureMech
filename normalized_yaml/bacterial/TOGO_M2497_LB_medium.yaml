@@ -1,0 +1,40 @@
+name: LB medium
+original_name: LB medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCL
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media'
+- preferred_term: Bacto-yeast
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto-tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2497
+  term:
+    id: TOGO:M2497
+    label: LB medium
+notes: 'Source: https://togomedium.org/medium/M2497'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.585338Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2497'

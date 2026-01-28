@@ -1,0 +1,44 @@
+name: MRS Medium With Soybean Peptone
+original_name: MRS Medium With Soybean Peptone
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Bacto agar (BD-Difco)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Phytone peptone (BD-BBL)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M971
+  term:
+    id: TOGO:M971
+    label: MRS Medium With Soybean Peptone
+notes: 'Source: https://togomedium.org/medium/M971
+
+  Original source: JCM - JCM_M925
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=925'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.059260Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M971'

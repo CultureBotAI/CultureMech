@@ -1,0 +1,157 @@
+name: HYDROGENOBACTER FLORENTISSIMUM MEDIUM
+original_name: HYDROGENOBACTER FLORENTISSIMUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J1255
+  term:
+    id: mediadive.medium:J1255
+    label: HYDROGENOBACTER FLORENTISSIMUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1255'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.147059'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.294118'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.120588'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0147059'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.104902'
+    unit: G_PER_L
+- preferred_term: NaH2PO4
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4
+  concentration:
+    value: '1.35294'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium Thiosulfate
+  term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0984'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.0288'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0238'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.0172'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0242'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.031'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly and adjust pH to 6.75 with NaOH. Distribute
+    the medium into culture vessels, leaving &; 80% volume of gas phase (e.g., 5.0
+    ml in 25 ml serum bottles or Balch tubes), under a stream of N2, seal with butyl
+    rubber stoppers and autoclave. After cooling, aseptically add per liter the following
+    solutions (autoclaved):'
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Then, add filter-sterilized H2, CO2 and air to the culture vessels
+    to make the gaseous composition in the gas phase 75% N2, 17% H2, 4% CO2 and 4%
+    air by volume.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.0 with KOH.
+- step_number: 4
+  action: HEAT
+  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
+    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
+    by boiling in distilled H2O (1 hr, twice).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.188134Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1255'

@@ -1,0 +1,31 @@
+name: METHANOCOCCOIDES MEDIUM
+original_name: METHANOCOCCOIDES MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J986
+  term:
+    id: mediadive.medium:J986
+    label: METHANOCOCCOIDES MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and
+    adjust pH to 7.0 - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20,
+    v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.225425Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J986'

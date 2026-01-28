@@ -1,0 +1,45 @@
+name: VY/2-ASW Agar
+original_name: VY/2-ASW Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Artificial seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution,
+    Defined component'
+- preferred_term: Yeast cell paste (see below)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M336
+  term:
+    id: TOGO:M336
+    label: VY/2-ASW Agar
+notes: 'Source: https://togomedium.org/medium/M336
+
+  Original source: JCM - JCM_M341
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=341'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.870694Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M336'

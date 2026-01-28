@@ -1,0 +1,23 @@
+name: CH
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C22
+  term:
+    id: CCAP:C22
+    label: CH
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_CH.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.503447Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C22'

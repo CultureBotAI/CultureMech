@@ -1,0 +1,23 @@
+name: GLUCOSE YEAST EXTRACT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 54
+  term:
+    id: DSMZ:54
+    label: GLUCOSE YEAST EXTRACT MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium54.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:48.692424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 54'

@@ -1,0 +1,46 @@
+name: V8 JUICE AGAR
+original_name: V8 JUICE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J66
+  term:
+    id: mediadive.medium:J66
+    label: V8 JUICE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=66'
+ingredients:
+- preferred_term: V8 canned vegetable juice
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter V8 vegetable juice through 4 layers of cheesecloth or centrifuge
+    (3,000 rpm, 10 min) to eliminate fibers.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.674574Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J66'

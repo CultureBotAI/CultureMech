@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1238",
+  "medium_name": "Sea salts (Sigma)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Sea salts (Sigma)",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,24 @@
+name: CDMM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1757
+  term:
+    id: DSMZ:1757
+    label: CDMM
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1186/s12866-015-0614-2
+curation_history:
+- timestamp: '2026-01-22T06:17:59.716479Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1757'

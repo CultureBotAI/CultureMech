@@ -1,0 +1,47 @@
+name: TRYPTICASE SOY BROTH AGAR
+original_name: TRYPTICASE SOY BROTH AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 535c
+  term:
+    id: mediadive.medium:535c
+    label: TRYPTICASE SOY BROTH AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium535c.pdf'
+ingredients:
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 1 % Tween 80 to medium 535.
+- step_number: 2
+  action: MIX
+  description: pH 7.3
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.558054Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 535c'

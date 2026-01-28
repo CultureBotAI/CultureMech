@@ -1,0 +1,53 @@
+name: MJ Medium For Microaerophilic Autotrophs
+original_name: MJ Medium For Microaerophilic Autotrophs
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 8% NaHCO3 solution
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 10% Na2S2O3・5H2O solution
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: Oxygen gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M943
+  term:
+    id: TOGO:M943
+    label: MJ Medium For Microaerophilic Autotrophs
+notes: 'Source: https://togomedium.org/medium/M943
+
+  Original source: JCM - JCM_M902
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=902'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.007052Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M943'

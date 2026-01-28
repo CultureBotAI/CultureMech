@@ -1,0 +1,22 @@
+name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
+original_name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM
+  22402
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: KOMODO Medium 514b.4
+  term:
+    id: komodo.medium:514b.4
+    label: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
+notes: 'Source: KOMODO ModelSEED | ID: 514b.4 | DSMZ Medium: 514b (mediadive.medium:514b)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514b.4'

@@ -1,0 +1,24 @@
+name: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.4-7.8
+media_term:
+  preferred_term: DSMZ Medium 1517
+  term:
+    id: DSMZ:1517
+    label: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1517.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.580686Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1517'

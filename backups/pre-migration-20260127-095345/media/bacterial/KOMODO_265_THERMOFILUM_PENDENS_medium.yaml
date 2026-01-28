@@ -1,0 +1,21 @@
+name: THERMOFILUM PENDENS medium
+original_name: THERMOFILUM PENDENS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: KOMODO Medium 265
+  term:
+    id: komodo.medium:265
+    label: THERMOFILUM PENDENS medium
+notes: 'Source: KOMODO ModelSEED | ID: 265 | DSMZ Medium: 265 (mediadive.medium:265)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 265'

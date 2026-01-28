@@ -1,0 +1,48 @@
+name: CYC AGAR (pH 8.0)
+original_name: CYC AGAR (pH 8.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J219
+  term:
+    id: mediadive.medium:J219
+    label: CYC AGAR (pH 8.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=219'
+ingredients:
+- preferred_term: Czapek-Dox liquid medium
+  concentration:
+    value: '33.4'
+    unit: G_PER_L
+  notes: ' ( modified)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: ' ( vitamin assay)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.995973Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J219'

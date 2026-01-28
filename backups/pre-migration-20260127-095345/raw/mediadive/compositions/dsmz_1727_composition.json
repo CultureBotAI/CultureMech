@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1727",
+  "medium_name": "Medium dsmz_1727",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "mg",
+      "concentration": 37.0,
+      "unit": "mg",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "FeCl3 x 6 H2O\nNaEDTA",
+      "concentration": 135.0,
+      "unit": "mg",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "Gaffron)\nAdd to",
+      "concentration": 100.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

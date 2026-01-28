@@ -1,0 +1,20 @@
+name: MEDIUM 78 MODIFIED FOR DSM 14838
+original_name: MEDIUM 78 MODIFIED FOR DSM 14838
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 78_14838
+  term:
+    id: komodo.medium:78_14838
+    label: MEDIUM 78 MODIFIED FOR DSM 14838
+notes: 'Source: KOMODO ModelSEED | ID: 78_14838 | DSMZ Medium: 78 (mediadive.medium:78)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 78_14838'

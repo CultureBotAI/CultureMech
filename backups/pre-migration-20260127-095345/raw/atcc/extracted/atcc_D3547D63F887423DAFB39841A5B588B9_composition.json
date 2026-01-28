@@ -1,0 +1,45 @@
+{
+  "medium_id": "atcc_D3547D63F887423DAFB39841A5B588B9",
+  "medium_name": "NaCl……………………………….25.0 g",
+  "source": "atcc",
+  "composition": [
+    {
+      "name": "MgCl2 x 6H2O",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "EDTA",
+      "concentration": 0.5,
+      "unit": "mg",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 10.0,
+      "unit": "mcg",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "Agar Noble",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "DI Water",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "atcc_dotted_line_parsing"
+    },
+    {
+      "name": "CuSO4 . 5H2O",
+      "concentration": 0.079,
+      "unit": "g",
+      "extraction_method": "atcc_dotted_line_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

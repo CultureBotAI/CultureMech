@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_590",
+  "medium_name": "Bacto Yeast extract (Difco)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Bacto Yeast extract (Difco)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2-DL-malate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Artifical sea water, 3 times conc.",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

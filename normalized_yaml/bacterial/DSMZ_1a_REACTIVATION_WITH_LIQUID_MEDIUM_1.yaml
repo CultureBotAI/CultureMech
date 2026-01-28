@@ -1,0 +1,46 @@
+name: REACTIVATION WITH LIQUID MEDIUM 1
+original_name: REACTIVATION WITH LIQUID MEDIUM 1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1a
+  term:
+    id: mediadive.medium:1a
+    label: REACTIVATION WITH LIQUID MEDIUM 1
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
+- step_number: 2
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    broth 1. Subsequent subculturing may be carried out in liquid medium or on agar
+    plates.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.956024Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1a'

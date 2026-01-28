@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_1192",
+  "medium_name": "Difco marine broth (Difco 2216)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Difco marine broth (Difco 2216)",
+      "concentration": 37.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Methanol",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "(Agar, if necessary",
+      "concentration": 4.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

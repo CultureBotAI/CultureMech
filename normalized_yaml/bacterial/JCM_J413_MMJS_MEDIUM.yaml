@@ -1,0 +1,31 @@
+name: MMJS MEDIUM
+original_name: MMJS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J413
+  term:
+    id: mediadive.medium:J413
+    label: MMJS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=413'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 369 supplemented with 20.0 g/L (final) NaCl, 2.0 g/L
+    (final) NaHCO3 and 2.0 g/L Na2S2O3 x 5H2O. Replace the gas phase with N2-CO2-O2
+    (79:20:1, v/v), and pressurized inoculated bottles to 200 kPa with the same gas
+    mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.545886Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J413'

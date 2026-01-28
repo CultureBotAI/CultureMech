@@ -1,0 +1,30 @@
+name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
+original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J217
+  term:
+    id: mediadive.medium:J217
+    label: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217'
+ingredients:
+- preferred_term: Inorganic salts-starch agar
+  term:
+    id: CHEBI:2509
+    label: Inorganic salts-starch agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.993434Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J217'

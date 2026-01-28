@@ -1,0 +1,20 @@
+name: EUBACTERIUM AGGREGANS medium
+original_name: EUBACTERIUM AGGREGANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 711a
+  term:
+    id: komodo.medium:711a
+    label: EUBACTERIUM AGGREGANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 711a | DSMZ Medium: 711a (mediadive.medium:711a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 711a'

@@ -1,0 +1,20 @@
+name: PEDIOCOCCUS HALOPHILUS medium
+original_name: PEDIOCOCCUS HALOPHILUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 227
+  term:
+    id: komodo.medium:227
+    label: PEDIOCOCCUS HALOPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 227 | DSMZ Medium: 227 (mediadive.medium:227)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 227'

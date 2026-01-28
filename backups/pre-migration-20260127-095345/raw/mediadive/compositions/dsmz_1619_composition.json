@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1619",
+  "medium_name": "Medium dsmz_1619",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Glycerol\nml",
+      "concentration": 1000.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

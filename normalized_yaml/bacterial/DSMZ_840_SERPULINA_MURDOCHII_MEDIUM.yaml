@@ -1,0 +1,89 @@
+name: SERPULINA MURDOCHII MEDIUM
+original_name: SERPULINA MURDOCHII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 840
+  term:
+    id: mediadive.medium:840
+    label: SERPULINA MURDOCHII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium840.pdf'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Bovine serum
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Air
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Bovine serum
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Air
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Incubate inoculated tubes in slanted position.
+- step_number: 2
+  action: MIX
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
+    mixture in Hungate tubes (5 ml per tube).
+- step_number: 3
+  action: COOL
+  description: 'After autoclaving and cooling add (per tube):'
+- step_number: 4
+  action: MIX
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
+    mixture in 100 ml serum bottles (10 ml per bottle).
+- step_number: 5
+  action: COOL
+  description: 'After autoclaving and cooling add per bottle:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.460838Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 840'

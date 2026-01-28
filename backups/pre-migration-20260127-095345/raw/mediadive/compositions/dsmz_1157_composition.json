@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_1157",
+  "medium_name": "Peptone",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "After autoclaving and cooling add:",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Final pH 7.0",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

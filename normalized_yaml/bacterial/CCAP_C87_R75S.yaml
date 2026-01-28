@@ -1,0 +1,34 @@
+name: R75S
+original_name: R75S
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C87
+  term:
+    id: mediadive.medium:C87
+    label: R75S
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Rye grass
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep\
+    \ boiling for 5 \r\nminutes.  Allow to cool and  restore volume to 1 litre with\
+    \ deionized water.  Filter \r\nthrough Whatman GF/C paper.  Autoclave at 15 psi\
+    \ for 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.765628Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C87'

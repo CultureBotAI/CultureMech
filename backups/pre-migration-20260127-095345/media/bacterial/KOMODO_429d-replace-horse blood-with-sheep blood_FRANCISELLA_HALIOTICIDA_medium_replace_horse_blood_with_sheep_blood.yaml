@@ -1,0 +1,20 @@
+name: FRANCISELLA HALIOTICIDA medium_replace_horse blood_with_sheep blood
+original_name: FRANCISELLA HALIOTICIDA medium_replace_horse blood_with_sheep blood
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 429d_replace_horse blood_with_sheep blood
+  term:
+    id: komodo.medium:429d_replace_horse blood_with_sheep blood
+    label: FRANCISELLA HALIOTICIDA medium_replace_horse blood_with_sheep blood
+notes: 'Source: KOMODO ModelSEED | ID: 429d_replace_horse blood_with_sheep blood |
+  DSMZ Medium: 429d (mediadive.medium:429d) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 429d_replace_horse blood_with_sheep blood'

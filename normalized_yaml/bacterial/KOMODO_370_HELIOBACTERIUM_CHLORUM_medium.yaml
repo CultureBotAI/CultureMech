@@ -1,0 +1,21 @@
+name: HELIOBACTERIUM CHLORUM medium
+original_name: HELIOBACTERIUM CHLORUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 370
+  term:
+    id: komodo.medium:370
+    label: HELIOBACTERIUM CHLORUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 370 | DSMZ Medium: 370 (mediadive.medium:370)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 370'

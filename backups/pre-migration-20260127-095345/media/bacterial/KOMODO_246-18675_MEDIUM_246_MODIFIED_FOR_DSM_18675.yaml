@@ -1,0 +1,21 @@
+name: MEDIUM 246 MODIFIED FOR DSM 18675
+original_name: MEDIUM 246 MODIFIED FOR DSM 18675
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: KOMODO Medium 246_18675
+  term:
+    id: komodo.medium:246_18675
+    label: MEDIUM 246 MODIFIED FOR DSM 18675
+notes: 'Source: KOMODO ModelSEED | ID: 246_18675 | DSMZ Medium: 246 (mediadive.medium:246)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 246_18675'

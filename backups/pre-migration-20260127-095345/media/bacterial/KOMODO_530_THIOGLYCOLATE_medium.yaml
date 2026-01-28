@@ -1,0 +1,21 @@
+name: THIOGLYCOLATE medium
+original_name: THIOGLYCOLATE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: KOMODO Medium 530
+  term:
+    id: komodo.medium:530
+    label: THIOGLYCOLATE medium
+notes: 'Source: KOMODO ModelSEED | ID: 530 | DSMZ Medium: 530 (mediadive.medium:530)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 530'

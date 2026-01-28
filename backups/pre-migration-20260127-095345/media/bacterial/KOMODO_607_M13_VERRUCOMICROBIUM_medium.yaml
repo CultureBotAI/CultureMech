@@ -1,0 +1,20 @@
+name: M13 VERRUCOMICROBIUM medium
+original_name: M13 VERRUCOMICROBIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 607
+  term:
+    id: komodo.medium:607
+    label: M13 VERRUCOMICROBIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 607 | DSMZ Medium: 607 (mediadive.medium:607)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 607'

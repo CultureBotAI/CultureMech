@@ -1,0 +1,20 @@
+name: MEDIUM 233 MODIFIED FOR DSM 6564
+original_name: MEDIUM 233 MODIFIED FOR DSM 6564
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 233_6564
+  term:
+    id: komodo.medium:233_6564
+    label: MEDIUM 233 MODIFIED FOR DSM 6564
+notes: 'Source: KOMODO ModelSEED | ID: 233_6564 | DSMZ Medium: 233 (mediadive.medium:233)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 233_6564'

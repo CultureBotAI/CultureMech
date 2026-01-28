@@ -1,0 +1,66 @@
+name: LACTOBACILLUS PONTIS MEDIUM
+original_name: LACTOBACILLUS PONTIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J292
+  term:
+    id: mediadive.medium:J292
+    label: LACTOBACILLUS PONTIS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=292'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+- preferred_term: Hemin chloride
+  term:
+    id: CHEBI:50385
+    label: Hemin chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Triethanolamine
+  term:
+    id: CHEBI:28621
+    label: Triethanolamine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5.
+- step_number: 2
+  action: COOL
+  description: After autoclaving, cool to 50C and add aseptically 18 ml Maltose-hemin
+    solution.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter-sterilize.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: After filter-sterilizing, store at 4C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.200597Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J292'

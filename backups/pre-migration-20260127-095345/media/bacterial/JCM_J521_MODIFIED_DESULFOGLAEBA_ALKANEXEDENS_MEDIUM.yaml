@@ -1,0 +1,104 @@
+name: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
+original_name: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: JCM Medium J521
+  term:
+    id: mediadive.medium:J521
+    label: MODIFIED DESULFOGLAEBA ALKANEXEDENS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=521'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '27.7469'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.277469'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3.88457'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00110988'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Decane
+  term:
+    id: CHEBI:41808
+    label: Decane
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 7.2 - 7.4. Boil Mineral medium and
+    cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute Mineral medium into
+    culture vessels (e.g., 9.0 ml of the medium in tubes) under the same gas mixture,
+    seal with Teflon-coated rubber stoppers and autoclave. After cooling, add the
+    following components (per 9.0 ml Mineral medium) from sterile anoxic stock solutions
+    (autoclaved or *filter-sterilized):'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave and store under a N2 atmosphere.
+- step_number: 3
+  action: MIX
+  description: 'Comment: For strain JCM 13588, inoculate with a 20% inoculum, and
+    incubate the vessels in inverted position.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.828744Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J521'

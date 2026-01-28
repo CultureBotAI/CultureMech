@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_791",
+  "medium_name": "Sodium glutamate",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Sodium succinate",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Sodium acetate",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casamino acids",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "(NH4)2SO4",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Basal salts solution",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Phosphate solution",
+      "concentration": 0.5,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final pH 7.5",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

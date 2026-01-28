@@ -1,0 +1,75 @@
+{
+  "medium_id": "dsmz_78a",
+  "medium_name": "FOR TREPONEMA SP.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "These solutions must not be prepared under anaerobic conditions.",
+      "concentration": 0.6,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Histidine",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Serine",
+      "concentration": 0.7,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Glutamine",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution:",
+      "concentration": 50.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 50.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Pyridoxamine-HCl",
+      "concentration": 50.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Nicotinic acid",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 25.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

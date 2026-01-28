@@ -1,0 +1,72 @@
+name: Nitrate Mineral Salts Medium (NMS)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+description: Defined mineral salts medium for growth of methylotrophic bacteria and
+  other organisms utilizing nitrate as nitrogen source.
+ph_value: 7.0
+ingredients:
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31795
+    label: MgSO4·7H2O
+- preferred_term: CaCl2·6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86280
+    label: CaCl2·6H2O
+- preferred_term: KNO3
+  concentration:
+    value: '1.0'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63043
+    label: KNO3
+  role:
+  - NITROGEN_SOURCE
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.272'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  role:
+  - BUFFER
+- preferred_term: Na2HPO4·12H2O
+  concentration:
+    value: '0.717'
+    unit: G_PER_L
+  term:
+    id: CHEBI:34204
+    label: Na2HPO4·12H2O
+- preferred_term: Trace Elements Solution
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: ATCC trace elements solution
+media_term:
+  preferred_term: ATCC Medium 1306
+  term:
+    id: ATCC:1306
+    label: Nitrate Mineral Salts Medium (NMS)
+notes: 'Source: ATCC Medium 1306.pdf
+
+  Cross-references: DSMZ:632, TOGO:M1871
+
+  Verified equivalent to DSMZ Medium 632 (2026-01-06). Complete formulation with trace
+  elements.'
+applications:
+- Cultivation of methylotrophic bacteria
+- Growth of Methylobacterium species
+- Nitrate utilization studies
+curation_history:
+- timestamp: '2026-01-22T07:19:59.630463Z'
+  curator: atcc-import
+  action: Imported from ATCC data
+  notes: 'Source: ATCC 1306'

@@ -1,0 +1,21 @@
+name: medium FOR ERYTHROBACTER LONGUS
+original_name: medium FOR ERYTHROBACTER LONGUS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 695
+  term:
+    id: komodo.medium:695
+    label: medium FOR ERYTHROBACTER LONGUS
+notes: 'Source: KOMODO ModelSEED | ID: 695 | DSMZ Medium: 695 (mediadive.medium:695)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 695'

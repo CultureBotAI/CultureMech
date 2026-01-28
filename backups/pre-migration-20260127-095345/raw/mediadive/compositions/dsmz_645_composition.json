@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_645",
+  "medium_name": "Bacto Middlebrook 7H10 agar (Difco 262710)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Bacto Middlebrook 7H10 agar (Difco 262710)",
+      "concentration": 19.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glycerol",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

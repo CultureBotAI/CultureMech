@@ -1,0 +1,59 @@
+name: ALKALINE NUTRIENT AGAR
+original_name: ALKALINE NUTRIENT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.7
+media_term:
+  preferred_term: DSMZ Medium 31
+  term:
+    id: mediadive.medium:31
+    label: ALKALINE NUTRIENT AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '42'
+    unit: G_PER_L
+- preferred_term: Na2CO3 anhydrous
+  term:
+    id: CHEBI:29377
+    label: Na2CO3 anhydrous
+  concentration:
+    value: '53'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 2
+  action: MIX
+  description: After sterilization add sterile 1 M Na-sesquicarbonate solution (1
+    ml in 10 ml)  to achieve a pH of 9.7
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.014257Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 31'

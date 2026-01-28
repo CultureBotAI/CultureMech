@@ -1,0 +1,34 @@
+name: Potato Dextrose Agar
+original_name: Potato Dextrose Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Nissui Potato Dextrose Agar
+  concentration:
+    value: '39'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1721
+  term:
+    id: TOGO:M1721
+    label: Potato Dextrose Agar
+notes: 'Source: https://togomedium.org/medium/M1721
+
+  Original source: NBRC - NBRC_M930
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=930'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.221326Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1721'

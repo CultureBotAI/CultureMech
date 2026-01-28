@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1424",
+  "medium_name": "Glucose",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Glucose",
+      "concentration": 7.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast Extract",
+      "concentration": 4.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

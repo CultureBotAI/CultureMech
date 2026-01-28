@@ -1,0 +1,116 @@
+name: BCYE alpha agar
+original_name: BCYE alpha agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 585a
+  term:
+    id: mediadive.medium:585a
+    label: BCYE alpha agar
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: ACES
+  term:
+    id: CHEBI:65994
+    label: ACES
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+- preferred_term: Activated charcoal
+  concentration:
+    value: '4.08163'
+    unit: G_PER_L
+- preferred_term: Na2 alpha-ketoglutarate
+  term:
+    id: CHEBI:16810
+    label: Na2 alpha-ketoglutarate
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30.6122'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Fe4(PO4)2
+  term:
+    id: CHEBI:132767
+    label: Fe4(PO4)2
+  concentration:
+    value: '25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare OXOID Legionella CYE-Agar base or solution A.
+- step_number: 2
+  action: HEAT
+  description: Cool down to 50 °C.
+- step_number: 3
+  action: MIX
+  description: Add solution C (Cysteine-HCl) and solution D (ferric pyrophosphate).
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 6.9 with sterile 1.0 N KOH or HCl.
+- step_number: 5
+  action: MIX
+  description: The pH of the medium is critical.
+- step_number: 6
+  action: POUR_PLATES
+  description: Finally, add solution B. Swirl medium in flask during dispensing to
+    petri dishes or tubes in order to keep charcoal suspended.
+- step_number: 7
+  action: MIX
+  description: Dehydrated media preparations are available from media distributors.
+- step_number: 8
+  action: MIX
+  description: We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
+- step_number: 9
+  action: MIX
+  description: 'Note: Alternatively use CYE-ACES AGAR'
+- step_number: 10
+  action: AUTOCLAVE
+  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the
+    other components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool
+    to 50 - 55°C.
+- step_number: 11
+  action: AUTOCLAVE
+  description: Autoclave at 121°C and cool to 50 - 55°C.
+- step_number: 12
+  action: FILTER_STERILIZE
+  description: Prepare a fresh solution and filter-sterilize it.
+- step_number: 13
+  action: FILTER_STERILIZE
+  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize
+    solution separately.
+- step_number: 14
+  action: MIX
+  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in
+    the dark. Do not use if chemical looses its green colour and becomes brown or
+    yellow.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.649574Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 585a'

@@ -1,0 +1,101 @@
+name: SP4-Z MEDIUM
+original_name: SP4-Z MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1076b
+  term:
+    id: mediadive.medium:1076b
+    label: SP4-Z MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: DNA
+  term:
+    id: CHEBI:16991
+    label: DNA
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CMRL 1066
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Swine serum
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: The difference between this medium and "normal" SP4 medium (Medium
+    1076) is that the yeast extract was left out and DNA was added instead. Since
+    most mycoplasmas use either glucose or arginine as their energy source one is
+    added to the media. Do not combine both in one medium, arginine can inhibit the
+    growth of some glucose utilizers (unknown reason).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 7.4; autoclave at 121°C for 15 minutes.
+- step_number: 3
+  action: MIX
+  description: 'Add aseptically:'
+- step_number: 4
+  action: MIX
+  description: 'As energy source add either:'
+- step_number: 5
+  action: MIX
+  description: 'For Ureaplasma add instead of Glucose or Arginine:'
+- step_number: 6
+  action: HEAT
+  description: For agar plates use only 126 ml of distilled water and add 2 g of agar.
+    Medium containing agar should be placed at 55°C before adding supplements.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.308987Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1076b'

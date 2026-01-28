@@ -1,0 +1,29 @@
+name: KOSMOTOGA PACIFICA MEDIUM
+original_name: KOSMOTOGA PACIFICA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J982
+  term:
+    id: mediadive.medium:J982
+    label: KOSMOTOGA PACIFICA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=982'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 232 supplemented with 3.0 g/L yeast extract and 2.4
+    g/L L-cystine. Cultivate under a N2-CO2 (4:1, v/v) gas atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.209915Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J982'

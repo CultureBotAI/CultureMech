@@ -1,0 +1,29 @@
+name: STYGIOLOBUS MEDIUM
+original_name: STYGIOLOBUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J178
+  term:
+    id: mediadive.medium:J178
+    label: STYGIOLOBUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=178'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 175 with 0.5 g/L (final) yeast extract and 5.0 g/L (final)
+    sulfur, and cultivate under 200 kPa H2-CO2 (80:20).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.890570Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J178'

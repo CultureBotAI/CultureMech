@@ -1,0 +1,21 @@
+name: 15% MH medium
+original_name: 15% MH medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 582
+  term:
+    id: komodo.medium:582
+    label: 15% MH medium
+notes: 'Source: KOMODO ModelSEED | ID: 582 | DSMZ Medium: 582 (mediadive.medium:582)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 582'

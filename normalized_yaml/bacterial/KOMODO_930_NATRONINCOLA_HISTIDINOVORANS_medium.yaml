@@ -1,0 +1,21 @@
+name: NATRONINCOLA HISTIDINOVORANS medium
+original_name: NATRONINCOLA HISTIDINOVORANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.9
+media_term:
+  preferred_term: KOMODO Medium 930
+  term:
+    id: komodo.medium:930
+    label: NATRONINCOLA HISTIDINOVORANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 930 | DSMZ Medium: 930 (mediadive.medium:930)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 930'

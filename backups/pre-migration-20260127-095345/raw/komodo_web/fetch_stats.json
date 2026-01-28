@@ -1,0 +1,20 @@
+{
+  "fetch_date": "2026-01-27T01:12:18Z",
+  "source": "KOMODO ModelSEED Web Table",
+  "source_url": "https://komodo.modelseed.org/servlet/KomodoTomcatServerSideUtilitiesModelSeed?MediaList",
+  "total_records": 3637,
+  "dsmz_mappings": {
+    "with_mapping": 3637,
+    "without_mapping": 0,
+    "coverage_percent": 100.0
+  },
+  "medium_types": {
+    "complex": 2570,
+    "defined": 1067
+  },
+  "aerobic_classification": {
+    "aerobic": 721,
+    "anaerobic": 2916
+  },
+  "submedia_count": 300
+}

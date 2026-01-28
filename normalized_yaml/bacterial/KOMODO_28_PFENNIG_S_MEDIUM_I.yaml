@@ -1,0 +1,21 @@
+name: PFENNIG'S MEDIUM I
+original_name: PFENNIG'S MEDIUM I
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 28
+  term:
+    id: komodo.medium:28
+    label: PFENNIG'S MEDIUM I
+notes: 'Source: KOMODO ModelSEED | ID: 28 | DSMZ Medium: 28 (mediadive.medium:28)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 28'

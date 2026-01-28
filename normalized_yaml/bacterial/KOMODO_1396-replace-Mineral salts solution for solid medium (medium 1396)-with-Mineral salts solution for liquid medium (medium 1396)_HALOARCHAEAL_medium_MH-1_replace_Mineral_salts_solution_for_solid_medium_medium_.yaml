@@ -1,0 +1,28 @@
+name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium (medium
+  1396)_with_Mineral salts solution for liquid medium (medium 1396)
+original_name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium
+  (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: KOMODO Medium 1396_replace_Mineral salts solution for solid medium
+    (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)
+  term:
+    id: komodo.medium:1396_replace_Mineral salts solution for solid medium (medium
+      1396)_with_Mineral salts solution for liquid medium (medium 1396)
+    label: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium
+      (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)
+notes: 'Source: KOMODO ModelSEED | ID: 1396_replace_Mineral salts solution for solid
+  medium (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)
+  | DSMZ Medium: 1396 (mediadive.medium:1396) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1396_replace_Mineral salts solution for solid medium
+    (medium 1396)_with_Mineral salts solution for liquid medium (medium 1396)'

@@ -1,0 +1,21 @@
+name: THERMOPLASMA VOLCANIUM medium
+original_name: THERMOPLASMA VOLCANIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 398 | DSMZ Medium: 398 (mediadive.medium:398)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 398
+  term:
+    id: komodo.medium:398
+    label: THERMOPLASMA VOLCANIUM medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 398'

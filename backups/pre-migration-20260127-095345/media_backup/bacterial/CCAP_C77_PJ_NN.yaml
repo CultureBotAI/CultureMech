@@ -1,0 +1,23 @@
+name: PJ/NN
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C77
+  term:
+    id: CCAP:C77
+    label: PJ/NN
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_PJ_NN.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.533582Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C77'

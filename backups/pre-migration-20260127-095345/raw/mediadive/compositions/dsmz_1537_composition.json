@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1537",
+  "medium_name": "SPIRIBACTER MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "R2A Broth",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Marine Salts 12% (see below)",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

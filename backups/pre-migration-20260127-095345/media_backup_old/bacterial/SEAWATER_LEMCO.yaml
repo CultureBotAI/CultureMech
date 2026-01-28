@@ -1,0 +1,24 @@
+name: SEAWATER LEMCO
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 627
+  term:
+    id: DSMZ:627
+    label: SEAWATER LEMCO
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium627.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.037944Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 627'

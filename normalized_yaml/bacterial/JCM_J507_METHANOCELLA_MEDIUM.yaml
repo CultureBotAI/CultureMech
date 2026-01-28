@@ -1,0 +1,34 @@
+name: METHANOCELLA MEDIUM
+original_name: METHANOCELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J507
+  term:
+    id: mediadive.medium:J507
+    label: METHANOCELLA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=507'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Solution A of Medium No. 284 supplemented with 0.1 g sodium acetate
+    and bring final volume to 1.0 L. Replace the gas phase with H2-CO2 (80:20, v/v)
+    and pressurize an inoculated bottle to 150 kPa with the same gas mixture.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For cultivation of strain JCM 13418, incubate with a 10%
+    inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.786686Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J507'

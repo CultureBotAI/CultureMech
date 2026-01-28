@@ -1,0 +1,270 @@
+name: AROMATOLEUM MEDIUM
+original_name: AROMATOLEUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1712
+  term:
+    id: mediadive.medium:1712
+    label: AROMATOLEUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1712.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.526316'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.315789'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.526316'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.631579'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.029'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.144'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Na2HPO4-NaH2PO4 buffer
+  concentration:
+    value: '1820'
+    unit: G_PER_L
+  notes: ' (25 mM, pH 7.1)'
+- preferred_term: 4-Aminobenzoic Acid
+  term:
+    id: CHEBI:30753
+    label: 4-Aminobenzoic Acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxal hydrochloride
+  term:
+    id: CHEBI:131529
+    label: Pyridoxal hydrochloride
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: DL-alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: DL-alpha-lipoic acid
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanesulfonic acid
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '84'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '176'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Sodiumbenzoate
+  concentration:
+    value: '144'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'The medium was autoclaved and removed from the autoclave at 85°C.
+    Oxygen dissolution was prevented by exchanging the gas-phase with N2. The medium
+    was complemented by addition of the following stock solutions:'
+- step_number: 2
+  action: MIX
+  description: After adding bicarbonate the gas was changed from N2 to N2/CO2 (90/10
+    %, v/v) and the pH was adjusted to 7.2 - 7.4 with sterile 2 M HCL.
+- step_number: 3
+  action: HEAT
+  description: The trace element solution was prepared by dissolving the salts in
+    800 mL warm H2Obidest
+- step_number: 4
+  action: AUTOCLAVE
+  description: NaOH was used to adjust the pH to 6.5. The solution was added up to
+    1000 mL with H2Obidest and autoclaved.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: The solution was filter-sterilized and stored at 4°C in the dark.
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: The solution was filter-sterilized and stored at 4°C in the dark.
+- step_number: 7
+  action: AUTOCLAVE
+  description: The solution was dispensed in the required portions (40 mL per 1 L
+    medium). The head space of the bottles was flushed with CO2. Saturation of CO2
+    in the solution was achieved by repeated flushing and shaking of the bottles.
+    Finally, the bottles were sealed with rubber stoppers and aluminum crimps and
+    autoclaved.
+- step_number: 8
+  action: AUTOCLAVE
+  description: In an ice bath ascorbic acid was dissolved in 80 mL anoxic H2Obidest
+    (autoclaved, cooled under N2 atmosphere) while flushing with N2. The pH was adjusted
+    to 7.0 with NaOH and the solution added up to 100 ml with anoxic H2Obidest. After
+    filter-sterilization the solution was stored under N2 atmosphere in a special
+    flask (which can be flushed with gas) at 4°C in the dark.
+- step_number: 9
+  action: FILTER_STERILIZE
+  description: The solution was filter-sterilized and stored at room temperature.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.321290Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1712'

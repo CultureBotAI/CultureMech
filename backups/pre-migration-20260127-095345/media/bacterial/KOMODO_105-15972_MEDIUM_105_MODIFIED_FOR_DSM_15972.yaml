@@ -1,0 +1,20 @@
+name: MEDIUM 105 MODIFIED FOR DSM 15972
+original_name: MEDIUM 105 MODIFIED FOR DSM 15972
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 105_15972
+  term:
+    id: komodo.medium:105_15972
+    label: MEDIUM 105 MODIFIED FOR DSM 15972
+notes: 'Source: KOMODO ModelSEED | ID: 105_15972 | DSMZ Medium: 105 (mediadive.medium:105)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 105_15972'

@@ -1,0 +1,20 @@
+name: COLUMBIA BLOOD AGAR WITH CHARCOAL
+original_name: COLUMBIA BLOOD AGAR WITH CHARCOAL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 429a
+  term:
+    id: komodo.medium:429a
+    label: COLUMBIA BLOOD AGAR WITH CHARCOAL
+notes: 'Source: KOMODO ModelSEED | ID: 429a | DSMZ Medium: 429a (mediadive.medium:429a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 429a'

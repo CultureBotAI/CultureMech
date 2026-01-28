@@ -1,0 +1,21 @@
+name: EMSSDQ4 medium
+original_name: EMSSDQ4 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 1202
+  term:
+    id: komodo.medium:1202
+    label: EMSSDQ4 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1202 | DSMZ Medium: 1202 (mediadive.medium:1202)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1202'

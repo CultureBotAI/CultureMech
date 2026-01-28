@@ -1,0 +1,62 @@
+[
+  {
+    "media_number": "No. 802",
+    "media_name": "YPG Medium",
+    "url": "https://www.nite.go.jp/en/nbrc/cultures/media/802.html",
+    "ingredients": [
+      {
+        "name": "Yeast extract",
+        "quantity": "5.0",
+        "unit": "g"
+      },
+      {
+        "name": "Peptone",
+        "quantity": "5.0",
+        "unit": "g"
+      },
+      {
+        "name": "Glucose",
+        "quantity": "20.0",
+        "unit": "g"
+      },
+      {
+        "name": "Agar",
+        "quantity": "15.0",
+        "unit": "g"
+      }
+    ],
+    "preparation": [
+      "Dissolve ingredients in 1000 ml distilled water",
+      "Adjust pH to 7.0",
+      "Autoclave at 121°C for 15 minutes"
+    ],
+    "notes": "General purpose medium for yeasts"
+  },
+  {
+    "media_number": "No. 1",
+    "media_name": "Nutrient Agar",
+    "url": "https://www.nite.go.jp/en/nbrc/cultures/media/1.html",
+    "ingredients": [
+      {
+        "name": "Beef extract",
+        "quantity": "3.0",
+        "unit": "g"
+      },
+      {
+        "name": "Peptone",
+        "quantity": "5.0",
+        "unit": "g"
+      },
+      {
+        "name": "Agar",
+        "quantity": "15.0",
+        "unit": "g"
+      }
+    ],
+    "preparation": [
+      "Dissolve all ingredients in 1000 ml distilled water",
+      "Autoclave at 121°C for 20 minutes"
+    ],
+    "notes": "General purpose medium for bacteria"
+  }
+]

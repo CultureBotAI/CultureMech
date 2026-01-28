@@ -1,0 +1,70 @@
+name: MEDIUM WITH THIAZOLE
+original_name: MEDIUM WITH THIAZOLE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 639
+  term:
+    id: mediadive.medium:639
+    label: MEDIUM WITH THIAZOLE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium639.pdf'
+ingredients:
+- preferred_term: Benzothiazole
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave solutions A, B and C separately and combine after cooling
+    100 ml solution A, 5 ml solution B and 5 ml solution C.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve 30.0 mg benzothiazole in 90 ml 10% NaOH, bring pH to 7.0 with
+    concentrated HCl.
+- step_number: 3
+  action: DISSOLVE
+  description: Dissolve 300 mg KH2PO4 in 50 ml distilled water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.802327Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 639'

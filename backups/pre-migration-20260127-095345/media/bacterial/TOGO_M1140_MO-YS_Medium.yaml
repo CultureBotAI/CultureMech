@@ -1,0 +1,123 @@
+name: MO-YS Medium
+original_name: MO-YS Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Solution A
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Solution B
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: ガス'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: NaCl
+  concentration:
+    value: '20.45'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.147'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.136'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.535'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
+    component, Organic compound'
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '3.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.52'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trace vitamins solution (see Medium [M701])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M701])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Crotonic acid
+  concentration:
+    value: '0.86'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+- preferred_term: 3% Na2S・9H2O solution
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 3% L--Cysteine・HCl・H2O solution
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M1140
+  term:
+    id: TOGO:M1140
+    label: MO-YS Medium
+notes: 'Source: https://togomedium.org/medium/M1140
+
+  Original source: JCM - JCM_M1071
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1071'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.994721Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1140'

@@ -1,0 +1,21 @@
+name: For DSM 9468
+original_name: For DSM 9468
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 1.6
+media_term:
+  preferred_term: KOMODO Medium 670.5
+  term:
+    id: komodo.medium:670.5
+    label: For DSM 9468
+notes: 'Source: KOMODO ModelSEED | ID: 670.5 | DSMZ Medium: 670 (mediadive.medium:670)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 670.5'

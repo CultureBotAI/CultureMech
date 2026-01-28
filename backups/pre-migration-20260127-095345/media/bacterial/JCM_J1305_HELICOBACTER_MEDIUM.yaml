@@ -1,0 +1,53 @@
+name: HELICOBACTER MEDIUM
+original_name: HELICOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1305
+  term:
+    id: mediadive.medium:J1305
+    label: HELICOBACTER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1305'
+ingredients:
+- preferred_term: Brucella Broth
+  concentration:
+    value: '27.451'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Vitox
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Skirrow supplement
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Amphotericin B
+  term:
+    id: CHEBI:2682
+    label: Amphotericin B
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave. After cooling to 50C and add aseptically 135 ï¿½l of conc.
+    HCl (final conc. 0.05%). Then add aseptically the following solutions.
+- step_number: 2
+  action: MIX
+  description: 'For stable culture, incubate the microorganisms in 5 ml of above-mentioned
+    broth in a polystyrene culture flask (25 cmz2 flask, canted neck, vent cap, AS
+    ONE: Cat. No. 2-8589-01) at 37C under a 5% O2 and 12% CO2 atmosphere (with shaking
+    at low speed; 50 rpm).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.380366Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1305'

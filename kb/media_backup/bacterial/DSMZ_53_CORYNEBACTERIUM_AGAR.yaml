@@ -1,0 +1,24 @@
+name: CORYNEBACTERIUM AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 53
+  term:
+    id: DSMZ:53
+    label: CORYNEBACTERIUM AGAR
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:48.691840Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 53'

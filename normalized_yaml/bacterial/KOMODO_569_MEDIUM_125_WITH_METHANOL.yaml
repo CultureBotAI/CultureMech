@@ -1,0 +1,21 @@
+name: MEDIUM 125 WITH METHANOL
+original_name: MEDIUM 125 WITH METHANOL
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 4.0-5.4
+media_term:
+  preferred_term: KOMODO Medium 569
+  term:
+    id: komodo.medium:569
+    label: MEDIUM 125 WITH METHANOL
+notes: 'Source: KOMODO ModelSEED | ID: 569 | DSMZ Medium: 569 (mediadive.medium:569)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 569'

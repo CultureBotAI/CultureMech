@@ -1,0 +1,30 @@
+name: DESULFOVIBRIO PIGER MEDIUM
+original_name: DESULFOVIBRIO PIGER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J400
+  term:
+    id: mediadive.medium:J400
+    label: DESULFOVIBRIO PIGER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=400'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 388 with 2.5 g/L (final) sodium lactate. Add Trace minerals
+    of Medium No. 151, instead of FeCl2 solution, and Trace element solution of Medium
+    No. 230.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.510493Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J400'

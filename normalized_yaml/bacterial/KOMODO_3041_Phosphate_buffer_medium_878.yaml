@@ -1,0 +1,21 @@
+name: Phosphate buffer (medium 878)
+original_name: Phosphate buffer (medium 878)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 3041
+  term:
+    id: komodo.medium:3041
+    label: Phosphate buffer (medium 878)
+notes: 'Source: KOMODO ModelSEED | ID: 3041 | DSMZ Medium: 3041 (mediadive.medium:3041)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3041'

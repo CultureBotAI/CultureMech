@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1384",
+  "medium_name": "CaCl2 x 2 H2O",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tryptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

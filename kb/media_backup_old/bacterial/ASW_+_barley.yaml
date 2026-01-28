@@ -1,0 +1,19 @@
+name: ASW + barley
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-7.8
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_Barley.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:18:00.385011Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C5'

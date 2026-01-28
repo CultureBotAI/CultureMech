@@ -1,0 +1,53 @@
+name: Mycoplasma medium (ATCC 243) with sucrose
+original_name: Mycoplasma medium (ATCC 243) with sucrose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract solution (15%)
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Distilled deionized water
+  concentration:
+    value: '650'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sucrose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar, Noble (BD 214230)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Defined component'
+- preferred_term: Heart Infusion Broth (BD 238400)
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2227
+  term:
+    id: TOGO:M2227
+    label: Mycoplasma medium (ATCC 243) with sucrose
+notes: 'Source: https://togomedium.org/medium/M2227
+
+  Original URL: https://www.atcc.org/~/media/DE32194753474A659F151E68B8BC8D04.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.179671Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2227'

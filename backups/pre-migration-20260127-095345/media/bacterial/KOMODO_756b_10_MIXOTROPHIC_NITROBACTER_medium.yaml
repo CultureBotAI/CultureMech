@@ -1,0 +1,21 @@
+name: 10% MIXOTROPHIC NITROBACTER medium
+original_name: 10% MIXOTROPHIC NITROBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.6
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756b | DSMZ Medium: 756b
+  (mediadive.medium:756b) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 756b
+  term:
+    id: komodo.medium:756b
+    label: 10% MIXOTROPHIC NITROBACTER medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 756b'

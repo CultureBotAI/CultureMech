@@ -1,0 +1,32 @@
+name: YCFA MEDIUM WITH 10% RUMEN FLUID
+original_name: YCFA MEDIUM WITH 10% RUMEN FLUID
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1318
+  term:
+    id: mediadive.medium:J1318
+    label: YCFA MEDIUM WITH 10% RUMEN FLUID
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1318'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 1130 with 10% rumen fluid, clarified (see below).
+- step_number: 2
+  action: HEAT
+  description: To prepare the clarified rumen fluid, preheat rumen content at 121C
+    for 15 min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.430175Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1318'

@@ -1,0 +1,21 @@
+name: MARINE CAULOBACTER medium
+original_name: MARINE CAULOBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 601
+  term:
+    id: komodo.medium:601
+    label: MARINE CAULOBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 601'

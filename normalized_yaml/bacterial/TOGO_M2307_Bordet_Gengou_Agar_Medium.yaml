@@ -1,0 +1,47 @@
+name: Bordet Gengou Agar Medium
+original_name: Bordet Gengou Agar Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: DI Water
+  concentration:
+    value: '840'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Proteose Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bordet-Gengou Agar Base (BD 248200)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Sterile Defibrinated Rabbit Blood
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2307
+  term:
+    id: TOGO:M2307
+    label: Bordet Gengou Agar Medium
+notes: 'Source: https://togomedium.org/medium/M2307
+
+  Original URL: https://www.atcc.org/~/media/4A3EC418D3294A4E9678D5BFA6473F4A.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.315144Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2307'

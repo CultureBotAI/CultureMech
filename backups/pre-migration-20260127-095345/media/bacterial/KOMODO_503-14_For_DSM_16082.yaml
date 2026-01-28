@@ -1,0 +1,21 @@
+name: For DSM 16082
+original_name: For DSM 16082
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 503.14 | DSMZ Medium: 503
+  (mediadive.medium:503) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 503.14
+  term:
+    id: komodo.medium:503.14
+    label: For DSM 16082
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 503.14'

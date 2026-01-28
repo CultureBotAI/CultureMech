@@ -1,0 +1,222 @@
+name: LS4D
+original_name: LS4D
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2SO4
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.6'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Sodium lactate
+  concentration:
+    value: '60'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: MgCl2
+  concentration:
+    value: '8'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: PIPES buffer
+  concentration:
+    value: '30'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: K2PO4
+  concentration:
+    value: '2.2'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Complex
+    component, Solution'
+- preferred_term: Resazurin (0.1% solution)
+  concentration:
+    value: '640'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: NaOH
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: Thauers vitamins
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace minerals
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Titanium citrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thiamine hydrochloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Pyridoxine hydrochloride
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Folic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Choline chloride
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: DL-Pantothenic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thioctic acid (lipoic acid)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: 1M KOH solution
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2MoO4.2H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnCl2.4H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2.6H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: FeCl2.4H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NaOH solution
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 8% (wt/vol) Na2CO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 0.2 M Sodium citrate
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Organic compound'
+- preferred_term: 20% (wt/vol) TiCl3
+  concentration:
+    value: '37.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Nitrogen
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M2809
+  term:
+    id: TOGO:M2809
+    label: LS4D
+notes: 'Source: https://togomedium.org/medium/M2809'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.321588Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2809'

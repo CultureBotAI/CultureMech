@@ -1,0 +1,19 @@
+name: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=813'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:18:00.134114Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J813'

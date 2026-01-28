@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_437",
+  "medium_name": "Use medium 328 without volatile fatty acids. Before use add 5% (v/v) bovine serum",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 328",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "328"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

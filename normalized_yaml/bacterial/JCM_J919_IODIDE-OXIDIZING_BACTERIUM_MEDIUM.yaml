@@ -1,0 +1,40 @@
+name: IODIDE-OXIDIZING BACTERIUM MEDIUM
+original_name: IODIDE-OXIDIZING BACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J919
+  term:
+    id: mediadive.medium:J919
+    label: IODIDE-OXIDIZING BACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=919'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+- preferred_term: Potassium iodide
+  term:
+    id: CHEBI:8346
+    label: Potassium iodide
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.004556Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J919'

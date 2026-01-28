@@ -1,0 +1,20 @@
+name: 50 x PYE
+original_name: 50 x PYE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 8001
+  term:
+    id: komodo.medium:8001
+    label: 50 x PYE
+notes: 'Source: KOMODO ModelSEED | ID: 8001 | DSMZ Medium: 8001 (mediadive.medium:8001)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 8001'

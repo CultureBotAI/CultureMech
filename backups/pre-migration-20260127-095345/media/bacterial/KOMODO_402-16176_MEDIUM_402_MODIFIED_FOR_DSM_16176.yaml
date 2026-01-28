@@ -1,0 +1,21 @@
+name: MEDIUM 402 MODIFIED FOR DSM 16176
+original_name: MEDIUM 402 MODIFIED FOR DSM 16176
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.0
+media_term:
+  preferred_term: KOMODO Medium 402_16176
+  term:
+    id: komodo.medium:402_16176
+    label: MEDIUM 402 MODIFIED FOR DSM 16176
+notes: 'Source: KOMODO ModelSEED | ID: 402_16176 | DSMZ Medium: 402 (mediadive.medium:402)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 402_16176'

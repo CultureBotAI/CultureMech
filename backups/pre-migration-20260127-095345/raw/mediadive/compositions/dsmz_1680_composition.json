@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1680",
+  "medium_name": "MCL",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 33.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Artificial Sea Salt (hw Marinemix 21010; Wiegandt GmbH – Products for aquaristics,",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Sterkenhofweg 13, 47807 Krefeld, Germany)",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

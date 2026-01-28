@@ -1,0 +1,44 @@
+name: Reinforced Clostridial Medium With 3%  Sea Salt
+original_name: Reinforced Clostridial Medium With 3%  Sea Salt
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Reinforced clostridial medium (BD-Difco)
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M482
+  term:
+    id: TOGO:M482
+    label: Reinforced Clostridial Medium With 3%  Sea Salt
+notes: 'Source: https://togomedium.org/medium/M482
+
+  Original source: JCM - JCM_M481
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=481'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.138631Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M482'

@@ -1,0 +1,30 @@
+name: BEER MEDIUM
+original_name: BEER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: JCM Medium J426
+  term:
+    id: mediadive.medium:J426
+    label: BEER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=426'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare MRS medium (see Medium No. 1) in normally hopped beer instead
+    of distilled water. Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.585136Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J426'

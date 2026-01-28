@@ -1,0 +1,99 @@
+name: E26 + Biotin
+original_name: E26 + Biotin
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C28
+  term:
+    id: mediadive.medium:C28
+    label: E26 + Biotin
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_E26_Biotin.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '50'
+    unit: MICROG_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Soil
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "This  medium  is  made up  in 2 parts  which are  autoclaved  separately\
+    \  and  mixed \r\naseptically, (1:1), when cool. This is to avoid precipitation."
+- step_number: 2
+  action: MIX
+  description: "Alternatively, use 17.5 g of \"Ultramarine Synthetica\" sea salts\
+    \ in 500\r\nml of distilled water."
+- step_number: 3
+  action: AUTOCLAVE
+  description: Distilled water to 500 ml.  Autoclave
+- step_number: 4
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 5
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 6
+  action: AUTOCLAVE
+  description: "Soil is  prepared  as  above.  Air­-dried  soil and  twice  its  volume\
+    \  of  supernatant\r\ndistilled water are autoclaved together at 15 psi for 2\
+    \ hours and left to cool.  The \r\nsupernatant is then decanted and filtered through\
+    \ Whatman No 1 filter paper, then\r\ndistributed to containers in volumes suitable\
+    \ for making up batches of media. The \r\naliquots and their containers are autoclaved\
+    \ for an appropriate length of time (e.g.\r\n1 litre or less for 15 minutes) and\
+    \ are then kept in a cool place (e.g. a refrigerator) \r\nuntil required."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.558457Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C28'

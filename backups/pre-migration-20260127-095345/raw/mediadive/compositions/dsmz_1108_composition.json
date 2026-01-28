@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1108",
+  "medium_name": "NZ Case (Wako pure chemicals, Japan)=Peptone from Casein  3.000",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NZ Case (Wako pure chemicals, Japan)=Peptone from Casein  3.000",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

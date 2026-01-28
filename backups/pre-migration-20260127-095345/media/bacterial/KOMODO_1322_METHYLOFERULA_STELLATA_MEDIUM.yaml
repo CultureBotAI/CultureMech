@@ -1,0 +1,21 @@
+name: METHYLOFERULA STELLATA MEDIUM
+original_name: METHYLOFERULA STELLATA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 5.0-5.8
+notes: 'pH buffer: H3PO4 | Source: KOMODO ModelSEED | ID: 1322 | DSMZ Medium: 1322
+  (mediadive.medium:1322) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1322
+  term:
+    id: komodo.medium:1322
+    label: METHYLOFERULA STELLATA MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1322'

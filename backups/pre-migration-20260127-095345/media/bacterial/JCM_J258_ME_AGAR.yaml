@@ -1,0 +1,30 @@
+name: ME AGAR
+original_name: ME AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J258
+  term:
+    id: mediadive.medium:J258
+    label: ME AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=258'
+ingredients:
+- preferred_term: Malt extract agar
+  term:
+    id: CHEBI:2509
+    label: Malt extract agar
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 115C for 10 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.107864Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J258'

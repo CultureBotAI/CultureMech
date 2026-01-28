@@ -1,0 +1,21 @@
+name: CM + YE medium
+original_name: CM + YE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 549 | DSMZ Medium: 549 (mediadive.medium:549)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 549
+  term:
+    id: komodo.medium:549
+    label: CM + YE medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 549'

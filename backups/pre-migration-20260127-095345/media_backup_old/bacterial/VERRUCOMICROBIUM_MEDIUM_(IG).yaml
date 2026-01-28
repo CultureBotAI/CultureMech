@@ -1,0 +1,24 @@
+name: VERRUCOMICROBIUM MEDIUM (IG)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1631
+  term:
+    id: DSMZ:1631
+    label: VERRUCOMICROBIUM MEDIUM (IG)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1631.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.652440Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1631'

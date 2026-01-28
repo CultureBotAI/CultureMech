@@ -1,0 +1,282 @@
+{
+  "medium_id": "dsmz_1689",
+  "medium_name": "Medium dsmz_1689",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "(NH4)2SO4*FeSO4*6H2O,",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "NiCl2*2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "CoCl2*6H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "NiCl2*2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "MnCl2*4H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "ZnSO4*7H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "Na2SeO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "Na2WO4*2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "Na2MoO4*2H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "CuCl2*2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "784   mg",
+      "concentration": 784.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "28   mg",
+      "concentration": 28.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "166   mg",
+      "concentration": 166.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "99   mg",
+      "concentration": 99.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "144   mg",
+      "concentration": 144.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "24   mg",
+      "concentration": 24.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "6   mg",
+      "concentration": 6.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace elements solution (mg/l):"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Pirydoxin hydrocloride (B6)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Riboflavine (B2)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Thiamine (B1)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Nicotinic acid (PP)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "Cobalamin (B12)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamins solution (mg /l): (to be added 1 ml/l)"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

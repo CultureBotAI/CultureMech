@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_90",
+  "medium_name": "Medium dsmz_90",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Malt extract",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Soya peptone",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

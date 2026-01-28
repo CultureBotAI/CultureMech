@@ -1,0 +1,21 @@
+name: ENB medium
+original_name: ENB medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 237
+  term:
+    id: komodo.medium:237
+    label: ENB medium
+notes: 'Source: KOMODO ModelSEED | ID: 237 | DSMZ Medium: 237 (mediadive.medium:237)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 237'

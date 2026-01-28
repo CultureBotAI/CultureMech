@@ -1,0 +1,54 @@
+name: GYM Streptomyces Medium
+original_name: GYM Streptomyces Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Inorganic
+    compound, Defined component'
+- preferred_term: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2331
+  term:
+    id: TOGO:M2331
+    label: GYM Streptomyces Medium
+notes: 'Source: https://togomedium.org/medium/M2331
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium65.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.352370Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2331'

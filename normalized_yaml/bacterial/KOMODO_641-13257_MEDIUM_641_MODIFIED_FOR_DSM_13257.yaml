@@ -1,0 +1,20 @@
+name: MEDIUM 641 MODIFIED FOR DSM 13257
+original_name: MEDIUM 641 MODIFIED FOR DSM 13257
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 641_13257
+  term:
+    id: komodo.medium:641_13257
+    label: MEDIUM 641 MODIFIED FOR DSM 13257
+notes: 'Source: KOMODO ModelSEED | ID: 641_13257 | DSMZ Medium: 641 (mediadive.medium:641)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 641_13257'

@@ -1,0 +1,20 @@
+name: MEDIUM 464 MODIFIED FOR DSM 2117
+original_name: MEDIUM 464 MODIFIED FOR DSM 2117
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 464_2117
+  term:
+    id: komodo.medium:464_2117
+    label: MEDIUM 464 MODIFIED FOR DSM 2117
+notes: 'Source: KOMODO ModelSEED | ID: 464_2117 | DSMZ Medium: 464 (mediadive.medium:464)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 464_2117'

@@ -1,0 +1,21 @@
+name: ACIDULIPROFUNDUM medium
+original_name: ACIDULIPROFUNDUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: KOMODO Medium 1083
+  term:
+    id: komodo.medium:1083
+    label: ACIDULIPROFUNDUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 1083 | DSMZ Medium: 1083 (mediadive.medium:1083)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1083'

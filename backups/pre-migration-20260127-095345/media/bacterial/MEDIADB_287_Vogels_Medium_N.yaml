@@ -1,0 +1,98 @@
+name: Vogels Medium N
+original_name: Vogels Medium N
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Orthophosphate
+  concentration:
+    value: '2600.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pi'
+- preferred_term: Sulfate
+  concentration:
+    value: '104.1'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:so4'
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '29.21'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:sucr'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.00103'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Citrate
+  concentration:
+    value: '660.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: Potassium
+  concentration:
+    value: '6390.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:k'
+- preferred_term: Nitrate
+  concentration:
+    value: '1610.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:no3'
+- preferred_term: Magnesium
+  concentration:
+    value: '411.44'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:mg2'
+- preferred_term: Cl-
+  concentration:
+    value: '141.03'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cl'
+- preferred_term: Sodium
+  concentration:
+    value: '2170.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:na1'
+- preferred_term: NH4+
+  concentration:
+    value: '5540.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nh4'
+- preferred_term: Fe2+
+  concentration:
+    value: '0.01791'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.248196Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 287, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 287
+  term:
+    id: MEDIADB:287
+    label: Vogels Medium N
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

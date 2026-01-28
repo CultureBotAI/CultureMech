@@ -1,0 +1,107 @@
+name: ACETIVIBRIO MEDIUM
+original_name: ACETIVIBRIO MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 122
+  term:
+    id: mediadive.medium:122
+    label: ACETIVIBRIO MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium122.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.43'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+- preferred_term: Na2-ß-glycerophosphate x 5 H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0011'
+    unit: G_PER_L
+- preferred_term: L-Glutathione
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: Optional ingredient
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except cellobiose, sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Then adjust pH to 7.0 -
+    7.2, distribute under same gas atmosphere in anoxic Hungate-type tubes or serum
+    vials and autoclave. Cellobiose is added to the sterile medium from an anoxic
+    10% (w/v) stock solution prepared under 100% N2 gas and sterilized by filtration.
+    Some strains can be adapted to cellulose as substrate using 10.00 g/l cellulose
+    (Avicel or MN 301, MACHEREY-NAGEL).
+- step_number: 2
+  action: MIX
+  description: 'Note: A white precipitate forms after mixing the ingredients of this
+    medium, but this has no negative effect on growth.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.249982Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 122'

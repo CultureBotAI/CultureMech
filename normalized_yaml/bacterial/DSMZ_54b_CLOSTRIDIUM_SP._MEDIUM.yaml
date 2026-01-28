@@ -1,0 +1,52 @@
+name: CLOSTRIDIUM SP. MEDIUM
+original_name: CLOSTRIDIUM SP. MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 54b
+  term:
+    id: mediadive.medium:54b
+    label: CLOSTRIDIUM SP. MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium54b.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (note that most of the carbonate remains suspended)
+    and sparge medium with 100% N2 gas for 30 -45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    vials while stirring to keep carbonate suspended and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.057000Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 54b'

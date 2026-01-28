@@ -1,0 +1,26 @@
+name: tryptic soy agar (containing 2.5% NaCl)
+original_name: tryptic soy agar (containing 2.5% NaCl)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '2.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: tryptic soy agar (Merck KGaA, Darmstadt, Germany)
+media_term:
+  preferred_term: TOGO Medium M2411
+  term:
+    id: TOGO:M2411
+    label: tryptic soy agar (containing 2.5% NaCl)
+notes: 'Source: https://togomedium.org/medium/M2411'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.481068Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2411'

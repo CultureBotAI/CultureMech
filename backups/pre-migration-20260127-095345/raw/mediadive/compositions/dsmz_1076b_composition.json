@@ -1,0 +1,75 @@
+{
+  "medium_id": "dsmz_1076b",
+  "medium_name": "1076) is that the",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "yeast extract was left out and DNA was added instead. Since most mycoplasmas use either",
+      "concentration": 0.7,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "glucose or arginine as their energy source one is added to the media. Do not combine both",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "PPLO broth",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tryptone",
+      "concentration": 130.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Bacto-Peptone (BD)",
+      "concentration": 0.04,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "DNA (fish sperm; SERVA)",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Add aseptically:",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeastolate (BD; 2%, autoclaved)",
+      "concentration": 17.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fetal bovine serum (heat-inactivated)",
+      "concentration": 17.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Swine serum (heat-inactivated)",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose (50% aqueous solution)",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,30 @@
+name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J51
+  term:
+    id: mediadive.medium:J51
+    label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+ingredients:
+- preferred_term: Oatmeal agar
+  term:
+    id: CHEBI:2509
+    label: Oatmeal agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.647731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J51'

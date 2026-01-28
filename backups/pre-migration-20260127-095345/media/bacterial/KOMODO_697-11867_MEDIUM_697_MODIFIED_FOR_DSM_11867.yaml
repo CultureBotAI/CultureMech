@@ -1,0 +1,20 @@
+name: MEDIUM 697 MODIFIED FOR DSM 11867
+original_name: MEDIUM 697 MODIFIED FOR DSM 11867
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 697_11867
+  term:
+    id: komodo.medium:697_11867
+    label: MEDIUM 697 MODIFIED FOR DSM 11867
+notes: 'Source: KOMODO ModelSEED | ID: 697_11867 | DSMZ Medium: 697 (mediadive.medium:697)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 697_11867'

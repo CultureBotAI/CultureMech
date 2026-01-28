@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1117",
+  "medium_name": "Peptone",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 4.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

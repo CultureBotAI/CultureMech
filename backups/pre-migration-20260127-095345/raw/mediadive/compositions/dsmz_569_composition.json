@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_569",
+  "medium_name": "125 WITH METHANOL",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 125",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "125"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

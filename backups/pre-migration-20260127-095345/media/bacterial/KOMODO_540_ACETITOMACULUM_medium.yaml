@@ -1,0 +1,21 @@
+name: ACETITOMACULUM medium
+original_name: ACETITOMACULUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 540
+  term:
+    id: komodo.medium:540
+    label: ACETITOMACULUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 540 | DSMZ Medium: 540 (mediadive.medium:540)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 540'

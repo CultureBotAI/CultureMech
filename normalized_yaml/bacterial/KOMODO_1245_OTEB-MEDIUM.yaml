@@ -1,0 +1,21 @@
+name: OTEB-MEDIUM
+original_name: OTEB-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: KOMODO Medium 1245
+  term:
+    id: komodo.medium:1245
+    label: OTEB-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1245 | DSMZ Medium: 1245 (mediadive.medium:1245)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1245'

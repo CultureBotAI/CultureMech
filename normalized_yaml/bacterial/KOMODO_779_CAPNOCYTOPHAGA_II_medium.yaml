@@ -1,0 +1,21 @@
+name: CAPNOCYTOPHAGA II medium
+original_name: CAPNOCYTOPHAGA II medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-7.8
+media_term:
+  preferred_term: KOMODO Medium 779
+  term:
+    id: komodo.medium:779
+    label: CAPNOCYTOPHAGA II medium
+notes: 'Source: KOMODO ModelSEED | ID: 779 | DSMZ Medium: 779 (mediadive.medium:779)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 779'

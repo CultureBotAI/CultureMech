@@ -1,0 +1,21 @@
+name: ALKALINE NUTRIENT AGAR
+original_name: ALKALINE NUTRIENT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.7
+media_term:
+  preferred_term: KOMODO Medium 31
+  term:
+    id: komodo.medium:31
+    label: ALKALINE NUTRIENT AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 31 | DSMZ Medium: 31 (mediadive.medium:31)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 31'

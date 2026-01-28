@@ -1,0 +1,21 @@
+name: MODIFIED YMA medium
+original_name: MODIFIED YMA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 1334
+  term:
+    id: komodo.medium:1334
+    label: MODIFIED YMA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1334 | DSMZ Medium: 1334 (mediadive.medium:1334)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1334'

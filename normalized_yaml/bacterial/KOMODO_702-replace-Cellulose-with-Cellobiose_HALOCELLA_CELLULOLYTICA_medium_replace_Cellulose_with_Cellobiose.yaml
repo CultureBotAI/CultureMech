@@ -1,0 +1,21 @@
+name: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
+original_name: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 702_replace_Cellulose_with_Cellobiose
+  term:
+    id: komodo.medium:702_replace_Cellulose_with_Cellobiose
+    label: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
+notes: 'Source: KOMODO ModelSEED | ID: 702_replace_Cellulose_with_Cellobiose | DSMZ
+  Medium: 702 (mediadive.medium:702) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 702_replace_Cellulose_with_Cellobiose'

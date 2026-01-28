@@ -1,0 +1,20 @@
+name: MEDIUM 13 MODIFIED FOR DSM 17978
+original_name: MEDIUM 13 MODIFIED FOR DSM 17978
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 13_17978
+  term:
+    id: komodo.medium:13_17978
+    label: MEDIUM 13 MODIFIED FOR DSM 17978
+notes: 'Source: KOMODO ModelSEED | ID: 13_17978 | DSMZ Medium: 13 (mediadive.medium:13)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 13_17978'

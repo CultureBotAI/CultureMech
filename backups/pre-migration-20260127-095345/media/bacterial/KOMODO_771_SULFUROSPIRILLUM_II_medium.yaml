@@ -1,0 +1,21 @@
+name: SULFUROSPIRILLUM II medium
+original_name: SULFUROSPIRILLUM II medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 771
+  term:
+    id: komodo.medium:771
+    label: SULFUROSPIRILLUM II medium
+notes: 'Source: KOMODO ModelSEED | ID: 771 | DSMZ Medium: 771 (mediadive.medium:771)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 771'

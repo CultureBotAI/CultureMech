@@ -1,0 +1,21 @@
+name: Solution A (medium 1003)
+original_name: Solution A (medium 1003)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 4.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2025 | DSMZ Medium: 2025 (mediadive.medium:2025)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2025
+  term:
+    id: komodo.medium:2025
+    label: Solution A (medium 1003)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2025'

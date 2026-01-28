@@ -1,0 +1,21 @@
+name: Middlebrook 7H10 agar
+original_name: Middlebrook 7H10 agar
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.4-6.8
+media_term:
+  preferred_term: KOMODO Medium 3025
+  term:
+    id: komodo.medium:3025
+    label: Middlebrook 7H10 agar
+notes: 'Source: KOMODO ModelSEED | ID: 3025 | DSMZ Medium: 3025 (mediadive.medium:3025)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3025'

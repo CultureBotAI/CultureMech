@@ -1,0 +1,21 @@
+name: CAMPYLOBACTER RECTUS medium
+original_name: CAMPYLOBACTER RECTUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 338
+  term:
+    id: komodo.medium:338
+    label: CAMPYLOBACTER RECTUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 338 | DSMZ Medium: 338 (mediadive.medium:338)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 338'

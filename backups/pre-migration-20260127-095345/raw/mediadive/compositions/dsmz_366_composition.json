@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_366",
+  "medium_name": "To medium 1 add 1% glucose.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 1.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

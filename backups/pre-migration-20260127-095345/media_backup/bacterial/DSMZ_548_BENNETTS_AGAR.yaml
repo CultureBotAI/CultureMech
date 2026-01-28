@@ -1,0 +1,24 @@
+name: BENNETT'S AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 548
+  term:
+    id: DSMZ:548
+    label: BENNETT'S AGAR
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium548.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.006165Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 548'

@@ -1,0 +1,20 @@
+name: MEDIUM 755 MODIFIED FOR DSM 18525
+original_name: MEDIUM 755 MODIFIED FOR DSM 18525
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 755_18525
+  term:
+    id: komodo.medium:755_18525
+    label: MEDIUM 755 MODIFIED FOR DSM 18525
+notes: 'Source: KOMODO ModelSEED | ID: 755_18525 | DSMZ Medium: 755 (mediadive.medium:755)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 755_18525'

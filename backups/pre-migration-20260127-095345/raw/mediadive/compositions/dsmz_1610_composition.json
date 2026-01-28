@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1610",
+  "medium_name": "METHYLOCEANIBACTER MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Solution 1 (50x salt stock):",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 6 H2O",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

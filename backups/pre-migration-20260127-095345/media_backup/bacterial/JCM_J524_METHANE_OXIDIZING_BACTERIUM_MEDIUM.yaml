@@ -1,0 +1,24 @@
+name: METHANE OXIDIZING BACTERIUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J524
+  term:
+    id: JCM:J524
+    label: METHANE OXIDIZING BACTERIUM MEDIUM
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=524'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.034002Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J524'

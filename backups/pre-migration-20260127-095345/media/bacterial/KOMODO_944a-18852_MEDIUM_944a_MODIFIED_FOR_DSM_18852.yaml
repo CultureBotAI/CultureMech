@@ -1,0 +1,20 @@
+name: MEDIUM 944a MODIFIED FOR DSM 18852
+original_name: MEDIUM 944a MODIFIED FOR DSM 18852
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 944a_18852
+  term:
+    id: komodo.medium:944a_18852
+    label: MEDIUM 944a MODIFIED FOR DSM 18852
+notes: 'Source: KOMODO ModelSEED | ID: 944a_18852 | DSMZ Medium: 944a (mediadive.medium:944a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 944a_18852'

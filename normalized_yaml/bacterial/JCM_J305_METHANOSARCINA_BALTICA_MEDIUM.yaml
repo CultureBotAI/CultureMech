@@ -1,0 +1,29 @@
+name: METHANOSARCINA BALTICA MEDIUM
+original_name: METHANOSARCINA BALTICA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J305
+  term:
+    id: mediadive.medium:J305
+    label: METHANOSARCINA BALTICA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=305'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 265 supplemented with 0.05% (final) methanol. Replace
+    the gas phase with a N2-CO2 (4:1, v/v) gas mixture and pressurize to 100 kPa.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.241048Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J305'

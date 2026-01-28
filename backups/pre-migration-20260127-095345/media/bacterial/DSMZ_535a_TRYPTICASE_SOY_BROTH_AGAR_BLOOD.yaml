@@ -1,0 +1,44 @@
+name: TRYPTICASE SOY BROTH AGAR+BLOOD
+original_name: TRYPTICASE SOY BROTH AGAR+BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 535a
+  term:
+    id: mediadive.medium:535a
+    label: TRYPTICASE SOY BROTH AGAR+BLOOD
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium535a.pdf'
+ingredients:
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: To medium 535 add 5% blood after cooling.
+- step_number: 2
+  action: MIX
+  description: pH 7.3
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.555283Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 535a'

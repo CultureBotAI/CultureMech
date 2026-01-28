@@ -1,0 +1,43 @@
+name: ANAEROBIC BRAIN HEART INFUSION BROTH
+original_name: ANAEROBIC BRAIN HEART INFUSION BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J723
+  term:
+    id: mediadive.medium:J723
+    label: ANAEROBIC BRAIN HEART INFUSION BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=723'
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '36.6337'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation,
+    add per liter the following solutions (autoclaved and stored under a N2 atmosphere)
+    aseptically and anaerobically:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.406573Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J723'

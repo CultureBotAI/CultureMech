@@ -1,0 +1,24 @@
+name: MEDIUM MODIFIED FOR DECHLOROMONAS SPP.
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 944a
+  term:
+    id: DSMZ:944a
+    label: MEDIUM MODIFIED FOR DECHLOROMONAS SPP.
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium944a.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.234562Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 944a'

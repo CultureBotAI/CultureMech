@@ -1,0 +1,20 @@
+name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+original_name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 805
+  term:
+    id: komodo.medium:805
+    label: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 805 | DSMZ Medium: 805 (mediadive.medium:805)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 805'

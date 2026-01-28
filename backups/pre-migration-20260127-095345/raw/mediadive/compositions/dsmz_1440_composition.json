@@ -1,0 +1,163 @@
+{
+  "medium_id": "dsmz_1440",
+  "medium_name": "PIRELLULA MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CaCl2 x2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "MgCl x 6H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "0.1M Tris/HCl at pH 7.5",
+      "concentration": 0.1,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "Agar",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "Na2HPO4 x 2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "After autoclaving add solution 2 to solution 1.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "Vitamin B12",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Ca-pantothenate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Nicotinamide",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Pyridoxine hydrochloride",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

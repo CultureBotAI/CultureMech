@@ -1,0 +1,30 @@
+name: THERMOVENBULUM MEDIUM
+original_name: THERMOVENBULUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J856
+  term:
+    id: mediadive.medium:J856
+    label: THERMOVENBULUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=856'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 786 supplemented with 1.0 g/L NaCl (final), 1.0 g/L
+    yeast extract (final) and 4.96 g/L Na2S2O3 x 5H2O. Adjust pH to 7.4, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.810653Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J856'

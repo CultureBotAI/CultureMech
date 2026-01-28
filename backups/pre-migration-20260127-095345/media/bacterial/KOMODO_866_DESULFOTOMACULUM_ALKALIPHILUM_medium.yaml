@@ -1,0 +1,21 @@
+name: DESULFOTOMACULUM ALKALIPHILUM medium
+original_name: DESULFOTOMACULUM ALKALIPHILUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 8.7-9.0
+media_term:
+  preferred_term: KOMODO Medium 866
+  term:
+    id: komodo.medium:866
+    label: DESULFOTOMACULUM ALKALIPHILUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 866 | DSMZ Medium: 866 (mediadive.medium:866)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 866'

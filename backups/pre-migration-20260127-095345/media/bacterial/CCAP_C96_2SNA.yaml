@@ -1,0 +1,28 @@
+name: 2SNA
+original_name: 2SNA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C96
+  term:
+    id: mediadive.medium:C96
+    label: 2SNA
+notes: 'Source: CCAP | Link: https://www-cyanosite.bio.purdue.edu/media/table/SNA.html'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: This medium recipe is coming very soon!
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.797266Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C96'

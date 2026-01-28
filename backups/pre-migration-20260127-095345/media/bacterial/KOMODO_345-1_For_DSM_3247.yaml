@@ -1,0 +1,20 @@
+name: For DSM 3247
+original_name: For DSM 3247
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 345.1
+  term:
+    id: komodo.medium:345.1
+    label: For DSM 3247
+notes: 'Source: KOMODO ModelSEED | ID: 345.1 | DSMZ Medium: 345 (mediadive.medium:345)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 345.1'

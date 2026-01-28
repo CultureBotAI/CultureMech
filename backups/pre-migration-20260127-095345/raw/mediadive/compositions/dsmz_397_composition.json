@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_397",
+  "medium_name": "Use medium 212 without Na2SO4 and butyrate. Add sodium ferulate to 10 mM final",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 212",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "212"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

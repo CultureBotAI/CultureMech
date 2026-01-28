@@ -1,0 +1,37 @@
+name: HYDROGENOTHERMUS MEDIUM
+original_name: HYDROGENOTHERMUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J286
+  term:
+    id: mediadive.medium:J286
+    label: HYDROGENOTHERMUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=286'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Aquifex medium (Medium No. 255) without Trace vitamins and supplement
+    with 0.2 g/L yeast extract (BD-Difco) and 0.5 g/L sulfur (powder). Mix ingredients
+    except sulfur and adjust pH to 7.0 with H2SO4. Autoclave the medium under a gas
+    mixture of H2-CO2 (4:1, v/v), and stand overnight. Steam sulfur for 3 hr on each
+    of 3 successive days. Aseptically dispense 20 ml of the medium into serum bottles
+    (120 ml) containing the sterilized sulfur (0.01 g/bottle) under a stream of H2-CO2
+    (4:1, v/v) gas mixture and seal with butyl rubber stoppers. After inoculation,
+    add 15.0 ml filter-sterilized air, and pressurize to 200 kPa with a H2-CO2 (4:1,
+    v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.186592Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J286'

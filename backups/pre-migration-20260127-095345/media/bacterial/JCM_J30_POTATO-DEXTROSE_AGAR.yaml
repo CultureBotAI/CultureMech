@@ -1,0 +1,51 @@
+name: POTATO-DEXTROSE AGAR
+original_name: POTATO-DEXTROSE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J30
+  term:
+    id: mediadive.medium:J30
+    label: POTATO-DEXTROSE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=30'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Boil potatoes for 20 min. Strain off the pieces of potatoes through
+    a fine sieve. Add glucose and agar, and boil until dissolved. Do not use new potatoes.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 5.4-5.6.
+- step_number: 3
+  action: MIX
+  description: 'Comment: Commercial Potato dextrose agar (BD-Difco or Oxoid) is also
+    available.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.613600Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J30'

@@ -1,0 +1,81 @@
+name: DESULFOTOMACULUM PBE MEDIUM
+original_name: DESULFOTOMACULUM PBE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J547
+  term:
+    id: mediadive.medium:J547
+    label: DESULFOTOMACULUM PBE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=547'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2.0202'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1.0101'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.0202'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.51515'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.10101'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '70'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium ascorbate
+  term:
+    id: CHEBI:113451
+    label: Sodium ascorbate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components and autoclave under a N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'To complete the medium, aseptically and anaerobically add the following
+    solutions to the medium:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.901288Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J547'

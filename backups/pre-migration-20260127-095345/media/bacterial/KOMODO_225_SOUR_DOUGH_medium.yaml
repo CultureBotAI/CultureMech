@@ -1,0 +1,21 @@
+name: SOUR DOUGH medium
+original_name: SOUR DOUGH medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 225 | DSMZ Medium: 225 (mediadive.medium:225)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 225
+  term:
+    id: komodo.medium:225
+    label: SOUR DOUGH medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 225'

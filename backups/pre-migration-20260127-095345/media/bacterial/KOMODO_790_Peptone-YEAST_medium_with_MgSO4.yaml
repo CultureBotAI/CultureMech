@@ -1,0 +1,21 @@
+name: Peptone-YEAST medium with MgSO4
+original_name: Peptone-YEAST medium with MgSO4
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 790
+  term:
+    id: komodo.medium:790
+    label: Peptone-YEAST medium with MgSO4
+notes: 'Source: KOMODO ModelSEED | ID: 790 | DSMZ Medium: 790 (mediadive.medium:790)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 790'

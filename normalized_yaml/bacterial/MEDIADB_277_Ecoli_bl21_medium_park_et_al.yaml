@@ -1,0 +1,100 @@
+name: Ecoli bl21 medium; park et al
+original_name: Ecoli bl21 medium; park et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Citrate
+  concentration:
+    value: '8.8485'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: beta-D-Glucose
+  concentration:
+    value: '27.753'
+    unit: MILLIMOLAR
+- preferred_term: '''Fe(III'
+  concentration:
+    value: '0.24496'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fe3dcit'
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.04852'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.10333'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.01491'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '97.7323'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '4.86874'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.019254'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.08875'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.008799'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium phosphate
+  concentration:
+    value: '30.287'
+    unit: MILLIMOLAR
+- preferred_term: Sodium EDTA
+  concentration:
+    value: '0.02257'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Acetate
+  concentration:
+    value: '0.03645'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.166875Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 277, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 277
+  term:
+    id: MEDIADB:277
+    label: Ecoli bl21 medium; park et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

@@ -1,0 +1,21 @@
+name: HALONATRONUM SACCHAROPHILUM medium
+original_name: HALONATRONUM SACCHAROPHILUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.5-10.0
+media_term:
+  preferred_term: KOMODO Medium 932
+  term:
+    id: komodo.medium:932
+    label: HALONATRONUM SACCHAROPHILUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 932 | DSMZ Medium: 932 (mediadive.medium:932)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 932'

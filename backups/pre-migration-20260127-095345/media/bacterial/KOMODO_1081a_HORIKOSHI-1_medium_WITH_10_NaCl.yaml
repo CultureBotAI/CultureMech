@@ -1,0 +1,20 @@
+name: HORIKOSHI-1 medium WITH 10% NaCl
+original_name: HORIKOSHI-1 medium WITH 10% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1081a
+  term:
+    id: komodo.medium:1081a
+    label: HORIKOSHI-1 medium WITH 10% NaCl
+notes: 'Source: KOMODO ModelSEED | ID: 1081a | DSMZ Medium: 1081a (mediadive.medium:1081a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1081a'

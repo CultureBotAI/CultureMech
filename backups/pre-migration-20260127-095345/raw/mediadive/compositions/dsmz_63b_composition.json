@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_63b",
+  "medium_name": "DESULFOVIBRIO MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Solution A",
+      "concentration": 980.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Solution B",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Solution C",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

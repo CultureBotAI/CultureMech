@@ -1,0 +1,182 @@
+name: HYDROGEN-OXYDIZING MEDIUM
+original_name: HYDROGEN-OXYDIZING MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1003
+  term:
+    id: mediadive.medium:1003
+    label: HYDROGEN-OXYDIZING MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1003.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: NaS2O3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.48'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '0.78'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgCl2 x H2O
+  term:
+    id: CHEBI:86355
+    label: MgCl2 x H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Na-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: AlCl3 x 6 H2O
+  term:
+    id: CHEBI:30115
+    label: AlCl3 x 6 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Na-tungstate x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CuCl
+  term:
+    id: CHEBI:53472
+    label: CuCl
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NiSO4 x 6 H2O
+  term:
+    id: CHEBI:53001
+    label: NiSO4 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Se-acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: HBO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Place 1000 ml of anaerobic water (CO2 water) in a flask. Add the following
+    compounds:'
+- step_number: 2
+  action: MIX
+  description: 'Add solutions A, B, and Trace mineral solution (see recipes below):'
+- step_number: 3
+  action: AUTOCLAVE
+  description: pH the media to 6.0 and gas the flask containing the media with CO2
+    for 20 min at least. Gas first culture tube in rack and place 5 ml of media in
+    previous tube. Place stopper on loaded culture tube, crimp tube cap onto stopper.
+    Autoclave the medium for 20 min., 121°C. Add 1 ml of O2 to each tube before inoculation.
+    After the inoculation the tubes are pressurized with H2 (138 KP).
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust the pH to 4 with HCl.
+- step_number: 5
+  action: MIX
+  description: Adjust the pH of the solution to 3.0 with HCl.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.052815Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1003'

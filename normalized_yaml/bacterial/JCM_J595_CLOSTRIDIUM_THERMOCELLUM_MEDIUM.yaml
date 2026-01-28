@@ -1,0 +1,106 @@
+name: CLOSTRIDIUM THERMOCELLUM MEDIUM
+original_name: CLOSTRIDIUM THERMOCELLUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J595
+  term:
+    id: mediadive.medium:J595
+    label: CLOSTRIDIUM THERMOCELLUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=595'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.43'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '7.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0011'
+    unit: G_PER_L
+- preferred_term: Glutathione
+  term:
+    id: CHEBI:16856
+    label: Glutathione
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+- step_number: 2
+  action: MIX
+  description: 'Gas atmosphere: 95% N2 + 5% CO2.'
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Comment: Cellulose can be replaced with 5.0 g/L cellobiose. In this
+    case, cellobiose is filter-sterilized separately as 10% (w/v) solution in distilled
+    water.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.038635Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J595'

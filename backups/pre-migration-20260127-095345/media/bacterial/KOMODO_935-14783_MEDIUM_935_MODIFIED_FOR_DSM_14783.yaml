@@ -1,0 +1,20 @@
+name: MEDIUM 935 MODIFIED FOR DSM 14783
+original_name: MEDIUM 935 MODIFIED FOR DSM 14783
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 935_14783
+  term:
+    id: komodo.medium:935_14783
+    label: MEDIUM 935 MODIFIED FOR DSM 14783
+notes: 'Source: KOMODO ModelSEED | ID: 935_14783 | DSMZ Medium: 935 (mediadive.medium:935)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 935_14783'

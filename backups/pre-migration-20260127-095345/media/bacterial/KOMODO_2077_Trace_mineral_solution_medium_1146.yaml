@@ -1,0 +1,21 @@
+name: Trace mineral solution (medium 1146)
+original_name: Trace mineral solution (medium 1146)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2077 | DSMZ Medium: 2077 (mediadive.medium:2077)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2077
+  term:
+    id: komodo.medium:2077
+    label: Trace mineral solution (medium 1146)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2077'

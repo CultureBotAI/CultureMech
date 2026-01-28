@@ -1,0 +1,21 @@
+name: GRACILIBACILLUS medium
+original_name: GRACILIBACILLUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.8
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 802 | DSMZ Medium: 802 (mediadive.medium:802)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 802
+  term:
+    id: komodo.medium:802
+    label: GRACILIBACILLUS medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 802'

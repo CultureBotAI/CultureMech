@@ -1,0 +1,30 @@
+name: MO-SEDI MEDIUM
+original_name: MO-SEDI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J855
+  term:
+    id: mediadive.medium:J855
+    label: MO-SEDI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=855'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 846 but omit glucose and tryptone. Supplement the medium
+    with final 2.75 g/L sodium pyruvate. Otherwise, prepare the medium as described
+    in the recipe of Medium No. 846.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.809186Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J855'

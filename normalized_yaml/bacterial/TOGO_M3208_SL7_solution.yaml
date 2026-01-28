@@ -1,0 +1,66 @@
+name: SL7 solution
+original_name: SL7 solution
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: CaCl2 × 2 H2O
+  concentration:
+    value: '0.14'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MgSO4 × 7 H2O
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '18.7'
+    unit: MILLIMOLAR
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Na2HPO4 × 12 H2O
+  concentration:
+    value: '25'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Fe(III)NH4-Citrate
+  concentration:
+    value: '4.6'
+    unit: MICROMOLAR
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Chloramphenicol
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
+    Defined component'
+- preferred_term: Sodium gluconate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M3208
+  term:
+    id: TOGO:M3208
+    label: SL7 solution
+notes: 'Source: https://togomedium.org/medium/M3208'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.596788Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3208'

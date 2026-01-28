@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_92",
+  "medium_name": "Trypticase soy broth",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypticase soy broth",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar, if necessary",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

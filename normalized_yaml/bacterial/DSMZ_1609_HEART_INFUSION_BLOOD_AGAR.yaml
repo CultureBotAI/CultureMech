@@ -1,0 +1,41 @@
+name: HEART INFUSION BLOOD AGAR
+original_name: HEART INFUSION BLOOD AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.4
+media_term:
+  preferred_term: DSMZ Medium 1609
+  term:
+    id: mediadive.medium:1609
+    label: HEART INFUSION BLOOD AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1609.pdf'
+ingredients:
+- preferred_term: Bacto Heart Infusion Broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '75'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: 'Allow to soak for 10 minutes, swirl to mix then sterilize by autoclaving
+    at 121°C for 15 minutes. Cool to 47°C then aseptically add 5-10% of sterile defibrinated
+    blood (horse or sheep), mix well and pour plates. pH: 7.2 ± 0.2'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.999606Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1609'

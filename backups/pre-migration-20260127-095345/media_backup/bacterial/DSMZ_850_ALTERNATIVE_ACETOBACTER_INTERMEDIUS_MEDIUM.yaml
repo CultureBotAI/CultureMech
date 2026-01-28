@@ -1,0 +1,23 @@
+name: ALTERNATIVE ACETOBACTER INTERMEDIUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 850
+  term:
+    id: DSMZ:850
+    label: ALTERNATIVE ACETOBACTER INTERMEDIUS MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium850.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.187554Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 850'

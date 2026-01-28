@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_465d",
+  "medium_name": "WITH BENZYLCYANIDE",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 465",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "465"
+    },
+    {
+      "name": "Mg",
+      "concentration": 120.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

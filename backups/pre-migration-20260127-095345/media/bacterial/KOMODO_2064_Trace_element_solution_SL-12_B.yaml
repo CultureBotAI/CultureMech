@@ -1,0 +1,21 @@
+name: Trace element solution SL-12 B
+original_name: Trace element solution SL-12 B
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 2064
+  term:
+    id: komodo.medium:2064
+    label: Trace element solution SL-12 B
+notes: 'Source: KOMODO ModelSEED | ID: 2064 | DSMZ Medium: 2064 (mediadive.medium:2064)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2064'

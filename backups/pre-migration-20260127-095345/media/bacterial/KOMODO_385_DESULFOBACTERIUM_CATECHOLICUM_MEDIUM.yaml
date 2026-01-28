@@ -1,0 +1,21 @@
+name: DESULFOBACTERIUM CATECHOLICUM MEDIUM
+original_name: DESULFOBACTERIUM CATECHOLICUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.9-7.1
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 385 | DSMZ Medium: 385 (mediadive.medium:385)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 385
+  term:
+    id: komodo.medium:385
+    label: DESULFOBACTERIUM CATECHOLICUM MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 385'

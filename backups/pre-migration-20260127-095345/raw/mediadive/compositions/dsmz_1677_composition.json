@@ -1,0 +1,123 @@
+{
+  "medium_id": "dsmz_1677",
+  "medium_name": "BA+",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 33.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NaCl (250 g/l stock solution)",
+      "concentration": 3.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O (200 g/l stock solution)",
+      "concentration": 3.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "KCl (50 g/l stock solution)",
+      "concentration": 3.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Mg(SO4) x 7 H2O (350 g/l stock solution)",
+      "concentration": 3.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O (50 g/l stock solution)",
+      "concentration": 8.3,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na3-citrate x 2 H2O (0.6 g/l stock solution)",
+      "concentration": 8.3,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2-EDTA x 2 H2O (0.1 g/l stock solution)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "T-Trace Metal Mix *",
+      "concentration": 4.15,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "1. Make up to 1000 ml with MilliQ water.",
+      "concentration": 4.15,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NaNO3 (300 g/l stock solution)",
+      "concentration": 2.3,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "K2HPO4 x 3 H2O (8.0 g/l stock solution)",
+      "concentration": 0.8,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2CO3 (20 g/l stock solution)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Fe(NH4)citrate (6.0 g/l stock solution)",
+      "concentration": 0.22,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Vitamin B12 (0.02 g/l stock solution)",
+      "concentration": 1.81,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "T-Trace Metal Mix *",
+      "concentration": 2.86,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "ZnSO4 x 7 H2O",
+      "concentration": 0.39,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

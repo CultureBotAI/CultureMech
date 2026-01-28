@@ -1,0 +1,21 @@
+name: HALOANAEROBACTER CHITINOVORANS medium
+original_name: HALOANAEROBACTER CHITINOVORANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 701
+  term:
+    id: komodo.medium:701
+    label: HALOANAEROBACTER CHITINOVORANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 701 | DSMZ Medium: 701 (mediadive.medium:701)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 701'

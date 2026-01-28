@@ -1,0 +1,21 @@
+name: For DSM 13862
+original_name: For DSM 13862
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 843.1 | DSMZ Medium: 843
+  (mediadive.medium:843) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 843.1
+  term:
+    id: komodo.medium:843.1
+    label: For DSM 13862
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 843.1'

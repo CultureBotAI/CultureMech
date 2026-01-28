@@ -1,0 +1,53 @@
+name: Modified Hayflick broth medium containing 20% fetal bovine serum
+original_name: Modified Hayflick broth medium containing 20% fetal bovine serum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.5% phenol red (Flow)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: D-glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Liquid yeast extract (Flow)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fetal bovine serum (Flow), heat-inactivated
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: PPLO broth base without crystal violet (Difco)
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Penicillin G (Parke, Davis & Co)
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2888
+  term:
+    id: TOGO:M2888
+    label: Modified Hayflick broth medium containing 20% fetal bovine serum
+notes: 'Source: https://togomedium.org/medium/M2888'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.382576Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2888'

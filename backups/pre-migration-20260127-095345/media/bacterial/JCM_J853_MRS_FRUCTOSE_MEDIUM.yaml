@@ -1,0 +1,30 @@
+name: MRS FRUCTOSE MEDIUM
+original_name: MRS FRUCTOSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J853
+  term:
+    id: mediadive.medium:J853
+    label: MRS FRUCTOSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=853'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.803664Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J853'

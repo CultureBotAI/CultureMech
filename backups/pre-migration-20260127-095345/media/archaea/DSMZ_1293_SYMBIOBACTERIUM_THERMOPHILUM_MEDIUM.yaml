@@ -1,0 +1,59 @@
+name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
+original_name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.5-7.8
+media_term:
+  preferred_term: DSMZ Medium 1293
+  term:
+    id: mediadive.medium:1293
+    label: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1293.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NH4HCO3
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate) and adjust pH to 8.0, sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add bicarbonate from a sterile anoxic 3.2% (w/v) stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture (e.g., add 1 ml stock solution per
+    9 ml medium). Adjust pH of the complete medium to 7.5 - 7.8, if necessary.
+- step_number: 2
+  action: MIX
+  description: After inoculation add sterile 100% H2 gas to an overpressure of 0.5
+    bar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.017321Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1293'

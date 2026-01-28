@@ -1,0 +1,21 @@
+name: Trace element solution (medium 318)
+original_name: Trace element solution (medium 318)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3073 | DSMZ Medium: 3073 (mediadive.medium:3073)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3073
+  term:
+    id: komodo.medium:3073
+    label: Trace element solution (medium 318)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3073'

@@ -1,0 +1,20 @@
+name: ROLLED OATS MINERAL medium
+original_name: ROLLED OATS MINERAL medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 84
+  term:
+    id: komodo.medium:84
+    label: ROLLED OATS MINERAL medium
+notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 84'

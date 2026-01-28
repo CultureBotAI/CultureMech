@@ -1,0 +1,20 @@
+name: MITSUOKELLA DENTALIS medium
+original_name: MITSUOKELLA DENTALIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 437
+  term:
+    id: komodo.medium:437
+    label: MITSUOKELLA DENTALIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 437 | DSMZ Medium: 437 (mediadive.medium:437)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 437'

@@ -1,0 +1,20 @@
+name: MEDIUM 87a MODIFIED FOR DSM 13941
+original_name: MEDIUM 87a MODIFIED FOR DSM 13941
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 87a_13941
+  term:
+    id: komodo.medium:87a_13941
+    label: MEDIUM 87a MODIFIED FOR DSM 13941
+notes: 'Source: KOMODO ModelSEED | ID: 87a_13941 | DSMZ Medium: 87a (mediadive.medium:87a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 87a_13941'

@@ -1,0 +1,21 @@
+name: PYG medium WITH VOLATILE FATTY ACIDS
+original_name: PYG medium WITH VOLATILE FATTY ACIDS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: KOMODO Medium 328
+  term:
+    id: komodo.medium:328
+    label: PYG medium WITH VOLATILE FATTY ACIDS
+notes: 'Source: KOMODO ModelSEED | ID: 328 | DSMZ Medium: 328 (mediadive.medium:328)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 328'

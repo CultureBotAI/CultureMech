@@ -1,0 +1,24 @@
+name: METHYLOCELLA SILVERSTRIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 5.8
+media_term:
+  preferred_term: DSMZ Medium 1181
+  term:
+    id: DSMZ:1181
+    label: METHYLOCELLA SILVERSTRIS MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1181.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.394261Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1181'

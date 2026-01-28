@@ -1,0 +1,61 @@
+name: Bacillus Medium
+original_name: Bacillus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: MgSO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component'
+- preferred_term: Ferric Ammonium Citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: L-Glutamic Acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+- preferred_term: Citric Acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2424
+  term:
+    id: TOGO:M2424
+    label: Bacillus Medium
+notes: 'Source: https://togomedium.org/medium/M2424
+
+  Original URL: https://www.atcc.org/~/media/6B7694171223471DB20BE5BDC1E3F1BF.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.493194Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2424'

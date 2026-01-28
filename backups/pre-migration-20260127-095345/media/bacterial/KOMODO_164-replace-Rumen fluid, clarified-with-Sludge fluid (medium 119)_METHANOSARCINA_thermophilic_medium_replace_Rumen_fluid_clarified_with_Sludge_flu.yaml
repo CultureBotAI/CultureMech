@@ -1,0 +1,26 @@
+name: METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119)
+original_name: METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 164_replace_Rumen fluid, clarified_with_Sludge fluid
+    (medium 119)
+  term:
+    id: komodo.medium:164_replace_Rumen fluid, clarified_with_Sludge fluid (medium
+      119)
+    label: METHANOSARCINA (thermophilic) medium_replace_Rumen fluid, clarified_with_Sludge
+      fluid (medium 119)
+notes: 'Source: KOMODO ModelSEED | ID: 164_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119) | DSMZ Medium: 164 (mediadive.medium:164) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 164_replace_Rumen fluid, clarified_with_Sludge fluid
+    (medium 119)'

@@ -1,0 +1,24 @@
+name: OAT FLAKES AGAR WITH YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 248
+  term:
+    id: DSMZ:248
+    label: OAT FLAKES AGAR WITH YEAST EXTRACT
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium248.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.799769Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 248'

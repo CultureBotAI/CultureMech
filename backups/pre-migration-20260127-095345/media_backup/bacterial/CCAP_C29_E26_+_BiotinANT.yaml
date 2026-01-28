@@ -1,0 +1,23 @@
+name: E26 + Biotin:ANT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C29
+  term:
+    id: CCAP:C29
+    label: E26 + Biotin:ANT
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_E26_Biotin_ANT.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.507138Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C29'

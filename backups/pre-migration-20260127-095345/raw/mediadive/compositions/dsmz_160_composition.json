@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_160",
+  "medium_name": "1. To medium 67 add 0.5% cellobiose (filter-sterilized)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,21 @@
+name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
+original_name: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 29
+  term:
+    id: komodo.medium:29
+    label: PFENNIG'S MEDIUM II (modified 1988, for green sulfur bacteria)
+notes: 'Source: KOMODO ModelSEED | ID: 29 | DSMZ Medium: 29 (mediadive.medium:29)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 29'

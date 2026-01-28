@@ -1,0 +1,392 @@
+name: CTM MEDIUM
+original_name: CTM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1100
+  term:
+    id: mediadive.medium:J1100
+    label: CTM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1100'
+ingredients:
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '85.7143'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.56803'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.71265'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.285442'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.222'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.049'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '15.3'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: 2-Oxoglutarate
+  term:
+    id: CHEBI:16810
+    label: 2-Oxoglutarate
+  concentration:
+    value: '14.6'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '56.8182'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '11.3636'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Aspartic acid
+  term:
+    id: CHEBI:17053
+    label: L-Aspartic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Phenylalanine
+  term:
+    id: CHEBI:17295
+    label: L-Phenylalanine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Ascorbic acid
+  term:
+    id: CHEBI:29073
+    label: L-Ascorbic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: beta-NAD
+  term:
+    id: CHEBI:15846
+    label: beta-NAD
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'CTM medium basis:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Mix all ingredients in 1.0 L medium bottle. Add distilled water close
+    to 1.0 L. Adjust pH to 7.0 with 2 M KOH and fill up to 1.0 L. Autoclave at 121C
+    for 40 min. After autoclaving, seal medium bottle immediately in order to avoid
+    oxygenation. Cool down to around 70C. Add 30 ml filter-sterilized Mixed solution
+    (see below) to the autoclaved CTM medium basis for completing the CTM medium.
+- step_number: 3
+  action: MIX
+  description: Add distilled water to bring final volume to 30 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.627406Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1100'

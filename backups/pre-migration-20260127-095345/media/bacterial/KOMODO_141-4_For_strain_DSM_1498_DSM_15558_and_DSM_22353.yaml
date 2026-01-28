@@ -1,0 +1,21 @@
+name: For strain DSM 1498, DSM 15558 and DSM 22353
+original_name: For strain DSM 1498, DSM 15558 and DSM 22353
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 141.4
+  term:
+    id: komodo.medium:141.4
+    label: For strain DSM 1498, DSM 15558 and DSM 22353
+notes: 'Source: KOMODO ModelSEED | ID: 141.4 | DSMZ Medium: 141 (mediadive.medium:141)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 141.4'

@@ -1,0 +1,20 @@
+name: MEDIUM 911 MODIFIED FOR DSM 44536
+original_name: MEDIUM 911 MODIFIED FOR DSM 44536
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 911_44536
+  term:
+    id: komodo.medium:911_44536
+    label: MEDIUM 911 MODIFIED FOR DSM 44536
+notes: 'Source: KOMODO ModelSEED | ID: 911_44536 | DSMZ Medium: 911 (mediadive.medium:911)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 911_44536'

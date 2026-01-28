@@ -1,0 +1,41 @@
+name: SPHAEROTILUS MEDIUM
+original_name: SPHAEROTILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 51
+  term:
+    id: mediadive.medium:51
+    label: SPHAEROTILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium51.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: HEAT
+  description: Prepare sterile agar slants by autoclaving. Cool the slants in a sloping
+    position. Cover solid slants with 2 ml sterile tap water. Inoculate into the covering
+    tap water and incubate at 20 to 25°C for at least 48 h.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.048285Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 51'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_353",
+  "medium_name": "Medium dsmz_353",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Skim Milk",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

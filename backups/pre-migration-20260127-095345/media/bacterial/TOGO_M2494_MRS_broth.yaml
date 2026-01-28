@@ -1,0 +1,23 @@
+name: MRS broth
+original_name: MRS broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MRS broth (Oxoid)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2494
+  term:
+    id: TOGO:M2494
+    label: MRS broth
+notes: 'Source: https://togomedium.org/medium/M2494'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.584290Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2494'

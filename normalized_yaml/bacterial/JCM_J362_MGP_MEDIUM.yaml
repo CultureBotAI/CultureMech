@@ -1,0 +1,34 @@
+name: MGP MEDIUM
+original_name: MGP MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J362
+  term:
+    id: mediadive.medium:J362
+    label: MGP MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=362'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 with 1.92 g sodium propionate in Solution B (per
+    100 ml) instead of sodium pyruvate. Otherwise, prepare the medium as described
+    in the recipe of Medium No. 284.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strains JCM 11929 and JCM 12326, incubate with a 10%
+    inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.399355Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J362'

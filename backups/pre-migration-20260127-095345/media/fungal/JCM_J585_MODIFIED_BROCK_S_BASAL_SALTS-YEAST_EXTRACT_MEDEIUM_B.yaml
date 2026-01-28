@@ -1,0 +1,30 @@
+name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDEIUM (B)
+original_name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDEIUM (B)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.0
+media_term:
+  preferred_term: JCM Medium J585
+  term:
+    id: mediadive.medium:J585
+    label: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT MEDEIUM (B)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=585'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Medium No. 542 with 0.5 g/L yeast extract (final) and adjust
+    pH to 3.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.008098Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J585'

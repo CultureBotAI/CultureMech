@@ -1,0 +1,20 @@
+name: DP medium
+original_name: DP medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 661
+  term:
+    id: komodo.medium:661
+    label: DP medium
+notes: 'Source: KOMODO ModelSEED | ID: 661 | DSMZ Medium: 661 (mediadive.medium:661)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 661'

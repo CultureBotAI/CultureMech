@@ -1,0 +1,191 @@
+{
+  "medium_id": "dsmz_298",
+  "medium_name": "PELOBACTER PROPIONICUS MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "For DSM 2395: Replace 2,3-butanediol with 1.00 g/l of polyethylene glycol (molecular",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution"
+    },
+    {
+      "name": "For DSM 3246: Replace 2,3-butanediol with 1.00 g/l acetoin.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution"
+    },
+    {
+      "name": "For DSM 6652: Replace 2,3-butanediol with 2.60 g/l Na-glutarate and add 20.00 ml/l rumen",
+      "concentration": 2.6,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2. Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution"
+    },
+    {
+      "name": "neutralized anoxic stock solution.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 6832: Supplement medium with 10.00 ml/l of a Wolin's vitamin solution (see"
+    },
+    {
+      "name": "503) and replace 2,3-butanediol by 1.40 g/l triethanolamine hydrochloride added from a 1",
+      "concentration": 1.4,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 8909: Supplement medium with 1.00 ml/l of seven vitamins solution (see medium"
+    },
+    {
+      "name": "M stock solution prepared and autoclaved under 100% N2 gas).",
+      "concentration": 100.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 8909: Supplement medium with 1.00 ml/l of seven vitamins solution (see medium"
+    },
+    {
+      "name": "For DSM 29698: Replace 2,3-butanediol with 2.20 g/l Na-gluconate.",
+      "concentration": 2.2,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 17541: Supplement medium with 10.00 ml/l of a Wolin's vitamin solution (see"
+    },
+    {
+      "name": "from an anoxic sterile stock solution neutralized with NaOH.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102354: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "HCl",
+      "concentration": 25.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts. Finally",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    },
+    {
+      "name": "make up to 1000.00 ml.",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 102355: Supplement medium with 1.00 ml/l of seven vitamins solution (see"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

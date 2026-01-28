@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_232b",
+  "medium_name": "Use medium 232 + 4 ml Resazurin solution (25 mg/100 ml). Cystein are added after the",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 232",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "232"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

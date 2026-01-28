@@ -1,0 +1,72 @@
+{
+  "medium_id": "dsmz_1190",
+  "medium_name": "Yeast extract",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "50x Heterotrophic basal salts solution",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "Na2SO4 x 10 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "(NH4)2SO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "KCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "Ca(NO3)2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "Ferrous sulfate solution",
+      "concentration": 27.8,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    },
+    {
+      "name": "FeSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "For DSM 28176: Reduce amount of ferrous sulfate solution to 5.5 ml, supplement medium"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

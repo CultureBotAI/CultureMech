@@ -1,0 +1,101 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Output directories
+output/
+pages/*.html
+app/data.js
+dashboard/
+
+# OAK cache
+.oak_cache/
+references_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Logs
+*.log
+
+# Generated documentation
+docs/_build/
+docs/schema/
+
+# Temporary files
+*.tmp
+*.bak
+.cache/
+
+# Data layers (see DATA_LAYERS.md)
+# Three-tier system: raw/ → raw_yaml/ → normalized_yaml/
+
+# Layer 1: Raw data files (large, can be regenerated or fetched)
+raw/**/*.json
+raw/**/*.tsv
+raw/**/*.csv
+raw/**/*.tar.gz
+raw/**/*.zip
+raw/**/*.html
+raw/**/*.sql
+raw/**/.DS_Store
+
+# Keep provenance documentation
+!raw/**/README.md
+
+# NBRC scraped HTML cache
+raw/nbrc/scraped/
+
+# Layer 2: Raw YAML (unnormalized, regenerable from raw/)
+raw_yaml/**/*.yaml
+raw_yaml/**/.DS_Store
+
+# Layer 3: Normalized YAML is VERSION CONTROLLED (curated recipes)
+# Keep all normalized_yaml/ in git
+!normalized_yaml/**/*.yaml
+normalized_yaml/**/.DS_Store
+
+# Processed data (regenerable)
+data/processed/

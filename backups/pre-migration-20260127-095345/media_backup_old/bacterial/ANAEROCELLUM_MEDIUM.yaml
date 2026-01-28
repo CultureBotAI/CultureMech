@@ -1,0 +1,24 @@
+name: ANAEROCELLUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.1-7.3
+media_term:
+  preferred_term: DSMZ Medium 516
+  term:
+    id: DSMZ:516
+    label: ANAEROCELLUM MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium516.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.973874Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 516'

@@ -1,0 +1,47 @@
+name: Anaerobic Brain Heart Infusion Broth
+original_name: Anaerobic Brain Heart Infusion Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Brain heart infusion broth (BD-Difco)
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+- preferred_term: 5% Na2S・9H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L--Cysteine・HCl・H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M746
+  term:
+    id: TOGO:M746
+    label: Anaerobic Brain Heart Infusion Broth
+notes: 'Source: https://togomedium.org/medium/M746
+
+  Original source: JCM - JCM_M723
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=723'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.638253Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M746'

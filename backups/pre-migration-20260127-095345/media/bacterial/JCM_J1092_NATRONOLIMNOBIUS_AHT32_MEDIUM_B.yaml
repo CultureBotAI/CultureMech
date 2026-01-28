@@ -1,0 +1,103 @@
+name: NATRONOLIMNOBIUS AHT32 MEDIUM (B)
+original_name: NATRONOLIMNOBIUS AHT32 MEDIUM (B)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1092
+  term:
+    id: mediadive.medium:J1092
+    label: NATRONOLIMNOBIUS AHT32 MEDIUM (B)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1092'
+ingredients:
+- preferred_term: Trace vitamins (see Medium No. 197)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Sodium butyrate
+  term:
+    id: CHEBI:64103
+    label: Sodium butyrate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '46250'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '8750'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4000'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1250'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Aseptically add per liter the following solutions (autoclaved or *filter-sterilized):'
+- step_number: 2
+  action: MIX
+  description: Distribute the medium into culture vessels, replace the gas phase with
+    N2 containing 5% O2 (by vol.), and seal with butyl rubber stoppers.
+- step_number: 3
+  action: AUTOCLAVE
+  description: 'Add components to distilled water and bring volume to 1.0 L. Autoclave
+    and let it stand for three days. Decant the clear solution into another empty
+    sterile bottle. Aseptically add per liter the following solutions (autoclaved):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.599532Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1092'

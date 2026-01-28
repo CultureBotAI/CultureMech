@@ -1,0 +1,21 @@
+name: BACILLUS "RACEMILACTICUS" medium
+original_name: BACILLUS "RACEMILACTICUS" medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 8
+  term:
+    id: komodo.medium:8
+    label: BACILLUS "RACEMILACTICUS" medium
+notes: 'Source: KOMODO ModelSEED | ID: 8 | DSMZ Medium: 8 (mediadive.medium:8) | Aerobic:
+  No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 8'

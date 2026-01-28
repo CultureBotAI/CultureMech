@@ -1,0 +1,20 @@
+name: MEDIUM 514d MODIFIED FOR DSM 21633
+original_name: MEDIUM 514d MODIFIED FOR DSM 21633
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 514d_21633
+  term:
+    id: komodo.medium:514d_21633
+    label: MEDIUM 514d MODIFIED FOR DSM 21633
+notes: 'Source: KOMODO ModelSEED | ID: 514d_21633 | DSMZ Medium: 514d (mediadive.medium:514d)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514d_21633'

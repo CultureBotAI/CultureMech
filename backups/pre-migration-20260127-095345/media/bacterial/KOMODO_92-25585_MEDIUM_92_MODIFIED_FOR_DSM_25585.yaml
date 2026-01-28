@@ -1,0 +1,20 @@
+name: MEDIUM 92 MODIFIED FOR DSM 25585
+original_name: MEDIUM 92 MODIFIED FOR DSM 25585
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 92_25585
+  term:
+    id: komodo.medium:92_25585
+    label: MEDIUM 92 MODIFIED FOR DSM 25585
+notes: 'Source: KOMODO ModelSEED | ID: 92_25585 | DSMZ Medium: 92 (mediadive.medium:92)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 92_25585'

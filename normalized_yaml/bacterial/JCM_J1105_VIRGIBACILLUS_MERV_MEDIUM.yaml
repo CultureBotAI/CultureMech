@@ -1,0 +1,65 @@
+name: VIRGIBACILLUS MERV MEDIUM
+original_name: VIRGIBACILLUS MERV MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1105
+  term:
+    id: mediadive.medium:J1105
+    label: VIRGIBACILLUS MERV MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1105'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 3 H2O
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10000'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation
+    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution
+    (autoclaved):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Readjust pH to 8.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.650080Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1105'

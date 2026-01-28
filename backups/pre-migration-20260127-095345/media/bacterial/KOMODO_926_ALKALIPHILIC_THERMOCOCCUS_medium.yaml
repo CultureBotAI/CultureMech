@@ -1,0 +1,20 @@
+name: ALKALIPHILIC THERMOCOCCUS medium
+original_name: ALKALIPHILIC THERMOCOCCUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 926
+  term:
+    id: komodo.medium:926
+    label: ALKALIPHILIC THERMOCOCCUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 926 | DSMZ Medium: 926 (mediadive.medium:926)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 926'

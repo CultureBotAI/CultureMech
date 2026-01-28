@@ -1,0 +1,116 @@
+name: (Unnamed medium)
+original_name: (Unnamed medium)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MgSO4 7H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: NaCO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Haemin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Casitone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Cobalamin (1 μg/μL)
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
+- preferred_term: Resazurin (1 mg/L)
+  notes: 'Role: pH dependent redox indicator; Properties: Solution, Defined component'
+- preferred_term: p-aminobenzoic acid (0.3 μg/μL)
+  notes: 'Role: Vitamin; Properties: Defined component, Solution'
+- preferred_term: Folic acid (5 μg/μL)
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Pyridoxamine (15 μg/μL)
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Solution'
+- preferred_term: Biotin (1 μg/μL)
+  notes: 'Properties: Solution'
+- preferred_term: Glucose (0.1981 g/mL)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Solution, Organic compound, Defined component'
+- preferred_term: Riboflavin (0.05 μg/mL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Thiamine (0.05 μg/mL)
+  notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
+media_term:
+  preferred_term: TOGO Medium M3052
+  term:
+    id: TOGO:M3052
+    label: (Unnamed medium)
+notes: 'Source: https://togomedium.org/medium/M3052
+
+  Original source: NBRC - NBRC_M1604
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1604'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.241682Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3052'

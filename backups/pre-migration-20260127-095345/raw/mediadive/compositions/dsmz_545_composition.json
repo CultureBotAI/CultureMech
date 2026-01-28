@@ -1,0 +1,45 @@
+{
+  "medium_id": "dsmz_545",
+  "medium_name": "Medium dsmz_545",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "545: TRYPTONE SOYA BROTH (TSB)",
+      "concentration": 17.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Final pH: 7.3",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Casein peptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Soy peptone",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "D(+)-Glucose",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

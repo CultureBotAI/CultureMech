@@ -1,0 +1,21 @@
+name: THERMOANAEROBIUM medium_replace_Tryptone_with_Trypticase
+original_name: THERMOANAEROBIUM medium_replace_Tryptone_with_Trypticase
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 144_replace_Tryptone_with_Trypticase
+  term:
+    id: komodo.medium:144_replace_Tryptone_with_Trypticase
+    label: THERMOANAEROBIUM medium_replace_Tryptone_with_Trypticase
+notes: 'Source: KOMODO ModelSEED | ID: 144_replace_Tryptone_with_Trypticase | DSMZ
+  Medium: 144 (mediadive.medium:144) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 144_replace_Tryptone_with_Trypticase'

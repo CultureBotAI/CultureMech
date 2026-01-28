@@ -1,0 +1,41 @@
+name: Potato Carrot Agar
+original_name: Potato Carrot Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1765
+  term:
+    id: mediadive.medium:1765
+    label: Potato Carrot Agar
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Carrot
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Boil the peeled and chopped potatoes and carrots for 45 minutes, then
+    filter through cheesecloth and complete the volume to 1000 ml using distilled
+    water and add agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.449111Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1765'

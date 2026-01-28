@@ -1,0 +1,35 @@
+name: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+original_name: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: laked horse blood (Hema Resource & Supply, Aurora, OR)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+- preferred_term: Brain Heart Infusion agar (Becton Dickinson, Sparks, MD)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2932
+  term:
+    id: TOGO:M2932
+    label: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+notes: 'Source: https://togomedium.org/medium/M2932'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.413636Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2932'

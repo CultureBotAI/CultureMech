@@ -1,0 +1,21 @@
+name: For DSM 5885
+original_name: For DSM 5885
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.7-6.8
+media_term:
+  preferred_term: KOMODO Medium 505.1
+  term:
+    id: komodo.medium:505.1
+    label: For DSM 5885
+notes: 'Source: KOMODO ModelSEED | ID: 505.1 | DSMZ Medium: 505 (mediadive.medium:505)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 505.1'

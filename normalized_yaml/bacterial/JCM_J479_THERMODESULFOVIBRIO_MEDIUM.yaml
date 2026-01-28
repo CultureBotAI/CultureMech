@@ -1,0 +1,55 @@
+name: THERMODESULFOVIBRIO MEDIUM
+original_name: THERMODESULFOVIBRIO MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J479
+  term:
+    id: mediadive.medium:J479
+    label: THERMODESULFOVIBRIO MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=479'
+ingredients:
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '44'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '56'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Solution A of Medium No. 284 without yeast extract. Prepare the
+    culture vessels containing the solution as described in the recipe of Medium No.
+    284.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave and store under a N2 atmosphere.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave and store under a N2 atmosphere.
+- step_number: 4
+  action: AUTOCLAVE
+  description: To complete the medium, add 0.05 volume of Solutions B and C to the
+    culture vessels containing Solution A. Prior to inoculation, aseptically and anaerobically
+    add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium
+    (3% solutions, autoclaved and stored under a N2 atmosphere).
+- step_number: 5
+  action: MIX
+  description: 'Comment: For strains JCM 13213, JCM 13214, JCM 13215 and JCM 13216,
+    incubate with a 10% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.710714Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J479'

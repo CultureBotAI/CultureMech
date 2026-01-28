@@ -1,0 +1,23 @@
+name: RPL/0.01%RPA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C85
+  term:
+    id: CCAP:C85
+    label: RPL/0.01%RPA
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_RPL_0_01_RPA.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.537869Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C85'

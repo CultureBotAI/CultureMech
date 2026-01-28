@@ -1,0 +1,21 @@
+name: DESULFUROMONAS PALMITATIS MEDIUM
+original_name: DESULFUROMONAS PALMITATIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: KOMODO Medium 837
+  term:
+    id: komodo.medium:837
+    label: DESULFUROMONAS PALMITATIS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 837 | DSMZ Medium: 837 (mediadive.medium:837)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 837'

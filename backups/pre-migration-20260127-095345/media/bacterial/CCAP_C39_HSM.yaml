@@ -1,0 +1,71 @@
+name: HSM
+original_name: HSM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C39
+  term:
+    id: mediadive.medium:C39
+    label: HSM
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_HSM.pdf'
+ingredients:
+- preferred_term: Horse serum
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '2.65'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.41'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '7.36'
+    unit: G_PER_L
+- preferred_term: Marmite
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Rice starch
+  concentration:
+    value: '250'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: "Aseptically add stock solutions (2), (3) and (4) in above amounts\
+    \ to each test tube.\r\nIncubate at room temperature for 3 days to check sterility\
+    \ prior to use."
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Dispense 8.5 ml aliquots into test tubes.  Cap and autoclave at 15\
+    \ psi\r\nfor 15 minutes."
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilise by passing through 0.22 µm filter.
+- step_number: 4
+  action: AUTOCLAVE
+  description: "Place dry  rice starch into a dry 50 ml bottle, and cap. Place 20\
+    \ ml\r\ndeionised water into a separate bottle. Autoclave separately  at 15 \r\
+    \npsi for 15 minutes.  When cool, aseptically combine the contents of \r\nthe\
+    \ two bottles.  Mix thoroughly by shaking."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.603970Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C39'

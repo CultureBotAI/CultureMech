@@ -1,0 +1,21 @@
+name: MARINE AMMONIUM MINERAL SALTS
+original_name: MARINE AMMONIUM MINERAL SALTS
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1313 | DSMZ Medium: 1313
+  (mediadive.medium:1313) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1313
+  term:
+    id: komodo.medium:1313
+    label: MARINE AMMONIUM MINERAL SALTS
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1313'

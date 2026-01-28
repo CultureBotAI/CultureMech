@@ -1,0 +1,134 @@
+name: RT2 MEDIUM
+original_name: RT2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J438
+  term:
+    id: mediadive.medium:J438
+    label: RT2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=438'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '125'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: CAPSO
+  concentration:
+    value: '5930'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '2000'
+    unit: G_PER_L
+- preferred_term: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '1120'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium dithionite
+  term:
+    id: CHEBI:66870
+    label: Sodium dithionite
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve components except sodium lactate and sodium dithionite in
+    900 ml distilled water and adjust pH to 9.0 with NaOH. Bring to a boil, and cool
+    down under a N2 gas stream. Distribute the medium into culture vessels (e.g.,
+    9 ml of the medium in Hungate tubes) under N2, seal with butyl rubber stoppers
+    and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere.
+    After cooling, add 1/9 volume of the sodium lactate solution to the medium. Readjust
+    pH to 9.0, if necessary. Prior to use, reduce the medium with a freshly prepared,
+    filter-sterilize 1% sodium dithionite solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.616464Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J438'

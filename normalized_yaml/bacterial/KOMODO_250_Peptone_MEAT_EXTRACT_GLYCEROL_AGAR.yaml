@@ -1,0 +1,21 @@
+name: Peptone MEAT EXTRACT GLYCEROL AGAR
+original_name: Peptone MEAT EXTRACT GLYCEROL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 250
+  term:
+    id: komodo.medium:250
+    label: Peptone MEAT EXTRACT GLYCEROL AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 250 | DSMZ Medium: 250 (mediadive.medium:250)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 250'

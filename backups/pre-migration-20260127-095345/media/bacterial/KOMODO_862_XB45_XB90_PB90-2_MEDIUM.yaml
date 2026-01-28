@@ -1,0 +1,21 @@
+name: XB45/XB90/PB90-2 MEDIUM
+original_name: XB45/XB90/PB90-2 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 862
+  term:
+    id: komodo.medium:862
+    label: XB45/XB90/PB90-2 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 862 | DSMZ Medium: 862 (mediadive.medium:862)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 862'

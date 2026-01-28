@@ -1,0 +1,31 @@
+name: MB MEDIUM WITH FORMATE
+original_name: MB MEDIUM WITH FORMATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J688
+  term:
+    id: mediadive.medium:J688
+    label: MB MEDIUM WITH FORMATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=688'
+ingredients:
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: Sodium formate
+  concentration:
+    value: '136'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 687, replacing Methanol solution with Sodium formate
+    solution (see below).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.303585Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J688'

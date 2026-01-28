@@ -1,0 +1,170 @@
+{
+  "medium_id": "dsmz_1723",
+  "medium_name": "Medium dsmz_1723",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "F/2 Trace",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Mix",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Na2-EDTA*2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "FeCl3*6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "MnCl2*4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "ZnSO4*7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "CoCl2*6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "CuSO4*5 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Na2MoO4*2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "0.4 g/100 ml stock solution",
+      "concentration": 0.4,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "1.2 g/l stock solution",
+      "concentration": 1.2,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "0.6 g/100 ml stock solution",
+      "concentration": 0.6,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "1.25 g/100 ml stock solution",
+      "concentration": 1.25,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "0.27 g/100 ml stock solution",
+      "concentration": 0.27,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Vitamin 3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Mix",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Thiamin-HCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "d-Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "Cyanocobalamin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "(Vit. B12)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "1 g/100 ml stock solution",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "0.05 g/100 ml stock solution",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    },
+    {
+      "name": "0.2 g/l stock solution",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Composition of the F/2-Val stock solutions:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

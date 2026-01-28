@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_780",
+  "medium_name": "WITH MYCOBACTIN",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 645",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "645"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

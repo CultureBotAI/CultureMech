@@ -1,0 +1,20 @@
+name: MEDIUM 420 MODIFIED FOR DSM 4690
+original_name: MEDIUM 420 MODIFIED FOR DSM 4690
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 420_4690
+  term:
+    id: komodo.medium:420_4690
+    label: MEDIUM 420 MODIFIED FOR DSM 4690
+notes: 'Source: KOMODO ModelSEED | ID: 420_4690 | DSMZ Medium: 420 (mediadive.medium:420)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 420_4690'

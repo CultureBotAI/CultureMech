@@ -1,0 +1,21 @@
+name: Yeast extract-STARCH AGAR (NBRC MED. 266)
+original_name: Yeast extract-STARCH AGAR (NBRC MED. 266)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 1314
+  term:
+    id: komodo.medium:1314
+    label: Yeast extract-STARCH AGAR (NBRC MED. 266)
+notes: 'Source: KOMODO ModelSEED | ID: 1314 | DSMZ Medium: 1314 (mediadive.medium:1314)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1314'

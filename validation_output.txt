@@ -1,0 +1,3011 @@
+=== Validating ACIDO-THERMOPHILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALOPHILIC_HALOPHILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_SEAWATER_FOR_HALOPHILES.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating DESULFOCELLA_HALOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating DICHOTOMICROBIUM_THERMOHALOPHILUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating EXILISPIRA_THERMOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOACTINOMYCES_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOPHILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOPHILE_STARCH-CASEIN_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOPHILIC_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HALOPHILIC_SOB_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HP_101_HALOPHILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HYDROGENOBACTER_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating HYDROGENOBACTER_THERMOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MARINE_METHANOGENIC_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MEDIUM_FOR_ACIDURIC,_THERMOPHILIC_BACILLUS_STRAINS.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MEDIUM_FOR_BACILLUS_STEAROTHERMOPHILUS.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MEDIUM_FOR_HALOPHILIC_ARCHAEA.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MEDIUM_FOR_HALOPHILIC_BACILLI.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_(AGRE_1964).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-90hw1s/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-90hw1s/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_(AGRE_1964).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating METHANOGENIUM_CV_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOGENIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOGENIUM_MEDIUM_(H2_CO2).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-XBvBIW/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-XBvBIW/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/METHANOGENIUM_MEDIUM_(H2_CO2).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating METHANOGENS_SALINE_WATER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOGEN_HIGH_SALT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOGEN_MS-I_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOHALOPHILUS_(MG)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-XdXvxe/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-XdXvxe/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/METHANOHALOPHILUS_(MG)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating METHANOHALOPHILUS_(MG+NaCl)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Pj9zJ6/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Pj9zJ6/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/METHANOHALOPHILUS_(MG+NaCl)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating METHANOHALOPHILUS_EUHALOBIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOHALOPHILUS_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOHALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOHALOPHILUS_PORTUCALENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOHALOPHILUS_PROFUNDI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOSAETA_THERMOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHANOSARCINA_THERMOPHILA_(BCYT)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-rjlbFx/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-rjlbFx/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/METHANOSARCINA_THERMOPHILA_(BCYT)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating METHANOSARCINA_THERMOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating METHERMICOCCUS_(METHANOGEN)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8USGaB/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8USGaB/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/archaea/METHERMICOCCUS_(METHANOGEN)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating MODERATE_HALOPHILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MODERATE_HALOPHILE_MEDIUM_2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating MODIFIED_BALCH'S_METHANOGENS_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-KA8qo7/validate-schema: line 214: unexpected EOF while looking for matching `''
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating MODIFIED_BALCH'S_METHANOGEN_MEDIUM_1_B.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-V8Fktt/validate-schema: line 214: unexpected EOF while looking for matching `''
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating MODIFIED_METHANOHALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating PEDIOCOCCUS_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating PETROTOGA_HALOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating PSEUDOMONAS_HALOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating SALINIBACTER_HALOPHILIC_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating SPIROCHAETA_THERMOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating SPOROLITUUS_THERMOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating SYMBIOBACTERIUM_THERMOPHILUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THERMANAEROBACTER_THERMOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THERMOPHILIC_HYDROGEN_BACTERIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THERMUS_THERMOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THIOALKALIBACTER_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THIOALKALIVIBRIO_HALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THIOCAPSA_HALOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THIOHALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating THIOHALOSPIRA_HALOPHILA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating TREPONEMA_THERMOPHILUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 0.01%_LB_SEAWATER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 0.3_x_HYPHOMICROBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ½_S°_HELIORESTIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1%_OGAWA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1%_TRYPTONE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 10%_MGM-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 10%_MH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 10%_MIXOTROPHIC_NITROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 15%_MGM-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 15%_MH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1650:_Medium_for_Strain_J5B.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_100_NUTRIENT_AGAR_NO.2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_100_NUTRIENT_AGAR_NO._2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_NUTRIENT_AGAR_NO.2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_NUTRIENT_AGAR_NO._2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_POTATO-CARROT_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_PYGV_MEDIUM_modified.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_R2A_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_R2A_BROTH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_R2A_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_10_R2A_MEDIUM_MODIFIED.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_GY_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_MRS_+_1_2_BHI_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_R2A_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_R2A_MEDIUM_WITH_75%_ARTIFICIAL_SEAWATER.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_SME_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_SME_MEDIUM_FOR_YA.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_2_YTSS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_3_LB_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 1_5_NUTRIENT_AGAR_NO._2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2%_MH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2%_NaCl-YPG_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2.5%_NaCl-BPG_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 225M1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 23%_MGM-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 25%_GLUCOSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 28%_MH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2ASW.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2SNA.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 2_x_YT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 3.8M_CHARACTERIZATION_MEDIUM_NO._1.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 3N-BBM+V.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 3N-BBM+V_recipe_for_customer_orders.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 480G_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 5%_SALT_WATER_GROWTH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 5%_SORBITOL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 573C_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 5_G_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 5_x_R2A_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 6_B_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 70:30_sporulation_medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 7WAY-8-7_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 8KG-4_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 948_(OXOID_NUTRIENT_BROTH)_WITH_ADDITONAL_SALT.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-aeTSpF/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-aeTSpF/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/948_(OXOID_NUTRIENT_BROTH)_WITH_ADDITONAL_SALT.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating 9K_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating 9K_WITH_SULFUR_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating A-MMX_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating A1-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating A1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating A2_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating A7_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AAM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ABM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ABSS2.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ABYSSISOLIBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACANTHAMOEBA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETIC_ACID_BACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETITOMACULUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETIVIBRIO_ALKALICELLULOSI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETIVIBRIO_CELLULOLYTICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETIVIBRIO_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOANAEROBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTERIUM_DEHALOGENANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTERIUM_FIMETARIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTERIUM_SUBMARINUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTERIUM_TUNDRAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTEROIDES_GLYCINOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTEROIDES_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTER_EUROPAEUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTER_LAMBICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTER_MUSTI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOBACTER_PEROXYDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOHALOBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOMICROBIUM_FAECALE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACETOMICROBIUM_FAECALIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDAMINOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDAMINOCOCCUS_FERMENTANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIANUS_BRIERLEYI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIANUS_INFERNUS_MEDIUM_(A).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-WPAOox/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-WPAOox/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIANUS_INFERNUS_MEDIUM_(A).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIANUS_INFERNUS_MEDIUM_(B).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PICsHx/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PICsHx/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIANUS_INFERNUS_MEDIUM_(B).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIANUS_MEDIUM_(AEROBIC).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-CER9Zz/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-CER9Zz/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIANUS_MEDIUM_(AEROBIC).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIANUS_SP._JP7_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDICALDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDICAPSA_MEDIUM_(GYS_MEDIUM).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-E5WzGa/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-E5WzGa/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDICAPSA_MEDIUM_(GYS_MEDIUM).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIC_DILUTED_ASM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIC_GLYCEROL-ASPARAGINE_AGAR_(pH_5.0).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-m2GfQf/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-m2GfQf/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIC_GLYCEROL-ASPARAGINE_AGAR_(pH_5.0).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIC_HB-1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIC_OATMEAL_AGAR_(pH_5.0).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fA88nQ/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fA88nQ/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIC_OATMEAL_AGAR_(pH_5.0).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIFERROBACTER_(MS)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-FuslIU/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-FuslIU/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDIFERROBACTER_(MS)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDIFERROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIFFEROBACTER_MURCIENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIFIED_MPOB_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIHALOBACTER_FERROOXIDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIHALOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIHALOBACTER_PROSPERUS_F5_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIHALOBACTER_PROSPERUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDILOBUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDILOBUS_SACCHAROVORANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIMICROBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIPHILIUM_ACIDOPHILUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDIPHILIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHIOBACILLUS_(APH)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-RPRhbK/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-RPRhbK/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ACIDITHIOBACILLUS_(APH)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ACIDITHIOBACILLUS_CALDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHIOBACILLUS_FERRIVORANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHIOBACILLUS_FERROOXIDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHIOBACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHIOBACILLUS_THIOOXIDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDITHRIX_FERROOYDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDOBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDOLOBUS_ACETICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDOMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDOSOMA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACIDULIPROFUNDUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACID_RHODOSPIRILLACEAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACM-MEDIUM_FOR_VERMINEPHROBACTER.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACTINOBACTERIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ACTIVATED_CARBON_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AEROBIC_SULFOLOBALES_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AEROBIC_SULFOLOBALES_MEDIUM_WITHOUT_SULFUR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AE_BROTH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AGAR_WITH_E._COLI_AS_FEED.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AGC2_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AG_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AIDINGIMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AJS.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCALIGENES_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCALIGENES_XYLOSOXYDANS_MEDIUM_WITH_BENZOATE.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCALILIMNICOLA_EHRLICHII_MHLE-1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCALIPHILIC_AMPHIBACILLUS_STRAINS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCANIVORAX_BALERICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALCANIVORAX_BORKUMENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALGINATE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALGORIPHAGUS_ALKALIPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALGORIPHAGUS_AQUAEDUCTUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALICYCLIPHILUS_DENITRIFICANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALICYCLOBACILLUS_FERROOXYDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALICYCLOBACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALICYCOBACILLUS_POHLIAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALIFODINIBIUS_MEDIUM_(TSA_mod).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Iv1Uzn/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Iv1Uzn/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ALIFODINIBIUS_MEDIUM_(TSA_mod).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ALKALI-REINFORCED_CLOSTRIDIAL_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIBACTERIUM_OLIVAPOVLITICUS.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIFLEXUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_CELLULOSE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_CLOSTRIDIAL_NUTRIENT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_LACTOSE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_LB_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_NUTRIENT_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_TRYPTICASE_SOY_BROTH_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_TRYPTONE_SOYA_BROTH_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_VOGESELLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_XYLAN_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINE_XYLAN_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALINUS_ABYSSINIESE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILES_PIRELLULA_MEDIUM_(M1).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-N6il2o/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-N6il2o/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ALKALIPHILES_PIRELLULA_MEDIUM_(M1).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ALKALIPHILES_PIRELLULA_MEDIUM_(M1PY).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-6XBRC2/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-6XBRC2/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ALKALIPHILES_PIRELLULA_MEDIUM_(M1PY).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ALKALIPHILES_PIRELLULA_MEDIUM_(M1aPY).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PaHCfS/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PaHCfS/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ALKALIPHILES_PIRELLULA_MEDIUM_(M1aPY).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ALKALIPHILIC_HALOMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILIC_SPIROCHAETE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILIC_SULPHUR_RESPIRING_STRAINS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILIC_THERMOCOCCUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_3B_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_CROTONATOXIDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_HYDROTHERMALIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_LACT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_LACV_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_NAMSARAEVII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_SUCCINACIDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALIPHILUS_TRANSVAALENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALISPIRILLUM_MOBILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALKALITHERMOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALLANTOIN_MINERAL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALLISONELLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALLOCATENOCOCCUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALLOCHROMATIUM_RENUKAII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALTERNATIVE_ACETOBACTER_INTERMEDIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALTERNATIVE_RUMEN_BACTERIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALTEROMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ALTERYTHROBACTER_MEDIUM_216L.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AM5_MEDIUM_(ELUSIMICROBIUM_MEDIUM).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-OTx3Kn/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-OTx3Kn/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/AM5_MEDIUM_(ELUSIMICROBIUM_MEDIUM).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating AMB_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMB_MEDIUM_FOR_RACEMICYSTIS_SPP..yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINIPHILUS_CIRCUMSRIPTUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINIPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINITHIOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINIVIBRIO_ASINOENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINOBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINOBACTERIUM_SHUIJINGFANGII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMINOMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AML60_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMMONIFEX_DEGENSII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMMONIFEX_THIOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMOEBOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMPHIBACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AMS_medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AN1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANACKER-ORDAL_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACCA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACILLUS_ARSENICISELENATIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBACULUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBE_MEDIUM_NO._1.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBIOSPIRILLUM_THOMASII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBRANCA_GOTTSCHALKII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROBRANCA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROCELLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROCELLUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROCOLUMNA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROFILUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROLINEA_MEDIUM-B.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROLINEA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROLINEA_MEDIUM_C.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROMYXOBACTER-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROTIGNUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAEROTIGNUM_NEOPROPIONICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANAERO_COLUMBIA_AGAR_WITH_RABBIT_BLOOD.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANB_aerobic.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANCALOMICROBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANCYLOBACTER-SPIROSOMA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANCYLOBACTER_-_SPIROSOMA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANNWOODIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOXIC_MEDIUM_FOR_STRAIN_AcBE2-1.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOXYBACILLUS_AMYLOLYTICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOXYBACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOXYBACILLUS_TUNISIENSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOXYNATRONUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANOYXNATRONUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANT.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANTARCTIC_BACTERIAL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ANTIBIOTIC_MEDIUM_1.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AQUASPIRILLUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AQUASPIRILLUM_MEDIUM_II.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AQUIFEX_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AQUINCOLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AQUISALIMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_FULGIDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_INFECTUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_MCR_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_NEPTUNIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_PROFUNDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_SULFATICALLIDUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCHAEOGLOBUS_VENEFICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARCOBACTER_ANAEROPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARHODOMONAS_MEDIUM_RS91.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AROMATOLEUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTFICIAL_BRACKISH_WATER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTFICIAL_FRESHWATER_MEDIUM_I.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTFICIAL_FRESHWATER_MEDIUM_II.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTHROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_DEEP_LAKE_VITAMIN_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_PILOT_PLANT_WATER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_SEAWATER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_SEAWATER_MEDIUM_WITH_PULLULAN.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ARTIFICIAL_SOIL_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASAIA_GYP_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASN-III.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASPERGILLUS_COMPLETE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW-HD_(1:10_diluted).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-ft8dZZ/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-ft8dZZ/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/ASW-HD_(1:10_diluted).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating ASW.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW:BG.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW:SES.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASWP.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW_+_barley.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW_150_+_barley.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW_225_+_barley.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ASW_300_+_barley.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ATALASSOTOGA_AZC2201_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ATCC_Medium_D3547D63F887423DAFB39841A5B588B9.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ATHALASSOTOGA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ATRIBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating ATYP_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AURANTIMONAS_MANGANOXYDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AURANTIMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AUREOBACTERIUM_TERREGENS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AUTOTROPHIC_NITROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AZC_1502_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AZOARCUS_TAIWANENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AZOSPIRILLUM_AMAZONENSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AZOSPIRILLUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating AZOTOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating Acidobacteriaceae_Medium_(Modified_VSB_Medium).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fHXotl/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fHXotl/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/Acidobacteriaceae_Medium_(Modified_VSB_Medium).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating Alicyclobacillus_cellulosilyticus_Medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating Artificial_sea_water_-_Tryptone_soy_broth_Medium_(ASW_TSB_Medium).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-eTMGLl/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-eTMGLl/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/Artificial_sea_water_-_Tryptone_soy_broth_Medium_(ASW_TSB_Medium).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating B12_-_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating B12_-_MEDIUM_GUTTMAN.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_"RACEMILACTICUS"_MEDIUM.yaml ===
+Validating schema structure...
+Usage: linkml-validate [OPTIONS] [DATA_SOURCES]...
+Try 'linkml-validate --help' for help.
+
+Error: Invalid value for '[DATA_SOURCES]...': Path 'kb/media/bacterial/BACILLUS_RACEMILACTICUS_MEDIUM.yaml' does not exist.
+✓ Schema validation passed
+
+=== Validating BACILLUS_AA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_ACIDOCALDARIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_FILIFORMIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_FUMARIOLI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_INFERNUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_LOCISALIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_MACYAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_MUCILAGINOSUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_OKHENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_PASTEURII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_SCHLEGELII_HETEROTROPHIC_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_THERMANTARCTICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_THERMOALCALOPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_THERMOGLUCOSIDASIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACILLUS_TUSCIAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACTERIOVORAX_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACTEROIDES_CELLULOSOLVENS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACTEROIDES_GALACTURONICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BACTO_MIDDLEBROOK_7H9_BROTH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BAF_Medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BAP+_MEDIUM_FOR_FRANKIA.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BARBOUR-SFOENNER-KELLY_(BSK)_II_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-db4dg5/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-db4dg5/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BARBOUR-SFOENNER-KELLY_(BSK)_II_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BASAL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BB.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BB:MErds.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BBL_ACTINOMYCES_BROTH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BBM_+_V.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BCYE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BCYE_alpha_agar.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BDELLOVIBRIO_(YP)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8nGqFp/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8nGqFp/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BDELLOVIBRIO_(YP)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BDELLOVIBRIO_BACTERIOVORUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BEER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BEGGIATOA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BEIJERINCKIA_DOEBEREINERAE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BEIJERINCKIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BEIJERINCKIA_MEDIUM_(LMG_18).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-leNJRJ/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-leNJRJ/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BEIJERINCKIA_MEDIUM_(LMG_18).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BELH1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BENNETT'S_AGAR.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-a8YyHr/validate-schema: line 214: unexpected EOF while looking for matching `''
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BENNETT'S_MODIFIED_MEDIUM_(P._AGRAWAL,_UNPUBLISHED).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PPoaa3/validate-schema: line 214: unexpected EOF while looking for matching `''
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BENZOATE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BETAINE+BICARBONATE_BUFFERED_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BG11.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BG11₀.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI-GLUCOSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI-S_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHIY_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_2_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_3_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_MEDIUM_(modified).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-EWtcgO/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-EWtcgO/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BHI_MEDIUM_(modified).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BHI_MEDIUM_FOR_STRICT_ANAEROBES.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BHI_MEDIUM_WITH_ADDITIONAL_GLUCOSE.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BICARBONATE-BUFFERED_MEDIUM_WITH_ACETHYLENE.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BICARBONATE_BUFFERED_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BIFIDOBACTERIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BLASTOCOCCUS_AGGREGATUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BLAUTIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BLOOD_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BLOOD_AGAR_BASE_(OXOID_CM55).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-qs8d2G/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-qs8d2G/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BLOOD_AGAR_BASE_(OXOID_CM55).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BLOOD_AGAR_I.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BLOOD_AGAR_II.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BL_AGAR_(GLUCOSE_BLOOD_LIVER_AGAR).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fbg2Bq/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-fbg2Bq/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BL_AGAR_(GLUCOSE_BLOOD_LIVER_AGAR).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BM7CO_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BM7_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BME_CTVM2_cell_line_medium_(Occidentia_massiliensis).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y5qfMN/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y5qfMN/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BME_CTVM2_cell_line_medium_(Occidentia_massiliensis).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BMM_-_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BM_FOR_SYNTROPHICUS_SCHINKII.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BM_FOR_TEPIDANAEROBACTER_ACETOXYDANS.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BN3_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BOGORIELLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BORDET-GENGOU-MEDIUM_(DIFCO).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-bG95kg/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-bG95kg/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BORDET-GENGOU-MEDIUM_(DIFCO).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BOSEA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BOSEA_THIOOXIDANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BPHD_Medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRACKISH_WATER_DESULFOVIBRIO_(POSTGATE)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y2IbCB/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y2IbCB/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BRACKISH_WATER_DESULFOVIBRIO_(POSTGATE)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BRADYMONAS_SEDIMINIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRAIN_HEART_INFUSION_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRAIN_HEART_INFUSION_AGAR_WITH_2%_NaCl.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRAIN_HEART_INFUSION_AGAR_WITH_5%_RABBIT_BLOOD.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRAIN_HEART_INFUSION_AGAR_WITH_SOIL_EXTRACT.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRAIN_HEART_INFUSION_WITH_5%_NaCl.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BREVIBACILLUS_LEVICKII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRIGGS_LIVER_BROTH_(pH_5.0).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-lAHqFd/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-lAHqFd/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BRIGGS_LIVER_BROTH_(pH_5.0).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BROCKIA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRUCELLA_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRUCELLA_BLOOD_AGAR_WITH_HEMIN_MENADIONE.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRUCELLA_BROTH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BRYOCELLA_ELONGATA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BSK-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BSKII_medium_(Borrelia).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y2IwrK/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-Y2IwrK/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BSKII_medium_(Borrelia).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating BSK_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BSM-RC_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BSM_medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BSW3_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BTT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BTU_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BUTYRIVIBRIO_M2_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BUTYRIVIBRIO_SP._MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BW_MASM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating B_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating Basic_mineral_medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating Beijerinckia_medium_for_isolation.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating BekiSolidMedium_(Hydrogenovibrio_crunogenus_QUIMIOLITOTROFO).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-xm62wv/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-xm62wv/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/BekiSolidMedium_(Hydrogenovibrio_crunogenus_QUIMIOLITOTROFO).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating Bs_107_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating C41_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating C5BEL_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAENICOLA_MOBILE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDANAEROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDANAEROBIUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDANAEROVIRGA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDERIHABITANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICELLULOSIRUPTOR_ACETIGENUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICELLULOSIRUPTOR_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICELLULOSIRUPTOR_MEDIUM_WITH_2.5%_NaCl.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICELLULOSIRUPTOR_OWENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICOPROBACTER_ALGERIENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDICOPROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDIMICROBIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDIMICROBIUM_THIODISMUTANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDINITRATIRUPTOR_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDINITRATIRUPTOR_MICROAEROPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDISERICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDISPHAERA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDITERRIVIBRIO_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDITHRIX_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDIVIRGA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALDOCOCCUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALORAMATOR_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALORAMATOR_QUIMBAYENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALORAMATOR_VITERBIENSIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CALROANAEROBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAMINIBACTER_MEDIATLANTICUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAMINIBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAMINICELLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAMPYLOBACTER_RECTUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAPNOCYTOPHAGA_II_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAPNOCYTOPHAGA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAPROICIPRODUCENS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARBON_MONOXIDE_OXIDIZER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARBOXYDOCELLA_MANGANICA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARBOXYDOTHERMUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARBOXYDOTHERMUS_MEDIUM_(HETEROTROPH).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-VGkBC6/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-VGkBC6/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CARBOXYDOTHERMUS_MEDIUM_(HETEROTROPH).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CARBOXYDOTHERMUS_SIDEROPHILUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARBOXYMETHYL_CELLULOSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARCBOXYDIBRACHIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARNOBACTERIUM_PLEISTOCAENIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CARYOPHANON_LATUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAR_BACILLUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CASMAN-MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CASO_AGAR_(Merck_105458).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PgORKZ/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-PgORKZ/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CASO_AGAR_(Merck_105458).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CASTENHOLZ_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CATONELLA_UREILYTICA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAULOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CAULOBACTER_PYE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CC.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CDMM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CEJFB1T_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CELLULOLYTIC_NATRONOARCHAEA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CELLULOMONAS_FERMENTANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CELLULOSE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CELLULOSILYTICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CELLULOSILYTICUM_RUMINICOLA_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CENS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CENTENUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CGM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CH.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHAETOMIUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHERRY_AGAR_(CBS_formula).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-xgZBET/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-xgZBET/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CHERRY_AGAR_(CBS_formula).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CHITINISPIRILLUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHITINIVIBRIO_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHI_1776_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHLOROFLEXUS_AGGREGANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHLOROFLEXUS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHLOROFLEXUS_MEDIUM_(modified).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-V7KFhe/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-V7KFhe/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CHLOROFLEXUS_MEDIUM_(modified).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CHM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOCOLATE_AGAR.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOCOLATE_AGAR_WITH__5%_SHEEP_BLOOD.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOPPED_MEAT_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOPPED_MEAT_MEDIUM_(N2_CO2).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-QDrWk6/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-QDrWk6/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CHOPPED_MEAT_MEDIUM_(N2_CO2).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CHOPPED_MEAT_MEDIUM_FOR_FRETIBACTERIUM_SP..yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOPPED_MEAT_MEDIUM_FOR_TREPONEMA_SP..yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHOPPED_MEAT_MEDIUM_WITH_CARBOHYDRATES.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHROMATIUM_SALEXIGENS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHROMATIUM_TEPIDUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHROMOHALOBACTER_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHRYSIOGENES_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CHTHONOMONAS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIISALIBACTER_PAUCIVORANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_(GS)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-oWBGwv/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-oWBGwv/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_(GS)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_(GV)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-ntseQ6/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-ntseQ6/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_(GV)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_(P-2)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-2Hthd0/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-2Hthd0/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_(P-2)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_(RB-1)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-qmobpl/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-qmobpl/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_(RB-1)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_(RB-9)_MEDIUM.yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8ood8H/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-8ood8H/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_(RB-9)_MEDIUM.yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_ACETATE_1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_ACETOBUTYLICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_AEROTOLERANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_AMINOBUTYRICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_BOVIS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_CELLULOVORANS_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_CHARTATABIDUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_FORMICACETICUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_GRANTII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_KLUYVERI_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_KN_MEDIUM_(HYDROXYBENZOATE).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-k8XBeN/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-k8XBeN/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CLOSTRIDIUM_KN_MEDIUM_(HYDROXYBENZOATE).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CLOSTRIDIUM_LIND_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_LJUNGDAHLII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_METHYLPENTOSUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_R6_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_SP._LA1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_SP._MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_SWELLFUNIANUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_SW_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_TH7C1_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_THERMOCELLUM_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_THERMOSULFUROGENES_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_ULTUNENSE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_VINCENTII_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDIUM_VIRIDE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CLOSTRIDUM_G4_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CM+YE_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CM+YE_MEDIUM_(pH_9).yaml ===
+Validating schema structure...
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-eE0LWf/validate-schema: line 214: syntax error near unexpected token `('
+/var/folders/7w/ksxs106s7_sg14v6cb2y70vr0000gn/T/just-eE0LWf/validate-schema: line 214: `uv run linkml-validate --schema src/culturemech/schema/culturemech.yaml --target-class MediaRecipe kb/media/bacterial/CM+YE_MEDIUM_(pH_9).yaml'
+error: Recipe `validate-schema` failed with exit code 2
+
+=== Validating CM1A_Halorubrum_Medium.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CM3_MEDIUM.yaml ===
+Validating schema structure...
+No issues found
+✓ Schema validation passed
+
+=== Validating CMA.yaml ===

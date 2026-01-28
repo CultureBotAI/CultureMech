@@ -1,0 +1,21 @@
+name: For strains DSM 12138, 12139, 12140 and 12143
+original_name: For strains DSM 12138, 12139, 12140 and 12143
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.1-7.5
+media_term:
+  preferred_term: KOMODO Medium 1315.1
+  term:
+    id: komodo.medium:1315.1
+    label: For strains DSM 12138, 12139, 12140 and 12143
+notes: 'Source: KOMODO ModelSEED | ID: 1315.1 | DSMZ Medium: 1315 (mediadive.medium:1315)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1315.1'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1640",
+  "medium_name": "Anaerobe Basal Broth CM0957 (Dehydrated, OXOID)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Anaerobe Basal Broth CM0957 (Dehydrated, OXOID)",
+      "concentration": 35.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Methanol (15% v/v)",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

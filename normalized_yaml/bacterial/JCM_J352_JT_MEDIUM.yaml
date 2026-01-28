@@ -1,0 +1,33 @@
+name: JT MEDIUM
+original_name: JT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J352
+  term:
+    id: mediadive.medium:J352
+    label: JT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=352'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 330 with final 3 ml vitamin solution in solution A (per
+    900 ml). Otherwise, prepare the medium as described in the recipe of Medium No.
+    330.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 11824, incubate with a 10 - 15% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.371537Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J352'

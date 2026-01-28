@@ -1,0 +1,21 @@
+name: ANAEROVIBRIO BURKINABENSIS medium
+original_name: ANAEROVIBRIO BURKINABENSIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: KOMODO Medium 575
+  term:
+    id: komodo.medium:575
+    label: ANAEROVIBRIO BURKINABENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 575 | DSMZ Medium: 575 (mediadive.medium:575)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 575'

@@ -1,0 +1,21 @@
+name: DEFLUVIITOGA medium
+original_name: DEFLUVIITOGA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 1328
+  term:
+    id: komodo.medium:1328
+    label: DEFLUVIITOGA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1328 | DSMZ Medium: 1328 (mediadive.medium:1328)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1328'

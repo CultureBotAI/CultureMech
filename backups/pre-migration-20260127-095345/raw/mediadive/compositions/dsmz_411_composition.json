@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_411",
+  "medium_name": "Milk (fresh)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CaCO3",
+      "concentration": 200.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "D-Glucose",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Cysteine HCl x H2O",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,20 @@
+name: M9-SNG medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: 10.1007/s11104-022-05822-6
+curation_history:
+- timestamp: '2026-01-22T06:18:00.439561Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P8'

@@ -1,0 +1,21 @@
+name: METHANOLOBUS-I-MEDIUM
+original_name: METHANOLOBUS-I-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 233
+  term:
+    id: komodo.medium:233
+    label: METHANOLOBUS-I-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 233 | DSMZ Medium: 233 (mediadive.medium:233)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 233'

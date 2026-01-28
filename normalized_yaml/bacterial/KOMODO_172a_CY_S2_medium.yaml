@@ -1,0 +1,21 @@
+name: CY S2 medium
+original_name: CY S2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 172a
+  term:
+    id: komodo.medium:172a
+    label: CY S2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 172a | DSMZ Medium: 172a (mediadive.medium:172a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 172a'

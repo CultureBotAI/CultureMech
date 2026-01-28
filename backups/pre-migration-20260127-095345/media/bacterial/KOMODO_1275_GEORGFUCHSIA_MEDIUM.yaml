@@ -1,0 +1,21 @@
+name: GEORGFUCHSIA MEDIUM
+original_name: GEORGFUCHSIA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 1275
+  term:
+    id: komodo.medium:1275
+    label: GEORGFUCHSIA MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1275 | DSMZ Medium: 1275 (mediadive.medium:1275)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1275'

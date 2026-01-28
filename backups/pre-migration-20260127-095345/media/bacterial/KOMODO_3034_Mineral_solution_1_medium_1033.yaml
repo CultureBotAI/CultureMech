@@ -1,0 +1,21 @@
+name: Mineral solution 1 (medium 1033)
+original_name: Mineral solution 1 (medium 1033)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3034 | DSMZ Medium: 3034 (mediadive.medium:3034)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3034
+  term:
+    id: komodo.medium:3034
+    label: Mineral solution 1 (medium 1033)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3034'

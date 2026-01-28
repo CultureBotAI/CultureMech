@@ -1,0 +1,21 @@
+name: For DSM 4556, DSM 10334 and DSM 13486
+original_name: For DSM 4556, DSM 10334 and DSM 13486
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 120.3
+  term:
+    id: komodo.medium:120.3
+    label: For DSM 4556, DSM 10334 and DSM 13486
+notes: 'Source: KOMODO ModelSEED | ID: 120.3 | DSMZ Medium: 120 (mediadive.medium:120)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 120.3'

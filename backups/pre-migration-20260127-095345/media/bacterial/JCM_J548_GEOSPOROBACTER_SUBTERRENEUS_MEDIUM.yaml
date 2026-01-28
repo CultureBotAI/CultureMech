@@ -1,0 +1,75 @@
+name: GEOSPOROBACTER SUBTERRENEUS MEDIUM
+original_name: GEOSPOROBACTER SUBTERRENEUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J548
+  term:
+    id: mediadive.medium:J548
+    label: GEOSPOROBACTER SUBTERRENEUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=548'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '10.8696'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.08696'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00108696'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients and adjust pH to 7.2. Distribute 0.92 volume of the
+    medium into tubes (e.g., 4.6 ml of the medium in the Hungate tubes) under a N2-CO2
+    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'To complete the medium, add the following stock solutions [Filter-sterilize
+    NaHCO3 solution and store under a N2-CO2 (4:1, v/v) gas mixture. The other solutions
+    are autoclaved and stored anaerobically under a N2 atmosphere] to the medium (per
+    4.6 ml):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.903537Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J548'

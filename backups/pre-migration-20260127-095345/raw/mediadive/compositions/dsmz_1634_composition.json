@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1634",
+  "medium_name": "Na2SO4",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Na2SO4",
+      "concentration": 0.0284,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 0.0404,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.0802,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CAPS buffer",
+      "concentration": 3.32,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

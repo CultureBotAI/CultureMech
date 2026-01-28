@@ -1,0 +1,20 @@
+name: MEDIUM 514 MODIFIED FOR DSM 16502
+original_name: MEDIUM 514 MODIFIED FOR DSM 16502
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 514_16502
+  term:
+    id: komodo.medium:514_16502
+    label: MEDIUM 514 MODIFIED FOR DSM 16502
+notes: 'Source: KOMODO ModelSEED | ID: 514_16502 | DSMZ Medium: 514 (mediadive.medium:514)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514_16502'

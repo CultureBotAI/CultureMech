@@ -1,0 +1,89 @@
+name: BBL ACTINOMYCES BROTH
+original_name: BBL ACTINOMYCES BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 1029
+  term:
+    id: mediadive.medium:1029
+    label: BBL ACTINOMYCES BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1029.pdf'
+ingredients:
+- preferred_term: Potassium Phosphate
+  term:
+    id: CHEBI:63036
+    label: Potassium Phosphate
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium Chloride
+  term:
+    id: CHEBI:3312
+    label: Calcium Chloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Infusion Broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: final pH 6.9
+- step_number: 2
+  action: HEAT
+  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling
+    prepare and distribute into Hungate tubes by using the Hungate technique.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.151565Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1029'

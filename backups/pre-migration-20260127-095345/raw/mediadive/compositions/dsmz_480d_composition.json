@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_480d",
+  "medium_name": "Use medium 480, but reduce the amount of Na acetate to 1.0 g/l and add 3.0 g/l",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 480",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "480"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

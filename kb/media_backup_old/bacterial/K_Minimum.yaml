@@ -1,0 +1,21 @@
+name: K Minimum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_Kmin.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1111/j.1529-8817.1987.tb04217.x
+curation_history:
+- timestamp: '2026-01-22T06:18:00.403388Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C43'

@@ -1,0 +1,31 @@
+name: PYG MEDIUM (D)
+original_name: PYG MEDIUM (D)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: JCM Medium J564
+  term:
+    id: mediadive.medium:J564
+    label: PYG MEDIUM (D)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=564'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Medium No. 423 and adjust pH to 6.9. Add 0.5 g/L L-cysteine
+    x HCl x H2O after the medium is boiled, then, dispense into culture vessels. Prepare
+    the medium under a N2 atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.947417Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J564'

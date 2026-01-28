@@ -1,0 +1,46 @@
+name: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR
+original_name: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J518
+  term:
+    id: mediadive.medium:J518
+    label: PEPTONE-MEAT EXTRACT-GLYCEROL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=518'
+ingredients:
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.7059'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.819937Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J518'

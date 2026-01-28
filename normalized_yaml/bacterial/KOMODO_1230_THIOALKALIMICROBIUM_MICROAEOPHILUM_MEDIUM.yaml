@@ -1,0 +1,21 @@
+name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
+original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 1230 | DSMZ Medium: 1230 (mediadive.medium:1230)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1230
+  term:
+    id: komodo.medium:1230
+    label: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1230'

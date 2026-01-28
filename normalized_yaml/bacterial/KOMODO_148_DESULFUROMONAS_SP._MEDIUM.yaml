@@ -1,0 +1,21 @@
+name: DESULFUROMONAS SP. MEDIUM
+original_name: DESULFUROMONAS SP. MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 148 | DSMZ Medium: 148
+  (mediadive.medium:148) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 148
+  term:
+    id: komodo.medium:148
+    label: DESULFUROMONAS SP. MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 148'

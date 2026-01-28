@@ -1,0 +1,21 @@
+name: HALOMICROBIUM KATESII medium
+original_name: HALOMICROBIUM KATESII medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1164
+  term:
+    id: komodo.medium:1164
+    label: HALOMICROBIUM KATESII medium
+notes: 'Source: KOMODO ModelSEED | ID: 1164 | DSMZ Medium: 1164 (mediadive.medium:1164)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1164'

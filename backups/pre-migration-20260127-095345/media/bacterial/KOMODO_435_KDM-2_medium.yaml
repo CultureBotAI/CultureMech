@@ -1,0 +1,21 @@
+name: KDM-2 medium
+original_name: KDM-2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 435
+  term:
+    id: komodo.medium:435
+    label: KDM-2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 435 | DSMZ Medium: 435 (mediadive.medium:435)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 435'

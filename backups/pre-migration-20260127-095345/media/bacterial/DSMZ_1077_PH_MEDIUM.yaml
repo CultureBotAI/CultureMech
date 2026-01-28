@@ -1,0 +1,45 @@
+name: PH MEDIUM
+original_name: PH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1077
+  term:
+    id: mediadive.medium:1077
+    label: PH MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1077.pdf'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.234'
+    unit: G_PER_L
+- preferred_term: Fish-Sperm DNA
+  concentration:
+    value: '0.187'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Combine solutions 1 and 2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 6.5 and autoclave.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.311138Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1077'

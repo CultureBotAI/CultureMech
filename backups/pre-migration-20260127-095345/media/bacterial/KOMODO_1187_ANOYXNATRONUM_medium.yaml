@@ -1,0 +1,21 @@
+name: ANOYXNATRONUM medium
+original_name: ANOYXNATRONUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: KOMODO Medium 1187
+  term:
+    id: komodo.medium:1187
+    label: ANOYXNATRONUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 1187 | DSMZ Medium: 1187 (mediadive.medium:1187)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1187'

@@ -1,0 +1,56 @@
+name: Modified Edward's medium
+original_name: Modified Edward's medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KCl
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NaOAc
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Horse serum
+  concentration:
+    value: '6'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Tryptose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Yeast dialysate
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+media_term:
+  preferred_term: TOGO Medium M2205
+  term:
+    id: TOGO:M2205
+    label: Modified Edward's medium
+notes: 'Source: https://togomedium.org/medium/M2205'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.159249Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2205'

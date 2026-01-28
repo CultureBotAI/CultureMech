@@ -1,0 +1,21 @@
+name: AMB medium
+original_name: AMB medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: KOMODO Medium 455
+  term:
+    id: komodo.medium:455
+    label: AMB medium
+notes: 'Source: KOMODO ModelSEED | ID: 455 | DSMZ Medium: 455 (mediadive.medium:455)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 455'

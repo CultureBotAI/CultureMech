@@ -1,0 +1,61 @@
+name: T2U MEDIUM
+original_name: T2U MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J264
+  term:
+    id: mediadive.medium:J264
+    label: T2U MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=264'
+ingredients:
+- preferred_term: Polypeptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Uracil
+  term:
+    id: CHEBI:17568
+    label: Uracil
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2 with NaOH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Aseptically add 1 ml of erythromycin solution (10 mg/ml 50% ethanol)
+    to the medium autoclaved.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.116200Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J264'

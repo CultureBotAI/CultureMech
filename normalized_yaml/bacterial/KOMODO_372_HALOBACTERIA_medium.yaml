@@ -1,0 +1,21 @@
+name: HALOBACTERIA medium
+original_name: HALOBACTERIA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 372
+  term:
+    id: komodo.medium:372
+    label: HALOBACTERIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 372 | DSMZ Medium: 372 (mediadive.medium:372)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 372'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_277",
+  "medium_name": "Medium dsmz_277",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CHERRY AGAR (CBS formula)\n\nAdd 1 l water to",
+      "concentration": 200.0,
+      "unit": "g",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "agar in",
+      "concentration": 800.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

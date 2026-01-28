@@ -1,0 +1,32 @@
+name: Tryptic Soy Agar (Soybean-Casein Digest Medium, USP)
+original_name: Tryptic Soy Agar (Soybean-Casein Digest Medium, USP)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Tryptic Soy Agar (BD 236950)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2432
+  term:
+    id: TOGO:M2432
+    label: Tryptic Soy Agar (Soybean-Casein Digest Medium, USP)
+notes: 'Source: https://togomedium.org/medium/M2432
+
+  Original URL: https://www.atcc.org/~/media/F11236DC0E36489ABFA10BF4A411C525.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.498821Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2432'

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1267b",
+  "medium_name": "Solution A",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Solution A",
+      "concentration": 901.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Solution B",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Solution C",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "of the bottom layer: Mix 1 volume of solution A (except NaHCO3 and\nagarose) with 1 volume of solution C and add 1% (w/v) agarose type 1, low EEO. After\nautoclaving, aseptically fill 1.2 ml of the suspension in sterile screw capped tubes (10 ml\ntotal volume). The bottom layer solidifies in approx. 30 min.",
+  "extraction_method": "pdf_text_parsing"
+}

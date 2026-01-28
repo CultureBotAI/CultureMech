@@ -1,0 +1,21 @@
+name: MEDIUM 63 MODIFIED FOR DSM 21064
+original_name: MEDIUM 63 MODIFIED FOR DSM 21064
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 63_21064
+  term:
+    id: komodo.medium:63_21064
+    label: MEDIUM 63 MODIFIED FOR DSM 21064
+notes: 'Source: KOMODO ModelSEED | ID: 63_21064 | DSMZ Medium: 63 (mediadive.medium:63)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 63_21064'

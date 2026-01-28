@@ -1,0 +1,21 @@
+name: Trace element solution (medium 918)
+original_name: Trace element solution (medium 918)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 2053
+  term:
+    id: komodo.medium:2053
+    label: Trace element solution (medium 918)
+notes: 'Source: KOMODO ModelSEED | ID: 2053 | DSMZ Medium: 2053 (mediadive.medium:2053)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2053'

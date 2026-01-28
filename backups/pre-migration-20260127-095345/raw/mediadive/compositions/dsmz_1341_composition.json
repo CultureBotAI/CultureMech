@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1341",
+  "medium_name": "Mineral Salts Solution MIN E:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral Salts Solution MIN E:",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MIN E – Base (10x)",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace Metals (500x)",
+      "concentration": 900.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

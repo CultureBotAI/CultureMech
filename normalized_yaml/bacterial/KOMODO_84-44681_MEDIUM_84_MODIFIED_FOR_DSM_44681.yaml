@@ -1,0 +1,20 @@
+name: MEDIUM 84 MODIFIED FOR DSM 44681
+original_name: MEDIUM 84 MODIFIED FOR DSM 44681
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 84_44681
+  term:
+    id: komodo.medium:84_44681
+    label: MEDIUM 84 MODIFIED FOR DSM 44681
+notes: 'Source: KOMODO ModelSEED | ID: 84_44681 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 84_44681'

@@ -1,0 +1,116 @@
+name: '''TAP (auto'
+original_name: '''TAP (auto'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Orthophosphate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pi'
+- preferred_term: Manganese
+  concentration:
+    value: '0.0256'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:mn2'
+- preferred_term: Zinc
+  concentration:
+    value: '0.0765'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:zn2'
+- preferred_term: Sulfate
+  concentration:
+    value: '0.51'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:so4'
+- preferred_term: Copper
+  concentration:
+    value: '0.0063'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cu'
+- preferred_term: Calcium
+  concentration:
+    value: '0.34'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ca2'
+- preferred_term: Molybdenum
+  concentration:
+    value: '0.0062'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt ion
+  concentration:
+    value: '0.0068'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cobalt2'
+- preferred_term: Potassium
+  concentration:
+    value: '1.94'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:k'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.134'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium
+  concentration:
+    value: '0.041'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:mg2'
+- preferred_term: Cl-
+  concentration:
+    value: '8.22'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cl'
+- preferred_term: Sodium
+  concentration:
+    value: '0.27'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:na1'
+- preferred_term: NH4+
+  concentration:
+    value: '7.48'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nh4'
+- preferred_term: Tromethamine
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+- preferred_term: Fe2+
+  concentration:
+    value: '0.0179'
+    unit: MILLIMOLAR
+- preferred_term: Borate
+  concentration:
+    value: '0.184'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.849603Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 37, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 37
+  term:
+    id: MEDIADB:37
+    label: '''TAP (auto'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

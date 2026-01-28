@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_634",
+  "medium_name": "Dissolve dehydrated RCM medium (available from BD-BBL, OXOID or MERCK) in distilled",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "OXOID or MERCK) in distilled\nwater and add",
+      "concentration": 0.5,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

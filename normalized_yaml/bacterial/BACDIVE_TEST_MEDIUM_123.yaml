@@ -1,0 +1,23 @@
+name: Test Medium 123
+original_name: Test Medium 123
+category: imported
+description: "Media: Test Medium 123. Growth temperature: 30\xB0C. pH: 7.2."
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Prepare Test Medium 123 according to standard protocol
+notes: "Imported from BacDive cultivation data. Media reference extracted from strain\
+  \ growth conditions. Growth temperature: 30\xB0C pH: 7.2 Growth time: 48 h"
+curation_history:
+- timestamp: '2026-01-24T16:10:10.815799Z'
+  curator: bacdive-import
+  action: Imported from BacDive
+  notes: 'Source: BacDive, Media ID: Test_Medium_123'

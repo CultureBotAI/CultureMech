@@ -1,0 +1,85 @@
+name: Enriched anaerobe medium
+original_name: Enriched anaerobe medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.025% Resazurin
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Hemin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Vitamin K1
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Trypticase
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Oxoid Lab-Lemco Powder
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine . HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Ethanol
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: N NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: Gas'
+- preferred_term: Hydrogen gas
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M2753
+  term:
+    id: TOGO:M2753
+    label: Enriched anaerobe medium
+notes: 'Source: https://togomedium.org/medium/M2753
+
+  Original URL: https://www.atcc.org/~/media/0AA3641D26304D6A813BA9419DE0B193.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.238958Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2753'

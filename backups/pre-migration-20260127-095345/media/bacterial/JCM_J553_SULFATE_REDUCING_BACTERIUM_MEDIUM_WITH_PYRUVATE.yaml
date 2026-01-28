@@ -1,0 +1,30 @@
+name: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
+original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J553
+  term:
+    id: mediadive.medium:J553
+    label: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=553'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 552 supplemented with final 30.0 g/L NaCl, replacing
+    sodium lactate with 1.9 g/L sodium pyruvate. Adjust pH to 6.7.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.918221Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J553'

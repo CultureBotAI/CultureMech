@@ -1,0 +1,47 @@
+name: GSY medium
+original_name: GSY medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: YE
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Inorganic
+    compound, Defined component'
+- preferred_term: glucose
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: soybean peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2423
+  term:
+    id: TOGO:M2423
+    label: GSY medium
+notes: 'Source: https://togomedium.org/medium/M2423'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.492284Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2423'

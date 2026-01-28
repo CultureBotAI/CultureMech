@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1664",
+  "medium_name": "Medium dsmz_1664",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "(NH4)Cl",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

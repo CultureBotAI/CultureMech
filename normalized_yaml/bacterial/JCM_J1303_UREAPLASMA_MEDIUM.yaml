@@ -1,0 +1,83 @@
+name: UREAPLASMA MEDIUM
+original_name: UREAPLASMA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.1
+media_term:
+  preferred_term: JCM Medium J1303
+  term:
+    id: mediadive.medium:J1303
+    label: UREAPLASMA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1303'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '10.5'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Hipolypepton
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bovine calf serum
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Mix components, adjust pH to 6.0-6.2. After autoclaving and then cooling
+    to 50-55C, aseptically add the following solutions (filter-sterilized).
+- step_number: 2
+  action: MIX
+  description: <i>1% Phenol red solution:</i>
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Dissolve 1.0 g phenol red first in 10-20 ml of 0.1 N NaOH. Then adjust
+    volume to 100 ml. After filter-sterilizing, store at 4C.
+- step_number: 4
+  action: MIX
+  description: <i>1% Urea - 4% yeast extract solution:</i>
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Mix components, sterilize by filtration through a 0.22 ï¿½m filter
+    and store at 4C.
+- step_number: 6
+  action: POUR_PLATES
+  description: Dispense the medium into sterilized plastic tubes (e.g., 5 ml medium
+    in 15 ml of plastic tubes) and add 100-200 ï¿½l of culture solution. Incubate
+    the cultures at 37C for 1-3 days. When the color of the medium turns from yellow
+    to orange or red, subculture into the new medium. After color change, the strain
+    can be stored at 4C for 1-2 weeks.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.372481Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1303'

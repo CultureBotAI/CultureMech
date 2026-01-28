@@ -1,0 +1,53 @@
+name: Half Strength Skim Milk Agar
+original_name: Half Strength Skim Milk Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Solution A
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Solution B
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Skim milk (BD-Difco)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M98
+  term:
+    id: TOGO:M98
+    label: Half Strength Skim Milk Agar
+notes: 'Source: https://togomedium.org/medium/M98
+
+  Original source: JCM - JCM_M106
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.076587Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M98'

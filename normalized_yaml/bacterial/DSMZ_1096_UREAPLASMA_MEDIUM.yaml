@@ -1,0 +1,67 @@
+name: UREAPLASMA MEDIUM
+original_name: UREAPLASMA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 1096
+  term:
+    id: mediadive.medium:1096
+    label: UREAPLASMA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1096.pdf'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.142857'
+    unit: G_PER_L
+- preferred_term: Fish-Sperm DNA
+  concentration:
+    value: '0.285714'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.0285714'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '0.571429'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Isovitalex
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust solution A for final pH 6.0 with HCl. Autoclave solution A at
+    121°C for 15 min. Cool to room temperature and aseptically add solution B filter
+    sterilised.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.357961Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1096'

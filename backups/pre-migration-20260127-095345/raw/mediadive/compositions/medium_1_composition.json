@@ -1,0 +1,26 @@
+{
+  "medium_id": "medium_1",
+  "medium_name": "DSMZ medium_1",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "tryptone",
+      "concentration": "10.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "yeast extract",
+      "concentration": "5.0",
+      "unit": "g/L",
+      "role": "vitamin source"
+    },
+    {
+      "name": "sodium chloride",
+      "concentration": "10.0",
+      "unit": "g/L",
+      "role": "osmotic balance"
+    }
+  ],
+  "preparation_instructions": ""
+}

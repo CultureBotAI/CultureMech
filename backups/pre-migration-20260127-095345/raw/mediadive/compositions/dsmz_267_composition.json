@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_267",
+  "medium_name": "Sugar beet molasses",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Inoculate with c. 20 ml of grains of \"ginger beer plant\".",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

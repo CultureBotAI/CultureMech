@@ -1,0 +1,23 @@
+name: 1/10 R2A BROTH
+original_name: 1/10 R2A BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J805
+  term:
+    id: mediadive.medium:J805
+    label: 1/10 R2A BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=805'
+ingredients:
+- preferred_term: R2A Broth
+  concentration:
+    value: '0.32'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.649526Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J805'

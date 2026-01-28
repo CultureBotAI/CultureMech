@@ -1,0 +1,21 @@
+name: DICTYOGLOMUS medium
+original_name: DICTYOGLOMUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 388
+  term:
+    id: komodo.medium:388
+    label: DICTYOGLOMUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 388 | DSMZ Medium: 388 (mediadive.medium:388)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 388'

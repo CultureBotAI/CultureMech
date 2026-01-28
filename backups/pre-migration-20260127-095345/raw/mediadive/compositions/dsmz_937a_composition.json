@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_937a",
+  "medium_name": "Use medium 937, but omit sodium succinate.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 937",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "937"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

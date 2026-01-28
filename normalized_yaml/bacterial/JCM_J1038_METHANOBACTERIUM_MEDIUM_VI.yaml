@@ -1,0 +1,35 @@
+name: METHANOBACTERIUM MEDIUM (VI)
+original_name: METHANOBACTERIUM MEDIUM (VI)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1038
+  term:
+    id: mediadive.medium:J1038
+    label: METHANOBACTERIUM MEDIUM (VI)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1038'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 872 with final 0.4 g/L NaCl.
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Comment: Sludge fluid can be replaced with a human fecal extract.
+    The extract is prepared as follows: autoclave equal quantities of human feces
+    and water at 121C for 30 min. Remove the sludge by centrifugation. Adjust pH of
+    the supernatant to 7.0-7.2 and sterilize at 121C for 15 min under a N2 atmosphere.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.409531Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1038'

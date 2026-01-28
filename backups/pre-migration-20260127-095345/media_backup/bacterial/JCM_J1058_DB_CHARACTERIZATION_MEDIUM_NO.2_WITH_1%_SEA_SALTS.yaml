@@ -1,0 +1,23 @@
+name: DB CHARACTERIZATION MEDIUM NO.2 WITH 1% SEA SALTS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1058
+  term:
+    id: JCM:J1058
+    label: DB CHARACTERIZATION MEDIUM NO.2 WITH 1% SEA SALTS
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1058'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.337061Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1058'

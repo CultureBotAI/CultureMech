@@ -1,0 +1,24 @@
+name: MJY MEDIUM FOR PYROLINEA MARINUS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J700
+  term:
+    id: JCM:J700
+    label: MJY MEDIUM FOR PYROLINEA MARINUS
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=700'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.134125Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J700'

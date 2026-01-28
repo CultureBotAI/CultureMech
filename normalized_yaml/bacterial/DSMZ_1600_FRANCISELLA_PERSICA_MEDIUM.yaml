@@ -1,0 +1,196 @@
+name: FRANCISELLA PERSICA MEDIUM
+original_name: FRANCISELLA PERSICA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1600
+  term:
+    id: mediadive.medium:1600
+    label: FRANCISELLA PERSICA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1600.pdf'
+ingredients:
+- preferred_term: L-15 powder
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: DL-aspartic acid
+  term:
+    id: CHEBI:22660
+    label: DL-aspartic acid
+  concentration:
+    value: '0.835196'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '1.39665'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.29228'
+    unit: G_PER_L
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '0.837989'
+    unit: G_PER_L
+- preferred_term: alpha-ketoglutaric acid
+  term:
+    id: CHEBI:30915
+    label: alpha-ketoglutaric acid
+  concentration:
+    value: '0.835196'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '6.25419'
+    unit: G_PER_L
+- preferred_term: Demineralized water
+  term:
+    id: CHEBI:15377
+    label: Demineralized water
+  concentration:
+    value: '346'
+    unit: G_PER_L
+- preferred_term: Demineralized water
+  term:
+    id: CHEBI:15377
+    label: Demineralized water
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FBS
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: cholesterol lipid concentrate
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 1 H2O
+  term:
+    id: CHEBI:86360
+    label: MnSO4 x 1 H2O
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2SeO3
+  term:
+    id: CHEBI:48843
+    label: Na2SeO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glutathione
+  term:
+    id: CHEBI:16856
+    label: Glutathione
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Para-aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: Para-aminobenzoic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: D-Biotin
+  term:
+    id: CHEBI:15956
+    label: D-Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: '2x concentrated stock:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 with NaOH.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Fill up to 346ml with demineralized water and filter sterilize through
+    0.2µm filter
+- step_number: 4
+  action: HEAT
+  description: Aliquot 17.3ml into 50ml tubes and store at -20°C.
+- step_number: 5
+  action: MIX
+  description: 'When ready to use add:'
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Filter sterilize each tube through 0.2µm filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.973523Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1600'

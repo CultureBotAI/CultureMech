@@ -1,0 +1,24 @@
+name: GEOBACTER NBAF MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: JCM Medium J1327
+  term:
+    id: JCM:J1327
+    label: GEOBACTER NBAF MEDIUM
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1327'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.490246Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1327'

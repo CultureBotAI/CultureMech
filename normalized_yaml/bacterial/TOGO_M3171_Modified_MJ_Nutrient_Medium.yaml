@@ -1,0 +1,103 @@
+name: Modified MJ Nutrient Medium
+original_name: Modified MJ Nutrient Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '150'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: Biotin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: p-Aminobenzoic Acid
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Sodium Citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+- preferred_term: MOPS
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: FeSO4·6H2O
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Pyridoxamine-HCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin'
+- preferred_term: Urea
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M3171
+  term:
+    id: TOGO:M3171
+    label: Modified MJ Nutrient Medium
+notes: 'Source: https://togomedium.org/medium/M3171'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.568002Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3171'

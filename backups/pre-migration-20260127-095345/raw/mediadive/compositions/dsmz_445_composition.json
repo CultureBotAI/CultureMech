@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_445",
+  "medium_name": "WITH SALICYLATE",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 442",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "442"
+    },
+    {
+      "name": "Salicylate As Carbon Source Instead Of Toluene",
+      "concentration": 0.05,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

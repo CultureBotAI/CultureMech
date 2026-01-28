@@ -1,0 +1,21 @@
+name: MALT EXTRACT Peptone AGAR
+original_name: MALT EXTRACT Peptone AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: KOMODO Medium 90
+  term:
+    id: komodo.medium:90
+    label: MALT EXTRACT Peptone AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 90 | DSMZ Medium: 90 (mediadive.medium:90)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 90'

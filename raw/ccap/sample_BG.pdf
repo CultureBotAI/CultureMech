@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-GB">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-GB">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="en-GB">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<title>Page not found &#8211; CCAP</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" type="application/rss+xml" title="CCAP &raquo; Feed" href="https://www.ccap.ac.uk/index.php/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CCAP &raquo; Comments Feed" href="https://www.ccap.ac.uk/index.php/comments/feed/" />
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v9.11.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+							<script src="//www.googletagmanager.com/gtag/js?id=G-K7T146YY6G"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '9.11.1';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/www.ccap.ac.uk\/wp-content\/uploads\/MR_BG.pdf\/"};
+								if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
+								var disableStrs = [
+										'ga-disable-G-K7T146YY6G',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						if (document.cookie.indexOf(disableStrs[index] + '=true') > -1) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if (__gtagTrackerIsOptedOut()) {
+					for (var index = 0; index < disableStrs.length; index++) {
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for (var index = 0; index < disableStrs.length; index++) {
+						document.cookie = disableStrs[index] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[disableStrs[index]] = true;
+					}
+				}
+
+				if ('undefined' === typeof gaOptout) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if (mi_track_user) {
+					function __gtagDataLayer() {
+						dataLayer.push(arguments);
+					}
+
+					function __gtagTracker(type, name, parameters) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply(null, arguments);
+							return;
+						}
+
+						if (type === 'event') {
+														parameters.send_to = monsterinsights_frontend.v4_id;
+							var hookName = name;
+							if (typeof parameters['event_category'] !== 'undefined') {
+								hookName = parameters['event_category'] + ':' + name;
+							}
+
+							if (typeof MonsterInsightsDualTracker.trackers[hookName] !== 'undefined') {
+								MonsterInsightsDualTracker.trackers[hookName](parameters);
+							} else {
+								__gtagDataLayer('event', name, parameters);
+							}
+							
+						} else {
+							__gtagDataLayer.apply(null, arguments);
+						}
+					}
+
+					__gtagTracker('js', new Date());
+					__gtagTracker('set', {
+						'developer_id.dZGIzZG': true,
+											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
+										__gtagTracker('config', 'G-K7T146YY6G', {"forceSSL":"true","link_attribution":"true","page_path":'\/404.html?page=' + document.location.pathname + document.location.search + '&from=' + document.referrer} );
+										window.gtag = __gtagTracker;										(function () {
+						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+						/* ga and __gaTracker compatibility shim. */
+						var noopfn = function () {
+							return null;
+						};
+						var newtracker = function () {
+							return new Tracker();
+						};
+						var Tracker = function () {
+							return null;
+						};
+						var p = Tracker.prototype;
+						p.get = noopfn;
+						p.set = noopfn;
+						p.send = function () {
+							var args = Array.prototype.slice.call(arguments);
+							args.unshift('send');
+							__gaTracker.apply(null, args);
+						};
+						var __gaTracker = function () {
+							var len = arguments.length;
+							if (len === 0) {
+								return;
+							}
+							var f = arguments[len - 1];
+							if (typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function') {
+								if ('send' === arguments[0]) {
+									var hitConverted, hitObject = false, action;
+									if ('event' === arguments[1]) {
+										if ('undefined' !== typeof arguments[3]) {
+											hitObject = {
+												'eventAction': arguments[3],
+												'eventCategory': arguments[2],
+												'eventLabel': arguments[4],
+												'value': arguments[5] ? arguments[5] : 1,
+											}
+										}
+									}
+									if ('pageview' === arguments[1]) {
+										if ('undefined' !== typeof arguments[2]) {
+											hitObject = {
+												'eventAction': 'page_view',
+												'page_path': arguments[2],
+											}
+										}
+									}
+									if (typeof arguments[2] === 'object') {
+										hitObject = arguments[2];
+									}
+									if (typeof arguments[5] === 'object') {
+										Object.assign(hitObject, arguments[5]);
+									}
+									if ('undefined' !== typeof arguments[1].hitType) {
+										hitObject = arguments[1];
+										if ('pageview' === hitObject.hitType) {
+											hitObject.eventAction = 'page_view';
+										}
+									}
+									if (hitObject) {
+										action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+										hitConverted = mapArgs(hitObject);
+										__gtagTracker('event', action, hitConverted);
+									}
+								}
+								return;
+							}
+
+							function mapArgs(args) {
+								var arg, hit = {};
+								var gaMap = {
+									'eventCategory': 'event_category',
+									'eventAction': 'event_action',
+									'eventLabel': 'event_label',
+									'eventValue': 'event_value',
+									'nonInteraction': 'non_interaction',
+									'timingCategory': 'event_category',
+									'timingVar': 'name',
+									'timingValue': 'value',
+									'timingLabel': 'event_label',
+									'page': 'page_path',
+									'location': 'page_location',
+									'title': 'page_title',
+									'referrer' : 'page_referrer',
+								};
+								for (arg in args) {
+																		if (!(!args.hasOwnProperty(arg) || !gaMap.hasOwnProperty(arg))) {
+										hit[gaMap[arg]] = args[arg];
+									} else {
+										hit[arg] = args[arg];
+									}
+								}
+								return hit;
+							}
+
+							try {
+								f.hitCallback();
+							} catch (ex) {
+							}
+						};
+						__gaTracker.create = newtracker;
+						__gaTracker.getByName = newtracker;
+						__gaTracker.getAll = function () {
+							return [];
+						};
+						__gaTracker.remove = noopfn;
+						__gaTracker.loaded = true;
+						window['__gaTracker'] = __gaTracker;
+					})();
+									} else {
+										console.log("");
+					(function () {
+						function __gtagTracker() {
+							return null;
+						}
+
+						window['__gtagTracker'] = __gtagTracker;
+						window['gtag'] = __gtagTracker;
+					})();
+									}
+			</script>
+							<!-- / Google Analytics by MonsterInsights -->
+		<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='sbi_styles-css' href='https://www.ccap.ac.uk/wp-content/plugins/instagram-feed/css/sbi-styles.min.css?ver=6.10.0' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress-css-css' href='https://www.ccap.ac.uk/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1768558871' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress-blocks-style-css' href='https://www.ccap.ac.uk/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1768558871' type='text/css' media='all' />
+<link rel='stylesheet' id='embedpress-lazy-load-css-css' href='https://www.ccap.ac.uk/wp-content/plugins/embedpress/assets/css/lazy-load.css?ver=1768558871' type='text/css' media='all' />
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://www.ccap.ac.uk/wp-includes/css/dist/block-library/style.min.css?ver=6.9' type='text/css' media='all' />
+<style id='wp-block-library-theme-inline-css' type='text/css'>
+.wp-block-audio :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-audio :where(figcaption){color:#ffffffa6}.wp-block-audio{margin:0 0 1em}.wp-block-code{border:1px solid #ccc;border-radius:4px;font-family:Menlo,Consolas,monaco,monospace;padding:.8em 1em}.wp-block-embed :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-embed :where(figcaption){color:#ffffffa6}.wp-block-embed{margin:0 0 1em}.blocks-gallery-caption{color:#555;font-size:13px;text-align:center}.is-dark-theme .blocks-gallery-caption{color:#ffffffa6}:root :where(.wp-block-image figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme :root :where(.wp-block-image figcaption){color:#ffffffa6}.wp-block-image{margin:0 0 1em}.wp-block-pullquote{border-bottom:4px solid;border-top:4px solid;color:currentColor;margin-bottom:1.75em}.wp-block-pullquote :where(cite),.wp-block-pullquote :where(footer),.wp-block-pullquote__citation{color:currentColor;font-size:.8125em;font-style:normal;text-transform:uppercase}.wp-block-quote{border-left:.25em solid;margin:0 0 1.75em;padding-left:1em}.wp-block-quote cite,.wp-block-quote footer{color:currentColor;font-size:.8125em;font-style:normal;position:relative}.wp-block-quote:where(.has-text-align-right){border-left:none;border-right:.25em solid;padding-left:0;padding-right:1em}.wp-block-quote:where(.has-text-align-center){border:none;padding-left:0}.wp-block-quote.is-large,.wp-block-quote.is-style-large,.wp-block-quote:where(.is-style-plain){border:none}.wp-block-search .wp-block-search__label{font-weight:700}.wp-block-search__button{border:1px solid #ccc;padding:.375em .625em}:where(.wp-block-group.has-background){padding:1.25em 2.375em}.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}.wp-block-table{margin:0 0 1em}.wp-block-table td,.wp-block-table th{word-break:normal}.wp-block-table :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-table :where(figcaption){color:#ffffffa6}.wp-block-video :where(figcaption){color:#555;font-size:13px;text-align:center}.is-dark-theme .wp-block-video :where(figcaption){color:#ffffffa6}.wp-block-video{margin:0 0 1em}:root :where(.wp-block-template-part.has-background){margin-bottom:0;margin-top:0;padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/css/dist/block-library/theme.min.css */
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-term-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-term-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel='stylesheet' id='child-theme-generator-css' href='https://www.ccap.ac.uk/wp-content/plugins/child-theme-generator/public/css/child-theme-generator-public.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='simple-banner-style-css' href='https://www.ccap.ac.uk/wp-content/plugins/simple-banner/simple-banner.css?ver=3.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='parente2-style-css' href='https://www.ccap.ac.uk/wp-content/themes/spacious/style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='childe2-style-css' href='https://www.ccap.ac.uk/wp-content/themes/SpaciousChild/style.css?ver=6.9' type='text/css' media='all' />
+<link rel='stylesheet' id='spacious_style-css' href='https://www.ccap.ac.uk/wp-content/themes/SpaciousChild/style.css?ver=6.9' type='text/css' media='all' />
+<style id='spacious_style-inline-css' type='text/css'>
+.previous a:hover, .next a:hover, a, #site-title a:hover, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle, .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a, .breadcrumb a:hover, .tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover, .pagination a span:hover, #content .comments-area a.comment-permalink:hover, .comments-area .comment-author-link a:hover, .comment .comment-reply-link:hover, .nav-previous a:hover, .nav-next a:hover, #wp-calendar #today, .footer-widgets-area a:hover, .footer-socket-wrapper .copyright a:hover, .read-more, .more-link, .post .entry-title a:hover, .page .entry-title a:hover, .post .entry-meta a:hover, .type-page .entry-meta a:hover, .single #content .tags a:hover, .widget_testimonial .testimonial-icon:before, .header-action .search-wrapper:hover .fa{color:#27ab66;}.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button, #featured-slider .slider-read-more-button, #controllers a:hover, #controllers a.active, .pagination span ,.site-header .menu-toggle:hover, .call-to-action-button, .comments-area .comment-author-link span, a#back-top:before, .post .entry-meta .read-more-link, a#scroll-up, .search-form span, .main-navigation .tg-header-button-wrap.button-one a{background-color:#27ab66;}.main-small-navigation li:hover, .main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item, .spacious-woocommerce-cart-views .cart-value{background:#27ab66;}.main-navigation ul li ul, .widget_testimonial .testimonial-post{border-top-color:#27ab66;}blockquote, .call-to-action-content-wrapper{border-left-color:#27ab66;}.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover{background:#007934;}.pagination a span:hover, .main-navigation .tg-header-button-wrap.button-one a{border-color:#27ab66;}.widget-title span{border-bottom-color:#27ab66;}.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{color:#007934;}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#007934;}
+/*# sourceURL=spacious_style-inline-css */
+</style>
+<link rel='stylesheet' id='spacious-genericons-css' href='https://www.ccap.ac.uk/wp-content/themes/spacious/genericons/genericons.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='spacious-font-awesome-css' href='https://www.ccap.ac.uk/wp-content/themes/spacious/font-awesome/css/font-awesome.min.css?ver=4.7.1' type='text/css' media='all' />
+<link rel='stylesheet' id='recent-posts-widget-with-thumbnails-public-style-css' href='https://www.ccap.ac.uk/wp-content/plugins/recent-posts-widget-with-thumbnails/public.css?ver=7.1.1' type='text/css' media='all' />
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=9.11.1" id="monsterinsights-frontend-script-js" async="async" data-wp-strategy="async"></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/www.ccap.ac.uk","hash_tracking":"false","v4_id":"G-K7T146YY6G"};/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/plugins/child-theme-generator/public/js/child-theme-generator-public.js?ver=1.0.0" id="child-theme-generator-js"></script>
+<script type="text/javascript" id="simple-banner-script-js-before">
+/* <![CDATA[ */
+const simpleBannerScriptParams = {"pro_version_enabled":"","debug_mode":"","id":1554,"version":"3.2.0","banner_params":[{"hide_simple_banner":"no","simple_banner_prepend_element":"header","simple_banner_position":"","header_margin":"50px","header_padding":"50px","wp_body_open_enabled":"","wp_body_open":true,"simple_banner_z_index":"","simple_banner_text":"January 2026<\/br>Culture Media Supply Is Temporarily Suspended<\/br>Due to building works cryopreserved strains will be unavailable until April","disabled_on_current_page":false,"disabled_pages_array":[],"is_current_page_a_post":true,"disabled_on_posts":"","simple_banner_disabled_page_paths":"","simple_banner_font_size":"20px","simple_banner_color":"#EB6E21","simple_banner_text_color":"","simple_banner_link_color":"#ffffff","simple_banner_close_color":"#ffffff","simple_banner_custom_css":"text-decoration: none;","simple_banner_scrolling_custom_css":"","simple_banner_text_custom_css":"","simple_banner_button_css":"","site_custom_css":"","keep_site_custom_css":"","site_custom_js":"","keep_site_custom_js":"","close_button_enabled":"on","close_button_expiration":"","close_button_cookie_set":false,"current_date":{"date":"2026-01-28 01:13:41.281085","timezone_type":3,"timezone":"UTC"},"start_date":{"date":"2026-01-28 01:13:41.281090","timezone_type":3,"timezone":"UTC"},"end_date":{"date":"2026-01-28 01:13:41.281093","timezone_type":3,"timezone":"UTC"},"simple_banner_start_after_date":"","simple_banner_remove_after_date":"","simple_banner_insert_inside_element":""}]}
+//# sourceURL=simple-banner-script-js-before
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/plugins/simple-banner/simple-banner.js?ver=3.2.0" id="simple-banner-script-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/themes/spacious/js/spacious-custom.js?ver=6.9" id="spacious-custom-js"></script>
+<link rel="https://api.w.org/" href="https://www.ccap.ac.uk/index.php/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.ccap.ac.uk/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.9" />
+<style id="simple-banner-header-margin" type="text/css">header{margin-top:50px;}</style><style id="simple-banner-header-padding" type="text/css" >header{padding-top:50px;}</style><style id="simple-banner-font-size" type="text/css">.simple-banner .simple-banner-text{font-size:20px;}</style><style id="simple-banner-background-color" type="text/css">.simple-banner{background:#EB6E21;}</style><style id="simple-banner-text-color" type="text/css">.simple-banner .simple-banner-text{color: #ffffff;}</style><style id="simple-banner-link-color" type="text/css">.simple-banner .simple-banner-text a{color:#ffffff;}</style><style id="simple-banner-z-index" type="text/css">.simple-banner{z-index: 99999;}</style><style id="simple-banner-close-color" type="text/css">.simple-banner .simple-banner-button{color:#ffffff;}</style><style id="simple-banner-custom-css" type="text/css">.simple-banner{text-decoration: none;}</style><style id="simple-banner-site-custom-css-dummy" type="text/css"></style><script id="simple-banner-site-custom-js-dummy" type="text/javascript"></script><meta name="generator" content="Elementor 3.34.3; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+				<style type="text/css">
+			#site-title,
+		#site-description {
+			position: absolute;
+			clip: rect(1px, 1px, 1px, 1px);
+		}
+		</style>
+	<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #3d3d3d; }
+</style>
+	<link rel="icon" href="https://www.ccap.ac.uk/wp-content/uploads/2020/09/CCAP-Logo-2020-01-icon-1-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://www.ccap.ac.uk/wp-content/uploads/2020/09/CCAP-Logo-2020-01-icon-1-230x230.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.ccap.ac.uk/wp-content/uploads/2020/09/CCAP-Logo-2020-01-icon-1-230x230.png" />
+<meta name="msapplication-TileImage" content="https://www.ccap.ac.uk/wp-content/uploads/2020/09/CCAP-Logo-2020-01-icon-1-270x270.png" />
+		<style type="text/css"> blockquote { border-left: 3px solid #27ab66; }
+			.spacious-button, input[type="reset"], input[type="button"], input[type="submit"], button { background-color: #27ab66; }
+			.previous a:hover, .next a:hover { 	color: #27ab66; }
+			a { color: #27ab66; }
+			#site-title a:hover { color: #27ab66; }
+			.main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a { color: #27ab66; }
+			.main-navigation ul li ul { border-top: 1px solid #27ab66; }
+			.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover, .main-navigation ul li:hover > .sub-toggle { color: #27ab66; }
+			.site-header .menu-toggle:hover.entry-meta a.read-more:hover,#featured-slider .slider-read-more-button:hover,.call-to-action-button:hover,.entry-meta .read-more-link:hover,.spacious-button:hover, input[type="reset"]:hover, input[type="button"]:hover, input[type="submit"]:hover, button:hover { background: #007934; }
+			.main-small-navigation li:hover { background: #27ab66; }
+			.main-small-navigation ul > .current_page_item, .main-small-navigation ul > .current-menu-item { background: #27ab66; }
+			.main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a  { color: #27ab66; }
+			.small-menu a:hover, .small-menu ul li.current-menu-item a, .small-menu ul li.current_page_ancestor a, .small-menu ul li.current-menu-ancestor a, .small-menu ul li.current_page_item a, .small-menu ul li:hover > a { color: #27ab66; }
+			#featured-slider .slider-read-more-button { background-color: #27ab66; }
+			#controllers a:hover, #controllers a.active { background-color: #27ab66; color: #27ab66; }
+			.widget_service_block a.more-link:hover, .widget_featured_single_post a.read-more:hover,#secondary a:hover,logged-in-as:hover  a,.single-page p a:hover{ color: #007934; }
+			.breadcrumb a:hover { color: #27ab66; }
+			.tg-one-half .widget-title a:hover, .tg-one-third .widget-title a:hover, .tg-one-fourth .widget-title a:hover { color: #27ab66; }
+			.pagination span ,.site-header .menu-toggle:hover{ background-color: #27ab66; }
+			.pagination a span:hover { color: #27ab66; border-color: #27ab66; }
+			.widget_testimonial .testimonial-post { border-color: #27ab66 #EAEAEA #EAEAEA #EAEAEA; }
+			.call-to-action-content-wrapper { border-color: #EAEAEA #EAEAEA #EAEAEA #27ab66; }
+			.call-to-action-button { background-color: #27ab66; }
+			#content .comments-area a.comment-permalink:hover { color: #27ab66; }
+			.comments-area .comment-author-link a:hover { color: #27ab66; }
+			.comments-area .comment-author-link span { background-color: #27ab66; }
+			.comment .comment-reply-link:hover { color: #27ab66; }
+			.nav-previous a:hover, .nav-next a:hover { color: #27ab66; }
+			#wp-calendar #today { color: #27ab66; }
+			.widget-title span { border-bottom: 2px solid #27ab66; }
+			.footer-widgets-area a:hover { color: #27ab66 !important; }
+			.footer-socket-wrapper .copyright a:hover { color: #27ab66; }
+			a#back-top:before { background-color: #27ab66; }
+			.read-more, .more-link { color: #27ab66; }
+			.post .entry-title a:hover, .page .entry-title a:hover { color: #27ab66; }
+			.post .entry-meta .read-more-link { background-color: #27ab66; }
+			.post .entry-meta a:hover, .type-page .entry-meta a:hover { color: #27ab66; }
+			.single #content .tags a:hover { color: #27ab66; }
+			.widget_testimonial .testimonial-icon:before { color: #27ab66; }
+			a#scroll-up { background-color: #27ab66; }
+			.search-form span { background-color: #27ab66; }.header-action .search-wrapper:hover .fa{ color: #27ab66} .spacious-woocommerce-cart-views .cart-value { background:#27ab66}.main-navigation .tg-header-button-wrap.button-one a{background-color:#27ab66} .main-navigation .tg-header-button-wrap.button-one a{border-color:#27ab66}.main-navigation .tg-header-button-wrap.button-one a:hover{background-color:#007934}.main-navigation .tg-header-button-wrap.button-one a:hover{border-color:#007934}</style>
+				<style type="text/css" id="wp-custom-css">
+			img.border1 {
+	border: 1px solid #999;
+}
+
+/*formatting threads feed*/
+div.tweet-text {
+	font-family: Lato, sans-serif !important;
+	line-height: 1.4;
+}
+label.sk-secondary-data.sk-threads-posts-tweet-username, a.href_status_trigger.sk-threads-posts-tweet-user-name, div.description, div.sk-secondary-data.sk-post-date, span.sk-threads-profile-count-item, div.sk-threads-profile-info {
+	font-family: Lato, sans-serif !important;
+}
+a.sk-threads-profile-usename {
+	font-family: Lato, sans-serif !important;
+	line-height: 1;
+}
+
+/*to format slider text when is a url*/
+.linkformat a {
+	text-decoration: none !important;
+	color: #ffffff !important;
+}
+
+/* to wrap text on tab titles How To Order page */
+.e-n-tab-title-text {
+width: 92px; /* Sets width */
+white-space: normal; /* Allows text to wrap */
+word-wrap: break-word; /* Words break to prevent overflow */
+overflow-wrap: break-word; /* Overflow text wraps to the next line */
+display: inline-block; /* Width setting is respected */
+text-align: center; /* Centers the text horizontally */
+}		</style>
+		</head>
+
+<body class="error404 custom-background wp-custom-logo wp-embed-responsive wp-theme-spacious wp-child-theme-SpaciousChild metaslider-plugin no-sidebar-content-stretched narrow-1218 spacious-menu-header-button-enabled elementor-default elementor-kit-39">
+
+
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+	
+	
+	<header id="masthead" class="site-header clearfix spacious-header-display-one">
+
+		
+		
+		<div id="header-text-nav-container" class="menu-one-line">
+
+			<div class="inner-wrap" id="spacious-header-display-one">
+
+				<div id="header-text-nav-wrap" class="clearfix">
+					<div id="header-left-section">
+													<div id="header-logo-image">
+
+								<a href="https://www.ccap.ac.uk/" class="custom-logo-link" rel="home"><img width="250" height="90" src="https://www.ccap.ac.uk/wp-content/uploads/2020/09/CCAP-Logo-2020-01-250px-1.png" class="custom-logo" alt="CCAP" decoding="async" /></a>
+							</div><!-- #header-logo-image -->
+
+							
+						<div id="header-text" class="screen-reader-text">
+															<h3 id="site-title">
+									<a href="https://www.ccap.ac.uk/"
+									   title="CCAP"
+									   rel="home">CCAP</a>
+								</h3>
+							<!-- #site-description -->
+						</div><!-- #header-text -->
+
+					</div><!-- #header-left-section -->
+					<div id="header-right-section">
+						
+													<div class="header-action">
+															</div>
+						
+						
+		<nav id="site-navigation" class="main-navigation clearfix  spacious-header-button-enabled tg-extra-menus" role="navigation">
+			<p class="menu-toggle">
+				<span class="screen-reader-text">Menu</span>
+			</p>
+			<div class="menu-primary-container"><ul id="menu-main" class="menu"><li id="menu-item-3522" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3522"><a href="https://www.ccap.ac.uk/index.php/our-services/">Our Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-3526" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3526"><a href="https://www.ccap.ac.uk/index.php/our-services/how-to-order/">How to Order</a></li>
+	<li id="menu-item-3523" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3523"><a href="https://www.ccap.ac.uk/index.php/our-services/algae-for-aquaculture/">Algae for Aquaculture</a></li>
+	<li id="menu-item-3524" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3524"><a href="https://www.ccap.ac.uk/index.php/our-services/ecotox/">Algae for Ecotoxicology</a></li>
+	<li id="menu-item-3525" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3525"><a href="https://www.ccap.ac.uk/index.php/our-services/education/">Darwin Biological</a></li>
+	<li id="menu-item-3543" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3543"><a href="https://bioinformatics.ccap.ac.uk/ccaptools/#!/">Bioinformatics Gateway</a></li>
+	<li id="menu-item-3539" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3539"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/nagoya-protocol/">Nagoya Protocol</a></li>
+</ul>
+</li>
+<li id="menu-item-3528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3528"><a href="https://www.ccap.ac.uk/index.php/aries/">ARIES</a></li>
+<li id="menu-item-3535" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3535"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/">Strain Deposits</a>
+<ul class="sub-menu">
+	<li id="menu-item-3536" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3536"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/standard-deposits/">Standard Deposits</a></li>
+	<li id="menu-item-3537" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3537"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/confidential-deposits/">Confidential Deposits</a></li>
+	<li id="menu-item-3538" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3538"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/patent-deposits/">Patent Deposits</a></li>
+	<li id="menu-item-3540" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3540"><a href="https://www.ccap.ac.uk/index.php/strain-deposits/nagoya-protocol/">Nagoya Protocol</a></li>
+</ul>
+</li>
+<li id="menu-item-3530" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3530"><a href="https://www.ccap.ac.uk/index.php/knowledgebase/">Knowledgebase</a>
+<ul class="sub-menu">
+	<li id="menu-item-3532" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3532"><a href="https://www.ccap.ac.uk/index.php/media-recipes/">Media Recipes</a></li>
+	<li id="menu-item-3529" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3529"><a href="https://www.ccap.ac.uk/index.php/ccap-publications/">CCAP Publications</a></li>
+	<li id="menu-item-3542" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3542"><a href="https://bioinformatics.ccap.ac.uk/ccaptools/#!/">Bioinformatics Gateway</a></li>
+	<li id="menu-item-3531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3531"><a href="https://www.ccap.ac.uk/index.php/knowledgebase/links/">Links and Resources</a></li>
+</ul>
+</li>
+<li id="menu-item-3527" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-3527"><a href="https://www.ccap.ac.uk/index.php/about-us/">About Us</a>
+<ul class="sub-menu">
+	<li id="menu-item-3541" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3541"><a href="https://www.ccap.ac.uk/index.php/donate/">Donate</a></li>
+</ul>
+</li>
+<li class="menu-item tg-header-button-wrap button-one"><a href="/catalogue" target=&quot;_blank&quot;>CCAP Catalogue</a></li><li class="menu-item menu-item-has-children tg-menu-extras-wrap"><span class="submenu-expand"><i class="fa fa-ellipsis-v"></i></span><ul class="sub-menu" id="tg-menu-extras"></ul></li></ul></div>		</nav>
+
+		
+					</div><!-- #header-right-section -->
+
+				</div><!-- #header-text-nav-wrap -->
+			</div><!-- .inner-wrap -->
+					</div><!-- #header-text-nav-container -->
+
+		
+			</header>
+			<div id="main" class="clearfix">
+		<div class="inner-wrap">
+
+	
+	<div id="primary">
+		<div id="content" class="clearfix">
+			<section class="error-404 not-found">
+				<div class="page-content">
+
+											<header class="page-header">
+							<h2 class="page-title">Oops! That page can&rsquo;t be found.</h2>
+						</header>
+						<p>It looks like nothing was found at this location. Try the search below.</p>
+						<form action="https://www.ccap.ac.uk/" class="search-form searchform clearfix" method="get">
+	<div class="search-wrap">
+		<input type="text" placeholder="Search" class="s field" name="s">
+		<button class="search-icon" type="submit"></button>
+	</div>
+</form><!-- .searchform -->					
+				</div><!-- .page-content -->
+			</section><!-- .error-404 -->
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+	
+	
+
+</div><!-- .inner-wrap -->
+</div><!-- #main -->
+
+<footer id="colophon" class="clearfix">
+	<div class="footer-widgets-wrapper">
+	<div class="inner-wrap">
+		<div class="footer-widgets-area clearfix">
+			<div class="tg-one-fourth tg-column-1">
+				<aside id="text-4" class="widget widget_text"><h3 class="widget-title"><span>Our Partners</span></h3>			<div class="textwidget"></div>
+		</aside><aside id="media_image-2" class="widget widget_media_image"><a href="https://www.sams.ac.uk/"><img width="300" height="116" src="https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-300x116.png" class="image wp-image-99  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-300x116.png 300w, https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-1024x396.png 1024w, https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-768x297.png 768w, https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-1536x595.png 1536w, https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour-1140x441.png 1140w, https://www.ccap.ac.uk/wp-content/uploads/2020/02/SAMS-FULL-Colour.png 1586w" sizes="(max-width: 300px) 100vw, 300px" /></a></aside><aside id="media_image-3" class="widget widget_media_image"><a href="https://nerc.ukri.org/"><img width="300" height="80" src="https://www.ccap.ac.uk/wp-content/uploads/2020/06/ukri-nerc-logo-white-600x160-1-300x80.png" class="image wp-image-516  attachment-medium size-medium" alt="" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.ccap.ac.uk/wp-content/uploads/2020/06/ukri-nerc-logo-white-600x160-1-300x80.png 300w, https://www.ccap.ac.uk/wp-content/uploads/2020/06/ukri-nerc-logo-white-600x160-1.png 600w" sizes="(max-width: 300px) 100vw, 300px" /></a></aside>			</div>
+							<div class="tg-one-fourth tg-column-2">
+					<aside id="custom_html-3" class="widget_text widget widget_custom_html"><h3 class="widget-title"><span>Information</span></h3><div class="textwidget custom-html-widget"><a href="/index.php/terms-and-conditions/">CCAP Terms &amp; Conditions of Culture Supply</a><br>
+<a href="/index.php/privacy-policy/">Privacy Policy</a></div></aside><aside id="custom_html-2" class="widget_text widget widget_custom_html"><h3 class="widget-title"><span>Explore our site</span></h3><div class="textwidget custom-html-widget"><a href="/">Home</a><br>
+<a href="/catalogue">Strain Catalogue</a><br>
+<a href="/index.php/news/">News</a><br>
+<a href="/index.php/our-cultures/">Our Cultures</a><br>
+<a href="/index.php/strain-deposits/">Strain Deposits</a><br>
+<a href="/index.php/knowledgebase/">Knowledgebase</a><br>
+<a href="https://bioinformatics.ccap.ac.uk/ccaptools/">Bioinformatics Gateway</a><br>
+<a href="/index.php/about-us/">About Us</a></div></aside>				</div>
+										<div class="tg-one-fourth tg-after-two-blocks-clearfix tg-column-3">
+					<aside id="text-6" class="widget widget_text"><h3 class="widget-title"><span>Contact details</span></h3>			<div class="textwidget"><p>Culture Collection of Algae and Protozoa<br />
+SAMS Limited<br />
+SAMS<br />
+Dunbeg, OBAN<br />
+PA37 1QA<br />
+Scotland, United Kingdom</p>
+<p>T: +44 (0)1631 559000</p>
+<p>T: +44 (0)1631 559268 (direct)</p>
+<p>E: <a href="mailto:ccap@sams.ac.uk">ccap@sams.ac.uk</a></p>
+<p>All payments to be made to:<br />
+SAMS Limited</p>
+</div>
+		</aside>				</div>
+										<div class="tg-one-fourth tg-one-fourth-last tg-column-4">
+					<aside id="custom_html-5" class="widget_text widget widget_custom_html"><h3 class="widget-title"><span>Find us on&#8230;</span></h3><div class="textwidget custom-html-widget"><div class="social">
+<a href="https://twitter.com/CCAP_Oban" target="_blank" rel="noopener" data-gener8="tracked"><img loading="lazy" src="/wp-content/uploads/2020/11/sm-icons-twitter-social-icon-rounded-square-color.png" alt="Twitter" width="40" height="40" style="margin-right:20px;" /></a>
+<a href="https://www.instagram.com/ccapoban/" target="_blank" rel="noopener" data-gener8="tracked"><img loading="lazy"  src="/wp-content/uploads/2020/11/sm-icons-instagram-glyph-logo-w.png" alt="Instagram" width="40" height="40" style="margin-right:20px;" /></a>
+<a href="https://www.youtube.com/channel/UCPRVke11_aKA_6le0yQ11Hg" target="_blank" rel="noopener" data-gener8="tracked"><img src="/wp-content/uploads/2020/11/sm-icons-youtube.png" alt="YouTube" width="40" style="margin-right:20px;" /></a>
+<a href="https://www.linkedin.com/company/70126927/admin/" target="_blank" rel="noopener" data-gener8="tracked"><img src="/wp-content/uploads/2020/11/sm-icons-linkedin-in-logo.png" alt="LinkedIn" width="47" style="margin-right:20px;" /></a>
+</div></div></aside><aside id="media_image-4" class="widget widget_media_image"><a href="https://www.ccap.ac.uk/wp-content/uploads/ISO_Certificate.pdf" target="_blank"><img loading="lazy" width="200" height="101" src="https://www.ccap.ac.uk/wp-content/uploads/mark-of-trust-certified-ISO-9001-quality-management-systems-white-logo-En-GB-1019-300x152.png" class="image wp-image-1449 ISO_certificate attachment-200x101 size-200x101" alt="ISO 9001 certified by BSI under certificate number FS 734354" style="max-width: 100%; height: auto;" decoding="async" srcset="https://www.ccap.ac.uk/wp-content/uploads/mark-of-trust-certified-ISO-9001-quality-management-systems-white-logo-En-GB-1019-300x152.png 300w, https://www.ccap.ac.uk/wp-content/uploads/mark-of-trust-certified-ISO-9001-quality-management-systems-white-logo-En-GB-1019-1024x520.png 1024w, https://www.ccap.ac.uk/wp-content/uploads/mark-of-trust-certified-ISO-9001-quality-management-systems-white-logo-En-GB-1019-768x390.png 768w, https://www.ccap.ac.uk/wp-content/uploads/mark-of-trust-certified-ISO-9001-quality-management-systems-white-logo-En-GB-1019.png 1281w" sizes="(max-width: 200px) 100vw, 200px" /></a></aside>				</div>
+					</div>
+	</div>
+</div>
+	<div class="footer-socket-wrapper clearfix">
+		<div class="inner-wrap">
+			<div class="footer-socket-area">
+				<div class="copyright">Copyright &copy; 2026 <a href="https://www.ccap.ac.uk/" title="CCAP" ><span>CCAP</span></a>. All rights reserved. Theme <a href="https://themegrill.com/themes/spacious" target="_blank" title="Spacious" rel="nofollow"><span>Spacious</span></a> by ThemeGrill. Powered by: <a href="https://wordpress.org" target="_blank" title="WordPress" rel="nofollow"><span>WordPress</span></a>.</div>				<nav class="small-menu clearfix">
+									</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+<a href="#masthead" id="scroll-up"></a>
+</div><!-- #page -->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/SpaciousChild/*","/wp-content/themes/spacious/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<div class="simple-banner simple-banner-text" style="display:none !important"></div><!-- Instagram Feed JS -->
+<script type="text/javascript">
+var sbiajaxurl = "https://www.ccap.ac.uk/wp-admin/admin-ajax.php";
+</script>
+			<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/plugins/embedpress/assets/js/gallery-justify.js?ver=1768558871" id="embedpress-gallery-justify-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/plugins/embedpress/assets/js/lazy-load.js?ver=1768558871" id="embedpress-lazy-load-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/themes/spacious/js/navigation.js?ver=6.9" id="spacious-navigation-js"></script>
+<script type="text/javascript" src="https://www.ccap.ac.uk/wp-content/themes/spacious/js/skip-link-focus-fix.js?ver=6.9" id="spacious-skip-link-focus-fix-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://www.ccap.ac.uk/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://www.ccap.ac.uk/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+
+
+</body>
+</html>

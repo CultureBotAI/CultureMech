@@ -1,0 +1,142 @@
+{
+  "medium_id": "dsmz_1383",
+  "medium_name": "320)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaOH",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "Na2SeO3 x 5 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "HCl (25%; 7.7 M)",
+      "concentration": 25.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,80 @@
+name: THERMOPLASMA VOLCANIUM MEDIUM
+original_name: THERMOPLASMA VOLCANIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 398
+  term:
+    id: mediadive.medium:398
+    label: THERMOPLASMA VOLCANIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium398.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: ' (for anaerobic media only)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH of the mineral base to about 2 with sulfuric acid and autoclave.
+    Add glucose and yeast extract from filter-sterilized stock solutions.
+- step_number: 2
+  action: ADJUST_PH
+  description: Check pH to be 2 to 3.
+- step_number: 3
+  action: MIX
+  description: For anaerobic growth, the acidified mineral base containing sulfur
+    is filled into serum bottles (20 ml per 100 ml bottle) under N2 + CO2 (80 + 20)
+    gas mixture. Then, the bottles are sterilized by tyndallisation. Yeast extract
+    and glucose are added from separately sterilized stock solutions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.040610Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 398'

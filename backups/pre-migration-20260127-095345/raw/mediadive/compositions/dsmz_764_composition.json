@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_764",
+  "medium_name": "Use medium 761, but add 1 g/l yeast extract and increase the NaCl concentration to 200",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 761",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "761"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

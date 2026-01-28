@@ -1,0 +1,65 @@
+name: ACIDIFERROBACTER (MS) MEDIUM
+original_name: ACIDIFERROBACTER (MS) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.2
+media_term:
+  preferred_term: DSMZ Medium 670
+  term:
+    id: mediadive.medium:670
+    label: ACIDIFERROBACTER (MS) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with
+    4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before use, add  FeSO4
+    x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized
+    under 100% N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'Note: Incubate statically without shaking.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.893371Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 670'

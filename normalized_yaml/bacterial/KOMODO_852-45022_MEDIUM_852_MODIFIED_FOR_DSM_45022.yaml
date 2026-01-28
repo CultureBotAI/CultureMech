@@ -1,0 +1,21 @@
+name: MEDIUM 852 MODIFIED FOR DSM 45022
+original_name: MEDIUM 852 MODIFIED FOR DSM 45022
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: KOMODO Medium 852_45022
+  term:
+    id: komodo.medium:852_45022
+    label: MEDIUM 852 MODIFIED FOR DSM 45022
+notes: 'Source: KOMODO ModelSEED | ID: 852_45022 | DSMZ Medium: 852 (mediadive.medium:852)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 852_45022'

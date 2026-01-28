@@ -1,0 +1,21 @@
+name: TRYPTICASE SOY Yeast extract medium
+original_name: TRYPTICASE SOY Yeast extract medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 92
+  term:
+    id: komodo.medium:92
+    label: TRYPTICASE SOY Yeast extract medium
+notes: 'Source: KOMODO ModelSEED | ID: 92 | DSMZ Medium: 92 (mediadive.medium:92)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 92'

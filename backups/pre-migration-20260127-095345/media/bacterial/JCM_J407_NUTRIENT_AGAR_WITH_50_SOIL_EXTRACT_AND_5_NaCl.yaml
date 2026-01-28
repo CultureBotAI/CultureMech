@@ -1,0 +1,51 @@
+name: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
+original_name: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J407
+  term:
+    id: mediadive.medium:J407
+    label: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=407'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave
+    at 121C for 1 hr. Use the clear supernatant after sedimentation for a few hours
+    and centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.531095Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J407'

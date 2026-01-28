@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_756a",
+  "medium_name": "To medium 756 add 2 g/l NaNO2.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 756",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "756"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

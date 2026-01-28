@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_621a",
+  "medium_name": "Prepare medium 621 but use Artifical Sea Water instead of distilled water. The",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Artifical sea water:",
+      "concentration": 23.477,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 3.917,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Na2SO4",
+      "concentration": 4.981,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O",
+      "concentration": 1.102,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

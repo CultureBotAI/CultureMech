@@ -1,0 +1,33 @@
+name: SNA
+original_name: SNA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C95
+  term:
+    id: mediadive.medium:C95
+    label: SNA
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SNA.pdf'
+ingredients:
+- preferred_term: Nutrient agar
+  concentration:
+    value: '28'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,\
+    \  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at 15 psi\
+    \ and  slope  (tubes) \r\nprior to cooling."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.795049Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C95'

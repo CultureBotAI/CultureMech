@@ -1,0 +1,66 @@
+name: Pectin medium
+original_name: Pectin medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1855
+  term:
+    id: mediadive.medium:1855
+    label: Pectin medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Hipolypepton
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Pectin
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add cysteine solution after the medium has been boiled and cooled under
+    CO2. Adjust pH to 6.5 using NaOH, Distribute under N2 and autoclave.
+- step_number: 2
+  action: MIX
+  description: When preparing the plate medium, add 15g/L agar
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.552333Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1855'

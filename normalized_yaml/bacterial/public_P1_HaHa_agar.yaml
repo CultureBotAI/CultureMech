@@ -1,0 +1,27 @@
+name: HaHa agar
+original_name: HaHa agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: public Medium P1
+  term:
+    id: mediadive.medium:P1
+    label: HaHa agar
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: 10.1016/j.syapm.2013.06.006
+curation_history:
+- timestamp: '2026-01-26T17:53:19.837238Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P1'

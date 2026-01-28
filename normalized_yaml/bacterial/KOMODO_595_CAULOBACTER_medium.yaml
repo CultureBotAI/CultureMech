@@ -1,0 +1,20 @@
+name: CAULOBACTER medium
+original_name: CAULOBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 595
+  term:
+    id: komodo.medium:595
+    label: CAULOBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 595 | DSMZ Medium: 595 (mediadive.medium:595)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 595'

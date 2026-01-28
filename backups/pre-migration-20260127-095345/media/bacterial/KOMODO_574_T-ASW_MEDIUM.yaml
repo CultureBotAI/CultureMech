@@ -1,0 +1,21 @@
+name: T-ASW MEDIUM
+original_name: T-ASW MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 574
+  term:
+    id: komodo.medium:574
+    label: T-ASW MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 574 | DSMZ Medium: 574 (mediadive.medium:574)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 574'

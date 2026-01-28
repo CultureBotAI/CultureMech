@@ -1,0 +1,26 @@
+name: DG18 Dichloran 18 % Glycerol agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 1775
+  term:
+    id: DSMZ:1775
+    label: DG18 Dichloran 18 % Glycerol agar
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen,
+    B. (2019). Food and indoor fungi. Westerdijk Fungal Biodiversity Institute.
+curation_history:
+- timestamp: '2026-01-22T06:17:59.719726Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1775'

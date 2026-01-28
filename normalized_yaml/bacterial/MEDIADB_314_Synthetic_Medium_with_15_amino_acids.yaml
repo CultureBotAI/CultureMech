@@ -1,0 +1,228 @@
+name: Synthetic Medium with 15 amino acids
+original_name: Synthetic Medium with 15 amino acids
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Folate
+  concentration:
+    value: '0.0115'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0021'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.0165'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '4000.0'
+    unit: MILLIMOLAR
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '1.5'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tyr-L'
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '8.3'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thr-L'
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '2.7'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lys-L'
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:val-L'
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '12.6'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: L-Phenylalanine
+  term:
+    id: CHEBI:17295
+    label: L-Phenylalanine
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:phe-L'
+- preferred_term: Potassium nitrate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '27.0'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.0018'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.0015'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0116'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.0002'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '0.42'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '0.58'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '81.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '1.7'
+    unit: MILLIMOLAR
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  concentration:
+    value: '7.4'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ala-L'
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '2.9'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: L-Glutamate
+  concentration:
+    value: '16.9'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '2.4'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '2.3'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '3.4'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '3.5'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: L-Aspartate
+  concentration:
+    value: '6.2'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0001'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.457279Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 314, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 314
+  term:
+    id: MEDIADB:314
+    label: Synthetic Medium with 15 amino acids
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

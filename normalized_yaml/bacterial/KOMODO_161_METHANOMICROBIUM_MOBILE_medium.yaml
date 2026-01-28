@@ -1,0 +1,21 @@
+name: METHANOMICROBIUM MOBILE medium
+original_name: METHANOMICROBIUM MOBILE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 161
+  term:
+    id: komodo.medium:161
+    label: METHANOMICROBIUM MOBILE medium
+notes: 'Source: KOMODO ModelSEED | ID: 161 | DSMZ Medium: 161 (mediadive.medium:161)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 161'

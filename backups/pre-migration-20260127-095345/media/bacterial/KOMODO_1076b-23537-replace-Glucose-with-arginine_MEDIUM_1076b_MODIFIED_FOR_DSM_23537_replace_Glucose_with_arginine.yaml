@@ -1,0 +1,20 @@
+name: MEDIUM 1076b MODIFIED FOR DSM 23537_replace_Glucose_with_arginine
+original_name: MEDIUM 1076b MODIFIED FOR DSM 23537_replace_Glucose_with_arginine
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1076b_23537_replace_Glucose_with_arginine
+  term:
+    id: komodo.medium:1076b_23537_replace_Glucose_with_arginine
+    label: MEDIUM 1076b MODIFIED FOR DSM 23537_replace_Glucose_with_arginine
+notes: 'Source: KOMODO ModelSEED | ID: 1076b_23537_replace_Glucose_with_arginine |
+  DSMZ Medium: 1076b (mediadive.medium:1076b) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1076b_23537_replace_Glucose_with_arginine'

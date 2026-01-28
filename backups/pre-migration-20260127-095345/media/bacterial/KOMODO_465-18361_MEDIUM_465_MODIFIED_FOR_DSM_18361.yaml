@@ -1,0 +1,20 @@
+name: MEDIUM 465 MODIFIED FOR DSM 18361
+original_name: MEDIUM 465 MODIFIED FOR DSM 18361
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 465_18361
+  term:
+    id: komodo.medium:465_18361
+    label: MEDIUM 465 MODIFIED FOR DSM 18361
+notes: 'Source: KOMODO ModelSEED | ID: 465_18361 | DSMZ Medium: 465 (mediadive.medium:465)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 465_18361'

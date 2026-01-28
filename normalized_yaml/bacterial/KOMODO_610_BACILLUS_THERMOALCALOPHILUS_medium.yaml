@@ -1,0 +1,21 @@
+name: BACILLUS THERMOALCALOPHILUS medium
+original_name: BACILLUS THERMOALCALOPHILUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: KOMODO Medium 610
+  term:
+    id: komodo.medium:610
+    label: BACILLUS THERMOALCALOPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 610 | DSMZ Medium: 610 (mediadive.medium:610)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 610'

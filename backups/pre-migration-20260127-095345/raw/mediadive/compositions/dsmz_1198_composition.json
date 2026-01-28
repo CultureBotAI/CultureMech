@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1198",
+  "medium_name": "Cultivation of Vero B4 (ACC 33) cells",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Cultivation of Vero B4 (ACC 33) cells",
+      "concentration": 45.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fetal Bovine Serum",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Aminoacids (100 x)",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

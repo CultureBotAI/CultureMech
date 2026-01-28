@@ -1,0 +1,29 @@
+name: IRD MARINE CLOSTRIDIA MEDIUM-2
+original_name: IRD MARINE CLOSTRIDIA MEDIUM-2
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J938
+  term:
+    id: mediadive.medium:J938
+    label: IRD MARINE CLOSTRIDIA MEDIUM-2
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=938'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use JCM Medium No. 909 supplemented with 0.164 g/L sodium acetate and
+    2.0 g/L Trypticase peptone (BD-BBL).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.068278Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J938'

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_550",
+  "medium_name": "Medium dsmz_550",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Czapek Dox agar (Merck)",
+      "concentration": 48.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (Oxoid)",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casamino acids (Difco)",
+      "concentration": 6.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

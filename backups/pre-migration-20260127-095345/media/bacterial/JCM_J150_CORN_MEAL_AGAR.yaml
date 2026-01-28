@@ -1,0 +1,26 @@
+name: CORN MEAL AGAR
+original_name: CORN MEAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J150
+  term:
+    id: mediadive.medium:J150
+    label: CORN MEAL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=150'
+ingredients:
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.824848Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J150'

@@ -1,0 +1,50 @@
+name: PPLO broth with bovine serum
+original_name: PPLO broth with bovine serum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Phenol red solution, 1% stock solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Deionized water
+  concentration:
+    value: '865'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: PPLO Broth Base w/o CV (Mycoplasma Broth Base) (BD 211458)
+  concentration:
+    value: '21'
+    unit: G_PER_L
+- preferred_term: Glucose (20% solution)*
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Bovine serum*
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+- preferred_term: Yeast Extract Solution (GIBCO 18180)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2473
+  term:
+    id: TOGO:M2473
+    label: PPLO broth with bovine serum
+notes: 'Source: https://togomedium.org/medium/M2473
+
+  Original URL: https://www.atcc.org/~/media/ED4787F5B1F547798D9ADD912ADFEED1.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.556287Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2473'

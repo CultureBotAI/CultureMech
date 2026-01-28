@@ -1,0 +1,20 @@
+name: medium FOR D. INDONESIENSIS
+original_name: medium FOR D. INDONESIENSIS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 63b
+  term:
+    id: komodo.medium:63b
+    label: medium FOR D. INDONESIENSIS
+notes: 'Source: KOMODO ModelSEED | ID: 63b | DSMZ Medium: 63b (mediadive.medium:63b)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 63b'

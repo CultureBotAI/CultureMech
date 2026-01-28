@@ -1,0 +1,77 @@
+name: VY/2 AGAR
+original_name: VY/2 AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 9
+  term:
+    id: mediadive.medium:9
+    label: VY/2 AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium9.pdf'
+ingredients:
+- preferred_term: Baker's yeast
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Sterilize vitamin B12 separately by filtration. Prepare and store yeast
+    cells as autoclaved stock suspension (5 g baker's yeast/100 ml distilled water,
+    adjust pH to 6.5 and autoclave). Adjust pH of medium to 7.2 with KOH before, and
+    after autoclaving and cooling to 50°C (use pH-indicator paper).
+- step_number: 2
+  action: DISSOLVE
+  description: 'Cultures of myxobacteria delivered freeze-dried: Please see our video
+    tutorial and follow the special instructions: ''Reactivation of Myxobacteria''
+    given with the strain entry of our catalogue. For suspending the freeze-dried
+    cells from ampoules, add about 0.5 - 1.0 ml medium MD1 (per liter: casiton 3.0
+    g; CaCl2 x 2 H2O, 0.7 g; Mg2SO4 x 7 H2O, 2.0 g) to the vial with freeze dried
+    material.'
+- step_number: 3
+  action: HEAT
+  description: 'Cultures of myxobacteria delivered as active cultures (growing on
+    agar plates): Always use the rim of the swarm as inoculum for fresh media. If
+    the swarms are creamy, transfer high amounts of cell mass to several spots on
+    fresh VY/2 agar medium. If the swarm adheres to the agar or grows within the agar,
+    cut small agar cubes from the rim of the swarm and place onto a fresh agar plate
+    using an appropriate tool such as a lancet. Make sure that the pieces of swarm
+    colonies grown on the agar are transferred to the agar plate. Attempt to place
+    the inoculum in such a way that the swarms are in contact with the fresh agar
+    plate.'
+- step_number: 4
+  action: MIX
+  description: Incubate for up to 3 weeks (in particular Sorangium and Nannocystis
+    strains) at the temperature given for the strain, taking measures against desiccation.
+    If there is no growth after ten days, carefully split up the agar-culture-cubes
+    and squeeze the material to the agar plate and reincubate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.967941Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 9'

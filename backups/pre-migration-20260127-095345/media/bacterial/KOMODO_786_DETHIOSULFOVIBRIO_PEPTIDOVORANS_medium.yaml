@@ -1,0 +1,21 @@
+name: DETHIOSULFOVIBRIO PEPTIDOVORANS medium
+original_name: DETHIOSULFOVIBRIO PEPTIDOVORANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 786
+  term:
+    id: komodo.medium:786
+    label: DETHIOSULFOVIBRIO PEPTIDOVORANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 786 | DSMZ Medium: 786 (mediadive.medium:786)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 786'

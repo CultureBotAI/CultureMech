@@ -1,0 +1,20 @@
+name: GFY medium
+original_name: GFY medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 359
+  term:
+    id: komodo.medium:359
+    label: GFY medium
+notes: 'Source: KOMODO ModelSEED | ID: 359 | DSMZ Medium: 359 (mediadive.medium:359)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 359'

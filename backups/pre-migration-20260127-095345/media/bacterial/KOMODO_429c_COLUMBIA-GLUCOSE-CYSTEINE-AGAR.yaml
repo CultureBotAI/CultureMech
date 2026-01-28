@@ -1,0 +1,20 @@
+name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+original_name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 429c
+  term:
+    id: komodo.medium:429c
+    label: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 429c | DSMZ Medium: 429c (mediadive.medium:429c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 429c'

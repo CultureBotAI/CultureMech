@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_74",
+  "medium_name": "Yeast extract (BD Difco)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Yeast extract (BD Difco)",
+      "concentration": 4.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Proteose peptone Nr. 3 (BD Difco)",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,27 @@
+name: Lowenstein-Jensen Medium
+original_name: Lowenstein-Jensen Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Lowenstein--Jensen medium slants (BD 220908)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M735
+  term:
+    id: TOGO:M735
+    label: Lowenstein-Jensen Medium
+notes: 'Source: https://togomedium.org/medium/M735
+
+  Original source: JCM - JCM_M712
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.624901Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M735'

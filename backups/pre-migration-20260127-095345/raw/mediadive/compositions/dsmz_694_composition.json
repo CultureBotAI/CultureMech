@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_694",
+  "medium_name": "E-2",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaNH4HPO4 x 4 H2O",
+      "concentration": 3.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4 x 3 H2O",
+      "concentration": 7.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 3.7,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O (100 mM)",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Thiamine",
+      "concentration": 0.001,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

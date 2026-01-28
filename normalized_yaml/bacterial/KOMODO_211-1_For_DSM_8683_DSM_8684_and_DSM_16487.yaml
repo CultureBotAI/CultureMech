@@ -1,0 +1,21 @@
+name: For DSM 8683, DSM 8684 and DSM 16487
+original_name: For DSM 8683, DSM 8684 and DSM 16487
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: KOMODO Medium 211.1
+  term:
+    id: komodo.medium:211.1
+    label: For DSM 8683, DSM 8684 and DSM 16487
+notes: 'Source: KOMODO ModelSEED | ID: 211.1 | DSMZ Medium: 211 (mediadive.medium:211)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 211.1'

@@ -1,0 +1,36 @@
+name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
+original_name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: horse blood
+  concentration:
+    value: '7'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: brain heart infusion agar (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: isovitalex
+  concentration:
+    value: '0.4'
+    unit: PERCENT_W_V
+- preferred_term: CO2
+  notes: 'Properties: ガス'
+- preferred_term: O2
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2855
+  term:
+    id: TOGO:M2855
+    label: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
+notes: 'Source: https://togomedium.org/medium/M2855'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.359812Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2855'

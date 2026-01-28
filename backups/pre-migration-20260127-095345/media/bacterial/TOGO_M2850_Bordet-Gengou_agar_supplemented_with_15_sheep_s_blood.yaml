@@ -1,0 +1,28 @@
+name: Bordet-Gengou agar (supplemented with 15% sheep’s blood)
+original_name: Bordet-Gengou agar (supplemented with 15% sheep’s blood)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: sheep’s blood
+  concentration:
+    value: '15'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Bordet-Gengou agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2850
+  term:
+    id: TOGO:M2850
+    label: Bordet-Gengou agar (supplemented with 15% sheep’s blood)
+notes: 'Source: https://togomedium.org/medium/M2850'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.356361Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2850'

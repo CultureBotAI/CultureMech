@@ -1,0 +1,25 @@
+name: L-15B Tick Cell Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1591
+  term:
+    id: DSMZ:1591
+    label: L-15B Tick Cell Medium
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1591.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: dsmz.de/fileadmin/Bereiche/Microbiology/Dateien/Kultivierungshinweise/TickCellCultureMethods-4.pdf
+curation_history:
+- timestamp: '2026-01-22T06:17:59.625164Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1591'

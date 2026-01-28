@@ -1,0 +1,50 @@
+name: TCG MEDIUM
+original_name: TCG MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1009
+  term:
+    id: mediadive.medium:1009
+    label: TCG MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1009.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
+    in 1000 ml distilled water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.073069Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1009'

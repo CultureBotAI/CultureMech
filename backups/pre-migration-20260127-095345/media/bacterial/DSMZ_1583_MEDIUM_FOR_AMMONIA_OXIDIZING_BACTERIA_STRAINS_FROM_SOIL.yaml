@@ -1,0 +1,131 @@
+name: MEDIUM FOR AMMONIA OXIDIZING BACTERIA (STRAINS FROM SOIL)
+original_name: MEDIUM FOR AMMONIA OXIDIZING BACTERIA (STRAINS FROM SOIL)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 1583
+  term:
+    id: mediadive.medium:1583
+    label: MEDIUM FOR AMMONIA OXIDIZING BACTERIA (STRAINS FROM SOIL)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1583.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.535'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.054'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.074'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.049'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.147'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.584'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: ' (1M)'
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.045'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.049'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.043'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.037'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.973'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Cresol red
+  term:
+    id: CHEBI:86218
+    label: Cresol red
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave, subsequently adjust pH of the medium to about 7.8 by addition
+    of sterile 10% NaHCO3 (medium is turning from yellow to pink).
+- step_number: 2
+  action: ADJUST_PH
+  description: 'Important: During growth, add NaHCO3 to readjust pH as soon as pH
+    indicator changes to yellow. For stock cultures, 5 g l-1 CaCO3 (will stay as a
+    precipitate) or 4.8 g l-1 HEPES may be added to keep pH neutral for a longer time.'
+- step_number: 3
+  action: MIX
+  description: Aeration must be adjusted according to the density and activity of
+    the culture. At low cell concentrations (which is the case most of the time) cells
+    are sensitive to strong aeration (don't shake the cultures).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.904816Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1583'

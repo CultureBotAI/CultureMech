@@ -1,0 +1,50 @@
+name: STANDARD I MEDIUM
+original_name: STANDARD I MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 453
+  term:
+    id: mediadive.medium:453
+    label: STANDARD I MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium453.pdf'
+ingredients:
+- preferred_term: Meat peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave for 15 min at 121°C. pH of the final medium is 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.165245Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 453'

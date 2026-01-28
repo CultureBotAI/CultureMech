@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_1081a",
+  "medium_name": "WITH 10% NaCl",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1081",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1081"
+    },
+    {
+      "name": "G Nacl",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

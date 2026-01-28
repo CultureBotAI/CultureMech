@@ -1,0 +1,20 @@
+name: PB90-1 MEDIUM
+original_name: PB90-1 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 298g
+  term:
+    id: komodo.medium:298g
+    label: PB90-1 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 298g | DSMZ Medium: 298g (mediadive.medium:298g)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 298g'

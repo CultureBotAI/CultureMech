@@ -1,0 +1,202 @@
+name: RUMEN BACTERIA MEDIUM
+original_name: RUMEN BACTERIA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: JCM Medium J1029
+  term:
+    id: mediadive.medium:J1029
+    label: RUMEN BACTERIA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1029'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2997'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.000999001'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+  notes: ' ( soluble)'
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '3.996'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000999001'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Propionic acid
+  term:
+    id: CHEBI:30768
+    label: Propionic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: iso-Butyric acid
+  term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: iso-Valeric acid
+  term:
+    id: CHEBI:503742
+    label: iso-Valeric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: DL-alpha-Methyl butyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-alpha-Methyl butyric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: 'Adjust pH to 6.7 - 6.8; gas atmosphere: 100% CO2.'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dissolve ingredients except carbohydrates, Na2CO3, cysteine and sodium
+    sulfide in distilled water, boil for 5 min, then cool to room temperature while
+    gassing with 100% CO2. Add Na2CO3 and equilibrate the medium with the gas to pH
+    6.8. Distribute under CO2 in rubber-stoppered tubes (i.e. Hungate tubes) and autoclave.
+    Thereafter add carbohydrate mixture, cysteine and sodium sulfide from concentrated
+    sterile stock solutions (prepared anaerobically under N2 gas and autoclaved).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.369897Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1029'

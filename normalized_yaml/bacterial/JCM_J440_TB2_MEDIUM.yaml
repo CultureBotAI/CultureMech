@@ -1,0 +1,31 @@
+name: TB2 MEDIUM
+original_name: TB2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J440
+  term:
+    id: mediadive.medium:J440
+    label: TB2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=440'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 371 supplemented with 30.0 g/L (final) NaCl. Prior to
+    inoculation, add an additional 3% Na2S x 9H2O solution (neutralized, autoclaved
+    and stored under a N2 atmosphere, 4 ml per liter of the medium) to the medium.
+    Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.624750Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J440'

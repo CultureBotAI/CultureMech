@@ -1,0 +1,61 @@
+name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
+original_name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.4-7.8
+media_term:
+  preferred_term: DSMZ Medium 1079
+  term:
+    id: mediadive.medium:1079
+    label: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1079.pdf'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Ampicillin
+  term:
+    id: CHEBI:28971
+    label: Ampicillin
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add all components except sterile supplement; adjust pH to 7.6 + 0.2.
+    Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 7.0 + 0.2 and autoclave at 121°C for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.314852Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1079'

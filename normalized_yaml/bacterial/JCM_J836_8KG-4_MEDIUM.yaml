@@ -1,0 +1,31 @@
+name: 8KG-4 MEDIUM
+original_name: 8KG-4 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J836
+  term:
+    id: mediadive.medium:J836
+    label: 8KG-4 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=836'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 835 without yeast extract.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 17152, incubate with a 5% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.751427Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J836'

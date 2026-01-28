@@ -1,0 +1,21 @@
+name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
+original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.5-8.0
+media_term:
+  preferred_term: KOMODO Medium 1000
+  term:
+    id: komodo.medium:1000
+    label: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
+notes: 'Source: KOMODO ModelSEED | ID: 1000 | DSMZ Medium: 1000 (mediadive.medium:1000)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1000'

@@ -1,0 +1,78 @@
+name: PAS for Acanthamoeba hatchetti
+original_name: PAS for Acanthamoeba hatchetti
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1796
+  term:
+    id: mediadive.medium:1796
+    label: PAS for Acanthamoeba hatchetti
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '11.8'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '71'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '68.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '196.806'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with 1 N NaOH.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 4
+  action: STORE
+  description: Store at room temperature.
+- step_number: 5
+  action: MIX
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
+    MilliQ water.
+- step_number: 6
+  action: MIX
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
+    MilliQ water.
+- step_number: 7
+  action: MIX
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
+    MilliQ water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.465341Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1796'

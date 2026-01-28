@@ -1,0 +1,32 @@
+name: DESULFONAUTICUS MEDIUM
+original_name: DESULFONAUTICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J471
+  term:
+    id: mediadive.medium:J471
+    label: DESULFONAUTICUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=471'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use Medium No. 383, replacing sodium lactate with 0.7 g/L sodium acetate
+    and 2.0 g/L yeast extract. Prepare the medium under a H2-CO2 (4:1, v/v) gas atmosphere
+    and reduce the medium with final 0.1 g/L Na2S x 9H2O and 0.03 g/L sodium dithionite
+    (filter-sterilized, prepare the solution just before use). Pressurize the inoculated
+    culture vessels to 100 kPa H2-CO2 (4:1, v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.696173Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J471'

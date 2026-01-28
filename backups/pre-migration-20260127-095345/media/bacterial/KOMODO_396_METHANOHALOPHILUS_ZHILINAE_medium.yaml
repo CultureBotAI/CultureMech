@@ -1,0 +1,21 @@
+name: METHANOHALOPHILUS ZHILINAE medium
+original_name: METHANOHALOPHILUS ZHILINAE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.2-9.4
+media_term:
+  preferred_term: KOMODO Medium 396
+  term:
+    id: komodo.medium:396
+    label: METHANOHALOPHILUS ZHILINAE medium
+notes: 'Source: KOMODO ModelSEED | ID: 396 | DSMZ Medium: 396 (mediadive.medium:396)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 396'

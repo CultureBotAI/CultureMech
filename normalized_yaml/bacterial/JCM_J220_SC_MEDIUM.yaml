@@ -1,0 +1,86 @@
+name: SC MEDIUM
+original_name: SC MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.6
+media_term:
+  preferred_term: JCM Medium J220
+  term:
+    id: mediadive.medium:J220
+    label: SC MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=220'
+ingredients:
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
+  concentration:
+    value: '16.4093'
+    unit: G_PER_L
+- preferred_term: Phytone peptone
+  concentration:
+    value: '7.72201'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.965251'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.965251'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.19305'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' ( fraction V)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.6.
+- step_number: 2
+  action: MIX
+  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions
+    by filtration, and aseptically add to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.997461Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J220'

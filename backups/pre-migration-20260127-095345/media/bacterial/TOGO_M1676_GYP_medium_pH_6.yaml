@@ -1,0 +1,69 @@
+name: GYP medium (pH 6)
+original_name: GYP medium (pH 6)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: CaCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
+    component, Inorganic compound'
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: '**Tween 80 solution (see Medium [M1675])'
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: '***Salts solution (see Medium [M1675])'
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1676
+  term:
+    id: TOGO:M1676
+    label: GYP medium (pH 6)
+notes: 'Source: https://togomedium.org/medium/M1676
+
+  Original source: NBRC - NBRC_M881-2
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=881'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.120835Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1676'

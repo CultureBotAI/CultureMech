@@ -1,0 +1,21 @@
+name: CYC-MEDIUM (modified following Cross and Attwell,1973)
+original_name: CYC-MEDIUM (modified following Cross and Attwell,1973)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 550
+  term:
+    id: komodo.medium:550
+    label: CYC-MEDIUM (modified following Cross and Attwell,1973)
+notes: 'Source: KOMODO ModelSEED | ID: 550 | DSMZ Medium: 550 (mediadive.medium:550)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 550'

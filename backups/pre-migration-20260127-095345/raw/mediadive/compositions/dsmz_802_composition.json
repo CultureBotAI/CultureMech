@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_802",
+  "medium_name": "NaCl",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCl",
+      "concentration": 100.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 20.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KCl",
+      "concentration": 2.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaBr",
+      "concentration": 0.1,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (Difco)",
+      "concentration": 2.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trypticase peptone (BBL)",
+      "concentration": 2.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tris-HCl",
+      "concentration": 12.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Trace metals solution",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

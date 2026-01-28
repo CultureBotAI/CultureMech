@@ -1,0 +1,29 @@
+name: IRD MESOTOGA MEDIUM
+original_name: IRD MESOTOGA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J926
+  term:
+    id: mediadive.medium:J926
+    label: IRD MESOTOGA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=926'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 875, replacing the L-sodium lactate solution with 20.0
+    ml/L 1.0 M fructose solution (autoclaved and stored under N2).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.027624Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J926'

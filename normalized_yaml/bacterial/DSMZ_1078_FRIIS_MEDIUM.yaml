@@ -1,0 +1,106 @@
+name: FRIIS MEDIUM
+original_name: FRIIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1078
+  term:
+    id: mediadive.medium:1078
+    label: FRIIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1078.pdf'
+ingredients:
+- preferred_term: Bacto brain heart infusion
+  concentration:
+    value: '5.09317'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '5.40373'
+    unit: G_PER_L
+- preferred_term: Porcine serum
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.00133'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.4.
+- step_number: 2
+  action: MIX
+  description: 'After autoclaving add:'
+- step_number: 3
+  action: AUTOCLAVE
+  description: 25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05 g
+    MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2 added and
+    dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03 g KH2PO4 dissolved
+    in 25 ml distilled water) are autoclaved separately and then combined with 450
+    ml sterile H2O.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.312522Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1078'

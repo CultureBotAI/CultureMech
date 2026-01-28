@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1260",
+  "medium_name": "Medium dsmz_1260",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Bacto Tryptic Soy Broth without Dextrose",
+      "concentration": 27.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

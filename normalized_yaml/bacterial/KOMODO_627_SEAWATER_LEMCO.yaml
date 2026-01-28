@@ -1,0 +1,21 @@
+name: SEAWATER LEMCO
+original_name: SEAWATER LEMCO
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 627
+  term:
+    id: komodo.medium:627
+    label: SEAWATER LEMCO
+notes: 'Source: KOMODO ModelSEED | ID: 627 | DSMZ Medium: 627 (mediadive.medium:627)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 627'

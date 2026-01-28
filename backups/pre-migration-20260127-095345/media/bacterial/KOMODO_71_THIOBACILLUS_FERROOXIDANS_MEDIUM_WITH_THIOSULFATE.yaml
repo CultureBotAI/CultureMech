@@ -1,0 +1,21 @@
+name: THIOBACILLUS FERROOXIDANS MEDIUM WITH THIOSULFATE
+original_name: THIOBACILLUS FERROOXIDANS MEDIUM WITH THIOSULFATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 4.4-4.7
+media_term:
+  preferred_term: KOMODO Medium 71
+  term:
+    id: komodo.medium:71
+    label: THIOBACILLUS FERROOXIDANS MEDIUM WITH THIOSULFATE
+notes: 'Source: KOMODO ModelSEED | ID: 71 | DSMZ Medium: 71 (mediadive.medium:71)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 71'

@@ -1,0 +1,24 @@
+name: MINERAL MEDIUM (BRUNNER) SUPPLEMENTED WITH TOLUENE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: JCM Medium J1199
+  term:
+    id: JCM:J1199
+    label: MINERAL MEDIUM (BRUNNER) SUPPLEMENTED WITH TOLUENE
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1199'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.416196Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1199'

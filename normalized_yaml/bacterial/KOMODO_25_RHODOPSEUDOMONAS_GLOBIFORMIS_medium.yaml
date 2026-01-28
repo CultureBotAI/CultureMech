@@ -1,0 +1,21 @@
+name: RHODOPSEUDOMONAS GLOBIFORMIS medium
+original_name: RHODOPSEUDOMONAS GLOBIFORMIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.9
+media_term:
+  preferred_term: KOMODO Medium 25
+  term:
+    id: komodo.medium:25
+    label: RHODOPSEUDOMONAS GLOBIFORMIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 25 | DSMZ Medium: 25 (mediadive.medium:25)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 25'

@@ -1,0 +1,29 @@
+name: Mg50 MEDIUM
+original_name: Mg50 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J490
+  term:
+    id: mediadive.medium:J490
+    label: Mg50 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=490'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave
+    1 M glucose solution separately under a N2 atmosphere, and add to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.736595Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J490'

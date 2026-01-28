@@ -1,0 +1,21 @@
+name: ACETOBACTERIUM SP. medium
+original_name: ACETOBACTERIUM SP. medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 614 | DSMZ Medium: 614 (mediadive.medium:614)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 614
+  term:
+    id: komodo.medium:614
+    label: ACETOBACTERIUM SP. medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 614'

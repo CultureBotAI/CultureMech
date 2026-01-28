@@ -1,0 +1,20 @@
+name: MEDIUM 49 MODIFIED FOR DSM 435
+original_name: MEDIUM 49 MODIFIED FOR DSM 435
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 49_435
+  term:
+    id: komodo.medium:49_435
+    label: MEDIUM 49 MODIFIED FOR DSM 435
+notes: 'Source: KOMODO ModelSEED | ID: 49_435 | DSMZ Medium: 49 (mediadive.medium:49)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 49_435'

@@ -1,0 +1,195 @@
+name: Nitrate Mineral Salts Medium (NMS) - Enriched Example
+category: bacterial  # Changed from 'imported' to specific category
+medium_type: DEFINED
+physical_state: LIQUID
+description: Defined mineral salts medium for growth of methylotrophic bacteria and
+  other organisms utilizing nitrate as nitrogen source.
+ph_value: 7.0
+
+ingredients:
+  # Example 1: Ingredient with roles AND cofactors provided
+  - preferred_term: MgSO4·7H2O
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:31795
+      label: MgSO4·7H2O
+    role:
+      - MINERAL
+      - COFACTOR_PROVIDER
+    cofactors_provided:
+      - preferred_term: Magnesium ion
+        term:
+          id: CHEBI:18420
+          label: magnesium(2+)
+        category: METALS
+        bioavailability: Readily available as Mg2+ ion
+        notes: Essential cofactor for hundreds of enzymes
+
+  # Example 2: Ingredient with multiple roles
+  - preferred_term: CaCl2·6H2O
+    concentration:
+      value: '0.2'
+      unit: G_PER_L
+    term:
+      id: CHEBI:86280
+      label: CaCl2·6H2O
+    role:
+      - MINERAL
+      - COFACTOR_PROVIDER
+    cofactors_provided:
+      - preferred_term: Calcium ion
+        term:
+          id: CHEBI:29108
+          label: calcium(2+)
+        category: METALS
+
+  # Example 3: Nitrogen source that also serves as electron acceptor
+  - preferred_term: KNO3
+    concentration:
+      value: '1.0'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63043
+      label: KNO3
+    role:
+      - NITROGEN_SOURCE
+      - ELECTRON_ACCEPTOR
+    notes: Serves as both nitrogen source and terminal electron acceptor for denitrification
+
+  # Example 4: Buffer
+  - preferred_term: KH2PO4
+    concentration:
+      value: '0.272'
+      unit: G_PER_L
+    term:
+      id: CHEBI:63036
+      label: KH2PO4
+    role:
+      - BUFFER
+      - MINERAL
+
+  - preferred_term: Na2HPO4·12H2O
+    concentration:
+      value: '0.717'
+      unit: G_PER_L
+    term:
+      id: CHEBI:34204
+      label: Na2HPO4·12H2O
+    role:
+      - BUFFER
+      - MINERAL
+
+  - preferred_term: Trace Elements Solution
+    concentration:
+      value: '0.5'
+      unit: G_PER_L
+    role:
+      - TRACE_ELEMENT
+      - COFACTOR_PROVIDER
+    notes: ATCC trace elements solution providing Fe, Zn, Cu, Mn, Co, Mo
+
+# Example: Target organism with community role and cofactor requirements
+target_organisms:
+  - preferred_term: Methylobacterium extorquens
+    term:
+      id: NCBITaxon:408
+      label: Methylobacterium extorquens
+    strain: AM1
+
+    # NEW: Community role annotation
+    community_role:
+      - PRIMARY_DEGRADER
+    target_abundance: 0.8  # 80% of community
+    community_function:
+      - C1 metabolism
+      - Methanol oxidation
+      - Denitrification
+
+    # NEW: Cofactor requirements
+    cofactor_requirements:
+      - cofactor:
+          preferred_term: Cobalamin (Vitamin B12)
+          term:
+            id: CHEBI:16335
+            label: cobalamin
+          category: VITAMINS
+          notes: Required for C1 metabolism, must be supplied exogenously
+        can_biosynthesize: false
+        confidence: 0.95
+
+      - cofactor:
+          preferred_term: Tetrahydrofolate
+          term:
+            id: CHEBI:20506
+            label: tetrahydrofolate
+          category: VITAMINS
+        can_biosynthesize: true
+        confidence: 0.90
+        genes:
+          - folA
+          - folB
+          - folC
+
+    # NEW: Transporter annotations
+    transporters:
+      - name: Methanol dehydrogenase (MDH)
+        transporter_type: DEHALOGENASE
+        substrates:
+          - methanol
+        substrate_terms:
+          - id: CHEBI:17790
+            label: methanol
+        direction: import
+        genes:
+          - mxaF
+          - mxaI
+        ec_number: 1.1.2.7
+        notes: PQQ-dependent methanol dehydrogenase
+
+      - name: Nitrate transporter (NarK)
+        transporter_type: MFS
+        substrates:
+          - nitrate
+          - nitrite
+        substrate_terms:
+          - id: CHEBI:17632
+            label: nitrate
+        direction: import
+        genes:
+          - narK
+        notes: Major facilitator superfamily nitrate/nitrite antiporter
+
+media_term:
+  preferred_term: ATCC Medium 1306
+  term:
+    id: ATCC:1306
+    label: Nitrate Mineral Salts Medium (NMS)
+
+notes: |
+  Source: ATCC Medium 1306.pdf
+  Cross-references: DSMZ:632, TOGO:M1871
+
+  Enriched with:
+  - Ingredient functional roles
+  - Cofactor provision annotations
+  - Community role designations
+  - Organism cofactor requirements
+  - Transporter system annotations
+
+applications:
+  - Cultivation of methylotrophic bacteria
+  - Growth of Methylobacterium species
+  - Nitrate utilization studies
+  - Community design with cofactor complementation
+
+curation_history:
+  - timestamp: '2026-01-22T07:19:59.630463Z'
+    curator: atcc-import
+    action: Imported from ATCC data
+    notes: 'Source: ATCC 1306'
+  - timestamp: '2026-01-22T12:00:00Z'
+    curator: manual-enrichment
+    action: Added PFAS-based annotations
+    notes: 'Enriched with roles, cofactors, community roles, and transporters'

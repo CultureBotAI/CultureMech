@@ -1,0 +1,243 @@
+{
+  "medium_id": "dsmz_1344",
+  "medium_name": "Taps",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Yeast extract",
+      "concentration": 17.4,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Sodium acetate",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Disodium succinate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2S2O3 x 5 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 75.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "2Na-EDTA",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Trace elements (A)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Neutralized sulfide solution (B)",
+      "concentration": 30.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Bicarbonate solution (C)",
+      "concentration": 30.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Vitamin mixture (D)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Vitamin B12 solution (0.01%)",
+      "concentration": 0.4,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 1000.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "5.0   mg",
+      "concentration": 5.2,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Mix ingredients vitamin B12, vitamin mixture, bicarbonate solution and neutralized sulfide",
+      "concentration": 190.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "solution, vitamin mixture, bicarbonate solution by filtration. Prior to inoculation,",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "aseptically and anaerobically add vitamin B12 solution, vitamin mixture, bicarbonate",
+      "concentration": 1.5,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "solution and neutralized sulfide solution.",
+      "concentration": 6.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Trace elements (A)",
+      "concentration": 17.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "EDTA",
+      "concentration": 188.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 25.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 70.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "VoSO4 x 2 H2O",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NaHSeO3",
+      "concentration": 0.005,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.005,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.03,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_26",
+  "medium_name": "Use medium 27 and reduce the yeast extract concentration to 0.2 g/l. Adjust pH to 5.7.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 27",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "27"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

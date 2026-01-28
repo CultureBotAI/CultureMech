@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_215b",
+  "medium_name": "WITH ADDITIONAL GLUCOSE",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Brain Heart Infusion (Difco)",
+      "concentration": 37.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

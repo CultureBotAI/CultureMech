@@ -1,0 +1,20 @@
+name: ALKALIBACTERIUM OLIVAPOVLITICUS
+original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 923
+  term:
+    id: komodo.medium:923
+    label: ALKALIBACTERIUM OLIVAPOVLITICUS
+notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 923'

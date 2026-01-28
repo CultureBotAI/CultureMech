@@ -1,0 +1,21 @@
+name: TINDALLIA medium
+original_name: TINDALLIA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: KOMODO Medium 798
+  term:
+    id: komodo.medium:798
+    label: TINDALLIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 798 | DSMZ Medium: 798 (mediadive.medium:798)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 798'

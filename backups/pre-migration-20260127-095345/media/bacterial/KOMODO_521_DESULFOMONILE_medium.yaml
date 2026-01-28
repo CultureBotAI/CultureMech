@@ -1,0 +1,21 @@
+name: DESULFOMONILE medium
+original_name: DESULFOMONILE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 521
+  term:
+    id: komodo.medium:521
+    label: DESULFOMONILE medium
+notes: 'Source: KOMODO ModelSEED | ID: 521 | DSMZ Medium: 521 (mediadive.medium:521)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 521'

@@ -1,0 +1,24 @@
+name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: JCM Medium J895
+  term:
+    id: JCM:J895
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=895'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.244140Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J895'

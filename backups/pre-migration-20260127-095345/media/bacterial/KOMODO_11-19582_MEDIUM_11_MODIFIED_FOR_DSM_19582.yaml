@@ -1,0 +1,20 @@
+name: MEDIUM 11 MODIFIED FOR DSM 19582
+original_name: MEDIUM 11 MODIFIED FOR DSM 19582
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 11_19582
+  term:
+    id: komodo.medium:11_19582
+    label: MEDIUM 11 MODIFIED FOR DSM 19582
+notes: 'Source: KOMODO ModelSEED | ID: 11_19582 | DSMZ Medium: 11 (mediadive.medium:11)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 11_19582'

@@ -1,0 +1,21 @@
+name: METHANOHALOPHILUS HALOPHILUS medium
+original_name: METHANOHALOPHILUS HALOPHILUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 329
+  term:
+    id: komodo.medium:329
+    label: METHANOHALOPHILUS HALOPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 329 | DSMZ Medium: 329 (mediadive.medium:329)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 329'

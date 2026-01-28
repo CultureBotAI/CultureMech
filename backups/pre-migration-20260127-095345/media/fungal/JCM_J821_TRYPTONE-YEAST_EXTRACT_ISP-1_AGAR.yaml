@@ -1,0 +1,43 @@
+name: TRYPTONE-YEAST EXTRACT (ISP-1) AGAR
+original_name: TRYPTONE-YEAST EXTRACT (ISP-1) AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J821
+  term:
+    id: mediadive.medium:J821
+    label: TRYPTONE-YEAST EXTRACT (ISP-1) AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=821'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+- step_number: 2
+  action: ADD_AGAR
+  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available
+    from Becton Dickinson & Co. as ISP Medium 1. Add agar to the medium before autoclaving.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.697343Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J821'

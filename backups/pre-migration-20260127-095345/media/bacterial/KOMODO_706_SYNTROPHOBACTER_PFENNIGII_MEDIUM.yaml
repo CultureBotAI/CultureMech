@@ -1,0 +1,21 @@
+name: SYNTROPHOBACTER PFENNIGII MEDIUM
+original_name: SYNTROPHOBACTER PFENNIGII MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.4
+notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 706 | DSMZ Medium:
+  706 (mediadive.medium:706) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 706
+  term:
+    id: komodo.medium:706
+    label: SYNTROPHOBACTER PFENNIGII MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 706'

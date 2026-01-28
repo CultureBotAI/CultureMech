@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_261",
+  "medium_name": "FOR CHEMOLITHOTROPHIC GROWTH OF",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 260",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "260"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,21 @@
+name: TPT 18 medium
+original_name: TPT 18 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 1127
+  term:
+    id: komodo.medium:1127
+    label: TPT 18 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1127 | DSMZ Medium: 1127 (mediadive.medium:1127)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1127'

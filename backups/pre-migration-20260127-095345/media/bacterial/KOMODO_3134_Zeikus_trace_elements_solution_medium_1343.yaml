@@ -1,0 +1,21 @@
+name: Zeikus trace elements solution (medium 1343)
+original_name: Zeikus trace elements solution (medium 1343)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3134 | DSMZ Medium: 3134 (mediadive.medium:3134)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3134
+  term:
+    id: komodo.medium:3134
+    label: Zeikus trace elements solution (medium 1343)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3134'

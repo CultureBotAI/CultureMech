@@ -1,0 +1,40 @@
+name: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (60% solution)
+  at a concentration of 1.5%
+original_name: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (60%
+  solution) at a concentration of 1.5%
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium lactate (60% solution)
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Reinforced Clostridial medium (Oxoid CM149)
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2613
+  term:
+    id: TOGO:M2613
+    label: Reinforced Clostridial medium (Oxoid CM149) with sodium lactate (60% solution)
+      at a concentration of 1.5%
+notes: 'Source: https://togomedium.org/medium/M2613
+
+  Original URL: https://www.atcc.org/~/media/CCB197296D624B1DA0BBFA3C2EB8632B.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.870028Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2613'

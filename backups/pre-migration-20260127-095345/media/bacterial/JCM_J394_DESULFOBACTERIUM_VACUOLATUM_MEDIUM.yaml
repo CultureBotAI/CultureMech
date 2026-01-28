@@ -1,0 +1,30 @@
+name: DESULFOBACTERIUM VACUOLATUM MEDIUM
+original_name: DESULFOBACTERIUM VACUOLATUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J394
+  term:
+    id: mediadive.medium:J394
+    label: DESULFOBACTERIUM VACUOLATUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=394'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use Medium No. 383 supplemented with 21.0 g/L (final) NaCl, with 1.0
+    g/L sodium fumarate (filter-sterilized) instead of sodium lactate, and without
+    yeast extract.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.492847Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J394'

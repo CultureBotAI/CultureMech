@@ -1,0 +1,33 @@
+name: BL With 0.5% Maltose
+original_name: BL With 0.5% Maltose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Maltose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: BL AGAR (GLUCOSE BLOOD LIVER AGAR) (see Medium [M6])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M416
+  term:
+    id: TOGO:M416
+    label: BL With 0.5% Maltose
+notes: 'Source: https://togomedium.org/medium/M416
+
+  Original source: JCM - JCM_M418
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.019209Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M416'

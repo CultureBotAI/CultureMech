@@ -1,0 +1,24 @@
+name: SEA WATER AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 246
+  term:
+    id: DSMZ:246
+    label: SEA WATER AGAR
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium246.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.798572Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 246'

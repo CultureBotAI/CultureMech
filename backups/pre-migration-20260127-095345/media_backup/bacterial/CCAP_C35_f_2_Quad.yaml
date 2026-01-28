@@ -1,0 +1,26 @@
+name: f/2 Quad
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C35
+  term:
+    id: CCAP:C35
+    label: f/2 Quad
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1139/m62-029
+curation_history:
+- timestamp: '2026-01-24T08:12:50.510394Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C35'

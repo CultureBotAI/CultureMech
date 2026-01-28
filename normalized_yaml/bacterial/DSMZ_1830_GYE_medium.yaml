@@ -1,0 +1,65 @@
+name: GYE medium
+original_name: GYE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 1830
+  term:
+    id: mediadive.medium:1830
+    label: GYE medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: Optional ingredient
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: Optional ingredient
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' (non-methylated)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8-7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 3
+  action: AUTOCLAVE
+  description: after autoclaving add sterile (autoclaved), non-methylated ethanol
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.504905Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1830'

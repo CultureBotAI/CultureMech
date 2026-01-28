@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_300",
+  "medium_name": "Use medium 298, but replace butanediol by 2.0 g/l of sodium L-tartrate. Add 0.4 mg/l",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 298",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "298"
+    },
+    {
+      "name": "Mg",
+      "concentration": 0.4,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

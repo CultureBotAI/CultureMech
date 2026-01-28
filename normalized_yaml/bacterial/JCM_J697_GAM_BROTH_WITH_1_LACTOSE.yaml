@@ -1,0 +1,30 @@
+name: GAM BROTH WITH 1% LACTOSE
+original_name: GAM BROTH WITH 1% LACTOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J697
+  term:
+    id: mediadive.medium:J697
+    label: GAM BROTH WITH 1% LACTOSE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697'
+ingredients:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.328066Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J697'

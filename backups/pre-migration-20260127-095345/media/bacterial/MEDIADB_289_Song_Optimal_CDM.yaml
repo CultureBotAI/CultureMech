@@ -1,0 +1,139 @@
+name: Song Optimal CDM
+original_name: Song Optimal CDM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  notes: 'Cross-references: KEGG:ala-L'
+- preferred_term: L-Aspartate
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: Ascorbate
+  notes: 'Cross-references: KEGG:ascb-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  notes: 'Cross-references: KEGG:cys-L'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  notes: 'Cross-references: KEGG:asn-L'
+- preferred_term: dTMP
+  notes: 'Cross-references: KEGG:dtmp'
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.984'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.205'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '55.7'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '17.1'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Pyridoxine HCl
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.0112'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.329'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.0282'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '15.1'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.02'
+    unit: MILLIMOLAR
+- preferred_term: Sodium borate
+  concentration:
+    value: '0.000262'
+    unit: MILLIMOLAR
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: '0.000405'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.264495Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 289, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 289
+  term:
+    id: MEDIADB:289
+    label: Song Optimal CDM
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1748",
+  "medium_name": "Mineral Salts Solution for liquid 23% MGM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral Salts Solution for liquid 23% MGM",
+      "concentration": 786.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Salt Water Solution",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Peptone (Oxoid)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (Fisher)",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

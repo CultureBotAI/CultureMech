@@ -1,0 +1,20 @@
+name: MINERAL MEDIUM WITH ATRAZIN
+original_name: MINERAL MEDIUM WITH ATRAZIN
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 465i
+  term:
+    id: komodo.medium:465i
+    label: MINERAL MEDIUM WITH ATRAZIN
+notes: 'Source: KOMODO ModelSEED | ID: 465i | DSMZ Medium: 465i (mediadive.medium:465i)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 465i'

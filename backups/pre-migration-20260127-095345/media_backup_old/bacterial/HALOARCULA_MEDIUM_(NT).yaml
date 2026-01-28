@@ -1,0 +1,24 @@
+name: HALOARCULA MEDIUM (NT)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1548
+  term:
+    id: DSMZ:1548
+    label: HALOARCULA MEDIUM (NT)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1548.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.602167Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1548'

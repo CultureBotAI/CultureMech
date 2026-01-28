@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1658",
+  "medium_name": "Trypton (BD211921)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypton (BD211921)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Soy peptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

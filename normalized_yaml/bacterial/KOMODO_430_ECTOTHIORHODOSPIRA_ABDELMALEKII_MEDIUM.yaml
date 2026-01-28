@@ -1,0 +1,21 @@
+name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
+original_name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.5
+notes: 'pH buffer: Na2S | Source: KOMODO ModelSEED | ID: 430 | DSMZ Medium: 430 (mediadive.medium:430)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 430
+  term:
+    id: komodo.medium:430
+    label: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 430'

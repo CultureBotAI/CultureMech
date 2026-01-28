@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_830b",
+  "medium_name": "R2A FOR DENITRIFYING BACTERIA",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 830",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "830"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,20 @@
+name: Thermus macronutrients 10X solution
+original_name: Thermus macronutrients 10X solution
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3058
+  term:
+    id: komodo.medium:3058
+    label: Thermus macronutrients 10X solution
+notes: 'Source: KOMODO ModelSEED | ID: 3058 | DSMZ Medium: 3058 (mediadive.medium:3058)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3058'

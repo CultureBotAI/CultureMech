@@ -1,0 +1,20 @@
+name: DMJ synthetic seawater (medium 997)
+original_name: DMJ synthetic seawater (medium 997)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2004
+  term:
+    id: komodo.medium:2004
+    label: DMJ synthetic seawater (medium 997)
+notes: 'Source: KOMODO ModelSEED | ID: 2004 | DSMZ Medium: 2004 (mediadive.medium:2004)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2004'

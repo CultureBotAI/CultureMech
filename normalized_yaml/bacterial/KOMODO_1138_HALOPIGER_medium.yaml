@@ -1,0 +1,21 @@
+name: HALOPIGER medium
+original_name: HALOPIGER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: KOMODO Medium 1138
+  term:
+    id: komodo.medium:1138
+    label: HALOPIGER medium
+notes: 'Source: KOMODO ModelSEED | ID: 1138 | DSMZ Medium: 1138 (mediadive.medium:1138)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1138'

@@ -1,0 +1,20 @@
+name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
+original_name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 187
+  term:
+    id: komodo.medium:187
+    label: medium FOR OSMOPHILIC FUNGI (M 40 Y)
+notes: 'Source: KOMODO ModelSEED | ID: 187 | DSMZ Medium: 187 (mediadive.medium:187)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 187'

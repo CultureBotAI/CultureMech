@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_465h",
+  "medium_name": "WITH 6-METHYLNICOTINATE",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Selenite/tungstate stock solution:",
+      "concentration": 500.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaOH",
+      "concentration": 3.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2SeO3 x 5 H2O",
+      "concentration": 4.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

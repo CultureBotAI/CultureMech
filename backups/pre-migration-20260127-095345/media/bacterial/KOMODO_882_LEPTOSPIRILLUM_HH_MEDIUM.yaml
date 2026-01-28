@@ -1,0 +1,21 @@
+name: LEPTOSPIRILLUM (HH) MEDIUM
+original_name: LEPTOSPIRILLUM (HH) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 1.8
+media_term:
+  preferred_term: KOMODO Medium 882
+  term:
+    id: komodo.medium:882
+    label: LEPTOSPIRILLUM (HH) MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 882 | DSMZ Medium: 882 (mediadive.medium:882)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 882'

@@ -1,0 +1,24 @@
+name: SP4 MEDIUM WITH GLUCOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1076a
+  term:
+    id: DSMZ:1076a
+    label: SP4 MEDIUM WITH GLUCOSE
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076a.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.322637Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1076a'

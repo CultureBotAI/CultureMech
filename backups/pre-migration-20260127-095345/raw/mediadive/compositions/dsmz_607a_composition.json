@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_607a",
+  "medium_name": "Use medium 607 with modification peptone, yeast extract and glucose in triple",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 607",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "607"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

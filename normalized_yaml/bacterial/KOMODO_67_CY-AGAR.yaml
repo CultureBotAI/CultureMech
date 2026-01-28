@@ -1,0 +1,21 @@
+name: CY-AGAR
+original_name: CY-AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 67
+  term:
+    id: komodo.medium:67
+    label: CY-AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 67 | DSMZ Medium: 67 (mediadive.medium:67)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 67'

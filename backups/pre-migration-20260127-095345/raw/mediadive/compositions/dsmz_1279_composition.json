@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1279",
+  "medium_name": "Brucella Broth (Becton Dickinson)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Brucella Broth (Becton Dickinson)",
+      "concentration": 2.8,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

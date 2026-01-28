@@ -1,0 +1,21 @@
+name: PYGV AGAR
+original_name: PYGV AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 621 | DSMZ Medium: 621 (mediadive.medium:621)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 621
+  term:
+    id: komodo.medium:621
+    label: PYGV AGAR
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 621'

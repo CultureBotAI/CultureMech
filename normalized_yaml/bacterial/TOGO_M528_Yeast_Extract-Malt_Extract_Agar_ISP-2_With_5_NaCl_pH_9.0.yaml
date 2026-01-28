@@ -1,0 +1,35 @@
+name: Yeast Extract-Malt Extract Agar (ISP-2) With 5% NaCl (pH 9.0)
+original_name: Yeast Extract-Malt Extract Agar (ISP-2) With 5% NaCl (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3 solution
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M528
+  term:
+    id: TOGO:M528
+    label: Yeast Extract-Malt Extract Agar (ISP-2) With 5% NaCl (pH 9.0)
+notes: 'Source: https://togomedium.org/medium/M528
+
+  Original source: JCM - JCM_M527
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.239191Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M528'

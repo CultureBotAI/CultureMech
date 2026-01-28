@@ -1,0 +1,21 @@
+name: OTTOW medium
+original_name: OTTOW medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: KOMODO Medium 467
+  term:
+    id: komodo.medium:467
+    label: OTTOW medium
+notes: 'Source: KOMODO ModelSEED | ID: 467 | DSMZ Medium: 467 (mediadive.medium:467)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 467'

@@ -1,0 +1,29 @@
+name: LIVER BROTH (Oxoid CM 77)
+original_name: LIVER BROTH (Oxoid CM 77)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 77
+  term:
+    id: mediadive.medium:77
+    label: LIVER BROTH (Oxoid CM 77)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium77.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the medium according to directions on the bottle under 100%
+    N2 gas atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.095420Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 77'

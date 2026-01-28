@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_291",
+  "medium_name": "Prepare medium 88 without yeast extract, then add per liter:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "H2 + CO2 (80% + 20%) gas mixture. Add 0.85 g NaHCO3 per liter and equilibrate the pH",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Before inoculation, add from anaerobic stock solutions 0.02% yeast extract (for",
+      "concentration": 0.4,
+      "unit": "mg",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

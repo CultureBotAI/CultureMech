@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_646",
+  "medium_name": "Medium dsmz_646",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "RABBIT BLOOD AGAR\n\nPrepare Blood Agar Base from Difco 0045 according to directions on the bottle",
+      "concentration": 40.0,
+      "unit": "g/l",
+      "extraction_method": "parenthetical_format_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

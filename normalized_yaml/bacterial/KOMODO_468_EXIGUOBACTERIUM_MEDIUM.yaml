@@ -1,0 +1,21 @@
+name: EXIGUOBACTERIUM MEDIUM
+original_name: EXIGUOBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: KOMODO Medium 468
+  term:
+    id: komodo.medium:468
+    label: EXIGUOBACTERIUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 468 | DSMZ Medium: 468 (mediadive.medium:468)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 468'

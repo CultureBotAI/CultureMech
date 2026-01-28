@@ -1,0 +1,37 @@
+name: PENNASSAY G-THY MEDIUM
+original_name: PENNASSAY G-THY MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 542
+  term:
+    id: mediadive.medium:542
+    label: PENNASSAY G-THY MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium542.pdf'
+ingredients:
+- preferred_term: Pennassay Broth
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Thymine
+  term:
+    id: CHEBI:17821
+    label: Thymine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.578074Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 542'

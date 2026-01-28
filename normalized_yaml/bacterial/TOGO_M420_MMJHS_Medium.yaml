@@ -1,0 +1,60 @@
+name: MMJHS Medium
+original_name: MMJHS Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+- preferred_term: Hydrogen gas
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M420
+  term:
+    id: TOGO:M420
+    label: MMJHS Medium
+notes: 'Source: https://togomedium.org/medium/M420
+
+  Original source: JCM - JCM_M421-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=421'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.028090Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M420'

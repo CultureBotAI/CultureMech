@@ -1,0 +1,68 @@
+name: BHI-S MEDIUM
+original_name: BHI-S MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J801
+  term:
+    id: mediadive.medium:J801
+    label: BHI-S MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=801'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '6.05'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0 - 7.2
+    and autoclave under N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
+    days. Neutralize Na2S x 9H2O as a 5% solution and autoclave under a N2 gas atmosphere.
+    Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
+    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
+    solution and readjust pH to 7.0 - 7.2, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.642411Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J801'

@@ -1,0 +1,42 @@
+name: MRS MEDIUM WITH 2.5% NaCl (pH 9.0)
+original_name: MRS MEDIUM WITH 2.5% NaCl (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J931
+  term:
+    id: mediadive.medium:J931
+    label: MRS MEDIUM WITH 2.5% NaCl (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=931'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 9.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.041473Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J931'

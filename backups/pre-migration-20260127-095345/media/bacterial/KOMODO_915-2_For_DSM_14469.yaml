@@ -1,0 +1,21 @@
+name: For DSM 14469
+original_name: For DSM 14469
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 915.2
+  term:
+    id: komodo.medium:915.2
+    label: For DSM 14469
+notes: 'Source: KOMODO ModelSEED | ID: 915.2 | DSMZ Medium: 915 (mediadive.medium:915)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 915.2'

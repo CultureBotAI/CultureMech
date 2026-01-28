@@ -1,0 +1,21 @@
+name: MEDIUM 252 MODIFIED FOR DSM 41411
+original_name: MEDIUM 252 MODIFIED FOR DSM 41411
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: KOMODO Medium 252_41411
+  term:
+    id: komodo.medium:252_41411
+    label: MEDIUM 252 MODIFIED FOR DSM 41411
+notes: 'Source: KOMODO ModelSEED | ID: 252_41411 | DSMZ Medium: 252 (mediadive.medium:252)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 252_41411'

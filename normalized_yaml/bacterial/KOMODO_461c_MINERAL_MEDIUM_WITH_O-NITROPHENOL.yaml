@@ -1,0 +1,21 @@
+name: MINERAL MEDIUM WITH O-NITROPHENOL
+original_name: MINERAL MEDIUM WITH O-NITROPHENOL
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 461c
+  term:
+    id: komodo.medium:461c
+    label: MINERAL MEDIUM WITH O-NITROPHENOL
+notes: 'Source: KOMODO ModelSEED | ID: 461c | DSMZ Medium: 461c (mediadive.medium:461c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 461c'

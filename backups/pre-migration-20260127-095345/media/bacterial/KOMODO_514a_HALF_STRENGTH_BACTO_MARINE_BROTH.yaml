@@ -1,0 +1,21 @@
+name: HALF STRENGTH BACTO MARINE BROTH
+original_name: HALF STRENGTH BACTO MARINE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: KOMODO Medium 514a
+  term:
+    id: komodo.medium:514a
+    label: HALF STRENGTH BACTO MARINE BROTH
+notes: 'Source: KOMODO ModelSEED | ID: 514a | DSMZ Medium: 514a (mediadive.medium:514a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514a'

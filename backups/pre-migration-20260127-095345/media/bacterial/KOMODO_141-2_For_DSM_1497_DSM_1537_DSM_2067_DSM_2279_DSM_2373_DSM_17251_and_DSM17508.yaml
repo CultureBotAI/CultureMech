@@ -1,0 +1,22 @@
+name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
+original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and
+  DSM17508
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 141.2
+  term:
+    id: komodo.medium:141.2
+    label: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
+notes: 'Source: KOMODO ModelSEED | ID: 141.2 | DSMZ Medium: 141 (mediadive.medium:141)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 141.2'

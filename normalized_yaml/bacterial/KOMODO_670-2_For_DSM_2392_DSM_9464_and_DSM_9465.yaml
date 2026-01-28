@@ -1,0 +1,21 @@
+name: For DSM 2392, DSM 9464 and DSM 9465
+original_name: For DSM 2392, DSM 9464 and DSM 9465
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.2
+media_term:
+  preferred_term: KOMODO Medium 670.2
+  term:
+    id: komodo.medium:670.2
+    label: For DSM 2392, DSM 9464 and DSM 9465
+notes: 'Source: KOMODO ModelSEED | ID: 670.2 | DSMZ Medium: 670 (mediadive.medium:670)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 670.2'

@@ -1,0 +1,137 @@
+name: BL AGAR (GLUCOSE BLOOD LIVER AGAR)
+original_name: BL AGAR (GLUCOSE BLOOD LIVER AGAR)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J13
+  term:
+    id: mediadive.medium:J13
+    label: BL AGAR (GLUCOSE BLOOD LIVER AGAR)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=13'
+ingredients:
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '2.85714'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+- preferred_term: Phytone peptone
+  concentration:
+    value: '2.85714'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+- preferred_term: Liver extract
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.47619'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.2857'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: To prepare liver extract, put 10 g liver powder in 170 ml water, keep
+    at 50 to 60C for 1 hr, boil for 5 min, adjust pH to 7.2 and filter.
+- step_number: 3
+  action: ADJUST_PH
+  description: Mix ingredients except horse blood and adjust pH to 7.2. After autoclaving,
+    cool to 50C, and aseptically add 50.0 ml of horse blood.
+- step_number: 4
+  action: MIX
+  description: 'Comment: Commercial BL agar (Nissui) is also available.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.579443Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J13'

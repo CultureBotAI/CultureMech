@@ -1,0 +1,20 @@
+name: MEDIUM 196 MODIFIED FOR DSM 11383
+original_name: MEDIUM 196 MODIFIED FOR DSM 11383
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 196_11383
+  term:
+    id: komodo.medium:196_11383
+    label: MEDIUM 196 MODIFIED FOR DSM 11383
+notes: 'Source: KOMODO ModelSEED | ID: 196_11383 | DSMZ Medium: 196 (mediadive.medium:196)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 196_11383'

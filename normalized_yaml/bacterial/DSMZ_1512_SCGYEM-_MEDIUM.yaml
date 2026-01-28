@@ -1,0 +1,140 @@
+name: SCGYEM- MEDIUM
+original_name: SCGYEM- MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1512
+  term:
+    id: mediadive.medium:1512
+    label: SCGYEM- MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1512.pdf'
+ingredients:
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Casein
+  term:
+    id: CHEBI:3448
+    label: Casein
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.44375'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.52'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.53'
+    unit: G_PER_L
+- preferred_term: Glutamic acid
+  term:
+    id: CHEBI:18237
+    label: Glutamic acid
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Medium for maintenance of infected amoeba cultures
+- step_number: 2
+  action: MIX
+  description: Combine Solutions A, B and C and add
+- step_number: 3
+  action: MIX
+  description: 'Maintenance conditions:'
+- step_number: 4
+  action: HEAT
+  description: "Infected amoeba cultures can be maintained e.g. in 25 cm2\r\nflasks\
+    \ (e.g. Nunc flasks,\r\nVWR, 734-2081, Thermo-Scientific, 156340) at 20-30°C in\
+    \ an incubator (no special\r\nrequirements concerning CO2 or light)."
+- step_number: 5
+  action: MIX
+  description: 'Maintenance/Passage of infected amoeba cultures:'
+- step_number: 6
+  action: ALIQUOT
+  description: "Infected Acanthamoeba cultures don’t have to be transferred to fresh\
+    \ culture flasks as\r\nfrequently as usually done for mammalian cell cultures.\
+    \ Amoeba cultures can be\r\nmaintained in the same flask for several weeks or\
+    \ months. However, if the cultures reach\r\na high cell density, medium should\
+    \ be exchanged. For that purpose amoebae are\r\ndetached from the surface of the\
+    \ flask by knocking at the culture flask (no trypsin\r\nrequired, amoebae are\
+    \ only weakly adherent compared to most mammalian cells) and\r\nthe medium (containing\
+    \ the majority of cells) is then completely removed. Fresh medium\r\nis added\
+    \ and the few remaining attached amoebae will continue to grow.\r\nAlternatively,\
+    \ cultures can also be passaged regularly (e.g. weekly) by transfer of a small\r\
+    \naliquot of a densely grown culture (after cell detachment, as described above)\
+    \ to a fresh\r\nflask containing medium. If cultures contain few attached cells,\
+    \ but high amounts of cell debris, medium should be\r\nexchanged without prior\
+    \ cell detachment. Cultures usually recover fast.\r\nDepending on the host cell\
+    \ strain, the bacteria may cause host cell lysis. To maintain\r\nsuch cultures,\
+    \ bacteria have to be transferred by adding culture supernatant\r\n(approximately\
+    \ 0.5 ml) to fresh culture flasks containing uninfected host cells\r\n(approximately\
+    \ semi-confluent culture) each 7-10 days."
+- step_number: 7
+  action: AUTOCLAVE
+  description: Adjust pH to > 8.0, autoclave at 110°C
+- step_number: 8
+  action: FILTER_STERILIZE
+  description: Filter-sterilize
+- step_number: 9
+  action: FILTER_STERILIZE
+  description: Filter-sterilize
+- step_number: 10
+  action: STORE
+  description: Bacteria released from host cells can be stored in
+- step_number: 11
+  action: HEAT
+  description: at -80°C for several months.
+- step_number: 12
+  action: STORE
+  description: Infected cell cultures (supplemented with 10% DMSO) are best stored
+    in liquid nitrogen.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.667295Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1512'

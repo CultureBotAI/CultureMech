@@ -1,0 +1,58 @@
+name: ACETOBACTER LAMBICUS MEDIUM
+original_name: ACETOBACTER LAMBICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.5
+media_term:
+  preferred_term: DSMZ Medium 1522
+  term:
+    id: mediadive.medium:1522
+    label: ACETOBACTER LAMBICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1522.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: The ethanol and acetic acid are sterilized separately by filtration
+    (use filter resistant to these solvents), and added aseptically to the sterile
+    medium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 3,5 with concentrated HCl after autoclaving.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.697741Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1522'

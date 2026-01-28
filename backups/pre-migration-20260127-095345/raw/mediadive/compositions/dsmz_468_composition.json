@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_468",
+  "medium_name": "Nutrient broth No. 2 (Oxoid)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Nutrient broth No. 2 (Oxoid)",
+      "concentration": 25.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

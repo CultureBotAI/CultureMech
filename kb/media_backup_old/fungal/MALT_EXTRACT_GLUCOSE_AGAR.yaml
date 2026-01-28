@@ -1,0 +1,24 @@
+name: MALT EXTRACT GLUCOSE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.4
+media_term:
+  preferred_term: DSMZ Medium 735
+  term:
+    id: DSMZ:735
+    label: MALT EXTRACT GLUCOSE AGAR
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium735.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.101119Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 735'

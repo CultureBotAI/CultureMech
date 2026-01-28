@@ -1,0 +1,21 @@
+name: CZAPEK Peptone AGAR
+original_name: CZAPEK Peptone AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 83
+  term:
+    id: komodo.medium:83
+    label: CZAPEK Peptone AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 83 | DSMZ Medium: 83 (mediadive.medium:83)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 83'

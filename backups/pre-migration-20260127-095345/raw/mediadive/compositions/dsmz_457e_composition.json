@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_457e",
+  "medium_name": "WITH DIBENZOFURAN",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 457",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "457"
+    },
+    {
+      "name": "Ml Of This Stock Solution To",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

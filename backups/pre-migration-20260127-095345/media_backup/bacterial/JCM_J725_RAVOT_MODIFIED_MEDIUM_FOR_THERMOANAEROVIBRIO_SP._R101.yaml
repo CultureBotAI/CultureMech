@@ -1,0 +1,24 @@
+name: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J725
+  term:
+    id: JCM:J725
+    label: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=725'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.148111Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J725'

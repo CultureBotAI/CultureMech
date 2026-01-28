@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_231",
+  "medium_name": "Add 0.05% cysteine-hydrochloride to medium 11 and adjust to pH 5.2.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 11",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "11"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

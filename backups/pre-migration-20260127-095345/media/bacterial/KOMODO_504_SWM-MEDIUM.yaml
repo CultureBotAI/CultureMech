@@ -1,0 +1,20 @@
+name: SWM-MEDIUM
+original_name: SWM-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 504
+  term:
+    id: komodo.medium:504
+    label: SWM-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 504 | DSMZ Medium: 504 (mediadive.medium:504)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 504'

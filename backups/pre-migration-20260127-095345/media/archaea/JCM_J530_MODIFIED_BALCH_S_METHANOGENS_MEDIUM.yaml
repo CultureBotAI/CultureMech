@@ -1,0 +1,30 @@
+name: MODIFIED BALCH'S METHANOGENS MEDIUM
+original_name: MODIFIED BALCH'S METHANOGENS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J530
+  term:
+    id: mediadive.medium:J530
+    label: MODIFIED BALCH'S METHANOGENS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=530'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use Medium No. 242 supplemented with 20 ml/L Fatty acid mixture (see
+    Medium No. 266) and 1 ml/L coenzyme M solution (0.01% 2-mercaptoethanesulfonic
+    acid, filter-sterilized).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.852309Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J530'

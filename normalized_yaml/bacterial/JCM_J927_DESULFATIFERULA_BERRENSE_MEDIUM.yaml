@@ -1,0 +1,30 @@
+name: DESULFATIFERULA BERRENSE MEDIUM
+original_name: DESULFATIFERULA BERRENSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J927
+  term:
+    id: mediadive.medium:J927
+    label: DESULFATIFERULA BERRENSE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=927'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 576 supplemented with 20.0 ml/L 0.1 M sodium octanoate
+    solution (autoclaved under an anaerobic atmosphere, final concentration 5 mM)
+    as the substrate instead of sodium palmitate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.028991Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J927'

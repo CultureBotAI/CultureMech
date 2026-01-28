@@ -1,0 +1,36 @@
+name: HGAM
+original_name: HGAM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Nissui Modified GAM Broth*
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M3040
+  term:
+    id: TOGO:M3040
+    label: HGAM
+notes: 'Source: https://togomedium.org/medium/M3040
+
+  Original source: NBRC - NBRC_M1509-2
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1509'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.223579Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3040'

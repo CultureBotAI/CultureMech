@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1741",
+  "medium_name": "METHYLOCYSTIS MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Solution A",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7H2O",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KNO3",
+      "concentration": 2.7,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

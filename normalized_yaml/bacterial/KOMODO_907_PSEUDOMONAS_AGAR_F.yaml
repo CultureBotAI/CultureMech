@@ -1,0 +1,20 @@
+name: PSEUDOMONAS AGAR F
+original_name: PSEUDOMONAS AGAR F
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 907
+  term:
+    id: komodo.medium:907
+    label: PSEUDOMONAS AGAR F
+notes: 'Source: KOMODO ModelSEED | ID: 907 | DSMZ Medium: 907 (mediadive.medium:907)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 907'

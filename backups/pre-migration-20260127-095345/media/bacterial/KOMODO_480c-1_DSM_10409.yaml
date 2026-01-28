@@ -1,0 +1,21 @@
+name: DSM 10409
+original_name: DSM 10409
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 480c.1 | DSMZ Medium: 480c
+  (mediadive.medium:480c) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 480c.1
+  term:
+    id: komodo.medium:480c.1
+    label: DSM 10409
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 480c.1'

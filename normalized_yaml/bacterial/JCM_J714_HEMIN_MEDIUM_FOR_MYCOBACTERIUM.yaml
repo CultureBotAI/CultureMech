@@ -1,0 +1,29 @@
+name: HEMIN MEDIUM FOR MYCOBACTERIUM
+original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J714
+  term:
+    id: mediadive.medium:J714
+    label: HEMIN MEDIUM FOR MYCOBACTERIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=714'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with
+    60 ï¿½mol/L of hemin. Hemin is solubilized with 1 N NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.377838Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J714'

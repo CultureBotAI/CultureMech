@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_457b",
+  "medium_name": "WITH FLUORANTHENE OR PHENANTHRENE",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 457",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "457"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

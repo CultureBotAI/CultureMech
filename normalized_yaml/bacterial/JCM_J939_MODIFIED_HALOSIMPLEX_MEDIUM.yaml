@@ -1,0 +1,29 @@
+name: MODIFIED HALOSIMPLEX MEDIUM
+original_name: MODIFIED HALOSIMPLEX MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J939
+  term:
+    id: mediadive.medium:J939
+    label: MODIFIED HALOSIMPLEX MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=939'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 298 supplemented with 210.0 g/L (final) NaCl and 10.0
+    g/L (final) MgSO4 x 7H2O.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.069617Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J939'

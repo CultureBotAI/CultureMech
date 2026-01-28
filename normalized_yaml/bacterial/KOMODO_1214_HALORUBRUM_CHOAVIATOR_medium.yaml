@@ -1,0 +1,21 @@
+name: HALORUBRUM CHOAVIATOR medium
+original_name: HALORUBRUM CHOAVIATOR medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 1214
+  term:
+    id: komodo.medium:1214
+    label: HALORUBRUM CHOAVIATOR medium
+notes: 'Source: KOMODO ModelSEED | ID: 1214 | DSMZ Medium: 1214 (mediadive.medium:1214)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1214'

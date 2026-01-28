@@ -1,0 +1,21 @@
+name: HALOPLASMA CONTRACTILE medium
+original_name: HALOPLASMA CONTRACTILE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7.0
+media_term:
+  preferred_term: KOMODO Medium 1231
+  term:
+    id: komodo.medium:1231
+    label: HALOPLASMA CONTRACTILE medium
+notes: 'Source: KOMODO ModelSEED | ID: 1231 | DSMZ Medium: 1231 (mediadive.medium:1231)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1231'

@@ -1,0 +1,20 @@
+name: BUTYRIVIBRIO SP. medium
+original_name: BUTYRIVIBRIO SP. medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 704
+  term:
+    id: komodo.medium:704
+    label: BUTYRIVIBRIO SP. medium
+notes: 'Source: KOMODO ModelSEED | ID: 704 | DSMZ Medium: 704 (mediadive.medium:704)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 704'

@@ -1,0 +1,56 @@
+name: Brain Heart Infusion (BHI) with Sodium Acetate
+original_name: Brain Heart Infusion (BHI) with Sodium Acetate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Bacto Brain Heart Infusion (BD Difco)
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Antifoam solution (only for liquid medium)*
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: Gas'
+- preferred_term: Distilled water
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Antifoam SI (Wako)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Defoaming agent; Properties: Defined component'
+media_term:
+  preferred_term: TOGO Medium M3045
+  term:
+    id: TOGO:M3045
+    label: Brain Heart Infusion (BHI) with Sodium Acetate
+notes: 'Source: https://togomedium.org/medium/M3045
+
+  Original source: NBRC - NBRC_M1574-2
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1574'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.231416Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3045'

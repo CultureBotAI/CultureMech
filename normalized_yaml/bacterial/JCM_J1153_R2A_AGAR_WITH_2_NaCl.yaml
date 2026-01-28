@@ -1,0 +1,33 @@
+name: R2A AGAR WITH 2% NaCl
+original_name: R2A AGAR WITH 2% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1153
+  term:
+    id: mediadive.medium:J1153
+    label: R2A AGAR WITH 2% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1153'
+ingredients:
+- preferred_term: R2A agar
+  term:
+    id: CHEBI:2509
+    label: R2A agar
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.827500Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1153'

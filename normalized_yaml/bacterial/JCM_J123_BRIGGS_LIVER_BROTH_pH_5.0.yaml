@@ -1,0 +1,79 @@
+name: BRIGGS LIVER BROTH (pH 5.0)
+original_name: BRIGGS LIVER BROTH (pH 5.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J123
+  term:
+    id: mediadive.medium:J123
+    label: BRIGGS LIVER BROTH (pH 5.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=123'
+ingredients:
+- preferred_term: Tomato juice
+  concentration:
+    value: '400'
+    unit: G_PER_L
+- preferred_term: Neopeptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Liver extract
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.0.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Dilute Tomato juice (Del Monte) with an equal volume of distilled water,
+    adjust pH to 7.0 with 10% NaOH and filter with filter paper.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.767281Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J123'

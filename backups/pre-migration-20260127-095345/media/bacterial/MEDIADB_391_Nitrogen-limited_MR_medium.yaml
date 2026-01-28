@@ -1,0 +1,102 @@
+name: Nitrogen-limited MR medium
+original_name: Nitrogen-limited MR medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '49.01'
+    unit: MILLIMOLAR
+- preferred_term: D-Fructose
+  term:
+    id: CHEBI:15824
+    label: D-Fructose
+  concentration:
+    value: '111.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fru'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.09011'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.03825'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '4.587'
+    unit: MILLIMOLAR
+- preferred_term: Citrate
+  concentration:
+    value: '4.164'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.1798'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.01121'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.02002'
+    unit: MILLIMOLAR
+- preferred_term: Sodium borate
+  concentration:
+    value: '0.0002622'
+    unit: MILLIMOLAR
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: '0.0004045'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '33.34'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '33.65'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.165622Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 391, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 391
+  term:
+    id: MEDIADB:391
+    label: Nitrogen-limited MR medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

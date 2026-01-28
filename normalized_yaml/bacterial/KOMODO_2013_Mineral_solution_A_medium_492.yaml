@@ -1,0 +1,20 @@
+name: Mineral solution A (medium 492)
+original_name: Mineral solution A (medium 492)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2013
+  term:
+    id: komodo.medium:2013
+    label: Mineral solution A (medium 492)
+notes: 'Source: KOMODO ModelSEED | ID: 2013 | DSMZ Medium: 2013 (mediadive.medium:2013)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2013'

@@ -1,0 +1,21 @@
+name: AMO.1 medium_replace_N-Methylhydantoin_with_creatinine
+original_name: AMO.1 medium_replace_N-Methylhydantoin_with_creatinine
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.3
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 683_replace_N-Methylhydantoin_with_creatinine
+  | DSMZ Medium: 683 (mediadive.medium:683) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 683_replace_N-Methylhydantoin_with_creatinine
+  term:
+    id: komodo.medium:683_replace_N-Methylhydantoin_with_creatinine
+    label: AMO.1 medium_replace_N-Methylhydantoin_with_creatinine
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 683_replace_N-Methylhydantoin_with_creatinine'

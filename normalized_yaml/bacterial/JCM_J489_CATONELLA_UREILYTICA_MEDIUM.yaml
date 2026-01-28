@@ -1,0 +1,72 @@
+name: CATONELLA UREILYTICA MEDIUM
+original_name: CATONELLA UREILYTICA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J489
+  term:
+    id: mediadive.medium:J489
+    label: CATONELLA UREILYTICA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=489'
+ingredients:
+- preferred_term: Casitone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components except urea and sodium thioglycolate, bring to a boil
+    for a few seconds and cool to room temperature under a N2-CO2 (4:1, v/v) gas mixture.
+    Add sodium thioglycolate, dispense the medium into culture vessels under the same
+    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
+    10% urea solution (filter-sterilized and stored under a N2 gas atmosphere) to
+    the medium and adjust pH to 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.734673Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J489'

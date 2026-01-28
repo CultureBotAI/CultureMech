@@ -1,0 +1,21 @@
+name: THIOBACILLUS THIOOXIDANS MEDIUM
+original_name: THIOBACILLUS THIOOXIDANS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 4.2
+media_term:
+  preferred_term: KOMODO Medium 35
+  term:
+    id: komodo.medium:35
+    label: THIOBACILLUS THIOOXIDANS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 35 | DSMZ Medium: 35 (mediadive.medium:35)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 35'

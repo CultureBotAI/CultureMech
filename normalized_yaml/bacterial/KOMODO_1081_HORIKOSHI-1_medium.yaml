@@ -1,0 +1,21 @@
+name: HORIKOSHI-1 medium
+original_name: HORIKOSHI-1 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: KOMODO Medium 1081
+  term:
+    id: komodo.medium:1081
+    label: HORIKOSHI-1 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1081 | DSMZ Medium: 1081 (mediadive.medium:1081)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1081'

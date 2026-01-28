@@ -1,0 +1,100 @@
+name: Thiocapsa Medium
+original_name: Thiocapsa Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ferric citrate (0.1%, w/v)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Vitamin B12 (2 mg/ml)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Solution'
+- preferred_term: NaHCO3 (10%, w/v)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.64'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Na2S・9H2O(final conc.)
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
+- preferred_term: Na2S2O3・5H2O(final conc.)
+  concentration:
+    value: '6'
+    unit: MILLIMOLAR
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Micronutrient solution SL7 (see Medium [M535])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M662
+  term:
+    id: TOGO:M662
+    label: Thiocapsa Medium
+notes: 'Source: https://togomedium.org/medium/M662
+
+  Original source: JCM - JCM_M647
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=647'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.491803Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M662'

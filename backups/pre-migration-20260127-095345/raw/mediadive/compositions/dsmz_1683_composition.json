@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1683",
+  "medium_name": "30% Salt water solution (see below)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Sodium pyruvate",
+      "concentration": 829.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

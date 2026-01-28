@@ -1,0 +1,198 @@
+{
+  "medium_id": "dsmz_1386",
+  "medium_name": "SAF",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "HEPES",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 1:"
+    },
+    {
+      "name": "Mineral Salts Solution 1 (see above)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "KCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "MgCL2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "Na2SO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "Trace Element Solution (see below)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Mineral Salts Solution 2:"
+    },
+    {
+      "name": "HCl",
+      "concentration": 25.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "FeSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace Element Solution:"
+    },
+    {
+      "name": "B12",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "D(+)-Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "Nicotinic Acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "Calcium D(+)-Pantthenate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "Pyridoxamine Dihydrochloride",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "Thiamine Dihydrochloride",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin Solution:"
+    },
+    {
+      "name": "Vitamin Solution",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "tubes. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:"
+    },
+    {
+      "name": "MeOH ( 20 mM)",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "tubes. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

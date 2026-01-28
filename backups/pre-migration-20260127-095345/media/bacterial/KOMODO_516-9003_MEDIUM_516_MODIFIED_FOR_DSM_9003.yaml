@@ -1,0 +1,20 @@
+name: MEDIUM 516 MODIFIED FOR DSM 9003
+original_name: MEDIUM 516 MODIFIED FOR DSM 9003
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 516_9003
+  term:
+    id: komodo.medium:516_9003
+    label: MEDIUM 516 MODIFIED FOR DSM 9003
+notes: 'Source: KOMODO ModelSEED | ID: 516_9003 | DSMZ Medium: 516 (mediadive.medium:516)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 516_9003'

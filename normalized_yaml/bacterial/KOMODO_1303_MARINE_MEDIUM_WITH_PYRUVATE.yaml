@@ -1,0 +1,21 @@
+name: MARINE MEDIUM WITH PYRUVATE
+original_name: MARINE MEDIUM WITH PYRUVATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 1303
+  term:
+    id: komodo.medium:1303
+    label: MARINE MEDIUM WITH PYRUVATE
+notes: 'Source: KOMODO ModelSEED | ID: 1303 | DSMZ Medium: 1303 (mediadive.medium:1303)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1303'

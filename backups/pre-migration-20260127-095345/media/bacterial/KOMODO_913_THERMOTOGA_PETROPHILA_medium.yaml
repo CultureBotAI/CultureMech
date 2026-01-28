@@ -1,0 +1,21 @@
+name: THERMOTOGA PETROPHILA medium
+original_name: THERMOTOGA PETROPHILA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 913
+  term:
+    id: komodo.medium:913
+    label: THERMOTOGA PETROPHILA medium
+notes: 'Source: KOMODO ModelSEED | ID: 913 | DSMZ Medium: 913 (mediadive.medium:913)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 913'

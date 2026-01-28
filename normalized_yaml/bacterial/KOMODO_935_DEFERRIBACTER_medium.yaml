@@ -1,0 +1,21 @@
+name: DEFERRIBACTER medium
+original_name: DEFERRIBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 935
+  term:
+    id: komodo.medium:935
+    label: DEFERRIBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 935 | DSMZ Medium: 935 (mediadive.medium:935)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 935'

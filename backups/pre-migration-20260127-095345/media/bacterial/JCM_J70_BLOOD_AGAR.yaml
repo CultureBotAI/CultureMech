@@ -1,0 +1,30 @@
+name: BLOOD AGAR
+original_name: BLOOD AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J70
+  term:
+    id: mediadive.medium:J70
+    label: BLOOD AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=70'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare Blood agar base (BD-Difco) according to the direction, sterilize
+    and cool to about 45C. Aseptically add final 5% sterile defibrinated rabbit blood.
+    Mix and quickly dispense into sterile test tubes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.680102Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J70'

@@ -1,0 +1,21 @@
+name: SYPG medium
+original_name: SYPG medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.4-7.8
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1115 | DSMZ Medium: 1115
+  (mediadive.medium:1115) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 1115
+  term:
+    id: komodo.medium:1115
+    label: SYPG medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1115'

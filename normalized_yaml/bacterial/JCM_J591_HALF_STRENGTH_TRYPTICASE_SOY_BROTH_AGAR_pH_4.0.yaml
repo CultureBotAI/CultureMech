@@ -1,0 +1,39 @@
+name: HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)
+original_name: HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.0
+media_term:
+  preferred_term: JCM Medium J591
+  term:
+    id: mediadive.medium:J591
+    label: HALF STRENGTH TRYPTICASE SOY BROTH AGAR (pH 4.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=591'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 4.0.
+- step_number: 2
+  action: POUR_PLATES
+  description: After autoclaving Solutions A and B separately and cooling to 50C,
+    aseptically mix both solutions and dispense into sterile test tubes or petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.023175Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J591'

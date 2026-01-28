@@ -1,0 +1,21 @@
+name: THERMODESULFOVIBRIO YELLOWSTONII medium
+original_name: THERMODESULFOVIBRIO YELLOWSTONII medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 749
+  term:
+    id: komodo.medium:749
+    label: THERMODESULFOVIBRIO YELLOWSTONII medium
+notes: 'Source: KOMODO ModelSEED | ID: 749 | DSMZ Medium: 749 (mediadive.medium:749)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 749'

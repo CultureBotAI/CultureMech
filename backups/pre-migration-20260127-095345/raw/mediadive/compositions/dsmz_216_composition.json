@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_216",
+  "medium_name": "To medium 215 add 2.0 g yeast extract.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 215",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "215"
+    },
+    {
+      "name": "G Yeast Extract",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

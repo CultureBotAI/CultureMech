@@ -1,0 +1,20 @@
+name: SELENATE REDUCER MEDIUM
+original_name: SELENATE REDUCER MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1049
+  term:
+    id: komodo.medium:1049
+    label: SELENATE REDUCER MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1049 | DSMZ Medium: 1049 (mediadive.medium:1049)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1049'

@@ -1,0 +1,31 @@
+name: CAMINIBACTER MEDIUM
+original_name: CAMINIBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J367
+  term:
+    id: mediadive.medium:J367
+    label: CAMINIBACTER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=367'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use Medium No. 365 supplemented with 0.2 g/L (final) yeast extract
+    and 1.0 g/L NaHCO3, and omitted sodium acetate. Filter-sterilize NaHCO3 as an
+    8% aqueous solution, and add to the medium. Fill the inoculated bottles with H2-CO2
+    (4:1), and pressurize to 100 kPa.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.415055Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J367'

@@ -1,0 +1,30 @@
+name: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
+original_name: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J463
+  term:
+    id: mediadive.medium:J463
+    label: SALTWATER MEDIUM WITH ACETATE AND FERRIC CITRATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=463'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use JCM Medium No. 462 without Na2S x 9H2O, and with 20 mM sodium acetate
+    and 30 mM ferric citrate instead of sodium lactate. Reduce the medium with 0.5
+    g/L L-cysteine x HCl (5% solution, autoclaved and stored under N2).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.679778Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J463'

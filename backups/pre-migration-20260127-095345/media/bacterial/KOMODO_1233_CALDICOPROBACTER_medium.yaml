@@ -1,0 +1,21 @@
+name: CALDICOPROBACTER medium
+original_name: CALDICOPROBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.3-7.5
+media_term:
+  preferred_term: KOMODO Medium 1233
+  term:
+    id: komodo.medium:1233
+    label: CALDICOPROBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 1233 | DSMZ Medium: 1233 (mediadive.medium:1233)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1233'

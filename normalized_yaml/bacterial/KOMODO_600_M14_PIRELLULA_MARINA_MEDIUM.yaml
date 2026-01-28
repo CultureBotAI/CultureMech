@@ -1,0 +1,20 @@
+name: M14 (PIRELLULA MARINA) MEDIUM
+original_name: M14 (PIRELLULA MARINA) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 600
+  term:
+    id: komodo.medium:600
+    label: M14 (PIRELLULA MARINA) MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 600 | DSMZ Medium: 600 (mediadive.medium:600)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 600'

@@ -1,0 +1,23 @@
+name: 3N-BBM+V recipe for customer orders
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C15
+  term:
+    id: CCAP:C15
+    label: 3N-BBM+V recipe for customer orders
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_3N_BBM_V_customerorders.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.499566Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C15'

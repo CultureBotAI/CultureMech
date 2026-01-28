@@ -1,0 +1,21 @@
+name: COLUMBIA AGAR
+original_name: COLUMBIA AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 715
+  term:
+    id: komodo.medium:715
+    label: COLUMBIA AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 715 | DSMZ Medium: 715 (mediadive.medium:715)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 715'

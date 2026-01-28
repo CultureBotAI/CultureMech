@@ -1,0 +1,84 @@
+name: 573C MEDIUM
+original_name: 573C MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.9
+media_term:
+  preferred_term: JCM Medium J1052
+  term:
+    id: mediadive.medium:J1052
+    label: 573C MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052'
+ingredients:
+- preferred_term: Carboxymethyl cellulose
+  term:
+    id: CHEBI:85146
+    label: Carboxymethyl cellulose
+  concentration:
+    value: '2.49252'
+    unit: G_PER_L
+  notes: ' ( sodium salt)'
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.29611'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.368893'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.249252'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '0.897308'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution,
+    CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically add all solutions
+    to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.455517Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1052'

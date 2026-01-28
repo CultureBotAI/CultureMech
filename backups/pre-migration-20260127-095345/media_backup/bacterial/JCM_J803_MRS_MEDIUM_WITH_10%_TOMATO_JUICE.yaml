@@ -1,0 +1,24 @@
+name: MRS MEDIUM WITH 10% TOMATO JUICE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: JCM Medium J803
+  term:
+    id: JCM:J803
+    label: MRS MEDIUM WITH 10% TOMATO JUICE
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=803'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.192420Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J803'

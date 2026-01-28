@@ -1,0 +1,21 @@
+name: GYM STREPTOMYCES medium 10% NACL
+original_name: GYM STREPTOMYCES medium 10% NACL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1159
+  term:
+    id: komodo.medium:1159
+    label: GYM STREPTOMYCES medium 10% NACL
+notes: 'Source: KOMODO ModelSEED | ID: 1159 | DSMZ Medium: 1159 (mediadive.medium:1159)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1159'

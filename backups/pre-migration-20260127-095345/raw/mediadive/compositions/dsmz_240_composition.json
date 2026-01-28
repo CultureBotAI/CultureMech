@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_240",
+  "medium_name": "WITH BLOOD",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 53",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "53"
+    },
+    {
+      "name": "Defibrinated Blood",
+      "concentration": 5.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

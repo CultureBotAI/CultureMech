@@ -1,0 +1,39 @@
+name: 1/2 R2A Agar
+original_name: 1/2 R2A Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: R2A agar (BD-Difco)
+  concentration:
+    value: '9.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M881
+  term:
+    id: TOGO:M881
+    label: 1/2 R2A Agar
+notes: 'Source: https://togomedium.org/medium/M881
+
+  Original source: JCM - JCM_M845
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=845'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.891336Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M881'

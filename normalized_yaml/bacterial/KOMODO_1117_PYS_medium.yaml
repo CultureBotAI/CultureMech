@@ -1,0 +1,21 @@
+name: PYS medium
+original_name: PYS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1117
+  term:
+    id: komodo.medium:1117
+    label: PYS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1117 | DSMZ Medium: 1117 (mediadive.medium:1117)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1117'

@@ -1,0 +1,29 @@
+name: MODIFIED ROSEOSPIRA MEDIUM
+original_name: MODIFIED ROSEOSPIRA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1145
+  term:
+    id: mediadive.medium:J1145
+    label: MODIFIED ROSEOSPIRA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1145'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM
+    (final) Na2S2O3 x 5H2O.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.797135Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1145'

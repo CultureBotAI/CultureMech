@@ -1,0 +1,35 @@
+name: YPG medium
+original_name: YPG medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast extract
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: glycerol
+  concentration:
+    value: '2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: polypeptone
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2840
+  term:
+    id: TOGO:M2840
+    label: YPG medium
+notes: 'Source: https://togomedium.org/medium/M2840'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.345705Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2840'

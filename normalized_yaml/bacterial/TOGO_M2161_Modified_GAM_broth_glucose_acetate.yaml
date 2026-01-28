@@ -1,0 +1,47 @@
+name: Modified GAM broth + glucose & acetate
+original_name: Modified GAM broth + glucose & acetate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Glucose
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Nissui Modified GAM Broth*
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M2161
+  term:
+    id: TOGO:M2161
+    label: Modified GAM broth + glucose & acetate
+notes: 'Source: https://togomedium.org/medium/M2161
+
+  Original source: NBRC - NBRC_M1534
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1534'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.188096Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2161'

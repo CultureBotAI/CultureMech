@@ -1,0 +1,76 @@
+name: FLUID THIOGLYCOLLATE MEDIUM
+original_name: FLUID THIOGLYCOLLATE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J460
+  term:
+    id: mediadive.medium:J460
+    label: FLUID THIOGLYCOLLATE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=460'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: L-Cystine
+  term:
+    id: CHEBI:16283
+    label: L-Cystine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycollate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycollate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.1 with Na2CO3 (10%, w/v), if necessary. Prepare medium
+    under a N2 atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.670815Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J460'

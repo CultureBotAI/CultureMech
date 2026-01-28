@@ -1,0 +1,20 @@
+name: DPM MEDIUM
+original_name: DPM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 737
+  term:
+    id: komodo.medium:737
+    label: DPM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 737'

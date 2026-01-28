@@ -1,0 +1,141 @@
+{
+  "medium_id": "dsmz_1398",
+  "medium_name": "PYGV MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "S I (see below)",
+      "concentration": 75.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "S II (see below)",
+      "concentration": 75.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Trypticase",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "L-cysteine HCl",
+      "concentration": 0.3,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "100x Vitamin solution (see below)",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 6.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "SII",
+      "concentration": 1000.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 6.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "(NH4)2SO4",
+      "concentration": 12.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 12.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 1.2,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 1.2,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "100x Vitamin solution",
+      "concentration": 1000.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Cobalamine",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Pyridoxine",
+      "concentration": 0.3,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

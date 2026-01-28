@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_421",
+  "medium_name": "Supplement medium 28 with NaCl (10%), MgCl2 x 6 H2O (0.3%) Na-acetate (0.05%)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 28",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "28"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

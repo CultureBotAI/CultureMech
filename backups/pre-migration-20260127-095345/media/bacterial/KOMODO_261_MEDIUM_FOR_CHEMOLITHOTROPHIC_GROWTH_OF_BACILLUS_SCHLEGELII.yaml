@@ -1,0 +1,20 @@
+name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+original_name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 261
+  term:
+    id: komodo.medium:261
+    label: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+notes: 'Source: KOMODO ModelSEED | ID: 261 | DSMZ Medium: 261 (mediadive.medium:261)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 261'

@@ -1,0 +1,38 @@
+name: Brain heart infusion (Difco) medium supplemented with DL-threonine and glucose
+original_name: Brain heart infusion (Difco) medium supplemented with DL-threonine
+  and glucose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DL-threonine
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Brain heart infusion (Difco) medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2904
+  term:
+    id: TOGO:M2904
+    label: Brain heart infusion (Difco) medium supplemented with DL-threonine and
+      glucose
+notes: 'Source: https://togomedium.org/medium/M2904'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.396350Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2904'

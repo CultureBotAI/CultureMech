@@ -1,0 +1,44 @@
+name: POTATO-CARROT AGAR
+original_name: POTATO-CARROT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J54
+  term:
+    id: mediadive.medium:J54
+    label: POTATO-CARROT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=54'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Carrot
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Boil potatoes and carrots until cooked, filter through cheesecloth,
+    make up volume to 1.0 L and add agar.
+- step_number: 2
+  action: MIX
+  description: pH unadjusted.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.652452Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J54'

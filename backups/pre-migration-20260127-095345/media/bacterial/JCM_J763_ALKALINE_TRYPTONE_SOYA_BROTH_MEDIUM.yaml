@@ -1,0 +1,32 @@
+name: ALKALINE TRYPTONE SOYA BROTH MEDIUM
+original_name: ALKALINE TRYPTONE SOYA BROTH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.8
+media_term:
+  preferred_term: JCM Medium J763
+  term:
+    id: mediadive.medium:J763
+    label: ALKALINE TRYPTONE SOYA BROTH MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=763'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components thoroughly and autoclave. After cooling, adjust pH to
+    8.5 - 9.0 with sterile 20% sodium carbonate solution (autoclaved).
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 20.0 g/L agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.526507Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J763'

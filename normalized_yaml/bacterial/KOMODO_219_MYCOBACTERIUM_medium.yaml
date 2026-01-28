@@ -1,0 +1,21 @@
+name: MYCOBACTERIUM medium
+original_name: MYCOBACTERIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 219
+  term:
+    id: komodo.medium:219
+    label: MYCOBACTERIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 219 | DSMZ Medium: 219 (mediadive.medium:219)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 219'

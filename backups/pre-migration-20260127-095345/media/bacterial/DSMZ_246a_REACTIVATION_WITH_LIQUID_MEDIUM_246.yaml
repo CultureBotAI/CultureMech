@@ -1,0 +1,103 @@
+name: REACTIVATION WITH LIQUID MEDIUM 246
+original_name: REACTIVATION WITH LIQUID MEDIUM 246
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 246a
+  term:
+    id: mediadive.medium:246a
+    label: REACTIVATION WITH LIQUID MEDIUM 246
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium246a.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '28.13'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.77'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve beef extract and peptone by heating in tap water, adjust pH
+    to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
+    for 20 min. Cool to 50°C and add warm (50°C) sterile sea water. Liquid medium
+    without agar should be combined when cooled to room temperature.
+- step_number: 2
+  action: STORE
+  description: Natural sea water is stored in the dark for at least three weeks to
+    "age". If natural sea water is not available use artificial sea water.
+- step_number: 3
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium
+    246. Subsequent subculturing may be carried out in liquid medium or on agar plates.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.587789Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 246a'

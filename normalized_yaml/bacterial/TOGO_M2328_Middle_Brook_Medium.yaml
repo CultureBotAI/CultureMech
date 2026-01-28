@@ -1,0 +1,76 @@
+name: Middle Brook Medium
+original_name: Middle Brook Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Bacto Middlebrook 7H10 agar (Difco 262710)
+  concentration:
+    value: '19'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Bacto Middlebrook OADC enrichment
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Dextrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Albumin fraction V, bovine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Oleic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Catalase (beef)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2328
+  term:
+    id: TOGO:M2328
+    label: Middle Brook Medium
+notes: 'Source: https://togomedium.org/medium/M2328
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.346022Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2328'

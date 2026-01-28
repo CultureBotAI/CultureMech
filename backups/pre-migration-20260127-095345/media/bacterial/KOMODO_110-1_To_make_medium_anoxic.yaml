@@ -1,0 +1,21 @@
+name: To make medium anoxic
+original_name: To make medium anoxic
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 110.1
+  term:
+    id: komodo.medium:110.1
+    label: To make medium anoxic
+notes: 'Source: KOMODO ModelSEED | ID: 110.1 | DSMZ Medium: 110 (mediadive.medium:110)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 110.1'

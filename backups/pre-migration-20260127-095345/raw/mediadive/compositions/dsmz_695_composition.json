@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_695",
+  "medium_name": "FOR ERYTHROBACTER LONGUS",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone (BBL 11910)",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Soytone (Difco)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Proteose peptone no.3 (Difco)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "5% Fe(III) citrate",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

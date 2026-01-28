@@ -1,0 +1,151 @@
+name: MIDDLEBROCK 7H11 AGAR
+original_name: MIDDLEBROCK 7H11 AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.4-6.8
+media_term:
+  preferred_term: DSMZ Medium 911
+  term:
+    id: mediadive.medium:911
+    label: MIDDLEBROCK 7H11 AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium911.pdf'
+ingredients:
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '1.11111'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.0555556'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.0444444'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.00111111'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.000555556'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '0.00111111'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: Oleic acid
+  term:
+    id: CHEBI:16196
+    label: Oleic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Bovine albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '8.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto Middelbrook
+    OADC enrichment Difco (see below) under aseptic conditions and mix thoroughly.
+- step_number: 2
+  action: HEAT
+  description: Final pH at 25°C 6.6 ± 0.2.
+- step_number: 3
+  action: MIX
+  description: 'Bacto Middelbrook OADC enrichment (Difco 212240):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.721777Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 911'

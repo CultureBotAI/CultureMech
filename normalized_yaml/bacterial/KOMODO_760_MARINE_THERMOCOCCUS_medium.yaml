@@ -1,0 +1,21 @@
+name: MARINE THERMOCOCCUS medium
+original_name: MARINE THERMOCOCCUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.0-7.5
+media_term:
+  preferred_term: KOMODO Medium 760
+  term:
+    id: komodo.medium:760
+    label: MARINE THERMOCOCCUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 760 | DSMZ Medium: 760 (mediadive.medium:760)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 760'

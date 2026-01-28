@@ -1,0 +1,20 @@
+name: For DSM 2805
+original_name: For DSM 2805
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 307.1
+  term:
+    id: komodo.medium:307.1
+    label: For DSM 2805
+notes: 'Source: KOMODO ModelSEED | ID: 307.1 | DSMZ Medium: 307 (mediadive.medium:307)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 307.1'

@@ -1,0 +1,21 @@
+name: Trace metals solution (Pfennig & Lippert, 1966)
+original_name: Trace metals solution (Pfennig & Lippert, 1966)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 3-4
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2072 | DSMZ Medium: 2072 (mediadive.medium:2072)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2072
+  term:
+    id: komodo.medium:2072
+    label: Trace metals solution (Pfennig & Lippert, 1966)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2072'

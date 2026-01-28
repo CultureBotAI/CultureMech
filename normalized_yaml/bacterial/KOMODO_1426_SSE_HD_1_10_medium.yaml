@@ -1,0 +1,21 @@
+name: SSE/HD 1:10 medium
+original_name: SSE/HD 1:10 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: KOMODO Medium 1426
+  term:
+    id: komodo.medium:1426
+    label: SSE/HD 1:10 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1426 | DSMZ Medium: 1426 (mediadive.medium:1426)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1426'

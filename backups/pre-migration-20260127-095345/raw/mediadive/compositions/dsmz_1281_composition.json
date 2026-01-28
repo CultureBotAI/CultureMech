@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1281",
+  "medium_name": "Salt Solution I",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Salt Solution I",
+      "concentration": 75.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

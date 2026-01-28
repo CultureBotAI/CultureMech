@@ -1,0 +1,21 @@
+name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 605a
+  term:
+    id: komodo.medium:605a
+    label: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+notes: 'Source: KOMODO ModelSEED | ID: 605a | DSMZ Medium: 605a (mediadive.medium:605a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 605a'

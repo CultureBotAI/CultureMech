@@ -1,0 +1,21 @@
+name: MEDIUM 163 MODIFIED FOR DSM 10520
+original_name: MEDIUM 163 MODIFIED FOR DSM 10520
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 163_10520 |
+  DSMZ Medium: 163 (mediadive.medium:163) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 163_10520
+  term:
+    id: komodo.medium:163_10520
+    label: MEDIUM 163 MODIFIED FOR DSM 10520
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 163_10520'

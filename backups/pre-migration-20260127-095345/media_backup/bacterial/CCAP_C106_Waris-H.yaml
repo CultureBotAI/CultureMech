@@ -1,0 +1,26 @@
+name: Waris-H
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: CCAP Medium C106
+  term:
+    id: CCAP:C106
+    label: Waris-H
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_Waris_H.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.2216/i0031-8884-25-4-551.1
+curation_history:
+- timestamp: '2026-01-24T08:12:50.549294Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C106'

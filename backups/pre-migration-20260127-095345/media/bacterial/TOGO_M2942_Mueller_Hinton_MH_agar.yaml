@@ -1,0 +1,30 @@
+name: Mueller Hinton (MH) agar
+original_name: Mueller Hinton (MH) agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Mueller Hinton (MH) agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: Oxygen gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2942
+  term:
+    id: TOGO:M2942
+    label: Mueller Hinton (MH) agar
+notes: 'Source: https://togomedium.org/medium/M2942'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.416866Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2942'

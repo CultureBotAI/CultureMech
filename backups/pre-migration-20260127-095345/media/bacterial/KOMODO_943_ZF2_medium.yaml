@@ -1,0 +1,21 @@
+name: ZF2 medium
+original_name: ZF2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 943
+  term:
+    id: komodo.medium:943
+    label: ZF2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 943 | DSMZ Medium: 943 (mediadive.medium:943)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 943'

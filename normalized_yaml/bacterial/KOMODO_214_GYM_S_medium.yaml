@@ -1,0 +1,20 @@
+name: GYM+S medium
+original_name: GYM+S medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 214
+  term:
+    id: komodo.medium:214
+    label: GYM+S medium
+notes: 'Source: KOMODO ModelSEED | ID: 214 | DSMZ Medium: 214 (mediadive.medium:214)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 214'

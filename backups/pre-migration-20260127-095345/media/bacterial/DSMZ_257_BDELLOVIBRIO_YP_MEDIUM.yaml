@@ -1,0 +1,48 @@
+name: BDELLOVIBRIO (YP) MEDIUM
+original_name: BDELLOVIBRIO (YP) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 257
+  term:
+    id: mediadive.medium:257
+    label: BDELLOVIBRIO (YP) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium257.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Preparation of double layered agar plates:<p>\r\n<b>Bottom layer:</b>\
+    \ Dissolve 12.0 g Bacto agar in 900 ml distilled water and autoclave. After cooling\
+    \ to 60°C add 100 ml of sterile YP medium (autoclaved at 121°C for 15 min) and\
+    \ pour plates. Dry plates at room temperature for 2 - 3 days .<p>\r\n<b>Top layer:</b>\
+    \ Grow prey bacterium on agar slants using medium 54. Prepare 5 ml aliquots of\
+    \ 0.6% Bacto agar in distilled water and autoclave in test tubes. After cooling\
+    \ to 45°C in a water bath add 0.5 ml sterile YP medium (autoclaved at 121°C for\
+    \ 15 min) and 0.5 ml cell suspension of host organism, mix and pour top layer.\
+    \ For the top layer of one plate use one 24 h old agar slant culture and wash\
+    \ off grown cells in 0.5 ml sterile water.<p>"
+- step_number: 2
+  action: MIX
+  description: Inoculate double layer plates the same day when prepared.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.604193Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 257'

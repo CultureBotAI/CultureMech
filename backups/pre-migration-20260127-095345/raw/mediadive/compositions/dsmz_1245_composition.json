@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1245",
+  "medium_name": "OTEB-medium is available from Anaerobe Systems (www.anaerobesystems.com)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final volume",
+      "concentration": 7.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

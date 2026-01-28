@@ -1,0 +1,27 @@
+{
+  "medium_id": "medium_5",
+  "medium_name": "DSMZ medium_5",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "peptone",
+      "concentration": "5.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "beef extract",
+      "concentration": "3.0",
+      "unit": "g/L",
+      "role": "nitrogen/vitamin source"
+    },
+    {
+      "name": "sodium chloride",
+      "concentration": "8.0",
+      "unit": "g/L",
+      "role": "osmotic balance",
+      "optional": "false"
+    }
+  ],
+  "preparation_instructions": ""
+}

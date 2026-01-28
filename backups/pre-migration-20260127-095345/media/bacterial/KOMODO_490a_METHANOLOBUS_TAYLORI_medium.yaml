@@ -1,0 +1,21 @@
+name: METHANOLOBUS TAYLORI medium
+original_name: METHANOLOBUS TAYLORI medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: KOMODO Medium 490a
+  term:
+    id: komodo.medium:490a
+    label: METHANOLOBUS TAYLORI medium
+notes: 'Source: KOMODO ModelSEED | ID: 490a | DSMZ Medium: 490a (mediadive.medium:490a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 490a'

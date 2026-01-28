@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_118",
+  "medium_name": "Medium dsmz_118",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1"
+    },
+    {
+      "name": "Mg Dl",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

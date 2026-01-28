@@ -1,0 +1,63 @@
+name: SIMONSIELLA MEDIUM
+original_name: SIMONSIELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 303
+  term:
+    id: mediadive.medium:303
+    label: SIMONSIELLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium303.pdf'
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Phytone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Prepare the medium without horse serum. After autoclaving cool to 50°C,
+    then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing.
+    Cultures die rapidly in stationary growth phase!
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.715304Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 303'

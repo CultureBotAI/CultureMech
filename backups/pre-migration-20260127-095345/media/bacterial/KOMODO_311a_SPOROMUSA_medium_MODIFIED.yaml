@@ -1,0 +1,20 @@
+name: SPOROMUSA medium (MODIFIED)
+original_name: SPOROMUSA medium (MODIFIED)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 311a
+  term:
+    id: komodo.medium:311a
+    label: SPOROMUSA medium (MODIFIED)
+notes: 'Source: KOMODO ModelSEED | ID: 311a | DSMZ Medium: 311a (mediadive.medium:311a)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 311a'

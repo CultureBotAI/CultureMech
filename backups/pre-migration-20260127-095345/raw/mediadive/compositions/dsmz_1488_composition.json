@@ -1,0 +1,226 @@
+{
+  "medium_id": "dsmz_1488",
+  "medium_name": "Solution 1 (10x NMS salts):",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NH4Cl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1 (10x NMS salts):"
+    },
+    {
+      "name": "MgSO4 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1 (10x NMS salts):"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1 (10x NMS salts):"
+    },
+    {
+      "name": "Dissolve the ingredients listed above (in that order) in about 700 ml of 2% NaCl, and",
+      "concentration": 700.0,
+      "unit": "ml",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1 (10x NMS salts):"
+    },
+    {
+      "name": "then make up to 1 litre with 2% NaCl.",
+      "concentration": 2.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1 (10x NMS salts):"
+    },
+    {
+      "name": "Fe EDTA",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2 (Fe EDTA):"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "Trace elements:",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "EDTA di sodium salt",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "CuSO4 x 5 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "FeSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "ZnSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "May be stored at 4C in the dark",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "Phosphate buffer:",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "Na2HPO4 x 12 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml of solution 3, 1 ml of",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "the trace elements, and 0.1 ml of solution 2. If solid media is required add 1.5% agar.",
+      "concentration": 0.1,
+      "unit": "ml",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    },
+    {
+      "name": "the phosphate buffer is added - if too warm the phosphate will precipitate.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 3 (Sodium molybdate):"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

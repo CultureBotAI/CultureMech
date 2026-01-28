@@ -1,0 +1,20 @@
+name: MEDIUM 9 MODIFIED FOR DSM 53796
+original_name: MEDIUM 9 MODIFIED FOR DSM 53796
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 9_53796
+  term:
+    id: komodo.medium:9_53796
+    label: MEDIUM 9 MODIFIED FOR DSM 53796
+notes: 'Source: KOMODO ModelSEED | ID: 9_53796 | DSMZ Medium: 9 (mediadive.medium:9)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 9_53796'

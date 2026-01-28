@@ -1,0 +1,38 @@
+name: HALF STRENGTH SKIM MILK AGAR
+original_name: HALF STRENGTH SKIM MILK AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J106
+  term:
+    id: mediadive.medium:J106
+    label: HALF STRENGTH SKIM MILK AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
+ingredients:
+- preferred_term: Skim milk
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately, and mix aseptically.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.739729Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J106'

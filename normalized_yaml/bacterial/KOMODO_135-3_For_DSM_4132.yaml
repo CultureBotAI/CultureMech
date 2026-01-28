@@ -1,0 +1,21 @@
+name: For DSM 4132
+original_name: For DSM 4132
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.2
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 135.3 | DSMZ Medium: 135
+  (mediadive.medium:135) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 135.3
+  term:
+    id: komodo.medium:135.3
+    label: For DSM 4132
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 135.3'

@@ -1,0 +1,21 @@
+name: TRIPLE-SUGAR-IRON medium (Difco)
+original_name: TRIPLE-SUGAR-IRON medium (Difco)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 699
+  term:
+    id: komodo.medium:699
+    label: TRIPLE-SUGAR-IRON medium (Difco)
+notes: 'Source: KOMODO ModelSEED | ID: 699 | DSMZ Medium: 699 (mediadive.medium:699)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 699'

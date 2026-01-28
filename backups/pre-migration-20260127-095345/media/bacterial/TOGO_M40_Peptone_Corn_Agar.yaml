@@ -1,0 +1,61 @@
+name: Peptone Corn Agar
+original_name: Peptone Corn Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Corn steep liquor
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Undefined component'
+- preferred_term: Soluble starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Peptone (Oxoid)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M40
+  term:
+    id: TOGO:M40
+    label: Peptone Corn Agar
+notes: 'Source: https://togomedium.org/medium/M40
+
+  Original source: JCM - JCM_M48
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=48'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.987926Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M40'

@@ -1,0 +1,149 @@
+name: CLOSTRIDIUM VIRIDE MEDIUM
+original_name: CLOSTRIDIUM VIRIDE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-7.8
+media_term:
+  preferred_term: DSMZ Medium 526
+  term:
+    id: mediadive.medium:526
+    label: CLOSTRIDIUM VIRIDE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium526.pdf'
+ingredients:
+- preferred_term: 5-Aminovaleric acid
+  term:
+    id: CHEBI:15887
+    label: 5-Aminovaleric acid
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '8.7'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '24'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: VOSO4 x 5 H2O
+  term:
+    id: CHEBI:132758
+    label: VOSO4 x 5 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate and cysteine), adjust pH to
+    7.0 with NaOH and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min. Add and dissolve solid bicarbonate and cysteine, dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
+    autoclaving adjust pH of medium to 7.6 - 7.8 using a sterile anoxic stock solution
+    of Na2CO3 (5% w/v) prepared under 80% N2 and 20% CO2 gas atmosphere.
+- step_number: 2
+  action: DISSOLVE
+  description: Dissolve mineral salts in 700 ml water acidified with 2 ml of conc.
+    HCl. Separately dissolve 5.00 g of NTA in 300 ml water add 10 N NaOH until all
+    the NTA has dissolved and the pH is 7.0. While stirring, slowly add the NTA solution
+    to the salt solution. Stir until the solution is almost clear. Store cool and
+    dark.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.534584Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 526'

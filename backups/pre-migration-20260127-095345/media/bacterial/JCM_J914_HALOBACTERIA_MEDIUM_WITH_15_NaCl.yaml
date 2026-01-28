@@ -1,0 +1,29 @@
+name: HALOBACTERIA MEDIUM WITH 15% NaCl
+original_name: HALOBACTERIA MEDIUM WITH 15% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J914
+  term:
+    id: mediadive.medium:J914
+    label: HALOBACTERIA MEDIUM WITH 15% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=914'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 168 with 150.0 g/L (final) NaCl. Omit agar for preparation
+    of liquid medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.990731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J914'

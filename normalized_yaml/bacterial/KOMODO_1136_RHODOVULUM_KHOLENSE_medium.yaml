@@ -1,0 +1,20 @@
+name: RHODOVULUM KHOLENSE medium
+original_name: RHODOVULUM KHOLENSE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1136
+  term:
+    id: komodo.medium:1136
+    label: RHODOVULUM KHOLENSE medium
+notes: 'Source: KOMODO ModelSEED | ID: 1136 | DSMZ Medium: 1136 (mediadive.medium:1136)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1136'

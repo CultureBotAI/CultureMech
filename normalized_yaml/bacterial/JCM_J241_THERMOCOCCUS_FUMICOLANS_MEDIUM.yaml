@@ -1,0 +1,30 @@
+name: THERMOCOCCUS FUMICOLANS MEDIUM
+original_name: THERMOCOCCUS FUMICOLANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J241
+  term:
+    id: mediadive.medium:J241
+    label: THERMOCOCCUS FUMICOLANS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=241'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 160 with 0.5 g/L (final) yeast extract and 2.0 g/L (final)
+    peptone and adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.061323Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J241'

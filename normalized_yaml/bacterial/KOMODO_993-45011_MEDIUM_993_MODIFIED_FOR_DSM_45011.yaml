@@ -1,0 +1,20 @@
+name: MEDIUM 993 MODIFIED FOR DSM 45011
+original_name: MEDIUM 993 MODIFIED FOR DSM 45011
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 993_45011
+  term:
+    id: komodo.medium:993_45011
+    label: MEDIUM 993 MODIFIED FOR DSM 45011
+notes: 'Source: KOMODO ModelSEED | ID: 993_45011 | DSMZ Medium: 993 (mediadive.medium:993)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 993_45011'

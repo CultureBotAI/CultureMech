@@ -1,0 +1,38 @@
+name: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
+original_name: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J930
+  term:
+    id: mediadive.medium:J930
+    label: LEIBOVITZ'S L-15 MEDIUM WITH 10% FBS AND 1.5% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=930'
+ingredients:
+- preferred_term: Leibovitz's L-15 medium
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13.6364'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Filter-sterilize with 0.22 ï¿½m PES filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.039905Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J930'

@@ -1,0 +1,20 @@
+name: DUNG EXTRACT AGAR
+original_name: DUNG EXTRACT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 781
+  term:
+    id: komodo.medium:781
+    label: DUNG EXTRACT AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 781 | DSMZ Medium: 781 (mediadive.medium:781)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 781'

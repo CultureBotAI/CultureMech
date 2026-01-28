@@ -1,0 +1,29 @@
+name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
+original_name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J690
+  term:
+    id: mediadive.medium:J690
+    label: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=690'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use commercially available product [Anaero Columbia agar with rabbit
+    blood (BD-BBL)].
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.306877Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J690'

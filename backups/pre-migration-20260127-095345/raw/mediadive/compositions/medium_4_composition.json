@@ -1,0 +1,62 @@
+{
+  "medium_id": "medium_4",
+  "medium_name": "DSMZ medium_4",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "peptone",
+      "concentration": "5.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "yeast extract",
+      "concentration": "1.0",
+      "unit": "g/L",
+      "role": "vitamin source"
+    },
+    {
+      "name": "ferric citrate",
+      "concentration": "0.1",
+      "unit": "g/L",
+      "role": "iron source"
+    },
+    {
+      "name": "sodium chloride",
+      "concentration": "19.45",
+      "unit": "g/L",
+      "role": "osmotic balance"
+    },
+    {
+      "name": "magnesium chloride",
+      "concentration": "5.9",
+      "unit": "g/L",
+      "role": "mineral"
+    },
+    {
+      "name": "magnesium sulfate",
+      "concentration": "3.24",
+      "unit": "g/L",
+      "role": "mineral"
+    },
+    {
+      "name": "calcium chloride",
+      "concentration": "1.8",
+      "unit": "g/L",
+      "role": "mineral"
+    },
+    {
+      "name": "potassium chloride",
+      "concentration": "0.55",
+      "unit": "g/L",
+      "role": "mineral"
+    },
+    {
+      "name": "sodium bicarbonate",
+      "concentration": "0.16",
+      "unit": "g/L",
+      "role": "buffer"
+    }
+  ],
+  "preparation_instructions": ""
+}

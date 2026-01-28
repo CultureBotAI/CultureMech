@@ -1,0 +1,38 @@
+name: CAR BACILLUS MEDIUM
+original_name: CAR BACILLUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J996
+  term:
+    id: mediadive.medium:J996
+    label: CAR BACILLUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=996'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Use the Vero E6 cell culture supernatant fluid (see below). Incubate
+    the microorganism in the supernatant fluid in a polystyrene culture flask (75
+    cm2 flask, canted neck, vent cap, coated with Ultra-Low Attachment Surface, Corning:
+    Cat. No. 3814) at 37C under 5% CO2.'
+- step_number: 2
+  action: MIX
+  description: 'Incubate Vero E6 cells (ATCC CRL-1586) in Iscove''s Modified Dulbecco''s
+    Medium (IMDM, GlutaMAXTM) (Life Technologies: Cat. No. 31980030) supplemented
+    with 10% fetal bovine serum (FBS; inactivated at 56C for 30 min) at 37C under
+    5% CO2. After cultivation, centrifuge the culture medium. Use the supernatant
+    fluid for cultivation of the microorganism as described above.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.262022Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J996'

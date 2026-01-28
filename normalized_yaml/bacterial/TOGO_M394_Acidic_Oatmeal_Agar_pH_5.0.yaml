@@ -1,0 +1,27 @@
+name: Acidic Oatmeal Agar (pH 5.0)
+original_name: Acidic Oatmeal Agar (pH 5.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Oatmeal agar (ISP-3) (see Medium [M42])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M394
+  term:
+    id: TOGO:M394
+    label: Acidic Oatmeal Agar (pH 5.0)
+notes: 'Source: https://togomedium.org/medium/M394
+
+  Original source: JCM - JCM_M398
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=398'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.976708Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M394'

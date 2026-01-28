@@ -1,0 +1,50 @@
+name: TSSY MEDIUM
+original_name: TSSY MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J240
+  term:
+    id: mediadive.medium:J240
+    label: TSSY MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=240'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Phytone peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast Nitrogen Base
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.059567Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J240'

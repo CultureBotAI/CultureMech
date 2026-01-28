@@ -1,0 +1,21 @@
+name: ACIDOLOBUS ACETICUS medium
+original_name: ACIDOLOBUS ACETICUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 3.5-3.8
+media_term:
+  preferred_term: KOMODO Medium 901
+  term:
+    id: komodo.medium:901
+    label: ACIDOLOBUS ACETICUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 901 | DSMZ Medium: 901 (mediadive.medium:901)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 901'

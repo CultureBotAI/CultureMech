@@ -1,0 +1,95 @@
+name: ACIDAMINOCOCCUS FERMENTANS MEDIUM
+original_name: ACIDAMINOCOCCUS FERMENTANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 414
+  term:
+    id: mediadive.medium:414
+    label: ACIDAMINOCOCCUS FERMENTANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium414.pdf'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: DL-Tryptophan
+  term:
+    id: CHEBI:27897
+    label: DL-Tryptophan
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.0 - 7.2.
+- step_number: 2
+  action: MIX
+  description: Prepare and distribute medium anaerobically using the Hungate technique
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.083828Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 414'

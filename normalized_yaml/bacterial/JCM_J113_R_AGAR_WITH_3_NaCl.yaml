@@ -1,0 +1,33 @@
+name: R AGAR WITH 3% NaCl
+original_name: R AGAR WITH 3% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J113
+  term:
+    id: mediadive.medium:J113
+    label: R AGAR WITH 3% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=113'
+ingredients:
+- preferred_term: R agar
+  term:
+    id: CHEBI:2509
+    label: R agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.751463Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J113'

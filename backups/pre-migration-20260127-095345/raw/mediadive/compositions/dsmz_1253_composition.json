@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1253",
+  "medium_name": "Medium dsmz_1253",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Man Rogosa Sharp broth (MRS, Difco)",
+      "concentration": 55.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Maltose",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Hemin solution",
+      "concentration": 900.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Cysteine hydrochloride solution (10%)",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

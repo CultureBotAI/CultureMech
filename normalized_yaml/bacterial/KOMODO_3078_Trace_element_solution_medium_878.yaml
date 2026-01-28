@@ -1,0 +1,20 @@
+name: Trace element solution (medium 878)
+original_name: Trace element solution (medium 878)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3078
+  term:
+    id: komodo.medium:3078
+    label: Trace element solution (medium 878)
+notes: 'Source: KOMODO ModelSEED | ID: 3078 | DSMZ Medium: 3078 (mediadive.medium:3078)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3078'

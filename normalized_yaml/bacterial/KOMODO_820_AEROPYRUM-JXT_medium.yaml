@@ -1,0 +1,21 @@
+name: AEROPYRUM-JXT medium
+original_name: AEROPYRUM-JXT medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 820
+  term:
+    id: komodo.medium:820
+    label: AEROPYRUM-JXT medium
+notes: 'Source: KOMODO ModelSEED | ID: 820 | DSMZ Medium: 820 (mediadive.medium:820)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 820'

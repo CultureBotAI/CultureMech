@@ -1,0 +1,28 @@
+name: GAM Broth (Gifu Anaerobic Medium Broth)
+original_name: GAM Broth (Gifu Anaerobic Medium Broth)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1713
+  term:
+    id: mediadive.medium:1713
+    label: GAM Broth (Gifu Anaerobic Medium Broth)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1713.pdf'
+ingredients:
+- preferred_term: GAM Broth powder
+  concentration:
+    value: '59'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Suspend the dehydrated medium in deionized water, and heat do dissolve
+    the medium, sterilize by autoclaving at 115 °C for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.326516Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1713'

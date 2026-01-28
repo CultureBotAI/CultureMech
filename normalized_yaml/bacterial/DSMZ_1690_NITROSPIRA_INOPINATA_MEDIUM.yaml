@@ -1,0 +1,203 @@
+name: NITROSPIRA INOPINATA MEDIUM
+original_name: NITROSPIRA INOPINATA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.6-8
+media_term:
+  preferred_term: DSMZ Medium 1690
+  term:
+    id: mediadive.medium:1690
+    label: NITROSPIRA INOPINATA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1690.pdf'
+ingredients:
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.054'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '11.68'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dilute stock solution with MilliQ water (1+19 v/v), add 4 g CaCO3 per
+    litre.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 120 °C for 21 min.
+- step_number: 3
+  action: COOL
+  description: Cool down to room temperature.
+- step_number: 4
+  action: MIX
+  description: 'After autoclaving add sterile solutions:'
+- step_number: 5
+  action: MIX
+  description: Check pH 7.6-8.0
+- step_number: 6
+  action: HEAT
+  description: Complete medium can be stored at 4°C.
+- step_number: 7
+  action: HEAT
+  description: Incubate at 42°C without shaking. Activity and growth can be followed
+    by measuring the depletion of ammonium or the production of nitrite and/or nitrate.
+    Higher ammonium concentrations are inhibitive. For that reason our recommendation
+    is follow nitrite content. As soon as nitrite has been produced and is depleting
+    again (to form nitrate) another dose of ammonium can be added. Incubation time
+    may be up to several weeks. We checked the nitrite content (absence/presence)
+    every 5-7 days and added ammonium chloride about every 2-3 weeks. Don't expose
+    cultures to intense light.
+- step_number: 8
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+- step_number: 9
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MQ water.
+- step_number: 10
+  action: AUTOCLAVE
+  description: Autoclave at 120 °C for 21 min.
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1038/nature23679
+curation_history:
+- timestamp: '2026-01-26T17:53:15.249480Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1690'

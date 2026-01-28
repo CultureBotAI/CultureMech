@@ -1,0 +1,20 @@
+name: ACETOBACTER EUROPAEUS medium
+original_name: ACETOBACTER EUROPAEUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 631
+  term:
+    id: komodo.medium:631
+    label: ACETOBACTER EUROPAEUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 631'

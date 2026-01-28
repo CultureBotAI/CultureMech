@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_139",
+  "medium_name": "Trypticase soy broth (BD BBL)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypticase soy broth (BD BBL)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,29 @@
+name: MJ-N BASAL MEDIUM
+original_name: MJ-N BASAL MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J374
+  term:
+    id: mediadive.medium:J374
+    label: MJ-N BASAL MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=374'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 356 supplemented with 2.0 g/L NaNO3. Replace the gas
+    phase with a N2-CO2 (80:20) gas mixture and pressurize to 150 kPa.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.440094Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J374'

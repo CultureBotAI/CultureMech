@@ -1,0 +1,23 @@
+name: 3N-BBM+V
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C14
+  term:
+    id: CCAP:C14
+    label: 3N-BBM+V
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_3N_BBM_V.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.499032Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C14'

@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_245",
+  "medium_name": "220 supplemented with 5% defibrinated sheep blood.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 220",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "220"
+    },
+    {
+      "name": "Defibrinated Sheep Blood",
+      "concentration": 5.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

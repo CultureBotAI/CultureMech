@@ -1,0 +1,157 @@
+{
+  "contents": [
+    {
+      "gmo_id": {
+        "label": "GMO_001731",
+        "href": "/component/GMO_001731"
+      },
+      "name": "1,1,2-Trichloroethane; Beta-trichloroethane"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001732",
+        "href": "/component/GMO_001732"
+      },
+      "name": "1,2-Dichloropropane"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001757",
+        "href": "/component/GMO_001757"
+      },
+      "name": "1,2-Dichloropropane methanol solution"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002311",
+        "href": "/component/GMO_002311"
+      },
+      "name": "1,4-Naphthoquinone"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001917",
+        "href": "/component/GMO_001917"
+      },
+      "name": "10xCMD stock solution"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001240",
+        "href": "/component/GMO_001240"
+      },
+      "name": "2,3-Butanediol"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002431",
+        "href": "/component/GMO_002431"
+      },
+      "name": "2,4-Dichlorophenoxyacetic acid; 2,4-D"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002526",
+        "href": "/component/GMO_002526"
+      },
+      "name": "2,4-Dihydroxybenzoic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002432",
+        "href": "/component/GMO_002432"
+      },
+      "name": "2-Chlorobenzoic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002443",
+        "href": "/component/GMO_002443"
+      },
+      "name": "2-Furoic acid; 2-furancarboxylic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001701",
+        "href": "/component/GMO_001701"
+      },
+      "name": "2-Mercaptoethanol"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001495",
+        "href": "/component/GMO_001495"
+      },
+      "name": "2-Methylbutanoic acid; alpha-Methylbutyric acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002436",
+        "href": "/component/GMO_002436"
+      },
+      "name": "2-Nitrophenol"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002546",
+        "href": "/component/GMO_002546"
+      },
+      "name": "2-Sulfobenzoic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002249",
+        "href": "/component/GMO_002249"
+      },
+      "name": "2x Yeast extract tryptone (2xYT) medium"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002461",
+        "href": "/component/GMO_002461"
+      },
+      "name": "3,4,5-Trimethoxycinnamic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002527",
+        "href": "/component/GMO_002527"
+      },
+      "name": "3,5-Dihydroxybenzoic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002545",
+        "href": "/component/GMO_002545"
+      },
+      "name": "3-Aminophenol"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_001945",
+        "href": "/component/GMO_001945"
+      },
+      "name": "3-Chloro-4-hydroxyphenylacetic acid"
+    },
+    {
+      "gmo_id": {
+        "label": "GMO_002433",
+        "href": "/component/GMO_002433"
+      },
+      "name": "3-Chloroacrylic acid; trans-3-Chloroacrylic acid"
+    }
+  ],
+  "total": "1503",
+  "limit": "20",
+  "offset": "0",
+  "columns": [
+    {
+      "key": "gmo_id",
+      "label": "GMO ID"
+    },
+    {
+      "key": "name",
+      "label": "Name"
+    }
+  ]
+}

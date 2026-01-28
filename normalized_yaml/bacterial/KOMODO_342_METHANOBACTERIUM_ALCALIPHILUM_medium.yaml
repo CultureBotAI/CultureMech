@@ -1,0 +1,21 @@
+name: METHANOBACTERIUM ALCALIPHILUM medium
+original_name: METHANOBACTERIUM ALCALIPHILUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 8.3-8.4
+media_term:
+  preferred_term: KOMODO Medium 342
+  term:
+    id: komodo.medium:342
+    label: METHANOBACTERIUM ALCALIPHILUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 342 | DSMZ Medium: 342 (mediadive.medium:342)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 342'

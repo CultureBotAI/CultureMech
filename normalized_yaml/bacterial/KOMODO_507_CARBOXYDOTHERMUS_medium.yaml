@@ -1,0 +1,21 @@
+name: CARBOXYDOTHERMUS medium
+original_name: CARBOXYDOTHERMUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 507
+  term:
+    id: komodo.medium:507
+    label: CARBOXYDOTHERMUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 507 | DSMZ Medium: 507 (mediadive.medium:507)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 507'

@@ -1,0 +1,20 @@
+name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
+original_name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1007.3
+  term:
+    id: komodo.medium:1007.3
+    label: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
+notes: 'Source: KOMODO ModelSEED | ID: 1007.3 | DSMZ Medium: 1007 (mediadive.medium:1007)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1007.3'

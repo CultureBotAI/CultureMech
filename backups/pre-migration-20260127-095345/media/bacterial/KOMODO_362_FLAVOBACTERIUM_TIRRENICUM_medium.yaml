@@ -1,0 +1,21 @@
+name: FLAVOBACTERIUM TIRRENICUM medium
+original_name: FLAVOBACTERIUM TIRRENICUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 362
+  term:
+    id: komodo.medium:362
+    label: FLAVOBACTERIUM TIRRENICUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 362 | DSMZ Medium: 362 (mediadive.medium:362)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 362'

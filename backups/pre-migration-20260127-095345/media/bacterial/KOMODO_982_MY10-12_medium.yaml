@@ -1,0 +1,20 @@
+name: MY10-12 medium
+original_name: MY10-12 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 982
+  term:
+    id: komodo.medium:982
+    label: MY10-12 medium
+notes: 'Source: KOMODO ModelSEED | ID: 982 | DSMZ Medium: 982 (mediadive.medium:982)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 982'

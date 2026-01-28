@@ -1,0 +1,21 @@
+name: GLUCOSE SULFIDE medium
+original_name: GLUCOSE SULFIDE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 851
+  term:
+    id: komodo.medium:851
+    label: GLUCOSE SULFIDE medium
+notes: 'Source: KOMODO ModelSEED | ID: 851 | DSMZ Medium: 851 (mediadive.medium:851)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 851'

@@ -1,0 +1,49 @@
+name: BOSEA MEDIUM
+original_name: BOSEA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 1052
+  term:
+    id: mediadive.medium:1052
+    label: BOSEA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1052.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: ACES
+  term:
+    id: CHEBI:65994
+    label: ACES
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.9 prior to addition of agar.
+- step_number: 2
+  action: MIX
+  description: Same as solutions A and B of medium 585, CYE-ACES agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.215089Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1052'

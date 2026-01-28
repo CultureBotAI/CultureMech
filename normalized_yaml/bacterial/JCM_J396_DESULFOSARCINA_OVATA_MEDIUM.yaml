@@ -1,0 +1,30 @@
+name: DESULFOSARCINA OVATA MEDIUM
+original_name: DESULFOSARCINA OVATA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J396
+  term:
+    id: mediadive.medium:J396
+    label: DESULFOSARCINA OVATA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=396'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 393 supplemented with 6.0 ï¿½g (final) Na2SeO3, 4.0
+    ï¿½g/L Na2WO4 x 2H2O and 0.05 mg/L vitamin B12, and with 0.4 g/L sodium benzoate
+    instead of sodium fumarate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.497704Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J396'

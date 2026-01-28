@@ -1,0 +1,23 @@
+name: wMalt Yeast Extract Medium (wMY)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C109
+  term:
+    id: CCAP:C109
+    label: wMalt Yeast Extract Medium (wMY)
+notes: 'Source: https://www.atcc.org/-/media/product-assets/documents/microbial-media-formulations/2/4/3/2/atcc-medium-2432.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.550978Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C109'

@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_621",
+  "medium_name": "Medium dsmz_621",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral salt sol. (\"Hutner/Cohen-Bazire\")",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Peptone (Bacto)",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (Bacto)",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar (Bacto)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

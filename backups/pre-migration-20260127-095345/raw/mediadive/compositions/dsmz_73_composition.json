@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_73",
+  "medium_name": "FOR HALOPHILIC BACILLI",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Casamino acids",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

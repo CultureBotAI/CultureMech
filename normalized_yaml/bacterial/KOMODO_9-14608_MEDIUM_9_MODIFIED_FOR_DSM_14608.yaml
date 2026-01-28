@@ -1,0 +1,20 @@
+name: MEDIUM 9 MODIFIED FOR DSM 14608
+original_name: MEDIUM 9 MODIFIED FOR DSM 14608
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 9_14608
+  term:
+    id: komodo.medium:9_14608
+    label: MEDIUM 9 MODIFIED FOR DSM 14608
+notes: 'Source: KOMODO ModelSEED | ID: 9_14608 | DSMZ Medium: 9 (mediadive.medium:9)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 9_14608'

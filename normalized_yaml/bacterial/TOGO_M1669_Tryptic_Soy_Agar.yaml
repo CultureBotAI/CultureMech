@@ -1,0 +1,34 @@
+name: Tryptic Soy Agar
+original_name: Tryptic Soy Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Bacto Tryptic Soy Agar (Difco)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1669
+  term:
+    id: TOGO:M1669
+    label: Tryptic Soy Agar
+notes: 'Source: https://togomedium.org/medium/M1669
+
+  Original source: NBRC - NBRC_M872
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=872'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.103144Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1669'

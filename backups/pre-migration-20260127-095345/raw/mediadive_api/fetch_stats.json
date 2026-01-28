@@ -1,0 +1,12 @@
+{
+  "fetch_date": "2026-01-26T21:58:06Z",
+  "source": "MediaDive REST API",
+  "base_url": "https://mediadive.dsmz.de/rest",
+  "total_attempted": 3327,
+  "total_fetched": 3327,
+  "success_rate": 100.0,
+  "total_solutions": 5399,
+  "total_ingredients": 1205,
+  "api_delay": 0.25,
+  "estimated_time_minutes": 13.8625
+}

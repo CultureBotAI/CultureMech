@@ -1,0 +1,21 @@
+name: SINGULISPHAERA medium
+original_name: SINGULISPHAERA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.8
+media_term:
+  preferred_term: KOMODO Medium 1144
+  term:
+    id: komodo.medium:1144
+    label: SINGULISPHAERA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1144 | DSMZ Medium: 1144 (mediadive.medium:1144)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1144'

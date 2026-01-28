@@ -1,0 +1,21 @@
+name: FERVIDOBACTERIUM ISLANDICUM medium
+original_name: FERVIDOBACTERIUM ISLANDICUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 501
+  term:
+    id: komodo.medium:501
+    label: FERVIDOBACTERIUM ISLANDICUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 501 | DSMZ Medium: 501 (mediadive.medium:501)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 501'

@@ -1,0 +1,23 @@
+name: SES:PJ
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C94
+  term:
+    id: CCAP:C94
+    label: SES:PJ
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_SES_PJ.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.542666Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C94'

@@ -1,0 +1,173 @@
+name: FRESHWATER IRON GEL MEDIUM
+original_name: FRESHWATER IRON GEL MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J665
+  term:
+    id: mediadive.medium:J665
+    label: FRESHWATER IRON GEL MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=665'
+ingredients:
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '119.048'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '11.9048'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x H2O
+  concentration:
+    value: '28.5714'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeCl2
+  term:
+    id: CHEBI:30812
+    label: FeCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: DL-Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: DL-Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Add components to distilled water, bring volume to 1.0 L and adjust
+    pH to 7.0. Distribute the medium into culture vessels under a N2-CO2 (4:1, v/v)
+    gas mixture, sparge with the same gas mixture for 10 - 15 min, seal with butyl
+    rubber stoppers and autoclave. Before inoculation, add the following sterile solutions
+    (autoclaved and stored under a N2 gas atmosphere) to the medium (per 10 ml of
+    medium):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve 108 g FeCl3 in 1.0 L distilled water. Adjust pH to 7.0 with
+    10 N NaOH. Allow the suspension to sit for 30 min, then readjust pH to 7.0. Centrifuge
+    the suspension at 5,000 x g for 20 min and pour off supernatant. Wash the precipitate
+    with distilled water by resuspending in distilled water followed by the centrifugation.
+    Repeat the washing at least 5 times, then, resuspend in 1.0 L distilled water.
+    Use the Fe(III) suspension as 0.67 M solution. More precisely, check the concentration
+    of Cl- to be less than 1 mM and determine the concentration of Fe(III) by using
+    hydroxylamine as described by Lovley and Phillips (Appl. Environ. Microbiol. 54,
+    751-757, 1986).
+- step_number: 3
+  action: MIX
+  description: Use Trace minerals of Medium No. 151 supplemented with 0.025 g (final)
+    Na2MoO4 x 2H2O, 0.024 g NiCl2 x 6H2O and 0.025 g Na2WO4 x 2H2O (per liter).
+- step_number: 4
+  action: MIX
+  description: 'Comment: For strain JCM 12378, inoculate with a 10% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.224181Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J665'

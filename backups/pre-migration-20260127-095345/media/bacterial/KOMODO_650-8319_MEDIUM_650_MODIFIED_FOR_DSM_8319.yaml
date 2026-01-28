@@ -1,0 +1,20 @@
+name: MEDIUM 650 MODIFIED FOR DSM 8319
+original_name: MEDIUM 650 MODIFIED FOR DSM 8319
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 650_8319
+  term:
+    id: komodo.medium:650_8319
+    label: MEDIUM 650 MODIFIED FOR DSM 8319
+notes: 'Source: KOMODO ModelSEED | ID: 650_8319 | DSMZ Medium: 650 (mediadive.medium:650)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 650_8319'

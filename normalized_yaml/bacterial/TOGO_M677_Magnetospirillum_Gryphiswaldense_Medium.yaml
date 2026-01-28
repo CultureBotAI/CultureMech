@@ -1,0 +1,68 @@
+name: Magnetospirillum Gryphiswaldense Medium
+original_name: Magnetospirillum Gryphiswaldense Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Ferric citrate
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+media_term:
+  preferred_term: TOGO Medium M677
+  term:
+    id: TOGO:M677
+    label: Magnetospirillum Gryphiswaldense Medium
+notes: 'Source: https://togomedium.org/medium/M677
+
+  Original source: JCM - JCM_M660
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=660'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.512352Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M677'

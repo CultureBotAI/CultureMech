@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1471",
+  "medium_name": "Medium dsmz_1471",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

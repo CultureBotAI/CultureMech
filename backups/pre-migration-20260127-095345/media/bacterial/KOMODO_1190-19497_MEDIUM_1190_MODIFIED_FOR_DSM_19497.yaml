@@ -1,0 +1,21 @@
+name: MEDIUM 1190 MODIFIED FOR DSM 19497
+original_name: MEDIUM 1190 MODIFIED FOR DSM 19497
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.0
+media_term:
+  preferred_term: KOMODO Medium 1190_19497
+  term:
+    id: komodo.medium:1190_19497
+    label: MEDIUM 1190 MODIFIED FOR DSM 19497
+notes: 'Source: KOMODO ModelSEED | ID: 1190_19497 | DSMZ Medium: 1190 (mediadive.medium:1190)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1190_19497'

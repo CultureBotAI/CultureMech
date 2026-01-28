@@ -1,0 +1,51 @@
+{
+  "medium_id": "dsmz_800",
+  "medium_name": "Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it anaerobically",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "5% (w/v) NaHCO3 (flushed with N2 + CO2)",
+      "concentration": 5.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    },
+    {
+      "name": "Fildes Enrichment (BBL 20810) (under N2)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    },
+    {
+      "name": "3% (w/v) cysteine-HCl x H2O (under N2)",
+      "concentration": 3.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    },
+    {
+      "name": "3% (w/v) Na2S x 9 H2O (under N2)",
+      "concentration": 3.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    },
+    {
+      "name": "Columbia sheep blood agar plates (BBL) may be used and incubated under an anaerobic",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    },
+    {
+      "name": "atmosphere containig 5 - 10% CO2.",
+      "concentration": 10.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "per 10 ml the following sterile, anaerobic solutions:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

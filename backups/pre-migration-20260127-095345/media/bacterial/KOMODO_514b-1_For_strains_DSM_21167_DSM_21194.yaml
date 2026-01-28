@@ -1,0 +1,21 @@
+name: For strains DSM 21167, DSM 21194
+original_name: For strains DSM 21167, DSM 21194
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: KOMODO Medium 514b.1
+  term:
+    id: komodo.medium:514b.1
+    label: For strains DSM 21167, DSM 21194
+notes: 'Source: KOMODO ModelSEED | ID: 514b.1 | DSMZ Medium: 514b (mediadive.medium:514b)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514b.1'

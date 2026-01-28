@@ -1,0 +1,20 @@
+name: Co-factors solution (medium 843)
+original_name: Co-factors solution (medium 843)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 6001
+  term:
+    id: komodo.medium:6001
+    label: Co-factors solution (medium 843)
+notes: 'Source: KOMODO ModelSEED | ID: 6001 | DSMZ Medium: 6001 (mediadive.medium:6001)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 6001'

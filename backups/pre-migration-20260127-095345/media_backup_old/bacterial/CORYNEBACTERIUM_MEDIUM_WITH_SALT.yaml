@@ -1,0 +1,24 @@
+name: CORYNEBACTERIUM MEDIUM WITH SALT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 229
+  term:
+    id: DSMZ:229
+    label: CORYNEBACTERIUM MEDIUM WITH SALT
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium229.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.789606Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 229'

@@ -1,0 +1,30 @@
+name: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
+original_name: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J282
+  term:
+    id: mediadive.medium:J282
+    label: COLUMBIA BLOOD AGAR WITH 5% HORSE BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=282'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction,
+    sterilize and cool to about 45C. Aseptically add 5% (final) sterile defibrinated
+    horse blood. Mix and quickly dispense into sterile test tubes or petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.173074Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J282'

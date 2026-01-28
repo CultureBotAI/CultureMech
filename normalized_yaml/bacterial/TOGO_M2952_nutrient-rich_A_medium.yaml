@@ -1,0 +1,110 @@
+name: nutrient-rich A medium
+original_name: nutrient-rich A medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgSO4 · 7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: FeSO4 · 7H2O
+  concentration:
+    value: '6'
+    unit: MG_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: biotin
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnSO4 · H2O
+  concentration:
+    value: '4.2'
+    unit: MG_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: thiamine
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: chloramphenicol (if needed)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: kanamycin (if needed)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: glucose
+  concentration:
+    value: '4'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: gentamicin (if needed)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: casamino acid
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: (NH2)2CO
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+media_term:
+  preferred_term: TOGO Medium M2952
+  term:
+    id: TOGO:M2952
+    label: nutrient-rich A medium
+notes: 'Source: https://togomedium.org/medium/M2952'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.421541Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2952'

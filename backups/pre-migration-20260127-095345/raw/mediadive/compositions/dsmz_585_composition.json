@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_585",
+  "medium_name": "Medium dsmz_585",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "For solubilization of the lyophilized pellet use standard liquid media. Although",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "transfer onto agar plates.",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Alternatively:",
+      "concentration": 490.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

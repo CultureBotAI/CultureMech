@@ -1,0 +1,74 @@
+name: Modified Hayflick Medium
+original_name: Modified Hayflick Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Bacto Agar (Difco, if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Heart Infusion Broth (Difco)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: calf thymus DNA (Sigma, Type I)
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Growth factor'
+- preferred_term: thallium acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+- preferred_term: horse serum (heat inactivated, 56℃ for 30 minutes)
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Penicillin G
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+- preferred_term: fresh yeast extract (25% solution)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: dried baker's yeast
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1485
+  term:
+    id: TOGO:M1485
+    label: Modified Hayflick Medium
+notes: 'Source: https://togomedium.org/medium/M1485
+
+  Original source: NBRC - NBRC_M267
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=267'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.743606Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1485'

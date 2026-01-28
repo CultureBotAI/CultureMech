@@ -1,0 +1,75 @@
+{
+  "medium_id": "dsmz_941",
+  "medium_name": "141 x 10 conc.)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCl (for Arhodomonas)",
+      "concentration": 150.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NaCl (for Marinobacter)",
+      "concentration": 6.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KCl",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.2,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.04,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Na-acetate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Bactopeptone",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Trace element solution (SL7)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Vitamin solution",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

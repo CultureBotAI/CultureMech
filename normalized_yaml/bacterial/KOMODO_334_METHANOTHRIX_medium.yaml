@@ -1,0 +1,21 @@
+name: METHANOTHRIX medium
+original_name: METHANOTHRIX medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 334
+  term:
+    id: komodo.medium:334
+    label: METHANOTHRIX medium
+notes: 'Source: KOMODO ModelSEED | ID: 334 | DSMZ Medium: 334 (mediadive.medium:334)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 334'

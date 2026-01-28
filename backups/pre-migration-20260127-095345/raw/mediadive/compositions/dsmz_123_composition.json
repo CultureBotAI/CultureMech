@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_123",
+  "medium_name": "Medium dsmz_123",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 79",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "79"
+    },
+    {
+      "name": "G Bacto Peptone",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

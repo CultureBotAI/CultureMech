@@ -1,0 +1,52 @@
+name: PITYROSPORUM MEDIUM
+original_name: PITYROSPORUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 472
+  term:
+    id: mediadive.medium:472
+    label: PITYROSPORUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium472.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Ox-bile
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tween 40
+  term:
+    id: CHEBI:53423
+    label: Tween 40
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glycerol mono-oleate
+  term:
+    id: CHEBI:75937
+    label: Glycerol mono-oleate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.283139Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 472'

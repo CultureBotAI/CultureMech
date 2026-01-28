@@ -1,0 +1,21 @@
+name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+original_name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 460
+  term:
+    id: komodo.medium:460
+    label: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+notes: 'Source: KOMODO ModelSEED | ID: 460 | DSMZ Medium: 460 (mediadive.medium:460)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 460'

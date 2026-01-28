@@ -1,0 +1,70 @@
+name: CHI 1776 MEDIUM
+original_name: CHI 1776 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 394
+  term:
+    id: mediadive.medium:394
+    label: CHI 1776 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium394.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '23.3645'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '7.00935'
+    unit: G_PER_L
+- preferred_term: Tris-HCl
+  term:
+    id: CHEBI:1185531
+    label: Tris-HCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '0.47605'
+    unit: G_PER_L
+- preferred_term: Diaminopimelic acid
+  term:
+    id: CHEBI:23674
+    label: Diaminopimelic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thymidine
+  term:
+    id: CHEBI:17748
+    label: Thymidine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Autoclave, cool, and then add:'
+- step_number: 2
+  action: MIX
+  description: Magnesium chloride should be sterilized separately by autoclaving,
+    and the other ingredients should be sterilized separately by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.018174Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 394'

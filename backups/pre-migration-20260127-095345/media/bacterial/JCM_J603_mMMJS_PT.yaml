@@ -1,0 +1,30 @@
+name: mMMJS/PT
+original_name: mMMJS/PT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J603
+  term:
+    id: mediadive.medium:J603
+    label: mMMJS/PT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=603'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 592 supplemented with 2.0 g/L yeast extract, and replace
+    the gas phase of the final medium with a N2-CO2-O2 (77:20:3, by volume) gas mixture
+    at 200 kPa.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.064518Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J603'

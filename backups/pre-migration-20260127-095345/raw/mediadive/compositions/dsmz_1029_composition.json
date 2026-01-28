@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1029",
+  "medium_name": "Medium dsmz_1029",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "BBL Actinomyces broth (see below)",
+      "concentration": 57.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "final pH 6.9",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

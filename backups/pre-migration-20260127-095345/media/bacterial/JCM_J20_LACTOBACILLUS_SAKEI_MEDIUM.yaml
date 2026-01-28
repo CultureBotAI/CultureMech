@@ -1,0 +1,38 @@
+name: LACTOBACILLUS SAKEI MEDIUM
+original_name: LACTOBACILLUS SAKEI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J20
+  term:
+    id: mediadive.medium:J20
+    label: LACTOBACILLUS SAKEI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=20'
+ingredients:
+- preferred_term: Sake
+  concentration:
+    value: '700'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '6.25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.25'
+    unit: G_PER_L
+- preferred_term: Liver extract concentrate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.595020Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J20'

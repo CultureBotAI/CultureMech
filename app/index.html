@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureMech - Microbial Growth Media Browser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .search-bar {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 2rem;
+        }
+
+        .facets {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        .facet {
+            margin-bottom: 1.5rem;
+        }
+
+        .facet h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #667eea;
+            margin-bottom: 0.75rem;
+        }
+
+        .facet-option {
+            display: flex;
+            align-items: center;
+            padding: 0.4rem 0;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .facet-option:hover {
+            color: #667eea;
+        }
+
+        .facet-option input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .facet-count {
+            margin-left: auto;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        .results {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+
+        .results-count {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .result-item {
+            padding: 1.5rem;
+            border-bottom: 1px solid #e2e8f0;
+            transition: background 0.2s;
+        }
+
+        .result-item:hover {
+            background: #f8f9fa;
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .result-title:hover {
+            text-decoration: underline;
+        }
+
+        .result-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+        }
+
+        .result-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            margin-bottom: 0.75rem;
+            font-size: 0.9rem;
+        }
+
+        .result-meta-item {
+            display: flex;
+            align-items: center;
+        }
+
+        .result-meta-label {
+            font-weight: 600;
+            margin-right: 0.5rem;
+            color: #666;
+        }
+
+        .result-description {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 3rem;
+            color: #999;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: #667eea;
+        }
+
+        .clear-filters {
+            padding: 0.5rem 1rem;
+            background: #f8f9fa;
+            border: 1px solid #e2e8f0;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        .clear-filters:hover {
+            background: #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .facets {
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧫 CultureMech</h1>
+        <p>Microbial Growth Media Knowledge Base</p>
+    </div>
+
+    <div class="container">
+        <div class="search-bar">
+            <input
+                type="text"
+                id="searchInput"
+                class="search-input"
+                placeholder="Search media by name, organism, ingredient, or application..."
+            />
+        </div>
+
+        <div class="main-content">
+            <aside class="facets" id="facetsContainer">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                    <h2 style="font-size: 1.1rem;">Filters</h2>
+                    <button class="clear-filters" onclick="clearAllFilters()">Clear All</button>
+                </div>
+                <div id="facetsList"></div>
+            </aside>
+
+            <main class="results">
+                <div class="results-header">
+                    <div class="results-count" id="resultsCount">Loading...</div>
+                </div>
+                <div id="resultsContainer">
+                    <div class="loading">Loading recipes...</div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="schema.js"></script>
+    <script src="data.js"></script>
+    <script>
+        let allRecipes = [];
+        let filteredRecipes = [];
+        let selectedFilters = {};
+        let searchQuery = '';
+
+        // Wait for data to load
+        window.addEventListener('culturemechDataReady', () => {
+            allRecipes = window.culturemechData || [];
+            filteredRecipes = [...allRecipes];
+            initializeFacets();
+            renderResults();
+        });
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase();
+            applyFilters();
+        });
+
+        function initializeFacets() {
+            const facetsContainer = document.getElementById('facetsList');
+            const schema = window.searchSchema;
+
+            schema.facets.forEach(facet => {
+                const facetDiv = document.createElement('div');
+                facetDiv.className = 'facet';
+
+                const facetTitle = document.createElement('h3');
+                facetTitle.textContent = facet.label;
+                facetDiv.appendChild(facetTitle);
+
+                const values = extractFacetValues(facet.field, facet.type);
+                values.forEach(({ value, count }) => {
+                    const option = document.createElement('label');
+                    option.className = 'facet-option';
+
+                    const checkbox = document.createElement('input');
+                    checkbox.type = 'checkbox';
+                    checkbox.dataset.facet = facet.field;
+                    checkbox.dataset.value = value;
+                    checkbox.addEventListener('change', handleFacetChange);
+
+                    const label = document.createElement('span');
+                    label.textContent = value;
+
+                    const countSpan = document.createElement('span');
+                    countSpan.className = 'facet-count';
+                    countSpan.textContent = count;
+
+                    option.appendChild(checkbox);
+                    option.appendChild(label);
+                    option.appendChild(countSpan);
+                    facetDiv.appendChild(option);
+                });
+
+                facetsContainer.appendChild(facetDiv);
+            });
+        }
+
+        function extractFacetValues(field, type) {
+            const valueMap = new Map();
+
+            allRecipes.forEach(recipe => {
+                const value = recipe[field];
+                if (type === 'array' && Array.isArray(value)) {
+                    value.forEach(v => {
+                        if (v) valueMap.set(v, (valueMap.get(v) || 0) + 1);
+                    });
+                } else if (value) {
+                    valueMap.set(value, (valueMap.get(value) || 0) + 1);
+                }
+            });
+
+            return Array.from(valueMap.entries())
+                .map(([value, count]) => ({ value, count }))
+                .sort((a, b) => b.count - a.count);
+        }
+
+        function handleFacetChange(e) {
+            const facet = e.target.dataset.facet;
+            const value = e.target.dataset.value;
+
+            if (!selectedFilters[facet]) {
+                selectedFilters[facet] = [];
+            }
+
+            if (e.target.checked) {
+                selectedFilters[facet].push(value);
+            } else {
+                selectedFilters[facet] = selectedFilters[facet].filter(v => v !== value);
+            }
+
+            applyFilters();
+        }
+
+        function clearAllFilters() {
+            selectedFilters = {};
+            searchQuery = '';
+            document.getElementById('searchInput').value = '';
+            document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+            applyFilters();
+        }
+
+        function applyFilters() {
+            filteredRecipes = allRecipes.filter(recipe => {
+                // Text search
+                if (searchQuery) {
+                    const searchableText = window.searchSchema.searchableFields
+                        .map(field => {
+                            const value = recipe[field];
+                            if (Array.isArray(value)) return value.join(' ');
+                            return String(value || '');
+                        })
+                        .join(' ')
+                        .toLowerCase();
+
+                    if (!searchableText.includes(searchQuery)) {
+                        return false;
+                    }
+                }
+
+                // Facet filters
+                for (const [facet, values] of Object.entries(selectedFilters)) {
+                    if (values.length === 0) continue;
+
+                    const recipeValue = recipe[facet];
+                    if (Array.isArray(recipeValue)) {
+                        if (!recipeValue.some(v => values.includes(v))) {
+                            return false;
+                        }
+                    } else {
+                        if (!values.includes(recipeValue)) {
+                            return false;
+                        }
+                    }
+                }
+
+                return true;
+            });
+
+            renderResults();
+        }
+
+        function renderResults() {
+            const container = document.getElementById('resultsContainer');
+            const countElement = document.getElementById('resultsCount');
+
+            countElement.textContent = `${filteredRecipes.length} recipe${filteredRecipes.length !== 1 ? 's' : ''}`;
+
+            if (filteredRecipes.length === 0) {
+                container.innerHTML = '<div class="no-results">No recipes found matching your criteria.</div>';
+                return;
+            }
+
+            container.innerHTML = '';
+            filteredRecipes.forEach(recipe => {
+                const item = createResultItem(recipe);
+                container.appendChild(item);
+            });
+        }
+
+        function createResultItem(recipe) {
+            const div = document.createElement('div');
+            div.className = 'result-item';
+
+            // Title
+            const title = document.createElement('a');
+            title.href = `../pages/${recipe.html_page}`;
+            title.className = 'result-title';
+            title.textContent = recipe.name;
+            div.appendChild(title);
+
+            // Badges
+            const badges = document.createElement('div');
+            badges.className = 'result-badges';
+
+            const categoryBadge = createBadge(recipe.category, getColor(recipe.category));
+            const typeBadge = createBadge(recipe.medium_type, getColor(recipe.medium_type));
+
+            badges.appendChild(categoryBadge);
+            badges.appendChild(typeBadge);
+            div.appendChild(badges);
+
+            // Meta info
+            const meta = document.createElement('div');
+            meta.className = 'result-meta';
+
+            if (recipe.physical_state) {
+                meta.appendChild(createMetaItem('State', recipe.physical_state));
+            }
+            if (recipe.num_ingredients) {
+                meta.appendChild(createMetaItem('Ingredients', recipe.num_ingredients));
+            }
+            if (recipe.media_database_id) {
+                meta.appendChild(createMetaItem('Database', recipe.media_database_id, true));
+            }
+
+            div.appendChild(meta);
+
+            // Organisms
+            if (recipe.target_organism_names && recipe.target_organism_names.length > 0) {
+                const organisms = document.createElement('div');
+                organisms.style.marginBottom = '0.5rem';
+                const label = document.createElement('strong');
+                label.textContent = 'Organisms: ';
+                organisms.appendChild(label);
+
+                recipe.target_organism_names.slice(0, 3).forEach(org => {
+                    organisms.appendChild(createTag(org));
+                });
+
+                div.appendChild(organisms);
+            }
+
+            // Description
+            if (recipe.description) {
+                const desc = document.createElement('div');
+                desc.className = 'result-description';
+                desc.textContent = truncate(recipe.description, 200);
+                div.appendChild(desc);
+            }
+
+            return div;
+        }
+
+        function createBadge(text, color) {
+            const badge = document.createElement('span');
+            badge.className = 'badge';
+            badge.textContent = text;
+            badge.style.backgroundColor = color;
+            return badge;
+        }
+
+        function createMetaItem(label, value, isLink = false) {
+            const item = document.createElement('div');
+            item.className = 'result-meta-item';
+
+            const labelSpan = document.createElement('span');
+            labelSpan.className = 'result-meta-label';
+            labelSpan.textContent = label + ':';
+            item.appendChild(labelSpan);
+
+            if (isLink && value.includes(':')) {
+                const [prefix] = value.split(':');
+                const resolver = window.searchSchema.linkResolvers[prefix];
+                if (resolver) {
+                    const link = document.createElement('a');
+                    link.href = resolver(value);
+                    link.textContent = value;
+                    link.target = '_blank';
+                    item.appendChild(link);
+                } else {
+                    item.appendChild(document.createTextNode(value));
+                }
+            } else {
+                item.appendChild(document.createTextNode(value));
+            }
+
+            return item;
+        }
+
+        function createTag(text) {
+            const tag = document.createElement('span');
+            tag.className = 'tag';
+            tag.textContent = text;
+            return tag;
+        }
+
+        function getColor(value) {
+            return window.searchSchema.colors[value] || '#6b7280';
+        }
+
+        function truncate(text, length) {
+            if (text.length <= length) return text;
+            return text.substring(0, length) + '...';
+        }
+    </script>
+</body>
+</html>

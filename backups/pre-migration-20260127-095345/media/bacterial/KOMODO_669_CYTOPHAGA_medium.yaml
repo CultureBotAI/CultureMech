@@ -1,0 +1,21 @@
+name: CYTOPHAGA medium
+original_name: CYTOPHAGA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 669
+  term:
+    id: komodo.medium:669
+    label: CYTOPHAGA medium
+notes: 'Source: KOMODO ModelSEED | ID: 669 | DSMZ Medium: 669 (mediadive.medium:669)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 669'

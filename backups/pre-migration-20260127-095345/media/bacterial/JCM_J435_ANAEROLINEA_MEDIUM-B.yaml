@@ -1,0 +1,37 @@
+name: ANAEROLINEA MEDIUM-B
+original_name: ANAEROLINEA MEDIUM-B
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J435
+  term:
+    id: mediadive.medium:J435
+    label: ANAEROLINEA MEDIUM-B
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=435'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Solution A of Medium No. 284 supplemented with final 1.0 ml Trace
+    vitamins solution and 1.0 g yeast extract, and dissolved in 1.0 L distilled water.
+    Dispense the medium into culture vessels (e.g., 20 ml of the medium in 50 ml serum
+    bottle) under a stream of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers.
+    After autoclaving, stand the medium overnight. Prior to inoculation, aseptically
+    and anaerobically add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions
+    to the medium (3% solutions, autoclaved and stored under a N2 atmosphere).
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 12579, incubate with a 2% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.610594Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J435'

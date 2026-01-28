@@ -1,0 +1,55 @@
+name: SOUR DOUGH MEDIUM
+original_name: SOUR DOUGH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 225
+  term:
+    id: mediadive.medium:225
+    label: SOUR DOUGH MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium225.pdf'
+ingredients:
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6 with 20% lactic acid or HCl. Fresh yeast extract is
+    prepared by autoclaving a 20% suspension of commercial baker's yeast in distilled
+    water for 30 minutes at 121°C, allowing the suspension to settle overnight at
+    2 to 8°C, decanting and further clarifying the supernatant by centrifugation.
+    The extract prepared in this manner contains 1.5% solids and if not to be used
+    within a few days, should be frozen or freeze-dried immediately.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.551881Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 225'

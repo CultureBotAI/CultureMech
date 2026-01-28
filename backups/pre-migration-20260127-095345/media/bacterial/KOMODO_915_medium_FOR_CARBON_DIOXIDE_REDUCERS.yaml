@@ -1,0 +1,21 @@
+name: medium FOR CARBON DIOXIDE REDUCERS
+original_name: medium FOR CARBON DIOXIDE REDUCERS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 915
+  term:
+    id: komodo.medium:915
+    label: medium FOR CARBON DIOXIDE REDUCERS
+notes: 'Source: KOMODO ModelSEED | ID: 915 | DSMZ Medium: 915 (mediadive.medium:915)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 915'

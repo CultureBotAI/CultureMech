@@ -1,0 +1,28 @@
+name: PEPTONE BROTH
+original_name: PEPTONE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1471
+  term:
+    id: mediadive.medium:1471
+    label: PEPTONE BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1471.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Put a 3 inch strip of Whatman no. 1 filter paper into each test tube
+    with the above solution to cover approximately 2/3 the length of the paper.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.528638Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1471'

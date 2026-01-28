@@ -1,0 +1,50 @@
+{
+  "medium_id": "medium_2",
+  "medium_name": "DSMZ medium_2",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "glucose",
+      "concentration": "4.0",
+      "unit": "g/L",
+      "role": "carbon source"
+    },
+    {
+      "name": "sodium phosphate dibasic",
+      "concentration": "6.78",
+      "unit": "g/L",
+      "role": "buffer"
+    },
+    {
+      "name": "potassium phosphate monobasic",
+      "concentration": "3.0",
+      "unit": "g/L",
+      "role": "buffer"
+    },
+    {
+      "name": "sodium chloride",
+      "concentration": "0.5",
+      "unit": "g/L",
+      "role": "osmotic balance"
+    },
+    {
+      "name": "ammonium chloride",
+      "concentration": "1.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "magnesium sulfate",
+      "concentration": "0.493",
+      "unit": "g/L",
+      "role": "cofactor"
+    },
+    {
+      "name": "calcium chloride",
+      "concentration": "0.011",
+      "unit": "g/L",
+      "role": "cofactor"
+    }
+  ],
+  "preparation_instructions": ""
+}

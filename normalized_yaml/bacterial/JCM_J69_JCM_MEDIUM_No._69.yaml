@@ -1,0 +1,30 @@
+name: JCM MEDIUM No. 69
+original_name: JCM MEDIUM No. 69
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J69
+  term:
+    id: mediadive.medium:J69
+    label: JCM MEDIUM No. 69
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=69'
+ingredients:
+- preferred_term: GYP-sodium acetate-mineral salts broth
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.678955Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J69'

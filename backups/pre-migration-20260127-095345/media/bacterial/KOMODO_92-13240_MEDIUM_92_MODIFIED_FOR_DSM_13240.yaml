@@ -1,0 +1,20 @@
+name: MEDIUM 92 MODIFIED FOR DSM 13240
+original_name: MEDIUM 92 MODIFIED FOR DSM 13240
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 92_13240
+  term:
+    id: komodo.medium:92_13240
+    label: MEDIUM 92 MODIFIED FOR DSM 13240
+notes: 'Source: KOMODO ModelSEED | ID: 92_13240 | DSMZ Medium: 92 (mediadive.medium:92)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 92_13240'

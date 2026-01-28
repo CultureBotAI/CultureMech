@@ -1,0 +1,20 @@
+name: MEDIUM 453 MODIFIED FOR DSM 43934
+original_name: MEDIUM 453 MODIFIED FOR DSM 43934
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 453_43934
+  term:
+    id: komodo.medium:453_43934
+    label: MEDIUM 453 MODIFIED FOR DSM 43934
+notes: 'Source: KOMODO ModelSEED | ID: 453_43934 | DSMZ Medium: 453 (mediadive.medium:453)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 453_43934'

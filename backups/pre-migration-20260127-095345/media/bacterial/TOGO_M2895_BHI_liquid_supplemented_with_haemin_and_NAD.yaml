@@ -1,0 +1,36 @@
+name: BHI liquid supplemented with haemin and NAD
+original_name: BHI liquid supplemented with haemin and NAD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Haemin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: NAD
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Brain heart infusion (BHI) broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2895
+  term:
+    id: TOGO:M2895
+    label: BHI liquid supplemented with haemin and NAD
+notes: 'Source: https://togomedium.org/medium/M2895'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.388848Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2895'

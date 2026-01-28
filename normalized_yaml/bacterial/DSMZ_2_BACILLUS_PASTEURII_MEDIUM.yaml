@@ -1,0 +1,57 @@
+name: BACILLUS PASTEURII MEDIUM
+original_name: BACILLUS PASTEURII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 2
+  term:
+    id: mediadive.medium:2
+    label: BACILLUS PASTEURII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium2.pdf'
+ingredients:
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH
+    raises to about 8 due to heat degraded urea.
+- step_number: 2
+  action: MIX
+  description: For sporulation enhancement add 10 mg/l MnSO4 x H2O.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 4
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.960353Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 2'

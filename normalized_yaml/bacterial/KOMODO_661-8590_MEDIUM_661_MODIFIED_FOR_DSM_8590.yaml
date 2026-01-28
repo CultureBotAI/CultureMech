@@ -1,0 +1,20 @@
+name: MEDIUM 661 MODIFIED FOR DSM 8590
+original_name: MEDIUM 661 MODIFIED FOR DSM 8590
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 661_8590
+  term:
+    id: komodo.medium:661_8590
+    label: MEDIUM 661 MODIFIED FOR DSM 8590
+notes: 'Source: KOMODO ModelSEED | ID: 661_8590 | DSMZ Medium: 661 (mediadive.medium:661)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 661_8590'

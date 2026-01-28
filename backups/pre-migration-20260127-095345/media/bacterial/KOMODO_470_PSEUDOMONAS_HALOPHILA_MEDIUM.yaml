@@ -1,0 +1,21 @@
+name: PSEUDOMONAS HALOPHILA MEDIUM
+original_name: PSEUDOMONAS HALOPHILA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 470 | DSMZ Medium: 470 (mediadive.medium:470)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 470
+  term:
+    id: komodo.medium:470
+    label: PSEUDOMONAS HALOPHILA MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 470'

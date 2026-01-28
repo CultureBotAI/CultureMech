@@ -1,0 +1,90 @@
+name: GAB MEDIUM FOR STRAIN EGB
+original_name: GAB MEDIUM FOR STRAIN EGB
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.1
+media_term:
+  preferred_term: JCM Medium J1128
+  term:
+    id: mediadive.medium:J1128
+    label: GAB MEDIUM FOR STRAIN EGB
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1128'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Ammonium ferric citrate
+  term:
+    id: CHEBI:31604
+    label: Ammonium ferric citrate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components, dispense the medium into culture vessels (e.g., 10
+    ml in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream, seal with butyl
+    rubber stoppers and autoclave. Aseptically and anaerobically add per liter the
+    following solutions (autoclaved and stored under a N2 atmosphere):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 8.0 - 8.2, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.735178Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1128'

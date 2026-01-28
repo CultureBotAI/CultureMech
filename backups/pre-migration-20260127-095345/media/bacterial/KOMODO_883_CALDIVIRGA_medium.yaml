@@ -1,0 +1,21 @@
+name: CALDIVIRGA medium
+original_name: CALDIVIRGA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 883 | DSMZ Medium: 883 (mediadive.medium:883)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 883
+  term:
+    id: komodo.medium:883
+    label: CALDIVIRGA medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 883'

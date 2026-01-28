@@ -1,0 +1,21 @@
+name: MEDIUM 545 MODIFIED FOR DSM 15825
+original_name: MEDIUM 545 MODIFIED FOR DSM 15825
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: KOMODO Medium 545_15825
+  term:
+    id: komodo.medium:545_15825
+    label: MEDIUM 545 MODIFIED FOR DSM 15825
+notes: 'Source: KOMODO ModelSEED | ID: 545_15825 | DSMZ Medium: 545 (mediadive.medium:545)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 545_15825'

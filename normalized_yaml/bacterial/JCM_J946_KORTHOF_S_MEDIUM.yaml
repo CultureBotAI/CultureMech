@@ -1,0 +1,80 @@
+name: KORTHOF'S MEDIUM
+original_name: KORTHOF'S MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J946
+  term:
+    id: mediadive.medium:J946
+    label: KORTHOF'S MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=946'
+ingredients:
+- preferred_term: Rabbit serum
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15.5556'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '9.77778'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '8.88889'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2.66667'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave distilled water. After autoclaving, allow to cool, aseptically
+    add 10 x Korthof's basal medium and heat-inactivated rabbit serum that has been
+    filter-sterilized ahead of time.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Mix ingredients except CaCl2 and autoclave. Dissolve CaCl2 in 50 ml
+    distilled water and filter-sterilize. After autoclaving, allow to cool, add sterile
+    CaCl2 solution to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.092123Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J946'

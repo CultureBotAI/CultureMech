@@ -1,0 +1,31 @@
+name: THIOGLYCOLLATE MEDIUM
+original_name: THIOGLYCOLLATE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J529
+  term:
+    id: mediadive.medium:J529
+    label: THIOGLYCOLLATE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=529'
+ingredients:
+- preferred_term: Thioglycolate
+  term:
+    id: CHEBI:30066
+    label: Thioglycolate
+  concentration:
+    value: '29.8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Comment: The medium is semisolid. For strain JCM 13596, prepare the
+    medium anaerobically (under N2).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.851048Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J529'

@@ -1,0 +1,21 @@
+name: HETEROTROPHIC NITROBACTER MEDIUM
+original_name: HETEROTROPHIC NITROBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756 | DSMZ Medium: 756 (mediadive.medium:756)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 756
+  term:
+    id: komodo.medium:756
+    label: HETEROTROPHIC NITROBACTER MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 756'

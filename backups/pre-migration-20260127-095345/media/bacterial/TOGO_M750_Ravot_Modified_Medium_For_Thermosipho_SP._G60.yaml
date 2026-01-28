@@ -1,0 +1,34 @@
+name: Ravot Modified Medium For Thermosipho SP. G60
+original_name: Ravot Modified Medium For Thermosipho SP. G60
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium
+    [M748])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M750
+  term:
+    id: TOGO:M750
+    label: Ravot Modified Medium For Thermosipho SP. G60
+notes: 'Source: https://togomedium.org/medium/M750
+
+  Original source: JCM - JCM_M727
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.645166Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M750'

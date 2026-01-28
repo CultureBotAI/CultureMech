@@ -1,0 +1,29 @@
+name: MW
+original_name: MW
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C58
+  term:
+    id: mediadive.medium:C58
+    label: MW
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MW.pdf'
+ingredients:
+- preferred_term: Mineral water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: There are many proprietary brands of bottled mineral water. At present
+    the CCAP uses "Volvic". Dispense into suitable vessels and autoclave at 15 psi
+    for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.676109Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C58'

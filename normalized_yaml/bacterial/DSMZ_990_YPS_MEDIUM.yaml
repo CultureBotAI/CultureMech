@@ -1,0 +1,105 @@
+name: YPS MEDIUM
+original_name: YPS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 990
+  term:
+    id: mediadive.medium:990
+    label: YPS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium990.pdf'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '3.46'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Elemental sulphur
+  term:
+    id: CHEBI:33403
+    label: Elemental sulphur
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '0.0067'
+    unit: G_PER_L
+- preferred_term: Na2WO4
+  term:
+    id: CHEBI:63940
+    label: Na2WO4
+  concentration:
+    value: '0.0029'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare the medium without the yeast extract, peptone and sodium sulphide.
+    Boil the medium and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate
+    tubes or serum bottles under a nitrogen atmosphere. Sterilise the medium at 100°C
+    for 3 hours on 3 consecutive days. Add the peptone and yeast extract from sterile
+    (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised
+    5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should
+    be 6.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.004540Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 990'

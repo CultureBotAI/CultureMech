@@ -1,0 +1,21 @@
+name: Micronutrient solution SL8 (medium 1128)
+original_name: Micronutrient solution SL8 (medium 1128)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 3024
+  term:
+    id: komodo.medium:3024
+    label: Micronutrient solution SL8 (medium 1128)
+notes: 'Source: KOMODO ModelSEED | ID: 3024 | DSMZ Medium: 3024 (mediadive.medium:3024)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3024'

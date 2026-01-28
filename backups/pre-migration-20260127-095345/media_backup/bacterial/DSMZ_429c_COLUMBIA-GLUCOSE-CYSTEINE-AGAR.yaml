@@ -1,0 +1,23 @@
+name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 429c
+  term:
+    id: DSMZ:429c
+    label: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429c.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:48.917828Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 429c'

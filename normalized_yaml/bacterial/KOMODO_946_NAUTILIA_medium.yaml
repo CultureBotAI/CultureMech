@@ -1,0 +1,21 @@
+name: NAUTILIA medium
+original_name: NAUTILIA medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 946
+  term:
+    id: komodo.medium:946
+    label: NAUTILIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 946 | DSMZ Medium: 946 (mediadive.medium:946)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 946'

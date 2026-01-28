@@ -1,0 +1,28 @@
+name: LOWENSTEIN-JENSEN MEDIUM
+original_name: LOWENSTEIN-JENSEN MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J712
+  term:
+    id: mediadive.medium:J712
+    label: LOWENSTEIN-JENSEN MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=712'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use commercially available Lowenstein-Jensen medium slants (BD 220908).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.370652Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J712'

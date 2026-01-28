@@ -1,0 +1,51 @@
+name: Columbia blood agar (Oxoid)
+original_name: Columbia blood agar (Oxoid)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Columbia blood agar (Oxoid)
+  concentration:
+    value: '39'
+    unit: G_PER_L
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Complex component, Defined
+    component'
+- preferred_term: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Special peptone
+  concentration:
+    value: '23'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2224
+  term:
+    id: TOGO:M2224
+    label: Columbia blood agar (Oxoid)
+notes: 'Source: https://togomedium.org/medium/M2224'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.177038Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2224'

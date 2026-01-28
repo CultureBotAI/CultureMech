@@ -1,0 +1,21 @@
+name: DESULFOVIBRIO HALOPHILUS MEDIUM
+original_name: DESULFOVIBRIO HALOPHILUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 496
+  term:
+    id: komodo.medium:496
+    label: DESULFOVIBRIO HALOPHILUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 496 | DSMZ Medium: 496 (mediadive.medium:496)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 496'

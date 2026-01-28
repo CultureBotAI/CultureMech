@@ -1,0 +1,21 @@
+name: TREPONEMA SACCHAROPHILUM medium
+original_name: TREPONEMA SACCHAROPHILUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.7-7.0
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 323
+  term:
+    id: komodo.medium:323
+    label: TREPONEMA SACCHAROPHILUM medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 323'

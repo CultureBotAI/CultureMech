@@ -1,0 +1,20 @@
+name: Vitamin solution according to Wolin and coauthors
+original_name: Vitamin solution according to Wolin and coauthors
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2104
+  term:
+    id: komodo.medium:2104
+    label: Vitamin solution according to Wolin and coauthors
+notes: 'Source: KOMODO ModelSEED | ID: 2104 | DSMZ Medium: 2104 (mediadive.medium:2104)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2104'

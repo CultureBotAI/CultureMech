@@ -1,0 +1,21 @@
+name: MANNING medium
+original_name: MANNING medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 2.5-2.7
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1023 | DSMZ Medium: 1023
+  (mediadive.medium:1023) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 1023
+  term:
+    id: komodo.medium:1023
+    label: MANNING medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1023'

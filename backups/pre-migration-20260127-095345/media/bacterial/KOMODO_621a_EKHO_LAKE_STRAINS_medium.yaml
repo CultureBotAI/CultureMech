@@ -1,0 +1,21 @@
+name: EKHO LAKE STRAINS medium
+original_name: EKHO LAKE STRAINS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 621a
+  term:
+    id: komodo.medium:621a
+    label: EKHO LAKE STRAINS medium
+notes: 'Source: KOMODO ModelSEED | ID: 621a | DSMZ Medium: 621a (mediadive.medium:621a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 621a'

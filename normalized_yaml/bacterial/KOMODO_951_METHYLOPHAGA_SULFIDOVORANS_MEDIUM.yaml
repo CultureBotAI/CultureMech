@@ -1,0 +1,21 @@
+name: METHYLOPHAGA SULFIDOVORANS MEDIUM
+original_name: METHYLOPHAGA SULFIDOVORANS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.8
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 951 | DSMZ Medium: 951 (mediadive.medium:951)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 951
+  term:
+    id: komodo.medium:951
+    label: METHYLOPHAGA SULFIDOVORANS MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 951'

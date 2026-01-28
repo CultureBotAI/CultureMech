@@ -1,0 +1,37 @@
+name: R AGAR WITH CATALASE
+original_name: R AGAR WITH CATALASE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J117
+  term:
+    id: mediadive.medium:J117
+    label: R AGAR WITH CATALASE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=117'
+ingredients:
+- preferred_term: R agar
+  term:
+    id: CHEBI:2509
+    label: R agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Separately sterilize catalase by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.758453Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J117'

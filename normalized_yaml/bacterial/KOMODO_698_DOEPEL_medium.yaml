@@ -1,0 +1,21 @@
+name: DOEPEL medium
+original_name: DOEPEL medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 698
+  term:
+    id: komodo.medium:698
+    label: DOEPEL medium
+notes: 'Source: KOMODO ModelSEED | ID: 698 | DSMZ Medium: 698 (mediadive.medium:698)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 698'

@@ -1,0 +1,37 @@
+name: Methanococcoides Medium
+original_name: Methanococcoides Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: trimethylamine・HCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: METHANOGENIUM MEDIUM (see Medium [M257])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M1039
+  term:
+    id: TOGO:M1039
+    label: Methanococcoides Medium
+notes: 'Source: https://togomedium.org/medium/M1039
+
+  Original source: JCM - JCM_M986
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=986'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.806337Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1039'

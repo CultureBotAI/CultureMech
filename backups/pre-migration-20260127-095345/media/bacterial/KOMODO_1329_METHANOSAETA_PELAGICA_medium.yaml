@@ -1,0 +1,21 @@
+name: METHANOSAETA PELAGICA medium
+original_name: METHANOSAETA PELAGICA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 1329
+  term:
+    id: komodo.medium:1329
+    label: METHANOSAETA PELAGICA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1329 | DSMZ Medium: 1329 (mediadive.medium:1329)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1329'

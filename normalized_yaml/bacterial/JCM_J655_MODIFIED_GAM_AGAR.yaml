@@ -1,0 +1,27 @@
+name: MODIFIED GAM AGAR
+original_name: MODIFIED GAM AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J655
+  term:
+    id: mediadive.medium:J655
+    label: MODIFIED GAM AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=655'
+ingredients:
+- preferred_term: GAM agar
+  term:
+    id: CHEBI:2509
+    label: GAM agar
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+  notes: ' ( modified)'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.200824Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J655'

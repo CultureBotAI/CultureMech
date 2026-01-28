@@ -1,0 +1,24 @@
+name: Malt_Peptone
+category: algae
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
+  for freshwater algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at http://sagdb.uni-goettingen.de/culture_media/16 Malt
+  Peptone Medium.pdf
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: sag-import
+  date: '2026-01-28'
+  action: Imported from SAG Culture Collection
+  notes: 'Source ID: Malt_Peptone, PDF URL: http://sagdb.uni-goettingen.de/culture_media/16
+    Malt Peptone Medium.pdf'
+references:
+- reference_id: SAG:Malt_Peptone
+- reference_id: http://sagdb.uni-goettingen.de/culture_media/16 Malt Peptone Medium.pdf

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1090",
+  "medium_name": "Tryptone (BD Bacto)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone (BD Bacto)",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2S2O3 x 5 H2O",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

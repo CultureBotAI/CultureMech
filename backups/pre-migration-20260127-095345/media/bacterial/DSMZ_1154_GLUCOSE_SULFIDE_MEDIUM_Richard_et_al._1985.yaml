@@ -1,0 +1,165 @@
+name: GLUCOSE SULFIDE MEDIUM (Richard et al., 1985)
+original_name: GLUCOSE SULFIDE MEDIUM (Richard et al., 1985)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 1154
+  term:
+    id: mediadive.medium:1154
+    label: GLUCOSE SULFIDE MEDIUM (Richard et al., 1985)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1154.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2
+  term:
+    id: CHEBI:10124375
+    label: Ca(NO3)2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.187'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: 6e-06
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Co-carboxylase
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  concentration:
+    value: 6e-06
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: 6e-06
+    unit: G_PER_L
+- preferred_term: Inositol
+  term:
+    id: CHEBI:24848
+    label: Inositol
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Niacin
+  term:
+    id: CHEBI:15940
+    label: Niacin
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Riboflavine
+  term:
+    id: CHEBI:17015
+    label: Riboflavine
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: 1e-07
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Adjust to pH 7.3. Sterilize by autoclaving at 121°C for 15 minutes.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: filter-sterilized, added after autoclaving
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.529597Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1154'

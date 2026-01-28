@@ -1,0 +1,21 @@
+name: THIOBACILLUS ACIDOPHILUS MEDIUM
+original_name: THIOBACILLUS ACIDOPHILUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.5
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 108 | DSMZ Medium: 108 (mediadive.medium:108)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 108
+  term:
+    id: komodo.medium:108
+    label: THIOBACILLUS ACIDOPHILUS MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 108'

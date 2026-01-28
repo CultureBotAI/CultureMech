@@ -1,0 +1,20 @@
+name: MEDIUM 736 MODIFIED FOR DSM 22413
+original_name: MEDIUM 736 MODIFIED FOR DSM 22413
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 736_22413
+  term:
+    id: komodo.medium:736_22413
+    label: MEDIUM 736 MODIFIED FOR DSM 22413
+notes: 'Source: KOMODO ModelSEED | ID: 736_22413 | DSMZ Medium: 736 (mediadive.medium:736)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 736_22413'

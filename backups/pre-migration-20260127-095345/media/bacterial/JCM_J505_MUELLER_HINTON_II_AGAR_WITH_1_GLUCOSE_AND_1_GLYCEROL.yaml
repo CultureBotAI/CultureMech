@@ -1,0 +1,40 @@
+name: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
+original_name: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J505
+  term:
+    id: mediadive.medium:J505
+    label: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=505'
+ingredients:
+- preferred_term: Mueller Hinton II agar
+  term:
+    id: CHEBI:2509
+    label: Mueller Hinton II agar
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.782342Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J505'

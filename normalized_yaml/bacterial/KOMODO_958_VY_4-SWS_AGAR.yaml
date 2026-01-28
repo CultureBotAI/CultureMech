@@ -1,0 +1,21 @@
+name: VY/4-SWS AGAR
+original_name: VY/4-SWS AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 958 | DSMZ Medium: 958 (mediadive.medium:958)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 958
+  term:
+    id: komodo.medium:958
+    label: VY/4-SWS AGAR
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 958'

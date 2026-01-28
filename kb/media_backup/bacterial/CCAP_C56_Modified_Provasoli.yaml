@@ -1,0 +1,25 @@
+name: Modified Provasoli
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C56
+  term:
+    id: CCAP:C56
+    label: Modified Provasoli
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_MP_Mod_Provasoli.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1023/A:1017025815001
+curation_history:
+- timestamp: '2026-01-24T08:12:50.522044Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C56'

@@ -1,0 +1,25 @@
+name: mTA10
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: public Medium P6
+  term:
+    id: public:P6
+    label: mTA10
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: 10.1016/j.foodcont.2012.06.029
+curation_history:
+- timestamp: '2026-01-24T08:12:50.554811Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P6'

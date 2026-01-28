@@ -1,0 +1,50 @@
+name: oligotrophic YPG
+original_name: oligotrophic YPG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: D(+)-Glucose
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast Extract(Difco)
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone(Difco)
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M3055
+  term:
+    id: TOGO:M3055
+    label: oligotrophic YPG
+notes: 'Source: https://togomedium.org/medium/M3055
+
+  Original source: NBRC - NBRC_M1611
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1611'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.247030Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3055'

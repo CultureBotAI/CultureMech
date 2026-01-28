@@ -1,0 +1,21 @@
+name: ALLISONELLA medium
+original_name: ALLISONELLA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 1006
+  term:
+    id: komodo.medium:1006
+    label: ALLISONELLA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1006 | DSMZ Medium: 1006 (mediadive.medium:1006)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1006'

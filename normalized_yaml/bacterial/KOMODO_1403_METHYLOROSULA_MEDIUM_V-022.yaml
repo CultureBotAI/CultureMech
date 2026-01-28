@@ -1,0 +1,20 @@
+name: METHYLOROSULA MEDIUM V-022
+original_name: METHYLOROSULA MEDIUM V-022
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1403
+  term:
+    id: komodo.medium:1403
+    label: METHYLOROSULA MEDIUM V-022
+notes: 'Source: KOMODO ModelSEED | ID: 1403 | DSMZ Medium: 1403 (mediadive.medium:1403)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1403'

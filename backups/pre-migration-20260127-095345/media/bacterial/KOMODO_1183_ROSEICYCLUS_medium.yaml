@@ -1,0 +1,21 @@
+name: ROSEICYCLUS medium
+original_name: ROSEICYCLUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 8.0-8.5
+media_term:
+  preferred_term: KOMODO Medium 1183
+  term:
+    id: komodo.medium:1183
+    label: ROSEICYCLUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1183 | DSMZ Medium: 1183 (mediadive.medium:1183)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1183'

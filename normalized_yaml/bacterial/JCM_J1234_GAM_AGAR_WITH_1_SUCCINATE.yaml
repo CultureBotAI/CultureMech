@@ -1,0 +1,42 @@
+name: GAM AGAR WITH 1% SUCCINATE
+original_name: GAM AGAR WITH 1% SUCCINATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1234
+  term:
+    id: mediadive.medium:J1234
+    label: GAM AGAR WITH 1% SUCCINATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1234'
+ingredients:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+- preferred_term: Succinic acid
+  term:
+    id: CHEBI:15741
+    label: Succinic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.117537Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1234'

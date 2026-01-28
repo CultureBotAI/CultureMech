@@ -1,0 +1,47 @@
+name: modified Luria broth
+original_name: modified Luria broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '8.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: N-2-hydroxy- ethylpiperazine-N'-2-ethanesulfonic acid [HEPES; pH
+    7.2])
+  concentration:
+    value: '100'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Defined component, Solution'
+- preferred_term: tryptone [Difco]
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2966
+  term:
+    id: TOGO:M2966
+    label: modified Luria broth
+notes: 'Source: https://togomedium.org/medium/M2966'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.430962Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2966'

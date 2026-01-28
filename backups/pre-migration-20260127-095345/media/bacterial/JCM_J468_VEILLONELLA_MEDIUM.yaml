@@ -1,0 +1,74 @@
+name: VEILLONELLA MEDIUM
+original_name: VEILLONELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J468
+  term:
+    id: mediadive.medium:J468
+    label: VEILLONELLA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=468'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Sodium DL-lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium DL-lactate
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Putrescine
+  term:
+    id: CHEBI:17148
+    label: Putrescine
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5 with solid K2CO3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.687458Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J468'

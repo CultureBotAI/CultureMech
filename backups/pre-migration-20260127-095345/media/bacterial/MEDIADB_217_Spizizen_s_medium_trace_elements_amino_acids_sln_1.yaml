@@ -1,0 +1,219 @@
+name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol + 0.2% KNO3;
+  Nakano et al','N
+original_name: Spizizen's medium + trace elements + amino acids sln + 1% glycerol
+  + 0.2% KNO3; Nakano et al','N
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Glutamate
+  concentration:
+    value: '0.339836'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.666045'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.335098'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '108.589'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+- preferred_term: Glutamine
+  concentration:
+    value: '0.342138'
+    unit: MILLIMOLAR
+- preferred_term: DL-Serine
+  concentration:
+    value: '0.475783'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '0.412677'
+    unit: MILLIMOLAR
+- preferred_term: Histidine
+  term:
+    id: CHEBI:27570
+    label: Histidine
+  concentration:
+    value: '0.322269'
+    unit: MILLIMOLAR
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.244822'
+    unit: MILLIMOLAR
+- preferred_term: Alanine
+  concentration:
+    value: '0.56123'
+    unit: MILLIMOLAR
+- preferred_term: DL-Tyrosine
+  concentration:
+    value: '0.275953'
+    unit: MILLIMOLAR
+- preferred_term: Phenylalanine
+  concentration:
+    value: '0.302682'
+    unit: MILLIMOLAR
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '0.287026'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.049556'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '80.3673'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.00247985'
+    unit: MILLIMOLAR
+- preferred_term: Aspartate
+  concentration:
+    value: '0.375657'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '0.381185'
+    unit: MILLIMOLAR
+- preferred_term: Proline
+  term:
+    id: CHEBI:26271
+    label: Proline
+  concentration:
+    value: '0.434292'
+    unit: MILLIMOLAR
+- preferred_term: Valine
+  concentration:
+    value: '0.426803'
+    unit: MILLIMOLAR
+- preferred_term: Asparagine
+  term:
+    id: CHEBI:22653
+    label: Asparagine
+  concentration:
+    value: '0.378444'
+    unit: MILLIMOLAR
+- preferred_term: Leucine
+  concentration:
+    value: '0.381185'
+    unit: MILLIMOLAR
+- preferred_term: Lysine
+  concentration:
+    value: '0.342021'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '44.0898'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.811458'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.0044828'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.0046211'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '15.1355'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.0025222'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenate
+  concentration:
+    value: '0.00248756'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '3.4002'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.04994'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.012471'
+    unit: MILLIMOLAR
+- preferred_term: Threonine
+  concentration:
+    value: '0.419745'
+    unit: MILLIMOLAR
+- preferred_term: Potassium nitrate
+  concentration:
+    value: '19.7818'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.584383Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 217, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 217
+  term:
+    id: MEDIADB:217
+    label: Spizizen's medium + trace elements + amino acids sln + 1% glycerol + 0.2%
+      KNO3; Nakano et al','N
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

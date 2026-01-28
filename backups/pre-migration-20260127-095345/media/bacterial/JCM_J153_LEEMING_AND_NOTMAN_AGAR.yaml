@@ -1,0 +1,74 @@
+name: LEEMING AND NOTMAN AGAR
+original_name: LEEMING AND NOTMAN AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J153
+  term:
+    id: mediadive.medium:J153
+    label: LEEMING AND NOTMAN AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=153'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.88142'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0988142'
+    unit: G_PER_L
+- preferred_term: Oxgall
+  concentration:
+    value: '7.90514'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol monostearate
+  term:
+    id: CHEBI:75456
+    label: Glycerol monostearate
+  concentration:
+    value: '0.494071'
+    unit: G_PER_L
+- preferred_term: Tween 60
+  term:
+    id: CHEBI:53425
+    label: Tween 60
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Cow's milk
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '11.8577'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 110C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.831938Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J153'

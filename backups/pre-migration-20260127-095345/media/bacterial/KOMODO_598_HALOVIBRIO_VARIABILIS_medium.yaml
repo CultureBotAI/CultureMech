@@ -1,0 +1,21 @@
+name: HALOVIBRIO VARIABILIS medium
+original_name: HALOVIBRIO VARIABILIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 598
+  term:
+    id: komodo.medium:598
+    label: HALOVIBRIO VARIABILIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 598 | DSMZ Medium: 598 (mediadive.medium:598)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 598'

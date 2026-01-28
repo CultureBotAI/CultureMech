@@ -1,0 +1,57 @@
+name: PPLO-GLUCOSE BROTH
+original_name: PPLO-GLUCOSE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: JCM Medium J163
+  term:
+    id: mediadive.medium:J163
+    label: PPLO-GLUCOSE BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=163'
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '20.8955'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.97512'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Baker's yeast
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Penicillin
+  term:
+    id: CHEBI:17334
+    label: Penicillin
+  concentration:
+    value: '1000000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.6.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.853100Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J163'

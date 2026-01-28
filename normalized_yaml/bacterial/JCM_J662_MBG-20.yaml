@@ -1,0 +1,49 @@
+name: MBG-20
+original_name: MBG-20
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J662
+  term:
+    id: mediadive.medium:J662
+    label: MBG-20
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=662'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sea Salt
+  concentration:
+    value: '40'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dissolve Sea salts in distilled water and sterilize by filtration.
+    Separately, autoclave peptone, yeast extract and glucose solutions and add to
+    the sterile Sea salts solution. Make the liquid medium anaerobic by repeated cycles
+    (three times) of degassing and charging with argon.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.219140Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J662'

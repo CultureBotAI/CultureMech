@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_535c",
+  "medium_name": "Medium dsmz_535c",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 535",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "535"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

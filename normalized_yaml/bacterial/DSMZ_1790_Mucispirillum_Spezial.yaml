@@ -1,0 +1,103 @@
+name: Mucispirillum Spezial
+original_name: Mucispirillum Spezial
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1790
+  term:
+    id: mediadive.medium:1790
+    label: Mucispirillum Spezial
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '9.26'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.426'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+- preferred_term: Cysteine HCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: HEAT
+  description: Bring to boil, cool down under N2CO2.
+- step_number: 3
+  action: MIX
+  description: Fill under N2CO2 in hungate tubes (10 ml)
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 5
+  action: MIX
+  description: pressurize with 1 bar H2
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.459104Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1790'

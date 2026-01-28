@@ -1,0 +1,21 @@
+name: Trace element solution (630)
+original_name: Trace element solution (630)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 3061 | DSMZ Medium: 3061 (mediadive.medium:3061)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3061
+  term:
+    id: komodo.medium:3061
+    label: Trace element solution (630)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3061'

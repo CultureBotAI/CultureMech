@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_369",
+  "medium_name": "Adjust medium 261 to pH 4.0.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 261",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "261"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

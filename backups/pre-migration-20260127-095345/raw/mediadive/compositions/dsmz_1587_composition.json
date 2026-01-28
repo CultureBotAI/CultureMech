@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1587",
+  "medium_name": "FOR TETRACOCCUS CECHII",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "ml After autoclaving the mineral base add the glucose at final concentration of",
+      "concentration": 0.5,
+      "unit": "g/L",
+      "extraction_method": "enhanced_prose_parsing"
+    },
+    {
+      "name": "If solid media is required add agar to a final concentration of",
+      "concentration": 15.0,
+      "unit": "g/L",
+      "extraction_method": "enhanced_prose_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

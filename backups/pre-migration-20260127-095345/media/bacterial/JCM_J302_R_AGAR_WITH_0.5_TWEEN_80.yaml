@@ -1,0 +1,37 @@
+name: R AGAR WITH 0.5% TWEEN 80
+original_name: R AGAR WITH 0.5% TWEEN 80
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J302
+  term:
+    id: mediadive.medium:J302
+    label: R AGAR WITH 0.5% TWEEN 80
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=302'
+ingredients:
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.229879Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J302'

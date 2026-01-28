@@ -1,0 +1,53 @@
+name: NUTRIENT-METHANOL AGAR
+original_name: NUTRIENT-METHANOL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J281
+  term:
+    id: mediadive.medium:J281
+    label: NUTRIENT-METHANOL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=281'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.9505'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '19.802'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add methanol aseptically to the autoclaved medium and mix well before
+    dispensation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.171223Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J281'

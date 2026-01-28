@@ -1,0 +1,20 @@
+name: CHLOROFLEXUS AGGREGANS medium
+original_name: CHLOROFLEXUS AGGREGANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 87a
+  term:
+    id: komodo.medium:87a
+    label: CHLOROFLEXUS AGGREGANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 87a | DSMZ Medium: 87a (mediadive.medium:87a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 87a'

@@ -1,0 +1,29 @@
+name: CLOSTRIDIUM R6 MEDIUM
+original_name: CLOSTRIDIUM R6 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J637
+  term:
+    id: mediadive.medium:J637
+    label: CLOSTRIDIUM R6 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=637'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 636 without methanol. Replace the gas phase with a H2-CO2
+    (80:20, v/v) gas mixture.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.154168Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J637'

@@ -1,0 +1,21 @@
+name: HETEROTROPHIC medium H3P
+original_name: HETEROTROPHIC medium H3P
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 428
+  term:
+    id: komodo.medium:428
+    label: HETEROTROPHIC medium H3P
+notes: 'Source: KOMODO ModelSEED | ID: 428 | DSMZ Medium: 428 (mediadive.medium:428)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 428'

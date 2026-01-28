@@ -1,0 +1,20 @@
+name: Mineral salts solution for liquid medium (medium 1396)
+original_name: Mineral salts solution for liquid medium (medium 1396)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3139
+  term:
+    id: komodo.medium:3139
+    label: Mineral salts solution for liquid medium (medium 1396)
+notes: 'Source: KOMODO ModelSEED | ID: 3139 | DSMZ Medium: 3139 (mediadive.medium:3139)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3139'

@@ -1,0 +1,53 @@
+name: AE BROTH
+original_name: AE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J96
+  term:
+    id: mediadive.medium:J96
+    label: AE BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=96'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '15.2284'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.03046'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3.04569'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '65'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients, except acetic acid and ethanol, and autoclave. Aseptically
+    add acetic acid and ethanol to the medium. Unadjusted pH will be about 2.9.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.723860Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J96'

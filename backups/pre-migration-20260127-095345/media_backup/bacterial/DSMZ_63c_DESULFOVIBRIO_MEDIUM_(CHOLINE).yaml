@@ -1,0 +1,24 @@
+name: DESULFOVIBRIO MEDIUM (CHOLINE)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 63c
+  term:
+    id: DSMZ:63c
+    label: DESULFOVIBRIO MEDIUM (CHOLINE)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:48.699876Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 63c'

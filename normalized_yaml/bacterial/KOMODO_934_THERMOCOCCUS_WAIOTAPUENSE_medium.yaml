@@ -1,0 +1,21 @@
+name: THERMOCOCCUS WAIOTAPUENSE medium
+original_name: THERMOCOCCUS WAIOTAPUENSE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 934
+  term:
+    id: komodo.medium:934
+    label: THERMOCOCCUS WAIOTAPUENSE medium
+notes: 'Source: KOMODO ModelSEED | ID: 934 | DSMZ Medium: 934 (mediadive.medium:934)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 934'

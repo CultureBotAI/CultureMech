@@ -1,0 +1,21 @@
+name: HALOCELLA CELLULOLYTICA medium
+original_name: HALOCELLA CELLULOLYTICA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 702
+  term:
+    id: komodo.medium:702
+    label: HALOCELLA CELLULOLYTICA medium
+notes: 'Source: KOMODO ModelSEED | ID: 702 | DSMZ Medium: 702 (mediadive.medium:702)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 702'

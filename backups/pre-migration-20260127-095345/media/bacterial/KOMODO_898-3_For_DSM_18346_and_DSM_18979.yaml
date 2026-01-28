@@ -1,0 +1,21 @@
+name: For DSM 18346 and DSM 18979
+original_name: For DSM 18346 and DSM 18979
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: KOMODO Medium 898.3
+  term:
+    id: komodo.medium:898.3
+    label: For DSM 18346 and DSM 18979
+notes: 'Source: KOMODO ModelSEED | ID: 898.3 | DSMZ Medium: 898 (mediadive.medium:898)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 898.3'

@@ -1,0 +1,20 @@
+name: BHI medium FOR STRICT ANAEROBES
+original_name: BHI medium FOR STRICT ANAEROBES
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 215c
+  term:
+    id: komodo.medium:215c
+    label: BHI medium FOR STRICT ANAEROBES
+notes: 'Source: KOMODO ModelSEED | ID: 215c | DSMZ Medium: 215c (mediadive.medium:215c)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 215c'

@@ -1,0 +1,20 @@
+name: Sugar Stock Solution (medium 1245)
+original_name: Sugar Stock Solution (medium 1245)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 6000
+  term:
+    id: komodo.medium:6000
+    label: Sugar Stock Solution (medium 1245)
+notes: 'Source: KOMODO ModelSEED | ID: 6000 | DSMZ Medium: 6000 (mediadive.medium:6000)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 6000'

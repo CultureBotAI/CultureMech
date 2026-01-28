@@ -1,0 +1,35 @@
+name: M 05
+original_name: M 05
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1447
+  term:
+    id: mediadive.medium:1447
+    label: M 05
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1447.pdf'
+ingredients:
+- preferred_term: Malt extract powder
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 5.5. Dissolve malt extract in water and autoclave 15 min
+    at 121°C; filter until entirely clear. Fill up to 1 L add agar and autoclave again.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.461246Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1447'

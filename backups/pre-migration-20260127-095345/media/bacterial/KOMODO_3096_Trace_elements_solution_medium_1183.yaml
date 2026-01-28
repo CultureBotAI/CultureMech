@@ -1,0 +1,21 @@
+name: Trace elements solution (medium 1183)
+original_name: Trace elements solution (medium 1183)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 3096 | DSMZ Medium: 3096 (mediadive.medium:3096)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 3096
+  term:
+    id: komodo.medium:3096
+    label: Trace elements solution (medium 1183)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3096'

@@ -1,0 +1,94 @@
+name: PY4S AGAR
+original_name: PY4S AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: JCM Medium J363
+  term:
+    id: mediadive.medium:J363
+    label: PY4S AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=363'
+ingredients:
+- preferred_term: Salt Solution I
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: Salt Solution II
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.96016'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.249004'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.298805'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.9402'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.7. Prepare medium anaerobically and pour into rubber
+    stopped tubes under oxygen-free N2-CO2 (95:5).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.400680Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J363'

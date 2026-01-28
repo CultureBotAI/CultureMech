@@ -1,0 +1,21 @@
+name: Solution of growth-stimulating factors (medium 829)
+original_name: Solution of growth-stimulating factors (medium 829)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2027 | DSMZ Medium: 2027
+  (mediadive.medium:2027) | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2027
+  term:
+    id: komodo.medium:2027
+    label: Solution of growth-stimulating factors (medium 829)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2027'

@@ -1,0 +1,55 @@
+name: PYG medium
+original_name: PYG medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Glycine betaine
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2143
+  term:
+    id: TOGO:M2143
+    label: PYG medium
+notes: 'Source: https://togomedium.org/medium/M2143
+
+  Original source: NBRC - NBRC_M1488
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1488'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.162579Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2143'

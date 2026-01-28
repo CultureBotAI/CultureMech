@@ -1,0 +1,20 @@
+name: ASW:BG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_BG.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1128/br.35.2.171-205.1971
+curation_history:
+- timestamp: '2026-01-22T06:18:00.387286Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C10'

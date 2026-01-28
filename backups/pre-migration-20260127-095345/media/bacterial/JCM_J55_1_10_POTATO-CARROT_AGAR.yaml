@@ -1,0 +1,40 @@
+name: 1/10 POTATO-CARROT AGAR
+original_name: 1/10 POTATO-CARROT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J55
+  term:
+    id: mediadive.medium:J55
+    label: 1/10 POTATO-CARROT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=55'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Carrot
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: See the footnote for Medium No. 54.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.654066Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J55'

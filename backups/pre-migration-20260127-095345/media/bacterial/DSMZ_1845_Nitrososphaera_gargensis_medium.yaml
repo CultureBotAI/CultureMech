@@ -1,0 +1,200 @@
+name: Nitrososphaera gargensis medium
+original_name: Nitrososphaera gargensis medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: DSMZ Medium 1845
+  term:
+    id: mediadive.medium:1845
+    label: Nitrososphaera gargensis medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Mg(SO4) x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '11.68'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '3.646'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.144'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.753'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '53.4'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 50 mL of 20x Basal salt stock solution and 4 g CaCO3 to 950 mL
+    sterile double distilled water and mix all just before use.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 3
+  action: COOL
+  description: Cool down to room temperature.
+- step_number: 4
+  action: MIX
+  description: 'Add aseptic per liter of 1x basalt salt solution: 1 mL FeNaEDTA (7.5
+    mM), 1 mL trace elements solution, 1 mL Selenite-tungstate solution, 0.5 mL NH4Cl
+    solution.'
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 8.5 with NaOH.
+- step_number: 6
+  action: MIX
+  description: Prepare with double distilled water.
+- step_number: 7
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 8
+  action: COOL
+  description: Cool down to room temperature.
+- step_number: 9
+  action: HEAT
+  description: Store in the dark at 4 °C.
+- step_number: 10
+  action: HEAT
+  description: This solution contains no iron! Sterilise by autoclaving or filtration
+    (0.2 µm) and store in the dark at 4 °C.
+- step_number: 11
+  action: HEAT
+  description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.
+- step_number: 12
+  action: DISSOLVE
+  description: Dissolve 2.67 g ammonium chloride in 50 mL Double distilled water.
+- step_number: 13
+  action: MIX
+  description: Filtrate (0.2 µm).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1038/ismej.2016.192
+curation_history:
+- timestamp: '2026-01-26T17:53:15.540240Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1845'

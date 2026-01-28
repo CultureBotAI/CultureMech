@@ -1,0 +1,80 @@
+name: BSM+ (9:1 mixture v/v of BSM plus LB)
+original_name: BSM+ (9:1 mixture v/v of BSM plus LB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: LB medium
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Basal salts medium (BSM)
+  concentration:
+    value: '90'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: MgSO4 . 7H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: FeSO4 . 7H2O
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: (NH4)SO4
+  concentration:
+    value: '2.38'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Na2HPO4
+  concentration:
+    value: '1.42'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: CaCl2 . 7H2O
+  concentration:
+    value: '10.69'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M2405
+  term:
+    id: TOGO:M2405
+    label: BSM+ (9:1 mixture v/v of BSM plus LB)
+notes: 'Source: https://togomedium.org/medium/M2405'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.472440Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2405'

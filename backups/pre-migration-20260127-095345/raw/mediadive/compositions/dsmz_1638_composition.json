@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1638",
+  "medium_name": "Medium dsmz_1638",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "MEM",
+      "concentration": 1.0,
+      "unit": "x",
+      "extraction_method": "parenthetical_format_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

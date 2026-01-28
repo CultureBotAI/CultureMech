@@ -1,0 +1,21 @@
+name: MEDIUM 640 MODIFIED FOR DSM 8685
+original_name: MEDIUM 640 MODIFIED FOR DSM 8685
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.4
+media_term:
+  preferred_term: KOMODO Medium 640_8685
+  term:
+    id: komodo.medium:640_8685
+    label: MEDIUM 640 MODIFIED FOR DSM 8685
+notes: 'Source: KOMODO ModelSEED | ID: 640_8685 | DSMZ Medium: 640 (mediadive.medium:640)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 640_8685'

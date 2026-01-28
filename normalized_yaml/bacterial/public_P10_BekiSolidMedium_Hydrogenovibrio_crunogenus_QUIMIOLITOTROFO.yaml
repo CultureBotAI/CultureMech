@@ -1,0 +1,25 @@
+name: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
+original_name: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.4
+media_term:
+  preferred_term: public Medium P10
+  term:
+    id: mediadive.medium:P10
+    label: BekiSolidMedium (Hydrogenovibrio crunogenus QUIMIOLITOTROFO)
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.849767Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P10'

@@ -1,0 +1,33 @@
+name: RABBIT BLOOD AGAR
+original_name: RABBIT BLOOD AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 646
+  term:
+    id: mediadive.medium:646
+    label: RABBIT BLOOD AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium646.pdf'
+ingredients:
+- preferred_term: Blood Agar Base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Prepare Blood Agar Base from Difco 0045 according to directions on
+    the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
+    defibrinated rabbit blood or sheep blood, mix well.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.826417Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 646'

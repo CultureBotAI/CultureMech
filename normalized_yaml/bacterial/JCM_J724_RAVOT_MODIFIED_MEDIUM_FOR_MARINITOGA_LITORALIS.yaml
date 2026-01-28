@@ -1,0 +1,135 @@
+name: RAVOT MODIFIED MEDIUM FOR MARINITOGA LITORALIS
+original_name: RAVOT MODIFIED MEDIUM FOR MARINITOGA LITORALIS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J724
+  term:
+    id: mediadive.medium:J724
+    label: RAVOT MODIFIED MEDIUM FOR MARINITOGA LITORALIS
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=724'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '25.5152'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.490677'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.490677'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.294406'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.0981354'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0981354'
+    unit: G_PER_L
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '0.814524'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.96271'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.96271'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '1.96271'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '3.23847'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4.90677'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000981354'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components except sulfur, adjust pH to 6.0 and autoclave under
+    a N2 atmosphere. After cooling, add per liter the following solutions (autoclaved
+    and stored anaerobically):'
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Steam sulfur for 3 hr on each of 3 successive days. Distribute the
+    medium into culture vessels containing sulfur under a N2 atmosphere, and seal
+    with butyl rubber stoppers. Then, add the following solution (autoclaved and stored
+    under a N2 atmosphere) to the medium:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.408164Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J724'

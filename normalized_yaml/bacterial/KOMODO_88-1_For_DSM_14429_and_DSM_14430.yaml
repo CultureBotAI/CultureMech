@@ -1,0 +1,21 @@
+name: For DSM 14429 and DSM 14430
+original_name: For DSM 14429 and DSM 14430
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 88.1 | DSMZ Medium: 88 (mediadive.medium:88)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 88.1
+  term:
+    id: komodo.medium:88.1
+    label: For DSM 14429 and DSM 14430
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 88.1'

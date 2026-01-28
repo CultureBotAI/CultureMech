@@ -1,0 +1,33 @@
+name: TSA HEMIN MENADIONE MEDIUM
+original_name: TSA HEMIN MENADIONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J469
+  term:
+    id: mediadive.medium:J469
+    label: TSA HEMIN MENADIONE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 156 with 10.0 ml/L (final) hemin solution and 10.0 ml/L
+    (final) menadione solution.
+- step_number: 2
+  action: DISSOLVE
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
+    to 100 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.689345Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J469'

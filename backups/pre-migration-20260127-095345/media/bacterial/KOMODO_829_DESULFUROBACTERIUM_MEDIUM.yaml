@@ -1,0 +1,21 @@
+name: DESULFUROBACTERIUM MEDIUM
+original_name: DESULFUROBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 829
+  term:
+    id: komodo.medium:829
+    label: DESULFUROBACTERIUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 829 | DSMZ Medium: 829 (mediadive.medium:829)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 829'

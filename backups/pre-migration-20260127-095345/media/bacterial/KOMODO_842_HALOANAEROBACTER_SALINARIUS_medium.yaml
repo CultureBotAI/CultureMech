@@ -1,0 +1,21 @@
+name: HALOANAEROBACTER SALINARIUS medium
+original_name: HALOANAEROBACTER SALINARIUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 842
+  term:
+    id: komodo.medium:842
+    label: HALOANAEROBACTER SALINARIUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 842 | DSMZ Medium: 842 (mediadive.medium:842)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 842'

@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_12",
+  "medium_name": "Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000 ml",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "agar per",
+      "concentration": 1000.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

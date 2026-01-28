@@ -1,0 +1,21 @@
+name: BACILLUS SELENITIREDUCENS medium
+original_name: BACILLUS SELENITIREDUCENS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.8
+media_term:
+  preferred_term: KOMODO Medium 968
+  term:
+    id: komodo.medium:968
+    label: BACILLUS SELENITIREDUCENS medium
+notes: 'Source: KOMODO ModelSEED | ID: 968 | DSMZ Medium: 968 (mediadive.medium:968)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 968'

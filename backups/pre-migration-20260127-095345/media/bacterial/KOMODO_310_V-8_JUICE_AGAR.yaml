@@ -1,0 +1,21 @@
+name: V-8 JUICE AGAR
+original_name: V-8 JUICE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 310
+  term:
+    id: komodo.medium:310
+    label: V-8 JUICE AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 310 | DSMZ Medium: 310 (mediadive.medium:310)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 310'

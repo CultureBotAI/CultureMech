@@ -1,0 +1,36 @@
+name: m TGE-GP Medium
+original_name: m TGE-GP Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: m TGE BROTH MEDIUM (see Medium [M828])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+media_term:
+  preferred_term: TOGO Medium M887
+  term:
+    id: TOGO:M887
+    label: m TGE-GP Medium
+notes: 'Source: https://togomedium.org/medium/M887
+
+  Original source: JCM - JCM_M851
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=851'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.902404Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M887'

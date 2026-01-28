@@ -1,0 +1,21 @@
+name: 10% MH medium
+original_name: 10% MH medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 593
+  term:
+    id: komodo.medium:593
+    label: 10% MH medium
+notes: 'Source: KOMODO ModelSEED | ID: 593 | DSMZ Medium: 593 (mediadive.medium:593)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 593'

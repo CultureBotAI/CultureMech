@@ -1,0 +1,104 @@
+name: MARINE TRYPTONE YEAST EXTRACT MEDIUM
+original_name: MARINE TRYPTONE YEAST EXTRACT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1208
+  term:
+    id: mediadive.medium:J1208
+    label: MARINE TRYPTONE YEAST EXTRACT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1208'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '1.92308'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.961538'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.961538'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.2308'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '3.46154'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '4.13462'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.480769'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.0961538'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000480769'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Comment: For strains JCM 32481, JCM 32483, JCM 32614 and JCM 32615,
+    add separately autoclaved 1.0 M sodium pyruvate solution to the medium (20.0 ml
+    per liter) instead of 0.2 M cellobiose solution.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.022809Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1208'

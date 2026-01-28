@@ -1,0 +1,36 @@
+name: Brucella broth with formate and fumarate
+original_name: Brucella broth with formate and fumarate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: fumaric acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: 決定培地, Simple component, Organic compound'
+- preferred_term: sodium formate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Brucella Broth (BD 211088)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2289
+  term:
+    id: TOGO:M2289
+    label: Brucella broth with formate and fumarate
+notes: 'Source: https://togomedium.org/medium/M2289
+
+  Original URL: https://www.atcc.org/~/media/2DA0E266AE7E419288C2291420B9E93E.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.284169Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2289'

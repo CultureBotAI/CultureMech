@@ -1,0 +1,21 @@
+name: M2 medium
+original_name: M2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-6.8
+media_term:
+  preferred_term: KOMODO Medium 1310
+  term:
+    id: komodo.medium:1310
+    label: M2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1310 | DSMZ Medium: 1310 (mediadive.medium:1310)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1310'

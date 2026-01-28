@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_413",
+  "medium_name": "78 + Formiate/Fumarate:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Ground beef (fat free)",
+      "concentration": 500.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaOH 1 N",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,34 @@
+name: VY/2 AGAR
+original_name: VY/2 AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J436
+  term:
+    id: mediadive.medium:J436
+    label: VY/2 AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=436'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 341 with 1.36 g/L (final) CaCl2 x 2H2O, and with distilled
+    water instead of the artificial seawater. Adjust pH to 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Comment: For strain JCM 12614, place pieces of sterile filter paper
+    (e.g., 1 cm x 1 cm) onto the surface of the plate. Inoculate onto the filter paper.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.612049Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J436'

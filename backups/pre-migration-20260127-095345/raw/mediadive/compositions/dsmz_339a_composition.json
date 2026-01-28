@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_339a",
+  "medium_name": "Medium dsmz_339a",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 6.8",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

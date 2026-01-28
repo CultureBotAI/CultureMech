@@ -1,0 +1,20 @@
+name: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
+original_name: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 8004
+  term:
+    id: komodo.medium:8004
+    label: SABOURAUD-2% Glucose-Bouillon (Merck 108339)
+notes: 'Source: KOMODO ModelSEED | ID: 8004 | DSMZ Medium: 8004 (mediadive.medium:8004)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 8004'

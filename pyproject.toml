@@ -1,0 +1,127 @@
+[project]
+name = "culturemech"
+version = "0.1.0"
+description = "Knowledge base for microbial growth media recipes and formulations"
+authors = [
+    {name = "CultureMech Contributors"}
+]
+readme = "README.md"
+license = {text = "CC0-1.0"}
+requires-python = ">=3.10"
+keywords = [
+    "microbiology",
+    "growth media",
+    "culture media",
+    "ontology",
+    "knowledge graph",
+    "linkml"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "linkml>=1.7.0",
+    "linkml-runtime>=1.7.0",
+    "oaklib>=0.5.0",
+    "pyyaml>=6.0",
+    "jinja2>=3.1.0",
+    "click>=8.1.0",
+    "requests>=2.31.0",
+    "biolink-model>=4.0.0",
+    "beautifulsoup4>=4.12.0",
+    "bacdive>=1.0.0",
+    "sqlparse>=0.4.0",  # For parsing KOMODO and MediaDB SQL dumps
+    "openpyxl>=3.1.0",  # For parsing KOMODO Excel supplementary files
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+koza = [
+    "koza>=0.6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/KG-Hub/CultureMech"
+Repository = "https://github.com/KG-Hub/CultureMech"
+Documentation = "https://kg-hub.github.io/CultureMech"
+
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+culturemech = ["schema/*.yaml", "templates/*.j2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = [
+    "--strict-markers",
+    "--cov=culturemech",
+    "--cov-report=term-missing",
+    "--cov-report=html",
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+'''
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "E501",  # line too long (handled by black)
+    "B008",  # do not perform function calls in argument defaults
+    "C901",  # too complex
+]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+strict_equality = true

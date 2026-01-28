@@ -1,0 +1,45 @@
+{
+  "medium_id": "dsmz_1499",
+  "medium_name": "Starch",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Starch",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Casein hydrolysate acid",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KNO3",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "CaCO3",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KCl",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 150.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

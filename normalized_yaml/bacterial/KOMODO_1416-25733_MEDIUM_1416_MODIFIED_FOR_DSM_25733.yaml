@@ -1,0 +1,20 @@
+name: MEDIUM 1416 MODIFIED FOR DSM 25733
+original_name: MEDIUM 1416 MODIFIED FOR DSM 25733
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1416_25733
+  term:
+    id: komodo.medium:1416_25733
+    label: MEDIUM 1416 MODIFIED FOR DSM 25733
+notes: 'Source: KOMODO ModelSEED | ID: 1416_25733 | DSMZ Medium: 1416 (mediadive.medium:1416)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1416_25733'

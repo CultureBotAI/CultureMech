@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1514",
+  "medium_name": "Medium for maintenance of SF-9 cells (ACC 125) for cultivation of Rhabdochlamydiae.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Fetal Bovine Serum (heat-inactivated, 56°C, 30 min)",
+      "concentration": 900.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

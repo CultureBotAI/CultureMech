@@ -1,0 +1,21 @@
+name: BOSEA THIOOXIDANS medium
+original_name: BOSEA THIOOXIDANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.5-8.5
+media_term:
+  preferred_term: KOMODO Medium 763
+  term:
+    id: komodo.medium:763
+    label: BOSEA THIOOXIDANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 763 | DSMZ Medium: 763 (mediadive.medium:763)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 763'

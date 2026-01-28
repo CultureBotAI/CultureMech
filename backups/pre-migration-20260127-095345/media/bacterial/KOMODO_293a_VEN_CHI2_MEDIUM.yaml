@@ -1,0 +1,21 @@
+name: VEN CHI2 MEDIUM
+original_name: VEN CHI2 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 293a
+  term:
+    id: komodo.medium:293a
+    label: VEN CHI2 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 293a | DSMZ Medium: 293a (mediadive.medium:293a)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 293a'

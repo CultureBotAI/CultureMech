@@ -1,0 +1,21 @@
+name: THERMOVENABULUM medium
+original_name: THERMOVENABULUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 962
+  term:
+    id: komodo.medium:962
+    label: THERMOVENABULUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 962 | DSMZ Medium: 962 (mediadive.medium:962)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 962'

@@ -1,0 +1,48 @@
+name: MUELLER-HINTON
+original_name: MUELLER-HINTON
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 1709
+  term:
+    id: mediadive.medium:1709
+    label: MUELLER-HINTON
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1709.pdf'
+ingredients:
+- preferred_term: Beef
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (dehydrated infusion from 300g)'
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.316761Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1709'

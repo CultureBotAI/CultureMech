@@ -1,0 +1,21 @@
+name: YM-CATALASE medium
+original_name: YM-CATALASE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 469
+  term:
+    id: komodo.medium:469
+    label: YM-CATALASE medium
+notes: 'Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 469'

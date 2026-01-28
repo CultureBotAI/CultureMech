@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1193",
+  "medium_name": "Fetal Bovine Serum",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Cultivation of L929 (ACC 2) or HeLa (ACC 57) cells",
+      "concentration": 45.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fetal Bovine Serum",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Aminoacids (100 x)",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

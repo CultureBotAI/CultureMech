@@ -1,0 +1,20 @@
+name: MEDIUM 520 MODIFIED FOR DSM 9801
+original_name: MEDIUM 520 MODIFIED FOR DSM 9801
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 520_9801
+  term:
+    id: komodo.medium:520_9801
+    label: MEDIUM 520 MODIFIED FOR DSM 9801
+notes: 'Source: KOMODO ModelSEED | ID: 520_9801 | DSMZ Medium: 520 (mediadive.medium:520)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 520_9801'

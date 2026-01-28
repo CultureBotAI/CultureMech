@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_609",
+  "medium_name": "Medium dsmz_609",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Oatmeal (Quaker White Oats)",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar (Difco)",
+      "concentration": 18.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,48 @@
+name: MYCOPLASMA MEDIUM
+original_name: MYCOPLASMA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J761
+  term:
+    id: mediadive.medium:J761
+    label: MYCOPLASMA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=761'
+ingredients:
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Autoclave at 121C for 15 min. Cool to 55C and aseptically add the
+    following filter-sterilized solutions:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Warm serum and yeast extract solution to 55C before adding to the basal
+    medium. Adjust pH to 7.4&;0.2 (final).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.523395Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J761'

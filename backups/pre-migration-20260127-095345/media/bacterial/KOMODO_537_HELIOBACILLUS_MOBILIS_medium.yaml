@@ -1,0 +1,21 @@
+name: HELIOBACILLUS MOBILIS medium
+original_name: HELIOBACILLUS MOBILIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: KOMODO Medium 537
+  term:
+    id: komodo.medium:537
+    label: HELIOBACILLUS MOBILIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 537 | DSMZ Medium: 537 (mediadive.medium:537)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 537'

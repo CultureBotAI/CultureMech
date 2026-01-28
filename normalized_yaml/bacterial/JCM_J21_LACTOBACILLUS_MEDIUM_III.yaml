@@ -1,0 +1,111 @@
+name: LACTOBACILLUS MEDIUM III
+original_name: LACTOBACILLUS MEDIUM III
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: JCM Medium J21
+  term:
+    id: mediadive.medium:J21
+    label: LACTOBACILLUS MEDIUM III
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=21'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '9.60615'
+    unit: G_PER_L
+  notes: ' ( tryptic digest)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.80307'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1.92123'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '19.2123'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.480307'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.480307'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.00960615'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.192123'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.00720461'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '19.2123'
+    unit: G_PER_L
+- preferred_term: DL-mevalonic acid
+  term:
+    id: CHEBI:150970
+    label: DL-mevalonic acid
+  concentration:
+    value: '0.0288184'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.4092'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.596338Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J21'

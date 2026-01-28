@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_462a",
+  "medium_name": "Medium dsmz_462a",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 462",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "462"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

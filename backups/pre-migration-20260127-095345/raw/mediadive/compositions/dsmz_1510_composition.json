@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_1510",
+  "medium_name": "514 FOR HALOMONAS SP.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Difco Marine Broth 2216",
+      "concentration": 37.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "pancreatic digest of casein (BD Trypticase Peptone)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "soya peptone (BD Soytone)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "malt extract (BD)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

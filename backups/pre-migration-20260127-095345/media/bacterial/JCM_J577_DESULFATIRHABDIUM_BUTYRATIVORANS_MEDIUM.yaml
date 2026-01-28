@@ -1,0 +1,33 @@
+name: DESULFATIRHABDIUM BUTYRATIVORANS MEDIUM
+original_name: DESULFATIRHABDIUM BUTYRATIVORANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J577
+  term:
+    id: mediadive.medium:J577
+    label: DESULFATIRHABDIUM BUTYRATIVORANS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=577'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 284 supplemented with 2.8 g Na2SO4and 0.2 g (final)
+    yeast extract in Solution A (per 900 ml), and with 1.72 g crotonic acid and 0.43
+    g sodium benzoate in Solution B (per 100 ml) instead of sodium pyruvate. Prior
+    to inoculation, aseptically and anaerobically add 0.01 volume of 5% Na2S x 9H2O
+    solution (autoclaved and stored under a N2 atmosphere) to the medium. Pressurize
+    the inoculated bottles to 170 kPa with N2-CO2 (80:20, v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.987837Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J577'

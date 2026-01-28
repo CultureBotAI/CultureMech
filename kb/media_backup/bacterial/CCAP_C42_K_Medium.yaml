@@ -1,0 +1,24 @@
+name: K Medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C42
+  term:
+    id: CCAP:C42
+    label: K Medium
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_K.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.514310Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C42'

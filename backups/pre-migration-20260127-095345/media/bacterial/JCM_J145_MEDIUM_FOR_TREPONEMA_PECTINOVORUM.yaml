@@ -1,0 +1,90 @@
+name: MEDIUM FOR TREPONEMA PECTINOVORUM
+original_name: MEDIUM FOR TREPONEMA PECTINOVORUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J145
+  term:
+    id: mediadive.medium:J145
+    label: MEDIUM FOR TREPONEMA PECTINOVORUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=145'
+ingredients:
+- preferred_term: Pectin
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '0.796813'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.99203'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.99203'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.677291'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: Rumen fluid
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2. Prepare medium anaerobically. Inoculate under
+    a N2-CO2 (90:10) atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.813492Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J145'

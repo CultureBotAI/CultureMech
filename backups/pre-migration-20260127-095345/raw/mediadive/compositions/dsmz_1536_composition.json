@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1536",
+  "medium_name": "FOR FRANKIA",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KH2PO4",
+      "concentration": 0.95,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_86a",
+  "medium_name": "Use medium 86, but replace the tryptone with 3 g/l peptone and add 1 g/l mono sodium",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 86",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "86"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

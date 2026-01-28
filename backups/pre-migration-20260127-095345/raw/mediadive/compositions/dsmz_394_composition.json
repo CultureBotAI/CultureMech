@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_394",
+  "medium_name": "Tryptone",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone",
+      "concentration": 25.0,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 7.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "1M Tris-HCl (pH 7.5)",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "1M MgCl2",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "20% Glucose",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

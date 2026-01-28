@@ -1,0 +1,49 @@
+name: Yeast nitrogen base glucose (YNBG)
+original_name: Yeast nitrogen base glucose (YNBG)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.0
+media_term:
+  preferred_term: DSMZ Medium 1682
+  term:
+    id: mediadive.medium:1682
+    label: Yeast nitrogen base glucose (YNBG)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1682.pdf'
+ingredients:
+- preferred_term: Yeast Nitrogen Base
+  concentration:
+    value: '6.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to
+    4.0 and autoclave. Dissolve 20 g agar in 500 mL distilled water and autoclave.
+    Combine both after autoclavation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.225407Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1682'

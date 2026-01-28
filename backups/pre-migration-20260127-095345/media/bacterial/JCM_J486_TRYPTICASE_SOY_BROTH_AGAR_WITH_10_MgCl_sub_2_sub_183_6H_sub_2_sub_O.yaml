@@ -1,0 +1,42 @@
+name: TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O
+original_name: TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J486
+  term:
+    id: mediadive.medium:J486
+    label: TRYPTICASE SOY BROTH AGAR WITH 10%  MgCl<sub>2</sub>&#183;6H<sub>2</sub>O
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=486'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.729903Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J486'

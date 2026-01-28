@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_693",
+  "medium_name": "Columbia agar base supplemented with 5% defibrinated sheep blood. Rehydrate pellets",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 545",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "545"
+    },
+    {
+      "name": "Defibrinated Sheep Blood",
+      "concentration": 5.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,34 @@
+name: UI MEDIUM
+original_name: UI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J503
+  term:
+    id: mediadive.medium:J503
+    label: UI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=503'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and
+    1.0 ml Trace vitamins solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic
+    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 284.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 13376, incubate with a 15 - 20% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.779208Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J503'

@@ -1,0 +1,56 @@
+name: SYMBIOBACTERIUM MEDIUM
+original_name: SYMBIOBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J653
+  term:
+    id: mediadive.medium:J653
+    label: SYMBIOBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=653'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+- preferred_term: NH4HCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 8.0. Distribute the medium into culture
+    vessels and replace the gas phase with a N2-CO2-H2 (80:10:10, v/v) gas mixture.
+    Seal with butyl rubber stoppers and autoclave. After cooling, aseptically add
+    the following solution (filter-sterilized) to the medium:'
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 10.0 g/L gellan gum.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.196642Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J653'

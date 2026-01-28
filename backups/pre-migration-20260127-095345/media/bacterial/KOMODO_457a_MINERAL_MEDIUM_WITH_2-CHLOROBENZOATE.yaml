@@ -1,0 +1,21 @@
+name: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
+original_name: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.4
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 457a | DSMZ Medium: 457a
+  (mediadive.medium:457a) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 457a
+  term:
+    id: komodo.medium:457a
+    label: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 457a'

@@ -1,0 +1,21 @@
+name: For DSM 14424
+original_name: For DSM 14424
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 503.9
+  term:
+    id: komodo.medium:503.9
+    label: For DSM 14424
+notes: 'Source: KOMODO ModelSEED | ID: 503.9 | DSMZ Medium: 503 (mediadive.medium:503)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 503.9'

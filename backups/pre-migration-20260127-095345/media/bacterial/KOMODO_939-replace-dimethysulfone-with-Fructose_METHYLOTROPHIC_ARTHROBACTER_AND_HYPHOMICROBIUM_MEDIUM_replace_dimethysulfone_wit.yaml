@@ -1,0 +1,21 @@
+name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Fructose
+original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Fructose
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.5
+media_term:
+  preferred_term: KOMODO Medium 939_replace_dimethysulfone_with_Fructose
+  term:
+    id: komodo.medium:939_replace_dimethysulfone_with_Fructose
+    label: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Fructose
+notes: 'Source: KOMODO ModelSEED | ID: 939_replace_dimethysulfone_with_Fructose |
+  DSMZ Medium: 939 (mediadive.medium:939) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 939_replace_dimethysulfone_with_Fructose'

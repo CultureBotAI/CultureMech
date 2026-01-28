@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_673",
+  "medium_name": "Prepare medium 266 with the following modification: reduce the yeast extract",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 266",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "266"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

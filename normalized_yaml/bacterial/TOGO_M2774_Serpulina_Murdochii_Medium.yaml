@@ -1,0 +1,50 @@
+name: Serpulina Murdochii Medium
+original_name: Serpulina Murdochii Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: sterile 10% w/v NaHCO3 solution
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: sterile 30% w/v glucose solution
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: sterile bovine serum (heat inactivated at 56°C for 45 min)
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Trypticase Soy Broth (BBL 11774)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Undefined component'
+- preferred_term: air
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: ガス'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2774
+  term:
+    id: TOGO:M2774
+    label: Serpulina Murdochii Medium
+notes: 'Source: https://togomedium.org/medium/M2774
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium840.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.276795Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2774'

@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_191",
+  "medium_name": "Medium dsmz_191",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CORN MEAL AGAR\n\nBlend",
+      "concentration": 50.0,
+      "unit": "g",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

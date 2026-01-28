@@ -1,0 +1,43 @@
+name: COW MANURE AGAR
+original_name: COW MANURE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 657
+  term:
+    id: mediadive.medium:657
+    label: COW MANURE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium657.pdf'
+ingredients:
+- preferred_term: Dry cow-manure
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for
+    one hour. Filter, first through cheesecloth and then paper. Make up volume to
+    one liter. Add 20 g agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.853808Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 657'

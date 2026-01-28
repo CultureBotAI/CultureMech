@@ -1,0 +1,20 @@
+name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+original_name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 993c
+  term:
+    id: komodo.medium:993c
+    label: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+notes: 'Source: KOMODO ModelSEED | ID: 993c | DSMZ Medium: 993c (mediadive.medium:993c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 993c'

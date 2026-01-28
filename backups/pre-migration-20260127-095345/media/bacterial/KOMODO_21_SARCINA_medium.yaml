@@ -1,0 +1,21 @@
+name: SARCINA medium
+original_name: SARCINA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 21
+  term:
+    id: komodo.medium:21
+    label: SARCINA medium
+notes: 'Source: KOMODO ModelSEED | ID: 21 | DSMZ Medium: 21 (mediadive.medium:21)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 21'

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_937",
+  "medium_name": "Peptone from casein",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone from casein",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Sodium succinate",
+      "concentration": 2.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

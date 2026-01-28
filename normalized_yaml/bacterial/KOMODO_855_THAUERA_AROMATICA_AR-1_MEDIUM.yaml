@@ -1,0 +1,21 @@
+name: THAUERA AROMATICA AR-1 MEDIUM
+original_name: THAUERA AROMATICA AR-1 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 855
+  term:
+    id: komodo.medium:855
+    label: THAUERA AROMATICA AR-1 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 855 | DSMZ Medium: 855 (mediadive.medium:855)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 855'

@@ -1,0 +1,57 @@
+name: ANTIBIOTIC MEDIUM 1
+original_name: ANTIBIOTIC MEDIUM 1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1532
+  term:
+    id: mediadive.medium:1532
+    label: ANTIBIOTIC MEDIUM 1
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1532.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.55
+- step_number: 2
+  action: MIX
+  description: or Difco Antibiotic Medium 1 (BD, order number 226340)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.767301Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1532'

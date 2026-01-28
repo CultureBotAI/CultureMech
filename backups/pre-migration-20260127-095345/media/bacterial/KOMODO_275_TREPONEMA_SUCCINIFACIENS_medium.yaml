@@ -1,0 +1,21 @@
+name: TREPONEMA SUCCINIFACIENS medium
+original_name: TREPONEMA SUCCINIFACIENS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.2-6.3
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 275 | DSMZ Medium: 275 (mediadive.medium:275)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 275
+  term:
+    id: komodo.medium:275
+    label: TREPONEMA SUCCINIFACIENS medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 275'

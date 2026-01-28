@@ -1,0 +1,21 @@
+name: TEPIDIBACTER medium
+original_name: TEPIDIBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7.0
+media_term:
+  preferred_term: KOMODO Medium 985
+  term:
+    id: komodo.medium:985
+    label: TEPIDIBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 985 | DSMZ Medium: 985 (mediadive.medium:985)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 985'

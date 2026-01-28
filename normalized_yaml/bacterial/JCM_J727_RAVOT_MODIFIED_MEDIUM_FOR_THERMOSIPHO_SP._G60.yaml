@@ -1,0 +1,29 @@
+name: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
+original_name: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J727
+  term:
+    id: mediadive.medium:J727
+    label: RAVOT MODIFIED MEDIUM FOR THERMOSIPHO SP. G60
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 725 with 20.0 g/L NaCl. Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.415152Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J727'

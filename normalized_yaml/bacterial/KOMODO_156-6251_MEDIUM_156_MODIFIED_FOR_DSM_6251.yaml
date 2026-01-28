@@ -1,0 +1,20 @@
+name: MEDIUM 156 MODIFIED FOR DSM 6251
+original_name: MEDIUM 156 MODIFIED FOR DSM 6251
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 156_6251
+  term:
+    id: komodo.medium:156_6251
+    label: MEDIUM 156 MODIFIED FOR DSM 6251
+notes: 'Source: KOMODO ModelSEED | ID: 156_6251 | DSMZ Medium: 156 (mediadive.medium:156)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 156_6251'

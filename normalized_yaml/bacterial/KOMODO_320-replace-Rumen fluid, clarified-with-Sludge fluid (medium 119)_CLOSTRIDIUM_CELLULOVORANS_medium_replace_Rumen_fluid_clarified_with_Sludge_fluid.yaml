@@ -1,0 +1,27 @@
+name: CLOSTRIDIUM CELLULOVORANS medium_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119)
+original_name: CLOSTRIDIUM CELLULOVORANS medium_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 320_replace_Rumen fluid, clarified_with_Sludge fluid
+    (medium 119)
+  term:
+    id: komodo.medium:320_replace_Rumen fluid, clarified_with_Sludge fluid (medium
+      119)
+    label: CLOSTRIDIUM CELLULOVORANS medium_replace_Rumen fluid, clarified_with_Sludge
+      fluid (medium 119)
+notes: 'Source: KOMODO ModelSEED | ID: 320_replace_Rumen fluid, clarified_with_Sludge
+  fluid (medium 119) | DSMZ Medium: 320 (mediadive.medium:320) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 320_replace_Rumen fluid, clarified_with_Sludge fluid
+    (medium 119)'

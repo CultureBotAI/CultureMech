@@ -1,0 +1,23 @@
+name: Halohasta (A2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.5-8
+media_term:
+  preferred_term: DSMZ Medium 1841
+  term:
+    id: DSMZ:1841
+    label: Halohasta (A2)
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.735476Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1841'

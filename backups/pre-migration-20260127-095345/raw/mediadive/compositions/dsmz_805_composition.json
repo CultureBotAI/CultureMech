@@ -1,0 +1,45 @@
+{
+  "medium_id": "dsmz_805",
+  "medium_name": "KSCN",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KSCN",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Na2HPO4 x 2 H2O",
+      "concentration": 7.9,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 4.5,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "2% FeSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

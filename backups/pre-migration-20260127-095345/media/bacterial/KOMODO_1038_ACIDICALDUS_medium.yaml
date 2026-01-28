@@ -1,0 +1,21 @@
+name: ACIDICALDUS medium
+original_name: ACIDICALDUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.5
+media_term:
+  preferred_term: KOMODO Medium 1038
+  term:
+    id: komodo.medium:1038
+    label: ACIDICALDUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1038 | DSMZ Medium: 1038 (mediadive.medium:1038)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1038'

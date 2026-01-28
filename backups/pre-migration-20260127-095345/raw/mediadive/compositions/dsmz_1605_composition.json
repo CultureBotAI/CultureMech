@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1605",
+  "medium_name": "2.609",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KCL",
+      "concentration": 2.609,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 0.267,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

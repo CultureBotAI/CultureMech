@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_657",
+  "medium_name": "Medium dsmz_657",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "COW MANURE AGAR\n\nSuspend",
+      "concentration": 50.0,
+      "unit": "g",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

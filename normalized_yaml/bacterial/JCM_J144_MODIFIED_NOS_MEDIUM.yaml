@@ -1,0 +1,135 @@
+name: MODIFIED NOS MEDIUM
+original_name: MODIFIED NOS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J144
+  term:
+    id: mediadive.medium:J144
+    label: MODIFIED NOS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=144'
+ingredients:
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '12.3762'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '9.90099'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.47525'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '2.47525'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1.9802'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.67'
+    unit: G_PER_L
+- preferred_term: Rabbit serum
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: 2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: 2-Methylbutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Valeric acid
+  term:
+    id: CHEBI:17418
+    label: Valeric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Combine the above ingredients and bring to a boil in a round bottom
+    flask while flushing with O2-free N2-H2-CO2 (85:10:5) gas mixture. Stopper anaerobically,
+    wire or seal closed and autoclave at 121C for 20 min. After autoclaving, allow
+    to cool, open without admitting oxygen and while flushing with gas, add the following
+    ingredients which have been filter-sterilized ahead of time:'
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Mix together and filter-sterilize. Store at -20C.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Add volatile fatty acids to about 70-80 ml of NaOH solution and mix.
+    Add NaOH solution to bring final volume to 100 ml. If not used the same day, filter-sterilize
+    and store at 4C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.810624Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J144'

@@ -1,0 +1,27 @@
+name: HALF STRENGTH NUTRIENT BROTH OR AGAR
+original_name: HALF STRENGTH NUTRIENT BROTH OR AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 672
+  term:
+    id: mediadive.medium:672
+    label: HALF STRENGTH NUTRIENT BROTH OR AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium672.pdf'
+ingredients:
+- preferred_term: Difco 0001
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Difco 0003 or Difco 0001
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.899816Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 672'

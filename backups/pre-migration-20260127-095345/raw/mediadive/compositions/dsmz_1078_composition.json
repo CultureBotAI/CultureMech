@@ -1,0 +1,45 @@
+{
+  "medium_id": "dsmz_1078",
+  "medium_name": "Bacto brain heart infusion",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "PPLO broth (GIBCO)",
+      "concentration": 0.82,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Hank's balanced salt solution (BSS, see below)",
+      "concentration": 0.87,
+      "unit": "g",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "After autoclaving add:",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Porcine serum (heat-inactivated)",
+      "concentration": 78.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "Hank's BSS:",
+      "concentration": 30.0,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    },
+    {
+      "name": "25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05 g MgCl2 x 6 H2O",
+      "concentration": 3.32,
+      "unit": "ml",
+      "extraction_method": "three_column_layout_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

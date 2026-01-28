@@ -1,0 +1,108 @@
+name: Ureaplasma Medium – Special Modified Formulation
+original_name: Ureaplasma Medium – Special Modified Formulation
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Basal Medium
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Additive Solution
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: DI Water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: PPLO Broth w/o Crystal Violet (BD 255420)
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Pancreatic Digest of Casein (Hardy C6530)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Pancreatic Digest of Gelatin (Hardy C6540)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: TC Yeastolate 10% solution (BD 255772)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: DI Water
+  concentration:
+    value: '205'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: 10X CMRL 1066 Medium (ATCC 20-2207)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Urea (Sigma U5218)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast Extract Solution
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: Fetal Bovine Serum
+  concentration:
+    value: '170'
+    unit: G_PER_L
+- preferred_term: Phenol Red Solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: DI Water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Yeast Extract (Hardy C7340)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Fetal Bovine Serum (ATCC 30-2020)
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 0.1 N NaOH
+  concentration:
+    value: '99.9'
+    unit: PERCENT_W_V
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Phenol Red powder
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Simple
+    component'
+media_term:
+  preferred_term: TOGO Medium M2179
+  term:
+    id: TOGO:M2179
+    label: Ureaplasma Medium – Special Modified Formulation
+notes: 'Source: https://togomedium.org/medium/M2179
+
+  Original URL: https://www.atcc.org/~/media/C3316A232AD148D5B8FEA1E36C930A1C.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.128935Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2179'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1447",
+  "medium_name": "Medium dsmz_1447",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Malt extract powder",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 1.0,
+      "unit": "l",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

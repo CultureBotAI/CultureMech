@@ -1,0 +1,335 @@
+name: MEDIUM FOR TREPONEMA PARVUM
+original_name: MEDIUM FOR TREPONEMA PARVUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 78d
+  term:
+    id: mediadive.medium:78d
+    label: MEDIUM FOR TREPONEMA PARVUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78d.pdf'
+ingredients:
+- preferred_term: Calf serum
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pantothenic acid
+  term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Nicotine amide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: L-Histidin
+  term:
+    id: CHEBI:15971
+    label: L-Histidin
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: L-Serin
+  term:
+    id: CHEBI:17115
+    label: L-Serin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '32'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '32'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '32'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Glutathione
+  term:
+    id: CHEBI:16856
+    label: Glutathione
+  concentration:
+    value: '140'
+    unit: G_PER_L
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.6341'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'To medium 78 add per liter:'
+- step_number: 2
+  action: MIX
+  description: Prepare medium anaerobically under N2:CO2 (80:20). After inoculation
+    of the tubes, pressurize them with hydrogen gas to 150 kP (1.5 bar).
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: All following solutions were filter sterilized
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Stir for some hours, filter sterilize the solution.
+- step_number: 5
+  action: MIX
+  description: 'Amino acid solution per 50 ml:'
+- step_number: 6
+  action: DISSOLVE
+  description: Dissolve 5 mg hemin in 1 ml 1 M NaOH, fill up to 50 ml with dist. water.
+- step_number: 7
+  action: MIX
+  description: 'Peptone mixture per 50 ml:'
+- step_number: 8
+  action: ADJUST_PH
+  description: Dissolve 1 g ascorbic acid in 40 ml dist. water, adjust pH to 7.0.
+    fill up to 50 ml.
+- step_number: 9
+  action: MIX
+  description: 'N-Acetylglucosamin and pyruvate solution per 50 ml :'
+- step_number: 10
+  action: ADJUST_PH
+  description: Dissolve 7 g glutathione in 40 ml dist. Water, adjust pH to 7.0 and
+    fill up to 50 ml.
+- step_number: 11
+  action: MIX
+  description: Depending on organism use different modification .
+- step_number: 12
+  action: AUTOCLAVE
+  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
+    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
+    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
+    demanding meat particles put those first into the tube (use 1 part meat particles
+    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
+    g agar per 1000.0 ml medium.
+- step_number: 13
+  action: MIX
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
+    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
+- step_number: 14
+  action: FILTER_STERILIZE
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
+    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
+    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
+    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
+    \ ml, and then add:"
+- step_number: 15
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 16
+  action: FILTER_STERILIZE
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
+- step_number: 17
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.110398Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 78d'

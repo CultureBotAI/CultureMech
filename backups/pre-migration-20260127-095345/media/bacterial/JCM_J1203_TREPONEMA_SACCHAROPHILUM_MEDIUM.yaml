@@ -1,0 +1,143 @@
+name: TREPONEMA SACCHAROPHILUM MEDIUM
+original_name: TREPONEMA SACCHAROPHILUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1203
+  term:
+    id: mediadive.medium:J1203
+    label: TREPONEMA SACCHAROPHILUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1203'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.11976'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.189621'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.449102'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.898204'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: iso-Butyric acid
+  term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: DL-2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-2-Methylbutyric acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: iso-Valeric acid
+  term:
+    id: CHEBI:503742
+    label: iso-Valeric acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '2.49501'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust
+    pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min to make it anoxic.
+    Add cysteine and carbonate, then equilibrate the medium with 100% CO2 gas to pH
+    7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock
+    solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust
+    pH of complete medium to 7.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.997283Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1203'

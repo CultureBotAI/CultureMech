@@ -1,0 +1,21 @@
+name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
+original_name: HYDROGENOBACTER ACIDOPHILUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 743 | DSMZ Medium: 743 (mediadive.medium:743)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 743
+  term:
+    id: komodo.medium:743
+    label: HYDROGENOBACTER ACIDOPHILUS MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 743'

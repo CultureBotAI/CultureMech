@@ -1,0 +1,64 @@
+name: MPYCY Agar Medium
+original_name: MPYCY Agar Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Maltose monohydrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Agar (if necessary)
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Solution A (see Medium [M1100])
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Solution B (see Medium [M1100])
+  concentration:
+    value: '8'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1101
+  term:
+    id: TOGO:M1101
+    label: MPYCY Agar Medium
+notes: 'Source: https://togomedium.org/medium/M1101
+
+  Original source: JCM - JCM_M1037
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1037'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.920014Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1101'

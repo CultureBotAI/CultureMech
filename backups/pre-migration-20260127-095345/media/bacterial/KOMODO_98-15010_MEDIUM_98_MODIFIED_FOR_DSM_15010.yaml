@@ -1,0 +1,20 @@
+name: MEDIUM 98 MODIFIED FOR DSM 15010
+original_name: MEDIUM 98 MODIFIED FOR DSM 15010
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 98_15010
+  term:
+    id: komodo.medium:98_15010
+    label: MEDIUM 98 MODIFIED FOR DSM 15010
+notes: 'Source: KOMODO ModelSEED | ID: 98_15010 | DSMZ Medium: 98 (mediadive.medium:98)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 98_15010'

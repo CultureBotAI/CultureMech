@@ -1,0 +1,137 @@
+name: METHYLOCELLA SILVERSTRIS MEDIUM
+original_name: METHYLOCELLA SILVERSTRIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 5.8
+media_term:
+  preferred_term: DSMZ Medium 1181
+  term:
+    id: mediadive.medium:1181
+    label: METHYLOCELLA SILVERSTRIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1181.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: Fe(III)NH4-EDTA
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.272'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.717'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 6 H2O
+  term:
+    id: CHEBI:49553
+    label: CuCl2 x 6 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '28.71'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '5.73'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dispense the medium into the culture vessels. For small volumes serum
+    bottles or Hungate tubes may be used. The gas phase to liquid ratio should be
+    about 1:10. Use a gas phase containing air, 20-30% methane and autoclave at 121°C
+    for 15 minutes. When the growth medium is cool the phosphate buffer is added.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Add to the sterile medium from a filter sterilised phosphate buffer:'
+- step_number: 4
+  action: MIX
+  description: Liquid cultures should be grown with shaking.
+- step_number: 5
+  action: MIX
+  description: Final pH of the medium is 5.8.
+- step_number: 6
+  action: MIX
+  description: pH 5.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.604051Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1181'

@@ -1,0 +1,61 @@
+name: SYNBIOBACTERIUM KA13 MEDIUM
+original_name: SYNBIOBACTERIUM KA13 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J767
+  term:
+    id: mediadive.medium:J767
+    label: SYNBIOBACTERIUM KA13 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=767'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5984'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.6983'
+    unit: G_PER_L
+- preferred_term: Dimethyl sulfoxide
+  term:
+    id: CHEBI:28262
+    label: Dimethyl sulfoxide
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
+    into culture vessels, replace the gas phase with a N2 gas and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.539197Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J767'

@@ -1,0 +1,21 @@
+name: Trace elements SL-12
+original_name: Trace elements SL-12
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 3094
+  term:
+    id: komodo.medium:3094
+    label: Trace elements SL-12
+notes: 'Source: KOMODO ModelSEED | ID: 3094 | DSMZ Medium: 3094 (mediadive.medium:3094)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3094'

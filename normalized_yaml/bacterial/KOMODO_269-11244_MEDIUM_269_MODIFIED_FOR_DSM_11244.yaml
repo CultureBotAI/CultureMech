@@ -1,0 +1,21 @@
+name: MEDIUM 269 MODIFIED FOR DSM 11244
+original_name: MEDIUM 269 MODIFIED FOR DSM 11244
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.5
+media_term:
+  preferred_term: KOMODO Medium 269_11244
+  term:
+    id: komodo.medium:269_11244
+    label: MEDIUM 269 MODIFIED FOR DSM 11244
+notes: 'Source: KOMODO ModelSEED | ID: 269_11244 | DSMZ Medium: 269 (mediadive.medium:269)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 269_11244'

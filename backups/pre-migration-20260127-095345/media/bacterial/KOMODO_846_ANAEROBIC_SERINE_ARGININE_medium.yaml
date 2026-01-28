@@ -1,0 +1,21 @@
+name: ANAEROBIC SERINE/ARGININE medium
+original_name: ANAEROBIC SERINE/ARGININE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 846
+  term:
+    id: komodo.medium:846
+    label: ANAEROBIC SERINE/ARGININE medium
+notes: 'Source: KOMODO ModelSEED | ID: 846 | DSMZ Medium: 846 (mediadive.medium:846)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 846'

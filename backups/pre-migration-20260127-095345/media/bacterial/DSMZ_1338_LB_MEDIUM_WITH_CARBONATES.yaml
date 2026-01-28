@@ -1,0 +1,65 @@
+name: LB MEDIUM WITH CARBONATES
+original_name: LB MEDIUM WITH CARBONATES
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.6
+media_term:
+  preferred_term: DSMZ Medium 1338
+  term:
+    id: mediadive.medium:1338
+    label: LB MEDIUM WITH CARBONATES
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1338.pdf'
+ingredients:
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the Mineral Salts and the Carbonate Salts separately. Combine
+    both solutions after cooling. The medium may be solidified by adding 20.0 g/l
+    agar. The agar is added to Minerals Salts Solution and after autoclaving both
+    the Mineral Salts Solution and the Carbonate Salts Solution are cooled to 50-55°C,
+    mixed and poured into Petri dishes. Final pH 9.6.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.137112Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1338'

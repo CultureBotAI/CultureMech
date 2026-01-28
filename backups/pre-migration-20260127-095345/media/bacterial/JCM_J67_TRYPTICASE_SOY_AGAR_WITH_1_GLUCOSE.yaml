@@ -1,0 +1,30 @@
+name: TRYPTICASE SOY AGAR WITH 1% GLUCOSE
+original_name: TRYPTICASE SOY AGAR WITH 1% GLUCOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J67
+  term:
+    id: mediadive.medium:J67
+    label: TRYPTICASE SOY AGAR WITH 1% GLUCOSE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=67'
+ingredients:
+- preferred_term: Trypticase soy agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.675973Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J67'

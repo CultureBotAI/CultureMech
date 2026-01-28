@@ -1,0 +1,21 @@
+name: AZOSPIRILLUM AMAZONENSE MEDIUM
+original_name: AZOSPIRILLUM AMAZONENSE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 352
+  term:
+    id: komodo.medium:352
+    label: AZOSPIRILLUM AMAZONENSE MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 352 | DSMZ Medium: 352 (mediadive.medium:352)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 352'

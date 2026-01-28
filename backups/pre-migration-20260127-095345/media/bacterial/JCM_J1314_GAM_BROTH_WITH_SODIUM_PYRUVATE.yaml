@@ -1,0 +1,35 @@
+name: GAM BROTH WITH SODIUM PYRUVATE
+original_name: GAM BROTH WITH SODIUM PYRUVATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1314
+  term:
+    id: mediadive.medium:J1314
+    label: GAM BROTH WITH SODIUM PYRUVATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1314'
+ingredients:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.413231Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1314'

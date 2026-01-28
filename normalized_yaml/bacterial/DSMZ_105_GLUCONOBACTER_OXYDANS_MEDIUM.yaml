@@ -1,0 +1,61 @@
+name: GLUCONOBACTER OXYDANS MEDIUM
+original_name: GLUCONOBACTER OXYDANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 105
+  term:
+    id: mediadive.medium:105
+    label: GLUCONOBACTER OXYDANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium105.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 3
+  action: DISSOLVE
+  description: 'Note: 20 g calcium carbonate in the medium serves as a buffer. The
+    calcium carbonate will settle in agar plates before the agar has set, producing
+    an opaque layer in the bottom. As the strain grows and acid is produced this will
+    react with the calcium carbonate, causing it to dissolve and form zones of clearing
+    immediately below the colonies. In liquid culture the calcium carbonate also forms
+    a sediment that clears as acid is produced.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.180153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 105'

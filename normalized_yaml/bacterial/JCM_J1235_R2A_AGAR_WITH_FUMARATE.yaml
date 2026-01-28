@@ -1,0 +1,38 @@
+name: R2A AGAR WITH FUMARATE
+original_name: R2A AGAR WITH FUMARATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1235
+  term:
+    id: mediadive.medium:J1235
+    label: R2A AGAR WITH FUMARATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235'
+ingredients:
+- preferred_term: R2A agar
+  term:
+    id: CHEBI:2509
+    label: R2A agar
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+- preferred_term: Disodium fumarate
+  term:
+    id: CHEBI:115156
+    label: Disodium fumarate
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic
+    gas generating system, such as AnaeroPackTM, is also available.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.119198Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1235'

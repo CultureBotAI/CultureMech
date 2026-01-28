@@ -1,0 +1,20 @@
+name: PENNASSAY G-THY medium
+original_name: PENNASSAY G-THY medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 542
+  term:
+    id: komodo.medium:542
+    label: PENNASSAY G-THY medium
+notes: 'Source: KOMODO ModelSEED | ID: 542 | DSMZ Medium: 542 (mediadive.medium:542)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 542'

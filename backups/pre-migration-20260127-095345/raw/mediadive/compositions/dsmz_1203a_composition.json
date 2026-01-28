@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1203a",
+  "medium_name": "Medium dsmz_1203a",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Fastidious Anaerobe Basal Broth (OXOID)",
+      "concentration": 35.4,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

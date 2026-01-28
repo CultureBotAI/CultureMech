@@ -1,0 +1,21 @@
+name: MLMS-1 MEDIUM
+original_name: MLMS-1 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.8
+media_term:
+  preferred_term: KOMODO Medium 968b
+  term:
+    id: komodo.medium:968b
+    label: MLMS-1 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 968b | DSMZ Medium: 968b (mediadive.medium:968b)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 968b'

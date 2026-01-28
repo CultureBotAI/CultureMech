@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_268",
+  "medium_name": "Tea (leaves, black)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tea (leaves, black)",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Sucrose",
+      "concentration": 50.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,21 @@
+name: ACIDOSOMA medium
+original_name: ACIDOSOMA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5.0-5.5
+media_term:
+  preferred_term: KOMODO Medium 1220
+  term:
+    id: komodo.medium:1220
+    label: ACIDOSOMA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1220 | DSMZ Medium: 1220 (mediadive.medium:1220)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1220'

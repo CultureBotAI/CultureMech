@@ -1,0 +1,24 @@
+name: DESULFONATRONUM THIODISMUTANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9-9.5
+media_term:
+  preferred_term: DSMZ Medium 813a
+  term:
+    id: DSMZ:813a
+    label: DESULFONATRONUM THIODISMUTANS MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium813a.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.148510Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 813a'

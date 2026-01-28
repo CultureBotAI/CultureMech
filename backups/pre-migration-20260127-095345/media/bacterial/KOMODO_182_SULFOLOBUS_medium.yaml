@@ -1,0 +1,21 @@
+name: SULFOLOBUS medium
+original_name: SULFOLOBUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 4.0-4.2
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 182 | DSMZ Medium: 182 (mediadive.medium:182)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 182
+  term:
+    id: komodo.medium:182
+    label: SULFOLOBUS medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 182'

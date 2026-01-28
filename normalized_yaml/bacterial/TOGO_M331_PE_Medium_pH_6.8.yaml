@@ -1,0 +1,27 @@
+name: PE Medium (pH 6.8)
+original_name: PE Medium (pH 6.8)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: PE Medium (see Medium [M298])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M331
+  term:
+    id: TOGO:M331
+    label: PE Medium (pH 6.8)
+notes: 'Source: https://togomedium.org/medium/M331
+
+  Original source: JCM - JCM_M336
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=336'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.864773Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M331'

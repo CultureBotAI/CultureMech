@@ -1,0 +1,38 @@
+{
+  "medium_id": "medium_3",
+  "medium_name": "DSMZ medium_3",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "tryptone",
+      "concentration": "17.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "soy peptone",
+      "concentration": "3.0",
+      "unit": "g/L",
+      "role": "nitrogen source"
+    },
+    {
+      "name": "sodium chloride",
+      "concentration": "5.0",
+      "unit": "g/L",
+      "role": "osmotic balance"
+    },
+    {
+      "name": "dipotassium hydrogen phosphate",
+      "concentration": "2.5",
+      "unit": "g/L",
+      "role": "buffer"
+    },
+    {
+      "name": "glucose",
+      "concentration": "2.5",
+      "unit": "g/L",
+      "role": "carbon source"
+    }
+  ],
+  "preparation_instructions": ""
+}

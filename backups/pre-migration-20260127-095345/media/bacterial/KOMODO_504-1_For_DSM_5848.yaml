@@ -1,0 +1,20 @@
+name: For DSM 5848
+original_name: For DSM 5848
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 504.1
+  term:
+    id: komodo.medium:504.1
+    label: For DSM 5848
+notes: 'Source: KOMODO ModelSEED | ID: 504.1 | DSMZ Medium: 504 (mediadive.medium:504)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 504.1'

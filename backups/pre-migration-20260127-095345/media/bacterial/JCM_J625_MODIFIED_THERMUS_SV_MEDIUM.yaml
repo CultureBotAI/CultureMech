@@ -1,0 +1,29 @@
+name: MODIFIED THERMUS SV MEDIUM
+original_name: MODIFIED THERMUS SV MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J625
+  term:
+    id: mediadive.medium:J625
+    label: MODIFIED THERMUS SV MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 624 supplemented with 3.0 g/L L-proline. Trace vitamins
+    (see Medium No. 197, 10 ml/L) can be substituted for L-proline.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.124017Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J625'

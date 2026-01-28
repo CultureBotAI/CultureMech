@@ -1,0 +1,34 @@
+name: Marine Broth 2216
+original_name: Marine Broth 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1546
+  term:
+    id: TOGO:M1546
+    label: Marine Broth 2216
+notes: 'Source: https://togomedium.org/medium/M1546
+
+  Original source: NBRC - NBRC_M339
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=339'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.821063Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1546'

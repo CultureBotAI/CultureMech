@@ -1,0 +1,21 @@
+name: THERMOCOCCUS CELER medium
+original_name: THERMOCOCCUS CELER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.8
+media_term:
+  preferred_term: KOMODO Medium 266
+  term:
+    id: komodo.medium:266
+    label: THERMOCOCCUS CELER medium
+notes: 'Source: KOMODO ModelSEED | ID: 266 | DSMZ Medium: 266 (mediadive.medium:266)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 266'

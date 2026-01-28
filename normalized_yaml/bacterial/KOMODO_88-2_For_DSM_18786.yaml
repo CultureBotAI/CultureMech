@@ -1,0 +1,21 @@
+name: For DSM 18786
+original_name: For DSM 18786
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 0.8
+media_term:
+  preferred_term: KOMODO Medium 88.2
+  term:
+    id: komodo.medium:88.2
+    label: For DSM 18786
+notes: 'Source: KOMODO ModelSEED | ID: 88.2 | DSMZ Medium: 88 (mediadive.medium:88)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 88.2'

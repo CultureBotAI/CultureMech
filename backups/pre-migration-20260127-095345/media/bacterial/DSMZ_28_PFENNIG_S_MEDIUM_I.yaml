@@ -1,0 +1,250 @@
+name: 'PFENNIG''S MEDIUM I '
+original_name: 'PFENNIG''S MEDIUM I '
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.1-7.3
+media_term:
+  preferred_term: DSMZ Medium 28
+  term:
+    id: mediadive.medium:28
+    label: 'PFENNIG''S MEDIUM I '
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28.pdf'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '14.8148'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0111111'
+    unit: G_PER_L
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: Ammonium acetate
+  term:
+    id: CHEBI:62947
+    label: Ammonium acetate
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: Pyruvic acid sodium salt
+  term:
+    id: CHEBI:113246
+    label: Pyruvic acid sodium salt
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '19.2308'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.042'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.
+- step_number: 2
+  action: ALIQUOT
+  description: If needed, aliquot into sterile, N<sub>2</sub> gassed screw-cap tubes
+    under N<sub>2</sub> gas.
+- step_number: 3
+  action: MIX
+  description: During the first 24 h, the iron of the medium precipitates in the form
+    of black flocks. No other sediment should arise in the otherwise clear medium.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).
+- step_number: 5
+  action: MIX
+  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's
+    heterotrophic salts) and sterilize as given below.
+- step_number: 6
+  action: COOL
+  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin
+    (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic
+    salts solution). Bubble with CO2 in an ice bath under sterile conditions.
+- step_number: 7
+  action: MIX
+  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50
+    mL).
+- step_number: 8
+  action: MIX
+  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12
+    solution to each 100 mL bottle.
+- step_number: 9
+  action: MIX
+  description: Feed the actively growing culture periodically with neutralized 3%
+    solution of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation
+    stage) to replenish sulfide and with other supplement solutions (see Ref. 3365).
+- step_number: 10
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min.
+- step_number: 11
+  action: AUTOCLAVE
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
+    tightly and autoclave.
+- step_number: 12
+  action: FILTER_STERILIZE
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
+    screw-cap bottle.
+- step_number: 13
+  action: AUTOCLAVE
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
+    for medium, connected to a glass outlet at the bottom of the vessel and has, at
+    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+    dispensing of the medium into bottles.
+- step_number: 14
+  action: COOL
+  description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
+- step_number: 15
+  action: FILTER_STERILIZE
+  description: Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
+- step_number: 16
+  action: FILTER_STERILIZE
+  description: Filter sterilized
+- step_number: 17
+  action: ADJUST_PH
+  description: Adjust pH to 6.0.
+- step_number: 18
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.995611Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 28'

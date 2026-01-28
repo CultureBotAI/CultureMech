@@ -1,0 +1,20 @@
+name: THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
+original_name: THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 72
+  term:
+    id: komodo.medium:72
+    label: THIOBACILLUS FERROOXIDANS MEDIUM WITH TETRATHIONATE
+notes: 'Source: KOMODO ModelSEED | ID: 72 | DSMZ Medium: 72 (mediadive.medium:72)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 72'

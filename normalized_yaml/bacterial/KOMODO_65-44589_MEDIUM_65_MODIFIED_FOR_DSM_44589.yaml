@@ -1,0 +1,20 @@
+name: MEDIUM 65 MODIFIED FOR DSM 44589
+original_name: MEDIUM 65 MODIFIED FOR DSM 44589
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 65_44589
+  term:
+    id: komodo.medium:65_44589
+    label: MEDIUM 65 MODIFIED FOR DSM 44589
+notes: 'Source: KOMODO ModelSEED | ID: 65_44589 | DSMZ Medium: 65 (mediadive.medium:65)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 65_44589'

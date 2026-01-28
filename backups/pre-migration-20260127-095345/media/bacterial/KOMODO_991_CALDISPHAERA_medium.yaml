@@ -1,0 +1,21 @@
+name: CALDISPHAERA medium
+original_name: CALDISPHAERA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 4.0-4.5
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 991 | DSMZ Medium: 991 (mediadive.medium:991)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 991
+  term:
+    id: komodo.medium:991
+    label: CALDISPHAERA medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 991'

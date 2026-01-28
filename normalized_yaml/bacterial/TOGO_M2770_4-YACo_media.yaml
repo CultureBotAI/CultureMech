@@ -1,0 +1,53 @@
+name: 4-YACo media
+original_name: 4-YACo media
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast autolysate
+  concentration:
+    value: '4'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+- preferred_term: maltose
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: Vitamin B7
+- preferred_term: Vitamin B6
+- preferred_term: Vitamin B12
+- preferred_term: Tryptophan
+- preferred_term: biotin (Sigma Aldrich, St Louis, MO, USA)
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: pyridoxal-phosphate (Sigma Aldrich)
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: pyridoxal-HCl (Sigma Aldrich)
+  notes: 'Role: Vitamin'
+- preferred_term: hydroxocobalamin acetate salt
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: hydroxocobalamin hydrochloride
+  notes: 'Role: Growth factor; Properties: Simple component, Defined component'
+- preferred_term: methylcobalamin
+  notes: 'Role: Growth factor'
+- preferred_term: cyanocobalamin (Sigma Aldrich)
+  notes: 'Role: Vitamin'
+- preferred_term: tryptophan (Sigma Aldrich)
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M2770
+  term:
+    id: TOGO:M2770
+    label: 4-YACo media
+notes: 'Source: https://togomedium.org/medium/M2770'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.273356Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2770'

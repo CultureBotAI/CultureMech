@@ -1,0 +1,21 @@
+name: medium FOR ECTOTHIORHODOSPIRA
+original_name: medium FOR ECTOTHIORHODOSPIRA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: KOMODO Medium 253
+  term:
+    id: komodo.medium:253
+    label: medium FOR ECTOTHIORHODOSPIRA
+notes: 'Source: KOMODO ModelSEED | ID: 253 | DSMZ Medium: 253 (mediadive.medium:253)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 253'

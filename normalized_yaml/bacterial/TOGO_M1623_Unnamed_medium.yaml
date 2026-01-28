@@ -1,0 +1,56 @@
+name: (Unnamed medium)
+original_name: (Unnamed medium)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Horse serum*
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Phenol red
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Simple component, Defined component, Organic
+    compound'
+- preferred_term: L-Arginine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Penicillin G** (20,000 U/ml)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+- preferred_term: Bacto PPLO Broth (Difco)
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1623
+  term:
+    id: TOGO:M1623
+    label: (Unnamed medium)
+notes: 'Source: https://togomedium.org/medium/M1623
+
+  Original source: NBRC - NBRC_M823
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=823'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.977868Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1623'

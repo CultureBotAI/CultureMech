@@ -1,0 +1,23 @@
+name: GAM MEDIUM
+original_name: GAM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J83
+  term:
+    id: mediadive.medium:J83
+    label: GAM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=83'
+ingredients:
+- preferred_term: GAM broth
+  concentration:
+    value: '59'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.700153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J83'

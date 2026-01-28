@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1555",
+  "medium_name": "Medium dsmz_1555",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "ketoglutaric acid\nD-glucose\nNaOH",
+      "concentration": 0.4485,
+      "unit": "g/L",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "One 25 cm2 flask of well-grown cells is infected with",
+      "concentration": 1.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "s“ provided as pdf-file (see strain entry for DSM 29017: cultivation conditions)\nby Tim Kurtti & Uli Munderloh, University of Minnesota.",
+  "extraction_method": "pdf_text_parsing"
+}

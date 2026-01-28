@@ -1,0 +1,24 @@
+name: RCM MEDIUM (N2/CO2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 634c
+  term:
+    id: DSMZ:634c
+    label: RCM MEDIUM (N2/CO2)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium634c.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.053983Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 634c'

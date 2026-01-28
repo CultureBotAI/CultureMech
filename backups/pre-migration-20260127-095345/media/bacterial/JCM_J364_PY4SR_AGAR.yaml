@@ -1,0 +1,30 @@
+name: PY4SR AGAR
+original_name: PY4SR AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J364
+  term:
+    id: mediadive.medium:J364
+    label: PY4SR AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=364'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract.
+    To prepare the plant residue extract, autoclave rice straw in water (1:5) at 120C
+    for 20 min, and use the supernatant after centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.403424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J364'

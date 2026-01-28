@@ -1,0 +1,21 @@
+name: ROSEOCOCCUS SUDUNTUYENSIS medium
+original_name: ROSEOCOCCUS SUDUNTUYENSIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: KOMODO Medium 1217
+  term:
+    id: komodo.medium:1217
+    label: ROSEOCOCCUS SUDUNTUYENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1217 | DSMZ Medium: 1217 (mediadive.medium:1217)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1217'

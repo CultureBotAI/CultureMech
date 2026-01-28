@@ -1,0 +1,264 @@
+name: CRYPTOANAEROBACTER MEDIUM
+original_name: CRYPTOANAEROBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.5-8
+media_term:
+  preferred_term: DSMZ Medium 1022
+  term:
+    id: mediadive.medium:1022
+    label: CRYPTOANAEROBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1022.pdf'
+ingredients:
+- preferred_term: 4-Hydroxybenzoic acid
+  term:
+    id: CHEBI:30763
+    label: 4-Hydroxybenzoic acid
+  concentration:
+    value: '0.448207'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.398406'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.398406'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.98008'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.996016'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000498008'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '3.98406'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.0796813'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.059761'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate, C. sporogenes supernatant,
+    magnesium chloride, calcium chloride, and vitamins), adjust pH to 7.0 - 7.5 and
+    boil medium for 1 min, then cool to room temperature under 80% N2 and 20% CO2
+    gas mixture. Dissolve solid bicarbonate, adjust pH to 7.8, dispense the solution
+    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. After autoclaving add the appropriate amount of sterile and
+    anoxic supernatant of C. sporogenes and complete the medium by adding magnesium
+    chloride, calcium chloride and vitamins (sterilized by filtration) from sterile
+    anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium
+    should be 7.5 - 8.0.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: It may be necessary to add 10 - 20 mg sodium dithionite per liter (e.g.
+    from 5% (w/v) solution, freshly prepared under N2 gas and filter-sterilized),
+    if the medium is not completely reduced after inoculation.
+- step_number: 3
+  action: MIX
+  description: 'Note: For transfers use 10% (v/v) inoculum.'
+- step_number: 4
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+- step_number: 5
+  action: AUTOCLAVE
+  description: "Cultivate <i>Clostridium</i> sp. DSM 754 for 5 to 8 days at 37°C in\
+    \ the medium 1022, but omit 4-hydroxybenzoic acid, replace the <i>C. sporogenes</i>\
+    \ supernatant with distilled water and add after autoclaving 0.30 g/l Na2S x 9\
+    \ H2O from a sterile anoxic stock solution prepared under 100% N2 gas. Adjust\
+    \ pH of the complete medium to 7.0.\r\nDisrupt cells of the grown culture by autoclaving\
+    \ at 121°C for 20 min . Centrifuge autoclaved culture at 18000 x g for 20 min.\
+    \ Discard cell pellet and store the supernatant in screw capped bottles at -20°C\
+    \ .\r\nBefore use sterilize the supernatant by autoclaving under 100% N2 gas atmosphere\
+    \ in vials suitable for anaerobic cultivation."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.131831Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1022'

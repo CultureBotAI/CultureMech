@@ -1,0 +1,21 @@
+name: METHYLOPHAGA ALCALICA MEDIUM
+original_name: METHYLOPHAGA ALCALICA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: KOMODO Medium 976
+  term:
+    id: komodo.medium:976
+    label: METHYLOPHAGA ALCALICA MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 976 | DSMZ Medium: 976 (mediadive.medium:976)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 976'

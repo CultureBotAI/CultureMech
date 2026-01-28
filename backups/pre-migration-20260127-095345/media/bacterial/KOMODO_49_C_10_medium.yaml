@@ -1,0 +1,21 @@
+name: C/10 medium
+original_name: C/10 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 49
+  term:
+    id: komodo.medium:49
+    label: C/10 medium
+notes: 'Source: KOMODO ModelSEED | ID: 49 | DSMZ Medium: 49 (mediadive.medium:49)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 49'

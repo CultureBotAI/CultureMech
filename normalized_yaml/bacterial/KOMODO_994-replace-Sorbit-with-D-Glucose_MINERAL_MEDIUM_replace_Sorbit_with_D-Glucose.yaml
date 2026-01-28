@@ -1,0 +1,21 @@
+name: MINERAL MEDIUM_replace_Sorbit_with_D-Glucose
+original_name: MINERAL MEDIUM_replace_Sorbit_with_D-Glucose
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 994_replace_Sorbit_with_D-Glucose
+  term:
+    id: komodo.medium:994_replace_Sorbit_with_D-Glucose
+    label: MINERAL MEDIUM_replace_Sorbit_with_D-Glucose
+notes: 'Source: KOMODO ModelSEED | ID: 994_replace_Sorbit_with_D-Glucose | DSMZ Medium:
+  994 (mediadive.medium:994) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 994_replace_Sorbit_with_D-Glucose'

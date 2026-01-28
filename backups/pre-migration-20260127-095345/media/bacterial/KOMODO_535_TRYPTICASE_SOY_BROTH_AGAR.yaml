@@ -1,0 +1,21 @@
+name: TRYPTICASE SOY BROTH AGAR
+original_name: TRYPTICASE SOY BROTH AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 535
+  term:
+    id: komodo.medium:535
+    label: TRYPTICASE SOY BROTH AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 535 | DSMZ Medium: 535 (mediadive.medium:535)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 535'

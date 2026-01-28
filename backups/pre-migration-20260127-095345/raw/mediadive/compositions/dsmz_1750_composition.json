@@ -1,0 +1,39 @@
+{
+  "medium_id": "dsmz_1750",
+  "medium_name": "Medium dsmz_1750",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "with 50 g/l NaCl",
+      "concentration": 1000.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "First prepare the stock solutions as indicated below. Then combine the following:",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Nutrient Solution [ml]",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "x H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Artificial Seawater suppl. with 50 g/I NaCl1)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "of Artificial Seawater supplemented with 50 g/l NaCl",
+  "extraction_method": "pdf_text_parsing"
+}

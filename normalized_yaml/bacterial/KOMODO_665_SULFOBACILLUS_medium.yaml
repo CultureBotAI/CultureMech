@@ -1,0 +1,21 @@
+name: SULFOBACILLUS medium
+original_name: SULFOBACILLUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 1.9-2.4
+media_term:
+  preferred_term: KOMODO Medium 665
+  term:
+    id: komodo.medium:665
+    label: SULFOBACILLUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 665 | DSMZ Medium: 665 (mediadive.medium:665)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 665'

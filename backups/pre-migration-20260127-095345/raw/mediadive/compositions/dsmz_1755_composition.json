@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_1755",
+  "medium_name": "Sodium acetate",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Sodium acetate",
+      "concentration": 0.24,
+      "unit": "mM",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 0.15,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7H2O",
+      "concentration": 0.8,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O",
+      "concentration": 0.03,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 0.005,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KNO3",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "HEPES",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Trace mineral salts solution",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

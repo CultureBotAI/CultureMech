@@ -1,0 +1,24 @@
+name: MDM (modified dehority medium)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1668
+  term:
+    id: DSMZ:1668
+    label: MDM (modified dehority medium)
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1668.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.680555Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1668'

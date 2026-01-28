@@ -1,0 +1,77 @@
+name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
+original_name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.5
+media_term:
+  preferred_term: JCM Medium J685
+  term:
+    id: mediadive.medium:J685
+    label: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=685'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2S4O6
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 2.5 with H2SO4 and autoclave.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.
+- step_number: 3
+  action: AUTOCLAVE
+  description: To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For
+    solid medium, prepare double-strength Solution A and autoclave. Separately autoclave
+    an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep
+    the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution
+    B (70 ml/L) and pour into petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.295138Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J685'

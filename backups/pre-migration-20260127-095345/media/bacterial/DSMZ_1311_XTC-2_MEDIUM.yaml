@@ -1,0 +1,75 @@
+name: XTC-2 MEDIUM
+original_name: XTC-2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1311
+  term:
+    id: mediadive.medium:1311
+    label: XTC-2 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1311.pdf'
+ingredients:
+- preferred_term: Leibovitz's L-15 medium
+  concentration:
+    value: '93'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glutamine
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+- preferred_term: Leibovitz's L-15 medium
+  concentration:
+    value: '96'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glutamine
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Cultivation of XTC-2 (from Xenopus laevis) cells
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
+    room temperature to facilitate detection of contamination.
+- step_number: 3
+  action: HEAT
+  description: Prepare a 25 cm<sup>2</sup> flask and seed cells according to standard
+    protocols. Incubate at 28 - 32°C in hermetic flasks. Cells are easily detached
+    mechanically, no enzyme is necessary. Medium should be changed once a week. When
+    a confluent layer has formed, infection can be carried out.
+- step_number: 4
+  action: HEAT
+  description: 'Infect cells with 1 ml of Diplorickettsia stock solution (thawed quickly
+    to 37°C). Incubate for 1 h at room temperature. Cultivation temperature: 28°C.'
+- step_number: 5
+  action: MIX
+  description: Up to 100% of the cells should be infected after several days. The
+    infection level is evaluated after 3 days by Cytospin and Gimenez staining. Cytopathic
+    effects may be visible after 3-5 days. Specific PCRs can be performed to verify
+    the presence of diplorickettsiae.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.067980Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1311'

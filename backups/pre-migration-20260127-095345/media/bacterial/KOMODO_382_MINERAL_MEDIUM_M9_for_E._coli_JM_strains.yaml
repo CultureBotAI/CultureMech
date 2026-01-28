@@ -1,0 +1,20 @@
+name: MINERAL MEDIUM M9 for E. coli JM strains
+original_name: MINERAL MEDIUM M9 for E. coli JM strains
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 382
+  term:
+    id: komodo.medium:382
+    label: MINERAL MEDIUM M9 for E. coli JM strains
+notes: 'Source: KOMODO ModelSEED | ID: 382 | DSMZ Medium: 382 (mediadive.medium:382)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 382'

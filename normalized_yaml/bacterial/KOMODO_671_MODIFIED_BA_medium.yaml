@@ -1,0 +1,21 @@
+name: MODIFIED BA medium
+original_name: MODIFIED BA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.9-7.0
+media_term:
+  preferred_term: KOMODO Medium 671
+  term:
+    id: komodo.medium:671
+    label: MODIFIED BA medium
+notes: 'Source: KOMODO ModelSEED | ID: 671 | DSMZ Medium: 671 (mediadive.medium:671)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 671'

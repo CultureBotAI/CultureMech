@@ -1,0 +1,24 @@
+name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 261
+  term:
+    id: DSMZ:261
+    label: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.807382Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 261'

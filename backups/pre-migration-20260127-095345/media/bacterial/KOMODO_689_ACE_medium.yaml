@@ -1,0 +1,21 @@
+name: ACE medium
+original_name: ACE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: KOMODO Medium 689
+  term:
+    id: komodo.medium:689
+    label: ACE medium
+notes: 'Source: KOMODO ModelSEED | ID: 689 | DSMZ Medium: 689 (mediadive.medium:689)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 689'

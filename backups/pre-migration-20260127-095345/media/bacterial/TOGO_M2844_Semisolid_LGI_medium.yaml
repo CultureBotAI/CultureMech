@@ -1,0 +1,81 @@
+name: Semisolid LGI medium
+original_name: Semisolid LGI medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.2NKOH
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MgSO4 · 7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CaCl2 · 2H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Na2MoO4 · 2H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: FeCl3·6H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: agar
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: bromothymol blue
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: pH indicator'
+- preferred_term: crystallized cane sugar
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+media_term:
+  preferred_term: TOGO Medium M2844
+  term:
+    id: TOGO:M2844
+    label: Semisolid LGI medium
+notes: 'Source: https://togomedium.org/medium/M2844'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.349360Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2844'

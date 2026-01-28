@@ -1,0 +1,21 @@
+name: MEDIUM 987 MODIFIED FOR DSM 41839
+original_name: MEDIUM 987 MODIFIED FOR DSM 41839
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: KOMODO Medium 987_41839
+  term:
+    id: komodo.medium:987_41839
+    label: MEDIUM 987 MODIFIED FOR DSM 41839
+notes: 'Source: KOMODO ModelSEED | ID: 987_41839 | DSMZ Medium: 987 (mediadive.medium:987)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 987_41839'

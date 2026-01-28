@@ -1,0 +1,43 @@
+name: MARINOBACTER ALKALIPHILUS MEDIUM
+original_name: MARINOBACTER ALKALIPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J392
+  term:
+    id: mediadive.medium:J392
+    label: MARINOBACTER ALKALIPHILUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=392'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Na2SiO3
+  term:
+    id: CHEBI:1344098
+    label: Na2SiO3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve Marine broth 2216 in 900 ml distilled water and autoclave.
+    Separately dissolve Na2SiO3 and Na2CO3 in 100 ml distilled water, autoclave, and
+    add to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.489889Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J392'

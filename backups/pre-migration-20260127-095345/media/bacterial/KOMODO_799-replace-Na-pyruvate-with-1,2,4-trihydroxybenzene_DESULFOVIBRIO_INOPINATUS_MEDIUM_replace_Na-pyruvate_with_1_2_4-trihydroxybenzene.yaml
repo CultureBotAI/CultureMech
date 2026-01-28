@@ -1,0 +1,20 @@
+name: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+original_name: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+  term:
+    id: komodo.medium:799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+    label: DESULFOVIBRIO INOPINATUS MEDIUM_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+notes: 'Source: KOMODO ModelSEED | ID: 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene
+  | DSMZ Medium: 799 (mediadive.medium:799) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 799_replace_Na-pyruvate_with_1,2,4-trihydroxybenzene'

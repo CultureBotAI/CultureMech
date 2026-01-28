@@ -1,0 +1,21 @@
+name: ANAEROBIC THAUERA MEDIUM
+original_name: ANAEROBIC THAUERA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.1-7.5
+media_term:
+  preferred_term: KOMODO Medium 1315
+  term:
+    id: komodo.medium:1315
+    label: ANAEROBIC THAUERA MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1315 | DSMZ Medium: 1315 (mediadive.medium:1315)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1315'

@@ -1,0 +1,21 @@
+name: Trace element solution SL-4 (medium 457)
+original_name: Trace element solution SL-4 (medium 457)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.0-8.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2065 | DSMZ Medium: 2065
+  (mediadive.medium:2065) | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2065
+  term:
+    id: komodo.medium:2065
+    label: Trace element solution SL-4 (medium 457)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2065'

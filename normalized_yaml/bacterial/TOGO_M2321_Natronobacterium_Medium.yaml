@@ -1,0 +1,68 @@
+name: Natronobacterium Medium
+original_name: Natronobacterium Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NaCl
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Na3-citrate x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Glutamic acid
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Casamino acids
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na2CO3
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M2321
+  term:
+    id: TOGO:M2321
+    label: Natronobacterium Medium
+notes: 'Source: https://togomedium.org/medium/M2321
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium205.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.337750Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2321'

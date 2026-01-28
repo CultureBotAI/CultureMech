@@ -1,0 +1,25 @@
+name: ZM/10
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C108
+  term:
+    id: CCAP:C108
+    label: ZM/10
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_ZM10.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1016/S0168-6496(03)00298-8
+curation_history:
+- timestamp: '2026-01-24T08:12:50.550409Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C108'

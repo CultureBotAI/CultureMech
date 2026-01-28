@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1489",
+  "medium_name": "Trypton Soja Broth (Oxoid)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypton Soja Broth (Oxoid)",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "α-D-Glucose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar if appropriate",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

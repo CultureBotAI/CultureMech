@@ -1,0 +1,39 @@
+name: ALIFODINIBIUS MEDIUM (TSA mod)
+original_name: ALIFODINIBIUS MEDIUM (TSA mod)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1546
+  term:
+    id: mediadive.medium:1546
+    label: ALIFODINIBIUS MEDIUM (TSA mod)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1546.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Bacto Soytone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '60'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.804447Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1546'

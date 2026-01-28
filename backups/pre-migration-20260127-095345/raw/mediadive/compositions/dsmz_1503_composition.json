@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1503",
+  "medium_name": "Fetal Bovine Serum",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Cultivation of CACO-2 cells (ACC 169)",
+      "concentration": 45.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fetal Bovine Serum",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Aminoacids (100 x)",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

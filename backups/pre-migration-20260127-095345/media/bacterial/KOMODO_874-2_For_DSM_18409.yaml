@@ -1,0 +1,21 @@
+name: For DSM 18409
+original_name: For DSM 18409
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 1.6-1.8
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 874.2 | DSMZ Medium: 874
+  (mediadive.medium:874) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 874.2
+  term:
+    id: komodo.medium:874.2
+    label: For DSM 18409
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 874.2'

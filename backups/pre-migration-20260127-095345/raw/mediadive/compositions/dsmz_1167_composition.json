@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1167",
+  "medium_name": "FOR POLYNUCLEOBACTER",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone from soybean (e.g. Bacto Soytone)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

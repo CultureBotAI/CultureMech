@@ -1,0 +1,77 @@
+name: BACILLUS FILIFORMIS MEDIUM
+original_name: BACILLUS FILIFORMIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J531
+  term:
+    id: mediadive.medium:J531
+    label: BACILLUS FILIFORMIS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=531'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.98004'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '2.99401'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.99601'
+    unit: G_PER_L
+- preferred_term: MgSO4 x H2O
+  term:
+    id: CHEBI:32599
+    label: MgSO4 x H2O
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '2.99401'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '99.8004'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+- preferred_term: FeSO4 x H2O
+  term:
+    id: CHEBI:75834
+    label: FeSO4 x H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Separately autoclave Na2CO3 and NaCl. Check final pH to be about 9.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.853713Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J531'

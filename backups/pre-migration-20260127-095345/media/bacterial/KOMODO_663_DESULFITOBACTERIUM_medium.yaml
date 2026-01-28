@@ -1,0 +1,21 @@
+name: DESULFITOBACTERIUM medium
+original_name: DESULFITOBACTERIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 663 | DSMZ Medium: 663 (mediadive.medium:663)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 663
+  term:
+    id: komodo.medium:663
+    label: DESULFITOBACTERIUM medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 663'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_942",
+  "medium_name": "Medium dsmz_942",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Ca2Cl x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

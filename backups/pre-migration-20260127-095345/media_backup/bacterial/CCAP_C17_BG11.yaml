@@ -1,0 +1,26 @@
+name: BG11
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: CCAP Medium C17
+  term:
+    id: CCAP:C17
+    label: BG11
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_BG11.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1128/br.35.2.171-205.1971
+curation_history:
+- timestamp: '2026-01-24T08:12:50.500664Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C17'

@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1749",
+  "medium_name": "Mineral Salts Solution with Asparagin (L)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral Salts Solution with Asparagin (L)",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgSO2 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L-Asparagin",
+      "concentration": 990.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,80 @@
+name: ALCANIVORAX BORKUMENSIS MEDIUM
+original_name: ALCANIVORAX BORKUMENSIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7-7.5
+media_term:
+  preferred_term: DSMZ Medium 809
+  term:
+    id: mediadive.medium:809
+    label: ALCANIVORAX BORKUMENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium809.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '5.8'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 2 H2O
+  term:
+    id: CHEBI:131394
+    label: MgCl2 x 2 H2O
+  concentration:
+    value: '6.16'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.47'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.89'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.0 - 7.5
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.322579Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 809'

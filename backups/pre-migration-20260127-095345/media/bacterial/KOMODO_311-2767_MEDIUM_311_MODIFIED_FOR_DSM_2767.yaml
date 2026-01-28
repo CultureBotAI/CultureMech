@@ -1,0 +1,20 @@
+name: MEDIUM 311 MODIFIED FOR DSM 2767
+original_name: MEDIUM 311 MODIFIED FOR DSM 2767
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 311_2767
+  term:
+    id: komodo.medium:311_2767
+    label: MEDIUM 311 MODIFIED FOR DSM 2767
+notes: 'Source: KOMODO ModelSEED | ID: 311_2767 | DSMZ Medium: 311 (mediadive.medium:311)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 311_2767'

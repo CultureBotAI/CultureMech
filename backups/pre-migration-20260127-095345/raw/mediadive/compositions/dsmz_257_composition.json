@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_257",
+  "medium_name": "Yeast extract (BD Bacto)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Yeast extract (BD Bacto)",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Peptone (BD Bacto)",
+      "concentration": 0.6,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Tris-HCl buffer (0.05 M, pH 7.5)",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "of double layered agar plates:",
+  "extraction_method": "pdf_text_parsing"
+}

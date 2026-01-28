@@ -1,0 +1,20 @@
+name: ALTERNATIVE ACETOBACTER INTERMEDIUS medium
+original_name: ALTERNATIVE ACETOBACTER INTERMEDIUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 850
+  term:
+    id: komodo.medium:850
+    label: ALTERNATIVE ACETOBACTER INTERMEDIUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 850 | DSMZ Medium: 850 (mediadive.medium:850)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 850'

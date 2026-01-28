@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1729",
+  "medium_name": "FOR THIORHODOVIBRIO FRISIUS",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KH2PO4",
+      "concentration": 0.34,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

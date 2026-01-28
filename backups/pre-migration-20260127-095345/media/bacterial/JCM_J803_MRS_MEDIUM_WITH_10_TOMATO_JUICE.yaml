@@ -1,0 +1,40 @@
+name: MRS MEDIUM WITH 10% TOMATO JUICE
+original_name: MRS MEDIUM WITH 10% TOMATO JUICE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: JCM Medium J803
+  term:
+    id: mediadive.medium:J803
+    label: MRS MEDIUM WITH 10% TOMATO JUICE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=803'
+ingredients:
+- preferred_term: MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: ' ( filtered)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.646290Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J803'

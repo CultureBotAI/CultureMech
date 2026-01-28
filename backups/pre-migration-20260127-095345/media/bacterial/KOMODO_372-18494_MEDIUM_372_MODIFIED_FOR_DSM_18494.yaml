@@ -1,0 +1,21 @@
+name: MEDIUM 372 MODIFIED FOR DSM 18494
+original_name: MEDIUM 372 MODIFIED FOR DSM 18494
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 372_18494 |
+  DSMZ Medium: 372 (mediadive.medium:372) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 372_18494
+  term:
+    id: komodo.medium:372_18494
+    label: MEDIUM 372 MODIFIED FOR DSM 18494
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 372_18494'

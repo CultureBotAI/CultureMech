@@ -1,0 +1,25 @@
+name: N27 RHODOSPIRILLACEAE MEDIUM (modified)
+original_name: N27 RHODOSPIRILLACEAE MEDIUM (modified)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: public Medium P7
+  term:
+    id: mediadive.medium:P7
+    label: N27 RHODOSPIRILLACEAE MEDIUM (modified)
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.845665Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P7'

@@ -1,0 +1,21 @@
+name: KR medium
+original_name: KR medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1283
+  term:
+    id: komodo.medium:1283
+    label: KR medium
+notes: 'Source: KOMODO ModelSEED | ID: 1283 | DSMZ Medium: 1283 (mediadive.medium:1283)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1283'

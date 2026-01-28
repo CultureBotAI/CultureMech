@@ -1,0 +1,20 @@
+name: MEDIUM 340 MODIFIED FOR DSM 7271
+original_name: MEDIUM 340 MODIFIED FOR DSM 7271
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 340_7271
+  term:
+    id: komodo.medium:340_7271
+    label: MEDIUM 340 MODIFIED FOR DSM 7271
+notes: 'Source: KOMODO ModelSEED | ID: 340_7271 | DSMZ Medium: 340 (mediadive.medium:340)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 340_7271'

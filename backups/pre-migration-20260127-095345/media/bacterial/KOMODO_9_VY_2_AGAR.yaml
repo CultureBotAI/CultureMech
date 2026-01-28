@@ -1,0 +1,21 @@
+name: VY/2 AGAR
+original_name: VY/2 AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 9 | DSMZ Medium: 9 (mediadive.medium:9)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 9
+  term:
+    id: komodo.medium:9
+    label: VY/2 AGAR
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 9'

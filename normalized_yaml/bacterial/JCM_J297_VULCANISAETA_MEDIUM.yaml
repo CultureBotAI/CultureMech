@@ -1,0 +1,30 @@
+name: VULCANISAETA MEDIUM
+original_name: VULCANISAETA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: JCM Medium J297
+  term:
+    id: mediadive.medium:J297
+    label: VULCANISAETA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=297'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 183 with 0.5 g/L yeast extract (BD-Difco) and 10.0 g/L
+    sulfur (powder), and adjust final pH to 4.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.214340Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J297'

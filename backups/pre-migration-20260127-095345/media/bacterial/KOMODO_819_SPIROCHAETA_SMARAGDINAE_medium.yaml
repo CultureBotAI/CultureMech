@@ -1,0 +1,21 @@
+name: SPIROCHAETA SMARAGDINAE medium
+original_name: SPIROCHAETA SMARAGDINAE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 819
+  term:
+    id: komodo.medium:819
+    label: SPIROCHAETA SMARAGDINAE medium
+notes: 'Source: KOMODO ModelSEED | ID: 819 | DSMZ Medium: 819 (mediadive.medium:819)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 819'

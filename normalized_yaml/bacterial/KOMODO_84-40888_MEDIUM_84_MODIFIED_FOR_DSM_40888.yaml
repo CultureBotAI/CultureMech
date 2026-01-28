@@ -1,0 +1,21 @@
+name: MEDIUM 84 MODIFIED FOR DSM 40888
+original_name: MEDIUM 84 MODIFIED FOR DSM 40888
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.0
+media_term:
+  preferred_term: KOMODO Medium 84_40888
+  term:
+    id: komodo.medium:84_40888
+    label: MEDIUM 84 MODIFIED FOR DSM 40888
+notes: 'Source: KOMODO ModelSEED | ID: 84_40888 | DSMZ Medium: 84 (mediadive.medium:84)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 84_40888'

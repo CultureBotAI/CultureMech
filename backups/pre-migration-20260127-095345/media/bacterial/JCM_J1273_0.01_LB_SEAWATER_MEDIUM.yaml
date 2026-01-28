@@ -1,0 +1,90 @@
+name: 0.01% LB SEAWATER MEDIUM
+original_name: 0.01% LB SEAWATER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1273
+  term:
+    id: mediadive.medium:J1273
+    label: 0.01% LB SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1273'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '259'
+    unit: G_PER_L
+- preferred_term: Mn(II) x EDTA
+  concentration:
+    value: '332'
+    unit: G_PER_L
+- preferred_term: Tris(hydroxymethyl)aminomethane
+  term:
+    id: CHEBI:9754
+    label: Tris(hydroxymethyl)aminomethane
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: LB Broth
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: ' ( Lennox)'
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components thoroughly, adjust pH to 8.0 with HCl and autoclave.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Artificial sea water (such as artificial sea water in Medium
+    No. 1118) can be used instead of natural sea water.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.251848Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1273'

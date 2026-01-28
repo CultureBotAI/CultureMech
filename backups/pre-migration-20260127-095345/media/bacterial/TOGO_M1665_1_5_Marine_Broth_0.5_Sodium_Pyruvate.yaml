@@ -1,0 +1,50 @@
+name: 1/5 Marine Broth + 0.5% Sodium Pyruvate
+original_name: 1/5 Marine Broth + 0.5% Sodium Pyruvate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Seawater*
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Complex component, Undefined component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '750'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1665
+  term:
+    id: TOGO:M1665
+    label: 1/5 Marine Broth + 0.5% Sodium Pyruvate
+notes: 'Source: https://togomedium.org/medium/M1665
+
+  Original source: NBRC - NBRC_M868
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=868'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.092513Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1665'

@@ -1,0 +1,33 @@
+name: BL WITH 0.5% MALTOSE
+original_name: BL WITH 0.5% MALTOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J418
+  term:
+    id: mediadive.medium:J418
+    label: BL WITH 0.5% MALTOSE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=418'
+ingredients:
+- preferred_term: BL Agar
+  term:
+    id: CHEBI:2509
+    label: BL Agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.561528Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J418'

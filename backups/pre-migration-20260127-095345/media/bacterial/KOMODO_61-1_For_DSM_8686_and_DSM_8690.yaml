@@ -1,0 +1,21 @@
+name: For DSM 8686 and DSM 8690
+original_name: For DSM 8686 and DSM 8690
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: KOMODO Medium 61.1
+  term:
+    id: komodo.medium:61.1
+    label: For DSM 8686 and DSM 8690
+notes: 'Source: KOMODO ModelSEED | ID: 61.1 | DSMZ Medium: 61 (mediadive.medium:61)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 61.1'

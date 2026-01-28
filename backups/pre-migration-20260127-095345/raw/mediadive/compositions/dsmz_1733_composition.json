@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1733",
+  "medium_name": "FOR HYDROGENOPHILUS",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "KH2PO4",
+      "concentration": 2.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

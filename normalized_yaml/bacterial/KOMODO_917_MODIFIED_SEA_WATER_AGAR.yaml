@@ -1,0 +1,21 @@
+name: MODIFIED SEA WATER AGAR
+original_name: MODIFIED SEA WATER AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 917
+  term:
+    id: komodo.medium:917
+    label: MODIFIED SEA WATER AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 917 | DSMZ Medium: 917 (mediadive.medium:917)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 917'

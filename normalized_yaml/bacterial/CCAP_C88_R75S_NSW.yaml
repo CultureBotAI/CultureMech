@@ -1,0 +1,49 @@
+name: R75S:NSW
+original_name: R75S:NSW
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C88
+  term:
+    id: mediadive.medium:C88
+    label: R75S:NSW
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Rye grass
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 2:1 mixture
+- step_number: 2
+  action: AUTOCLAVE
+  description: See separate recipes below.  Autoclave separately.  Mix aseptically
+    when cool.
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep\
+    \ boiling for 5 \r\nminutes.  Allow to cool and  restore volume to 1 litre with\
+    \ deionized water.  Filter \r\nthrough Whatman GF/C paper.  Autoclave at 15 psi\
+    \ for 15 minutes."
+- step_number: 4
+  action: AUTOCLAVE
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.768126Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C88'

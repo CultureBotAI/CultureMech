@@ -1,0 +1,30 @@
+name: brain-heart infusion broth (with glucose)
+original_name: brain-heart infusion broth (with glucose)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glucose
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: brain-heart infusion broth (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2830
+  term:
+    id: TOGO:M2830
+    label: brain-heart infusion broth (with glucose)
+notes: 'Source: https://togomedium.org/medium/M2830'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.341178Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2830'

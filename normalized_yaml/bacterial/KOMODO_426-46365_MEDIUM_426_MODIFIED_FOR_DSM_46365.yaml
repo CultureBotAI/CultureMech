@@ -1,0 +1,20 @@
+name: MEDIUM 426 MODIFIED FOR DSM 46365
+original_name: MEDIUM 426 MODIFIED FOR DSM 46365
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 426_46365
+  term:
+    id: komodo.medium:426_46365
+    label: MEDIUM 426 MODIFIED FOR DSM 46365
+notes: 'Source: KOMODO ModelSEED | ID: 426_46365 | DSMZ Medium: 426 (mediadive.medium:426)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 426_46365'

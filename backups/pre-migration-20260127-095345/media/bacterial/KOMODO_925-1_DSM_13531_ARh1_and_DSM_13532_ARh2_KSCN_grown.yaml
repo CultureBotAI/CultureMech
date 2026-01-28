@@ -1,0 +1,20 @@
+name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
+original_name: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 925.1
+  term:
+    id: komodo.medium:925.1
+    label: DSM 13531 = ARh1 and DSM 13532 = ARh2 (KSCN grown)
+notes: 'Source: KOMODO ModelSEED | ID: 925.1 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 925.1'

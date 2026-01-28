@@ -1,0 +1,764 @@
+id: https://w3id.org/culturemech
+name: culturemech
+title: CultureMech - Microbial Growth Media Schema
+description: |
+  LinkML schema for modeling microbial culture media recipes and formulations.
+  Follows the dismech architecture pattern with descriptor classes for ontology grounding.
+
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  culturemech: https://w3id.org/culturemech/
+  biolink: https://w3id.org/biolink/vocab/
+  # Chemicals
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  # Organisms
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  # Media databases (authoritative sources)
+  DSMZ: https://mediadive.dsmz.de/medium/
+  TOGO: http://togodb.org/db/medium/
+  ATCC: https://www.atcc.org/products/
+  NCIT: http://purl.obolibrary.org/obo/NCIT_
+  # Lab procedures
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  # Environmental conditions
+  ENVO: http://purl.obolibrary.org/obo/ENVO_
+  # Units
+  UO: http://purl.obolibrary.org/obo/UO_
+  # Anatomy (for tissue extracts)
+  UBERON: http://purl.obolibrary.org/obo/UBERON_
+  # References
+  PMID: http://www.ncbi.nlm.nih.gov/pubmed/
+  DOI: https://doi.org/
+  # Data repositories
+  geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
+  sra: https://www.ncbi.nlm.nih.gov/sra/
+  # Suppliers
+  sigma: https://www.sigmaaldrich.com/catalog/product/
+  thermofisher: https://www.thermofisher.com/order/catalog/product/
+
+default_prefix: culturemech
+default_range: string
+
+imports:
+  - linkml:types
+
+# ================================================================
+# ROOT CLASS
+# ================================================================
+
+classes:
+  MediaRecipe:
+    class_uri: culturemech:MediaRecipe
+    description: >-
+      A complete growth medium formulation for culturing microorganisms.
+      This is the root entity - one per YAML file.
+    attributes:
+      name:
+        description: Human-readable medium name (e.g., "LB Broth", "M9 Minimal Medium")
+        identifier: true
+        required: true
+        range: string
+
+      category:
+        description: Broad category for organization (bacterial, fungal, archaea, specialized)
+        range: string
+        recommended: true
+
+      media_term:
+        description: Reference to authoritative media database
+        range: MediaTypeDescriptor
+        recommended: true
+
+      description:
+        description: Overview of the medium and its purpose
+        range: string
+        multivalued: false
+
+      target_organisms:
+        description: Organisms for which this medium is designed
+        range: OrganismDescriptor
+        multivalued: true
+        recommended: true
+
+      medium_type:
+        description: Classification of the medium
+        range: MediumTypeEnum
+        required: true
+
+      physical_state:
+        description: Physical form of the medium
+        range: PhysicalStateEnum
+        required: true
+
+      ph_value:
+        description: Target pH value
+        range: float
+
+      ph_range:
+        description: Acceptable pH range (e.g., "6.8-7.2")
+        range: string
+
+      ingredients:
+        description: Chemical and biological ingredients
+        range: IngredientDescriptor
+        multivalued: true
+        required: true
+        inlined_as_list: true
+
+      solutions:
+        description: Pre-prepared stock solutions used as ingredients
+        range: SolutionDescriptor
+        multivalued: true
+        inlined_as_list: true
+
+      preparation_steps:
+        description: Ordered steps to prepare the medium
+        range: PreparationStep
+        multivalued: true
+        recommended: true
+        inlined_as_list: true
+
+      sterilization:
+        description: Sterilization method and parameters
+        range: SterilizationDescriptor
+        recommended: true
+        inlined: true
+
+      storage:
+        description: Storage conditions for prepared medium
+        range: StorageConditions
+        inlined: true
+
+      applications:
+        description: Use cases and applications
+        range: string
+        multivalued: true
+
+      variants:
+        description: Related formulations or modifications
+        range: MediaVariant
+        multivalued: true
+        inlined_as_list: true
+
+      references:
+        description: Original literature sources
+        range: PublicationReference
+        multivalued: true
+        inlined_as_list: true
+
+      notes:
+        description: Additional context, historical notes, tips
+        range: string
+
+      evidence:
+        description: Evidence supporting formulation claims
+        range: EvidenceItem
+        multivalued: true
+        recommended: false
+        inlined_as_list: true
+
+      datasets:
+        description: Omics datasets generated using this medium
+        range: Dataset
+        multivalued: true
+        inlined_as_list: true
+
+      curation_history:
+        description: Audit trail of curation events
+        range: CurationEvent
+        multivalued: true
+        inlined_as_list: true
+
+# ================================================================
+# BASE DESCRIPTOR PATTERN (following dismech)
+# ================================================================
+
+  Descriptor:
+    abstract: true
+    description: >-
+      Base class for descriptor pattern.
+      Descriptors have a human-readable preferred_term and optional ontology term.
+
+  Term:
+    abstract: true
+    description: >-
+      Base class for ontology term references.
+      Subclasses specify id_prefixes for validation.
+    attributes:
+      id:
+        description: Ontology identifier (CURIE)
+        identifier: true
+        required: true
+        range: string
+      label:
+        description: Ontology term label
+        range: string
+
+# ================================================================
+# DESCRIPTOR CLASSES
+# ================================================================
+
+  MediaTypeDescriptor:
+    is_a: Descriptor
+    description: Classification and authoritative database reference for the medium
+    attributes:
+      preferred_term:
+        description: Medium designation in source database (e.g., "DSMZ Medium 1", "LB")
+        required: true
+        range: string
+      term:
+        description: Authoritative media database identifier
+        range: MediaDatabaseTerm
+        recommended: true
+        inlined: true
+
+  IngredientDescriptor:
+    is_a: Descriptor
+    description: Chemical or biological ingredient in a medium
+    attributes:
+      preferred_term:
+        description: Human-readable ingredient name (e.g., "Glucose", "Yeast Extract")
+        required: true
+        range: string
+
+      term:
+        description: CHEBI term for the chemical entity
+        range: ChemicalEntityTerm
+        recommended: true
+        inlined: true
+
+      concentration:
+        description: Amount of ingredient
+        range: ConcentrationValue
+        required: true
+        inlined: true
+
+      modifier:
+        description: Modification in variants (INCREASED, DECREASED)
+        range: ModifierEnum
+
+      chemical_formula:
+        description: Molecular formula (e.g., "C6H12O6")
+        range: string
+
+      molecular_weight:
+        description: Molecular weight in g/mol
+        range: float
+
+      supplier_catalog:
+        description: Supplier information for sourcing
+        range: SupplierInfo
+        inlined: true
+
+      notes:
+        description: Preparation notes specific to this ingredient
+        range: string
+
+      evidence:
+        description: Evidence for this ingredient's role
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  SolutionDescriptor:
+    is_a: Descriptor
+    description: A pre-prepared stock solution used as an ingredient
+    attributes:
+      preferred_term:
+        description: Solution name (e.g., "Trace Metal Solution", "Vitamin Stock")
+        required: true
+        range: string
+
+      term:
+        description: Ontology term if available
+        range: Term
+        inlined: true
+
+      composition:
+        description: Ingredients in the stock solution
+        range: IngredientDescriptor
+        multivalued: true
+        required: true
+        inlined_as_list: true
+
+      concentration:
+        description: Working concentration when added to medium
+        range: ConcentrationValue
+        inlined: true
+
+      preparation_notes:
+        description: How to prepare the stock solution
+        range: string
+
+      storage_conditions:
+        description: Storage requirements for the stock
+        range: StorageConditions
+        inlined: true
+
+      shelf_life:
+        description: Stability duration (e.g., "6 months at 4°C")
+        range: string
+
+  OrganismDescriptor:
+    is_a: Descriptor
+    description: Target organism for the medium
+    attributes:
+      preferred_term:
+        description: Organism name (e.g., "Escherichia coli")
+        required: true
+        range: string
+
+      term:
+        description: NCBITaxon identifier
+        range: OrganismTerm
+        required: true
+        inlined: true
+
+      strain:
+        description: Specific strain designation (e.g., "K-12", "MG1655")
+        range: string
+
+      growth_phase:
+        description: Target growth phase (e.g., "exponential", "stationary")
+        range: string
+
+      evidence:
+        description: Evidence supporting growth on this medium
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+# ================================================================
+# SUPPORTING CLASSES
+# ================================================================
+
+  ConcentrationValue:
+    description: Quantified concentration with units
+    attributes:
+      value:
+        description: Numeric value or range
+        range: string
+        required: true
+
+      unit:
+        description: Concentration unit
+        range: ConcentrationUnitEnum
+        required: true
+
+      per_volume:
+        description: Volume basis (e.g., "per liter", "per 100 mL")
+        range: string
+
+  TemperatureValue:
+    description: Temperature with units
+    attributes:
+      value:
+        description: Numeric temperature value
+        range: float
+        required: true
+
+      unit:
+        description: Temperature unit
+        range: TemperatureUnitEnum
+        required: true
+
+  PreparationStep:
+    description: A step in medium preparation
+    attributes:
+      step_number:
+        description: Sequential order
+        range: integer
+        required: true
+
+      action:
+        description: Action type
+        range: PreparationActionEnum
+        required: true
+
+      description:
+        description: Detailed instruction
+        range: string
+        required: true
+
+      temperature:
+        description: Temperature for this step
+        range: TemperatureValue
+        inlined: true
+
+      duration:
+        description: Time duration (e.g., "15 minutes", "overnight")
+        range: string
+
+      equipment:
+        description: Required equipment (e.g., "autoclave", "magnetic stirrer")
+        range: string
+
+      notes:
+        description: Additional tips or warnings
+        range: string
+
+  SterilizationDescriptor:
+    description: Sterilization method and parameters
+    attributes:
+      method:
+        description: Sterilization technique
+        range: SterilizationMethodEnum
+        required: true
+
+      temperature:
+        description: Temperature setting
+        range: TemperatureValue
+        inlined: true
+
+      pressure:
+        description: Pressure in psi or kPa (for autoclaving)
+        range: float
+
+      duration:
+        description: Sterilization duration
+        range: string
+
+      notes:
+        description: Special instructions (e.g., "Filter-sterilize heat-labile components separately")
+        range: string
+
+  StorageConditions:
+    description: Storage requirements for prepared medium
+    attributes:
+      temperature:
+        description: Storage temperature
+        range: TemperatureValue
+        required: true
+        inlined: true
+
+      light_condition:
+        description: Light exposure requirement
+        range: LightConditionEnum
+
+      shelf_life:
+        description: Duration of stability
+        range: string
+
+      container_type:
+        description: Recommended container (e.g., "glass bottle", "polypropylene tube")
+        range: string
+
+      notes:
+        description: Additional storage tips
+        range: string
+
+  MediaVariant:
+    description: A variant or modification of the base recipe
+    attributes:
+      name:
+        description: Variant name (e.g., "Low Salt LB", "LB + Ampicillin")
+        required: true
+        range: string
+
+      description:
+        description: Purpose and context
+        range: string
+
+      modifications:
+        description: What differs from base recipe
+        range: string
+        multivalued: true
+
+      purpose:
+        description: Why this variant exists
+        range: string
+
+      supplier_info:
+        description: Commercial supplier if premix
+        range: SupplierInfo
+        inlined: true
+
+      evidence:
+        description: Evidence supporting the variant
+        range: EvidenceItem
+        multivalued: true
+        inlined_as_list: true
+
+  SupplierInfo:
+    description: Commercial supplier information
+    attributes:
+      supplier_name:
+        description: Vendor name (e.g., "Sigma-Aldrich", "Thermo Fisher")
+        range: string
+        required: true
+
+      catalog_number:
+        description: Product catalog number
+        range: string
+
+      product_url:
+        description: Direct product link
+        range: uri
+
+      notes:
+        description: Additional sourcing notes
+        range: string
+
+  PublicationReference:
+    description: Literature reference
+    attributes:
+      reference:
+        description: Citation (PMID, DOI, or historical reference)
+        range: string
+        required: true
+
+      title:
+        description: Publication title
+        range: string
+
+      authors:
+        description: Author list
+        range: string
+
+      year:
+        description: Publication year
+        range: integer
+
+      notes:
+        description: Additional context about the reference
+        range: string
+
+  EvidenceItem:
+    description: Evidence supporting a claim about media formulation or performance
+    attributes:
+      reference:
+        description: Citation (PMID, DOI, or historical reference)
+        range: string
+        required: true
+
+      supports:
+        description: Level of support
+        range: EvidenceItemSupportEnum
+        required: true
+
+      snippet:
+        description: Exact quote from paper (if PMID/DOI available)
+        range: string
+
+      explanation:
+        description: Why this evidence supports the claim
+        range: string
+        required: true
+
+  Dataset:
+    description: Omics dataset generated using this medium
+    attributes:
+      dataset_id:
+        description: Dataset identifier (GEO, SRA, etc.)
+        range: string
+        required: true
+
+      dataset_type:
+        description: Type of omics data (genomics, transcriptomics, metabolomics, etc.)
+        range: string
+
+      description:
+        description: Brief description of the dataset
+        range: string
+
+      url:
+        description: Direct link to dataset
+        range: uri
+
+  CurationEvent:
+    description: Audit trail entry for curation
+    attributes:
+      timestamp:
+        description: ISO 8601 timestamp
+        range: string
+        required: true
+
+      curator:
+        description: Name or identifier of curator
+        range: string
+        required: true
+
+      action:
+        description: Action taken (created, updated, validated, etc.)
+        range: string
+        required: true
+
+      notes:
+        description: Additional context
+        range: string
+
+# ================================================================
+# ONTOLOGY TERM CLASSES
+# ================================================================
+
+  ChemicalEntityTerm:
+    is_a: Term
+    description: A CHEBI term representing a chemical entity
+    slot_usage:
+      id:
+        pattern: "^CHEBI:\\d+$"
+    id_prefixes:
+      - CHEBI
+
+  OrganismTerm:
+    is_a: Term
+    description: An NCBITaxon term representing an organism
+    slot_usage:
+      id:
+        pattern: "^NCBITaxon:\\d+$"
+    id_prefixes:
+      - NCBITaxon
+
+  MediaDatabaseTerm:
+    is_a: Term
+    description: Identifier from authoritative media database
+    id_prefixes:
+      - DSMZ
+      - TOGO
+      - ATCC
+      - NCIT
+
+# ================================================================
+# ENUMERATIONS
+# ================================================================
+
+enums:
+  MediumTypeEnum:
+    description: Classification of culture medium
+    permissible_values:
+      DEFINED:
+        description: Chemically defined medium with known composition
+        meaning: NCIT:C64372
+      COMPLEX:
+        description: Medium with undefined components (e.g., yeast extract)
+        meaning: NCIT:C64371
+      SELECTIVE:
+        description: Medium that selects for specific organisms
+      DIFFERENTIAL:
+        description: Medium that differentiates organism types
+      ENRICHMENT:
+        description: Medium that enriches for specific organisms
+      MINIMAL:
+        description: Medium with minimal nutrients required for growth
+
+  PhysicalStateEnum:
+    description: Physical form of the medium
+    permissible_values:
+      LIQUID:
+        description: Liquid broth medium
+      SOLID_AGAR:
+        description: Solidified with agar
+      SEMISOLID:
+        description: Reduced agar concentration for motility testing
+      BIPHASIC:
+        description: Both liquid and solid phases
+
+  ConcentrationUnitEnum:
+    description: Units for concentration
+    permissible_values:
+      G_PER_L:
+        description: grams per liter
+        meaning: UO:0000175
+      MG_PER_L:
+        description: milligrams per liter
+      MICROG_PER_L:
+        description: micrograms per liter
+      MOLAR:
+        description: moles per liter
+        meaning: UO:0000062
+      MILLIMOLAR:
+        description: millimoles per liter
+      MICROMOLAR:
+        description: micromoles per liter
+      PERCENT_W_V:
+        description: percent weight per volume
+      PERCENT_V_V:
+        description: percent volume per volume
+
+  TemperatureUnitEnum:
+    description: Units for temperature
+    permissible_values:
+      CELSIUS:
+        description: Degrees Celsius
+        meaning: UO:0000027
+      FAHRENHEIT:
+        description: Degrees Fahrenheit
+      KELVIN:
+        description: Kelvin
+        meaning: UO:0000012
+
+  PreparationActionEnum:
+    description: Controlled vocabulary for preparation steps
+    permissible_values:
+      DISSOLVE:
+        description: Dissolve ingredients in solvent
+      MIX:
+        description: Mix or stir components
+      HEAT:
+        description: Apply heat
+      COOL:
+        description: Cool to specified temperature
+      AUTOCLAVE:
+        description: Steam sterilization under pressure
+      FILTER_STERILIZE:
+        description: Filter through 0.22 μm membrane
+      ADJUST_PH:
+        description: Adjust pH with acid or base
+      ADD_AGAR:
+        description: Add agar for solidification
+      POUR_PLATES:
+        description: Dispense into petri dishes
+      ALIQUOT:
+        description: Divide into smaller portions
+      STORE:
+        description: Store under specified conditions
+
+  SterilizationMethodEnum:
+    description: Sterilization techniques
+    permissible_values:
+      AUTOCLAVE:
+        description: Steam sterilization under pressure (121°C, 15 psi, 15-20 min)
+      FILTER:
+        description: Filtration through 0.22 μm filter
+      DRY_HEAT:
+        description: Dry heat sterilization (160-180°C)
+      TYNDALLIZATION:
+        description: Intermittent sterilization for heat-sensitive media
+      NONE:
+        description: No sterilization (non-sterile media)
+
+  LightConditionEnum:
+    description: Light exposure requirements
+    permissible_values:
+      DARK:
+        description: Store in complete darkness
+      LIGHT_PROTECTED:
+        description: Protect from light (amber bottle or foil wrap)
+      AMBIENT:
+        description: Normal laboratory lighting
+
+  ModifierEnum:
+    description: Modification type for variants
+    permissible_values:
+      INCREASED:
+        description: Elevated concentration relative to base recipe
+      DECREASED:
+        description: Reduced concentration relative to base recipe
+      ABSENT:
+        description: Ingredient omitted in this variant
+
+  EvidenceItemSupportEnum:
+    description: Level of evidence support
+    permissible_values:
+      SUPPORT:
+        description: Evidence supports the claim
+      REFUTE:
+        description: Evidence refutes the claim
+      PARTIAL:
+        description: Evidence partially supports the claim
+      NO_EVIDENCE:
+        description: No evidence found
+      WRONG_STATEMENT:
+        description: Statement is incorrect

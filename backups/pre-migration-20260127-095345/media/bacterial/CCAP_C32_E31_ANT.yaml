@@ -1,0 +1,213 @@
+name: E31:ANT
+original_name: E31:ANT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C32
+  term:
+    id: mediadive.medium:C32
+    label: E31:ANT
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_E31_ANT.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '50'
+    unit: MICROG_PER_L
+- preferred_term: Biotine
+  term:
+    id: CHEBI:15956
+    label: Biotine
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Soil
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '0.0078'
+    unit: G_PER_L
+- preferred_term: Tris
+  term:
+    id: CHEBI:9754
+    label: Tris
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '500'
+    unit: MICROG_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '2'
+    unit: MICROG_PER_L
+- preferred_term: Biotine
+  term:
+    id: CHEBI:15956
+    label: Biotine
+  concentration:
+    value: '1'
+    unit: MICROG_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '1.08'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.0056'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 1:1 mixture
+- step_number: 2
+  action: AUTOCLAVE
+  description: See separate recipes.  Autoclave separately.  Mix aseptically when
+    cool.
+- step_number: 3
+  action: AUTOCLAVE
+  description: "This medium is made up in 2 parts which are autoclaved separately\
+    \ at 15 psi and \r\nmixed aseptically (1:1), when cool. This avoids precipitation."
+- step_number: 4
+  action: MIX
+  description: "Alternatively,  use  17.5g  of  “Ultramarine  Synthetica” sea  salts\
+    \ in\r\n500ml of distilled water."
+- step_number: 5
+  action: AUTOCLAVE
+  description: Distilled water to 500 ml.  Autoclave
+- step_number: 6
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 7
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 8
+  action: AUTOCLAVE
+  description: "Soil is  prepared  as  above.  Air­-dried  soil and  twice  its  volume\
+    \  of  supernatant\r\ndistilled water are autoclaved together at 15 psi for 2\
+    \ hours and left to cool.  The \r\nsupernatant is then decanted and filtered through\
+    \ Whatman No 1 filter paper, then\r\ndistributed to containers in volumes suitable\
+    \ for making up batches of media. The \r\naliquots and their containers are autoclaved\
+    \ for an appropriate length of time (e.g.\r\n1 litre or less for 15 minutes) and\
+    \ are then kept in a cool place (e.g. a refrigerator) \r\nuntil required."
+- step_number: 9
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with distilled water and autoclave at 15 psi. Final\
+    \ pH should be \r\n7.6 -­ 7.8."
+- step_number: 10
+  action: ADJUST_PH
+  description: "Make up to 1 litre with distilled water and adjust pH to 7.6 ­- 7.8\
+    \ with dilute HCl or \r\nNaOH.  Store frozen."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.574966Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C32'

@@ -1,0 +1,80 @@
+name: ACIDIHALOBACTER MEDIUM
+original_name: ACIDIHALOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 1.2
+media_term:
+  preferred_term: JCM Medium J1196
+  term:
+    id: mediadive.medium:J1196
+    label: ACIDIHALOBACTER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1196'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.111111'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '139'
+    unit: G_PER_L
+- preferred_term: K2S4O6
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH 1.7 with H2SO4 and autoclave.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 1.25 and autoclave at 115C for 10 min or filter-sterilize.
+- step_number: 3
+  action: MIX
+  description: Sterilize by filtration.
+- step_number: 4
+  action: MIX
+  description: Sterilize by autoclaving.
+- step_number: 5
+  action: COOL
+  description: Aseptically combine solutions A and B after cooling. Then, add solutions
+    C and D to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.976201Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1196'

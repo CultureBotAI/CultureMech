@@ -1,0 +1,21 @@
+name: GYE - medium
+original_name: GYE - medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 572
+  term:
+    id: komodo.medium:572
+    label: GYE - medium
+notes: 'Source: KOMODO ModelSEED | ID: 572 | DSMZ Medium: 572 (mediadive.medium:572)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 572'

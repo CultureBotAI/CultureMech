@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_760",
+  "medium_name": "Prepare liquid Bacto Marine Broth (see medium 514) and filter through normal filter",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 514",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "514"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

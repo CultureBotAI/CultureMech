@@ -1,0 +1,21 @@
+name: For DSM 19380
+original_name: For DSM 19380
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.2-6.4
+media_term:
+  preferred_term: KOMODO Medium 395.3
+  term:
+    id: komodo.medium:395.3
+    label: For DSM 19380
+notes: 'Source: KOMODO ModelSEED | ID: 395.3 | DSMZ Medium: 395 (mediadive.medium:395)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 395.3'

@@ -1,0 +1,204 @@
+name: MS10 Medium + Supplements for Batch Cultivation
+original_name: MS10 Medium + Supplements for Batch Cultivation
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '1.403'
+    unit: MILLIMOLAR
+- preferred_term: Proline
+  term:
+    id: CHEBI:26271
+    label: Proline
+  concentration:
+    value: '5.906'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '55.51'
+    unit: MILLIMOLAR
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '2.265'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.008123'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: DL-Serine
+  concentration:
+    value: '3.235'
+    unit: MILLIMOLAR
+- preferred_term: Glutamine
+  concentration:
+    value: '3.49'
+    unit: MILLIMOLAR
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.04093'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Pyridoxamine
+  term:
+    id: CHEBI:16410
+    label: Pyridoxamine
+  concentration:
+    value: '0.02973'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pydam'
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.003769'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Lipoate
+  concentration:
+    value: '0.01212'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lipoate'
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.8042'
+    unit: MILLIMOLAR
+- preferred_term: Valine
+  concentration:
+    value: '2.817'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.002099'
+    unit: MILLIMOLAR
+- preferred_term: Leucine
+  concentration:
+    value: '3.583'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '1.362'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '1.525'
+    unit: MILLIMOLAR
+- preferred_term: DL-Tyrosine
+  concentration:
+    value: '1.601'
+    unit: MILLIMOLAR
+- preferred_term: Threonine
+  concentration:
+    value: '1.931'
+    unit: MILLIMOLAR
+- preferred_term: Phenylalanine
+  concentration:
+    value: '1.695'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '9.933e-05'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.9838'
+    unit: MILLIMOLAR
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '0.6889'
+    unit: MILLIMOLAR
+- preferred_term: Histidine
+  term:
+    id: CHEBI:27570
+    label: Histidine
+  concentration:
+    value: '0.7089'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '42.92'
+    unit: MILLIMOLAR
+- preferred_term: Alanine
+  concentration:
+    value: '2.694'
+    unit: MILLIMOLAR
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.2448'
+    unit: MILLIMOLAR
+- preferred_term: Asparagine
+  term:
+    id: CHEBI:22653
+    label: Asparagine
+  concentration:
+    value: '2.573'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '66.13'
+    unit: MILLIMOLAR
+- preferred_term: Lysine-HCl
+  concentration:
+    value: '1.916'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.383196Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 413, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 413
+  term:
+    id: MEDIADB:413
+    label: MS10 Medium + Supplements for Batch Cultivation
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

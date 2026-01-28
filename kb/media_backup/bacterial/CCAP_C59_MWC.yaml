@@ -1,0 +1,25 @@
+name: MWC
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C59
+  term:
+    id: CCAP:C59
+    label: MWC
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_MWC.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1111/j.1529-8817.1972.tb03995.x
+curation_history:
+- timestamp: '2026-01-24T08:12:50.523712Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C59'

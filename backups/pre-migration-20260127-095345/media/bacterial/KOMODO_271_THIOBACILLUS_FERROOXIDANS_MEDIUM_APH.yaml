@@ -1,0 +1,21 @@
+name: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
+original_name: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 271 | DSMZ Medium: 271 (mediadive.medium:271)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 271
+  term:
+    id: komodo.medium:271
+    label: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 271'

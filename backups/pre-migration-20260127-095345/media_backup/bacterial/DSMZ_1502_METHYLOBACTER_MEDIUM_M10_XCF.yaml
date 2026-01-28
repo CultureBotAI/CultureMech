@@ -1,0 +1,24 @@
+name: METHYLOBACTER MEDIUM M10 XCF
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 8-8.4
+media_term:
+  preferred_term: DSMZ Medium 1502
+  term:
+    id: DSMZ:1502
+    label: METHYLOBACTER MEDIUM M10 XCF
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1502.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:49.580425Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1502'

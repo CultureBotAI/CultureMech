@@ -1,0 +1,36 @@
+name: ALKALINE TRYPTICASE SOY BROTH AGAR
+original_name: ALKALINE TRYPTICASE SOY BROTH AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: JCM Medium J1191
+  term:
+    id: mediadive.medium:J1191
+    label: ALKALINE TRYPTICASE SOY BROTH AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1191'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '33.3333'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, aseptically add 100 ml of a sterile 10% Na2CO3 solution
+    to the medium. Check final pH to be about 10.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.960055Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1191'

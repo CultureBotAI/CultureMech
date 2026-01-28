@@ -1,0 +1,21 @@
+name: For DSM 17722
+original_name: For DSM 17722
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.5-9.7
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 898.2 | DSMZ Medium: 898
+  (mediadive.medium:898) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 898.2
+  term:
+    id: komodo.medium:898.2
+    label: For DSM 17722
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 898.2'

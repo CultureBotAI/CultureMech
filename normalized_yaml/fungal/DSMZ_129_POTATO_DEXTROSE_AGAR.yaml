@@ -1,0 +1,46 @@
+name: POTATO DEXTROSE AGAR
+original_name: POTATO DEXTROSE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 129
+  term:
+    id: mediadive.medium:129
+    label: POTATO DEXTROSE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
+- step_number: 2
+  action: HEAT
+  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour.
+    Pass through fine sieve. Avoid new potatoes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.264241Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 129'

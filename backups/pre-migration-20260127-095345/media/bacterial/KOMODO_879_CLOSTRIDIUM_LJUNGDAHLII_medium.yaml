@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM LJUNGDAHLII medium
+original_name: CLOSTRIDIUM LJUNGDAHLII medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.9
+media_term:
+  preferred_term: KOMODO Medium 879
+  term:
+    id: komodo.medium:879
+    label: CLOSTRIDIUM LJUNGDAHLII medium
+notes: 'Source: KOMODO ModelSEED | ID: 879 | DSMZ Medium: 879 (mediadive.medium:879)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 879'

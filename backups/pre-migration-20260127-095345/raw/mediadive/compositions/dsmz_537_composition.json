@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_537",
+  "medium_name": "HELIOBACILLUS MOBILIS MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "MgSO4",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "EDTA",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

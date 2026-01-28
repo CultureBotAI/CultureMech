@@ -1,0 +1,165 @@
+name: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
+original_name: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 110
+  term:
+    id: mediadive.medium:110
+    label: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium110.pdf'
+ingredients:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: ' (add to make medium anoxic)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if required)'
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: 'Use lean beef or horse meat. Remove fat and connective tissue before
+    grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
+    room temperature, skim fat off surface, and filter, retaining both meat particles
+    and filtrate. To the filtrate add water to a final volume of 1000 ml, and then
+    add:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: To make medium anoxic boil it, cool under 100% N2 gas atmosphere, add
+    0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under same gas
+    atmosphere 7 ml medium into Hungate-type tubes (for strains demanding meat particles
+    put those first into the tube (use 1 part meat particles to 4 or 5 parts fluid)).
+    Autoclave at 121°C for 30 min. For agar slants use 15.0 g agar per 1000.0 ml medium.
+- step_number: 3
+  action: MIX
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
+    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:  and
+    either  or'
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.186034Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 110'

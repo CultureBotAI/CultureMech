@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)
+original_name: CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 316
+  term:
+    id: komodo.medium:316
+    label: CLOSTRIDIUM THERMOACETICUM medium (TYE-CO)
+notes: 'Source: KOMODO ModelSEED | ID: 316 | DSMZ Medium: 316 (mediadive.medium:316)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 316'

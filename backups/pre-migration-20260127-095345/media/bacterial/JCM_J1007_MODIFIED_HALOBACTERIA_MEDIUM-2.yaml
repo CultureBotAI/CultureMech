@@ -1,0 +1,31 @@
+name: MODIFIED HALOBACTERIA MEDIUM-2
+original_name: MODIFIED HALOBACTERIA MEDIUM-2
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1007
+  term:
+    id: mediadive.medium:J1007
+    label: MODIFIED HALOBACTERIA MEDIUM-2
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1007'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 168 supplemented with 1.0 g/L sodium pyruvate and 1.0
+    g/L MgSO4 x 7H2O (final). After autoclaving, adjust pH to 8.0 with sterile Na2CO3
+    solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.299869Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1007'

@@ -1,0 +1,23 @@
+name: NCL:PJ/0.01%NPA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C67
+  term:
+    id: CCAP:C67
+    label: NCL:PJ/0.01%NPA
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_PJ_0_01_NPA.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.528012Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C67'

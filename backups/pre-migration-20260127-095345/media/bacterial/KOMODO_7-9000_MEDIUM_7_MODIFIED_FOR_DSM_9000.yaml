@@ -1,0 +1,20 @@
+name: MEDIUM 7 MODIFIED FOR DSM 9000
+original_name: MEDIUM 7 MODIFIED FOR DSM 9000
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 7_9000
+  term:
+    id: komodo.medium:7_9000
+    label: MEDIUM 7 MODIFIED FOR DSM 9000
+notes: 'Source: KOMODO ModelSEED | ID: 7_9000 | DSMZ Medium: 7 (mediadive.medium:7)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 7_9000'

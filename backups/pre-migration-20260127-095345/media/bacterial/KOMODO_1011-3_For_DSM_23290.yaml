@@ -1,0 +1,21 @@
+name: For DSM 23290
+original_name: For DSM 23290
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: KOMODO Medium 1011.3
+  term:
+    id: komodo.medium:1011.3
+    label: For DSM 23290
+notes: 'Source: KOMODO ModelSEED | ID: 1011.3 | DSMZ Medium: 1011 (mediadive.medium:1011)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1011.3'

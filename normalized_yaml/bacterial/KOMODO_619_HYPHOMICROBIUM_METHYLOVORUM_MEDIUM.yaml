@@ -1,0 +1,20 @@
+name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
+original_name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 619
+  term:
+    id: komodo.medium:619
+    label: HYPHOMICROBIUM METHYLOVORUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 619 | DSMZ Medium: 619 (mediadive.medium:619)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 619'

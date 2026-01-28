@@ -1,0 +1,161 @@
+name: L1
+original_name: L1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C45
+  term:
+    id: mediadive.medium:C45
+    label: L1
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_L1.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '4.36'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '3.14'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: H2SeO3
+  term:
+    id: CHEBI:26642
+    label: H2SeO3
+  concentration:
+    value: '3.004'
+    unit: G_PER_L
+- preferred_term: NiSO4 x 6 H2O
+  term:
+    id: CHEBI:53001
+    label: NiSO4 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na3VO4
+  term:
+    id: CHEBI:35607
+    label: Na3VO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2CrO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
+    \ Bacteriological Agar. Autoclave at 15 psi for\r\n15 minutes."
+- step_number: 2
+  action: DISSOLVE
+  description: "There are 11 chemicals. Prepare Primary stock solutions first.\r\n\
+    Add first two chemicals separately in 500ml/dH2O, allowing each to completely\r\
+    \ndissolve before adding the primary stocks in order:"
+- step_number: 3
+  action: MIX
+  description: First make primary stocks of Cyanocobalamin and Biotin.
+- step_number: 4
+  action: POUR_PLATES
+  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
+- step_number: 5
+  action: MIX
+  description: 'For final vitamin mix stock solution:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.626182Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C45'

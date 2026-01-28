@@ -1,0 +1,20 @@
+name: SEAWATER YPG
+original_name: SEAWATER YPG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1169
+  term:
+    id: komodo.medium:1169
+    label: SEAWATER YPG
+notes: 'Source: KOMODO ModelSEED | ID: 1169 | DSMZ Medium: 1169 (mediadive.medium:1169)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1169'

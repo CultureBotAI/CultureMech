@@ -1,0 +1,21 @@
+name: For aerobic growth
+original_name: For aerobic growth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 2.5
+media_term:
+  preferred_term: KOMODO Medium 358.1
+  term:
+    id: komodo.medium:358.1
+    label: For aerobic growth
+notes: 'Source: KOMODO ModelSEED | ID: 358.1 | DSMZ Medium: 358 (mediadive.medium:358)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 358.1'

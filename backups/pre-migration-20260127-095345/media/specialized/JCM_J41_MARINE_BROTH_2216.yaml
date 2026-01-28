@@ -1,0 +1,23 @@
+name: MARINE BROTH 2216
+original_name: MARINE BROTH 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J41
+  term:
+    id: mediadive.medium:J41
+    label: MARINE BROTH 2216
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=41'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.630578Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J41'

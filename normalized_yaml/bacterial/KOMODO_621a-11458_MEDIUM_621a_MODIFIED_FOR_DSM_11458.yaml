@@ -1,0 +1,20 @@
+name: MEDIUM 621a MODIFIED FOR DSM 11458
+original_name: MEDIUM 621a MODIFIED FOR DSM 11458
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 621a_11458
+  term:
+    id: komodo.medium:621a_11458
+    label: MEDIUM 621a MODIFIED FOR DSM 11458
+notes: 'Source: KOMODO ModelSEED | ID: 621a_11458 | DSMZ Medium: 621a (mediadive.medium:621a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 621a_11458'

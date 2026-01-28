@@ -1,0 +1,36 @@
+name: OATMEAL AGAR
+original_name: OATMEAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J148
+  term:
+    id: mediadive.medium:J148
+    label: OATMEAL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=148'
+ingredients:
+- preferred_term: Oatmeal
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath,
+    stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add agar
+    and boil till dissolved.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.820627Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J148'

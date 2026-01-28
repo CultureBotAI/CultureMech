@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1690",
+  "medium_name": "Final pH: 7.6 - 8.0",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 7.6 - 8.0",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "FWM stock solution",
+      "concentration": 4.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

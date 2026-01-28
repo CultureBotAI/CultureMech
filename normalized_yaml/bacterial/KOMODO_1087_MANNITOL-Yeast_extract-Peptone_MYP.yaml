@@ -1,0 +1,20 @@
+name: MANNITOL-Yeast extract-Peptone (MYP)
+original_name: MANNITOL-Yeast extract-Peptone (MYP)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1087
+  term:
+    id: komodo.medium:1087
+    label: MANNITOL-Yeast extract-Peptone (MYP)
+notes: 'Source: KOMODO ModelSEED | ID: 1087 | DSMZ Medium: 1087 (mediadive.medium:1087)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1087'

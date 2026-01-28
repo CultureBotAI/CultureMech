@@ -1,0 +1,49 @@
+name: WILKINS-CHALGREN ANAEROBE BROTH
+original_name: WILKINS-CHALGREN ANAEROBE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 339
+  term:
+    id: mediadive.medium:339
+    label: WILKINS-CHALGREN ANAEROBE BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium339.pdf'
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve 33.0 g/l dehydrated Wilkins-Chalgren medium (Oxoid CM0643)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring to
+    the boil and cool to room temperature while sparging with 100% N2 gas. Add L-cysteine-HCL
+    x H2O (0.3 g/l), dispense the medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After autoclaving check pH and adjust to pH
+    6.8 - 7.0, if necessary.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: In case resazurin is not colourless addition of 10 - 20 mg sodium
+    dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and
+    filter-sterilized) can be used to completely reduce the medium.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.851639Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 339'

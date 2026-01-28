@@ -1,0 +1,21 @@
+name: For DSM 15518, DSM 15807 and DSM 16785
+original_name: For DSM 15518, DSM 15807 and DSM 16785
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 904.1
+  term:
+    id: komodo.medium:904.1
+    label: For DSM 15518, DSM 15807 and DSM 16785
+notes: 'Source: KOMODO ModelSEED | ID: 904.1 | DSMZ Medium: 904 (mediadive.medium:904)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 904.1'

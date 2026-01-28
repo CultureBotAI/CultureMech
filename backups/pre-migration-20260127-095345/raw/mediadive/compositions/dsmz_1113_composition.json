@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1113",
+  "medium_name": "Base EMJH (Difco)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "agarose",
+      "concentration": 2.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Leptospira Enrichment EMJH",
+      "concentration": 1.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

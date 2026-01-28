@@ -1,0 +1,30 @@
+name: Marichromatium Imhoffii Medium
+original_name: Marichromatium Imhoffii Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Rhodobium gokurnum medium (see Medium [M517])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+media_term:
+  preferred_term: TOGO Medium M518
+  term:
+    id: TOGO:M518
+    label: Marichromatium Imhoffii Medium
+notes: 'Source: https://togomedium.org/medium/M518
+
+  Original source: JCM - JCM_M517
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=517'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.218238Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M518'

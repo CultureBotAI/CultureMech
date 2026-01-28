@@ -1,0 +1,21 @@
+name: R 8 A H medium
+original_name: R 8 A H medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: KOMODO Medium 651
+  term:
+    id: komodo.medium:651
+    label: R 8 A H medium
+notes: 'Source: KOMODO ModelSEED | ID: 651 | DSMZ Medium: 651 (mediadive.medium:651)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 651'

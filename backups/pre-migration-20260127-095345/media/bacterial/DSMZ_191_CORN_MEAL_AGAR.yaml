@@ -1,0 +1,38 @@
+name: CORN MEAL AGAR
+original_name: CORN MEAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 191
+  term:
+    id: mediadive.medium:191
+    label: CORN MEAL AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium191.pdf'
+ingredients:
+- preferred_term: Corn meal
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Blend 50.0 g corn meal in 800 ml of distilled water. Leave overnight
+    in the refrigerator. Heat at 60°C for one hour. Filter and make up volume to 1
+    l. Add 10.0 g agar and heat to dissolve, then autoclave at 121°C for 15 minutes.
+    pH 6.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.423799Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 191'

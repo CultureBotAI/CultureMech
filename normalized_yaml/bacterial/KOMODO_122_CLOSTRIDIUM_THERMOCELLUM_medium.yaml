@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM THERMOCELLUM medium
+original_name: CLOSTRIDIUM THERMOCELLUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 122
+  term:
+    id: komodo.medium:122
+    label: CLOSTRIDIUM THERMOCELLUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 122 | DSMZ Medium: 122 (mediadive.medium:122)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 122'

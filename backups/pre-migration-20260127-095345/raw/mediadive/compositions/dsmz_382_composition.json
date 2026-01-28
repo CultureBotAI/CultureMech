@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_382",
+  "medium_name": "M9 for E. coli JM strains",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "MgSO4 (1 M)",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 (0.1 M)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose (20%)",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

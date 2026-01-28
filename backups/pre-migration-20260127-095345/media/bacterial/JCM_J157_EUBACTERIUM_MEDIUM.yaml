@@ -1,0 +1,41 @@
+name: EUBACTERIUM MEDIUM
+original_name: EUBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J157
+  term:
+    id: mediadive.medium:J157
+    label: EUBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=157'
+ingredients:
+- preferred_term: Beef brain powder
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Thioglycolate
+  term:
+    id: CHEBI:30066
+    label: Thioglycolate
+  concentration:
+    value: '29.5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.840348Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J157'

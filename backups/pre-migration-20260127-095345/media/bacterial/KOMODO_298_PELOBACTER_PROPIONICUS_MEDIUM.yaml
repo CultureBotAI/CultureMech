@@ -1,0 +1,21 @@
+name: PELOBACTER PROPIONICUS MEDIUM
+original_name: PELOBACTER PROPIONICUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 298
+  term:
+    id: komodo.medium:298
+    label: PELOBACTER PROPIONICUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 298 | DSMZ Medium: 298 (mediadive.medium:298)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 298'

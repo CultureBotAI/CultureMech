@@ -1,0 +1,21 @@
+name: Blood Agar Base from Difco 0045
+original_name: Blood Agar Base from Difco 0045
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.6
+media_term:
+  preferred_term: KOMODO Medium 8002
+  term:
+    id: komodo.medium:8002
+    label: Blood Agar Base from Difco 0045
+notes: 'Source: KOMODO ModelSEED | ID: 8002 | DSMZ Medium: 8002 (mediadive.medium:8002)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 8002'

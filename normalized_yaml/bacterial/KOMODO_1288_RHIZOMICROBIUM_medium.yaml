@@ -1,0 +1,21 @@
+name: RHIZOMICROBIUM medium
+original_name: RHIZOMICROBIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 1288
+  term:
+    id: komodo.medium:1288
+    label: RHIZOMICROBIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 1288 | DSMZ Medium: 1288 (mediadive.medium:1288)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1288'

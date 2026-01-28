@@ -1,0 +1,21 @@
+name: SPIROCHETE (thermophile) medium
+original_name: SPIROCHETE (thermophile) medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.9-7.0
+media_term:
+  preferred_term: KOMODO Medium 509
+  term:
+    id: komodo.medium:509
+    label: SPIROCHETE (thermophile) medium
+notes: 'Source: KOMODO ModelSEED | ID: 509 | DSMZ Medium: 509 (mediadive.medium:509)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 509'

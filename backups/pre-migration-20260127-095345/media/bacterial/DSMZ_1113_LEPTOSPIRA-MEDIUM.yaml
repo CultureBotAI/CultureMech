@@ -1,0 +1,43 @@
+name: LEPTOSPIRA-MEDIUM
+original_name: LEPTOSPIRA-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1113
+  term:
+    id: mediadive.medium:1113
+    label: LEPTOSPIRA-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1113.pdf'
+ingredients:
+- preferred_term: Leptospira Medium Base EMJH
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Leptospira Enrichment EMJH
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve the agarose in water by boiling. Add the Leptospira base and
+    dissolve completely. Autoclave at 121°C for 15 min. Allow the medium to cool to
+    50-55°C. Warm the Leptospira Enrichment to approximately 25°C and add to the warm
+    medium. Mix uniformly and dispense aseptically into sterile tubes as requested.
+    Final pH is 7.5 at 25°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.420464Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1113'

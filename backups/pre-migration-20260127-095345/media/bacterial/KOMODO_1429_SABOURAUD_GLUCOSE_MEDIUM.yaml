@@ -1,0 +1,21 @@
+name: SABOURAUD GLUCOSE MEDIUM
+original_name: SABOURAUD GLUCOSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 3-4
+media_term:
+  preferred_term: KOMODO Medium 1429
+  term:
+    id: komodo.medium:1429
+    label: SABOURAUD GLUCOSE MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1429 | DSMZ Medium: 1429 (mediadive.medium:1429)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1429'

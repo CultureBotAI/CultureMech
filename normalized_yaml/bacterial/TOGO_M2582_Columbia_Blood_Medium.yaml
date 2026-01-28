@@ -1,0 +1,30 @@
+name: Columbia Blood Medium
+original_name: Columbia Blood Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Defibrinated sheep blood
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2582
+  term:
+    id: TOGO:M2582
+    label: Columbia Blood Medium
+notes: 'Source: https://togomedium.org/medium/M2582
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.786879Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2582'

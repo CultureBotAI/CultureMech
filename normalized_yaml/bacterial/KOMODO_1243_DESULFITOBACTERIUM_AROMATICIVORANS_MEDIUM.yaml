@@ -1,0 +1,21 @@
+name: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
+original_name: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: KOMODO Medium 1243
+  term:
+    id: komodo.medium:1243
+    label: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1243 | DSMZ Medium: 1243 (mediadive.medium:1243)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1243'

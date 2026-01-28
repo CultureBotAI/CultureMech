@@ -1,0 +1,59 @@
+name: AE MEDIUM
+original_name: AE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 849
+  term:
+    id: mediadive.medium:849
+    label: AE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium849.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Glacial acetic acid
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '9'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Both liquid and solid media are prepared by autoclaving the medium
+    without the addition of glacial acetic acid and absolute ethanol. Glacial acetic
+    acid and absolute ethanol are sterilised either by filtration (use Teflon filters)
+    or they may be autoclaved in completely closed screw cap glass bottles sealed
+    with a Teflon coated septum. A double layer system das not appear to be essential
+    for the growth of this organism, however, plates should be incubated in sealed
+    containers to keep the humidity high (> 90%).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.497474Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 849'

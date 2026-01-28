@@ -1,0 +1,56 @@
+name: Modified Sour Dough Medium
+original_name: Modified Sour Dough Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Tween 80
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Maltose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2086
+  term:
+    id: TOGO:M2086
+    label: Modified Sour Dough Medium
+notes: 'Source: https://togomedium.org/medium/M2086
+
+  Original source: NBRC - NBRC_M1396
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1396'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.029744Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2086'

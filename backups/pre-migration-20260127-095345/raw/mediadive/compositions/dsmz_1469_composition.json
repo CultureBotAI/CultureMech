@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1469",
+  "medium_name": "Final pH: 7.0",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 7.0",
+      "concentration": 700.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 300.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

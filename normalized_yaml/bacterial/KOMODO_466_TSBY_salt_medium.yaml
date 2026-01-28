@@ -1,0 +1,21 @@
+name: TSBY salt medium
+original_name: TSBY salt medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 466
+  term:
+    id: komodo.medium:466
+    label: TSBY salt medium
+notes: 'Source: KOMODO ModelSEED | ID: 466 | DSMZ Medium: 466 (mediadive.medium:466)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 466'

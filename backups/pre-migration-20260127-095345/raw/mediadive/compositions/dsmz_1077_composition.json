@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_1077",
+  "medium_name": "Solution 1:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Solution 1:",
+      "concentration": 1.68,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "PPLO Broth",
+      "concentration": 80.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

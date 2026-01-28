@@ -1,0 +1,30 @@
+name: HALANAEROBACTER JERIDENSIS MEDIUM
+original_name: HALANAEROBACTER JERIDENSIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J818
+  term:
+    id: mediadive.medium:J818
+    label: HALANAEROBACTER JERIDENSIS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=818'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use JCM Medium No. 791 with 5.0 g/L MgSO4 x 7H2O instead of CaCl2 x
+    2H2O. Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.686406Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J818'

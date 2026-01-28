@@ -1,0 +1,16 @@
+{
+  "DSMZ_1": {
+    "media_id": "DSMZ_1",
+    "media_name": "DSMZ Medium 1 (Nutrient Agar)",
+    "growth_temperature": "37°C",
+    "growth_ph": "7.0",
+    "growth_time": "24-48 h"
+  },
+  "Test_Medium_123": {
+    "media_id": "Test_Medium_123",
+    "media_name": "Test Medium 123",
+    "growth_temperature": "30°C",
+    "growth_ph": "7.2",
+    "growth_time": "48 h"
+  }
+}

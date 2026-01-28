@@ -1,0 +1,21 @@
+name: BACTEROIDES GALACTURONICUS medium
+original_name: BACTEROIDES GALACTURONICUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: KOMODO Medium 1265
+  term:
+    id: komodo.medium:1265
+    label: BACTEROIDES GALACTURONICUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1265 | DSMZ Medium: 1265 (mediadive.medium:1265)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1265'

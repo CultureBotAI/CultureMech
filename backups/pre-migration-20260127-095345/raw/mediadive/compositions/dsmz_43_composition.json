@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_43",
+  "medium_name": "I WITH SALT",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 28",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "28"
+    },
+    {
+      "name": "Nacl",
+      "concentration": 3.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

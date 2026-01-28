@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1556",
+  "medium_name": "Cultivation of Liberibacter sp.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Cultivation of Liberibacter sp.",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "ACES-buffer",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2 α-ketoglutarate",
+      "concentration": 3.75,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KOH",
+      "concentration": 550.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

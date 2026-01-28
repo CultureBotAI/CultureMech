@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1713",
+  "medium_name": "Broth)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "GAM Broth powder (HyServe)",
+      "concentration": 59.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

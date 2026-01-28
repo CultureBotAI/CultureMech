@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_733",
+  "medium_name": "Na-acetate",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 141",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "141"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

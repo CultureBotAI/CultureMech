@@ -1,0 +1,21 @@
+name: THERMUS THERMOPHILUS medium
+original_name: THERMUS THERMOPHILUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 74
+  term:
+    id: komodo.medium:74
+    label: THERMUS THERMOPHILUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 74 | DSMZ Medium: 74 (mediadive.medium:74)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 74'

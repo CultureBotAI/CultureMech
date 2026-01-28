@@ -1,0 +1,21 @@
+name: For DSM 16632 and DSM 16643
+original_name: For DSM 16632 and DSM 16643
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 119.1 | DSMZ Medium: 119
+  (mediadive.medium:119) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 119.1
+  term:
+    id: komodo.medium:119.1
+    label: For DSM 16632 and DSM 16643
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 119.1'

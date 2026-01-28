@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM M1 medium
+original_name: CLOSTRIDIUM M1 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.3-7.5
+media_term:
+  preferred_term: KOMODO Medium 487
+  term:
+    id: komodo.medium:487
+    label: CLOSTRIDIUM M1 medium
+notes: 'Source: KOMODO ModelSEED | ID: 487 | DSMZ Medium: 487 (mediadive.medium:487)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 487'

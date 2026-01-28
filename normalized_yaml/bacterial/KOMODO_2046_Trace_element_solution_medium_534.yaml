@@ -1,0 +1,20 @@
+name: Trace element solution (medium 534)
+original_name: Trace element solution (medium 534)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 2046
+  term:
+    id: komodo.medium:2046
+    label: Trace element solution (medium 534)
+notes: 'Source: KOMODO ModelSEED | ID: 2046 | DSMZ Medium: 2046 (mediadive.medium:2046)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2046'

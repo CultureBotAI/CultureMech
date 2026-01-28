@@ -1,0 +1,24 @@
+name: CONGREGIBACTER (SYPHC) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.3-7.5
+media_term:
+  preferred_term: DSMZ Medium 1115
+  term:
+    id: DSMZ:1115
+    label: CONGREGIBACTER (SYPHC) MEDIUM
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1115.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:59.344921Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1115'

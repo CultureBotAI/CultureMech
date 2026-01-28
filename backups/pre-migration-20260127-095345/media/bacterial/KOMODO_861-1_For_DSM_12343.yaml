@@ -1,0 +1,21 @@
+name: For DSM 12343
+original_name: For DSM 12343
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.1-7.3
+media_term:
+  preferred_term: KOMODO Medium 861.1
+  term:
+    id: komodo.medium:861.1
+    label: For DSM 12343
+notes: 'Source: KOMODO ModelSEED | ID: 861.1 | DSMZ Medium: 861 (mediadive.medium:861)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 861.1'

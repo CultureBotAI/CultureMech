@@ -1,0 +1,24 @@
+name: Tryptone soya broth (TSB) (Oxoid)
+original_name: Tryptone soya broth (TSB) (Oxoid)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone soya broth (TSB) (Oxoid)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2925
+  term:
+    id: TOGO:M2925
+    label: Tryptone soya broth (TSB) (Oxoid)
+notes: 'Source: https://togomedium.org/medium/M2925'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.408862Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2925'

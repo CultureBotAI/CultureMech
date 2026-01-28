@@ -1,0 +1,21 @@
+name: SPIROCHAETA LITORALIS medium
+original_name: SPIROCHAETA LITORALIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 173
+  term:
+    id: komodo.medium:173
+    label: SPIROCHAETA LITORALIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 173 | DSMZ Medium: 173 (mediadive.medium:173)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 173'

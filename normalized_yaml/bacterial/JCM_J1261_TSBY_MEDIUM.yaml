@@ -1,0 +1,31 @@
+name: TSBY MEDIUM
+original_name: TSBY MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1261
+  term:
+    id: mediadive.medium:J1261
+    label: TSBY MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1261'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '18.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.214930Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1261'

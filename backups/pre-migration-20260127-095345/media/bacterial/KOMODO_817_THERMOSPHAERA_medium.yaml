@@ -1,0 +1,21 @@
+name: THERMOSPHAERA medium
+original_name: THERMOSPHAERA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 817
+  term:
+    id: komodo.medium:817
+    label: THERMOSPHAERA medium
+notes: 'Source: KOMODO ModelSEED | ID: 817 | DSMZ Medium: 817 (mediadive.medium:817)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 817'

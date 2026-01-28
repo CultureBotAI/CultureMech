@@ -1,0 +1,21 @@
+name: ACETIC ACID BACTERIUM medium
+original_name: ACETIC ACID BACTERIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.6-7.0
+media_term:
+  preferred_term: KOMODO Medium 989
+  term:
+    id: komodo.medium:989
+    label: ACETIC ACID BACTERIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 989 | DSMZ Medium: 989 (mediadive.medium:989)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 989'

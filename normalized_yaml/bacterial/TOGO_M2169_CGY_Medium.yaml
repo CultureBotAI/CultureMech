@@ -1,0 +1,55 @@
+name: CGY Medium
+original_name: CGY Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Glycerol
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Polymyxin B sulfate
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto Casamino Acid (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2169
+  term:
+    id: TOGO:M2169
+    label: CGY Medium
+notes: 'Source: https://togomedium.org/medium/M2169
+
+  Original source: NBRC - NBRC_M1553
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1553'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.198965Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2169'

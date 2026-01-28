@@ -1,0 +1,36 @@
+name: Modified GAM Agar With 5% Horse Blood
+original_name: Modified GAM Agar With 5% Horse Blood
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: GAM agar, modified (Nissui)
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Defibrinated horse blood
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M3025
+  term:
+    id: TOGO:M3025
+    label: Modified GAM Agar With 5% Horse Blood
+notes: 'Source: https://togomedium.org/medium/M3025
+
+  Original source: JCM - JCM_M1370
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1370'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.693984Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M3025'

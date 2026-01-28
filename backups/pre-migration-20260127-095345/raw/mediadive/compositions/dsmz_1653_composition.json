@@ -1,0 +1,205 @@
+{
+  "medium_id": "dsmz_1653",
+  "medium_name": "METHYLOMONAS MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "HCl (25%; 7.7 M)",
+      "concentration": 25.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "FeCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "ZnCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "MnCl2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CoCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CuCl2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "NiCl2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Ca-pantothenate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Pyridoxamine dihydrochloride",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Nicotinic acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "Thiamine-HCl x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "70.0  mg",
+      "concentration": 70.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "100.0  mg",
+      "concentration": 100.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "6.0  mg",
+      "concentration": 6.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "190.0  mg",
+      "concentration": 190.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "2.0  mg",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "24.0  mg",
+      "concentration": 24.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "36.0  mg",
+      "concentration": 36.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "10.00  mg",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "50.00  mg",
+      "concentration": 50.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "10.00  mg",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "250.00  mg",
+      "concentration": 250.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "100.00  mg",
+      "concentration": 100.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "20.00  mg",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    },
+    {
+      "name": "The strains DSM xxxx only grow on agar based media and not in liquid media. The gas",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Vitamin solution:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

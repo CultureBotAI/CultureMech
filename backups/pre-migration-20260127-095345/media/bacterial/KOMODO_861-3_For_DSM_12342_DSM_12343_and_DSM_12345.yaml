@@ -1,0 +1,20 @@
+name: For DSM 12342, DSM 12343 and DSM 12345
+original_name: For DSM 12342, DSM 12343 and DSM 12345
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 861.3
+  term:
+    id: komodo.medium:861.3
+    label: For DSM 12342, DSM 12343 and DSM 12345
+notes: 'Source: KOMODO ModelSEED | ID: 861.3 | DSMZ Medium: 861 (mediadive.medium:861)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 861.3'

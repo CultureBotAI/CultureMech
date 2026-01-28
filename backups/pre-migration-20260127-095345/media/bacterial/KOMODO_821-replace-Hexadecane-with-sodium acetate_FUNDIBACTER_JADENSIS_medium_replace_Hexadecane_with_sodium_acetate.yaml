@@ -1,0 +1,20 @@
+name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
+original_name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 821_replace_Hexadecane_with_sodium acetate
+  term:
+    id: komodo.medium:821_replace_Hexadecane_with_sodium acetate
+    label: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
+notes: 'Source: KOMODO ModelSEED | ID: 821_replace_Hexadecane_with_sodium acetate
+  | DSMZ Medium: 821 (mediadive.medium:821) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 821_replace_Hexadecane_with_sodium acetate'

@@ -1,0 +1,30 @@
+name: JCM MEDIUM No. 261
+original_name: JCM MEDIUM No. 261
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J261
+  term:
+    id: mediadive.medium:J261
+    label: JCM MEDIUM No. 261
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=261'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 151 with 2.0 g/L (final) yeast extract, 2.0 g/L (final)
+    peptone and 1.0 g/L Na2S2O3 x 5H2O, and omit sulfur. Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.111631Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J261'

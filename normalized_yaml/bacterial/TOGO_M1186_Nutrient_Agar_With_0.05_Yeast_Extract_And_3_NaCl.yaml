@@ -1,0 +1,38 @@
+name: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
+original_name: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract (BD--Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Nutrient agar (see Medium [M65])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1186
+  term:
+    id: TOGO:M1186
+    label: Nutrient Agar With 0.05% Yeast Extract And 3% NaCl
+notes: 'Source: https://togomedium.org/medium/M1186
+
+  Original source: JCM - JCM_M1109
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.087747Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1186'

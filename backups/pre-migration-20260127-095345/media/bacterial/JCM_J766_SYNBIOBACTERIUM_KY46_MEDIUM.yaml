@@ -1,0 +1,59 @@
+name: SYNBIOBACTERIUM KY46 MEDIUM
+original_name: SYNBIOBACTERIUM KY46 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J766
+  term:
+    id: mediadive.medium:J766
+    label: SYNBIOBACTERIUM KY46 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=766'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.80392'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.56863'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+- preferred_term: NH4HCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
+    into culture vessels, replace the gas phase with a N2 gas and autoclave. After
+    cooling, aseptically and anaerobically add per liter the following solution (filter-sterilized):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.536895Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J766'

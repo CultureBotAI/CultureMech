@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1659",
+  "medium_name": "RHODOBACTER MARINUS MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "mg",
+      "concentration": 2.8,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 2.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "mg",
+      "concentration": 0.75,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

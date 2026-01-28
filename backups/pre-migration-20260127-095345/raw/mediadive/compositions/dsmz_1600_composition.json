@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_1600",
+  "medium_name": "2x concentrated stock:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 2",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "2"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

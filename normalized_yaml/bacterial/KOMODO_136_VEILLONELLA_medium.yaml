@@ -1,0 +1,21 @@
+name: VEILLONELLA medium
+original_name: VEILLONELLA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: K2CO3 | Source: KOMODO ModelSEED | ID: 136 | DSMZ Medium: 136 (mediadive.medium:136)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 136
+  term:
+    id: komodo.medium:136
+    label: VEILLONELLA medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 136'

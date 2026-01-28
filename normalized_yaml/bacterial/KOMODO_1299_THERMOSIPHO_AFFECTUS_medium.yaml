@@ -1,0 +1,21 @@
+name: THERMOSIPHO AFFECTUS medium
+original_name: THERMOSIPHO AFFECTUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7.0
+media_term:
+  preferred_term: KOMODO Medium 1299
+  term:
+    id: komodo.medium:1299
+    label: THERMOSIPHO AFFECTUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1299 | DSMZ Medium: 1299 (mediadive.medium:1299)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1299'

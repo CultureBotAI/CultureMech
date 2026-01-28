@@ -1,0 +1,21 @@
+name: ISS1 medium
+original_name: ISS1 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 889 | DSMZ Medium: 889 (mediadive.medium:889)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 889
+  term:
+    id: komodo.medium:889
+    label: ISS1 medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 889'

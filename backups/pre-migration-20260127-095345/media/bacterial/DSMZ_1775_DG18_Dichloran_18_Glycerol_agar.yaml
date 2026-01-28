@@ -1,0 +1,49 @@
+name: DG18 Dichloran 18 % Glycerol agar
+original_name: DG18 Dichloran 18 % Glycerol agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 1775
+  term:
+    id: mediadive.medium:1775
+    label: DG18 Dichloran 18 % Glycerol agar
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Dichloran-Glycerol-agar base
+  concentration:
+    value: '31.5'
+    unit: G_PER_L
+- preferred_term: Glycerol (anhydrous)
+  concentration:
+    value: '220'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min.
+applications:
+- Microbial cultivation
+references:
+- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen,
+    B. (2019). Food and indoor fungi. Westerdijk Fungal Biodiversity Institute.
+curation_history:
+- timestamp: '2026-01-26T17:53:15.450393Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1775'

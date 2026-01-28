@@ -1,0 +1,21 @@
+name: KPL medium
+original_name: KPL medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: KOMODO Medium 456
+  term:
+    id: komodo.medium:456
+    label: KPL medium
+notes: 'Source: KOMODO ModelSEED | ID: 456 | DSMZ Medium: 456 (mediadive.medium:456)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 456'

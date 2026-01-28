@@ -1,0 +1,167 @@
+name: Chamberlain CDM
+original_name: Chamberlain CDM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '7.348'
+    unit: MILLIMOLAR
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '2.296'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '5.741'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '171.12'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '22.2'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.007194'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.5477'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.004197'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.01186'
+    unit: MILLIMOLAR
+- preferred_term: Threonine
+  concentration:
+    value: '16.79'
+    unit: MILLIMOLAR
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '2.681'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '3.049'
+    unit: MILLIMOLAR
+- preferred_term: Spermine phosphate
+  concentration:
+    value: '0.1004'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '1.269'
+    unit: MILLIMOLAR
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '3.049'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: Valine
+  concentration:
+    value: '3.414'
+    unit: MILLIMOLAR
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '1.289'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:his-L'
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '17.37'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Aspartate
+  concentration:
+    value: '3.005'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '2.736'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lys-L'
+- preferred_term: DL-Serine
+  concentration:
+    value: '3.806'
+    unit: MILLIMOLAR
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '2.208'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tyr-L'
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.445936Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 313, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 313
+  term:
+    id: MEDIADB:313
+    label: Chamberlain CDM
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

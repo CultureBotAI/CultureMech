@@ -1,0 +1,20 @@
+name: For Haemophilus spp
+original_name: For Haemophilus spp
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 804.1
+  term:
+    id: komodo.medium:804.1
+    label: For Haemophilus spp
+notes: 'Source: KOMODO ModelSEED | ID: 804.1 | DSMZ Medium: 804 (mediadive.medium:804)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 804.1'

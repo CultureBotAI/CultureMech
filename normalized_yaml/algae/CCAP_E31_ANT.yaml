@@ -1,0 +1,23 @@
+name: E31:ANT
+category: algae
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
+  algae cultivation. Recipe available in PDF format.
+notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_E31_ANT.pdf
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: ccap-import
+  date: '2026-01-28'
+  action: Imported from CCAP Culture Collection
+  notes: 'Source ID: E31_ANT, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_E31_ANT.pdf'
+references:
+- reference_id: CCAP:E31_ANT
+- reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_E31_ANT.pdf

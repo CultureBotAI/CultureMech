@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_480b",
+  "medium_name": "Use medium 480 without yeast extract, sodium acetate and NaHCO3.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 480",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "480"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

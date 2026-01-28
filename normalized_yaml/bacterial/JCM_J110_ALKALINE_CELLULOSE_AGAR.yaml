@@ -1,0 +1,85 @@
+name: ALKALINE CELLULOSE AGAR
+original_name: ALKALINE CELLULOSE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.4
+media_term:
+  preferred_term: JCM Medium J110
+  term:
+    id: mediadive.medium:J110
+    label: ALKALINE CELLULOSE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=110'
+ingredients:
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '2.22222'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.11111'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.444444'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '1.11111'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '60'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with 1 N HCl.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 9.4 with 6% NaHCO3 solution.
+- step_number: 3
+  action: MIX
+  description: After sterilization, mix axenically 900 ml of Solution A and 100 ml
+    of Solution B.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.746057Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J110'

@@ -1,0 +1,20 @@
+name: MEDIUM 92 MODIFIED FOR DSM 7111
+original_name: MEDIUM 92 MODIFIED FOR DSM 7111
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 92_7111
+  term:
+    id: komodo.medium:92_7111
+    label: MEDIUM 92 MODIFIED FOR DSM 7111
+notes: 'Source: KOMODO ModelSEED | ID: 92_7111 | DSMZ Medium: 92 (mediadive.medium:92)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 92_7111'

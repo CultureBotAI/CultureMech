@@ -1,0 +1,36 @@
+name: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
+original_name: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J342
+  term:
+    id: mediadive.medium:J342
+    label: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=342'
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave
+    at 121C for 1 hr. Use the clear supernatant after sedimentation for a few hours
+    and centrifugation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.345695Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J342'

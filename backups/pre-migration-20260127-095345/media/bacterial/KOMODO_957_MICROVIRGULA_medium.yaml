@@ -1,0 +1,21 @@
+name: MICROVIRGULA medium
+original_name: MICROVIRGULA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 957
+  term:
+    id: komodo.medium:957
+    label: MICROVIRGULA medium
+notes: 'Source: KOMODO ModelSEED | ID: 957 | DSMZ Medium: 957 (mediadive.medium:957)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 957'

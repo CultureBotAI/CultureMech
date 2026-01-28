@@ -1,0 +1,59 @@
+name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
+original_name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 780
+  term:
+    id: mediadive.medium:780
+    label: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium780.pdf'
+ingredients:
+- preferred_term: Mycobactine J
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Bacto Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Bacto Middlebrook 7H10 agar
+  concentration:
+    value: '20.9945'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Reconstitute the contents of one vial of 2 mg Mycobactine J with 2
+    ml absolute ethanol (analytical grade). Shake carefully so that the product is
+    completely dissolved. Pour the contents of the bottle into 1 litre of medium 645
+    kept melted in a water bath at +56°C, taking care to pour out all of the product.
+    Rinse out the vial that contained the Mycobactine J with an additional 2 ml of
+    absolute ethanol and pour into the culture medium. Mix the Mycobactine J alcohol
+    solution and the culture medium very thoroughly.
+- step_number: 2
+  action: HEAT
+  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
+    OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
+- step_number: 3
+  action: MIX
+  description: 'If you can´t order the commercial media then prepare the media in
+    this way:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.220780Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 780'

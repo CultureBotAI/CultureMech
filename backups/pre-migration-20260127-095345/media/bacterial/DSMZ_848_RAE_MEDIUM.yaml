@@ -1,0 +1,111 @@
+name: RAE MEDIUM
+original_name: RAE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.8
+media_term:
+  preferred_term: DSMZ Medium 848
+  term:
+    id: mediadive.medium:848
+    label: RAE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium848.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Citric acid x H2O
+  term:
+    id: CHEBI:31404
+    label: Citric acid x H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3.38'
+    unit: G_PER_L
+- preferred_term: Glacial acetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH ca. 3.8 (pH is not adjusted)
+- step_number: 2
+  action: AUTOCLAVE
+  description: Both liquid and solid media are prepared by autoclaving the medium
+    without the addition of glacial acetic acid and absolute ethanol. Glacial acetic
+    acid and absolute ethanol are sterilised either by filtration (use Teflon filters)
+    or they may be autoclaved in completely closed screw cap glass bottles sealed
+    with a Teflon coated septum. The preparation of solid media employs a double layer
+    system similar to that described for Acetobacter europaeus medium (see medium
+    631). Substitute the components listed above and prepare a lower, 0.5% agar layer,
+    which is then overlaid with a 1.0% agar layer as described in medium 631. Incubate
+    in closed containers to keep the humidity high (> 90%).
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: The ethanol and acetic acid are sterilized separately by filtration
+    (use filter resistant to these solvents), and added aseptically to the sterile
+    medium. Acetobacter europaeus will not grow on plates containing 1-2% agar, and
+    a double layer system has to be used. A layer of growth medium containing 0.5%
+    agar (about 35 ml) is poured into a plate and allowed to solidify. A thin layer
+    (5-10 ml) of the growth medium containing 1% agar is then poured on top. Carefully
+    streak the plates, which are best incubated in closed containers (e.g. plastic
+    boxes) at 30°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.495169Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 848'

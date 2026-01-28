@@ -1,0 +1,127 @@
+name: FRESHWATER IRON-OXIDIZING BACTERIA MEDIUM
+original_name: FRESHWATER IRON-OXIDIZING BACTERIA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J628
+  term:
+    id: mediadive.medium:J628
+    label: FRESHWATER IRON-OXIDIZING BACTERIA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=628'
+ingredients:
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium No. 197
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '1.93069'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.415842'
+    unit: G_PER_L
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '1.48515'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '154'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '132'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: The culture medium consists of two layers to create opposing gradients
+    of O2 and Fe(II). The top layer is the semisolid mineral salts medium and the
+    bottom layer serves as the iron source.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.2.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave both layer solutions. Shortly after autoclaving, pipette
+    the bottom layer into each culture vessel (typically 0.75 ml in 10 ml glass vials,
+    use pipette tips that have been cut to enlarge the opening). The bottom layer
+    is allowed to cool for at least 30 min to ensure its solidification. Cool the
+    top layer to 35 - 40C, add 1 ml Trace vitamins (see Medium No. 197) and adjust
+    pH to 6.1 - 6.4 by bubbling with sterile CO2 gas. Slowly overlay the top layer
+    onto the solidified bottom layer (3.75 ml in the 10 ml vial). Allow to solidify
+    the top layer a minimum of 3 hr to a maximum of overnight. To inoculate, 10 ï¿½l
+    of the inoculum is drown into a pipette tip and inject just above the bottom layer.
+    Seal vials with butyl rubber stoppers and replace the gas phase with a N2-CO2-O2
+    (8:1:1, v/v) gas mixture.
+- step_number: 4
+  action: ADJUST_PH
+  description: Prewarm distilled water at 50C in a beaker with a stir bar. While rapidly
+    starring the water, add FeSO4 x 7H2O, followed immediately by Na2S x 9H2O. A thick
+    black precipitate will form instantly. Stir continuously for 2 to 3 min. Remove
+    the mixture to a narrow-mouthed glass bottle (500 ml) that can be tightly stopped.
+    The bottle is filled to the top with distilled water and capped. Allow to settle
+    for several hours, decant and replace the overlaying water. Repeat this procedure
+    at least five times to wash the FeS precipitate. Check pH to be close to neutral.
+    To stock the FeS solution, fill the bottle with distilled water and cap. Remove
+    the overlaying water when prepare the bottom layer.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.129708Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J628'

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_882",
+  "medium_name": "Final pH: 2.3",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 2.3",
+      "concentration": 950.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1001 ml",
+      "concentration": 50.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Solution A",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

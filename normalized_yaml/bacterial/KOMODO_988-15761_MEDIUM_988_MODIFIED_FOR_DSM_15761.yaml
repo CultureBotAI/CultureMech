@@ -1,0 +1,20 @@
+name: MEDIUM 988 MODIFIED FOR DSM 15761
+original_name: MEDIUM 988 MODIFIED FOR DSM 15761
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 988_15761
+  term:
+    id: komodo.medium:988_15761
+    label: MEDIUM 988 MODIFIED FOR DSM 15761
+notes: 'Source: KOMODO ModelSEED | ID: 988_15761 | DSMZ Medium: 988 (mediadive.medium:988)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 988_15761'

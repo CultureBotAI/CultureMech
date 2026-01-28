@@ -1,0 +1,21 @@
+name: MEDIUM 377 MODIFIED FOR DSM 12428
+original_name: MEDIUM 377 MODIFIED FOR DSM 12428
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7.0
+media_term:
+  preferred_term: KOMODO Medium 377_12428
+  term:
+    id: komodo.medium:377_12428
+    label: MEDIUM 377 MODIFIED FOR DSM 12428
+notes: 'Source: KOMODO ModelSEED | ID: 377_12428 | DSMZ Medium: 377 (mediadive.medium:377)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 377_12428'

@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1013",
+  "medium_name": "Artificial sea water",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Modified Wolin's mineral solution",
+      "concentration": 700.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

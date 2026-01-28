@@ -1,0 +1,46 @@
+name: Sucrose-Bennett's Agar
+original_name: Sucrose-Bennett's Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1762
+  term:
+    id: mediadive.medium:1762
+    label: Sucrose-Bennett's Agar
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: N-Z amine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.444985Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1762'

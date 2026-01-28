@@ -1,0 +1,26 @@
+name: Medium atcc_2432
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+media_term:
+  preferred_term: ATCC Medium 2432
+  term:
+    id: ATCC:2432
+    label: Medium atcc_2432
+notes: 'Source: MicroMediaParam extraction from ATCC PDF'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T07:19:59.633660Z'
+  curator: atcc-import
+  action: Imported from MicroMediaParam extraction
+  notes: 'Source: atcc_2432'

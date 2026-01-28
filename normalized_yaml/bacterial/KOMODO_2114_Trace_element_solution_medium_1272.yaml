@@ -1,0 +1,21 @@
+name: Trace element solution (medium 1272)
+original_name: Trace element solution (medium 1272)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 2114 | DSMZ Medium: 2114 (mediadive.medium:2114)
+  | Aerobic: No | SubMedium: Yes'
+media_term:
+  preferred_term: KOMODO Medium 2114
+  term:
+    id: komodo.medium:2114
+    label: Trace element solution (medium 1272)
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2114'

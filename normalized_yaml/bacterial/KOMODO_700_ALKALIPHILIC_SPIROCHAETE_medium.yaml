@@ -1,0 +1,21 @@
+name: ALKALIPHILIC SPIROCHAETE medium
+original_name: ALKALIPHILIC SPIROCHAETE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.7
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 700 | DSMZ Medium: 700 (mediadive.medium:700)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 700
+  term:
+    id: komodo.medium:700
+    label: ALKALIPHILIC SPIROCHAETE medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 700'

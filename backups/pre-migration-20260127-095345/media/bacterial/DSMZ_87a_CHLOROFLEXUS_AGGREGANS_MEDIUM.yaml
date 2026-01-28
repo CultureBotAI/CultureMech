@@ -1,0 +1,228 @@
+name: CHLOROFLEXUS AGGREGANS MEDIUM
+original_name: CHLOROFLEXUS AGGREGANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 87a
+  term:
+    id: mediadive.medium:87a
+    label: CHLOROFLEXUS AGGREGANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium87a.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+- preferred_term: Glycyl-glycine
+  term:
+    id: CHEBI:17201
+    label: Glycyl-glycine
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.47619'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.047619'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na3-EDTA
+  term:
+    id: CHEBI:63125
+    label: Na3-EDTA
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Boil the medium under a stream of nitrogen gas for a few minutes and
+    distribute 90 ml medium into 100 ml screw-capped bottles. Bubble each bottle with
+    nitrogen gas and close immediately with a rubber septum and screw tight. Autoclave
+    at 121°C for 15 min. After autoclaving inject 1.0 ml of neutralized sulfide solution
+    (0.03% end concentration) to each bottle. This medium can be stored for several
+    months. Incubate the culture at 50°C at a light intensity of 300 - 500 lux. For
+    heavy cell suspension supplement periodically with sterile yeast extract solution
+    (0.1% end concentration, for more details see Ref. 3365, 3366).
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.5. The solution is filter-sterilized.
+- step_number: 4
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+- step_number: 5
+  action: ADJUST_PH
+  description: Appearance of a yellow colour indicates the drop of pH to about 8.
+    The solution should be stirred continuously to avoid precipitation of elemental
+    sulfur. The final solution should be clear and is yellow in colour.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.140063Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 87a'

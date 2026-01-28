@@ -1,0 +1,21 @@
+name: For DSM 15288 and DSM 16228
+original_name: For DSM 15288 and DSM 16228
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 838.2
+  term:
+    id: komodo.medium:838.2
+    label: For DSM 15288 and DSM 16228
+notes: 'Source: KOMODO ModelSEED | ID: 838.2 | DSMZ Medium: 838 (mediadive.medium:838)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 838.2'

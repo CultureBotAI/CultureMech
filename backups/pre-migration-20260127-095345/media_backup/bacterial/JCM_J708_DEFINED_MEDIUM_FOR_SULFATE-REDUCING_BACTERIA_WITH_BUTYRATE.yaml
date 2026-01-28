@@ -1,0 +1,24 @@
+name: DEFINED MEDIUM FOR SULFATE-REDUCING BACTERIA WITH BUTYRATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J708
+  term:
+    id: JCM:J708
+    label: DEFINED MEDIUM FOR SULFATE-REDUCING BACTERIA WITH BUTYRATE
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=708'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:50.138640Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J708'

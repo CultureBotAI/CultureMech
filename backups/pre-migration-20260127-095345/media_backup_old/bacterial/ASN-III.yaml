@@ -1,0 +1,18 @@
+name: ASN-III
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+notes: 'Source: https://www.atcc.org/~/media/D3547D63F887423DAFB39841A5B588B9.ashx'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:18:00.435833Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C110'

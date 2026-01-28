@@ -1,0 +1,33 @@
+name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM
+original_name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J812
+  term:
+    id: mediadive.medium:J812
+    label: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=812'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 542 with 3.0 g/L (final) yeast extract (BD-Difco) and
+    3.0 g/L tryptone (BD-Difco). Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 15.0 g/L agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.668741Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J812'

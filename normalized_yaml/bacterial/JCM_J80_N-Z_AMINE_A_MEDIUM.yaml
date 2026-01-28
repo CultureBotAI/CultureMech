@@ -1,0 +1,42 @@
+name: N-Z AMINE A MEDIUM
+original_name: N-Z AMINE A MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J80
+  term:
+    id: mediadive.medium:J80
+    label: N-Z AMINE A MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=80'
+ingredients:
+- preferred_term: N-Z amine
+  concentration:
+    value: '4.62963'
+    unit: G_PER_L
+  notes: ' ( type A)'
+- preferred_term: Beef extract
+  concentration:
+    value: '0.925926'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '80'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '13.8889'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.695760Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J80'

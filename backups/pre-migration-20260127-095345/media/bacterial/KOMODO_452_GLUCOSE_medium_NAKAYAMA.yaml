@@ -1,0 +1,21 @@
+name: GLUCOSE medium (NAKAYAMA)
+original_name: GLUCOSE medium (NAKAYAMA)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 452
+  term:
+    id: komodo.medium:452
+    label: GLUCOSE medium (NAKAYAMA)
+notes: 'Source: KOMODO ModelSEED | ID: 452 | DSMZ Medium: 452 (mediadive.medium:452)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 452'

@@ -1,0 +1,21 @@
+name: PELOTOMACULUM medium
+original_name: PELOTOMACULUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 960
+  term:
+    id: komodo.medium:960
+    label: PELOTOMACULUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 960 | DSMZ Medium: 960 (mediadive.medium:960)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 960'

@@ -1,0 +1,23 @@
+name: brain-heart-infusion media
+original_name: brain-heart-infusion media
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: brain-heart-infusion media (BHI-HiMedia Laboratories Pvt. Ltd, India)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2837
+  term:
+    id: TOGO:M2837
+    label: brain-heart-infusion media
+notes: 'Source: https://togomedium.org/medium/M2837'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.345154Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2837'

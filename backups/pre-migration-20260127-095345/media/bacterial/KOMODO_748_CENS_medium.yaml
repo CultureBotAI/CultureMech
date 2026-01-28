@@ -1,0 +1,20 @@
+name: CENS medium
+original_name: CENS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 748
+  term:
+    id: komodo.medium:748
+    label: CENS medium
+notes: 'Source: KOMODO ModelSEED | ID: 748 | DSMZ Medium: 748 (mediadive.medium:748)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 748'

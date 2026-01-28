@@ -1,0 +1,33 @@
+name: Horikoshi-1 Medium With 10% NaCl
+original_name: Horikoshi-1 Medium With 10% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Horikoshi--I medium (see Medium [M174])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M340
+  term:
+    id: TOGO:M340
+    label: Horikoshi-1 Medium With 10% NaCl
+notes: 'Source: https://togomedium.org/medium/M340
+
+  Original source: JCM - JCM_M345
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=345'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.876043Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M340'

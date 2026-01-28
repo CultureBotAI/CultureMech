@@ -1,0 +1,25 @@
+name: f/10
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C36
+  term:
+    id: CCAP:C36
+    label: f/10
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1139/m62-029
+curation_history:
+- timestamp: '2026-01-24T08:12:50.511003Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C36'

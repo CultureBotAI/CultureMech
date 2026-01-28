@@ -1,0 +1,21 @@
+name: BACTEROIDES CELLULOSOLVENS MEDIUM_replace_Cellobiose_with_Cellulose
+original_name: BACTEROIDES CELLULOSOLVENS MEDIUM_replace_Cellobiose_with_Cellulose
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 315_replace_Cellobiose_with_Cellulose
+  term:
+    id: komodo.medium:315_replace_Cellobiose_with_Cellulose
+    label: BACTEROIDES CELLULOSOLVENS MEDIUM_replace_Cellobiose_with_Cellulose
+notes: 'Source: KOMODO ModelSEED | ID: 315_replace_Cellobiose_with_Cellulose | DSMZ
+  Medium: 315 (mediadive.medium:315) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 315_replace_Cellobiose_with_Cellulose'

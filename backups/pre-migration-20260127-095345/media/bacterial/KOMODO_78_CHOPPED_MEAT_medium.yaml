@@ -1,0 +1,21 @@
+name: CHOPPED MEAT medium
+original_name: CHOPPED MEAT medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 78
+  term:
+    id: komodo.medium:78
+    label: CHOPPED MEAT medium
+notes: 'Source: KOMODO ModelSEED | ID: 78 | DSMZ Medium: 78 (mediadive.medium:78)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 78'

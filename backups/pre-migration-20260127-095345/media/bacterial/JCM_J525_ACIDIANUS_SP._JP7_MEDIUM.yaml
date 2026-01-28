@@ -1,0 +1,115 @@
+name: ACIDIANUS SP. JP7 MEDIUM
+original_name: ACIDIANUS SP. JP7 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 0.8
+media_term:
+  preferred_term: JCM Medium J525
+  term:
+    id: mediadive.medium:J525
+    label: ACIDIANUS SP. JP7 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=525'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: MG_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '4.5'
+    unit: MG_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: MG_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: MG_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+- preferred_term: VOSO4 x n H2O
+  term:
+    id: CHEBI:87020
+    label: VOSO4 x n H2O
+  concentration:
+    value: '0.03'
+    unit: MG_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: MG_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Chalcopyrite
+  term:
+    id: CHEBI:86202
+    label: Chalcopyrite
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except chalcopyrite in 500 ml distilled water,
+    adjust pH to 0.8 with 10 N H2SO4 and autoclave. Pulp chalcopyrite in 500 ml distilled
+    water and steam for 1 hr on each of 3 successive days. Combine the medium and
+    the chalcopyrite concentrate.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Chalcopyrite can be replaced with arsenopyrite or pyrite.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.842772Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J525'

@@ -1,0 +1,29 @@
+name: THERMOCOCCUS LITORALIS MEDIUM
+original_name: THERMOCOCCUS LITORALIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J161
+  term:
+    id: mediadive.medium:J161
+    label: THERMOCOCCUS LITORALIS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=161'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 160 with 1.0 g/L (final) yeast extract and 5.0 g/L (final)
+    peptone, pH 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.849731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J161'

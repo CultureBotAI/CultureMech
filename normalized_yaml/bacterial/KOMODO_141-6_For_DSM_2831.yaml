@@ -1,0 +1,21 @@
+name: For DSM 2831
+original_name: For DSM 2831
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 141.6
+  term:
+    id: komodo.medium:141.6
+    label: For DSM 2831
+notes: 'Source: KOMODO ModelSEED | ID: 141.6 | DSMZ Medium: 141 (mediadive.medium:141)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 141.6'

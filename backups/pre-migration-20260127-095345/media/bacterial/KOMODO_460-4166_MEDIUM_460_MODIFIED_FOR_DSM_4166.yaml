@@ -1,0 +1,20 @@
+name: MEDIUM 460 MODIFIED FOR DSM 4166
+original_name: MEDIUM 460 MODIFIED FOR DSM 4166
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 460_4166
+  term:
+    id: komodo.medium:460_4166
+    label: MEDIUM 460 MODIFIED FOR DSM 4166
+notes: 'Source: KOMODO ModelSEED | ID: 460_4166 | DSMZ Medium: 460 (mediadive.medium:460)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 460_4166'

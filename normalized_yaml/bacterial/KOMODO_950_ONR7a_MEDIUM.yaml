@@ -1,0 +1,21 @@
+name: ONR7a MEDIUM
+original_name: ONR7a MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.6
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950 | DSMZ Medium: 950 (mediadive.medium:950)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 950
+  term:
+    id: komodo.medium:950
+    label: ONR7a MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 950'

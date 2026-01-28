@@ -1,0 +1,24 @@
+name: Taiyang Medium No.9 (prototype)
+original_name: Taiyang Medium No.9 (prototype)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: public Medium P2
+  term:
+    id: mediadive.medium:P2
+    label: Taiyang Medium No.9 (prototype)
+notes: 'Source: public'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.839003Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: public, ID: P2'

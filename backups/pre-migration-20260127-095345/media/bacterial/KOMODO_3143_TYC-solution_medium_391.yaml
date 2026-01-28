@@ -1,0 +1,20 @@
+name: TYC-solution (medium 391)
+original_name: TYC-solution (medium 391)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3143
+  term:
+    id: komodo.medium:3143
+    label: TYC-solution (medium 391)
+notes: 'Source: KOMODO ModelSEED | ID: 3143 | DSMZ Medium: 3143 (mediadive.medium:3143)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3143'

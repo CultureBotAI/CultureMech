@@ -1,0 +1,20 @@
+name: MEDIUM 948 MODIFIED FOR DSM 16823
+original_name: MEDIUM 948 MODIFIED FOR DSM 16823
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 948_16823
+  term:
+    id: komodo.medium:948_16823
+    label: MEDIUM 948 MODIFIED FOR DSM 16823
+notes: 'Source: KOMODO ModelSEED | ID: 948_16823 | DSMZ Medium: 948 (mediadive.medium:948)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 948_16823'

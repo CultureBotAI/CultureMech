@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_2",
+  "medium_name": "To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises to about 8",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1"
+    },
+    {
+      "name": "Mg",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

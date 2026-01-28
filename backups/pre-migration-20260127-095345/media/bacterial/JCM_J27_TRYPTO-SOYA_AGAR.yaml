@@ -1,0 +1,23 @@
+name: TRYPTO-SOYA AGAR
+original_name: TRYPTO-SOYA AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J27
+  term:
+    id: mediadive.medium:J27
+    label: TRYPTO-SOYA AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=27'
+ingredients:
+- preferred_term: Trypticase soy agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.609011Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J27'

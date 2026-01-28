@@ -1,0 +1,90 @@
+name: Modified BSK Medium
+original_name: Modified BSK Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '584'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: HEPES
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+- preferred_term: N-Acetyl-D-glucosamine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Probumin Universal Grade (Millipore)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: TC Yeastolate (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Rabbit serum sterile non--hemolyzed young (Pel--Freez code No. 31125)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Trisodium citrate・2H2O
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: MEM alpha Modification (BioWest)
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Neopeptone (BD-Difco)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M937
+  term:
+    id: TOGO:M937
+    label: Modified BSK Medium
+notes: 'Source: https://togomedium.org/medium/M937
+
+  Original source: JCM - JCM_M896
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.992376Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M937'

@@ -1,0 +1,20 @@
+name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
+original_name: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 925.8
+  term:
+    id: komodo.medium:925.8
+    label: Thioalkalivibrio nitratireducens ALEN 2 = DSM 14787
+notes: 'Source: KOMODO ModelSEED | ID: 925.8 | DSMZ Medium: 925 (mediadive.medium:925)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 925.8'

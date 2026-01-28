@@ -1,0 +1,34 @@
+name: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
+original_name: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J482
+  term:
+    id: mediadive.medium:J482
+    label: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=482'
+ingredients:
+- preferred_term: Reinforced clostridial medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sea Salt
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.717707Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J482'

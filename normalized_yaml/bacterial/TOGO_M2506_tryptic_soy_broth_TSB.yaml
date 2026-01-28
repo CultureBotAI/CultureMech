@@ -1,0 +1,24 @@
+name: tryptic soy broth (TSB)
+original_name: tryptic soy broth (TSB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: tryptic soy broth (TSB)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2506
+  term:
+    id: TOGO:M2506
+    label: tryptic soy broth (TSB)
+notes: 'Source: https://togomedium.org/medium/M2506'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.592964Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2506'

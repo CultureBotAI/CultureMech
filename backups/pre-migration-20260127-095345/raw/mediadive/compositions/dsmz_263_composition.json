@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_263",
+  "medium_name": "Sucrose",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Sucrose",
+      "concentration": 150.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

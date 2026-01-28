@@ -1,0 +1,27 @@
+name: PE Medium (pH 7.2)
+original_name: PE Medium (pH 7.2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: PE Medium (see Medium [M298])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M332
+  term:
+    id: TOGO:M332
+    label: PE Medium (pH 7.2)
+notes: 'Source: https://togomedium.org/medium/M332
+
+  Original source: JCM - JCM_M337
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=337'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.865370Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M332'

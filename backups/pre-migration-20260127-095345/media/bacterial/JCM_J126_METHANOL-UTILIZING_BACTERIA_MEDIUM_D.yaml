@@ -1,0 +1,28 @@
+name: METHANOL-UTILIZING BACTERIA MEDIUM D
+original_name: METHANOL-UTILIZING BACTERIA MEDIUM D
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J126
+  term:
+    id: mediadive.medium:J126
+    label: METHANOL-UTILIZING BACTERIA MEDIUM D
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126'
+ingredients:
+- preferred_term: Methanol-utilizing bacteria medium B
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 9.0 with filter-sterilized 10% NaCO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.773224Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J126'

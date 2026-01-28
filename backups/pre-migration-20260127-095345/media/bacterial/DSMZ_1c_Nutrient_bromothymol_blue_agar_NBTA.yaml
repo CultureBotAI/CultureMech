@@ -1,0 +1,52 @@
+name: Nutrient bromothymol blue agar NBTA
+original_name: Nutrient bromothymol blue agar NBTA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1c
+  term:
+    id: mediadive.medium:1c
+    label: Nutrient bromothymol blue agar NBTA
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Bromothymol blue
+  term:
+    id: CHEBI:86155
+    label: Bromothymol blue
+  concentration:
+    value: '25'
+    unit: MG_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 21 min.
+- step_number: 2
+  action: MIX
+  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium
+    chloride stock solution (1% w/v).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1099/00221287-121-2-303
+curation_history:
+- timestamp: '2026-01-26T17:53:09.958623Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1c'

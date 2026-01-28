@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_432",
+  "medium_name": "Use medium no. 144 supplemented with 100 g/l of NaCl.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaCl",
+      "concentration": 100.0,
+      "unit": "g/L",
+      "extraction_method": "enhanced_prose_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

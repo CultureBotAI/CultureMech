@@ -1,0 +1,30 @@
+name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J528
+  term:
+    id: mediadive.medium:J528
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=528'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43).
+    After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.849723Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J528'

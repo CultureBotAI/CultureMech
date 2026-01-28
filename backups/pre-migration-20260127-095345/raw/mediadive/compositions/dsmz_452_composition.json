@@ -1,0 +1,123 @@
+{
+  "medium_id": "dsmz_452",
+  "medium_name": "GLUCOSE MEDIUM",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Glucose",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Peptone",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution A",
+      "concentration": 980.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution B",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution C",
+      "concentration": 10.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution A:",
+      "concentration": 1.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "K2HPO4",
+      "concentration": 0.5,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution B:",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "MnSO4 x 5 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "CuSO4 x 5 H2O",
+      "concentration": 0.01,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Solution C:",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "FeSO4 x 7 H2O",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Na3-Citrate",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    },
+    {
+      "name": "Autoclave all solutions separately, final pH is 6.8.",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

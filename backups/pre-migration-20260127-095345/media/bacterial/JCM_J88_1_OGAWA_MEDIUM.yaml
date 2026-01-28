@@ -1,0 +1,59 @@
+name: 1% OGAWA MEDIUM
+original_name: 1% OGAWA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J88
+  term:
+    id: mediadive.medium:J88
+    label: 1% OGAWA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=88'
+ingredients:
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Whole egg
+  concentration:
+    value: '200'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Homogenize Solution II by stirring and filter through gauze. Mix solutions
+    I and II, and sterilize at 90C for 60 min.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Commercial 1% Ogawa medium (Eiken or Nissui) is also available.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.708737Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J88'

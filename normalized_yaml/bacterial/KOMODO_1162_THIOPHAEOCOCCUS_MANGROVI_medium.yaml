@@ -1,0 +1,21 @@
+name: THIOPHAEOCOCCUS MANGROVI medium
+original_name: THIOPHAEOCOCCUS MANGROVI medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 1162
+  term:
+    id: komodo.medium:1162
+    label: THIOPHAEOCOCCUS MANGROVI medium
+notes: 'Source: KOMODO ModelSEED | ID: 1162 | DSMZ Medium: 1162 (mediadive.medium:1162)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1162'

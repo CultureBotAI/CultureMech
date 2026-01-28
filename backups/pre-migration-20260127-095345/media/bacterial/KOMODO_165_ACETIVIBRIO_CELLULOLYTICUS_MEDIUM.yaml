@@ -1,0 +1,21 @@
+name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
+original_name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 165
+  term:
+    id: komodo.medium:165
+    label: ACETIVIBRIO CELLULOLYTICUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 165 | DSMZ Medium: 165 (mediadive.medium:165)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 165'

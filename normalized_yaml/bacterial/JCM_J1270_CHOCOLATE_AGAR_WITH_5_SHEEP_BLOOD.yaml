@@ -1,0 +1,36 @@
+name: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+original_name: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1270
+  term:
+    id: mediadive.medium:J1270
+    label: CHOCOLATE AGAR WITH  5% SHEEP BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1270'
+ingredients:
+- preferred_term: Columbia blood agar base
+  term:
+    id: CHEBI:2509
+    label: Columbia blood agar base
+  concentration:
+    value: '44'
+    unit: G_PER_L
+- preferred_term: Sheep blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except horse blood, autoclave and cool to about 70C.
+    Aseptically add 5% (final) sterile defibrinated horse blood, keep at 70C for 15
+    minutes and cool to about 50C. Mix and quickly dispense into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.243540Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1270'

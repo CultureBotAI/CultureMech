@@ -1,0 +1,73 @@
+name: Cyclonatrum Proteilyticum Medium
+original_name: Cyclonatrum Proteilyticum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: NaHCO3
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Na2CO3
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 1% Yeast extract solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 1 M MgCl2 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: 10% Tryptone solution
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trace element solution (see Medium [M1148])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1243
+  term:
+    id: TOGO:M1243
+    label: Cyclonatrum Proteilyticum Medium
+notes: 'Source: https://togomedium.org/medium/M1243
+
+  Original source: JCM - JCM_M1161
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1161'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.207399Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1243'

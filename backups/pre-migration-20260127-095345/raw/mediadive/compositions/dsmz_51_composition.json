@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_51",
+  "medium_name": "Beef extract (Lab Lemco, Oxoid)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Beef extract (Lab Lemco, Oxoid)",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar (if necessary)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,21 @@
+name: Autotrophic growth on ferrous sulfate
+original_name: Autotrophic growth on ferrous sulfate
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 1.7
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 709.2 | DSMZ Medium: 709
+  (mediadive.medium:709) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 709.2
+  term:
+    id: komodo.medium:709.2
+    label: Autotrophic growth on ferrous sulfate
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 709.2'

@@ -1,0 +1,21 @@
+name: Vitamin solution CA (medium 87a)
+original_name: Vitamin solution CA (medium 87a)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 3129
+  term:
+    id: komodo.medium:3129
+    label: Vitamin solution CA (medium 87a)
+notes: 'Source: KOMODO ModelSEED | ID: 3129 | DSMZ Medium: 3129 (mediadive.medium:3129)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3129'

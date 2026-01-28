@@ -1,0 +1,20 @@
+name: ACETOBACTERIUM 2 medium
+original_name: ACETOBACTERIUM 2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 349
+  term:
+    id: komodo.medium:349
+    label: ACETOBACTERIUM 2 medium
+notes: 'Source: KOMODO ModelSEED | ID: 349 | DSMZ Medium: 349 (mediadive.medium:349)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 349'

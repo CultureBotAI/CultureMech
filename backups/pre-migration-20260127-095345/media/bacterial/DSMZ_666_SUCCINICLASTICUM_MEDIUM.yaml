@@ -1,0 +1,122 @@
+name: SUCCINICLASTICUM MEDIUM
+original_name: SUCCINICLASTICUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.7-6.8
+media_term:
+  preferred_term: DSMZ Medium 666
+  term:
+    id: mediadive.medium:666
+    label: SUCCINICLASTICUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium666.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: Indigocarmine
+  term:
+    id: CHEBI:31695
+    label: Indigocarmine
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '6.4'
+    unit: G_PER_L
+- preferred_term: Disodium succinate
+  term:
+    id: CHEBI:63675
+    label: Disodium succinate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate, succinate, yeast extract,
+    cysteine and sulfide), bring medium to the boil, then cool to room temperature
+    under 100% CO2 gas atmosphere. Add the bicarbonate and equilibrate the medium
+    with the CO2 gas to pH 6.8. Distribute under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Thereafter, add succinate, yeast
+    extract, cysteine and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
+- step_number: 2
+  action: MIX
+  description: 'Note: Supplementing the medium with 1.50 g/l agar stimulates growth
+    of strains after resuscitation from ampoules.'
+- step_number: 3
+  action: AUTOCLAVE
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.877457Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 666'

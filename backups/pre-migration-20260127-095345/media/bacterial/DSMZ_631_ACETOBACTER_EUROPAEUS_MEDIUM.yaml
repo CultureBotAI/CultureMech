@@ -1,0 +1,59 @@
+name: ACETOBACTER EUROPAEUS MEDIUM
+original_name: ACETOBACTER EUROPAEUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 631
+  term:
+    id: mediadive.medium:631
+    label: ACETOBACTER EUROPAEUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium631.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: The ethanol and acetic acid are sterilized separately by filtration
+    (use filter resistant to these solvents), and added aseptically to the sterile
+    medium. Acetobacter europaeus will not grow on plates containing 1-2% agar, and
+    a double layer system has to be used. A layer of growth medium containing 0.5%
+    agar (about 35 ml) is poured into a plate and allowed to solidify. A thin layer
+    (5-10 ml) of the growth medium containing 1% agar is then poured on top. Carefully
+    streak the plates, which are best incubated in closed containers (e.g. plastic
+    boxes) at 30°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.782428Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 631'

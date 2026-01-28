@@ -1,0 +1,128 @@
+name: PES - Provasoli´s Enriched Seawater-Medium (7 PSU at 25 °C)
+original_name: PES - Provasoli´s Enriched Seawater-Medium (7 PSU at 25 °C)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1680a
+  term:
+    id: mediadive.medium:1680a
+    label: PES - Provasoli´s Enriched Seawater-Medium (7 PSU at 25 °C)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Artificial Sea Salt
+  concentration:
+    value: '8.2'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '800'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'After cooling add the following filter sterilized component under
+    sterile conditions:'
+- step_number: 4
+  action: MIX
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
+    MilliQ water.
+- step_number: 5
+  action: MIX
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
+    MilliQ water.
+- step_number: 6
+  action: MIX
+  description: Make up to <span class='amount' data-volume='100'>100</span> ml with
+    MilliQ water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.217113Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1680a'

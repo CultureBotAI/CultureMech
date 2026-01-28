@@ -1,0 +1,21 @@
+name: FLAVOBACTERIUM AQUATILE medium
+original_name: FLAVOBACTERIUM AQUATILE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 102
+  term:
+    id: komodo.medium:102
+    label: FLAVOBACTERIUM AQUATILE medium
+notes: 'Source: KOMODO ModelSEED | ID: 102 | DSMZ Medium: 102 (mediadive.medium:102)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 102'

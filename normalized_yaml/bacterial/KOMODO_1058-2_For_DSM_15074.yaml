@@ -1,0 +1,21 @@
+name: For DSM 15074
+original_name: For DSM 15074
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.5-7.8
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1058.2 | DSMZ Medium: 1058
+  (mediadive.medium:1058) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 1058.2
+  term:
+    id: komodo.medium:1058.2
+    label: For DSM 15074
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1058.2'

@@ -1,0 +1,21 @@
+name: DESULFOLUNA medium
+original_name: DESULFOLUNA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 1099
+  term:
+    id: komodo.medium:1099
+    label: DESULFOLUNA medium
+notes: 'Source: KOMODO ModelSEED | ID: 1099 | DSMZ Medium: 1099 (mediadive.medium:1099)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1099'

@@ -1,0 +1,24 @@
+name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430, DSM11431,
+  DSM 11432, DSM 11433 and DSM 11434
+original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
+  DSM11431, DSM 11432, DSM 11433 and DSM 11434
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-6.8
+media_term:
+  preferred_term: KOMODO Medium 120.2
+  term:
+    id: komodo.medium:120.2
+    label: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
+      DSM11431, DSM 11432, DSM 11433 and DSM 11434
+notes: 'Source: KOMODO ModelSEED | ID: 120.2 | DSMZ Medium: 120 (mediadive.medium:120)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 120.2'

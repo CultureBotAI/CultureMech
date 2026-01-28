@@ -1,0 +1,21 @@
+name: R2A medium
+original_name: R2A medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 830
+  term:
+    id: komodo.medium:830
+    label: R2A medium
+notes: 'Source: KOMODO ModelSEED | ID: 830 | DSMZ Medium: 830 (mediadive.medium:830)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 830'

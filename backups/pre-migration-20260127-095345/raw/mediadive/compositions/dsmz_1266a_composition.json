@@ -1,0 +1,331 @@
+{
+  "medium_id": "dsmz_1266a",
+  "medium_name": "GY VL55",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "MES (2-Morpholinoethanesulfonic acid)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "20 mM MgSO4 x 7 H2O",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "30 mM CaCl 2 x 2 H2O",
+      "concentration": 30.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "20 mM (NH4)2HPO4",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "Selenite-tungstate solution (see below)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "Trace element solution SL10 (see below)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 1:"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "Agar",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "After autoclaving, cool to 50-60°C and combine the solution by pouring solution 2 to",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "solution 1.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "Stocks for the media:",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "20 mM MgSO4 x 7 H2O:",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "MgSO4 x 7 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "30 mM CaCl2 x 2 H2O:",
+      "concentration": 30.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "CaCl 2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "20 mM (NH4)2HPO4:",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "(NH4)2HPO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "NaOH/KOH:",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "NaOH",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "KOH",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Solution 2:"
+    },
+    {
+      "name": "NaOH",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "Na2SeO3 x 5 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "Na2WO4 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Selenite-tungstate solution:"
+    },
+    {
+      "name": "HCl (25%; 7.7 M)",
+      "concentration": 25.0,
+      "unit": "%",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "FeCl 2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "ZnCl 2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "MnCl 2 x 4 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CoCl 2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "CuCl 2 x 2 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "NiCl 2 x 6 H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "Na2MoO4 x 2 H2O",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "mg",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "First dissolve FeCl 2 in the HCl, then dilute in water, add and dissolve the other salts.",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    },
+    {
+      "name": "Finally make up to 1000.0 ml.",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "Trace element solution SL-10:"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

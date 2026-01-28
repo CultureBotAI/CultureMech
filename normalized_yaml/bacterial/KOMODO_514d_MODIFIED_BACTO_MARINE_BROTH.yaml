@@ -1,0 +1,21 @@
+name: MODIFIED BACTO MARINE BROTH
+original_name: MODIFIED BACTO MARINE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 514d
+  term:
+    id: komodo.medium:514d
+    label: MODIFIED BACTO MARINE BROTH
+notes: 'Source: KOMODO ModelSEED | ID: 514d | DSMZ Medium: 514d (mediadive.medium:514d)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 514d'

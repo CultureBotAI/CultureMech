@@ -1,0 +1,21 @@
+name: FUMARATE MEDIUM
+original_name: FUMARATE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.4
+notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 195a | DSMZ
+  Medium: 195a (mediadive.medium:195a) | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 195a
+  term:
+    id: komodo.medium:195a
+    label: FUMARATE MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 195a'

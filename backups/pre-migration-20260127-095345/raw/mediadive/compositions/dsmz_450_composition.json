@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_450",
+  "medium_name": "To medium 382 add 20 mg/l arginine.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 382",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "382"
+    },
+    {
+      "name": "Mg",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

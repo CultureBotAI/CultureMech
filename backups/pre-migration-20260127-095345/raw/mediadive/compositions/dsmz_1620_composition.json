@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1620",
+  "medium_name": "Tryptone (Oxoid)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Tryptone (Oxoid)",
+      "concentration": 2.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

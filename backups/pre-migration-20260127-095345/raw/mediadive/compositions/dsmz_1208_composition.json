@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1208",
+  "medium_name": "NaHCO3",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "NaHCO3",
+      "concentration": 8.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

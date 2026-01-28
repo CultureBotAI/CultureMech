@@ -1,0 +1,152 @@
+name: '''Minimal chemically-defined medium + His +Pro (letort 2001'
+original_name: '''Minimal chemically-defined medium + His +Pro (letort 2001'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.002965'
+    unit: MILLIMOLAR
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.002657'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.9838'
+    unit: MILLIMOLAR
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.8713'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.04'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '2.063'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium citrate
+  concentration:
+    value: '28.69'
+    unit: MILLIMOLAR
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '12.19'
+    unit: MILLIMOLAR
+- preferred_term: Proline
+  term:
+    id: CHEBI:26271
+    label: Proline
+  concentration:
+    value: '5.906'
+    unit: MILLIMOLAR
+- preferred_term: Valine
+  concentration:
+    value: '2.817'
+    unit: MILLIMOLAR
+- preferred_term: Histidine
+  term:
+    id: CHEBI:27570
+    label: Histidine
+  concentration:
+    value: '0.9667'
+    unit: MILLIMOLAR
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.008123'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Pyridoxamine HCl
+  concentration:
+    value: '0.02443'
+    unit: MILLIMOLAR
+- preferred_term: Ascorbate
+  concentration:
+    value: '2.839'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ascb-L'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.3401'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '1.677'
+    unit: MILLIMOLAR
+- preferred_term: Leucine
+  concentration:
+    value: '3.659'
+    unit: MILLIMOLAR
+- preferred_term: L-Glutamate
+  concentration:
+    value: '2.719'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.002099'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '13.41'
+    unit: MILLIMOLAR
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '29.21'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lcts'
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.185838Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 393, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 393
+  term:
+    id: MEDIADB:393
+    label: '''Minimal chemically-defined medium + His +Pro (letort 2001'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

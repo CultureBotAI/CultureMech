@@ -1,0 +1,21 @@
+name: medium FOR HALOPHILIC BACILLI
+original_name: medium FOR HALOPHILIC BACILLI
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 73
+  term:
+    id: komodo.medium:73
+    label: medium FOR HALOPHILIC BACILLI
+notes: 'Source: KOMODO ModelSEED | ID: 73 | DSMZ Medium: 73 (mediadive.medium:73)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 73'

@@ -1,0 +1,89 @@
+name: CAMPYLOBACTER RECTUS MEDIUM
+original_name: CAMPYLOBACTER RECTUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 338
+  term:
+    id: mediadive.medium:338
+    label: CAMPYLOBACTER RECTUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium338.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na-formate
+  term:
+    id: CHEBI:62965
+    label: Na-formate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na-fumarate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5. Prepare the medium anaerobically under 100% N2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted
+    with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.849826Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 338'

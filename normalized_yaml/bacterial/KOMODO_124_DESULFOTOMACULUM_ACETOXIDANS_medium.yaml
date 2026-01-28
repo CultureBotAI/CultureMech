@@ -1,0 +1,21 @@
+name: DESULFOTOMACULUM ACETOXIDANS medium
+original_name: DESULFOTOMACULUM ACETOXIDANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 124
+  term:
+    id: komodo.medium:124
+    label: DESULFOTOMACULUM ACETOXIDANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 124 | DSMZ Medium: 124 (mediadive.medium:124)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 124'

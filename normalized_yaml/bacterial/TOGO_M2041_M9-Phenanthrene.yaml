@@ -1,0 +1,92 @@
+name: M9-Phenanthrene
+original_name: M9-Phenanthrene
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: CaCl2 solution (0.1 M)***
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: MgSO4 solution (1 M)***
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound'
+- preferred_term: Agar solution*
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: 10xM9 solution**
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound'
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Na2HPO4
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Phenanthrene solution
+  notes: 'Role: Carbon source'
+- preferred_term: dimethyl sulfoxide (DMSO)
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M2041
+  term:
+    id: TOGO:M2041
+    label: M9-Phenanthrene
+notes: 'Source: https://togomedium.org/medium/M2041
+
+  Original source: NBRC - NBRC_M1339
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1339'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.940796Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2041'

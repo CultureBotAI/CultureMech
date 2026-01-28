@@ -1,0 +1,84 @@
+name: LEUCONOSTOC OENOS MEDIUM
+original_name: LEUCONOSTOC OENOS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.8
+media_term:
+  preferred_term: JCM Medium J143
+  term:
+    id: mediadive.medium:J143
+    label: LEUCONOSTOC OENOS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=143'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+  notes: ' ( tryptic digest)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.04995'
+    unit: G_PER_L
+- preferred_term: Diammonium Citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
+  concentration:
+    value: '3.4965'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: ' ( filtered)'
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 4.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.808592Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J143'

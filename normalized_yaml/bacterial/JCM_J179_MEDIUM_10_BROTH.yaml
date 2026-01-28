@@ -1,0 +1,29 @@
+name: MEDIUM 10 BROTH
+original_name: MEDIUM 10 BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J179
+  term:
+    id: mediadive.medium:J179
+    label: MEDIUM 10 BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=179'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium 10 (see Medium No. 133) with 0.5 ml/L (final) of 0.2% hemin
+    solution, and omit agar and Toray silicone solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.891772Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J179'

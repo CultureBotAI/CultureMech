@@ -1,0 +1,129 @@
+name: MODIFIED OTI MEDIUM
+original_name: MODIFIED OTI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J146
+  term:
+    id: mediadive.medium:J146
+    label: MODIFIED OTI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=146'
+ingredients:
+- preferred_term: Polypeptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Pectin
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Ribose
+  term:
+    id: CHEBI:33942
+    label: Ribose
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+- preferred_term: Clarified rumen fluid
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.0. Prepare medium anaerobically and dispense into rubber-stoppered
+    tubes under oxygen-free N2. Add inactivated sterile rabbit serum to give final
+    concentration in each tube of 5%. Add filter-sterilized thiamine pyrophosphate
+    to each tube to give a final concentration of 0.75 mg/100 ml. Subculture with
+    a Pasteur pipette (20-30 drops). Gas phase for culture system should be oxygen-free
+    N2 or N2-CO2 (90:10).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.815824Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J146'

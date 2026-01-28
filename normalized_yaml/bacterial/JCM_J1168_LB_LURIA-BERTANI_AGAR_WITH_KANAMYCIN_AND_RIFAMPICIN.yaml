@@ -1,0 +1,63 @@
+name: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+original_name: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1168
+  term:
+    id: mediadive.medium:J1168
+    label: LB (LURIA-BERTANI) AGAR WITH KANAMYCIN AND RIFAMPICIN
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1168'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Kanamycin sulfate
+  term:
+    id: CHEBI:6109
+    label: Kanamycin sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Rifampicin
+  term:
+    id: CHEBI:28077
+    label: Rifampicin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'After autoclaving, aseptically add the following antibiotics (filter-sterilized):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.878945Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1168'

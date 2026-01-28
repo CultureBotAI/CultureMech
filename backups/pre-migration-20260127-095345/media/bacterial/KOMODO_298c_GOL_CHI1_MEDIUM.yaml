@@ -1,0 +1,21 @@
+name: GOL CHI1 MEDIUM
+original_name: GOL CHI1 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 298c
+  term:
+    id: komodo.medium:298c
+    label: GOL CHI1 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 298c | DSMZ Medium: 298c (mediadive.medium:298c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 298c'

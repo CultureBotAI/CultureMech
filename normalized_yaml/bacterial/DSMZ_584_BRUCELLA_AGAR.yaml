@@ -1,0 +1,35 @@
+name: BRUCELLA AGAR
+original_name: BRUCELLA AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 584
+  term:
+    id: mediadive.medium:584
+    label: BRUCELLA AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium584.pdf'
+ingredients:
+- preferred_term: Brucella agar
+  term:
+    id: CHEBI:2509
+    label: Brucella agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Sheep blood
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving,
+    then add 100 ml/l sheep blood.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.646317Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 584'

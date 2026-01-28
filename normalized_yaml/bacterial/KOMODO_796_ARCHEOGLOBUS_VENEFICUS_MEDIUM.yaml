@@ -1,0 +1,21 @@
+name: ARCHEOGLOBUS VENEFICUS MEDIUM
+original_name: ARCHEOGLOBUS VENEFICUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 796 | DSMZ Medium: 796 (mediadive.medium:796)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 796
+  term:
+    id: komodo.medium:796
+    label: ARCHEOGLOBUS VENEFICUS MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 796'

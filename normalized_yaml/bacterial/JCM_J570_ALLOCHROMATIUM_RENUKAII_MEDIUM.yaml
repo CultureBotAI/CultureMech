@@ -1,0 +1,29 @@
+name: ALLOCHROMATIUM RENUKAII MEDIUM
+original_name: ALLOCHROMATIUM RENUKAII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J570
+  term:
+    id: mediadive.medium:J570
+    label: ALLOCHROMATIUM RENUKAII MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=570'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 561 supplemented with 1.0 ml/L vitamin B12 solution
+    (2 mg/ml).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.966627Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J570'

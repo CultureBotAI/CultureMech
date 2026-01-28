@@ -1,0 +1,59 @@
+name: 1/2 Tryptic Soy Broth (Anaerobic)
+original_name: 1/2 Tryptic Soy Broth (Anaerobic)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Yeast Extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: D-Glucose
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Tryptic Soy Broth (BD BACTO)
+  concentration:
+    value: '13.75'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: DL-Dithiothreitol (DTT)
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Properties: Inorganic compound, Simple component, Defined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+media_term:
+  preferred_term: TOGO Medium M2766
+  term:
+    id: TOGO:M2766
+    label: 1/2 Tryptic Soy Broth (Anaerobic)
+notes: 'Source: https://togomedium.org/medium/M2766
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1205.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.262499Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2766'

@@ -1,0 +1,21 @@
+name: THERMOTOGA NEAPOLITANA medium
+original_name: THERMOTOGA NEAPOLITANA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 343
+  term:
+    id: komodo.medium:343
+    label: THERMOTOGA NEAPOLITANA medium
+notes: 'Source: KOMODO ModelSEED | ID: 343 | DSMZ Medium: 343 (mediadive.medium:343)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 343'

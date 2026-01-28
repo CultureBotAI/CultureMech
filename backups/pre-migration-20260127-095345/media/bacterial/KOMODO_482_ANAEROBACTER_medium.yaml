@@ -1,0 +1,21 @@
+name: ANAEROBACTER medium
+original_name: ANAEROBACTER medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 482
+  term:
+    id: komodo.medium:482
+    label: ANAEROBACTER medium
+notes: 'Source: KOMODO ModelSEED | ID: 482 | DSMZ Medium: 482 (mediadive.medium:482)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 482'

@@ -1,0 +1,65 @@
+name: LB Medium with 50 ppm Naphthalene
+original_name: LB Medium with 50 ppm Naphthalene
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Naphthalene solution (10,000 ppm)*
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Naphthalene
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M1847
+  term:
+    id: TOGO:M1847
+    label: LB Medium with 50 ppm Naphthalene
+notes: 'Source: https://togomedium.org/medium/M1847
+
+  Original source: NBRC - NBRC_M1082
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1082'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.499940Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1847'

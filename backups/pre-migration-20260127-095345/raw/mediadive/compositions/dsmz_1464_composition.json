@@ -1,0 +1,338 @@
+{
+  "medium_id": "dsmz_1464",
+  "medium_name": "Mineral Base:",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Chitin (amorphous) or Sigma C7170",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "MgSO4",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "NH4Cl",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Na2S",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Acidic trace metals (Pfennig & Lippert, 1965)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Vitamine mixture (Pfennig & Lippert, 1965)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Acidic trace metals (Pfennig & Lippert, 1965)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "2. FeSO4 x 7H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "3. ZnSO4 x 7H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "4. MnCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "5. H3BO3",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "6. CoCl2 x 6H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "7. CuCl2",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "8. NiCl2 x 2H2O",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "9. Na2MoO4 x 2H2O or NH4MoO4",
+      "concentration": 2.0,
+      "unit": "M",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "mg/l",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "1 – 2g/l (from 5% solution)",
+      "concentration": 2.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "1 mM (final concentration)",
+      "concentration": 1.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "4 mM (final concentration)",
+      "concentration": 4.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "1 mM (final concentration)",
+      "concentration": 1.0,
+      "unit": "mM",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "5000 mg/l",
+      "concentration": 5000.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "2000 mg/l",
+      "concentration": 2000.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "100 mg/l",
+      "concentration": 100.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "30 mg/l",
+      "concentration": 30.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "300 mg/l",
+      "concentration": 300.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "200 mg/l",
+      "concentration": 200.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "10 mg/l",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "20 mg/l",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "20 mg/l",
+      "concentration": 20.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Vitamine mixture (Pfennig & Lippert, 1965)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "After autoclaving add sterile, anoxic solutions of:"
+    },
+    {
+      "name": "Ca pantotenate",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "1: acidic solution (HCl, pH 3; 100 ml)"
+    },
+    {
+      "name": "B12",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "1: acidic solution (HCl, pH 3; 100 ml)"
+    },
+    {
+      "name": "5 mg",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "1: acidic solution (HCl, pH 3; 100 ml)"
+    },
+    {
+      "name": "5 mg",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "1: acidic solution (HCl, pH 3; 100 ml)"
+    },
+    {
+      "name": "0.5 mg",
+      "concentration": 0.5,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "1: acidic solution (HCl, pH 3; 100 ml)"
+    },
+    {
+      "name": "Biotin",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2: basic solution (100 ml 0.1 N NaOH)"
+    },
+    {
+      "name": "PABA",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2: basic solution (100 ml 0.1 N NaOH)"
+    },
+    {
+      "name": "Nicotinic acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2: basic solution (100 ml 0.1 N NaOH)"
+    },
+    {
+      "name": "Pyridoxine",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "2: basic solution (100 ml 0.1 N NaOH)"
+    },
+    {
+      "name": "Folic acid",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "2 mg",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "5 mg",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "5 mg",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "10 mg",
+      "concentration": 10.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "2 mg",
+      "concentration": 2.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    },
+    {
+      "name": "5 mg",
+      "concentration": 5.0,
+      "unit": "mg",
+      "extraction_method": "pdf_multi_solution_parsing",
+      "solution": "3: Neutral solution (100 ml Aqua dem.)"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

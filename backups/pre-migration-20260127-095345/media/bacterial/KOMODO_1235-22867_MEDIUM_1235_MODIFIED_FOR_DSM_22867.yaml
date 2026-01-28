@@ -1,0 +1,20 @@
+name: MEDIUM 1235 MODIFIED FOR DSM 22867
+original_name: MEDIUM 1235 MODIFIED FOR DSM 22867
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1235_22867
+  term:
+    id: komodo.medium:1235_22867
+    label: MEDIUM 1235 MODIFIED FOR DSM 22867
+notes: 'Source: KOMODO ModelSEED | ID: 1235_22867 | DSMZ Medium: 1235 (mediadive.medium:1235)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1235_22867'

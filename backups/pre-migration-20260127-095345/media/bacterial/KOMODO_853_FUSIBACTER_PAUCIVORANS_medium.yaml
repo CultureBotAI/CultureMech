@@ -1,0 +1,21 @@
+name: FUSIBACTER PAUCIVORANS medium
+original_name: FUSIBACTER PAUCIVORANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 853
+  term:
+    id: komodo.medium:853
+    label: FUSIBACTER PAUCIVORANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 853 | DSMZ Medium: 853 (mediadive.medium:853)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 853'

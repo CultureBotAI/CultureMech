@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_1311",
+  "medium_name": "Fetal Bovine Serum",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Cultivation of Diplorickettsia massiliensis",
+      "concentration": 93.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Cultivation of XTC-2 (from Xenopus laevis) cells",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fetal Bovine Serum",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

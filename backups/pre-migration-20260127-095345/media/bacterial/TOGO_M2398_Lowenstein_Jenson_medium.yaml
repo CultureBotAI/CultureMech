@@ -1,0 +1,66 @@
+name: Lowenstein Jenson medium
+original_name: Lowenstein Jenson medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Glycerol
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Magnesium Sulfate
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sodium Citrate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: 'Whole Egg '
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: L-Asparagine
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Malachite green
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Selective agent, pH indicator; Properties: Simple component, Defined
+    component, Organic compound'
+- preferred_term: Potato Flour
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+media_term:
+  preferred_term: TOGO Medium M2398
+  term:
+    id: TOGO:M2398
+    label: Lowenstein Jenson medium
+notes: 'Source: https://togomedium.org/medium/M2398
+
+  Original URL: https://www.atcc.org/~/media/DCF5BD57BCA440D682E17FA2B9D735B0.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.456889Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2398'

@@ -1,0 +1,20 @@
+name: MEDIUM 465b MODIFIED FOR DSM 6824
+original_name: MEDIUM 465b MODIFIED FOR DSM 6824
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 465b_6824
+  term:
+    id: komodo.medium:465b_6824
+    label: MEDIUM 465b MODIFIED FOR DSM 6824
+notes: 'Source: KOMODO ModelSEED | ID: 465b_6824 | DSMZ Medium: 465b (mediadive.medium:465b)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 465b_6824'

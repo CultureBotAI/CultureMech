@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_1079",
+  "medium_name": "88)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 88",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "88"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

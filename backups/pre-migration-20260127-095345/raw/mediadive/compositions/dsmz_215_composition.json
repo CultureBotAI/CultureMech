@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_215",
+  "medium_name": "Brain Heart Infusion (Difco)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Brain Heart Infusion (Difco)",
+      "concentration": 37.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

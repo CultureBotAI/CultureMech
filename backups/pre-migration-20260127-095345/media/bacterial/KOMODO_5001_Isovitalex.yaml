@@ -1,0 +1,20 @@
+name: Isovitalex
+original_name: Isovitalex
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 5001
+  term:
+    id: komodo.medium:5001
+    label: Isovitalex
+notes: 'Source: KOMODO ModelSEED | ID: 5001 | DSMZ Medium: 5001 (mediadive.medium:5001)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 5001'

@@ -1,0 +1,20 @@
+name: 16AV medium_replace_galactose_with_Cellobiose
+original_name: 16AV medium_replace_galactose_with_Cellobiose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 298f_replace_galactose_with_Cellobiose
+  term:
+    id: komodo.medium:298f_replace_galactose_with_Cellobiose
+    label: 16AV medium_replace_galactose_with_Cellobiose
+notes: 'Source: KOMODO ModelSEED | ID: 298f_replace_galactose_with_Cellobiose | DSMZ
+  Medium: 298f (mediadive.medium:298f) | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 298f_replace_galactose_with_Cellobiose'

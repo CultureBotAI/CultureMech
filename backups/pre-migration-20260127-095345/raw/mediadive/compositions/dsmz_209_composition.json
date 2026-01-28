@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_209",
+  "medium_name": "To medium 78 add 0.5% (w/v) arginine.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 78",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "78"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

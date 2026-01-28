@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1633",
+  "medium_name": "Peptone (Bacto)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Peptone (Bacto)",
+      "concentration": 0.25,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

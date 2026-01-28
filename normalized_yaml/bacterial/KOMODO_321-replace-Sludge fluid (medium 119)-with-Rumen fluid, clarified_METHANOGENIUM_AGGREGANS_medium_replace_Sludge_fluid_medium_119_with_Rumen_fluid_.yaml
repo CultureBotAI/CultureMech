@@ -1,0 +1,26 @@
+name: METHANOGENIUM AGGREGANS medium_replace_Sludge fluid (medium 119)_with_Rumen
+  fluid, clarified
+original_name: METHANOGENIUM AGGREGANS medium_replace_Sludge fluid (medium 119)_with_Rumen
+  fluid, clarified
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 321_replace_Sludge fluid (medium 119)_with_Rumen fluid,
+    clarified
+  term:
+    id: komodo.medium:321_replace_Sludge fluid (medium 119)_with_Rumen fluid, clarified
+    label: METHANOGENIUM AGGREGANS medium_replace_Sludge fluid (medium 119)_with_Rumen
+      fluid, clarified
+notes: 'Source: KOMODO ModelSEED | ID: 321_replace_Sludge fluid (medium 119)_with_Rumen
+  fluid, clarified | DSMZ Medium: 321 (mediadive.medium:321) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 321_replace_Sludge fluid (medium 119)_with_Rumen fluid,
+    clarified'

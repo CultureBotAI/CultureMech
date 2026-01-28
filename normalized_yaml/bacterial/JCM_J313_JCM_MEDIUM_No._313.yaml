@@ -1,0 +1,30 @@
+name: JCM MEDIUM No. 313
+original_name: JCM MEDIUM No. 313
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J313
+  term:
+    id: mediadive.medium:J313
+    label: JCM MEDIUM No. 313
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=313'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use the Medium No. 310 without KSCN solution. Aseptically add 40.0
+    ml of 2 M Na2S2O3 solution (filter-sterilized) and 5.0 ml of 1 M KNO3 solution
+    (filter-sterilized) to the medium (1.0 L).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.258678Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J313'

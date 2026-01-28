@@ -1,0 +1,21 @@
+name: NATRONOBACTERIA medium
+original_name: NATRONOBACTERIA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.0-9.5
+media_term:
+  preferred_term: KOMODO Medium 371
+  term:
+    id: komodo.medium:371
+    label: NATRONOBACTERIA medium
+notes: 'Source: KOMODO ModelSEED | ID: 371 | DSMZ Medium: 371 (mediadive.medium:371)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 371'

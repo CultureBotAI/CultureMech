@@ -1,0 +1,31 @@
+name: YEL
+original_name: YEL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C107
+  term:
+    id: mediadive.medium:C107
+    label: YEL
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_YEL.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Liver digest
+  concentration:
+    value: '4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add constituents and mix thoroughly.  Autoclave at 15 psi for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.826787Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C107'

@@ -1,0 +1,21 @@
+name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
+original_name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.7
+notes: 'pH buffer: Na2S | Source: KOMODO ModelSEED | ID: 431 | DSMZ Medium: 431 (mediadive.medium:431)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 431
+  term:
+    id: komodo.medium:431
+    label: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 431'

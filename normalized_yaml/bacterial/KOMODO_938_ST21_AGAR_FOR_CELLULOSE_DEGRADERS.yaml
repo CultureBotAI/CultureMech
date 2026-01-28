@@ -1,0 +1,21 @@
+name: ST21 AGAR FOR CELLULOSE DEGRADERS
+original_name: ST21 AGAR FOR CELLULOSE DEGRADERS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 938 | DSMZ Medium: 938 (mediadive.medium:938)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 938
+  term:
+    id: komodo.medium:938
+    label: ST21 AGAR FOR CELLULOSE DEGRADERS
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 938'

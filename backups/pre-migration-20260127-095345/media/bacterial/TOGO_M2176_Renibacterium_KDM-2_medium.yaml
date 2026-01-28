@@ -1,0 +1,53 @@
+name: Renibacterium KDM-2 medium
+original_name: Renibacterium KDM-2 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: L-Cysteine . HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2176
+  term:
+    id: TOGO:M2176
+    label: Renibacterium KDM-2 medium
+notes: 'Source: https://togomedium.org/medium/M2176
+
+  Original URL: https://www.atcc.org/~/media/C5DA8BD389F44EC19C8D094B271B63B2.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.124549Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2176'

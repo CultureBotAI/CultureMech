@@ -1,0 +1,68 @@
+name: AN1 MEDIUM
+original_name: AN1 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: JCM Medium J267
+  term:
+    id: mediadive.medium:J267
+    label: AN1 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=267'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Sodium thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust
+    pH to 7.3. Autoclave the medium under a N2 atmosphere. Separately autoclave sodium
+    thioglycolate as 10% solution under a N2 atmosphere. Steam sulfur for 3 hr on
+    each of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture
+    vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
+    solution to the medium anaerobically.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.129921Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J267'

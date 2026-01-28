@@ -1,0 +1,21 @@
+name: DESULFONATRONUM medium
+original_name: DESULFONATRONUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: KOMODO Medium 813
+  term:
+    id: komodo.medium:813
+    label: DESULFONATRONUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 813 | DSMZ Medium: 813 (mediadive.medium:813)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 813'

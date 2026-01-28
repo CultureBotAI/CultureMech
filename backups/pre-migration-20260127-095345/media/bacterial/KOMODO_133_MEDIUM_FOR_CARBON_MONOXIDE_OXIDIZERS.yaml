@@ -1,0 +1,21 @@
+name: MEDIUM FOR CARBON MONOXIDE OXIDIZERS
+original_name: MEDIUM FOR CARBON MONOXIDE OXIDIZERS
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 133
+  term:
+    id: komodo.medium:133
+    label: MEDIUM FOR CARBON MONOXIDE OXIDIZERS
+notes: 'Source: KOMODO ModelSEED | ID: 133 | DSMZ Medium: 133 (mediadive.medium:133)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 133'

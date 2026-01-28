@@ -1,0 +1,21 @@
+name: LACTOBACILLUS medium IV
+original_name: LACTOBACILLUS medium IV
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.3
+media_term:
+  preferred_term: KOMODO Medium 859
+  term:
+    id: komodo.medium:859
+    label: LACTOBACILLUS medium IV
+notes: 'Source: KOMODO ModelSEED | ID: 859 | DSMZ Medium: 859 (mediadive.medium:859)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 859'

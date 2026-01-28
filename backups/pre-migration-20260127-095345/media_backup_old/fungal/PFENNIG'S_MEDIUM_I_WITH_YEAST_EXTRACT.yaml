@@ -1,0 +1,23 @@
+name: PFENNIG'S MEDIUM I WITH YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 39
+  term:
+    id: DSMZ:39
+    label: PFENNIG'S MEDIUM I WITH YEAST EXTRACT
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium39.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.670942Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 39'

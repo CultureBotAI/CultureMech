@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_429d",
+  "medium_name": "Dissolve Columbia agar base in 70% artificial seawater and add additional 2 g agar per",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 220",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "220"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 1.0,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

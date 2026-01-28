@@ -1,0 +1,84 @@
+name: MODIFIED BSK MEDIUM
+original_name: MODIFIED BSK MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J896
+  term:
+    id: mediadive.medium:J896
+    label: MODIFIED BSK MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=896'
+ingredients:
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '8.75'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '62.5'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: N-Acetyl-D-glucosamine
+  term:
+    id: CHEBI:506227
+    label: N-Acetyl-D-glucosamine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '27.5'
+    unit: G_PER_L
+- preferred_term: MEM alpha Modification
+  concentration:
+    value: '130'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Probumin Universal Grade
+  concentration:
+    value: '625'
+    unit: G_PER_L
+- preferred_term: Neopeptone
+  concentration:
+    value: '62.5'
+    unit: G_PER_L
+- preferred_term: Rabbit serum
+  concentration:
+    value: '40'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water
+    and filter-sterilize with 0.22 ï¿½m PES filter.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.930369Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J896'

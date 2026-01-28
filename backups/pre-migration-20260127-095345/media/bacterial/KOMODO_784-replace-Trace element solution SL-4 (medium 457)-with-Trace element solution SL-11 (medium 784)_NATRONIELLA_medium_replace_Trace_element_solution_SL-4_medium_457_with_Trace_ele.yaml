@@ -1,0 +1,27 @@
+name: NATRONIELLA medium_replace_Trace element solution SL-4 (medium 457)_with_Trace
+  element solution SL-11 (medium 784)
+original_name: NATRONIELLA medium_replace_Trace element solution SL-4 (medium 457)_with_Trace
+  element solution SL-11 (medium 784)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 784_replace_Trace element solution SL-4 (medium 457)_with_Trace
+    element solution SL-11 (medium 784)
+  term:
+    id: komodo.medium:784_replace_Trace element solution SL-4 (medium 457)_with_Trace
+      element solution SL-11 (medium 784)
+    label: NATRONIELLA medium_replace_Trace element solution SL-4 (medium 457)_with_Trace
+      element solution SL-11 (medium 784)
+notes: 'Source: KOMODO ModelSEED | ID: 784_replace_Trace element solution SL-4 (medium
+  457)_with_Trace element solution SL-11 (medium 784) | DSMZ Medium: 784 (mediadive.medium:784)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 784_replace_Trace element solution SL-4 (medium 457)_with_Trace
+    element solution SL-11 (medium 784)'

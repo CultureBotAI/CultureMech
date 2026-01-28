@@ -1,0 +1,98 @@
+name: BGDM
+original_name: BGDM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Glutamate
+  concentration:
+    value: '0.6797'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Alanine
+  concentration:
+    value: '1.1224'
+    unit: MILLIMOLAR
+- preferred_term: Phenylalanine
+  concentration:
+    value: '0.6054'
+    unit: MILLIMOLAR
+- preferred_term: Menadione
+  term:
+    id: CHEBI:28869
+    label: Menadione
+  concentration:
+    value: '0.002904'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:mndn'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.9011'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '1.1481'
+    unit: MILLIMOLAR
+- preferred_term: Aspartate
+  concentration:
+    value: '0.7513'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '1.7112'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '0.4758'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '7.3483'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.8401'
+    unit: MILLIMOLAR
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.007669'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.270851Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 72, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 72
+  term:
+    id: MEDIADB:72
+    label: BGDM
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

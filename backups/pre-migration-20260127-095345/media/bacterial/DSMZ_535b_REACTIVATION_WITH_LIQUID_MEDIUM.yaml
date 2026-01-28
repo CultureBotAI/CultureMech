@@ -1,0 +1,85 @@
+name: REACTIVATION WITH LIQUID MEDIUM
+original_name: REACTIVATION WITH LIQUID MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 535b
+  term:
+    id: mediadive.medium:535b
+    label: REACTIVATION WITH LIQUID MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium535b.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
+    broth 545. Subsequent subculturing may be carried out in liquid medium 545 or
+    on agar plates.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 3
+  action: MIX
+  description: Medium 545 is the same as Caso Bouillon (Merck or Oxoid, Germany).
+- step_number: 4
+  action: MIX
+  description: pH 7.3
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.556363Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 535b'

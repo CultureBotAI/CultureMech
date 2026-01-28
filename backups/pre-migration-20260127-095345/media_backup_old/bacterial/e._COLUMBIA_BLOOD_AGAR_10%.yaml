@@ -1,0 +1,23 @@
+name: e. COLUMBIA BLOOD AGAR 10%
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 429e
+  term:
+    id: DSMZ:429e
+    label: e. COLUMBIA BLOOD AGAR 10%
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429e.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.904993Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 429e'

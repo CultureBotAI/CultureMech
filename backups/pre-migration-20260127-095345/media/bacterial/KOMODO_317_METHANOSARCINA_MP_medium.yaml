@@ -1,0 +1,21 @@
+name: METHANOSARCINA (MP) medium
+original_name: METHANOSARCINA (MP) medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: KOMODO Medium 317
+  term:
+    id: komodo.medium:317
+    label: METHANOSARCINA (MP) medium
+notes: 'Source: KOMODO ModelSEED | ID: 317 | DSMZ Medium: 317 (mediadive.medium:317)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 317'

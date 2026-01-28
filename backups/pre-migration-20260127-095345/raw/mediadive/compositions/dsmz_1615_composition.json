@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_1615",
+  "medium_name": "Medium dsmz_1615",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "After sterilization add from sterile stock solutions:",
+      "concentration": 20.0,
+      "unit": "mM",
+      "extraction_method": "pdf_reverse_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

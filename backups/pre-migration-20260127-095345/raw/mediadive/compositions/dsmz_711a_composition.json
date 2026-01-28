@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_711a",
+  "medium_name": "Use medium 711 with 1g/l yeast extract, without acetate, and with 5 g/l fructose as the",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 711",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "711"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

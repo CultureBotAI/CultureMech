@@ -1,0 +1,49 @@
+name: SEAWATER LEMCO
+original_name: SEAWATER LEMCO
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 627
+  term:
+    id: mediadive.medium:627
+    label: SEAWATER LEMCO
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium627.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Dissolve ingredients, by heating if necessary. Adjust pH to 7.8, boil
+    3-5 min, filter. Readjust pH to 7.3. Sterilize by autoclaving for 15 min at 121°C.
+- step_number: 2
+  action: DISSOLVE
+  description: For solid medium add 15.0 g agar after readjusting pH and steam to
+    dissolve the agar prior to autoclaving.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.771823Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 627'

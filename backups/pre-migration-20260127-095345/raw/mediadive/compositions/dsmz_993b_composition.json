@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_993b",
+  "medium_name": "Prepare medium 993 supplemented with yeast extract (0.5 %) and KCl (10%). pH of the",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 993",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "993"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

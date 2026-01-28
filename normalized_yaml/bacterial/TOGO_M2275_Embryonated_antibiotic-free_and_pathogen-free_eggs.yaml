@@ -1,0 +1,21 @@
+name: Embryonated, antibiotic-free, and pathogen-free eggs
+original_name: Embryonated, antibiotic-free, and pathogen-free eggs
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Whole egg
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2275
+  term:
+    id: TOGO:M2275
+    label: Embryonated, antibiotic-free, and pathogen-free eggs
+notes: 'Source: https://togomedium.org/medium/M2275'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.254737Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2275'

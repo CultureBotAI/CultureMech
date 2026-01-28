@@ -1,0 +1,57 @@
+name: 1/2 TRYPTIC SOY BROTH (ANAEROBIC)
+original_name: 1/2 TRYPTIC SOY BROTH (ANAEROBIC)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1205
+  term:
+    id: mediadive.medium:1205
+    label: 1/2 TRYPTIC SOY BROTH (ANAEROBIC)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1205.pdf'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '13.75'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+- preferred_term: DL-Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: DL-Dithiothreitol
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except glucose and DTT, then sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to 7.2 with HCl, then
+    dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave at 121°C for 20 min. Add glucose and DTT from anoxic stock
+    solutions prepared under 100% N2 gas atmosphere and sterilized by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.688646Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1205'

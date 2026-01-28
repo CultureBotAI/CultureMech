@@ -1,0 +1,94 @@
+name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but
+  supplemented with 0.1 M sodium lactate
+original_name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without
+  glucose but supplemented with 0.1 M sodium lactate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '1.66'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+- preferred_term: Sodium lactate
+  concentration:
+    value: '0.1'
+    unit: MOLAR
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Tris (hydroxymethyl aminomethane) 3.00 g
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Hemin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Peptone mixture
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Cysteine-HCl x H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Casein peptone
+  concentration:
+    value: '5.66'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Soy peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: 'CO2 '
+  notes: 'Properties: ガス'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2699
+  term:
+    id: TOGO:M2699
+    label: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose
+      but supplemented with 0.1 M sodium lactate
+notes: 'Source: https://togomedium.org/medium/M2699
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1669.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.082799Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2699'

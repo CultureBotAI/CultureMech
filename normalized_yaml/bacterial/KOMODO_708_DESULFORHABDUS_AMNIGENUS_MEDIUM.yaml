@@ -1,0 +1,21 @@
+name: DESULFORHABDUS AMNIGENUS MEDIUM
+original_name: DESULFORHABDUS AMNIGENUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.6
+media_term:
+  preferred_term: KOMODO Medium 708
+  term:
+    id: komodo.medium:708
+    label: DESULFORHABDUS AMNIGENUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 708 | DSMZ Medium: 708 (mediadive.medium:708)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 708'

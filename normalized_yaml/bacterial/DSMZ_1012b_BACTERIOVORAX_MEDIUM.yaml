@@ -1,0 +1,54 @@
+name: BACTERIOVORAX MEDIUM
+original_name: BACTERIOVORAX MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1012b
+  term:
+    id: mediadive.medium:1012b
+    label: BACTERIOVORAX MEDIUM
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: HEPES buffer
+  term:
+    id: CHEBI:19708
+    label: HEPES buffer
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Grow prey bacteria on agar plates using the medium indicated below.
+    Use one plate of a 24-hour-old culture and wash off grown cells in 5 ml sterile
+    water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare HEPES buffer, adjust pH to 7.2, and autoclave. After cooling
+    to room temperature add 5 ml cell suspension of the host organism to 50 ml HEPES
+    buffer and mix. The prey medium suspension should contain approx. 10<sup>7</sup>
+    to 10<sup>9</sup> cells. Inoculate the complete medium immediately after preparation
+    and incubate the suspension with shaking until a decrease in turbidity is visible.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.108168Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1012b'

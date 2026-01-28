@@ -1,0 +1,201 @@
+name: Synthetic Medium C
+original_name: Synthetic Medium C
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Valine
+  concentration:
+    value: '0.8536'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '8.441'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '3.163'
+    unit: MILLIMOLAR
+- preferred_term: L-Glutamate
+  concentration:
+    value: '1.767'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.4057'
+    unit: MILLIMOLAR
+- preferred_term: Folate
+  concentration:
+    value: '2.266e-06'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+- preferred_term: Leucine
+  concentration:
+    value: '1.22'
+    unit: MILLIMOLAR
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '199.8'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:urea'
+- preferred_term: L-Sorbose
+  concentration:
+    value: '444.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:srb-L'
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.0007093'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pydxn'
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.2681'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '0.4574'
+    unit: MILLIMOLAR
+- preferred_term: Histidine
+  term:
+    id: CHEBI:27570
+    label: Histidine
+  concentration:
+    value: '0.3222'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '1.507e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1567'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '0.08254'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '5.937'
+    unit: MILLIMOLAR
+- preferred_term: Alanine
+  concentration:
+    value: '2.133'
+    unit: MILLIMOLAR
+- preferred_term: Phenylalanine
+  concentration:
+    value: '0.3632'
+    unit: MILLIMOLAR
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '0.287'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.0004463'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.0284'
+    unit: MILLIMOLAR
+- preferred_term: DL-Tyrosine
+  concentration:
+    value: '0.1656'
+    unit: MILLIMOLAR
+- preferred_term: Lysine
+  concentration:
+    value: '0.342'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.01284'
+    unit: MILLIMOLAR
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '7.971e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: Pantothenate
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  concentration:
+    value: '0.0005246'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pnto-R'
+- preferred_term: Aspartate
+  concentration:
+    value: '0.7513'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.006755'
+    unit: MILLIMOLAR
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '4.427e-06'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '0.7651'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.467908Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 315, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 315
+  term:
+    id: MEDIADB:315
+    label: Synthetic Medium C
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

@@ -1,0 +1,64 @@
+name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
+original_name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J571
+  term:
+    id: mediadive.medium:J571
+    label: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=571'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '6.25'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components, adjust pH to 9.0 and autoclave.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Mix components and filter-sterilize. Combine Solutions A and B aseptically
+    and readjust pH to 9.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.967925Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J571'

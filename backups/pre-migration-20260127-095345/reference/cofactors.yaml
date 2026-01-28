@@ -1,0 +1,790 @@
+cofactors:
+- preferred_term: TPP
+  category: VITAMINS
+  term:
+    id: CHEBI:9532
+    label: TPP
+  precursor: thiamine
+  precursor_term:
+    id: CHEBI:49105
+    label: thiamine
+  ec_associations:
+  - 2.2.1.-
+  - 4.1.1.-
+  - 1.2.4.-
+  - 2.7.1.2
+  kegg_pathways:
+  - ko00730
+  enzyme_examples:
+  - pyruvate dehydrogenase
+  - transketolase
+  - alpha-ketoglutarate dehydrogenase
+- preferred_term: vitamin B7
+  category: VITAMINS
+  term:
+    id: CHEBI:15956
+    label: vitamin B7
+  ec_associations:
+  - 6.3.4.-
+  - 6.4.1.-
+  - 2.1.3.15
+  kegg_pathways:
+  - ko00780
+  enzyme_examples:
+  - acetyl-CoA carboxylase
+  - pyruvate carboxylase
+  - propionyl-CoA carboxylase
+- preferred_term: vitamin B12
+  category: VITAMINS
+  term:
+    id: CHEBI:16335
+    label: vitamin B12
+  ec_associations:
+  - 2.1.1.13
+  - 5.4.99.-
+  - 1.16.1.5
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - methionine synthase
+  - methylmalonyl-CoA mutase
+  - ribonucleotide reductase
+- preferred_term: PLP
+  category: VITAMINS
+  term:
+    id: CHEBI:18405
+    label: PLP
+  precursor: pyridoxine
+  precursor_term:
+    id: CHEBI:16709
+    label: pyridoxine
+  ec_associations:
+  - 2.6.1.-
+  - 4.1.1.-
+  - 5.1.1.-
+  - 2.3.1.37
+  kegg_pathways:
+  - ko00750
+  enzyme_examples:
+  - aminotransferases
+  - amino acid decarboxylases
+  - serine hydroxymethyltransferase
+- preferred_term: vitamin B2
+  category: VITAMINS
+  term:
+    id: CHEBI:17015
+    label: vitamin B2
+  ec_associations:
+  - 1.1.3.-
+  - 1.3.99.-
+  - 1.5.3.-
+  kegg_pathways:
+  - ko00740
+  enzyme_examples:
+  - FMN/FAD precursor
+- preferred_term: FMN
+  category: VITAMINS
+  term:
+    id: CHEBI:17621
+    label: FMN
+  precursor: riboflavin
+  precursor_term:
+    id: CHEBI:17015
+    label: riboflavin
+  ec_associations:
+  - 1.1.3.-
+  - 1.5.99.-
+  - 1.14.13.-
+  kegg_pathways:
+  - ko00740
+  enzyme_examples:
+  - NADH dehydrogenase
+  - nitric oxide reductase
+  - monooxygenases
+- preferred_term: FAD
+  category: VITAMINS
+  term:
+    id: CHEBI:16238
+    label: FAD
+  precursor: riboflavin
+  precursor_term:
+    id: CHEBI:17015
+    label: riboflavin
+  ec_associations:
+  - 1.1.3.-
+  - 1.3.99.-
+  - 1.5.3.-
+  - 1.2.1.3
+  kegg_pathways:
+  - ko00740
+  enzyme_examples:
+  - succinate dehydrogenase
+  - acyl-CoA dehydrogenase
+  - glutathione reductase
+- preferred_term: nicotinic acid
+  category: VITAMINS
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+  ec_associations: []
+  kegg_pathways:
+  - ko00760
+  enzyme_examples:
+  - NAD+ precursor
+- preferred_term: pantothenate
+  category: VITAMINS
+  term:
+    id: CHEBI:16646
+    label: pantothenate
+  ec_associations: []
+  kegg_pathways:
+  - ko00770
+  enzyme_examples:
+  - CoA precursor
+- preferred_term: folic acid
+  category: VITAMINS
+  term:
+    id: CHEBI:27470
+    label: folic acid
+  ec_associations:
+  - 2.1.2.-
+  - 3.5.4.9
+  kegg_pathways:
+  - ko00790
+  enzyme_examples:
+  - tetrahydrofolate precursor
+- preferred_term: THF
+  category: VITAMINS
+  term:
+    id: CHEBI:15635
+    label: THF
+  precursor: folate
+  precursor_term:
+    id: CHEBI:27470
+    label: folate
+  ec_associations:
+  - 2.1.2.-
+  - 1.5.1.3
+  - 3.5.4.9
+  kegg_pathways:
+  - ko00790
+  enzyme_examples:
+  - serine hydroxymethyltransferase
+  - methylene-THF reductase
+  - dihydrofolate reductase
+- preferred_term: vitamin K2
+  category: VITAMINS
+  term:
+    id: CHEBI:16374
+    label: vitamin K2
+  ec_associations:
+  - 1.1.5.-
+  - 1.6.5.-
+  kegg_pathways:
+  - ko00130
+  enzyme_examples:
+  - electron transport chain component
+- preferred_term: coenzyme Q
+  category: VITAMINS
+  term:
+    id: CHEBI:16389
+    label: coenzyme Q
+  ec_associations:
+  - 1.1.5.-
+  - 1.6.5.-
+  - 1.10.2.-
+  kegg_pathways:
+  - ko00130
+  enzyme_examples:
+  - NADH dehydrogenase
+  - succinate dehydrogenase
+  - cytochrome bc1 complex
+- preferred_term: lipoate
+  category: VITAMINS
+  term:
+    id: CHEBI:30314
+    label: lipoate
+  ec_associations:
+  - 1.2.4.-
+  - 2.3.1.12
+  kegg_pathways:
+  - ko00785
+  enzyme_examples:
+  - pyruvate dehydrogenase
+  - alpha-ketoglutarate dehydrogenase
+  - branched-chain alpha-keto acid dehydrogenase
+- preferred_term: Fe-S cluster
+  category: METALS
+  term:
+    id: CHEBI:30408
+    label: Fe-S cluster
+  ec_associations:
+  - 1.18.-.-
+  - 1.97.-.-
+  - 4.2.1.-
+  kegg_pathways:
+  - ko00195
+  enzyme_examples:
+  - ferredoxin
+  - aconitase
+  - NADH dehydrogenase
+  - nitrogenase
+- preferred_term: heme b
+  category: METALS
+  term:
+    id: CHEBI:30413
+    label: heme b
+  ec_associations:
+  - 1.11.1.-
+  - 1.14.-.-
+  - 1.9.3.-
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - cytochrome c
+  - catalase
+  - peroxidase
+  - cytochrome P450
+- preferred_term: heme A
+  category: METALS
+  term:
+    id: CHEBI:60344
+    label: heme A
+  ec_associations:
+  - 1.9.3.1
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - cytochrome c oxidase
+- preferred_term: heme C
+  category: METALS
+  term:
+    id: CHEBI:60052
+    label: heme C
+  ec_associations:
+  - 1.9.3.-
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - cytochrome c
+- preferred_term: Fe
+  category: METALS
+  term:
+    id: CHEBI:18248
+    label: Fe
+  ec_associations:
+  - 1.11.1.-
+  - 1.13.11.-
+  - 1.14.11.-
+  kegg_pathways: []
+  enzyme_examples:
+  - catalase
+  - lipoxygenase
+  - alpha-ketoglutarate-dependent dioxygenases
+- preferred_term: Zn
+  category: METALS
+  term:
+    id: CHEBI:27363
+    label: Zn
+  ec_associations:
+  - 3.4.24.-
+  - 3.5.1.-
+  - 4.2.1.1
+  kegg_pathways: []
+  enzyme_examples:
+  - carbonic anhydrase
+  - carboxypeptidase
+  - alcohol dehydrogenase
+  - DNA/RNA polymerases
+- preferred_term: Cu
+  category: METALS
+  term:
+    id: CHEBI:28694
+    label: Cu
+  ec_associations:
+  - 1.10.3.-
+  - 1.16.3.1
+  kegg_pathways: []
+  enzyme_examples:
+  - cytochrome c oxidase
+  - laccase
+  - superoxide dismutase
+  - tyrosinase
+- preferred_term: Mg
+  category: METALS
+  term:
+    id: CHEBI:18420
+    label: Mg
+  ec_associations:
+  - 2.7.1.-
+  - 2.7.4.-
+  - 3.6.1.-
+  kegg_pathways: []
+  enzyme_examples:
+  - kinases
+  - phosphatases
+  - DNA/RNA polymerases
+  - ribosome stabilization
+- preferred_term: Ca
+  category: METALS
+  term:
+    id: CHEBI:29108
+    label: Ca
+  ec_associations:
+  - 3.4.21.-
+  - 3.4.23.-
+  kegg_pathways: []
+  enzyme_examples:
+  - proteases
+  - alpha-amylase
+  - phospholipase
+- preferred_term: Mn
+  category: METALS
+  term:
+    id: CHEBI:29035
+    label: Mn
+  ec_associations:
+  - 1.11.1.6
+  - 1.13.11.-
+  - 2.7.7.-
+  kegg_pathways: []
+  enzyme_examples:
+  - superoxide dismutase
+  - arginase
+  - DNA/RNA polymerases
+- preferred_term: MoCo
+  category: METALS
+  term:
+    id: CHEBI:25374
+    label: MoCo
+  ec_associations:
+  - 1.2.1.-
+  - 1.7.2.-
+  - 1.8.3.-
+  kegg_pathways:
+  - ko00790
+  enzyme_examples:
+  - nitrate reductase
+  - sulfite oxidase
+  - xanthine dehydrogenase
+  - aldehyde oxidase
+- preferred_term: Co
+  category: METALS
+  term:
+    id: CHEBI:48828
+    label: Co
+  ec_associations: []
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - cobalamin cofactor precursor
+- preferred_term: Ni
+  category: METALS
+  term:
+    id: CHEBI:49786
+    label: Ni
+  ec_associations:
+  - 3.5.1.5
+  - 1.12.7.-
+  kegg_pathways: []
+  enzyme_examples:
+  - urease
+  - hydrogenase
+  - methyl-CoM reductase
+- preferred_term: W
+  category: METALS
+  term:
+    id: CHEBI:30154
+    label: W
+  ec_associations:
+  - 1.2.7.-
+  kegg_pathways: []
+  enzyme_examples:
+  - formate dehydrogenase
+  - aldehyde ferredoxin oxidoreductase
+- preferred_term: rare earth elements
+  category: METALS
+  term:
+    id: CHEBI:33319
+    label: rare earth elements
+  ec_associations:
+  - 1.1.2.7
+  - 1.1.2.8
+  - 1.1.2.9
+  kegg_pathways: []
+  enzyme_examples:
+  - methanol dehydrogenase (XoxF-MDH)
+  - ethanol dehydrogenase
+- preferred_term: NAD+
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:15846
+    label: NAD+
+  precursor: niacin
+  precursor_term:
+    id: CHEBI:15940
+    label: niacin
+  ec_associations:
+  - 1.1.1.-
+  - 1.2.1.-
+  - 1.6.99.-
+  - 1.17.1.-
+  kegg_pathways:
+  - ko00760
+  enzyme_examples:
+  - alcohol dehydrogenase
+  - lactate dehydrogenase
+  - malate dehydrogenase
+- preferred_term: NADH
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:16908
+    label: NADH
+  precursor: niacin
+  precursor_term:
+    id: CHEBI:15940
+    label: niacin
+  ec_associations:
+  - 1.1.1.-
+  - 1.6.5.-
+  - 1.6.99.-
+  kegg_pathways:
+  - ko00760
+  enzyme_examples:
+  - NADH dehydrogenase
+  - lactate dehydrogenase
+- preferred_term: NADP+
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:18009
+    label: NADP+
+  precursor: niacin
+  precursor_term:
+    id: CHEBI:15940
+    label: niacin
+  ec_associations:
+  - 1.1.1.-
+  - 1.6.1.-
+  - 1.14.13.-
+  kegg_pathways:
+  - ko00760
+  enzyme_examples:
+  - glucose-6-phosphate dehydrogenase
+  - NADP-dependent isocitrate dehydrogenase
+- preferred_term: NADPH
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:16474
+    label: NADPH
+  precursor: niacin
+  precursor_term:
+    id: CHEBI:15940
+    label: niacin
+  ec_associations:
+  - 1.1.1.-
+  - 1.6.1.-
+  - 1.14.13.-
+  kegg_pathways:
+  - ko00760
+  enzyme_examples:
+  - glutathione reductase
+  - cytochrome P450 reductase
+  - fatty acid synthase
+- preferred_term: ATP
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:15422
+    label: ATP
+  ec_associations:
+  - 2.7.-.-
+  - 6.1.-.-
+  - 6.3.-.-
+  - 6.4.-.-
+  kegg_pathways:
+  - ko00230
+  enzyme_examples:
+  - kinases
+  - ligases
+  - synthetases
+  - ATPases
+- preferred_term: ADP
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:16761
+    label: ADP
+  ec_associations:
+  - 2.7.-.-
+  - 3.6.1.-
+  kegg_pathways:
+  - ko00230
+  enzyme_examples:
+  - kinases
+  - ATPases
+- preferred_term: GTP
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:15996
+    label: GTP
+  ec_associations:
+  - 2.7.7.-
+  - 3.6.5.-
+  kegg_pathways:
+  - ko00230
+  enzyme_examples:
+  - GTPases
+  - guanylate cyclase
+  - RNA polymerase
+- preferred_term: CTP
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:17677
+    label: CTP
+  ec_associations:
+  - 2.7.7.-
+  kegg_pathways:
+  - ko00230
+  enzyme_examples:
+  - CTP synthetase
+  - phosphatidate cytidylyltransferase
+- preferred_term: UTP
+  category: NUCLEOTIDES
+  term:
+    id: CHEBI:15713
+    label: UTP
+  ec_associations:
+  - 2.7.7.-
+  kegg_pathways:
+  - ko00230
+  enzyme_examples:
+  - UDP-glucose pyrophosphorylase
+  - RNA polymerase
+- preferred_term: CoA
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:15346
+    label: CoA
+  precursor: pantothenic acid
+  precursor_term:
+    id: CHEBI:16646
+    label: pantothenic acid
+  ec_associations:
+  - 2.3.1.-
+  - 6.2.1.-
+  - 2.8.3.-
+  kegg_pathways:
+  - ko00770
+  enzyme_examples:
+  - acetyl-CoA synthetase
+  - fatty acid synthase
+  - citrate synthase
+- preferred_term: acetyl-CoA
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:15351
+    label: acetyl-CoA
+  precursor: pantothenic acid
+  precursor_term:
+    id: CHEBI:16646
+    label: pantothenic acid
+  ec_associations:
+  - 2.3.1.-
+  - 2.3.3.-
+  kegg_pathways:
+  - ko00770
+  enzyme_examples:
+  - citrate synthase
+  - acetyl-CoA carboxylase
+- preferred_term: SAM
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:15414
+    label: SAM
+  precursor: methionine
+  precursor_term:
+    id: CHEBI:16811
+    label: methionine
+  ec_associations:
+  - 2.1.1.-
+  - 4.4.1.5
+  kegg_pathways:
+  - ko00270
+  enzyme_examples:
+  - methyltransferases
+  - DNA/RNA methyltransferases
+  - protein methyltransferases
+- preferred_term: PAPS
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:17980
+    label: PAPS
+  ec_associations:
+  - 2.8.2.-
+  kegg_pathways:
+  - ko00920
+  enzyme_examples:
+  - sulfotransferases
+- preferred_term: cAMP
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:17489
+    label: cAMP
+  ec_associations:
+  - 3.1.4.17
+  - 4.6.1.1
+  kegg_pathways: []
+  enzyme_examples:
+  - adenylate cyclase
+  - phosphodiesterase
+  - signaling molecule
+- preferred_term: cGMP
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:16356
+    label: cGMP
+  ec_associations:
+  - 3.1.4.35
+  - 4.6.1.2
+  kegg_pathways: []
+  enzyme_examples:
+  - guanylate cyclase
+  - phosphodiesterase
+  - signaling molecule
+- preferred_term: PQQ
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:18315
+    label: PQQ
+  ec_associations:
+  - 1.1.5.-
+  - 1.1.99.-
+  kegg_pathways:
+  - ko00750
+  enzyme_examples:
+  - glucose dehydrogenase
+  - methanol dehydrogenase (calcium-dependent)
+- preferred_term: MFR
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:24024
+    label: MFR
+  ec_associations:
+  - 2.3.1.-
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - formyl-methanofuran dehydrogenase
+- preferred_term: H4MPT
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:15361
+    label: H4MPT
+  ec_associations:
+  - 2.1.1.-
+  - 2.3.1.-
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - formyltransferase
+  - methylene-H4MPT dehydrogenase
+- preferred_term: CoM
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:17755
+    label: CoM
+  ec_associations:
+  - 2.8.4.1
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - methyl-CoM reductase
+- preferred_term: CoB
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:15721
+    label: CoB
+  ec_associations:
+  - 2.8.4.1
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - methyl-CoM reductase
+- preferred_term: biotin carboxyl carrier protein
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:61202
+    label: biotin carboxyl carrier protein
+  ec_associations:
+  - 6.3.4.-
+  - 6.4.1.-
+  kegg_pathways:
+  - ko00780
+  enzyme_examples:
+  - acetyl-CoA carboxylase
+- preferred_term: retinal
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:17898
+    label: retinal
+  ec_associations:
+  - 1.2.1.-
+  kegg_pathways:
+  - ko00830
+  enzyme_examples:
+  - bacteriorhodopsin
+  - rhodopsin
+- preferred_term: heme d1
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:60052
+    label: heme d1
+  ec_associations:
+  - 1.7.2.1
+  kegg_pathways: []
+  enzyme_examples:
+  - nitrite reductase (cytochrome cd1)
+- preferred_term: siroheme
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:28788
+    label: siroheme
+  ec_associations:
+  - 1.8.7.-
+  - 1.7.7.-
+  kegg_pathways:
+  - ko00860
+  enzyme_examples:
+  - sulfite reductase
+  - nitrite reductase
+- preferred_term: mycofactocin
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:145862
+    label: mycofactocin
+  ec_associations:
+  - 1.1.99.-
+  kegg_pathways: []
+  enzyme_examples:
+  - alcohol dehydrogenase (in mycobacteria)
+- preferred_term: F420
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:28343
+    label: F420
+  ec_associations:
+  - 1.5.99.-
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - F420-dependent reductases
+  - methylene-H4MPT reductase
+- preferred_term: methanophenazine
+  category: OTHER_SPECIALIZED
+  term:
+    id: CHEBI:62733
+    label: methanophenazine
+  ec_associations:
+  - 1.5.99.-
+  kegg_pathways:
+  - ko00680
+  enzyme_examples:
+  - F420H2 dehydrogenase

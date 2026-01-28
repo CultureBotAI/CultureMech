@@ -1,0 +1,20 @@
+name: SUPPLEMENTED (ARGININE) M9 MEDIUM
+original_name: SUPPLEMENTED (ARGININE) M9 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 450
+  term:
+    id: komodo.medium:450
+    label: SUPPLEMENTED (ARGININE) M9 MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 450 | DSMZ Medium: 450 (mediadive.medium:450)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 450'

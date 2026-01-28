@@ -1,0 +1,73 @@
+name: LACTOBACILLUS MEDIUM I
+original_name: LACTOBACILLUS MEDIUM I
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J11
+  term:
+    id: mediadive.medium:J11
+    label: LACTOBACILLUS MEDIUM I
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=11'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '16.6667'
+    unit: G_PER_L
+- preferred_term: Tryptose
+  concentration:
+    value: '4.16667'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.16667'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( filtered, pH 7.0)'
+- preferred_term: Liver extract concentrate
+  concentration:
+    value: '0.833333'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.0416667'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.576080Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J11'

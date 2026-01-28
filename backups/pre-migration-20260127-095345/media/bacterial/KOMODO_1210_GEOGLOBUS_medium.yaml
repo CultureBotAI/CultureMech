@@ -1,0 +1,21 @@
+name: GEOGLOBUS medium
+original_name: GEOGLOBUS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-6.8
+media_term:
+  preferred_term: KOMODO Medium 1210
+  term:
+    id: komodo.medium:1210
+    label: GEOGLOBUS medium
+notes: 'Source: KOMODO ModelSEED | ID: 1210 | DSMZ Medium: 1210 (mediadive.medium:1210)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1210'

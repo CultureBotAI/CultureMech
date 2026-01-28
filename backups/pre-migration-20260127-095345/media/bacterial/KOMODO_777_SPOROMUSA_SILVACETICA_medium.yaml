@@ -1,0 +1,21 @@
+name: SPOROMUSA SILVACETICA medium
+original_name: SPOROMUSA SILVACETICA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-6.7
+media_term:
+  preferred_term: KOMODO Medium 777
+  term:
+    id: komodo.medium:777
+    label: SPOROMUSA SILVACETICA medium
+notes: 'Source: KOMODO ModelSEED | ID: 777 | DSMZ Medium: 777 (mediadive.medium:777)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 777'

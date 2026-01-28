@@ -1,0 +1,21 @@
+name: SPIROCHAETA STENOSTREPTA medium
+original_name: SPIROCHAETA STENOSTREPTA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 174 | DSMZ Medium: 174 (mediadive.medium:174)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 174
+  term:
+    id: komodo.medium:174
+    label: SPIROCHAETA STENOSTREPTA medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 174'

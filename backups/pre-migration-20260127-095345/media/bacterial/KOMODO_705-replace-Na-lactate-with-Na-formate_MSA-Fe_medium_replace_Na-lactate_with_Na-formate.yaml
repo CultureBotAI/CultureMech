@@ -1,0 +1,21 @@
+name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
+original_name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: KOMODO Medium 705_replace_Na-lactate_with_Na-formate
+  term:
+    id: komodo.medium:705_replace_Na-lactate_with_Na-formate
+    label: MSA-Fe medium_replace_Na-lactate_with_Na-formate
+notes: 'Source: KOMODO ModelSEED | ID: 705_replace_Na-lactate_with_Na-formate | DSMZ
+  Medium: 705 (mediadive.medium:705) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 705_replace_Na-lactate_with_Na-formate'

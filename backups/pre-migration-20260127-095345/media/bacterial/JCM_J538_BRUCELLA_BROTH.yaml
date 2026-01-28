@@ -1,0 +1,61 @@
+name: BRUCELLA BROTH
+original_name: BRUCELLA BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J538
+  term:
+    id: mediadive.medium:J538
+    label: BRUCELLA BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=538'
+ingredients:
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptic digest of animal tissue
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHSO3
+  term:
+    id: CHEBI:26709
+    label: NaHSO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is
+    also available.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.873633Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J538'

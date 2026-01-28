@@ -1,0 +1,63 @@
+name: HELIOBACTERIUM CHLORUM MEDIUM
+original_name: HELIOBACTERIUM CHLORUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 370
+  term:
+    id: mediadive.medium:370
+    label: HELIOBACTERIUM CHLORUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium370.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium ascorbate
+  term:
+    id: CHEBI:113451
+    label: Sodium ascorbate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 .
+- step_number: 2
+  action: HEAT
+  description: "Boil the medium for few minutes under nitrogen gas. Add sodium ascorbate\
+    \ (0.5 g) and\r\ncontinue to bubble with nitrogen gas."
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 4
+  action: MIX
+  description: Fill immediately about 10 ml medium in 15 mL hungate tubes (with rubber
+    septum).
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.922475Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 370'

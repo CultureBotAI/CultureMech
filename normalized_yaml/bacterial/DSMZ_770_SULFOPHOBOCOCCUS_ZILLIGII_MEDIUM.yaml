@@ -1,0 +1,132 @@
+name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
+original_name: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 770
+  term:
+    id: mediadive.medium:770
+    label: SULFOPHOBOCOCCUS ZILLIGII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium770.pdf'
+ingredients:
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.0329897'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0680412'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0319588'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.0319588'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.0021'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0023'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0018'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '1.54639'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.237113'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: Dithiothreitol
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A except carbonate, sparge with 100%
+    N2 gas for 30 - 45 min to make it anoxic, then add carbonate and adjust pH to
+    9.0 - 9.3. Dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials (e.g., 30 ml medium per 100 ml bottle) and autoclave. Solutions
+    B and C are autoclaved separately under 100% N2 gas atmosphere. Solutions D and
+    E are prepared under 100% N2 gas and sterilized by filtration. To complete the
+    medium add appropriate amounts of solutions B to E to the sterile solution A in
+    the sequence as indicated. Adjust pH of complete medium to 7.5.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
+    growth at the beginning.'
+- step_number: 3
+  action: MIX
+  description: For transfers use 10% (v/v) inoculum.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.188927Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 770'

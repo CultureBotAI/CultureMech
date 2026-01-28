@@ -1,0 +1,21 @@
+name: For DSM 14005
+original_name: For DSM 14005
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 962.1
+  term:
+    id: komodo.medium:962.1
+    label: For DSM 14005
+notes: 'Source: KOMODO ModelSEED | ID: 962.1 | DSMZ Medium: 962 (mediadive.medium:962)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 962.1'

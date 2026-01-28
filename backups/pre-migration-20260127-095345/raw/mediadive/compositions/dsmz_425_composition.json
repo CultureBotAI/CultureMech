@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_425",
+  "medium_name": "Medium dsmz_425",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Oat flakes",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 10.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

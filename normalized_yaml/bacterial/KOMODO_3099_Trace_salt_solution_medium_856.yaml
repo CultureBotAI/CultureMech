@@ -1,0 +1,20 @@
+name: Trace salt solution (medium 856)
+original_name: Trace salt solution (medium 856)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 3099
+  term:
+    id: komodo.medium:3099
+    label: Trace salt solution (medium 856)
+notes: 'Source: KOMODO ModelSEED | ID: 3099 | DSMZ Medium: 3099 (mediadive.medium:3099)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 3099'

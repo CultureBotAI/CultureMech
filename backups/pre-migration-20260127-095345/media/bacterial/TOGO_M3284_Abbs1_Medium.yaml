@@ -1,0 +1,91 @@
+name: Abbs1 Medium
+original_name: Abbs1 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '930'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '17.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+- preferred_term: 1M NaHCO3 solution*
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Solution, Inorganic compound, Defined component'
+- preferred_term: 100 mM NH4Cl solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: 100 mM Na2HPO4 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 500 mM MnO2 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: 300 mM Na2S2O3 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: SL--7 trace element solution (see Medium [M538])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M1395])
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M3284
+  term:
+    id: TOGO:M3284
+    label: Abbs1 Medium
+notes: 'Source: https://togomedium.org/medium/M3284
+
+  Original source: JCM - JCM_M1458
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1458'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.726749Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M3284'

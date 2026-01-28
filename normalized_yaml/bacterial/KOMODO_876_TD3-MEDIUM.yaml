@@ -1,0 +1,21 @@
+name: TD3-MEDIUM
+original_name: TD3-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.7-6.9
+media_term:
+  preferred_term: KOMODO Medium 876
+  term:
+    id: komodo.medium:876
+    label: TD3-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 876 | DSMZ Medium: 876 (mediadive.medium:876)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 876'

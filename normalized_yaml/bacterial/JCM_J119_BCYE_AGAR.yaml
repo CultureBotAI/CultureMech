@@ -1,0 +1,33 @@
+name: BCYE AGAR
+original_name: BCYE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J119
+  term:
+    id: mediadive.medium:J119
+    label: BCYE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=119'
+ingredients:
+- preferred_term: BCYE agar
+  term:
+    id: CHEBI:2509
+    label: BCYE agar
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Legionella agar enrichment
+  term:
+    id: CHEBI:2509
+    label: Legionella agar enrichment
+  concentration:
+    value: '100'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.760758Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J119'

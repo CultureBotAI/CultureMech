@@ -1,0 +1,20 @@
+name: For DSM 15558 and DSM 16458
+original_name: For DSM 15558 and DSM 16458
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 141.9
+  term:
+    id: komodo.medium:141.9
+    label: For DSM 15558 and DSM 16458
+notes: 'Source: KOMODO ModelSEED | ID: 141.9 | DSMZ Medium: 141 (mediadive.medium:141)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 141.9'

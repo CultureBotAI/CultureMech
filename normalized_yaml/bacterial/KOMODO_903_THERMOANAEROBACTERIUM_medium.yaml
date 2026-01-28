@@ -1,0 +1,21 @@
+name: THERMOANAEROBACTERIUM medium
+original_name: THERMOANAEROBACTERIUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 903
+  term:
+    id: komodo.medium:903
+    label: THERMOANAEROBACTERIUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 903 | DSMZ Medium: 903 (mediadive.medium:903)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 903'

@@ -1,0 +1,21 @@
+name: L?WENSTEIN-JENSEN medium
+original_name: L?WENSTEIN-JENSEN medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 354
+  term:
+    id: komodo.medium:354
+    label: L?WENSTEIN-JENSEN medium
+notes: 'Source: KOMODO ModelSEED | ID: 354 | DSMZ Medium: 354 (mediadive.medium:354)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 354'

@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_542",
+  "medium_name": "Pennassay Broth",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Pennassay Broth",
+      "concentration": 17.5,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 20.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

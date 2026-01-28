@@ -1,0 +1,34 @@
+name: AGC2 MEDIUM
+original_name: AGC2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 1.8
+media_term:
+  preferred_term: JCM Medium J382
+  term:
+    id: mediadive.medium:J382
+    label: AGC2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=382'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Use Medium No. 92 with 44.2 g/L (final) FeSO4 x 7H2O, 5 ml 10 N H2SO4
+    and 0.5 g/L yeast extract. Dissolve ingredients except FeSO4 x 7H2O, yeast extract
+    and 10 N H2SO4 in 700 ml distilled water and autoclave. Separately dissolve FeSO4
+    x 7H2O in 300 ml distilled water with 10 N H2SO4 and autoclave at 110C for 30
+    min. After cooling, mix the both solutions. Before inoculation, add yeast extract
+    from a sterile stock solution (10%). Check the final pH to be 1.5 - 2.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.458943Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J382'

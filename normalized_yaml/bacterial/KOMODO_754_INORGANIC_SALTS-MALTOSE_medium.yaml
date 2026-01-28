@@ -1,0 +1,21 @@
+name: INORGANIC SALTS-MALTOSE medium
+original_name: INORGANIC SALTS-MALTOSE medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 754 | DSMZ Medium: 754 (mediadive.medium:754)
+  | Aerobic: No'
+media_term:
+  preferred_term: KOMODO Medium 754
+  term:
+    id: komodo.medium:754
+    label: INORGANIC SALTS-MALTOSE medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 754'

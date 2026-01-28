@@ -1,0 +1,21 @@
+name: SCY - medium
+original_name: SCY - medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: KOMODO Medium 312
+  term:
+    id: komodo.medium:312
+    label: SCY - medium
+notes: 'Source: KOMODO ModelSEED | ID: 312 | DSMZ Medium: 312 (mediadive.medium:312)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 312'

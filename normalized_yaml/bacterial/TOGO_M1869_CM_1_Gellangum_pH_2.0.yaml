@@ -1,0 +1,39 @@
+name: CM+1%Gellangum (pH 2.0)
+original_name: CM+1%Gellangum (pH 2.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Gellangum
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
+- preferred_term: Cornmeal extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1869
+  term:
+    id: TOGO:M1869
+    label: CM+1%Gellangum (pH 2.0)
+notes: 'Source: https://togomedium.org/medium/M1869
+
+  Original source: NBRC - NBRC_M1114
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1114'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.547517Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1869'

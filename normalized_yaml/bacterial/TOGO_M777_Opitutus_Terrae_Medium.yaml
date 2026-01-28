@@ -1,0 +1,33 @@
+name: Opitutus Terrae Medium
+original_name: Opitutus Terrae Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glucose
+  concentration:
+    value: '0.72'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: NE23-3 MEDIUM (see Medium [M505])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M777
+  term:
+    id: TOGO:M777
+    label: Opitutus Terrae Medium
+notes: 'Source: https://togomedium.org/medium/M777
+
+  Original source: JCM - JCM_M752
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=752'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.694201Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M777'

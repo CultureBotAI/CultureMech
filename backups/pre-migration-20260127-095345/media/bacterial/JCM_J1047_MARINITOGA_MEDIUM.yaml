@@ -1,0 +1,74 @@
+name: MARINITOGA MEDIUM
+original_name: MARINITOGA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1047
+  term:
+    id: mediadive.medium:J1047
+    label: MARINITOGA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1047'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '29.0135'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '5.80271'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.967118'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '0.967118'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000483559'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 7.0. Bubble the medium with N2 for
+    5 min, then distribute the medium into culture vessels under N2, seal with butyl
+    rubber stoppers and autoclave. After cooling, add the following solutions aseptically
+    and anaerobically (autoclaved and stored under a N2 gas atmosphere):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.438717Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1047'

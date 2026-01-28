@@ -1,0 +1,21 @@
+name: TWEEN 80A medium
+original_name: TWEEN 80A medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 618
+  term:
+    id: komodo.medium:618
+    label: TWEEN 80A medium
+notes: 'Source: KOMODO ModelSEED | ID: 618 | DSMZ Medium: 618 (mediadive.medium:618)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 618'

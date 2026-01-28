@@ -1,0 +1,103 @@
+name: TERETINEMA MEDIUM
+original_name: TERETINEMA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 169
+  term:
+    id: mediadive.medium:169
+    label: TERETINEMA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium169.pdf'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0416667'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.520833'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.16667'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2.08333'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000520833'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.520833'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10.4167'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.39689'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.269448'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A (except cysteine) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add cysteine and adjust pH
+    7.2 with KOH, then distribute under the same gas atmosphere in anoxic Hungate-type
+    tubes or serum vials and autoclave. Solution B is autoclaved separately under
+    80% N2 and 20% CO2 gas atmosphere and solution C is autoclaved under 100% N2 gas
+    atmosphere. To complete the medium appropriate amounts of solutions B and C are
+    added to the sterile solution A in the sequence as indicated. Final pH of the
+    complete medium should be 7.5.
+- step_number: 2
+  action: MIX
+  description: For solid medium add 10.00 g/l agar (BD Bacto) to solution A.
+- step_number: 3
+  action: MIX
+  description: Combine 16.04 ml of 0.5 M K2HPO4 with 3.96 ml of 0.5 M KH2PO4 stock
+    solution to reach a pH of around 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.390305Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 169'

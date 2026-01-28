@@ -1,0 +1,64 @@
+name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+  and Tween 80
+original_name: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+  and Tween 80
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '450'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Tween 80 (BD)
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Surfactant'
+- preferred_term: Middlebrook 7H10 Agar (Difco)
+  concentration:
+    value: '9.7'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Middlebrook albumin/dextrose/catalase (Difco)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: 'Bovine albumin fraction V '
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Catalase
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2879
+  term:
+    id: TOGO:M2879
+    label: Middlebrook 7H10 plates (Difco) supplemented with Middlebrook albumin/dextrose/catalase
+      and Tween 80
+notes: 'Source: https://togomedium.org/medium/M2879'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.373444Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2879'

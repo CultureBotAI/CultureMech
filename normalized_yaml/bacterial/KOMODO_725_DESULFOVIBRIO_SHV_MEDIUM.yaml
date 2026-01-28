@@ -1,0 +1,20 @@
+name: DESULFOVIBRIO SHV MEDIUM
+original_name: DESULFOVIBRIO SHV MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 725
+  term:
+    id: komodo.medium:725
+    label: DESULFOVIBRIO SHV MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 725 | DSMZ Medium: 725 (mediadive.medium:725)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 725'

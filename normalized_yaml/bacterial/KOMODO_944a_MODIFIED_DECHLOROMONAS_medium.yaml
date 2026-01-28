@@ -1,0 +1,20 @@
+name: MODIFIED DECHLOROMONAS medium
+original_name: MODIFIED DECHLOROMONAS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 944a
+  term:
+    id: komodo.medium:944a
+    label: MODIFIED DECHLOROMONAS medium
+notes: 'Source: KOMODO ModelSEED | ID: 944a | DSMZ Medium: 944a (mediadive.medium:944a)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 944a'

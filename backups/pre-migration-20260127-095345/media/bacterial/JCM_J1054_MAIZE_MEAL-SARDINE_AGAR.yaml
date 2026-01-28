@@ -1,0 +1,39 @@
+name: MAIZE MEAL-SARDINE AGAR
+original_name: MAIZE MEAL-SARDINE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1054
+  term:
+    id: mediadive.medium:J1054
+    label: MAIZE MEAL-SARDINE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1054'
+ingredients:
+- preferred_term: Maize meal
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Small dried sardine
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Boil maize meal and dried sardine with 500 ml of distilled water for
+    20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.462234Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1054'

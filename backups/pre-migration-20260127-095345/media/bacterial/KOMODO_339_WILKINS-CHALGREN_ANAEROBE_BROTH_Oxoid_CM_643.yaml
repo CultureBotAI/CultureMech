@@ -1,0 +1,21 @@
+name: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+original_name: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.0-7.4
+media_term:
+  preferred_term: KOMODO Medium 339
+  term:
+    id: komodo.medium:339
+    label: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+notes: 'Source: KOMODO ModelSEED | ID: 339 | DSMZ Medium: 339 (mediadive.medium:339)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 339'

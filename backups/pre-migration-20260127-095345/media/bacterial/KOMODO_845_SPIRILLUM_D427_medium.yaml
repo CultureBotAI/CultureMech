@@ -1,0 +1,21 @@
+name: SPIRILLUM D427 medium
+original_name: SPIRILLUM D427 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: KOMODO Medium 845
+  term:
+    id: komodo.medium:845
+    label: SPIRILLUM D427 medium
+notes: 'Source: KOMODO ModelSEED | ID: 845 | DSMZ Medium: 845 (mediadive.medium:845)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 845'

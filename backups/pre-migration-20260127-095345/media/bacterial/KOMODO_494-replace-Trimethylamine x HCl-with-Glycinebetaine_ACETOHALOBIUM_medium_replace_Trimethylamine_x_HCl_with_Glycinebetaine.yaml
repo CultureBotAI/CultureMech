@@ -1,0 +1,21 @@
+name: ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine
+original_name: ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-8.0
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 494_replace_Trimethylamine
+  x HCl_with_Glycinebetaine | DSMZ Medium: 494 (mediadive.medium:494) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 494_replace_Trimethylamine x HCl_with_Glycinebetaine
+  term:
+    id: komodo.medium:494_replace_Trimethylamine x HCl_with_Glycinebetaine
+    label: ACETOHALOBIUM medium_replace_Trimethylamine x HCl_with_Glycinebetaine
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 494_replace_Trimethylamine x HCl_with_Glycinebetaine'

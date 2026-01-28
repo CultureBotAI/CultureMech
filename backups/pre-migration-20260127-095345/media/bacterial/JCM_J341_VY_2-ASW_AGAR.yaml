@@ -1,0 +1,47 @@
+name: VY/2-ASW AGAR
+original_name: VY/2-ASW AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J341
+  term:
+    id: mediadive.medium:J341
+    label: VY/2-ASW AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=341'
+ingredients:
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5. Autoclave at 120C for 20 min. Separately sterilize
+    vitamin B12 by filtration, and aseptically add to the medium.
+- step_number: 2
+  action: MIX
+  description: Wash dried yeast (e.g., Yeast from <I>Saccharomyces cerevisiae</I>
+    Type II, Sigma) with distilled water three times.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.343965Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J341'

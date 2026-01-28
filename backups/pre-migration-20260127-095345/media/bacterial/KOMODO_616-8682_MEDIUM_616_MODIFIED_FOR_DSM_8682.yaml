@@ -1,0 +1,21 @@
+name: MEDIUM 616 MODIFIED FOR DSM 8682
+original_name: MEDIUM 616 MODIFIED FOR DSM 8682
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: KOMODO Medium 616_8682
+  term:
+    id: komodo.medium:616_8682
+    label: MEDIUM 616 MODIFIED FOR DSM 8682
+notes: 'Source: KOMODO ModelSEED | ID: 616_8682 | DSMZ Medium: 616 (mediadive.medium:616)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 616_8682'

@@ -1,0 +1,20 @@
+name: NUTRIENT AGAR (OXOID CM3)
+original_name: NUTRIENT AGAR (OXOID CM3)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 605
+  term:
+    id: komodo.medium:605
+    label: NUTRIENT AGAR (OXOID CM3)
+notes: 'Source: KOMODO ModelSEED | ID: 605 | DSMZ Medium: 605 (mediadive.medium:605)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 605'

@@ -1,0 +1,20 @@
+name: MINERAL MEDIUM WITH DICHLOROMETHANE
+original_name: MINERAL MEDIUM WITH DICHLOROMETHANE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 465c
+  term:
+    id: komodo.medium:465c
+    label: MINERAL MEDIUM WITH DICHLOROMETHANE
+notes: 'Source: KOMODO ModelSEED | ID: 465c | DSMZ Medium: 465c (mediadive.medium:465c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 465c'

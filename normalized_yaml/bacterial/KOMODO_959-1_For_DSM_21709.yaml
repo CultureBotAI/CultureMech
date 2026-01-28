@@ -1,0 +1,21 @@
+name: For DSM 21709
+original_name: For DSM 21709
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: KOMODO Medium 959.1
+  term:
+    id: komodo.medium:959.1
+    label: For DSM 21709
+notes: 'Source: KOMODO ModelSEED | ID: 959.1 | DSMZ Medium: 959 (mediadive.medium:959)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 959.1'

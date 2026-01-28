@@ -1,0 +1,149 @@
+name: PYG MEDIUM (J), MODIFIED
+original_name: PYG MEDIUM (J), MODIFIED
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J1213
+  term:
+    id: mediadive.medium:J1213
+    label: PYG MEDIUM (J), MODIFIED
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1213'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000999001'
+    unit: G_PER_L
+- preferred_term: Rumen fluid
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: ' ( clarified)'
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
+    of O2-free CO2. While gassing, add the following solutions and adjust pH to 7.2:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Distribute the medium into culture vessels (e.g., 10 ml in Balch type
+    tubes) under N2, seal with butyl rubber stoppers and autoclave.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+- step_number: 4
+  action: DISSOLVE
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
+    to 100 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.043282Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1213'

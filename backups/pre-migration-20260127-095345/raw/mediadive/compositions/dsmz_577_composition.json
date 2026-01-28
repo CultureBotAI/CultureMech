@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_577",
+  "medium_name": "Veal infusion broth (Difco 0344)",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Veal infusion broth (Difco 0344)",
+      "concentration": 25.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract (Difco)",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

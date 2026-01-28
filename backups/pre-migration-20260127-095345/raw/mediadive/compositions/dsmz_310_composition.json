@@ -1,0 +1,21 @@
+{
+  "medium_id": "dsmz_310",
+  "medium_name": "Medium dsmz_310",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CaCO3",
+      "concentration": 200.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 3.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

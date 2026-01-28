@@ -1,0 +1,105 @@
+name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 829a
+  term:
+    id: mediadive.medium:829a
+    label: DESULFUROBACTERIUM ATLANTICUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium829a.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '29.4118'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.94118'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.147059'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+- preferred_term: MES [2-(N-morpholino) ethane sulfonic acid]
+  concentration:
+    value: '1.91176'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.196078'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000490196'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.45098'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except thiosulfate and sodium sulfide), adjust
+    pH to 6.0, boil medium for 1 min, then cool to room temperature under 80% H2 and
+    20% CO2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add sodium thiosulfate
+    from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.
+    Reduce medium with a sterile, neutralized solution of sodium sulfide prepared
+    under 100% N2 gas . Adjust pH of complete medium to 6.0, if necessary.
+- step_number: 2
+  action: MIX
+  description: After inoculation pressurize cultivation vessels to   2 bar overpressure
+    using sterile 80% H2 and 20% CO2 gas mixture.
+- step_number: 3
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.406091Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 829a'

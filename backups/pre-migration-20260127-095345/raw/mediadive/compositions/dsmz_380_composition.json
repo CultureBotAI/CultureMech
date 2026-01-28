@@ -1,0 +1,75 @@
+{
+  "medium_id": "dsmz_380",
+  "medium_name": "Final pH: 6.7",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final pH: 6.7",
+      "concentration": 0.68,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Final volume: 1008 ml",
+      "concentration": 0.12,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KH2PO4",
+      "concentration": 0.37,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaNO3",
+      "concentration": 0.37,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "L(+)-Tartaric acid",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-acetate",
+      "concentration": 0.1,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Yeast extract",
+      "concentration": 5.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Modified Wolin's mineral solution",
+      "concentration": 2.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Fe(III) quinate solution 0.01 M",
+      "concentration": 1.3,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na-thioglycolate",
+      "concentration": 0.5,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Seven vitamins solution",
+      "concentration": 0.05,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "of liquid medium: Sparge medium with 100% N2 gas for 30 -45 min and\ndispense under the same gas atmosphere into anoxic Hungate-type tubes to 50% of their\nvolume. Seal vials with screw caps and gas tight butyl rubber closures. Autoclave at 121°C\nfor 15 min. Before inoculation add thioglycolate and vitamins from stock solutions\nprepared under 100% N2 gas and filter-sterilized. Then add sterile air (with hypodermic\nsyringe through the rubber closure) to a concentration of ca. 1% (v/v) O2 in the via",
+  "extraction_method": "pdf_text_parsing"
+}

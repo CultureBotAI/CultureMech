@@ -1,0 +1,21 @@
+name: MEDIUM 830 MODIFIED FOR DSM 18704
+original_name: MEDIUM 830 MODIFIED FOR DSM 18704
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 4.5-5.0
+media_term:
+  preferred_term: KOMODO Medium 830_18704
+  term:
+    id: komodo.medium:830_18704
+    label: MEDIUM 830 MODIFIED FOR DSM 18704
+notes: 'Source: KOMODO ModelSEED | ID: 830_18704 | DSMZ Medium: 830 (mediadive.medium:830)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 830_18704'

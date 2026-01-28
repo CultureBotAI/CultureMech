@@ -1,0 +1,30 @@
+name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1152
+  term:
+    id: mediadive.medium:J1152
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1152'
+ingredients:
+- preferred_term: Yeast extract-malt extract agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.826123Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1152'

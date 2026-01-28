@@ -1,0 +1,21 @@
+name: PROPIONISPORA MEDIUM
+original_name: PROPIONISPORA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: KOMODO Medium 503c
+  term:
+    id: komodo.medium:503c
+    label: PROPIONISPORA MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 503c | DSMZ Medium: 503c (mediadive.medium:503c)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 503c'

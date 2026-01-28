@@ -1,0 +1,18 @@
+name: METHANOBACTERIUM MEDIUM FOR STRAIN CAN
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+notes: 'Source: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1135'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:18:00.289414Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1135'

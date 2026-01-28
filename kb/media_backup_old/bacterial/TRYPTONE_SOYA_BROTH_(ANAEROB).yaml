@@ -1,0 +1,23 @@
+name: TRYPTONE SOYA BROTH (ANAEROB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 545c
+  term:
+    id: DSMZ:545c
+    label: TRYPTONE SOYA BROTH (ANAEROB)
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:17:58.992176Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 545c'

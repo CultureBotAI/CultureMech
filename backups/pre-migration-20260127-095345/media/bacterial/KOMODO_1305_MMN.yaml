@@ -1,0 +1,20 @@
+name: MMN
+original_name: MMN
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1305
+  term:
+    id: komodo.medium:1305
+    label: MMN
+notes: 'Source: KOMODO ModelSEED | ID: 1305 | DSMZ Medium: 1305 (mediadive.medium:1305)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1305'

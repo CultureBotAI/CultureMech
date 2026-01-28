@@ -1,0 +1,29 @@
+name: MODIFIED SAP2 MEDIUM
+original_name: MODIFIED SAP2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J910
+  term:
+    id: mediadive.medium:J910
+    label: MODIFIED SAP2 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=910'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 651 with 1.0 x artificial seawater (instead of the 0.5
+    x artificial seawater). For preparation of liquid medium, omit agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.981058Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J910'

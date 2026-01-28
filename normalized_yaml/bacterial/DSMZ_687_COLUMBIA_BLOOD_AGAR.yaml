@@ -1,0 +1,64 @@
+name: COLUMBIA BLOOD AGAR
+original_name: COLUMBIA BLOOD AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 687
+  term:
+    id: mediadive.medium:687
+    label: COLUMBIA BLOOD AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium687.pdf'
+ingredients:
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Bacto Panton
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Bacto Bitone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Tryptic Digest of beef heart
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Corn starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to
+    boiling to dissolve completely.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize in autoclave for 15 min at 121°C.
+- step_number: 3
+  action: HEAT
+  description: Cool to 45°C. Add 5% sterile defibrinated blood and mix well.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.927805Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 687'

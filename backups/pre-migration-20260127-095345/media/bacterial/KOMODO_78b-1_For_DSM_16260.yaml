@@ -1,0 +1,20 @@
+name: For DSM 16260
+original_name: For DSM 16260
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 78b.1
+  term:
+    id: komodo.medium:78b.1
+    label: For DSM 16260
+notes: 'Source: KOMODO ModelSEED | ID: 78b.1 | DSMZ Medium: 78b (mediadive.medium:78b)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 78b.1'

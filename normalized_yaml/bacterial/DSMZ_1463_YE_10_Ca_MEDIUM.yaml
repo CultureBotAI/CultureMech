@@ -1,0 +1,53 @@
+name: YE/10 + Ca MEDIUM
+original_name: YE/10 + Ca MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1463
+  term:
+    id: mediadive.medium:1463
+    label: YE/10 + Ca MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1463.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add all the components together, except calcium chloride which is added
+    from a sterilized stock solution when the autoclaved medium has cooled. Adjust
+    final pH to 7.5.
+- step_number: 2
+  action: MIX
+  description: "<b>Propagation of DSM 25223 in liquid cultures:</b>\r\n\r\nAdd 3 ml\
+    \ of a <i>Caulobacter vibrioides</i> DSM 25117 culture (grown for 24 h in DSMZ\
+    \ medium 1462) to 20 ml of medium and inoculate with 1 ml of a liquid culture\
+    \ of DSM 25223 or transfer some material with an inoculation loop from the lysis\
+    \ zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for approximately\
+    \ 48 h."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.507491Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1463'

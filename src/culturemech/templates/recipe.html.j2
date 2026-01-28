@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ recipe.name }} - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>{{ recipe.name }}</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    {% if recipe.category %}
+                    <span class="badge">{{ recipe.category }}</span>
+                    {% endif %}
+                    <span class="badge">{{ recipe.medium_type }}</span>
+                    <span class="badge">{{ recipe.physical_state }}</span>
+                </div>
+            </div>
+
+            {# Overview Section #}
+            <div class="section">
+                <h2>Overview</h2>
+                {% if recipe.description %}
+                <p>{{ recipe.description }}</p>
+                {% endif %}
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    {% if recipe.ph_value %}
+                    <div class="info-item">
+                        <div class="info-label">pH</div>
+                        <div class="info-value">{{ recipe.ph_value }}{% if recipe.ph_range %} ({{ recipe.ph_range }}){% endif %}</div>
+                    </div>
+                    {% endif %}
+
+                    {% if recipe.media_term and recipe.media_term.term %}
+                    <div class="info-item">
+                        <div class="info-label">Database Reference</div>
+                        <div class="info-value">
+                            <a href="{{ resolve_curie(recipe.media_term.term.id) }}" class="external-link" target="_blank">
+                                {{ recipe.media_term.term.id }}
+                            </a>
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            {# Target Organisms #}
+            {% if recipe.target_organisms %}
+            <div class="section">
+                <h2>Target Organisms</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Organism</th>
+                            <th>Strain</th>
+                            <th>NCBI Taxon</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for org in recipe.target_organisms %}
+                        <tr>
+                            <td>{{ org.preferred_term }}</td>
+                            <td>{{ org.strain or "—" }}</td>
+                            <td>
+                                {% if org.term %}
+                                <a href="{{ resolve_curie(org.term.id) }}" class="external-link" target="_blank">
+                                    {{ org.term.id }}
+                                </a>
+                                {% else %}
+                                —
+                                {% endif %}
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endif %}
+
+            {# Ingredients #}
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for ing in recipe.ingredients %}
+                        <tr>
+                            <td>{{ ing.preferred_term }}</td>
+                            <td>
+                                {% if ing.concentration %}
+                                {{ ing.concentration.value }} {{ ing.concentration.unit }}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if ing.term %}
+                                <a href="{{ resolve_curie(ing.term.id) }}" class="external-link" target="_blank">
+                                    {{ ing.term.id }}
+                                </a>
+                                {% else %}
+                                —
+                                {% endif %}
+                            </td>
+                            <td>{{ ing.notes or "—" }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            {# Stock Solutions #}
+            {% if recipe.solutions %}
+            <div class="section">
+                <h2>Stock Solutions</h2>
+                {% for solution in recipe.solutions %}
+                <div class="variant-card">
+                    <div class="variant-title">{{ solution.preferred_term }}</div>
+                    {% if solution.concentration %}
+                    <p><strong>Working Concentration:</strong> {{ solution.concentration.value }} {{ solution.concentration.unit }}</p>
+                    {% endif %}
+                    {% if solution.preparation_notes %}
+                    <p><strong>Preparation:</strong> {{ solution.preparation_notes }}</p>
+                    {% endif %}
+                    {% if solution.composition %}
+                    <table style="margin-top: 0.5rem;">
+                        <thead>
+                            <tr>
+                                <th>Component</th>
+                                <th>Concentration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for comp in solution.composition %}
+                            <tr>
+                                <td>{{ comp.preferred_term }}</td>
+                                <td>
+                                    {% if comp.concentration %}
+                                    {{ comp.concentration.value }} {{ comp.concentration.unit }}
+                                    {% endif %}
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {# Preparation Steps #}
+            {% if recipe.preparation_steps %}
+            <div class="section">
+                <h2>Preparation Protocol</h2>
+                <ol class="step-list" style="margin-left: 2rem;">
+                    {% for step in recipe.preparation_steps %}
+                    <li class="step-item">
+                        <div class="step-action">{{ step.action }}</div>
+                        <div>{{ step.description }}</div>
+                        {% if step.temperature or step.duration %}
+                        <div style="margin-top: 0.5rem; font-size: 0.9rem; color: #666;">
+                            {% if step.temperature %}
+                            Temperature: {{ step.temperature.value }}°{{ step.temperature.unit }}
+                            {% endif %}
+                            {% if step.duration %}
+                            | Duration: {{ step.duration }}
+                            {% endif %}
+                        </div>
+                        {% endif %}
+                        {% if step.notes %}
+                        <div class="note-box" style="margin-top: 0.5rem; font-size: 0.9rem;">
+                            {{ step.notes }}
+                        </div>
+                        {% endif %}
+                    </li>
+                    {% endfor %}
+                </ol>
+            </div>
+            {% endif %}
+
+            {# Sterilization #}
+            {% if recipe.sterilization %}
+            <div class="section">
+                <h2>Sterilization</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">Method</div>
+                        <div class="info-value">{{ recipe.sterilization.method }}</div>
+                    </div>
+                    {% if recipe.sterilization.temperature %}
+                    <div class="info-item">
+                        <div class="info-label">Temperature</div>
+                        <div class="info-value">{{ recipe.sterilization.temperature.value }}°{{ recipe.sterilization.temperature.unit }}</div>
+                    </div>
+                    {% endif %}
+                    {% if recipe.sterilization.duration %}
+                    <div class="info-item">
+                        <div class="info-label">Duration</div>
+                        <div class="info-value">{{ recipe.sterilization.duration }}</div>
+                    </div>
+                    {% endif %}
+                </div>
+                {% if recipe.sterilization.notes %}
+                <div class="note-box">{{ recipe.sterilization.notes }}</div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {# Storage #}
+            {% if recipe.storage %}
+            <div class="section">
+                <h2>Storage Conditions</h2>
+                <div class="info-grid">
+                    {% if recipe.storage.temperature %}
+                    <div class="info-item">
+                        <div class="info-label">Temperature</div>
+                        <div class="info-value">{{ recipe.storage.temperature.value }}°{{ recipe.storage.temperature.unit }}</div>
+                    </div>
+                    {% endif %}
+                    {% if recipe.storage.shelf_life %}
+                    <div class="info-item">
+                        <div class="info-label">Shelf Life</div>
+                        <div class="info-value">{{ recipe.storage.shelf_life }}</div>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+
+            {# Applications #}
+            {% if recipe.applications %}
+            <div class="section">
+                <h2>Applications</h2>
+                <ul>
+                    {% for app in recipe.applications %}
+                    <li>{{ app }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {# Variants #}
+            {% if recipe.variants %}
+            <div class="section">
+                <h2>Variants</h2>
+                {% for variant in recipe.variants %}
+                <div class="variant-card">
+                    <div class="variant-title">{{ variant.name }}</div>
+                    {% if variant.description %}
+                    <p>{{ variant.description }}</p>
+                    {% endif %}
+                    {% if variant.modifications %}
+                    <p><strong>Modifications:</strong></p>
+                    <ul>
+                        {% for mod in variant.modifications %}
+                        <li>{{ mod }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% endif %}
+
+            {# Notes #}
+            {% if recipe.notes %}
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">{{ recipe.notes }}</div>
+            </div>
+            {% endif %}
+
+            {# References #}
+            {% if recipe.references %}
+            <div class="section">
+                <h2>References</h2>
+                <ul>
+                    {% for ref in recipe.references %}
+                    <li>
+                        <a href="{{ resolve_curie(ref.reference) }}" class="external-link" target="_blank">
+                            {{ ref.reference }}
+                        </a>
+                        {% if ref.title %} - {{ ref.title }}{% endif %}
+                        {% if ref.authors %} ({{ ref.authors }}){% endif %}
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+
+            {# Source File #}
+            <div class="source-file">
+                Source: {{ source_file }}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

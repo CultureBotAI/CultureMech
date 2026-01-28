@@ -1,0 +1,33 @@
+{
+  "medium_id": "dsmz_1432",
+  "medium_name": "Mineral salt sol. (\"Hutner/Cohen-Bazire\")",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Mineral salt sol. (\"Hutner/Cohen-Bazire\")",
+      "concentration": 20.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Casamino acids (BD 223050)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Glucose",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar (Bacto)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

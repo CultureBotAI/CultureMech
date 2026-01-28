@@ -1,0 +1,37 @@
+name: Blood agar (TSA with 5% sheep blood) (Remel)
+original_name: Blood agar (TSA with 5% sheep blood) (Remel)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: demineralized water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sheep blood
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Tryptic soy agar (TSA)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M2791
+  term:
+    id: TOGO:M2791
+    label: Blood agar (TSA with 5% sheep blood) (Remel)
+notes: 'Source: https://togomedium.org/medium/M2791'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.306792Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2791'

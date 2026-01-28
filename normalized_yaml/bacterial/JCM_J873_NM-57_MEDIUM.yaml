@@ -1,0 +1,31 @@
+name: NM-57 MEDIUM
+original_name: NM-57 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J873
+  term:
+    id: mediadive.medium:J873
+    label: NM-57 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=873'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 1.0 ml Trace vitamins solution
+    in solution A (per 900 ml), replacing sodium pyruvate with 0.18 g glucose in solution
+    B (per 100 ml). Otherwise, prepare the medium as described in the recipe of Medium
+    No. 284.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.861788Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J873'

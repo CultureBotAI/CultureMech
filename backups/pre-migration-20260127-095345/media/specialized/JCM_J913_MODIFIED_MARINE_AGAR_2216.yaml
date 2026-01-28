@@ -1,0 +1,43 @@
+name: MODIFIED MARINE AGAR 2216
+original_name: MODIFIED MARINE AGAR 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J913
+  term:
+    id: mediadive.medium:J913
+    label: MODIFIED MARINE AGAR 2216
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=913'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '55.1'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Soytone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.988743Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J913'

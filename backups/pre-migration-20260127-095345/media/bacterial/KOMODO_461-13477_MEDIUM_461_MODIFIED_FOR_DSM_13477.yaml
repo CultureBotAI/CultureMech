@@ -1,0 +1,20 @@
+name: MEDIUM 461 MODIFIED FOR DSM 13477
+original_name: MEDIUM 461 MODIFIED FOR DSM 13477
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 461_13477
+  term:
+    id: komodo.medium:461_13477
+    label: MEDIUM 461 MODIFIED FOR DSM 13477
+notes: 'Source: KOMODO ModelSEED | ID: 461_13477 | DSMZ Medium: 461 (mediadive.medium:461)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 461_13477'

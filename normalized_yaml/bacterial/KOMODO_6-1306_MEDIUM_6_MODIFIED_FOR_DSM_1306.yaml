@@ -1,0 +1,20 @@
+name: MEDIUM 6 MODIFIED FOR DSM 1306
+original_name: MEDIUM 6 MODIFIED FOR DSM 1306
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 6_1306
+  term:
+    id: komodo.medium:6_1306
+    label: MEDIUM 6 MODIFIED FOR DSM 1306
+notes: 'Source: KOMODO ModelSEED | ID: 6_1306 | DSMZ Medium: 6 (mediadive.medium:6)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 6_1306'

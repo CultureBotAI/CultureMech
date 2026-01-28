@@ -1,0 +1,42 @@
+name: ATCC Medium D3547D63F887423DAFB39841A5B588B9
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MgCl2 x 6H2O
+  concentration:
+    value: '2.0'
+    unit: G_PER_L
+- preferred_term: EDTA
+  concentration:
+    value: '0.5'
+    unit: MG_PER_L
+- preferred_term: Vitamin B12
+  concentration:
+    value: '10.0'
+    unit: MICROG_PER_L
+- preferred_term: Agar Noble
+  concentration:
+    value: '10.0'
+    unit: G_PER_L
+- preferred_term: DI Water
+  concentration:
+    value: '1000.0'
+    unit: G_PER_L
+- preferred_term: CuSO4 . 5H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+media_term:
+  preferred_term: ATCC Medium D3547D63F887423DAFB39841A5B588B9
+  term:
+    id: ATCC:D3547D63F887423DAFB39841A5B588B9
+    label: ATCC Medium D3547D63F887423DAFB39841A5B588B9
+notes: 'Source: MicroMediaParam extraction from ATCC PDF'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T07:19:59.634523Z'
+  curator: atcc-import
+  action: Imported from MicroMediaParam extraction
+  notes: 'Source: atcc_D3547D63F887423DAFB39841A5B588B9'

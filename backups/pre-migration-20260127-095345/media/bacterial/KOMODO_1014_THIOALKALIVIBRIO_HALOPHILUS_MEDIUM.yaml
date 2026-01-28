@@ -1,0 +1,21 @@
+name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
+original_name: THIOALKALIVIBRIO HALOPHILUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 8.0-8.5
+media_term:
+  preferred_term: KOMODO Medium 1014
+  term:
+    id: komodo.medium:1014
+    label: THIOALKALIVIBRIO HALOPHILUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 1014 | DSMZ Medium: 1014 (mediadive.medium:1014)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1014'

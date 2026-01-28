@@ -1,0 +1,40 @@
+name: RYE-BRAN MRS
+original_name: RYE-BRAN MRS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J730
+  term:
+    id: mediadive.medium:J730
+    label: RYE-BRAN MRS
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=730'
+ingredients:
+- preferred_term: Lactobacilli MRS broth
+  concentration:
+    value: '55'
+    unit: G_PER_L
+- preferred_term: Rye-bran
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Malted wheat meal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trypsin
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Mix components and incubate at 50C for 24 hr. Clarify the resulting
+    turbid liquid by centrifugation (500 x g, 15 min) followed by paper-filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.424434Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J730'

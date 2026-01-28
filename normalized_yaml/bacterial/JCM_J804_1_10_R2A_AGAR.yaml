@@ -1,0 +1,33 @@
+name: 1/10 R2A AGAR
+original_name: 1/10 R2A AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J804
+  term:
+    id: mediadive.medium:J804
+    label: 1/10 R2A AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=804'
+ingredients:
+- preferred_term: R2A agar
+  term:
+    id: CHEBI:2509
+    label: R2A agar
+  concentration:
+    value: '1.82'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.648075Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J804'

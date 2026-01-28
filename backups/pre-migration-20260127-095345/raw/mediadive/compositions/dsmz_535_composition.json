@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_535",
+  "medium_name": "Medium dsmz_535",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Trypticase Soy Broth",
+      "concentration": 30.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "(BBL 11768, Oxoid CM129 or Merck 5459)",
+      "concentration": 15.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Agar",
+      "concentration": 1000.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,21 @@
+name: Phosphate buffer (10x) (medium 1341)
+original_name: Phosphate buffer (10x) (medium 1341)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: KOMODO Medium 2018
+  term:
+    id: komodo.medium:2018
+    label: Phosphate buffer (10x) (medium 1341)
+notes: 'Source: KOMODO ModelSEED | ID: 2018 | DSMZ Medium: 2018 (mediadive.medium:2018)
+  | Aerobic: No | SubMedium: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 2018'

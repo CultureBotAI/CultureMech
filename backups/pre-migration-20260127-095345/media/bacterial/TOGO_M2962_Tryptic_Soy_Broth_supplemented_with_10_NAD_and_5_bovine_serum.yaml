@@ -1,0 +1,35 @@
+name: Tryptic Soy Broth (supplemented with 10 % NAD and 5% bovine serum)
+original_name: Tryptic Soy Broth (supplemented with 10 % NAD and 5% bovine serum)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: nicotinamide adenine dinucleotide (NAD)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: bovine serum
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source'
+- preferred_term: Tryptic Soy Broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2962
+  term:
+    id: TOGO:M2962
+    label: Tryptic Soy Broth (supplemented with 10 % NAD and 5% bovine serum)
+notes: 'Source: https://togomedium.org/medium/M2962'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.427649Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2962'

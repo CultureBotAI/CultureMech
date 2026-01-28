@@ -1,0 +1,21 @@
+name: 1/10 NUTRIENT AGAR NO.2
+original_name: 1/10 NUTRIENT AGAR NO.2
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.0-7.2
+media_term:
+  preferred_term: KOMODO Medium 952
+  term:
+    id: komodo.medium:952
+    label: 1/10 NUTRIENT AGAR NO.2
+notes: 'Source: KOMODO ModelSEED | ID: 952 | DSMZ Medium: 952 (mediadive.medium:952)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 952'

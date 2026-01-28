@@ -1,0 +1,20 @@
+name: MEDIUM 88 MODIFIED FOR DSM 6482
+original_name: MEDIUM 88 MODIFIED FOR DSM 6482
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 88_6482
+  term:
+    id: komodo.medium:88_6482
+    label: MEDIUM 88 MODIFIED FOR DSM 6482
+notes: 'Source: KOMODO ModelSEED | ID: 88_6482 | DSMZ Medium: 88 (mediadive.medium:88)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 88_6482'

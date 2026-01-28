@@ -1,0 +1,21 @@
+name: STETTERIA medium
+original_name: STETTERIA medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 795 | DSMZ Medium: 795 (mediadive.medium:795)
+  | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 795
+  term:
+    id: komodo.medium:795
+    label: STETTERIA medium
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 795'

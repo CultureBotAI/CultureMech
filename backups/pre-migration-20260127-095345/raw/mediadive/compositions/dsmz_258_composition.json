@@ -1,0 +1,16 @@
+{
+  "medium_id": "dsmz_258",
+  "medium_name": "Medium dsmz_258",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 1",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "1"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

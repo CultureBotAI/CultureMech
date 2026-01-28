@@ -1,0 +1,36 @@
+name: SNA/5
+original_name: SNA/5
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C97
+  term:
+    id: mediadive.medium:C97
+    label: SNA/5
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SNA5.pdf'
+ingredients:
+- preferred_term: Nutrient agar
+  concentration:
+    value: '28'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,\
+    \  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at 15 psi\
+    \ and  slope  (tubes) \r\nprior to cooling."
+- step_number: 2
+  action: MIX
+  description: Alternatively use "Ultramarine" Synthetica sea salts 17.5 g
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.799075Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C97'

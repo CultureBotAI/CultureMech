@@ -1,0 +1,21 @@
+name: MEDIUM 586 MODIFIED FOR DSM 14793
+original_name: MEDIUM 586 MODIFIED FOR DSM 14793
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 586_14793
+  term:
+    id: komodo.medium:586_14793
+    label: MEDIUM 586 MODIFIED FOR DSM 14793
+notes: 'Source: KOMODO ModelSEED | ID: 586_14793 | DSMZ Medium: 586 (mediadive.medium:586)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 586_14793'

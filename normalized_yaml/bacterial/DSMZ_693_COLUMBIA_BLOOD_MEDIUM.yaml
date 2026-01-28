@@ -1,0 +1,87 @@
+name: COLUMBIA BLOOD MEDIUM
+original_name: COLUMBIA BLOOD MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 693
+  term:
+    id: mediadive.medium:693
+    label: COLUMBIA BLOOD MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium693.pdf'
+ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Defibrinated sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: STORE
+  description: Columbia agar base supplemented with 5% defibrinated sheep blood. Rehydrate
+    pellets of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below).
+- step_number: 2
+  action: STORE
+  description: 'ATTENTION: organisms, for which only M 693 is mentioned in the catalogue
+    entry, do not grow in one of the media listed below! Those are meant to rehydrate
+    the freeze-dried pellets, not for cultivation.'
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 4
+  action: MIX
+  description: The same as Caso Bouillon (Merck or Oxoid, Germany).
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.949490Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 693'

@@ -1,0 +1,57 @@
+{
+  "medium_id": "dsmz_1673",
+  "medium_name": "ASN 3+",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Final volume: 1000 ml",
+      "concentration": 100.0,
+      "unit": "ml",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "NaCl (250 g/l stock solution)",
+      "concentration": 10.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "MgCl2 x 6 H2O (200 g/l stock solution)",
+      "concentration": 10.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "KCl (50 g/l stock solution)",
+      "concentration": 10.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Mg(SO4) x 7 H2O (350 g/l stock solution)",
+      "concentration": 10.0,
+      "unit": "g/l",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "CaCl2 x 2 H2O (50 g/l stock solution)",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na3-citrate x 2 H2O (0.6 g/l stock solution)",
+      "concentration": 5.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    },
+    {
+      "name": "Na2-EDTA x 2 H2O (0.1 g/l stock solution)",
+      "concentration": 1.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

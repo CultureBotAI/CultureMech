@@ -1,0 +1,23 @@
+name: MEDIUM WITH BIPHENYL
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 457d
+  term:
+    id: DSMZ:457d
+    label: MEDIUM WITH BIPHENYL
+notes: 'Source: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457d.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-24T08:12:48.936462Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 457d'

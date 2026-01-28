@@ -1,0 +1,134 @@
+name: Chopped Meat Medium With Carbohydrates
+original_name: Chopped Meat Medium With Carbohydrates
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaOH 1 N
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Inorganic compound, Solution, Defined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Ground beef (fat free)
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: D-Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+- preferred_term: Starch (soluble)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Casitone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-cysteine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: Gas'
+- preferred_term: Haemin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin K3 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '99'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: haemin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: 95% ethanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Distilled water
+  concentration:
+    value: '99'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: vitamin K3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+media_term:
+  preferred_term: TOGO Medium M2537
+  term:
+    id: TOGO:M2537
+    label: Chopped Meat Medium With Carbohydrates
+notes: 'Source: https://togomedium.org/medium/M2537
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium110.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.657432Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2537'

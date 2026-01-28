@@ -1,0 +1,35 @@
+name: ANAEROLINEA MEDIUM
+original_name: ANAEROLINEA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J434
+  term:
+    id: mediadive.medium:J434
+    label: ANAEROLINEA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=434'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use Medium No. 284 supplemented with final 1.0 ml Trace vitamins solution
+    in Solution A (per 900 ml), and with 7.2 g sucrose in Solution B (per 100 ml)
+    instead of sodium pyruvate. Otherwise, prepare the medium as described in the
+    recipe of Medium No. 284.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strains JCM 12577 and JCM 12578, incubate with a 10%
+    inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.609204Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J434'

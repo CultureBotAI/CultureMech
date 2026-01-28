@@ -1,0 +1,42 @@
+name: S/W + AMP
+original_name: S/W + AMP
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-8
+media_term:
+  preferred_term: CCAP Medium C100
+  term:
+    id: mediadive.medium:C100
+    label: S/W + AMP
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf'
+ingredients:
+- preferred_term: Soil
+- preferred_term: (NH4)MgPO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Put a layer about 1 cm deep of air-dried, sieved good calcareous garden\
+    \ loam into a\r\ntest tube or jar. (The use of mud from rivers or ponds is rarely\
+    \ satisfactory.)\r\nCarefully add deionised water to a depth of 7 to 10 cm, plug\
+    \ or cover, and steam\r\nfor one hour or autoclave for 15 minutes at 15 psi (longer\
+    \ for larger vessels) on\r\neach of 2 consecutive days; further sterilisation\
+    \ is not needed. Allow to stand for a\r\nfurther day before inoculating, when\
+    \ the pH should be between 7.0 - 8.0."
+- step_number: 2
+  action: MIX
+  description: "S/W is  prepared  as  above,  but approximately  0.01  g  ammonium\
+    \  magnesium \r\nphosphate is placed into the base of the test tube before adding\
+    \ the soil and water."
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.2307/2256465
+curation_history:
+- timestamp: '2026-01-26T17:53:19.807059Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C100'

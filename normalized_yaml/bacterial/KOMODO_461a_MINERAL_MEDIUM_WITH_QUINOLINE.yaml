@@ -1,0 +1,20 @@
+name: MINERAL MEDIUM WITH QUINOLINE
+original_name: MINERAL MEDIUM WITH QUINOLINE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 461a
+  term:
+    id: komodo.medium:461a
+    label: MINERAL MEDIUM WITH QUINOLINE
+notes: 'Source: KOMODO ModelSEED | ID: 461a | DSMZ Medium: 461a (mediadive.medium:461a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 461a'

@@ -1,0 +1,46 @@
+name: Trypticase Soy Broth Agar+blood
+original_name: Trypticase Soy Broth Agar+blood
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Blood
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source'
+- preferred_term: Medium 535
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Trypticase Soy Broth (BBL 11768, Oxoid CM129 or Merck 5459)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2581
+  term:
+    id: TOGO:M2581
+    label: Trypticase Soy Broth Agar+blood
+notes: 'Source: https://togomedium.org/medium/M2581
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium535a.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.785904Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2581'

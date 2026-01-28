@@ -1,0 +1,21 @@
+name: METHANOSARCINA ACETIVORANS medium
+original_name: METHANOSARCINA ACETIVORANS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 304
+  term:
+    id: komodo.medium:304
+    label: METHANOSARCINA ACETIVORANS medium
+notes: 'Source: KOMODO ModelSEED | ID: 304 | DSMZ Medium: 304 (mediadive.medium:304)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 304'

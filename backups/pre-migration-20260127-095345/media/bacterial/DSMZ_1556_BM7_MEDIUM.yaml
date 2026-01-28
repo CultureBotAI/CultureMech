@@ -1,0 +1,69 @@
+name: BM7 MEDIUM
+original_name: BM7 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1556
+  term:
+    id: mediadive.medium:1556
+    label: BM7 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1556.pdf'
+ingredients:
+- preferred_term: ACES
+  term:
+    id: CHEBI:65994
+    label: ACES
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2 alpha-ketoglutarate
+  term:
+    id: CHEBI:16810
+    label: Na2 alpha-ketoglutarate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: KOH
+  concentration:
+    value: '3.75'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: TNM-FH Medium
+  concentration:
+    value: '300'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Cultivation of Liberibacter sp.
+- step_number: 2
+  action: AUTOCLAVE
+  description: adjust pH to 6.9, autoclave for 15 minutes and allow to cool.
+- step_number: 3
+  action: MIX
+  description: Add aseptically
+- step_number: 4
+  action: MIX
+  description: For preparation of agar plates add 15 g agar per liter of medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.819348Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1556'

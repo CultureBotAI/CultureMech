@@ -1,0 +1,21 @@
+name: For DSM 5974 and DSM 17427
+original_name: For DSM 5974 and DSM 17427
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 520.1
+  term:
+    id: komodo.medium:520.1
+    label: For DSM 5974 and DSM 17427
+notes: 'Source: KOMODO ModelSEED | ID: 520.1 | DSMZ Medium: 520 (mediadive.medium:520)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 520.1'

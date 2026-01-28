@@ -1,0 +1,20 @@
+name: MEDIUM 830c MODIFIED FOR DSM 13663
+original_name: MEDIUM 830c MODIFIED FOR DSM 13663
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 830c_13663
+  term:
+    id: komodo.medium:830c_13663
+    label: MEDIUM 830c MODIFIED FOR DSM 13663
+notes: 'Source: KOMODO ModelSEED | ID: 830c_13663 | DSMZ Medium: 830c (mediadive.medium:830c)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 830c_13663'

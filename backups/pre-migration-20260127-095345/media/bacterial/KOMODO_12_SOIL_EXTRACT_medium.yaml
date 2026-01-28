@@ -1,0 +1,21 @@
+name: SOIL EXTRACT medium
+original_name: SOIL EXTRACT medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.0
+media_term:
+  preferred_term: KOMODO Medium 12
+  term:
+    id: komodo.medium:12
+    label: SOIL EXTRACT medium
+notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 12'

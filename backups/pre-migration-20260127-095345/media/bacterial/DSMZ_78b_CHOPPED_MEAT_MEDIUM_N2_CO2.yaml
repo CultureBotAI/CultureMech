@@ -1,0 +1,124 @@
+name: CHOPPED MEAT MEDIUM (N2/CO2)
+original_name: CHOPPED MEAT MEDIUM (N2/CO2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 78b
+  term:
+    id: mediadive.medium:78b
+    label: CHOPPED MEAT MEDIUM (N2/CO2)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78b.pdf'
+ingredients:
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000487805'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
+    \ grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool\
+    \ to room temperature, skim fat off surface, and filter, retaining both meat particles\
+    \ and filtrate. To the filtrate add Casitone, yeast extract, hydrogen\r\nphosphate\
+    \ and resazurin, then add water to a final volume of 700 ml. Sparge medium with\
+    \ 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then add cysteine\
+    \ and adjust pH to 7.0.\r\nDispense medium under same gas atmosphere into anoxic\
+    \ Hungate-type tubes containing meat particles (use ca. 7 ml liquid medium for\
+    \ 1 - 2 g meat particles), then autoclave at 121°C for 20 min."
+- step_number: 2
+  action: MIX
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
+    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.102922Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 78b'

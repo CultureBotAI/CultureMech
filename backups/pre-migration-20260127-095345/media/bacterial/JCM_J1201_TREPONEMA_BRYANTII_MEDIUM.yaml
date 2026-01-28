@@ -1,0 +1,107 @@
+name: TREPONEMA BRYANTII MEDIUM
+original_name: TREPONEMA BRYANTII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J1201
+  term:
+    id: mediadive.medium:J1201
+    label: TREPONEMA BRYANTII MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1201'
+ingredients:
+- preferred_term: Rumen fluid
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  notes: ' ( clarified)'
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.11988'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.17982'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.44955'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.44955'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.899101'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.899101'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1.4985'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine, carbonate and glucose) and sparge
+    medium with 100% CO2 gas for 30- 45 min to make it anoxic. Add cysteine and adjust
+    pH with KOH to 6.5. Distribute medium under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from
+    an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized
+    by filtration and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas atmosphere. Final pH of the medium should be 6.7 - 7.0.
+    To prepare the clarified rumen fluid, preheat rumen content at 120C for 15 min.
+    Use the supernatant after centrifuging at 25,000 x g for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.992639Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1201'

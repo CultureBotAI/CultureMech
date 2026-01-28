@@ -1,0 +1,40 @@
+name: YPG Medium
+original_name: YPG Medium
+category: imported
+description: YPG Medium. NBRC No. 802.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.0'
+    unit: G_PER_L
+- preferred_term: Glucose
+  concentration:
+    value: '20.0'
+    unit: G_PER_L
+- preferred_term: Agar
+  concentration:
+    value: '15.0'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in 1000 ml distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Autoclave at 121\xB0C for 15 minutes"
+curation_history:
+- timestamp: '2026-01-24T16:10:12.689728Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. No. 802, URL: https://www.nite.go.jp/en/nbrc/cultures/media/802.html.
+    Imported via ethical web scraping.'
+notes: General purpose medium for yeasts

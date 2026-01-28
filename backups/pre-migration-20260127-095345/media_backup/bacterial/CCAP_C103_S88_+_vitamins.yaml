@@ -1,0 +1,25 @@
+name: S88 + vitamins
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C103
+  term:
+    id: CCAP:C103
+    label: S88 + vitamins
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_S88.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1017/S0025315400019238
+curation_history:
+- timestamp: '2026-01-24T08:12:50.547655Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C103'

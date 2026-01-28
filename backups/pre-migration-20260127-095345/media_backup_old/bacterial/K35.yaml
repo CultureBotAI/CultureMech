@@ -1,0 +1,19 @@
+name: K35
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 8.1-8.4
+notes: 'Source: https://www.ccap.ac.uk/wp-content/uploads/MR_K35.pdf'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-22T06:18:00.403919Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C44'

@@ -1,0 +1,20 @@
+name: FUNDIBACTER JADENSIS medium
+original_name: FUNDIBACTER JADENSIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 821
+  term:
+    id: komodo.medium:821
+    label: FUNDIBACTER JADENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 821 | DSMZ Medium: 821 (mediadive.medium:821)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 821'

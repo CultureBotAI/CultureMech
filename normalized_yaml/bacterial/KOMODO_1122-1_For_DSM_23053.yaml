@@ -1,0 +1,21 @@
+name: For DSM 23053
+original_name: For DSM 23053
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 1122.1
+  term:
+    id: komodo.medium:1122.1
+    label: For DSM 23053
+notes: 'Source: KOMODO ModelSEED | ID: 1122.1 | DSMZ Medium: 1122 (mediadive.medium:1122)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1122.1'

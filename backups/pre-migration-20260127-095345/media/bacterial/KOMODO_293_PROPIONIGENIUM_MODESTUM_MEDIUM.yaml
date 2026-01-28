@@ -1,0 +1,21 @@
+name: PROPIONIGENIUM MODESTUM MEDIUM
+original_name: PROPIONIGENIUM MODESTUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 293
+  term:
+    id: komodo.medium:293
+    label: PROPIONIGENIUM MODESTUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 293 | DSMZ Medium: 293 (mediadive.medium:293)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 293'

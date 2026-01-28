@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_465b",
+  "medium_name": "WITH PCP",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 465",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "465"
+    },
+    {
+      "name": "Ml Of The Pcp Solution To",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

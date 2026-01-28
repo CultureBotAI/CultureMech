@@ -1,0 +1,15 @@
+{
+  "medium_id": "dsmz_514b",
+  "medium_name": "514 plus additional salt",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "For strains DSM 21167, DSM 21194, DSM 23711",
+      "concentration": 100.0,
+      "unit": "g",
+      "extraction_method": "pdf_tabular_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

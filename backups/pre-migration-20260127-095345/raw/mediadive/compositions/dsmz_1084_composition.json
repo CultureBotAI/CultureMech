@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_1084",
+  "medium_name": "Final pH: 6.0 - 6.5",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 119",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "119"
+    },
+    {
+      "name": "Yeast Extract To Sludge From An Anaerobic Digester",
+      "concentration": 0.4,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

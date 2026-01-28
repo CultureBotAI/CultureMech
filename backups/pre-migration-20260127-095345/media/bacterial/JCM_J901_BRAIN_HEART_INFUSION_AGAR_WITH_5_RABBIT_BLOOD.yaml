@@ -1,0 +1,40 @@
+name: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+original_name: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J901
+  term:
+    id: mediadive.medium:J901
+    label: BRAIN HEART INFUSION AGAR WITH 5% RABBIT BLOOD
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=901'
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients except rabbit blood, autoclave and cool to about 50C.
+    Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly
+    dispense into sterile petri dishes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.948908Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J901'

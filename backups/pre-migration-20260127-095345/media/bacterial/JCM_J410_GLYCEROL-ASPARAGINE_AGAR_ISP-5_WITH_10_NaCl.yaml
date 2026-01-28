@@ -1,0 +1,33 @@
+name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
+original_name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J410
+  term:
+    id: mediadive.medium:J410
+    label: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410'
+ingredients:
+- preferred_term: Glycerol-asparagine agar
+  term:
+    id: CHEBI:2509
+    label: Glycerol-asparagine agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.535951Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J410'

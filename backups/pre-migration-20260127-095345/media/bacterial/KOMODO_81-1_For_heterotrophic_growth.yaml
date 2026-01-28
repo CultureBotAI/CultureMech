@@ -1,0 +1,21 @@
+name: For heterotrophic growth
+original_name: For heterotrophic growth
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 81.1
+  term:
+    id: komodo.medium:81.1
+    label: For heterotrophic growth
+notes: 'Source: KOMODO ModelSEED | ID: 81.1 | DSMZ Medium: 81 (mediadive.medium:81)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 81.1'

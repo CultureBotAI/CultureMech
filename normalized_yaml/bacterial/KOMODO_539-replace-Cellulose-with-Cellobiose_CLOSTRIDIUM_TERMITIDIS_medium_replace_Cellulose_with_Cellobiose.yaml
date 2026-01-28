@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
+original_name: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 539_replace_Cellulose_with_Cellobiose
+  term:
+    id: komodo.medium:539_replace_Cellulose_with_Cellobiose
+    label: CLOSTRIDIUM TERMITIDIS medium_replace_Cellulose_with_Cellobiose
+notes: 'Source: KOMODO ModelSEED | ID: 539_replace_Cellulose_with_Cellobiose | DSMZ
+  Medium: 539 (mediadive.medium:539) | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 539_replace_Cellulose_with_Cellobiose'

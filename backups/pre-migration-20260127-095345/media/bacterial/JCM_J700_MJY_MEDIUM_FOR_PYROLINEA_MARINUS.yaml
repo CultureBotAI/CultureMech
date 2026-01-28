@@ -1,0 +1,130 @@
+name: MJY MEDIUM FOR PYROLINEA MARINUS
+original_name: MJY MEDIUM FOR PYROLINEA MARINUS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J700
+  term:
+    id: mediadive.medium:J700
+    label: MJY MEDIUM FOR PYROLINEA MARINUS
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=700'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.246305'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.492611'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.985222'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '29.703'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.138614'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.138614'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.36634'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.13861'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.326733'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.00049505'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.00049505'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.00990099'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly. Distribute the medium into culture vessels
+    (e.g., 20 ml medium in 50 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the
+    following solutions (*filter-sterilized or autoclaved, and stored anaerobically)
+    to the medium:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Pressurize the culture vessels to 200 kPa N2-CO2 (4:1, v/v) . Check
+    final pH to be 6.0-6.5.
+- step_number: 3
+  action: MIX
+  description: 'Comment: MJ(-N) synthetic seawater can be replaced with commercially
+    available synthetic seawater such as Jamarin S (Jamarin Laboratory). Addition
+    of rumen fluid clarified (10.0 ml/L, see Medium No. 266) may stimulate growth.
+    For strain JCM 15506, incubate with a 5-10% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.335714Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J700'

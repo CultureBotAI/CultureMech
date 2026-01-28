@@ -1,0 +1,21 @@
+name: For DSM 15970
+original_name: For DSM 15970
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 503.12 | DSMZ Medium: 503
+  (mediadive.medium:503) | Aerobic: Yes'
+media_term:
+  preferred_term: KOMODO Medium 503.12
+  term:
+    id: komodo.medium:503.12
+    label: For DSM 15970
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 503.12'

@@ -1,0 +1,30 @@
+name: MICROAEROPHILIC THERMUS MEDIUM
+original_name: MICROAEROPHILIC THERMUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J894
+  term:
+    id: mediadive.medium:J894
+    label: MICROAEROPHILIC THERMUS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=894'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2 (99:1,
+    v/v) gas atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.927530Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J894'

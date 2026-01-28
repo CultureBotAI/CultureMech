@@ -1,0 +1,21 @@
+name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
+original_name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: KOMODO Medium 29a
+  term:
+    id: komodo.medium:29a
+    label: MEDIUM FOR CHLOROBIUM FERROOXIDANS
+notes: 'Source: KOMODO ModelSEED | ID: 29a | DSMZ Medium: 29a (mediadive.medium:29a)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 29a'

@@ -1,0 +1,27 @@
+{
+  "medium_id": "dsmz_840",
+  "medium_name": "Trypticase Soy Agar (BBL 11043) with 5% defibrinated sheep blood or Columbia Agar",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "CO2 gas mixture in\nHungate tubes (5 ml per tube) or in",
+      "concentration": 100.0,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "NaHCO3 solution",
+      "concentration": 0.35,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    },
+    {
+      "name": "glucose solution",
+      "concentration": 0.5,
+      "unit": "m",
+      "extraction_method": "pdf_text_pattern_matching"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

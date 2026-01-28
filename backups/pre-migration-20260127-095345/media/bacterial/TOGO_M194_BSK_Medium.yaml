@@ -1,0 +1,85 @@
+name: BSK Medium
+original_name: BSK Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: gelatin
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Undefined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: HEPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+- preferred_term: N--Acetyl--D--glucosamine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+- preferred_term: Bovine albumin, Fraction V
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: CMRL 1066 (Gibco 330--1540)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: Neopeptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: sterile rabbit serum
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M194
+  term:
+    id: TOGO:M194
+    label: BSK Medium
+notes: 'Source: https://togomedium.org/medium/M194
+
+  Original source: JCM - JCM_M201
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=201'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.590428Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M194'

@@ -1,0 +1,169 @@
+name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
+original_name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 863
+  term:
+    id: mediadive.medium:863
+    label: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium863.pdf'
+ingredients:
+- preferred_term: Sodium carbonate solution
+  concentration:
+    value: '59.7638'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.7638'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '68'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '21.2'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '9.55'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.06'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.98'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 6 H2O
+  concentration:
+    value: '0.264'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.118'
+    unit: G_PER_L
+- preferred_term: Na2Se2O3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.023'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '106'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Titanium(III) chloride
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '2.5807'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: 'Anaerobically dispense liquid minimal medium in 10-ml portions into
+    100-ml serum vials under an atmosphere of N2/CO2 (80:20). Seal vials with butyl
+    rubber stoppers secured with aluminium crimp seals. Sterilize by autoclaving for
+    15 minutes at 121°C. Prior to inoculation, pressurize bottles to 2 x 102 kPa with
+    H2/CO2. For solidified plating medium, add the following components per liter
+    of liquid minimal medium:'
+- step_number: 2
+  action: HEAT
+  description: Add titanium(III) citrate solution to warm (60°C) agar medium after
+    autoclaving. For preparation of solidified agar medium.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH of nitrilotriacetic acid in solution to 7.0 with KOH. Add
+    minerals and adjust the final pH to 7.0.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Dissolve 106 g Na2CO3 in 1 liter of degassed H2O. Autoclave in sealed
+    serum bottles under CO2.
+- step_number: 5
+  action: ADJUST_PH
+  description: "To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of\
+    \ L-cysteine hydrochloride\r\n. Adjust pH to 10 with 3N NaOH and store under N2\
+    \ in a serum bottle sealed with a butyl rubber stopper."
+- step_number: 6
+  action: STORE
+  description: Neutralize pH with a saturated sodium carbonate solution and store
+    in a serum bottle under N2.
+- step_number: 7
+  action: ADJUST_PH
+  description: To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of
+    Na2S x 9 H2O. Adjust pH to 10 with 3N NaOH and store under N2 in a serum bottle
+    sealed with a butyl rubber stopper.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.550665Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 863'

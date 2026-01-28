@@ -1,0 +1,21 @@
+name: HALOTHIOBACILLUS MEDIUM
+original_name: HALOTHIOBACILLUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.5-7.0
+media_term:
+  preferred_term: KOMODO Medium 864
+  term:
+    id: komodo.medium:864
+    label: HALOTHIOBACILLUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 864 | DSMZ Medium: 864 (mediadive.medium:864)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 864'

@@ -1,0 +1,53 @@
+name: ANAEROBIC MARINE BROTH 2216
+original_name: ANAEROBIC MARINE BROTH 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J719
+  term:
+    id: mediadive.medium:J719
+    label: ANAEROBIC MARINE BROTH 2216
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=719'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components except L-cysteine x HCl x H2O and Na2S x 9H2O, bring
+    to a boil and cool down under a steam of N2. Distribute the medium into culture
+    vessels under a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+    Separately autoclave 5% L-cysteine x HCl x H2O solution and 5% Na2S x 9H2O solution
+    under a N2 gas atmosphere. Prior to inoculation, aseptically and anaerobically
+    add L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.396246Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J719'

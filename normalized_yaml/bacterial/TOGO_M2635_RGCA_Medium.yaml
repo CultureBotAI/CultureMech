@@ -1,0 +1,162 @@
+name: RGCA Medium
+original_name: RGCA Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Rumen Fluid
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Solution 1
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Solution 2
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Solution 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Solution 4
+  concentration:
+    value: '220'
+    unit: G_PER_L
+- preferred_term: CO2 gas
+  notes: 'Properties: ガス'
+- preferred_term: Solution 5
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Solution 6
+  concentration:
+    value: '66'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: DI Water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgSO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: DI Water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Resazurin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+- preferred_term: DI Water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Cellobiose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: DI Water
+  concentration:
+    value: '325'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: DI Water
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CysteineHCl
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: CO2 gas
+  notes: 'Properties: ガス'
+- preferred_term: Na2CO3
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: DI Water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CO2 gas
+  notes: 'Properties: ガス'
+media_term:
+  preferred_term: TOGO Medium M2635
+  term:
+    id: TOGO:M2635
+    label: RGCA Medium
+notes: 'Source: https://togomedium.org/medium/M2635
+
+  Original URL: https://www.atcc.org/~/media/0F7D3D7F1046495DAE3216BB2B40AC29.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.893509Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2635'

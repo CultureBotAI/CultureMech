@@ -1,0 +1,35 @@
+name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+original_name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J677
+  term:
+    id: mediadive.medium:J677
+    label: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=677'
+ingredients:
+- preferred_term: Brucella agar
+  term:
+    id: CHEBI:2509
+    label: Brucella agar
+  concentration:
+    value: '40.1869'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
+    to 100 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.265163Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J677'

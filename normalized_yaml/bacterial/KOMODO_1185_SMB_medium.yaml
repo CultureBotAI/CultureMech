@@ -1,0 +1,21 @@
+name: SMB medium
+original_name: SMB medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.1
+media_term:
+  preferred_term: KOMODO Medium 1185
+  term:
+    id: komodo.medium:1185
+    label: SMB medium
+notes: 'Source: KOMODO ModelSEED | ID: 1185 | DSMZ Medium: 1185 (mediadive.medium:1185)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1185'

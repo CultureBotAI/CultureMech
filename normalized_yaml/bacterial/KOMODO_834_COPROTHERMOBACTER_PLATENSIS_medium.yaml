@@ -1,0 +1,21 @@
+name: COPROTHERMOBACTER PLATENSIS medium
+original_name: COPROTHERMOBACTER PLATENSIS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 834
+  term:
+    id: komodo.medium:834
+    label: COPROTHERMOBACTER PLATENSIS medium
+notes: 'Source: KOMODO ModelSEED | ID: 834 | DSMZ Medium: 834 (mediadive.medium:834)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 834'

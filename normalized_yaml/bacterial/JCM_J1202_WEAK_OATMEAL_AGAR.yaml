@@ -1,0 +1,33 @@
+name: WEAK OATMEAL AGAR
+original_name: WEAK OATMEAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1202
+  term:
+    id: mediadive.medium:J1202
+    label: WEAK OATMEAL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1202'
+ingredients:
+- preferred_term: Oatmeal agar
+  term:
+    id: CHEBI:2509
+    label: Oatmeal agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.995596Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1202'

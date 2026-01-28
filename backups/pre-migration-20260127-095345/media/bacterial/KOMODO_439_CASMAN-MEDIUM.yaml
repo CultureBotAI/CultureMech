@@ -1,0 +1,20 @@
+name: CASMAN-MEDIUM
+original_name: CASMAN-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 439
+  term:
+    id: komodo.medium:439
+    label: CASMAN-MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 439 | DSMZ Medium: 439 (mediadive.medium:439)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 439'

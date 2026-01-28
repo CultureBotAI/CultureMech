@@ -1,0 +1,49 @@
+name: Microaerophilic Thermus Medium
+original_name: Microaerophilic Thermus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Castenholz basal salt solution (see Medium [M266])
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Nitrogen gas
+  notes: 'Properties: Gas'
+- preferred_term: Oxygen gas
+  notes: 'Properties: Gas'
+media_term:
+  preferred_term: TOGO Medium M935
+  term:
+    id: TOGO:M935
+    label: Microaerophilic Thermus Medium
+notes: 'Source: https://togomedium.org/medium/M935
+
+  Original source: JCM - JCM_M894
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=894'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.990789Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M935'

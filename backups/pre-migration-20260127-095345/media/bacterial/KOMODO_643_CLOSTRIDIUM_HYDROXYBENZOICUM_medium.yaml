@@ -1,0 +1,21 @@
+name: CLOSTRIDIUM HYDROXYBENZOICUM medium
+original_name: CLOSTRIDIUM HYDROXYBENZOICUM medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: KOMODO Medium 643
+  term:
+    id: komodo.medium:643
+    label: CLOSTRIDIUM HYDROXYBENZOICUM medium
+notes: 'Source: KOMODO ModelSEED | ID: 643 | DSMZ Medium: 643 (mediadive.medium:643)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 643'

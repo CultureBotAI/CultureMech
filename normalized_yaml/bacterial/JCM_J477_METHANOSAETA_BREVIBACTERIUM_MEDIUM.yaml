@@ -1,0 +1,31 @@
+name: METHANOSAETA BREVIBACTERIUM MEDIUM
+original_name: METHANOSAETA BREVIBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J477
+  term:
+    id: mediadive.medium:J477
+    label: METHANOSAETA BREVIBACTERIUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=477'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Use Medium No. 243 supplemented with 0.5 g/L yeast extract, 0.5 g/L
+    peptone, 0.5 g/L tryptone (BD-Difco) and 0.6 g/L (final) sodium acetate. Readjust
+    pH to 7.2 - 7.6, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.704066Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J477'

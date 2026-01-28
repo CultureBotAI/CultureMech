@@ -1,0 +1,21 @@
+name: T49 medium
+original_name: T49 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: KOMODO Medium 1291
+  term:
+    id: komodo.medium:1291
+    label: T49 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1291 | DSMZ Medium: 1291 (mediadive.medium:1291)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1291'

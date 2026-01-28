@@ -1,0 +1,77 @@
+name: BME/CTVM2 cell line medium (Occidentia massiliensis)
+original_name: BME/CTVM2 cell line medium (Occidentia massiliensis)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1670
+  term:
+    id: mediadive.medium:1670
+    label: BME/CTVM2 cell line medium (Occidentia massiliensis)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1670.pdf'
+ingredients:
+- preferred_term: L-15 medium
+  concentration:
+    value: '70'
+    unit: G_PER_L
+- preferred_term: Tryptose-phosphate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.029228'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Cultivation of Occidentia massiliensis has to be carried out inBME/CTVM2
+    cells. The cell line is NOT available from DSMZ but has to be obtained from:'
+- step_number: 2
+  action: MIX
+  description: <https://www.liverpool.ac.uk/infection-and-global-health/research/tick-cell-biobank/tick-cell-lines/>
+- step_number: 3
+  action: MIX
+  description: Cultivation of BME/CTVM2 cells for infection with Occidentia massiliensis
+- step_number: 4
+  action: MIX
+  description: All tick cell lines are incubated in an atmosphere of ordinary air,
+    in sealed flasks or flat-sided tubes (Nunc, product no. 156758) in dry incubators.
+    Medium changing is done once a week by removal and replacement of between 50%
+    and 80% of the medium volume. Tick cells can survive for relatively long periods
+    without attention - up to 3 weeks without a medium change -, and for several months
+    without subculture if necessary. They prefer not to be subcultured too often!
+- step_number: 5
+  action: MIX
+  description: Subculture is done when required, but not usually more often than fortnightly,
+    as follows (method for 25cm2 flasks). On a medium change day, the spent medium
+    from the culture to be passaged is put into the new flask(s) to condition them
+    overnight. Next day the spent medium is discarded from the new flask(s), an appropriate
+    volume of fresh medium (5ml for one new flask, 10ml for 2 new flasks etc) is added
+    to the parent flask, any adherent cells are pipetted off, and the appropriate
+    volume of cell suspension is transferred to the new flask(s), leaving 5ml in the
+    parent flask. The parent flask is always retained, and can be used for subculture
+    repeatedly over several months or years. Trypsin or EDTA are never used, as the
+    tick cells do not like them.
+- step_number: 6
+  action: HEAT
+  description: '<b>Infection with Occidentia massiliensis: </b> From one 25 cm2 flask
+    of well-grown cells the medium is reduced to 5 ml, 3 ml of fresh medium are added
+    and 1 ml of the Occidentia strain (quickly thawed from -80°C ) is used to infect
+    the cells. Incubate at 28°C with closed lid (without CO2) and look for bacteria
+    and destroyed cells after 7-10 days (using Gimenez staining after one week). To
+    obtain more than 90% infected cells takes about 14 - 21 days .'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.195367Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1670'

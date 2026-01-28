@@ -1,0 +1,155 @@
+name: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
+original_name: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.5
+media_term:
+  preferred_term: DSMZ Medium 1598
+  term:
+    id: mediadive.medium:1598
+    label: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1598.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 2 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '37.325'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '48.95'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: CeCl3 x 7 H2O
+  term:
+    id: CHEBI:35458
+    label: CeCl3 x 7 H2O
+  concentration:
+    value: '11.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Dilute 100 ml NMS salt solution to 1 litre with distilled water and\
+    \ then add 1 ml of\r\n FeNaEDTA solution and 1 ml of the trace elements and autoclave.\
+    \ Also autoclave the\r\n phosphate buffer stock solution."
+- step_number: 2
+  action: AUTOCLAVE
+  description: "After cooling of the autoclaved solutions, add 20ml phosphate buffer\
+    \ stock solution to\r\n the mineral solution."
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Dispense 9ml distilled water into the growth vessels. Use sealed vessels\
+    \ it is\r\n appropriate to add 10% methane and 1% CO2 gas to the gas phase and\
+    \ autoclave."
+- step_number: 4
+  action: COOL
+  description: "When the growth vessels is cool, 1.0 ml of the mineral medium and\
+    \ 0.1 ml\r\n 0.03 M Cerium-(III)-chlorid are added."
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 3.5 with 1M HCL to obtain the final mineral medium before
+    inoculate.
+- step_number: 6
+  action: MIX
+  description: The cultures should be grown with shaking.
+- step_number: 7
+  action: DISSOLVE
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of distilled water, and then make up to 1 litre
+- step_number: 8
+  action: HEAT
+  description: May be stored at 4°C in the dark
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.966543Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1598'

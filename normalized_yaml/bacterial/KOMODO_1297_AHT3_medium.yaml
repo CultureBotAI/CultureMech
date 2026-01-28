@@ -1,0 +1,21 @@
+name: AHT3 medium
+original_name: AHT3 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9.8-10.0
+media_term:
+  preferred_term: KOMODO Medium 1297
+  term:
+    id: komodo.medium:1297
+    label: AHT3 medium
+notes: 'Source: KOMODO ModelSEED | ID: 1297 | DSMZ Medium: 1297 (mediadive.medium:1297)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1297'

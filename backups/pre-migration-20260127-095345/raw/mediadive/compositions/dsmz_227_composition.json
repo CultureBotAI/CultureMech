@@ -1,0 +1,22 @@
+{
+  "medium_id": "dsmz_227",
+  "medium_name": "To medium 11 add 6.5% NaCl.",
+  "source": "dsmz",
+  "composition": [
+    {
+      "name": "Reference to Medium 11",
+      "concentration": 1.0,
+      "unit": "reference",
+      "extraction_method": "pdf_reference_parsing",
+      "referenced_medium": "11"
+    },
+    {
+      "name": "Nacl",
+      "concentration": 6.5,
+      "unit": "%",
+      "extraction_method": "pdf_reference_addition_parsing"
+    }
+  ],
+  "preparation_instructions": "",
+  "extraction_method": "pdf_text_parsing"
+}

@@ -1,0 +1,105 @@
+name: '''YBG11, 0 FeCl3 (Shcolnick 2006'
+original_name: '''YBG11, 0 FeCl3 (Shcolnick 2006'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '1.75'
+    unit: MILLIMOLAR
+- preferred_term: Citrate
+  concentration:
+    value: '0.03'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.045'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.009'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0016'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.2449'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.0007'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.3'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.0003'
+    unit: MILLIMOLAR
+- preferred_term: Sodium nitrate
+  term:
+    id: CHEBI:63005
+    label: Sodium nitrate
+  concentration:
+    value: '17.5'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt nitrate
+  concentration:
+    value: '0.00016'
+    unit: MILLIMOLAR
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium EDTA
+  concentration:
+    value: '0.016'
+    unit: MILLIMOLAR
+- preferred_term: Sodium carbonate
+  concentration:
+    value: '0.18'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.096313Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 384, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 384
+  term:
+    id: MEDIADB:384
+    label: '''YBG11, 0 FeCl3 (Shcolnick 2006'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

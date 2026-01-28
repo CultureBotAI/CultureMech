@@ -1,0 +1,173 @@
+name: '''McNA Medium (Lupa'
+original_name: '''McNA Medium (Lupa'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.07848'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '13.53'
+    unit: MILLIMOLAR
+- preferred_term: Pentanoate
+  concentration:
+    value: '0.04896'
+    unit: MILLIMOLAR
+- preferred_term: 2-Mercaptoethanesulfonate
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '7.032e-06'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:com'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '59.52'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '1.085'
+    unit: MILLIMOLAR
+- preferred_term: 2-Methylpropanoate
+  concentration:
+    value: '0.05675'
+    unit: MILLIMOLAR
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0004363'
+    unit: MILLIMOLAR
+- preferred_term: 3-Methylbutanoic acid
+  concentration:
+    value: '0.04896'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '0.8038'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfide
+  concentration:
+    value: '2.073'
+    unit: MILLIMOLAR
+- preferred_term: 2-methylbutanoic acid
+  concentration:
+    value: '0.04896'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous ammonium sulfate
+  concentration:
+    value: '0.005355'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '3.172'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.0004005'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.001052'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '9.348'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '376.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.004133'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.004203'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '4.493'
+    unit: MILLIMOLAR
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ac'
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.003478'
+    unit: MILLIMOLAR
+- preferred_term: Sodium tungstate
+  concentration:
+    value: '0.003032'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenite
+  concentration:
+    value: '0.01156'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '14.0'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.005347'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:47.025800Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 474, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 474
+  term:
+    id: MEDIADB:474
+    label: '''McNA Medium (Lupa'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research

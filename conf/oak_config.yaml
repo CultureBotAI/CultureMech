@@ -1,0 +1,45 @@
+# OAK (Ontology Access Kit) Configuration for CultureMech
+# Defines ontology adapters for term validation
+
+ontology_adapters:
+  # Chemicals - Chemical Entities of Biological Interest
+  CHEBI: sqlite:obo:chebi
+
+  # Organisms - NCBI Taxonomy
+  NCBITaxon: sqlite:obo:ncbitaxon
+
+  # Lab procedures - Ontology for Biomedical Investigations (future use)
+  OBI: sqlite:obo:obi
+
+  # Environmental conditions - Environment Ontology
+  ENVO: sqlite:obo:envo
+
+  # Units of Measurement
+  UO: sqlite:obo:uo
+
+  # Anatomy - Uber-anatomy ontology (for tissue extracts)
+  UBERON: sqlite:obo:uberon
+
+  # Medium classification - NCI Thesaurus
+  NCIT: sqlite:obo:ncit
+
+  # Media databases - Skip validation (require custom adapters)
+  # These are authoritative external databases, not OBO ontologies
+  DSMZ: ""
+  TOGO: ""
+  ATCC: ""
+
+  # Internal namespaces - Skip validation
+  linkml: ""
+  culturemech: ""
+  biolink: ""
+
+  # Data repositories - Skip validation
+  geo: ""
+  sra: ""
+  PMID: ""
+  DOI: ""
+
+  # Suppliers - Skip validation
+  sigma: ""
+  thermofisher: ""

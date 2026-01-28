@@ -1,0 +1,30 @@
+name: DESULFOBACTERIUM NIACINI MEDIUM
+original_name: DESULFOBACTERIUM NIACINI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J393
+  term:
+    id: mediadive.medium:J393
+    label: DESULFOBACTERIUM NIACINI MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=393'
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: Full composition available at source database
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Use Medium No. 383 supplemented with 13.5 g/L (final) NaCl and 2.2
+    g/L (final) MgCl2 x 6H2O, with 0.725 g/L sodium nicotinate (filter-sterilized)
+    instead of sodium lactate, and without yeast extract.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.491323Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J393'

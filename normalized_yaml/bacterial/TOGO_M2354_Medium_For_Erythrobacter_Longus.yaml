@@ -1,0 +1,58 @@
+name: Medium For Erythrobacter Longus
+original_name: Medium For Erythrobacter Longus
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 5% Fe(III) citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Artificial seawater
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
+    component, Solution'
+- preferred_term: Proteose peptone no.3 (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Soytone (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone (BBL 11910)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2354
+  term:
+    id: TOGO:M2354
+    label: Medium For Erythrobacter Longus
+notes: 'Source: https://togomedium.org/medium/M2354
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.389635Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2354'

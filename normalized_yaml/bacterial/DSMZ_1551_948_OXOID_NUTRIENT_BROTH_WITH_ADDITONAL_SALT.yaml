@@ -1,0 +1,52 @@
+name: 948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT
+original_name: 948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1551
+  term:
+    id: mediadive.medium:1551
+    label: 948 (OXOID NUTRIENT BROTH) WITH ADDITONAL SALT
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1551.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Composition of Oxoid nutrient broth:'
+- step_number: 2
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.811730Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1551'

@@ -1,0 +1,21 @@
+name: SULFUROSPIRILLUM MEDIUM
+original_name: SULFUROSPIRILLUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: KOMODO Medium 541
+  term:
+    id: komodo.medium:541
+    label: SULFUROSPIRILLUM MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 541 | DSMZ Medium: 541 (mediadive.medium:541)
+  | Aerobic: Yes'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 541'

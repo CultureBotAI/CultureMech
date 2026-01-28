@@ -1,0 +1,21 @@
+name: THIOBACILLUS TEPIDARIUS MEDIUM
+original_name: THIOBACILLUS TEPIDARIUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: KOMODO Medium 333
+  term:
+    id: komodo.medium:333
+    label: THIOBACILLUS TEPIDARIUS MEDIUM
+notes: 'Source: KOMODO ModelSEED | ID: 333 | DSMZ Medium: 333 (mediadive.medium:333)
+  | Aerobic: No'
+ingredients: []
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 333'
