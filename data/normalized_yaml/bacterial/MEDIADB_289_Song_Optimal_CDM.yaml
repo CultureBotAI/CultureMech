@@ -176,7 +176,7 @@ curation_history:
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:44.151336'
+  timestamp: '2026-02-03T11:20:44.151336'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: L-Alanine; Added default concentration
     for ingredient: L-Aspartate; Added default concentration for ingredient: L-Serine;

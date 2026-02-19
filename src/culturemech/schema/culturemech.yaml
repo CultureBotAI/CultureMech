@@ -737,6 +737,10 @@ classes:
         description: Citation (PMID, DOI, or historical reference)
         range: string
         required: true
+        implements:
+          - linkml:authoritative_reference
+        comments:
+          - Use format PMID:12345678 or doi:10.1038/... for automatic validation.
 
       title:
         description: Publication title
@@ -761,6 +765,11 @@ classes:
         description: Citation (PMID, DOI, or historical reference)
         range: string
         required: true
+        implements:
+          - linkml:authoritative_reference
+        comments:
+          - This is automatically validated by the linkml-reference-validator tool.
+          - Use format PMID:12345678 or doi:10.1038/... for automatic validation.
 
       supports:
         description: Level of support
@@ -770,6 +779,11 @@ classes:
       snippet:
         description: Exact quote from paper (if PMID/DOI available)
         range: string
+        implements:
+          - linkml:excerpt
+        comments:
+          - This is automatically validated by the linkml-reference-validator tool.
+          - Must be an exact substring of the cited paper's text.
 
       explanation:
         description: Why this evidence supports the claim
@@ -985,6 +999,8 @@ enums:
         description: percent weight per volume
       PERCENT_V_V:
         description: percent volume per volume
+      VARIABLE:
+        description: variable or unspecified concentration
 
   TemperatureUnitEnum:
     description: Units for temperature
