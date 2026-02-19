@@ -46,6 +46,8 @@ class BrowserExporter:
 
                 # Organisms (extract names for faceting)
                 "target_organism_names": self._extract_organism_names(recipe),
+                "organism_culture_type": recipe.get("organism_culture_type", ""),
+                "organism_ids": self._extract_organism_ids(recipe),
 
                 # Ingredients (extract names for faceting)
                 "ingredient_names": self._extract_ingredient_names(recipe),
@@ -86,6 +88,18 @@ class BrowserExporter:
             if preferred_term:
                 names.append(preferred_term)
         return names
+
+    def _extract_organism_ids(self, recipe: dict) -> list[str]:
+        """Extract NCBITaxon and GTDB IDs from target_organisms."""
+        ids = []
+        for org in recipe.get("target_organisms", []):
+            term = org.get("term") or {}
+            if term.get("id"):
+                ids.append(term["id"])
+            gtdb = org.get("gtdb_term") or {}
+            if gtdb.get("id"):
+                ids.append(gtdb["id"])
+        return ids
 
     def _extract_ingredient_names(self, recipe: dict) -> list[str]:
         """Extract ingredient names."""

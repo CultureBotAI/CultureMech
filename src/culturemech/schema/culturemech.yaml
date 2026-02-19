@@ -41,6 +41,8 @@ prefixes:
   # Data repositories
   geo: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=
   sra: https://www.ncbi.nlm.nih.gov/sra/
+  # Genomic taxonomy
+  GTDB: https://gtdb.ecogenomic.org/genome?gid=
   # Suppliers
   sigma: https://www.sigmaaldrich.com/catalog/product/
   thermofisher: https://www.thermofisher.com/order/catalog/product/
@@ -128,6 +130,13 @@ classes:
         description: Organisms for which this medium is designed
         range: OrganismDescriptor
         multivalued: true
+        recommended: true
+
+      organism_culture_type:
+        description: >-
+          Whether this medium targets a pure isolate culture or a
+          mixed microbial community
+        range: OrganismCultureTypeEnum
         recommended: true
 
       medium_type:
@@ -445,7 +454,12 @@ classes:
       term:
         description: NCBITaxon identifier
         range: OrganismTerm
-        required: true
+        required: false
+        inlined: true
+
+      gtdb_term:
+        description: GTDB genome or lineage identifier (alternative to NCBITaxon)
+        range: GTDBTerm
         inlined: true
 
       strain:
@@ -896,6 +910,14 @@ classes:
     id_prefixes:
       - NCBITaxon
 
+  GTDBTerm:
+    is_a: Term
+    description: >-
+      A GTDB genome identifier. id = GTDB accession (e.g. GTDB:RS_GCF_000006945.2),
+      label = full GTDB lineage string (e.g. d__Bacteria;p__Proteobacteria;...)
+    id_prefixes:
+      - GTDB
+
   MediaDatabaseTerm:
     is_a: Term
     description: Identifier from authoritative media database
@@ -1065,6 +1087,14 @@ enums:
         description: Media for algal cultivation
       imported:
         description: Imported from external sources (to be recategorized)
+
+  OrganismCultureTypeEnum:
+    description: Whether the medium targets a pure isolate or a mixed microbial community
+    permissible_values:
+      isolate:
+        description: Pure culture of one or more specific strains
+      community:
+        description: Mixed/consortium culture of multiple organisms
 
   IngredientRoleEnum:
     description: Functional role of an ingredient in growth medium

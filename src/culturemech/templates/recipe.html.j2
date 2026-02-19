@@ -292,35 +292,48 @@
             </div>
 
             {# Target Organisms #}
-            {% if recipe.target_organisms %}
+            {% if recipe.organism_culture_type or recipe.target_organisms %}
             <div class="section">
                 <h2>Target Organisms</h2>
-                <table>
+                {% if recipe.organism_culture_type %}
+                <span class="badge badge-{{ recipe.organism_culture_type }}">
+                    {{ recipe.organism_culture_type | capitalize }}
+                </span>
+                {% endif %}
+                {% if recipe.target_organisms %}
+                <table class="organism-table" style="margin-top: 0.75rem;">
                     <thead>
                         <tr>
-                            <th>Organism</th>
+                            <th>Scientific Name</th>
                             <th>Strain</th>
-                            <th>NCBI Taxon</th>
+                            <th>NCBITaxon</th>
+                            <th>GTDB</th>
                         </tr>
                     </thead>
                     <tbody>
                         {% for org in recipe.target_organisms %}
                         <tr>
-                            <td>{{ org.preferred_term }}</td>
+                            <td><em>{{ org.preferred_term }}</em></td>
                             <td>{{ org.strain or "—" }}</td>
                             <td>
-                                {% if org.term %}
+                                {% if org.term and org.term.id %}
                                 <a href="{{ resolve_curie(org.term.id) }}" class="external-link" target="_blank">
                                     {{ org.term.id }}
                                 </a>
-                                {% else %}
-                                —
-                                {% endif %}
+                                {% else %}—{% endif %}
+                            </td>
+                            <td>
+                                {% if org.gtdb_term and org.gtdb_term.id %}
+                                <a href="{{ resolve_curie(org.gtdb_term.id) }}" class="external-link" target="_blank">
+                                    {{ org.gtdb_term.id }}
+                                </a>
+                                {% else %}—{% endif %}
                             </td>
                         </tr>
                         {% endfor %}
                     </tbody>
                 </table>
+                {% endif %}
             </div>
             {% endif %}
 

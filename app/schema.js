@@ -13,7 +13,9 @@ window.searchSchema = {
     "target_organism_names",
     "ingredient_names",
     "applications",
-    "category"
+    "category",
+    "organism_culture_type",
+    "organism_ids"
   ],
 
   // Facets for filtering
@@ -57,6 +59,11 @@ window.searchSchema = {
       "field": "media_database",
       "label": "Source Database",
       "type": "string"
+    },
+    {
+      "field": "organism_culture_type",
+      "label": "Culture Type",
+      "type": "string"
     }
   ],
 
@@ -93,6 +100,12 @@ window.searchSchema = {
       "type": "array",
       "color": "blue",
       "maxItems": 3
+    },
+    {
+      "field": "organism_culture_type",
+      "label": "Culture Type",
+      "type": "string",
+      "badge": true
     },
     {
       "field": "num_ingredients",
