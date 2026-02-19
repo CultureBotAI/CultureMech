@@ -288,13 +288,18 @@
         let selectedFilters = {};
         let searchQuery = '';
 
-        // Wait for data to load
-        window.addEventListener('culturemechDataReady', () => {
+        // Wait for data to load (or use already-loaded data if event already fired)
+        function onDataReady() {
             allRecipes = window.culturemechData || [];
             filteredRecipes = [...allRecipes];
             initializeFacets();
             renderResults();
-        });
+        }
+        if (window.culturemechData) {
+            onDataReady();
+        } else {
+            window.addEventListener('culturemechDataReady', onDataReady);
+        }
 
         // Search functionality
         document.getElementById('searchInput').addEventListener('input', (e) => {
