@@ -1,0 +1,123 @@
+name: M2-MEDIUM
+original_name: M2-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: DSMZ Medium 1347
+  term:
+    id: mediadive.medium:1347
+    label: M2-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1347.pdf'
+ingredients:
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.04995'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.00999001'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2MoO4
+  term:
+    id: CHEBI:75215
+    label: Na2MoO4
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Prepare the liquid medium. Final pH 5.5.The medium is fairly weakly
+    buffered so the pH should be checked before and after autoclaving. Dispense the
+    medium into serum bottles. Add 10-20% methane to the gas phase. Sterilize by autoclaving.
+- step_number: 2
+  action: MIX
+  description: The strain should be grown with shaking.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.159810Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1347'
+merge_fingerprint: f56a3c65dd9a37bb8043b44c845f603b183b252045b178003ee4eea4f170535c
+merged_from:
+- DSMZ_1347_M2-MEDIUM

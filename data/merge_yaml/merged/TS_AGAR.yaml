@@ -1,0 +1,63 @@
+name: TS AGAR
+original_name: TS AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 893
+  term:
+    id: mediadive.medium:893
+    label: TS AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium893.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.647542Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 893'
+- timestamp: '2026-02-03T22:25:50.989638+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_893_TS_AGAR, KOMODO_893_TS_AGAR'
+categories:
+- imported
+merged_from:
+- DSMZ_893_TS_AGAR
+- KOMODO_893_TS_AGAR
+merge_fingerprint: d37dfa0c99a1277c2482ef5401f6a92c06e91967db5d179d9b39c03e14db5673

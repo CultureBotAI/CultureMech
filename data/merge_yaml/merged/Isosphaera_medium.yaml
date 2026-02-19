@@ -1,0 +1,251 @@
+name: Isosphaera medium
+original_name: Isosphaera medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: KCl
+  concentration:
+    value: '125'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '125'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: FeCl3
+  concentration:
+    value: '73'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
+- preferred_term: Agar, Noble (BD 214050), if needed
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Defined component'
+- preferred_term: Trace Element Solution SL-7 (see below)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Solution B (see below)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Solution C (see below)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: H3BO3
+  concentration:
+    value: '62'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '190'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2·6H2O
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+- preferred_term: CuCl2·2H2O
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: ZnCl2
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: Hydrochloric acid, 25%
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: FeCl2. 4H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M2305
+  term:
+    id: TOGO:M2305
+    label: Isosphaera medium
+notes: 'Source: https://togomedium.org/medium/M2305
+
+  Original URL: https://www.atcc.org/~/media/47D8B983A5D3436394D6200D64AD2AD7.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.309664Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2305'
+- timestamp: '2026-01-28T19:48:38.151411Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.173736'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+merge_fingerprint: 96b3edbdb0b3ed2b91dfcb15ef36962162290b215ab45753ae9dad5e99046ca7
+merged_from:
+- TOGO_M2305_Isosphaera_medium

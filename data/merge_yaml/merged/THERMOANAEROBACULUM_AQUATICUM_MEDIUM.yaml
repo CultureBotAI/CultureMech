@@ -1,0 +1,270 @@
+name: THERMOANAEROBACULUM AQUATICUM MEDIUM
+original_name: THERMOANAEROBACULUM AQUATICUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J933
+  term:
+    id: mediadive.medium:J933
+    label: THERMOANAEROBACULUM AQUATICUM MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=933'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.24558'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.333988'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.333988'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.333988'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.491159'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.24558'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0982318'
+    unit: G_PER_L
+- preferred_term: Coenzyme M
+  term:
+    id: CHEBI:17905
+    label: Coenzyme M
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium nitrate
+  term:
+    id: CHEBI:63005
+    label: Sodium nitrate
+  concentration:
+    value: '0.834971'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '1.08055'
+    unit: G_PER_L
+- preferred_term: TES
+  term:
+    id: CHEBI:39035
+    label: TES
+  concentration:
+    value: '0.982318'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000982318'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute
+    the medium into culture vessels under a N2 gas stream, seal with butyl rubber
+    stoppers and autoclave. Reduce the medium by the addition of the following solutions
+    (autoclaved under a N2 gas atmosphere) per liter:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.0 with KOH. Then
+    proceed to add minerals.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.046536Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J933'
+- timestamp: '2026-01-28T19:48:37.678398Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 005aebe52fe1d8da38b3e789e7f531d2ccf205e17ccb446a81bdcb4b1b6c3e1a
+merged_from:
+- JCM_J933_THERMOANAEROBACULUM_AQUATICUM_MEDIUM

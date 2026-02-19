@@ -1,0 +1,73 @@
+name: Luria-Bertani medium supplemented with 50 mM DL-lactate
+original_name: Luria-Bertani medium supplemented with 50 mM DL-lactate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DL-lactate
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Luria-Bertani medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaOH solution
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2248
+  term:
+    id: TOGO:M2248
+    label: Luria-Bertani medium supplemented with 50 mM DL-lactate
+notes: 'Source: https://togomedium.org/medium/M2248'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.219521Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2248'
+- timestamp: '2026-01-28T19:48:09.178869Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.877602'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH solution'
+merge_fingerprint: f5be28a2fcac20aa2eed307133d55b265c4985715eb9c4cd00fbee5f33c52b73
+merged_from:
+- TOGO_M2248_Luria-Bertani_medium_supplemented_with_50_mM_DL-lactate

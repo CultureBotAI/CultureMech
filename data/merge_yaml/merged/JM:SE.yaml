@@ -1,0 +1,169 @@
+name: JM:SE
+original_name: JM:SE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C41
+  term:
+    id: mediadive.medium:C41
+    label: JM:SE
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_JM_SE.pdf'
+ingredients:
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2.34'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Soil
+  concentration:
+    value: '159.091'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.48'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.39'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Biotine
+  term:
+    id: CHEBI:15956
+    label: Biotine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "This recipe is a 7:3 mixture of JM and SE2. Make up to 1 litre with\
+    \ deionized water. For agar,\r\nadd 15.0 g per litre of Bacteriological Agar (Thermo\
+    \ Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
+- step_number: 2
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 3
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 4
+  action: AUTOCLAVE
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
+    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
+    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
+    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
+    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
+    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
+    \ until\r\nrequired."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.609408Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C41'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:17.049006'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-02-03T22:25:26.402631+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C2_AJS, CCAP_C41_JM_SE'
+synonyms:
+- name: AJS
+  source: MediaDive
+  source_id: mediadive.medium:C2
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C2_AJS
+- CCAP_C41_JM_SE
+merge_fingerprint: e9d99c490e93a88496bf56a8d27bd59364fe7a8d87cae0090671b6214c40b4e4

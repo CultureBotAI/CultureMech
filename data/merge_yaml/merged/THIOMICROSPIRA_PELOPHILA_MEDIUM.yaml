@@ -1,0 +1,240 @@
+name: THIOMICROSPIRA PELOPHILA MEDIUM
+original_name: THIOMICROSPIRA PELOPHILA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 142
+  term:
+    id: mediadive.medium:142
+    label: THIOMICROSPIRA PELOPHILA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium142.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '24.8756'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.995025'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.49254'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.41791'
+    unit: G_PER_L
+- preferred_term: Bromothymol blue
+  term:
+    id: CHEBI:86155
+    label: Bromothymol blue
+  concentration:
+    value: '0.0039801'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.497512'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '4.97512'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '5.06'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.61'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except hydrogenphosphate, thiosulfate and vitamins),
+    adjust pH to 7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved separately each
+    in 10% of the final volume. Filter sterilize the vitamins solution. Adjust pH
+    of the complete medium to 7.2 with sterile 0.4% (w/v) Na2CO3 solution.  Acidification
+    of the medium during growth causes the pH indicator bromothymol blue to turn from
+    blue to yellow.
+- step_number: 2
+  action: MIX
+  description: 'Note: Growth of most Thiomicrospira strains is more reliable if the
+    medium is prepared under a 80% N2 and 20% CO2 gas atmosphere to make it anoxic
+    and then filled under air atmosphere into Hungate-type tubes (5 ml per vial).
+    The pH is adjusted with a sterile stock solution of Na2CO3 (5% w/v) after autoclaving.'
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.320840Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 142'
+- timestamp: '2026-02-03T22:25:33.547270+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_142_THIOMICROSPIRA_PELOPHILA_MEDIUM, KOMODO_142-12346_MEDIUM_142_MODIFIED_FOR_DSM_12346,
+    KOMODO_142-12350_MEDIUM_142_MODIFIED_FOR_DSM_12350, KOMODO_142-12351_MEDIUM_142_MODIFIED_FOR_DSM_12351,
+    KOMODO_142-12352_MEDIUM_142_MODIFIED_FOR_DSM_12352, KOMODO_142-12353_MEDIUM_142_MODIFIED_FOR_DSM_12353,
+    KOMODO_142-12354_MEDIUM_142_MODIFIED_FOR_DSM_12354, KOMODO_142_THIOMICROSPIRA_PELOPHILA_MEDIUM,
+    KOMODO_142a_THIOMICROSPIRA_PSYCHROPHILA_MEDIUM'
+synonyms:
+- name: MEDIUM 142 MODIFIED FOR DSM 12346
+  source: KOMODO
+  source_id: komodo.medium:142_12346
+  original_category: imported
+- name: MEDIUM 142 MODIFIED FOR DSM 12350
+  source: KOMODO
+  source_id: komodo.medium:142_12350
+  original_category: imported
+- name: MEDIUM 142 MODIFIED FOR DSM 12351
+  source: KOMODO
+  source_id: komodo.medium:142_12351
+  original_category: imported
+- name: MEDIUM 142 MODIFIED FOR DSM 12352
+  source: KOMODO
+  source_id: komodo.medium:142_12352
+  original_category: imported
+- name: MEDIUM 142 MODIFIED FOR DSM 12353
+  source: KOMODO
+  source_id: komodo.medium:142_12353
+  original_category: imported
+- name: MEDIUM 142 MODIFIED FOR DSM 12354
+  source: KOMODO
+  source_id: komodo.medium:142_12354
+  original_category: imported
+- name: THIOMICROSPIRA PSYCHROPHILA MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:142a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_142_THIOMICROSPIRA_PELOPHILA_MEDIUM
+- KOMODO_142-12346_MEDIUM_142_MODIFIED_FOR_DSM_12346
+- KOMODO_142-12350_MEDIUM_142_MODIFIED_FOR_DSM_12350
+- KOMODO_142-12351_MEDIUM_142_MODIFIED_FOR_DSM_12351
+- KOMODO_142-12352_MEDIUM_142_MODIFIED_FOR_DSM_12352
+- KOMODO_142-12353_MEDIUM_142_MODIFIED_FOR_DSM_12353
+- KOMODO_142-12354_MEDIUM_142_MODIFIED_FOR_DSM_12354
+- KOMODO_142_THIOMICROSPIRA_PELOPHILA_MEDIUM
+- KOMODO_142a_THIOMICROSPIRA_PSYCHROPHILA_MEDIUM
+merge_fingerprint: 3039b4e6cad8fb6e948ec964d17860e376c2afaa7e86833a78bfebf165132102

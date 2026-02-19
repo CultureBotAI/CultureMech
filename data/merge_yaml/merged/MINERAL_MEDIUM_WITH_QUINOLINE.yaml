@@ -1,0 +1,94 @@
+name: MINERAL MEDIUM WITH QUINOLINE
+original_name: MINERAL MEDIUM WITH QUINOLINE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 461a
+  term:
+    id: mediadive.medium:461a
+    label: MINERAL MEDIUM WITH QUINOLINE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium461a.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.44135'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.248509'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.497018'
+    unit: G_PER_L
+- preferred_term: MnSO4
+  term:
+    id: CHEBI:86360
+    label: MnSO4
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0497018'
+    unit: G_PER_L
+- preferred_term: Quinoline
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Phosphate buffer
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Prepare an emulsion of 3 g/l quinoline in 50 mM phosphate buffer by
+    stirring or ultrasonication. Autoclave in a gas tight vessel. Add 100 ml of this
+    emulsion to 1 l autoclaved medium 461.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dissolve and autoclave the phosphates separately. Add the vitamin solution
+    and trace element solution after autoclaving. After mixing, pH should be 7.5.
+- step_number: 3
+  action: MIX
+  description: Rehydrate and cultivate the lyophilized cells in complex medium recommended
+    for the specific strain (e.g. medium 1, 220 or 535) first. After this reactivation,
+    cultivate on mineral medium 461 with the appropriate carbon source.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.203561Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 461a'
+merge_fingerprint: e805efad3b70681ac9fad85c2ef5f22325063d646f47d844f794a7dac61d6d9d
+merged_from:
+- DSMZ_461a_MINERAL_MEDIUM_WITH_QUINOLINE

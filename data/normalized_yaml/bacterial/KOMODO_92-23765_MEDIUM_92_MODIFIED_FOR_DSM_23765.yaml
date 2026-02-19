@@ -10,7 +10,23 @@ media_term:
     label: MEDIUM 92 MODIFIED FOR DSM 23765
 notes: 'Source: KOMODO ModelSEED | ID: 92_23765 | DSMZ Medium: 92 (mediadive.medium:92)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +34,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 92_23765'
+- timestamp: '2026-02-03T11:19:15.242168'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 92

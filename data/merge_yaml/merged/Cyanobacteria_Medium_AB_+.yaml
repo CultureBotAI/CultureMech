@@ -1,0 +1,167 @@
+name: Cyanobacteria Medium AB +
+original_name: Cyanobacteria Medium AB +
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1644
+  term:
+    id: mediadive.medium:1644
+    label: Cyanobacteria Medium AB +
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1644.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.788'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.268'
+    unit: G_PER_L
+- preferred_term: Na3-citrate x 2 H2O
+  concentration:
+    value: '0.0045'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32142
+    label: ''
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1.125'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)citrate
+  term:
+    id: CHEBI:31604
+    label: Fe(NH4)citrate
+  concentration:
+    value: '0.002256'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.9'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: After cooling, add the following filter sterilized components.
+- step_number: 4
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.103714Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1644'
+- timestamp: '2026-01-28T19:48:12.941938Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2178d5da5fdc763ae5c3a35ab55f40c3585bb8005dc91983f5bb08d34952781f
+merged_from:
+- DSMZ_1644_Cyanobacteria_Medium_AB

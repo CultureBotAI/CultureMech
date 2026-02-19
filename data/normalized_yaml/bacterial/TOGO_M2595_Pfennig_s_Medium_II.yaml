@@ -22,9 +22,18 @@ ingredients:
     unit: G_PER_L
 - preferred_term: 1M Na2CO3
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Neutralized sulfide solution
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Solution D
   concentration:
     value: '450.5'
@@ -39,6 +48,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '460'
@@ -64,8 +76,14 @@ ingredients:
     label: calcium chloride dihydrate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '135'
@@ -86,6 +104,9 @@ ingredients:
     label: sodium sulfide nonahydrate
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: H2O
   concentration:
     value: '50'
@@ -106,6 +127,9 @@ ingredients:
     label: sodium hydrogencarbonate
 - preferred_term: CO2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '450'
@@ -122,8 +146,14 @@ ingredients:
   notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 'Distilled water '
   concentration:
     value: '25'
@@ -322,8 +352,14 @@ ingredients:
 - preferred_term: 2N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2595
   term:
@@ -343,3 +379,15 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.747228'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1M Na2CO3; Added default concentration
+    for ingredient: N2 gas; Added default concentration for ingredient: Neutralized
+    sulfide solution; Added default concentration for ingredient: CO2; Added default
+    concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: N2;
+    Added default concentration for ingredient: CO2; Added default concentration for
+    ingredient: Carbon dioxide gas; Added default concentration for ingredient: Nitrogen
+    gas; Added default concentration for ingredient: 2N H2SO4; Added default concentration
+    for ingredient: N2'

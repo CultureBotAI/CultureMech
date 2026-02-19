@@ -1,0 +1,178 @@
+name: MARINOSPIRILLUM CELERE
+original_name: MARINOSPIRILLUM CELERE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: DSMZ Medium 1212
+  term:
+    id: mediadive.medium:1212
+    label: MARINOSPIRILLUM CELERE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1212.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium DL-lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium DL-lactate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1.5e-05'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '1.925'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.4881'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.0694444'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0992064'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.297619'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.188492'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.00198413'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.0238095'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0357143'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the Na2CO3, NaHCO3 and the lactate separately from the medium
+    and combine after cooling. Vitamin B12 is added from a sterile stock solution.
+    The final pH of the medium should be 9.5. Add 15.0 g/l agar for solid media.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.729367Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1212'
+merge_fingerprint: 2ed9350ce23aecd24d5b7105a0e154b72cbbb4a450b43addcd96fefb703edcd6
+merged_from:
+- DSMZ_1212_MARINOSPIRILLUM_CELERE

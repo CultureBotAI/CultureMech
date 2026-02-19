@@ -167,9 +167,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  term:
-    id: CHEBI:1344098
-    label: ''
 - preferred_term: Trace mineral solution*
   concentration:
     value: '10'
@@ -180,6 +177,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -371,3 +371,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.106128'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+- timestamp: '2026-02-06T05:10:18.504746Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

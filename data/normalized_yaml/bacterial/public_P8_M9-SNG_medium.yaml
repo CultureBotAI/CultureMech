@@ -25,3 +25,9 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: public, ID: P8'
+- timestamp: '2026-02-03T11:27:23.238301'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+data_quality_flags:
+- incomplete_composition

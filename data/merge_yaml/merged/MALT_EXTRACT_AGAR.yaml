@@ -1,0 +1,72 @@
+name: Malt Extract Agar
+original_name: Malt Extract Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1410
+  term:
+    id: TOGO:M1410
+    label: Malt Extract Agar
+notes: 'Source: https://togomedium.org/medium/M1410
+
+  Original source: NBRC - NBRC_M5
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=5'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.651032Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1410'
+- timestamp: '2026-01-28T19:48:23.366518Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:07.215031+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1410_Malt_Extract_Agar, TOGO_M24_Malt_Extract_Agar'
+categories:
+- imported
+merged_from:
+- TOGO_M1410_Malt_Extract_Agar
+- TOGO_M24_Malt_Extract_Agar
+merge_fingerprint: 64a45104d66ee6e62238f70a0a883616697d104c8cca6d5eb7f36e6ce7f6c22a

@@ -1,0 +1,168 @@
+name: URO (DW pH10)
+original_name: URO (DW pH10)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2·2H20
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Thiamine-HCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+- preferred_term: NH4NO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: beta-Na2glycerophosphate·5H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Fe-EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: P IV metals solution*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: FeCl3·6H2O
+  concentration:
+    value: '19.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: Na2EDTA·2H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:64758
+    label: EDTA disodium salt dihydrate
+media_term:
+  preferred_term: TOGO Medium M1755
+  term:
+    id: TOGO:M1755
+    label: URO (DW pH10)
+notes: 'Source: https://togomedium.org/medium/M1755
+
+  Original source: NBRC - NBRC_M966
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=966'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.281408Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1755'
+- timestamp: '2026-01-28T19:48:30.189989Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3b0cc46aaa9e46f1a95478b8a265922be49af88852be689b594e28230e2558f8
+merged_from:
+- TOGO_M1755_URO_DW_pH10

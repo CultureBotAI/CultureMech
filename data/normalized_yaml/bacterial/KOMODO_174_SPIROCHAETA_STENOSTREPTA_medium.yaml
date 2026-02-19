@@ -11,7 +11,41 @@ media_term:
   term:
     id: komodo.medium:174
     label: SPIROCHAETA STENOSTREPTA medium
-ingredients: []
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: Optional ingredient (for stabs)
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +53,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 174'
+- timestamp: '2026-02-03T11:18:58.058446'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 174

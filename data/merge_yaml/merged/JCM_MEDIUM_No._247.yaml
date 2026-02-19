@@ -1,0 +1,37 @@
+name: JCM MEDIUM No. 247
+original_name: JCM MEDIUM No. 247
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J247
+  term:
+    id: mediadive.medium:J247
+    label: JCM MEDIUM No. 247
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=247'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.8-7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.081739Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J247'
+merge_fingerprint: 90fb18f9a494f16b2135c7e3226cde3a3d486baa41681b1e1a20f24bd5102b6e
+merged_from:
+- JCM_J247_JCM_MEDIUM_No._247

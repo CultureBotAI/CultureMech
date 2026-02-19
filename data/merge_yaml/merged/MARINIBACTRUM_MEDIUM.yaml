@@ -1,0 +1,72 @@
+name: MARINIBACTRUM MEDIUM
+original_name: MARINIBACTRUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1621
+  term:
+    id: mediadive.medium:1621
+    label: MARINIBACTRUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1621.pdf'
+ingredients:
+- preferred_term: Marine Broth
+  concentration:
+    value: '7.48'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '28.13'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.77'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.027719Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1621'
+merge_fingerprint: cc466b4ccbf53d3a827aaeb3c766b7d32d41446d6640a90e12e68e49a14d3f04
+merged_from:
+- DSMZ_1621_MARINIBACTRUM_MEDIUM

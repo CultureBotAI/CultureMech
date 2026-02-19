@@ -1,0 +1,43 @@
+name: Glycerol-Asparagine Agar (ISP-5) With 10% NaCl
+original_name: Glycerol-Asparagine Agar (ISP-5) With 10% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Glycerol--asparagine agar (ISP--5) (see Medium [M52])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M408
+  term:
+    id: TOGO:M408
+    label: Glycerol-Asparagine Agar (ISP-5) With 10% NaCl
+notes: 'Source: https://togomedium.org/medium/M408
+
+  Original source: JCM - JCM_M410
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=410'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.000329Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M408'
+- timestamp: '2026-01-28T19:48:23.516269Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a978685e92d0f6e5c38bf44a9fdbed181b8a5a2a5d6ceaddb1c4f09ac07e031a
+merged_from:
+- TOGO_M408_Glycerol-Asparagine_Agar_ISP-5_With_10_NaCl

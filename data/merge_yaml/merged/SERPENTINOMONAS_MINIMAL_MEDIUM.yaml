@@ -1,0 +1,296 @@
+name: SERPENTINOMONAS MINIMAL MEDIUM
+original_name: SERPENTINOMONAS MINIMAL MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 11.0
+media_term:
+  preferred_term: DSMZ Medium 1634
+  term:
+    id: mediadive.medium:1634
+    label: SERPENTINOMONAS MINIMAL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1634.pdf'
+ingredients:
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.0284'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.0404'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.0802'
+    unit: G_PER_L
+- preferred_term: CAPS buffer
+  concentration:
+    value: '3.32'
+    unit: G_PER_L
+  term:
+    id: CHEBI:191088
+    label: ''
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (if required)
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.0522528'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.735075'
+    unit: G_PER_L
+- preferred_term: Na acetate
+  term:
+    id: CHEBI:32954
+    label: Na acetate
+  concentration:
+    value: '0.328135'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Thioctic acid
+  term:
+    id: CHEBI:30314
+    label: Thioctic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Monopotassium Phosphate
+  term:
+    id: CHEBI:63036
+    label: Monopotassium Phosphate
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: Na-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2
+  term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2SeO3
+  term:
+    id: CHEBI:48843
+    label: Na2SeO3
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 11.0 with NaOH.
+- step_number: 2
+  action: MIX
+  description: Fill into screw-cap tubes, leaving 60% headspace.
+- step_number: 3
+  action: MIX
+  description: Sparge medium with 100% N2 gas mixture to make it anoxic.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 5
+  action: COOL
+  description: 'After autoclaving, cool down and add from sterile stock solutions
+    while stirring:'
+- step_number: 6
+  action: MIX
+  description: Add 30% air.
+- step_number: 7
+  action: MIX
+  description: 'Note: Some precipitate will form.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.078922Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1634'
+- timestamp: '2026-01-28T19:48:22.157387Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9ac5b2f477f6aefce9559795dabb6706494dd281a288ff18ea0c251d677bb635
+merged_from:
+- DSMZ_1634_SERPENTINOMONAS_MINIMAL_MEDIUM

@@ -26,6 +26,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '930'
@@ -80,8 +83,14 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -99,6 +108,9 @@ ingredients:
     Defined component'
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '40'
@@ -115,6 +127,9 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '20'
@@ -147,6 +162,9 @@ ingredients:
     Simple component'
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M988
   term:
@@ -168,3 +186,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.623147'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: NaOH; Added default concentration for ingredient: N2; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: N2'

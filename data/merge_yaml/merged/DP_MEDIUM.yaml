@@ -1,0 +1,92 @@
+name: DP MEDIUM
+original_name: DP MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 661
+  term:
+    id: mediadive.medium:661
+    label: DP MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium661.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Na3-citrate x 3 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.860638Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 661'
+- timestamp: '2026-02-03T22:25:46.592467+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_661_DP_MEDIUM, KOMODO_661-8590_MEDIUM_661_MODIFIED_FOR_DSM_8590,
+    KOMODO_661-8591_MEDIUM_661_MODIFIED_FOR_DSM_8591, KOMODO_661_DP_medium'
+synonyms:
+- name: MEDIUM 661 MODIFIED FOR DSM 8590
+  source: KOMODO
+  source_id: komodo.medium:661_8590
+  original_category: imported
+- name: MEDIUM 661 MODIFIED FOR DSM 8591
+  source: KOMODO
+  source_id: komodo.medium:661_8591
+  original_category: imported
+- name: DP medium
+  source: KOMODO
+  source_id: komodo.medium:661
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_661_DP_MEDIUM
+- KOMODO_661-8590_MEDIUM_661_MODIFIED_FOR_DSM_8590
+- KOMODO_661-8591_MEDIUM_661_MODIFIED_FOR_DSM_8591
+- KOMODO_661_DP_medium
+merge_fingerprint: ddeb84ca88f76dcec24a0bfd445ccff0d36c57a3a602a66f9726e3d77afe432f

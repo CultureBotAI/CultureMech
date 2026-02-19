@@ -11,7 +11,37 @@ media_term:
     label: medium FOR ERYTHROBACTER LONGUS
 notes: 'Source: KOMODO ModelSEED | ID: 695 | DSMZ Medium: 695 (mediadive.medium:695)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Soytone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8150
+    label: ''
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '700'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +49,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 695'
+- timestamp: '2026-02-03T11:19:11.466602'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 695

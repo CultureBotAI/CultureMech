@@ -1,0 +1,73 @@
+name: YEAST-PEPTONE-SUCCINATE MEDIUM
+original_name: YEAST-PEPTONE-SUCCINATE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 988
+  term:
+    id: mediadive.medium:988
+    label: YEAST-PEPTONE-SUCCINATE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium988.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 7.2. The medium may be solidified by adding 15 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.001738Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 988'
+- timestamp: '2026-02-03T22:26:01.324811+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_988-15761_MEDIUM_988_MODIFIED_FOR_DSM_15761, KOMODO_988-15867_MEDIUM_988_MODIFIED_FOR_DSM_15867,
+    KOMODO_988_YEAST-Peptone-SUCCINATE_medium, DSMZ_988_YEAST-PEPTONE-SUCCINATE_MEDIUM'
+synonyms:
+- name: MEDIUM 988 MODIFIED FOR DSM 15761
+  source: KOMODO
+  source_id: komodo.medium:988_15761
+  original_category: imported
+- name: MEDIUM 988 MODIFIED FOR DSM 15867
+  source: KOMODO
+  source_id: komodo.medium:988_15867
+  original_category: imported
+- name: YEAST-Peptone-SUCCINATE medium
+  source: KOMODO
+  source_id: komodo.medium:988
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_988-15761_MEDIUM_988_MODIFIED_FOR_DSM_15761
+- KOMODO_988-15867_MEDIUM_988_MODIFIED_FOR_DSM_15867
+- KOMODO_988_YEAST-Peptone-SUCCINATE_medium
+- DSMZ_988_YEAST-PEPTONE-SUCCINATE_MEDIUM
+merge_fingerprint: d35e4eed331a12c7946393d8308ea80e8ce0a3191a2bc81cb57c3c17ae11108c

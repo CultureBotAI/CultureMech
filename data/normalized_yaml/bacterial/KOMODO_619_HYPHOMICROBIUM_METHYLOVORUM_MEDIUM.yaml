@@ -10,7 +10,140 @@ media_term:
     label: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 619 | DSMZ Medium: 619 (mediadive.medium:619)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+- preferred_term: (NH4)2HPO4
+  term:
+    id: CHEBI:62476
+    label: (NH4)2HPO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 1 H2O
+  term:
+    id: CHEBI:86360
+    label: MnSO4 x 1 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: Inositol
+  term:
+    id: CHEBI:24848
+    label: Inositol
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Niacin
+  term:
+    id: CHEBI:15940
+    label: Niacin
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Choline
+  term:
+    id: CHEBI:15354
+    label: Choline
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 2e-06
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +151,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 619'
+- timestamp: '2026-02-03T11:19:13.718365'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 619

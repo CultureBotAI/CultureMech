@@ -1,0 +1,69 @@
+name: SEAWATER YPG
+original_name: SEAWATER YPG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1169
+  term:
+    id: mediadive.medium:1169
+    label: SEAWATER YPG
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1169.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Agar may be added (15 g/l) to solidify the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.579140Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1169'
+- timestamp: '2026-02-03T22:25:29.692925+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1169_SEAWATER_YPG, JCM_J85_2_NaCl-YPG_AGAR, KOMODO_1169_SEAWATER_YPG'
+synonyms:
+- name: 2% NaCl-YPG AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J85
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1169_SEAWATER_YPG
+- JCM_J85_2_NaCl-YPG_AGAR
+- KOMODO_1169_SEAWATER_YPG
+merge_fingerprint: 113115784659727454409eef2b3c5b33965f721b295d8b7f54294e97616b47e0

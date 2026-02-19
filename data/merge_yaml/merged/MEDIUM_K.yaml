@@ -1,0 +1,92 @@
+name: MEDIUM K
+original_name: MEDIUM K
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1122
+  term:
+    id: mediadive.medium:1122
+    label: MEDIUM K
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1122.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.2.
+- step_number: 2
+  action: MIX
+  description: After autoclaving add methanol (sterilized separately) to a concentration
+    of 1% (v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.448030Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1122'
+- timestamp: '2026-02-03T22:25:29.032168+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1122_MEDIUM_K, JCM_J1154_K_MEDIUM'
+synonyms:
+- name: K MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J1154
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1122_MEDIUM_K
+- JCM_J1154_K_MEDIUM
+merge_fingerprint: 5439dae5c22c98ae937a624225da98a99a473b24e51b0f0fdbf74a1f16c5886c

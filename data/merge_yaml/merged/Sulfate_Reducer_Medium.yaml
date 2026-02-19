@@ -1,0 +1,394 @@
+name: Sulfate Reducer Medium
+original_name: Sulfate Reducer Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Na2SO4
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Na2S2O3
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: KP buffer*
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace elements solution**
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Vitamin solution***
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '119'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2·6H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2·6H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:34887
+    label: nickel dichloride
+- preferred_term: CuCl2·2H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: FeCl3·6H2O
+  concentration:
+    value: '1.35'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: KAl(SO4)2·12H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86465
+    label: potassium aluminium sulfate dodecahydrate
+- preferred_term: Nitrilotriacetic acid (NTA)
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: Na2WO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63940
+    label: sodium tungstate
+- preferred_term: Na2SeO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Thiamine-HCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+- preferred_term: Ca-pantothenate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:29032
+    label: (R)-pantothenate
+- preferred_term: Pyridoxine-HCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Folic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+media_term:
+  preferred_term: TOGO Medium M1654
+  term:
+    id: TOGO:M1654
+    label: Sulfate Reducer Medium
+notes: 'Source: https://togomedium.org/medium/M1654
+
+  Original source: NBRC - NBRC_M857
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=857'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.062027Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1654'
+- timestamp: '2026-01-28T19:48:27.729053Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.775499'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: NaOH'
+merge_fingerprint: b03a1a8639f273c01edbdc71cd3a60249e21df80894213e7bd3c5ecaf0caff18
+merged_from:
+- TOGO_M1654_Sulfate_Reducer_Medium

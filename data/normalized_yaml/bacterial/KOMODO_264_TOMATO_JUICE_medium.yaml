@@ -11,7 +11,26 @@ media_term:
     label: TOMATO JUICE medium
 notes: 'Source: KOMODO ModelSEED | ID: 264 | DSMZ Medium: 264 (mediadive.medium:264)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +38,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 264'
+- timestamp: '2026-02-03T11:19:00.129211'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 264

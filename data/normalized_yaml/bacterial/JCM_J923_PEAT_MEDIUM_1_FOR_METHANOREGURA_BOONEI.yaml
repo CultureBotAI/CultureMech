@@ -144,9 +144,6 @@ ingredients:
     unit: G_PER_L
   notes: ' ( disodium salt)'
 - preferred_term: TiCl3
-  term:
-    id: CHEBI:7705079
-    label: TiCl3
   concentration:
     value: '0.55'
     unit: G_PER_L
@@ -246,3 +243,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J923'
+- timestamp: '2026-02-06T05:10:45.769093Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

@@ -1,0 +1,58 @@
+name: SPHINGOBACTERIUM MEDIUM
+original_name: SPHINGOBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1541
+  term:
+    id: mediadive.medium:1541
+    label: SPHINGOBACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1541.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.0 and sterilize by autoclaving. The medium may be solidified
+    by adding 15.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.793415Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1541'
+merge_fingerprint: 775b9543e67c64c2f4f47f398baf5c6b1e94455556ecedecc6263debc573194b
+merged_from:
+- DSMZ_1541_SPHINGOBACTERIUM_MEDIUM

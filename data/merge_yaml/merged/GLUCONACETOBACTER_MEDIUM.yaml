@@ -1,0 +1,77 @@
+name: GLUCONACETOBACTER MEDIUM
+original_name: GLUCONACETOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1430
+  term:
+    id: mediadive.medium:1430
+    label: GLUCONACETOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1430.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: The ethanol and acetic acid are sterilized separately by filtration
+    (use filters resistant to these solvents) and added aseptically to the sterile
+    medium. The medium may be solidified by adding 15.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.399499Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1430'
+- timestamp: '2026-02-03T22:25:33.566814+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1430_GLUCONACETOBACTER_MEDIUM, JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM'
+synonyms:
+- name: ACETOBACTER EUROPAEUS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J890
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1430_GLUCONACETOBACTER_MEDIUM
+- JCM_J890_ACETOBACTER_EUROPAEUS_MEDIUM
+merge_fingerprint: d2ffb88157313cd2611b568184ff5d2933043a3029aa16d8e78c5c03233183cc

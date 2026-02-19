@@ -1,0 +1,89 @@
+name: METHYLOTROPHES MEDIUM
+original_name: METHYLOTROPHES MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1435
+  term:
+    id: mediadive.medium:1435
+    label: METHYLOTROPHES MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1435.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Disodium succinate
+  term:
+    id: CHEBI:63675
+    label: Disodium succinate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Prepare the medium without ethanol in closed vessels with a medium
+    to headspace ratio of 1:5 to 1:10. Adjust pH to 7.0 and sterilize. Allow to cool
+    to about 45°C before adding 0.5 mL filter-sterilized ethanol per liter medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.410750Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1435'
+merge_fingerprint: da7235f20aa3217c400b470c5f861ee804c05944c437954c492accb8c4f2f2ce
+merged_from:
+- DSMZ_1435_METHYLOTROPHES_MEDIUM

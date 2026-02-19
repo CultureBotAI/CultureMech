@@ -11,7 +11,51 @@ media_term:
   term:
     id: komodo.medium:1096
     label: UREAPLASMA medium
-ingredients: []
+ingredients:
+- preferred_term: PPLO broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.142857'
+    unit: G_PER_L
+- preferred_term: Fish-Sperm DNA
+  concentration:
+    value: '0.285714'
+    unit: G_PER_L
+  term:
+    id: CHEBI:16991
+    label: deoxyribonucleic acid
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.0285714'
+    unit: G_PER_L
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '0.571429'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Isovitalex
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +63,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1096'
+- timestamp: '2026-02-03T11:19:12.740790'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1096

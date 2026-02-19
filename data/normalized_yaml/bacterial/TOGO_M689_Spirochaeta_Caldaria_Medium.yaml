@@ -43,6 +43,9 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: FeCl2 solution (see Medium [M180])
   concentration:
     value: '10'
@@ -64,6 +67,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M689
   term:
@@ -85,3 +91,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.046711'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: NaOH'

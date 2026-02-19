@@ -1,0 +1,157 @@
+name: MEDIUM FOR SULFOSPIRILLUM DSM 806
+original_name: MEDIUM FOR SULFOSPIRILLUM DSM 806
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 121
+  term:
+    id: mediadive.medium:121
+    label: MEDIUM FOR SULFOSPIRILLUM DSM 806
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium121.pdf'
+ingredients:
+- preferred_term: Na-aspartate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: NaH2PO4
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0. Phosphate and cysteine should be dissolved together
+    in 1/10 vol. of water and sterilized separately.
+- step_number: 2
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.246875Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 121'
+- timestamp: '2026-02-03T22:25:30.722980+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_121_MEDIUM_FOR_SULFOSPIRILLUM_DSM_806, KOMODO_121_medium_FOR_CAMPYLOBACTER_DSM_806'
+synonyms:
+- name: medium FOR CAMPYLOBACTER DSM 806
+  source: KOMODO
+  source_id: komodo.medium:121
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_121_MEDIUM_FOR_SULFOSPIRILLUM_DSM_806
+- KOMODO_121_medium_FOR_CAMPYLOBACTER_DSM_806
+merge_fingerprint: 722f7700fb905c4abd4a7a3cf798af84950294131c0da2216ac71b2d37d8e5f5

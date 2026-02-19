@@ -1,7 +1,7 @@
 name: For DSM 18181
 original_name: For DSM 18181
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
 media_term:
@@ -11,7 +11,71 @@ media_term:
     label: For DSM 18181
 notes: 'Source: KOMODO ModelSEED | ID: 36.1 | DSMZ Medium: 36 (mediadive.medium:36)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +83,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 36.1'
+- timestamp: '2026-02-03T11:18:59.191977'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 36

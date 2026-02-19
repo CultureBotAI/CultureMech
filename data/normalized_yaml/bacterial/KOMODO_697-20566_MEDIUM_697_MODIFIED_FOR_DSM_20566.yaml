@@ -10,7 +10,43 @@ media_term:
     label: MEDIUM 697 MODIFIED FOR DSM 20566
 notes: 'Source: KOMODO ModelSEED | ID: 697_20566 | DSMZ Medium: 697 (mediadive.medium:697)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Meat infusion
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +54,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 697_20566'
+- timestamp: '2026-02-03T11:19:20.039654'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 697
+ph_value: 7.8

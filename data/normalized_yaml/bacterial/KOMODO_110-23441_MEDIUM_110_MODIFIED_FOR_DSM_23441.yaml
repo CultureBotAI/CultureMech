@@ -10,7 +10,120 @@ media_term:
     label: MEDIUM 110 MODIFIED FOR DSM 23441
 notes: 'Source: KOMODO ModelSEED | ID: 110_23441 | DSMZ Medium: 110 (mediadive.medium:110)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Ground beef
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: ' (add to make medium anoxic)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if required)'
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +131,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 110_23441'
+- timestamp: '2026-02-03T11:19:19.178114'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 110
+ph_value: 7.0

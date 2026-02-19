@@ -1,0 +1,182 @@
+name: CDMM
+original_name: CDMM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1757
+  term:
+    id: mediadive.medium:1757
+    label: CDMM
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaHSeO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: ' (almost no effect on growth in CDMM, more important in MDM)'
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: D-Biotin
+  term:
+    id: CHEBI:15956
+    label: D-Biotin
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: alpha-D-Glucose
+  term:
+    id: CHEBI:17925
+    label: alpha-D-Glucose
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' (not required but growth enhancing)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: fill to 1 Liter with H2O (autoclaved)
+- step_number: 2
+  action: STORE
+  description: anaerobize with nitrogen, can be stored anaerobically
+- step_number: 3
+  action: AUTOCLAVE
+  description: autoclave
+- step_number: 4
+  action: MIX
+  description: pH should be between 6-7, may depend on the casamino acid and cysteine
+    lot
+- step_number: 5
+  action: HEAT
+  description: steril filtration, store as batches at -20°C
+- step_number: 6
+  action: MIX
+  description: steril filtration
+- step_number: 7
+  action: HEAT
+  description: steril filtration, store in aliquots at -20°C
+- step_number: 8
+  action: HEAT
+  description: steril filtration, store aliquots at -20°C
+- step_number: 9
+  action: MIX
+  description: steril filtration
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1186/s12866-015-0614-2
+curation_history:
+- timestamp: '2026-01-26T17:53:15.436490Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1757'
+- timestamp: '2026-01-28T19:48:15.971040Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e7649fac1defcd0f96b2b2fd5f7e2b8acfca9694e24cac98c2195b2ed2ec6b09
+merged_from:
+- DSMZ_1757_CDMM

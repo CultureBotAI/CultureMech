@@ -1,0 +1,65 @@
+name: PSEUDOMONAS AGAR F
+original_name: PSEUDOMONAS AGAR F
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 907
+  term:
+    id: mediadive.medium:907
+    label: PSEUDOMONAS AGAR F
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium907.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.712373Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 907'
+- timestamp: '2026-02-03T22:25:51.285771+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_907_PSEUDOMONAS_AGAR_F, KOMODO_907_PSEUDOMONAS_AGAR_F'
+categories:
+- imported
+merged_from:
+- DSMZ_907_PSEUDOMONAS_AGAR_F
+- KOMODO_907_PSEUDOMONAS_AGAR_F
+merge_fingerprint: 61698c7b1380bce7f6460825be4925747c538d895a347e6094b4b5991970c576

@@ -162,6 +162,9 @@ ingredients:
     value: '20'
     unit: G_PER_L
 - preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Soil
   concentration:
     value: '159.091'
@@ -242,3 +245,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C16'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:16.916031'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'

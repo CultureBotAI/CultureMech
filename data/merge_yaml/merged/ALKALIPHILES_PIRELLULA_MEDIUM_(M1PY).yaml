@@ -1,0 +1,247 @@
+name: ALKALIPHILES PIRELLULA MEDIUM (M1PY)
+original_name: ALKALIPHILES PIRELLULA MEDIUM (M1PY)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: DSMZ Medium 1437
+  term:
+    id: mediadive.medium:1437
+    label: ALKALIPHILES PIRELLULA MEDIUM (M1PY)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1437.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '5.26316'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.526316'
+    unit: G_PER_L
+- preferred_term: Gelrite
+  term:
+    id: CHEBI:85248
+    label: Gelrite
+  concentration:
+    value: '9.47368'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Ampicillin sodium salt
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Cycloheximid
+  term:
+    id: CHEBI:27641
+    label: Cycloheximid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '29.7'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.335'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.00925'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.099'
+    unit: G_PER_L
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0392'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.0248'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: After autoclaving add solution 2 to solution 1.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 9.0 with NaOH, autoclave at 121°C for 20 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Adjust pH to 9.0 with NaOH, filter-sterilized
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: filter-sterilized
+- step_number: 5
+  action: DISSOLVE
+  description: Dissolve the nitrilotriacetic acid.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with KOH (~7.3 g).
+- step_number: 7
+  action: DISSOLVE
+  description: Dissolve other salts separately and combine.
+- step_number: 8
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 with NaOH or H2SO4.
+- step_number: 9
+  action: DISSOLVE
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.417335Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1437'
+merge_fingerprint: e54987251c2d30b23c55c10358793ddb0b8c76595d33d35074d0dd799fd10b40
+merged_from:
+- DSMZ_1437_ALKALIPHILES_PIRELLULA_MEDIUM_M1PY

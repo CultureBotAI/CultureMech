@@ -1,0 +1,61 @@
+name: R2A Agar With Fumarate
+original_name: R2A Agar With Fumarate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Disodium fumarate
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:115156
+    label: disodium fumarate
+- preferred_term: R2A agar (BD-Difco)
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1328
+  term:
+    id: TOGO:M1328
+    label: R2A Agar With Fumarate
+notes: 'Source: https://togomedium.org/medium/M1328
+
+  Original source: JCM - JCM_M1235
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1235'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.363730Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1328'
+- timestamp: '2026-01-28T19:48:11.336267Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.195785'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 851abcef1708782366b53e88fc44ce76533c58312d6f7b2a814493708784dea6
+merged_from:
+- TOGO_M1328_R2A_Agar_With_Fumarate

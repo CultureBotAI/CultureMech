@@ -1,0 +1,35 @@
+name: R2A Agar With Artificial Seawater
+original_name: R2A Agar With Artificial Seawater
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: R2A agar (BD-Difco)
+  concentration:
+    value: '18.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Artificial seawater (see Medium [M761])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M868
+  term:
+    id: TOGO:M868
+    label: R2A Agar With Artificial Seawater
+notes: 'Source: https://togomedium.org/medium/M868
+
+  Original source: JCM - JCM_M832
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=832'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.867440Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M868'
+merge_fingerprint: 36c0f0be3ca09a754f69cbfc02cf559308d52dda2fcadd670f14d6fc1080d0ea
+merged_from:
+- TOGO_M868_R2A_Agar_With_Artificial_Seawater

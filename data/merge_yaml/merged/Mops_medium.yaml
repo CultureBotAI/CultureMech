@@ -1,0 +1,144 @@
+name: Mops medium
+original_name: Mops medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.201'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '0.23'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '0.26'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '0.26'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:val-L'
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '0.25'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thr-L'
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '0.23'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.523'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.0005'
+    unit: MILLIMOLAR
+- preferred_term: Potassium sulfate
+  concentration:
+    value: '0.276'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '1.32'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '9.52'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '40.0'
+    unit: MILLIMOLAR
+- preferred_term: Tricine
+  concentration:
+    value: '4.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.562630Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 107, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:25.701281Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 107
+  term:
+    id: MEDIADB:107
+    label: Mops medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: c94ff6a668f3f4a8a5dc17b3804c04af6d3dd6cf4cfb0f2847aaa8e2d03ab938
+merged_from:
+- MEDIADB_107_Mops_medium

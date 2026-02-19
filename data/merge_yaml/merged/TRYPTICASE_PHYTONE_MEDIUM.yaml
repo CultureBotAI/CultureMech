@@ -1,0 +1,68 @@
+name: TRYPTICASE PHYTONE MEDIUM
+original_name: TRYPTICASE PHYTONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 75
+  term:
+    id: mediadive.medium:75
+    label: TRYPTICASE PHYTONE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium75.pdf'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Phytone peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.091249Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 75'
+- timestamp: '2026-02-03T22:25:48.026267+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_75_TRYPTICASE_PHYTONE_MEDIUM, KOMODO_75_TRYPTICASE_PHYTONE_medium'
+synonyms:
+- name: TRYPTICASE PHYTONE medium
+  source: KOMODO
+  source_id: komodo.medium:75
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_75_TRYPTICASE_PHYTONE_MEDIUM
+- KOMODO_75_TRYPTICASE_PHYTONE_medium
+merge_fingerprint: 3ea1efdd3c979609d086b7a64000bb0d2a84cecf300062fc0a4fc5e27b5c2688

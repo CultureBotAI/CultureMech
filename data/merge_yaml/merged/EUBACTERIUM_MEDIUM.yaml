@@ -1,0 +1,62 @@
+name: Eubacterium Medium
+original_name: Eubacterium Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: Beef brain powder
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Fluid thioglycolate (BD-BBL)
+  concentration:
+    value: '29.5'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Undefined component'
+media_term:
+  preferred_term: TOGO Medium M148
+  term:
+    id: TOGO:M148
+    label: Eubacterium Medium
+notes: 'Source: https://togomedium.org/medium/M148
+
+  Original source: JCM - JCM_M157
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=157'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.518211Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M148'
+- timestamp: '2026-01-28T19:48:22.572807Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 5249e70e42e59708b3a06f9c9509a2d1e1ade3bb2f4d6598ec871472aaa94bb5
+merged_from:
+- TOGO_M148_Eubacterium_Medium

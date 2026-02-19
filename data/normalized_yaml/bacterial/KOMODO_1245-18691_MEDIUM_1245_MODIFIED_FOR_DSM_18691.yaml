@@ -10,7 +10,186 @@ media_term:
     label: MEDIUM 1245 MODIFIED FOR DSM 18691
 notes: 'Source: KOMODO ModelSEED | ID: 1245_18691 | DSMZ Medium: 1245 (mediadive.medium:1245)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Proteose peptone no. 2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Potassium Phosphate
+  term:
+    id: CHEBI:63036
+    label: Potassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (dibasic)'
+- preferred_term: Sodium Chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: Propionic acid
+  term:
+    id: CHEBI:30768
+    label: Propionic acid
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: 2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: 2-Methylbutyric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: ' (inactivated)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Ribose
+  term:
+    id: CHEBI:33942
+    label: Ribose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Xylose
+  term:
+    id: CHEBI:18222
+    label: Xylose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Pectin
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +197,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1245_18691'
+- timestamp: '2026-02-03T11:18:57.913650'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1245

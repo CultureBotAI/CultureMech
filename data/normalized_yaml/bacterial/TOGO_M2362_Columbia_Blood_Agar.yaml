@@ -6,7 +6,13 @@ physical_state: LIQUID
 ingredients:
 - preferred_term: 4% horse blood
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Columbia agar base
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2362
   term:
@@ -22,3 +28,8 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2362'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.432488'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 4% horse blood; Added default
+    concentration for ingredient: Columbia agar base'

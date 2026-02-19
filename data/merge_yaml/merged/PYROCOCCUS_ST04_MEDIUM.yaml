@@ -1,0 +1,302 @@
+name: PYROCOCCUS ST04 MEDIUM
+original_name: PYROCOCCUS ST04 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 377b
+  term:
+    id: mediadive.medium:377b
+    label: PYROCOCCUS ST04 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium377b.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13.5122'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.41463'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.68293'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.321951'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.0487805'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.0146341'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.00682927'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.0097561'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.00487805'
+    unit: G_PER_L
+- preferred_term: KI
+  term:
+    id: CHEBI:74559
+    label: KI
+  concentration:
+    value: '4.87805e-05'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.731707'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.00195122'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000487805'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.97561'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1.95122'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients except sulfur, peptone, yeast extract, bicarbonate,
+    and sulfide, adjust the pH to 6.8, and sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Distribute medium under the same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials that already contain
+    the appropriate amount of sulfur. Sterilize the medium by autoclaving at <b>110°C</b>
+    for 20 min. After sterilization add peptone, yeast extract, and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas atmosphere and bicarbonate from
+    a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust
+    the pH of the complete medium to 6.8, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.955271Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 377b'
+- timestamp: '2026-02-03T22:25:40.243550+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_377b_PYROCOCCUS_ST04_MEDIUM, KOMODO_377-12428_MEDIUM_377_MODIFIED_FOR_DSM_12428,
+    KOMODO_377-13482_MEDIUM_377_MODIFIED_FOR_DSM_13482, KOMODO_377-15127_MEDIUM_377_MODIFIED_FOR_DSM_15127,
+    KOMODO_377-1_For_DSM_19918, KOMODO_377_PYROCOCCUS_STAPHYLOTHERMUS_medium'
+synonyms:
+- name: MEDIUM 377 MODIFIED FOR DSM 12428
+  source: KOMODO
+  source_id: komodo.medium:377_12428
+  original_category: imported
+- name: MEDIUM 377 MODIFIED FOR DSM 13482
+  source: KOMODO
+  source_id: komodo.medium:377_13482
+  original_category: imported
+- name: MEDIUM 377 MODIFIED FOR DSM 15127
+  source: KOMODO
+  source_id: komodo.medium:377_15127
+  original_category: imported
+- name: For DSM 19918
+  source: KOMODO
+  source_id: komodo.medium:377.1
+  original_category: imported
+- name: PYROCOCCUS / STAPHYLOTHERMUS medium
+  source: KOMODO
+  source_id: komodo.medium:377
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_377b_PYROCOCCUS_ST04_MEDIUM
+- KOMODO_377-12428_MEDIUM_377_MODIFIED_FOR_DSM_12428
+- KOMODO_377-13482_MEDIUM_377_MODIFIED_FOR_DSM_13482
+- KOMODO_377-15127_MEDIUM_377_MODIFIED_FOR_DSM_15127
+- KOMODO_377-1_For_DSM_19918
+- KOMODO_377_PYROCOCCUS_STAPHYLOTHERMUS_medium
+merge_fingerprint: fb5da04945e93c92890018fb11ec5f3d74b899d77affae530d5e1f2f7c5cdbce

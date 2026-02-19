@@ -1,0 +1,36 @@
+name: MARINE AGAR WITH 1% TWEEN 20
+original_name: MARINE AGAR WITH 1% TWEEN 20
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J768
+  term:
+    id: mediadive.medium:J768
+    label: MARINE AGAR WITH 1% TWEEN 20
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=768'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Tween 20
+  term:
+    id: CHEBI:9784
+    label: Tween 20
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.541357Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J768'
+merge_fingerprint: 1f83b1b7d59369ce902c386dce47b00aaf83eaf9976af2146778d7b38dc0d013
+merged_from:
+- JCM_J768_MARINE_AGAR_WITH_1_TWEEN_20

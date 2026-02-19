@@ -1,0 +1,123 @@
+name: PLATE COUNT AGAR
+original_name: PLATE COUNT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 464
+  term:
+    id: mediadive.medium:464
+    label: PLATE COUNT AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.225347Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 464'
+- timestamp: '2026-02-03T22:25:42.967630+00:00'
+  curator: recipe-merger
+  action: Merged 14 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_464_PLATE_COUNT_AGAR, DSMZ_464a_REACTIVATION_WITH_LIQUID_MEDIUM_464,
+    KOMODO_464-11199_MEDIUM_464_MODIFIED_FOR_DSM_11199, KOMODO_464-15726_MEDIUM_464_MODIFIED_FOR_DSM_15726,
+    KOMODO_464-15727_MEDIUM_464_MODIFIED_FOR_DSM_15727, KOMODO_464-15891_MEDIUM_464_MODIFIED_FOR_DSM_15891,
+    KOMODO_464-17107_MEDIUM_464_MODIFIED_FOR_DSM_17107, KOMODO_464-1986_MEDIUM_464_MODIFIED_FOR_DSM_1986,
+    KOMODO_464-2114_MEDIUM_464_MODIFIED_FOR_DSM_2114, KOMODO_464-2117_MEDIUM_464_MODIFIED_FOR_DSM_2117,
+    KOMODO_464-22870_MEDIUM_464_MODIFIED_FOR_DSM_22870, KOMODO_464-6824_MEDIUM_464_MODIFIED_FOR_DSM_6824,
+    KOMODO_464_PLATE_COUNT_AGAR, KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464'
+synonyms:
+- name: REACTIVATION WITH LIQUID MEDIUM 464
+  source: MediaDive
+  source_id: mediadive.medium:464a
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 11199
+  source: KOMODO
+  source_id: komodo.medium:464_11199
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 15726
+  source: KOMODO
+  source_id: komodo.medium:464_15726
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 15727
+  source: KOMODO
+  source_id: komodo.medium:464_15727
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 15891
+  source: KOMODO
+  source_id: komodo.medium:464_15891
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 17107
+  source: KOMODO
+  source_id: komodo.medium:464_17107
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 1986
+  source: KOMODO
+  source_id: komodo.medium:464_1986
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 2114
+  source: KOMODO
+  source_id: komodo.medium:464_2114
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 2117
+  source: KOMODO
+  source_id: komodo.medium:464_2117
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 22870
+  source: KOMODO
+  source_id: komodo.medium:464_22870
+  original_category: imported
+- name: MEDIUM 464 MODIFIED FOR DSM 6824
+  source: KOMODO
+  source_id: komodo.medium:464_6824
+  original_category: imported
+- name: REACTIVATION WITH LIQUID medium 464
+  source: KOMODO
+  source_id: komodo.medium:464a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_464_PLATE_COUNT_AGAR
+- DSMZ_464a_REACTIVATION_WITH_LIQUID_MEDIUM_464
+- KOMODO_464-11199_MEDIUM_464_MODIFIED_FOR_DSM_11199
+- KOMODO_464-15726_MEDIUM_464_MODIFIED_FOR_DSM_15726
+- KOMODO_464-15727_MEDIUM_464_MODIFIED_FOR_DSM_15727
+- KOMODO_464-15891_MEDIUM_464_MODIFIED_FOR_DSM_15891
+- KOMODO_464-17107_MEDIUM_464_MODIFIED_FOR_DSM_17107
+- KOMODO_464-1986_MEDIUM_464_MODIFIED_FOR_DSM_1986
+- KOMODO_464-2114_MEDIUM_464_MODIFIED_FOR_DSM_2114
+- KOMODO_464-2117_MEDIUM_464_MODIFIED_FOR_DSM_2117
+- KOMODO_464-22870_MEDIUM_464_MODIFIED_FOR_DSM_22870
+- KOMODO_464-6824_MEDIUM_464_MODIFIED_FOR_DSM_6824
+- KOMODO_464_PLATE_COUNT_AGAR
+- KOMODO_464a_REACTIVATION_WITH_LIQUID_medium_464
+merge_fingerprint: ed98a9a66a84d866e31eb929cd97796a033e56fd1e0a54dc3c6d3fed1b19ed7f

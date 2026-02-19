@@ -11,7 +11,25 @@ media_term:
     label: COLLIMONAS medium
 notes: 'Source: KOMODO ModelSEED | ID: 1035 | DSMZ Medium: 1035 (mediadive.medium:1035)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '3'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +37,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1035'
+- timestamp: '2026-02-03T11:18:55.402421'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1035

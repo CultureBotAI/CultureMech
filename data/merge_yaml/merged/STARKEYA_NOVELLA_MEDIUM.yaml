@@ -1,0 +1,152 @@
+name: STARKEYA NOVELLA MEDIUM
+original_name: STARKEYA NOVELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: DSMZ Medium 69
+  term:
+    id: mediadive.medium:69
+    label: STARKEYA NOVELLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium69.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '11.7517'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.66297'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.332594'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.332594'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.00221729'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16.6297'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '5.06'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.61'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Solutions A, B, C and D are sterilized separately by autoclaving and
+    mixed when cooled to room temperature. Adjust pH of complete medium to 8.5 with
+    sterile 0.5 N NaOH.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.084382Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 69'
+- timestamp: '2026-02-03T22:25:47.160513+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_69_STARKEYA_NOVELLA_MEDIUM, KOMODO_69_THIOBACILLUS_NOVELLUS_medium'
+synonyms:
+- name: THIOBACILLUS NOVELLUS medium
+  source: KOMODO
+  source_id: komodo.medium:69
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_69_STARKEYA_NOVELLA_MEDIUM
+- KOMODO_69_THIOBACILLUS_NOVELLUS_medium
+merge_fingerprint: 4b66bad0916242b54ad9ce1b9f1bbe38f1a6204c9db09b719800f96d1d60529e

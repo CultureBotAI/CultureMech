@@ -1,0 +1,83 @@
+name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+original_name: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 805
+  term:
+    id: mediadive.medium:805
+    label: METHYLOBACTERIUM THIOCYANATUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium805.pdf'
+ingredients:
+- preferred_term: KSCN
+  term:
+    id: CHEBI:30951
+    label: KSCN
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '7.9'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: To solid media add 15 g/l agar. Sterilise medium at 115°C for 10 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.309458Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 805'
+- timestamp: '2026-02-03T22:25:49.005489+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM, KOMODO_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM
+- KOMODO_805_METHYLOBACTERIUM_THIOCYANATUM_MEDIUM
+merge_fingerprint: fcf5140b76f8d72a5b460548a1d8b950c0722ad61936d414483c0e8b55166851

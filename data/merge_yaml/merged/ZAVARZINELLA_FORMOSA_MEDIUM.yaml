@@ -1,0 +1,158 @@
+name: ZAVARZINELLA FORMOSA MEDIUM
+original_name: ZAVARZINELLA FORMOSA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5.8-6
+media_term:
+  preferred_term: DSMZ Medium 1196
+  term:
+    id: mediadive.medium:1196
+    label: ZAVARZINELLA FORMOSA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1196.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0392'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.0248'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 5.8 - 6.0
+- step_number: 2
+  action: DISSOLVE
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.645172Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1196'
+- timestamp: '2026-01-28T19:48:29.744486Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:29.952530+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1196_ZAVARZINELLA_FORMOSA_MEDIUM, KOMODO_1196_ZAVARZINELLA_FORMOSA_medium'
+synonyms:
+- name: ZAVARZINELLA FORMOSA medium
+  source: KOMODO
+  source_id: komodo.medium:1196
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1196_ZAVARZINELLA_FORMOSA_MEDIUM
+- KOMODO_1196_ZAVARZINELLA_FORMOSA_medium
+merge_fingerprint: bbd87da538f4bed060b0324ff09c22468815aebb86793c1e5f924daf1a693fff

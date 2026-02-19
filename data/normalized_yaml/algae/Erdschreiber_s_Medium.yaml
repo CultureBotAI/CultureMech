@@ -1,28 +1,40 @@
 name: Erdschreiber's Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Pasteurized Seawater
-- agent_term:
-    preferred_term: '2'
-  amount: P-IV Metal Solution
-- agent_term:
-    preferred_term: '3'
-  amount: NaNO3(autoclave before adding)(Fisher BP360-500)
-- agent_term:
-    preferred_term: '4'
-  amount: Na2HPO4•7H2O(autoclave before adding) (Sigma S-9390)
-- agent_term:
-    preferred_term: '5'
-  amount: 'Soilwater: GR+ Medium'
-- agent_term:
-    preferred_term: '6'
-  amount: Vitamin B12
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Pasteurized Seawater'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: P-IV Metal Solution'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(autoclave before adding)(Fisher BP360-500)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2HPO4•7H2O(autoclave before adding) (Sigma S-9390)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Soilwater: GR+ Medium'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

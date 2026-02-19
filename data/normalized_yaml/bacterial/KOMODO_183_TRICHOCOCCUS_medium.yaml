@@ -11,7 +11,39 @@ media_term:
     label: TRICHOCOCCUS medium
 notes: 'Source: KOMODO ModelSEED | ID: 183 | DSMZ Medium: 183 (mediadive.medium:183)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +51,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 183'
+- timestamp: '2026-02-03T11:18:58.505171'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 183

@@ -1,0 +1,101 @@
+name: BACILLUS LOCISALIS MEDIUM
+original_name: BACILLUS LOCISALIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1309
+  term:
+    id: mediadive.medium:1309
+    label: BACILLUS LOCISALIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1309.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '160'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: The NaCl and Na2CO3 were dissolved and autoclaved separately and added
+    to the organic components at 60°C before pouring the agar medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.063405Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1309'
+- timestamp: '2026-02-03T22:25:29.833028+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1182_AQUISALIMONAS_MEDIUM, DSMZ_1309_BACILLUS_LOCISALIS_MEDIUM,
+    KOMODO_1182_AQUISALIMONAS_medium, KOMODO_1309_BACILLUS_LOCISALIS_medium'
+synonyms:
+- name: AQUISALIMONAS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1182
+  original_category: imported
+- name: AQUISALIMONAS medium
+  source: KOMODO
+  source_id: komodo.medium:1182
+  original_category: imported
+- name: BACILLUS LOCISALIS medium
+  source: KOMODO
+  source_id: komodo.medium:1309
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1182_AQUISALIMONAS_MEDIUM
+- DSMZ_1309_BACILLUS_LOCISALIS_MEDIUM
+- KOMODO_1182_AQUISALIMONAS_medium
+- KOMODO_1309_BACILLUS_LOCISALIS_medium
+merge_fingerprint: e0ebc5795e7e96347da0f529506cec74eac7ff7d54972f5840bef97318c9ac74

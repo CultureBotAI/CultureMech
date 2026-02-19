@@ -1,0 +1,47 @@
+name: CMA
+original_name: CMA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C24
+  term:
+    id: mediadive.medium:C24
+    label: CMA
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_CMA.pdf'
+ingredients:
+- preferred_term: Corn meal agar
+  term:
+    id: CHEBI:2509
+    label: Corn meal agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: "Disperse the agar in cold deionised water. Apply heat, stirring constantly.\
+    \ During heating, add\r\nglucose and yeast extract. Bring contents to boil. Transfer\
+    \ molten agar to suitable vessels.\r\nSterilise by pressure cooking at 10 psi\
+    \ for 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.548063Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C24'
+merge_fingerprint: d81eb748e046f1dc910e5e5d6d518cbcf77fa1a494eb940753019be84d65ce0c
+merged_from:
+- CCAP_C24_CMA

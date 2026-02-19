@@ -11,7 +11,324 @@ media_term:
   term:
     id: komodo.medium:843.1
     label: For DSM 13862
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.498504'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.398804'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0997009'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.299103'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.199402'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.149551'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '0.997009'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000498504'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1.49551'
+    unit: G_PER_L
+- preferred_term: DL-Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: DL-Dithiothreitol
+  concentration:
+    value: '0.398804'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '56.7'
+    unit: G_PER_L
+- preferred_term: Maltose x H2O
+  term:
+    id: CHEBI:17306
+    label: Maltose x H2O
+  concentration:
+    value: '60'
+    unit: G_PER_L
+- preferred_term: Trehalose
+  term:
+    id: CHEBI:27082
+    label: Trehalose
+  concentration:
+    value: '63.3'
+    unit: G_PER_L
+- preferred_term: D-Xylose
+  term:
+    id: CHEBI:65327
+    label: D-Xylose
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '280'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Pyridoxal hydrochloride
+  term:
+    id: CHEBI:131529
+    label: Pyridoxal hydrochloride
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Pyridoxal phosphate
+  term:
+    id: CHEBI:18405
+    label: Pyridoxal phosphate
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Ca-folinate
+  term:
+    id: CHEBI:31340
+    label: Ca-folinate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: ß-NAD
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Coenzyme A
+  term:
+    id: CHEBI:15346
+    label: Coenzyme A
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FAD
+  term:
+    id: CHEBI:16238
+    label: FAD
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.065'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +336,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 843.1'
+- timestamp: '2026-02-03T11:19:11.633192'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 843

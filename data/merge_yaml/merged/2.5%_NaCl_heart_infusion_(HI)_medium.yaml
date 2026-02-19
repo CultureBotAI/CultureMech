@@ -1,0 +1,68 @@
+name: 2.5% NaCl heart infusion (HI) medium
+original_name: 2.5% NaCl heart infusion (HI) medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '2.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Chloramphenicol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component,
+    Defined component'
+- preferred_term: Ampicillin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
+    Organic compound'
+  term:
+    id: CHEBI:28971
+    label: Ampicillin
+- preferred_term: Tetracycline
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+- preferred_term: Heart infusion broth
+  concentration:
+    value: '37'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2222
+  term:
+    id: TOGO:M2222
+    label: 2.5% NaCl heart infusion (HI) medium
+notes: 'Source: https://togomedium.org/medium/M2222'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.174757Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2222'
+- timestamp: '2026-01-28T19:48:42.369321Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a01f24d7b393eccf4a9ac194557c4759644db7c5e8d3da114fb7e5c81a2807bf
+merged_from:
+- TOGO_M2222_2.5_NaCl_heart_infusion_HI_medium

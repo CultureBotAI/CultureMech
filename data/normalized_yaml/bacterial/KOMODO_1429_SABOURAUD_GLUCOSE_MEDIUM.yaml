@@ -11,7 +11,18 @@ media_term:
     label: SABOURAUD GLUCOSE MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 1429 | DSMZ Medium: 1429 (mediadive.medium:1429)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: SABOURAUD- Glucose-Bouillon
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +30,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1429'
+- timestamp: '2026-02-03T11:18:54.480814'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1429

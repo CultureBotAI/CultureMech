@@ -1,0 +1,92 @@
+name: SP - MEDIUM
+original_name: SP - MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 222
+  term:
+    id: mediadive.medium:222
+    label: SP - MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium222.pdf'
+ingredients:
+- preferred_term: Raffinose
+  term:
+    id: CHEBI:16634
+    label: Raffinose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Galactose
+  term:
+    id: CHEBI:28260
+    label: Galactose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.548076Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 222'
+- timestamp: '2026-02-03T22:25:37.936256+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_222_SP_-_MEDIUM, KOMODO_222_SP_-_medium'
+synonyms:
+- name: SP - medium
+  source: KOMODO
+  source_id: komodo.medium:222
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_222_SP_-_MEDIUM
+- KOMODO_222_SP_-_medium
+merge_fingerprint: 8e6c198e3774f77571510162822adb900530e317aa5792b2bf550fdd1c5c7637

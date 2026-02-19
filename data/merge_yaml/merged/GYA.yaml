@@ -1,0 +1,58 @@
+name: GYA
+original_name: GYA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DW
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extaract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M1893
+  term:
+    id: TOGO:M1893
+    label: GYA
+notes: 'Source: https://togomedium.org/medium/M1893
+
+  Original source: NBRC - NBRC_M1140
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1140'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.595071Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1893'
+- timestamp: '2026-01-28T19:48:19.810067Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 76a1ec184e36b0b3d9e027ac79ed8aaa0d32770873abd3905d49273fd59c10fa
+merged_from:
+- TOGO_M1893_GYA

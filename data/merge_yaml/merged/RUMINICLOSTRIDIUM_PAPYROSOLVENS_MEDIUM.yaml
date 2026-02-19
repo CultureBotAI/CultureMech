@@ -1,0 +1,130 @@
+name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
+original_name: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 289
+  term:
+    id: mediadive.medium:289
+    label: RUMINICLOSTRIDIUM PAPYROSOLVENS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium289.pdf'
+ingredients:
+- preferred_term: Sea water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.65'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: Optional ingredient (Lens tissue or MN 301)
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine and cellobiose) and sparge medium
+    with 100% N2 gas for 30 - 45 m in to make it anoxic. Add cysteine, adjust pH to
+    7.2 and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After sterilization add cellobiose from an anoxic stock
+    solution sterilized by filtration.
+- step_number: 2
+  action: ADJUST_PH
+  description: 'Note: Some strains can be adapted to cellulose as substrate using
+    5.0 g/l cellulose (Lens tissue, OXOID; or cellulose powder MN 301, MACHEREY-NAGEL).
+    If necessary adjust pH of completed medium to 7.2.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.677668Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 289'
+- timestamp: '2026-02-03T22:25:38.675454+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_289_RUMINICLOSTRIDIUM_PAPYROSOLVENS_MEDIUM, KOMODO_289-replace-Cellobiose-with-Cellulose_CLOSTRIDIUM_PAPYROSOLVENS_medium_replace_Cellobiose_with_Cellulose,
+    KOMODO_289_CLOSTRIDIUM_PAPYROSOLVENS_medium'
+synonyms:
+- name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
+  source: KOMODO
+  source_id: komodo.medium:289_replace_Cellobiose_with_Cellulose
+  original_category: imported
+- name: CLOSTRIDIUM PAPYROSOLVENS medium
+  source: KOMODO
+  source_id: komodo.medium:289
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_289_RUMINICLOSTRIDIUM_PAPYROSOLVENS_MEDIUM
+- KOMODO_289-replace-Cellobiose-with-Cellulose_CLOSTRIDIUM_PAPYROSOLVENS_medium_replace_Cellobiose_with_Cellulose
+- KOMODO_289_CLOSTRIDIUM_PAPYROSOLVENS_medium
+merge_fingerprint: 8ff09563b29ab38cc84596f67866eb9872388ff19e4ce032c7b3cde26dbb0a29

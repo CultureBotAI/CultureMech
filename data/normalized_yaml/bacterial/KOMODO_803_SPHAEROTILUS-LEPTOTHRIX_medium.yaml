@@ -11,7 +11,64 @@ media_term:
     label: SPHAEROTILUS-LEPTOTHRIX medium
 notes: 'Source: KOMODO ModelSEED | ID: 803 | DSMZ Medium: 803 (mediadive.medium:803)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +76,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 803'
+- timestamp: '2026-02-03T11:19:03.017861'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 803

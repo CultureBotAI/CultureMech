@@ -1,0 +1,94 @@
+name: HORIKOSHI-1 MEDIUM
+original_name: HORIKOSHI-1 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: DSMZ Medium 1081
+  term:
+    id: mediadive.medium:1081
+    label: HORIKOSHI-1 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1081.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
+    to the medium. Check final pH to be about 10.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.318037Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1081'
+- timestamp: '2026-02-03T22:25:28.360374+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1081_HORIKOSHI-1_MEDIUM, KOMODO_1081_HORIKOSHI-1_medium, KOMODO_1081a-18086_MEDIUM_1081a_MODIFIED_FOR_DSM_18086,
+    KOMODO_1081a_HORIKOSHI-1_medium_WITH_10_NaCl'
+synonyms:
+- name: HORIKOSHI-1 medium
+  source: KOMODO
+  source_id: komodo.medium:1081
+  original_category: imported
+- name: MEDIUM 1081a MODIFIED FOR DSM 18086
+  source: KOMODO
+  source_id: komodo.medium:1081a_18086
+  original_category: imported
+- name: HORIKOSHI-1 medium WITH 10% NaCl
+  source: KOMODO
+  source_id: komodo.medium:1081a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1081_HORIKOSHI-1_MEDIUM
+- KOMODO_1081_HORIKOSHI-1_medium
+- KOMODO_1081a-18086_MEDIUM_1081a_MODIFIED_FOR_DSM_18086
+- KOMODO_1081a_HORIKOSHI-1_medium_WITH_10_NaCl
+merge_fingerprint: edf28961c59874c26a7facf4c2c0c0ce1d9c8dd67ae16479d88bcafa57a97d0e

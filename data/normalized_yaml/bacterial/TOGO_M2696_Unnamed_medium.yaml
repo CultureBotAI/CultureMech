@@ -16,6 +16,9 @@ ingredients:
   notes: 'Properties: Undefined component'
 - preferred_term: Antifoam (Union Carbide Corp., SAG-471)
   notes: 'Role: Defoaming agent; Properties: Defined component, Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2696
   term:
@@ -29,3 +32,8 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2696'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.681165'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Antifoam (Union Carbide Corp.,
+    SAG-471)'

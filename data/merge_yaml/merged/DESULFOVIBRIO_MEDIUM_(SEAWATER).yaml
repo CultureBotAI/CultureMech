@@ -1,0 +1,111 @@
+name: DESULFOVIBRIO MEDIUM (SEAWATER)
+original_name: DESULFOVIBRIO MEDIUM (SEAWATER)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 63b
+  term:
+    id: mediadive.medium:63b
+    label: DESULFOVIBRIO MEDIUM (SEAWATER)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63b.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.510204'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.102041'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Na-DL-lactate
+  term:
+    id: CHEBI:75228
+    label: Na-DL-lactate
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '980'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A, bring to the boil, then cool to
+    room temperature while sparging with 100% N2 gas. Add solutions B and C, adjust
+    pH to 7.8 with NaOH, and distribute under 100% N2 gas into anoxic Hungate-type
+    tubes. During distribution continuously swirl the medium to keep the grey precipitate
+    suspended. Autoclave 15 min at 121°C. Adjust pH of the complete medium to 6.8
+    - 7.0, if necessary.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Alternatively to filtered aged sea water bottled water from Biomaris
+    GmbH (Bremen, Germany) can be used.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.075153Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 63b'
+merge_fingerprint: 980007c5262b810a653f7f7e1311bf92551dd0701628f5d9492b1b97db83003f
+merged_from:
+- DSMZ_63b_DESULFOVIBRIO_MEDIUM_SEAWATER

@@ -11,7 +11,37 @@ media_term:
     label: TWEEN 80A medium
 notes: 'Source: KOMODO ModelSEED | ID: 618 | DSMZ Medium: 618 (mediadive.medium:618)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casitone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '10'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +49,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 618'
+- timestamp: '2026-02-03T11:19:10.855893'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 618

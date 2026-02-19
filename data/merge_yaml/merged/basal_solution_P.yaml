@@ -1,0 +1,63 @@
+name: basal solution P
+original_name: basal solution P
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '22.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.09'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '94.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '100.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.001'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.824799Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 137, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 137
+  term:
+    id: MEDIADB:137
+    label: basal solution P
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 2665a58b47714468e26eb5c3a93a55d76a59079d3607ecf2e3d6ad7cc504559e
+merged_from:
+- MEDIADB_137_basal_solution_P

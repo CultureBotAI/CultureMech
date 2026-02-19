@@ -1,0 +1,154 @@
+name: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
+original_name: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1831
+  term:
+    id: mediadive.medium:1831
+    label: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '10.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Garden soil
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: Fe SO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: Fe SO4 x 7 H2O
+  concentration:
+    value: '70'
+    unit: G_PER_L
+- preferred_term: Na-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 1 H2O
+  term:
+    id: CHEBI:86360
+    label: MnSO4 x 1 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    natural sea water (Helgolandwasser).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'After cooling, add the following filter sterilized components:'
+- step_number: 4
+  action: MIX
+  description: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
+    \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too\
+    \ much clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)"
+- step_number: 5
+  action: MIX
+  description: Shake vigorously
+- step_number: 6
+  action: AUTOCLAVE
+  description: Autoclave for 1 h at 121 °C and let cool down
+- step_number: 7
+  action: AUTOCLAVE
+  description: After 24 h autoclave for a second time (for 1 h at 121 °C)
+- step_number: 8
+  action: MIX
+  description: Remove bigger particles and debris by centrifugation
+- step_number: 9
+  action: FILTER_STERILIZE
+  description: Filter through Whatmanfilter 595 (1/2, 320 mm) to remove residual particles
+- step_number: 10
+  action: FILTER_STERILIZE
+  description: Filter sterilize (PES membrane, pore size 0,22 µm)
+- step_number: 11
+  action: HEAT
+  description: Store at 4°C – 10°C
+- step_number: 12
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    Milli Q water.
+- step_number: 13
+  action: HEAT
+  description: Prepare aliquots and store them at -20 °C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.507279Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1831'
+merge_fingerprint: 8b7579228fe9fbfff6149912801e783a8912c1590d172744fe3eb78feff445ad
+merged_from:
+- DSMZ_1831_Cyanobacteria_Medium_SWES_Seawater_-_Soil_Extract_-_Salts

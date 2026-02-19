@@ -1,0 +1,140 @@
+name: MM3
+original_name: MM3
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5.8-6
+media_term:
+  preferred_term: DSMZ Medium 1781
+  term:
+    id: mediadive.medium:1781
+    label: MM3
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: alpha-D-Glucose
+  term:
+    id: CHEBI:17925
+    label: alpha-D-Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+- preferred_term: 4-aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.013'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.033'
+    unit: G_PER_L
+- preferred_term: Hemicalcium D-(+)-pantothenate
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.033'
+    unit: G_PER_L
+- preferred_term: DL-6,8-thioctic acid
+  term:
+    id: CHEBI:16494
+    label: DL-6,8-thioctic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Filter sterilize the solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.456350Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1781'
+merge_fingerprint: d8938603d0b64889f748fbf3e927aa7e2b5f4e215235b615442542bc1571e000
+merged_from:
+- DSMZ_1781_MM3

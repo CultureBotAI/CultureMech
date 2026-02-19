@@ -1,0 +1,82 @@
+name: NPA
+original_name: NPA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C69
+  term:
+    id: mediadive.medium:C69
+    label: NPA
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_NCL_0_01_NPA.pdf'
+ingredients:
+- preferred_term: Cereal leaves
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
+    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
+    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
+    \ 15 minutes."
+- step_number: 2
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.715318Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C69'
+- timestamp: '2026-02-03T22:25:26.596588+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C63_NCL, CCAP_C65_NCL_PJ, CCAP_C69_NPA'
+synonyms:
+- name: NCL
+  source: MediaDive
+  source_id: mediadive.medium:C63
+  original_category: imported
+- name: NCL:PJ
+  source: MediaDive
+  source_id: mediadive.medium:C65
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C63_NCL
+- CCAP_C65_NCL_PJ
+- CCAP_C69_NPA
+merge_fingerprint: f20546ee693aebea50cffc31eedd7548e380397180d3a0f46be4d1243b659562

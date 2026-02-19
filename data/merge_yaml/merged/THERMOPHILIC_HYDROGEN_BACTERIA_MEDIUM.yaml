@@ -1,0 +1,182 @@
+name: Thermophilic Hydrogen Bacteria Medium
+original_name: Thermophilic Hydrogen Bacteria Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: H2O (deionized)
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: Na2HPO4 x 12 H2O
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: NH4NO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: Trace element solution
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Oxygen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: H2O (deionized)
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2 x 6 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:35696
+    label: cobalt dichloride
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '28'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4 x 5 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: MnSO4 x 5 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: MoO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:30627
+    label: molybdenum trioxide
+media_term:
+  preferred_term: TOGO Medium M3125
+  term:
+    id: TOGO:M3125
+    label: Thermophilic Hydrogen Bacteria Medium
+notes: 'Source: https://togomedium.org/medium/M3125
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium533.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.469761Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3125'
+- timestamp: '2026-01-28T19:48:18.512211Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.448932'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Oxygen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+merge_fingerprint: f90ff15a650e6195645000a5861b7b02368c5396bfda845acc07b0af90020fa4
+merged_from:
+- TOGO_M3125_Thermophilic_Hydrogen_Bacteria_Medium

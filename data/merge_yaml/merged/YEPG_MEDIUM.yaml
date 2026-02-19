@@ -1,0 +1,76 @@
+name: YEPG MEDIUM
+original_name: YEPG MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 662
+  term:
+    id: mediadive.medium:662
+    label: YEPG MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium662.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.861997Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 662'
+- timestamp: '2026-01-28T19:48:34.502112Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:46.600616+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_662_YEPG_MEDIUM, KOMODO_662-6699_MEDIUM_662_MODIFIED_FOR_DSM_6699,
+    KOMODO_662-6700_MEDIUM_662_MODIFIED_FOR_DSM_6700, KOMODO_662_YEPG_medium'
+synonyms:
+- name: MEDIUM 662 MODIFIED FOR DSM 6699
+  source: KOMODO
+  source_id: komodo.medium:662_6699
+  original_category: imported
+- name: MEDIUM 662 MODIFIED FOR DSM 6700
+  source: KOMODO
+  source_id: komodo.medium:662_6700
+  original_category: imported
+- name: YEPG medium
+  source: KOMODO
+  source_id: komodo.medium:662
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_662_YEPG_MEDIUM
+- KOMODO_662-6699_MEDIUM_662_MODIFIED_FOR_DSM_6699
+- KOMODO_662-6700_MEDIUM_662_MODIFIED_FOR_DSM_6700
+- KOMODO_662_YEPG_medium
+merge_fingerprint: 672fc00cb13a7a5ddc331666c5f6a2b8b149c9984e82bdfd5e7543b28563edba

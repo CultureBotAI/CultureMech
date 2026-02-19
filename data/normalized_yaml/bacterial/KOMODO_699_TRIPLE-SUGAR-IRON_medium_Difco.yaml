@@ -11,7 +11,76 @@ media_term:
     label: TRIPLE-SUGAR-IRON medium (Difco)
 notes: 'Source: KOMODO ModelSEED | ID: 699 | DSMZ Medium: 699 (mediadive.medium:699)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Bacto beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:59168
+    label: Na2S2O3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (if required)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +88,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 699'
+- timestamp: '2026-02-03T11:19:13.389176'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 699

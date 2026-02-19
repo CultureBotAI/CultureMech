@@ -1,0 +1,113 @@
+name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
+original_name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1269
+  term:
+    id: mediadive.medium:J1269
+    label: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1269'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '80'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '24'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.68'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: Ammonium ferric citrate
+  term:
+    id: CHEBI:31604
+    label: Ammonium ferric citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.0. Distribute the medium in culture vessels under a
+    N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.240840Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1269'
+merge_fingerprint: 1da012b13abc0fb7714f0a78cec48ee650f2f0f85f9d4458954e036b70366013
+merged_from:
+- JCM_J1269_ARTIFICIAL_SEAWATER_YEAST_EXTRACT-TRYPTONE_MEDIUM

@@ -10,7 +10,57 @@ media_term:
     label: METHYLOBACTERIUM THIOCYANATUM MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 805 | DSMZ Medium: 805 (mediadive.medium:805)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KSCN
+  term:
+    id: CHEBI:30951
+    label: KSCN
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '7.9'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +68,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 805'
+- timestamp: '2026-02-03T11:19:05.334660'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 805

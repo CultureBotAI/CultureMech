@@ -1,19 +1,25 @@
 name: 2X Soil + Seawater Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Green House Soil
-- agent_term:
-    preferred_term: '2'
-  amount: CaCO3(Fisher C 64)
-- agent_term:
-    preferred_term: '3'
-  amount: Supplemented Seawater
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Green House Soil'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCO3(Fisher C 64)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Supplemented Seawater'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

@@ -1,0 +1,137 @@
+name: Methylotroph Medium
+original_name: Methylotroph Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '970'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: NaNO3
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: Na2SO4
+  concentration:
+    value: '0.014'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: HEPES
+  concentration:
+    value: '4.77'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Trace element solution (see Medium [M278])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Se/W solution (see Medium [M278])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 10 mM CuCl2 solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: 10 mM CeCl3 solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: Methanol
+  concentration:
+    value: '0.81'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17790
+    label: methanol
+media_term:
+  preferred_term: TOGO Medium M1309
+  term:
+    id: TOGO:M1309
+    label: Methylotroph Medium
+notes: 'Source: https://togomedium.org/medium/M1309
+
+  Original source: JCM - JCM_M1219-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1219'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.332732Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1309'
+- timestamp: '2026-01-28T19:48:21.580294Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.116189'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+merge_fingerprint: ccb86c2e2aedc68f43d96ea8dc45e6ce197524d97c6faaed54366f0f30f78505
+merged_from:
+- TOGO_M1309_Methylotroph_Medium

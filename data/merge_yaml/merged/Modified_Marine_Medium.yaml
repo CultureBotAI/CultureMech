@@ -1,0 +1,208 @@
+name: MODIFIED MARINE MEDIUM
+original_name: MODIFIED MARINE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J416
+  term:
+    id: mediadive.medium:J416
+    label: MODIFIED MARINE MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=416'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '18.6275'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '8.82353'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.147059'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.294118'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.411765'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.0980392'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.0490196'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.0196078'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.196078'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '0.0196078'
+    unit: G_PER_L
+- preferred_term: DL-Sodium malate
+  term:
+    id: CHEBI:91261
+    label: DL-Sodium malate
+  concentration:
+    value: '1.76471'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.0862745'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix components, except L-cysteine x HCl x H2O, and adjust pH to 6.5.
+    Distribute the medium into appropriate culture vessels (e.g., 20 ml of the medium
+    in 120 ml serum bottles) under a N2 atmosphere, seal with butyl rubber stoppers
+    and autoclave. Separately autoclave concentrated (100- or 200-fold) L-cysteine
+    x HCl x H2O solution under a N2 atmosphere. Prior to inoculation, add the sterile
+    L-cysteine x HCl x H2O solution. Pressurize the inoculated vessels to 100 kPa
+    N2.
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 12418, inoculate with a 10% inoculum.'
+- step_number: 3
+  action: MIX
+  description: Use Trace minerals of Medium No. 151 supplemented with 0.025 g (final)
+    Na2MoO4 x 2H2O, 0.024 g NiCl2 x 6H2O and 0.025 g Na2WO4 x 2H2O (per liter).
+- step_number: 4
+  action: MIX
+  description: 'Comment: For strain JCM 12378, inoculate with a 10% inoculum.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.551389Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J416'
+merge_fingerprint: 6b806a17c5aee805286ed7e8f088eecd7654b6366dc8811cd628344ed3b0fe11
+merged_from:
+- JCM_J416_MODIFIED_MARINE_MEDIUM

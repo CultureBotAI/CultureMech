@@ -10,7 +10,91 @@ media_term:
     label: DPM MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na-propionate
+  term:
+    id: CHEBI:132106
+    label: Na-propionate
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '7.56'
+    unit: G_PER_L
+- preferred_term: CoCl2
+  term:
+    id: CHEBI:35696
+    label: CoCl2
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +102,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 737'
+- timestamp: '2026-02-03T11:19:02.115152'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 737
+ph_value: 6.8

@@ -1,0 +1,115 @@
+name: LACTOBACILLUS MEDIUM IV
+original_name: LACTOBACILLUS MEDIUM IV
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.3
+media_term:
+  preferred_term: DSMZ Medium 859
+  term:
+    id: mediadive.medium:859
+    label: LACTOBACILLUS MEDIUM IV
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium859.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Na-acetate x 3 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)2 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63076
+    label: ''
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.3 and fill up into screw-capped Wheaton tubes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.535324Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 859'
+- timestamp: '2026-01-28T19:48:16.117201Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:50.369072+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_859_LACTOBACILLUS_MEDIUM_IV, KOMODO_859_LACTOBACILLUS_medium_IV'
+synonyms:
+- name: LACTOBACILLUS medium IV
+  source: KOMODO
+  source_id: komodo.medium:859
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_859_LACTOBACILLUS_MEDIUM_IV
+- KOMODO_859_LACTOBACILLUS_medium_IV
+merge_fingerprint: 5a2fec25782ff7b7cf2854274b96101aacc081e32f1a2c91de4d753c2c1783f9

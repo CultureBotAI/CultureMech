@@ -1,0 +1,149 @@
+name: AZOARCUS TAIWANENSIS MEDIUM
+original_name: AZOARCUS TAIWANENSIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 8.5-9
+media_term:
+  preferred_term: DSMZ Medium 1639
+  term:
+    id: mediadive.medium:1639
+    label: AZOARCUS TAIWANENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1639.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.759241'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.24975'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.43956'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1.4985'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate and pyruvate) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Then, add and dissolve bicarbonate,
+    adjust pH to 8.5 - 9.0, dispense under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials, and autoclave. After sterilization, add pyruvate from a
+    sterile, anoxic stock solution that has been prepared under a 100% N2 gas atmosphere
+    and sterilized by filtration. Adjust pH of complete medium to 8.5 - 9.0, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.097141Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1639'
+merge_fingerprint: ae0ec05dcb3adb6c67a07a9a2952fbf82be208d238d6a3d09bae7d30fed0716a
+merged_from:
+- DSMZ_1639_AZOARCUS_TAIWANENSIS_MEDIUM

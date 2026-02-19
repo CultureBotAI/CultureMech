@@ -11,7 +11,50 @@ media_term:
     label: MICROLUNATUS medium
 notes: 'Source: KOMODO ModelSEED | ID: 776 | DSMZ Medium: 776 (mediadive.medium:776)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +62,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 776'
+- timestamp: '2026-02-03T11:18:57.050213'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 776

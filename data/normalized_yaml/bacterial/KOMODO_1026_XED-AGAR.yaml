@@ -11,7 +11,25 @@ media_term:
     label: XED-AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 1026 | DSMZ Medium: 1026 (mediadive.medium:1026)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Xylan
+  term:
+    id: CHEBI:37166
+    label: Xylan
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +37,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1026'
+- timestamp: '2026-02-03T11:19:05.410879'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1026

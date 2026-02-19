@@ -11,7 +11,71 @@ media_term:
     label: CAMPYLOBACTER RECTUS medium
 notes: 'Source: KOMODO ModelSEED | ID: 338 | DSMZ Medium: 338 (mediadive.medium:338)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na-formate
+  term:
+    id: CHEBI:62965
+    label: Na-formate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na-fumarate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +83,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 338'
+- timestamp: '2026-02-03T11:19:11.954156'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 338

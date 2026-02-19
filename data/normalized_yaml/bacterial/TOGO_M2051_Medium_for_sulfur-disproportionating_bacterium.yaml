@@ -89,8 +89,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -216,6 +222,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -299,13 +308,22 @@ ingredients:
     label: nicotinic acid
 - preferred_term: FeCl3·6H2O solution
   notes: 'Role: Mineral source'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Solution, Inorganic compound'
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2051
   term:
@@ -327,3 +345,11 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.783857'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    NaOH; Added default concentration for ingredient: FeCl3·6H2O solution; Added default
+    concentration for ingredient: NaOH; Added default concentration for ingredient:
+    N2'

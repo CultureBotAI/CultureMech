@@ -11,7 +11,118 @@ media_term:
     label: ZAVARZINELLA FORMOSA medium
 notes: 'Source: KOMODO ModelSEED | ID: 1196 | DSMZ Medium: 1196 (mediadive.medium:1196)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0392'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.0248'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +130,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1196'
+- timestamp: '2026-02-03T11:19:16.387942'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1196

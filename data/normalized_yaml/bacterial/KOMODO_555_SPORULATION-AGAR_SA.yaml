@@ -11,7 +11,40 @@ media_term:
     label: SPORULATION-AGAR (SA)
 notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +52,11 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 555'
+- timestamp: '2026-02-03T11:19:02.788020'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 555
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:39.432114'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4'

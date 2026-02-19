@@ -1,0 +1,134 @@
+name: Modified Brock's Basal Salts-Yeast Extract Medium
+original_name: Modified Brock's Basal Salts-Yeast Extract Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2MoO4・2H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: CuCl2・2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: FeCl3・6H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CoSO4・7H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: VOSO4・xH2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: Na2B4O7・10H2O
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M544
+  term:
+    id: TOGO:M544
+    label: Modified Brock's Basal Salts-Yeast Extract Medium
+notes: 'Source: https://togomedium.org/medium/M544
+
+  Original source: JCM - JCM_M542
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=542'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.267027Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M544'
+- timestamp: '2026-01-28T19:48:31.381865Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:21.505292+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M544_Modified_Brock_s_Basal_Salts-Yeast_Extract_Medium, TOGO_M590_Modified_Brock_s_Basal_Salts-Yeast_Extract_Medeium_B'
+synonyms:
+- name: Modified Brock's Basal Salts-Yeast Extract Medeium (B)
+  source: TOGO
+  source_id: TOGO:M590
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M544_Modified_Brock_s_Basal_Salts-Yeast_Extract_Medium
+- TOGO_M590_Modified_Brock_s_Basal_Salts-Yeast_Extract_Medeium_B
+merge_fingerprint: df7163e6316ee17880664b1a869333cc5e90da3928eaeb991e5f8513094a1c71

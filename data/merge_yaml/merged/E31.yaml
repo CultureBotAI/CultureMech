@@ -1,0 +1,121 @@
+name: E31
+original_name: E31
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C31
+  term:
+    id: mediadive.medium:C31
+    label: E31
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_E31.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '50'
+    unit: MICROG_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.1'
+    unit: MICROG_PER_L
+- preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "This medium is made up in 2 parts which are autoclaved separately\
+    \ at 15 psi and \r\nmixed aseptically (1:1), when cool. This avoids precipitation."
+- step_number: 2
+  action: MIX
+  description: "Alternatively,  use  17.5g  of  “Ultramarine  Synthetica” sea  salts\
+    \ in\r\n500ml of distilled water."
+- step_number: 3
+  action: AUTOCLAVE
+  description: Distilled water to 500 ml.  Autoclave
+- step_number: 4
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 5
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 6
+  action: AUTOCLAVE
+  description: "Soil is  prepared  as  above.  Air­-dried  soil and  twice  its  volume\
+    \  of  supernatant\r\ndistilled water are autoclaved together at 15 psi for 2\
+    \ hours and left to cool.  The \r\nsupernatant is then decanted and filtered through\
+    \ Whatman No 1 filter paper, then\r\ndistributed to containers in volumes suitable\
+    \ for making up batches of media. The \r\naliquots and their containers are autoclaved\
+    \ for an appropriate length of time (e.g.\r\n1 litre or less for 15 minutes) and\
+    \ are then kept in a cool place (e.g. a refrigerator) \r\nuntil required."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.570830Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C31'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:16.996609'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'
+- timestamp: '2026-02-03T22:25:26.372449+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C28_E26_Biotin, CCAP_C31_E31'
+synonyms:
+- name: E26 + Biotin
+  source: MediaDive
+  source_id: mediadive.medium:C28
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C28_E26_Biotin
+- CCAP_C31_E31
+merge_fingerprint: 030864aa3f00021e495e1d2c92e2cd52eea8ec618c4bbad48dc2e9da37aef939

@@ -1,0 +1,47 @@
+name: MODIFIED MH MEDIUM
+original_name: MODIFIED MH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: JCM Medium J609
+  term:
+    id: mediadive.medium:J609
+    label: MODIFIED MH MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=609'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: X10 Jamarin S
+  concentration:
+    value: '210'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 with 1 N KOH. Jamarin S (Jamarin Laboratory) is a
+    synthetic seawater. The medium contains 7.5% (w/v) of solid sea salts.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.081564Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J609'
+merge_fingerprint: 3f720cfc4e6fde63a9b99596a8dd68400b3057e4cddda31dcd6611a2e5ed1c77
+merged_from:
+- JCM_J609_MODIFIED_MH_MEDIUM

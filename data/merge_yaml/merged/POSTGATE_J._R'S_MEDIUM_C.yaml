@@ -1,0 +1,111 @@
+name: Postgate J. R'S Medium C
+original_name: Postgate J. R'S Medium C
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Na2SO4
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Sodium citrate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+- preferred_term: 6.0% Sodium lactate solution (filter--sterilized)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M670
+  term:
+    id: TOGO:M670
+    label: Postgate J. R'S Medium C
+notes: 'Source: https://togomedium.org/medium/M670
+
+  Original source: JCM - JCM_M654
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=654'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.503809Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M670'
+- timestamp: '2026-01-28T19:48:26.738680Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.984274'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 9c3dbffd157f391f9c3f6b397655113f2dec92c54857cbdb9ca0bb607e115ba0
+merged_from:
+- TOGO_M670_Postgate_J._R_S_Medium_C

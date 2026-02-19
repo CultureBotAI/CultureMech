@@ -1,0 +1,292 @@
+name: PIRELLULA MEDIUM (M30a)
+original_name: PIRELLULA MEDIUM (M30a)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1444
+  term:
+    id: mediadive.medium:1444
+    label: PIRELLULA MEDIUM (M30a)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1444.pdf'
+ingredients:
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18.9474'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '29.7'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.335'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.00925'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.099'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23.47'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3.92'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '10.64'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.192'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.664'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.096'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Riboflavine
+  term:
+    id: CHEBI:17015
+    label: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0392'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.0248'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5, autoclave at 121°C for 20 min.
+- step_number: 2
+  action: MIX
+  description: For agar plates increase the pH of the Tris/HCl buffer to 8.5.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.5, filter-sterilize, and add to solution 1.
+- step_number: 4
+  action: DISSOLVE
+  description: Dissolve the nitrilotriacetic acid.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with KOH (~7.3 g).
+- step_number: 6
+  action: DISSOLVE
+  description: Dissolve other salts separately and combine.
+- step_number: 7
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 with NaOH or H2SO4.
+- step_number: 8
+  action: HEAT
+  description: Store in the dark and cold (5°C).
+- step_number: 9
+  action: DISSOLVE
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.451198Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1444'
+- timestamp: '2026-01-28T19:48:18.854787Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: eecdea4122cda7a8f19ef61c7b45c2a3e53a96755c7eccfc485ea28d1601de9d
+merged_from:
+- DSMZ_1444_PIRELLULA_MEDIUM_M30a

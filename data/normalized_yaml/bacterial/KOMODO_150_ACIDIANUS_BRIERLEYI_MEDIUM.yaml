@@ -1,7 +1,7 @@
 name: ACIDIANUS BRIERLEYI MEDIUM
 original_name: ACIDIANUS BRIERLEYI MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 1.5-2.5
 notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 150 | DSMZ Medium: 150 (mediadive.medium:150)
@@ -11,7 +11,98 @@ media_term:
   term:
     id: komodo.medium:150
     label: ACIDIANUS BRIERLEYI MEDIUM
-ingredients: []
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2.9703'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.0990099'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.019802'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '4.9505'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +110,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 150'
+- timestamp: '2026-02-03T11:18:56.957817'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 150
+ph_value: 2.5

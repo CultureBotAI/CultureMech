@@ -1,0 +1,110 @@
+name: 225M1 Medium
+original_name: 225M1 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '300'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+- preferred_term: Soluble starch
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Bacto agar(BD-Difco)
+  concentration:
+    value: '23'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M948
+  term:
+    id: TOGO:M948
+    label: 225M1 Medium
+notes: 'Source: https://togomedium.org/medium/M948
+
+  Original source: JCM - JCM_M905-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=905'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.015825Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M948'
+- timestamp: '2026-01-28T19:48:13.818350Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.405847'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+merge_fingerprint: bbc8e1b4fcc6a0384d93127235dc1310d00216dafb12df4543a87b6386a1515f
+merged_from:
+- TOGO_M948_225M1_Medium

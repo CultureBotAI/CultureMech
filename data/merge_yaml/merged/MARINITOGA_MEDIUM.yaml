@@ -1,0 +1,96 @@
+name: Marinitoga Medium
+original_name: Marinitoga Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: PIPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1.0 M Glucose solution
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: 5% Na2S・9H2O solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+media_term:
+  preferred_term: TOGO Medium M1112
+  term:
+    id: TOGO:M1112
+    label: Marinitoga Medium
+notes: 'Source: https://togomedium.org/medium/M1112
+
+  Original source: JCM - JCM_M1047
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1047'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.942333Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1112'
+- timestamp: '2026-01-28T19:48:10.976162Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.983767'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: cb9f3b3cacc75723e346cfaa58fec170564d542dcbe87080c215f0bafb57536f
+merged_from:
+- TOGO_M1112_Marinitoga_Medium

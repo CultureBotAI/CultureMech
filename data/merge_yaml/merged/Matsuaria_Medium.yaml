@@ -1,0 +1,84 @@
+name: Matsuaria Medium
+original_name: Matsuaria Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Chitosan
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:16261
+    label: Chitosan
+- preferred_term: Peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1751
+  term:
+    id: TOGO:M1751
+    label: Matsuaria Medium
+notes: 'Source: https://togomedium.org/medium/M1751
+
+  Original source: NBRC - NBRC_M962
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=962'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.274799Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1751'
+- timestamp: '2026-01-28T19:48:12.923522Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 088e6d9c81fd6b494e44eed2a1f7aa86addc838394d4669043abe573fba9edd2
+merged_from:
+- TOGO_M1751_Matsuaria_Medium

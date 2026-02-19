@@ -11,7 +11,121 @@ media_term:
   term:
     id: komodo.medium:950
     label: ONR7a MEDIUM
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '45.58'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '7.96'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.44'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.166'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.062'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.054'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0052'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.178'
+    unit: G_PER_L
+- preferred_term: TAPSO
+  term:
+    id: CHEBI:84015
+    label: TAPSO
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: ' (for solid medium, alternative)'
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: ' (for solid medium, alternative)'
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '24.8444'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.24444'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.0533333'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +133,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 950'
+- timestamp: '2026-02-03T11:19:08.443405'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 950

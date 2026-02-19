@@ -91,9 +91,15 @@ ingredients:
     unit: G_PER_L
 - preferred_term: yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: sulfuric acid
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -241,3 +247,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.192486'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: yeast extract; Added default
+    concentration for ingredient: sulfuric acid'

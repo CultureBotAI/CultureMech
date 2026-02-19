@@ -1,0 +1,96 @@
+name: FUNDIBACTER JADENSIS MEDIUM
+original_name: FUNDIBACTER JADENSIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 821
+  term:
+    id: mediadive.medium:821
+    label: FUNDIBACTER JADENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium821.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Hexadecane
+  term:
+    id: CHEBI:45296
+    label: Hexadecane
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '99.4'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2.56'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '18.12'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '23.76'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize the medium without the 4 times concentrated sea water. Cool
+    the artificial sea water and the medium to 60°C - 70°C after autoclaving and mix.
+    Hexadecane may be replaced by 1 g/l sodium acetate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.368808Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 821'
+- timestamp: '2026-02-03T22:25:49.325305+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_821_FUNDIBACTER_JADENSIS_MEDIUM, KOMODO_821-replace-Hexadecane-with-sodium
+    acetate_FUNDIBACTER_JADENSIS_medium_replace_Hexadecane_with_sodium_acetate, KOMODO_821_FUNDIBACTER_JADENSIS_medium'
+synonyms:
+- name: FUNDIBACTER JADENSIS medium_replace_Hexadecane_with_sodium acetate
+  source: KOMODO
+  source_id: komodo.medium:821_replace_Hexadecane_with_sodium acetate
+  original_category: imported
+- name: FUNDIBACTER JADENSIS medium
+  source: KOMODO
+  source_id: komodo.medium:821
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_821_FUNDIBACTER_JADENSIS_MEDIUM
+- KOMODO_821-replace-Hexadecane-with-sodium acetate_FUNDIBACTER_JADENSIS_medium_replace_Hexadecane_with_sodium_acetate
+- KOMODO_821_FUNDIBACTER_JADENSIS_medium
+merge_fingerprint: 5f379bc8ac3989514c1194ea2ce2e611a46471e5434cbf2af1f9154c9fe67df0

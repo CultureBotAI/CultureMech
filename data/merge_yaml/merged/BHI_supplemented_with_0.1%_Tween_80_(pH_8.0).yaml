@@ -1,0 +1,38 @@
+name: BHI supplemented with 0.1% Tween 80 (pH 8.0)
+original_name: BHI supplemented with 0.1% Tween 80 (pH 8.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tween 80 (pH 8.0)
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: BHI (Becton, Dickinson and Company, Baltimore, MD)
+  notes: 'Properties: Undefined component, Complex component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2486
+  term:
+    id: TOGO:M2486
+    label: BHI supplemented with 0.1% Tween 80 (pH 8.0)
+notes: 'Source: https://togomedium.org/medium/M2486'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.577509Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2486'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.982550'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: BHI (Becton, Dickinson and Company,
+    Baltimore, MD)'
+merge_fingerprint: 10716401995c43537b1bf8c72faf2791ebe3fb941f2fd1788d198e9038ad1b54
+merged_from:
+- TOGO_M2486_BHI_supplemented_with_0.1_Tween_80_pH_8.0

@@ -62,13 +62,26 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 
 **Ontology Grounding:**
 - Chemicals: CHEBI (Chemical Entities of Biological Interest)
+- Biological materials: FOODON (Food Ontology), UBERON (Anatomy), ENVO (Environment)
 - Organisms: NCBITaxon (NCBI Taxonomy)
 - Media databases: DSMZ, TOGO, ATCC prefixes
+
+**Advanced Normalization & SSSOM Enrichment** (2026-02):
+- ✨ Integrated MicroMediaParam's production-grade 16-step chemical normalization pipeline
+- 📚 100+ curated biological products (yeast extract, peptone, serum, DNA, agar, etc.)
+- 🧪 100+ chemical formula mappings (Fe2(SO4)3 → iron(III) sulfate)
+- 🔬 15+ buffer abbreviations (HEPES, MES, Tris)
+- 💨 11 common laboratory gases (CO2, N2, O2, H2, CH4, etc.)
+- 🔤 Unicode dot normalization (5 variants: ·, ・, •, ∙, ⋅)
+- 📊 **Coverage achieved**: 45.6% (2,302 / 5,048 ingredients) - **+935 new mappings** from baseline
+- 📈 **68.4% increase** in coverage (27.1% → 45.6%)
+- See [PROJECT_STATUS_SUMMARY.md](PROJECT_STATUS_SUMMARY.md) and [GAS_MAPPING_SUMMARY.md](GAS_MAPPING_SUMMARY.md) for details
 
 ## ✨ Features
 
 ✅ **10,595 recipes** - Production-ready dataset from 10 authoritative sources
-✅ **Three-tier architecture** - Clean separation: raw → raw_yaml → normalized_yaml
+✅ **Four-tier architecture** - Clean separation: raw → raw_yaml → normalized_yaml → merge_yaml
+✅ **Recipe deduplication** - Merge recipes with same ingredient sets (~344 unique base formulations)
 ✅ **LinkML schema validation** - Comprehensive data quality enforcement
 ✅ **Ontology grounding** - CHEBI for chemicals, NCBITaxon for organisms
 ✅ **Full provenance tracking** - Complete source attribution and curation history

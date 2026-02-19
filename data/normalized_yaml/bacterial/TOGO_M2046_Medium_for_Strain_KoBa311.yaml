@@ -108,8 +108,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '990'
@@ -228,6 +234,9 @@ ingredients:
     label: sodium hydroxide
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -247,6 +256,9 @@ ingredients:
     label: sodium benzoate
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '30'
@@ -267,8 +279,14 @@ ingredients:
     label: sodium hydrogencarbonate
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -361,6 +379,9 @@ ingredients:
     label: lipoic acid
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -381,6 +402,9 @@ ingredients:
     label: sodium sulfide nonahydrate
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2046
   term:
@@ -402,3 +426,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.756907'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Nitrogen gas; Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: N2'

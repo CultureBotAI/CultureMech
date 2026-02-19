@@ -11,7 +11,86 @@ media_term:
     label: SPIROCHAETA COCCOIDES medium
 notes: 'Source: KOMODO ModelSEED | ID: 1204 | DSMZ Medium: 1204 (mediadive.medium:1204)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose monohydrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: DL-Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: DL-Dithiothreitol
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +98,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1204'
+- timestamp: '2026-02-03T11:18:59.006683'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1204

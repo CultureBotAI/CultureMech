@@ -11,7 +11,124 @@ media_term:
     label: THIOBACILLUS HALOPHILUS MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 518 | DSMZ Medium: 518 (mediadive.medium:518)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '7.9'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '7.34'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '11'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +136,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 518'
+- timestamp: '2026-02-03T11:19:09.109797'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 518

@@ -1,0 +1,122 @@
+name: DIFCO RAKA-RAY NO.3 MEDIUM
+original_name: DIFCO RAKA-RAY NO.3 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.4
+media_term:
+  preferred_term: DSMZ Medium 1047
+  term:
+    id: mediadive.medium:1047
+    label: DIFCO RAKA-RAY NO.3 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1047.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Liver Concentrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Betaine Hydrochloride
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Diammonium Citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Potassium Aspartate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.98'
+    unit: G_PER_L
+- preferred_term: Manganese Sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+- preferred_term: Dipotassium Phosphate
+  term:
+    id: CHEBI:131527
+    label: Dipotassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Potassium Glutamate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.199753Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1047'
+- timestamp: '2026-02-03T22:25:27.514285+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1047_DIFCO_RAKA-RAY_NO.3_MEDIUM, KOMODO_1047_DIFCO_RAKA-RAY_NO.3_medium'
+synonyms:
+- name: DIFCO RAKA-RAY NO.3 medium
+  source: KOMODO
+  source_id: komodo.medium:1047
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1047_DIFCO_RAKA-RAY_NO.3_MEDIUM
+- KOMODO_1047_DIFCO_RAKA-RAY_NO.3_medium
+merge_fingerprint: b248b8de764fd6b3ffe6086a1a89e799b7bd0965654f7a59091026d1ef227706

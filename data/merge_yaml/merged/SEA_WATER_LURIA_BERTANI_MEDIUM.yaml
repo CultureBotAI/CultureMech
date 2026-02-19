@@ -1,0 +1,46 @@
+name: SEA WATER LURIA BERTANI MEDIUM
+original_name: SEA WATER LURIA BERTANI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 1563
+  term:
+    id: mediadive.medium:1563
+    label: SEA WATER LURIA BERTANI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1563.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.845148Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1563'
+merge_fingerprint: 5a60ecab4e83dcd1c648b76c4d3900543c2fc1b2bf61f491cbc62d1b84d29c98
+merged_from:
+- DSMZ_1563_SEA_WATER_LURIA_BERTANI_MEDIUM

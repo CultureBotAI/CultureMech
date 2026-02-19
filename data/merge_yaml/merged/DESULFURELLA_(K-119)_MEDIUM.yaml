@@ -1,0 +1,303 @@
+name: DESULFURELLA (K-119) MEDIUM
+original_name: DESULFURELLA (K-119) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 480c
+  term:
+    id: mediadive.medium:480c
+    label: DESULFURELLA (K-119) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium480c.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.329341'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.329341'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.329341'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.329341'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.329341'
+    unit: G_PER_L
+- preferred_term: MOPS buffer
+  concentration:
+    value: '3.89222'
+    unit: G_PER_L
+  term:
+    id: CHEBI:44115
+    label: ''
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0998004'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000499002'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '9.98004'
+    unit: G_PER_L
+- preferred_term: Na-DL-lactate
+  term:
+    id: CHEBI:75228
+    label: Na-DL-lactate
+  concentration:
+    value: '2.49501'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.998004'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.499002'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients (except sulfur, lactate, carbonate, vitamins and
+    sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Adjust pH to 5.9 and sterilize medium by heating for 2- 3 hours
+    in a boiling water bath on each of 3 successive days. Add lactate, vitamins (sterilized
+    by filtration) and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium to 6.8
+    - 7.0, if necessary.
+- step_number: 2
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.317083Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 480c'
+- timestamp: '2026-01-28T19:48:30.835863Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:43.685649+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_480c_DESULFURELLA_K-119_MEDIUM, KOMODO_480-1_For_DSM_11321,
+    KOMODO_480_DESULFURELLA_medium, KOMODO_480a_DESULFURELLA_MULTIPOTENS_medium, KOMODO_480b_TTD-MEDIUM,
+    KOMODO_480c-1_DSM_10409, KOMODO_480c-2_DSM_10410, KOMODO_480c_DESULFURELLA_II_medium,
+    KOMODO_480d_THERMOPROTEUS_UZONIENSIS_medium'
+synonyms:
+- name: For DSM 11321
+  source: KOMODO
+  source_id: komodo.medium:480.1
+  original_category: imported
+- name: DESULFURELLA medium
+  source: KOMODO
+  source_id: komodo.medium:480
+  original_category: imported
+- name: DESULFURELLA MULTIPOTENS medium
+  source: KOMODO
+  source_id: komodo.medium:480a
+  original_category: imported
+- name: TTD-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:480b
+  original_category: imported
+- name: DSM 10409
+  source: KOMODO
+  source_id: komodo.medium:480c.1
+  original_category: imported
+- name: DSM 10410
+  source: KOMODO
+  source_id: komodo.medium:480c.2
+  original_category: imported
+- name: DESULFURELLA II medium
+  source: KOMODO
+  source_id: komodo.medium:480c
+  original_category: imported
+- name: THERMOPROTEUS UZONIENSIS medium
+  source: KOMODO
+  source_id: komodo.medium:480d
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_480c_DESULFURELLA_K-119_MEDIUM
+- KOMODO_480-1_For_DSM_11321
+- KOMODO_480_DESULFURELLA_medium
+- KOMODO_480a_DESULFURELLA_MULTIPOTENS_medium
+- KOMODO_480b_TTD-MEDIUM
+- KOMODO_480c-1_DSM_10409
+- KOMODO_480c-2_DSM_10410
+- KOMODO_480c_DESULFURELLA_II_medium
+- KOMODO_480d_THERMOPROTEUS_UZONIENSIS_medium
+merge_fingerprint: 4606025162cde01969057a5be6cdde7c314bbe694257930ef0963cd6beb159f3

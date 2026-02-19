@@ -1,0 +1,118 @@
+name: LYSOBACTER DESERTI MEDIUM
+original_name: LYSOBACTER DESERTI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.1
+media_term:
+  preferred_term: DSMZ Medium 1060
+  term:
+    id: mediadive.medium:1060
+    label: LYSOBACTER DESERTI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1060.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '14.2857'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '7.14286'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '7.14286'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.42857'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.285714'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '21.4286'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '66.6667'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave solutions A and B separately and combine after cooling. Adjust
+    pH to 8.1.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.267352Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1060'
+- timestamp: '2026-02-03T22:25:27.996840+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1060_LYSOBACTER_DESERTI_MEDIUM, DSMZ_785_BOGORIELLA_MEDIUM,
+    DSMZ_971_HALOMONAS_MAGADIENSIS_MEDIUM, KOMODO_785-18337_MEDIUM_785_MODIFIED_FOR_DSM_18337,
+    KOMODO_785_BOGORIELLA_medium, KOMODO_971-18087_MEDIUM_971_MODIFIED_FOR_DSM_18087,
+    KOMODO_971_HALOMONAS_MAGADIENSIS_medium'
+synonyms:
+- name: BOGORIELLA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:785
+  original_category: imported
+- name: HALOMONAS MAGADIENSIS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:971
+  original_category: imported
+- name: MEDIUM 785 MODIFIED FOR DSM 18337
+  source: KOMODO
+  source_id: komodo.medium:785_18337
+  original_category: imported
+- name: BOGORIELLA medium
+  source: KOMODO
+  source_id: komodo.medium:785
+  original_category: imported
+- name: MEDIUM 971 MODIFIED FOR DSM 18087
+  source: KOMODO
+  source_id: komodo.medium:971_18087
+  original_category: imported
+- name: HALOMONAS MAGADIENSIS medium
+  source: KOMODO
+  source_id: komodo.medium:971
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1060_LYSOBACTER_DESERTI_MEDIUM
+- DSMZ_785_BOGORIELLA_MEDIUM
+- DSMZ_971_HALOMONAS_MAGADIENSIS_MEDIUM
+- KOMODO_785-18337_MEDIUM_785_MODIFIED_FOR_DSM_18337
+- KOMODO_785_BOGORIELLA_medium
+- KOMODO_971-18087_MEDIUM_971_MODIFIED_FOR_DSM_18087
+- KOMODO_971_HALOMONAS_MAGADIENSIS_medium
+merge_fingerprint: 66c8fe1194a8ae1eadd5dc9ff6d08be4990b6061b8febc6020433bbd3810c5cf

@@ -1,0 +1,253 @@
+name: ALTERNATIVE RUMEN BACTERIA MEDIUM
+original_name: ALTERNATIVE RUMEN BACTERIA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.6-6.8
+media_term:
+  preferred_term: DSMZ Medium 1455
+  term:
+    id: mediadive.medium:1455
+    label: ALTERNATIVE RUMEN BACTERIA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1455.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.228628'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.228628'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.447316'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.447316'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0596421'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0894632'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '5.96421'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.97018'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000497018'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '6.36183'
+    unit: G_PER_L
+- preferred_term: Disodium succinate
+  term:
+    id: CHEBI:63675
+    label: Disodium succinate
+  concentration:
+    value: '4.97018'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '573.182'
+    unit: G_PER_L
+- preferred_term: Propionic acid
+  term:
+    id: CHEBI:30768
+    label: Propionic acid
+  concentration:
+    value: '192.145'
+    unit: G_PER_L
+- preferred_term: Butyric acid
+  term:
+    id: CHEBI:30772
+    label: Butyric acid
+  concentration:
+    value: '129'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '30.2827'
+    unit: G_PER_L
+- preferred_term: iso-Butyric acid
+  term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+  concentration:
+    value: '30.6375'
+    unit: G_PER_L
+- preferred_term: DL-2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-2-Methylbutyric acid
+  concentration:
+    value: '32.25'
+    unit: G_PER_L
+- preferred_term: iso-Valeric acid
+  term:
+    id: CHEBI:503742
+    label: iso-Valeric acid
+  concentration:
+    value: '30.0247'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine
+    and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
+    Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH
+    between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The
+    vitamin solution should be sterilized by filtration. Prior to use adjust pH of
+    complete medium to 6.6 - 6.8, if necessary.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.482164Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1455'
+merge_fingerprint: 0130577fd05ed77f3b0e066689df72ec0914de8a0532e7c8e0e570ff1e4d8483
+merged_from:
+- DSMZ_1455_ALTERNATIVE_RUMEN_BACTERIA_MEDIUM

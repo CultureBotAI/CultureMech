@@ -11,7 +11,25 @@ media_term:
     label: GLUCONACETOBACTER RHAETICUS medium
 notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +37,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1044'
+- timestamp: '2026-02-03T11:19:00.385275'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1044

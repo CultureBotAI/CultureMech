@@ -1,0 +1,33 @@
+name: MARINE BROTH 2216 WITH CELLOBIOSE
+original_name: MARINE BROTH 2216 WITH CELLOBIOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1127
+  term:
+    id: mediadive.medium:J1127
+    label: MARINE BROTH 2216 WITH CELLOBIOSE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1127'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.733701Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1127'
+merge_fingerprint: da510b4cc772e2797a44571091dcd46248b4eaa61da396ade0f4f74a9dff6aa1
+merged_from:
+- JCM_J1127_MARINE_BROTH_2216_WITH_CELLOBIOSE

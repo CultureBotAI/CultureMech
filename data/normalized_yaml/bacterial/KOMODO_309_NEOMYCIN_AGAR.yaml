@@ -11,7 +11,30 @@ media_term:
     label: NEOMYCIN AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 309 | DSMZ Medium: 309 (mediadive.medium:309)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '4'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +42,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 309'
+- timestamp: '2026-02-03T11:19:15.393466'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 309

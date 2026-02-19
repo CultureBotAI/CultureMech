@@ -1,0 +1,78 @@
+name: VY/2 Agar
+original_name: VY/2 Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Baker's yeast
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Bacto Agar (Difco)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1589
+  term:
+    id: TOGO:M1589
+    label: VY/2 Agar
+notes: 'Source: https://togomedium.org/medium/M1589
+
+  Original source: NBRC - NBRC_M397
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=397'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.903142Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1589'
+- timestamp: '2026-01-28T19:48:22.722014Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.312027'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH'
+merge_fingerprint: dd400a9e0790b34a2614f498a26fa5dfbc8331295ec28052f62ec7bb42662c59
+merged_from:
+- TOGO_M1589_VY_2_Agar

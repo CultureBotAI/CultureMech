@@ -10,7 +10,113 @@ media_term:
     label: MEDIUM 878 MODIFIED FOR DSM 9941
 notes: 'Source: KOMODO ModelSEED | ID: 878_9941 | DSMZ Medium: 878 (mediadive.medium:878)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '28'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.00122472'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '5.44'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '43'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '2.28'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.045'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +124,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 878_9941'
+- timestamp: '2026-02-03T11:19:03.852048'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 878
+ph_value: 7.2

@@ -1,0 +1,68 @@
+name: PEREDIBACTER (DN) MEDIUM
+original_name: PEREDIBACTER (DN) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1012
+  term:
+    id: mediadive.medium:1012
+    label: PEREDIBACTER (DN) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1012.pdf'
+ingredients:
+- preferred_term: Nutrient broth
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients except calcium and magnesium chloride and adjust
+    pH of the medium to 7.2 with NaOH. After autoclaving add calcium and magnesium
+    from sterile stock solutions.
+- step_number: 2
+  action: MIX
+  description: Before inoculation prepare a suspension of prey cells in 30-40 ml medium
+    using a 250 ml flask. Usually the resuspension of two overnight cultures of the
+    prey strain on agar slants of DSMZ medium 54 will yield a final concentration
+    of 10<sup>8</sup> to 10<sup>9</sup> cells per ml culture broth.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.104924Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1012'
+- timestamp: '2026-01-28T19:48:14.981849Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9a5364d49993bcc9be60a6f0011ebe9c95c2e05c776057cc9ef19de2b2891f4c
+merged_from:
+- DSMZ_1012_PEREDIBACTER_DN_MEDIUM

@@ -1,0 +1,71 @@
+name: Luria-Bertani (LB) medium
+original_name: Luria-Bertani (LB) medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M3236
+  term:
+    id: TOGO:M3236
+    label: Luria-Bertani (LB) medium
+notes: 'Source: https://togomedium.org/medium/M3236'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.627737Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3236'
+- timestamp: '2026-01-28T19:48:06.815876Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:35.335921+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1620_POLYMORHOBACTER_MEDIUM, TOGO_M2897_LB_medium, TOGO_M2959_Luria_Marine_LM_medium,
+    TOGO_M3236_Luria-Bertani_LB_medium'
+synonyms:
+- name: POLYMORHOBACTER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1620
+  original_category: imported
+- name: LB medium
+  source: TOGO
+  source_id: TOGO:M2897
+  original_category: imported
+- name: Luria Marine (LM) medium
+  source: TOGO
+  source_id: TOGO:M2959
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1620_POLYMORHOBACTER_MEDIUM
+- TOGO_M2897_LB_medium
+- TOGO_M2959_Luria_Marine_LM_medium
+- TOGO_M3236_Luria-Bertani_LB_medium
+merge_fingerprint: 33735f42ed1dda12bcf89b7f55ee81e6edc4cb41d63f8c337552f41bd59e9aaa

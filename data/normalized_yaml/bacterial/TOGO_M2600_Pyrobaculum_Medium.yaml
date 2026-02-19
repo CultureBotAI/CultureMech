@@ -78,13 +78,22 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Yeast extract
   notes: 'Role: Nutrient source; Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Na2S2O3 x 5 H2O
   notes: 'Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32150
     label: sodium thiosulfate pentahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Trypticase peptone
   notes: 'Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -154,6 +163,9 @@ ingredients:
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2600
   term:
@@ -173,3 +185,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.822810'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Yeast extract; Added default
+    concentration for ingredient: Na2S2O3 x 5 H2O; Added default concentration for
+    ingredient: Trypticase peptone; Added default concentration for ingredient: 1
+    N HCl'

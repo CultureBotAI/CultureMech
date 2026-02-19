@@ -1,0 +1,151 @@
+name: f/2 Quad
+original_name: f/2 Quad
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C35
+  term:
+    id: mediadive.medium:C35
+    label: f/2 Quad
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_f2.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '41.6'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '31.5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
+    \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes."
+- step_number: 2
+  action: MIX
+  description: "This medium will provide nutrients for long lasting, dense cultures\
+    \ and can be used in liquid\r\nand agar forms."
+- step_number: 3
+  action: MIX
+  description: First make primary stocks of Cyanocobalamin and Biotin.
+- step_number: 4
+  action: POUR_PLATES
+  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1139/m62-029
+curation_history:
+- timestamp: '2026-01-26T17:53:19.587632Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C35'
+- timestamp: '2026-02-03T22:25:26.429712+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C34_f_2, CCAP_C35_f_2_Quad, CCAP_C36_f_10'
+synonyms:
+- name: f/2
+  source: MediaDive
+  source_id: mediadive.medium:C34
+  original_category: imported
+- name: f/10
+  source: MediaDive
+  source_id: mediadive.medium:C36
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C34_f_2
+- CCAP_C35_f_2_Quad
+- CCAP_C36_f_10
+merge_fingerprint: 2e0d4b25fb60194b5a4d934556bec8b91794446d22a6e657caa43417ba33876d

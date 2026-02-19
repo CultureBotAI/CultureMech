@@ -11,7 +11,33 @@ media_term:
     label: STANDARD I medium
 notes: 'Source: KOMODO ModelSEED | ID: 453 | DSMZ Medium: 453 (mediadive.medium:453)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Meat peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +45,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 453'
+- timestamp: '2026-02-03T11:19:13.034553'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 453

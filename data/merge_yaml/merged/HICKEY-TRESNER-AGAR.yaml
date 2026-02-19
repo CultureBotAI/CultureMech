@@ -1,0 +1,67 @@
+name: HICKEY-TRESNER-AGAR
+original_name: HICKEY-TRESNER-AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 658
+  term:
+    id: mediadive.medium:658
+    label: HICKEY-TRESNER-AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium658.pdf'
+ingredients:
+- preferred_term: Dextrin
+  term:
+    id: CHEBI:28675
+    label: Dextrin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Enzymatic digest of casein
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.855014Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 658'
+- timestamp: '2026-02-03T22:25:46.507484+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_658_HICKEY-TRESNER-AGAR, KOMODO_658_HICKEY-TRESNER-AGAR'
+categories:
+- imported
+merged_from:
+- DSMZ_658_HICKEY-TRESNER-AGAR
+- KOMODO_658_HICKEY-TRESNER-AGAR
+merge_fingerprint: 11731afb45fdb88d389ffa35fed882aefeb429bbc000368b3c83b01c0dde8511

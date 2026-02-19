@@ -1,0 +1,75 @@
+name: LB + Ampicillin, Kanamycin medium
+original_name: LB + Ampicillin, Kanamycin medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Kanamycin solution (50 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Solution'
+- preferred_term: Ampicillin solution (50 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Solution, Organic
+    compound'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2050
+  term:
+    id: TOGO:M2050
+    label: LB + Ampicillin, Kanamycin medium
+notes: 'Source: https://togomedium.org/medium/M2050
+
+  Original source: NBRC - NBRC_M1350
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1350'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.962971Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2050'
+- timestamp: '2026-01-28T19:48:40.454257Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9967d5cc9ce9e9d21b2420733d4a821ff46a9eefbb4133a02748c06bbf0e436e
+merged_from:
+- TOGO_M2050_LB_Ampicillin_Kanamycin_medium

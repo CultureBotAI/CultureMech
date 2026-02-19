@@ -11,7 +11,48 @@ media_term:
     label: AG medium
 notes: 'Source: KOMODO ModelSEED | ID: 955 | DSMZ Medium: 955 (mediadive.medium:955)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +60,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 955'
+- timestamp: '2026-02-03T11:19:17.827337'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 955

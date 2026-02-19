@@ -1,0 +1,193 @@
+name: ANAEROCELLA MEDIUM
+original_name: ANAEROCELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 1281
+  term:
+    id: mediadive.medium:1281
+    label: ANAEROCELLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1281.pdf'
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Boil 10 minutes under N2 stream, cool to room temperature. Adjust
+    pH to 7.3 and autoclave for 20 minutes at 121°C. After autoclaving add sterile,
+    anoxic solutions marked with #. For preparation of solid medium add 15.0 g agar
+    per liter.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.986141Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1281'
+- timestamp: '2026-01-28T19:48:36.307116Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2b89dff2302e63d11ad749eaf2117675accf1b26485d3ba967a77f29ef44892b
+merged_from:
+- DSMZ_1281_ANAEROCELLA_MEDIUM

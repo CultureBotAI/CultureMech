@@ -1,0 +1,121 @@
+name: K Minimum
+original_name: K Minimum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: CCAP Medium C43
+  term:
+    id: mediadive.medium:C43
+    label: K Minimum
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_Kmin.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '0.00565'
+    unit: G_PER_L
+- preferred_term: Na2SeO3
+  term:
+    id: CHEBI:48843
+    label: Na2SeO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '43.6'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '31.5'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1M HCl\r\nprior to autoclaving. Autoclave at 15 psi for 15 minutes."
+- step_number: 2
+  action: MIX
+  description: First make primary stocks of Cyanocobalamin and Biotin.
+- step_number: 3
+  action: POUR_PLATES
+  description: Dispense any excess primary stocks into 1 ml aliquots and freeze.
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1111/j.1529-8817.1987.tb04217.x
+curation_history:
+- timestamp: '2026-01-26T17:53:19.617337Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C43'
+merge_fingerprint: 6d559e07ffa236acd8258eb6135a88627921ebc825fce39fb9666792a50af01b
+merged_from:
+- CCAP_C43_K_Minimum

@@ -1,0 +1,77 @@
+name: YM-CATALASE MEDIUM
+original_name: YM-CATALASE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 469
+  term:
+    id: mediadive.medium:469
+    label: YM-CATALASE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium469.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5.7'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NH4H2PO4
+  term:
+    id: CHEBI:62982
+    label: NH4H2PO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water
+    each, and sterilize separately by filtration. Cool down autoclaved main solution
+    to 50°C, and aseptically add catalase and MgSO4 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.275622Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 469'
+- timestamp: '2026-02-03T22:25:43.514172+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_469_YM-CATALASE_MEDIUM, KOMODO_469_YM-CATALASE_medium'
+synonyms:
+- name: YM-CATALASE medium
+  source: KOMODO
+  source_id: komodo.medium:469
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_469_YM-CATALASE_MEDIUM
+- KOMODO_469_YM-CATALASE_medium
+merge_fingerprint: 0c4f5e1226ed3f562e254f51cbd8b8d432621ea81c19ac2a97f8aa045f8fd532

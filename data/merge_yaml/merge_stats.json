@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-02-03T22:25:24.777916+00:00",
+  "input_recipes": 10595,
+  "output_recipes": 5897,
+  "reduction": 4698,
+  "reduction_percentage": 44.3,
+  "cross_category_merges": 0,
+  "largest_group_size": 157,
+  "top_duplicates": [
+    {
+      "name": "MINERAL MEDIUM WITH DIBENZOFURAN",
+      "count": 157,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "MEDIUM 514 MODIFIED FOR DSM 11573",
+      "count": 157,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "Nutrient bromothymol blue agar NBTA",
+      "count": 154,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "TRYPTONE SOYA BROTH (TSB) WITH ADDITIONAL SALTS",
+      "count": 148,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "SP4 MEDIUM",
+      "count": 68,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "ANAEROBACULUM MEDIUM",
+      "count": 59,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL",
+      "count": 59,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "MEDIUM R2A FOR DENITRIFYING BACTERIA",
+      "count": 58,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "TRYPTICASE SOY BROTH AGAR",
+      "count": 54,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "ALKALINE NUTRIENT AGAR",
+      "count": 53,
+      "sources": [
+        "KOMODO",
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    }
+  ]
+}

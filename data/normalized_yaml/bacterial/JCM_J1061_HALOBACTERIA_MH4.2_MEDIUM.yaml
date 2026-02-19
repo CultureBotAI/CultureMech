@@ -82,9 +82,6 @@ ingredients:
     value: '0.00356436'
     unit: G_PER_L
 - preferred_term: Tris-HCl
-  term:
-    id: CHEBI:1185531
-    label: Tris-HCl
   concentration:
     value: '100'
     unit: G_PER_L
@@ -156,3 +153,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:36.448007Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

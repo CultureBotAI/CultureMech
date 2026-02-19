@@ -1,0 +1,61 @@
+name: Horikoshi-I Medium With 5% NaCl
+original_name: Horikoshi-I Medium With 5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Horikoshi-I medium (see Medium [M174])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M404
+  term:
+    id: TOGO:M404
+    label: Horikoshi-I Medium With 5% NaCl
+notes: 'Source: https://togomedium.org/medium/M404
+
+  Original source: JCM - JCM_M406
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=406'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.996325Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M404'
+- timestamp: '2026-01-28T19:48:11.689253Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:04.991513+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1092_Horikoshi-I_Medium_With_3.5_NaCl, TOGO_M404_Horikoshi-I_Medium_With_5_NaCl,
+    TOGO_M407_Horikoshi-I_Medium_With_2_NaCl'
+synonyms:
+- name: Horikoshi-I Medium With 3.5% NaCl
+  source: TOGO
+  source_id: TOGO:M1092
+  original_category: imported
+- name: Horikoshi-I Medium With 2% NaCl
+  source: TOGO
+  source_id: TOGO:M407
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1092_Horikoshi-I_Medium_With_3.5_NaCl
+- TOGO_M404_Horikoshi-I_Medium_With_5_NaCl
+- TOGO_M407_Horikoshi-I_Medium_With_2_NaCl
+merge_fingerprint: 8d54650c0c87737277c5e4e342e5cf69aac8e7878773b4991cd7d2dcc90f60fa

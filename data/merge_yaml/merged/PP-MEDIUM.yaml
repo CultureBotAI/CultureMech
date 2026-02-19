@@ -1,0 +1,68 @@
+name: PP-MEDIUM
+original_name: PP-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 513
+  term:
+    id: mediadive.medium:513
+    label: PP-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium513.pdf'
+ingredients:
+- preferred_term: Polypeptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH of medium should be 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.475587Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 513'
+- timestamp: '2026-02-03T22:25:33.941708+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1466_NBRC702_MEDIUM, DSMZ_513_PP-MEDIUM, JCM_J323_JCM_MEDIUM_No._323,
+    KOMODO_513_PP-MEDIUM'
+synonyms:
+- name: NBRC702 MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1466
+  original_category: imported
+- name: JCM MEDIUM No. 323
+  source: MediaDive
+  source_id: mediadive.medium:J323
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1466_NBRC702_MEDIUM
+- DSMZ_513_PP-MEDIUM
+- JCM_J323_JCM_MEDIUM_No._323
+- KOMODO_513_PP-MEDIUM
+merge_fingerprint: 88df04c26263b01464406dfed709fdab81b5158b8c1784610776b9a20a7237c8

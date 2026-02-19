@@ -1,0 +1,74 @@
+name: Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)
+original_name: Wilkins-Chalgren agar plates (supplemented with 10% human blood and
+  antibiotics)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: vancomycin (Lilly France S.A., Fergesheim, France)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: human blood
+  concentration:
+    value: '10'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source'
+- preferred_term: cefsulodin (Takeda France S.A., Puteaux, France)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: Fungizone (Bristol-Myers Squibb Co.)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: trimethoprim (GlaxoSmithKline)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Oxygen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Wilkins-Chalgren agar plates (Oxoid Ltd., Hampshire, UK)
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2852
+  term:
+    id: TOGO:M2852
+    label: Wilkins-Chalgren agar plates (supplemented with 10% human blood and antibiotics)
+notes: 'Source: https://togomedium.org/medium/M2852'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.357648Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2852'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.692284'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Oxygen gas; Added default concentration for ingredient: Wilkins-Chalgren agar
+    plates (Oxoid Ltd., Hampshire, UK)'
+merge_fingerprint: d248b946f7fc4b8dbdeda050a0f0869a08a446e22655d5192a176bd8345be595
+merged_from:
+- TOGO_M2852_Wilkins-Chalgren_agar_plates_supplemented_with_10_human_blood_and_antibiotics

@@ -1,0 +1,77 @@
+name: GYM+S MEDIUM
+original_name: GYM+S MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 214
+  term:
+    id: mediadive.medium:214
+    label: GYM+S MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium214.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (if required)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium
+    is used.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.535239Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 214'
+- timestamp: '2026-02-03T22:25:37.869731+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_214_GYM_S_MEDIUM, KOMODO_214_GYM_S_medium'
+synonyms:
+- name: GYM+S medium
+  source: KOMODO
+  source_id: komodo.medium:214
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_214_GYM_S_MEDIUM
+- KOMODO_214_GYM_S_medium
+merge_fingerprint: a950fddd54745cf56712da6acfecf2f64d9dbbd85b0079da4d0108322e2818dc

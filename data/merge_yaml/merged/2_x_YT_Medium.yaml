@@ -1,0 +1,70 @@
+name: 2 x YT Medium
+original_name: 2 x YT Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M316
+  term:
+    id: TOGO:M316
+    label: 2 x YT Medium
+notes: 'Source: https://togomedium.org/medium/M316
+
+  Original source: JCM - JCM_M321
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=321'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.841482Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M316'
+- timestamp: '2026-01-28T19:48:23.054850Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.791214'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+merge_fingerprint: fb80c869dd6984cf5b4a00a30fd506de572258c043e1bfe8441f44ed47eba16a
+merged_from:
+- TOGO_M316_2_x_YT_Medium

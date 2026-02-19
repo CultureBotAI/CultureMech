@@ -1,0 +1,130 @@
+name: 4-YACo media
+original_name: 4-YACo media
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast autolysate
+  concentration:
+    value: '4'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+- preferred_term: maltose
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Vitamin B7
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Vitamin B6
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: biotin (Sigma Aldrich, St Louis, MO, USA)
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: pyridoxal-phosphate (Sigma Aldrich)
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: pyridoxal-HCl (Sigma Aldrich)
+  notes: 'Role: Vitamin'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: hydroxocobalamin acetate salt
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: hydroxocobalamin hydrochloride
+  notes: 'Role: Growth factor; Properties: Simple component, Defined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: methylcobalamin
+  notes: 'Role: Growth factor'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: cyanocobalamin (Sigma Aldrich)
+  notes: 'Role: Vitamin'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: tryptophan (Sigma Aldrich)
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2770
+  term:
+    id: TOGO:M2770
+    label: 4-YACo media
+notes: 'Source: https://togomedium.org/medium/M2770'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.273356Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2770'
+- timestamp: '2026-01-28T19:48:37.003151Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.385977'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: maltose; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: Vitamin B7; Added default
+    concentration for ingredient: Vitamin B6; Added default concentration for ingredient:
+    Vitamin B12; Added default concentration for ingredient: Tryptophan; Added default
+    concentration for ingredient: biotin (Sigma Aldrich, St Louis, MO, USA); Added
+    default concentration for ingredient: pyridoxal-phosphate (Sigma Aldrich); Added
+    default concentration for ingredient: pyridoxal-HCl (Sigma Aldrich); Added default
+    concentration for ingredient: hydroxocobalamin acetate salt; Added default concentration
+    for ingredient: hydroxocobalamin hydrochloride; Added default concentration for
+    ingredient: methylcobalamin; Added default concentration for ingredient: cyanocobalamin
+    (Sigma Aldrich); Added default concentration for ingredient: tryptophan (Sigma
+    Aldrich)'
+merge_fingerprint: e9ab950691dbce73b3d726bb8e905fd2c973879c9a01d0ec8865642b4eb797cb
+merged_from:
+- TOGO_M2770_4-YACo_media

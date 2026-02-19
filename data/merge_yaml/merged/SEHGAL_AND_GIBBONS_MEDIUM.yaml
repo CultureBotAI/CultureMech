@@ -1,0 +1,71 @@
+name: SEHGAL AND GIBBONS MEDIUM
+original_name: SEHGAL AND GIBBONS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 1336
+  term:
+    id: mediadive.medium:1336
+    label: SEHGAL AND GIBBONS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1336.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2-7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.131424Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1336'
+- timestamp: '2026-01-28T19:48:16.483313Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 5a7ca819f8e9a357835e646b16958a82802582ff1878ef538cdbc71490899b4f
+merged_from:
+- DSMZ_1336_SEHGAL_AND_GIBBONS_MEDIUM

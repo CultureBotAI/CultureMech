@@ -1,0 +1,52 @@
+name: TGA-MEDIUM
+original_name: TGA-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 681
+  term:
+    id: mediadive.medium:681
+    label: TGA-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium681.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.912539Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 681'
+- timestamp: '2026-02-03T22:25:46.860947+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_681_TGA-MEDIUM, KOMODO_681_TGA-MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_681_TGA-MEDIUM
+- KOMODO_681_TGA-MEDIUM
+merge_fingerprint: 53f32d5481fef50c67b589f3ffff72cc2a5cdb2d24557b07ccaddee91de09b93

@@ -1,0 +1,121 @@
+name: TG 408 MEDIUM
+original_name: TG 408 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.5-8
+media_term:
+  preferred_term: DSMZ Medium 1349
+  term:
+    id: mediadive.medium:1349
+    label: TG 408 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1349.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: After autoclaving add 10 ml of Vitamine Solution 141 to 1 litre of
+    the sterile Main Solution. Final pH 7.5 - 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.163597Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1349'
+- timestamp: '2026-01-28T19:48:26.493677Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 8e7b069b9957b58d255ec5caf91e76c49739fca125b7079b5d3c0cfd7357db7d
+merged_from:
+- DSMZ_1349_TG_408_MEDIUM

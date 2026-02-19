@@ -1,0 +1,114 @@
+name: LACRIMISPORA MEDIUM
+original_name: LACRIMISPORA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 489
+  term:
+    id: mediadive.medium:489
+    label: LACRIMISPORA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium489.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Xylan
+  term:
+    id: CHEBI:37166
+    label: Xylan
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0,
+    bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.348944Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 489'
+- timestamp: '2026-02-03T22:25:43.820944+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_489_LACRIMISPORA_MEDIUM, KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium'
+synonyms:
+- name: CLOSTRIDIUM AEROTOLERANS medium
+  source: KOMODO
+  source_id: komodo.medium:489
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_489_LACRIMISPORA_MEDIUM
+- KOMODO_489_CLOSTRIDIUM_AEROTOLERANS_medium
+merge_fingerprint: 825dc0623d1b49b813d00da4b3788927f214df16768fa1e5a50515846efec1b1

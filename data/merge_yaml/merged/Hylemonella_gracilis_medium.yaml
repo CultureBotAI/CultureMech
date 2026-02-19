@@ -1,0 +1,71 @@
+name: Hylemonella gracilis medium
+original_name: Hylemonella gracilis medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Tween 80
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Tap water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1393
+  term:
+    id: TOGO:M1393
+    label: Hylemonella gracilis medium
+notes: 'Source: https://togomedium.org/medium/M1393
+
+  Original source: JCM - JCM_M1296
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1296'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.480313Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1393'
+- timestamp: '2026-01-28T19:48:35.160487Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 5dd2fa15e733357c8fb0485b54fb5461631a870e6765b933a141fe52cf4ddb1b
+merged_from:
+- TOGO_M1393_Hylemonella_gracilis_medium

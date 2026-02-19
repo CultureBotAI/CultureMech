@@ -11,7 +11,79 @@ media_term:
     label: FRIIS medium
 notes: 'Source: KOMODO ModelSEED | ID: 1078 | DSMZ Medium: 1078 (mediadive.medium:1078)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Bacto brain heart infusion
+  concentration:
+    value: '5.09317'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '5.40373'
+    unit: G_PER_L
+- preferred_term: Porcine serum
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.00133'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +91,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1078'
+- timestamp: '2026-02-03T11:19:11.121373'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1078

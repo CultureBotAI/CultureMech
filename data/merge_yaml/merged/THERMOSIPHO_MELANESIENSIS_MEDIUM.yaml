@@ -1,0 +1,284 @@
+name: THERMOSIPHO MELANESIENSIS MEDIUM
+original_name: THERMOSIPHO MELANESIENSIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 343a
+  term:
+    id: mediadive.medium:343a
+    label: THERMOSIPHO MELANESIENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium343a.pdf'
+ingredients:
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '27.7'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: KI
+  term:
+    id: CHEBI:74559
+    label: KI
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except sulfide and cysteine) and adjust pH to
+    6.5. Boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    to 30% of volume and autoclave. Add sulfide and cysteine from sterile anoxic stock
+    solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
+    necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.864671Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 343a'
+- timestamp: '2026-02-03T22:25:39.817232+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_343a_THERMOSIPHO_MELANESIENSIS_MEDIUM, KOMODO_343-12029_MEDIUM_343_MODIFIED_FOR_DSM_12029,
+    KOMODO_343-5068_MEDIUM_343_MODIFIED_FOR_DSM_5068, KOMODO_343_THERMOTOGA_NEAPOLITANA_medium'
+synonyms:
+- name: MEDIUM 343 MODIFIED FOR DSM 12029
+  source: KOMODO
+  source_id: komodo.medium:343_12029
+  original_category: imported
+- name: MEDIUM 343 MODIFIED FOR DSM 5068
+  source: KOMODO
+  source_id: komodo.medium:343_5068
+  original_category: imported
+- name: THERMOTOGA NEAPOLITANA medium
+  source: KOMODO
+  source_id: komodo.medium:343
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_343a_THERMOSIPHO_MELANESIENSIS_MEDIUM
+- KOMODO_343-12029_MEDIUM_343_MODIFIED_FOR_DSM_12029
+- KOMODO_343-5068_MEDIUM_343_MODIFIED_FOR_DSM_5068
+- KOMODO_343_THERMOTOGA_NEAPOLITANA_medium
+merge_fingerprint: 8c672bfc41411035e4bfc1edd96e655df3c404aca33d9cd9bcf93fdeb8cc5dc7

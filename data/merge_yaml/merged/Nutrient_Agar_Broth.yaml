@@ -1,0 +1,43 @@
+name: Nutrient Agar/Broth
+original_name: Nutrient Agar/Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Nutrient Broth
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Beef Extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2193
+  term:
+    id: TOGO:M2193
+    label: Nutrient Agar/Broth
+notes: 'Source: https://togomedium.org/medium/M2193
+
+  Original URL: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.150220Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2193'
+merge_fingerprint: 12af3a4d8531e3e79f8742509448aff04aa1fb0e4613d070ba4ca6faa95c5509
+merged_from:
+- TOGO_M2193_Nutrient_Agar_Broth

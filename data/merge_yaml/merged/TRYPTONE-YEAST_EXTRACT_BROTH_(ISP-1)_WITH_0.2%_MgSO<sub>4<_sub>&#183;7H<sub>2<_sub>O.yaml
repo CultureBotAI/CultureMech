@@ -1,0 +1,47 @@
+name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
+original_name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J656
+  term:
+    id: mediadive.medium:J656
+    label: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=656'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+- step_number: 2
+  action: MIX
+  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available
+    from Becton Dickinson & Co. as ISP Medium 1. Add MgSO4 x 7H2O to the medium before
+    autoclaving.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.202054Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J656'
+merge_fingerprint: 2ccab3b3603a161c3a8157392572dd0bc6904dc3d038738b7aaf198cf0b27eee
+merged_from:
+- JCM_J656_TRYPTONE-YEAST_EXTRACT_BROTH_ISP-1_WITH_0.2_MgSO_sub_4_sub_183_7H_sub_2_sub_O

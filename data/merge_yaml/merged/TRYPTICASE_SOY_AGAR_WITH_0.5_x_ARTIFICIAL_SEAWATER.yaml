@@ -1,0 +1,35 @@
+name: Trypticase Soy Agar With 0.5 x Artificial Seawater
+original_name: Trypticase Soy Agar With 0.5 x Artificial Seawater
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Trypticase soy agar (BD-BBL)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: 0.5 x Artificial seawater (see Medium [M666])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M667
+  term:
+    id: TOGO:M667
+    label: Trypticase Soy Agar With 0.5 x Artificial Seawater
+notes: 'Source: https://togomedium.org/medium/M667
+
+  Original source: JCM - JCM_M652
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=652'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.500012Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M667'
+merge_fingerprint: 09d042152d65c1d7f26c42c6cc818ec909f06919c70526f06e018256c4bbccc2
+merged_from:
+- TOGO_M667_Trypticase_Soy_Agar_With_0.5_x_Artificial_Seawater

@@ -1,0 +1,54 @@
+name: PYE Rich medium
+original_name: PYE Rich medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast extract
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: MgSO4
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2871
+  term:
+    id: TOGO:M2871
+    label: PYE Rich medium
+notes: 'Source: https://togomedium.org/medium/M2871'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.364139Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2871'
+- timestamp: '2026-01-28T19:48:27.333602Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 889bb3b10a16197afc4eb9ff0b0b71d72bb7d2bfaeccc1f28e654c227c924de9
+merged_from:
+- TOGO_M2871_PYE_Rich_medium

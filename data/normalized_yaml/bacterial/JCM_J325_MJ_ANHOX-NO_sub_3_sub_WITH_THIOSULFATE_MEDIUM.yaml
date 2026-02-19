@@ -19,9 +19,6 @@ ingredients:
     value: '0.04995'
     unit: G_PER_L
 - preferred_term: Na2SiO3
-  term:
-    id: CHEBI:1344098
-    label: Na2SiO3
   concentration:
     value: '0.599401'
     unit: G_PER_L
@@ -197,3 +194,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:24.899557Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

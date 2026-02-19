@@ -1,0 +1,73 @@
+name: YTC MEDIUM
+original_name: YTC MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: DSMZ Medium 1384
+  term:
+    id: mediadive.medium:1384
+    label: YTC MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1384.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 - 7.2
+- step_number: 2
+  action: HEAT
+  description: Sterilize at 121°C for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.269029Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1384'
+- timestamp: '2026-02-03T22:25:29.263604+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1143_TY_MEDIUM, DSMZ_1384_YTC_MEDIUM, KOMODO_1143-23293_MEDIUM_1143_MODIFIED_FOR_DSM_23293,
+    KOMODO_1143_TY_medium, DSMZ_1379_TRYPTONE_YEASTEXTRAKT_MEDIUM'
+synonyms:
+- name: TY MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1143
+  original_category: imported
+- name: MEDIUM 1143 MODIFIED FOR DSM 23293
+  source: KOMODO
+  source_id: komodo.medium:1143_23293
+  original_category: imported
+- name: TY medium
+  source: KOMODO
+  source_id: komodo.medium:1143
+  original_category: imported
+- name: TRYPTONE YEASTEXTRAKT MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1379
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1143_TY_MEDIUM
+- DSMZ_1384_YTC_MEDIUM
+- KOMODO_1143-23293_MEDIUM_1143_MODIFIED_FOR_DSM_23293
+- KOMODO_1143_TY_medium
+- DSMZ_1379_TRYPTONE_YEASTEXTRAKT_MEDIUM
+merge_fingerprint: d65f4314989938311f9bbd1a3329609b5fb0a68cf6cb6f57c6474c5ed6eb45f6

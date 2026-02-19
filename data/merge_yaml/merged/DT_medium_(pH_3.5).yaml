@@ -1,0 +1,112 @@
+name: DT medium (pH 3.5)
+original_name: DT medium (pH 3.5)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: CaCl2 · 2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MgSO4
+  concentration:
+    value: '0.145'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: K2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+- preferred_term: dextrin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:28675
+    label: dextrin
+- preferred_term: NaH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+- preferred_term: EZMix-N-Z-amine A
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: trace mineral stock solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MnCl2 · 4H2O
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CoCl2 · 6H2O
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: CuCl2 · 2H2O
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: ZnCl2
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:49976
+    label: zinc dichloride
+- preferred_term: FeCl3
+  concentration:
+    value: '3'
+    unit: PERCENT_W_V
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
+media_term:
+  preferred_term: TOGO Medium M2816
+  term:
+    id: TOGO:M2816
+    label: DT medium (pH 3.5)
+notes: 'Source: https://togomedium.org/medium/M2816'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.330523Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2816'
+- timestamp: '2026-01-28T19:48:28.908474Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9bb4895d222cd55c4b2adf091415df2af3ab65374d3d6799d86bce64658d0216
+merged_from:
+- TOGO_M2816_DT_medium_pH_3.5

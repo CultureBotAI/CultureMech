@@ -1,0 +1,95 @@
+name: HALOFERAX MEDIUM RS75
+original_name: HALOFERAX MEDIUM RS75
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1481
+  term:
+    id: mediadive.medium:1481
+    label: HALOFERAX MEDIUM RS75
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1481.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na pyruvate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na acetate x 3 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na malate
+  term:
+    id: CHEBI:91261
+    label: Na malate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 6.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.562441Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1481'
+merge_fingerprint: 9eb65cbf9a62b39aaa7342a22add1b9e20e0d2e8ccb0389107a9761c28752996
+merged_from:
+- DSMZ_1481_HALOFERAX_MEDIUM_RS75

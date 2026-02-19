@@ -1,0 +1,108 @@
+name: Man, Rogosa, and Sharpe (MRS) medium
+original_name: Man, Rogosa, and Sharpe (MRS) medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Dipotassium hydrogen phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Sodium acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Triammonium citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Manganese sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2906
+  term:
+    id: TOGO:M2906
+    label: Man, Rogosa, and Sharpe (MRS) medium
+notes: 'Source: https://togomedium.org/medium/M2906'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.397725Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2906'
+- timestamp: '2026-01-28T19:48:40.873137Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 7960da5b70cc58c2ef8c795d3a151f4a0a354d400706579b1035248d1a350054
+merged_from:
+- TOGO_M2906_Man_Rogosa_and_Sharpe_MRS_medium

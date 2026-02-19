@@ -1,0 +1,103 @@
+name: DESULFOVIBRIO MEDIUM (CHOLINE)
+original_name: DESULFOVIBRIO MEDIUM (CHOLINE)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 63c
+  term:
+    id: mediadive.medium:63c
+    label: DESULFOVIBRIO MEDIUM (CHOLINE)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium63c.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.510204'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.102041'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.04082'
+    unit: G_PER_L
+- preferred_term: Choline chloride
+  term:
+    id: CHEBI:133341
+    label: Choline chloride
+  concentration:
+    value: '5.10204'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.02041'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A, bring to the boil, then cool to
+    room temperature while sparging with 100% N2 gas. Add solutions B and C, adjust
+    pH to 7.8 with NaOH, and distribute under 100% N2 gas in anoxic Hungate-type tubes.
+    During distribution continuously swirl the medium to keep the grey precipitate
+    suspended. Autoclave 15 min at 121°C. Check medium pH after autoclaving and adjust
+    to 6.8 - 7.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.077224Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 63c'
+merge_fingerprint: 1ae7d617c6b908e7330b947ad15e9cc234036bd0d4a4c52ec75d07f877afdd7b
+merged_from:
+- DSMZ_63c_DESULFOVIBRIO_MEDIUM_CHOLINE

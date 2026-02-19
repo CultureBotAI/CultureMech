@@ -1,0 +1,152 @@
+name: DIALISTER MEDIUM
+original_name: DIALISTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1107
+  term:
+    id: mediadive.medium:1107
+    label: DIALISTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1107.pdf'
+ingredients:
+- preferred_term: Na-L-lactate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:232798
+    label: ''
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Cystein-HCl x 2 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: DTT
+  term:
+    id: CHEBI:18320
+    label: DTT
+  concentration:
+    value: '0.000771255'
+    unit: G_PER_L
+- preferred_term: Na-formate
+  term:
+    id: CHEBI:62965
+    label: Na-formate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na-fumarate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '19'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'To 10 ml of the dialister medium add aseptically:'
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter-sterilize all solutions and incubate them in oxygen-free atmosphere.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 4
+  action: MIX
+  description: Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.400955Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1107'
+- timestamp: '2026-01-28T19:48:07.743902Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:28.713118+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1107_DIALISTER_MEDIUM, KOMODO_1107_DIALISTER_medium'
+synonyms:
+- name: DIALISTER medium
+  source: KOMODO
+  source_id: komodo.medium:1107
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1107_DIALISTER_MEDIUM
+- KOMODO_1107_DIALISTER_medium
+merge_fingerprint: 23cb308c405c7a56cc2bf1c73e1e774798819609ca68a69634dd61b8084cb885

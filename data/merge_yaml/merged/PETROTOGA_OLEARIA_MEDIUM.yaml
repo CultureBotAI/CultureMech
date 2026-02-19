@@ -1,0 +1,141 @@
+name: PETROTOGA OLEARIA MEDIUM
+original_name: PETROTOGA OLEARIA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 959
+  term:
+    id: mediadive.medium:959
+    label: PETROTOGA OLEARIA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium959.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '3.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+- preferred_term: Na-acetate x 3 H2O
+  concentration:
+    value: '2.72'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except maltose and sulfide, adjust pH to 7.0 -
+    7.2 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock
+    solutions prepared under 100% N2 gas atmosphere. The pH of the complete medium
+    should be 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.896238Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 959'
+- timestamp: '2026-02-03T22:25:52.170854+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_959_PETROTOGA_OLEARIA_MEDIUM, DSMZ_959a_MARINITOGA_LITORALIS_MEDIUM,
+    KOMODO_959-1_For_DSM_21709, KOMODO_959_SL_medium'
+synonyms:
+- name: MARINITOGA LITORALIS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:959a
+  original_category: imported
+- name: For DSM 21709
+  source: KOMODO
+  source_id: komodo.medium:959.1
+  original_category: imported
+- name: SL medium
+  source: KOMODO
+  source_id: komodo.medium:959
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_959_PETROTOGA_OLEARIA_MEDIUM
+- DSMZ_959a_MARINITOGA_LITORALIS_MEDIUM
+- KOMODO_959-1_For_DSM_21709
+- KOMODO_959_SL_medium
+merge_fingerprint: 82299b1232a783eebc1188c4bd6299182e2c40de40d6eb54fd3e668415e91fb9

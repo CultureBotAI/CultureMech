@@ -1,0 +1,54 @@
+name: MRS Medium With 10% Tomato Juice
+original_name: MRS Medium With 10% Tomato Juice
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Tomato juice, filtered
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Undefined component'
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: MRS broth (BD-Difco)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M838
+  term:
+    id: TOGO:M838
+    label: MRS Medium With 10% Tomato Juice
+notes: 'Source: https://togomedium.org/medium/M838
+
+  Original source: JCM - JCM_M803
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=803'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.805520Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M838'
+- timestamp: '2026-01-28T19:48:38.423372Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e44e7aca94712f434336bf46505a4663f626aa7622687f9a7e97b4bbd14fd74f
+merged_from:
+- TOGO_M838_MRS_Medium_With_10_Tomato_Juice

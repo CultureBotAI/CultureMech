@@ -1,0 +1,159 @@
+name: ASN-III
+original_name: ASN-III
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C110
+  term:
+    id: mediadive.medium:C110
+    label: ASN-III
+notes: 'Source: CCAP | Link: https://www.atcc.org/~/media/D3547D63F887423DAFB39841A5B588B9.ashx'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.222'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.039'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.049'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.3. Filter-sterilize and dispense into appropriate vessel.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.833816Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C110'
+merge_fingerprint: 4013129296f79c91a4c7df48e0d6f6f7a76042a0f8a2fce9ad26db3280f042fe
+merged_from:
+- CCAP_C110_ASN-III

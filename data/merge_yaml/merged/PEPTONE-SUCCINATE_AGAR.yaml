@@ -1,0 +1,85 @@
+name: PEPTONE-SUCCINATE AGAR
+original_name: PEPTONE-SUCCINATE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 653
+  term:
+    id: mediadive.medium:653
+    label: PEPTONE-SUCCINATE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium653.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Succinic acid
+  term:
+    id: CHEBI:15741
+    label: Succinic acid
+  concentration:
+    value: '1.68'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.847474Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 653'
+- timestamp: '2026-02-03T22:25:46.480320+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_653_PEPTONE-SUCCINATE_AGAR, KOMODO_653_Peptone-SUCCINATE_AGAR'
+synonyms:
+- name: Peptone-SUCCINATE AGAR
+  source: KOMODO
+  source_id: komodo.medium:653
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_653_PEPTONE-SUCCINATE_AGAR
+- KOMODO_653_Peptone-SUCCINATE_AGAR
+merge_fingerprint: c22c6ad35cc321dc63686a51937f074155d58436b9c974cbbb5df45abe0d0a38

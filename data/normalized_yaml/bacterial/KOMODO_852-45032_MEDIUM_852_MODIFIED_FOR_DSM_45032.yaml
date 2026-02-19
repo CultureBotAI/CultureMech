@@ -11,7 +11,65 @@ media_term:
     label: MEDIUM 852 MODIFIED FOR DSM 45032
 notes: 'Source: KOMODO ModelSEED | ID: 852_45032 | DSMZ Medium: 852 (mediadive.medium:852)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +77,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 852_45032'
+- timestamp: '2026-02-03T11:18:55.762308'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 852

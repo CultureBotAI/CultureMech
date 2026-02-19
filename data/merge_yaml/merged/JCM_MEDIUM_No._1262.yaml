@@ -1,0 +1,87 @@
+name: JCM MEDIUM No. 1262
+original_name: JCM MEDIUM No. 1262
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: JCM Medium J1262
+  term:
+    id: mediadive.medium:J1262
+    label: JCM MEDIUM No. 1262
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1262'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.425'
+    unit: G_PER_L
+- preferred_term: NaNO2
+  term:
+    id: CHEBI:78870
+    label: NaNO2
+  concentration:
+    value: '0.345'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '4.24'
+    unit: G_PER_L
+- preferred_term: Disodium succinate x 6 H2O
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '0.164'
+    unit: G_PER_L
+- preferred_term: Disodium oxalate
+  term:
+    id: CHEBI:132764
+    label: Disodium oxalate
+  concentration:
+    value: '0.268'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.216425Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1262'
+merge_fingerprint: 7153031eaedef6794ca51cf93145e6888ee38498271c0fb618b9bb815a69a921
+merged_from:
+- JCM_J1262_JCM_MEDIUM_No._1262

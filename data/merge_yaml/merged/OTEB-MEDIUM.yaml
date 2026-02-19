@@ -1,0 +1,243 @@
+name: OTEB-MEDIUM
+original_name: OTEB-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: DSMZ Medium 1245
+  term:
+    id: mediadive.medium:1245
+    label: OTEB-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1245.pdf'
+ingredients:
+- preferred_term: Proteose peptone no. 2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Heart Infusion Broth
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Potassium Phosphate
+  term:
+    id: CHEBI:63036
+    label: Potassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (dibasic)'
+- preferred_term: Sodium Chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: Propionic acid
+  term:
+    id: CHEBI:30768
+    label: Propionic acid
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: 2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: 2-Methylbutyric acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: ' (inactivated)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Ribose
+  term:
+    id: CHEBI:33942
+    label: Ribose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Xylose
+  term:
+    id: CHEBI:18222
+    label: Xylose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Pectin
+  term:
+    id: CHEBI:17309
+    label: Pectin
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '0.00075'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)
+- step_number: 2
+  action: MIX
+  description: "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME\
+    \ ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment\
+    \ Broth (OTEB) 10 tubes / pkg"
+- step_number: 3
+  action: MIX
+  description: 'Intended Use: OTEB is an enriched medium for the isolation, cultivation
+    and maintenance of Treponemes found as part of the oral flora.'
+- step_number: 4
+  action: POUR_PLATES
+  description: OTEB is a complex peptone-yeast extract medium containing volatile
+    fatty acids and serum for a source of long chain fatty acids. Volatile fatty acids
+    and serum are necessary nutrients for recovery of Treponemes from the oral flora.
+    Inoculation of the medium can be done using a gassing cannula or inside an anaerobic
+    chamber. This medium is prepared, stored and dispensed under oxygen-free conditions
+    to prevent the formation of oxidized products prior to use.
+- step_number: 5
+  action: HEAT
+  description: Final pH 7.0 +/- 0.2 at 25 degrees C.
+- step_number: 6
+  action: MIX
+  description: Final volume 7.0 ml +/- 0.7.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.839737Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1245'
+- timestamp: '2026-02-03T22:25:31.186346+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1245_OTEB-MEDIUM, KOMODO_1245-18691_MEDIUM_1245_MODIFIED_FOR_DSM_18691,
+    KOMODO_1245_OTEB-MEDIUM'
+synonyms:
+- name: MEDIUM 1245 MODIFIED FOR DSM 18691
+  source: KOMODO
+  source_id: komodo.medium:1245_18691
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1245_OTEB-MEDIUM
+- KOMODO_1245-18691_MEDIUM_1245_MODIFIED_FOR_DSM_18691
+- KOMODO_1245_OTEB-MEDIUM
+merge_fingerprint: 9165d5d1f505980fc1b7329578b06a5c0bb8cf6b281d46680ce5a89515f86e22

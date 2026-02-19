@@ -1,0 +1,165 @@
+name: SES:MP
+original_name: SES:MP
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C93
+  term:
+    id: mediadive.medium:C93
+    label: SES:MP
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SES_MP.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fe SO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: Fe SO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 3:1 mixture
+- step_number: 2
+  action: AUTOCLAVE
+  description: See separate recipes.  Autoclave separately.  Mix aseptically.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water and autoclave at 15 psi for
+    15 minutes.
+- step_number: 4
+  action: MIX
+  description: At the  CCAP, SE1 is  used for  marine algae, SE2 for freshwater  and
+    terrestrial protozoa.
+- step_number: 5
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 6
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 7
+  action: AUTOCLAVE
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
+    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
+    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
+    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
+    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
+    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
+    \ until\r\nrequired."
+- step_number: 8
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 9
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 10
+  action: AUTOCLAVE
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
+    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
+    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
+    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
+    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
+    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
+    \ until\r\nrequired."
+- step_number: 11
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.785755Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C93'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:17.242921'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil; Added default concentration
+    for ingredient: Soil'
+merge_fingerprint: 1067a693bda7b7c4e623467565bf162f825c796b57c230b513cf6e9b9890d6d8
+merged_from:
+- CCAP_C93_SES_MP

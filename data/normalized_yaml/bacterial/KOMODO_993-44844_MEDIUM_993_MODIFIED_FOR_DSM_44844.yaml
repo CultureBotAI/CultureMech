@@ -1,7 +1,7 @@
 name: MEDIUM 993 MODIFIED FOR DSM 44844
 original_name: MEDIUM 993 MODIFIED FOR DSM 44844
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 993_44844
@@ -10,7 +10,67 @@ media_term:
     label: MEDIUM 993 MODIFIED FOR DSM 44844
 notes: 'Source: KOMODO ModelSEED | ID: 993_44844 | DSMZ Medium: 993 (mediadive.medium:993)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +78,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 993_44844'
+- timestamp: '2026-02-03T11:19:19.849292'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 993
+ph_value: 7.2

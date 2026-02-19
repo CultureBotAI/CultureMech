@@ -1,0 +1,58 @@
+name: TOMATO JUICE MEDIUM
+original_name: TOMATO JUICE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 264
+  term:
+    id: mediadive.medium:264
+    label: TOMATO JUICE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium264.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.614707Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 264'
+- timestamp: '2026-02-03T22:25:38.271100+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_264_TOMATO_JUICE_MEDIUM, KOMODO_264_TOMATO_JUICE_medium'
+synonyms:
+- name: TOMATO JUICE medium
+  source: KOMODO
+  source_id: komodo.medium:264
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_264_TOMATO_JUICE_MEDIUM
+- KOMODO_264_TOMATO_JUICE_medium
+merge_fingerprint: c595383acd8243677465c720d58fd1c06bf01d78c84fb16d9cfb44955505acb1

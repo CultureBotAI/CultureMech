@@ -1,0 +1,30 @@
+name: Xylanobacter Medium
+original_name: Xylanobacter Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: PY4S agar (see Medium [M357])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M523
+  term:
+    id: TOGO:M523
+    label: Xylanobacter Medium
+notes: 'Source: https://togomedium.org/medium/M523
+
+  Original source: JCM - JCM_M522
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=522'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.229867Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M523'
+merge_fingerprint: 3568ca1c858cd78efd77204a53f4a246bd8851af6cc161c0d73d5b635f30996a
+merged_from:
+- TOGO_M523_Xylanobacter_Medium

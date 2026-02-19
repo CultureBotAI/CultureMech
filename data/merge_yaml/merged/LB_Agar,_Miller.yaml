@@ -1,0 +1,61 @@
+name: LB Agar, Miller
+original_name: LB Agar, Miller
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2447
+  term:
+    id: TOGO:M2447
+    label: LB Agar, Miller
+notes: 'Source: https://togomedium.org/medium/M2447
+
+  Original URL: https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.513259Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2447'
+- timestamp: '2026-01-28T19:48:38.074692Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 516847d6666e22d43c6ff569100b4b6a9a6e299cd347d3000c29e61b77a29fe3
+merged_from:
+- TOGO_M2447_LB_Agar_Miller

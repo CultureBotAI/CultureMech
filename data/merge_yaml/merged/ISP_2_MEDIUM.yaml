@@ -1,0 +1,100 @@
+name: ISP 2 MEDIUM
+original_name: ISP 2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 987
+  term:
+    id: mediadive.medium:987
+    label: ISP 2 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium987.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.000565Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 987'
+- timestamp: '2026-02-03T22:25:52.669797+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_987_ISP_2_MEDIUM, KOMODO_987-15665_MEDIUM_987_MODIFIED_FOR_DSM_15665,
+    KOMODO_987-41839_MEDIUM_987_MODIFIED_FOR_DSM_41839, KOMODO_987-44928_MEDIUM_987_MODIFIED_FOR_DSM_44928,
+    KOMODO_987-45080_MEDIUM_987_MODIFIED_FOR_DSM_45080, KOMODO_987-45096_MEDIUM_987_MODIFIED_FOR_DSM_45096,
+    KOMODO_987-45452_MEDIUM_987_MODIFIED_FOR_DSM_45452, KOMODO_987-45783_MEDIUM_987_MODIFIED_FOR_DSM_45783,
+    KOMODO_987_ISP2_medium'
+synonyms:
+- name: MEDIUM 987 MODIFIED FOR DSM 15665
+  source: KOMODO
+  source_id: komodo.medium:987_15665
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 41839
+  source: KOMODO
+  source_id: komodo.medium:987_41839
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 44928
+  source: KOMODO
+  source_id: komodo.medium:987_44928
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 45080
+  source: KOMODO
+  source_id: komodo.medium:987_45080
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 45096
+  source: KOMODO
+  source_id: komodo.medium:987_45096
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 45452
+  source: KOMODO
+  source_id: komodo.medium:987_45452
+  original_category: imported
+- name: MEDIUM 987 MODIFIED FOR DSM 45783
+  source: KOMODO
+  source_id: komodo.medium:987_45783
+  original_category: imported
+- name: ISP2 medium
+  source: KOMODO
+  source_id: komodo.medium:987
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_987_ISP_2_MEDIUM
+- KOMODO_987-15665_MEDIUM_987_MODIFIED_FOR_DSM_15665
+- KOMODO_987-41839_MEDIUM_987_MODIFIED_FOR_DSM_41839
+- KOMODO_987-44928_MEDIUM_987_MODIFIED_FOR_DSM_44928
+- KOMODO_987-45080_MEDIUM_987_MODIFIED_FOR_DSM_45080
+- KOMODO_987-45096_MEDIUM_987_MODIFIED_FOR_DSM_45096
+- KOMODO_987-45452_MEDIUM_987_MODIFIED_FOR_DSM_45452
+- KOMODO_987-45783_MEDIUM_987_MODIFIED_FOR_DSM_45783
+- KOMODO_987_ISP2_medium
+merge_fingerprint: 92f23da652855286c1f0f1688f9ead05bb6b6551c2585ee28eb7b6a407fa9e9a

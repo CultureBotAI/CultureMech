@@ -1,0 +1,149 @@
+name: Hyphomicrobium Medium
+original_name: Hyphomicrobium Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Methylamine hydrochloride
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:59337
+    label: methylamine hydrochloride
+- preferred_term: NaH2PO4
+  concentration:
+    value: '2.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:37585
+    label: sodium dihydrogenphosphate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Visniac trace elements (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.733'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '0.499'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '0.506'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2・6H2O
+  concentration:
+    value: '0.161'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuSO4・5H2O
+  concentration:
+    value: '0.157'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: (NH4)6Mo7O24・4H2O
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: EDTA・2Na
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+media_term:
+  preferred_term: TOGO Medium M925
+  term:
+    id: TOGO:M925
+    label: Hyphomicrobium Medium
+notes: 'Source: https://togomedium.org/medium/M925
+
+  Original source: JCM - JCM_M884
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=884'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.972518Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M925'
+- timestamp: '2026-01-28T19:48:33.879801Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b84c8d92454f1e3dceb6dcee2ba9a5560aed06991c685191cd7274e4f26bbda1
+merged_from:
+- TOGO_M925_Hyphomicrobium_Medium

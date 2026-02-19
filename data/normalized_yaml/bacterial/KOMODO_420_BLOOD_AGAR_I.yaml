@@ -10,7 +10,57 @@ media_term:
     label: BLOOD AGAR I
 notes: 'Source: KOMODO ModelSEED | ID: 420 | DSMZ Medium: 420 (mediadive.medium:420)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Blood agar No 2
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +68,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 420'
+- timestamp: '2026-02-03T11:19:01.872115'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 420

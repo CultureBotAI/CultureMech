@@ -1,7 +1,7 @@
 name: MEDIUM 29 MODIFIED FOR DSM 12025
 original_name: MEDIUM 29 MODIFIED FOR DSM 12025
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 29_12025
@@ -10,7 +10,169 @@ media_term:
     label: MEDIUM 29 MODIFIED FOR DSM 12025
 notes: 'Source: KOMODO ModelSEED | ID: 29_12025 | DSMZ Medium: 29 (mediadive.medium:29)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Bicarbonate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: '1.5191'
+    unit: G_PER_L
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '0.118088'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Ammonium acetate
+  term:
+    id: CHEBI:62947
+    label: Ammonium acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Pyruvic acid sodium salt
+  term:
+    id: CHEBI:113246
+    label: Pyruvic acid sodium salt
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '1.925'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +180,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 29_12025'
+- timestamp: '2026-02-03T11:18:56.168189'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 29
+ph_value: 6.8

@@ -1,0 +1,74 @@
+name: Modified Hayflick broth medium containing 20% fetal bovine serum
+original_name: Modified Hayflick broth medium containing 20% fetal bovine serum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.5% phenol red (Flow)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: D-glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Liquid yeast extract (Flow)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fetal bovine serum (Flow), heat-inactivated
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: PPLO broth base without crystal violet (Difco)
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Penicillin G (Parke, Davis & Co)
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2888
+  term:
+    id: TOGO:M2888
+    label: Modified Hayflick broth medium containing 20% fetal bovine serum
+notes: 'Source: https://togomedium.org/medium/M2888'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.382576Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2888'
+- timestamp: '2026-01-28T19:48:26.010883Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.754608'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Penicillin G (Parke, Davis &
+    Co)'
+merge_fingerprint: 93a1a85c9ec508072c651a93fb573c6df67553cb165f5e44339db50a314eabbf
+merged_from:
+- TOGO_M2888_Modified_Hayflick_broth_medium_containing_20_fetal_bovine_serum

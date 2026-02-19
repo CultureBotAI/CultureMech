@@ -1,0 +1,92 @@
+name: CORYNEBACTERIUM AGAR
+original_name: CORYNEBACTERIUM AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 53
+  term:
+    id: mediadive.medium:53
+    label: CORYNEBACTERIUM AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium53.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '65'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 - 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.053425Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 53'
+- timestamp: '2026-02-03T22:25:37.977643+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_229_CORYNEBACTERIUM_MEDIUM_WITH_SALT, DSMZ_53_CORYNEBACTERIUM_AGAR,
+    KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT, KOMODO_53-16375_MEDIUM_53_MODIFIED_FOR_DSM_16375,
+    KOMODO_53-16377_MEDIUM_53_MODIFIED_FOR_DSM_16377, KOMODO_53-16378_MEDIUM_53_MODIFIED_FOR_DSM_16378,
+    KOMODO_53_CORYNEBACTERIUM_AGAR'
+synonyms:
+- name: CORYNEBACTERIUM MEDIUM WITH SALT
+  source: MediaDive
+  source_id: mediadive.medium:229
+  original_category: imported
+- name: CORYNEBACTERIUM medium WITH SALT
+  source: KOMODO
+  source_id: komodo.medium:229
+  original_category: imported
+- name: MEDIUM 53 MODIFIED FOR DSM 16375
+  source: KOMODO
+  source_id: komodo.medium:53_16375
+  original_category: imported
+- name: MEDIUM 53 MODIFIED FOR DSM 16377
+  source: KOMODO
+  source_id: komodo.medium:53_16377
+  original_category: imported
+- name: MEDIUM 53 MODIFIED FOR DSM 16378
+  source: KOMODO
+  source_id: komodo.medium:53_16378
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_229_CORYNEBACTERIUM_MEDIUM_WITH_SALT
+- DSMZ_53_CORYNEBACTERIUM_AGAR
+- KOMODO_229_CORYNEBACTERIUM_medium_WITH_SALT
+- KOMODO_53-16375_MEDIUM_53_MODIFIED_FOR_DSM_16375
+- KOMODO_53-16377_MEDIUM_53_MODIFIED_FOR_DSM_16377
+- KOMODO_53-16378_MEDIUM_53_MODIFIED_FOR_DSM_16378
+- KOMODO_53_CORYNEBACTERIUM_AGAR
+merge_fingerprint: 07c3706bae09d789e5ed9bb695aea08017c52c9c8ba7553428cbf4072f07fe28

@@ -1,0 +1,168 @@
+name: NESTERENKONIA MODIFIED MEDIUM
+original_name: NESTERENKONIA MODIFIED MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 993a
+  term:
+    id: mediadive.medium:993a
+    label: NESTERENKONIA MODIFIED MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium993a.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6
+    H20 (10%).
+- step_number: 2
+  action: HEAT
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
+    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
+- step_number: 3
+  action: POUR_PLATES
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
+    mm dishes containing 25 ml per dish.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.014403Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 993a'
+- timestamp: '2026-02-03T22:25:52.733548+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_993a_NESTERENKONIA_MODIFIED_MEDIUM, KOMODO_993-16375_MEDIUM_993_MODIFIED_FOR_DSM_16375,
+    KOMODO_993-44844_MEDIUM_993_MODIFIED_FOR_DSM_44844, KOMODO_993-45009_MEDIUM_993_MODIFIED_FOR_DSM_45009,
+    KOMODO_993-45010_MEDIUM_993_MODIFIED_FOR_DSM_45010, KOMODO_993-45011_MEDIUM_993_MODIFIED_FOR_DSM_45011,
+    KOMODO_993-45013_MEDIUM_993_MODIFIED_FOR_DSM_45013, KOMODO_993-45014_MEDIUM_993_MODIFIED_FOR_DSM_45014,
+    KOMODO_993-45016_MEDIUM_993_MODIFIED_FOR_DSM_45016, KOMODO_993_ISP_5_MEDIUM, KOMODO_993a_NESTERENKONIA_MODIFIED_medium,
+    KOMODO_993b_MODIFIED_ISP5_medium, KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE'
+synonyms:
+- name: MEDIUM 993 MODIFIED FOR DSM 16375
+  source: KOMODO
+  source_id: komodo.medium:993_16375
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 44844
+  source: KOMODO
+  source_id: komodo.medium:993_44844
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45009
+  source: KOMODO
+  source_id: komodo.medium:993_45009
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45010
+  source: KOMODO
+  source_id: komodo.medium:993_45010
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45011
+  source: KOMODO
+  source_id: komodo.medium:993_45011
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45013
+  source: KOMODO
+  source_id: komodo.medium:993_45013
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45014
+  source: KOMODO
+  source_id: komodo.medium:993_45014
+  original_category: imported
+- name: MEDIUM 993 MODIFIED FOR DSM 45016
+  source: KOMODO
+  source_id: komodo.medium:993_45016
+  original_category: imported
+- name: ISP 5 MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:993
+  original_category: imported
+- name: NESTERENKONIA MODIFIED medium
+  source: KOMODO
+  source_id: komodo.medium:993a
+  original_category: imported
+- name: MODIFIED ISP5 medium
+  source: KOMODO
+  source_id: komodo.medium:993b
+  original_category: imported
+- name: MODIFIED ISP5 MEDIUM WITH SODIUM CHLORIDE
+  source: KOMODO
+  source_id: komodo.medium:993c
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_993a_NESTERENKONIA_MODIFIED_MEDIUM
+- KOMODO_993-16375_MEDIUM_993_MODIFIED_FOR_DSM_16375
+- KOMODO_993-44844_MEDIUM_993_MODIFIED_FOR_DSM_44844
+- KOMODO_993-45009_MEDIUM_993_MODIFIED_FOR_DSM_45009
+- KOMODO_993-45010_MEDIUM_993_MODIFIED_FOR_DSM_45010
+- KOMODO_993-45011_MEDIUM_993_MODIFIED_FOR_DSM_45011
+- KOMODO_993-45013_MEDIUM_993_MODIFIED_FOR_DSM_45013
+- KOMODO_993-45014_MEDIUM_993_MODIFIED_FOR_DSM_45014
+- KOMODO_993-45016_MEDIUM_993_MODIFIED_FOR_DSM_45016
+- KOMODO_993_ISP_5_MEDIUM
+- KOMODO_993a_NESTERENKONIA_MODIFIED_medium
+- KOMODO_993b_MODIFIED_ISP5_medium
+- KOMODO_993c_MODIFIED_ISP5_MEDIUM_WITH_SODIUM_CHLORIDE
+merge_fingerprint: 26d18dae74ea1e9f3be8b7f8de895c5e8dab6e60664efa2e16edd2bb1363f697

@@ -16,6 +16,9 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: CO2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2917
   term:
@@ -29,3 +32,7 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2917'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.818110'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2'

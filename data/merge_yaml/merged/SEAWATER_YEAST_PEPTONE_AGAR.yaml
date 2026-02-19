@@ -1,0 +1,104 @@
+name: SEAWATER YEAST PEPTONE AGAR
+original_name: SEAWATER YEAST PEPTONE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 243
+  term:
+    id: mediadive.medium:243
+    label: SEAWATER YEAST PEPTONE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium243.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '28.13'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.77'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.8. Boil for 5 min, filter and readjust the pH to 7.3.
+- step_number: 2
+  action: STORE
+  description: Natural sea water is stored in the dark for at least three weeks to
+    "age". If natural sea water is not available use artificial sea water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.583213Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 243'
+- timestamp: '2026-02-03T22:26:00.091286+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_243_SEAWATER_YEAST_Peptone_AGAR, DSMZ_243_SEAWATER_YEAST_PEPTONE_AGAR'
+synonyms:
+- name: SEAWATER YEAST Peptone AGAR
+  source: KOMODO
+  source_id: komodo.medium:243
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_243_SEAWATER_YEAST_Peptone_AGAR
+- DSMZ_243_SEAWATER_YEAST_PEPTONE_AGAR
+merge_fingerprint: 1ffa79e6e055e1e26d10da5735bf5daa0cb7557bc68dd7bfefb96f1327d4f714

@@ -1,0 +1,74 @@
+name: LB + Nalidixic acid, Ciprofloxacin medium
+original_name: LB + Nalidixic acid, Ciprofloxacin medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Ciprofloxacin solution (5 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Complex component, Defined component,
+    Solution'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Nalidixic acid solution (30 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Solution, Defined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2013
+  term:
+    id: TOGO:M2013
+    label: LB + Nalidixic acid, Ciprofloxacin medium
+notes: 'Source: https://togomedium.org/medium/M2013
+
+  Original source: NBRC - NBRC_M1301
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1301'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.873734Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2013'
+- timestamp: '2026-01-28T19:48:18.620515Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9cb2da2f80cb6e7d7401ab3f4fc5968c4f218b525fb9d873c047a6d74b739fc3
+merged_from:
+- TOGO_M2013_LB_Nalidixic_acid_Ciprofloxacin_medium

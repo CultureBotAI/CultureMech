@@ -1,0 +1,27 @@
+name: trypticase soy yeast (TSY) broth
+original_name: trypticase soy yeast (TSY) broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: trypticase soy yeast (TSY) broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2414
+  term:
+    id: TOGO:M2414
+    label: trypticase soy yeast (TSY) broth
+notes: 'Source: https://togomedium.org/medium/M2414'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.482755Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2414'
+merge_fingerprint: 1a3baaab3b4f6ec4684ef2846352c80daa3892bf619b1c7af3f7579f93afca7d
+merged_from:
+- TOGO_M2414_trypticase_soy_yeast_TSY_broth

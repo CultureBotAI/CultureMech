@@ -1,0 +1,59 @@
+name: HAEMOPHILUS MEDIUM
+original_name: HAEMOPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 804
+  term:
+    id: mediadive.medium:804
+    label: HAEMOPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium804.pdf'
+ingredients:
+- preferred_term: Mueller-Hinton broth
+  concentration:
+    value: '21'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: For Haemophilus spp., add 15 mg NAD and 15 mg hemine per L (X + V factors).
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.'
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make
+    up to 25 ml with dist. water, filter sterilize.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.308368Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 804'
+- timestamp: '2026-02-03T22:25:48.999025+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_804_HAEMOPHILUS_MEDIUM, KOMODO_804-1_For_Haemophilus_spp,
+    KOMODO_804_HAEMOPHILUS_medium'
+synonyms:
+- name: For Haemophilus spp
+  source: KOMODO
+  source_id: komodo.medium:804.1
+  original_category: imported
+- name: HAEMOPHILUS medium
+  source: KOMODO
+  source_id: komodo.medium:804
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_804_HAEMOPHILUS_MEDIUM
+- KOMODO_804-1_For_Haemophilus_spp
+- KOMODO_804_HAEMOPHILUS_medium
+merge_fingerprint: 85868454b50047abf9bec68aeaf9e38292951ceab24d6557d78c0f3a0bca4b49

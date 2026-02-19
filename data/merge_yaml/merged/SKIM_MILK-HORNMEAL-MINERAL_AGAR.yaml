@@ -1,0 +1,77 @@
+name: SKIM MILK-HORNMEAL-MINERAL AGAR
+original_name: SKIM MILK-HORNMEAL-MINERAL AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 440
+  term:
+    id: mediadive.medium:440
+    label: SKIM MILK-HORNMEAL-MINERAL AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium440.pdf'
+ingredients:
+- preferred_term: Skim milk
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Bovine horn meal
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave the skim milk powder separately in 100 ml H2O and add it
+    to the cooled (60°C) agar-medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.137555Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 440'
+merge_fingerprint: 8c705c36d0291d0c0f30859f14ec5b4cba1fe1114ef6649ebb497aa0f7ea1e09
+merged_from:
+- DSMZ_440_SKIM_MILK-HORNMEAL-MINERAL_AGAR

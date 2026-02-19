@@ -1,0 +1,34 @@
+name: LB Broth, Miller
+original_name: LB Broth, Miller
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: LB Broth (BD 244620)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2448
+  term:
+    id: TOGO:M2448
+    label: LB Broth, Miller
+notes: 'Source: https://togomedium.org/medium/M2448
+
+  Original URL: https://www.atcc.org/~/media/6F57EBDFF28049EE85F7C697DAFB2592.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.514249Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2448'
+merge_fingerprint: 9c4aa50dbbcf73989e79c3430b8ff11c72bffe7e5adaae4998bc5ef9c44a78eb
+merged_from:
+- TOGO_M2448_LB_Broth_Miller

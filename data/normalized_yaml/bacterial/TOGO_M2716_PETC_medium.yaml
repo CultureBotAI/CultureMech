@@ -98,6 +98,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -178,6 +181,9 @@ ingredients:
     label: sodium sulfate
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -213,9 +219,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '10'
@@ -295,6 +298,9 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Organic compound'
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2716
   term:
@@ -314,3 +320,13 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.831292'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: KOH solution; Added default concentration for ingredient: N2'
+- timestamp: '2026-02-06T05:10:27.743760Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

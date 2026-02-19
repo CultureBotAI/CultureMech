@@ -1,0 +1,114 @@
+name: PARACOCCUS ALCALIPHILUS MEDIUM
+original_name: PARACOCCUS ALCALIPHILUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: DSMZ Medium 772
+  term:
+    id: mediadive.medium:772
+    label: PARACOCCUS ALCALIPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium772.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 2 H2O
+  term:
+    id: CHEBI:23414
+    label: CuSO4 x 2 H2O
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Thiamine hydrochloride may be replaced by 2 g/l yeast extract. The
+    pH of the medium is adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10 ml
+    sterile methanol (filter sterilised, or autoclaved in crimp top sealed bottles)
+    is added to the sterilised medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.196226Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 772'
+- timestamp: '2026-02-03T22:25:48.207360+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_772_PARACOCCUS_ALCALIPHILUS_MEDIUM, KOMODO_772_PARACOCCUS_ALCALIPHILUS_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_772_PARACOCCUS_ALCALIPHILUS_MEDIUM
+- KOMODO_772_PARACOCCUS_ALCALIPHILUS_MEDIUM
+merge_fingerprint: 0f81fc1fb75432dcab7957853b23d8bfb60d28ef4d6157083c00d39a1ed0901d

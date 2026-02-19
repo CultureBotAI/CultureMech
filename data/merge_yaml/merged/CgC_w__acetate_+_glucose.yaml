@@ -1,0 +1,123 @@
+name: CgC w/ acetate + glucose
+original_name: CgC w/ acetate + glucose
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '55.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '120.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ac'
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '83.3'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:urea'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.000819'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.0775'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '2.87'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '3.67'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '1.01'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.0592'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.036'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.00348'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '37.8'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.00125'
+    unit: MILLIMOLAR
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '100.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.231241Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 284, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 284
+  term:
+    id: MEDIADB:284
+    label: CgC w/ acetate + glucose
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 6aa0df1f092c8863c9bce2f0a29c46668082500050d20f2be7fece2601b9d954
+merged_from:
+- MEDIADB_284_CgC_w_acetate_glucose

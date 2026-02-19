@@ -1,0 +1,174 @@
+name: VERRUCOMICROBIUM MEDIUM (IG)
+original_name: VERRUCOMICROBIUM MEDIUM (IG)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1631
+  term:
+    id: mediadive.medium:1631
+    label: VERRUCOMICROBIUM MEDIUM (IG)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1631.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '2.38'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10.5263'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '31.2632'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.51579'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0133368'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.104211'
+    unit: G_PER_L
+- preferred_term: Metall salt sol. 44
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Riboflavine
+  term:
+    id: CHEBI:17015
+    label: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx.
+    10 drops/l medium of 6 N KOH).
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
+    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
+    water.
+- step_number: 4
+  action: HEAT
+  description: Store in the dark and cold (5°C).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.067683Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1631'
+- timestamp: '2026-01-28T19:48:36.575300Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: dfc6e5024ca8617ea98a77938c0ef11e4ed6d3c122e8b12261d4537055badd86
+merged_from:
+- DSMZ_1631_VERRUCOMICROBIUM_MEDIUM_IG

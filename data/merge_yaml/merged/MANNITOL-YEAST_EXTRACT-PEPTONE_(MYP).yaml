@@ -1,0 +1,56 @@
+name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
+original_name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1087
+  term:
+    id: mediadive.medium:1087
+    label: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1087.pdf'
+ingredients:
+- preferred_term: D-Mannitol
+  term:
+    id: CHEBI:16899
+    label: D-Mannitol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.338083Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1087'
+- timestamp: '2026-02-03T22:25:59.847881+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1087_MANNITOL-Yeast_extract-Peptone_MYP, DSMZ_1087_MANNITOL-YEAST_EXTRACT-PEPTONE_MYP'
+synonyms:
+- name: MANNITOL-Yeast extract-Peptone (MYP)
+  source: KOMODO
+  source_id: komodo.medium:1087
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_1087_MANNITOL-Yeast_extract-Peptone_MYP
+- DSMZ_1087_MANNITOL-YEAST_EXTRACT-PEPTONE_MYP
+merge_fingerprint: ab2ae452253cfeb500ef69e651bd3d7b83707b986e00df4344a309afc8e60fce

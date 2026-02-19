@@ -1,0 +1,230 @@
+name: PYRODICTIUM BROCKII MEDIUM
+original_name: PYRODICTIUM BROCKII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J203
+  term:
+    id: mediadive.medium:J203
+    label: PYRODICTIUM BROCKII MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=203'
+ingredients:
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '0.00490196'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.96078'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '29.4118'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000980392'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13.85'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.325'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.0075'
+    unit: G_PER_L
+- preferred_term: KI
+  term:
+    id: CHEBI:74559
+    label: KI
+  concentration:
+    value: 5e-05
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x n H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2
+  term:
+    id: CHEBI:86463
+    label: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components except sulfur, adjust pH to 5.5 with H2SO4 and autoclave
+    under a N2 gas atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Aseptically distribute the medium and sulfur into culture vessels (e.g., 20 ml
+    of the medium and 0.6 g sulfur in 120 ml serum bottles) under a stream of a H2-CO4
+    (80:20, v/v) gas mixture and seal with butyl rubber stoppers. Prior to inoculation,
+    add per litter the following solution (autoclave and stored under a N2 atmosphere):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Readjust pH to 5.5, if necessary. Pressurize inoculated vessels to
+    200kPa H2 -CO2 (80:20, v/v).
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.951577Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J203'
+merge_fingerprint: 3d100c436f6e1d42903b653e9f6ba0b30e906eb8c0c548e19a53ab7855461ddc
+merged_from:
+- JCM_J203_PYRODICTIUM_BROCKII_MEDIUM

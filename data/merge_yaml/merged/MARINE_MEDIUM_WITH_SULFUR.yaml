@@ -1,0 +1,104 @@
+name: MARINE MEDIUM WITH SULFUR
+original_name: MARINE MEDIUM WITH SULFUR
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: JCM Medium J375
+  term:
+    id: mediadive.medium:J375
+    label: MARINE MEDIUM WITH SULFUR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=375'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, adjust pH to 6.0 with
+    NaOH, and autoclave. Steam sulfur for 3 hr on each of 3 successive days. Neutralize
+    5% Na2S x 9H2O solution and autoclave under a N2 atmosphere. Distribute the medium
+    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
+    sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
+    stoppers. Prior to inoculation, add the sterile Na2S solution to the medium, and
+    readjust pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2
+    (4:1, v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.441463Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J375'
+merge_fingerprint: e14121784f05c165a1f7462d7612b25318dd5bf245aef5eb2a7615a7b2124019
+merged_from:
+- JCM_J375_MARINE_MEDIUM_WITH_SULFUR

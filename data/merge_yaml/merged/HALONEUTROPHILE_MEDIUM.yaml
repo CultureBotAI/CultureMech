@@ -1,0 +1,108 @@
+name: Haloneutrophile Medium
+original_name: Haloneutrophile Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Sodium glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: FeCl2・4H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M302
+  term:
+    id: TOGO:M302
+    label: Haloneutrophile Medium
+notes: 'Source: https://togomedium.org/medium/M302
+
+  Original source: JCM - JCM_M307
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=307'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.815339Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M302'
+- timestamp: '2026-01-28T19:48:41.802130Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 8f1ddb2a03eafc8b1c0261429c1800095bb4ddfd76bb7654211fd5383d8f080a
+merged_from:
+- TOGO_M302_Haloneutrophile_Medium

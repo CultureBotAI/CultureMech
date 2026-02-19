@@ -1,0 +1,52 @@
+name: V-8 JUICE AGAR
+original_name: V-8 JUICE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 310
+  term:
+    id: mediadive.medium:310
+    label: V-8 JUICE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium310.pdf'
+ingredients:
+- preferred_term: V-8 Juice
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Fill up with distilled water to 1000.0 ml. Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.721100Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 310'
+- timestamp: '2026-02-03T22:25:39.040135+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_310_V-8_JUICE_AGAR, KOMODO_310_V-8_JUICE_AGAR'
+categories:
+- imported
+merged_from:
+- DSMZ_310_V-8_JUICE_AGAR
+- KOMODO_310_V-8_JUICE_AGAR
+merge_fingerprint: cbcccaa896c9017b2f185124db371f2ed92373aa6b66e58377e4935b8dbc882d

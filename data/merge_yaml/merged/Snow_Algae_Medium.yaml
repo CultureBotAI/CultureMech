@@ -1,0 +1,129 @@
+name: Snow Algae Medium
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaCl(Fisher S271-500)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2EDTA•2H2O(Sigma ED255)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KCl(Fisher P 217)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KH2PO4(Sigma P 0662)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Trizma Base pH 8.2'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: A+ Trace Components (sterilize before adding)'
+- preferred_term: '10'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
+    3946)'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: snow-algae-medium, URL: https://utex.org/products/snow-algae-medium'
+- timestamp: '2026-02-03T22:25:24.991012+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: A+_Medium, BG-11_Medium, Bold_1NV_Medium, Bold_Basal_Medium, Snow_Algae_Medium'
+references:
+- reference_id: UTEX:snow-algae-medium
+- reference_id: https://utex.org/products/snow-algae-medium
+original_name: Snow Algae Medium
+synonyms:
+- name: A+ Medium
+  source: unknown
+  original_category: ALGAE
+- name: BG-11 Medium
+  source: unknown
+  original_category: ALGAE
+- name: Bold 1NV Medium
+  source: unknown
+  original_category: ALGAE
+- name: Bold Basal Medium
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- A+_Medium
+- BG-11_Medium
+- Bold_1NV_Medium
+- Bold_Basal_Medium
+- Snow_Algae_Medium
+merge_fingerprint: 5de84be125050c0cd9f9182936c17061578f3047d7ed1206c56b5003526afc32

@@ -1,0 +1,140 @@
+name: RHODOBACTER MARINUS MEDIUM (NKPB)
+original_name: RHODOBACTER MARINUS MEDIUM (NKPB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 1659
+  term:
+    id: mediadive.medium:1659
+    label: RHODOBACTER MARINUS MEDIUM (NKPB)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1659.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.012'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.25'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+- preferred_term: DL-Malate
+  term:
+    id: CHEBI:65947
+    label: DL-Malate
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '1.5e-05'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '2.1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.24'
+    unit: G_PER_L
+- preferred_term: Cu(NO3)2 x 3 H2O
+  term:
+    id: CHEBI:78036
+    label: Cu(NO3)2 x 3 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.6 with NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.150229Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1659'
+merge_fingerprint: adb5d4541a1bdaca0345d7f9331cb60e18481edb16f99c2b7e7830df4deceba0
+merged_from:
+- DSMZ_1659_RHODOBACTER_MARINUS_MEDIUM_NKPB

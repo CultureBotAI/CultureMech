@@ -1,0 +1,69 @@
+name: LB + 50 ug/ml Kanamycin medium
+original_name: LB + 50 ug/ml Kanamycin medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Kanamycin sulfate solution (50 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
+    component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tyrptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2099
+  term:
+    id: TOGO:M2099
+    label: LB + 50 ug/ml Kanamycin medium
+notes: 'Source: https://togomedium.org/medium/M2099
+
+  Original source: NBRC - NBRC_M1415
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1415'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.055624Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2099'
+- timestamp: '2026-01-28T19:48:18.712663Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0410400ec8de000723717e3881fc5d70d6072548f50cf85e5c2d8d3349230e24
+merged_from:
+- TOGO_M2099_LB_50_ug_ml_Kanamycin_medium

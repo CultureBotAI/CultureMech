@@ -1,0 +1,78 @@
+name: Yeast Extract-Malt Extract Agar (ISP-2)
+original_name: Yeast Extract-Malt Extract Agar (ISP-2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M35
+  term:
+    id: TOGO:M35
+    label: Yeast Extract-Malt Extract Agar (ISP-2)
+notes: 'Source: https://togomedium.org/medium/M35
+
+  Original source: JCM - JCM_M43
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=43'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.890674Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M35'
+- timestamp: '2026-01-28T19:48:37.229424Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:20.221103+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M35_Yeast_Extract-Malt_Extract_Agar_ISP-2, TOGO_M99_1_10_Yeast_Extract-Malt_Extract_Agar'
+synonyms:
+- name: 1/10 Yeast Extract-Malt Extract Agar
+  source: TOGO
+  source_id: TOGO:M99
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M35_Yeast_Extract-Malt_Extract_Agar_ISP-2
+- TOGO_M99_1_10_Yeast_Extract-Malt_Extract_Agar
+merge_fingerprint: b5c9c35c9d84e8c2ef23852e940f535717c0f5fbaf7be609f5ce183dcb843387

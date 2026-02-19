@@ -1,0 +1,75 @@
+name: SCY - MEDIUM
+original_name: SCY - MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 312
+  term:
+    id: mediadive.medium:312
+    label: SCY - MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium312.pdf'
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.1.
+- step_number: 2
+  action: MIX
+  description: Sterilize vitamins separately by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.741422Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 312'
+- timestamp: '2026-02-03T22:25:39.157914+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_312_SCY_-_MEDIUM, KOMODO_312_SCY_-_medium'
+synonyms:
+- name: SCY - medium
+  source: KOMODO
+  source_id: komodo.medium:312
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_312_SCY_-_MEDIUM
+- KOMODO_312_SCY_-_medium
+merge_fingerprint: 27e52e60d5ca352ec60df7eaa8b52f76c0d78ac78e48ef6e95780984b801fee5

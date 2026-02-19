@@ -1,0 +1,66 @@
+name: 1/5 Nutrient Agar NO. 2
+original_name: 1/5 Nutrient Agar NO. 2
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M453
+  term:
+    id: TOGO:M453
+    label: 1/5 Nutrient Agar NO. 2
+notes: 'Source: https://togomedium.org/medium/M453
+
+  Original source: JCM - JCM_M453
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=453'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.090120Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M453'
+- timestamp: '2026-01-28T19:48:17.331745Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b809c56802f11de5b8b0ed55314bebebf74840602ac9bd8d8a8ae7ba274b86f3
+merged_from:
+- TOGO_M453_1_5_Nutrient_Agar_NO._2

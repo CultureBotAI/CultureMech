@@ -1,0 +1,89 @@
+name: Pectin Medium
+original_name: Pectin Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: 0.1% Resazurin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Pectin (from citrus)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: L-Cysteine·HCl·H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Hipolypepton
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M3283
+  term:
+    id: TOGO:M3283
+    label: Pectin Medium
+notes: 'Source: https://togomedium.org/medium/M3283
+
+  Original source: JCM - JCM_M1453
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1453'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.725437Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M3283'
+- timestamp: '2026-01-28T19:48:14.230269Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.137779'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+merge_fingerprint: f940b7b43c11e8a60ceb750c30e79387d286f616581c97508eb187db8aef8da3
+merged_from:
+- TOGO_M3283_Pectin_Medium

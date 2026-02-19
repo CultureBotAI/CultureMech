@@ -1,0 +1,26 @@
+name: tryptone yeast extract salt (TYES) broth
+original_name: tryptone yeast extract salt (TYES) broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: tryptone yeast extract salt (TYES) broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2821
+  term:
+    id: TOGO:M2821
+    label: tryptone yeast extract salt (TYES) broth
+notes: 'Source: https://togomedium.org/medium/M2821'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.333452Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2821'
+merge_fingerprint: 766b1735e426601c8fe98110b07d1b9faf9d77c15d098076be54285b1aaed585
+merged_from:
+- TOGO_M2821_tryptone_yeast_extract_salt_TYES_broth

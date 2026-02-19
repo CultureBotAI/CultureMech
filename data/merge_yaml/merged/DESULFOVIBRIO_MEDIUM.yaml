@@ -1,0 +1,141 @@
+name: Desulfovibrio Medium
+original_name: Desulfovibrio Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Na2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Sodium lactate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Ascorbic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:22652
+    label: ascorbic acid
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M384
+  term:
+    id: TOGO:M384
+    label: Desulfovibrio Medium
+notes: 'Source: https://togomedium.org/medium/M384
+
+  Original source: JCM - JCM_M389
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=389'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.954833Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M384'
+- timestamp: '2026-01-28T19:48:10.286223Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.469119'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: 06053c68426f29fde27b19183a5f999ff51e3d960a77dcc2e6512497a4006268
+merged_from:
+- TOGO_M384_Desulfovibrio_Medium

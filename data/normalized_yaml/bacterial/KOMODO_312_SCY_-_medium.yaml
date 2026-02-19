@@ -11,7 +11,40 @@ media_term:
     label: SCY - medium
 notes: 'Source: KOMODO ModelSEED | ID: 312 | DSMZ Medium: 312 (mediadive.medium:312)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +52,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 312'
+- timestamp: '2026-02-03T11:19:08.491581'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 312

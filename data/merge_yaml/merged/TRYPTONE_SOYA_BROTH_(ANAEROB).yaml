@@ -1,0 +1,156 @@
+name: TRYPTONE SOYA BROTH (ANAEROB)
+original_name: TRYPTONE SOYA BROTH (ANAEROB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 545c
+  term:
+    id: mediadive.medium:545c
+    label: TRYPTONE SOYA BROTH (ANAEROB)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium
+    for 1 minute, then cool to room temperature under 100% N2 gas atmosphere. Add
+    cysteine and thioglycolate, then adjust the pH to 8.0. Dispense medium under the
+    same gas atmosphere in culture vessels and autoclave at 121ºC for <b>15</b> minutes.
+    Check and adjust the pH of the complete medium to 8.0, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.583037Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 545c'
+- timestamp: '2026-02-03T22:25:44.940608+00:00'
+  curator: recipe-merger
+  action: Merged 14 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_545c_TRYPTONE_SOYA_BROTH_ANAEROB, KOMODO_545-13887_MEDIUM_545_MODIFIED_FOR_DSM_13887,
+    KOMODO_545-14656_MEDIUM_545_MODIFIED_FOR_DSM_14656, KOMODO_545-15825_MEDIUM_545_MODIFIED_FOR_DSM_15825,
+    KOMODO_545-17447_MEDIUM_545_MODIFIED_FOR_DSM_17447, KOMODO_545-17566_MEDIUM_545_MODIFIED_FOR_DSM_17566,
+    KOMODO_545-1_For_DSM_22112, KOMODO_545-21372_MEDIUM_545_MODIFIED_FOR_DSM_21372,
+    KOMODO_545-21886_MEDIUM_545_MODIFIED_FOR_DSM_21886, KOMODO_545-23581_MEDIUM_545_MODIFIED_FOR_DSM_23581,
+    KOMODO_545-6385_MEDIUM_545_MODIFIED_FOR_DSM_6385, KOMODO_545_TRYPTONE_SOYA_BROTH_TSB,
+    KOMODO_545a-17448_MEDIUM_545a_MODIFIED_FOR_DSM_17448, KOMODO_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB'
+synonyms:
+- name: MEDIUM 545 MODIFIED FOR DSM 13887
+  source: KOMODO
+  source_id: komodo.medium:545_13887
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 14656
+  source: KOMODO
+  source_id: komodo.medium:545_14656
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 15825
+  source: KOMODO
+  source_id: komodo.medium:545_15825
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 17447
+  source: KOMODO
+  source_id: komodo.medium:545_17447
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 17566
+  source: KOMODO
+  source_id: komodo.medium:545_17566
+  original_category: imported
+- name: For DSM 22112
+  source: KOMODO
+  source_id: komodo.medium:545.1
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 21372
+  source: KOMODO
+  source_id: komodo.medium:545_21372
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 21886
+  source: KOMODO
+  source_id: komodo.medium:545_21886
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 23581
+  source: KOMODO
+  source_id: komodo.medium:545_23581
+  original_category: imported
+- name: MEDIUM 545 MODIFIED FOR DSM 6385
+  source: KOMODO
+  source_id: komodo.medium:545_6385
+  original_category: imported
+- name: TRYPTONE SOYA BROTH (TSB)
+  source: KOMODO
+  source_id: komodo.medium:545
+  original_category: imported
+- name: MEDIUM 545a MODIFIED FOR DSM 17448
+  source: KOMODO
+  source_id: komodo.medium:545a_17448
+  original_category: imported
+- name: DILUTED TRYPTONE SOYA BROTH (TSB)
+  source: KOMODO
+  source_id: komodo.medium:545a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_545c_TRYPTONE_SOYA_BROTH_ANAEROB
+- KOMODO_545-13887_MEDIUM_545_MODIFIED_FOR_DSM_13887
+- KOMODO_545-14656_MEDIUM_545_MODIFIED_FOR_DSM_14656
+- KOMODO_545-15825_MEDIUM_545_MODIFIED_FOR_DSM_15825
+- KOMODO_545-17447_MEDIUM_545_MODIFIED_FOR_DSM_17447
+- KOMODO_545-17566_MEDIUM_545_MODIFIED_FOR_DSM_17566
+- KOMODO_545-1_For_DSM_22112
+- KOMODO_545-21372_MEDIUM_545_MODIFIED_FOR_DSM_21372
+- KOMODO_545-21886_MEDIUM_545_MODIFIED_FOR_DSM_21886
+- KOMODO_545-23581_MEDIUM_545_MODIFIED_FOR_DSM_23581
+- KOMODO_545-6385_MEDIUM_545_MODIFIED_FOR_DSM_6385
+- KOMODO_545_TRYPTONE_SOYA_BROTH_TSB
+- KOMODO_545a-17448_MEDIUM_545a_MODIFIED_FOR_DSM_17448
+- KOMODO_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB
+merge_fingerprint: 023599b7d1c785dc926ff5d49fd0645c8de238a16af288b1b72c08a9d4c4fbc8

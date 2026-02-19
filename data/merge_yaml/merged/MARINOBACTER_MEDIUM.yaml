@@ -1,0 +1,89 @@
+name: MARINOBACTER MEDIUM
+original_name: MARINOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 970
+  term:
+    id: mediadive.medium:970
+    label: MARINOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium970.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '11.7'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '7.85'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.74'
+    unit: G_PER_L
+- preferred_term: Tris
+  term:
+    id: CHEBI:9754
+    label: Tris
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.47'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.942222Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 970'
+- timestamp: '2026-02-03T22:25:52.436141+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_970_MARINOBACTER_MEDIUM, KOMODO_970_MARINOBACTER_medium'
+synonyms:
+- name: MARINOBACTER medium
+  source: KOMODO
+  source_id: komodo.medium:970
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_970_MARINOBACTER_MEDIUM
+- KOMODO_970_MARINOBACTER_medium
+merge_fingerprint: 40b777c25c06b5c9653d204211ede167566876a98dff09ee385681ae399e7664

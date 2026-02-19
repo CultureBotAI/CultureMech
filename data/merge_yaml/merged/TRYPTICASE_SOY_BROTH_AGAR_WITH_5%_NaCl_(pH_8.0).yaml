@@ -1,0 +1,68 @@
+name: TRYPTICASE SOY BROTH AGAR WITH 5% NaCl (pH 8.0)
+original_name: TRYPTICASE SOY BROTH AGAR WITH 5% NaCl (pH 8.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J488
+  term:
+    id: mediadive.medium:J488
+    label: TRYPTICASE SOY BROTH AGAR WITH 5% NaCl (pH 8.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=488'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '27.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.733095Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J488'
+- timestamp: '2026-02-03T22:25:31.369458+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1260_MODIFIED_BACTO_TRYPTIC_SOY_BROTH_WITHOUT_DEXTROSE, JCM_J1259_TRYPTICASE_SOY_BROTH_AGAR_WITH_3_NaCl,
+    JCM_J487_TRYPTICASE_SOY_BROTH_AGAR_WITH_10_NaCl, JCM_J488_TRYPTICASE_SOY_BROTH_AGAR_WITH_5_NaCl_pH_8.0'
+synonyms:
+- name: MODIFIED BACTO TRYPTIC SOY BROTH WITHOUT DEXTROSE
+  source: MediaDive
+  source_id: mediadive.medium:1260
+  original_category: imported
+- name: TRYPTICASE SOY BROTH AGAR WITH 3% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J1259
+  original_category: imported
+- name: TRYPTICASE SOY BROTH AGAR WITH 10% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J487
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1260_MODIFIED_BACTO_TRYPTIC_SOY_BROTH_WITHOUT_DEXTROSE
+- JCM_J1259_TRYPTICASE_SOY_BROTH_AGAR_WITH_3_NaCl
+- JCM_J487_TRYPTICASE_SOY_BROTH_AGAR_WITH_10_NaCl
+- JCM_J488_TRYPTICASE_SOY_BROTH_AGAR_WITH_5_NaCl_pH_8.0
+merge_fingerprint: 517056828e8bcbb250d9eae4d1930facedd981920f3be51a14dfc0befb52752e

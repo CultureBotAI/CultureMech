@@ -1,0 +1,82 @@
+name: ACM-MEDIUM FOR VERMINEPHROBACTER
+original_name: ACM-MEDIUM FOR VERMINEPHROBACTER
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.5
+media_term:
+  preferred_term: DSMZ Medium 1300
+  term:
+    id: mediadive.medium:1300
+    label: ACM-MEDIUM FOR VERMINEPHROBACTER
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1300.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.555556'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '2.22222'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave solutions A and B separately and combine after cooling. Adjust
+    pH to 7.2 -7.5.
+- step_number: 2
+  action: MIX
+  description: Add Phytagel instead of agar to solidify medium if necessary. Verminephrobacter
+    strains did not grow on plates in our hands.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.039614Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1300'
+- timestamp: '2026-01-28T19:48:32.854454Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 5c3f7cc73703643585197914645b716105f74e3d3d9869e9a0c59e851e984d72
+merged_from:
+- DSMZ_1300_ACM-MEDIUM_FOR_VERMINEPHROBACTER

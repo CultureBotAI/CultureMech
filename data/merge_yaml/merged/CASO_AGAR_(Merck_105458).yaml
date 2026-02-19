@@ -1,0 +1,73 @@
+name: CASO Agar (Merck 105458)
+original_name: CASO Agar (Merck 105458)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MnSO4
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:86360
+    label: manganese(II) sulfate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Peptone from casein
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone from soymeal
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2419
+  term:
+    id: TOGO:M2419
+    label: CASO Agar (Merck 105458)
+notes: 'Source: https://togomedium.org/medium/M2419
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium220.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.487266Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2419'
+- timestamp: '2026-01-28T19:48:09.376071Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: cdfcf15c547a8c31fe00eaf0a84a66a5d9076db8e6d5eafcefae8a9173e67da4
+merged_from:
+- TOGO_M2419_CASO_Agar_Merck_105458

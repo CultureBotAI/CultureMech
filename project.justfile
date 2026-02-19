@@ -8,10 +8,11 @@ pages_dir := "pages"
 app_dir := "app"
 
 # Data layer paths (see DATA_LAYERS.md)
-# Three-tier system: raw/ → raw_yaml/ → normalized_yaml/
+# Four-tier system: raw/ → raw_yaml/ → normalized_yaml/ → merge_yaml/
 raw_dir := "data/raw"
 raw_yaml_dir := "data/raw_yaml"
 normalized_yaml_dir := "data/normalized_yaml"
+merge_yaml_dir := "data/merge_yaml"
 processed_data_dir := "data/processed"
 cmm_automation_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/cmm-ai-automation/data"
 microbe_media_param_dir := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/MicrobeMediaParam/MicroMediaParam/pipeline_output/merge_mappings"
@@ -551,6 +552,87 @@ process-raw-data:
     @echo "Currently using direct import from raw data"
 
 # ================================================================
+# MERGE (Layer 4: Recipe Deduplication)
+# ================================================================
+
+[group('Merge')]
+merge-recipes dry_run="":
+    #!/usr/bin/env bash
+    echo "Merging duplicate recipes from normalized_yaml to merge_yaml..."
+    echo "Source: {{normalized_yaml_dir}}"
+    echo "Target: {{merge_yaml_dir}}/merged"
+    echo ""
+
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be written"
+        echo ""
+        uv run python -m culturemech.merge.merge_recipes \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --output-dir {{merge_yaml_dir}}/merged \
+            --stats-file {{merge_yaml_dir}}/merge_stats.json \
+            --dry-run
+    else
+        uv run python -m culturemech.merge.merge_recipes \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --output-dir {{merge_yaml_dir}}/merged \
+            --stats-file {{merge_yaml_dir}}/merge_stats.json
+    fi
+
+[group('Merge')]
+merge-stats:
+    #!/usr/bin/env bash
+    echo "Generating merge statistics (no files written)..."
+    echo ""
+    uv run python -m culturemech.merge.merge_recipes \
+        --normalized-dir {{normalized_yaml_dir}} \
+        --stats-only
+
+[group('Merge')]
+verify-merges:
+    #!/usr/bin/env bash
+    echo "Verifying merged recipes..."
+    echo ""
+
+    if [ ! -d "{{merge_yaml_dir}}/merged" ]; then
+        echo "✗ No merged recipes found at {{merge_yaml_dir}}/merged"
+        echo "  Run: just merge-recipes"
+        exit 1
+    fi
+
+    uv run python scripts/verify_merges.py \
+        --normalized-dir {{normalized_yaml_dir}} \
+        --merge-dir {{merge_yaml_dir}}/merged \
+        --stats-file {{merge_yaml_dir}}/merge_stats.json
+
+[group('Merge')]
+count-unique-recipes:
+    #!/usr/bin/env bash
+    echo "Recipe Count Comparison"
+    echo "======================="
+    echo ""
+
+    normalized_count=$(find {{normalized_yaml_dir}} -name "*.yaml" -type f | wc -l | xargs)
+    echo "Normalized recipes: $normalized_count"
+
+    if [ -d "{{merge_yaml_dir}}/merged" ]; then
+        merged_count=$(find {{merge_yaml_dir}}/merged -name "*.yaml" -type f | wc -l | xargs)
+        echo "Merged recipes:     $merged_count"
+        reduction=$((normalized_count - merged_count))
+        echo "Reduction:          $reduction recipes"
+
+        if [ $normalized_count -gt 0 ]; then
+            pct=$(awk "BEGIN {printf \"%.1f\", ($reduction / $normalized_count) * 100}")
+            echo "Reduction %:        ${pct}%"
+        fi
+    else
+        echo "Merged recipes:     (not yet created)"
+        echo ""
+        echo "Run: just merge-recipes"
+    fi
+
+    echo ""
+
+# ================================================================
 # SETUP
 # ================================================================
 
@@ -633,6 +715,261 @@ qc:
     just validate-all
     echo ""
     echo "✓ QC complete!"
+
+# ================================================================
+# VALIDATION AND FIXING (Track 3)
+# ================================================================
+
+[group('Validation')]
+validate-recipes report="summary":
+    #!/usr/bin/env bash
+    echo "Validating all recipes in normalized_yaml..."
+    echo ""
+    .venv/bin/python scripts/fix_validation_errors.py \
+        --report-only \
+        --input-dir {{normalized_yaml_dir}} \
+        {{ if report == "detailed" { "--verbose" } else { "" } }}
+
+[group('Validation')]
+fix-validation-errors dry_run="" categories="all":
+    #!/usr/bin/env bash
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be modified"
+        echo ""
+        .venv/bin/python scripts/fix_validation_errors.py \
+            --dry-run \
+            --categories {{categories}} \
+            --input-dir {{normalized_yaml_dir}} \
+            --verbose
+    else
+        .venv/bin/python scripts/fix_validation_errors.py \
+            --categories {{categories}} \
+            --input-dir {{normalized_yaml_dir}} \
+            --verbose
+    fi
+
+[group('Validation')]
+validation-stats:
+    #!/usr/bin/env bash
+    echo "Generating validation statistics..."
+    .venv/bin/python scripts/fix_validation_errors.py \
+        --report-only \
+        --input-dir {{normalized_yaml_dir}}
+
+# ================================================================
+# ENRICHMENT (Track 2: KOMODO-DSMZ Resolution)
+# ================================================================
+
+[group('Enrichment')]
+resolve-komodo-compositions dry_run="":
+    #!/usr/bin/env bash
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be modified"
+        echo ""
+        .venv/bin/python scripts/resolve_komodo_compositions.py \
+            --dry-run \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --verbose
+    else
+        .venv/bin/python scripts/resolve_komodo_compositions.py \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --verbose
+    fi
+
+[group('Enrichment')]
+komodo-resolution-stats:
+    #!/usr/bin/env bash
+    echo "KOMODO-DSMZ resolution statistics..."
+    .venv/bin/python scripts/resolve_komodo_compositions.py \
+        --dry-run \
+        --normalized-dir {{normalized_yaml_dir}} \
+        --report-unresolved
+
+# ================================================================
+# ONTOLOGY (SSSOM Mapping & EBI OLS Integration)
+# ================================================================
+
+[group('Ontology')]
+extract-ingredients:
+    #!/usr/bin/env bash
+    echo "Extracting unique ingredient list from YAML files..."
+    uv run python scripts/extract_unique_ingredients.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --output {{output_dir}}/ingredients_unique.tsv \
+        --verbose
+
+[group('Ontology')]
+generate-sssom include_unmapped="":
+    #!/usr/bin/env bash
+    echo "Generating SSSOM mapping file from normalized_yaml..."
+
+    cmd="uv run python scripts/generate_sssom_mappings.py \
+        --normalized-dir {{normalized_yaml_dir}} \
+        --output {{output_dir}}/culturemech_chebi_mappings.sssom.tsv \
+        --validate"
+
+    if [ "{{include_unmapped}}" = "true" ]; then
+        echo "Including unmapped ingredients as future mapping candidates..."
+        cmd="$cmd --include-unmapped"
+    fi
+
+    eval $cmd
+
+[group('Ontology')]
+enrich-sssom-with-ols:
+    #!/usr/bin/env bash
+    echo "Enriching SSSOM mappings using EBI OLS API..."
+    uv run python scripts/enrich_sssom_with_ols.py \
+        --input-sssom {{output_dir}}/culturemech_chebi_mappings.sssom.tsv \
+        --input-ingredients {{output_dir}}/ingredients_unique.tsv \
+        --output {{output_dir}}/culturemech_chebi_mappings_enriched.sssom.tsv \
+        --rate-limit 5 \
+        --verbose
+
+[group('Ontology')]
+enrich-sssom-exact:
+    #!/usr/bin/env bash
+    echo "Enriching SSSOM with exact matching strategies and OAK..."
+    uv run python scripts/enrich_sssom_with_ols.py \
+        --input-sssom {{output_dir}}/culturemech_chebi_mappings.sssom.tsv \
+        --input-ingredients {{output_dir}}/ingredients_unique.tsv \
+        --output {{output_dir}}/culturemech_chebi_mappings_exact.sssom.tsv \
+        --use-oak \
+        --exact-first \
+        --rate-limit 5 \
+        --verbose
+
+[group('Ontology')]
+extract-unmapped-sssom:
+    #!/usr/bin/env bash
+    echo "Extracting unmapped ingredients to SSSOM file..."
+    uv run python scripts/extract_unmapped_sssom.py \
+        --enriched-sssom {{output_dir}}/culturemech_chebi_mappings_exact.sssom.tsv \
+        --ingredients {{output_dir}}/ingredients_unique.tsv \
+        --output {{output_dir}}/unmapped_ingredients.sssom.tsv \
+        --verbose
+
+[group('Ontology')]
+sssom-exact-pipeline: extract-ingredients (generate-sssom "true") enrich-sssom-exact extract-unmapped-sssom
+    @echo ""
+    @echo "✓ Exact matching SSSOM pipeline complete!"
+    @echo "  - Ingredients:        {{output_dir}}/ingredients_unique.tsv"
+    @echo "  - Base SSSOM:         {{output_dir}}/culturemech_chebi_mappings.sssom.tsv"
+    @echo "  - Exact enriched:     {{output_dir}}/culturemech_chebi_mappings_exact.sssom.tsv"
+    @echo "  - Unmapped tracking:  {{output_dir}}/unmapped_ingredients.sssom.tsv"
+
+[group('Ontology')]
+sssom-pipeline include_unmapped="": extract-ingredients (generate-sssom include_unmapped) enrich-sssom-with-ols
+    @echo ""
+    @echo "✓ SSSOM pipeline complete!"
+    @echo "  - Ingredients extracted: {{output_dir}}/ingredients_unique.tsv"
+    @echo "  - Base SSSOM:           {{output_dir}}/culturemech_chebi_mappings.sssom.tsv"
+    @echo "  - Enriched SSSOM:       {{output_dir}}/culturemech_chebi_mappings_enriched.sssom.tsv"
+
+[group('Ontology')]
+sssom-with-unmapped: (sssom-pipeline "true")
+    @echo ""
+    @echo "✓ SSSOM pipeline with unmapped ingredients complete!"
+    @echo "  Use confidence=0.0 to filter unmapped candidates for curation"
+
+[group('Ontology')]
+test-ols-client query="":
+    #!/usr/bin/env bash
+    if [ "{{query}}" != "" ]; then
+        echo "Testing OLS client with query: {{query}}"
+        uv run python -m culturemech.ontology.ols_client --search "{{query}}"
+    else
+        echo "Testing OLS client (verifying water CHEBI:15377)..."
+        uv run python -m culturemech.ontology.ols_client --verify "CHEBI:15377"
+    fi
+
+[group('Ontology')]
+enrich-with-chebi dry_run="" limit="":
+    #!/usr/bin/env bash
+    echo "Enriching normalized YAML recipes with CHEBI ontology terms..."
+
+    cmd="uv run python scripts/enrich_with_chebi.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --microbe-media-param {{raw_dir}}/microbe-media-param \
+        --mediadive {{raw_dir}}/mediadive"
+
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be modified"
+        cmd="$cmd --dry-run"
+    fi
+
+    if [ "{{limit}}" != "" ]; then
+        echo "Limiting to {{limit}} files"
+        cmd="$cmd --limit {{limit}}"
+    fi
+
+    eval $cmd
+
+[group('Ontology')]
+check-chebi-ids:
+    #!/usr/bin/env bash
+    echo "Checking CHEBI IDs in normalized YAML files..."
+    uv run python scripts/check_chebi_ids.py
+
+[group('Ontology')]
+trace-invalid-chebi-sources:
+    #!/usr/bin/env bash
+    echo "Tracing invalid CHEBI IDs to source mapping files..."
+    uv run python scripts/trace_invalid_chebi_sources.py
+
+[group('Ontology')]
+remove-invalid-chebi-ids dry_run="":
+    #!/usr/bin/env bash
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - showing what would be removed..."
+        uv run python scripts/remove_invalid_chebi_ids.py --dry-run --verbose
+    else
+        echo "⚠️  This will modify normalized YAML files!"
+        echo "Removing invalid CHEBI IDs..."
+        uv run python scripts/remove_invalid_chebi_ids.py --verbose
+    fi
+
+# ================================================================
+# QUALITY TAGGING (Track 1: Placeholder Transparency)
+# ================================================================
+
+[group('Quality')]
+tag-placeholder-recipes dry_run="":
+    #!/usr/bin/env bash
+    if [ "{{dry_run}}" = "true" ]; then
+        echo "DRY RUN MODE - no files will be modified"
+        echo ""
+        .venv/bin/python scripts/tag_placeholder_recipes.py \
+            --dry-run \
+            --normalized-dir {{normalized_yaml_dir}} \
+            --verbose
+    else
+        .venv/bin/python scripts/tag_placeholder_recipes.py \
+            --normalized-dir {{normalized_yaml_dir}}
+    fi
+
+# ================================================================
+# FULL PIPELINE
+# ================================================================
+
+[group('Pipeline')]
+fix-all-data-quality dry_run="":
+    #!/usr/bin/env bash
+    echo "Running full data quality pipeline..."
+    echo ""
+    echo "Step 1: Track 3 - Fix YAML and schema errors"
+    just fix-validation-errors {{dry_run}}
+    echo ""
+    echo "Step 2: Track 2 - Resolve KOMODO compositions"
+    just resolve-komodo-compositions {{dry_run}}
+    echo ""
+    echo "Step 3: Track 1 - Tag placeholder recipes"
+    just tag-placeholder-recipes {{dry_run}}
+    echo ""
+    echo "Step 4: Validation report"
+    just validation-stats
+    echo ""
+    echo "✓ Data quality pipeline complete!"
 
 # ================================================================
 # EXPORT
@@ -1371,6 +1708,65 @@ clean:
     rm -rf **/__pycache__/
     rm -f {{app_dir}}/data.js
     echo "✓ Clean complete"
+
+[group('Stats')]
+stats-report output_dir="output/stats":
+    #!/usr/bin/env bash
+    echo "Generating comprehensive statistics report..."
+    uv run python scripts/generate_stats.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --microbe-media-param {{raw_dir}}/microbe-media-param \
+        --mediadive {{raw_dir}}/mediadive \
+        --output-dir {{output_dir}}
+    echo ""
+    echo "✓ Statistics report generated!"
+    echo "  JSON:     {{output_dir}}/stats.json"
+    echo "  Markdown: {{output_dir}}/stats.md"
+
+[group('Stats')]
+stats-json output_file="output/stats/stats.json":
+    #!/usr/bin/env bash
+    echo "Generating statistics JSON..."
+    uv run python scripts/generate_stats.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --microbe-media-param {{raw_dir}}/microbe-media-param \
+        --mediadive {{raw_dir}}/mediadive \
+        --output-json {{output_file}}
+    echo ""
+    echo "✓ JSON generated: {{output_file}}"
+
+[group('Stats')]
+stats-markdown output_file="output/stats/stats.md":
+    #!/usr/bin/env bash
+    echo "Generating statistics Markdown..."
+    uv run python scripts/generate_stats.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --microbe-media-param {{raw_dir}}/microbe-media-param \
+        --mediadive {{raw_dir}}/mediadive \
+        --output-markdown {{output_file}}
+    echo ""
+    echo "✓ Markdown generated: {{output_file}}"
+
+[group('Stats')]
+stats-terminal:
+    #!/usr/bin/env bash
+    uv run python scripts/generate_stats.py \
+        --normalized-yaml {{normalized_yaml_dir}} \
+        --microbe-media-param {{raw_dir}}/microbe-media-param \
+        --mediadive {{raw_dir}}/mediadive \
+        --terminal-only
+
+[group('Stats')]
+update-readme-stats:
+    #!/usr/bin/env bash
+    echo "Generating fresh statistics for README update..."
+    echo ""
+    just stats-report output/stats
+    echo ""
+    echo "Statistics generated! To update README.md:"
+    echo "  1. Review output/stats/stats.md"
+    echo "  2. Copy relevant sections to README.md"
+    echo "  3. Update lines 56-61 with current metrics"
 
 [group('Utils')]
 count-recipes:

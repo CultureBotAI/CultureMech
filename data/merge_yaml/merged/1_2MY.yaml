@@ -1,0 +1,71 @@
+name: 1/2MY
+original_name: 1/2MY
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '18.8'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Bacto Peptone (Difco)
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Malt Extract Agar (Nissui)
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1742
+  term:
+    id: TOGO:M1742
+    label: 1/2MY
+notes: 'Source: https://togomedium.org/medium/M1742
+
+  Original source: NBRC - NBRC_M951
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=951'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.259312Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1742'
+- timestamp: '2026-01-28T19:48:37.735690Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 621a70c3e8f2826fb5869a0ba0706b636a133a91d441ce2e8dc2b01820ba6082
+merged_from:
+- TOGO_M1742_1_2MY

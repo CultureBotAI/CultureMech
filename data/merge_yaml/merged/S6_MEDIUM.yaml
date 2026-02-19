@@ -1,0 +1,103 @@
+name: S6 Medium
+original_name: S6 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 10% Na2S2O3 solution
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: FeCl3・6H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Na2HPO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M82
+  term:
+    id: TOGO:M82
+    label: S6 Medium
+notes: 'Source: https://togomedium.org/medium/M82
+
+  Original source: JCM - JCM_M90-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=90'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.778079Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M82'
+- timestamp: '2026-01-28T19:48:42.203238Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2777b826c4706eede8206ff7a2ef317529f6080d792d30182b52ca064b854a12
+merged_from:
+- TOGO_M82_S6_Medium

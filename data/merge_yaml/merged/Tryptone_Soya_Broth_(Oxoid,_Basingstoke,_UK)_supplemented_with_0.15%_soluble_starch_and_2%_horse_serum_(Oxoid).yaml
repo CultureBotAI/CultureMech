@@ -1,0 +1,62 @@
+name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble
+  starch and 2% horse serum (Oxoid)
+original_name: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15%
+  soluble starch and 2% horse serum (Oxoid)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Horse serum (Oxoid)
+  concentration:
+    value: '2'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.15'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Tryptone soya broth (Oxoid)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2563
+  term:
+    id: TOGO:M2563
+    label: Tryptone Soya Broth (Oxoid, Basingstoke, UK) supplemented with 0.15% soluble
+      starch and 2% horse serum (Oxoid)
+notes: 'Source: https://togomedium.org/medium/M2563'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.744163Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2563'
+- timestamp: '2026-01-28T19:48:35.448449Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.502159'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2'
+merge_fingerprint: cb415730c3beef24b88339348469e1a90d70b5500e5bd8b8a872afd788faea61
+merged_from:
+- TOGO_M2563_Tryptone_Soya_Broth_Oxoid_Basingstoke_UK_supplemented_with_0.15_soluble_starch_and_2_horse_serum_Oxoid

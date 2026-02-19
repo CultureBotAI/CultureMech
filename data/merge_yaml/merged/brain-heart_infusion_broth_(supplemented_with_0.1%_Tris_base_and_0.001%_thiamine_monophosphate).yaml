@@ -1,0 +1,48 @@
+name: brain-heart infusion broth (supplemented with 0.1% Tris base and 0.001% thiamine
+  monophosphate)
+original_name: brain-heart infusion broth (supplemented with 0.1% Tris base and 0.001%
+  thiamine monophosphate)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tris
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:9754
+    label: tris
+- preferred_term: thiamine monophosphate
+  concentration:
+    value: '0.001'
+    unit: PERCENT_W_V
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: brain-heart infusion broth (Difco Laboratories)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2974
+  term:
+    id: TOGO:M2974
+    label: brain-heart infusion broth (supplemented with 0.1% Tris base and 0.001%
+      thiamine monophosphate)
+notes: 'Source: https://togomedium.org/medium/M2974'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.435443Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2974'
+- timestamp: '2026-01-28T19:48:34.652865Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: d19e7f4c3f759a198af6ebfddfd7f41cd1fe97c6584c7886b1a6fdd095ce573c
+merged_from:
+- TOGO_M2974_brain-heart_infusion_broth_supplemented_with_0.1_Tris_base_and_0.001_thiamine_monophosphate

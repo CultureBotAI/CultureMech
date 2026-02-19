@@ -1,0 +1,157 @@
+name: 3N-BBM+V recipe for customer orders
+original_name: 3N-BBM+V recipe for customer orders
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C15
+  term:
+    id: mediadive.medium:C15
+    label: 3N-BBM+V recipe for customer orders
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_3N_BBM_V_customerorders.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '23.4'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.041'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine hydrochloride
+  term:
+    id: CHEBI:49105
+    label: Thiamine hydrochloride
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
+    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter sterile
+- step_number: 4
+  action: MIX
+  description: 'Ensure elements are added in the following sequence:'
+- step_number: 5
+  action: AUTOCLAVE
+  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.517103Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C15'
+- timestamp: '2026-02-03T22:25:26.276546+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C14_3N-BBM_V, CCAP_C15_3N-BBM_V_recipe_for_customer_orders'
+synonyms:
+- name: 3N-BBM+V
+  source: MediaDive
+  source_id: mediadive.medium:C14
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C14_3N-BBM_V
+- CCAP_C15_3N-BBM_V_recipe_for_customer_orders
+merge_fingerprint: 850d7a1d70a21faae4396b666aca6b41f30463251281701614154c27854e789e

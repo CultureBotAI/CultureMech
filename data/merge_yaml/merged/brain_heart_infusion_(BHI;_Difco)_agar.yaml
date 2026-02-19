@@ -1,0 +1,26 @@
+name: brain heart infusion (BHI; Difco) agar
+original_name: brain heart infusion (BHI; Difco) agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: brain heart infusion (BHI; Difco) agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2956
+  term:
+    id: TOGO:M2956
+    label: brain heart infusion (BHI; Difco) agar
+notes: 'Source: https://togomedium.org/medium/M2956'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.423543Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2956'
+merge_fingerprint: 91a5d0fc635d0c6abde646c1bc979efa7d9a849ad4442f62fd7cc65a19e22730
+merged_from:
+- TOGO_M2956_brain_heart_infusion_BHI_Difco_agar

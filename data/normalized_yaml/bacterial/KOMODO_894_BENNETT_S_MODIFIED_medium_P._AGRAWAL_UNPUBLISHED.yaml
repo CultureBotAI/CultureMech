@@ -11,7 +11,61 @@ media_term:
     label: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
 notes: 'Source: KOMODO ModelSEED | ID: 894 | DSMZ Medium: 894 (mediadive.medium:894)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Tryptose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2
+  term:
+    id: CHEBI:35696
+    label: CoCl2
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +73,12 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 894'
+- timestamp: '2026-02-03T11:19:09.907842'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 894
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:42.530189'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
+    for ingredient: Ferric ammonium citrate'

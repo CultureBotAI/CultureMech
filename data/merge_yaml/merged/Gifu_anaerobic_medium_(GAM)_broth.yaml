@@ -1,0 +1,40 @@
+name: Gifu anaerobic medium (GAM) broth
+original_name: Gifu anaerobic medium (GAM) broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: GAM broth (Nissui)
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2684
+  term:
+    id: TOGO:M2684
+    label: Gifu anaerobic medium (GAM) broth
+notes: 'Source: https://togomedium.org/medium/M2684'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.060065Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2684'
+- timestamp: '2026-01-28T19:48:20.560765Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3eea33ac0a97d06e1f66aa91dde4b6483dddfa753da4d3d06f7dba684fa02231
+merged_from:
+- TOGO_M2684_Gifu_anaerobic_medium_GAM_broth

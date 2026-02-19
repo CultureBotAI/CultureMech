@@ -1,0 +1,88 @@
+name: Bacillus Fumarioli Medium
+original_name: Bacillus Fumarioli Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M622
+  term:
+    id: TOGO:M622
+    label: Bacillus Fumarioli Medium
+notes: 'Source: https://togomedium.org/medium/M622
+
+  Original source: JCM - JCM_M614
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=614'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.418171Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M622'
+- timestamp: '2026-01-28T19:48:18.224398Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 087f65c78af645fb28f11711c5a66f8ec9e90ebaa67b94a4faeeb8b4c56dcff8
+merged_from:
+- TOGO_M622_Bacillus_Fumarioli_Medium

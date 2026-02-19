@@ -1,0 +1,143 @@
+name: BG11
+original_name: BG11
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: CCAP Medium C17
+  term:
+    id: mediadive.medium:C17
+    label: BG11
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_BG11.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ammonium ferric citrate
+  term:
+    id: CHEBI:31604
+    label: Ammonium ferric citrate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '25.3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with deionized water. Adjust pH to 7.1 with 1M\
+    \ NaOH or HCl.\r\nFor agar add 15.0 g per litre of Bacteriological Agar (Thermo\
+    \ Scientific&trade; Oxoid&trade; Agar No.1).\r\nAutoclave at 15 psi for 15 minutes."
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Due to precipitation, larger volumes require stocks of citric acid\
+    \ and ammonium ferric citrate to be autoclaved separately in 100ml\r\ndeionized\
+    \ water or alternatively they can be autoclaved separately in test tubes and added\
+    \ to\r\nsterile medium in the airflow cabinet."
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1128/br.35.2.171-205.1971
+curation_history:
+- timestamp: '2026-01-26T17:53:19.526682Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C17'
+merge_fingerprint: 7afa7c71e54aaf96130cbdb535f4f96fe1eee3e7476da471a5040f76211bd251
+merged_from:
+- CCAP_C17_BG11

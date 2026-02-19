@@ -1,0 +1,49 @@
+name: Tryptone Yeast Extract Broth (ISP Medium No.1)
+original_name: Tryptone Yeast Extract Broth (ISP Medium No.1)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: ISP Medium 1 (Difco)
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1896
+  term:
+    id: TOGO:M1896
+    label: Tryptone Yeast Extract Broth (ISP Medium No.1)
+notes: 'Source: https://togomedium.org/medium/M1896
+
+  Original source: NBRC - NBRC_M1153
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1153'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.603978Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1896'
+- timestamp: '2026-01-28T19:48:18.792282Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fc81bfd367b53bf20d854112830a717b379226d87ab4b5298f5d9dbc22f18ef1
+merged_from:
+- TOGO_M1896_Tryptone_Yeast_Extract_Broth_ISP_Medium_No.1

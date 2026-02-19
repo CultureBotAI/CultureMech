@@ -10,7 +10,36 @@ media_term:
     label: MEDIUM 98 MODIFIED FOR DSM 15010
 notes: 'Source: KOMODO ModelSEED | ID: 98_15010 | DSMZ Medium: 98 (mediadive.medium:98)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: air-dried garden soil
+  concentration:
+    value: '400'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +47,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 98_15010'
+- timestamp: '2026-02-03T11:18:54.992472'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 98
+ph_value: 7.0

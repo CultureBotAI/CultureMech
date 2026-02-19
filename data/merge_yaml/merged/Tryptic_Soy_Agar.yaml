@@ -1,0 +1,30 @@
+name: tryptic soy agar
+original_name: tryptic soy agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: tryptic soy agar  (Oxoid)
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2834
+  term:
+    id: TOGO:M2834
+    label: tryptic soy agar
+notes: 'Source: https://togomedium.org/medium/M2834'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.344109Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2834'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.647935'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: tryptic soy agar  (Oxoid)'
+merge_fingerprint: 4263a190f9fa99fdf9b370afbb9164dc764327b20d57b5e61efa62e64314beb5
+merged_from:
+- TOGO_M2834_tryptic_soy_agar

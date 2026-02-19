@@ -1,0 +1,53 @@
+name: GAM Broth With 1% Lactose
+original_name: GAM Broth With 1% Lactose
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Lactose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:36218
+    label: beta-lactose
+- preferred_term: GAM broth (Nissui)
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M717
+  term:
+    id: TOGO:M717
+    label: GAM Broth With 1% Lactose
+notes: 'Source: https://togomedium.org/medium/M717
+
+  Original source: JCM - JCM_M697
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=697'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.590103Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M717'
+- timestamp: '2026-01-28T19:48:18.494848Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2e4ab1b04244d48e836441905f96801b8de5fc5dbff5fe549f8d73fd692978d5
+merged_from:
+- TOGO_M717_GAM_Broth_With_1_Lactose

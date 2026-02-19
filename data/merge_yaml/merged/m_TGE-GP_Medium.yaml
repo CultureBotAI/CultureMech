@@ -1,0 +1,56 @@
+name: m TGE-GP Medium
+original_name: m TGE-GP Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: m TGE BROTH MEDIUM (see Medium [M828])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M887
+  term:
+    id: TOGO:M887
+    label: m TGE-GP Medium
+notes: 'Source: https://togomedium.org/medium/M887
+
+  Original source: JCM - JCM_M851
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=851'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.902404Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M887'
+- timestamp: '2026-01-28T19:48:15.763935Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.092349'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KH2PO4'
+merge_fingerprint: da4a0a234bb56ac25d18eeaf72fb3ffa4c3724f9ca4a98e912130a27560e12ec
+merged_from:
+- TOGO_M887_m_TGE-GP_Medium

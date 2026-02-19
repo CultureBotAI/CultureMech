@@ -11,7 +11,73 @@ media_term:
     label: RAE medium
 notes: 'Source: KOMODO ModelSEED | ID: 848 | DSMZ Medium: 848 (mediadive.medium:848)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Citric acid x H2O
+  term:
+    id: CHEBI:31404
+    label: Citric acid x H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3.38'
+    unit: G_PER_L
+- preferred_term: Glacial acetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +85,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 848'
+- timestamp: '2026-02-03T11:18:57.404576'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 848

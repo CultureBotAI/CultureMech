@@ -1,0 +1,151 @@
+name: RUMINICLOSTRIDIUM MEDIUM
+original_name: RUMINICLOSTRIDIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 140
+  term:
+    id: mediadive.medium:140
+    label: RUMINICLOSTRIDIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium140.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sludge
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except carbonate, cellobiose and reducing agents),
+    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
+    Use either clarified rumen fluid  or sludge fluid as supplement. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add cellobiose, sulfide and cysteine from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Cellobiose has to be sterilized by filtration.
+    Adjust pH of complete medium to 6.8, if necessary.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
+    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
+    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
+    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
+    8-12°C in the dark.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
+    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
+    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
+    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
+    vials to 30% of volume and then stored frozen at -20°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.297516Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 140'
+- timestamp: '2026-02-03T22:25:33.287510+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_140_RUMINICLOSTRIDIUM_MEDIUM, KOMODO_140-replace-Rumen fluid,
+    clarified-with-Sludge fluid (medium 119)_CLOSTRIDIUM_CELLOBIOPARUM_medium_replace_Rumen_fluid_clarified_with_Sludge_fluid,
+    KOMODO_140_CLOSTRIDIUM_CELLOBIOPARUM_medium'
+synonyms:
+- name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge
+    fluid (medium 119)
+  source: KOMODO
+  source_id: komodo.medium:140_replace_Rumen fluid, clarified_with_Sludge fluid (medium
+    119)
+  original_category: imported
+- name: CLOSTRIDIUM CELLOBIOPARUM medium
+  source: KOMODO
+  source_id: komodo.medium:140
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_140_RUMINICLOSTRIDIUM_MEDIUM
+- KOMODO_140-replace-Rumen fluid, clarified-with-Sludge fluid (medium 119)_CLOSTRIDIUM_CELLOBIOPARUM_medium_replace_Rumen_fluid_clarified_with_Sludge_fluid
+- KOMODO_140_CLOSTRIDIUM_CELLOBIOPARUM_medium
+merge_fingerprint: d7b229138d0d711ef4c7e6a8d42cef06bf809780b41e6d413a97dc85a4db3351

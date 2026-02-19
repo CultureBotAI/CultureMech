@@ -1,0 +1,45 @@
+name: HEMIN MEDIUM FOR MYCOBACTERIUM
+original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 645a
+  term:
+    id: mediadive.medium:645a
+    label: HEMIN MEDIUM FOR MYCOBACTERIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645a.pdf'
+ingredients:
+- preferred_term: Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Middlebrook 7H10 agar
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: OADC Enrichment
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '60'
+    unit: MICROMOLAR
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with
+    60 micromoles hemin. Hemin must be solubilized with 1N NAOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.825347Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 645a'
+merge_fingerprint: 26087a915b28f627d30f665ec1bc8dc35089d7ae8c42cdc8d22e14efee4cc5a4
+merged_from:
+- DSMZ_645a_HEMIN_MEDIUM_FOR_MYCOBACTERIUM

@@ -1,0 +1,164 @@
+name: MIN E - METHYLOVERSATILIS MEDIUM
+original_name: MIN E - METHYLOVERSATILIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 1341
+  term:
+    id: mediadive.medium:1341
+    label: MIN E - METHYLOVERSATILIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1341.pdf'
+ingredients:
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '15.84'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.65'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '7.34'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Add 100 ml of sterile phosphate buffer after autoclaving.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately
+    and combine after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter
+    sterilized vitamin B12 (250 mg/l). The medium may be solidified by adding 15 g/l
+    agar.
+- step_number: 3
+  action: DISSOLVE
+  description: Dissolve the EDTA and NaOH in 800ml of distilled water then add the
+    inorganic salts. Make up to 1000.0 ml with distilled water.
+- step_number: 4
+  action: MIX
+  description: pH 6.8 - 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.144598Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1341'
+- timestamp: '2026-02-03T22:25:32.364448+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM, KOMODO_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM
+- KOMODO_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM
+merge_fingerprint: 3d0a82c43f929ff0050181f29677accbb985cf989c688a44c5a5994d54e135f0

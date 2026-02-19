@@ -1,0 +1,69 @@
+name: Nutrient Agar With 50% Soil Extract And 5% NaCl
+original_name: Nutrient Agar With 50% Soil Extract And 5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Soil extract (see Medium [M94])
+  concentration:
+    value: '500'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M405
+  term:
+    id: TOGO:M405
+    label: Nutrient Agar With 50% Soil Extract And 5% NaCl
+notes: 'Source: https://togomedium.org/medium/M405
+
+  Original source: JCM - JCM_M407
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=407'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.997015Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M405'
+- timestamp: '2026-01-28T19:48:16.869124Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ae8a2ca0d9d797e9211bb10416a671184a74efb7528b7164a786e6baecf2d85c
+merged_from:
+- TOGO_M405_Nutrient_Agar_With_50_Soil_Extract_And_5_NaCl

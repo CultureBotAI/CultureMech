@@ -1,0 +1,76 @@
+name: RCM MEDIUM (N2/CO2)
+original_name: RCM MEDIUM (N2/CO2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 634c
+  term:
+    id: mediadive.medium:634c
+    label: RCM MEDIUM (N2/CO2)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium634c.pdf'
+ingredients:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sodium carbonate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or MERCK)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v). Bring to
+    a boil and cool to room temperature while sparging with an 80% N2 and 20% CO2
+    gas mixture. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave for 15 min at 121°C. Before use, add 1.0 g
+    of sodium carbonate per liter medium from a sterile anoxic stock solution prepared
+    under an 80% N2 and 20% CO2 gas mixture. Check the pH of the medium after autoclaving
+    and adjust the pH to 6.8 if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.791507Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 634c'
+- timestamp: '2026-01-28T19:48:36.071771Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:46.073591+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_634c_RCM_MEDIUM_N2_CO2, KOMODO_634_RCM_medium, KOMODO_634a_RCM_medium_modified,
+    KOMODO_634b_RCM_medium_halophilic_clostridia'
+synonyms:
+- name: RCM medium
+  source: KOMODO
+  source_id: komodo.medium:634
+  original_category: imported
+- name: RCM medium (modified)
+  source: KOMODO
+  source_id: komodo.medium:634a
+  original_category: imported
+- name: RCM medium (halophilic clostridia)
+  source: KOMODO
+  source_id: komodo.medium:634b
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_634c_RCM_MEDIUM_N2_CO2
+- KOMODO_634_RCM_medium
+- KOMODO_634a_RCM_medium_modified
+- KOMODO_634b_RCM_medium_halophilic_clostridia
+merge_fingerprint: 231d90d78e1fa78ce01dde05af48e87d50838a4704bd115bb06a036223f20b39

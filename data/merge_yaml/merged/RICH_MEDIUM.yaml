@@ -1,0 +1,100 @@
+name: RICH MEDIUM
+original_name: RICH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 736
+  term:
+    id: mediadive.medium:736
+    label: RICH MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium736.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Meat extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH is 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.091225Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 736'
+- timestamp: '2026-01-28T19:48:41.517158Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:47.716186+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_736_RICH_MEDIUM, KOMODO_736-22413_MEDIUM_736_MODIFIED_FOR_DSM_22413,
+    KOMODO_736_RICH_medium'
+synonyms:
+- name: MEDIUM 736 MODIFIED FOR DSM 22413
+  source: KOMODO
+  source_id: komodo.medium:736_22413
+  original_category: imported
+- name: RICH medium
+  source: KOMODO
+  source_id: komodo.medium:736
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_736_RICH_MEDIUM
+- KOMODO_736-22413_MEDIUM_736_MODIFIED_FOR_DSM_22413
+- KOMODO_736_RICH_medium
+merge_fingerprint: 1614e38ac81b800db0c8e9a352e184babe0153cb5ad014b8df482160c6899d82

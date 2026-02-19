@@ -1,0 +1,103 @@
+name: Synbiobacterium KA13 Medium
+original_name: Synbiobacterium KA13 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NaNO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: Dimethyl sulfoxide
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:28262
+    label: dimethyl sulfoxide
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M794
+  term:
+    id: TOGO:M794
+    label: Synbiobacterium KA13 Medium
+notes: 'Source: https://togomedium.org/medium/M794
+
+  Original source: JCM - JCM_M767
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=767'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.725171Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M794'
+- timestamp: '2026-01-28T19:48:09.678081Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.592687'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: 59429a1bd45f916b462746796697980138af2d9ce0dde5cc76822832d86fa15e
+merged_from:
+- TOGO_M794_Synbiobacterium_KA13_Medium

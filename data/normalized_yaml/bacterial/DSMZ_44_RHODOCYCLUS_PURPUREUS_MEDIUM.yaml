@@ -26,3 +26,9 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 44'
+- timestamp: '2026-02-03T11:26:49.605870'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+data_quality_flags:
+- incomplete_composition

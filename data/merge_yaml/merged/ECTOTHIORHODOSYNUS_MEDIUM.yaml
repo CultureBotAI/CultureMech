@@ -1,0 +1,171 @@
+name: ECTOTHIORHODOSYNUS MEDIUM
+original_name: ECTOTHIORHODOSYNUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 9-9.5
+media_term:
+  preferred_term: DSMZ Medium 1002
+  term:
+    id: mediadive.medium:1002
+    label: ECTOTHIORHODOSYNUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1002.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the NH4Cl, CaCl2, carbonate, bicarbonate and sulfide as a single
+    sterile stock solution and add to the sterile medium after autoclaving. The pH
+    should be adjust to 9-9.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.049762Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1002'
+- timestamp: '2026-02-03T22:25:26.792042+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1002_ECTOTHIORHODOSYNUS_MEDIUM, KOMODO_1002_ECTOTHIORHODOSYNUS_medium'
+synonyms:
+- name: ECTOTHIORHODOSYNUS medium
+  source: KOMODO
+  source_id: komodo.medium:1002
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1002_ECTOTHIORHODOSYNUS_MEDIUM
+- KOMODO_1002_ECTOTHIORHODOSYNUS_medium
+merge_fingerprint: dd7263046a7706e295c0ecc3e9c1676a56ddec35bbb1cba50e67bfdbc31a8e17

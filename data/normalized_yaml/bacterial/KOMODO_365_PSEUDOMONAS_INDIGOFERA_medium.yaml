@@ -11,7 +11,32 @@ media_term:
     label: PSEUDOMONAS INDIGOFERA medium
 notes: 'Source: KOMODO ModelSEED | ID: 365 | DSMZ Medium: 365 (mediadive.medium:365)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +44,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 365'
+- timestamp: '2026-02-03T11:19:05.845601'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 365

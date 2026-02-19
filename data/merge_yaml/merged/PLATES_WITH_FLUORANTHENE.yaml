@@ -1,0 +1,383 @@
+name: PLATES WITH FLUORANTHENE
+original_name: PLATES WITH FLUORANTHENE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 462a
+  term:
+    id: mediadive.medium:462a
+    label: PLATES WITH FLUORANTHENE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium462a.pdf'
+ingredients:
+- preferred_term: Fluoranthene
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '2.44'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.52'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: p-Aminobenzoate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine
+  term:
+    id: CHEBI:16410
+    label: Pyridoxamine
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: POUR_PLATES
+  description: Pour plates of medium 462. Dissolve 2 mg/ml fluoranthene in acetone
+    and spread 1 ml of this solution on the surface of every pre-dried plate. Allow
+    the acetone to evaporate under sterile conditions. Inoculate as usual.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.9.
+- step_number: 3
+  action: MIX
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
+    for the specific strain (e.g. medium 1, 220 or 535). After this reactivation,
+    cultivate in mineral medium 462 with the appropriate carbon source.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 5
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+- step_number: 7
+  action: MIX
+  description: pH 7.3
+- step_number: 8
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.213869Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 462a'
+- timestamp: '2026-02-03T22:25:42.907769+00:00'
+  curator: recipe-merger
+  action: Merged 24 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_462a_PLATES_WITH_FLUORANTHENE, KOMODO_462-11192_MEDIUM_462_MODIFIED_FOR_DSM_11192,
+    KOMODO_462-13439_MEDIUM_462_MODIFIED_FOR_DSM_13439, KOMODO_462-13620_MEDIUM_462_MODIFIED_FOR_DSM_13620,
+    KOMODO_462-13957_MEDIUM_462_MODIFIED_FOR_DSM_13957, KOMODO_462-14926_MEDIUM_462_MODIFIED_FOR_DSM_14926,
+    KOMODO_462-16550_MEDIUM_462_MODIFIED_FOR_DSM_16550, KOMODO_462-18203_MEDIUM_462_MODIFIED_FOR_DSM_18203,
+    KOMODO_462-18781_MEDIUM_462_MODIFIED_FOR_DSM_18781, KOMODO_462-21507_MEDIUM_462_MODIFIED_FOR_DSM_21507,
+    KOMODO_462-22840_MEDIUM_462_MODIFIED_FOR_DSM_22840, KOMODO_462-22913_MEDIUM_462_MODIFIED_FOR_DSM_22913,
+    KOMODO_462-23828_MEDIUM_462_MODIFIED_FOR_DSM_23828, KOMODO_462-24952_MEDIUM_462_MODIFIED_FOR_DSM_24952,
+    KOMODO_462-6344_MEDIUM_462_MODIFIED_FOR_DSM_6344, KOMODO_462-6508_MEDIUM_462_MODIFIED_FOR_DSM_6508,
+    KOMODO_462-6537_MEDIUM_462_MODIFIED_FOR_DSM_6537, KOMODO_462-7356_MEDIUM_462_MODIFIED_FOR_DSM_7356,
+    KOMODO_462_MINERAL_MEDIUM_BRUNNER_WITH_VITAMINS, KOMODO_462a-11094_MEDIUM_462a_MODIFIED_FOR_DSM_11094,
+    KOMODO_462a-11095_MEDIUM_462a_MODIFIED_FOR_DSM_11095, KOMODO_462a-11096_MEDIUM_462a_MODIFIED_FOR_DSM_11096,
+    KOMODO_462a-12247_MEDIUM_462a_MODIFIED_FOR_DSM_12247, KOMODO_462a_PLATES_WITH_FLUORANTHENE'
+synonyms:
+- name: MEDIUM 462 MODIFIED FOR DSM 11192
+  source: KOMODO
+  source_id: komodo.medium:462_11192
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 13439
+  source: KOMODO
+  source_id: komodo.medium:462_13439
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 13620
+  source: KOMODO
+  source_id: komodo.medium:462_13620
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 13957
+  source: KOMODO
+  source_id: komodo.medium:462_13957
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 14926
+  source: KOMODO
+  source_id: komodo.medium:462_14926
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 16550
+  source: KOMODO
+  source_id: komodo.medium:462_16550
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 18203
+  source: KOMODO
+  source_id: komodo.medium:462_18203
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 18781
+  source: KOMODO
+  source_id: komodo.medium:462_18781
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 21507
+  source: KOMODO
+  source_id: komodo.medium:462_21507
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 22840
+  source: KOMODO
+  source_id: komodo.medium:462_22840
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 22913
+  source: KOMODO
+  source_id: komodo.medium:462_22913
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 23828
+  source: KOMODO
+  source_id: komodo.medium:462_23828
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 24952
+  source: KOMODO
+  source_id: komodo.medium:462_24952
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 6344
+  source: KOMODO
+  source_id: komodo.medium:462_6344
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 6508
+  source: KOMODO
+  source_id: komodo.medium:462_6508
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 6537
+  source: KOMODO
+  source_id: komodo.medium:462_6537
+  original_category: imported
+- name: MEDIUM 462 MODIFIED FOR DSM 7356
+  source: KOMODO
+  source_id: komodo.medium:462_7356
+  original_category: imported
+- name: MINERAL MEDIUM (BRUNNER) WITH VITAMINS
+  source: KOMODO
+  source_id: komodo.medium:462
+  original_category: imported
+- name: MEDIUM 462a MODIFIED FOR DSM 11094
+  source: KOMODO
+  source_id: komodo.medium:462a_11094
+  original_category: imported
+- name: MEDIUM 462a MODIFIED FOR DSM 11095
+  source: KOMODO
+  source_id: komodo.medium:462a_11095
+  original_category: imported
+- name: MEDIUM 462a MODIFIED FOR DSM 11096
+  source: KOMODO
+  source_id: komodo.medium:462a_11096
+  original_category: imported
+- name: MEDIUM 462a MODIFIED FOR DSM 12247
+  source: KOMODO
+  source_id: komodo.medium:462a_12247
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_462a_PLATES_WITH_FLUORANTHENE
+- KOMODO_462-11192_MEDIUM_462_MODIFIED_FOR_DSM_11192
+- KOMODO_462-13439_MEDIUM_462_MODIFIED_FOR_DSM_13439
+- KOMODO_462-13620_MEDIUM_462_MODIFIED_FOR_DSM_13620
+- KOMODO_462-13957_MEDIUM_462_MODIFIED_FOR_DSM_13957
+- KOMODO_462-14926_MEDIUM_462_MODIFIED_FOR_DSM_14926
+- KOMODO_462-16550_MEDIUM_462_MODIFIED_FOR_DSM_16550
+- KOMODO_462-18203_MEDIUM_462_MODIFIED_FOR_DSM_18203
+- KOMODO_462-18781_MEDIUM_462_MODIFIED_FOR_DSM_18781
+- KOMODO_462-21507_MEDIUM_462_MODIFIED_FOR_DSM_21507
+- KOMODO_462-22840_MEDIUM_462_MODIFIED_FOR_DSM_22840
+- KOMODO_462-22913_MEDIUM_462_MODIFIED_FOR_DSM_22913
+- KOMODO_462-23828_MEDIUM_462_MODIFIED_FOR_DSM_23828
+- KOMODO_462-24952_MEDIUM_462_MODIFIED_FOR_DSM_24952
+- KOMODO_462-6344_MEDIUM_462_MODIFIED_FOR_DSM_6344
+- KOMODO_462-6508_MEDIUM_462_MODIFIED_FOR_DSM_6508
+- KOMODO_462-6537_MEDIUM_462_MODIFIED_FOR_DSM_6537
+- KOMODO_462-7356_MEDIUM_462_MODIFIED_FOR_DSM_7356
+- KOMODO_462_MINERAL_MEDIUM_BRUNNER_WITH_VITAMINS
+- KOMODO_462a-11094_MEDIUM_462a_MODIFIED_FOR_DSM_11094
+- KOMODO_462a-11095_MEDIUM_462a_MODIFIED_FOR_DSM_11095
+- KOMODO_462a-11096_MEDIUM_462a_MODIFIED_FOR_DSM_11096
+- KOMODO_462a-12247_MEDIUM_462a_MODIFIED_FOR_DSM_12247
+- KOMODO_462a_PLATES_WITH_FLUORANTHENE
+merge_fingerprint: 124d6dd74304520742537d2c288fd6c3b4ece90d17a0bc602172f1bb16a6d41b

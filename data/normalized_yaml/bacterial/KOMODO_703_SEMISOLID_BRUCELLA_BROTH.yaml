@@ -10,7 +10,40 @@ media_term:
     label: SEMISOLID BRUCELLA BROTH
 notes: 'Source: KOMODO ModelSEED | ID: 703 | DSMZ Medium: 703 (mediadive.medium:703)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +51,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 703'
+- timestamp: '2026-02-03T11:19:04.437809'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 703

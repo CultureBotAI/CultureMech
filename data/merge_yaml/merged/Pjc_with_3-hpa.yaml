@@ -1,0 +1,91 @@
+name: Pjc with 3-hpa
+original_name: Pjc with 3-hpa
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: 3-Hydroxypropanal
+  concentration:
+    value: '5.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '18.6'
+    unit: MILLIMOLAR
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+- preferred_term: Cobaltous sulfate
+  concentration:
+    value: '0.004'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.811'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.017'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '37.4'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.043'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '7.25'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.867312Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 40, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 40
+  term:
+    id: MEDIADB:40
+    label: Pjc with 3-hpa
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: d7359be99b69140cd5fe1b1036901492033c63a41d4052593af2c113179f771a
+merged_from:
+- MEDIADB_40_Pjc_with_3-hpa

@@ -11,7 +11,57 @@ media_term:
   term:
     id: komodo.medium:1135
     label: HD-MEDIUM, 1:10 diluted, modified
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +69,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1135'
+- timestamp: '2026-02-03T11:19:19.217093'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1135

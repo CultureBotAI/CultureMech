@@ -1,0 +1,85 @@
+name: SIMONSIELLA MEDIUM
+original_name: SIMONSIELLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 303
+  term:
+    id: mediadive.medium:303
+    label: SIMONSIELLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium303.pdf'
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Phytone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Horse serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Prepare the medium without horse serum. After autoclaving cool to 50°C,
+    then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing.
+    Cultures die rapidly in stationary growth phase!
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.715304Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 303'
+- timestamp: '2026-01-28T19:48:32.623660Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:39.017909+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_303_SIMONSIELLA_MEDIUM, KOMODO_303_SIMONSIELLA_medium'
+synonyms:
+- name: SIMONSIELLA medium
+  source: KOMODO
+  source_id: komodo.medium:303
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_303_SIMONSIELLA_MEDIUM
+- KOMODO_303_SIMONSIELLA_medium
+merge_fingerprint: d589e5d4a501eaa3b0067aa3807895852a2a2ef0c998cb5427630a43b8048514

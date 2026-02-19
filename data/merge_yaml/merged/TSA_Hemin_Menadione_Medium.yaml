@@ -1,0 +1,94 @@
+name: TSA Hemin Menadione Medium
+original_name: TSA Hemin Menadione Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: hemin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: menadione solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: hemin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: ethanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: menadione
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:28869
+    label: Menadione
+media_term:
+  preferred_term: TOGO Medium M470
+  term:
+    id: TOGO:M470
+    label: TSA Hemin Menadione Medium
+notes: 'Source: https://togomedium.org/medium/M470
+
+  Original source: JCM - JCM_M469
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=469'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.117783Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M470'
+- timestamp: '2026-01-28T19:48:25.958239Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9f288834a15f5023a834757a0775d6f119189fad324a9fb46fca83aad1e76cce
+merged_from:
+- TOGO_M470_TSA_Hemin_Menadione_Medium

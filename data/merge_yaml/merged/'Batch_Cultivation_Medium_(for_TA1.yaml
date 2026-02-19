@@ -1,0 +1,91 @@
+name: '''Batch Cultivation Medium (for TA1'
+original_name: '''Batch Cultivation Medium (for TA1'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.08122'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.002104'
+    unit: MILLIMOLAR
+- preferred_term: Xylose
+  term:
+    id: CHEBI:18222
+    label: Xylose
+  concentration:
+    value: '66.61'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '1.36'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '34.22'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.01001'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.07969'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '8.115'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.04'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '113.5'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.420017Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 310, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 310
+  term:
+    id: MEDIADB:310
+    label: '''Batch Cultivation Medium (for TA1'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 24c25621cd26f4d26da7330fab088c29bf2ec99e7921ea924427f3450f52221d
+merged_from:
+- MEDIADB_310_Batch_Cultivation_Medium_for_TA1

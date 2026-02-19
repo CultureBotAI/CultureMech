@@ -1,0 +1,65 @@
+name: TRYPTICASE SOY BROTH AGAR WITH 2% MgSO<sub>4</sub> AND 3% NaCl
+original_name: TRYPTICASE SOY BROTH AGAR WITH 2% MgSO<sub>4</sub> AND 3% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1165
+  term:
+    id: mediadive.medium:J1165
+    label: TRYPTICASE SOY BROTH AGAR WITH 2% MgSO<sub>4</sub> AND 3% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1165'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.867399Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1165'
+- timestamp: '2026-02-03T22:25:32.432035+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1350_TRYPTICASE_SOY_AGAR_NA-MG, JCM_J1165_TRYPTICASE_SOY_BROTH_AGAR_WITH_2_MgSO_sub_4_sub_AND_3_NaCl'
+synonyms:
+- name: TRYPTICASE SOY AGAR NA-MG
+  source: MediaDive
+  source_id: mediadive.medium:1350
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1350_TRYPTICASE_SOY_AGAR_NA-MG
+- JCM_J1165_TRYPTICASE_SOY_BROTH_AGAR_WITH_2_MgSO_sub_4_sub_AND_3_NaCl
+merge_fingerprint: 915fb98e613ac2a6e64616abaa435c0edc8208c054b5486f9e57283e82851ef8

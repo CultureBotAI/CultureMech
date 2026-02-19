@@ -1,0 +1,153 @@
+name: MDY-V
+original_name: MDY-V
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: CCAP Medium C52
+  term:
+    id: mediadive.medium:C52
+    label: MDY-V
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MDY_V.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.5274'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.041'
+    unit: G_PER_L
+- preferred_term: ZnCl2 x 6 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine hydrochloride
+  term:
+    id: CHEBI:49105
+    label: Thiamine hydrochloride
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with distilled water.  Adjust pH to 6.8 with NaOH,\
+    \ then autoclave \r\nat 15 psi for 15 minutes.  For agar add 15 g per litre Bacterial\
+    \ Agar."
+- step_number: 2
+  action: MIX
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
+    \ in exactly the \r\nfollowing sequence:"
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter sterile
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.651379Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C52'
+merge_fingerprint: 520a39a71f9a5c9f07cb4f784a5e926728b619bf156a06978820985411e0bb61
+merged_from:
+- CCAP_C52_MDY-V

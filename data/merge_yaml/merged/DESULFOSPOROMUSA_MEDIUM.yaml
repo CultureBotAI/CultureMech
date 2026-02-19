@@ -1,0 +1,153 @@
+name: Desulfosporomusa Medium
+original_name: Desulfosporomusa Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: FeCl2 solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 10% Yeast extract solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 1.0 M Sodium lactate solution*
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: 5% Na2S・9H2O solution
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M430
+  term:
+    id: TOGO:M430
+    label: Desulfosporomusa Medium
+notes: 'Source: https://togomedium.org/medium/M430
+
+  Original source: JCM - JCM_M430
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=430'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.040975Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M430'
+- timestamp: '2026-01-28T19:48:13.948563Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.708043'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 043ef8229106930db48fbd2255aa9d1253a2a44f7d7ff4985b7546da0f70b6e7
+merged_from:
+- TOGO_M430_Desulfosporomusa_Medium

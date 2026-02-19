@@ -98,9 +98,6 @@ ingredients:
     value: '4.8'
     unit: G_PER_L
 - preferred_term: TiCl3
-  term:
-    id: CHEBI:7705079
-    label: TiCl3
   concentration:
     value: '6.34615'
     unit: G_PER_L
@@ -231,9 +228,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -287,3 +281,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 195d'
+- timestamp: '2026-02-06T05:10:28.800980Z'
+  curator: invalid-chebi-removal
+  action: Removed 2 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

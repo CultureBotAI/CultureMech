@@ -1,0 +1,72 @@
+name: Ferrovum  Medium
+original_name: Ferrovum  Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '920'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '12.32'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Modified UBS solution (see Medium [M896])
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1.0 M FeSO4 solution (pH 2.0)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Trace element solution (filter--sterilized) (see Medium [M773])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M897
+  term:
+    id: TOGO:M897
+    label: Ferrovum  Medium
+notes: 'Source: https://togomedium.org/medium/M897
+
+  Original source: JCM - JCM_M860-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=860'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.919687Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M897'
+- timestamp: '2026-01-28T19:48:11.662424Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.147362'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+merge_fingerprint: 1e1b56d048f0810aefc5631f845fbb43d5079bcd4a63ac185b7b3c1c871db81d
+merged_from:
+- TOGO_M897_Ferrovum_Medium

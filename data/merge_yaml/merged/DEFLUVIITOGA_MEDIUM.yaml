@@ -1,0 +1,209 @@
+name: DEFLUVIITOGA MEDIUM
+original_name: DEFLUVIITOGA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1328
+  term:
+    id: mediadive.medium:1328
+    label: DEFLUVIITOGA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1328.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na2-fumarate
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except sulfur, cysteine, peptone, fumarate, carbonate
+    and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
+    min to make it anoxic. Add and dissove cysteine, then dispense under 80% N2 and
+    20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing
+    already the appropriate amount of sulfur and autoclave at 121°C for 20 min. Add
+    peptone, fumarate and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Adjust pH of the complete medium to 7.0.
+- step_number: 2
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.110773Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1328'
+- timestamp: '2026-02-03T22:25:32.209957+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1328_DEFLUVIITOGA_MEDIUM, KOMODO_1328_DEFLUVIITOGA_medium'
+synonyms:
+- name: DEFLUVIITOGA medium
+  source: KOMODO
+  source_id: komodo.medium:1328
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1328_DEFLUVIITOGA_MEDIUM
+- KOMODO_1328_DEFLUVIITOGA_medium
+merge_fingerprint: 1be254ba4c6f52e6740e4755c2baf10715ddef6b8f087d4f6c1236646699a99d

@@ -77,6 +77,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaHCO3
   concentration:
     value: '2'
@@ -92,6 +95,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '200'
@@ -106,6 +112,9 @@ ingredients:
   term:
     id: CHEBI:192761
     label: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -281,3 +290,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.880128'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: CO2; Added default concentration for ingredient: Ferrihydrite'

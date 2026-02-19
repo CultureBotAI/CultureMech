@@ -1,0 +1,249 @@
+name: Elusimicrobium minutum medium
+original_name: Elusimicrobium minutum medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MgSO4x7H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2x2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: KCl
+  concentration:
+    value: '0.335'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Fe(NH4)2(SO4)2x7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgCl2x7H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: DI Water
+  concentration:
+    value: '970'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Wolfe's Vitamin Solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Complex component'
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+- preferred_term: Trace Elements Solution SL-6
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: DTT Solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: DI Water
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Dithiothreitol (DTT)
+  concentration:
+    value: '0.368'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Inorganic compound'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Na2MoO4xH2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2 x 4H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2 x 6H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2x6H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4 x 7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuCl2 x 2H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M2604
+  term:
+    id: TOGO:M2604
+    label: Elusimicrobium minutum medium
+notes: 'Source: https://togomedium.org/medium/M2604
+
+  Original URL: https://www.atcc.org/~/media/971A597A1CC2444AB3BA8C56538B92D4.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.843564Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2604'
+- timestamp: '2026-01-28T19:48:38.258598Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.855083'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 02372a90dee3ba12f9b24b19295338c66c21cfad0b4905425e2194ff5d70a89c
+merged_from:
+- TOGO_M2604_Elusimicrobium_minutum_medium

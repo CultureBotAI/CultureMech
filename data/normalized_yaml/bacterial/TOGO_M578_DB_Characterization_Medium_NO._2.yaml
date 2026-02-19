@@ -56,6 +56,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Na2CO3 solution
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 1 M CaCl2 solution
   concentration:
     value: '5'
@@ -106,6 +109,9 @@ ingredients:
   term:
     id: CHEBI:9754
     label: tris
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 1 M K2HPO4
   concentration:
     value: '83.4'
@@ -224,3 +230,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.551782'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2CO3 solution; Added default
+    concentration for ingredient: Tris base'

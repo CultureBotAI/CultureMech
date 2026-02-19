@@ -1,0 +1,62 @@
+name: PEPTONE-YEAST MEDIUM with MgSO4
+original_name: PEPTONE-YEAST MEDIUM with MgSO4
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 790
+  term:
+    id: mediadive.medium:790
+    label: PEPTONE-YEAST MEDIUM with MgSO4
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium790.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: ' (dehydrated)'
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.248571Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 790'
+- timestamp: '2026-02-03T22:26:01.152643+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_790_Peptone-YEAST_medium_with_MgSO4, DSMZ_790_PEPTONE-YEAST_MEDIUM_with_MgSO4'
+synonyms:
+- name: Peptone-YEAST medium with MgSO4
+  source: KOMODO
+  source_id: komodo.medium:790
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_790_Peptone-YEAST_medium_with_MgSO4
+- DSMZ_790_PEPTONE-YEAST_MEDIUM_with_MgSO4
+merge_fingerprint: 2048db84a4a9442d2f67574b65e94d15e2aab5add1cb7dccf13881f651e3261b

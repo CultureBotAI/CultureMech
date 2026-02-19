@@ -1,0 +1,62 @@
+name: BM MEDIUM
+original_name: BM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1192
+  term:
+    id: mediadive.medium:1192
+    label: BM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1192.pdf'
+ingredients:
+- preferred_term: Difco marine broth
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-06
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '3.168'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.638618Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1192'
+- timestamp: '2026-02-03T22:25:29.936654+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1192_BM_MEDIUM, KOMODO_1192_BM_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_1192_BM_MEDIUM
+- KOMODO_1192_BM_MEDIUM
+merge_fingerprint: 9b245b7e98d6a9589cd7b1fc90587e42c4e384be39d85076636856e01d2f25d2

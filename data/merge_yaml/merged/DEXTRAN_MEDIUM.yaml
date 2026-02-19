@@ -1,0 +1,89 @@
+name: DEXTRAN MEDIUM
+original_name: DEXTRAN MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1050
+  term:
+    id: mediadive.medium:1050
+    label: DEXTRAN MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1050.pdf'
+ingredients:
+- preferred_term: Dextran
+  term:
+    id: CHEBI:52071
+    label: Dextran
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: adjust to pH 6.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.208775Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1050'
+- timestamp: '2026-01-28T19:48:36.545193Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:27.781476+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1050_DEXTRAN_MEDIUM, KOMODO_1050_DEXTRAN_medium'
+synonyms:
+- name: DEXTRAN medium
+  source: KOMODO
+  source_id: komodo.medium:1050
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1050_DEXTRAN_MEDIUM
+- KOMODO_1050_DEXTRAN_medium
+merge_fingerprint: affc6c9c7b7d8e2edee5756f78ae5e3ce7c464380c4876355319e51bb1b061a9

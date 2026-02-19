@@ -1,0 +1,63 @@
+name: TCG Medium
+original_name: TCG Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Artificial seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
+    component, Solution'
+- preferred_term: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casitone (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M743
+  term:
+    id: TOGO:M743
+    label: TCG Medium
+notes: 'Source: https://togomedium.org/medium/M743
+
+  Original source: JCM - JCM_M720
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.632799Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M743'
+- timestamp: '2026-01-28T19:48:19.511779Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2e0f2453d03a22f3a5a1e334c852043360d74758e2729ddfcecaaa6a466bffcf
+merged_from:
+- TOGO_M743_TCG_Medium

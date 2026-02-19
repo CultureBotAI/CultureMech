@@ -154,12 +154,24 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 0.05 M PIPES (pH 7.0) solution
   concentration:
     value: '25'
@@ -179,8 +191,14 @@ ingredients:
     compound'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M769
   term:
@@ -202,3 +220,11 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.461231'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Hydrogen gas; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas'

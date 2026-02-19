@@ -1,31 +1,45 @@
 name: F/2 Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: NaNO3(Fisher BP360-500)
-- agent_term:
-    preferred_term: '2'
-  amount: NaH2PO4•H2O(MCIB 742)
-- agent_term:
-    preferred_term: '3'
-  amount: Na2SiO3•9H2O(Sigma 307815)
-- agent_term:
-    preferred_term: '4'
-  amount: Trace Metals Solution
-- agent_term:
-    preferred_term: '5'
-  amount: Vitamin B12
-- agent_term:
-    preferred_term: '6'
-  amount: Biotin Vitamin Solution
-- agent_term:
-    preferred_term: '7'
-  amount: Thiamine Vitamin Solution
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaH2PO4•H2O(MCIB 742)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Trace Metals Solution'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

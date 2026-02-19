@@ -1,0 +1,294 @@
+name: ACETOBACTERIUM FIMETARIUM MEDIUM
+original_name: ACETOBACTERIUM FIMETARIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 614
+  term:
+    id: mediadive.medium:614
+    label: ACETOBACTERIUM FIMETARIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium614.pdf'
+ingredients:
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.326409'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.514342'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.217606'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.326409'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.326409'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.49456'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.00049456'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.98912'
+    unit: G_PER_L
+- preferred_term: D-Fructose
+  term:
+    id: CHEBI:15824
+    label: D-Fructose
+  concentration:
+    value: '9.8912'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.692384'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate, vitamins, fructose and sulfide)
+    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Before use add vitamins, fructose and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should
+    be sterilized by filtration. Adjust pH of complete medium to 6.8 - 7.0, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.739194Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 614'
+- timestamp: '2026-02-03T22:25:45.804995+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_614_ACETOBACTERIUM_FIMETARIUM_MEDIUM, KOMODO_614-1_For_DSM_8238,
+    KOMODO_614_ACETOBACTERIUM_SP._medium'
+synonyms:
+- name: For DSM 8238
+  source: KOMODO
+  source_id: komodo.medium:614.1
+  original_category: imported
+- name: ACETOBACTERIUM SP. medium
+  source: KOMODO
+  source_id: komodo.medium:614
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_614_ACETOBACTERIUM_FIMETARIUM_MEDIUM
+- KOMODO_614-1_For_DSM_8238
+- KOMODO_614_ACETOBACTERIUM_SP._medium
+merge_fingerprint: 573bca450cd9e3241a3108b58f70d840beafc7ddb7f6061dcee0abe0d4699b9c

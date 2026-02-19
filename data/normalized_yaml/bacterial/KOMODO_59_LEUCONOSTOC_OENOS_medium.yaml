@@ -11,7 +11,68 @@ media_term:
     label: LEUCONOSTOC OENOS medium
 notes: 'Source: KOMODO ModelSEED | ID: 59 | DSMZ Medium: 59 (mediadive.medium:59)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '9.99001'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.04995'
+    unit: G_PER_L
+- preferred_term: (NH4) citrate
+  concentration:
+    value: '3.4965'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63037
+    label: ''
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tomato juice
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +80,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 59'
+- timestamp: '2026-02-03T11:19:18.074219'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 59

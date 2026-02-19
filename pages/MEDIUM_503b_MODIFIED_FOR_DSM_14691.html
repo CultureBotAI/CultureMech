@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDIUM 503b MODIFIED FOR DSM 14691 - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>MEDIUM 503b MODIFIED FOR DSM 14691</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">imported</span>
+                    
+                    <span class="badge">DEFINED</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+
+                    
+                    <div class="info-item">
+                        <div class="info-label">Database Reference</div>
+                        <div class="info-value">
+                            <a href="komodo.medium:503b_14691" class="external-link" target="_blank">
+                                komodo.medium:503b_14691
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>KH2PO4</td>
+                            <td>
+                                
+                                0.212314 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63036" class="external-link" target="_blank">
+                                    CHEBI:63036
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NH4Cl</td>
+                            <td>
+                                
+                                0.265393 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31206" class="external-link" target="_blank">
+                                    CHEBI:31206
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaCl</td>
+                            <td>
+                                
+                                1.06157 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26710" class="external-link" target="_blank">
+                                    CHEBI:26710
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MgCl2 x 6 H2O</td>
+                            <td>
+                                
+                                0.424628 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86345" class="external-link" target="_blank">
+                                    CHEBI:86345
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>KCl</td>
+                            <td>
+                                
+                                0.530786 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32588" class="external-link" target="_blank">
+                                    CHEBI:32588
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CaCl2 x 2 H2O</td>
+                            <td>
+                                
+                                0.159236 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86158" class="external-link" target="_blank">
+                                    CHEBI:86158
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium resazurin</td>
+                            <td>
+                                
+                                0.000530786 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2CO3</td>
+                            <td>
+                                
+                                50 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29377" class="external-link" target="_blank">
+                                    CHEBI:29377
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Glucose</td>
+                            <td>
+                                
+                                250 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17634" class="external-link" target="_blank">
+                                    CHEBI:17634
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2S x 9 H2O</td>
+                            <td>
+                                
+                                30 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:76209" class="external-link" target="_blank">
+                                    CHEBI:76209
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>HCl</td>
+                            <td>
+                                
+                                2.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17883" class="external-link" target="_blank">
+                                    CHEBI:17883
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>FeCl2 x 4 H2O</td>
+                            <td>
+                                
+                                1.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86249" class="external-link" target="_blank">
+                                    CHEBI:86249
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ZnCl2</td>
+                            <td>
+                                
+                                0.07 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49976" class="external-link" target="_blank">
+                                    CHEBI:49976
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MnCl2 x 4 H2O</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86368" class="external-link" target="_blank">
+                                    CHEBI:86368
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>H3BO3</td>
+                            <td>
+                                
+                                0.006 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33118" class="external-link" target="_blank">
+                                    CHEBI:33118
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CoCl2 x 6 H2O</td>
+                            <td>
+                                
+                                0.19 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35696" class="external-link" target="_blank">
+                                    CHEBI:35696
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CuCl2 x 2 H2O</td>
+                            <td>
+                                
+                                0.002 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86318" class="external-link" target="_blank">
+                                    CHEBI:86318
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NiCl2 x 6 H2O</td>
+                            <td>
+                                
+                                0.024 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:34887" class="external-link" target="_blank">
+                                    CHEBI:34887
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2MoO4 x 2 H2O</td>
+                            <td>
+                                
+                                0.036 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75213" class="external-link" target="_blank">
+                                    CHEBI:75213
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaOH</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32145" class="external-link" target="_blank">
+                                    CHEBI:32145
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2SeO3 x 5 H2O</td>
+                            <td>
+                                
+                                0.003 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131361" class="external-link" target="_blank">
+                                    CHEBI:131361
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2WO4 x 2 H2O</td>
+                            <td>
+                                
+                                0.004 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:63939" class="external-link" target="_blank">
+                                    CHEBI:63939
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Vitamin B12</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17439" class="external-link" target="_blank">
+                                    CHEBI:17439
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>p-Aminobenzoic acid</td>
+                            <td>
+                                
+                                0.08 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30753" class="external-link" target="_blank">
+                                    CHEBI:30753
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-(+)-biotin</td>
+                            <td>
+                                
+                                0.02 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinic acid</td>
+                            <td>
+                                
+                                0.2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15940" class="external-link" target="_blank">
+                                    CHEBI:15940
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium pantothenate</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31345" class="external-link" target="_blank">
+                                    CHEBI:31345
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxine hydrochloride</td>
+                            <td>
+                                
+                                0.3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30961" class="external-link" target="_blank">
+                                    CHEBI:30961
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine-HCl x 2 H2O</td>
+                            <td>
+                                
+                                0.2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:132751" class="external-link" target="_blank">
+                                    CHEBI:132751
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Applications</h2>
+                <ul>
+                    
+                    <li>Microbial cultivation</li>
+                    
+                </ul>
+            </div>
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: KOMODO ModelSEED | ID: 503b_14691 | DSMZ Medium: 503b (mediadive.medium:503b) | Aerobic: No</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: KOMODO_503b-14691_MEDIUM_503b_MODIFIED_FOR_DSM_14691.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+name: Seawater Starch Agar (SWS)
+original_name: Seawater Starch Agar (SWS)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Seawater (2% Salinity)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
+    component, Solution'
+- preferred_term: Soluble starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Soytone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:8150
+    label: ''
+media_term:
+  preferred_term: TOGO Medium M1416
+  term:
+    id: TOGO:M1416
+    label: Seawater Starch Agar (SWS)
+notes: 'Source: https://togomedium.org/medium/M1416
+
+  Original source: NBRC - NBRC_M13
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=13'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.656903Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1416'
+- timestamp: '2026-01-28T19:48:12.424876Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 791d7a0c004fb9ba9a68d815e129f1c1c91313566b759b3a9eb64b62f4fb9323
+merged_from:
+- TOGO_M1416_Seawater_Starch_Agar_SWS

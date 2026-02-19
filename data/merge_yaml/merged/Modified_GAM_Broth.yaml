@@ -1,0 +1,44 @@
+name: Modified GAM Broth
+original_name: Modified GAM Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: GAM broth, modified (Nissui)
+  concentration:
+    value: '41.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M3285
+  term:
+    id: TOGO:M3285
+    label: Modified GAM Broth
+notes: 'Source: https://togomedium.org/medium/M3285
+
+  Original source: JCM - JCM_M1461
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1461'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.728560Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M3285'
+- timestamp: '2026-01-28T19:48:30.812843Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: c63ecf1a3ed1ea2555caa0b524aeca498411bb1b69916ec1753c0fc11306b058
+merged_from:
+- TOGO_M3285_Modified_GAM_Broth

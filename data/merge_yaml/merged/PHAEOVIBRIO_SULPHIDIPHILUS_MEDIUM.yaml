@@ -1,0 +1,176 @@
+name: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
+original_name: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.6-7.4
+media_term:
+  preferred_term: DSMZ Medium 1359
+  term:
+    id: mediadive.medium:1359
+    label: PHAEOVIBRIO SULPHIDIPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1359.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Na pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na acetate
+  term:
+    id: CHEBI:32954
+    label: Na acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.240182'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.0699301'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.0599401'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1998'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03996'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prepare the basal medium under nitrogen.
+- step_number: 2
+  action: AUTOCLAVE
+  description: NaHCO3 solution (autoclaved in sealed, half full vessels under CO2),
+    Na2S x 9H2O solution (autoclaved) and vitamin B12 solution (filter sterilised)
+    is added to the autoclaved medium and the final pH adjusted to 6.6 - 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.192377Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1359'
+merge_fingerprint: d28aeee64ee3fbab4396f8362634ed4686627a4c6b90bc8f3bbede5d32c3debf
+merged_from:
+- DSMZ_1359_PHAEOVIBRIO_SULPHIDIPHILUS_MEDIUM

@@ -1,0 +1,84 @@
+name: Pyse Medium
+original_name: Pyse Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '2.65'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '5.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaSO4・2H2O
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Peptone
+  concentration:
+    value: '8'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M227
+  term:
+    id: TOGO:M227
+    label: Pyse Medium
+notes: 'Source: https://togomedium.org/medium/M227
+
+  Original source: JCM - JCM_M235
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=235'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.659575Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M227'
+- timestamp: '2026-01-28T19:48:21.979237Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fcce5ec4f420c961ccf874887e4db2776b3eee03d05224adfeaa9e1982a58a29
+merged_from:
+- TOGO_M227_Pyse_Medium

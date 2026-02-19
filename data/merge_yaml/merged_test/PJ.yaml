@@ -1,0 +1,55 @@
+name: PJ
+original_name: PJ
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C76
+  term:
+    id: mediadive.medium:C76
+    label: PJ
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PJ.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.736807Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C76'
+merge_fingerprint: 0b36339ff257d81ef792866d35a8060ec80538ce2df6065820ce77f443eb88ce
+merged_from:
+- CCAP_C76_PJ

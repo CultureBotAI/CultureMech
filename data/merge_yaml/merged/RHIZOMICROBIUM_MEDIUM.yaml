@@ -1,0 +1,150 @@
+name: RHIZOMICROBIUM MEDIUM
+original_name: RHIZOMICROBIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1288
+  term:
+    id: mediadive.medium:1288
+    label: RHIZOMICROBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1288.pdf'
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Prepare the medium without glucose, cellobiose, maltose, and soluble
+    starch. Boil the medium and cool under an atmosphere of N2:CO2 (80:20) and adjust
+    the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas
+    atmosphere and seal with rubber stoppers. Add the glucose, cellobiose, maltose,
+    and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH
+    6.8).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.001262Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1288'
+- timestamp: '2026-01-28T19:48:21.756055Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:31.834277+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1288_RHIZOMICROBIUM_MEDIUM, KOMODO_1288_RHIZOMICROBIUM_medium'
+synonyms:
+- name: RHIZOMICROBIUM medium
+  source: KOMODO
+  source_id: komodo.medium:1288
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1288_RHIZOMICROBIUM_MEDIUM
+- KOMODO_1288_RHIZOMICROBIUM_medium
+merge_fingerprint: 53e349f3081de65274054e7ed0424586400af6d593b15fd872c3a7a031c0a0ac

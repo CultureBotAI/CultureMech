@@ -1,0 +1,138 @@
+name: Modified MPOB Medium
+original_name: Modified MPOB Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.41'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Na2HPO4
+  concentration:
+    value: '0.53'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Glucose
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Trace element solution SL--10 (see Medium [M433])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1043
+  term:
+    id: TOGO:M1043
+    label: Modified MPOB Medium
+notes: 'Source: https://togomedium.org/medium/M1043
+
+  Original source: JCM - JCM_M990
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=990'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.815130Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1043'
+- timestamp: '2026-01-28T19:48:36.216794Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.620330'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 0c83896c29f666630cb9da59e45a7b9382f228c17ad78f9756968161b8dd1922
+merged_from:
+- TOGO_M1043_Modified_MPOB_Medium

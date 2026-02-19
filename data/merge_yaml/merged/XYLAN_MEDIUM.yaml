@@ -1,0 +1,95 @@
+name: XYLAN MEDIUM
+original_name: XYLAN MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1235
+  term:
+    id: mediadive.medium:1235
+    label: XYLAN MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1235.pdf'
+ingredients:
+- preferred_term: Xylan
+  term:
+    id: CHEBI:37166
+    label: Xylan
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.803396Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1235'
+- timestamp: '2026-02-03T22:25:30.942279+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1235_XYLAN_MEDIUM, KOMODO_1235-22867_MEDIUM_1235_MODIFIED_FOR_DSM_22867,
+    KOMODO_1235_XYLAN_medium'
+synonyms:
+- name: MEDIUM 1235 MODIFIED FOR DSM 22867
+  source: KOMODO
+  source_id: komodo.medium:1235_22867
+  original_category: imported
+- name: XYLAN medium
+  source: KOMODO
+  source_id: komodo.medium:1235
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1235_XYLAN_MEDIUM
+- KOMODO_1235-22867_MEDIUM_1235_MODIFIED_FOR_DSM_22867
+- KOMODO_1235_XYLAN_medium
+merge_fingerprint: eab147290b2e81ba1bf35b5b8f73f3050e6ad21a3f0f370986067a05c049d81b

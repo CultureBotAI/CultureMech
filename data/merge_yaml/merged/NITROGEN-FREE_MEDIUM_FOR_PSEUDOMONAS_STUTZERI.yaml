@@ -1,0 +1,84 @@
+name: NITROGEN-FREE MEDIUM FOR PSEUDOMONAS STUTZERI
+original_name: NITROGEN-FREE MEDIUM FOR PSEUDOMONAS STUTZERI
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 460
+  term:
+    id: mediadive.medium:460
+    label: NITROGEN-FREE MEDIUM FOR PSEUDOMONAS STUTZERI
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium460.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: DL-Na-malate
+  term:
+    id: CHEBI:91261
+    label: DL-Na-malate
+  concentration:
+    value: '6.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.197973Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 460'
+- timestamp: '2026-02-03T22:25:42.669489+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_460_NITROGEN-FREE_MEDIUM_FOR_PSEUDOMONAS_STUTZERI, KOMODO_460-4166_MEDIUM_460_MODIFIED_FOR_DSM_4166,
+    KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI'
+synonyms:
+- name: MEDIUM 460 MODIFIED FOR DSM 4166
+  source: KOMODO
+  source_id: komodo.medium:460_4166
+  original_category: imported
+- name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
+  source: KOMODO
+  source_id: komodo.medium:460
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_460_NITROGEN-FREE_MEDIUM_FOR_PSEUDOMONAS_STUTZERI
+- KOMODO_460-4166_MEDIUM_460_MODIFIED_FOR_DSM_4166
+- KOMODO_460_NITROGEN-FREE_medium_FOR_PSEUDOMONAS_STUTZERI
+merge_fingerprint: ebe5300e84188eb6d094a3fba05737334e54fb1d4a1ba5efcbdd385f8d43345f

@@ -1,0 +1,65 @@
+name: MODIFIED T5 MEDIUM
+original_name: MODIFIED T5 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.5
+media_term:
+  preferred_term: DSMZ Medium 1335
+  term:
+    id: mediadive.medium:1335
+    label: MODIFIED T5 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1335.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.0-7.5 and sterilize by autoclaving. The medium may be
+    solidified by adding 20.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.129645Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1335'
+merge_fingerprint: 11257e8b817c1893f4b405ac1bde5c4f062d4cef94b9726db29254405e66c7e4
+merged_from:
+- DSMZ_1335_MODIFIED_T5_MEDIUM

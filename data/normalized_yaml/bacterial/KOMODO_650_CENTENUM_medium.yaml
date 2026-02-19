@@ -11,7 +11,46 @@ media_term:
     label: CENTENUM medium
 notes: 'Source: KOMODO ModelSEED | ID: 650 | DSMZ Medium: 650 (mediadive.medium:650)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Pyruvate
+  term:
+    id: CHEBI:15361
+    label: Pyruvate
+  concentration:
+    value: '1.741'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +58,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 650'
+- timestamp: '2026-02-03T11:19:05.825349'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 650

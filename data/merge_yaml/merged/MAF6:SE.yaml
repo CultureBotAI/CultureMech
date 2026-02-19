@@ -1,0 +1,167 @@
+name: MAF6:SE
+original_name: MAF6:SE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.6
+media_term:
+  preferred_term: CCAP Medium C46
+  term:
+    id: mediadive.medium:C46
+    label: MAF6:SE
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MAF6_SE.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MES
+  term:
+    id: CHEBI:39010
+    label: MES
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.041'
+    unit: G_PER_L
+- preferred_term: ZnCl2 x 6 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine hydrochloride
+  term:
+    id: CHEBI:49105
+    label: Thiamine hydrochloride
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Soil
+  concentration:
+    value: '159.091'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with distilled water. pH is adjusted to 6.6.  Autoclave\
+    \ at 15 psi for \r\n15 minutes."
+- step_number: 2
+  action: MIX
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
+    \ in exactly the \r\nfollowing sequence:"
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter sterile
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
+- step_number: 5
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid are\
+    \ those showing obvious \r\nsigns of man's activity and particular care should\
+    \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
+    \ may have been used."
+- step_number: 6
+  action: STORE
+  description: "A rich loam with good crumb structure should be sought.  Stones, roots\
+    \ and larger \r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh.  The sieved soil should be spread to air dry and hand picked for\
+    \ smaller \r\ninvertebrates and roots.  It should be turned periodically and picked\
+    \ over again.  When dry it may be sieved through a finer mesh (2­4 mm) or stored\
+    \ as it is prior to\r\nuse."
+- step_number: 7
+  action: AUTOCLAVE
+  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660\
+    \ ml of deionized \r\nwater are placed in a 1 litre bottle and autoclaved once\
+    \ at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The contents of the\
+    \ bottle are left to settle (usually for \r\nat least a week) and then the supernatant\
+    \ is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.630555Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C46'
+- timestamp: '2026-01-28T19:48:27.604105Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b2cc3f11ac9acf5780fe5ccb2ea27dfd2a753c0f4217b2b4728590a013156251
+merged_from:
+- CCAP_C46_MAF6_SE

@@ -1,0 +1,66 @@
+name: N-Z Amine A Medium
+original_name: N-Z Amine A Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glycerol
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: N--Z amine, type A (Sheffield)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M71
+  term:
+    id: TOGO:M71
+    label: N-Z Amine A Medium
+notes: 'Source: https://togomedium.org/medium/M71
+
+  Original source: JCM - JCM_M80
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=80'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.578763Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M71'
+- timestamp: '2026-01-28T19:48:35.492559Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a6e0f5f121eecbf8d39a23dad408e3f8692571d347333557c8e02d7f3a52a82c
+merged_from:
+- TOGO_M71_N-Z_Amine_A_Medium

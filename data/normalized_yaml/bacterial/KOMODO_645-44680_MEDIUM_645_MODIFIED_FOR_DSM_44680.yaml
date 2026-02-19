@@ -10,7 +10,151 @@ media_term:
     label: MEDIUM 645 MODIFIED FOR DSM 44680
 notes: 'Source: KOMODO ModelSEED | ID: 645_44680 | DSMZ Medium: 645 (mediadive.medium:645)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Bacto Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Bacto Middlebrook 7H10 agar
+  concentration:
+    value: '20.9945'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: ZnSO4
+  term:
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: CuSO4
+  term:
+    id: CHEBI:23414
+    label: CuSO4
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Oleic acid
+  term:
+    id: CHEBI:16196
+    label: Oleic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Bovine albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '8.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +162,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 645_44680'
+- timestamp: '2026-02-03T11:19:10.065079'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 645

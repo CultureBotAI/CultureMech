@@ -1,0 +1,53 @@
+name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml NAD
+  and 15 μg/ml haemin)
+original_name: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15
+  μg/ml NAD and 15 μg/ml haemin)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Haemin
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:50385
+    label: Haemin
+- preferred_term: NAD
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Columbia agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2189
+  term:
+    id: TOGO:M2189
+    label: Hib medium (Columbia agar supplemented with 5 g/l yeast extract, 15 μg/ml
+      NAD and 15 μg/ml haemin)
+notes: 'Source: https://togomedium.org/medium/M2189'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.146631Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2189'
+- timestamp: '2026-01-28T19:48:21.654293Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: d636cd0cf1be6eeea13b20ecbb891d1a4923a1ed9fec72ef6f71f2732931a205
+merged_from:
+- TOGO_M2189_Hib_medium_Columbia_agar_supplemented_with_5_g_l_yeast_extract_15_μg_ml_NAD_and_15_μg_ml_haemin

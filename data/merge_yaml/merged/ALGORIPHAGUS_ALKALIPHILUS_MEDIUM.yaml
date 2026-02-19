@@ -1,0 +1,194 @@
+name: ALGORIPHAGUS ALKALIPHILUS MEDIUM
+original_name: ALGORIPHAGUS ALKALIPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.8-8.2
+media_term:
+  preferred_term: DSMZ Medium 1242
+  term:
+    id: mediadive.medium:1242
+    label: ALGORIPHAGUS ALKALIPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1242.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Pyruvic acid
+  term:
+    id: CHEBI:32816
+    label: Pyruvic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Tris buffer
+  term:
+    id: CHEBI:9754
+    label: Tris buffer
+  concentration:
+    value: '12.114'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1.03'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '6.89'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.11'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0046'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH 7.8-8.2
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.826810Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1242'
+- timestamp: '2026-01-28T19:48:33.255800Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:31.142170+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1242_ALGORIPHAGUS_ALKALIPHILUS_MEDIUM, KOMODO_1242_ALGORIPHAGUS_ALKALIPHILUS_medium'
+synonyms:
+- name: ALGORIPHAGUS ALKALIPHILUS medium
+  source: KOMODO
+  source_id: komodo.medium:1242
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1242_ALGORIPHAGUS_ALKALIPHILUS_MEDIUM
+- KOMODO_1242_ALGORIPHAGUS_ALKALIPHILUS_medium
+merge_fingerprint: c9214e1c9fdcec9cde188bbb5494fdc9a07152572f151039d1b2a9337499c25a

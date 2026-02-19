@@ -1,0 +1,109 @@
+name: Xy agar
+original_name: Xy agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KCl
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: Ca(NO3)2·4H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86159
+    label: calcium nitrate tetrahydrate
+- preferred_term: Thiamine
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
+- preferred_term: Xylan
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:37166
+    label: xylan
+- preferred_term: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M1782
+  term:
+    id: TOGO:M1782
+    label: Xy agar
+notes: 'Source: https://togomedium.org/medium/M1782
+
+  Original source: NBRC - NBRC_M1000
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1000'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.349304Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1782'
+- timestamp: '2026-01-28T19:48:14.278053Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e585c373acb61d8838ca4946a1bda8e5ea66c764eb7230befae5d4c7fb147931
+merged_from:
+- TOGO_M1782_Xy_agar

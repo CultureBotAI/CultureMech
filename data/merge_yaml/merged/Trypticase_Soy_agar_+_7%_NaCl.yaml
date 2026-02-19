@@ -1,0 +1,61 @@
+name: Trypticase Soy agar + 7% NaCl
+original_name: Trypticase Soy agar + 7% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '70'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Trypticase Soy (BBL)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1747
+  term:
+    id: TOGO:M1747
+    label: Trypticase Soy agar + 7% NaCl
+notes: 'Source: https://togomedium.org/medium/M1747
+
+  Original source: NBRC - NBRC_M957
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=957'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.271493Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1747'
+- timestamp: '2026-01-28T19:48:36.376220Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4bfe1b569212680868681e09aa2884bbb531a08a76e67145ca671cd3f6ec26a8
+merged_from:
+- TOGO_M1747_Trypticase_Soy_agar_7_NaCl

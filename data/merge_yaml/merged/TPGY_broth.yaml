@@ -1,0 +1,26 @@
+name: TPGY broth
+original_name: TPGY broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: TPGY broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2807
+  term:
+    id: TOGO:M2807
+    label: TPGY broth
+notes: 'Source: https://togomedium.org/medium/M2807'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.319453Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2807'
+merge_fingerprint: 99e6d345b06b35462ebd529ca1ecde28d63dacf23fd6ef8b830e486c1bb8e16f
+merged_from:
+- TOGO_M2807_TPGY_broth

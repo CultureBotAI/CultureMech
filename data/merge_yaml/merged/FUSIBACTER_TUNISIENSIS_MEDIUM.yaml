@@ -1,0 +1,266 @@
+name: FUSIBACTER TUNISIENSIS MEDIUM
+original_name: FUSIBACTER TUNISIENSIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 853a
+  term:
+    id: mediadive.medium:853a
+    label: FUSIBACTER TUNISIENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium853a.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.29703'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.29703'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.9703'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0990099'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '29.703'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '0.990099'
+    unit: G_PER_L
+- preferred_term: Na-acetate x 3 H2O
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.00049505'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '3.12871'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.49505'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1.48515'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '3.56436'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.29703'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients, except thiosulfate, cysteine, carbonate, glucose,
+    and sulfide, then sparge medium for 30 - 45 min with 80% N2 and 20% CO2 gas mixture
+    to make it anoxic. Add thiosulfate and cysteine, then adjust pH to 7.0 and dispense
+    medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials to 30% of their volume and autoclave. After autoclaving, add glucose
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas atmosphere. Adjust the pH of the complete medium to 7.2 - 7.4, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.508460Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 853a'
+- timestamp: '2026-02-03T22:25:50.281945+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_853_FUSIBACTER_MEDIUM, DSMZ_853a_FUSIBACTER_TUNISIENSIS_MEDIUM,
+    KOMODO_853-1_For_DSM_24436, KOMODO_853_FUSIBACTER_PAUCIVORANS_medium'
+synonyms:
+- name: FUSIBACTER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:853
+  original_category: imported
+- name: For DSM 24436
+  source: KOMODO
+  source_id: komodo.medium:853.1
+  original_category: imported
+- name: FUSIBACTER PAUCIVORANS medium
+  source: KOMODO
+  source_id: komodo.medium:853
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_853_FUSIBACTER_MEDIUM
+- DSMZ_853a_FUSIBACTER_TUNISIENSIS_MEDIUM
+- KOMODO_853-1_For_DSM_24436
+- KOMODO_853_FUSIBACTER_PAUCIVORANS_medium
+merge_fingerprint: bfe2ba83d24cac3fc558ad271cd3c6f35090cfb7726263f27f55ac69e912aa74

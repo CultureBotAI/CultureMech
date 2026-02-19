@@ -29,6 +29,9 @@ ingredients:
   term:
     id: CHEBI:26836
     label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 1.0 M FeSO4 solution (pH 2.0)
   concentration:
     value: '20'
@@ -60,3 +63,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.147362'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'

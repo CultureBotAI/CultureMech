@@ -1,0 +1,89 @@
+name: Potato solid medium
+original_name: Potato solid medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCO3
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Inorganic
+    compound, Simple component'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: glycerol
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: glucose
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: agar
+  concentration:
+    value: '1.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: yeast extract (BD Difco)
+  concentration:
+    value: '3'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+- preferred_term: boiled potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: thioglycolate medium (Wako)
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+- preferred_term: meat extract (Wako Pure Chemical Industries, Osaka, Japan)
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+media_term:
+  preferred_term: TOGO Medium M2843
+  term:
+    id: TOGO:M2843
+    label: Potato solid medium
+notes: 'Source: https://togomedium.org/medium/M2843'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.348074Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2843'
+- timestamp: '2026-01-28T19:48:17.747352Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 6712bb16d9a1f5ad509cb005443c4f4cd2e2550795d9ef317b574f8b923080a8
+merged_from:
+- TOGO_M2843_Potato_solid_medium

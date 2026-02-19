@@ -1,0 +1,40 @@
+name: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
+original_name: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Mueller Hinton Agar (BD 225250)
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Rabbit serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2584
+  term:
+    id: TOGO:M2584
+    label: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
+notes: 'Source: https://togomedium.org/medium/M2584
+
+  Original URL: https://www.atcc.org/~/media/AF84D0BF30B242F386C01A2F7DB295E7.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.788334Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2584'
+merge_fingerprint: a52b0a0657aad99d3d77a097e91d441846e78e4aa02a37ad3805d682e28a72d6
+merged_from:
+- TOGO_M2584_Mueller_Hinton_Medium_with_10_Rabbit_Serum_Agar

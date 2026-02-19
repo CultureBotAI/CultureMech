@@ -1,0 +1,97 @@
+name: MEDIUM FOR H. DOMBROWSKII
+original_name: MEDIUM FOR H. DOMBROWSKII
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 954
+  term:
+    id: mediadive.medium:954
+    label: MEDIUM FOR H. DOMBROWSKII
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium954.pdf'
+ingredients:
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tris
+  term:
+    id: CHEBI:9754
+    label: Tris
+  concentration:
+    value: '12.1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in
+    the water and adjustment of pH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.886856Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 954'
+- timestamp: '2026-01-28T19:48:27.006322Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:52.121675+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_954_MEDIUM_FOR_H._DOMBROWSKII, KOMODO_954_medium_FOR_H._DOMBROWSKII'
+synonyms:
+- name: medium FOR H. DOMBROWSKII
+  source: KOMODO
+  source_id: komodo.medium:954
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_954_MEDIUM_FOR_H._DOMBROWSKII
+- KOMODO_954_medium_FOR_H._DOMBROWSKII
+merge_fingerprint: 88e18360a2102928e53d86d8538ca4d7f16330be80d841fa59684d507797f88b

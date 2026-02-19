@@ -1,0 +1,51 @@
+name: OAT FLAKE MEDIUM
+original_name: OAT FLAKE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 189
+  term:
+    id: mediadive.medium:189
+    label: OAT FLAKE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium189.pdf'
+ingredients:
+- preferred_term: Oat flakes
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave
+    20 min at 121°C. Shake before pouring. pH 6.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.421773Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 189'
+- timestamp: '2026-02-03T22:25:36.868558+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_189_OAT_FLAKE_MEDIUM, KOMODO_189_OAT_FLAKE_medium'
+synonyms:
+- name: OAT FLAKE medium
+  source: KOMODO
+  source_id: komodo.medium:189
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_189_OAT_FLAKE_MEDIUM
+- KOMODO_189_OAT_FLAKE_medium
+merge_fingerprint: 08dd1635802fe7a4488d400e0fb1db5c33e151aaf229e705a4dfd4563bbc19a8

@@ -1,0 +1,91 @@
+name: FAECALICATENA OROTICA MEDIUM
+original_name: FAECALICATENA OROTICA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 249
+  term:
+    id: mediadive.medium:249
+    label: FAECALICATENA OROTICA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium249.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '6.95'
+    unit: G_PER_L
+- preferred_term: Na-orotate
+  term:
+    id: CHEBI:132101
+    label: Na-orotate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients and adjust pH to 7.5. Sparge medium with 100%
+    N2 gas for 30 - 45 min to make it anoxic. Distribute medium under same gas atmosphere
+    in anoxic Hungate-type tubes or serum vials and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.591003Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 249'
+- timestamp: '2026-02-03T22:25:38.160510+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_249_FAECALICATENA_OROTICA_MEDIUM, KOMODO_249_OROTIC_ACID_medium'
+synonyms:
+- name: OROTIC ACID medium
+  source: KOMODO
+  source_id: komodo.medium:249
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_249_FAECALICATENA_OROTICA_MEDIUM
+- KOMODO_249_OROTIC_ACID_medium
+merge_fingerprint: 0eac8af5813480c576c30eae94119cc31225df501c2e63d92694d31444c78747

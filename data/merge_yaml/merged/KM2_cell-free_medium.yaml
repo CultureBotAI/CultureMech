@@ -1,0 +1,209 @@
+name: KM2 cell-free medium
+original_name: KM2 cell-free medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '365'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Brain Heart Infusion (BHI) (Difco)
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: PPLO (Difco)
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Undefined component'
+- preferred_term: Pig serum (Invitrogen)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Horse serum (Invitrogen)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Fresh baker's yeast extract solution
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Sterile solution A
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Sterile solution B
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Phenol red solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 100 mg/ml azlocillin
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: 100 mg/ml flucloxacillin
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: 1.0 M NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '160'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2HPO4·12H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: 0.1 M NaOH
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Phenol red
+  concentration:
+    value: '0.6'
+    unit: PERCENT_W_V
+  notes: 'Role: pH indicator; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: azlocillin
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: flucloxacillin
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2927
+  term:
+    id: TOGO:M2927
+    label: KM2 cell-free medium
+notes: 'Source: https://togomedium.org/medium/M2927'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.409448Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2927'
+- timestamp: '2026-01-28T19:48:06.700980Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.838764'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1.0 M NaOH'
+merge_fingerprint: f6dcc8d0bdb742948e2a35aed5e17b55abeeb90a0c4b11ac549807b00b3202e3
+merged_from:
+- TOGO_M2927_KM2_cell-free_medium

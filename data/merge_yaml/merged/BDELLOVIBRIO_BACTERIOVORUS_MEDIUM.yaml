@@ -1,0 +1,80 @@
+name: BDELLOVIBRIO BACTERIOVORUS MEDIUM
+original_name: BDELLOVIBRIO BACTERIOVORUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1012a
+  term:
+    id: mediadive.medium:1012a
+    label: BDELLOVIBRIO BACTERIOVORUS MEDIUM
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Nutrient broth
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Preparation of double-layered agar plates:<p>\r\n\r\n<b>Bottom layer:</b>\r\
+    \nDissolve ingredients and adjust the pH of the medium to 7.2 with NaOH. Then\
+    \ bring the medium to a boil to dissolve the agar and autoclave (121°C for 15\
+    \ min). Dry plates at room temperature for 2 - 3 days.<p>\r\n\r\n<b>Top layer:</b>\r\
+    \nGrow prey bacterium on agar slants using DSMZ medium 54 or medium 1. Prepare\
+    \ 5 ml aliquots of 1 % Bacto agar in 25 mM HEPES buffer (6.0 g/l HEPES,    0.6\
+    \ g/l MgCl2 x 6 H2O,     0.3 g/l CaCl2 x 2 H2O, pH 7.2 ) and autoclave in test\
+    \ tubes. After cooling to 45°C in a water bath add 0.5 ml cell suspension of the\
+    \ host organism, mix, and pour the top layer. For the top layer of one plate use\
+    \ one 24 h old agar slant culture and wash off grown cells in 0.5 ml sterile water.<p>"
+- step_number: 2
+  action: MIX
+  description: Inoculate the top layer of the double-layer plates the same day when
+    prepared.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.106432Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1012a'
+- timestamp: '2026-01-28T19:48:17.720789Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 061aae2ccc2fb427cb6366586d0398f72aef40c07d067ba909ae9d1b1feb6d24
+merged_from:
+- DSMZ_1012a_BDELLOVIBRIO_BACTERIOVORUS_MEDIUM

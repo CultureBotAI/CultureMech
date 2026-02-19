@@ -1,19 +1,25 @@
 name: Ag Diatom Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: CR1 Soil
-- agent_term:
-    preferred_term: '2'
-  amount: MgCO3(MCIB CB486)
-- agent_term:
-    preferred_term: '3'
-  amount: Modified Bold 3N Medium
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CR1 Soil'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgCO3(MCIB CB486)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Modified Bold 3N Medium'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

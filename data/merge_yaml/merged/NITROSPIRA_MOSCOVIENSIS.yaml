@@ -1,0 +1,114 @@
+name: NITROSPIRA MOSCOVIENSIS
+original_name: NITROSPIRA MOSCOVIENSIS
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.4-7.6
+media_term:
+  preferred_term: DSMZ Medium 756d
+  term:
+    id: mediadive.medium:756d
+    label: NITROSPIRA MOSCOVIENSIS
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium756d.pdf'
+ingredients:
+- preferred_term: NaNO2
+  term:
+    id: CHEBI:78870
+    label: NaNO2
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0338'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.0494'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.0431'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24
+  concentration:
+    value: '0.0371'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0973'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium to
+    stand for 2 - 3 days so that pH can ajust itself to pH 7.4 - 7.6 .
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.155009Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 756d'
+- timestamp: '2026-02-03T22:25:48.020612+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_756c_AUTOTROPHIC_NITROBACTER_MEDIUM, DSMZ_756d_NITROSPIRA_MOSCOVIENSIS'
+synonyms:
+- name: AUTOTROPHIC NITROBACTER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:756c
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_756c_AUTOTROPHIC_NITROBACTER_MEDIUM
+- DSMZ_756d_NITROSPIRA_MOSCOVIENSIS
+merge_fingerprint: a2ed2e2832894ae3b1899f692c340c492789e7f7dbb9e6ce3f92805dfc64e80f

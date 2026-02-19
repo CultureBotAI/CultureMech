@@ -269,11 +269,17 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -348,6 +354,9 @@ ingredients:
   term:
     id: CHEBI:26836
     label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2346
   term:
@@ -367,3 +376,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.370755'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration
+    for ingredient: NaOH; Added default concentration for ingredient: H2SO4'

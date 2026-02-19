@@ -1,0 +1,184 @@
+name: Tepidibacillus Marianaensis Medium
+original_name: Tepidibacillus Marianaensis Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '940'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '26'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: L-Cysteine·HCl·H2O
+  concentration:
+    value: '0.031'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: SL--7 trace element solution (see Medium [M538])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: 1.0 M Sodium pyruvate solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Iron(III) citrate solution (see Medium [M1072])
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: iron(III) citrate
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:144421
+    label: iron(III) citrate
+- preferred_term: 10 N NaOH solution
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M3271
+  term:
+    id: TOGO:M3271
+    label: Tepidibacillus Marianaensis Medium
+notes: 'Source: https://togomedium.org/medium/M3271
+
+  Original source: JCM - JCM_M1413
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1413'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.716436Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M3271'
+- timestamp: '2026-01-28T19:48:15.181948Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.078182'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    10 N NaOH solution'
+merge_fingerprint: 655ee1ea40cf5230c19844750aa3b1458052b9f1c7e3fd93893dbb8a4f85979f
+merged_from:
+- TOGO_M3271_Tepidibacillus_Marianaensis_Medium

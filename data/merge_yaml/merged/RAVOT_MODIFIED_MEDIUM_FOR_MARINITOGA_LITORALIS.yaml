@@ -1,0 +1,168 @@
+name: Ravot Modified Medium For Marinitoga Litoralis
+original_name: Ravot Modified Medium For Marinitoga Litoralis
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '26'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:14258
+    label: ''
+- preferred_term: Maltose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+- preferred_term: PIPES
+  concentration:
+    value: '3.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Sodium acetate・3H2O
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 7% K2HPO4solution
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 7% KH2PO4 solution
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 3% Na2S・9H2O solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M747
+  term:
+    id: TOGO:M747
+    label: Ravot Modified Medium For Marinitoga Litoralis
+notes: 'Source: https://togomedium.org/medium/M747
+
+  Original source: JCM - JCM_M724
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=724'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.639374Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M747'
+- timestamp: '2026-01-28T19:48:27.259761Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.352245'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: df26d8caa63815598a0a5d647879f973063862dce7d5f7a62a4fd8b99196dc55
+merged_from:
+- TOGO_M747_Ravot_Modified_Medium_For_Marinitoga_Litoralis

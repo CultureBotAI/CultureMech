@@ -1,0 +1,120 @@
+name: Glycerol-Asparagine Agar (ISP Medium No.5)
+original_name: Glycerol-Asparagine Agar (ISP Medium No.5)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:17196
+    label: L-asparagine
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Trace salts solution*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+media_term:
+  preferred_term: TOGO Medium M1483
+  term:
+    id: TOGO:M1483
+    label: Glycerol-Asparagine Agar (ISP Medium No.5)
+notes: 'Source: https://togomedium.org/medium/M1483
+
+  Original source: NBRC - NBRC_M265
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=265'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.741229Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1483'
+- timestamp: '2026-01-28T19:48:15.233018Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:07.602827+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1483_Glycerol-Asparagine_Agar_ISP_Medium_No.5, TOGO_M1642_Acidic_Glycerol-Asparagine_Agar_ISP_medium_No.5'
+synonyms:
+- name: Acidic Glycerol-Asparagine Agar (ISP medium No.5)
+  source: TOGO
+  source_id: TOGO:M1642
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1483_Glycerol-Asparagine_Agar_ISP_Medium_No.5
+- TOGO_M1642_Acidic_Glycerol-Asparagine_Agar_ISP_medium_No.5
+merge_fingerprint: 9c31d517cd3be32582abae1b032a6be98356858e1d63cfa4a64af7d1ffba0b86

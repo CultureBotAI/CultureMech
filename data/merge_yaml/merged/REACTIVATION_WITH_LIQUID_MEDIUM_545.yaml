@@ -1,0 +1,90 @@
+name: REACTIVATION WITH LIQUID MEDIUM 545
+original_name: REACTIVATION WITH LIQUID MEDIUM 545
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 54a
+  term:
+    id: mediadive.medium:54a
+    label: REACTIVATION WITH LIQUID MEDIUM 545
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium54a.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium
+    54 or 545. Subsequent subculturing may be carried out in liquid medium or on agar
+    plates medium 54.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 3
+  action: MIX
+  description: The same as Caso Bouillon (Merck or Oxoid, Germany).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.055336Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 54a'
+merge_fingerprint: de9f4b372d31d4789430cfa4f54126310ac0bbdd80031930576a5a1939189bfb
+merged_from:
+- DSMZ_54a_REACTIVATION_WITH_LIQUID_MEDIUM_545

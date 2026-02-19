@@ -1,0 +1,59 @@
+name: TRYPTIC SOY BROTH MEDIUM (SIGMA T8907-1KG)
+original_name: TRYPTIC SOY BROTH MEDIUM (SIGMA T8907-1KG)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 1617
+  term:
+    id: mediadive.medium:1617
+    label: TRYPTIC SOY BROTH MEDIUM (SIGMA T8907-1KG)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1617.pdf'
+ingredients:
+- preferred_term: Casein
+  term:
+    id: CHEBI:3448
+    label: Casein
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soya pepton
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.021466Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1617'
+merge_fingerprint: fcfd12b0b0fbf15abbeb47952f0e33b3ff52112aad0ffead93e2a283f5bd94db
+merged_from:
+- DSMZ_1617_TRYPTIC_SOY_BROTH_MEDIUM_SIGMA_T8907-1KG

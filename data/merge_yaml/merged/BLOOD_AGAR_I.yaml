@@ -1,0 +1,107 @@
+name: BLOOD AGAR I
+original_name: BLOOD AGAR I
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 420
+  term:
+    id: mediadive.medium:420
+    label: BLOOD AGAR I
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium420.pdf'
+ingredients:
+- preferred_term: Blood agar No 2
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize blood agar No 2 (Oxoid). After autoclaving cool to 50°C,
+    then add 40 ml/l of sterile horse blood.
+- step_number: 2
+  action: STORE
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or
+    1. For rehydration of Helicobacter and Campylobacter spp., use medium 215 (brain
+    heart infusion).
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 4
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.089235Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 420'
+- timestamp: '2026-02-03T22:25:41.197227+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_420_BLOOD_AGAR_I, KOMODO_420-4690_MEDIUM_420_MODIFIED_FOR_DSM_4690,
+    KOMODO_420_BLOOD_AGAR_I'
+synonyms:
+- name: MEDIUM 420 MODIFIED FOR DSM 4690
+  source: KOMODO
+  source_id: komodo.medium:420_4690
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_420_BLOOD_AGAR_I
+- KOMODO_420-4690_MEDIUM_420_MODIFIED_FOR_DSM_4690
+- KOMODO_420_BLOOD_AGAR_I
+merge_fingerprint: ab64c925428dd4e6419c11acf8b7724e0d076aabbca7a89f5d275251e48f3e6b

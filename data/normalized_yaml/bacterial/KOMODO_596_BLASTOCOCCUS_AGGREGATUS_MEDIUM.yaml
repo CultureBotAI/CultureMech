@@ -11,7 +11,90 @@ media_term:
     label: BLASTOCOCCUS AGGREGATUS MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 596 | DSMZ Medium: 596 (mediadive.medium:596)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium glycerophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Tris HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '999'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '2.85'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Na-tartrate
+  term:
+    id: CHEBI:63017
+    label: Na-tartrate
+  concentration:
+    value: '1.77'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.0269'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.0208'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.0404'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0252'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +102,12 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 596'
+- timestamp: '2026-02-03T11:19:15.858768'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 596
+- timestamp: '2026-02-06T05:10:48.551899Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

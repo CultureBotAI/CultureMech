@@ -1,0 +1,72 @@
+name: LACTOBACILLUS KEFIRANOFACIENS
+original_name: LACTOBACILLUS KEFIRANOFACIENS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1253
+  term:
+    id: mediadive.medium:1253
+    label: LACTOBACILLUS KEFIRANOFACIENS
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1253.pdf'
+ingredients:
+- preferred_term: Man Rogosa Sharp broth
+  concentration:
+    value: '54.4016'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '9.8912'
+    unit: G_PER_L
+- preferred_term: White wine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cysteine hydrochloride
+  term:
+    id: CHEBI:91248
+    label: Cysteine hydrochloride
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add all products except white wine, hemin and cysteine solutions. Adjust
+    pH to 6.5 and autoclave for 15 minutes. Cool to 50°C and add aseptically white
+    wine, hemin and cysteine solutions.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dissolve 50 mg hemin in 1 ml 1N NaOH; make to 100 ml with distilled
+    water. Autoclave at 121°C for 15 min.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Filter sterilize.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.866650Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1253'
+merge_fingerprint: 0fceb2d329e50e175ad0fe413ad62c7fb82ad40758cacaea5c4503e8cd83e85b
+merged_from:
+- DSMZ_1253_LACTOBACILLUS_KEFIRANOFACIENS

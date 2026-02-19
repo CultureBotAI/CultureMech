@@ -10,7 +10,27 @@ media_term:
     label: MEDIUM 381 MODIFIED FOR DSM 23293
 notes: 'Source: KOMODO ModelSEED | ID: 381_23293 | DSMZ Medium: 381 (mediadive.medium:381)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sea Salt
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +38,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 381_23293'
+- timestamp: '2026-02-03T11:19:09.660973'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 381
+ph_value: 7.2

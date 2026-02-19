@@ -1,0 +1,228 @@
+name: Mic-Cit; Herriott et al
+original_name: Mic-Cit; Herriott et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ''
+  concentration:
+    value: '0.00603'
+    unit: MILLIMOLAR
+- preferred_term: L-Glutamate
+  concentration:
+    value: '8.83572'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.39963'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '0.34202'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lys-L'
+- preferred_term: L-Aspartate
+  concentration:
+    value: '3.75657'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '0.95157'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.6702'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '1.10381'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tyr-L'
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '0.83229'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cys-L'
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '32.5768'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '2.28711'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '0.06445'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:his-L'
+- preferred_term: Hypoxanthine
+  term:
+    id: CHEBI:17368
+    label: Hypoxanthine
+  concentration:
+    value: '0.14693'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:hxan'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.01369'
+    unit: MILLIMOLAR
+- preferred_term: Inosine
+  concentration:
+    value: '7.45434'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ins'
+- preferred_term: L-Citrulline
+  concentration:
+    value: '0.85621'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:citr-L'
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.0133'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Polyvinyl alcohol
+  concentration:
+    value: '0.45401'
+    unit: MILLIMOLAR
+- preferred_term: Triethanolamine
+  term:
+    id: CHEBI:28621
+    label: Triethanolamine
+  concentration:
+    value: '2.68118'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '2.1006'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.19823'
+    unit: MILLIMOLAR
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.01527'
+    unit: MILLIMOLAR
+- preferred_term: Potassium sulfate
+  concentration:
+    value: '5.73858'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '20.0918'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '99.2471'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.00839'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '19.8404'
+    unit: MILLIMOLAR
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.01534'
+    unit: MILLIMOLAR
+- preferred_term: Sodium L-lactate
+  term:
+    id: CHEBI:867561
+    label: Sodium L-lactate
+  concentration:
+    value: '7.13903'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.211189Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 282, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:18.452004Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 282
+  term:
+    id: MEDIADB:282
+    label: Mic-Cit; Herriott et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: dab18a39fe5409bbac89c6531f95d97642b4e2ed11b454fedfdd926938763225
+merged_from:
+- MEDIADB_282_Mic-Cit_Herriott_et_al

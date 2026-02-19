@@ -41,9 +41,6 @@ ingredients:
     value: '50'
     unit: MILLIMOLAR
   notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
-  term:
-    id: CHEBI:1185531
-    label: ''
 - preferred_term: D-galactose
   concentration:
     value: '0.2'
@@ -178,3 +175,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:25.566835Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

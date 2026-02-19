@@ -11,7 +11,36 @@ media_term:
   term:
     id: komodo.medium:1205
     label: 1/2 TRYPTIC SOY BROTH (ANAEROBE)
-ingredients: []
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '13.75'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '3.6'
+    unit: G_PER_L
+- preferred_term: DL-Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: DL-Dithiothreitol
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +48,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1205'
+- timestamp: '2026-02-03T11:19:07.190209'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1205

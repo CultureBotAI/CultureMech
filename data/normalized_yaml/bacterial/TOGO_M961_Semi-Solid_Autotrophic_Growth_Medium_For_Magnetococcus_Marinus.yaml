@@ -90,8 +90,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Air
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '2.35'
@@ -123,6 +129,9 @@ ingredients:
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 0.01 M FeSO4·5H2Osolution (in 0.02 N HCl)
   concentration:
     value: '2.5'
@@ -135,6 +144,9 @@ ingredients:
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -254,6 +266,9 @@ ingredients:
     label: potassium aluminium sulfate
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -357,3 +372,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.469732'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: Air; Added default concentration for ingredient: HCl; Added default
+    concentration for ingredient: HCl; Added default concentration for ingredient:
+    KOH solution'

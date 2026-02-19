@@ -1,0 +1,119 @@
+name: Kaminskyj Minimal Medium
+original_name: Kaminskyj Minimal Medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium nitrate
+  term:
+    id: CHEBI:63005
+    label: Sodium nitrate
+  concentration:
+    value: '1411.9'
+    unit: MILLIMOLAR
+- preferred_term: Sodium EDTA
+  concentration:
+    value: '0.1315'
+    unit: MILLIMOLAR
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '55.51'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.007145'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.01798'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.006199'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.006408'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.02526'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.1779'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.03769'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '42.2'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '139.5'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.07651'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '223.4'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.401642Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 308, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:30.155979Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 308
+  term:
+    id: MEDIADB:308
+    label: Kaminskyj Minimal Medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: f1708e585a8a847d59b6cdbc88a88bdd536352a0ad4b3a9e3b752c753d6218f1
+merged_from:
+- MEDIADB_308_Kaminskyj_Minimal_Medium

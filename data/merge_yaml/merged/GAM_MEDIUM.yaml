@@ -1,0 +1,44 @@
+name: GAM Medium
+original_name: GAM Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Nissui GAM Broth*
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1525
+  term:
+    id: TOGO:M1525
+    label: GAM Medium
+notes: 'Source: https://togomedium.org/medium/M1525
+
+  Original source: NBRC - NBRC_M312
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=312'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.797066Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1525'
+- timestamp: '2026-01-28T19:48:39.725352Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0ef03281792b63d46169573ac31f0a8e61423ff1d31520619c99051e5886c35c
+merged_from:
+- TOGO_M1525_GAM_Medium

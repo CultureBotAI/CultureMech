@@ -1,25 +1,35 @@
 name: Dasycladales Seawater Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Pasteurized Seawater
-- agent_term:
-    preferred_term: '2'
-  amount: Soil+Seawater Medium
-- agent_term:
-    preferred_term: '3'
-  amount: DAS Macro Solution
-- agent_term:
-    preferred_term: '4'
-  amount: Modified P-IV chelated Micronutrient Solution
-- agent_term:
-    preferred_term: '5'
-  amount: DAS Vitamin Cocktail
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Pasteurized Seawater'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Soil+Seawater Medium'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: DAS Macro Solution'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Modified P-IV chelated Micronutrient Solution'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: DAS Vitamin Cocktail'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

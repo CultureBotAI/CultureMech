@@ -1,0 +1,72 @@
+name: MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)
+original_name: MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.4
+media_term:
+  preferred_term: DSMZ Medium 187
+  term:
+    id: mediadive.medium:187
+    label: MEDIUM FOR OSMOPHILIC FUNGI (M 40 Y)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium187.pdf'
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '400'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.418951Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 187'
+- timestamp: '2026-02-03T22:25:36.857365+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_187_MEDIUM_FOR_OSMOPHILIC_FUNGI_M_40_Y, JCM_J33_M40Y_AGAR,
+    JCM_J34_M60Y_AGAR, KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y'
+synonyms:
+- name: M40Y AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J33
+  original_category: imported
+- name: M60Y AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J34
+  original_category: imported
+- name: medium FOR OSMOPHILIC FUNGI (M 40 Y)
+  source: KOMODO
+  source_id: komodo.medium:187
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_187_MEDIUM_FOR_OSMOPHILIC_FUNGI_M_40_Y
+- JCM_J33_M40Y_AGAR
+- JCM_J34_M60Y_AGAR
+- KOMODO_187_medium_FOR_OSMOPHILIC_FUNGI_M_40_Y
+merge_fingerprint: 0ec3e5f420027c06ae4e4ca6174ef1322809033a6ee39e4bee721a3c6636e9ac

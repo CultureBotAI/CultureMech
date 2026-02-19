@@ -59,8 +59,14 @@ ingredients:
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 2 N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 0.1N HCl
   concentration:
     value: '1'
@@ -138,3 +144,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.932386'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1 N HCl; Added default concentration
+    for ingredient: 2 N NaOH'

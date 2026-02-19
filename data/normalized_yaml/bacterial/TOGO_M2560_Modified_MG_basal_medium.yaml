@@ -94,9 +94,15 @@ ingredients:
     Simple component'
 - preferred_term: CO2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 6N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '500'
@@ -297,3 +303,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.466752'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: 6N HCl'

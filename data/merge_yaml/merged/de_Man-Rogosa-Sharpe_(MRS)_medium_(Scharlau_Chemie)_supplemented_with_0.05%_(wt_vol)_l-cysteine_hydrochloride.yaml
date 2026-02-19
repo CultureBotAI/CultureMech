@@ -1,0 +1,139 @@
+name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05%
+  (wt/vol) l-cysteine hydrochloride
+original_name: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with
+  0.05% (wt/vol) l-cysteine hydrochloride
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-cysteine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: MRS medium (Scharlau Chemie)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Dipotassium phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: D(+)-Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Sodium acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Polysorbate 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Magnesium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Triammonium citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Manganese sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86364
+    label: manganese(II) sulfate monohydrate
+- preferred_term: Meat extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone proteose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2777
+  term:
+    id: TOGO:M2777
+    label: de Man-Rogosa-Sharpe (MRS) medium (Scharlau Chemie) supplemented with 0.05%
+      (wt/vol) l-cysteine hydrochloride
+notes: 'Source: https://togomedium.org/medium/M2777'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.284927Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2777'
+- timestamp: '2026-01-28T19:48:13.868382Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.426887'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+merge_fingerprint: 439d7abb00d21da8998040ce9117895ff02071d81488f467b3417969b5c68c12
+merged_from:
+- TOGO_M2777_de_Man-Rogosa-Sharpe_MRS_medium_Scharlau_Chemie_supplemented_with_0.05_wt_vol_l-cysteine_hydrochloride

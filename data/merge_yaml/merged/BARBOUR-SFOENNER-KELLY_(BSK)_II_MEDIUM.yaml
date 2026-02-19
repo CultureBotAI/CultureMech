@@ -1,0 +1,96 @@
+name: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
+original_name: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: JCM Medium J173
+  term:
+    id: mediadive.medium:J173
+    label: BARBOUR-SFOENNER-KELLY (BSK) II MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=173'
+ingredients:
+- preferred_term: CMRL 1066
+  concentration:
+    value: '9.9'
+    unit: G_PER_L
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: ' ( Fraction V)'
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate
+  term:
+    id: CHEBI:53258
+    label: Trisodium citrate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: N-Acetyl-D-glucosamine
+  term:
+    id: CHEBI:506227
+    label: N-Acetyl-D-glucosamine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Neopeptone
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Gelatin
+  term:
+    id: CHEBI:5291
+    label: Gelatin
+  concentration:
+    value: '70'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.6 with 1 N NaOH and sterilize by filtration through
+    a 0.22 ï¿½m filter (Millipore). Autoclave Solution B, then mix Solutions A and
+    B, and add 40 ml of heat-inactivated (56C, 45 min) sterile rabbit serum (Pel-Freez
+    Biologicals).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.878698Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J173'
+merge_fingerprint: b7aaff8d772c39418fe2fb80f2205b1fbaff8d6e2174097151891a989272c7f8
+merged_from:
+- JCM_J173_BARBOUR-SFOENNER-KELLY_BSK_II_MEDIUM

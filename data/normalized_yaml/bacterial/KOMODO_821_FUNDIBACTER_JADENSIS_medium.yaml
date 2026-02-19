@@ -10,7 +10,57 @@ media_term:
     label: FUNDIBACTER JADENSIS medium
 notes: 'Source: KOMODO ModelSEED | ID: 821 | DSMZ Medium: 821 (mediadive.medium:821)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Hexadecane
+  term:
+    id: CHEBI:45296
+    label: Hexadecane
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '99.4'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2.56'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '18.12'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '23.76'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +68,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 821'
+- timestamp: '2026-02-03T11:19:06.858005'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 821

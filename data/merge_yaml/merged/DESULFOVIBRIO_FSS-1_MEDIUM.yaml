@@ -1,0 +1,155 @@
+name: DESULFOVIBRIO FSS-1 MEDIUM
+original_name: DESULFOVIBRIO FSS-1 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1205
+  term:
+    id: mediadive.medium:J1205
+    label: DESULFOVIBRIO FSS-1 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1205'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0994036'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0198807'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000497018'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: Myo-inositol
+  term:
+    id: CHEBI:17268
+    label: Myo-inositol
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly, adjust pH to 7.0 and autoclave under a
+    N2 gas atmosphere. After cooling, aseptically and anaerobically add the following
+    solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
+- step_number: 2
+  action: MIX
+  description: Distribute the medium into culture vessels (e.g., 20 ml in Balch tubes)
+    and seal with butyl rubber stoppers.
+- step_number: 3
+  action: MIX
+  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4
+    x 2H2O, 0.02 g/L CuSO4 x 5H2O and 0.01 g/L NiCl2 x 6H2O.
+- step_number: 4
+  action: MIX
+  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere.
+    In this case, prior to use, fill the head space with air and allow to stand until
+    the O2 gradient is formed.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.006878Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1205'
+merge_fingerprint: 9ca5ef859f6ad060d51f6d49ec31dd130ca40374b4aa12a99aa689e142e6cc93
+merged_from:
+- JCM_J1205_DESULFOVIBRIO_FSS-1_MEDIUM

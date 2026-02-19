@@ -1,0 +1,121 @@
+name: Halobacteroides Halobius Medium
+original_name: Halobacteroides Halobius Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '87.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '7.35'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Resazurin
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '20.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: KCl
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: PIPES
+  concentration:
+    value: '12.096'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:39033
+    label: PIPES
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Cysteine-HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2740
+  term:
+    id: TOGO:M2740
+    label: Halobacteroides Halobius Medium
+notes: 'Source: https://togomedium.org/medium/M2740
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium588.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.206593Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2740'
+- timestamp: '2026-01-28T19:48:42.508549Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.147177'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: de6b0e9760dac4a34c1e8fa61211ab042367163317ae04ad2795b2e2377f2953
+merged_from:
+- TOGO_M2740_Halobacteroides_Halobius_Medium

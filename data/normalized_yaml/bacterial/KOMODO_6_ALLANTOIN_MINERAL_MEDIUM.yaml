@@ -1,7 +1,7 @@
 name: ALLANTOIN MINERAL MEDIUM
 original_name: ALLANTOIN MINERAL MEDIUM
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 6
@@ -10,7 +10,63 @@ media_term:
     label: ALLANTOIN MINERAL MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 6 | DSMZ Medium: 6 (mediadive.medium:6) | Aerobic:
   No'
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Allantoin
+  term:
+    id: CHEBI:15676
+    label: Allantoin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +74,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 6'
+- timestamp: '2026-02-03T11:19:19.560046'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 6

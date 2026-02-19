@@ -1,0 +1,80 @@
+name: MM-Glucose; Fillinger et al
+original_name: MM-Glucose; Fillinger et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '25.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.244822'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '80.3673'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '44.0898'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.811458'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '15.1355'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '3.4002'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.632961Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 221, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 221
+  term:
+    id: MEDIADB:221
+    label: MM-Glucose; Fillinger et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 4339aaed37b1733462924695fcd9f61c1b4beb2d53be8e0dbce3a8b4ab48a077
+merged_from:
+- MEDIADB_221_MM-Glucose_Fillinger_et_al

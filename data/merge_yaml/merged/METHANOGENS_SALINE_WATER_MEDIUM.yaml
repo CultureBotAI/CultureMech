@@ -1,0 +1,154 @@
+name: Methanogens Saline Water Medium
+original_name: Methanogens Saline Water Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.52'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Trace mineral solution (see Medium [M888])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Se/W solution (see Medium [M888])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins solution (see Medium [M278])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 5% Na2S・9H2O solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1091
+  term:
+    id: TOGO:M1091
+    label: Methanogens Saline Water Medium
+notes: 'Source: https://togomedium.org/medium/M1091
+
+  Original source: JCM - JCM_M1027-3
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1027'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.897323Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1091'
+- timestamp: '2026-01-28T19:48:37.972748Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.858977'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: N2'
+merge_fingerprint: 55f205bfd8bfa78442048172ae619dd371c7b3b5bbc6cd2bae1323e02e9ac2f9
+merged_from:
+- TOGO_M1091_Methanogens_Saline_Water_Medium

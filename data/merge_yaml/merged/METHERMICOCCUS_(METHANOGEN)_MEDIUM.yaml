@@ -1,0 +1,139 @@
+name: METHERMICOCCUS (METHANOGEN) MEDIUM
+original_name: METHERMICOCCUS (METHANOGEN) MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6-6.5
+media_term:
+  preferred_term: DSMZ Medium 1084
+  term:
+    id: mediadive.medium:1084
+    label: METHERMICOCCUS (METHANOGEN) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1084.pdf'
+ingredients:
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.333007'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.244858'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.195886'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23.5064'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '9.99021'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.95886'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000489716'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.979432'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '12.4114'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanesulfonate
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '2.44858'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.29383'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sludge
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except carbonate, sludge fluid, methanol, coenzyme
+    M, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add sludge fluid, methanol
+    (50% v/v solution), coenzyme M (sterilized by filtration), cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
+    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
+    Adjust pH of complete medium to 6.0 - 6.5, if necessary.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
+    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
+    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
+    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
+    8-12°C in the dark.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.328718Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1084'
+- timestamp: '2026-02-03T22:25:25.162970+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1084_METHERMICOCCUS_METHANOGEN_MEDIUM, KOMODO_1084_METHERMICOCCUS_medium'
+synonyms:
+- name: METHERMICOCCUS medium
+  source: KOMODO
+  source_id: komodo.medium:1084
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1084_METHERMICOCCUS_METHANOGEN_MEDIUM
+- KOMODO_1084_METHERMICOCCUS_medium
+merge_fingerprint: a52e57cd4f2174a80009818153c5c67f979959770f1bb3480840e5d34c9598de

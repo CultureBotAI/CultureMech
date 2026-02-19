@@ -1,0 +1,123 @@
+name: '''Mogensen Minimal Medium (Ethanol'
+original_name: '''Mogensen Minimal Medium (Ethanol'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.1779'
+    unit: MILLIMOLAR
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '625.1'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:etoh'
+- preferred_term: Tromethamine
+  concentration:
+    value: '49.7'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.16'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.006199'
+    unit: MILLIMOLAR
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.07292'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '11.17'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '6.975'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '138.3'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.02526'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.006408'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.01798'
+    unit: MILLIMOLAR
+- preferred_term: Sodium EDTA
+  concentration:
+    value: '0.1315'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.007145'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.07651'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.763517Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 345, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:37.956093Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 345
+  term:
+    id: MEDIADB:345
+    label: '''Mogensen Minimal Medium (Ethanol'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 29396a4ea262a119a23452bdbe1f508f0d62c4e56659f32023ffdbca7b143618
+merged_from:
+- MEDIADB_345_Mogensen_Minimal_Medium_Ethanol

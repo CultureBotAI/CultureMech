@@ -1,0 +1,58 @@
+name: MJ-N Basal Medium
+original_name: MJ-N Basal Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaNO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: MJ BASAL MEDIUM (see Medium [M350])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M368
+  term:
+    id: TOGO:M368
+    label: MJ-N Basal Medium
+notes: 'Source: https://togomedium.org/medium/M368
+
+  Original source: JCM - JCM_M374
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=374'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.925970Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M368'
+- timestamp: '2026-01-28T19:48:34.215697Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.376401'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 94b7048f85be5c0348a97a6e82290520e1f6ef42515b1d33227b9af76b3fdb06
+merged_from:
+- TOGO_M368_MJ-N_Basal_Medium

@@ -1,0 +1,48 @@
+name: MY75S
+original_name: MY75S
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C60
+  term:
+    id: mediadive.medium:C60
+    label: MY75S
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MY75S.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and\
+    \ dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
+    \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for\
+    \ 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.683869Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C60'
+merge_fingerprint: 961f6b1842ef60b9dbbf1f2a7d8b02be5e897b522f2b551d02206b189452bb9f
+merged_from:
+- CCAP_C60_MY75S

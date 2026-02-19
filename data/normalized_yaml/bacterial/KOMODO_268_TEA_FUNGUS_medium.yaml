@@ -10,7 +10,25 @@ media_term:
     label: TEA FUNGUS medium
 notes: 'Source: KOMODO ModelSEED | ID: 268 | DSMZ Medium: 268 (mediadive.medium:268)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Tea
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +36,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 268'
+- timestamp: '2026-02-03T11:19:06.861920'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 268

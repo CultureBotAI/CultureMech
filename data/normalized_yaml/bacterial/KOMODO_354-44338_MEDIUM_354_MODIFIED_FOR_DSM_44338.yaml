@@ -10,7 +10,57 @@ media_term:
     label: MEDIUM 354 MODIFIED FOR DSM 44338
 notes: 'Source: KOMODO ModelSEED | ID: 354_44338 | DSMZ Medium: 354 (mediadive.medium:354)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.55087'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.148883'
+    unit: G_PER_L
+- preferred_term: Mg-citrate
+  term:
+    id: CHEBI:131389
+    label: Mg-citrate
+  concentration:
+    value: '0.372208'
+    unit: G_PER_L
+- preferred_term: L-Asparagin
+  term:
+    id: CHEBI:17196
+    label: L-Asparagin
+  concentration:
+    value: '2.23325'
+    unit: G_PER_L
+- preferred_term: Potato flour
+  concentration:
+    value: '18.6104'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '0.248139'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: Fresh egg mixture
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +68,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 354_44338'
+- timestamp: '2026-02-03T11:19:16.674647'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 354
+ph_value: 7.0

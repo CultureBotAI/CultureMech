@@ -1,0 +1,63 @@
+name: High-sugar PYE medium (3% sucrose)
+original_name: High-sugar PYE medium (3% sucrose)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: yeast extract
+  concentration:
+    value: '0.1'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCl2
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: sucrose
+  concentration:
+    value: '3'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: MgSO4
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2875
+  term:
+    id: TOGO:M2875
+    label: High-sugar PYE medium (3% sucrose)
+notes: 'Source: https://togomedium.org/medium/M2875'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.367948Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2875'
+- timestamp: '2026-01-28T19:48:14.920769Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ba61515e63f226eb8f349926ab132aa507f772a3646343a2cd7699657fd42568
+merged_from:
+- TOGO_M2875_High-sugar_PYE_medium_3_sucrose

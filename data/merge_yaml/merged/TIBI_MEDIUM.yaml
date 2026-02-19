@@ -1,0 +1,49 @@
+name: TIBI MEDIUM
+original_name: TIBI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 263
+  term:
+    id: mediadive.medium:263
+    label: TIBI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium263.pdf'
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: Fig
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lemon
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave, cool to room temperature, and inoculate with about 50 ml
+    Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.613723Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 263'
+merge_fingerprint: ecef465acd0254bf15782c4657eecd0289a3f66cdfcedaac8952a247d7a73103
+merged_from:
+- DSMZ_263_TIBI_MEDIUM

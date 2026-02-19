@@ -1,0 +1,75 @@
+name: 1/4 YpSs
+original_name: 1/4 YpSs
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Soluble starch
+  concentration:
+    value: '3.75'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M1716
+  term:
+    id: TOGO:M1716
+    label: 1/4 YpSs
+notes: 'Source: https://togomedium.org/medium/M1716
+
+  Original source: NBRC - NBRC_M924
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=924'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.210309Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1716'
+- timestamp: '2026-01-28T19:48:15.634118Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fb910d89ea0c6c5824ca664b8ff942847fcd016ab3f172b969c2e8843e0336f2
+merged_from:
+- TOGO_M1716_1_4_YpSs

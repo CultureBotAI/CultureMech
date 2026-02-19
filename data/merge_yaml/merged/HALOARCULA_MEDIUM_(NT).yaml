@@ -1,0 +1,59 @@
+name: HALOARCULA MEDIUM (NT)
+original_name: HALOARCULA MEDIUM (NT)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1548
+  term:
+    id: mediadive.medium:1548
+    label: HALOARCULA MEDIUM (NT)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1548.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate
+  term:
+    id: CHEBI:53258
+    label: Trisodium citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.806959Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1548'
+merge_fingerprint: 30b48b98b4cbfb14771aaedee40e25db36db0bd6e5961e5a350a20611cefda07
+merged_from:
+- DSMZ_1548_HALOARCULA_MEDIUM_NT

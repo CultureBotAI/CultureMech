@@ -1,0 +1,50 @@
+name: Low-Salt Luria-Broth (LSLB)
+original_name: Low-Salt Luria-Broth (LSLB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl (VWR, X190-1KG)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component'
+- preferred_term: Yeast Extract (BD, 212750)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (VWR, J859-500G)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2900
+  term:
+    id: TOGO:M2900
+    label: Low-Salt Luria-Broth (LSLB)
+notes: 'Source: https://togomedium.org/medium/M2900'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.392215Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2900'
+- timestamp: '2026-01-28T19:48:42.290001Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: db4e9e8387a58879a5939b46c3f5347640f855d78cf02af3b18c829774f02e2d
+merged_from:
+- TOGO_M2900_Low-Salt_Luria-Broth_LSLB

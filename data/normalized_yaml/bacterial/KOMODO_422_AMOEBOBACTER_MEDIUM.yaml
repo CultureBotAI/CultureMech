@@ -1,7 +1,7 @@
 name: AMOEBOBACTER MEDIUM
 original_name: AMOEBOBACTER MEDIUM
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 422
@@ -10,7 +10,28 @@ media_term:
     label: AMOEBOBACTER MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 422 | DSMZ Medium: 422 (mediadive.medium:422)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '0.118088'
+    unit: G_PER_L
+- preferred_term: Thiosulfate
+  term:
+    id: CHEBI:26977
+    label: Thiosulfate
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +39,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 422'
+- timestamp: '2026-02-03T11:19:13.937759'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 422

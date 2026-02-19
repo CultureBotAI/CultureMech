@@ -1,7 +1,7 @@
 name: RHODOBACTER VELDKAMPII MEDIUM
 original_name: RHODOBACTER VELDKAMPII MEDIUM
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 867
@@ -10,7 +10,176 @@ media_term:
     label: RHODOBACTER VELDKAMPII MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 867 | DSMZ Medium: 867 (mediadive.medium:867)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '14.8148'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0111111'
+    unit: G_PER_L
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: Ammonium acetate
+  term:
+    id: CHEBI:62947
+    label: Ammonium acetate
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: Pyruvic acid sodium salt
+  term:
+    id: CHEBI:113246
+    label: Pyruvic acid sodium salt
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '19.2308'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +187,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 867'
+- timestamp: '2026-02-03T11:18:57.582987'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 867

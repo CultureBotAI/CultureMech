@@ -1,0 +1,82 @@
+name: Thermaerobacter TY Medium
+original_name: Thermaerobacter TY Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: gellan gum
+  notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
+  term:
+    id: CHEBI:85248
+    label: Gellan Gum
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M758
+  term:
+    id: TOGO:M758
+    label: Thermaerobacter TY Medium
+notes: 'Source: https://togomedium.org/medium/M758
+
+  Original source: JCM - JCM_M734-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=734'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.656017Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M758'
+- timestamp: '2026-01-28T19:48:36.994829Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.396068'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: gellan gum'
+merge_fingerprint: 481fb8f4c119bf67e6d2598f6c6d9e682ac7260f0a7c1026ae1bc99094b84d20
+merged_from:
+- TOGO_M758_Thermaerobacter_TY_Medium

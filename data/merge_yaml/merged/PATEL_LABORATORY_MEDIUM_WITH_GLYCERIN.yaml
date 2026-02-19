@@ -1,0 +1,29 @@
+name: PATEL LABORATORY MEDIUM WITH GLYCERIN
+original_name: PATEL LABORATORY MEDIUM WITH GLYCERIN
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J780
+  term:
+    id: mediadive.medium:J780
+    label: PATEL LABORATORY MEDIUM WITH GLYCERIN
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=780'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.579057Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J780'
+merge_fingerprint: 2149ee660cdadc7603b05f29501a5ac0d5ae23f5ba956298893d0928478375ce
+merged_from:
+- JCM_J780_PATEL_LABORATORY_MEDIUM_WITH_GLYCERIN

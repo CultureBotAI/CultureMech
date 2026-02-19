@@ -1,0 +1,328 @@
+name: Pyrodictium occultum Medium
+original_name: Pyrodictium occultum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '13.85'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Na2S·9H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: KCl
+  concentration:
+    value: '0.325'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: CaCl2
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:14258
+    label: ''
+- preferred_term: NaBr
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63004
+    label: sodium bromide
+- preferred_term: SrCl2·6H2O
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:36385
+    label: strontium dichloride hexahydrate
+- preferred_term: KI
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:8346
+    label: potassium iodide
+- preferred_term: (NH4)2Ni(SO4)2·6H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86149
+    label: ammonium nickel sulfate hexahydrate
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na2S2O3·5H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Defined component, Inorganic compound'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: Citric acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: Trace minerals*
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: CoSO4·7H20
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:44557
+    label: nitrilotriacetic acid
+- preferred_term: MnSO4·xH2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: AlK(SO4)2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86463
+    label: potassium aluminium sulfate
+- preferred_term: KOH solution
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1631
+  term:
+    id: TOGO:M1631
+    label: Pyrodictium occultum Medium
+notes: 'Source: https://togomedium.org/medium/M1631
+
+  Original source: NBRC - NBRC_M833
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=833'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.010127Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1631'
+- timestamp: '2026-01-28T19:48:23.062221Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.594497'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: KOH solution'
+merge_fingerprint: 2a515633cd4123e2653a7cb64d081571d33cca6e4160a2af6d262861d2d4b0a4
+merged_from:
+- TOGO_M1631_Pyrodictium_occultum_Medium

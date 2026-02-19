@@ -52,8 +52,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Methane gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Air
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -162,11 +168,17 @@ ingredients:
     label: EDTA disodium salt (anhydrous)
 - preferred_term: KH2PO4 solutions
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Na2HPO4
   notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M1993
   term:
@@ -188,3 +200,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.292692'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Methane gas; Added default concentration
+    for ingredient: Air; Added default concentration for ingredient: KH2PO4 solutions;
+    Added default concentration for ingredient: Na2HPO4'

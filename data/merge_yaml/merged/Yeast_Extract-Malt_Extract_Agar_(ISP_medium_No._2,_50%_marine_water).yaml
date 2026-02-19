@@ -1,0 +1,72 @@
+name: Yeast Extract-Malt Extract Agar (ISP medium No. 2, 50% marine water)
+original_name: Yeast Extract-Malt Extract Agar (ISP medium No. 2, 50% marine water)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Artificial marine water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution,
+    Defined component'
+- preferred_term: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1842
+  term:
+    id: TOGO:M1842
+    label: Yeast Extract-Malt Extract Agar (ISP medium No. 2, 50% marine water)
+notes: 'Source: https://togomedium.org/medium/M1842
+
+  Original source: NBRC - NBRC_M1076
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1076'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.484875Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1842'
+- timestamp: '2026-01-28T19:48:21.942042Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 6b418ea9f0b091259ee75f840c5d1361dcd8f3c79b1e5e727e0e545aa4808b5e
+merged_from:
+- TOGO_M1842_Yeast_Extract-Malt_Extract_Agar_ISP_medium_No._2_50_marine_water

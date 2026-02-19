@@ -23,38 +23,59 @@ ingredients:
   term:
     id: CHEBI:63036
     label: KH2PO4
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NH4Cl
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaNO3
   notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
     Inorganic compound'
   term:
     id: CHEBI:63005
     label: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Na2HPO4
   notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
     compound'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Sodium Succinate
   notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
     compound'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: MgSO4
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -70,38 +91,56 @@ ingredients:
   term:
     id: CHEBI:3312
     label: calcium dichloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CoCl2
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
     id: CHEBI:35696
     label: cobalt dichloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: FeSO4
   notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
     compound'
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: MnCl2
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
-  term:
-    id: CHEBI:7773015
-    label: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
     id: CHEBI:35176
     label: zinc sulfate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: (NH4)6Mo7O24
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: EDTA
   notes: 'Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:64755
     label: EDTA(2-)
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M3198
   term:
@@ -119,3 +158,20 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.859817'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration
+    for ingredient: NH4Cl; Added default concentration for ingredient: NaNO3; Added
+    default concentration for ingredient: Na2HPO4; Added default concentration for
+    ingredient: Sodium Succinate; Added default concentration for ingredient: MgSO4;
+    Added default concentration for ingredient: N2; Added default concentration for
+    ingredient: CaCl2; Added default concentration for ingredient: CoCl2; Added default
+    concentration for ingredient: FeSO4; Added default concentration for ingredient:
+    MnCl2; Added default concentration for ingredient: ZnSO4; Added default concentration
+    for ingredient: (NH4)6Mo7O24; Added default concentration for ingredient: EDTA'
+- timestamp: '2026-02-06T05:10:25.939837Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

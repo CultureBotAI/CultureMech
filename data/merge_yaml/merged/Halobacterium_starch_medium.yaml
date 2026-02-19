@@ -1,0 +1,82 @@
+name: Halobacterium starch medium
+original_name: Halobacterium starch medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '125'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 · 2H2O
+  concentration:
+    value: '0.13'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: MgCl2 · 6H2O
+  concentration:
+    value: '160'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32036
+    label: potassium sulfate
+- preferred_term: Soluble starch
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Peptone, Bacto (BD 211677)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2374
+  term:
+    id: TOGO:M2374
+    label: Halobacterium starch medium
+notes: 'Source: https://togomedium.org/medium/M2374
+
+  Original URL: https://www.atcc.org/~/media/8B5133F93AC94B6A9E9552B0FDD0EEB2.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.415764Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2374'
+- timestamp: '2026-01-28T19:48:10.325399Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: eb34a99df706df02519726c11850e17d809f6d19251479ce2164ee31c1718291
+merged_from:
+- TOGO_M2374_Halobacterium_starch_medium

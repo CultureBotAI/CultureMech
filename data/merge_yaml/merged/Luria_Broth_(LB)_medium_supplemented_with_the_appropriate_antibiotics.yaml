@@ -1,0 +1,32 @@
+name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
+original_name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Chloramphenicol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
+- preferred_term: Luria Broth (LB) medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2903
+  term:
+    id: TOGO:M2903
+    label: Luria Broth (LB) medium supplemented with the appropriate antibiotics
+notes: 'Source: https://togomedium.org/medium/M2903'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.395680Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2903'
+merge_fingerprint: 6464938289c9cacfd40713a72bdc787b3fb010c151eca0b3df4d4a15865c45e9
+merged_from:
+- TOGO_M2903_Luria_Broth_LB_medium_supplemented_with_the_appropriate_antibiotics

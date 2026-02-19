@@ -1,0 +1,151 @@
+name: V24N MEDIUM
+original_name: V24N MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 88b
+  term:
+    id: mediadive.medium:88b
+    label: V24N MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88b.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: ' (powdered)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (soluble)'
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: VOSO4 x 2 H2O
+  term:
+    id: CHEBI:87009
+    label: VOSO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Prepare medium M.88, then add (per litre):'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust the pH to 6.0 with H2SO4 (25% v/v). Prepare the medium under
+    100% N2 gas phase and distribute anaerobically into rubber stoppered tubes or
+    bottles (presterilized by autoclaving). The medium is sterilized by heating 2
+    hours at 85 °C on each of two following days.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH of final solution to 2 with 1 N HCl.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.149007Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 88b'
+merge_fingerprint: 023029ff62479a4ddc3db8b1e553d589ecc54c622bc4e7e1f2916147fb00e50b
+merged_from:
+- DSMZ_88b_V24N_MEDIUM

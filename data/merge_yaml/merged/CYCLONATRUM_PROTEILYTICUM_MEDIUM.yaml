@@ -1,0 +1,102 @@
+name: Cyclonatrum Proteilyticum Medium
+original_name: Cyclonatrum Proteilyticum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NaHCO3
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2CO3
+  concentration:
+    value: '35'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1% Yeast extract solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 1 M MgCl2 solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: 10% Tryptone solution
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trace element solution (see Medium [M1148])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1243
+  term:
+    id: TOGO:M1243
+    label: Cyclonatrum Proteilyticum Medium
+notes: 'Source: https://togomedium.org/medium/M1243
+
+  Original source: JCM - JCM_M1161
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1161'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.207399Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1243'
+- timestamp: '2026-01-28T19:48:39.288309Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:46.749428'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+merge_fingerprint: 06b87ab64aa61187dad3402ef8ea1df6798edd7738bada9783b7922369fe09bd
+merged_from:
+- TOGO_M1243_Cyclonatrum_Proteilyticum_Medium

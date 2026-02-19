@@ -1,0 +1,77 @@
+name: M9zb with mannose
+original_name: M9zb with mannose
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Mannose
+  term:
+    id: CHEBI:16024
+    label: D-Mannose
+  concentration:
+    value: '22.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:man'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '43.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '8.6'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '19.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.594930Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 111, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 111
+  term:
+    id: MEDIADB:111
+    label: M9zb with mannose
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: b233d08d31c25e7af59bed2d717630296db1568e80be1c1483a98f196a3ae851
+merged_from:
+- MEDIADB_111_M9zb_with_mannose

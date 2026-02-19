@@ -1,0 +1,79 @@
+name: ASW 300 + barley
+original_name: ASW 300 + barley
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C8
+  term:
+    id: mediadive.medium:C8
+    label: ASW 300 + barley
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ASW_300.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '136'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '3.8'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '8.9'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4\
+    \ autoclaved \r\nbarley grains to a T­25 tissue culture flask (Corning 25100)."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.492666Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C8'
+- timestamp: '2026-02-03T08:02:26.155644+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C6_ASW_150_barley, CCAP_C7_ASW_225_barley, CCAP_C8_ASW_300_barley'
+synonyms:
+- name: ASW 150 + barley
+  source: MediaDive
+  source_id: mediadive.medium:C6
+  original_category: imported
+- name: ASW 225 + barley
+  source: MediaDive
+  source_id: mediadive.medium:C7
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C6_ASW_150_barley
+- CCAP_C7_ASW_225_barley
+- CCAP_C8_ASW_300_barley
+merge_fingerprint: 009bee0b2b1783ee163c85cf426c36e95300e7b7f784e4ad192b2ca578b134cd

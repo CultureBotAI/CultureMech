@@ -1,0 +1,292 @@
+name: Freshwater Medium For Soil AOA
+original_name: Freshwater Medium For Soil AOA
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: 1 M NaHCO3 solution*
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M NH4Cl solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: 1 M Sodium pyruvate solution*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Solution, Defined component'
+- preferred_term: 7.5 mM EDTA・Na・Fe(III) solution* (pH 7.0)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Modified trace element mixture (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution* (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES solution (see below)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: HCl (25%)
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Solution, Inorganic compound, Defined
+    component'
+- preferred_term: Distilled water
+  concentration:
+    value: '987'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4・2H2O
+  concentration:
+    value: '36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2・6H2O
+  concentration:
+    value: '190'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2・6H2O
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '144'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuCl2・2H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Biotin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: p--Aminobenzoic acid
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thiamine・HCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Pyridoxine・HCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Folic acid
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Riboflavin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: Choline chloride
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:133341
+    label: choline chloride
+- preferred_term: DL--Calcium pantothenate
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: HEPES (free acid)
+  concentration:
+    value: '119.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: NaOH
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1060
+  term:
+    id: TOGO:M1060
+    label: Freshwater Medium For Soil AOA
+notes: 'Source: https://togomedium.org/medium/M1060
+
+  Original source: JCM - JCM_M1004
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1004'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.845381Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1060'
+- timestamp: '2026-01-28T19:48:18.722454Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.714296'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration
+    for ingredient: NaOH'
+merge_fingerprint: fefc15e51e0e03b58f99a534f32c2702f0fa2ab59896c64a949a85a7e901bf1f
+merged_from:
+- TOGO_M1060_Freshwater_Medium_For_Soil_AOA

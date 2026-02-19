@@ -1,0 +1,222 @@
+name: FWAFC
+original_name: FWAFC
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ac'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '8.18e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.000406'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.000133'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: Folate
+  concentration:
+    value: '4.53e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.000365'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Lipoate
+  concentration:
+    value: '0.000242'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lipoate'
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '7.37e-07'
+    unit: MILLIMOLAR
+- preferred_term: '''Fe(III'
+  concentration:
+    value: '57.1057'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fe3dcit'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '6.8e-06'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '1.617e-06'
+    unit: MILLIMOLAR
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '29.7595'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '7.85e-05'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '1.0097e-06'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '1.0333e-06'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '0.000171'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '1.34136'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.000228'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.000486'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.000166'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.000122'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '2.67e-05'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '4.67362'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '3.6e-06'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '7.7e-06'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '6.19e-06'
+    unit: MILLIMOLAR
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '4.35033'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenate
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '4.005e-07'
+    unit: MILLIMOLAR
+- preferred_term: Aluminum potassium sulfate
+  concentration:
+    value: '3.873e-07'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.510267Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 3, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:18.181202Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 3
+  term:
+    id: MEDIADB:3
+    label: FWAFC
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 09d99c27993a6962f293b375cc712f92e8fc300e8bee03e3cba7f5f4658d34e5
+merged_from:
+- MEDIADB_3_FWAFC

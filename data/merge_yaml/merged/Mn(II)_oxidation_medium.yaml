@@ -1,0 +1,59 @@
+name: Mn(II) oxidation medium
+original_name: Mn(II) oxidation medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2140
+  term:
+    id: TOGO:M2140
+    label: Mn(II) oxidation medium
+notes: 'Source: https://togomedium.org/medium/M2140
+
+  Original source: NBRC - NBRC_M1481
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1481'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.159080Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2140'
+- timestamp: '2026-01-28T19:48:17.381400Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 44c0ab6c8ee5d67903c7b24bfb49b78df649b44fd52f7d784f03cd9e4b7a9315
+merged_from:
+- TOGO_M2140_Mn_II_oxidation_medium

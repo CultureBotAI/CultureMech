@@ -1,0 +1,99 @@
+name: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
+original_name: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 674
+  term:
+    id: mediadive.medium:674
+    label: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium674.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Solutions A and B are sterilized separately. After cooling to approximately
+    45°C solution A is poured into solution B. Mix thoroughly.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 4.3.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.903230Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 674'
+- timestamp: '2026-02-03T22:25:25.847304+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_674_MEDIUM_FOR_ACIDURIC_THERMOPHILIC_BACILLUS_STRAINS, KOMODO_674_medium_FOR_ACIDURIC_THERMOPHILIC_BACILLUS_STRAINS'
+synonyms:
+- name: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
+  source: KOMODO
+  source_id: komodo.medium:674
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_674_MEDIUM_FOR_ACIDURIC_THERMOPHILIC_BACILLUS_STRAINS
+- KOMODO_674_medium_FOR_ACIDURIC_THERMOPHILIC_BACILLUS_STRAINS
+merge_fingerprint: a7bdf1cec367e9d38898f6ab8d8568e026e16b25aedb612de448d7374f28faf5

@@ -1,0 +1,296 @@
+name: PIRELLULA MEDIUM (M30 PY)
+original_name: PIRELLULA MEDIUM (M30 PY)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1443
+  term:
+    id: mediadive.medium:1443
+    label: PIRELLULA MEDIUM (M30 PY)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1443.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.263158'
+    unit: G_PER_L
+- preferred_term: Tris-HCl buffer
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18.9474'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '23.47'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3.92'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.98'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.192'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.664'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.096'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '29.7'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.335'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.00925'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.099'
+    unit: G_PER_L
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.095'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.154'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0392'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2 x 6 H2O
+  term:
+    id: CHEBI:86214
+    label: Co(NO3)2 x 6 H2O
+  concentration:
+    value: '0.0248'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0177'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5, autoclave at 121°C for 20 min.
+- step_number: 2
+  action: MIX
+  description: For agar plates increase the pH of the Tris/HCl buffer to 8.5.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.5, filter-sterilize, and add to solution 1.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: filter-sterilized
+- step_number: 5
+  action: DISSOLVE
+  description: Dissolve the nitrilotriacetic acid.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with KOH (~7.3 g).
+- step_number: 7
+  action: DISSOLVE
+  description: Dissolve other salts separately and combine.
+- step_number: 8
+  action: ADJUST_PH
+  description: Adjust pH to 6.8 with NaOH or H2SO4.
+- step_number: 9
+  action: DISSOLVE
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.445599Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1443'
+merge_fingerprint: 744ff17603294c5cb8a2fbf05ebeb9331e95c88c95f3a58e835b33bd869e2623
+merged_from:
+- DSMZ_1443_PIRELLULA_MEDIUM_M30_PY

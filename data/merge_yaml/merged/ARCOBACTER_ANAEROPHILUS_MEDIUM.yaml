@@ -1,0 +1,127 @@
+name: ARCOBACTER ANAEROPHILUS MEDIUM
+original_name: ARCOBACTER ANAEROPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1521
+  term:
+    id: mediadive.medium:1521
+    label: ARCOBACTER ANAEROPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1521.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ammonium acetate
+  term:
+    id: CHEBI:62947
+    label: Ammonium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lactate
+  term:
+    id: CHEBI:24996
+    label: Lactate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Pyruvate
+  term:
+    id: CHEBI:15361
+    label: Pyruvate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: SL10
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '2.40182'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Add distilled water to 1 liter, boil the medium and cool under N2,
+    distribute under N2 and autoclave. After autoclaving the following sterilized
+    solutions are added:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.695275Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1521'
+merge_fingerprint: 20a1d62c72da3034b274cd18c613a49c7b4ecdae4b1f2a23de964717422f56df
+merged_from:
+- DSMZ_1521_ARCOBACTER_ANAEROPHILUS_MEDIUM

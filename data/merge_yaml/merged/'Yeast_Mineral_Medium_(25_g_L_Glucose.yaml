@@ -1,0 +1,182 @@
+name: '''Yeast Mineral Medium (25 g/L Glucose'
+original_name: '''Yeast Mineral Medium (25 g/L Glucose'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: myo-Inositol
+  term:
+    id: CHEBI:17268
+    label: Myo-inositol
+  concentration:
+    value: '0.1388'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:inost'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0002047'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.1458'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.008123'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '55.51'
+    unit: MILLIMOLAR
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.05133'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.01079'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.029'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.002965'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.04'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.002099'
+    unit: MILLIMOLAR
+- preferred_term: Potassium iodide
+  term:
+    id: CHEBI:8346
+    label: Potassium iodide
+  concentration:
+    value: '0.0006024'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.03061'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.004863'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.01617'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.001261'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '37.84'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.01565'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.001201'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.005053'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.001653'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.246092Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 399, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:44.206930Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:24.611594+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_397_Yeast_Mineral_Medium_10_g_L_Glucose, MEDIADB_399_Yeast_Mineral_Medium_25_g_L_Glucose'
+media_term:
+  preferred_term: MediaDB Medium 399
+  term:
+    id: MEDIADB:399
+    label: '''Yeast Mineral Medium (25 g/L Glucose'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: '''Yeast Mineral Medium (10 g/L Glucose'
+  source: unknown
+  source_id: MEDIADB:397
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_397_Yeast_Mineral_Medium_10_g_L_Glucose
+- MEDIADB_399_Yeast_Mineral_Medium_25_g_L_Glucose
+merge_fingerprint: f7239e4bd3f191ebcfed7dfb07cebcb4a750ff20bc7f723eea91af8329b1f18e

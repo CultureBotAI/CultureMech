@@ -1,0 +1,60 @@
+name: Reactivation With Liquid Medium 1  (For sporulation)
+original_name: Reactivation With Liquid Medium 1  (For sporulation)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
+- preferred_term: Agar, if required
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2359
+  term:
+    id: TOGO:M2359
+    label: Reactivation With Liquid Medium 1  (For sporulation)
+notes: 'Source: https://togomedium.org/medium/M2359
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1a.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.394550Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2359'
+- timestamp: '2026-01-28T19:48:15.136648Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a589fb56a221295e52acee33d253e4ce532a2709c47129587f5fd21eb816ed71
+merged_from:
+- TOGO_M2359_Reactivation_With_Liquid_Medium_1_For_sporulation

@@ -1,0 +1,61 @@
+{
+  "timestamp": "2026-02-03T08:02:26.012680+00:00",
+  "input_recipes": 500,
+  "output_recipes": 35,
+  "reduction": 465,
+  "reduction_percentage": 93.0,
+  "cross_category_merges": 0,
+  "largest_group_size": 3,
+  "top_duplicates": [
+    {
+      "name": "THIOHALOPHILUS MEDIUM",
+      "count": 3,
+      "sources": [
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "ASW 150 + barley",
+      "count": 3,
+      "sources": [
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "THIOHALOSPIRA HALOPHILA MEDIUM",
+      "count": 2,
+      "sources": [
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "PSEUDOMONAS HALOPHILA MEDIUM",
+      "count": 2,
+      "sources": [
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    },
+    {
+      "name": "SULFURIMONAS MJ MEDIUM",
+      "count": 2,
+      "sources": [
+        "MediaDive"
+      ],
+      "categories": [
+        "imported"
+      ]
+    }
+  ]
+}

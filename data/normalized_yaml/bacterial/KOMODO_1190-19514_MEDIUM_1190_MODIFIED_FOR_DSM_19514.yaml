@@ -11,7 +11,60 @@ media_term:
     label: MEDIUM 1190 MODIFIED FOR DSM 19514
 notes: 'Source: KOMODO ModelSEED | ID: 1190_19514 | DSMZ Medium: 1190 (mediadive.medium:1190)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2SO4 x 10 H2O
+  term:
+    id: CHEBI:32586
+    label: Na2SO4 x 10 H2O
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '22.5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '278'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +72,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1190_19514'
+- timestamp: '2026-02-03T11:19:03.505726'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1190
+ph_value: 2.0

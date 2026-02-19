@@ -10,7 +10,22 @@ media_term:
     label: BHI/3 medium
 notes: 'Source: KOMODO ModelSEED | ID: 218 | DSMZ Medium: 218 (mediadive.medium:218)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +33,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 218'
+- timestamp: '2026-02-03T11:19:07.670916'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 218

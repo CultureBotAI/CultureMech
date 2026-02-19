@@ -11,7 +11,51 @@ media_term:
     label: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
 notes: 'Source: KOMODO ModelSEED | ID: 920 | DSMZ Medium: 920 (mediadive.medium:920)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: MES buffer
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.81'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +63,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 920'
+- timestamp: '2026-02-03T11:19:17.446205'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 920

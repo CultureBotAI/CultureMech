@@ -1,0 +1,149 @@
+name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
+original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.5-7.5
+media_term:
+  preferred_term: DSMZ Medium 1156
+  term:
+    id: mediadive.medium:1156
+    label: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1156.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '65'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 2 H2O
+  term:
+    id: CHEBI:86356
+    label: MnSO4 x 2 H2O
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH-value 7.2 (Adjust to 7.6 with 10% NaOH before sterilization)
+- step_number: 2
+  action: MIX
+  description: 'Culture bottles: 120-ml Serum bottles with 25 ml medium closed with
+    butyl rubber serum caps and aluminium crimps'
+- step_number: 3
+  action: MIX
+  description: 'Gas supply: 2 vol.% CO2; 20 vol.% CH4; 78 vol.% air (Alternate cultivation
+    method: instead of a methane-containing headspace, add 0.5% (w/v) methanol to
+    the medium)'
+- step_number: 4
+  action: HEAT
+  description: 'Culture conditions: 30°C; shaking culture on rotary shaker (200 rpm)'
+- step_number: 5
+  action: MIX
+  description: "Notes: pH is critical, final pH must be between 6.5-7.5; \r\nsome\
+    \ insoluble phosphates may precipitate during medium preparation (should not be\
+    \ more than OD 0.005)."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.535182Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1156'
+- timestamp: '2026-02-03T22:25:25.183710+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM, KOMODO_1156-replace-methane-with-Methanol_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM_replace_methane_with_Methanol,
+    KOMODO_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM'
+synonyms:
+- name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM_replace_methane_with_Methanol
+  source: KOMODO
+  source_id: komodo.medium:1156_replace_methane_with_Methanol
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM
+- KOMODO_1156-replace-methane-with-Methanol_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM_replace_methane_with_Methanol
+- KOMODO_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM
+merge_fingerprint: effb076e47110fdc9d54203f3d1a0051936557b131fc071768cc70d0b3011b41

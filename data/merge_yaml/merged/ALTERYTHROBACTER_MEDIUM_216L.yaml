@@ -1,0 +1,80 @@
+name: ALTERYTHROBACTER MEDIUM 216L
+original_name: ALTERYTHROBACTER MEDIUM 216L
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1453
+  term:
+    id: mediadive.medium:1453
+    label: ALTERYTHROBACTER MEDIUM 216L
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1453.pdf'
+ingredients:
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.5 and sterilize by autoclaving. The medium may be solidified
+    by adding 12.0 g/l agar.
+- step_number: 2
+  action: MIX
+  description: 'Note: alternatively, distilled water can be replaced by seawater if
+    the NaCl is omitted.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.476566Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1453'
+- timestamp: '2026-01-28T19:48:37.212869Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ba2efed44abc370dab686b1201a1b8baa001e8f9a677149ca35b6b1b61c9ef90
+merged_from:
+- DSMZ_1453_ALTERYTHROBACTER_MEDIUM_216L

@@ -1,0 +1,165 @@
+name: MARISPIROCHAETA MEDIUM
+original_name: MARISPIROCHAETA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1188b
+  term:
+    id: mediadive.medium:1188b
+    label: MARISPIROCHAETA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1188b.pdf'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '34.965'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0004995'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '1.998'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve compounds except carbonate and cellobiose, then sparge medium
+    for 30 - 45 min with 80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After autoclaving add carbonate from an anoxic sterile stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture and cellobiose from an anoxic stock
+    solution prepared under 100% N2 and sterilized by filtration. Check pH of complete
+    medium and adjust to 7.0, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.628120Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1188b'
+merge_fingerprint: 9da4ddf880e2770532441f349d879ee2aa252c23494823c774f38a3e0a4806dc
+merged_from:
+- DSMZ_1188b_MARISPIROCHAETA_MEDIUM

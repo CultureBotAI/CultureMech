@@ -1,0 +1,40 @@
+name: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
+original_name: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1109
+  term:
+    id: mediadive.medium:J1109
+    label: NUTRIENT AGAR WITH 0.05% YEAST EXTRACT AND 3% NaCl
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1109'
+ingredients:
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.665553Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1109'
+merge_fingerprint: c7db8d347f1a8187ea3fec6ab47b2e3e88811b13440abf97dc3d0936eb73b421
+merged_from:
+- JCM_J1109_NUTRIENT_AGAR_WITH_0.05_YEAST_EXTRACT_AND_3_NaCl

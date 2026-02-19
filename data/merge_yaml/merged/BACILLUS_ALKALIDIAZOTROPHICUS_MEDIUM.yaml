@@ -1,0 +1,264 @@
+name: BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
+original_name: BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: DSMZ Medium 1208
+  term:
+    id: mediadive.medium:1208
+    label: BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1208.pdf'
+ingredients:
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '22'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except ammonium chloride, magnesium chloride,
+    yeast extract, trace elements, vitamins, boil medium for 1 min, then cool to room
+    temperature under N2 gas atmosphere. Dispense under same gas atmosphere in culture
+    vessels and autoclave. After sterilization add ammonium chloride, magnesium chloride,
+    yeast extract, trace elements, vitamins, from sterile, anoxic stock solution prepared
+    under N2. The vitamin solution should be sterilized by filtration. Adjust pH of
+    final medium to 10.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.697286Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1208'
+- timestamp: '2026-02-03T22:25:30.382484+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1208_BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM, KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium'
+synonyms:
+- name: BACILLUS ALKALIDIAZOTROPHICUS medium
+  source: KOMODO
+  source_id: komodo.medium:1208
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1208_BACILLUS_ALKALIDIAZOTROPHICUS_MEDIUM
+- KOMODO_1208_BACILLUS_ALKALIDIAZOTROPHICUS_medium
+merge_fingerprint: f456c1bc9d078c218f15101c4ada08b796a33c46935e16e93ad819cf219b75a8

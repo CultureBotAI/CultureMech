@@ -1,0 +1,127 @@
+name: CYS MEDIUM
+original_name: CYS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J618
+  term:
+    id: mediadive.medium:J618
+    label: CYS MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=618'
+ingredients:
+- preferred_term: N-Z-Case
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.22222'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1.11111'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '22.2222'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.138889'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0277778'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0111111'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: VOSO4 x n H2O
+  term:
+    id: CHEBI:87020
+    label: VOSO4 x n H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Add components to distilled water and mix thoroughly. Then, add the
+    following solutions in order listed:'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5, bring volume to 1.0 L with distilled water and autoclave.
+- step_number: 3
+  action: HEAT
+  description: 'Comment: Inoculate into the medium prewarmed to the optimal growth
+    temperature.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.102180Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J618'
+merge_fingerprint: d183d2888aed0c76ff5ddca218844e90eb02146b246387f78f75e6328c341c62
+merged_from:
+- JCM_J618_CYS_MEDIUM

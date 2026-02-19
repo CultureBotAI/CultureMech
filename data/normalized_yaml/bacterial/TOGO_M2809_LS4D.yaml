@@ -192,8 +192,14 @@ ingredients:
     component'
 - preferred_term: 1M KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -259,6 +265,9 @@ ingredients:
     Simple component'
 - preferred_term: NaOH solution
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% (wt/vol) Na2CO3
   concentration:
     value: '100'
@@ -276,6 +285,9 @@ ingredients:
   notes: 'Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Nitrogen
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2809
   term:
@@ -293,3 +305,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.564023'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1M KOH solution; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    NaOH solution; Added default concentration for ingredient: Nitrogen'

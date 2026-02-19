@@ -1,0 +1,62 @@
+name: Tomato Juice Agar
+original_name: Tomato Juice Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Tomato juice, filtered, pH 7.0
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M8
+  term:
+    id: TOGO:M8
+    label: Tomato Juice Agar
+notes: 'Source: https://togomedium.org/medium/M8
+
+  Original source: JCM - JCM_M15
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=15'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.737487Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M8'
+- timestamp: '2026-01-28T19:48:33.922215Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ede1c3d8200687fefbf329bcb2fd7eadd0ba34fce68eaae7020fc771667c979b
+merged_from:
+- TOGO_M8_Tomato_Juice_Agar

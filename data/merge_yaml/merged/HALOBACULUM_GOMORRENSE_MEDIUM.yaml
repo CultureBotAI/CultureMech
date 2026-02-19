@@ -1,0 +1,89 @@
+name: HALOBACULUM GOMORRENSE MEDIUM
+original_name: HALOBACULUM GOMORRENSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 823
+  term:
+    id: mediadive.medium:823
+    label: HALOBACULUM GOMORRENSE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium823.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '125'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '160'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.372188Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 823'
+- timestamp: '2026-01-28T19:48:09.089083Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:49.335972+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_823_HALOBACULUM_GOMORRENSE_MEDIUM, KOMODO_823_HALOBACULUM_GOMORRENSE_medium'
+synonyms:
+- name: HALOBACULUM GOMORRENSE medium
+  source: KOMODO
+  source_id: komodo.medium:823
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_823_HALOBACULUM_GOMORRENSE_MEDIUM
+- KOMODO_823_HALOBACULUM_GOMORRENSE_medium
+merge_fingerprint: 5f7890b5c311f1247cfa9dcd9f4375ba828ae3296ae2d726bbf11452d00e75cf

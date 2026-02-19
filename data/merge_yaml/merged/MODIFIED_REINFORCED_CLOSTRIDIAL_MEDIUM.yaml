@@ -1,0 +1,107 @@
+name: Modified Reinforced Clostridial Medium
+original_name: Modified Reinforced Clostridial Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Sodium acetate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine・HCl・H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1306
+  term:
+    id: TOGO:M1306
+    label: Modified Reinforced Clostridial Medium
+notes: 'Source: https://togomedium.org/medium/M1306
+
+  Original source: JCM - JCM_M1217-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1217'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.327409Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1306'
+- timestamp: '2026-01-28T19:48:19.640860Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.097792'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 8972b091c643a2ae4362c9e5ff4ff33144f338bd40d2d3609344c2e1699e5e3d
+merged_from:
+- TOGO_M1306_Modified_Reinforced_Clostridial_Medium

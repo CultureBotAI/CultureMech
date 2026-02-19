@@ -1,0 +1,49 @@
+name: SIMPLICISPIRA MEDIUM (PYG)
+original_name: SIMPLICISPIRA MEDIUM (PYG)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1607
+  term:
+    id: mediadive.medium:1607
+    label: SIMPLICISPIRA MEDIUM (PYG)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1607.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.996189Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1607'
+merge_fingerprint: c974a0dcf791dc45cbf5988e83c34ec14e6ea7f606ff635431e3d09c25205e4f
+merged_from:
+- DSMZ_1607_SIMPLICISPIRA_MEDIUM_PYG

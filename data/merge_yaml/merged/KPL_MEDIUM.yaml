@@ -1,0 +1,86 @@
+name: KPL MEDIUM
+original_name: KPL MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: DSMZ Medium 456
+  term:
+    id: mediadive.medium:456
+    label: KPL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium456.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '8.76424'
+    unit: G_PER_L
+- preferred_term: Galactose
+  term:
+    id: CHEBI:28260
+    label: Galactose
+  concentration:
+    value: '8.76424'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '13.1464'
+    unit: G_PER_L
+- preferred_term: Skim milk
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: White wine
+  concentration:
+    value: '140'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Combine components, except white table wine. Adjust pH to 5.5. Autoclave
+    for 15 min at 121°C, Cool to 45-50°C. Aseptically add filter sterilized white
+    table wine. Mix thoroughly. Pour into sterile Petri dishes.
+- step_number: 2
+  action: HEAT
+  description: Adjust 10% skim milk to pH 5.5 with lactic acid and heat at 100°C for
+    30 minutes. Remove precipitate by filtration. For preparing broth medium, adjust
+    filtrate to pH 7.0 with 2 N NaOH and heat at 100°C for 30 minutes. Remove precipitate
+    by filtration. Adjust filtrate to pH 5.5 with 2 N HCl.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Filter-sterilize and add to autoclaved basal medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.171128Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 456'
+- timestamp: '2026-02-03T22:25:41.587632+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_456_KPL_MEDIUM, KOMODO_456_KPL_medium'
+synonyms:
+- name: KPL medium
+  source: KOMODO
+  source_id: komodo.medium:456
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_456_KPL_MEDIUM
+- KOMODO_456_KPL_medium
+merge_fingerprint: 3514dc6f5b6d99cbb85a465ddaeb89d0091e3b891eb830c101466c97680b43de

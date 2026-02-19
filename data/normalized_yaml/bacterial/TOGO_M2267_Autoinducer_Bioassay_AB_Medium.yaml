@@ -46,6 +46,9 @@ ingredients:
     label: heptacosanoate
 - preferred_term: 3N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 1M Potassium Phosphate (pH 7.0)
   concentration:
     value: '10'
@@ -86,3 +89,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.967160'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 3N NaOH'

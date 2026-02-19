@@ -1,0 +1,64 @@
+name: CM MEDIUM
+original_name: CM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 1595
+  term:
+    id: mediadive.medium:1595
+    label: CM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1595.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.2.
+- step_number: 2
+  action: MIX
+  description: Media may be solidified by adding 14.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.944087Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1595'
+merge_fingerprint: 0dbb31be8c4ae64ddb46069fb3d791e2a3c8d8bae69304205e9100046c57b97a
+merged_from:
+- DSMZ_1595_CM_MEDIUM

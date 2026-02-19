@@ -1,0 +1,139 @@
+name: Lactobacillus Medium III
+original_name: Lactobacillus Medium III
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Ethanol
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: DL--Mevalonic acid
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casein peptone, tryptic digest
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M14
+  term:
+    id: TOGO:M14
+    label: Lactobacillus Medium III
+notes: 'Source: https://togomedium.org/medium/M14
+
+  Original source: JCM - JCM_M21
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=21'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.493068Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M14'
+- timestamp: '2026-01-28T19:48:39.931323Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0e89aa4f263abb484adb0aea94950c880ab3ccb51abd6093638b8894b7f22db5
+merged_from:
+- TOGO_M14_Lactobacillus_Medium_III

@@ -1,0 +1,56 @@
+name: MODIFIED TRYPTONE SOYA BROTH
+original_name: MODIFIED TRYPTONE SOYA BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.5
+media_term:
+  preferred_term: DSMZ Medium 1480
+  term:
+    id: mediadive.medium:1480
+    label: MODIFIED TRYPTONE SOYA BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1480.pdf'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: NaCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: ''
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: The pH should be 10.5 after autoclaving
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.561087Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1480'
+- timestamp: '2026-01-28T19:48:15.950026Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: f03a43400926fd812768b0eb2189060250ca4e8127524a83d12d8f291bc07e88
+merged_from:
+- DSMZ_1480_MODIFIED_TRYPTONE_SOYA_BROTH

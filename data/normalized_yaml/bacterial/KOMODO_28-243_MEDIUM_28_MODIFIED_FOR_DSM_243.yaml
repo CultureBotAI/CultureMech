@@ -1,7 +1,7 @@
 name: MEDIUM 28 MODIFIED FOR DSM 243
 original_name: MEDIUM 28 MODIFIED FOR DSM 243
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 28_243
@@ -10,7 +10,35 @@ media_term:
     label: MEDIUM 28 MODIFIED FOR DSM 243
 notes: 'Source: KOMODO ModelSEED | ID: 28_243 | DSMZ Medium: 28 (mediadive.medium:28)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +46,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 28_243'
+- timestamp: '2026-02-03T11:18:59.334240'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 28
+ph_value: 7.5

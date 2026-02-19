@@ -81,6 +81,9 @@ ingredients:
   term:
     id: CHEBI:131526
     label: potassium carbonate
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2611
   term:
@@ -100,3 +103,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.945108'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2CO3'

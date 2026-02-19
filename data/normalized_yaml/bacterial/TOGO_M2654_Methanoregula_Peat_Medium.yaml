@@ -80,10 +80,19 @@ ingredients:
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: HCl (25%)
   concentration:
     value: '10'
@@ -222,6 +231,9 @@ ingredients:
     label: sodium hydroxide
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaOH (0.38 M)
   concentration:
     value: '7.2'
@@ -240,6 +252,9 @@ ingredients:
   notes: 'Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -256,6 +271,9 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -273,6 +291,9 @@ ingredients:
     component'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -362,6 +383,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2654
   term:
@@ -381,3 +405,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.229100'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1 N HCl; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: N2 gas; Added default
+    concentration for ingredient: N2 gas; Added default concentration for ingredient:
+    N2 gas; Added default concentration for ingredient: N2 gas; Added default concentration
+    for ingredient: N2 gas'

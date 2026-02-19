@@ -1,0 +1,123 @@
+name: Treponema Thermophilum Medium
+original_name: Treponema Thermophilum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Xylan
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:37166
+    label: xylan
+- preferred_term: Tryptone (BD Bacto)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Meat peptone (BD Bacto)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine・HCl・H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Trace element solution SL--10 (see Medium [M433])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1331
+  term:
+    id: TOGO:M1331
+    label: Treponema Thermophilum Medium
+notes: 'Source: https://togomedium.org/medium/M1331
+
+  Original source: JCM - JCM_M1237
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1237'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.366442Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1331'
+- timestamp: '2026-01-28T19:48:42.481702Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.205287'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 1fba98f3a416699bc1fbe9086210c3073c9f057cb93866316cb25355d3a98e47
+merged_from:
+- TOGO_M1331_Treponema_Thermophilum_Medium

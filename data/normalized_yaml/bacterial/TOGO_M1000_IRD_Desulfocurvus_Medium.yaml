@@ -100,8 +100,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '25'
@@ -114,8 +120,14 @@ ingredients:
   notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 5% Na2S・9H2O solution
   concentration:
     value: '8'
@@ -143,3 +155,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.375520'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'

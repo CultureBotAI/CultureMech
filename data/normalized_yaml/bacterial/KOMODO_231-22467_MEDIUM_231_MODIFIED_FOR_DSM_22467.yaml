@@ -10,7 +10,75 @@ media_term:
     label: MEDIUM 231 MODIFIED FOR DSM 22467
 notes: 'Source: KOMODO ModelSEED | ID: 231_22467 | DSMZ Medium: 231 (mediadive.medium:231)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)3 citrate
+  term:
+    id: CHEBI:63037
+    label: (NH4)3 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Cysteine hydrochloride
+  term:
+    id: CHEBI:91248
+    label: Cysteine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +86,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 231_22467'
+- timestamp: '2026-02-03T11:19:16.265592'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 231
+ph_value: 5.2

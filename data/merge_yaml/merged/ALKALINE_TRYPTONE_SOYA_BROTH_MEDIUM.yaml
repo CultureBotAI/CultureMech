@@ -1,0 +1,61 @@
+name: Alkaline Tryptone Soya Broth Medium
+original_name: Alkaline Tryptone Soya Broth Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Tryptone soya broth (Oxoid)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: sodium carbonate solution
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M790
+  term:
+    id: TOGO:M790
+    label: Alkaline Tryptone Soya Broth Medium
+notes: 'Source: https://togomedium.org/medium/M790
+
+  Original source: JCM - JCM_M763-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=763'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.718706Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M790'
+- timestamp: '2026-01-28T19:48:07.249395Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.573683'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: sodium carbonate solution'
+merge_fingerprint: fb92863d30cadb1908e35646ba72c4768e2aae1c1c241a86630e2fc56a717eca
+merged_from:
+- TOGO_M790_Alkaline_Tryptone_Soya_Broth_Medium

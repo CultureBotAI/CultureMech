@@ -1,0 +1,175 @@
+name: MODIFIED MEDIUM 514
+original_name: MODIFIED MEDIUM 514
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.4-7.8
+media_term:
+  preferred_term: DSMZ Medium 1173
+  term:
+    id: mediadive.medium:1173
+    label: MODIFIED MEDIUM 514
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1173.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '39.45'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '5.9'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+- preferred_term: Na-silicate
+  term:
+    id: CHEBI:60720
+    label: Na-silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+- preferred_term: (NH4)NO3
+  term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Final pH should be 7.6 ± 0.2 at 25°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.587488Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1173'
+- timestamp: '2026-02-03T22:25:29.752828+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1173_MODIFIED_MEDIUM_514, KOMODO_1173_MODIFIED_medium_514,
+    KOMODO_760-1_DSM_2476_DSM_5473_DSM_5474_DSM_9503_DSM_10343_DSM_10394_DSM_10395_DSM_11113_DSM_,
+    KOMODO_760_MARINE_THERMOCOCCUS_medium, DSMZ_1517_MODIFIED_BACTO_MARINE_BROTH_DIFCO_2216,
+    DSMZ_514_BACTO_MARINE_BROTH_DIFCO_2216, DSMZ_760_MARINE_THERMOCOCCUS_MEDIUM'
+synonyms:
+- name: MODIFIED medium 514
+  source: KOMODO
+  source_id: komodo.medium:1173
+  original_category: imported
+- name: DSM 2476, DSM 5473, DSM 5474, DSM 9503, DSM 10343, DSM 10394, DSM 10395, DSM
+    11113, DSM 11836, DSM 12593, DSM 12819, DSM 12820, DSM 12597, DSM 12767, DSM 14981,
+    DSM 15226, DSM 16538, DSM 17994, DSM 17882
+  source: KOMODO
+  source_id: komodo.medium:760.1
+  original_category: imported
+- name: MARINE THERMOCOCCUS medium
+  source: KOMODO
+  source_id: komodo.medium:760
+  original_category: imported
+- name: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
+  source: MediaDive
+  source_id: mediadive.medium:1517
+  original_category: imported
+- name: BACTO MARINE BROTH (DIFCO 2216)
+  source: MediaDive
+  source_id: mediadive.medium:514
+  original_category: imported
+- name: MARINE THERMOCOCCUS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:760
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1173_MODIFIED_MEDIUM_514
+- KOMODO_1173_MODIFIED_medium_514
+- KOMODO_760-1_DSM_2476_DSM_5473_DSM_5474_DSM_9503_DSM_10343_DSM_10394_DSM_10395_DSM_11113_DSM_
+- KOMODO_760_MARINE_THERMOCOCCUS_medium
+- DSMZ_1517_MODIFIED_BACTO_MARINE_BROTH_DIFCO_2216
+- DSMZ_514_BACTO_MARINE_BROTH_DIFCO_2216
+- DSMZ_760_MARINE_THERMOCOCCUS_MEDIUM
+merge_fingerprint: d0a8f83567ee2fa8e8c82657cfe7fb04f13bf4b773dc0d7b820c4508f3dd0944

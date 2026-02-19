@@ -1,0 +1,97 @@
+name: Deferrated synbase with ferric ammonium citrate; simpson
+original_name: Deferrated synbase with ferric ammonium citrate; simpson
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '410.79'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+- preferred_term: Cl-
+  concentration:
+    value: '0.141'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cl'
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.20658'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '28.7'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '0.6265'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '35.22'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '22.059'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.0202'
+    unit: MILLIMOLAR
+- preferred_term: Sodium Succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '35.69'
+    unit: MILLIMOLAR
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '1.432'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.141292Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 174, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:34.713955Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 174
+  term:
+    id: MEDIADB:174
+    label: Deferrated synbase with ferric ammonium citrate; simpson
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: d7ab88c3dac7d4a33bfa000d3091aa3dfd5990de6fccb1feb9884228bb27d629
+merged_from:
+- MEDIADB_174_Deferrated_synbase_with_ferric_ammonium_citrate_si

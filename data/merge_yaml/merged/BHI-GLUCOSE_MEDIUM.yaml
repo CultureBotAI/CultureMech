@@ -1,0 +1,52 @@
+name: BHI-GLUCOSE MEDIUM
+original_name: BHI-GLUCOSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 82
+  term:
+    id: mediadive.medium:82
+    label: BHI-GLUCOSE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium82.pdf'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '18.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.126632Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 82'
+- timestamp: '2026-02-03T22:25:49.633594+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_82_BHI-GLUCOSE_MEDIUM, KOMODO_82_BHI-GLUCOSE_medium'
+synonyms:
+- name: BHI-GLUCOSE medium
+  source: KOMODO
+  source_id: komodo.medium:82
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_82_BHI-GLUCOSE_MEDIUM
+- KOMODO_82_BHI-GLUCOSE_medium
+merge_fingerprint: 1fbc20a7ad584e7dd1306114f34a0441d3f14bb5b5486c53ee5e75b1f901aeb9

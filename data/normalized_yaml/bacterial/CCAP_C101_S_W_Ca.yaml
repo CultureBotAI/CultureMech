@@ -12,6 +12,9 @@ media_term:
 notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SW_Ca.pdf'
 ingredients:
 - preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CaCO3
   term:
     id: CHEBI:3311
@@ -42,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C101'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:16.841771'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'

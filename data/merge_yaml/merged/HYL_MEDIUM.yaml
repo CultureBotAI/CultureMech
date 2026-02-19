@@ -1,0 +1,241 @@
+name: HYL Medium
+original_name: HYL Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium lactate solution (50%)
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: HEPES
+  concentration:
+    value: '4.76'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 0.5 M Na2S・9H2O solution
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: 0.2% Fe(NH4)2(SO4)・6H2O (in 0.037% HCl)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Solution'
+- preferred_term: Trace elements (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: CoCl2・6H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuSO4・5H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KAl(SO4)2・12H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2WO4・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MnSO4・xH2O
+  concentration:
+    value: '3.26'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2SeO3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:48843
+    label: disodium selenite
+- preferred_term: NiSO4・6H2O
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: EDTA・2Na
+  concentration:
+    value: '29'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M631
+  term:
+    id: TOGO:M631
+    label: HYL Medium
+notes: 'Source: https://togomedium.org/medium/M631
+
+  Original source: JCM - JCM_M621
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=621'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.434288Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M631'
+- timestamp: '2026-01-28T19:48:13.009056Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.798387'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: KOH'
+merge_fingerprint: c879305b0f8332070c5dc71f93877581822052c0f2f80072188a610b3e15c2d7
+merged_from:
+- TOGO_M631_HYL_Medium

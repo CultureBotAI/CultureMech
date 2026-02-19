@@ -1,0 +1,597 @@
+name: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
+original_name: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 465a
+  term:
+    id: mediadive.medium:465a
+    label: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium465a.pdf'
+ingredients:
+- preferred_term: '[1,1′-Biphenyl]-2-ol'
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Prepare medium 465. Dissolve 2-hydroxybiphenyl in ethanol (50 g/l)
+    and filter sterilize. Pipette a volume of this stock solution into a sterile culture
+    vessel so that the final concentration of 2-hydroxybiphenyl will be 0.5 g/l medium.
+    Let the ethanol evaporate under sterile conditions. Add medium 465.
+- step_number: 2
+  action: MIX
+  description: pH 7.25
+- step_number: 3
+  action: MIX
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
+    for the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation,
+    cultivate on mineral medium with the appropriate carbon source.
+- step_number: 4
+  action: ADJUST_PH
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
+    N NaOH; then add other compounds.
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 6
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 7
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+- step_number: 8
+  action: MIX
+  description: pH 7.3
+- step_number: 9
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+- step_number: 10
+  action: AUTOCLAVE
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
+    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
+    min at 121°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.232011Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 465a'
+- timestamp: '2026-01-28T19:48:32.818735Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:43.381283+00:00'
+  curator: recipe-merger
+  action: Merged 59 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL, KOMODO_465-10063_MEDIUM_465_MODIFIED_FOR_DSM_10063,
+    KOMODO_465-10064_MEDIUM_465_MODIFIED_FOR_DSM_10064, KOMODO_465-10065_MEDIUM_465_MODIFIED_FOR_DSM_10065,
+    KOMODO_465-10066_MEDIUM_465_MODIFIED_FOR_DSM_10066, KOMODO_465-10698_MEDIUM_465_MODIFIED_FOR_DSM_10698,
+    KOMODO_465-10699_MEDIUM_465_MODIFIED_FOR_DSM_10699, KOMODO_465-10700_MEDIUM_465_MODIFIED_FOR_DSM_10700,
+    KOMODO_465-11098_MEDIUM_465_MODIFIED_FOR_DSM_11098, KOMODO_465-11199_MEDIUM_465_MODIFIED_FOR_DSM_11199,
+    KOMODO_465-11414_MEDIUM_465_MODIFIED_FOR_DSM_11414, KOMODO_465-11437_MEDIUM_465_MODIFIED_FOR_DSM_11437,
+    KOMODO_465-12578_MEDIUM_465_MODIFIED_FOR_DSM_12578, KOMODO_465-12579_MEDIUM_465_MODIFIED_FOR_DSM_12579,
+    KOMODO_465-12584_MEDIUM_465_MODIFIED_FOR_DSM_12584, KOMODO_465-12585_MEDIUM_465_MODIFIED_FOR_DSM_12585,
+    KOMODO_465-12678_MEDIUM_465_MODIFIED_FOR_DSM_12678, KOMODO_465-12775_MEDIUM_465_MODIFIED_FOR_DSM_12775,
+    KOMODO_465-12877_MEDIUM_465_MODIFIED_FOR_DSM_12877, KOMODO_465-13640-replace-taurine-with-ethanedisulfonate_MEDIUM_465_MODIFIED_FOR_DSM_13640_replace_taurine_with_ethanedisulfonate,
+    KOMODO_465-13640_MEDIUM_465_MODIFIED_FOR_DSM_13640, KOMODO_465-14773_MEDIUM_465_MODIFIED_FOR_DSM_14773,
+    KOMODO_465-16812_MEDIUM_465_MODIFIED_FOR_DSM_16812, KOMODO_465-16843_MEDIUM_465_MODIFIED_FOR_DSM_16843,
+    KOMODO_465-16845_MEDIUM_465_MODIFIED_FOR_DSM_16845, KOMODO_465-16851_MEDIUM_465_MODIFIED_FOR_DSM_16851,
+    KOMODO_465-16962_MEDIUM_465_MODIFIED_FOR_DSM_16962, KOMODO_465-16963_MEDIUM_465_MODIFIED_FOR_DSM_16963,
+    KOMODO_465-16964_MEDIUM_465_MODIFIED_FOR_DSM_16964, KOMODO_465-17507_MEDIUM_465_MODIFIED_FOR_DSM_17507,
+    KOMODO_465-17540_MEDIUM_465_MODIFIED_FOR_DSM_17540, KOMODO_465-17854_MEDIUM_465_MODIFIED_FOR_DSM_17854,
+    KOMODO_465-18361_MEDIUM_465_MODIFIED_FOR_DSM_18361, KOMODO_465-19529_MEDIUM_465_MODIFIED_FOR_DSM_19529,
+    KOMODO_465-19550_MEDIUM_465_MODIFIED_FOR_DSM_19550, KOMODO_465-6383_MEDIUM_465_MODIFIED_FOR_DSM_6383,
+    KOMODO_465-6428-replace-phenol-with-2,4,6-trichlorophenol_MEDIUM_465_MODIFIED_FOR_DSM_6428_replace_phenol_with_2_4_6-trichlorophenol,
+    KOMODO_465-6428_MEDIUM_465_MODIFIED_FOR_DSM_6428, KOMODO_465-6431_MEDIUM_465_MODIFIED_FOR_DSM_6431,
+    KOMODO_465-6432_MEDIUM_465_MODIFIED_FOR_DSM_6432, KOMODO_465-6434_MEDIUM_465_MODIFIED_FOR_DSM_6434,
+    KOMODO_465-6577_MEDIUM_465_MODIFIED_FOR_DSM_6577, KOMODO_465-6708_MEDIUM_465_MODIFIED_FOR_DSM_6708,
+    KOMODO_465-6985_MEDIUM_465_MODIFIED_FOR_DSM_6985, KOMODO_465-6986_MEDIUM_465_MODIFIED_FOR_DSM_6986,
+    KOMODO_465-7005_MEDIUM_465_MODIFIED_FOR_DSM_7005, KOMODO_465_MINERAL_MEDIUM_PH_7.25,
+    KOMODO_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL, KOMODO_465b-6824_MEDIUM_465b_MODIFIED_FOR_DSM_6824,
+    KOMODO_465b_MINERAL_MEDIUM_WITH_PCP, KOMODO_465c-1_For_DSM_6813, KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE,
+    KOMODO_465d-1_For_DSM_9675_and_DSM_9685, KOMODO_465d_MINERAL_MEDIUM_WITH_BENZYLCYANIDE_AS_NITROGEN_SOURCE,
+    KOMODO_465e_MINERAL_MEDIUM_WITH_SULFOBENZOIC_ACID, KOMODO_465f_MINERAL_MEDIUM_WITH_3-AMINOPHENOL,
+    KOMODO_465g_MINERAL_MEDIUM_WITH_CYANURIC_ACID_AS_NITROGEN_SOURCE, KOMODO_465h_MINERALMEDIUM_WITH_6-METHYLNICOTINATE,
+    KOMODO_465i_MINERAL_MEDIUM_WITH_ATRAZIN'
+synonyms:
+- name: MEDIUM 465 MODIFIED FOR DSM 10063
+  source: KOMODO
+  source_id: komodo.medium:465_10063
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10064
+  source: KOMODO
+  source_id: komodo.medium:465_10064
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10065
+  source: KOMODO
+  source_id: komodo.medium:465_10065
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10066
+  source: KOMODO
+  source_id: komodo.medium:465_10066
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10698
+  source: KOMODO
+  source_id: komodo.medium:465_10698
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10699
+  source: KOMODO
+  source_id: komodo.medium:465_10699
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 10700
+  source: KOMODO
+  source_id: komodo.medium:465_10700
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 11098
+  source: KOMODO
+  source_id: komodo.medium:465_11098
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 11199
+  source: KOMODO
+  source_id: komodo.medium:465_11199
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 11414
+  source: KOMODO
+  source_id: komodo.medium:465_11414
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 11437
+  source: KOMODO
+  source_id: komodo.medium:465_11437
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12578
+  source: KOMODO
+  source_id: komodo.medium:465_12578
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12579
+  source: KOMODO
+  source_id: komodo.medium:465_12579
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12584
+  source: KOMODO
+  source_id: komodo.medium:465_12584
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12585
+  source: KOMODO
+  source_id: komodo.medium:465_12585
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12678
+  source: KOMODO
+  source_id: komodo.medium:465_12678
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12775
+  source: KOMODO
+  source_id: komodo.medium:465_12775
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 12877
+  source: KOMODO
+  source_id: komodo.medium:465_12877
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 13640_replace_taurine_with_ethanedisulfonate
+  source: KOMODO
+  source_id: komodo.medium:465_13640_replace_taurine_with_ethanedisulfonate
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 13640
+  source: KOMODO
+  source_id: komodo.medium:465_13640
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 14773
+  source: KOMODO
+  source_id: komodo.medium:465_14773
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16812
+  source: KOMODO
+  source_id: komodo.medium:465_16812
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16843
+  source: KOMODO
+  source_id: komodo.medium:465_16843
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16845
+  source: KOMODO
+  source_id: komodo.medium:465_16845
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16851
+  source: KOMODO
+  source_id: komodo.medium:465_16851
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16962
+  source: KOMODO
+  source_id: komodo.medium:465_16962
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16963
+  source: KOMODO
+  source_id: komodo.medium:465_16963
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 16964
+  source: KOMODO
+  source_id: komodo.medium:465_16964
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 17507
+  source: KOMODO
+  source_id: komodo.medium:465_17507
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 17540
+  source: KOMODO
+  source_id: komodo.medium:465_17540
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 17854
+  source: KOMODO
+  source_id: komodo.medium:465_17854
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 18361
+  source: KOMODO
+  source_id: komodo.medium:465_18361
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 19529
+  source: KOMODO
+  source_id: komodo.medium:465_19529
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 19550
+  source: KOMODO
+  source_id: komodo.medium:465_19550
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6383
+  source: KOMODO
+  source_id: komodo.medium:465_6383
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6428_replace_phenol_with_2,4,6-trichlorophenol
+  source: KOMODO
+  source_id: komodo.medium:465_6428_replace_phenol_with_2,4,6-trichlorophenol
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6428
+  source: KOMODO
+  source_id: komodo.medium:465_6428
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6431
+  source: KOMODO
+  source_id: komodo.medium:465_6431
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6432
+  source: KOMODO
+  source_id: komodo.medium:465_6432
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6434
+  source: KOMODO
+  source_id: komodo.medium:465_6434
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6577
+  source: KOMODO
+  source_id: komodo.medium:465_6577
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6708
+  source: KOMODO
+  source_id: komodo.medium:465_6708
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6985
+  source: KOMODO
+  source_id: komodo.medium:465_6985
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 6986
+  source: KOMODO
+  source_id: komodo.medium:465_6986
+  original_category: imported
+- name: MEDIUM 465 MODIFIED FOR DSM 7005
+  source: KOMODO
+  source_id: komodo.medium:465_7005
+  original_category: imported
+- name: MINERAL MEDIUM PH 7.25
+  source: KOMODO
+  source_id: komodo.medium:465
+  original_category: imported
+- name: MEDIUM 465b MODIFIED FOR DSM 6824
+  source: KOMODO
+  source_id: komodo.medium:465b_6824
+  original_category: imported
+- name: MINERAL MEDIUM WITH PCP
+  source: KOMODO
+  source_id: komodo.medium:465b
+  original_category: imported
+- name: For DSM 6813
+  source: KOMODO
+  source_id: komodo.medium:465c.1
+  original_category: imported
+- name: MINERAL MEDIUM WITH DICHLOROMETHANE
+  source: KOMODO
+  source_id: komodo.medium:465c
+  original_category: imported
+- name: For DSM 9675 and DSM 9685
+  source: KOMODO
+  source_id: komodo.medium:465d.1
+  original_category: imported
+- name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
+  source: KOMODO
+  source_id: komodo.medium:465d
+  original_category: imported
+- name: MINERAL MEDIUM WITH SULFOBENZOIC ACID
+  source: KOMODO
+  source_id: komodo.medium:465e
+  original_category: imported
+- name: MINERAL MEDIUM WITH 3-AMINOPHENOL
+  source: KOMODO
+  source_id: komodo.medium:465f
+  original_category: imported
+- name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
+  source: KOMODO
+  source_id: komodo.medium:465g
+  original_category: imported
+- name: MINERALMEDIUM WITH 6-METHYLNICOTINATE
+  source: KOMODO
+  source_id: komodo.medium:465h
+  original_category: imported
+- name: MINERAL MEDIUM WITH ATRAZIN
+  source: KOMODO
+  source_id: komodo.medium:465i
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL
+- KOMODO_465-10063_MEDIUM_465_MODIFIED_FOR_DSM_10063
+- KOMODO_465-10064_MEDIUM_465_MODIFIED_FOR_DSM_10064
+- KOMODO_465-10065_MEDIUM_465_MODIFIED_FOR_DSM_10065
+- KOMODO_465-10066_MEDIUM_465_MODIFIED_FOR_DSM_10066
+- KOMODO_465-10698_MEDIUM_465_MODIFIED_FOR_DSM_10698
+- KOMODO_465-10699_MEDIUM_465_MODIFIED_FOR_DSM_10699
+- KOMODO_465-10700_MEDIUM_465_MODIFIED_FOR_DSM_10700
+- KOMODO_465-11098_MEDIUM_465_MODIFIED_FOR_DSM_11098
+- KOMODO_465-11199_MEDIUM_465_MODIFIED_FOR_DSM_11199
+- KOMODO_465-11414_MEDIUM_465_MODIFIED_FOR_DSM_11414
+- KOMODO_465-11437_MEDIUM_465_MODIFIED_FOR_DSM_11437
+- KOMODO_465-12578_MEDIUM_465_MODIFIED_FOR_DSM_12578
+- KOMODO_465-12579_MEDIUM_465_MODIFIED_FOR_DSM_12579
+- KOMODO_465-12584_MEDIUM_465_MODIFIED_FOR_DSM_12584
+- KOMODO_465-12585_MEDIUM_465_MODIFIED_FOR_DSM_12585
+- KOMODO_465-12678_MEDIUM_465_MODIFIED_FOR_DSM_12678
+- KOMODO_465-12775_MEDIUM_465_MODIFIED_FOR_DSM_12775
+- KOMODO_465-12877_MEDIUM_465_MODIFIED_FOR_DSM_12877
+- KOMODO_465-13640-replace-taurine-with-ethanedisulfonate_MEDIUM_465_MODIFIED_FOR_DSM_13640_replace_taurine_with_ethanedisulfonate
+- KOMODO_465-13640_MEDIUM_465_MODIFIED_FOR_DSM_13640
+- KOMODO_465-14773_MEDIUM_465_MODIFIED_FOR_DSM_14773
+- KOMODO_465-16812_MEDIUM_465_MODIFIED_FOR_DSM_16812
+- KOMODO_465-16843_MEDIUM_465_MODIFIED_FOR_DSM_16843
+- KOMODO_465-16845_MEDIUM_465_MODIFIED_FOR_DSM_16845
+- KOMODO_465-16851_MEDIUM_465_MODIFIED_FOR_DSM_16851
+- KOMODO_465-16962_MEDIUM_465_MODIFIED_FOR_DSM_16962
+- KOMODO_465-16963_MEDIUM_465_MODIFIED_FOR_DSM_16963
+- KOMODO_465-16964_MEDIUM_465_MODIFIED_FOR_DSM_16964
+- KOMODO_465-17507_MEDIUM_465_MODIFIED_FOR_DSM_17507
+- KOMODO_465-17540_MEDIUM_465_MODIFIED_FOR_DSM_17540
+- KOMODO_465-17854_MEDIUM_465_MODIFIED_FOR_DSM_17854
+- KOMODO_465-18361_MEDIUM_465_MODIFIED_FOR_DSM_18361
+- KOMODO_465-19529_MEDIUM_465_MODIFIED_FOR_DSM_19529
+- KOMODO_465-19550_MEDIUM_465_MODIFIED_FOR_DSM_19550
+- KOMODO_465-6383_MEDIUM_465_MODIFIED_FOR_DSM_6383
+- KOMODO_465-6428-replace-phenol-with-2,4,6-trichlorophenol_MEDIUM_465_MODIFIED_FOR_DSM_6428_replace_phenol_with_2_4_6-trichlorophenol
+- KOMODO_465-6428_MEDIUM_465_MODIFIED_FOR_DSM_6428
+- KOMODO_465-6431_MEDIUM_465_MODIFIED_FOR_DSM_6431
+- KOMODO_465-6432_MEDIUM_465_MODIFIED_FOR_DSM_6432
+- KOMODO_465-6434_MEDIUM_465_MODIFIED_FOR_DSM_6434
+- KOMODO_465-6577_MEDIUM_465_MODIFIED_FOR_DSM_6577
+- KOMODO_465-6708_MEDIUM_465_MODIFIED_FOR_DSM_6708
+- KOMODO_465-6985_MEDIUM_465_MODIFIED_FOR_DSM_6985
+- KOMODO_465-6986_MEDIUM_465_MODIFIED_FOR_DSM_6986
+- KOMODO_465-7005_MEDIUM_465_MODIFIED_FOR_DSM_7005
+- KOMODO_465_MINERAL_MEDIUM_PH_7.25
+- KOMODO_465a_MINERAL_MEDIUM_WITH_2-HYDROXYBIPHENYL
+- KOMODO_465b-6824_MEDIUM_465b_MODIFIED_FOR_DSM_6824
+- KOMODO_465b_MINERAL_MEDIUM_WITH_PCP
+- KOMODO_465c-1_For_DSM_6813
+- KOMODO_465c_MINERAL_MEDIUM_WITH_DICHLOROMETHANE
+- KOMODO_465d-1_For_DSM_9675_and_DSM_9685
+- KOMODO_465d_MINERAL_MEDIUM_WITH_BENZYLCYANIDE_AS_NITROGEN_SOURCE
+- KOMODO_465e_MINERAL_MEDIUM_WITH_SULFOBENZOIC_ACID
+- KOMODO_465f_MINERAL_MEDIUM_WITH_3-AMINOPHENOL
+- KOMODO_465g_MINERAL_MEDIUM_WITH_CYANURIC_ACID_AS_NITROGEN_SOURCE
+- KOMODO_465h_MINERALMEDIUM_WITH_6-METHYLNICOTINATE
+- KOMODO_465i_MINERAL_MEDIUM_WITH_ATRAZIN
+merge_fingerprint: 61531aa9f26a3c8a6179b83ada437af9455ad5b7b9d4da7cbeae3c0c3f59ebc7

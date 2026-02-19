@@ -1,0 +1,57 @@
+name: MALTEXTRACT/CHARCOAL MEDIUM
+original_name: MALTEXTRACT/CHARCOAL MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 801
+  term:
+    id: mediadive.medium:801
+    label: MALTEXTRACT/CHARCOAL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium801.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Charcoal
+  term:
+    id: CHEBI:91090
+    label: Charcoal
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: pH 5.6. Sterilize at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.302414Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 801'
+- timestamp: '2026-02-03T22:26:01.156971+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_801_MALTEXTRACT_CHARCOAL_medium, DSMZ_801_MALTEXTRACT_CHARCOAL_MEDIUM'
+synonyms:
+- name: MALTEXTRACT/CHARCOAL medium
+  source: KOMODO
+  source_id: komodo.medium:801
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_801_MALTEXTRACT_CHARCOAL_medium
+- DSMZ_801_MALTEXTRACT_CHARCOAL_MEDIUM
+merge_fingerprint: a72498ed4b811ddf9f175c0bf766ef5291314b5b5fef6ddc4426d48fe23e540b

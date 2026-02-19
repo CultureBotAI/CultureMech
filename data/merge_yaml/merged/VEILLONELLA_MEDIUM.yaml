@@ -1,0 +1,114 @@
+name: Veillonella Medium
+original_name: Veillonella Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Putrescine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:326268
+    label: 1,4-butanediammonium
+- preferred_term: Sodium DL-lactate
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:232798
+    label: sodium L-lactate
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Sodium thioglycolate
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:86481
+    label: sodium thioglycolate
+- preferred_term: K2CO3
+  notes: 'Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:131526
+    label: potassium carbonate
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M469
+  term:
+    id: TOGO:M469
+    label: Veillonella Medium
+notes: 'Source: https://togomedium.org/medium/M469
+
+  Original source: JCM - JCM_M468
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=468'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.115496Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M469'
+- timestamp: '2026-01-28T19:48:10.682071Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.912409'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: K2CO3'
+merge_fingerprint: e057c5de659f29ddc9be6e37df1a2566da62427ba04843dee82efdef5e00c40d
+merged_from:
+- TOGO_M469_Veillonella_Medium

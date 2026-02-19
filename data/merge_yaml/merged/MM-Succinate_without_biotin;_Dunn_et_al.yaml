@@ -1,0 +1,81 @@
+name: MM-Succinate without biotin; Dunn et al
+original_name: MM-Succinate without biotin; Dunn et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Succinate
+  term:
+    id: CHEBI:26806
+    label: Succinate
+  concentration:
+    value: '30.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:succ'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.360425'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '1.2629'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.000331323'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.40572'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.123304'
+    unit: MILLIMOLAR
+- preferred_term: Sodium Glutamate
+  concentration:
+    value: '6.50468'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.951668Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 151, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:42.803845Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 151
+  term:
+    id: MEDIADB:151
+    label: MM-Succinate without biotin; Dunn et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: fbc423af4d01c357d7a8204c28c5c20008ff29693ed6977bf04a07aeffea64f4
+merged_from:
+- MEDIADB_151_MM-Succinate_without_biotin_Dunn_et_al

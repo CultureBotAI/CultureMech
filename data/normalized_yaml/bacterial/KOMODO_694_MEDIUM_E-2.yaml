@@ -11,7 +11,46 @@ media_term:
     label: MEDIUM E-2
 notes: 'Source: KOMODO ModelSEED | ID: 694 | DSMZ Medium: 694 (mediadive.medium:694)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: NaNH4HPO4 x 4 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.246476'
+    unit: G_PER_L
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +58,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 694'
+- timestamp: '2026-02-03T11:19:19.654677'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 694

@@ -1,5 +1,5 @@
 name: Basal
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from SAG Culture Collection (Göttingen). Suitable
@@ -19,6 +19,21 @@ curation_history:
   action: Imported from SAG Culture Collection
   notes: 'Source ID: Basal, PDF URL: http://sagdb.uni-goettingen.de/culture_media/01
     Basal Medium.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.849793'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.758079'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
 references:
 - reference_id: SAG:Basal
 - reference_id: http://sagdb.uni-goettingen.de/culture_media/01 Basal Medium.pdf
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition

@@ -1,0 +1,31 @@
+name: Luria Bertani (LB) medium (buffered MOPS)
+original_name: Luria Bertani (LB) medium (buffered MOPS)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 3-[N-morpho- lino] propanesulfonic acid (MOPS)
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Luria Bertani (LB) medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2501
+  term:
+    id: TOGO:M2501
+    label: Luria Bertani (LB) medium (buffered MOPS)
+notes: 'Source: https://togomedium.org/medium/M2501'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.591660Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2501'
+merge_fingerprint: ed6f400d42dbb22ccc712c0eeeca403f66b766ace121b68dea07628ee9813a2f
+merged_from:
+- TOGO_M2501_Luria_Bertani_LB_medium_buffered_MOPS

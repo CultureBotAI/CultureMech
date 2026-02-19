@@ -1,0 +1,51 @@
+name: Modified PY4S Agar
+original_name: Modified PY4S Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: vitamin B12
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: hemin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: PY4S AGAR (see Medium [M357])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M626
+  term:
+    id: TOGO:M626
+    label: Modified PY4S Agar
+notes: 'Source: https://togomedium.org/medium/M626
+
+  Original source: JCM - JCM_M617
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=617'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.425515Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M626'
+- timestamp: '2026-01-28T19:48:39.767926Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a3670ce486491beb9c87f6d56f010171f0bbbf1b34662b05dfeaddb1e922580b
+merged_from:
+- TOGO_M626_Modified_PY4S_Agar

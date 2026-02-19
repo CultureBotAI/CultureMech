@@ -1,0 +1,55 @@
+name: HM Buffer
+original_name: HM Buffer
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: HEPES
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:46756
+    label: HEPES
+- preferred_term: CaCl2 solution
+  concentration:
+    value: '600'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: MgCl2 solution
+  concentration:
+    value: '333'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: UPW
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M3294
+  term:
+    id: TOGO:M3294
+    label: HM Buffer
+notes: 'Source: https://togomedium.org/medium/M3294
+
+  Original source: NBRC - NBRC_M1663
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1663'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.268795Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3294'
+- timestamp: '2026-01-28T19:48:08.449016Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ff3a252b66738fde033d2b949d26ff638e146082f5d88af37ad75e8f4b3e095a
+merged_from:
+- TOGO_M3294_HM_Buffer

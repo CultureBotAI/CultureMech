@@ -1,0 +1,159 @@
+name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
+original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.5
+media_term:
+  preferred_term: DSMZ Medium 939
+  term:
+    id: mediadive.medium:939
+    label: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium939.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '7.9'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '7.34'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 7.2-7.5
+- step_number: 2
+  action: MIX
+  description: After autoclaving add 10 ml methanol to 1 litre of the sterile Mineral
+    Salts Solution.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Dissolve the EDTA in about 400 ml of water, then add 9 g NaOH. Dissolve
+    each of the salts individually in about 40-50 ml of water and add them to the
+    EDTA-NaOH solution. Adjust the final pH of the solution to pH 6.0 with 1M NaOH
+    (about 24 ml). Make up to 1 litre with distilled water, store in the dark and
+    do not autoclave the stock solution before it is added to the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.831744Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 939'
+- timestamp: '2026-02-03T22:25:51.836416+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM,
+    KOMODO_939-replace-dimethysulfone-with-Fructose_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit,
+    KOMODO_939-replace-dimethysulfone-with-Glucose_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit,
+    KOMODO_939-replace-dimethysulfone-with-Methanol_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit,
+    KOMODO_939-replace-dimethysulfone-with-Methylamine_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit,
+    KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM'
+synonyms:
+- name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Fructose
+  source: KOMODO
+  source_id: komodo.medium:939_replace_dimethysulfone_with_Fructose
+  original_category: imported
+- name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Glucose
+  source: KOMODO
+  source_id: komodo.medium:939_replace_dimethysulfone_with_Glucose
+  original_category: imported
+- name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Methanol
+  source: KOMODO
+  source_id: komodo.medium:939_replace_dimethysulfone_with_Methanol
+  original_category: imported
+- name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM_replace_dimethysulfone_with_Methylamine
+  source: KOMODO
+  source_id: komodo.medium:939_replace_dimethysulfone_with_Methylamine
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM
+- KOMODO_939-replace-dimethysulfone-with-Fructose_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit
+- KOMODO_939-replace-dimethysulfone-with-Glucose_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit
+- KOMODO_939-replace-dimethysulfone-with-Methanol_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit
+- KOMODO_939-replace-dimethysulfone-with-Methylamine_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM_replace_dimethysulfone_wit
+- KOMODO_939_METHYLOTROPHIC_ARTHROBACTER_AND_HYPHOMICROBIUM_MEDIUM
+merge_fingerprint: 1a0eb31ee36ff28cb57644865b4bd47e51b6470f6a8b97b7191e8500281f5061

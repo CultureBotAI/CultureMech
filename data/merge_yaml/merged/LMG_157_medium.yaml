@@ -1,0 +1,73 @@
+name: LMG 157 medium
+original_name: LMG 157 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium acetate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Glucose*
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1854
+  term:
+    id: TOGO:M1854
+    label: LMG 157 medium
+notes: 'Source: https://togomedium.org/medium/M1854
+
+  Original source: NBRC - NBRC_M1095
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1095'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.516894Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1854'
+- timestamp: '2026-01-28T19:48:42.752001Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 5f2592a982c8f9e415db770892b27bac4d237a81cc8435bce8daf37061b17f78
+merged_from:
+- TOGO_M1854_LMG_157_medium

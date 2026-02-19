@@ -1,0 +1,211 @@
+name: METHYLOCEANIBACTER MEDIUM (NaCl-dANMS)
+original_name: METHYLOCEANIBACTER MEDIUM (NaCl-dANMS)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 1610
+  term:
+    id: mediadive.medium:1610
+    label: METHYLOCEANIBACTER MEDIUM (NaCl-dANMS)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1610.pdf'
+ingredients:
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4
+  term:
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnCl2
+  term:
+    id: CHEBI:7773015
+    label: MnCl2
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 6 H2O
+  term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '36.05'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '13.6'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '5.3'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '10.1'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '23.8'
+    unit: G_PER_L
+- preferred_term: CeCl3 x 7 H2O
+  term:
+    id: CHEBI:35458
+    label: CeCl3 x 7 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: LaCl3 x 7 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NdCl3 x 6 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: PrCl3 x H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Dilute 20 ml of solution 1 to 700ml with distilled water.
+- step_number: 2
+  action: MIX
+  description: "Add 100mL of solution 5, 50 mL of solution 8, 20mL of solution 6 and\
+    \ 7 and 10 mL of\r\nsolution 3."
+- step_number: 3
+  action: MIX
+  description: Add 1ml trace element solution.
+- step_number: 4
+  action: MIX
+  description: Add 0.4 mL solution 2.
+- step_number: 5
+  action: MIX
+  description: Add 0.1 mL solution 4.
+- step_number: 6
+  action: MIX
+  description: Add 1.0 mL solution 9.
+- step_number: 7
+  action: MIX
+  description: Disolve and bring to 1L.
+- step_number: 8
+  action: AUTOCLAVE
+  description: "Adjust pH to 7.8 with HCl or NaOH.\r\nAutoclave medium."
+- step_number: 9
+  action: FILTER_STERILIZE
+  description: After autoclaving add 10mL per liter of filter sterilized methanol.
+- step_number: 10
+  action: HEAT
+  description: May be stored at 4°C in the dark
+- step_number: 11
+  action: DISSOLVE
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of distilled water, and then make up to 1 litre
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.001672Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1610'
+merge_fingerprint: 178fc0976b5d6d5e65f404131f3c61b9dac7f242431bd6bce260f363f95adb74
+merged_from:
+- DSMZ_1610_METHYLOCEANIBACTER_MEDIUM_NaCl-dANMS

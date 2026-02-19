@@ -1,0 +1,73 @@
+name: YMA modified
+original_name: YMA modified
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1704
+  term:
+    id: mediadive.medium:1704
+    label: YMA modified
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1704.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Dipotassium Phosphate
+  term:
+    id: CHEBI:131527
+    label: Dipotassium Phosphate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Sodium Chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Calcium Carbonate
+  term:
+    id: CHEBI:3311
+    label: Calcium Carbonate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.295759Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1704'
+merge_fingerprint: 7c036b10ef8dc6a61a58969887ede3f794fef5fdf6e351c029f907eead739ad1
+merged_from:
+- DSMZ_1704_YMA_modified

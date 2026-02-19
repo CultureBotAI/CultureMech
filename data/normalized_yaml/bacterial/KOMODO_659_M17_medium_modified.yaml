@@ -11,7 +11,58 @@ media_term:
     label: M17 medium (modified)
 notes: 'Source: KOMODO ModelSEED | ID: 659 | DSMZ Medium: 659 (mediadive.medium:659)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Na2-ß-glycerolphosphate
+  term:
+    id: CHEBI:132089
+    label: Na2-ß-glycerolphosphate
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +70,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 659'
+- timestamp: '2026-02-03T11:19:07.237747'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 659

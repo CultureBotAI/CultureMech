@@ -1,0 +1,31 @@
+name: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
+original_name: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 'Skim milk '
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium formate (Wako)
+  concentration:
+    value: '1'
+    unit: MILLIMOLAR
+media_term:
+  preferred_term: TOGO Medium M2916
+  term:
+    id: TOGO:M2916
+    label: 10% (wt/wt) skim milk supplemented with 1 mM sodium formate
+notes: 'Source: https://togomedium.org/medium/M2916'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.402500Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2916'
+merge_fingerprint: 8bf4434e04f943cb90e9b92dc43ef3df009d58e692421cd459e7fe9bb7084490
+merged_from:
+- TOGO_M2916_10_wt_wt_skim_milk_supplemented_with_1_mM_sodium_formate

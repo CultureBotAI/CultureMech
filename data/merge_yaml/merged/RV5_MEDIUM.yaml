@@ -1,0 +1,204 @@
+name: RV5 MEDIUM
+original_name: RV5 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: DSMZ Medium 1147
+  term:
+    id: mediadive.medium:1147
+    label: RV5 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1147.pdf'
+ingredients:
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.52'
+    unit: G_PER_L
+- preferred_term: DL-Malic acid
+  term:
+    id: CHEBI:6650
+    label: DL-Malic acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: BICINE buffer
+  term:
+    id: CHEBI:40957
+    label: BICINE buffer
+  concentration:
+    value: '1.6317'
+    unit: G_PER_L
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: 3e-05
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.188'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: VOSO4 x 2 H2O
+  term:
+    id: CHEBI:87009
+    label: VOSO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NaHSeO3
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: 'Filter-sterilize and add after autoclaving:'
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: The pH of the medium was adjusted to 9.5 by addition of NaOH and then
+    sterilized by autoclaving. Before inoculating medium RV5, 0.1% (w/v) NaHCO3 was
+    added to tubes, bottles, or molten media from a 5% (w/v) filter-sterilized stock
+    solution. For routine culture, medium RV5 supplemented with 0.05% (w/v) Difco
+    yeast extract was used.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.507838Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1147'
+- timestamp: '2026-02-03T22:25:29.327305+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1147_RV5_MEDIUM, KOMODO_1147_RV5_medium'
+synonyms:
+- name: RV5 medium
+  source: KOMODO
+  source_id: komodo.medium:1147
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1147_RV5_MEDIUM
+- KOMODO_1147_RV5_medium
+merge_fingerprint: aac0ea47e05f92a370bced4f857d3757dde0f927471a841864b5ca5c097282fb

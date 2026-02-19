@@ -45,8 +45,6 @@ dmypy.json
 
 # Output directories
 output/
-pages/*.html
-app/data.js
 dashboard/
 
 # OAK cache

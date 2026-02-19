@@ -1,0 +1,323 @@
+name: METHANOTHRIX SOEHNGENII MEDIUM
+original_name: METHANOTHRIX SOEHNGENII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 334a
+  term:
+    id: mediadive.medium:334a
+    label: METHANOTHRIX SOEHNGENII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium334a.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.233546'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.912951'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '7.21868'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.00106157'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000530786'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Butyl vinyl ether
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '792'
+    unit: G_PER_L
+- preferred_term: L-α-Phosphatidylcholine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '792'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '12.8'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '1.35'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CuCl2
+  term:
+    id: CHEBI:49553
+    label: CuCl2
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic, dispense under same gas atmosphere into anoxic serum vials
+    or balch tubes (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to inoculation
+    complete the medium by adding sterile solutions C - H prepared under 100% N2 gas
+    and solution B prepared under 80% N2 and 20% CO2 gas atmosphere. Solutions E,
+    F and G are sterilized by filtration. Adjust the pH of the complete medium to
+    7.2.
+- step_number: 2
+  action: MIX
+  description: 'Notes: Medium is only stable for a few weeks and has to be prepared
+    freshly. Use 20% (v/v) inoculum. Sodium sulfide should be as pure as possible
+    (use only clean crystals for the preparation of stock solutions). It has been
+    noted that impurities of sulfide stock solutions can inhibit growth.'
+- step_number: 3
+  action: ADJUST_PH
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
+    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
+    up to 1000.00 ml.
+- step_number: 4
+  action: HEAT
+  description: Cultivate <i>Sphaerochaeta associata</i> DSM 26261 in DSM medium 119
+    supplemented with 1.00 g/l glucose at 28°C until stationary phase is reached (7-10
+    days). Centrifuge culture at 3500 xg for 30 min, then sterilize supernatant by
+    filtration and add it to the anoxic solution A before autoclaving.
+- step_number: 5
+  action: MIX
+  description: 'Note: It is also possible to add 50.00 ml/l of a grown <i>S. associata</i>
+    culture to solution A before autoclaving, provided bacterial DNA from dead cells
+    is not a problem in the downstream processing of the Methanothrix culture.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.832112Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 334a'
+- timestamp: '2026-02-03T22:25:39.645850+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_334a_METHANOTHRIX_SOEHNGENII_MEDIUM, KOMODO_334_METHANOTHRIX_medium,
+    KOMODO_334b_METHANOSAETA_HARUNDINACEA_medium'
+synonyms:
+- name: METHANOTHRIX medium
+  source: KOMODO
+  source_id: komodo.medium:334
+  original_category: imported
+- name: METHANOSAETA HARUNDINACEA medium
+  source: KOMODO
+  source_id: komodo.medium:334b
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_334a_METHANOTHRIX_SOEHNGENII_MEDIUM
+- KOMODO_334_METHANOTHRIX_medium
+- KOMODO_334b_METHANOSAETA_HARUNDINACEA_medium
+merge_fingerprint: f06b3ed6dbd4ecf681d5bd4416b00c4bc33241feb236823cf74a17c07c703cfc

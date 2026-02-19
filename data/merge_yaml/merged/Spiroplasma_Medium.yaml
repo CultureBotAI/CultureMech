@@ -1,0 +1,115 @@
+name: Spiroplasma Medium
+original_name: Spiroplasma Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: PPLO Broth w/o  Crystal Violet (Difco)
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Undefined component'
+- preferred_term: Fetal bovine serum (heat-inactivated)
+  concentration:
+    value: '170'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Phenol red solution (0.1% soln.)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Organic compound, Solution, Defined component'
+- preferred_term: TC Yeastolate (2% soln.) (BD 255772)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: DI water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Mycoplasma Growth Supplement (CMRL 1066)(10X)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Yeast Extract Solution
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CMRL-1066 (ATCC 20-2206)
+  concentration:
+    value: '98'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Defined component'
+- preferred_term: Distilled deionized water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Bakers’ yeast (live, pressed, starch-free)
+  concentration:
+    value: '250'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2578
+  term:
+    id: TOGO:M2578
+    label: Spiroplasma Medium
+notes: 'Source: https://togomedium.org/medium/M2578
+
+  Original URL: https://www.atcc.org/~/media/D078A95CAFED4ADE877F47632F4E2EB5.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.783945Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2578'
+- timestamp: '2026-01-28T19:48:10.586736Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9a0f8f1f75ffce2de1a6fe56ecd3cec0592c4761508874e1a5c4d2b72c4a98b8
+merged_from:
+- TOGO_M2578_Spiroplasma_Medium

@@ -1,0 +1,101 @@
+name: '''Fermentation Medium (L-aspartate+NH4Cl'
+original_name: '''Fermentation Medium (L-aspartate+NH4Cl'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0003986'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: L-Aspartate
+  concentration:
+    value: '111.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.09747'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '3.246'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.001459'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0001228'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '36.74'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.0001334'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '130.9'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.848636Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 356, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:13.368993Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 356
+  term:
+    id: MEDIADB:356
+    label: '''Fermentation Medium (L-aspartate+NH4Cl'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 357ef9e3c92c014e26a265479cd17149afe6432549e2cedd9e45ea0e890c1acd
+merged_from:
+- MEDIADB_356_Fermentation_Medium_L-aspartate_NH4Cl

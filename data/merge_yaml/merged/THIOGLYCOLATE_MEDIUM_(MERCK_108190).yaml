@@ -1,0 +1,97 @@
+name: THIOGLYCOLATE MEDIUM (MERCK 108190)
+original_name: THIOGLYCOLATE MEDIUM (MERCK 108190)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 153
+  term:
+    id: mediadive.medium:153
+    label: THIOGLYCOLATE MEDIUM (MERCK 108190)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium153.pdf'
+ingredients:
+- preferred_term: Trypticase
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: L-Cystine
+  term:
+    id: CHEBI:16283
+    label: L-Cystine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients, sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Adjust pH to 7.1 with Na2CO3 (5% w/v), if necessary. Then dispense
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.359694Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 153'
+- timestamp: '2026-01-28T19:48:25.604544Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:34.700969+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_153_THIOGLYCOLATE_MEDIUM_MERCK_108190, KOMODO_153_FLUID_THIOGLYCOLATE_medium'
+synonyms:
+- name: FLUID THIOGLYCOLATE medium
+  source: KOMODO
+  source_id: komodo.medium:153
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_153_THIOGLYCOLATE_MEDIUM_MERCK_108190
+- KOMODO_153_FLUID_THIOGLYCOLATE_medium
+merge_fingerprint: f9fabe0267d20301da8e89aff6e57a141fdcb9d8339ecc198714876d52836d09

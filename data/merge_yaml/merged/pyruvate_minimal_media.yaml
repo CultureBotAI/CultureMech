@@ -1,0 +1,108 @@
+name: pyruvate minimal media
+original_name: pyruvate minimal media
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Pyruvate
+  term:
+    id: CHEBI:15361
+    label: Pyruvate
+  concentration:
+    value: '56.779'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pyr'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.04966'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '48.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.00248'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '3.32e-06'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.00252'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '30.0'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.00448'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.00252'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.06165'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.01247'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.774713Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 131, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 131
+  term:
+    id: MEDIADB:131
+    label: pyruvate minimal media
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 5ff3063ef16169982f462591c6ae2e0ad1797e64647e0e90471ca881ef31c8f9
+merged_from:
+- MEDIADB_131_pyruvate_minimal_media

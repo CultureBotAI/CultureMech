@@ -1,0 +1,56 @@
+name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: JCM Medium J527
+  term:
+    id: mediadive.medium:J527
+    label: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl (pH 9.0)
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=527'
+ingredients:
+- preferred_term: Yeast extract-malt extract agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, adjust pH to 9.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.848067Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J527'
+- timestamp: '2026-02-03T22:26:24.435195+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1152_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_2_NaCl, JCM_J207_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl,
+    JCM_J527_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl_pH_9.0'
+synonyms:
+- name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J1152
+  original_category: imported
+- name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 5% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J207
+  original_category: imported
+categories:
+- imported
+merged_from:
+- JCM_J1152_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_2_NaCl
+- JCM_J207_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl
+- JCM_J527_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl_pH_9.0
+merge_fingerprint: 3a1fc9dbccd2311e61d36bd0c4fbd08c09d401fbdded733f45d138f8a74ac210

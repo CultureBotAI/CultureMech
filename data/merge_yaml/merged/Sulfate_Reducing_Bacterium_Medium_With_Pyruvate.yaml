@@ -1,0 +1,150 @@
+name: Sulfate Reducing Bacterium Medium With Pyruvate
+original_name: Sulfate Reducing Bacterium Medium With Pyruvate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: sodium pyruvate
+  concentration:
+    value: '1.9'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: agar (BD-Difco)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L--Cysteine・H2O・HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Vitamin solution (see Medium [M554])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeCl2 solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M557
+  term:
+    id: TOGO:M557
+    label: Sulfate Reducing Bacterium Medium With Pyruvate
+notes: 'Source: https://togomedium.org/medium/M557
+
+  Original source: JCM - JCM_M553-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=553'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.294867Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M557'
+- timestamp: '2026-01-28T19:48:15.175528Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.431225'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: e54707745f4f2c145ecf0c41e9e3bf354de36e7a379e387a9f55110faea88f8f
+merged_from:
+- TOGO_M557_Sulfate_Reducing_Bacterium_Medium_With_Pyruvate

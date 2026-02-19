@@ -1,0 +1,171 @@
+name: VY/2-SWS AGAR
+original_name: VY/2-SWS AGAR
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J373
+  term:
+    id: mediadive.medium:J373
+    label: VY/2-SWS AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=373'
+ingredients:
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.0999001'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '7.99201'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.999001'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.499501'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.15984'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01998'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.0799201'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.02997'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '0.00999001'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.98'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: LiCl
+  term:
+    id: CHEBI:48607
+    label: LiCl
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: SnCl2 x 2 H2O
+  term:
+    id: CHEBI:78074
+    label: SnCl2 x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: KI
+  term:
+    id: CHEBI:74559
+    label: KI
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Use Medium No. 341 with the following seawater solution instead of
+    the artificial seawater:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.436406Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J373'
+merge_fingerprint: 92c3ed8cd2b0ba26927e4ba4aa0ae8fbb87f6f4a37bcce8d91314f08bdd34a8f
+merged_from:
+- JCM_J373_VY_2-SWS_AGAR

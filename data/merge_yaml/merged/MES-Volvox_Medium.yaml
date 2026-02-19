@@ -1,0 +1,128 @@
+name: MES-Volvox Medium
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Seawater(non-sterilized)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: dH2O'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaH2PO4•H2O(MCIB 742)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Trace Metals Solution'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: mes-volvox-medium, URL: https://utex.org/products/mes-volvox-medium'
+- timestamp: '2026-02-03T22:25:24.923323+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: 1_F_2_Medium, 5_F_2_Medium, Allen_Medium, BG-11_-N_Medium, Bold_3N_Medium,
+    MES-Volvox_Medium'
+references:
+- reference_id: UTEX:mes-volvox-medium
+- reference_id: https://utex.org/products/mes-volvox-medium
+original_name: MES-Volvox Medium
+synonyms:
+- name: 1% F/2 Medium
+  source: unknown
+  original_category: ALGAE
+- name: 5% F/2 Medium
+  source: unknown
+  original_category: ALGAE
+- name: Allen Medium
+  source: unknown
+  original_category: ALGAE
+- name: BG-11(-N) Medium
+  source: unknown
+  original_category: ALGAE
+- name: Bold 3N Medium
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- 1_F_2_Medium
+- 5_F_2_Medium
+- Allen_Medium
+- BG-11_-N_Medium
+- Bold_3N_Medium
+- MES-Volvox_Medium
+merge_fingerprint: 52fcd3367ce3e945938923f4b56b81cba26964f2e53d3417b97e6d6301282afd

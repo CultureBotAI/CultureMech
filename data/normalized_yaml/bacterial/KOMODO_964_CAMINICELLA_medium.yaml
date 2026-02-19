@@ -11,7 +11,48 @@ media_term:
     label: CAMINICELLA medium
 notes: 'Source: KOMODO ModelSEED | ID: 964 | DSMZ Medium: 964 (mediadive.medium:964)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: PIPES buffer
+  concentration:
+    value: '6.05'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sulfur
+  term:
+    id: CHEBI:26833
+    label: Sulfur
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +60,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 964'
+- timestamp: '2026-02-03T11:18:54.761480'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 964

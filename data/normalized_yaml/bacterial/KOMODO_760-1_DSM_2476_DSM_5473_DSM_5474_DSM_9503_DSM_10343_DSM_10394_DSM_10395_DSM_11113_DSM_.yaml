@@ -17,7 +17,113 @@ media_term:
       DSM 14981, DSM 15226, DSM 16538, DSM 17994, DSM 17882
 notes: 'Source: KOMODO ModelSEED | ID: 760.1 | DSMZ Medium: 760 (mediadive.medium:760)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '19.45'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '5.9'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3.24'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.55'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.034'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+- preferred_term: Na-silicate
+  term:
+    id: CHEBI:60720
+    label: Na-silicate
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0024'
+    unit: G_PER_L
+- preferred_term: (NH4)NO3
+  term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+  concentration:
+    value: '0.0016'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -25,3 +131,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 760.1'
+- timestamp: '2026-02-03T11:18:54.155210'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 760

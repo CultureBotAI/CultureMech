@@ -1,0 +1,128 @@
+name: Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2
+original_name: Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2
+  concentration:
+    value: '25'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: β-NAD
+  concentration:
+    value: '0.01'
+    unit: PERCENT_W_V
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Columbia broth
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Dextrose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Sodium Carbonate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Tris (Hydroxymethyl) Aminomethane
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Ferrous Sulfate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Magnesium Sulfate (anhydrous)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Tris (Hydroxymethyl) Aminomethane HCl
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+  notes: 'Role: Buffer'
+- preferred_term: Proteose Peptone No. 3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Pancreatic Digest of Casein
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Tryptic Digest of Beef Heart
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2256
+  term:
+    id: TOGO:M2256
+    label: Columbia broth supplemented with 0.01% 3-NAD and 25 mM CaCl2
+notes: 'Source: https://togomedium.org/medium/M2256'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.227069Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2256'
+- timestamp: '2026-01-28T19:48:21.107909Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9284e8992ae64540efe236ab333280510076f220f9b3a50b4f80fc64af8bd02b
+merged_from:
+- TOGO_M2256_Columbia_broth_supplemented_with_0.01_3-NAD_and_25_mM_CaCl2

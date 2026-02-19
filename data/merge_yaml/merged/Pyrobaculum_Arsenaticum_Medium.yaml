@@ -1,0 +1,86 @@
+name: Pyrobaculum Arsenaticum Medium
+original_name: Pyrobaculum Arsenaticum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto peptone (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na2S2O3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Inorganic compound'
+  term:
+    id: CHEBI:32150
+    label: sodium thiosulfate pentahydrate
+- preferred_term: Modified Brock's salt base solution (see Medium [M156])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M304
+  term:
+    id: TOGO:M304
+    label: Pyrobaculum Arsenaticum Medium
+notes: 'Source: https://togomedium.org/medium/M304
+
+  Original source: JCM - JCM_M309
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=309'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.818872Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M304'
+- timestamp: '2026-01-28T19:48:34.726803Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.271277'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: 3892133497c0e9e6c5c097c73939746a03a2e2903d8f1aebf65dee82d974a1bb
+merged_from:
+- TOGO_M304_Pyrobaculum_Arsenaticum_Medium

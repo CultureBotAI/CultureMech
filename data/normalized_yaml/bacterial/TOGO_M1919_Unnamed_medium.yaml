@@ -35,9 +35,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
-  term:
-    id: CHEBI:1185531
-    label: ''
 - preferred_term: Tryptone (Difco 0123)
   concentration:
     value: '2'
@@ -143,3 +140,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:50.591401Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

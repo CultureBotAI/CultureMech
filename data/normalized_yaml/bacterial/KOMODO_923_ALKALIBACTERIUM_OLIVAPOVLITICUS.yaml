@@ -10,7 +10,54 @@ media_term:
     label: ALKALIBACTERIUM OLIVAPOVLITICUS
 notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +65,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 923'
+- timestamp: '2026-02-03T11:19:16.271419'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 923

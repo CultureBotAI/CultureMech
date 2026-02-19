@@ -15,9 +15,6 @@ ingredients:
     value: '37.4'
     unit: G_PER_L
 - preferred_term: Na2SiO3
-  term:
-    id: CHEBI:1344098
-    label: Na2SiO3
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -41,3 +38,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J392'
+- timestamp: '2026-02-06T05:10:36.353871Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

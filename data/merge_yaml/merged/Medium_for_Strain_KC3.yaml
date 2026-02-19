@@ -1,0 +1,111 @@
+name: Medium for Strain KC3
+original_name: Medium for Strain KC3
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 ·7H2O
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: CaCO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple
+    component, Inorganic compound'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Cellobiose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+- preferred_term: Cysteine HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: nitrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2020
+  term:
+    id: TOGO:M2020
+    label: Medium for Strain KC3
+notes: 'Source: https://togomedium.org/medium/M2020
+
+  Original source: NBRC - NBRC_M1311
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1311'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.891708Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2020'
+- timestamp: '2026-01-28T19:48:17.596215Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.541962'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: nitrogen gas'
+merge_fingerprint: cc1c453c303d33a68e0eed57c4e8c356b5efaaf1ce0b4e91478e9a2977c84b16
+merged_from:
+- TOGO_M2020_Medium_for_Strain_KC3

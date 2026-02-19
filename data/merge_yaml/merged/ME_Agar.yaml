@@ -1,0 +1,44 @@
+name: ME Agar
+original_name: ME Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Malt extract agar (Oxoid)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M250
+  term:
+    id: TOGO:M250
+    label: ME Agar
+notes: 'Source: https://togomedium.org/medium/M250
+
+  Original source: JCM - JCM_M258
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=258'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.701325Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M250'
+- timestamp: '2026-01-28T19:48:20.133025Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: dc8d830d4fbe354ea818df3a4cd79a63a4706fca8454117ffb7a1910afd27206
+merged_from:
+- TOGO_M250_ME_Agar

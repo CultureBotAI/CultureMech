@@ -10,7 +10,32 @@ media_term:
     label: VY/2, REDUCED medium
 notes: 'Source: KOMODO ModelSEED | ID: 9a | DSMZ Medium: 9a (mediadive.medium:9a)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Baker's yeast
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +43,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 9a'
+- timestamp: '2026-02-03T11:18:59.052141'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 9
+ph_value: 7.2

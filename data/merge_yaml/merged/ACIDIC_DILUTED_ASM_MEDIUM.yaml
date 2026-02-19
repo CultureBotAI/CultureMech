@@ -1,0 +1,188 @@
+name: Acidic Diluted ASM Medium
+original_name: Acidic Diluted ASM Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Trace element solution (see below)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Iron stock solution (see below)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Phosphate buffer stock solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Methane gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4・2H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: H3BO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2・6H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NiCl2・6H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuSO4・5H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: EDTA・2Na
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: EDTA・Fe(III)
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '37.425'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2HPO4・2H2O
+  concentration:
+    value: '48.95'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+media_term:
+  preferred_term: TOGO Medium M850
+  term:
+    id: TOGO:M850
+    label: Acidic Diluted ASM Medium
+notes: 'Source: https://togomedium.org/medium/M850
+
+  Original source: JCM - JCM_M815
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=815'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.828925Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M850'
+- timestamp: '2026-01-28T19:48:36.784737Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.877009'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl; Added default concentration
+    for ingredient: Methane gas'
+merge_fingerprint: c521de7164e99a8ae4eed2335d8b535b1c2575d69820682b81ac2721acf8a223
+merged_from:
+- TOGO_M850_Acidic_Diluted_ASM_Medium

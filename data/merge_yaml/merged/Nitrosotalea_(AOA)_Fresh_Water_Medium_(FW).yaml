@@ -1,0 +1,224 @@
+name: Nitrosotalea (AOA) Fresh Water Medium (FW)
+original_name: Nitrosotalea (AOA) Fresh Water Medium (FW)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 5.1
+media_term:
+  preferred_term: DSMZ Medium 1844
+  term:
+    id: mediadive.medium:1844
+    label: Nitrosotalea (AOA) Fresh Water Medium (FW)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: MES Hydrat
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '53.4'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '84'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '3.646'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.144'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.753'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Crucial: prepare all solutions in either clean glassware (incubated
+    in 0.1 % HCl and washed with double distilled water) or GREINER PS container (201172).
+    Do not use container with rubber stoppers or septum.'
+- step_number: 2
+  action: MIX
+  description: Add 100 mL of 10x FW basal salt solution to 800 mL sterile double distilled
+    water just before use.
+- step_number: 3
+  action: MIX
+  description: 'Add per litre of 1x FW basalt solution: 0.5 mL NH4Cl (1 M), 2 mL NaHCO3
+    (1 M), 1 mL FeNaEDTA (7.5 mM), 1 mL trace elements solution, 1.95 g MES Hydrat.'
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to the specific pH for each strain.
+- step_number: 5
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    double distilled water.
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Filtrate with 0.2 µm Nalgene® bottle-top sterile filter units (e.g.
+    ThermoFischer 597-4520) in a clean and sterile glass bottle.
+- step_number: 7
+  action: HEAT
+  description: Aliquote medium in GREINER PS containers. Final medium can be stored
+    at 4 °C in the dark for weeks.
+- step_number: 8
+  action: MIX
+  description: Prepare FW basal salt solution (10x) in double distilled water.
+- step_number: 9
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 10
+  action: COOL
+  description: Cool down to room temperature.
+- step_number: 11
+  action: HEAT
+  description: 10x FW basal salt solution can be stored at 4 °C for months.
+- step_number: 12
+  action: DISSOLVE
+  description: Dissolve 2.67 g ammonium chloride in 50 mL Double distilled water.
+- step_number: 13
+  action: MIX
+  description: Filtrate (0.2 µm).
+- step_number: 14
+  action: DISSOLVE
+  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small
+    beaker with stirring rod to dissolve) and sterilize by filtration (0.2 µm) in
+    the laminar flow hood. Store in a sterile 50 mL falcon tube at 4 °C. Avoid high
+    headspace to liquid ratios to ensure stable concentration.
+- step_number: 15
+  action: HEAT
+  description: This solution contains no iron! Sterilise by autoclaving or filtration
+    (0.2 µm) and store in the dark at 4 °C.
+- step_number: 16
+  action: HEAT
+  description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.534842Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1844'
+merge_fingerprint: 13ba412a7752a4f741516911cdb9455c6cfd23445dde25d7cf6530396d304c21
+merged_from:
+- DSMZ_1844_Nitrosotalea_AOA_Fresh_Water_Medium_FW

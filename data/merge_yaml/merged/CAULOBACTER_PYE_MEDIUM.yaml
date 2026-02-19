@@ -1,0 +1,56 @@
+name: CAULOBACTER PYE MEDIUM
+original_name: CAULOBACTER PYE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1462
+  term:
+    id: mediadive.medium:1462
+    label: CAULOBACTER PYE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1462.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add all the components together, except calcium chloride which is added
+    from a sterilized stock solution when the autoclaved medium has cooled. Agar is
+    added at a concentration of 12 g/l for solid media. For agar media, do not add
+    supplemental calcium.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust final pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.506030Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1462'
+merge_fingerprint: d09c2c93c2e777054bfb8f6d3e68ab99986b50dd95b4baa5ca2c79c223847603
+merged_from:
+- DSMZ_1462_CAULOBACTER_PYE_MEDIUM

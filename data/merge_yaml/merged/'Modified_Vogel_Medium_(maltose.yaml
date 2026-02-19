@@ -1,0 +1,116 @@
+name: '''Modified Vogel Medium (maltose'
+original_name: '''Modified Vogel Medium (maltose'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.68'
+    unit: MILLIMOLAR
+- preferred_term: Citrate
+  concentration:
+    value: '0.02379'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '58.43'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:malt'
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.8115'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.0008087'
+    unit: MILLIMOLAR
+- preferred_term: Uridine
+  concentration:
+    value: '9.992'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:uri'
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '36.74'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0002066'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.0002189'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous ammonium sulfate
+  concentration:
+    value: '0.00255'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.01739'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.001002'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '9.691'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium nitrate
+  term:
+    id: CHEBI:63038
+    label: Ammonium nitrate
+  concentration:
+    value: '24.99'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.754405Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 344, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 344
+  term:
+    id: MEDIADB:344
+    label: '''Modified Vogel Medium (maltose'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 501ff0861473e16aafdbf2b0c393524575d395b3505b5cf3919f412b733c1b8d
+merged_from:
+- MEDIADB_344_Modified_Vogel_Medium_maltose

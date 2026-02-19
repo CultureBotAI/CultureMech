@@ -1,0 +1,102 @@
+name: Sauton's Synthetic Medium
+original_name: Sauton's Synthetic Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Glycerol
+  concentration:
+    value: '60'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Organic compound'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+- preferred_term: L--Asparagine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Organic compound'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Citric acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: NH4OH
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M55
+  term:
+    id: TOGO:M55
+    label: Sauton's Synthetic Medium
+notes: 'Source: https://togomedium.org/medium/M55
+
+  Original source: JCM - JCM_M63
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=63'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.279186Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M55'
+- timestamp: '2026-01-28T19:48:39.203104Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.447604'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NH4OH'
+merge_fingerprint: 89af22c9362734d03681671e94f6c23189e27d9887a6ca4d3b11ad15538f4c31
+merged_from:
+- TOGO_M55_Sauton_s_Synthetic_Medium

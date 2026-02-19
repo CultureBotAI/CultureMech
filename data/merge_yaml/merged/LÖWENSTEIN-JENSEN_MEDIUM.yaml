@@ -1,0 +1,112 @@
+name: LÖWENSTEIN-JENSEN MEDIUM
+original_name: LÖWENSTEIN-JENSEN MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 354
+  term:
+    id: mediadive.medium:354
+    label: LÖWENSTEIN-JENSEN MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium354.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.55087'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.148883'
+    unit: G_PER_L
+- preferred_term: Mg-citrate
+  term:
+    id: CHEBI:131389
+    label: Mg-citrate
+  concentration:
+    value: '0.372208'
+    unit: G_PER_L
+- preferred_term: L-Asparagin
+  term:
+    id: CHEBI:17196
+    label: L-Asparagin
+  concentration:
+    value: '2.23325'
+    unit: G_PER_L
+- preferred_term: Potato flour
+  concentration:
+    value: '18.6104'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '0.248139'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: Fresh egg mixture
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Addition:'
+- step_number: 2
+  action: MIX
+  description: pH 7.0
+- step_number: 3
+  action: HEAT
+  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh egg
+    mixture carefully to the medium.
+- step_number: 4
+  action: MIX
+  description: '* You need for 1 l of egg mixture 20 - 25 fresh eggs (not older then
+    1 week). Clean the eggs, wipe away with 70% alcohol, open the eggs and homogenize
+    the egg mixture carefully.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.895484Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 354'
+- timestamp: '2026-02-03T22:25:39.947179+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_354_LÖWENSTEIN-JENSEN_MEDIUM, KOMODO_354-44338_MEDIUM_354_MODIFIED_FOR_DSM_44338,
+    KOMODO_354-44339_MEDIUM_354_MODIFIED_FOR_DSM_44339, KOMODO_354_L_WENSTEIN-JENSEN_medium'
+synonyms:
+- name: MEDIUM 354 MODIFIED FOR DSM 44338
+  source: KOMODO
+  source_id: komodo.medium:354_44338
+  original_category: imported
+- name: MEDIUM 354 MODIFIED FOR DSM 44339
+  source: KOMODO
+  source_id: komodo.medium:354_44339
+  original_category: imported
+- name: L?WENSTEIN-JENSEN medium
+  source: KOMODO
+  source_id: komodo.medium:354
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_354_LÖWENSTEIN-JENSEN_MEDIUM
+- KOMODO_354-44338_MEDIUM_354_MODIFIED_FOR_DSM_44338
+- KOMODO_354-44339_MEDIUM_354_MODIFIED_FOR_DSM_44339
+- KOMODO_354_L_WENSTEIN-JENSEN_medium
+merge_fingerprint: 5427140da26e5cbf92ff0d43eae015d550736f48173f9e390d37c1a4013d7af4

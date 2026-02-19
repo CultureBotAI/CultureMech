@@ -1,0 +1,132 @@
+name: Medium for nitrite oxidizer
+original_name: Medium for nitrite oxidizer
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '40.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '6.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: K2HPO4
+  concentration:
+    value: '25.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: H3BO3
+  concentration:
+    value: '49.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NaHCO3
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '43.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: MnSO4·5H2O
+  concentration:
+    value: '54.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:131524
+    label: manganese(II) sulfate pentahydrate
+- preferred_term: NaNO2
+  concentration:
+    value: '49.2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:78870
+    label: sodium nitrite
+- preferred_term: Na2Mo4O4
+  concentration:
+    value: '27.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M3051
+  term:
+    id: TOGO:M3051
+    label: Medium for nitrite oxidizer
+notes: 'Source: https://togomedium.org/medium/M3051
+
+  Original source: NBRC - NBRC_M1601
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1601'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.239998Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3051'
+- timestamp: '2026-01-28T19:48:33.327528Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: aecad714cf3e248b4777193a83f65491632efdfeb7dbe99185d9508160b284eb
+merged_from:
+- TOGO_M3051_Medium_for_nitrite_oxidizer

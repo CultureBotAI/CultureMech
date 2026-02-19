@@ -1,0 +1,64 @@
+name: OXOID NUTRIENT BROTH
+original_name: OXOID NUTRIENT BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 948
+  term:
+    id: mediadive.medium:948
+    label: OXOID NUTRIENT BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium948.pdf'
+ingredients:
+- preferred_term: Nutrient broth
+  concentration:
+    value: '13'
+    unit: G_PER_L
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.874485Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 948'
+- timestamp: '2026-02-03T22:25:52.066147+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_948_OXOID_NUTRIENT_BROTH, KOMODO_948-16823_MEDIUM_948_MODIFIED_FOR_DSM_16823,
+    KOMODO_948_OXOID_NUTRIENT_BROTH'
+synonyms:
+- name: MEDIUM 948 MODIFIED FOR DSM 16823
+  source: KOMODO
+  source_id: komodo.medium:948_16823
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_948_OXOID_NUTRIENT_BROTH
+- KOMODO_948-16823_MEDIUM_948_MODIFIED_FOR_DSM_16823
+- KOMODO_948_OXOID_NUTRIENT_BROTH
+merge_fingerprint: 803bbce644ffb26a5293a52517c5245a8f3e718c7840c795e44965d6c86a7bb8

@@ -1,0 +1,63 @@
+name: METHYLOPHAGA MURALIS MEDIUM
+original_name: METHYLOPHAGA MURALIS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 9.0
+media_term:
+  preferred_term: DSMZ Medium 1624
+  term:
+    id: mediadive.medium:1624
+    label: METHYLOPHAGA MURALIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1624.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1.1236'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.247191'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '33.7079'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 5.0
+- step_number: 2
+  action: AUTOCLAVE
+  description: pH is adjusted to 9.0 by adding 100 ml/l 1M sterilized NaHCO3 and 10
+    ml/l 1M sterilized Na2CO3. 5 ml/l sterile methanol is added to the cooled medium.
+    When preparing liquid media cool the mineral salts solution, Na2CO3 solution and
+    NaHCO3 solution to room temperature before mixing. When preparing agar add 2.0
+    % agar to the mineral salts solution and autoclave. Cool the Na2CO3 solution,
+    NaHCO3 solution and agar to 50-55°C before mixing.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.033607Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1624'
+merge_fingerprint: 11087bc79b04745532893f2a9303d690febe8e3a4c3f9cbeabb28f7c9d9418d7
+merged_from:
+- DSMZ_1624_METHYLOPHAGA_MURALIS_MEDIUM

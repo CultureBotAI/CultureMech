@@ -23,9 +23,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
 - preferred_term: Tris HCl
-  term:
-    id: CHEBI:1185531
-    label: Tris HCl
   concentration:
     value: '1'
     unit: G_PER_L
@@ -111,3 +108,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 596'
+- timestamp: '2026-02-06T05:10:28.632182Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

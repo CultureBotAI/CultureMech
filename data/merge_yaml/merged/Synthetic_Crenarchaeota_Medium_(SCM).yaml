@@ -1,0 +1,250 @@
+name: Synthetic Crenarchaeota Medium (SCM)
+original_name: Synthetic Crenarchaeota Medium (SCM)
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 1630e
+  term:
+    id: mediadive.medium:1630e
+    label: Synthetic Crenarchaeota Medium (SCM)
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '26'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '24'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '238.4'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '3.646'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.144'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '2.753'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '84'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '53.4'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: alpha-ketoglutamate
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Incubate all used glass ware and magnetic stirring rods in 0.1 M HCl
+    and rinse 3x with double distilled water to remove residual detergents (always
+    check visual for soap bubbles).
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the basic salt water medium and cool to room temperature.
+    This medium should be free of any precipitations!
+- step_number: 3
+  action: STORE
+  description: 'Aseptically, add per L of basic salt water medium the following solutions
+    from sterile stocks (do not store complemented SCM): Trace element solution (Nitrososphaera),
+    FeNaEDTA solution, NaHCO3 solution, HEPES buffer solution, NH4Cl solution, KH2PO4
+    solution'
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.6.
+- step_number: 5
+  action: ADJUST_PH
+  description: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH to
+    7.5 and fill up to 1000 ml volume.
+- step_number: 6
+  action: HEAT
+  description: This solution contains no iron! Sterilise by autoclaving or filtration
+    (0.2 µm) and store in the dark at 4 °C.
+- step_number: 7
+  action: HEAT
+  description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.
+- step_number: 8
+  action: DISSOLVE
+  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small
+    beaker with stirring rod to dissolve) and sterilize by filtration (0.2 µm) in
+    the laminar flow hood. Store in a sterile 50 mL falcon tube at 4 °C. Avoid high
+    headspace to liquid ratios to ensure stable concentration.
+- step_number: 9
+  action: DISSOLVE
+  description: Dissolve 2.67 g ammonium chloride in 50 mL Double distilled water.
+- step_number: 10
+  action: MIX
+  description: Filtrate (0.2 µm).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1038/nature03911
+curation_history:
+- timestamp: '2026-01-26T17:53:15.062800Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1630e'
+merge_fingerprint: 55ff5925b6d133d51f239ed9f82380733550e3b9c0ea0b4b81241548cd2e8a95
+merged_from:
+- DSMZ_1630e_Synthetic_Crenarchaeota_Medium_SCM

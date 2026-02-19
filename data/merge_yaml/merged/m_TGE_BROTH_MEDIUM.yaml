@@ -1,0 +1,52 @@
+name: m TGE Broth Medium
+original_name: m TGE Broth Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Bacto m TGE broth (BD-Difco)
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M829
+  term:
+    id: TOGO:M829
+    label: m TGE Broth Medium
+notes: 'Source: https://togomedium.org/medium/M829
+
+  Original source: JCM - JCM_M795-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=795'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.793526Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M829'
+- timestamp: '2026-01-28T19:48:10.187386Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0874b94f22da6884c29652a8d2a96522763e7760c974f233ee97a96c7f54df31
+merged_from:
+- TOGO_M829_m_TGE_Broth_Medium

@@ -48,10 +48,16 @@ ingredients:
   term:
     id: CHEBI:35696
     label: CoCl2
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
     label: Ferric ammonium citrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -70,3 +76,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 894'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:25.018562'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
+    for ingredient: Ferric ammonium citrate'

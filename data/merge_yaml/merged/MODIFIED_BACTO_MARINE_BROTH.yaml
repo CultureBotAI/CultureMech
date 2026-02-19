@@ -1,0 +1,51 @@
+name: MODIFIED BACTO MARINE BROTH
+original_name: MODIFIED BACTO MARINE BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 514d
+  term:
+    id: mediadive.medium:514d
+    label: MODIFIED BACTO MARINE BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium514d.pdf'
+ingredients:
+- preferred_term: Difco marine broth
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Pancreatic digest of casein
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if required)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.5
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.487176Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 514d'
+merge_fingerprint: 953717a88be0fe088e6b16800601a1555af480c14296bebf015330154a1fee48
+merged_from:
+- DSMZ_514d_MODIFIED_BACTO_MARINE_BROTH

@@ -1,0 +1,103 @@
+name: <html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>
+original_name: <html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: NaNO3
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: Na2SiO3
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:1344098
+    label: ''
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '2.48'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M320
+  term:
+    id: TOGO:M320
+    label: <html>MJ/Anhox-NO<sub>3</sub> With Thiosulfate Medium</html>
+notes: 'Source: https://togomedium.org/medium/M320
+
+  Original source: JCM - JCM_M325
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=325'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.849140Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M320'
+- timestamp: '2026-01-28T19:48:31.044869Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.915005'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Hydrogen gas'
+merge_fingerprint: 147269c58c30d8d934b323f0bc0eff6967fd07e08582510e868d05372c35aba8
+merged_from:
+- TOGO_M320_html_MJ_Anhox-NO_sub_3_sub_With_Thiosulfate_Medium_html

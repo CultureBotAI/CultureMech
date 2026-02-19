@@ -101,8 +101,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: H2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '210'
@@ -132,19 +138,31 @@ ingredients:
     label: sodium carbonate
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Tris
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:9754
     label: tris
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: HCl
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -381,3 +399,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:50.253776'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: H2; Added default concentration for ingredient: N2; Added default
+    concentration for ingredient: Tris; Added default concentration for ingredient:
+    HCl; Added default concentration for ingredient: N2'

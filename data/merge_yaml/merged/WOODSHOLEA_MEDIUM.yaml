@@ -1,0 +1,71 @@
+name: WOODSHOLEA MEDIUM
+original_name: WOODSHOLEA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1238
+  term:
+    id: mediadive.medium:1238
+    label: WOODSHOLEA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1238.pdf'
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g peptone
+    and 50 g yeast extract in 1l distilled water, autoclaved), 2 ml 50 % glucose (autoclaved)
+    and 5 ml filter-sterilized riboflavin (0.2 mg ml-1) were added.
+- step_number: 2
+  action: AUTOCLAVE
+  description: autoclaved
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.816673Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1238'
+- timestamp: '2026-02-03T22:25:30.992835+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1238_WOODSHOLEA_MEDIUM, KOMODO_1238_WOODSHOLEA_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_1238_WOODSHOLEA_MEDIUM
+- KOMODO_1238_WOODSHOLEA_MEDIUM
+merge_fingerprint: 2fbc5d4e982562c8e762afedae7f6564b2a9d4c7e24ad588e2699a8cae729da9

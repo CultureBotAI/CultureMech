@@ -1,0 +1,160 @@
+name: SS1-MEDIUM
+original_name: SS1-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 808
+  term:
+    id: mediadive.medium:808
+    label: SS1-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium808.pdf'
+ingredients:
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '3.93'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2
+  term:
+    id: CHEBI:86209
+    label: Co(NO3)2
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '17.9'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '3.28'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '13.7'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.8
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the mineral salts solution and add 10 ml/l filter sterilised
+    methanol to the cooled medium. Add 15 g/l agar for solid media.
+- step_number: 3
+  action: DISSOLVE
+  description: 1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled
+    water.
+- step_number: 4
+  action: DISSOLVE
+  description: 2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling
+    with air overnight, and store in a brown glass bottle.
+- step_number: 5
+  action: MIX
+  description: 3) Combine the two solutions and make up to 1 litre with distilled
+    water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.319774Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 808'
+merge_fingerprint: b4d57a6418e5871010f3c24f395ad4924da860def42b98b76dc0538bd56a4d11
+merged_from:
+- DSMZ_808_SS1-MEDIUM

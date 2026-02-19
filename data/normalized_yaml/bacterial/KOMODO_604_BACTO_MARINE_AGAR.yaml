@@ -10,7 +10,14 @@ media_term:
     label: BACTO MARINE AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 604 | DSMZ Medium: 604 (mediadive.medium:604)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +25,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 604'
+- timestamp: '2026-02-03T11:19:00.929316'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 604

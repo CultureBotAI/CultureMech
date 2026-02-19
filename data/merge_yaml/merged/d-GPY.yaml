@@ -1,0 +1,62 @@
+name: d-GPY
+original_name: d-GPY
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Seawater (1.75 % salinity)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Polypeptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2106
+  term:
+    id: TOGO:M2106
+    label: d-GPY
+notes: 'Source: https://togomedium.org/medium/M2106
+
+  Original source: NBRC - NBRC_M1429
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1429'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.068002Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2106'
+- timestamp: '2026-01-28T19:48:32.895309Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0dd961228d8acd09428048834609392c377e0ae960ab6298496084247e7f64fd
+merged_from:
+- TOGO_M2106_d-GPY

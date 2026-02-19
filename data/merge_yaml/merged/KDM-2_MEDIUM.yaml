@@ -1,0 +1,77 @@
+name: KDM-2 MEDIUM
+original_name: KDM-2 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 435
+  term:
+    id: mediadive.medium:435
+    label: KDM-2 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium435.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.5.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve peptone, yeast extract and cysteine in 800 ml of distilled
+    water. Adjust pH to 6.5 with NaOH. Add agar and dissolve by heating.
+- step_number: 3
+  action: HEAT
+  description: Add 2 g/l activated charcoal to the agar base solution before autoclaving.
+    After autoclaving, cool to 45°C and add sterilized serum.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.128331Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 435'
+- timestamp: '2026-02-03T22:25:41.401243+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_435_KDM-2_MEDIUM, KOMODO_435_KDM-2_medium'
+synonyms:
+- name: KDM-2 medium
+  source: KOMODO
+  source_id: komodo.medium:435
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_435_KDM-2_MEDIUM
+- KOMODO_435_KDM-2_medium
+merge_fingerprint: a86de0b81a4313bc4212a5dd72cb2d6d3158d36a47ff72aca7059ab8c9d41dac

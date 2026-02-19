@@ -1,0 +1,79 @@
+name: OAT FLAKES AGAR WITH YEAST EXTRACT
+original_name: OAT FLAKES AGAR WITH YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 248
+  term:
+    id: mediadive.medium:248
+    label: OAT FLAKES AGAR WITH YEAST EXTRACT
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium248.pdf'
+ingredients:
+- preferred_term: Oat flakes
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Boil oat flakes for 20 min, filter through cheese cloth and adjust
+    to 1000 ml. Add trace elements and agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.589728Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 248'
+- timestamp: '2026-02-03T22:26:00.097991+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_248_OAT_FLAKES_AGAR_WITH_Yeast_extract, DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT'
+synonyms:
+- name: OAT FLAKES AGAR WITH Yeast extract
+  source: KOMODO
+  source_id: komodo.medium:248
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_248_OAT_FLAKES_AGAR_WITH_Yeast_extract
+- DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT
+merge_fingerprint: bd95dee45d0d71c78d14e30aaf3fc7ee813b11b6bc65d5a9aa55edd24702d7a7

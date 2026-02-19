@@ -1,0 +1,1084 @@
+name: MINERAL MEDIUM WITH DIBENZOFURAN
+original_name: MINERAL MEDIUM WITH DIBENZOFURAN
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 457e
+  term:
+    id: mediadive.medium:457e
+    label: MINERAL MEDIUM WITH DIBENZOFURAN
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium457e.pdf'
+ingredients:
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '2.44'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.52'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Dibenzofuran
+  concentration:
+    value: '8.4'
+    unit: G_PER_L
+- preferred_term: Dimethyl sulfoxide
+  term:
+    id: CHEBI:28262
+    label: Dimethyl sulfoxide
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Prepare agar of medium 457 and dibenzofuran solution. Add 10 ml of
+    this stock solution to 1 l mineral agar cooled to about 50°C. Swirl well during
+    pouring plates.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.9.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Prepare a separate solution of the phosphates and autoclave separately.
+    Combine the two solutions after cooling.
+- step_number: 4
+  action: MIX
+  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium
+    1, 220 or 535). After this reactivation, cultivate in mineral medium 457 with
+    the appropriate carbon source.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Dissolve 8.4 g/l dibenzofuran in DMSO (dimethylsulfoxide) and filtersterilize.
+- step_number: 6
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 7
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 8
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+- step_number: 9
+  action: MIX
+  description: pH 7.3
+- step_number: 10
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.190264Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 457e'
+- timestamp: '2026-02-03T22:25:42.637353+00:00'
+  curator: recipe-merger
+  action: Merged 157 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_457e_MINERAL_MEDIUM_WITH_DIBENZOFURAN, KOMODO_457-10330_MEDIUM_457_MODIFIED_FOR_DSM_10330,
+    KOMODO_457-11019_MEDIUM_457_MODIFIED_FOR_DSM_11019, KOMODO_457-11097_MEDIUM_457_MODIFIED_FOR_DSM_11097,
+    KOMODO_457-11213_MEDIUM_457_MODIFIED_FOR_DSM_11213, KOMODO_457-11214_MEDIUM_457_MODIFIED_FOR_DSM_11214,
+    KOMODO_457-11215_MEDIUM_457_MODIFIED_FOR_DSM_11215, KOMODO_457-11216_MEDIUM_457_MODIFIED_FOR_DSM_11216,
+    KOMODO_457-11217_MEDIUM_457_MODIFIED_FOR_DSM_11217, KOMODO_457-11218_MEDIUM_457_MODIFIED_FOR_DSM_11218,
+    KOMODO_457-11219_MEDIUM_457_MODIFIED_FOR_DSM_11219, KOMODO_457-11220_MEDIUM_457_MODIFIED_FOR_DSM_11220,
+    KOMODO_457-11345_MEDIUM_457_MODIFIED_FOR_DSM_11345, KOMODO_457-11346_MEDIUM_457_MODIFIED_FOR_DSM_11346,
+    KOMODO_457-11531_MEDIUM_457_MODIFIED_FOR_DSM_11531, KOMODO_457-11532_MEDIUM_457_MODIFIED_FOR_DSM_11532,
+    KOMODO_457-11533_MEDIUM_457_MODIFIED_FOR_DSM_11533, KOMODO_457-11535_MEDIUM_457_MODIFIED_FOR_DSM_11535,
+    KOMODO_457-11562_MEDIUM_457_MODIFIED_FOR_DSM_11562, KOMODO_457-11563_MEDIUM_457_MODIFIED_FOR_DSM_11563,
+    KOMODO_457-11564_MEDIUM_457_MODIFIED_FOR_DSM_11564, KOMODO_457-11565_MEDIUM_457_MODIFIED_FOR_DSM_11565,
+    KOMODO_457-11566_MEDIUM_457_MODIFIED_FOR_DSM_11566, KOMODO_457-11567_MEDIUM_457_MODIFIED_FOR_DSM_11567,
+    KOMODO_457-11568_MEDIUM_457_MODIFIED_FOR_DSM_11568, KOMODO_457-11569_MEDIUM_457_MODIFIED_FOR_DSM_11569,
+    KOMODO_457-11570_MEDIUM_457_MODIFIED_FOR_DSM_11570, KOMODO_457-11591_MEDIUM_457_MODIFIED_FOR_DSM_11591,
+    KOMODO_457-11738_MEDIUM_457_MODIFIED_FOR_DSM_11738, KOMODO_457-11850_MEDIUM_457_MODIFIED_FOR_DSM_11850,
+    KOMODO_457-12401_MEDIUM_457_MODIFIED_FOR_DSM_12401, KOMODO_457-12418_MEDIUM_457_MODIFIED_FOR_DSM_12418,
+    KOMODO_457-12444_MEDIUM_457_MODIFIED_FOR_DSM_12444, KOMODO_457-12445_MEDIUM_457_MODIFIED_FOR_DSM_12445,
+    KOMODO_457-12447_MEDIUM_457_MODIFIED_FOR_DSM_12447, KOMODO_457-12448_MEDIUM_457_MODIFIED_FOR_DSM_12448,
+    KOMODO_457-12586_MEDIUM_457_MODIFIED_FOR_DSM_12586, KOMODO_457-12647_MEDIUM_457_MODIFIED_FOR_DSM_12647,
+    KOMODO_457-12677_MEDIUM_457_MODIFIED_FOR_DSM_12677, KOMODO_457-12734_MEDIUM_457_MODIFIED_FOR_DSM_12734,
+    KOMODO_457-12735_MEDIUM_457_MODIFIED_FOR_DSM_12735, KOMODO_457-13225_MEDIUM_457_MODIFIED_FOR_DSM_13225,
+    KOMODO_457-13337_MEDIUM_457_MODIFIED_FOR_DSM_13337, KOMODO_457-13646_MEDIUM_457_MODIFIED_FOR_DSM_13646,
+    KOMODO_457-14157_MEDIUM_457_MODIFIED_FOR_DSM_14157, KOMODO_457-14291_MEDIUM_457_MODIFIED_FOR_DSM_14291,
+    KOMODO_457-14292_MEDIUM_457_MODIFIED_FOR_DSM_14292, KOMODO_457-14576_MEDIUM_457_MODIFIED_FOR_DSM_14576,
+    KOMODO_457-14677_MEDIUM_457_MODIFIED_FOR_DSM_14677, KOMODO_457-15090_MEDIUM_457_MODIFIED_FOR_DSM_15090,
+    KOMODO_457-15091_MEDIUM_457_MODIFIED_FOR_DSM_15091, KOMODO_457-15418_MEDIUM_457_MODIFIED_FOR_DSM_15418,
+    KOMODO_457-16272_MEDIUM_457_MODIFIED_FOR_DSM_16272, KOMODO_457-16273_MEDIUM_457_MODIFIED_FOR_DSM_16273,
+    KOMODO_457-16274_MEDIUM_457_MODIFIED_FOR_DSM_16274, KOMODO_457-16482_MEDIUM_457_MODIFIED_FOR_DSM_16482,
+    KOMODO_457-16503_MEDIUM_457_MODIFIED_FOR_DSM_16503, KOMODO_457-16638_MEDIUM_457_MODIFIED_FOR_DSM_16638,
+    KOMODO_457-17164_MEDIUM_457_MODIFIED_FOR_DSM_17164, KOMODO_457-17367_MEDIUM_457_MODIFIED_FOR_DSM_17367,
+    KOMODO_457-17668_MEDIUM_457_MODIFIED_FOR_DSM_17668, KOMODO_457-17773_MEDIUM_457_MODIFIED_FOR_DSM_17773,
+    KOMODO_457-21786_MEDIUM_457_MODIFIED_FOR_DSM_21786, KOMODO_457-22800_MEDIUM_457_MODIFIED_FOR_DSM_22800,
+    KOMODO_457-22895_MEDIUM_457_MODIFIED_FOR_DSM_22895, KOMODO_457-22896_MEDIUM_457_MODIFIED_FOR_DSM_22896,
+    KOMODO_457-22897_MEDIUM_457_MODIFIED_FOR_DSM_22897, KOMODO_457-22944_MEDIUM_457_MODIFIED_FOR_DSM_22944,
+    KOMODO_457-3226_MEDIUM_457_MODIFIED_FOR_DSM_3226, KOMODO_457-6014_MEDIUM_457_MODIFIED_FOR_DSM_6014,
+    KOMODO_457-6263_MEDIUM_457_MODIFIED_FOR_DSM_6263, KOMODO_457-6264_MEDIUM_457_MODIFIED_FOR_DSM_6264,
+    KOMODO_457-6279_MEDIUM_457_MODIFIED_FOR_DSM_6279, KOMODO_457-6290_MEDIUM_457_MODIFIED_FOR_DSM_6290,
+    KOMODO_457-6308_MEDIUM_457_MODIFIED_FOR_DSM_6308, KOMODO_457-6343-replace-dichloromethane-with-methanol_MEDIUM_457_MODIFIED_FOR_DSM_6343_replace_dichloromethane_with_methanol,
+    KOMODO_457-6343_MEDIUM_457_MODIFIED_FOR_DSM_6343, KOMODO_457-6363_MEDIUM_457_MODIFIED_FOR_DSM_6363,
+    KOMODO_457-6377_MEDIUM_457_MODIFIED_FOR_DSM_6377, KOMODO_457-6385_MEDIUM_457_MODIFIED_FOR_DSM_6385,
+    KOMODO_457-6390_MEDIUM_457_MODIFIED_FOR_DSM_6390, KOMODO_457-6391_MEDIUM_457_MODIFIED_FOR_DSM_6391,
+    KOMODO_457-6410_MEDIUM_457_MODIFIED_FOR_DSM_6410, KOMODO_457-6411_MEDIUM_457_MODIFIED_FOR_DSM_6411,
+    KOMODO_457-6413_MEDIUM_457_MODIFIED_FOR_DSM_6413, KOMODO_457-6506_MEDIUM_457_MODIFIED_FOR_DSM_6506,
+    KOMODO_457-6521_MEDIUM_457_MODIFIED_FOR_DSM_6521, KOMODO_457-6538_MEDIUM_457_MODIFIED_FOR_DSM_6538,
+    KOMODO_457-6607_MEDIUM_457_MODIFIED_FOR_DSM_6607, KOMODO_457-6608_MEDIUM_457_MODIFIED_FOR_DSM_6608,
+    KOMODO_457-6609_MEDIUM_457_MODIFIED_FOR_DSM_6609, KOMODO_457-6610-replace-4-hydroxy-benzoate-with-4-fluorobenzoate_MEDIUM_457_MODIFIED_FOR_DSM_6610_replace_4-hydroxy-benzoate_with_4-fluorobenzoat,
+    KOMODO_457-6610_MEDIUM_457_MODIFIED_FOR_DSM_6610, KOMODO_457-6611-replace-4-hydroxy-benzoate-with-4-fluorobenzoate_MEDIUM_457_MODIFIED_FOR_DSM_6611_replace_4-hydroxy-benzoate_with_4-fluorobenzoat,
+    KOMODO_457-6611_MEDIUM_457_MODIFIED_FOR_DSM_6611, KOMODO_457-6612_MEDIUM_457_MODIFIED_FOR_DSM_6612,
+    KOMODO_457-6613_MEDIUM_457_MODIFIED_FOR_DSM_6613, KOMODO_457-6695_MEDIUM_457_MODIFIED_FOR_DSM_6695,
+    KOMODO_457-6696_MEDIUM_457_MODIFIED_FOR_DSM_6696, KOMODO_457-6697_MEDIUM_457_MODIFIED_FOR_DSM_6697,
+    KOMODO_457-6706_MEDIUM_457_MODIFIED_FOR_DSM_6706, KOMODO_457-6753_MEDIUM_457_MODIFIED_FOR_DSM_6753,
+    KOMODO_457-6756-replace-monochloroacetate-with-dichloroacetate_MEDIUM_457_MODIFIED_FOR_DSM_6756_replace_monochloroacetate_with_dichloroacetate,
+    KOMODO_457-6756_MEDIUM_457_MODIFIED_FOR_DSM_6756, KOMODO_457-6758_MEDIUM_457_MODIFIED_FOR_DSM_6758,
+    KOMODO_457-6818_MEDIUM_457_MODIFIED_FOR_DSM_6818, KOMODO_457-6837_MEDIUM_457_MODIFIED_FOR_DSM_6837,
+    KOMODO_457-6838_MEDIUM_457_MODIFIED_FOR_DSM_6838, KOMODO_457-6899_MEDIUM_457_MODIFIED_FOR_DSM_6899,
+    KOMODO_457-6900-replace-naphthalene-with-3-xylene_MEDIUM_457_MODIFIED_FOR_DSM_6900_replace_naphthalene_with_3-xylene,
+    KOMODO_457-6900_MEDIUM_457_MODIFIED_FOR_DSM_6900, KOMODO_457-6978_MEDIUM_457_MODIFIED_FOR_DSM_6978,
+    KOMODO_457-7098_MEDIUM_457_MODIFIED_FOR_DSM_7098, KOMODO_457-7116_MEDIUM_457_MODIFIED_FOR_DSM_7116,
+    KOMODO_457-7122_MEDIUM_457_MODIFIED_FOR_DSM_7122, KOMODO_457-7135_MEDIUM_457_MODIFIED_FOR_DSM_7135,
+    KOMODO_457-7162_MEDIUM_457_MODIFIED_FOR_DSM_7162, KOMODO_457-7189_MEDIUM_457_MODIFIED_FOR_DSM_7189,
+    KOMODO_457-7300_MEDIUM_457_MODIFIED_FOR_DSM_7300, KOMODO_457-7324_MEDIUM_457_MODIFIED_FOR_DSM_7324,
+    KOMODO_457-7325_MEDIUM_457_MODIFIED_FOR_DSM_7325, KOMODO_457-7346_MEDIUM_457_MODIFIED_FOR_DSM_7346,
+    KOMODO_457-7355_MEDIUM_457_MODIFIED_FOR_DSM_7355, KOMODO_457-7390_MEDIUM_457_MODIFIED_FOR_DSM_7390,
+    KOMODO_457-7511_MEDIUM_457_MODIFIED_FOR_DSM_7511, KOMODO_457-7512_MEDIUM_457_MODIFIED_FOR_DSM_7512,
+    KOMODO_457-7516-replace-chloroacetate-with-fluoroacetate_MEDIUM_457_MODIFIED_FOR_DSM_7516_replace_chloroacetate_with_fluoroacetate,
+    KOMODO_457-7516_MEDIUM_457_MODIFIED_FOR_DSM_7516, KOMODO_457-8219_MEDIUM_457_MODIFIED_FOR_DSM_8219,
+    KOMODO_457-8341_MEDIUM_457_MODIFIED_FOR_DSM_8341, KOMODO_457-8368_MEDIUM_457_MODIFIED_FOR_DSM_8368,
+    KOMODO_457-8369_MEDIUM_457_MODIFIED_FOR_DSM_8369, KOMODO_457-8370_MEDIUM_457_MODIFIED_FOR_DSM_8370,
+    KOMODO_457-8424_MEDIUM_457_MODIFIED_FOR_DSM_8424, KOMODO_457-8425_MEDIUM_457_MODIFIED_FOR_DSM_8425,
+    KOMODO_457-8530_MEDIUM_457_MODIFIED_FOR_DSM_8530, KOMODO_457-8531_MEDIUM_457_MODIFIED_FOR_DSM_8531,
+    KOMODO_457-8542_MEDIUM_457_MODIFIED_FOR_DSM_8542, KOMODO_457-8543_MEDIUM_457_MODIFIED_FOR_DSM_8543,
+    KOMODO_457-8544_MEDIUM_457_MODIFIED_FOR_DSM_8544, KOMODO_457-8566_MEDIUM_457_MODIFIED_FOR_DSM_8566,
+    KOMODO_457-8628_MEDIUM_457_MODIFIED_FOR_DSM_8628, KOMODO_457-8910_MEDIUM_457_MODIFIED_FOR_DSM_8910,
+    KOMODO_457-8924_MEDIUM_457_MODIFIED_FOR_DSM_8924, KOMODO_457-9000_MEDIUM_457_MODIFIED_FOR_DSM_9000,
+    KOMODO_457-9750_MEDIUM_457_MODIFIED_FOR_DSM_9750, KOMODO_457-9751_MEDIUM_457_MODIFIED_FOR_DSM_9751,
+    KOMODO_457-9958_MEDIUM_457_MODIFIED_FOR_DSM_9958, KOMODO_457-9959_MEDIUM_457_MODIFIED_FOR_DSM_9959,
+    KOMODO_457_MINERAL_MEDIUM_BRUNNER, KOMODO_457a_MINERAL_MEDIUM_WITH_2-CHLOROBENZOATE,
+    KOMODO_457b-1_For_DSM_7526, KOMODO_457b-2_For_DSM_13022, KOMODO_457b_MEDIUM_WITH_FLUORANTHENE_OR_PHENANTHRENE,
+    KOMODO_457c-replace-3-chloroacrylic acid-with-Glucose_MEDIUM_WITH_CHLOROACRYLIC_ACID_replace_3-chloroacrylic_acid_with_Glucose,
+    KOMODO_457c_MEDIUM_WITH_CHLOROACRYLIC_ACID, KOMODO_457d_MEDIUM_WITH_BIPHENYL'
+synonyms:
+- name: MEDIUM 457 MODIFIED FOR DSM 10330
+  source: KOMODO
+  source_id: komodo.medium:457_10330
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11019
+  source: KOMODO
+  source_id: komodo.medium:457_11019
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11097
+  source: KOMODO
+  source_id: komodo.medium:457_11097
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11213
+  source: KOMODO
+  source_id: komodo.medium:457_11213
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11214
+  source: KOMODO
+  source_id: komodo.medium:457_11214
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11215
+  source: KOMODO
+  source_id: komodo.medium:457_11215
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11216
+  source: KOMODO
+  source_id: komodo.medium:457_11216
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11217
+  source: KOMODO
+  source_id: komodo.medium:457_11217
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11218
+  source: KOMODO
+  source_id: komodo.medium:457_11218
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11219
+  source: KOMODO
+  source_id: komodo.medium:457_11219
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11220
+  source: KOMODO
+  source_id: komodo.medium:457_11220
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11345
+  source: KOMODO
+  source_id: komodo.medium:457_11345
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11346
+  source: KOMODO
+  source_id: komodo.medium:457_11346
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11531
+  source: KOMODO
+  source_id: komodo.medium:457_11531
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11532
+  source: KOMODO
+  source_id: komodo.medium:457_11532
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11533
+  source: KOMODO
+  source_id: komodo.medium:457_11533
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11535
+  source: KOMODO
+  source_id: komodo.medium:457_11535
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11562
+  source: KOMODO
+  source_id: komodo.medium:457_11562
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11563
+  source: KOMODO
+  source_id: komodo.medium:457_11563
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11564
+  source: KOMODO
+  source_id: komodo.medium:457_11564
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11565
+  source: KOMODO
+  source_id: komodo.medium:457_11565
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11566
+  source: KOMODO
+  source_id: komodo.medium:457_11566
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11567
+  source: KOMODO
+  source_id: komodo.medium:457_11567
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11568
+  source: KOMODO
+  source_id: komodo.medium:457_11568
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11569
+  source: KOMODO
+  source_id: komodo.medium:457_11569
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11570
+  source: KOMODO
+  source_id: komodo.medium:457_11570
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11591
+  source: KOMODO
+  source_id: komodo.medium:457_11591
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11738
+  source: KOMODO
+  source_id: komodo.medium:457_11738
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 11850
+  source: KOMODO
+  source_id: komodo.medium:457_11850
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12401
+  source: KOMODO
+  source_id: komodo.medium:457_12401
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12418
+  source: KOMODO
+  source_id: komodo.medium:457_12418
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12444
+  source: KOMODO
+  source_id: komodo.medium:457_12444
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12445
+  source: KOMODO
+  source_id: komodo.medium:457_12445
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12447
+  source: KOMODO
+  source_id: komodo.medium:457_12447
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12448
+  source: KOMODO
+  source_id: komodo.medium:457_12448
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12586
+  source: KOMODO
+  source_id: komodo.medium:457_12586
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12647
+  source: KOMODO
+  source_id: komodo.medium:457_12647
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12677
+  source: KOMODO
+  source_id: komodo.medium:457_12677
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12734
+  source: KOMODO
+  source_id: komodo.medium:457_12734
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 12735
+  source: KOMODO
+  source_id: komodo.medium:457_12735
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 13225
+  source: KOMODO
+  source_id: komodo.medium:457_13225
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 13337
+  source: KOMODO
+  source_id: komodo.medium:457_13337
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 13646
+  source: KOMODO
+  source_id: komodo.medium:457_13646
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 14157
+  source: KOMODO
+  source_id: komodo.medium:457_14157
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 14291
+  source: KOMODO
+  source_id: komodo.medium:457_14291
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 14292
+  source: KOMODO
+  source_id: komodo.medium:457_14292
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 14576
+  source: KOMODO
+  source_id: komodo.medium:457_14576
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 14677
+  source: KOMODO
+  source_id: komodo.medium:457_14677
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 15090
+  source: KOMODO
+  source_id: komodo.medium:457_15090
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 15091
+  source: KOMODO
+  source_id: komodo.medium:457_15091
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 15418
+  source: KOMODO
+  source_id: komodo.medium:457_15418
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16272
+  source: KOMODO
+  source_id: komodo.medium:457_16272
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16273
+  source: KOMODO
+  source_id: komodo.medium:457_16273
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16274
+  source: KOMODO
+  source_id: komodo.medium:457_16274
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16482
+  source: KOMODO
+  source_id: komodo.medium:457_16482
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16503
+  source: KOMODO
+  source_id: komodo.medium:457_16503
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 16638
+  source: KOMODO
+  source_id: komodo.medium:457_16638
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 17164
+  source: KOMODO
+  source_id: komodo.medium:457_17164
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 17367
+  source: KOMODO
+  source_id: komodo.medium:457_17367
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 17668
+  source: KOMODO
+  source_id: komodo.medium:457_17668
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 17773
+  source: KOMODO
+  source_id: komodo.medium:457_17773
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 21786
+  source: KOMODO
+  source_id: komodo.medium:457_21786
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 22800
+  source: KOMODO
+  source_id: komodo.medium:457_22800
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 22895
+  source: KOMODO
+  source_id: komodo.medium:457_22895
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 22896
+  source: KOMODO
+  source_id: komodo.medium:457_22896
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 22897
+  source: KOMODO
+  source_id: komodo.medium:457_22897
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 22944
+  source: KOMODO
+  source_id: komodo.medium:457_22944
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 3226
+  source: KOMODO
+  source_id: komodo.medium:457_3226
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6014
+  source: KOMODO
+  source_id: komodo.medium:457_6014
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6263
+  source: KOMODO
+  source_id: komodo.medium:457_6263
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6264
+  source: KOMODO
+  source_id: komodo.medium:457_6264
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6279
+  source: KOMODO
+  source_id: komodo.medium:457_6279
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6290
+  source: KOMODO
+  source_id: komodo.medium:457_6290
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6308
+  source: KOMODO
+  source_id: komodo.medium:457_6308
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6343_replace_dichloromethane_with_methanol
+  source: KOMODO
+  source_id: komodo.medium:457_6343_replace_dichloromethane_with_methanol
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6343
+  source: KOMODO
+  source_id: komodo.medium:457_6343
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6363
+  source: KOMODO
+  source_id: komodo.medium:457_6363
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6377
+  source: KOMODO
+  source_id: komodo.medium:457_6377
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6385
+  source: KOMODO
+  source_id: komodo.medium:457_6385
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6390
+  source: KOMODO
+  source_id: komodo.medium:457_6390
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6391
+  source: KOMODO
+  source_id: komodo.medium:457_6391
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6410
+  source: KOMODO
+  source_id: komodo.medium:457_6410
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6411
+  source: KOMODO
+  source_id: komodo.medium:457_6411
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6413
+  source: KOMODO
+  source_id: komodo.medium:457_6413
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6506
+  source: KOMODO
+  source_id: komodo.medium:457_6506
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6521
+  source: KOMODO
+  source_id: komodo.medium:457_6521
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6538
+  source: KOMODO
+  source_id: komodo.medium:457_6538
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6607
+  source: KOMODO
+  source_id: komodo.medium:457_6607
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6608
+  source: KOMODO
+  source_id: komodo.medium:457_6608
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6609
+  source: KOMODO
+  source_id: komodo.medium:457_6609
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6610_replace_4-hydroxy-benzoate_with_4-fluorobenzoate
+  source: KOMODO
+  source_id: komodo.medium:457_6610_replace_4-hydroxy-benzoate_with_4-fluorobenzoate
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6610
+  source: KOMODO
+  source_id: komodo.medium:457_6610
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6611_replace_4-hydroxy-benzoate_with_4-fluorobenzoate
+  source: KOMODO
+  source_id: komodo.medium:457_6611_replace_4-hydroxy-benzoate_with_4-fluorobenzoate
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6611
+  source: KOMODO
+  source_id: komodo.medium:457_6611
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6612
+  source: KOMODO
+  source_id: komodo.medium:457_6612
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6613
+  source: KOMODO
+  source_id: komodo.medium:457_6613
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6695
+  source: KOMODO
+  source_id: komodo.medium:457_6695
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6696
+  source: KOMODO
+  source_id: komodo.medium:457_6696
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6697
+  source: KOMODO
+  source_id: komodo.medium:457_6697
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6706
+  source: KOMODO
+  source_id: komodo.medium:457_6706
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6753
+  source: KOMODO
+  source_id: komodo.medium:457_6753
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6756_replace_monochloroacetate_with_dichloroacetate
+  source: KOMODO
+  source_id: komodo.medium:457_6756_replace_monochloroacetate_with_dichloroacetate
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6756
+  source: KOMODO
+  source_id: komodo.medium:457_6756
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6758
+  source: KOMODO
+  source_id: komodo.medium:457_6758
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6818
+  source: KOMODO
+  source_id: komodo.medium:457_6818
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6837
+  source: KOMODO
+  source_id: komodo.medium:457_6837
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6838
+  source: KOMODO
+  source_id: komodo.medium:457_6838
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6899
+  source: KOMODO
+  source_id: komodo.medium:457_6899
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
+  source: KOMODO
+  source_id: komodo.medium:457_6900_replace_naphthalene_with_3-xylene
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6900
+  source: KOMODO
+  source_id: komodo.medium:457_6900
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 6978
+  source: KOMODO
+  source_id: komodo.medium:457_6978
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7098
+  source: KOMODO
+  source_id: komodo.medium:457_7098
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7116
+  source: KOMODO
+  source_id: komodo.medium:457_7116
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7122
+  source: KOMODO
+  source_id: komodo.medium:457_7122
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7135
+  source: KOMODO
+  source_id: komodo.medium:457_7135
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7162
+  source: KOMODO
+  source_id: komodo.medium:457_7162
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7189
+  source: KOMODO
+  source_id: komodo.medium:457_7189
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7300
+  source: KOMODO
+  source_id: komodo.medium:457_7300
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7324
+  source: KOMODO
+  source_id: komodo.medium:457_7324
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7325
+  source: KOMODO
+  source_id: komodo.medium:457_7325
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7346
+  source: KOMODO
+  source_id: komodo.medium:457_7346
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7355
+  source: KOMODO
+  source_id: komodo.medium:457_7355
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7390
+  source: KOMODO
+  source_id: komodo.medium:457_7390
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7511
+  source: KOMODO
+  source_id: komodo.medium:457_7511
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7512
+  source: KOMODO
+  source_id: komodo.medium:457_7512
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7516_replace_chloroacetate_with_fluoroacetate
+  source: KOMODO
+  source_id: komodo.medium:457_7516_replace_chloroacetate_with_fluoroacetate
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 7516
+  source: KOMODO
+  source_id: komodo.medium:457_7516
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8219
+  source: KOMODO
+  source_id: komodo.medium:457_8219
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8341
+  source: KOMODO
+  source_id: komodo.medium:457_8341
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8368
+  source: KOMODO
+  source_id: komodo.medium:457_8368
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8369
+  source: KOMODO
+  source_id: komodo.medium:457_8369
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8370
+  source: KOMODO
+  source_id: komodo.medium:457_8370
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8424
+  source: KOMODO
+  source_id: komodo.medium:457_8424
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8425
+  source: KOMODO
+  source_id: komodo.medium:457_8425
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8530
+  source: KOMODO
+  source_id: komodo.medium:457_8530
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8531
+  source: KOMODO
+  source_id: komodo.medium:457_8531
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8542
+  source: KOMODO
+  source_id: komodo.medium:457_8542
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8543
+  source: KOMODO
+  source_id: komodo.medium:457_8543
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8544
+  source: KOMODO
+  source_id: komodo.medium:457_8544
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8566
+  source: KOMODO
+  source_id: komodo.medium:457_8566
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8628
+  source: KOMODO
+  source_id: komodo.medium:457_8628
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8910
+  source: KOMODO
+  source_id: komodo.medium:457_8910
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 8924
+  source: KOMODO
+  source_id: komodo.medium:457_8924
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 9000
+  source: KOMODO
+  source_id: komodo.medium:457_9000
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 9750
+  source: KOMODO
+  source_id: komodo.medium:457_9750
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 9751
+  source: KOMODO
+  source_id: komodo.medium:457_9751
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 9958
+  source: KOMODO
+  source_id: komodo.medium:457_9958
+  original_category: imported
+- name: MEDIUM 457 MODIFIED FOR DSM 9959
+  source: KOMODO
+  source_id: komodo.medium:457_9959
+  original_category: imported
+- name: MINERAL MEDIUM (BRUNNER)
+  source: KOMODO
+  source_id: komodo.medium:457
+  original_category: imported
+- name: MINERAL MEDIUM WITH 2-CHLOROBENZOATE
+  source: KOMODO
+  source_id: komodo.medium:457a
+  original_category: imported
+- name: For DSM 7526
+  source: KOMODO
+  source_id: komodo.medium:457b.1
+  original_category: imported
+- name: For DSM 13022
+  source: KOMODO
+  source_id: komodo.medium:457b.2
+  original_category: imported
+- name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
+  source: KOMODO
+  source_id: komodo.medium:457b
+  original_category: imported
+- name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
+  source: KOMODO
+  source_id: komodo.medium:457c_replace_3-chloroacrylic acid_with_Glucose
+  original_category: imported
+- name: MEDIUM WITH CHLOROACRYLIC ACID
+  source: KOMODO
+  source_id: komodo.medium:457c
+  original_category: imported
+- name: MEDIUM WITH BIPHENYL
+  source: KOMODO
+  source_id: komodo.medium:457d
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_457e_MINERAL_MEDIUM_WITH_DIBENZOFURAN
+- KOMODO_457-10330_MEDIUM_457_MODIFIED_FOR_DSM_10330
+- KOMODO_457-11019_MEDIUM_457_MODIFIED_FOR_DSM_11019
+- KOMODO_457-11097_MEDIUM_457_MODIFIED_FOR_DSM_11097
+- KOMODO_457-11213_MEDIUM_457_MODIFIED_FOR_DSM_11213
+- KOMODO_457-11214_MEDIUM_457_MODIFIED_FOR_DSM_11214
+- KOMODO_457-11215_MEDIUM_457_MODIFIED_FOR_DSM_11215
+- KOMODO_457-11216_MEDIUM_457_MODIFIED_FOR_DSM_11216
+- KOMODO_457-11217_MEDIUM_457_MODIFIED_FOR_DSM_11217
+- KOMODO_457-11218_MEDIUM_457_MODIFIED_FOR_DSM_11218
+- KOMODO_457-11219_MEDIUM_457_MODIFIED_FOR_DSM_11219
+- KOMODO_457-11220_MEDIUM_457_MODIFIED_FOR_DSM_11220
+- KOMODO_457-11345_MEDIUM_457_MODIFIED_FOR_DSM_11345
+- KOMODO_457-11346_MEDIUM_457_MODIFIED_FOR_DSM_11346
+- KOMODO_457-11531_MEDIUM_457_MODIFIED_FOR_DSM_11531
+- KOMODO_457-11532_MEDIUM_457_MODIFIED_FOR_DSM_11532
+- KOMODO_457-11533_MEDIUM_457_MODIFIED_FOR_DSM_11533
+- KOMODO_457-11535_MEDIUM_457_MODIFIED_FOR_DSM_11535
+- KOMODO_457-11562_MEDIUM_457_MODIFIED_FOR_DSM_11562
+- KOMODO_457-11563_MEDIUM_457_MODIFIED_FOR_DSM_11563
+- KOMODO_457-11564_MEDIUM_457_MODIFIED_FOR_DSM_11564
+- KOMODO_457-11565_MEDIUM_457_MODIFIED_FOR_DSM_11565
+- KOMODO_457-11566_MEDIUM_457_MODIFIED_FOR_DSM_11566
+- KOMODO_457-11567_MEDIUM_457_MODIFIED_FOR_DSM_11567
+- KOMODO_457-11568_MEDIUM_457_MODIFIED_FOR_DSM_11568
+- KOMODO_457-11569_MEDIUM_457_MODIFIED_FOR_DSM_11569
+- KOMODO_457-11570_MEDIUM_457_MODIFIED_FOR_DSM_11570
+- KOMODO_457-11591_MEDIUM_457_MODIFIED_FOR_DSM_11591
+- KOMODO_457-11738_MEDIUM_457_MODIFIED_FOR_DSM_11738
+- KOMODO_457-11850_MEDIUM_457_MODIFIED_FOR_DSM_11850
+- KOMODO_457-12401_MEDIUM_457_MODIFIED_FOR_DSM_12401
+- KOMODO_457-12418_MEDIUM_457_MODIFIED_FOR_DSM_12418
+- KOMODO_457-12444_MEDIUM_457_MODIFIED_FOR_DSM_12444
+- KOMODO_457-12445_MEDIUM_457_MODIFIED_FOR_DSM_12445
+- KOMODO_457-12447_MEDIUM_457_MODIFIED_FOR_DSM_12447
+- KOMODO_457-12448_MEDIUM_457_MODIFIED_FOR_DSM_12448
+- KOMODO_457-12586_MEDIUM_457_MODIFIED_FOR_DSM_12586
+- KOMODO_457-12647_MEDIUM_457_MODIFIED_FOR_DSM_12647
+- KOMODO_457-12677_MEDIUM_457_MODIFIED_FOR_DSM_12677
+- KOMODO_457-12734_MEDIUM_457_MODIFIED_FOR_DSM_12734
+- KOMODO_457-12735_MEDIUM_457_MODIFIED_FOR_DSM_12735
+- KOMODO_457-13225_MEDIUM_457_MODIFIED_FOR_DSM_13225
+- KOMODO_457-13337_MEDIUM_457_MODIFIED_FOR_DSM_13337
+- KOMODO_457-13646_MEDIUM_457_MODIFIED_FOR_DSM_13646
+- KOMODO_457-14157_MEDIUM_457_MODIFIED_FOR_DSM_14157
+- KOMODO_457-14291_MEDIUM_457_MODIFIED_FOR_DSM_14291
+- KOMODO_457-14292_MEDIUM_457_MODIFIED_FOR_DSM_14292
+- KOMODO_457-14576_MEDIUM_457_MODIFIED_FOR_DSM_14576
+- KOMODO_457-14677_MEDIUM_457_MODIFIED_FOR_DSM_14677
+- KOMODO_457-15090_MEDIUM_457_MODIFIED_FOR_DSM_15090
+- KOMODO_457-15091_MEDIUM_457_MODIFIED_FOR_DSM_15091
+- KOMODO_457-15418_MEDIUM_457_MODIFIED_FOR_DSM_15418
+- KOMODO_457-16272_MEDIUM_457_MODIFIED_FOR_DSM_16272
+- KOMODO_457-16273_MEDIUM_457_MODIFIED_FOR_DSM_16273
+- KOMODO_457-16274_MEDIUM_457_MODIFIED_FOR_DSM_16274
+- KOMODO_457-16482_MEDIUM_457_MODIFIED_FOR_DSM_16482
+- KOMODO_457-16503_MEDIUM_457_MODIFIED_FOR_DSM_16503
+- KOMODO_457-16638_MEDIUM_457_MODIFIED_FOR_DSM_16638
+- KOMODO_457-17164_MEDIUM_457_MODIFIED_FOR_DSM_17164
+- KOMODO_457-17367_MEDIUM_457_MODIFIED_FOR_DSM_17367
+- KOMODO_457-17668_MEDIUM_457_MODIFIED_FOR_DSM_17668
+- KOMODO_457-17773_MEDIUM_457_MODIFIED_FOR_DSM_17773
+- KOMODO_457-21786_MEDIUM_457_MODIFIED_FOR_DSM_21786
+- KOMODO_457-22800_MEDIUM_457_MODIFIED_FOR_DSM_22800
+- KOMODO_457-22895_MEDIUM_457_MODIFIED_FOR_DSM_22895
+- KOMODO_457-22896_MEDIUM_457_MODIFIED_FOR_DSM_22896
+- KOMODO_457-22897_MEDIUM_457_MODIFIED_FOR_DSM_22897
+- KOMODO_457-22944_MEDIUM_457_MODIFIED_FOR_DSM_22944
+- KOMODO_457-3226_MEDIUM_457_MODIFIED_FOR_DSM_3226
+- KOMODO_457-6014_MEDIUM_457_MODIFIED_FOR_DSM_6014
+- KOMODO_457-6263_MEDIUM_457_MODIFIED_FOR_DSM_6263
+- KOMODO_457-6264_MEDIUM_457_MODIFIED_FOR_DSM_6264
+- KOMODO_457-6279_MEDIUM_457_MODIFIED_FOR_DSM_6279
+- KOMODO_457-6290_MEDIUM_457_MODIFIED_FOR_DSM_6290
+- KOMODO_457-6308_MEDIUM_457_MODIFIED_FOR_DSM_6308
+- KOMODO_457-6343-replace-dichloromethane-with-methanol_MEDIUM_457_MODIFIED_FOR_DSM_6343_replace_dichloromethane_with_methanol
+- KOMODO_457-6343_MEDIUM_457_MODIFIED_FOR_DSM_6343
+- KOMODO_457-6363_MEDIUM_457_MODIFIED_FOR_DSM_6363
+- KOMODO_457-6377_MEDIUM_457_MODIFIED_FOR_DSM_6377
+- KOMODO_457-6385_MEDIUM_457_MODIFIED_FOR_DSM_6385
+- KOMODO_457-6390_MEDIUM_457_MODIFIED_FOR_DSM_6390
+- KOMODO_457-6391_MEDIUM_457_MODIFIED_FOR_DSM_6391
+- KOMODO_457-6410_MEDIUM_457_MODIFIED_FOR_DSM_6410
+- KOMODO_457-6411_MEDIUM_457_MODIFIED_FOR_DSM_6411
+- KOMODO_457-6413_MEDIUM_457_MODIFIED_FOR_DSM_6413
+- KOMODO_457-6506_MEDIUM_457_MODIFIED_FOR_DSM_6506
+- KOMODO_457-6521_MEDIUM_457_MODIFIED_FOR_DSM_6521
+- KOMODO_457-6538_MEDIUM_457_MODIFIED_FOR_DSM_6538
+- KOMODO_457-6607_MEDIUM_457_MODIFIED_FOR_DSM_6607
+- KOMODO_457-6608_MEDIUM_457_MODIFIED_FOR_DSM_6608
+- KOMODO_457-6609_MEDIUM_457_MODIFIED_FOR_DSM_6609
+- KOMODO_457-6610-replace-4-hydroxy-benzoate-with-4-fluorobenzoate_MEDIUM_457_MODIFIED_FOR_DSM_6610_replace_4-hydroxy-benzoate_with_4-fluorobenzoat
+- KOMODO_457-6610_MEDIUM_457_MODIFIED_FOR_DSM_6610
+- KOMODO_457-6611-replace-4-hydroxy-benzoate-with-4-fluorobenzoate_MEDIUM_457_MODIFIED_FOR_DSM_6611_replace_4-hydroxy-benzoate_with_4-fluorobenzoat
+- KOMODO_457-6611_MEDIUM_457_MODIFIED_FOR_DSM_6611
+- KOMODO_457-6612_MEDIUM_457_MODIFIED_FOR_DSM_6612
+- KOMODO_457-6613_MEDIUM_457_MODIFIED_FOR_DSM_6613
+- KOMODO_457-6695_MEDIUM_457_MODIFIED_FOR_DSM_6695
+- KOMODO_457-6696_MEDIUM_457_MODIFIED_FOR_DSM_6696
+- KOMODO_457-6697_MEDIUM_457_MODIFIED_FOR_DSM_6697
+- KOMODO_457-6706_MEDIUM_457_MODIFIED_FOR_DSM_6706
+- KOMODO_457-6753_MEDIUM_457_MODIFIED_FOR_DSM_6753
+- KOMODO_457-6756-replace-monochloroacetate-with-dichloroacetate_MEDIUM_457_MODIFIED_FOR_DSM_6756_replace_monochloroacetate_with_dichloroacetate
+- KOMODO_457-6756_MEDIUM_457_MODIFIED_FOR_DSM_6756
+- KOMODO_457-6758_MEDIUM_457_MODIFIED_FOR_DSM_6758
+- KOMODO_457-6818_MEDIUM_457_MODIFIED_FOR_DSM_6818
+- KOMODO_457-6837_MEDIUM_457_MODIFIED_FOR_DSM_6837
+- KOMODO_457-6838_MEDIUM_457_MODIFIED_FOR_DSM_6838
+- KOMODO_457-6899_MEDIUM_457_MODIFIED_FOR_DSM_6899
+- KOMODO_457-6900-replace-naphthalene-with-3-xylene_MEDIUM_457_MODIFIED_FOR_DSM_6900_replace_naphthalene_with_3-xylene
+- KOMODO_457-6900_MEDIUM_457_MODIFIED_FOR_DSM_6900
+- KOMODO_457-6978_MEDIUM_457_MODIFIED_FOR_DSM_6978
+- KOMODO_457-7098_MEDIUM_457_MODIFIED_FOR_DSM_7098
+- KOMODO_457-7116_MEDIUM_457_MODIFIED_FOR_DSM_7116
+- KOMODO_457-7122_MEDIUM_457_MODIFIED_FOR_DSM_7122
+- KOMODO_457-7135_MEDIUM_457_MODIFIED_FOR_DSM_7135
+- KOMODO_457-7162_MEDIUM_457_MODIFIED_FOR_DSM_7162
+- KOMODO_457-7189_MEDIUM_457_MODIFIED_FOR_DSM_7189
+- KOMODO_457-7300_MEDIUM_457_MODIFIED_FOR_DSM_7300
+- KOMODO_457-7324_MEDIUM_457_MODIFIED_FOR_DSM_7324
+- KOMODO_457-7325_MEDIUM_457_MODIFIED_FOR_DSM_7325
+- KOMODO_457-7346_MEDIUM_457_MODIFIED_FOR_DSM_7346
+- KOMODO_457-7355_MEDIUM_457_MODIFIED_FOR_DSM_7355
+- KOMODO_457-7390_MEDIUM_457_MODIFIED_FOR_DSM_7390
+- KOMODO_457-7511_MEDIUM_457_MODIFIED_FOR_DSM_7511
+- KOMODO_457-7512_MEDIUM_457_MODIFIED_FOR_DSM_7512
+- KOMODO_457-7516-replace-chloroacetate-with-fluoroacetate_MEDIUM_457_MODIFIED_FOR_DSM_7516_replace_chloroacetate_with_fluoroacetate
+- KOMODO_457-7516_MEDIUM_457_MODIFIED_FOR_DSM_7516
+- KOMODO_457-8219_MEDIUM_457_MODIFIED_FOR_DSM_8219
+- KOMODO_457-8341_MEDIUM_457_MODIFIED_FOR_DSM_8341
+- KOMODO_457-8368_MEDIUM_457_MODIFIED_FOR_DSM_8368
+- KOMODO_457-8369_MEDIUM_457_MODIFIED_FOR_DSM_8369
+- KOMODO_457-8370_MEDIUM_457_MODIFIED_FOR_DSM_8370
+- KOMODO_457-8424_MEDIUM_457_MODIFIED_FOR_DSM_8424
+- KOMODO_457-8425_MEDIUM_457_MODIFIED_FOR_DSM_8425
+- KOMODO_457-8530_MEDIUM_457_MODIFIED_FOR_DSM_8530
+- KOMODO_457-8531_MEDIUM_457_MODIFIED_FOR_DSM_8531
+- KOMODO_457-8542_MEDIUM_457_MODIFIED_FOR_DSM_8542
+- KOMODO_457-8543_MEDIUM_457_MODIFIED_FOR_DSM_8543
+- KOMODO_457-8544_MEDIUM_457_MODIFIED_FOR_DSM_8544
+- KOMODO_457-8566_MEDIUM_457_MODIFIED_FOR_DSM_8566
+- KOMODO_457-8628_MEDIUM_457_MODIFIED_FOR_DSM_8628
+- KOMODO_457-8910_MEDIUM_457_MODIFIED_FOR_DSM_8910
+- KOMODO_457-8924_MEDIUM_457_MODIFIED_FOR_DSM_8924
+- KOMODO_457-9000_MEDIUM_457_MODIFIED_FOR_DSM_9000
+- KOMODO_457-9750_MEDIUM_457_MODIFIED_FOR_DSM_9750
+- KOMODO_457-9751_MEDIUM_457_MODIFIED_FOR_DSM_9751
+- KOMODO_457-9958_MEDIUM_457_MODIFIED_FOR_DSM_9958
+- KOMODO_457-9959_MEDIUM_457_MODIFIED_FOR_DSM_9959
+- KOMODO_457_MINERAL_MEDIUM_BRUNNER
+- KOMODO_457a_MINERAL_MEDIUM_WITH_2-CHLOROBENZOATE
+- KOMODO_457b-1_For_DSM_7526
+- KOMODO_457b-2_For_DSM_13022
+- KOMODO_457b_MEDIUM_WITH_FLUORANTHENE_OR_PHENANTHRENE
+- KOMODO_457c-replace-3-chloroacrylic acid-with-Glucose_MEDIUM_WITH_CHLOROACRYLIC_ACID_replace_3-chloroacrylic_acid_with_Glucose
+- KOMODO_457c_MEDIUM_WITH_CHLOROACRYLIC_ACID
+- KOMODO_457d_MEDIUM_WITH_BIPHENYL
+merge_fingerprint: 7fdf4119804e1e416f804bf870e7872c4382e7e3b31cc7c966522c365d0b5fa1

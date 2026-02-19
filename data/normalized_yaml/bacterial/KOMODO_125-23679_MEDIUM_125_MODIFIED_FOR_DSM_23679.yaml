@@ -10,7 +10,91 @@ media_term:
     label: MEDIUM 125 MODIFIED FOR DSM 23679
 notes: 'Source: KOMODO ModelSEED | ID: 125_23679 | DSMZ Medium: 125 (mediadive.medium:125)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.23'
+    unit: G_PER_L
+- preferred_term: NaH2PO4
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: 5e-06
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: MnSO4 x 5 H2O
+  term:
+    id: CHEBI:131524
+    label: MnSO4 x 5 H2O
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: 7e-05
+    unit: G_PER_L
+- preferred_term: MoO3
+  term:
+    id: CHEBI:30627
+    label: MoO3
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +102,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 125_23679'
+- timestamp: '2026-02-03T11:18:58.619446'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 125
+ph_value: 6.8

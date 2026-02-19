@@ -1,0 +1,61 @@
+name: PP
+original_name: PP
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C79
+  term:
+    id: mediadive.medium:C79
+    label: PP
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PP.pdf'
+ingredients:
+- preferred_term: Proteose peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "The stock solutions are those for SES. Make up to 1 litre with distilled\
+    \ water. For agar add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for\
+    \ 15 minutes."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.744638Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C79'
+merge_fingerprint: d2302259b7d7ee12e0a10d062ca9f21178602b654f559cafbb858f648571a968
+merged_from:
+- CCAP_C79_PP

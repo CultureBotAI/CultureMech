@@ -11,7 +11,110 @@ media_term:
     label: THERMOACTINOMYCES medium
 notes: 'Source: KOMODO ModelSEED | ID: 978 | DSMZ Medium: 978 (mediadive.medium:978)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Inositol
+  term:
+    id: CHEBI:24848
+    label: Inositol
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium panthothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: p-Aminobenzoate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: D-Biotin
+  term:
+    id: CHEBI:15956
+    label: D-Biotin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +122,12 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 978'
+- timestamp: '2026-02-03T11:19:00.124536'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 978
+- timestamp: '2026-02-06T05:10:21.161578Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

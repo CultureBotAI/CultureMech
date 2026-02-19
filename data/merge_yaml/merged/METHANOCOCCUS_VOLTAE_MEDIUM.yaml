@@ -1,0 +1,295 @@
+name: METHANOCOCCUS VOLTAE MEDIUM
+original_name: METHANOCOCCUS VOLTAE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 391
+  term:
+    id: mediadive.medium:391
+    label: METHANOCOCCUS VOLTAE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium391.pdf'
+ingredients:
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.68'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Pantothenate
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except TYC solution, carbonate, cystein and sulfide.
+    Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Before use add TYC solution, cysteine and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH
+    of complete medium to 7.2, if necessary.
+- step_number: 2
+  action: STORE
+  description: May be stored frozen without sterilization.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Prepare and autoclave under 100% N2 gas.
+- step_number: 4
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.010456Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 391'
+- timestamp: '2026-01-28T19:48:22.899665Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:40.736486+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_391_METHANOCOCCUS_VOLTAE_MEDIUM, KOMODO_391-1_For_DSM_4254,
+    KOMODO_391-2_For_strain_DSM_4310, KOMODO_391_WMC_medium'
+synonyms:
+- name: For DSM 4254
+  source: KOMODO
+  source_id: komodo.medium:391.1
+  original_category: imported
+- name: For strain DSM 4310
+  source: KOMODO
+  source_id: komodo.medium:391.2
+  original_category: imported
+- name: WMC medium
+  source: KOMODO
+  source_id: komodo.medium:391
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_391_METHANOCOCCUS_VOLTAE_MEDIUM
+- KOMODO_391-1_For_DSM_4254
+- KOMODO_391-2_For_strain_DSM_4310
+- KOMODO_391_WMC_medium
+merge_fingerprint: aaa1210e8ba2010bced645ef5654bd5dfdc52ce0178449c920e3f4a9abbfbdc4

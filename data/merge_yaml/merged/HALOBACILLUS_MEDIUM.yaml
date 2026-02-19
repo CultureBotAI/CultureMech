@@ -1,0 +1,68 @@
+name: HALOBACILLUS MEDIUM
+original_name: HALOBACILLUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 755
+  term:
+    id: mediadive.medium:755
+    label: HALOBACILLUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium755.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' (casein digest)'
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.145261Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 755'
+- timestamp: '2026-02-03T22:25:47.984608+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_755_HALOBACILLUS_MEDIUM, KOMODO_755-18525_MEDIUM_755_MODIFIED_FOR_DSM_18525,
+    KOMODO_755_HALOBACILLUS_medium'
+synonyms:
+- name: MEDIUM 755 MODIFIED FOR DSM 18525
+  source: KOMODO
+  source_id: komodo.medium:755_18525
+  original_category: imported
+- name: HALOBACILLUS medium
+  source: KOMODO
+  source_id: komodo.medium:755
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_755_HALOBACILLUS_MEDIUM
+- KOMODO_755-18525_MEDIUM_755_MODIFIED_FOR_DSM_18525
+- KOMODO_755_HALOBACILLUS_medium
+merge_fingerprint: 30f82f774c0649fe72ca2a3f40bc392ed5efacef377e6dbb1e4a1eb4739519e7

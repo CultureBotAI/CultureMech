@@ -1,0 +1,74 @@
+name: JCM MEDIUM No. 623
+original_name: JCM MEDIUM No. 623
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J623
+  term:
+    id: mediadive.medium:J623
+    label: JCM MEDIUM No. 623
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=623'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '240'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Separately autoclave Solutions A and B and mix them aseptically. Adjust
+    pH to 7.4, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.119015Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J623'
+merge_fingerprint: 8bb966e0e0d8d1574b5af3818bf1f6d57863941f1d713d4157793410ca8fd016
+merged_from:
+- JCM_J623_JCM_MEDIUM_No._623

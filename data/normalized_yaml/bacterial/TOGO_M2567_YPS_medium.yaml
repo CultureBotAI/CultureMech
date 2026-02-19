@@ -64,12 +64,24 @@ ingredients:
     unit: G_PER_L
 - preferred_term: PIPES (10 mM)
   notes: 'Role: Buffer; Properties: Defined component, Organic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -261,6 +273,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Na2WO4 (10 mM)
   concentration:
     value: '1'
@@ -301,3 +316,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.544012'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: PIPES (10 mM); Added default
+    concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Hydrogen
+    gas; Added default concentration for ingredient: KOH'

@@ -1,0 +1,94 @@
+name: R2A MEDIUM (MICROAEROBIC)
+original_name: R2A MEDIUM (MICROAEROBIC)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5-5.5
+media_term:
+  preferred_term: DSMZ Medium 830d
+  term:
+    id: mediadive.medium:830d
+    label: R2A MEDIUM (MICROAEROBIC)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium830d.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: ' (soluble)'
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients, then sparge solution with 80% N2 and 20% CO2
+    gas mixture for at least 30 - 45 min to remove dissolved oxygen and to saturate
+    the solution with CO2. Dispense solution in vials suitable for anaerobic cultures
+    (e.g., Balch-type tubes or serum vials) to 30% volume (e.g., 5 ml medium in a
+    16 ml Hungate-type tube) under the 80% N2 and 20% CO2 gas atmosphere. Close vials
+    with butyl rubber septa to prevent the free exchange of oxygen with the external
+    atmosphere and autoclave them. Adjust pH of the autoclaved medium to 5.0 - 5.5
+    using a sterile stock solution of sodium carbonate (5% w/v), prepared under 80%
+    N2 and 20% CO2 gas mixture.
+- step_number: 2
+  action: MIX
+  description: Before inoculation, add sterile air to obtain 5% O2 in headspace gas
+    atmosphere (e.g., add 2 ml air to a Hungate-type tube).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.430856Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 830d'
+- timestamp: '2026-01-28T19:48:24.507731Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9b493446d032ba2feae5022c036b326be7260c56ae446a147389a312d1cafb59
+merged_from:
+- DSMZ_830d_R2A_MEDIUM_MICROAEROBIC

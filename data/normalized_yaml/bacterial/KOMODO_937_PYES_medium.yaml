@@ -11,7 +11,30 @@ media_term:
     label: PYES medium
 notes: 'Source: KOMODO ModelSEED | ID: 937 | DSMZ Medium: 937 (mediadive.medium:937)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +42,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 937'
+- timestamp: '2026-02-03T11:19:05.025916'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 937

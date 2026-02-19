@@ -1,0 +1,176 @@
+name: Saccharolobus Solfataricus Medium
+original_name: Saccharolobus Solfataricus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '3.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Casamino acids (BD BBL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Yeast extract (OXOID)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Allen’s trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '180'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: CoSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+- preferred_term: VOSO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:87014
+    label: vanadyl sulfate hexahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '450'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
+    compound'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2306
+  term:
+    id: TOGO:M2306
+    label: Saccharolobus Solfataricus Medium
+notes: 'Source: https://togomedium.org/medium/M2306
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium182.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.312944Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2306'
+- timestamp: '2026-01-28T19:48:29.721086Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.183144'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: HCl'
+merge_fingerprint: f1a57ea135a08e76b4e1d7316dbccd5651e2342abb84d91514e931ae4466378b
+merged_from:
+- TOGO_M2306_Saccharolobus_Solfataricus_Medium

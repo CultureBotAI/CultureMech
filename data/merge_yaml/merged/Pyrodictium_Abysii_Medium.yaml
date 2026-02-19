@@ -1,0 +1,103 @@
+name: Pyrodictium Abysii Medium
+original_name: Pyrodictium Abysii Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 5% Na2S·9H2O solution (pH 7.0)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2WO4・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sulfur (powder)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:14258
+    label: ''
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Salt base solution (see Medium [M142])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M198
+  term:
+    id: TOGO:M198
+    label: Pyrodictium Abysii Medium
+notes: 'Source: https://togomedium.org/medium/M198
+
+  Original source: JCM - JCM_M205
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=205'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.595345Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M198'
+- timestamp: '2026-01-28T19:48:08.766299Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.257812'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Hydrogen gas'
+merge_fingerprint: 9f8ec08317513d5c1476a51fa7e4c34f2da3db64ef6b1a72b69954787a7461dd
+merged_from:
+- TOGO_M198_Pyrodictium_Abysii_Medium

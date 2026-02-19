@@ -1,0 +1,198 @@
+name: Minimal Medium; Teusink et al
+original_name: Minimal Medium; Teusink et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Glutamate
+  concentration:
+    value: '3.39836'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '55.5062'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '0.71757'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: Ascorbate
+  concentration:
+    value: '2.83897'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ascb-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.83775'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.24482'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:trp-L'
+- preferred_term: L-Phenylalanine
+  term:
+    id: CHEBI:17295
+    label: L-Phenylalanine
+  concentration:
+    value: '1.66475'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:phe-L'
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '1.37977'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tyr-L'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.01203'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '3.62125'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '2.77422'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:val-L'
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '1.88885'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thr-L'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.00812'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.00266'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '1.60098'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '5.74053'
+    unit: MILLIMOLAR
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.00456'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxamine HCl
+  concentration:
+    value: '0.02443'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxine HCl
+  concentration:
+    value: '0.00973'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '0.82477'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '36.7415'
+    unit: MILLIMOLAR
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '12.1901'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium citrate
+  concentration:
+    value: '2.65269'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.501358Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 2, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:08.905984Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 2
+  term:
+    id: MEDIADB:2
+    label: Minimal Medium; Teusink et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 61446a92ccd652594ebc1fe9604f3c574fa319a2c8b16f97a58f97c1be91b4f5
+merged_from:
+- MEDIADB_2_Minimal_Medium_Teusink_et_al

@@ -10,7 +10,29 @@ media_term:
     label: MEDIUM 662 MODIFIED FOR DSM 6699
 notes: 'Source: KOMODO ModelSEED | ID: 662_6699 | DSMZ Medium: 662 (mediadive.medium:662)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +40,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 662_6699'
+- timestamp: '2026-02-03T11:18:59.638792'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 662
+ph_value: 7.0

@@ -1,0 +1,89 @@
+name: Vibrio fischeri medium as in ISO 11348-1:2007
+original_name: Vibrio fischeri medium as in ISO 11348-1:2007
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1856
+  term:
+    id: mediadive.medium:1856
+    label: Vibrio fischeri medium as in ISO 11348-1:2007
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x H2O
+  concentration:
+    value: '6.1'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '2.75'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.204'
+    unit: G_PER_L
+- preferred_term: (NH4)2HPO4
+  term:
+    id: CHEBI:62476
+    label: (NH4)2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: glycerin
+  term:
+    id: CHEBI:17754
+    label: glycerin
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve in distilled water.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+applications:
+- Microbial cultivation
+references:
+- reference: www.din.de/de/mitwirken/normenausschuesse/naw/wdc-beuth:din21:299952567
+curation_history:
+- timestamp: '2026-01-26T17:53:15.554389Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1856'
+merge_fingerprint: 8dc1d13beda3b83f8af7e1c339e8a3b1708232153640062f7d29859dc6c1071c
+merged_from:
+- DSMZ_1856_Vibrio_fischeri_medium_as_in_ISO_11348-1_2007

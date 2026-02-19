@@ -11,7 +11,105 @@ media_term:
     label: B12 - MEDIUM GUTTMAN
 notes: 'Source: KOMODO ModelSEED | ID: 1270 | DSMZ Medium: 1270 (mediadive.medium:1270)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: DL-Asparagine x H2O
+  term:
+    id: CHEBI:22653
+    label: DL-Asparagine x H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: L-Arginine x HCl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31235
+    label: ''
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 4e-05
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +117,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1270'
+- timestamp: '2026-02-03T11:19:19.514674'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1270

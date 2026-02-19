@@ -1,0 +1,227 @@
+name: Thiomicrospira V2501 Medium
+original_name: Thiomicrospira V2501 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: Trace metal solution (see below)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5% NaHCO3 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Vitamin mixture (see below)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '7.3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoCl2・6H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4・7H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CuSO4・5H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: (NH4)Mo7O24・4H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: EDTA・2Na
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: NaOH
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Inorganic compound, Defined component'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Biotin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: p--Aminobenzoic acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thiamine・HCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Pyridoxine・HCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Vitamin B12
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Riboflavin
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: DL--Calcium pantothenate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M944
+  term:
+    id: TOGO:M944
+    label: Thiomicrospira V2501 Medium
+notes: 'Source: https://togomedium.org/medium/M944
+
+  Original source: JCM - JCM_M903
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=903'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.008207Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M944'
+- timestamp: '2026-01-28T19:48:31.416464Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:01.388924'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+merge_fingerprint: f114ce371cd25b249350ee967d24d930edfd9a1406ebffb07e5d8f3bbe321d71
+merged_from:
+- TOGO_M944_Thiomicrospira_V2501_Medium

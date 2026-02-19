@@ -1,0 +1,57 @@
+name: Yeast Extract-Malt Extract Agar (pH 9.0)
+original_name: Yeast Extract-Malt Extract Agar (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract--malt extract agar (ISP--2) (see Medium [M35])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2CO3 solution
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M529
+  term:
+    id: TOGO:M529
+    label: Yeast Extract-Malt Extract Agar (pH 9.0)
+notes: 'Source: https://togomedium.org/medium/M529
+
+  Original source: JCM - JCM_M528
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=528'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.239962Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M529'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.269700'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Na2CO3 solution'
+- timestamp: '2026-02-03T22:26:21.405784+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M529_Yeast_Extract-Malt_Extract_Agar_pH_9.0, TOGO_M73_Alkaline_Yeast_Extract-Malt_Extract_Agar,
+    TOGO_M936_Yeast_Extract-Malt_Extract_Agar_ISP-2_pH_8.5'
+synonyms:
+- name: Alkaline Yeast Extract-Malt Extract Agar
+  source: TOGO
+  source_id: TOGO:M73
+  original_category: imported
+- name: Yeast Extract-Malt Extract Agar (ISP-2) (pH 8.5)
+  source: TOGO
+  source_id: TOGO:M936
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M529_Yeast_Extract-Malt_Extract_Agar_pH_9.0
+- TOGO_M73_Alkaline_Yeast_Extract-Malt_Extract_Agar
+- TOGO_M936_Yeast_Extract-Malt_Extract_Agar_ISP-2_pH_8.5
+merge_fingerprint: 2fe1cb43be738ca653187012b7be1ec87648e2abf4e46e7b29d109154b619b1c

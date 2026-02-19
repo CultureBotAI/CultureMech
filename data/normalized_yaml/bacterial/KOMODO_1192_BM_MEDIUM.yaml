@@ -10,7 +10,40 @@ media_term:
     label: BM MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 1192 | DSMZ Medium: 1192 (mediadive.medium:1192)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Difco marine broth
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: 2e-05
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-06
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '3.168'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +51,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1192'
+- timestamp: '2026-02-03T11:18:57.003791'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1192

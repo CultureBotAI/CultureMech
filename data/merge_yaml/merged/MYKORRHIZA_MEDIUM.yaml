@@ -1,0 +1,85 @@
+name: MYKORRHIZA MEDIUM
+original_name: MYKORRHIZA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 427
+  term:
+    id: mediadive.medium:427
+    label: MYKORRHIZA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium427.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Asparagine
+  term:
+    id: CHEBI:22653
+    label: Asparagine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.098859Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 427'
+- timestamp: '2026-02-03T22:25:41.231165+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_427_MYKORRHIZA_MEDIUM, KOMODO_427_MYKORRHIZA_medium'
+synonyms:
+- name: MYKORRHIZA medium
+  source: KOMODO
+  source_id: komodo.medium:427
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_427_MYKORRHIZA_MEDIUM
+- KOMODO_427_MYKORRHIZA_medium
+merge_fingerprint: bb62a0c22f2f31db61df8cce991cbb903e8bb2236e563fe910631e623ea0b7c3

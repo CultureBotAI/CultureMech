@@ -21,8 +21,14 @@ ingredients:
     Simple component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Solution A
   concentration:
     value: '10'
@@ -83,6 +89,9 @@ ingredients:
 - preferred_term: HCl solution
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Potassium dibasic phosphate trihydrate
   concentration:
     value: '200'
@@ -234,6 +243,9 @@ ingredients:
     Simple component'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Sodium sulfide nonahydrate
   concentration:
     value: '1.5'
@@ -280,3 +292,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.104167'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    HCl solution; Added default concentration for ingredient: N2 gas'

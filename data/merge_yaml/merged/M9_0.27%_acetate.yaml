@@ -1,0 +1,76 @@
+name: M9 0.27% acetate
+original_name: M9 0.27% acetate
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '47.743'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '8.5557'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.045'
+    unit: MILLIMOLAR
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '32.913'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '18.6947'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.319636Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 193, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 193
+  term:
+    id: MEDIADB:193
+    label: M9 0.27% acetate
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 03e7da3a196992d2f1beac7b64fb6c879435ed3087bd6f40d8b69effe5c75926
+merged_from:
+- MEDIADB_193_M9_0.27_acetate

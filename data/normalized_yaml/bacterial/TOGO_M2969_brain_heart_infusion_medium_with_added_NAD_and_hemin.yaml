@@ -12,8 +12,14 @@ ingredients:
 - preferred_term: hemin (ICN)
   notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
     component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NAD (Sigma)
   notes: 'Role: Growth factor; Properties: Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2969
   term:
@@ -27,3 +33,8 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2969'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.907046'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: hemin (ICN); Added default concentration
+    for ingredient: NAD (Sigma)'

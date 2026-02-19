@@ -10,7 +10,92 @@ media_term:
     label: LEUCOTHRIX medium
 notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '24'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: NaSiO3 x 9 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: NH4NO3
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+  term:
+    id: CHEBI:63038
+    label: ''
+- preferred_term: Fe(III)PO4 x 4 H2O
+  term:
+    id: CHEBI:131372
+    label: Fe(III)PO4 x 4 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +103,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 79'
+- timestamp: '2026-02-03T11:18:58.485724'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 79
+ph_value: 7.8

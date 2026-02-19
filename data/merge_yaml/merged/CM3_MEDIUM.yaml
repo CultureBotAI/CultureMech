@@ -1,0 +1,107 @@
+name: CM3 Medium
+original_name: CM3 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: K2HPO4
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4・7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: MOPS
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:39074
+    label: MOPS
+- preferred_term: Cellobiose or Cellulose MN 300
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Urea
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Defined component, Organic compound'
+  term:
+    id: CHEBI:16199
+    label: urea
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+media_term:
+  preferred_term: TOGO Medium M104
+  term:
+    id: TOGO:M104
+    label: CM3 Medium
+notes: 'Source: https://togomedium.org/medium/M104
+
+  Original source: JCM - JCM_M112
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=112'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.807091Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M104'
+- timestamp: '2026-01-28T19:48:22.778224Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9156429b5048870596b3555be599d78c3f08a087dceccfcac2c67c9c7d1a2936
+merged_from:
+- TOGO_M104_CM3_Medium

@@ -103,8 +103,14 @@ ingredients:
 - preferred_term: 2 N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -221,6 +227,9 @@ ingredients:
     label: iron dichloride tetrahydrate
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -308,11 +317,11 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Defined component'
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2624
   term:
@@ -332,3 +341,14 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.003642'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 2 N H2SO4; Added default concentration
+    for ingredient: N2; Added default concentration for ingredient: KOH solution;
+    Added default concentration for ingredient: N2'
+- timestamp: '2026-02-06T05:10:18.380621Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

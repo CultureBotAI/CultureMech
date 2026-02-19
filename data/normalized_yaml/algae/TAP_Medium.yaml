@@ -1,22 +1,30 @@
 name: TAP Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Beijerinck's Solution
-- agent_term:
-    preferred_term: '2'
-  amount: Phosphate Buffer Stock Solution
-- agent_term:
-    preferred_term: '3'
-  amount: Hunter's Trace Stock Solution
-- agent_term:
-    preferred_term: '4'
-  amount: Tris Acetate Stock Solution
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Beijerinck''s Solution'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Phosphate Buffer Stock Solution'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Hunter''s Trace Stock Solution'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Tris Acetate Stock Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

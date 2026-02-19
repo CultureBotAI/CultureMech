@@ -1,0 +1,149 @@
+name: METHYLOFERULA STELLATA MEDIUM
+original_name: METHYLOFERULA STELLATA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 5-5.8
+media_term:
+  preferred_term: DSMZ Medium 1322
+  term:
+    id: mediadive.medium:1322
+    label: METHYLOFERULA STELLATA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1322.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.92'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2MoO4
+  term:
+    id: CHEBI:75215
+    label: Na2MoO4
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.54'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '2.06'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 5.0-5.8.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Prepare the medium without methanol  in closed vessels. Adjust pH to
+    5.0-5.8 and sterilize. Allow to cool to about 30°C before adding 10 mL filter-sterilized
+    methanol per litre medium.
+- step_number: 3
+  action: MIX
+  description: The medium is fairly weakly buffered so the pH should be checked before
+    and after autoclaving. The pH should be adjusted with H3PO4 (sterilised if added
+    to sterile medium). The strain should be grown with shaking.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.094197Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1322'
+- timestamp: '2026-02-03T22:25:32.141405+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1322_METHYLOFERULA_STELLATA_MEDIUM, KOMODO_1322_METHYLOFERULA_STELLATA_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_1322_METHYLOFERULA_STELLATA_MEDIUM
+- KOMODO_1322_METHYLOFERULA_STELLATA_MEDIUM
+merge_fingerprint: 4fc16e2ea61816c1e02397a91f5820f69a257bc4731b7aa238d941ba38f329d8

@@ -1,0 +1,90 @@
+name: SL7 solid medium
+original_name: SL7 solid medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2 × 2 H2O
+  concentration:
+    value: '0.14'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: MgSO4 × 7 H2O
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '18.7'
+    unit: MILLIMOLAR
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2HPO4 × 12 H2O
+  concentration:
+    value: '25'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+- preferred_term: Fe(III)NH4-Citrate
+  concentration:
+    value: '4.6'
+    unit: MICROMOLAR
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+- preferred_term: Chloramphenicol
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
+    Defined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: sodium gluconate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:84997
+    label: sodium gluconate
+media_term:
+  preferred_term: TOGO Medium M3209
+  term:
+    id: TOGO:M3209
+    label: SL7 solid medium
+notes: 'Source: https://togomedium.org/medium/M3209'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.598053Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3209'
+- timestamp: '2026-01-28T19:48:30.355843Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3faa4c66478cb20ecb82807282828ff7d258b29c5a7e3e5dacde884abac05847
+merged_from:
+- TOGO_M3209_SL7_solid_medium

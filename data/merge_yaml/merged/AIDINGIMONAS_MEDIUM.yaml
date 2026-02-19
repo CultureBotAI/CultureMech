@@ -1,0 +1,49 @@
+name: AIDINGIMONAS MEDIUM
+original_name: AIDINGIMONAS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7-7.5
+media_term:
+  preferred_term: DSMZ Medium 1658
+  term:
+    id: mediadive.medium:1658
+    label: AIDINGIMONAS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1658.pdf'
+ingredients:
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0-7.5
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.148857Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1658'
+merge_fingerprint: 67431cad27b7a56b48b139b9a90ea471d1fb008fa1574a395a897a8585b415b4
+merged_from:
+- DSMZ_1658_AIDINGIMONAS_MEDIUM

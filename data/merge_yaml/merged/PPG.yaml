@@ -1,0 +1,76 @@
+name: PPG
+original_name: PPG
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C80
+  term:
+    id: mediadive.medium:C80
+    label: PPG
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PPG.pdf'
+ingredients:
+- preferred_term: Proteose peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '18'
+    unit: G_PER_L
+- preferred_term: NaClO3
+  concentration:
+    value: '24'
+    unit: G_PER_L
+  term:
+    id: CHEBI:65242
+    label: ''
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '28.4'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '27.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Make up to 1 litre of deionized water. Autoclave at 15 psi for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.747304Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C80'
+- timestamp: '2026-01-28T19:48:29.465879Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4be5cc9893f22b7c0924f826bf1d10f9474829c2ac3a23f6dc9cf06a066d51be
+merged_from:
+- CCAP_C80_PPG

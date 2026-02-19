@@ -1,0 +1,52 @@
+name: S8 Medium
+original_name: S8 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: KNO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:17632
+    label: nitrate
+- preferred_term: S6 medium (see Medium [M81])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M83
+  term:
+    id: TOGO:M83
+    label: S8 Medium
+notes: 'Source: https://togomedium.org/medium/M83
+
+  Original source: JCM - JCM_M91
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=91'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.794306Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M83'
+- timestamp: '2026-01-28T19:48:13.101595Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b62808bc054d55c5d5429eb987159feb4b451a668af729b29e14e420bf31d716
+merged_from:
+- TOGO_M83_S8_Medium

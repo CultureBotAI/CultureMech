@@ -1,0 +1,485 @@
+name: CHOPPED MEAT MEDIUM FOR TREPONEMA SP.
+original_name: CHOPPED MEAT MEDIUM FOR TREPONEMA SP.
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 78a
+  term:
+    id: mediadive.medium:78a
+    label: CHOPPED MEAT MEDIUM FOR TREPONEMA SP.
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium78a.pdf'
+ingredients:
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pantothenic acid
+  term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Nicotine amide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.6341'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: To the ready medium, add 50 ml/l amino acid solution and 5 ml/l vitamin
+    solution. These solutions must not be prepared under anaerobic conditions.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Stir for some hours, filter sterilize the solution.
+- step_number: 3
+  action: AUTOCLAVE
+  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
+    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
+    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
+    demanding meat particles put those first into the tube (use 1 part meat particles
+    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
+    g agar per 1000.0 ml medium.
+- step_number: 4
+  action: MIX
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
+    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
+    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
+    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
+    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
+    \ ml, and then add:"
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
+- step_number: 8
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.098782Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 78a'
+- timestamp: '2026-02-03T22:25:48.700110+00:00'
+  curator: recipe-merger
+  action: Merged 44 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_78a_CHOPPED_MEAT_MEDIUM_FOR_TREPONEMA_SP., KOMODO_78-1396_MEDIUM_78_MODIFIED_FOR_DSM_1396,
+    KOMODO_78-1447_MEDIUM_78_MODIFIED_FOR_DSM_1447, KOMODO_78-14838_MEDIUM_78_MODIFIED_FOR_DSM_14838,
+    KOMODO_78-15896_MEDIUM_78_MODIFIED_FOR_DSM_15896, KOMODO_78-19291_MEDIUM_78_MODIFIED_FOR_DSM_19291,
+    KOMODO_78-19346_MEDIUM_78_MODIFIED_FOR_DSM_19346, KOMODO_78-19458_MEDIUM_78_MODIFIED_FOR_DSM_19458,
+    KOMODO_78-19528_MEDIUM_78_MODIFIED_FOR_DSM_19528, KOMODO_78-1_Anoxic_version,
+    KOMODO_78-20708_MEDIUM_78_MODIFIED_FOR_DSM_20708, KOMODO_78-2079_MEDIUM_78_MODIFIED_FOR_DSM_2079,
+    KOMODO_78-21255_MEDIUM_78_MODIFIED_FOR_DSM_21255, KOMODO_78-21682_MEDIUM_78_MODIFIED_FOR_DSM_21682,
+    KOMODO_78-22070_MEDIUM_78_MODIFIED_FOR_DSM_22070, KOMODO_78-22519_MEDIUM_78_MODIFIED_FOR_DSM_22519,
+    KOMODO_78-22534_MEDIUM_78_MODIFIED_FOR_DSM_22534, KOMODO_78-22535_MEDIUM_78_MODIFIED_FOR_DSM_22535,
+    KOMODO_78-2255_MEDIUM_78_MODIFIED_FOR_DSM_2255, KOMODO_78-23057_MEDIUM_78_MODIFIED_FOR_DSM_23057,
+    KOMODO_78-23058_MEDIUM_78_MODIFIED_FOR_DSM_23058, KOMODO_78-23370_MEDIUM_78_MODIFIED_FOR_DSM_23370,
+    KOMODO_78-23371_MEDIUM_78_MODIFIED_FOR_DSM_23371, KOMODO_78-23386_MEDIUM_78_MODIFIED_FOR_DSM_23386,
+    KOMODO_78-23387_MEDIUM_78_MODIFIED_FOR_DSM_23387, KOMODO_78-23594_MEDIUM_78_MODIFIED_FOR_DSM_23594,
+    KOMODO_78-23917_MEDIUM_78_MODIFIED_FOR_DSM_23917, KOMODO_78-23919_MEDIUM_78_MODIFIED_FOR_DSM_23919,
+    KOMODO_78-23940_MEDIUM_78_MODIFIED_FOR_DSM_23940, KOMODO_78-23941_MEDIUM_78_MODIFIED_FOR_DSM_23941,
+    KOMODO_78-24798_MEDIUM_78_MODIFIED_FOR_DSM_24798, KOMODO_78-2_For_DSM_5566, KOMODO_78-3979_MEDIUM_78_MODIFIED_FOR_DSM_3979,
+    KOMODO_78-3983_MEDIUM_78_MODIFIED_FOR_DSM_3983, KOMODO_78-3989_MEDIUM_78_MODIFIED_FOR_DSM_3989,
+    KOMODO_78-3991_MEDIUM_78_MODIFIED_FOR_DSM_3991, KOMODO_78-3992_MEDIUM_78_MODIFIED_FOR_DSM_3992,
+    KOMODO_78-6011_MEDIUM_78_MODIFIED_FOR_DSM_6011, KOMODO_78_CHOPPED_MEAT_medium,
+    KOMODO_78a-12168_MEDIUM_78a_MODIFIED_FOR_DSM_12168, KOMODO_78a_CHOPPED_MEAT_medium_FOR_TREPONEMA_SP,
+    KOMODO_78b-1_For_DSM_16260, KOMODO_78b-2_For_DSM_16369, KOMODO_78b_medium_FOR_TREPONEMA_PARVUM'
+synonyms:
+- name: MEDIUM 78 MODIFIED FOR DSM 1396
+  source: KOMODO
+  source_id: komodo.medium:78_1396
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 1447
+  source: KOMODO
+  source_id: komodo.medium:78_1447
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 14838
+  source: KOMODO
+  source_id: komodo.medium:78_14838
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 15896
+  source: KOMODO
+  source_id: komodo.medium:78_15896
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 19291
+  source: KOMODO
+  source_id: komodo.medium:78_19291
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 19346
+  source: KOMODO
+  source_id: komodo.medium:78_19346
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 19458
+  source: KOMODO
+  source_id: komodo.medium:78_19458
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 19528
+  source: KOMODO
+  source_id: komodo.medium:78_19528
+  original_category: imported
+- name: Anoxic version
+  source: KOMODO
+  source_id: komodo.medium:78.1
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 20708
+  source: KOMODO
+  source_id: komodo.medium:78_20708
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 2079
+  source: KOMODO
+  source_id: komodo.medium:78_2079
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 21255
+  source: KOMODO
+  source_id: komodo.medium:78_21255
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 21682
+  source: KOMODO
+  source_id: komodo.medium:78_21682
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 22070
+  source: KOMODO
+  source_id: komodo.medium:78_22070
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 22519
+  source: KOMODO
+  source_id: komodo.medium:78_22519
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 22534
+  source: KOMODO
+  source_id: komodo.medium:78_22534
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 22535
+  source: KOMODO
+  source_id: komodo.medium:78_22535
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 2255
+  source: KOMODO
+  source_id: komodo.medium:78_2255
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23057
+  source: KOMODO
+  source_id: komodo.medium:78_23057
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23058
+  source: KOMODO
+  source_id: komodo.medium:78_23058
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23370
+  source: KOMODO
+  source_id: komodo.medium:78_23370
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23371
+  source: KOMODO
+  source_id: komodo.medium:78_23371
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23386
+  source: KOMODO
+  source_id: komodo.medium:78_23386
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23387
+  source: KOMODO
+  source_id: komodo.medium:78_23387
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23594
+  source: KOMODO
+  source_id: komodo.medium:78_23594
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23917
+  source: KOMODO
+  source_id: komodo.medium:78_23917
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23919
+  source: KOMODO
+  source_id: komodo.medium:78_23919
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23940
+  source: KOMODO
+  source_id: komodo.medium:78_23940
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 23941
+  source: KOMODO
+  source_id: komodo.medium:78_23941
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 24798
+  source: KOMODO
+  source_id: komodo.medium:78_24798
+  original_category: imported
+- name: For DSM 5566
+  source: KOMODO
+  source_id: komodo.medium:78.2
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 3979
+  source: KOMODO
+  source_id: komodo.medium:78_3979
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 3983
+  source: KOMODO
+  source_id: komodo.medium:78_3983
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 3989
+  source: KOMODO
+  source_id: komodo.medium:78_3989
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 3991
+  source: KOMODO
+  source_id: komodo.medium:78_3991
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 3992
+  source: KOMODO
+  source_id: komodo.medium:78_3992
+  original_category: imported
+- name: MEDIUM 78 MODIFIED FOR DSM 6011
+  source: KOMODO
+  source_id: komodo.medium:78_6011
+  original_category: imported
+- name: CHOPPED MEAT medium
+  source: KOMODO
+  source_id: komodo.medium:78
+  original_category: imported
+- name: MEDIUM 78a MODIFIED FOR DSM 12168
+  source: KOMODO
+  source_id: komodo.medium:78a_12168
+  original_category: imported
+- name: CHOPPED MEAT medium FOR TREPONEMA SP
+  source: KOMODO
+  source_id: komodo.medium:78a
+  original_category: imported
+- name: For DSM 16260
+  source: KOMODO
+  source_id: komodo.medium:78b.1
+  original_category: imported
+- name: For DSM 16369
+  source: KOMODO
+  source_id: komodo.medium:78b.2
+  original_category: imported
+- name: medium FOR TREPONEMA PARVUM
+  source: KOMODO
+  source_id: komodo.medium:78b
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_78a_CHOPPED_MEAT_MEDIUM_FOR_TREPONEMA_SP.
+- KOMODO_78-1396_MEDIUM_78_MODIFIED_FOR_DSM_1396
+- KOMODO_78-1447_MEDIUM_78_MODIFIED_FOR_DSM_1447
+- KOMODO_78-14838_MEDIUM_78_MODIFIED_FOR_DSM_14838
+- KOMODO_78-15896_MEDIUM_78_MODIFIED_FOR_DSM_15896
+- KOMODO_78-19291_MEDIUM_78_MODIFIED_FOR_DSM_19291
+- KOMODO_78-19346_MEDIUM_78_MODIFIED_FOR_DSM_19346
+- KOMODO_78-19458_MEDIUM_78_MODIFIED_FOR_DSM_19458
+- KOMODO_78-19528_MEDIUM_78_MODIFIED_FOR_DSM_19528
+- KOMODO_78-1_Anoxic_version
+- KOMODO_78-20708_MEDIUM_78_MODIFIED_FOR_DSM_20708
+- KOMODO_78-2079_MEDIUM_78_MODIFIED_FOR_DSM_2079
+- KOMODO_78-21255_MEDIUM_78_MODIFIED_FOR_DSM_21255
+- KOMODO_78-21682_MEDIUM_78_MODIFIED_FOR_DSM_21682
+- KOMODO_78-22070_MEDIUM_78_MODIFIED_FOR_DSM_22070
+- KOMODO_78-22519_MEDIUM_78_MODIFIED_FOR_DSM_22519
+- KOMODO_78-22534_MEDIUM_78_MODIFIED_FOR_DSM_22534
+- KOMODO_78-22535_MEDIUM_78_MODIFIED_FOR_DSM_22535
+- KOMODO_78-2255_MEDIUM_78_MODIFIED_FOR_DSM_2255
+- KOMODO_78-23057_MEDIUM_78_MODIFIED_FOR_DSM_23057
+- KOMODO_78-23058_MEDIUM_78_MODIFIED_FOR_DSM_23058
+- KOMODO_78-23370_MEDIUM_78_MODIFIED_FOR_DSM_23370
+- KOMODO_78-23371_MEDIUM_78_MODIFIED_FOR_DSM_23371
+- KOMODO_78-23386_MEDIUM_78_MODIFIED_FOR_DSM_23386
+- KOMODO_78-23387_MEDIUM_78_MODIFIED_FOR_DSM_23387
+- KOMODO_78-23594_MEDIUM_78_MODIFIED_FOR_DSM_23594
+- KOMODO_78-23917_MEDIUM_78_MODIFIED_FOR_DSM_23917
+- KOMODO_78-23919_MEDIUM_78_MODIFIED_FOR_DSM_23919
+- KOMODO_78-23940_MEDIUM_78_MODIFIED_FOR_DSM_23940
+- KOMODO_78-23941_MEDIUM_78_MODIFIED_FOR_DSM_23941
+- KOMODO_78-24798_MEDIUM_78_MODIFIED_FOR_DSM_24798
+- KOMODO_78-2_For_DSM_5566
+- KOMODO_78-3979_MEDIUM_78_MODIFIED_FOR_DSM_3979
+- KOMODO_78-3983_MEDIUM_78_MODIFIED_FOR_DSM_3983
+- KOMODO_78-3989_MEDIUM_78_MODIFIED_FOR_DSM_3989
+- KOMODO_78-3991_MEDIUM_78_MODIFIED_FOR_DSM_3991
+- KOMODO_78-3992_MEDIUM_78_MODIFIED_FOR_DSM_3992
+- KOMODO_78-6011_MEDIUM_78_MODIFIED_FOR_DSM_6011
+- KOMODO_78_CHOPPED_MEAT_medium
+- KOMODO_78a-12168_MEDIUM_78a_MODIFIED_FOR_DSM_12168
+- KOMODO_78a_CHOPPED_MEAT_medium_FOR_TREPONEMA_SP
+- KOMODO_78b-1_For_DSM_16260
+- KOMODO_78b-2_For_DSM_16369
+- KOMODO_78b_medium_FOR_TREPONEMA_PARVUM
+merge_fingerprint: 53ede9305db07d4bf34269c4e1c6bccd3e3f095352f2adb9788a23b8ec5167b3

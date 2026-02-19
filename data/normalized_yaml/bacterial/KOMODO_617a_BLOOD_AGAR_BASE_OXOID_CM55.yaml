@@ -11,7 +11,36 @@ media_term:
     label: BLOOD AGAR BASE (OXOID CM55)
 notes: 'Source: KOMODO ModelSEED | ID: 617a | DSMZ Medium: 617a (mediadive.medium:617a)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +48,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 617a'
+- timestamp: '2026-02-03T11:18:58.762267'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 617

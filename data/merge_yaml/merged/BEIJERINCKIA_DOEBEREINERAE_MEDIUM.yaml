@@ -1,0 +1,91 @@
+name: BEIJERINCKIA DOEBEREINERAE MEDIUM
+original_name: BEIJERINCKIA DOEBEREINERAE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1215
+  term:
+    id: mediadive.medium:1215
+    label: BEIJERINCKIA DOEBEREINERAE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1215.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 7 H2O
+  term:
+    id: CHEBI:86473
+    label: Na2MoO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADD_AGAR
+  description: Final pH is 6.5. Add 15.0 g/l agar for solid media.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.737336Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1215'
+- timestamp: '2026-02-03T22:25:30.667358+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM, KOMODO_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM
+- KOMODO_1215_BEIJERINCKIA_DOEBEREINERAE_MEDIUM
+merge_fingerprint: de031d8f4f56beff5dcfa863c52273e92f7f7c9113757f3658d41c30b012eb1d

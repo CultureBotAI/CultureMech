@@ -1,0 +1,39 @@
+name: MRS medium (containing erythromycin)
+original_name: MRS medium (containing erythromycin)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: erythromycin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+  term:
+    id: CHEBI:48923
+    label: Erythromycin
+- preferred_term: MRS medium (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2490
+  term:
+    id: TOGO:M2490
+    label: MRS medium (containing erythromycin)
+notes: 'Source: https://togomedium.org/medium/M2490'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.580979Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2490'
+- timestamp: '2026-01-28T19:48:28.000280Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 51f00c669824875eb32f8ee23d8dca1a24f02ff6f10848dc562ff7106a268a3d
+merged_from:
+- TOGO_M2490_MRS_medium_containing_erythromycin

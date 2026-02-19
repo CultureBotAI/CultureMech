@@ -28,9 +28,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
-  term:
-    id: CHEBI:1344098
-    label: ''
 - preferred_term: Marine broth 2216 (BD-Difco)
   concentration:
     value: '37.4'
@@ -57,3 +54,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:18.736633Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

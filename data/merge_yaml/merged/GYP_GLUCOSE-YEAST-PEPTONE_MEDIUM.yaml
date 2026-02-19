@@ -1,0 +1,142 @@
+name: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
+original_name: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 852
+  term:
+    id: mediadive.medium:852
+    label: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium852.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: For solid media add 10 g/l bacteriological agar. Adjust to pH 6.8.
+    After sterilization of the medium add filter sterilized salt solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.502554Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 852'
+- timestamp: '2026-02-03T22:26:01.191231+00:00'
+  curator: recipe-merger
+  action: Merged 10 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_852-45022_MEDIUM_852_MODIFIED_FOR_DSM_45022, KOMODO_852-45023_MEDIUM_852_MODIFIED_FOR_DSM_45023,
+    KOMODO_852-45025_MEDIUM_852_MODIFIED_FOR_DSM_45025, KOMODO_852-45026_MEDIUM_852_MODIFIED_FOR_DSM_45026,
+    KOMODO_852-45027_MEDIUM_852_MODIFIED_FOR_DSM_45027, KOMODO_852-45029_MEDIUM_852_MODIFIED_FOR_DSM_45029,
+    KOMODO_852-45031_MEDIUM_852_MODIFIED_FOR_DSM_45031, KOMODO_852-45032_MEDIUM_852_MODIFIED_FOR_DSM_45032,
+    KOMODO_852_GYP_GLUCOSE-YEAST-Peptone_medium, DSMZ_852_GYP_GLUCOSE-YEAST-PEPTONE_MEDIUM'
+synonyms:
+- name: MEDIUM 852 MODIFIED FOR DSM 45022
+  source: KOMODO
+  source_id: komodo.medium:852_45022
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45023
+  source: KOMODO
+  source_id: komodo.medium:852_45023
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45025
+  source: KOMODO
+  source_id: komodo.medium:852_45025
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45026
+  source: KOMODO
+  source_id: komodo.medium:852_45026
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45027
+  source: KOMODO
+  source_id: komodo.medium:852_45027
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45029
+  source: KOMODO
+  source_id: komodo.medium:852_45029
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45031
+  source: KOMODO
+  source_id: komodo.medium:852_45031
+  original_category: imported
+- name: MEDIUM 852 MODIFIED FOR DSM 45032
+  source: KOMODO
+  source_id: komodo.medium:852_45032
+  original_category: imported
+- name: GYP GLUCOSE-YEAST-Peptone medium
+  source: KOMODO
+  source_id: komodo.medium:852
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_852-45022_MEDIUM_852_MODIFIED_FOR_DSM_45022
+- KOMODO_852-45023_MEDIUM_852_MODIFIED_FOR_DSM_45023
+- KOMODO_852-45025_MEDIUM_852_MODIFIED_FOR_DSM_45025
+- KOMODO_852-45026_MEDIUM_852_MODIFIED_FOR_DSM_45026
+- KOMODO_852-45027_MEDIUM_852_MODIFIED_FOR_DSM_45027
+- KOMODO_852-45029_MEDIUM_852_MODIFIED_FOR_DSM_45029
+- KOMODO_852-45031_MEDIUM_852_MODIFIED_FOR_DSM_45031
+- KOMODO_852-45032_MEDIUM_852_MODIFIED_FOR_DSM_45032
+- KOMODO_852_GYP_GLUCOSE-YEAST-Peptone_medium
+- DSMZ_852_GYP_GLUCOSE-YEAST-PEPTONE_MEDIUM
+merge_fingerprint: a64d67ec0efde2bdaf9d9139b8160d65c98e694d16f5a0cf4a48380bec14c096

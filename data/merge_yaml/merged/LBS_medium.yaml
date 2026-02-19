@@ -1,0 +1,59 @@
+name: LBS medium
+original_name: LBS medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '342'
+    unit: MILLIMOLAR
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Tris, pH 7.5
+  concentration:
+    value: '20'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2922
+  term:
+    id: TOGO:M2922
+    label: LBS medium
+notes: 'Source: https://togomedium.org/medium/M2922'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.406314Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2922'
+- timestamp: '2026-01-28T19:48:40.783118Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 65691b5760dffe5c723837f4d4b1f1d17ba81bfad35c520198e439aedf2e6ce2
+merged_from:
+- TOGO_M2922_LBS_medium

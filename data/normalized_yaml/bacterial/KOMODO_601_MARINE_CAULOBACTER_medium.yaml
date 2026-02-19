@@ -11,7 +11,19 @@ media_term:
     label: MARINE CAULOBACTER medium
 notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +31,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 601'
+- timestamp: '2026-02-03T11:18:55.056402'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 601

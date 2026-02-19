@@ -1,0 +1,39 @@
+name: RCM MEDIUM
+original_name: RCM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 634
+  term:
+    id: mediadive.medium:634
+    label: RCM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium634.pdf'
+ingredients:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve dehydrated RCM medium (available from BD-BBL, OXOID or MERCK)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring to
+    the boil and cool to room temperature while sparging with 100% N2 gas. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.788282Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 634'
+merge_fingerprint: fcbb91cd9cd27fd5e3647906ac8150b6907721524caccaa060330cce4d993c1c
+merged_from:
+- DSMZ_634_RCM_MEDIUM

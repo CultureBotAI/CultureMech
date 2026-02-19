@@ -1,0 +1,117 @@
+name: Mineral Medium For Hydrogenophilus Islandicum
+original_name: Mineral Medium For Hydrogenophilus Islandicum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sol. 1
+  concentration:
+    value: '17.6'
+    unit: G_PER_L
+- preferred_term: Sol. 2
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '880'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: NaHCO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2HPO4・6H2O
+  concentration:
+    value: '2.9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: SL-6 trace element solution (see Medium [M158])
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: 0.1% Fe(NH4) citrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Solution'
+- preferred_term: 0.5% MgSO4・7H2O solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
+    component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M803
+  term:
+    id: TOGO:M803
+    label: Mineral Medium For Hydrogenophilus Islandicum
+notes: 'Source: https://togomedium.org/medium/M803
+
+  Original source: JCM - JCM_M774
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=774'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.746576Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M803'
+- timestamp: '2026-01-28T19:48:07.499668Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.650366'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Hydrogen gas'
+merge_fingerprint: bc0f41a662c8f5db127c852385436ff4670472e19f40067d707d65c3a89f8307
+merged_from:
+- TOGO_M803_Mineral_Medium_For_Hydrogenophilus_Islandicum

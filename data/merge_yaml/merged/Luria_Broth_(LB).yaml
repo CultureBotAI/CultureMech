@@ -1,0 +1,73 @@
+name: Luria Broth (LB)
+original_name: Luria Broth (LB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Deionized water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Triptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M3210
+  term:
+    id: TOGO:M3210
+    label: Luria Broth (LB)
+notes: 'Source: https://togomedium.org/medium/M3210'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.599366Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3210'
+- timestamp: '2026-01-28T19:48:34.021008Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.918965'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl; Added default concentration
+    for ingredient: NaOH'
+merge_fingerprint: 55bc28fe50d05390223761810d25455f79ada3525d5b0aac2dd8bff18757da3d
+merged_from:
+- TOGO_M3210_Luria_Broth_LB

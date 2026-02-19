@@ -1,0 +1,147 @@
+name: THERMOACTINOMYCES MEDIUM
+original_name: THERMOACTINOMYCES MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 978
+  term:
+    id: mediadive.medium:978
+    label: THERMOACTINOMYCES MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium978.pdf'
+ingredients:
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Polypeptone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Inositol
+  term:
+    id: CHEBI:24848
+    label: Inositol
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium panthothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: p-Aminobenzoate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: D-Biotin
+  term:
+    id: CHEBI:15956
+    label: D-Biotin
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Add components, except vitamin B solution, to distilled water and bring
+    volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized
+    vitamin B solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.973769Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 978'
+- timestamp: '2026-02-03T22:25:52.532010+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_978_THERMOACTINOMYCES_MEDIUM, KOMODO_978_THERMOACTINOMYCES_medium'
+synonyms:
+- name: THERMOACTINOMYCES medium
+  source: KOMODO
+  source_id: komodo.medium:978
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_978_THERMOACTINOMYCES_MEDIUM
+- KOMODO_978_THERMOACTINOMYCES_medium
+merge_fingerprint: 2f6a6b7e5b44ac8c2d1f82c42542a3176ffea713864d50c9e2dec92c7bcd1c63

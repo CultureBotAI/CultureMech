@@ -1,0 +1,166 @@
+name: ZM/10
+original_name: ZM/10
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C108
+  term:
+    id: mediadive.medium:C108
+    label: ZM/10
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ZM10.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Na2SeO3
+  term:
+    id: CHEBI:48843
+    label: Na2SeO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '41.6'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '31.5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamin
+  term:
+    id: CHEBI:17439
+    label: Cyanocobalamin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "Make up to 1 litre with 75% filtered seawater: 25% deionized water.\
+    \ Autoclave at 15 psi for\r\n15 minutes. Cool to approx. 55 °C and add sterile\
+    \ marine supplement."
+- step_number: 2
+  action: MIX
+  description: 'First prepare primary stocks for marine supplement stock:'
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Autoclave at 15 psi for 15 minutes. Once at room temperature add Primary\
+    \ stock 2 (Vitamin\r\nmix)."
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: "Dissolve vitamins one at a time; adjust the pH to 7 with 1 M NaOH\
+    \ or 1 M HCl if\r\nnecessary, to dissolve the biotin and folic acid. Filter sterilise.\
+    \ Dispense excess into 1\r\nml aliquots and freeze."
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1016/S0168-6496(03)00298-8
+curation_history:
+- timestamp: '2026-01-26T17:53:19.828387Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C108'
+merge_fingerprint: c2a8555b649173a764129910fcb25ff235b3cd2963daacd3a304ba8efae57065
+merged_from:
+- CCAP_C108_ZM_10

@@ -1,0 +1,53 @@
+name: Brewer Anaerobic Agar With 2% NaCl
+original_name: Brewer Anaerobic Agar With 2% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Brewer anaerobic agar (BD-Difco)
+  concentration:
+    value: '58'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M685
+  term:
+    id: TOGO:M685
+    label: Brewer Anaerobic Agar With 2% NaCl
+notes: 'Source: https://togomedium.org/medium/M685
+
+  Original source: JCM - JCM_M667
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=667'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.525061Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M685'
+- timestamp: '2026-01-28T19:48:35.221619Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: cd2c24232935eac0eba9984791ccaeb4ef9aa523b270488cbb961d98203468c2
+merged_from:
+- TOGO_M685_Brewer_Anaerobic_Agar_With_2_NaCl

@@ -1,0 +1,117 @@
+name: '''HS Medium (Methanol-Acetate'
+original_name: '''HS Medium (Methanol-Acetate'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Acetate
+  term:
+    id: CHEBI:30089
+    label: Acetate
+  concentration:
+    value: '40.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ac'
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '125.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:meoh'
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '400.0'
+    unit: MILLIMOLAR
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.004'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfide
+  concentration:
+    value: '0.4'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '2.8'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '5.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '13.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '19.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '45.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '54.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:47.007693Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 472, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:21.536016Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 472
+  term:
+    id: MEDIADB:472
+    label: '''HS Medium (Methanol-Acetate'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 26d12feef25733d67ef3c6c4b679984aa27f17f5b89f1c546729cd39cac27f23
+merged_from:
+- MEDIADB_472_HS_Medium_Methanol-Acetate

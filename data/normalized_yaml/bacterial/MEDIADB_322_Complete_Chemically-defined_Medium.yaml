@@ -80,9 +80,6 @@ ingredients:
     value: '1.601'
     unit: MILLIMOLAR
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.008123'
     unit: MILLIMOLAR
@@ -314,6 +311,11 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:24.179221Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 media_term:
   preferred_term: MediaDB Medium 322
   term:

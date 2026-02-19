@@ -10,7 +10,29 @@ media_term:
     label: GINGER BEER PLANT medium
 notes: 'Source: KOMODO ModelSEED | ID: 267 | DSMZ Medium: 267 (mediadive.medium:267)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Sugar beet molasses
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Ginger
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '900'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +40,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 267'
+- timestamp: '2026-02-03T11:19:04.369308'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 267

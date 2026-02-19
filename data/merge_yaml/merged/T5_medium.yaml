@@ -1,0 +1,102 @@
+name: T5 medium
+original_name: T5 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Complex component, Defined
+    component'
+  term:
+    id: CHEBI:85248
+    label: gellan gum
+- preferred_term: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Protective agent; Properties: Simple component, Defined
+    component, Inorganic compound'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: MnCl2·2H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto Tryptone (DIfco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2057
+  term:
+    id: TOGO:M2057
+    label: T5 medium
+notes: 'Source: https://togomedium.org/medium/M2057
+
+  Original source: NBRC - NBRC_M1358
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1358'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.976725Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2057'
+- timestamp: '2026-01-28T19:48:41.206962Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 6319d76834a487e4bf176104827dd123f05293e7998af046b366b39a7a6e42cb
+merged_from:
+- TOGO_M2057_T5_medium

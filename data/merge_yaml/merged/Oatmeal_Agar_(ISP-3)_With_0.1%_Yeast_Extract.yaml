@@ -1,0 +1,46 @@
+name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J51
+  term:
+    id: mediadive.medium:J51
+    label: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=51'
+ingredients:
+- preferred_term: Inorganic salts-starch agar
+  term:
+    id: CHEBI:2509
+    label: Inorganic salts-starch agar
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.647731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J51'
+- timestamp: '2026-02-03T22:26:24.529626+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J217_INORGANIC_SALTS-STARCH_AGAR_ISP-4_WITH_0.05_YEAST_EXTRACT,
+    JCM_J51_OATMEAL_AGAR_ISP-3_WITH_0.1_YEAST_EXTRACT'
+synonyms:
+- name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
+  source: MediaDive
+  source_id: mediadive.medium:J217
+  original_category: imported
+categories:
+- imported
+merged_from:
+- JCM_J217_INORGANIC_SALTS-STARCH_AGAR_ISP-4_WITH_0.05_YEAST_EXTRACT
+- JCM_J51_OATMEAL_AGAR_ISP-3_WITH_0.1_YEAST_EXTRACT
+merge_fingerprint: a1cd149372b522bb41243dfe4315b1a7bfecc3da240718946f6fc198d2d6a866

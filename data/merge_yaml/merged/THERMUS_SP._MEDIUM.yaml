@@ -1,0 +1,42 @@
+name: THERMUS SP. MEDIUM
+original_name: THERMUS SP. MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1045
+  term:
+    id: mediadive.medium:1045
+    label: THERMUS SP. MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1045.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: adjust pH 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.197300Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1045'
+merge_fingerprint: 71db69deb9ac5b8a4101f8c8a99357270fe685adbe40bd447512e1a566b94534
+merged_from:
+- DSMZ_1045_THERMUS_SP._MEDIUM

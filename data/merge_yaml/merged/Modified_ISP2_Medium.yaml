@@ -1,0 +1,79 @@
+name: Modified ISP2 Medium
+original_name: Modified ISP2 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1832
+  term:
+    id: mediadive.medium:1832
+    label: Modified ISP2 Medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.514071Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1832'
+- timestamp: '2026-02-03T22:25:31.377736+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1261_ISP_2_MEDIUM_WITH_10_NACL, DSMZ_1832_Modified_ISP2_Medium,
+    DSMZ_982_MY10-12_MEDIUM, KOMODO_982_MY10-12_medium'
+synonyms:
+- name: ISP 2 MEDIUM WITH 10% NACL
+  source: MediaDive
+  source_id: mediadive.medium:1261
+  original_category: imported
+- name: MY10-12 MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:982
+  original_category: imported
+- name: MY10-12 medium
+  source: KOMODO
+  source_id: komodo.medium:982
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1261_ISP_2_MEDIUM_WITH_10_NACL
+- DSMZ_1832_Modified_ISP2_Medium
+- DSMZ_982_MY10-12_MEDIUM
+- KOMODO_982_MY10-12_medium
+merge_fingerprint: c46d1dfdff4ef8bf4dc4f9f0becb62ba5da290b80ccc0b318d59aebe22f0e9c4

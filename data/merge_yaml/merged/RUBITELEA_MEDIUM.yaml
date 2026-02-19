@@ -1,0 +1,65 @@
+name: RUBITELEA MEDIUM
+original_name: RUBITELEA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1177
+  term:
+    id: mediadive.medium:1177
+    label: RUBITELEA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1177.pdf'
+ingredients:
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Agar may be added (15 g/l) to solidify the medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.595987Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1177'
+- timestamp: '2026-02-03T22:25:29.784079+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1177_RUBITELEA_MEDIUM, KOMODO_1177_RUBITELEA_medium'
+synonyms:
+- name: RUBITELEA medium
+  source: KOMODO
+  source_id: komodo.medium:1177
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1177_RUBITELEA_MEDIUM
+- KOMODO_1177_RUBITELEA_medium
+merge_fingerprint: 326f2dec316ec8d877cb25ca1990d14700da18c409a6ceb9b6f2ed48b943baf6

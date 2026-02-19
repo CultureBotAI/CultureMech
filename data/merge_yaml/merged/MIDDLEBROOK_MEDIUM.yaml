@@ -1,0 +1,223 @@
+name: MIDDLEBROOK MEDIUM
+original_name: MIDDLEBROOK MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 645
+  term:
+    id: mediadive.medium:645
+    label: MIDDLEBROOK MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium645.pdf'
+ingredients:
+- preferred_term: Bacto Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Bacto Middlebrook 7H10 agar
+  concentration:
+    value: '20.9945'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: ZnSO4
+  term:
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: CuSO4
+  term:
+    id: CHEBI:23414
+    label: CuSO4
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Malachite green
+  term:
+    id: CHEBI:72449
+    label: Malachite green
+  concentration:
+    value: '0.00025'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Oleic acid
+  term:
+    id: CHEBI:16196
+    label: Oleic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Bovine albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '8.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
+    OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
+- step_number: 2
+  action: MIX
+  description: 'If you can´t order the commercial media then prepare the media in
+    this way:'
+- step_number: 3
+  action: HEAT
+  description: Final pH at 25°C 6.6 ± 0.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.822302Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 645'
+- timestamp: '2026-02-03T22:25:46.385847+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_645_MIDDLEBROOK_MEDIUM, KOMODO_645-44338_MEDIUM_645_MODIFIED_FOR_DSM_44338,
+    KOMODO_645-44339_MEDIUM_645_MODIFIED_FOR_DSM_44339, KOMODO_645-44482_MEDIUM_645_MODIFIED_FOR_DSM_44482,
+    KOMODO_645-44483_MEDIUM_645_MODIFIED_FOR_DSM_44483, KOMODO_645-44680_MEDIUM_645_MODIFIED_FOR_DSM_44680,
+    KOMODO_645_MIDDELBROOK_medium, KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM'
+synonyms:
+- name: MEDIUM 645 MODIFIED FOR DSM 44338
+  source: KOMODO
+  source_id: komodo.medium:645_44338
+  original_category: imported
+- name: MEDIUM 645 MODIFIED FOR DSM 44339
+  source: KOMODO
+  source_id: komodo.medium:645_44339
+  original_category: imported
+- name: MEDIUM 645 MODIFIED FOR DSM 44482
+  source: KOMODO
+  source_id: komodo.medium:645_44482
+  original_category: imported
+- name: MEDIUM 645 MODIFIED FOR DSM 44483
+  source: KOMODO
+  source_id: komodo.medium:645_44483
+  original_category: imported
+- name: MEDIUM 645 MODIFIED FOR DSM 44680
+  source: KOMODO
+  source_id: komodo.medium:645_44680
+  original_category: imported
+- name: MIDDELBROOK medium
+  source: KOMODO
+  source_id: komodo.medium:645
+  original_category: imported
+- name: HEMIN medium FOR MYCOBACTERIUM
+  source: KOMODO
+  source_id: komodo.medium:645a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_645_MIDDLEBROOK_MEDIUM
+- KOMODO_645-44338_MEDIUM_645_MODIFIED_FOR_DSM_44338
+- KOMODO_645-44339_MEDIUM_645_MODIFIED_FOR_DSM_44339
+- KOMODO_645-44482_MEDIUM_645_MODIFIED_FOR_DSM_44482
+- KOMODO_645-44483_MEDIUM_645_MODIFIED_FOR_DSM_44483
+- KOMODO_645-44680_MEDIUM_645_MODIFIED_FOR_DSM_44680
+- KOMODO_645_MIDDELBROOK_medium
+- KOMODO_645a_HEMIN_medium_FOR_MYCOBACTERIUM
+merge_fingerprint: 75d5fffa0fe800447cf72615a2b057b68b7585a458b84cda2bba765b5d39bc3a

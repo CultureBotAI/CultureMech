@@ -1,0 +1,103 @@
+name: OM-2 MEDIUM
+original_name: OM-2 MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 8.5-9
+media_term:
+  preferred_term: DSMZ Medium 782
+  term:
+    id: mediadive.medium:782
+    label: OM-2 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium782.pdf'
+ingredients:
+- preferred_term: NH4-oxalate
+  term:
+    id: CHEBI:91241
+    label: NH4-oxalate
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x 2 H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.57'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (if required)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.8-7.0
+- step_number: 2
+  action: DISSOLVE
+  description: The first three salts must be dissolved in the indicated sequence.
+    After autoclaving for 20 min at 121°C the pH of the medium shifted to 8.5-9.0.
+    Solid medium contained 1.5 to 2.0% (w/v) of Bacto-Agar (Difco).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.223837Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 782'
+- timestamp: '2026-02-03T22:25:48.325903+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_782_OM-2_MEDIUM, KOMODO_782_OM-2_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_782_OM-2_MEDIUM
+- KOMODO_782_OM-2_MEDIUM
+merge_fingerprint: 856b9d32f43b7c274455ad00f5c74d26f837c3b9785c147a2bfc6dd5ced9e5e2

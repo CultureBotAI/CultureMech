@@ -10,7 +10,29 @@ media_term:
     label: medium FOR OSMOPHILIC FUNGI (M 40 Y)
 notes: 'Source: KOMODO ModelSEED | ID: 187 | DSMZ Medium: 187 (mediadive.medium:187)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '400'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +40,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 187'
+- timestamp: '2026-02-03T11:19:09.624563'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 187
+ph_value: 5.4

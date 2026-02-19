@@ -1,0 +1,48 @@
+name: BHIS
+original_name: BHIS
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Hemin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Menadione
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:28869
+    label: Menadione
+- preferred_term: Brain heart infusion (BHI) agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2814
+  term:
+    id: TOGO:M2814
+    label: BHIS
+notes: 'Source: https://togomedium.org/medium/M2814'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.328847Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2814'
+- timestamp: '2026-01-28T19:48:37.460530Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: c0372702760d642eb92bb07a560a4358e49e392ff72824112759cff3423b418b
+merged_from:
+- TOGO_M2814_BHIS

@@ -1,0 +1,49 @@
+name: Alkali-Reinforced Clostridial Agar
+original_name: Alkali-Reinforced Clostridial Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na2CO3 solution
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Reinforced clostridial agar (Sigma)
+  concentration:
+    value: '51'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M455
+  term:
+    id: TOGO:M455
+    label: Alkali-Reinforced Clostridial Agar
+notes: 'Source: https://togomedium.org/medium/M455
+
+  Original source: JCM - JCM_M455
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=455'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.093180Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M455'
+- timestamp: '2026-01-28T19:48:28.615509Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 88d3b1a5dc2d9ead8f4c52ebd94c77a9840cca75a973f5f815fe8b236592b8cc
+merged_from:
+- TOGO_M455_Alkali-Reinforced_Clostridial_Agar

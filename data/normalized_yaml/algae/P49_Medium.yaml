@@ -1,46 +1,70 @@
 name: P49 Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: 'MgSO4•7H2O(CAS: 10034-99-8)'
-- agent_term:
-    preferred_term: '2'
-  amount: 'Na2glycerophosphate•5H2O(CAS: 13408-09-8)'
-- agent_term:
-    preferred_term: '3'
-  amount: 'KCl(CAS: 7447-40-7)'
-- agent_term:
-    preferred_term: '4'
-  amount: 'Glycylglycine(CAS: 556-50-3)'
-- agent_term:
-    preferred_term: '5'
-  amount: P-IV Metal Solution
-- agent_term:
-    preferred_term: '6'
-  amount: 'NH4NO3(CAS: 6484-52-2)'
-- agent_term:
-    preferred_term: '7'
-  amount: 'CaCl2•2H2O(CAS: 10035-04-8)'
-- agent_term:
-    preferred_term: '8'
-  amount: 'Yeast extract(CAS: 8013-01-2)'
-- agent_term:
-    preferred_term: '9'
-  amount: 'Tryptone(CAS: 91079-40-2)'
-- agent_term:
-    preferred_term: '10'
-  amount: Vitamin B12
-- agent_term:
-    preferred_term: '11'
-  amount: Biotin Vitamin Solution
-- agent_term:
-    preferred_term: '12'
-  amount: Thiamine Vitamin Solution
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2glycerophosphate•5H2O(CAS: 13408-09-8)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KCl(CAS: 7447-40-7)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Glycylglycine(CAS: 556-50-3)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: P-IV Metal Solution'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NH4NO3(CAS: 6484-52-2)'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(CAS: 10035-04-8)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Yeast extract(CAS: 8013-01-2)'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Tryptone(CAS: 91079-40-2)'
+- preferred_term: '10'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '11'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '12'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

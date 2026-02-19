@@ -1,0 +1,57 @@
+name: DILUTE FILTERED MALT EXTRACT AGAR
+original_name: DILUTE FILTERED MALT EXTRACT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: KOMODO Medium 1427
+  term:
+    id: komodo.medium:1427
+    label: DILUTE FILTERED MALT EXTRACT AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 1427 | DSMZ Medium: 1427 (mediadive.medium:1427)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '150'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:02.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1427'
+- timestamp: '2026-02-03T11:19:16.926589'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1427
+- timestamp: '2026-02-03T22:26:00.051781+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR, DSMZ_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR,
+    JCM_J253_4_MALT_AGAR, JCM_J38_2_MALT_AGAR'
+synonyms:
+- name: 4% MALT AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J253
+  original_category: imported
+- name: 2% MALT AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J38
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR
+- DSMZ_1427_DILUTE_FILTERED_MALT_EXTRACT_AGAR
+- JCM_J253_4_MALT_AGAR
+- JCM_J38_2_MALT_AGAR
+merge_fingerprint: 4303d0b80f02dce7e30231f44cc046d30a0de11515fa2f05086b374396a014a9

@@ -1,0 +1,52 @@
+name: VAN NIEL'S YEAST AGAR
+original_name: VAN NIEL'S YEAST AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1094
+  term:
+    id: mediadive.medium:J1094
+    label: VAN NIEL'S YEAST AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1094'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.607172Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1094'
+merge_fingerprint: 2f136b0b7d88633ca35aa5af6af2e789263ecf640c7258ec0d427a9b70297d2b
+merged_from:
+- JCM_J1094_VAN_NIEL_S_YEAST_AGAR

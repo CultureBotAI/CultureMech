@@ -11,7 +11,51 @@ media_term:
     label: M17 medium FOR LACTIC STREPTOCOCCI
 notes: 'Source: KOMODO ModelSEED | ID: 449 | DSMZ Medium: 449 (mediadive.medium:449)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
+  concentration:
+    value: '19'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +63,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 449'
+- timestamp: '2026-02-03T11:19:03.363679'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 449

@@ -1,0 +1,104 @@
+name: ACIDITHIOBACILLUS (APH) MEDIUM
+original_name: ACIDITHIOBACILLUS (APH) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.0
+media_term:
+  preferred_term: DSMZ Medium 271
+  term:
+    id: mediadive.medium:271
+    label: ACIDITHIOBACILLUS (APH) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium271.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4. Sterilize
+    the medium by filtration. Alternatively, autoclave separately the basal medium
+    (pH adjusted to 2.0) and the ferrous sulfate (8.00 g FeSO4 x 7 H2O in 50 ml 0.1
+    N H2SO4, pH not adjusted, in a sealed vessel under nitrogen gas atmosphere).
+- step_number: 2
+  action: MIX
+  description: 'Note: Incubate statically without shaking.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.624612Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 271'
+- timestamp: '2026-02-03T22:25:38.438012+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_271_ACIDITHIOBACILLUS_APH_MEDIUM, KOMODO_271-11477_MEDIUM_271_MODIFIED_FOR_DSM_11477,
+    KOMODO_271-11478_MEDIUM_271_MODIFIED_FOR_DSM_11478, KOMODO_271-24413_MEDIUM_271_MODIFIED_FOR_DSM_24413,
+    KOMODO_271_THIOBACILLUS_FERROOXIDANS_MEDIUM_APH'
+synonyms:
+- name: MEDIUM 271 MODIFIED FOR DSM 11477
+  source: KOMODO
+  source_id: komodo.medium:271_11477
+  original_category: imported
+- name: MEDIUM 271 MODIFIED FOR DSM 11478
+  source: KOMODO
+  source_id: komodo.medium:271_11478
+  original_category: imported
+- name: MEDIUM 271 MODIFIED FOR DSM 24413
+  source: KOMODO
+  source_id: komodo.medium:271_24413
+  original_category: imported
+- name: THIOBACILLUS FERROOXIDANS MEDIUM (APH)
+  source: KOMODO
+  source_id: komodo.medium:271
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_271_ACIDITHIOBACILLUS_APH_MEDIUM
+- KOMODO_271-11477_MEDIUM_271_MODIFIED_FOR_DSM_11477
+- KOMODO_271-11478_MEDIUM_271_MODIFIED_FOR_DSM_11478
+- KOMODO_271-24413_MEDIUM_271_MODIFIED_FOR_DSM_24413
+- KOMODO_271_THIOBACILLUS_FERROOXIDANS_MEDIUM_APH
+merge_fingerprint: b0450bbf4774e9eace3d4fcbfb1677b2c61a08ebc5f5e3eca8d354a8a8ba09f3

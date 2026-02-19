@@ -10,7 +10,15 @@ media_term:
     label: RABBIT BLOOD AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 646 | DSMZ Medium: 646 (mediadive.medium:646)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Blood Agar Base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Rabbit blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +26,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 646'
+- timestamp: '2026-02-03T11:19:02.876777'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 646

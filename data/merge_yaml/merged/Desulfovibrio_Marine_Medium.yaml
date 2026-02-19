@@ -1,0 +1,43 @@
+name: Desulfovibrio Marine Medium
+original_name: Desulfovibrio Marine Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: DESULFOVIBRIO MEDIUM (see Medium [M384])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M775
+  term:
+    id: TOGO:M775
+    label: Desulfovibrio Marine Medium
+notes: 'Source: https://togomedium.org/medium/M775
+
+  Original source: JCM - JCM_M750
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=750'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.691412Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M775'
+- timestamp: '2026-01-28T19:48:16.263917Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ffcbd8072b9a836395b26226ca2564b27636d3b889f25010e3e578f38c1ccdd4
+merged_from:
+- TOGO_M775_Desulfovibrio_Marine_Medium

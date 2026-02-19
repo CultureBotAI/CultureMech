@@ -10,7 +10,18 @@ media_term:
     label: OAT FLAKE medium
 notes: 'Source: KOMODO ModelSEED | ID: 189 | DSMZ Medium: 189 (mediadive.medium:189)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Oat flakes
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +29,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 189'
+- timestamp: '2026-02-03T11:18:57.143867'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 189
+ph_value: 6.0

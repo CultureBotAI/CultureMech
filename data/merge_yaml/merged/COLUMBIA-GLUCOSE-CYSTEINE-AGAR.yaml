@@ -1,0 +1,80 @@
+name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+original_name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 429c
+  term:
+    id: mediadive.medium:429c
+    label: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429c.pdf'
+ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Mix autoclaved Columbia agar base solution with 4% horse or sheep blood.
+    After cooling to 50°C add 1% glucose and 0.1% cysteine, mix well and pour plates.
+    Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 215.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.110324Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 429c'
+merge_fingerprint: e46cb57d158e43d5e78bb8accff36407f41d828c980b83ced8a4a21fc83c3734
+merged_from:
+- DSMZ_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR

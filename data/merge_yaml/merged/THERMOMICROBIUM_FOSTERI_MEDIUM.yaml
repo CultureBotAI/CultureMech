@@ -1,0 +1,133 @@
+name: THERMOMICROBIUM FOSTERI MEDIUM
+original_name: THERMOMICROBIUM FOSTERI MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 594
+  term:
+    id: mediadive.medium:594
+    label: THERMOMICROBIUM FOSTERI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium594.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.21'
+    unit: G_PER_L
+- preferred_term: NaH2PO4
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: 5e-06
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: MnSO4 x 5 H2O
+  term:
+    id: CHEBI:131524
+    label: MnSO4 x 5 H2O
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: 7e-05
+    unit: G_PER_L
+- preferred_term: MoO3
+  term:
+    id: CHEBI:30627
+    label: MoO3
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: Heptadecane
+  term:
+    id: CHEBI:16148
+    label: Heptadecane
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+- step_number: 2
+  action: AUTOCLAVE
+  description: Add the filter-sterilized heptadecane to the autoclaved medium. Solid
+    medium is prepared by adding 20.0 g/l agar. Prepare slopes in screw cap bottles
+    by adding the filter-sterilized heptadecane to the warm medium and carefully mixing
+    so that the heptadecane is evenly distributed in the agar. Avoid excessive air
+    bubble formation, and cool the agar slopes in a refrigerator or under an ice pack.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.673501Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 594'
+merge_fingerprint: 19aa8172aa0acf4ec0ebc514be7b492980c8f98bb775047449401516160587fe
+merged_from:
+- DSMZ_594_THERMOMICROBIUM_FOSTERI_MEDIUM

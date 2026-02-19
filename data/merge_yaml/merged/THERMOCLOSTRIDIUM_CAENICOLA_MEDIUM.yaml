@@ -1,0 +1,248 @@
+name: THERMOCLOSTRIDIUM CAENICOLA MEDIUM
+original_name: THERMOCLOSTRIDIUM CAENICOLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 640a
+  term:
+    id: mediadive.medium:640a
+    label: THERMOCLOSTRIDIUM CAENICOLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium640a.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except bicarbonate, cellobiose and cysteine. Sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then add bicarbonate and adjust pH to 6.8. Distribute medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add cellobiose and
+    cysteine after autoclaving from anoxic stock solutions prepared under 100% N2
+    gas atmosphere. Cellobiose has to be sterilized by filtration. Adjust pH of the
+    complete medium to 6.5, if necessary.
+- step_number: 2
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.806942Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 640a'
+- timestamp: '2026-02-03T22:25:46.242453+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_640a_THERMOCLOSTRIDIUM_CAENICOLA_MEDIUM, KOMODO_640-10061_MEDIUM_640_MODIFIED_FOR_DSM_10061,
+    KOMODO_640-10170_MEDIUM_640_MODIFIED_FOR_DSM_10170, KOMODO_640-10319_MEDIUM_640_MODIFIED_FOR_DSM_10319,
+    KOMODO_640-11055_MEDIUM_640_MODIFIED_FOR_DSM_11055, KOMODO_640-11056_MEDIUM_640_MODIFIED_FOR_DSM_11056,
+    KOMODO_640-11057_MEDIUM_640_MODIFIED_FOR_DSM_11057, KOMODO_640-11426_MEDIUM_640_MODIFIED_FOR_DSM_11426,
+    KOMODO_640-19027_MEDIUM_640_MODIFIED_FOR_DSM_19027, KOMODO_640-8685_MEDIUM_640_MODIFIED_FOR_DSM_8685,
+    KOMODO_640-8691_MEDIUM_640_MODIFIED_FOR_DSM_8691, KOMODO_640-8692_MEDIUM_640_MODIFIED_FOR_DSM_8692,
+    KOMODO_640_CALDICELLULOSIRUPTOR_medium'
+synonyms:
+- name: MEDIUM 640 MODIFIED FOR DSM 10061
+  source: KOMODO
+  source_id: komodo.medium:640_10061
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 10170
+  source: KOMODO
+  source_id: komodo.medium:640_10170
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 10319
+  source: KOMODO
+  source_id: komodo.medium:640_10319
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 11055
+  source: KOMODO
+  source_id: komodo.medium:640_11055
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 11056
+  source: KOMODO
+  source_id: komodo.medium:640_11056
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 11057
+  source: KOMODO
+  source_id: komodo.medium:640_11057
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 11426
+  source: KOMODO
+  source_id: komodo.medium:640_11426
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 19027
+  source: KOMODO
+  source_id: komodo.medium:640_19027
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 8685
+  source: KOMODO
+  source_id: komodo.medium:640_8685
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 8691
+  source: KOMODO
+  source_id: komodo.medium:640_8691
+  original_category: imported
+- name: MEDIUM 640 MODIFIED FOR DSM 8692
+  source: KOMODO
+  source_id: komodo.medium:640_8692
+  original_category: imported
+- name: CALDICELLULOSIRUPTOR medium
+  source: KOMODO
+  source_id: komodo.medium:640
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_640a_THERMOCLOSTRIDIUM_CAENICOLA_MEDIUM
+- KOMODO_640-10061_MEDIUM_640_MODIFIED_FOR_DSM_10061
+- KOMODO_640-10170_MEDIUM_640_MODIFIED_FOR_DSM_10170
+- KOMODO_640-10319_MEDIUM_640_MODIFIED_FOR_DSM_10319
+- KOMODO_640-11055_MEDIUM_640_MODIFIED_FOR_DSM_11055
+- KOMODO_640-11056_MEDIUM_640_MODIFIED_FOR_DSM_11056
+- KOMODO_640-11057_MEDIUM_640_MODIFIED_FOR_DSM_11057
+- KOMODO_640-11426_MEDIUM_640_MODIFIED_FOR_DSM_11426
+- KOMODO_640-19027_MEDIUM_640_MODIFIED_FOR_DSM_19027
+- KOMODO_640-8685_MEDIUM_640_MODIFIED_FOR_DSM_8685
+- KOMODO_640-8691_MEDIUM_640_MODIFIED_FOR_DSM_8691
+- KOMODO_640-8692_MEDIUM_640_MODIFIED_FOR_DSM_8692
+- KOMODO_640_CALDICELLULOSIRUPTOR_medium
+merge_fingerprint: 424a2c4f9211014cc5784357b65587bb77ca6092c668057561557b43e6d31d6b

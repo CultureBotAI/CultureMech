@@ -1,37 +1,56 @@
 name: BG-11(-N) Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: K2HPO4(Sigma P 3786)
-- agent_term:
-    preferred_term: '2'
-  amount: MgSO4•7H2O(Sigma 230391)
-- agent_term:
-    preferred_term: '3'
-  amount: CaCl2•2H2O(Sigma C-3881)
-- agent_term:
-    preferred_term: '4'
-  amount: Citric Acid•H2O(Fisher A 104)
-- agent_term:
-    preferred_term: '5'
-  amount: Ferric Ammonium Citrate
-- agent_term:
-    preferred_term: '6'
-  amount: Na2EDTA•2H2O(Sigma ED255)
-- agent_term:
-    preferred_term: '7'
-  amount: Na2CO3(Baker 3604)
-- agent_term:
-    preferred_term: '8'
-  amount: BG-11 Trace Metals Solution
-- agent_term:
-    preferred_term: '9'
-  amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker 3946)
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: K2HPO4(Sigma P 3786)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Citric Acid•H2O(Fisher A 104)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Ferric Ammonium Citrate'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2EDTA•2H2O(Sigma ED255)'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2CO3(Baker 3604)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: BG-11 Trace Metals Solution'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Sodium Thiosulfate Pentahydrate (agar media only,sterile)(Baker
+    3946)'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

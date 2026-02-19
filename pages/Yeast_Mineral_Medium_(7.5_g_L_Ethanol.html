@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#39;Yeast Mineral Medium (7.5 g/L Ethanol - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>&#39;Yeast Mineral Medium (7.5 g/L Ethanol</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">imported</span>
+                    
+                    <span class="badge">DEFINED</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+
+                    
+                    <div class="info-item">
+                        <div class="info-label">Database Reference</div>
+                        <div class="info-value">
+                            <a href="MEDIADB:398" class="external-link" target="_blank">
+                                MEDIADB:398
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>EDTA</td>
+                            <td>
+                                
+                                0.05133 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:64755" class="external-link" target="_blank">
+                                    CHEBI:64755
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Biotin</td>
+                            <td>
+                                
+                                0.0002047 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>Cross-references: KEGG:btn</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinate</td>
+                            <td>
+                                
+                                0.008123 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>Cross-references: KEGG:nac</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium iodide</td>
+                            <td>
+                                
+                                0.0006024 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:8346" class="external-link" target="_blank">
+                                    CHEBI:8346
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ethanol</td>
+                            <td>
+                                
+                                162.8 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16236" class="external-link" target="_blank">
+                                    CHEBI:16236
+                                </a>
+                                
+                            </td>
+                            <td>Cross-references: KEGG:etoh</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>myo-Inositol</td>
+                            <td>
+                                
+                                0.1388 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17268" class="external-link" target="_blank">
+                                    CHEBI:17268
+                                </a>
+                                
+                            </td>
+                            <td>Cross-references: KEGG:inost</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium chloride anhydrous</td>
+                            <td>
+                                
+                                0.03061 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>4-Aminobenzoate</td>
+                            <td>
+                                
+                                0.1458 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17836" class="external-link" target="_blank">
+                                    CHEBI:17836
+                                </a>
+                                
+                            </td>
+                            <td>Cross-references: KEGG:4abz</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Boric acid</td>
+                            <td>
+                                
+                                0.01617 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:33118" class="external-link" target="_blank">
+                                    CHEBI:33118
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium pantothenate</td>
+                            <td>
+                                
+                                0.002099 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31345" class="external-link" target="_blank">
+                                    CHEBI:31345
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxine HCl</td>
+                            <td>
+                                
+                                0.004863 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131531" class="external-link" target="_blank">
+                                    CHEBI:131531
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Manganese chloride</td>
+                            <td>
+                                
+                                0.005053 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ammonium sulfate</td>
+                            <td>
+                                
+                                37.84 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:62946" class="external-link" target="_blank">
+                                    CHEBI:62946
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cobalt chloride</td>
+                            <td>
+                                
+                                0.001261 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Zinc sulfate</td>
+                            <td>
+                                
+                                0.01565 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:35176" class="external-link" target="_blank">
+                                    CHEBI:35176
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Sodium molybdate</td>
+                            <td>
+                                
+                                0.001653 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cupric sulfate</td>
+                            <td>
+                                
+                                0.001201 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Magnesium sulfate</td>
+                            <td>
+                                
+                                2.029 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32599" class="external-link" target="_blank">
+                                    CHEBI:32599
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ferrous sulfate</td>
+                            <td>
+                                
+                                0.01079 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine HCl</td>
+                            <td>
+                                
+                                0.002965 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49105" class="external-link" target="_blank">
+                                    CHEBI:49105
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Potassium dihydrogen phosphate</td>
+                            <td>
+                                
+                                22.04 MILLIMOLAR
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Preparation Protocol</h2>
+                <ol class="step-list" style="margin-left: 2rem;">
+                    
+                    <li class="step-item">
+                        <div class="step-action">DISSOLVE</div>
+                        <div>Dissolve all ingredients in distilled water to specified concentrations</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">ADJUST_PH</div>
+                        <div>Adjust pH if specified in original formulation</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Sterilize by filtration (0.22 μm) to preserve heat-sensitive components</div>
+                        
+                        
+                    </li>
+                    
+                </ol>
+            </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Applications</h2>
+                <ul>
+                    
+                    <li>Cultivation of genome-sequenced organisms</li>
+                    
+                    <li>Metabolic modeling</li>
+                    
+                    <li>Systems biology research</li>
+                    
+                </ul>
+            </div>
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: MEDIADB_398_Yeast_Mineral_Medium_7.5_g_L_Ethanol.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>

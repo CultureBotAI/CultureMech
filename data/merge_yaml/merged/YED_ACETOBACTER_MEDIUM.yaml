@@ -1,0 +1,84 @@
+name: YED ACETOBACTER MEDIUM
+original_name: YED ACETOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1424
+  term:
+    id: mediadive.medium:1424
+    label: YED ACETOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1424.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.0. The medium may be solidified by adding 20.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.384379Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1424'
+- timestamp: '2026-02-03T22:25:27.499133+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1044_GLUCONACETOBACTER_RHAETICUS_MEDIUM, DSMZ_1424_YED_ACETOBACTER_MEDIUM,
+    DSMZ_1543_GY_-_MEDIUM, DSMZ_1603_ACETOBACTER_MUSTI_MEDIUM, DSMZ_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_MEDIUM,
+    KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium, KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium'
+synonyms:
+- name: GLUCONACETOBACTER RHAETICUS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1044
+  original_category: imported
+- name: GY - MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1543
+  original_category: imported
+- name: ACETOBACTER MUSTI MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1603
+  original_category: imported
+- name: ALTERNATIVE ACETOBACTER INTERMEDIUS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:850
+  original_category: imported
+- name: GLUCONACETOBACTER RHAETICUS medium
+  source: KOMODO
+  source_id: komodo.medium:1044
+  original_category: imported
+- name: ALTERNATIVE ACETOBACTER INTERMEDIUS medium
+  source: KOMODO
+  source_id: komodo.medium:850
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1044_GLUCONACETOBACTER_RHAETICUS_MEDIUM
+- DSMZ_1424_YED_ACETOBACTER_MEDIUM
+- DSMZ_1543_GY_-_MEDIUM
+- DSMZ_1603_ACETOBACTER_MUSTI_MEDIUM
+- DSMZ_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_MEDIUM
+- KOMODO_1044_GLUCONACETOBACTER_RHAETICUS_medium
+- KOMODO_850_ALTERNATIVE_ACETOBACTER_INTERMEDIUS_medium
+merge_fingerprint: 6a102f2691f01edf1c5f601010c632e32e487eaa6781f6ab50ec8553666af2ae

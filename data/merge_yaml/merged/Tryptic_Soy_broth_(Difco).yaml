@@ -1,0 +1,27 @@
+name: Tryptic Soy broth (Difco)
+original_name: Tryptic Soy broth (Difco)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptic soy broth (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2259
+  term:
+    id: TOGO:M2259
+    label: Tryptic Soy broth (Difco)
+notes: 'Source: https://togomedium.org/medium/M2259'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.233887Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2259'
+merge_fingerprint: 6b49e05ef3d52a9ed7c7bd4b0a180b25ec4bdff1041198024f101d9e9ee1d4e0
+merged_from:
+- TOGO_M2259_Tryptic_Soy_broth_Difco

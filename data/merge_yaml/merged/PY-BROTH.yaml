@@ -1,0 +1,91 @@
+name: PY-BROTH
+original_name: PY-BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 1071
+  term:
+    id: mediadive.medium:1071
+    label: PY-BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1071.pdf'
+ingredients:
+- preferred_term: Polypeptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 7 H2O
+  term:
+    id: CHEBI:86473
+    label: Na2MoO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 8.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.291887Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1071'
+- timestamp: '2026-02-03T22:25:28.123037+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1071_PY-BROTH, KOMODO_1071_PY-BROTH'
+categories:
+- imported
+merged_from:
+- DSMZ_1071_PY-BROTH
+- KOMODO_1071_PY-BROTH
+merge_fingerprint: c9e8287e76e304501e0a4876504d30ed45b9fe2fb34a3dd7a9c254a452d85441

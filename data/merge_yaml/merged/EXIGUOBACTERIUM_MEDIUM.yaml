@@ -1,0 +1,49 @@
+name: EXIGUOBACTERIUM MEDIUM
+original_name: EXIGUOBACTERIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 468
+  term:
+    id: mediadive.medium:468
+    label: EXIGUOBACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium468.pdf'
+ingredients:
+- preferred_term: Nutrient broth No. 2
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.274626Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 468'
+- timestamp: '2026-02-03T22:25:43.509087+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_468_EXIGUOBACTERIUM_MEDIUM, KOMODO_468_EXIGUOBACTERIUM_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_468_EXIGUOBACTERIUM_MEDIUM
+- KOMODO_468_EXIGUOBACTERIUM_MEDIUM
+merge_fingerprint: 4351ed724f3a9f9f401dc06308f78ff8913a92781efb4a51705126a7ddee65a3

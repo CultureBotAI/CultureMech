@@ -1,0 +1,107 @@
+name: MMJ-DO Medium
+original_name: MMJ-DO Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Sodium lactate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:75228
+    label: sodium lactate
+- preferred_term: Sodium ascorbate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:113451
+    label: sodium ascorbate
+- preferred_term: Modified MJ synthetic seawater (see Medium [M493])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M496
+  term:
+    id: TOGO:M496
+    label: MMJ-DO Medium
+notes: 'Source: https://togomedium.org/medium/M496
+
+  Original source: JCM - JCM_M495
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=495'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.163230Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M496'
+- timestamp: '2026-01-28T19:48:15.740398Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.049300'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas'
+merge_fingerprint: 1e348178fe19850486d34d7f0aab8e9682b49d0d8bb28dbf099f84d9f3d48290
+merged_from:
+- TOGO_M496_MMJ-DO_Medium

@@ -1,0 +1,133 @@
+name: Lentibacillus Medium
+original_name: Lentibacillus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: MnCl2・4H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Sodium glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: FeCl2・4H2O
+  concentration:
+    value: '36'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M372
+  term:
+    id: TOGO:M372
+    label: Lentibacillus Medium
+notes: 'Source: https://togomedium.org/medium/M372
+
+  Original source: JCM - JCM_M377-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=377'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.932723Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M372'
+- timestamp: '2026-01-28T19:48:18.755035Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:06.708053+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1335_Unnamed_medium, TOGO_M160_Halobacteria_Medium, TOGO_M372_Lentibacillus_Medium,
+    TOGO_M960_Halobacteria_Medium_With_15_NaCl'
+synonyms:
+- name: (Unnamed medium)
+  source: TOGO
+  source_id: TOGO:M1335
+  original_category: imported
+- name: Halobacteria Medium
+  source: TOGO
+  source_id: TOGO:M160
+  original_category: imported
+- name: Halobacteria Medium With 15% NaCl
+  source: TOGO
+  source_id: TOGO:M960
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1335_Unnamed_medium
+- TOGO_M160_Halobacteria_Medium
+- TOGO_M372_Lentibacillus_Medium
+- TOGO_M960_Halobacteria_Medium_With_15_NaCl
+merge_fingerprint: 1f65f51141c142f8c228bf33b8a60e7da00b3b75b47ea6bd4da70decffa4f7bf

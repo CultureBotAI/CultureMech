@@ -1,43 +1,65 @@
 name: Artificial Seawater Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: NaCl(Fisher S271-500)
-- agent_term:
-    preferred_term: '2'
-  amount: MgSO4•7H2O(Sigma 230391)
-- agent_term:
-    preferred_term: '3'
-  amount: KCl(Fisher P 217)
-- agent_term:
-    preferred_term: '4'
-  amount: NaNO3(Fisher BP360-500)
-- agent_term:
-    preferred_term: '5'
-  amount: CaCl2•2H2O(Sigma C-3881)
-- agent_term:
-    preferred_term: '6'
-  amount: KH2PO4(Sigma P 0662)
-- agent_term:
-    preferred_term: '7'
-  amount: Tricine (adjust to pH 8)(Sigma T-5816-256)
-- agent_term:
-    preferred_term: '8'
-  amount: P-II Metal Solution
-- agent_term:
-    preferred_term: '9'
-  amount: Chelated Iron Solution
-- agent_term:
-    preferred_term: '10'
-  amount: NH4Cl(Fisher A 649-500)
-- agent_term:
-    preferred_term: '11'
-  amount: Vitamin B12
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaCl(Fisher S271-500)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(Sigma 230391)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KCl(Fisher P 217)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KH2PO4(Sigma P 0662)'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Tricine (adjust to pH 8)(Sigma T-5816-256)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: P-II Metal Solution'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Chelated Iron Solution'
+- preferred_term: '10'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NH4Cl(Fisher A 649-500)'
+- preferred_term: '11'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

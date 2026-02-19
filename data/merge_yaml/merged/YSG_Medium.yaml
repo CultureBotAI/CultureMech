@@ -1,0 +1,64 @@
+name: YSG Medium
+original_name: YSG Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 3.7
+media_term:
+  preferred_term: DSMZ Medium 1805
+  term:
+    id: mediadive.medium:1805
+    label: YSG Medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 1 H2O
+  term:
+    id: CHEBI:86360
+    label: MnSO4 x 1 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 3.7 with H2SO4.
+- step_number: 2
+  action: AUTOCLAVE
+  description: For preparation of agar plates dissolve  agar in 500 ml distilled water
+    and autoclave separately. The basis medium should then be dissolved in 500 ml
+    distilled water only. Cool down after sterilization and mix.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.481550Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1805'
+merge_fingerprint: 02478a333d5f6182b128bb11a4c0d84825266f85601f3fa48cf55442b0eec4a1
+merged_from:
+- DSMZ_1805_YSG_Medium

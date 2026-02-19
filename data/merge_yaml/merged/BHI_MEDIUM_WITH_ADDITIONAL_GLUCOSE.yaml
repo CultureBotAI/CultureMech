@@ -1,0 +1,33 @@
+name: BHI MEDIUM WITH ADDITIONAL GLUCOSE
+original_name: BHI MEDIUM WITH ADDITIONAL GLUCOSE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 215b
+  term:
+    id: mediadive.medium:215b
+    label: BHI MEDIUM WITH ADDITIONAL GLUCOSE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium215b.pdf'
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.537874Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 215b'
+merge_fingerprint: 4e54e47e2a9524dbe5ce6745f1606e4ccb5cf5aba2b7defaaf6ebb788ab25ccf
+merged_from:
+- DSMZ_215b_BHI_MEDIUM_WITH_ADDITIONAL_GLUCOSE

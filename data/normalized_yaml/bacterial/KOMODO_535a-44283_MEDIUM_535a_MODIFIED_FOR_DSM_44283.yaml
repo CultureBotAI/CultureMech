@@ -10,7 +10,18 @@ media_term:
     label: MEDIUM 535a MODIFIED FOR DSM 44283
 notes: 'Source: KOMODO ModelSEED | ID: 535a_44283 | DSMZ Medium: 535a (mediadive.medium:535a)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +29,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 535a_44283'
+- timestamp: '2026-02-03T11:18:59.251693'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 535
+ph_value: 7.3

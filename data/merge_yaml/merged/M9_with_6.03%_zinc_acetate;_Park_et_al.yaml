@@ -1,0 +1,99 @@
+name: M9 with 6.03% zinc acetate; Park et al
+original_name: M9 with 6.03% zinc acetate; Park et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '11.1012'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '42.2654'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '8.55578'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.0449'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '18.6947'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Acetate
+  concentration:
+    value: '30.5239'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.802501Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 240, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-03T22:26:02.164323+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_238_M9_with_0.67_zinc_acetate_Park_et_al, MEDIADB_239_M9_with_3.35_zinc_acetate_Park_et_al,
+    MEDIADB_240_M9_with_6.03_zinc_acetate_Park_et_al'
+media_term:
+  preferred_term: MediaDB Medium 240
+  term:
+    id: MEDIADB:240
+    label: M9 with 6.03% zinc acetate; Park et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: M9 with 0.67% zinc acetate; Park et al
+  source: unknown
+  source_id: MEDIADB:238
+  original_category: imported
+- name: M9 with 3.35% zinc acetate; Park et al
+  source: unknown
+  source_id: MEDIADB:239
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_238_M9_with_0.67_zinc_acetate_Park_et_al
+- MEDIADB_239_M9_with_3.35_zinc_acetate_Park_et_al
+- MEDIADB_240_M9_with_6.03_zinc_acetate_Park_et_al
+merge_fingerprint: 1da0dffb93ad1ab9ffa864b43ed37ad843fc7cf51b35fba7a054eef5945c1420

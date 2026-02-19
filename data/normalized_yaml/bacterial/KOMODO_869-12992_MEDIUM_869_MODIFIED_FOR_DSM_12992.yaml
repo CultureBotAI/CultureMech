@@ -11,7 +11,25 @@ media_term:
     label: MEDIUM 869 MODIFIED FOR DSM 12992
 notes: 'Source: KOMODO ModelSEED | ID: 869_12992 | DSMZ Medium: 869 (mediadive.medium:869)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '5.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +37,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 869_12992'
+- timestamp: '2026-02-03T11:19:12.156455'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 869

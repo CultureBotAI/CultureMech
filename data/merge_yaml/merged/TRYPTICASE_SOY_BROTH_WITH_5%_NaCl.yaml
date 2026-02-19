@@ -1,0 +1,53 @@
+name: Trypticase Soy Broth With 5% NaCl
+original_name: Trypticase Soy Broth With 5% NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Trypticase soy broth (BD-BBL)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M906
+  term:
+    id: TOGO:M906
+    label: Trypticase Soy Broth With 5% NaCl
+notes: 'Source: https://togomedium.org/medium/M906
+
+  Original source: JCM - JCM_M869
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=869'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.938825Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M906'
+- timestamp: '2026-01-28T19:48:42.975082Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4b6cf0821bcf4185c6f9696d5dc5ac98a36b5364a900f41c2957f2473ae50ea1
+merged_from:
+- TOGO_M906_Trypticase_Soy_Broth_With_5_NaCl

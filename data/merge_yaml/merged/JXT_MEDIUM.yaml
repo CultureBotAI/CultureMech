@@ -1,0 +1,46 @@
+name: JXT Medium
+original_name: JXT Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Undefined component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Inorganic compound, Simple component, Defined component'
+- preferred_term: Trypticase peptone (BD-BBL)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M217
+  term:
+    id: TOGO:M217
+    label: JXT Medium
+notes: 'Source: https://togomedium.org/medium/M217
+
+  Original source: JCM - JCM_M224
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=224'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.635835Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M217'
+merge_fingerprint: 92e60ab590ba461be386b3f1710f7f6a8ab015144e77c5e7397656efcd39e84c
+merged_from:
+- TOGO_M217_JXT_Medium

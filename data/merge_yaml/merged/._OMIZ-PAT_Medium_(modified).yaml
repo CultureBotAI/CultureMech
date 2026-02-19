@@ -1,0 +1,802 @@
+name: . OMIZ-PAT Medium (modified)
+original_name: . OMIZ-PAT Medium (modified)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 1494
+  term:
+    id: mediadive.medium:1494
+    label: . OMIZ-PAT Medium (modified)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1494.pdf'
+ingredients:
+- preferred_term: Rabbit serum
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: L-Aspartic acid
+  term:
+    id: CHEBI:17053
+    label: L-Aspartic acid
+  concentration:
+    value: '2.36'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '13.6'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '12.4'
+    unit: G_PER_L
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '2.62'
+    unit: G_PER_L
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '2.62'
+    unit: G_PER_L
+- preferred_term: L-Lysine HCl
+  concentration:
+    value: '3.64'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53633
+    label: ''
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: L-Ornithine HCl
+  concentration:
+    value: '3.4'
+    unit: G_PER_L
+- preferred_term: L-Phenylalanine
+  term:
+    id: CHEBI:17295
+    label: L-Phenylalanine
+  concentration:
+    value: '3.3'
+    unit: G_PER_L
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '2.3'
+    unit: G_PER_L
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '10.5'
+    unit: G_PER_L
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '2.04'
+    unit: G_PER_L
+- preferred_term: L-Tyrosine
+  term:
+    id: CHEBI:17895
+    label: L-Tyrosine
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '2.34'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '19.36'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaH2PO4 x H2O
+  term:
+    id: CHEBI:37585
+    label: NaH2PO4 x H2O
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '32'
+    unit: G_PER_L
+- preferred_term: Citric acid
+  term:
+    id: CHEBI:30769
+    label: Citric acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: ' (trisodium salt)'
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Choline chloride
+  term:
+    id: CHEBI:133341
+    label: Choline chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Myo-inositol
+  term:
+    id: CHEBI:17268
+    label: Myo-inositol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamin pyrophosphate
+  term:
+    id: CHEBI:45931
+    label: Thiamin pyrophosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Coenzym A
+  term:
+    id: CHEBI:15346
+    label: Coenzym A
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: Flavin adenine dinucleotide
+  term:
+    id: CHEBI:24040
+    label: Flavin adenine dinucleotide
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: ß-nicotinamide adenine dinucleotide
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanesulfonic acid
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: N-acetylmuramic acid
+  term:
+    id: CHEBI:47965
+    label: N-acetylmuramic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: D-glucuronic acid
+  term:
+    id: CHEBI:4178
+    label: D-glucuronic acid
+  concentration:
+    value: '16'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: D-galacturonic acid
+  term:
+    id: CHEBI:18024
+    label: D-galacturonic acid
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: Pyruvic acid
+  term:
+    id: CHEBI:32816
+    label: Pyruvic acid
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: Fumaric acid
+  term:
+    id: CHEBI:18012
+    label: Fumaric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: ' (disodium salt)'
+- preferred_term: Formic acid
+  term:
+    id: CHEBI:30751
+    label: Formic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: Pyridoxal hydrochloride
+  term:
+    id: CHEBI:131529
+    label: Pyridoxal hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxal phosphate
+  term:
+    id: CHEBI:18405
+    label: Pyridoxal phosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: D
+  term:
+    id: CHEBI:29958
+    label: D
+  concentration:
+    value: '11.2'
+    unit: G_PER_L
+  notes: ' (L-lactic acid, sodium salt)'
+- preferred_term: Hypoxanthine
+  term:
+    id: CHEBI:17368
+    label: Hypoxanthine
+  concentration:
+    value: '0.028'
+    unit: G_PER_L
+- preferred_term: Uracil
+  term:
+    id: CHEBI:17568
+    label: Uracil
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+- preferred_term: Thymidine
+  term:
+    id: CHEBI:17748
+    label: Thymidine
+  concentration:
+    value: '0.048'
+    unit: G_PER_L
+- preferred_term: N-(2-acetamido)-2-aminoethanesulfonic acid
+  term:
+    id: CHEBI:39060
+    label: N-(2-acetamido)-2-aminoethanesulfonic acid
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: DL-carnitine
+  term:
+    id: CHEBI:17126
+    label: DL-carnitine
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Putrescine 2 HCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: D-Fructose
+  term:
+    id: CHEBI:15824
+    label: D-Fructose
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: D-Maltose
+  term:
+    id: CHEBI:17306
+    label: D-Maltose
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: D-Mannitol
+  term:
+    id: CHEBI:16899
+    label: D-Mannitol
+  concentration:
+    value: '16'
+    unit: G_PER_L
+- preferred_term: D-Mannose
+  term:
+    id: CHEBI:16024
+    label: D-Mannose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: D-Arabinose
+  term:
+    id: CHEBI:17108
+    label: D-Arabinose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: L-Fucose
+  term:
+    id: CHEBI:18287
+    label: L-Fucose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: D-Trehalose
+  term:
+    id: CHEBI:27082
+    label: D-Trehalose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: D-Sucrose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: L-Rhamnose
+  term:
+    id: CHEBI:62345
+    label: L-Rhamnose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: CaCl2 x H2O
+  term:
+    id: CHEBI:3312
+    label: CaCl2 x H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Asialofetuin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamine B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Folinic acid
+  term:
+    id: CHEBI:42521
+    label: Folinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: ' (calcium salt)'
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Riboflavine
+  term:
+    id: CHEBI:17015
+    label: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: 2-Methylbutyric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Valeric acid
+  term:
+    id: CHEBI:17418
+    label: Valeric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: DL-alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: DL-alpha-lipoic acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanol
+  term:
+    id: CHEBI:41218
+    label: 2-Mercaptoethanol
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.13038'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.39997'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: CuSO4
+  term:
+    id: CHEBI:23414
+    label: CuSO4
+  concentration:
+    value: '0.0789'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '1.69'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '28.7'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+- preferred_term: Na2SeO3
+  term:
+    id: CHEBI:48843
+    label: Na2SeO3
+  concentration:
+    value: '1.73'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+- preferred_term: NiSO4 x 6 H2O
+  term:
+    id: CHEBI:53001
+    label: NiSO4 x 6 H2O
+  concentration:
+    value: '0.131'
+    unit: G_PER_L
+- preferred_term: SnCl2 x 2 H2O
+  term:
+    id: CHEBI:78074
+    label: SnCl2 x 2 H2O
+  concentration:
+    value: '0.118'
+    unit: G_PER_L
+- preferred_term: NaVO3
+  term:
+    id: CHEBI:75221
+    label: NaVO3
+  concentration:
+    value: '0.61'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '12.4'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+- preferred_term: Fe SO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: Fe SO4 x 7 H2O
+  concentration:
+    value: '2.78015'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.3646'
+    unit: G_PER_L
+- preferred_term: Ascorbic acid
+  term:
+    id: CHEBI:22652
+    label: Ascorbic acid
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Glutathione
+  term:
+    id: CHEBI:16856
+    label: Glutathione
+  concentration:
+    value: '153.66'
+    unit: G_PER_L
+- preferred_term: Cholesterol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Add 10 ml rabbit serum, flush the medium with N2CO2, adjust the pH
+    to 6.9 and filter-sterilize the completed medium into tubes.
+- step_number: 2
+  action: HEAT
+  description: This recipe describes the preparation of 200 ml medium, which can be
+    used for about 4 weeks when kept at 4°C.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Prepare Solutions A, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Prepare Solutions B, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Prepare Solutions C, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Prepare Solutions D, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Prepare Solutions E, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 8
+  action: FILTER_STERILIZE
+  description: Prepare Solution F, flush with nitrogen to make it anoxic, filter-sterilize
+    and store at 4°C
+- step_number: 9
+  action: FILTER_STERILIZE
+  description: Prepare Solutions G, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 10
+  action: FILTER_STERILIZE
+  description: Prepare Solutions H, flush each with nitrogen to make them anoxic,
+    filter-sterilize and store at -20°C
+- step_number: 11
+  action: HEAT
+  description: Prepare Solution I and store at -20°C
+- step_number: 12
+  action: HEAT
+  description: D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol (1:10);
+    store at -20°C
+- step_number: 13
+  action: MIX
+  description: Hemin (0.2 mM) in NaOH (10 mM)
+- step_number: 14
+  action: FILTER_STERILIZE
+  description: Homogenize 42 g fresh baker yeast in 140 ml distilled water, incubate
+    for 24h at 56°C and centrifuge to harvest the supernatant. Adjust pH to 7 with
+    NaOH, make anoxic, filter-sterilize and store at -80°C
+- step_number: 15
+  action: FILTER_STERILIZE
+  description: Prepare Trace elements I, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
+- step_number: 16
+  action: FILTER_STERILIZE
+  description: Prepare Trace elements II, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
+- step_number: 17
+  action: FILTER_STERILIZE
+  description: Prepare Trace elements III, flush with nitrogen to make them anoxic,
+    filter-sterilize and store at 4°C
+- step_number: 18
+  action: MIX
+  description: FeSO4 x 7H2O (10 mM) in HCl (10 mM)
+- step_number: 19
+  action: FILTER_STERILIZE
+  description: Prepare Supplements 1, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 20
+  action: MIX
+  description: Ascorbic acid (10%; w/v); in distilled water, neutralize with NaOH
+- step_number: 21
+  action: FILTER_STERILIZE
+  description: Prepare Supplements 2, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 22
+  action: MIX
+  description: Glutathion (0.5 M); in distilled water, neutralize with NaOH
+- step_number: 23
+  action: FILTER_STERILIZE
+  description: Prepare Supplements 3, flush with nitrogen to make them anoxic, filter-sterilize
+    and store at -20°C
+- step_number: 24
+  action: HEAT
+  description: Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C
+- step_number: 25
+  action: HEAT
+  description: NaHCO3 (10%; w/v) in distilled water, store at 4°C
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.604316Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1494'
+- timestamp: '2026-01-28T19:48:13.398576Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 07ddeb315dd60faf5fd0f5366f6401e9a1777f604b595a6cd843c6792a00c96f
+merged_from:
+- DSMZ_1494_._OMIZ-PAT_Medium_modified

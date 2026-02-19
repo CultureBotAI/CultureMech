@@ -1,0 +1,310 @@
+name: Caldisphaera Medium
+original_name: Caldisphaera Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: Sulfur, powdered
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na3-citrate x 2 H2O
+  concentration:
+    value: '2.94'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:32142
+    label: ''
+- preferred_term: Yeast extract (OXOID)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Allen’s trace element solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 10 N H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: MnCl2 x 4 H2O
+  concentration:
+    value: '180'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuCl2 x 2 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86318
+    label: copper(II) chloride dihydrate
+- preferred_term: VOSO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:87014
+    label: vanadyl sulfate hexahydrate
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '450'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: CoSO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:53470
+    label: cobalt(2+) sulfate
+- preferred_term: 1 N HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
+    compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Thiamine-HCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+- preferred_term: Pyridoxine-HCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Folic acid
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:27470
+    label: folic acid
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:17015
+    label: riboflavin
+- preferred_term: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: Lipoic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:16494
+    label: lipoic acid
+- preferred_term: D-Ca-pantothenate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component'
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2680
+  term:
+    id: TOGO:M2680
+    label: Caldisphaera Medium
+notes: 'Source: https://togomedium.org/medium/M2680
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium991.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.043602Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2680'
+- timestamp: '2026-01-28T19:48:18.399698Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.579704'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 10 N H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: 1 N HCl; Added default
+    concentration for ingredient: N2'
+merge_fingerprint: 0f12dc19816a0049284ce04b729e672ebff3c352f3b90bc13c308a03f3116cd3
+merged_from:
+- TOGO_M2680_Caldisphaera_Medium

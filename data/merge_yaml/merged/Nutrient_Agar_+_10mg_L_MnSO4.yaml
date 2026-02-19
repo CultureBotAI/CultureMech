@@ -1,0 +1,63 @@
+name: Nutrient Agar + 10mg/L MnSO4
+original_name: Nutrient Agar + 10mg/L MnSO4
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MnSO4 x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:75211
+    label: manganese(II) sulfate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2263
+  term:
+    id: TOGO:M2263
+    label: Nutrient Agar + 10mg/L MnSO4
+notes: 'Source: https://togomedium.org/medium/M2263
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.241040Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2263'
+- timestamp: '2026-01-28T19:48:12.271982Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 56fecd9345a3074c4f07ced46f3a9a205c511275e5c55234cac9ebfd6f50ccd0
+merged_from:
+- TOGO_M2263_Nutrient_Agar_10mg_L_MnSO4

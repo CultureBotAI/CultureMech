@@ -1,0 +1,33 @@
+name: HALF STRENGTH MARINE AGAR
+original_name: HALF STRENGTH MARINE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J916
+  term:
+    id: mediadive.medium:J916
+    label: HALF STRENGTH MARINE AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=916'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.996764Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J916'
+merge_fingerprint: 3e2aa29f83ff038aa541b226c72cf931273c1a47ed518311780febbfdb01c644
+merged_from:
+- JCM_J916_HALF_STRENGTH_MARINE_AGAR

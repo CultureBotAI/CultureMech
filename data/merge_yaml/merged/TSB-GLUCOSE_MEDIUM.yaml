@@ -1,0 +1,46 @@
+name: TSB-GLUCOSE MEDIUM
+original_name: TSB-GLUCOSE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 1489
+  term:
+    id: mediadive.medium:1489
+    label: TSB-GLUCOSE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1489.pdf'
+ingredients:
+- preferred_term: Trypticase soy broth
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: alpha-D-Glucose
+  term:
+    id: CHEBI:17925
+    label: alpha-D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 6.5 and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.590102Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1489'
+merge_fingerprint: 4a639468c38ac6889fa9ab7050c6a89c175ad6ddc315dab5f05c58d860e24dad
+merged_from:
+- DSMZ_1489_TSB-GLUCOSE_MEDIUM

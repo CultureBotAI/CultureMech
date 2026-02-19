@@ -1,0 +1,108 @@
+name: TODD-HEWITT MEDIUM
+original_name: TODD-HEWITT MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 697
+  term:
+    id: mediadive.medium:697
+    label: TODD-HEWITT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium697.pdf'
+ingredients:
+- preferred_term: Meat infusion
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.956092Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 697'
+- timestamp: '2026-02-03T22:25:47.137582+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_697_TODD-HEWITT_MEDIUM, KOMODO_697-10695_MEDIUM_697_MODIFIED_FOR_DSM_10695,
+    KOMODO_697-11867_MEDIUM_697_MODIFIED_FOR_DSM_11867, KOMODO_697-11868_MEDIUM_697_MODIFIED_FOR_DSM_11868,
+    KOMODO_697-20566_MEDIUM_697_MODIFIED_FOR_DSM_20566, KOMODO_697-20617_MEDIUM_697_MODIFIED_FOR_DSM_20617,
+    KOMODO_697-24048_MEDIUM_697_MODIFIED_FOR_DSM_24048, KOMODO_697_TODD-HEWITT_medium'
+synonyms:
+- name: MEDIUM 697 MODIFIED FOR DSM 10695
+  source: KOMODO
+  source_id: komodo.medium:697_10695
+  original_category: imported
+- name: MEDIUM 697 MODIFIED FOR DSM 11867
+  source: KOMODO
+  source_id: komodo.medium:697_11867
+  original_category: imported
+- name: MEDIUM 697 MODIFIED FOR DSM 11868
+  source: KOMODO
+  source_id: komodo.medium:697_11868
+  original_category: imported
+- name: MEDIUM 697 MODIFIED FOR DSM 20566
+  source: KOMODO
+  source_id: komodo.medium:697_20566
+  original_category: imported
+- name: MEDIUM 697 MODIFIED FOR DSM 20617
+  source: KOMODO
+  source_id: komodo.medium:697_20617
+  original_category: imported
+- name: MEDIUM 697 MODIFIED FOR DSM 24048
+  source: KOMODO
+  source_id: komodo.medium:697_24048
+  original_category: imported
+- name: TODD-HEWITT medium
+  source: KOMODO
+  source_id: komodo.medium:697
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_697_TODD-HEWITT_MEDIUM
+- KOMODO_697-10695_MEDIUM_697_MODIFIED_FOR_DSM_10695
+- KOMODO_697-11867_MEDIUM_697_MODIFIED_FOR_DSM_11867
+- KOMODO_697-11868_MEDIUM_697_MODIFIED_FOR_DSM_11868
+- KOMODO_697-20566_MEDIUM_697_MODIFIED_FOR_DSM_20566
+- KOMODO_697-20617_MEDIUM_697_MODIFIED_FOR_DSM_20617
+- KOMODO_697-24048_MEDIUM_697_MODIFIED_FOR_DSM_24048
+- KOMODO_697_TODD-HEWITT_medium
+merge_fingerprint: f3182b414d05338cb66d4a7622672a6871e663ebcc33a7dab7ba15cc7b3f04d2

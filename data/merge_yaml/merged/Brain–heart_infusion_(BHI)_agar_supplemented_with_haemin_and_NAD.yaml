@@ -1,0 +1,53 @@
+name: Brain–heart infusion (BHI) agar supplemented with haemin and NAD
+original_name: Brain–heart infusion (BHI) agar supplemented with haemin and NAD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Haemin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:50385
+    label: Haemin
+- preferred_term: NAD
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+- preferred_term: Agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Brain–heart infusion (BHI) agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2924
+  term:
+    id: TOGO:M2924
+    label: Brain–heart infusion (BHI) agar supplemented with haemin and NAD
+notes: 'Source: https://togomedium.org/medium/M2924'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.408026Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2924'
+- timestamp: '2026-01-28T19:48:41.397162Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: af84ff17bc6e15fd974e38c9bb09b8ff4e1c9f1f1d75beeb31b16b5a1bb63876
+merged_from:
+- TOGO_M2924_Brain_heart_infusion_BHI_agar_supplemented_with_haemin_and_NAD

@@ -1,0 +1,148 @@
+name: ABM
+original_name: ABM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 3.0
+media_term:
+  preferred_term: CCAP Medium C1
+  term:
+    id: mediadive.medium:C1
+    label: ABM
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_ABM.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '23.4'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.097'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.041'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2 MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2 MoO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Thiamine hydrochloride
+  term:
+    id: CHEBI:49105
+    label: Thiamine hydrochloride
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Cyanocobalamine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
+- step_number: 2
+  action: AUTOCLAVE
+  description: "The stock solutions are those for 3N-BBM+V. Make up to 1 litre with\
+    \ distilled water and adjust\r\nthe pH to 3.0 with 1M NaOH or 1M HCl. Autoclave\
+    \ at 15 psi for 15 minutes."
+- step_number: 3
+  action: MIX
+  description: 'Ensure elements are added in the following sequence:'
+- step_number: 4
+  action: AUTOCLAVE
+  description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Filter sterile
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
+applications:
+- Microbial cultivation
+references:
+- reference: https://doi.org/10.1016/j.protis.2005.04.004
+curation_history:
+- timestamp: '2026-01-26T17:53:19.470246Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C1'
+merge_fingerprint: 46fad93c978cc411fc71afd3a8cc354641de0b03b65386e546b5ab773d4fcb82
+merged_from:
+- CCAP_C1_ABM

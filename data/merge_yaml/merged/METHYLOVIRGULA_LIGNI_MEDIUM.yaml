@@ -1,0 +1,138 @@
+name: METHYLOVIRGULA LIGNI MEDIUM
+original_name: METHYLOVIRGULA LIGNI MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5-5.8
+media_term:
+  preferred_term: DSMZ Medium 1219
+  term:
+    id: mediadive.medium:1219
+    label: METHYLOVIRGULA LIGNI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1219.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '0.792'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2MoO4
+  term:
+    id: CHEBI:75215
+    label: Na2MoO4
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 5.0 - 5.8. Prepare the medium in flasks or tubes with
+    screw caps. The methanol may either be filter sterilised or autoclaved in half
+    full serum bottles sealed with a rubber stopper and a crimp closure. Add to the
+    cooled autoclaved medium. Agar may be added at 15 g/l for solid media.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.748810Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1219'
+- timestamp: '2026-02-03T22:25:30.711592+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1219_METHYLOVIRGULA_LIGNI_MEDIUM, KOMODO_1219_METHYLOVIRGULA_LIGNI_medium'
+synonyms:
+- name: METHYLOVIRGULA LIGNI medium
+  source: KOMODO
+  source_id: komodo.medium:1219
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1219_METHYLOVIRGULA_LIGNI_MEDIUM
+- KOMODO_1219_METHYLOVIRGULA_LIGNI_medium
+merge_fingerprint: a5a134e8f0f589f33576a5133e8e97a136f8ef5606448c85c86b0e6503ddd45b

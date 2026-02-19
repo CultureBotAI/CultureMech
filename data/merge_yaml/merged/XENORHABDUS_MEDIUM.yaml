@@ -1,0 +1,78 @@
+name: XENORHABDUS MEDIUM
+original_name: XENORHABDUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 423
+  term:
+    id: mediadive.medium:423
+    label: XENORHABDUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium423.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve and adjust pH to 7.2. Add 1.5% agar if required. Sterilize
+    at 121°C for 20 min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.095469Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 423'
+- timestamp: '2026-02-03T22:25:36.402942+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1737_STAPPIA_QUADRATIBRACATA_MEDIUM_28M-7, DSMZ_364_PYEA_MEDIUM,
+    DSMZ_423_XENORHABDUS_MEDIUM, KOMODO_364_PYEA_medium, KOMODO_423_XENORHABDUS_medium'
+synonyms:
+- name: STAPPIA QUADRATIBRACATA MEDIUM (28M-7)
+  source: MediaDive
+  source_id: mediadive.medium:1737
+  original_category: imported
+- name: PYEA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:364
+  original_category: imported
+- name: PYEA medium
+  source: KOMODO
+  source_id: komodo.medium:364
+  original_category: imported
+- name: XENORHABDUS medium
+  source: KOMODO
+  source_id: komodo.medium:423
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1737_STAPPIA_QUADRATIBRACATA_MEDIUM_28M-7
+- DSMZ_364_PYEA_MEDIUM
+- DSMZ_423_XENORHABDUS_MEDIUM
+- KOMODO_364_PYEA_medium
+- KOMODO_423_XENORHABDUS_medium
+merge_fingerprint: e650a705856a5678e63db754c376d529883c17d8d918de1e4955f054b6c6d973

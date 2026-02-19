@@ -1,0 +1,115 @@
+name: 'Soilwater: Peat Medium'
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Green House Soil'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCO3(Fisher C 64)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Supplemented Seawater'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: soilwater-peat-medium, URL: https://utex.org/products/soilwater-peat-medium'
+- timestamp: '2026-02-03T22:25:24.962929+00:00'
+  curator: recipe-merger
+  action: Merged 10 duplicate recipes into canonical record
+  notes: 'Sources: 2X_Soil_+_Seawater_Medium, Ag_Diatom_Medium, CR1+_Diatom_Medium,
+    CR1-S_Diatom_Medium, CR1_Diatom_Medium, Combo_Diatom_Medium, Polytomella_Medium,
+    Soil_Extract_+_Sodium_Metasilicate_Medium, Soilwater_GR+_Medium, Soilwater_Peat_Medium'
+references:
+- reference_id: UTEX:soilwater-peat-medium
+- reference_id: https://utex.org/products/soilwater-peat-medium
+original_name: 'Soilwater: Peat Medium'
+synonyms:
+- name: 2X Soil + Seawater Medium
+  source: unknown
+  original_category: ALGAE
+- name: Ag Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: CR1+ Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: CR1-S Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: CR1 Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: Combo Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: Polytomella Medium
+  source: unknown
+  original_category: ALGAE
+- name: Soil Extract + Sodium Metasilicate Medium
+  source: unknown
+  original_category: ALGAE
+- name: 'Soilwater: GR+ Medium'
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- 2X_Soil_+_Seawater_Medium
+- Ag_Diatom_Medium
+- CR1+_Diatom_Medium
+- CR1-S_Diatom_Medium
+- CR1_Diatom_Medium
+- Combo_Diatom_Medium
+- Polytomella_Medium
+- Soil_Extract_+_Sodium_Metasilicate_Medium
+- Soilwater_GR+_Medium
+- Soilwater_Peat_Medium
+merge_fingerprint: 7ee74ca6db4b367eec57934b47ce1e5b6df3bec871194875b45bb7de23168c0b

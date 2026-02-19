@@ -1,0 +1,139 @@
+name: CMC Medium (N2/CO2)
+original_name: CMC Medium (N2/CO2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Na-resazurin solution (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: D-Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Na2CO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Cellobiose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:17057
+    label: cellobiose
+- preferred_term: Maltose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:18167
+    label: alpha-maltose
+- preferred_term: Starch (soluble)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Casitone
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: L-Cysteine-HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+- preferred_term: Meat filtrate
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaOH 1 N
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: Ground beef (fat free)
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2717
+  term:
+    id: TOGO:M2717
+    label: CMC Medium (N2/CO2)
+notes: 'Source: https://togomedium.org/medium/M2717
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium110a.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.123023Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2717'
+- timestamp: '2026-01-28T19:48:29.066868Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.840921'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 992b10fdd5274668a65223601bd966b2711ba34e37a5d2e538067b4f8e0bc0b4
+merged_from:
+- TOGO_M2717_CMC_Medium_N2_CO2

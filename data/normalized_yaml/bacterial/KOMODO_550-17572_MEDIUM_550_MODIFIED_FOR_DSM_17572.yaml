@@ -10,7 +10,39 @@ media_term:
     label: MEDIUM 550 MODIFIED FOR DSM 17572
 notes: 'Source: KOMODO ModelSEED | ID: 550_17572 | DSMZ Medium: 550 (mediadive.medium:550)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Czapek Dox agar
+  term:
+    id: CHEBI:2509
+    label: Czapek Dox agar
+  concentration:
+    value: '48'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '6.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +50,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 550_17572'
+- timestamp: '2026-02-03T11:19:14.701788'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 550
+ph_value: 7.2

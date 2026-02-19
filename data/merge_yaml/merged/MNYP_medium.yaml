@@ -1,0 +1,144 @@
+name: MNYP medium
+original_name: MNYP medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Sodium acetate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:29864
+    label: mannitol
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tween 80 solution**
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Salts solution***
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Tween 80
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Distilled Water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: MnSO4·4H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M3287
+  term:
+    id: TOGO:M3287
+    label: MNYP medium
+notes: 'Source: https://togomedium.org/medium/M3287
+
+  Original source: NBRC - NBRC_M1647-2
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1647'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.262445Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M3287'
+- timestamp: '2026-01-28T19:48:30.585392Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.157637'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+merge_fingerprint: e3e39e3d06587b8d571d7be42b2f489d435eb776dfac5db5a89b6ed5fb885ca5
+merged_from:
+- TOGO_M3287_MNYP_medium

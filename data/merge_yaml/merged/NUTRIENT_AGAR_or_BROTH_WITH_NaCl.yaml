@@ -1,0 +1,102 @@
+name: NUTRIENT AGAR or BROTH WITH NaCl
+original_name: NUTRIENT AGAR or BROTH WITH NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 101
+  term:
+    id: mediadive.medium:101
+    label: NUTRIENT AGAR or BROTH WITH NaCl
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium101.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.166924Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 101'
+- timestamp: '2026-02-03T22:25:27.168073+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl, DSMZ_114_PARACOCCUS_HALODENITRIFICANS_MEDIUM,
+    DSMZ_115_VIBRIO_NATRIEGENS_MEDIUM, DSMZ_115a_REACTIVATION_WITH_LIQUID_MEDIUM_115,
+    DSMZ_952_1_10_NUTRIENT_AGAR_NO.2, DSMZ_953_1_100_NUTRIENT_AGAR_NO.2, KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl,
+    KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium, KOMODO_115_VIBRIO_NATRIEGENS_medium,
+    KOMODO_952_1_10_NUTRIENT_AGAR_NO.2, KOMODO_953_1_100_NUTRIENT_AGAR_NO.2'
+synonyms:
+- name: PARACOCCUS HALODENITRIFICANS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:114
+  original_category: imported
+- name: VIBRIO NATRIEGENS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:115
+  original_category: imported
+- name: REACTIVATION WITH LIQUID MEDIUM 115
+  source: MediaDive
+  source_id: mediadive.medium:115a
+  original_category: imported
+- name: 1/10 NUTRIENT AGAR NO.2
+  source: MediaDive
+  source_id: mediadive.medium:952
+  original_category: imported
+- name: 1/100 NUTRIENT AGAR NO.2
+  source: MediaDive
+  source_id: mediadive.medium:953
+  original_category: imported
+- name: PARACOCCUS HALODENITRIFICANS medium
+  source: KOMODO
+  source_id: komodo.medium:114
+  original_category: imported
+- name: VIBRIO NATRIEGENS medium
+  source: KOMODO
+  source_id: komodo.medium:115
+  original_category: imported
+- name: 1/10 NUTRIENT AGAR NO.2
+  source: KOMODO
+  source_id: komodo.medium:952
+  original_category: imported
+- name: 1/100 NUTRIENT AGAR NO.2
+  source: KOMODO
+  source_id: komodo.medium:953
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl
+- DSMZ_114_PARACOCCUS_HALODENITRIFICANS_MEDIUM
+- DSMZ_115_VIBRIO_NATRIEGENS_MEDIUM
+- DSMZ_115a_REACTIVATION_WITH_LIQUID_MEDIUM_115
+- DSMZ_952_1_10_NUTRIENT_AGAR_NO.2
+- DSMZ_953_1_100_NUTRIENT_AGAR_NO.2
+- KOMODO_101_NUTRIENT_AGAR_or_BROTH_WITH_NaCl
+- KOMODO_114_PARACOCCUS_HALODENITRIFICANS_medium
+- KOMODO_115_VIBRIO_NATRIEGENS_medium
+- KOMODO_952_1_10_NUTRIENT_AGAR_NO.2
+- KOMODO_953_1_100_NUTRIENT_AGAR_NO.2
+merge_fingerprint: b666ac462de10a5c4549a7da688c02c1100a953c3cf0be81a811eaa677644a08

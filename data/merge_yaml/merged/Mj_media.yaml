@@ -1,0 +1,133 @@
+name: Mj media
+original_name: Mj media
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Urea
+  term:
+    id: CHEBI:16199
+    label: Urea
+  concentration:
+    value: '34.965'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:urea'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.000819'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '14.6071'
+    unit: MILLIMOLAR
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.002917'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001476'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '4.9186'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '1.0203'
+    unit: MILLIMOLAR
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00873'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '16.6475'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxamine HCl
+  concentration:
+    value: '0.00977'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine-HCl
+  term:
+    id: CHEBI:52891
+    label: Cysteine-HCl
+  concentration:
+    value: '6.34437'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '11.0224'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.00481'
+    unit: MILLIMOLAR
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '10.2006'
+    unit: MILLIMOLAR
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '47.7867'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.968826Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 153, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:22.370745Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 153
+  term:
+    id: MEDIADB:153
+    label: Mj media
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: f6e5c2413b587a1b1e217aabbfd701fc73061f7156020e1e5fb591a0493b140e
+merged_from:
+- MEDIADB_153_Mj_media

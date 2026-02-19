@@ -1,0 +1,78 @@
+name: N-Z-Amine-Medium
+original_name: N-Z-Amine-Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple
+    component, Inorganic compound'
+  term:
+    id: CHEBI:3311
+    label: calcium carbonate
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Starch, soluble
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: N-Z-Amine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2370
+  term:
+    id: TOGO:M2370
+    label: N-Z-Amine-Medium
+notes: 'Source: https://togomedium.org/medium/M2370
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium554.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.410644Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2370'
+- timestamp: '2026-01-28T19:48:35.294259Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 25597aae785c4be551ef0fb62beef9b3177c7bb9ae4dcbb7be6939a4aa111cbe
+merged_from:
+- TOGO_M2370_N-Z-Amine-Medium

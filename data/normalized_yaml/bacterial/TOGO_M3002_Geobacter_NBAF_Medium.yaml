@@ -94,8 +94,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '20'
@@ -186,29 +192,44 @@ ingredients:
 - preferred_term: CoCl2·6H2O
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4·7H2O
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CuCl2·2H2O
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: AlK(SO4)2
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:86463
     label: potassium aluminium sulfate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M3002
   term:
@@ -230,3 +251,11 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.008589'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    CoCl2·6H2O; Added default concentration for ingredient: ZnSO4·7H2O; Added default
+    concentration for ingredient: CuCl2·2H2O; Added default concentration for ingredient:
+    AlK(SO4)2; Added default concentration for ingredient: NaOH'

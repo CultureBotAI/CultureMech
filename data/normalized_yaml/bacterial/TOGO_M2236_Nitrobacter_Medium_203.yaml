@@ -31,6 +31,9 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
 - preferred_term: Solution F
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CaCl2
   concentration:
     value: '2'
@@ -172,3 +175,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.812533'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Solution F'

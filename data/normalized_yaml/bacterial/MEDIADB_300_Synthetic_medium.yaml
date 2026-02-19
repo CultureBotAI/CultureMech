@@ -145,9 +145,6 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.0487'
     unit: MILLIMOLAR
@@ -176,6 +173,11 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 300, Reference:
     Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-06T05:10:32.522586Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 media_term:
   preferred_term: MediaDB Medium 300
   term:

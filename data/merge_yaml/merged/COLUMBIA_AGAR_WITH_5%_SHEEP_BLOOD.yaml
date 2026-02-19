@@ -1,0 +1,98 @@
+name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
+original_name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 1331
+  term:
+    id: mediadive.medium:1331
+    label: COLUMBIA AGAR WITH 5% SHEEP BLOOD
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1331.pdf'
+ingredients:
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '9.52381'
+    unit: G_PER_L
+- preferred_term: Tryptic Digest of beef heart
+  concentration:
+    value: '2.85714'
+    unit: G_PER_L
+- preferred_term: Corn starch
+  concentration:
+    value: '0.952381'
+    unit: G_PER_L
+  term:
+    id: CHEBI:28017
+    label: ''
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.7619'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.2857'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: 1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat
+    to boiling to dissolve completely.
+- step_number: 2
+  action: HEAT
+  description: 2. Sterilize by autoclaving for 15 min at 121°C.
+- step_number: 3
+  action: HEAT
+  description: 3. Cool to 45°C. Add 5% sterile defibrinated sheep blood and mix well.
+- step_number: 4
+  action: STORE
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see
+    below).
+- step_number: 5
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    Cm131).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.121119Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1331'
+- timestamp: '2026-01-28T19:48:40.991342Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e5d7808b77a9b559b544f1012673b62c548608930918aa5da5cd3a62e5e2b3ab
+merged_from:
+- DSMZ_1331_COLUMBIA_AGAR_WITH_5_SHEEP_BLOOD

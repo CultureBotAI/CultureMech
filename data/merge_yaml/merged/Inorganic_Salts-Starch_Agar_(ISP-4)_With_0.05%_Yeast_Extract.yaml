@@ -1,0 +1,35 @@
+name: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
+original_name: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Inorganic salts--starch agar (ISP--4) (see Medium [M50])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M210
+  term:
+    id: TOGO:M210
+    label: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
+notes: 'Source: https://togomedium.org/medium/M210
+
+  Original source: JCM - JCM_M217
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=217'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.624945Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M210'
+merge_fingerprint: 26a3d7ff6b1614d04dc75f54857f081ff1b0a9a2cf13eddebcc4e40d15bb75c5
+merged_from:
+- TOGO_M210_Inorganic_Salts-Starch_Agar_ISP-4_With_0.05_Yeast_Extract

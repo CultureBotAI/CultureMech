@@ -1,0 +1,109 @@
+name: Grace's Insect Medium
+original_name: Grace's Insect Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1514
+  term:
+    id: mediadive.medium:1514
+    label: Grace's Insect Medium
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1514.pdf'
+ingredients:
+- preferred_term: Grace's Insect Medium
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '75'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.52'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.53'
+    unit: G_PER_L
+- preferred_term: Glutamic acid
+  term:
+    id: CHEBI:18237
+    label: Glutamic acid
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Medium for maintenance of SF-9 cells (ACC 125) for cultivation of Rhabdochlamydiae.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter-sterilize
+- step_number: 3
+  action: MIX
+  description: 'Maintenance conditions of SF-9 cells (see also DSMZ catalogue for
+    ACC 125):'
+- step_number: 4
+  action: HEAT
+  description: SF-9 cells are cultivated at 25 - 29°C without the addition of CO2
+    in flasks (25 cm2) with tightly closed lids. When a confluent layer has formed,
+    infection can be carried out.
+- step_number: 5
+  action: MIX
+  description: 'Infection with Rhabdochlamydiae:'
+- step_number: 6
+  action: HEAT
+  description: "Exchange medium and add 500 – 1000 µl of EB stock solution (thawed\
+    \ quickly to 37°C).\r\nCentrifuge for 1 h onto the cell layer at 1600 rpm at 20°C."
+- step_number: 7
+  action: MIX
+  description: 'Maintenance/Passage of infected insect cell cultures:'
+- step_number: 8
+  action: HEAT
+  description: "Infected cultures can be maintained e.g. in 25 cm2 flasks (e.g. Nunc\
+    \ flasks, VWR, 734-\r\n2081) at 27°C in an incubator (no special requirements\
+    \ concerning CO2 or light).\r\nIf the percentage of infected cells is still low\
+    \ (which might occur initially after inoculation\r\nof cultures with bacteria\
+    \ from a frozen stock) infected cultures may be maintained by\r\nweekly passage\
+    \ (1:5). Infection of yet uninfected cells by added bacteria or bacteria\r\nreleased\
+    \ from neighboring infected cells is facilitated by centrifugation (130 x g, 15\
+    \ min)\r\nof the culture flask.\r\nIn well-infected cultures host cell lysis will\
+    \ be visible (the bacteria cause host cell lysis\r\nwithin approximately 5-7 days\
+    \ after invasion of host cells). To maintain such cultures,\r\nbacteria have to\
+    \ be transferred by adding culture supernatant (approximately 0.5-1 ml)\r\nto\
+    \ fresh culture flasks containing uninfected insect cells (approximately semi-confluent\r\
+    \nculture) each 7-10 days."
+- step_number: 9
+  action: STORE
+  description: Bacteria released from host cells can be stored in
+- step_number: 10
+  action: HEAT
+  description: at -80°C for several months.
+- step_number: 11
+  action: STORE
+  description: Infected cell cultures (supplemented with 10% DMSO) are best stored
+    in liquid nitrogen.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.675561Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1514'
+merge_fingerprint: 4169f0500abf4f5a5dc3494d6f612c44292e6ebb60fd6238fc783ef71f9c386f
+merged_from:
+- DSMZ_1514_Grace_s_Insect_Medium

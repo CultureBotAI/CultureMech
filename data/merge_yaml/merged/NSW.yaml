@@ -1,0 +1,31 @@
+name: NSW
+original_name: NSW
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C71
+  term:
+    id: mediadive.medium:C71
+    label: NSW
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_R75S_NSW.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.720930Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C71'
+merge_fingerprint: 1191c1671b9e6e5586d31f1ebab673aef7d69e725b9e19b3fbc83e3de7ebba40
+merged_from:
+- CCAP_C71_NSW

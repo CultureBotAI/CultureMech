@@ -11,7 +11,96 @@ media_term:
     label: CALDICOPROBACTER medium
 notes: 'Source: KOMODO ModelSEED | ID: 1233 | DSMZ Medium: 1233 (mediadive.medium:1233)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.496524'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.19861'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.178749'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.0993049'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '4.76663'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.0536246'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.00397219'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0019861'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.000993049'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.96524'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2.48262'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000496524'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.993049'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4.96524'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +108,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1233'
+- timestamp: '2026-02-03T11:18:54.209591'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1233

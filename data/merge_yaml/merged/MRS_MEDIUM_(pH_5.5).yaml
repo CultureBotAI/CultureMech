@@ -1,0 +1,30 @@
+name: MRS Medium (pH 5.5)
+original_name: MRS Medium (pH 5.5)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MRS medium (see Medium [M1])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M103
+  term:
+    id: TOGO:M103
+    label: MRS Medium (pH 5.5)
+notes: 'Source: https://togomedium.org/medium/M103
+
+  Original source: JCM - JCM_M111
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=111'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.786538Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M103'
+merge_fingerprint: f1937c9114e12ccea81539c8f4656fd4f75df534c9e2f7c5d9fa5fd4e3e87902
+merged_from:
+- TOGO_M103_MRS_Medium_pH_5.5

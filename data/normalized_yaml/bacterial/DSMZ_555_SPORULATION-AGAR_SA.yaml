@@ -27,6 +27,9 @@ ingredients:
   term:
     id: CHEBI:75832
     label: FeSO4
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Glucose
   term:
     id: CHEBI:17234
@@ -52,3 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 555'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:23.259284'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4'

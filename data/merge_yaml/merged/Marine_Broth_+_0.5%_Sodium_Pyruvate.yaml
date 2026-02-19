@@ -1,0 +1,58 @@
+name: Marine Broth + 0.5% Sodium Pyruvate
+original_name: Marine Broth + 0.5% Sodium Pyruvate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1938
+  term:
+    id: TOGO:M1938
+    label: Marine Broth + 0.5% Sodium Pyruvate
+notes: 'Source: https://togomedium.org/medium/M1938
+
+  Original source: NBRC - NBRC_M1205
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1205'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.701194Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1938'
+- timestamp: '2026-01-28T19:48:32.828800Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 83c4dd814b263bcbc1555977ae637714ad03a870742573c355058b3f431cdf69
+merged_from:
+- TOGO_M1938_Marine_Broth_0.5_Sodium_Pyruvate

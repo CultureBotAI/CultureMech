@@ -1,0 +1,127 @@
+name: Desulfurispirillum Alkaliphilum Medium
+original_name: Desulfurispirillum Alkaliphilum Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: NaHCO3
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Na2CO3
+  concentration:
+    value: '22'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1% Yeast extract solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 1.0 M Sodium acetate solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Solution'
+- preferred_term: 0.1 M MgSO4 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: sulfur
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26833
+    label: sulfur atom
+- preferred_term: SL--4 trace element solution (see Medium [M335])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5% Na2S・9H2O solution
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
+media_term:
+  preferred_term: TOGO Medium M786
+  term:
+    id: TOGO:M786
+    label: Desulfurispirillum Alkaliphilum Medium
+notes: 'Source: https://togomedium.org/medium/M786
+
+  Original source: JCM - JCM_M760-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=760'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.712924Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M786'
+- timestamp: '2026-01-28T19:48:07.035262Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.560664'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 0580918b2f61e76e9582f1c413793399f6294454c3707ba2ed95e46e847138ad
+merged_from:
+- TOGO_M786_Desulfurispirillum_Alkaliphilum_Medium

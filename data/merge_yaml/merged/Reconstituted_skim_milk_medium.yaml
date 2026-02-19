@@ -1,0 +1,54 @@
+name: Reconstituted skim milk medium
+original_name: Reconstituted skim milk medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Skim milk powder
+  concentration:
+    value: '11'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+media_term:
+  preferred_term: TOGO Medium M2890
+  term:
+    id: TOGO:M2890
+    label: Reconstituted skim milk medium
+notes: 'Source: https://togomedium.org/medium/M2890'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.384589Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2890'
+- timestamp: '2026-01-28T19:48:23.068941Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9061291c832b5b87e2a21029ee41a5366c64152a2bdfd5f29545b199a50258fd
+merged_from:
+- TOGO_M2890_Reconstituted_skim_milk_medium

@@ -1,0 +1,35 @@
+name: CHM
+original_name: CHM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C23
+  term:
+    id: mediadive.medium:C23
+    label: CHM
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_CHM.pdf'
+ingredients:
+- preferred_term: Sodium acetate x 3 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lab Lemco powder
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add the above constituents to 1 litre of deionised water. Autoclave
+    at 15 psi for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.546607Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C23'
+merge_fingerprint: cf9048d6fce5be6c97e3f7269816bd0334931e950ac6bbaec9bd667aeb0f8111
+merged_from:
+- CCAP_C23_CHM

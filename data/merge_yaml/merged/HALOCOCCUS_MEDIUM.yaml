@@ -1,0 +1,94 @@
+name: HALOCOCCUS MEDIUM
+original_name: HALOCOCCUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.4
+media_term:
+  preferred_term: DSMZ Medium 146
+  term:
+    id: mediadive.medium:146
+    label: HALOCOCCUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium146.pdf'
+ingredients:
+- preferred_term: Skim milk
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2000'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0'
+    unit: G_PER_L
+- preferred_term: Neopeptone
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '62.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Steam the three solutions separately, mix together solutions B and
+    C and adjust pH to 8.4. Autoclave the skim milk at 112°C for 15 min, and the agar
+    salt mixture at 121°C for 20 min. Add the hot mixture to the warm skim milk aseptically.
+- step_number: 2
+  action: MIX
+  description: Use trace of Fe(III)citrate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.343011Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 146'
+- timestamp: '2026-02-03T22:25:33.964467+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_146_HALOCOCCUS_MEDIUM, KOMODO_146_HALOCOCCUS_medium'
+synonyms:
+- name: HALOCOCCUS medium
+  source: KOMODO
+  source_id: komodo.medium:146
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_146_HALOCOCCUS_MEDIUM
+- KOMODO_146_HALOCOCCUS_medium
+merge_fingerprint: 63906679ecf4d00a333d7a8fba9e3ccecd2d2f0644fc7bed95e4c1fe2be62f9e

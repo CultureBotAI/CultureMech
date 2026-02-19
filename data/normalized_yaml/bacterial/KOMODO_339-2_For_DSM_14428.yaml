@@ -1,7 +1,7 @@
 name: For DSM 14428
 original_name: For DSM 14428
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-7.4
 media_term:
@@ -11,7 +11,22 @@ media_term:
     label: For DSM 14428
 notes: 'Source: KOMODO ModelSEED | ID: 339.2 | DSMZ Medium: 339 (mediadive.medium:339)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +34,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 339.2'
+- timestamp: '2026-02-03T11:19:18.712867'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 339

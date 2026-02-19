@@ -1,0 +1,68 @@
+name: LB + Chloramphenicol medium
+original_name: LB + Chloramphenicol medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Chloramphenicol solution (25 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1899
+  term:
+    id: TOGO:M1899
+    label: LB + Chloramphenicol medium
+notes: 'Source: https://togomedium.org/medium/M1899
+
+  Original source: NBRC - NBRC_M1158
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1158'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.606356Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1899'
+- timestamp: '2026-01-28T19:48:19.603377Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: f23896be980f11fc44f285e80a1e6bf276aa95d0dbcbef7a8f4adf052f81c230
+merged_from:
+- TOGO_M1899_LB_Chloramphenicol_medium

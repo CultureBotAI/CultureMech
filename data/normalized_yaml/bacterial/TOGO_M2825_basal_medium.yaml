@@ -28,6 +28,9 @@ ingredients:
 - preferred_term: NH4CI
   notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
     Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: distilled water
   concentration:
     value: '1000'
@@ -72,3 +75,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.628393'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NH4CI'

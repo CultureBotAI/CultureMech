@@ -11,7 +11,36 @@ media_term:
     label: DILUTE POTATO medium
 notes: 'Source: KOMODO ModelSEED | ID: 789 | DSMZ Medium: 789 (mediadive.medium:789)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+- preferred_term: Diced potato
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +48,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 789'
+- timestamp: '2026-02-03T11:19:16.009549'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 789

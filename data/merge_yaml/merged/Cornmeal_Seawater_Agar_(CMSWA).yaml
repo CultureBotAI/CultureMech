@@ -1,0 +1,48 @@
+name: Cornmeal Seawater Agar (CMSWA)
+original_name: Cornmeal Seawater Agar (CMSWA)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Seawater (2% Salinity)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Cornmeal extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1419
+  term:
+    id: TOGO:M1419
+    label: Cornmeal Seawater Agar (CMSWA)
+notes: 'Source: https://togomedium.org/medium/M1419
+
+  Original source: NBRC - NBRC_M16
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=16'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.659391Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1419'
+- timestamp: '2026-01-28T19:48:39.844241Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: d5e5c10424660c911d6a3c05dbac31baa4c23e4285df3380cef452a7a1e0dcec
+merged_from:
+- TOGO_M1419_Cornmeal_Seawater_Agar_CMSWA

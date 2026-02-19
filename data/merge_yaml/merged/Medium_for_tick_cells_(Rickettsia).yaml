@@ -1,0 +1,134 @@
+name: Medium for tick cells (Rickettsia)
+original_name: Medium for tick cells (Rickettsia)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1555
+  term:
+    id: mediadive.medium:1555
+    label: Medium for tick cells (Rickettsia)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1555.pdf'
+ingredients:
+- preferred_term: L-Aspartic acid
+  term:
+    id: CHEBI:17053
+    label: L-Aspartic acid
+  concentration:
+    value: '0.4485'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: alpha-ketoglutaric acid
+  term:
+    id: CHEBI:30915
+    label: alpha-ketoglutaric acid
+  concentration:
+    value: '0.4485'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '18.018'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.199985'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Tryptose-phosphate broth
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: lipoprotein concentrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '5.9575'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Prior to use in supplemented medium, L15C was diluted by the addition
+    of 33 % water by volume.
+- step_number: 2
+  action: MIX
+  description: Supplemented L15C medium is used with
+- step_number: 3
+  action: MIX
+  description: The pH is adjusted to pH 7.5 using 1 M NaOH.
+- step_number: 4
+  action: MIX
+  description: <b>Cultivation of IRE11 cells for infection with Rickettsia monacensis
+    :</b>
+- step_number: 5
+  action: MIX
+  description: 'This medium and the cultivation of tick cells is described in the
+    "Basic Tick Cell Culture Methods" provided as pdf-file (see strain entry for DSM
+    29017: cultivation conditions) by Tim Kurtti & Uli Munderloh, University of Minnesota.'
+- step_number: 6
+  action: MIX
+  description: L15C (Modified Leibovitzs' L15) used to culture host cells (IRE11).
+    L15C medium is a modification of L15B medium, previously described in detail (Munderloh
+    UG, Kurtti TJ. 1989. Formulation of medium for tick cell culture. Exp. Appl. Acarol.
+    7:219-29).
+- step_number: 7
+  action: MIX
+  description: 'Alterations were made to the following reagents:'
+- step_number: 8
+  action: HEAT
+  description: <b>Infection with Rickettsia monacensis or R. buchneri :</b> One 25
+    cm2 flask of well-grown cells is infected with 1 ml of the Rickettsia strain (quickly
+    thawed from -80°C ) and centrifuged for 1 h onto the cell layer at 1600 rpm at
+    20°C . Incubate at 30°C with closed lid (without CO2) and look for bacteria and
+    destroyed cells after 4-6 days .
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.816315Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1555'
+merge_fingerprint: 5e4fc3d2566d39745e3e40478cc864cbe447c7e1c54afdc952786076ac417456
+merged_from:
+- DSMZ_1555_Medium_for_tick_cells_Rickettsia

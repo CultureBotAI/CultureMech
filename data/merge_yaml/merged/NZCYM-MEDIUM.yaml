@@ -1,0 +1,81 @@
+name: NZCYM-MEDIUM
+original_name: NZCYM-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 544
+  term:
+    id: mediadive.medium:544
+    label: NZCYM-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium544.pdf'
+ingredients:
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.579013Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 544'
+- timestamp: '2026-01-28T19:48:38.157199Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:44.907493+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_544_NZCYM-MEDIUM, KOMODO_544-5695_MEDIUM_544_MODIFIED_FOR_DSM_5695,
+    KOMODO_544_NZCYM-MEDIUM'
+synonyms:
+- name: MEDIUM 544 MODIFIED FOR DSM 5695
+  source: KOMODO
+  source_id: komodo.medium:544_5695
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_544_NZCYM-MEDIUM
+- KOMODO_544-5695_MEDIUM_544_MODIFIED_FOR_DSM_5695
+- KOMODO_544_NZCYM-MEDIUM
+merge_fingerprint: 970b4a420ae1ed581194bec4a3881e28ddd346d6e399b6a54a3439137672865c

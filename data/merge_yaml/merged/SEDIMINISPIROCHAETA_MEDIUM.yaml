@@ -1,0 +1,89 @@
+name: SEDIMINISPIROCHAETA MEDIUM
+original_name: SEDIMINISPIROCHAETA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1008
+  term:
+    id: mediadive.medium:1008
+    label: SEDIMINISPIROCHAETA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1008.pdf'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Charcoal-filtered, natural seawater
+  concentration:
+    value: '800'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except thioglycolate and cellobiose, then sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add thioglycolate and
+    adjust pH of medium to 7.5 with 10 N KOH. Dispense medium under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 15 min.
+    Add cellobiose from a sterile anoxic stock solution prepared under 100% N2 gas
+    atmosphere and sterilized by filtration.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: Bottled seawater from Biomaris GmbH can be used instead of filtered
+    seawater.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.071512Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1008'
+- timestamp: '2026-02-03T22:25:26.910875+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1008_SEDIMINISPIROCHAETA_MEDIUM, KOMODO_1008-19205_MEDIUM_1008_MODIFIED_FOR_DSM_19205,
+    KOMODO_1008-19230_MEDIUM_1008_MODIFIED_FOR_DSM_19230, KOMODO_1008_MARINE_SPIROCHETE_medium'
+synonyms:
+- name: MEDIUM 1008 MODIFIED FOR DSM 19205
+  source: KOMODO
+  source_id: komodo.medium:1008_19205
+  original_category: imported
+- name: MEDIUM 1008 MODIFIED FOR DSM 19230
+  source: KOMODO
+  source_id: komodo.medium:1008_19230
+  original_category: imported
+- name: MARINE SPIROCHETE medium
+  source: KOMODO
+  source_id: komodo.medium:1008
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1008_SEDIMINISPIROCHAETA_MEDIUM
+- KOMODO_1008-19205_MEDIUM_1008_MODIFIED_FOR_DSM_19205
+- KOMODO_1008-19230_MEDIUM_1008_MODIFIED_FOR_DSM_19230
+- KOMODO_1008_MARINE_SPIROCHETE_medium
+merge_fingerprint: 84b4a810fb86838d652b37694e7454dde0db5cd08ca7be283da0892bb5d3a395

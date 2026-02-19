@@ -1,0 +1,61 @@
+name: MARINOBACTER LUTAOENSIS MEDIUM
+original_name: MARINOBACTER LUTAOENSIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1066
+  term:
+    id: mediadive.medium:1066
+    label: MARINOBACTER LUTAOENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1066.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.282497Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1066'
+- timestamp: '2026-02-03T22:25:28.058903+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1066_MARINOBACTER_LUTAOENSIS_MEDIUM, KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium'
+synonyms:
+- name: MARINOBACTER LUTAOENSIS medium
+  source: KOMODO
+  source_id: komodo.medium:1066
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1066_MARINOBACTER_LUTAOENSIS_MEDIUM
+- KOMODO_1066_MARINOBACTER_LUTAOENSIS_medium
+merge_fingerprint: 7c4cbd3f0f9b9d0df5e53ba3f5e7106d3cafa4a262a48679450e54f89972f32d

@@ -11,7 +11,47 @@ media_term:
     label: HALOFERAX SULFURIFONTIS medium
 notes: 'Source: KOMODO ModelSEED | ID: 1018 | DSMZ Medium: 1018 (mediadive.medium:1018)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +59,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1018'
+- timestamp: '2026-02-03T11:18:55.075186'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1018

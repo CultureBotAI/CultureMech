@@ -60,8 +60,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 0.2 M Cellobiose solution
   concentration:
     value: '20'
@@ -154,3 +160,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.056629'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: N2'

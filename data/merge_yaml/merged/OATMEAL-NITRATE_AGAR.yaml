@@ -1,0 +1,76 @@
+name: Oatmeal-Nitrate Agar
+original_name: Oatmeal-Nitrate Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KNO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:17632
+    label: nitrate
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Oatmeal, powdered (Quaker White Oats)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+media_term:
+  preferred_term: TOGO Medium M44
+  term:
+    id: TOGO:M44
+    label: Oatmeal-Nitrate Agar
+notes: 'Source: https://togomedium.org/medium/M44
+
+  Original source: JCM - JCM_M52
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=52'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.065210Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M44'
+- timestamp: '2026-01-28T19:48:42.864500Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 13ad76889e7efdfea6a371f1db0dc642379c6b003c9698d2f323bd0d38607760
+merged_from:
+- TOGO_M44_Oatmeal-Nitrate_Agar

@@ -11,7 +11,65 @@ media_term:
     label: MYCOBACTERIUM medium
 notes: 'Source: KOMODO ModelSEED | ID: 219 | DSMZ Medium: 219 (mediadive.medium:219)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Tween
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +77,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 219'
+- timestamp: '2026-02-03T11:19:03.784933'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 219

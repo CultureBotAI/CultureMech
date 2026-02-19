@@ -10,7 +10,40 @@ media_term:
     label: WOODSHOLEA MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 1238 | DSMZ Medium: 1238 (mediadive.medium:1238)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Sea Salt
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '50'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +51,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1238'
+- timestamp: '2026-02-03T11:18:55.902719'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1238

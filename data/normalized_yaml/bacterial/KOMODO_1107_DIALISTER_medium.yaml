@@ -11,7 +11,103 @@ media_term:
     label: DIALISTER medium
 notes: 'Source: KOMODO ModelSEED | ID: 1107 | DSMZ Medium: 1107 (mediadive.medium:1107)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Na-L-lactate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:232798
+    label: ''
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Cystein-HCl x 2 H2O
+  concentration:
+    value: '0.0025'
+    unit: G_PER_L
+- preferred_term: DTT
+  term:
+    id: CHEBI:18320
+    label: DTT
+  concentration:
+    value: '0.000771255'
+    unit: G_PER_L
+- preferred_term: Na-formate
+  term:
+    id: CHEBI:62965
+    label: Na-formate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na-fumarate
+  term:
+    id: CHEBI:115156
+    label: Na-fumarate
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '19'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +115,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1107'
+- timestamp: '2026-02-03T11:19:11.547449'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1107

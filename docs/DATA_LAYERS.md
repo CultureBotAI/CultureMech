@@ -2,12 +2,13 @@
 
 ## Overview
 
-CultureMech uses a **three-tier data architecture** for reproducibility, provenance, and clear data flow:
+CultureMech uses a **four-tier data architecture** for reproducibility, provenance, and clear data flow:
 
 ```
 raw/                # Layer 1: Original source data (immutable)
 raw_yaml/           # Layer 2: Unnormalized YAML (mechanical conversion)
 normalized_yaml/    # Layer 3: LinkML-validated, curated recipes
+merge_yaml/         # Layer 4: Deduplicated recipes (canonical records)
 ```
 
 This structure provides:
@@ -314,6 +315,190 @@ just validate-refs normalized_yaml/bacterial/LB_Broth.yaml
 
 ---
 
+## Layer 4: Merged YAML (`merge_yaml/`)
+
+**Purpose**: Deduplicated recipes with identical ingredient sets consolidated into canonical records.
+
+**Characteristics**:
+- **Ingredient set matching** - Recipes with the same chemicals are merged (regardless of amounts)
+- **Fingerprint-based** - SHA256 hash of sorted ingredient CHEBI IDs + names
+- **Synonym tracking** - All alternate names preserved with provenance
+- **Cross-category merging** - Recipes merged across categories
+- **Provenance preservation** - All source recipe IDs tracked
+- **Concentration-independent** - Matches ignore concentration, pH, temperature differences
+
+**Important**: This layer identifies recipes with the **same base formulation** (same chemicals), not identical recipes. Recipes merged here may differ in concentrations, pH, preparation methods, and other parameters. This is useful for identifying that "LB Medium" exists across multiple databases even with slight formulation variations.
+
+This layer reduces redundancy and provides a cleaner view of unique media formulations.
+
+### Structure
+
+```
+merge_yaml/
+  merged/
+    LB_Medium.yaml                 # Canonical LB recipe
+    M9_Minimal_Medium.yaml
+    Potato_Dextrose_Agar.yaml
+    ...
+  merge_stats.json                 # Merge statistics
+```
+
+Note: Unlike normalized_yaml, merge_yaml uses a single flat directory since recipes span multiple categories.
+
+### Merging Algorithm
+
+Recipes are matched using ingredient fingerprints:
+
+1. **Extract identifiers** - CHEBI IDs (preferred) or normalized ingredient names
+2. **Generate fingerprint** - SHA256 hash of sorted ingredient set
+3. **Group duplicates** - Recipes with identical fingerprints
+4. **Select canonical** - Most common name (with source priority tie-breaking)
+5. **Build synonyms** - Track all non-canonical names with provenance
+6. **Merge categories** - Combine all original categories into multivalued field
+
+**What IS considered in matching**:
+- ✅ Chemical identity (CHEBI IDs or ingredient names)
+- ✅ Presence/absence of each ingredient
+- ✅ Solution compositions (ingredients within stock solutions)
+
+**What is NOT considered in matching**:
+- ❌ Ingredient concentrations (10 g/L vs 20 g/L = same)
+- ❌ pH values
+- ❌ Temperature settings
+- ❌ Preparation steps
+- ❌ Physical state (liquid vs solid agar)
+- ❌ Medium type (complex vs defined)
+- ❌ Other metadata fields
+
+**Fingerprint generation details**:
+- Includes both direct ingredients and solution compositions
+- Order-independent (sorted before hashing)
+- Concentration-independent (only ingredient identity matters)
+- Hydration notation normalized (MgSO4·7H2O → MgSO4)
+
+**Example**: These recipes would merge:
+- "LB Medium (5 g/L NaCl, pH 7.0, liquid)"
+- "LB Broth (10 g/L NaCl, pH 7.5, solid agar)"
+- "Luria-Bertani (8 g/L NaCl, pH 6.8, liquid)"
+
+All have the same ingredients (Tryptone, Yeast Extract, NaCl) so they match.
+
+### Merging Recipes
+
+```bash
+# Perform merge (full dataset)
+just merge-recipes
+
+# Dry run (see what would be merged)
+just merge-recipes true
+
+# Generate statistics only
+just merge-stats
+
+# Verify merged recipes
+just verify-merges
+
+# Check recipe count reduction
+just count-unique-recipes
+```
+
+### Example Merged Recipe
+
+`merge_yaml/merged/LB_Medium.yaml`:
+```yaml
+name: LB medium                    # Canonical (most common)
+original_name: LB medium
+categories:                        # NEW: Multivalued
+  - bacterial
+  - specialized
+
+medium_type: COMPLEX
+physical_state: LIQUID
+
+ingredients:
+  - preferred_term: Tryptone
+    concentration: {value: '10', unit: G_PER_L}
+    term: {id: CHEBI:36316, label: tryptone}
+    notes: 'Concentration may vary across sources (8-12 g/L)'
+
+  - preferred_term: NaCl
+    concentration: {value: '10', unit: G_PER_L}
+    term: {id: CHEBI:26710, label: sodium chloride}
+    notes: 'Concentration varies: 5-10 g/L depending on source'
+
+# NEW: Synonym tracking
+synonyms:
+  - name: Luria-Bertani medium
+    source: TOGO
+    source_id: TOGO:M3236
+    original_category: bacterial
+
+  - name: LB Broth
+    source: MediaDive
+    source_id: mediadive.medium:673e1234
+    original_category: bacterial
+
+  - name: Lysogeny broth
+    source: KOMODO
+    source_id: KOMODO:LB_001
+    original_category: specialized
+
+# NEW: Provenance tracking
+merged_from:
+  - TOGO_M3236_Luria-Bertani_LB_medium
+  - MediaDive_673e1234_LB_Broth
+  - KOMODO_LB_001_Lysogeny_broth
+
+merge_fingerprint: 8f3d2a1b9c4e5f6a7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0
+
+curation_history:
+  - timestamp: '2026-02-03T14:23:45.123456Z'
+    curator: recipe-merger
+    action: Merged 3 duplicate recipes into canonical record
+    notes: 'Sources: TOGO:M3236, MediaDive:673e1234, KOMODO:LB_001'
+```
+
+### Merge Statistics
+
+`merge_yaml/merge_stats.json`:
+```json
+{
+  "timestamp": "2026-02-03T08:00:00Z",
+  "input_recipes": 10595,
+  "output_recipes": 344,
+  "reduction": 10251,
+  "reduction_percentage": 96.8,
+  "cross_category_merges": 12,
+  "largest_group_size": 17,
+  "top_duplicates": [
+    {
+      "name": "LB medium",
+      "count": 8,
+      "sources": ["TOGO", "MediaDive", "KOMODO"],
+      "categories": ["bacterial", "specialized"]
+    }
+  ]
+}
+```
+
+### Validation
+
+Merged recipes undergo verification:
+
+```bash
+just verify-merges
+```
+
+**Verification checks**:
+1. **Schema validity** - All recipes validate against LinkML schema
+2. **No duplicate names** - Canonical names are unique
+3. **Completeness** - All input recipes accounted for
+4. **Fingerprint consistency** - Stored fingerprints match recomputed
+5. **Synonym completeness** - Multi-source merges have synonyms
+6. **Category tracking** - All original categories preserved
+
+---
+
 ## Data Flow Diagram
 
 ```
@@ -338,7 +523,16 @@ just validate-refs normalized_yaml/bacterial/LB_Broth.yaml
 │                  LAYER 3: normalized_yaml/                       │
 │  LinkML-validated, ontology-grounded recipes                     │
 │  Curated, normalized, version controlled                         │
-│  KNOWLEDGE BASE (authoritative source)                           │
+│  ~10,595 recipes                                                 │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              │ just merge-recipes
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                   LAYER 4: merge_yaml/                           │
+│  Deduplicated recipes (identical ingredients merged)             │
+│  Canonical records with synonym tracking                         │
+│  ~344 unique recipes (96.8% reduction)                           │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               │ Exports & Applications
@@ -390,6 +584,15 @@ just validate-terms <file>       # Terms only
 just validate-refs <file>        # References only
 ```
 
+### Merge Recipes (Layer 3 → Layer 4)
+```bash
+just merge-recipes               # Perform merge
+just merge-recipes true          # Dry run (preview merges)
+just merge-stats                 # Generate statistics only
+just verify-merges               # Validate merged recipes
+just count-unique-recipes        # Show reduction
+```
+
 ### Statistics
 ```bash
 just show-raw-data-stats         # Raw data counts
@@ -408,6 +611,11 @@ just list-recipes                # List all recipes
 - Track changes over time
 - Enable collaborative curation
 - Support diffs and reviews
+
+✅ **Layer 4: `merge_yaml/`** - Deduplicated recipes
+- All merged `.yaml` files committed
+- `merge_stats.json` tracked
+- Regenerable from Layer 3 but version controlled for stability
 
 ✅ **Provenance** - README files in all layers
 - `raw/*/README.md` - Source documentation

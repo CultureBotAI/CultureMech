@@ -1,0 +1,111 @@
+name: STREPTOCOCCUS SUIS MEDIUM
+original_name: STREPTOCOCCUS SUIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 696
+  term:
+    id: mediadive.medium:696
+    label: STREPTOCOCCUS SUIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium696.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Bovine serum
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.8
+- step_number: 2
+  action: MIX
+  description: After sterilization add 5% bovine serum.
+- step_number: 3
+  action: MIX
+  description: For anaerobic handling prepare and distribute into tubes under 100%
+    N2 by using the Hungate technique.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.954194Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 696'
+- timestamp: '2026-02-03T22:25:47.120865+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_696_STREPTOCOCCUS_SUIS_MEDIUM, KOMODO_696_STREPTOCOCCUS_SUIS_medium'
+synonyms:
+- name: STREPTOCOCCUS SUIS medium
+  source: KOMODO
+  source_id: komodo.medium:696
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_696_STREPTOCOCCUS_SUIS_MEDIUM
+- KOMODO_696_STREPTOCOCCUS_SUIS_medium
+merge_fingerprint: 6d9b3d8cb8c351deaead2f7f65f25565897cadf21f9169d8f7de83e8b1052d9d

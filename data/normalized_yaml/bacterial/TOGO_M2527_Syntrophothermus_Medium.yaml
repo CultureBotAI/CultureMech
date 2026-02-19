@@ -94,8 +94,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -245,6 +251,9 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 10 N NaOH
   concentration:
     value: '1'
@@ -267,6 +276,9 @@ ingredients:
     component'
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -373,3 +385,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.103627'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    KOH; Added default concentration for ingredient: N2'

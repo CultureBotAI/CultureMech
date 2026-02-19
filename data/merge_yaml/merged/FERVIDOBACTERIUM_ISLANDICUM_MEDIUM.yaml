@@ -1,0 +1,150 @@
+name: FERVIDOBACTERIUM ISLANDICUM MEDIUM
+original_name: FERVIDOBACTERIUM ISLANDICUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 501
+  term:
+    id: mediadive.medium:501
+    label: FERVIDOBACTERIUM ISLANDICUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium501.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.022'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: VOSO4 x 2 H2O
+  term:
+    id: CHEBI:87009
+    label: VOSO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except glucose and sulfide), adjust pH at room
+    temperature to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add glucose and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and
+    adjust to 7.0, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH of final solution to 2 with 1 N HCl.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.392978Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 501'
+- timestamp: '2026-02-03T22:25:44.089042+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_501_FERVIDOBACTERIUM_ISLANDICUM_MEDIUM, KOMODO_501_FERVIDOBACTERIUM_ISLANDICUM_medium'
+synonyms:
+- name: FERVIDOBACTERIUM ISLANDICUM medium
+  source: KOMODO
+  source_id: komodo.medium:501
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_501_FERVIDOBACTERIUM_ISLANDICUM_MEDIUM
+- KOMODO_501_FERVIDOBACTERIUM_ISLANDICUM_medium
+merge_fingerprint: a41326124955e5626ceba56392b54ab959765f64e2c6015c0a34bf0bb4a980b9

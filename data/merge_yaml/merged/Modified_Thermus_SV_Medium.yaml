@@ -1,0 +1,34 @@
+name: Modified Thermus SV Medium
+original_name: Modified Thermus SV Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M637
+  term:
+    id: TOGO:M637
+    label: Modified Thermus SV Medium
+notes: 'Source: https://togomedium.org/medium/M637
+
+  Original source: JCM - JCM_M625-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=625'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.442087Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M637'
+merge_fingerprint: f8649d9d66592897b66b12fb0560e641a7873898acc8fd474fc6cc8922511dc3
+merged_from:
+- TOGO_M637_Modified_Thermus_SV_Medium

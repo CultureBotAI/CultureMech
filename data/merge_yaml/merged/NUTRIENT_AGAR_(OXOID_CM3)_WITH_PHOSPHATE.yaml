@@ -1,0 +1,82 @@
+name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 605a
+  term:
+    id: mediadive.medium:605a
+    label: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium605a.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '2.39'
+    unit: G_PER_L
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O.
+    Final pH of the medium should be 6.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.709359Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 605a'
+- timestamp: '2026-02-03T22:25:45.654276+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE, KOMODO_605_NUTRIENT_AGAR_OXOID_CM3,
+    KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE'
+synonyms:
+- name: NUTRIENT AGAR (OXOID CM3)
+  source: KOMODO
+  source_id: komodo.medium:605
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE
+- KOMODO_605_NUTRIENT_AGAR_OXOID_CM3
+- KOMODO_605a_NUTRIENT_AGAR_OXOID_CM3_WITH_PHOSPHATE
+merge_fingerprint: e5721a2747974eb28b34ec3ae7ce9e53afb5d8adaf2e002544ae09dba0824a2e

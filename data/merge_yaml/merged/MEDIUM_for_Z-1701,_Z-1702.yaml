@@ -1,0 +1,148 @@
+name: MEDIUM for Z-1701, Z-1702
+original_name: MEDIUM for Z-1701, Z-1702
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 9-9.5
+media_term:
+  preferred_term: DSMZ Medium 1696
+  term:
+    id: mediadive.medium:1696
+    label: MEDIUM for Z-1701, Z-1702
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1696.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '60'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.784'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1436'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.099'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '0.0946'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.033'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.0018'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.238'
+    unit: G_PER_L
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '0.395'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH 9.0 - 9.5
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare and boil the medium in the absence NaHCO3, Na2CO3.Cool under
+    a stream of nitrogen and add the remaining components. Dispense into tubes or
+    bottle fitted with rubber stoppers and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.270314Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1696'
+- timestamp: '2026-01-28T19:48:40.642316Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 92f57775635f25aa4ddf42f3fd2553a50655add0283703f489948efff0948b80
+merged_from:
+- DSMZ_1696_MEDIUM_for_Z-1701_Z-1702

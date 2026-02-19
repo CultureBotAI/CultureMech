@@ -1,0 +1,62 @@
+name: TEA FUNGUS MEDIUM
+original_name: TEA FUNGUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 268
+  term:
+    id: mediadive.medium:268
+    label: TEA FUNGUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium268.pdf'
+ingredients:
+- preferred_term: Tea
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Add tea and sucrose to a 1 l flask, pour on freshly boiled tap water
+    and allow to stand for 15 minutes. Filter and cool to room temperature. When starting
+    with a small amount of tea fungus use a 50 ml beaker and 10 ml of the sweetened
+    tea (freed of leaves) which has been acidified by addition of 0.05 ml of boiled
+    vinegar (5%). Place a small disc of a cork stopper on the surface of the tea and
+    place the inoculum onto it. Cover the beaker with aluminium foil and incubate.
+    (Steam the cork disc for 15 min on two successive days).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.622243Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 268'
+- timestamp: '2026-02-03T22:25:38.303670+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_268_TEA_FUNGUS_MEDIUM, KOMODO_268_TEA_FUNGUS_medium'
+synonyms:
+- name: TEA FUNGUS medium
+  source: KOMODO
+  source_id: komodo.medium:268
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_268_TEA_FUNGUS_MEDIUM
+- KOMODO_268_TEA_FUNGUS_medium
+merge_fingerprint: 1a473b0b6f4714bfbc1dfa14e9f7ce97562b879d463aeb94acbcfa14a724c533

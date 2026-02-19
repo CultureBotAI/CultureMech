@@ -1,0 +1,75 @@
+name: Succinate salt; Schaechter et al
+original_name: Succinate salt; Schaechter et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Succinate
+  term:
+    id: CHEBI:26806
+    label: Succinate
+  concentration:
+    value: '17.231'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:succ'
+- preferred_term: Citrate
+  concentration:
+    value: '5.20497'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '28.0899'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '9.92605'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.405729'
+    unit: MILLIMOLAR
+- preferred_term: Sodium ammonium phosphate
+  concentration:
+    value: '8.32187'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.703262Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 229, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:37.961160Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 229
+  term:
+    id: MEDIADB:229
+    label: Succinate salt; Schaechter et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 070d51826c0f55bafa945b039069e17f976e3315ecf57cb282f659ae66cebf2c
+merged_from:
+- MEDIADB_229_Succinate_salt_Schaechter_et_al

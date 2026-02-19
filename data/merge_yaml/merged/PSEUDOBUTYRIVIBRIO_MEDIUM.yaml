@@ -1,0 +1,196 @@
+name: PSEUDOBUTYRIVIBRIO MEDIUM
+original_name: PSEUDOBUTYRIVIBRIO MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.7-6.8
+media_term:
+  preferred_term: DSMZ Medium 712
+  term:
+    id: mediadive.medium:712
+    label: PSEUDOBUTYRIVIBRIO MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium712.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.22977'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.22977'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.44955'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.44955'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0599401'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.0899101'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: Indigocarmine
+  term:
+    id: CHEBI:31695
+    label: Indigocarmine
+  concentration:
+    value: '0.00499501'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '6.39361'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4.99501'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.2997'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.2997'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate, vitamins, glucose, cysteine
+    and sulfide), then sparge medium with 100% CO2 gas for 30 - 45 min to make it
+    anoxic. Add the bicarbonate and equilibrate the medium with the CO2 gas to pH
+    6.8. Distribute medium under CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave. Thereafter, add vitamins, glucose, cysteine and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins
+    are sterilized by filtration. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.001907Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 712'
+- timestamp: '2026-02-03T22:25:47.389239+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_712_PSEUDOBUTYRIVIBRIO_MEDIUM, KOMODO_712_PSEUDOBUTYRIVIBRIO_medium'
+synonyms:
+- name: PSEUDOBUTYRIVIBRIO medium
+  source: KOMODO
+  source_id: komodo.medium:712
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_712_PSEUDOBUTYRIVIBRIO_MEDIUM
+- KOMODO_712_PSEUDOBUTYRIVIBRIO_medium
+merge_fingerprint: 4d3e1fc695f1dc77b56a70ae1fd6d7e0a577492a8a6fa469431c02af7b664cdb

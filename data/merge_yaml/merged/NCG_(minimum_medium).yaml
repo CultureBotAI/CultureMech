@@ -1,0 +1,45 @@
+name: NCG (minimum medium)
+original_name: NCG (minimum medium)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glycerol
+  concentration:
+    value: '2'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: yeast nitrogen base (BD Difco, Franklin Lakes, NJ, USA)
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Properties: Defined component, Complex component'
+- preferred_term: casamino acid (BD Difco)
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2842
+  term:
+    id: TOGO:M2842
+    label: NCG (minimum medium)
+notes: 'Source: https://togomedium.org/medium/M2842'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.347323Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2842'
+- timestamp: '2026-01-28T19:48:40.734012Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: abdf6958e9b622f9c87021bb92de63e1357938f60ca4979ccee93f0882513341
+merged_from:
+- TOGO_M2842_NCG_minimum_medium

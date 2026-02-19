@@ -1,0 +1,55 @@
+name: LB Broth + 0.05%(w/v) Na2CO3
+original_name: LB Broth + 0.05%(w/v) Na2CO3
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2CO3*
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto LB Broth, Lennox (Difco)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1679
+  term:
+    id: TOGO:M1679
+    label: LB Broth + 0.05%(w/v) Na2CO3
+notes: 'Source: https://togomedium.org/medium/M1679
+
+  Original source: NBRC - NBRC_M884
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=884'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.127360Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1679'
+- timestamp: '2026-01-28T19:48:27.659232Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e1591966e1d71684e17acff7e33d6fc3b306223a6702058b6e9d53966c52aef4
+merged_from:
+- TOGO_M1679_LB_Broth_0.05_w_v_Na2CO3

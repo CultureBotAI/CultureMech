@@ -1,0 +1,223 @@
+name: THIOMICROSPIRA THYASIRAE MEDIUM
+original_name: THIOMICROSPIRA THYASIRAE MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.3-7.6
+media_term:
+  preferred_term: DSMZ Medium 484
+  term:
+    id: mediadive.medium:484
+    label: THIOMICROSPIRA THYASIRAE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium484.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '79'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.465116'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.116279'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '29.0698'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '17.4419'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '11'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '7.34'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '11'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave solutions A, B and C separately and mix when cool. After
+    autoclaving, add thiosulfate, trace elements and vitamins from sterile stock solutions
+    to complete the medium. Adjust pH of complete medium to 7.3 - 7.6.
+- step_number: 2
+  action: MIX
+  description: Adjust to pH 7.6.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 4
+  action: ADJUST_PH
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
+    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.336703Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 484'
+- timestamp: '2026-02-03T22:25:43.766683+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_484_THIOMICROSPIRA_THYASIRAE_MEDIUM, KOMODO_484-1_For_Thiobacillus_halophilus_DSM_6132,
+    KOMODO_484_THIOBACILLUS_THYASIRIS_and_T._HALOPHILUS_MEDIUM'
+synonyms:
+- name: For Thiobacillus halophilus DSM 6132
+  source: KOMODO
+  source_id: komodo.medium:484.1
+  original_category: imported
+- name: THIOBACILLUS THYASIRIS and T. HALOPHILUS MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:484
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_484_THIOMICROSPIRA_THYASIRAE_MEDIUM
+- KOMODO_484-1_For_Thiobacillus_halophilus_DSM_6132
+- KOMODO_484_THIOBACILLUS_THYASIRIS_and_T._HALOPHILUS_MEDIUM
+merge_fingerprint: 625f4ef4c5ddbbca88d2bde3138beffde7e80950e3eda22f28f03af45b5c902b

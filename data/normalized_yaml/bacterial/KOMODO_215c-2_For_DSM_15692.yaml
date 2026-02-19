@@ -11,7 +11,11 @@ media_term:
   term:
     id: komodo.medium:215c.2
     label: For DSM 15692
-ingredients: []
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +23,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 215c.2'
+- timestamp: '2026-02-03T11:19:12.993435'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 215

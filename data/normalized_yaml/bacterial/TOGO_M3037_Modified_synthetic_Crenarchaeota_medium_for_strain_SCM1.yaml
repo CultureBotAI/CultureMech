@@ -116,6 +116,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -181,39 +184,63 @@ ingredients:
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: H3BO3
   notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
     Defined component'
   term:
     id: CHEBI:33118
     label: boric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: MnCl2·4H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CoCl2·6H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: NiCl2·6H2O
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:34887
     label: nickel dichloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4·7H2O
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CuCl2·2H2O
   notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
     Defined component'
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: HCl (35%)
   notes: 'Role: Solvating media; Properties: Inorganic compound, Solution, Defined
     component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -267,3 +294,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.204840'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: Na2MoO4·2H2O; Added default concentration for ingredient: H3BO3;
+    Added default concentration for ingredient: MnCl2·4H2O; Added default concentration
+    for ingredient: CoCl2·6H2O; Added default concentration for ingredient: NiCl2·6H2O;
+    Added default concentration for ingredient: ZnSO4·7H2O; Added default concentration
+    for ingredient: CuCl2·2H2O; Added default concentration for ingredient: HCl (35%)'

@@ -10,7 +10,189 @@ media_term:
     label: MEDIUM 78 MODIFIED FOR DSM 19346
 notes: 'Source: KOMODO ModelSEED | ID: 78_19346 | DSMZ Medium: 78 (mediadive.medium:78)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '12'
+    unit: G_PER_L
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pantothenic acid
+  term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Nicotine amide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ground beef
+  concentration:
+    value: '487.805'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Casitone
+  concentration:
+    value: '29.2683'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.87805'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.00097561'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.487805'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14.6341'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K3
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '9.5'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +200,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 78_19346'
+- timestamp: '2026-02-03T11:19:13.905506'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 78

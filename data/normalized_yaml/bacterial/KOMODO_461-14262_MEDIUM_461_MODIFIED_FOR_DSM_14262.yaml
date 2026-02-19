@@ -10,7 +10,64 @@ media_term:
     label: MEDIUM 461 MODIFIED FOR DSM 14262
 notes: 'Source: KOMODO ModelSEED | ID: 461_14262 | DSMZ Medium: 461 (mediadive.medium:461)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.44135'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.248509'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.497018'
+    unit: G_PER_L
+- preferred_term: MnSO4
+  term:
+    id: CHEBI:86360
+    label: MnSO4
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0497018'
+    unit: G_PER_L
+- preferred_term: Pyrrole-2-carboxylic acid
+  concentration:
+    value: '1111'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +75,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 461_14262'
+- timestamp: '2026-02-03T11:19:10.730474'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 461

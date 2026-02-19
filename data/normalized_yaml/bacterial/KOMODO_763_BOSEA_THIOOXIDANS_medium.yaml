@@ -11,7 +11,53 @@ media_term:
     label: BOSEA THIOOXIDANS medium
 notes: 'Source: KOMODO ModelSEED | ID: 763 | DSMZ Medium: 763 (mediadive.medium:763)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Sodium succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +65,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 763'
+- timestamp: '2026-02-03T11:19:10.094047'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 763

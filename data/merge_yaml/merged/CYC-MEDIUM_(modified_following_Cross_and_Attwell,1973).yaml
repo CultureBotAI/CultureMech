@@ -1,0 +1,77 @@
+name: CYC-MEDIUM (modified following Cross and Attwell,1973)
+original_name: CYC-MEDIUM (modified following Cross and Attwell,1973)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 550
+  term:
+    id: mediadive.medium:550
+    label: CYC-MEDIUM (modified following Cross and Attwell,1973)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium550.pdf'
+ingredients:
+- preferred_term: Czapek Dox agar
+  term:
+    id: CHEBI:2509
+    label: Czapek Dox agar
+  concentration:
+    value: '48'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '6.1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Tryptophan
+  term:
+    id: CHEBI:27897
+    label: Tryptophan
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.590665Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 550'
+- timestamp: '2026-01-28T19:48:12.585288Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:44.981600+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973,
+    KOMODO_550-17572_MEDIUM_550_MODIFIED_FOR_DSM_17572, KOMODO_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973'
+synonyms:
+- name: MEDIUM 550 MODIFIED FOR DSM 17572
+  source: KOMODO
+  source_id: komodo.medium:550_17572
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973
+- KOMODO_550-17572_MEDIUM_550_MODIFIED_FOR_DSM_17572
+- KOMODO_550_CYC-MEDIUM_modified_following_Cross_and_Attwell_1973
+merge_fingerprint: a769e778b45a1ba40db0b7260a2cdc99f227f4a9c8c5c3b733938c2e966f30ff

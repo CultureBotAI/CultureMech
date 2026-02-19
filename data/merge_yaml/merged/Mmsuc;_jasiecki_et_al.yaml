@@ -1,0 +1,100 @@
+name: Mmsuc; jasiecki et al
+original_name: Mmsuc; jasiecki et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.037684'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Maleic acid
+  concentration:
+    value: '49.9698'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:male'
+- preferred_term: Tromethamine
+  concentration:
+    value: '49.5295'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '4.91859'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '0.929316'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '0.898939'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '42.7789'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '26.8272'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '18.6947'
+    unit: MILLIMOLAR
+- preferred_term: Sodium Succinate
+  term:
+    id: CHEBI:63675
+    label: Sodium succinate
+  concentration:
+    value: '37.026'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.849844Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 140, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:38.128744Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 140
+  term:
+    id: MEDIADB:140
+    label: Mmsuc; jasiecki et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: ae1f8980018ff73dfd8079db8a8a448f015f6d0b2e02a7e1e25b6b657cc636f5
+merged_from:
+- MEDIADB_140_Mmsuc_jasiecki_et_al

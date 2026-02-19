@@ -1,0 +1,84 @@
+name: Acidithrix Ferrooydans Medium
+original_name: Acidithrix Ferrooydans Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: UBS solution (see Medium [M752])
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Trace minerals (see Medium [M142])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Ni-Se-W solution (see Medium [M236])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:26836
+    label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 1 M FeSO4 solution (pH 2.0)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+media_term:
+  preferred_term: TOGO Medium M1070
+  term:
+    id: TOGO:M1070
+    label: Acidithrix Ferrooydans Medium
+notes: 'Source: https://togomedium.org/medium/M1070
+
+  Original source: JCM - JCM_M1012
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1012'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.866811Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1070'
+- timestamp: '2026-01-28T19:48:36.267079Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:45.767082'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4'
+merge_fingerprint: ae076d30c4c2d6b96dab8bee9271fe6cc508d16684d946227cc0b738f30481de
+merged_from:
+- TOGO_M1070_Acidithrix_Ferrooydans_Medium

@@ -1,0 +1,70 @@
+name: ANAEROBIC NATURAL SEAWATER MEDIUM
+original_name: ANAEROBIC NATURAL SEAWATER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1102
+  term:
+    id: mediadive.medium:J1102
+    label: ANAEROBIC NATURAL SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1102'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '4.94071'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.988142'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000494071'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
+- step_number: 2
+  action: MIX
+  description: 'Comment: For strain JCM 32399, supplement with 10 mM sodium pyruvate.
+    For JCM 33129, omit resazurin and the reducing agents (L-cysteine x HCl x H2O
+    and Na2S x 9H2O). For JCM 33131, supplement with 10 ml/L trace vitamins (see Medium
+    No. 197).'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.638847Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1102'
+merge_fingerprint: 4fecf7170eccd9ecf59e0ae0ce0292c1a3ed84ab72cf908cf7813dd0306fea25
+merged_from:
+- JCM_J1102_ANAEROBIC_NATURAL_SEAWATER_MEDIUM

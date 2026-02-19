@@ -89,10 +89,19 @@ ingredients:
   term:
     id: CHEBI:32035
     label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '25'
@@ -130,3 +139,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.758745'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Nitrogen gas'

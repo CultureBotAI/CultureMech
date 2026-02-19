@@ -1,0 +1,44 @@
+name: Trypticase Soy Agar
+original_name: Trypticase Soy Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Trypticase soy agar (BD-BBL)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M66
+  term:
+    id: TOGO:M66
+    label: Trypticase Soy Agar
+notes: 'Source: https://togomedium.org/medium/M66
+
+  Original source: JCM - JCM_M75
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=75'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.488065Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M66'
+- timestamp: '2026-01-28T19:48:34.057496Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 53d4b91962a93ead12fa6afe0cbdd1d525d72055c2bbcdfdcb924ffdd1a5e153
+merged_from:
+- TOGO_M66_Trypticase_Soy_Agar

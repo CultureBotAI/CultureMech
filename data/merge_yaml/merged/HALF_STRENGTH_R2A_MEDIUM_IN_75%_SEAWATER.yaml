@@ -1,0 +1,159 @@
+name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
+original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1320
+  term:
+    id: mediadive.medium:1320
+    label: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1320.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Refer to the composition of DSMZ medium 830 and either make up the
+    medium in 2 litres of 75% seawater or use half of the amounts of the components
+    specified and make up the medium in 1 litre of 75% seawater. Liquid medium can
+    be prepared by leaving out the agar.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
+    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
+    min at 121°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.090063Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1320'
+- timestamp: '2026-01-28T19:48:23.160459Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:29.424842+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1153_R3_A_MEDIUM, DSMZ_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER,
+    DSMZ_1492_HALF_STRENGTH_R2A, DSMZ_1578_1_10_R2A_MEDIUM, DSMZ_1641_DOUBLE_CONCENTRATED_830_0.06_SODIUM_PYRUVATE,
+    DSMZ_830_R2A_MEDIUM, DSMZ_830c_REACTIVATION_WITH_LIQUID_MEDIUM_830, DSMZ_919_LIMNOBACTER_MEDIUM,
+    KOMODO_1153_R3_A_medium, KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER,
+    KOMODO_919_LIMNOBACTER_medium'
+synonyms:
+- name: R3 A MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1153
+  original_category: imported
+- name: HALF STRENGTH R2A
+  source: MediaDive
+  source_id: mediadive.medium:1492
+  original_category: imported
+- name: 1/10 R2A MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1578
+  original_category: imported
+- name: DOUBLE CONCENTRATED 830 + 0.06% SODIUM PYRUVATE
+  source: MediaDive
+  source_id: mediadive.medium:1641
+  original_category: imported
+- name: R2A MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:830
+  original_category: imported
+- name: REACTIVATION WITH LIQUID MEDIUM 830
+  source: MediaDive
+  source_id: mediadive.medium:830c
+  original_category: imported
+- name: LIMNOBACTER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:919
+  original_category: imported
+- name: R3 A medium
+  source: KOMODO
+  source_id: komodo.medium:1153
+  original_category: imported
+- name: LIMNOBACTER medium
+  source: KOMODO
+  source_id: komodo.medium:919
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1153_R3_A_MEDIUM
+- DSMZ_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER
+- DSMZ_1492_HALF_STRENGTH_R2A
+- DSMZ_1578_1_10_R2A_MEDIUM
+- DSMZ_1641_DOUBLE_CONCENTRATED_830_0.06_SODIUM_PYRUVATE
+- DSMZ_830_R2A_MEDIUM
+- DSMZ_830c_REACTIVATION_WITH_LIQUID_MEDIUM_830
+- DSMZ_919_LIMNOBACTER_MEDIUM
+- KOMODO_1153_R3_A_medium
+- KOMODO_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER
+- KOMODO_919_LIMNOBACTER_medium
+merge_fingerprint: 64a9f8e9817814680fd3249d06616fbde2b092bd0ab3364972a9d306ef90cfc0

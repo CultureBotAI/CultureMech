@@ -1,0 +1,2218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>. OMIZ-PAT Medium (modified) - CultureMech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .breadcrumb {
+            opacity: 0.9;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .recipe-header {
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 2rem;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .badges {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: white;
+            background: #667eea;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 1.5rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .section h3 {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-value {
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 1rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        th {
+            background: #f8f9fa;
+            font-weight: 600;
+            color: #666;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        .step-list {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+
+        .step-item {
+            counter-increment: step-counter;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            position: relative;
+        }
+
+        .step-item::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: -2rem;
+            top: 1rem;
+            background: #667eea;
+            color: white;
+            width: 2rem;
+            height: 2rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+        }
+
+        .step-action {
+            font-weight: 600;
+            color: #667eea;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+        }
+
+        .variant-card {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .variant-title {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background: #e2e8f0;
+            border-radius: 3px;
+            margin-right: 0.25rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.85rem;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        .note-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .source-file {
+            font-size: 0.9rem;
+            color: #999;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .recipe-card {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="breadcrumb">
+            <a href="../app/index.html">← Back to Browser</a>
+        </div>
+        <h1>. OMIZ-PAT Medium (modified)</h1>
+    </div>
+
+    <div class="container">
+        <div class="recipe-card">
+            <div class="recipe-header">
+                <div class="badges">
+                    
+                    <span class="badge">imported</span>
+                    
+                    <span class="badge">COMPLEX</span>
+                    <span class="badge">LIQUID</span>
+                </div>
+            </div>
+
+            
+            <div class="section">
+                <h2>Overview</h2>
+                
+
+                <div class="info-grid" style="margin-top: 1rem;">
+                    
+                    <div class="info-item">
+                        <div class="info-label">pH</div>
+                        <div class="info-value">6.9</div>
+                    </div>
+                    
+
+                    
+                    <div class="info-item">
+                        <div class="info-label">Database Reference</div>
+                        <div class="info-value">
+                            <a href="mediadive.medium:1494" class="external-link" target="_blank">
+                                mediadive.medium:1494
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            
+
+            
+            <div class="section">
+                <h2>Ingredients</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ingredient</th>
+                            <th>Concentration</th>
+                            <th>CHEBI ID</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr>
+                            <td>Rabbit serum</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Alanine</td>
+                            <td>
+                                
+                                0.9 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16977" class="external-link" target="_blank">
+                                    CHEBI:16977
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Arginine</td>
+                            <td>
+                                
+                                3.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16467" class="external-link" target="_blank">
+                                    CHEBI:16467
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Asparagine</td>
+                            <td>
+                                
+                                3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17196" class="external-link" target="_blank">
+                                    CHEBI:17196
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Aspartic acid</td>
+                            <td>
+                                
+                                2.36 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17053" class="external-link" target="_blank">
+                                    CHEBI:17053
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Cysteine HCl</td>
+                            <td>
+                                
+                                7 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:52891" class="external-link" target="_blank">
+                                    CHEBI:52891
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Glutamine</td>
+                            <td>
+                                
+                                13.6 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18050" class="external-link" target="_blank">
+                                    CHEBI:18050
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Glutamic acid</td>
+                            <td>
+                                
+                                6 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16015" class="external-link" target="_blank">
+                                    CHEBI:16015
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Glycine</td>
+                            <td>
+                                
+                                1.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15428" class="external-link" target="_blank">
+                                    CHEBI:15428
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Histidine</td>
+                            <td>
+                                
+                                12.4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15971" class="external-link" target="_blank">
+                                    CHEBI:15971
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Isoleucine</td>
+                            <td>
+                                
+                                2.62 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17191" class="external-link" target="_blank">
+                                    CHEBI:17191
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Leucine</td>
+                            <td>
+                                
+                                2.62 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15603" class="external-link" target="_blank">
+                                    CHEBI:15603
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Lysine HCl</td>
+                            <td>
+                                
+                                3.64 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:53633" class="external-link" target="_blank">
+                                    CHEBI:53633
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Methionine</td>
+                            <td>
+                                
+                                3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16643" class="external-link" target="_blank">
+                                    CHEBI:16643
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Ornithine HCl</td>
+                            <td>
+                                
+                                3.4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Phenylalanine</td>
+                            <td>
+                                
+                                3.3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17295" class="external-link" target="_blank">
+                                    CHEBI:17295
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Proline</td>
+                            <td>
+                                
+                                2.3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17203" class="external-link" target="_blank">
+                                    CHEBI:17203
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Serine</td>
+                            <td>
+                                
+                                10.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17115" class="external-link" target="_blank">
+                                    CHEBI:17115
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Threonine</td>
+                            <td>
+                                
+                                2.4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16857" class="external-link" target="_blank">
+                                    CHEBI:16857
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Tryptophan</td>
+                            <td>
+                                
+                                2.04 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16828" class="external-link" target="_blank">
+                                    CHEBI:16828
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Tyrosine</td>
+                            <td>
+                                
+                                1.8 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17895" class="external-link" target="_blank">
+                                    CHEBI:17895
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Valine</td>
+                            <td>
+                                
+                                2.34 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16414" class="external-link" target="_blank">
+                                    CHEBI:16414
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>KCl</td>
+                            <td>
+                                
+                                19.36 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32588" class="external-link" target="_blank">
+                                    CHEBI:32588
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MgSO4 x 7 H2O</td>
+                            <td>
+                                
+                                5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31795" class="external-link" target="_blank">
+                                    CHEBI:31795
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaH2PO4 x H2O</td>
+                            <td>
+                                
+                                2.8 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37585" class="external-link" target="_blank">
+                                    CHEBI:37585
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NH4Cl</td>
+                            <td>
+                                
+                                32 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31206" class="external-link" target="_blank">
+                                    CHEBI:31206
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Citric acid</td>
+                            <td>
+                                
+                                4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30769" class="external-link" target="_blank">
+                                    CHEBI:30769
+                                </a>
+                                
+                            </td>
+                            <td> (trisodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Calcium D-(+)-pantothenate</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Choline chloride</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:133341" class="external-link" target="_blank">
+                                    CHEBI:133341
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Myo-inositol</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17268" class="external-link" target="_blank">
+                                    CHEBI:17268
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamine HCl</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:49105" class="external-link" target="_blank">
+                                    CHEBI:49105
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thiamin pyrophosphate</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:45931" class="external-link" target="_blank">
+                                    CHEBI:45931
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Coenzym A</td>
+                            <td>
+                                
+                                0.02 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15346" class="external-link" target="_blank">
+                                    CHEBI:15346
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Flavin adenine dinucleotide</td>
+                            <td>
+                                
+                                0.02 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:24040" class="external-link" target="_blank">
+                                    CHEBI:24040
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ß-nicotinamide adenine dinucleotide</td>
+                            <td>
+                                
+                                0.02 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2-Mercaptoethanesulfonic acid</td>
+                            <td>
+                                
+                                0.2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17905" class="external-link" target="_blank">
+                                    CHEBI:17905
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>N-acetylmuramic acid</td>
+                            <td>
+                                
+                                0.5 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:47965" class="external-link" target="_blank">
+                                    CHEBI:47965
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>N-Acetylglucosamine</td>
+                            <td>
+                                
+                                4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:59640" class="external-link" target="_blank">
+                                    CHEBI:59640
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-glucuronic acid</td>
+                            <td>
+                                
+                                16 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:4178" class="external-link" target="_blank">
+                                    CHEBI:4178
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-galacturonic acid</td>
+                            <td>
+                                
+                                16 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18024" class="external-link" target="_blank">
+                                    CHEBI:18024
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyruvic acid</td>
+                            <td>
+                                
+                                11 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32816" class="external-link" target="_blank">
+                                    CHEBI:32816
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Fumaric acid</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18012" class="external-link" target="_blank">
+                                    CHEBI:18012
+                                </a>
+                                
+                            </td>
+                            <td> (disodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Formic acid</td>
+                            <td>
+                                
+                                6 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:30751" class="external-link" target="_blank">
+                                    CHEBI:30751
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxal hydrochloride</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:131529" class="external-link" target="_blank">
+                                    CHEBI:131529
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Pyridoxal phosphate</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18405" class="external-link" target="_blank">
+                                    CHEBI:18405
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D</td>
+                            <td>
+                                
+                                11.2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:29958" class="external-link" target="_blank">
+                                    CHEBI:29958
+                                </a>
+                                
+                            </td>
+                            <td> (L-lactic acid, sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Hypoxanthine</td>
+                            <td>
+                                
+                                0.028 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17368" class="external-link" target="_blank">
+                                    CHEBI:17368
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Uracil</td>
+                            <td>
+                                
+                                0.022 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17568" class="external-link" target="_blank">
+                                    CHEBI:17568
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Thymidine</td>
+                            <td>
+                                
+                                0.048 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17748" class="external-link" target="_blank">
+                                    CHEBI:17748
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>N-(2-acetamido)-2-aminoethanesulfonic acid</td>
+                            <td>
+                                
+                                0.036 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:39060" class="external-link" target="_blank">
+                                    CHEBI:39060
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>DL-carnitine</td>
+                            <td>
+                                
+                                4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17126" class="external-link" target="_blank">
+                                    CHEBI:17126
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Putrescine 2 HCl</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Phenol red</td>
+                            <td>
+                                
+                                0.2 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:31991" class="external-link" target="_blank">
+                                    CHEBI:31991
+                                </a>
+                                
+                            </td>
+                            <td> (sodium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Glucose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17634" class="external-link" target="_blank">
+                                    CHEBI:17634
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Fructose</td>
+                            <td>
+                                
+                                16 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15824" class="external-link" target="_blank">
+                                    CHEBI:15824
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Maltose</td>
+                            <td>
+                                
+                                16 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17306" class="external-link" target="_blank">
+                                    CHEBI:17306
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Mannitol</td>
+                            <td>
+                                
+                                16 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16899" class="external-link" target="_blank">
+                                    CHEBI:16899
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Mannose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16024" class="external-link" target="_blank">
+                                    CHEBI:16024
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Arabinose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17108" class="external-link" target="_blank">
+                                    CHEBI:17108
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Fucose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18287" class="external-link" target="_blank">
+                                    CHEBI:18287
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Trehalose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27082" class="external-link" target="_blank">
+                                    CHEBI:27082
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-Sucrose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>L-Rhamnose</td>
+                            <td>
+                                
+                                40 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:62345" class="external-link" target="_blank">
+                                    CHEBI:62345
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CaCl2 x H2O</td>
+                            <td>
+                                
+                                3 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:3312" class="external-link" target="_blank">
+                                    CHEBI:3312
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Asialofetuin</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Vitamine B12</td>
+                            <td>
+                                
+                                0.05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>D-(+)-biotin</td>
+                            <td>
+                                
+                                0.05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15956" class="external-link" target="_blank">
+                                    CHEBI:15956
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Folic acid</td>
+                            <td>
+                                
+                                0.05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:27470" class="external-link" target="_blank">
+                                    CHEBI:27470
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Folinic acid</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:42521" class="external-link" target="_blank">
+                                    CHEBI:42521
+                                </a>
+                                
+                            </td>
+                            <td> (calcium salt)</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinamide</td>
+                            <td>
+                                
+                                0.05 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17154" class="external-link" target="_blank">
+                                    CHEBI:17154
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Nicotinic acid</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:15940" class="external-link" target="_blank">
+                                    CHEBI:15940
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Riboflavine</td>
+                            <td>
+                                
+                                0.01 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17015" class="external-link" target="_blank">
+                                    CHEBI:17015
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Isobutyric acid</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16135" class="external-link" target="_blank">
+                                    CHEBI:16135
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2-Methylbutyric acid</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:37070" class="external-link" target="_blank">
+                                    CHEBI:37070
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Valeric acid</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17418" class="external-link" target="_blank">
+                                    CHEBI:17418
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Isovaleric acid</td>
+                            <td>
+                                
+                                10 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:28484" class="external-link" target="_blank">
+                                    CHEBI:28484
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>DL-alpha-lipoic acid</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16494" class="external-link" target="_blank">
+                                    CHEBI:16494
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2-Mercaptoethanol</td>
+                            <td>
+                                
+                                0.1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:41218" class="external-link" target="_blank">
+                                    CHEBI:41218
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ethanol</td>
+                            <td>
+                                
+                                0.9 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16236" class="external-link" target="_blank">
+                                    CHEBI:16236
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Hemin</td>
+                            <td>
+                                
+                                0.13038 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:50385" class="external-link" target="_blank">
+                                    CHEBI:50385
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaOH</td>
+                            <td>
+                                
+                                0.39997 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32145" class="external-link" target="_blank">
+                                    CHEBI:32145
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Yeast extract</td>
+                            <td>
+                                
+                                300 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>CuSO4</td>
+                            <td>
+                                
+                                0.0789 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:23414" class="external-link" target="_blank">
+                                    CHEBI:23414
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>MnSO4 x H2O</td>
+                            <td>
+                                
+                                1.69 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:86364" class="external-link" target="_blank">
+                                    CHEBI:86364
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>ZnSO4 x 7 H2O</td>
+                            <td>
+                                
+                                28.7 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32312" class="external-link" target="_blank">
+                                    CHEBI:32312
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>HCl</td>
+                            <td>
+                                
+                                0.03646 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17883" class="external-link" target="_blank">
+                                    CHEBI:17883
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Na2SeO3</td>
+                            <td>
+                                
+                                1.73 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:48843" class="external-link" target="_blank">
+                                    CHEBI:48843
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>HCl</td>
+                            <td>
+                                
+                                0.03646 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17883" class="external-link" target="_blank">
+                                    CHEBI:17883
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NiSO4 x 6 H2O</td>
+                            <td>
+                                
+                                0.131 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:53001" class="external-link" target="_blank">
+                                    CHEBI:53001
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>SnCl2 x 2 H2O</td>
+                            <td>
+                                
+                                0.118 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:78074" class="external-link" target="_blank">
+                                    CHEBI:78074
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaVO3</td>
+                            <td>
+                                
+                                0.61 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75221" class="external-link" target="_blank">
+                                    CHEBI:75221
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>(NH4)6Mo7O24 x 4 H2O</td>
+                            <td>
+                                
+                                12.4 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>HCl</td>
+                            <td>
+                                
+                                0.03646 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17883" class="external-link" target="_blank">
+                                    CHEBI:17883
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Fe SO4 x 7 H2O</td>
+                            <td>
+                                
+                                2.78015 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:75836" class="external-link" target="_blank">
+                                    CHEBI:75836
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>HCl</td>
+                            <td>
+                                
+                                0.3646 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17883" class="external-link" target="_blank">
+                                    CHEBI:17883
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ascorbic acid</td>
+                            <td>
+                                
+                                100 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:22652" class="external-link" target="_blank">
+                                    CHEBI:22652
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Glutathione</td>
+                            <td>
+                                
+                                153.66 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16856" class="external-link" target="_blank">
+                                    CHEBI:16856
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Cholesterol</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                —
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>Ethanol</td>
+                            <td>
+                                
+                                1 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16236" class="external-link" target="_blank">
+                                    CHEBI:16236
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>NaHCO3</td>
+                            <td>
+                                
+                                100 G_PER_L
+                                
+                            </td>
+                            <td>
+                                
+                                <a href="https://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:32139" class="external-link" target="_blank">
+                                    CHEBI:32139
+                                </a>
+                                
+                            </td>
+                            <td>—</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Preparation Protocol</h2>
+                <ol class="step-list" style="margin-left: 2rem;">
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Add 10 ml rabbit serum, flush the medium with N2CO2, adjust the pH to 6.9 and filter-sterilize the completed medium into tubes.</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">HEAT</div>
+                        <div>This recipe describes the preparation of 200 ml medium, which can be used for about 4 weeks when kept at 4°C.</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions A, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions B, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions C, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions D, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions E, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solution F, flush with nitrogen to make it anoxic, filter-sterilize and store at 4°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions G, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Solutions H, flush each with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">HEAT</div>
+                        <div>Prepare Solution I and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">HEAT</div>
+                        <div>D,L-alpha-lipoic acid (1 mg/ml); in 2-mercaptoethanol-ethanol (1:10); store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">MIX</div>
+                        <div>Hemin (0.2 mM) in NaOH (10 mM)</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Homogenize 42 g fresh baker yeast in 140 ml distilled water, incubate for 24h at 56°C and centrifuge to harvest the supernatant. Adjust pH to 7 with NaOH, make anoxic, filter-sterilize and store at -80°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Trace elements I, flush with nitrogen to make them anoxic, filter-sterilize and store at 4°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Trace elements II, flush with nitrogen to make them anoxic, filter-sterilize and store at 4°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Trace elements III, flush with nitrogen to make them anoxic, filter-sterilize and store at 4°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">MIX</div>
+                        <div>FeSO4 x 7H2O (10 mM) in HCl (10 mM)</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Supplements 1, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">MIX</div>
+                        <div>Ascorbic acid (10%; w/v); in distilled water, neutralize with NaOH</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Supplements 2, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">MIX</div>
+                        <div>Glutathion (0.5 M); in distilled water, neutralize with NaOH</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">FILTER_STERILIZE</div>
+                        <div>Prepare Supplements 3, flush with nitrogen to make them anoxic, filter-sterilize and store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">HEAT</div>
+                        <div>Cholesterol (1 mg/ml); in Ethanol (100%); store at -20°C</div>
+                        
+                        
+                    </li>
+                    
+                    <li class="step-item">
+                        <div class="step-action">HEAT</div>
+                        <div>NaHCO3 (10%; w/v) in distilled water, store at 4°C</div>
+                        
+                        
+                    </li>
+                    
+                </ol>
+            </div>
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Applications</h2>
+                <ul>
+                    
+                    <li>Microbial cultivation</li>
+                    
+                </ul>
+            </div>
+            
+
+            
+            
+
+            
+            
+            <div class="section">
+                <h2>Notes</h2>
+                <div class="note-box">Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1494.pdf</div>
+            </div>
+            
+
+            
+            
+
+            
+            <div class="source-file">
+                Source: DSMZ_1494_._OMIZ-PAT_Medium_modified.yaml
+            </div>
+        </div>
+    </div>
+</body>
+</html>

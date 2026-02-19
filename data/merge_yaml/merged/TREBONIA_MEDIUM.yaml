@@ -1,0 +1,88 @@
+name: TREBONIA MEDIUM
+original_name: TREBONIA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: DSMZ Medium 1698
+  term:
+    id: mediadive.medium:1698
+    label: TREBONIA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1698.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MES acids
+  concentration:
+    value: '3.9'
+    unit: G_PER_L
+  term:
+    id: CHEBI:39005
+    label: ''
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH of medium to 5.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.277229Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1698'
+- timestamp: '2026-01-28T19:48:09.980036Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 04a7ba76e9ffcee89e323565b8b5f36f0ac94c11cac20ccd1e0311d8540cfffc
+merged_from:
+- DSMZ_1698_TREBONIA_MEDIUM

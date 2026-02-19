@@ -61,6 +61,9 @@ ingredients:
   notes: 'Properties: Undefined component'
 - preferred_term: 'CO2 '
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2175
   term:
@@ -80,3 +83,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.590241'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2 '

@@ -10,7 +10,47 @@ media_term:
     label: CHI 1776 medium
 notes: 'Source: KOMODO ModelSEED | ID: 394 | DSMZ Medium: 394 (mediadive.medium:394)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '23.3645'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '7.00935'
+    unit: G_PER_L
+- preferred_term: Tris-HCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '0.47605'
+    unit: G_PER_L
+- preferred_term: Diaminopimelic acid
+  term:
+    id: CHEBI:23674
+    label: Diaminopimelic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thymidine
+  term:
+    id: CHEBI:17748
+    label: Thymidine
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +58,12 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 394'
+- timestamp: '2026-02-03T11:19:13.139060'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 394
+- timestamp: '2026-02-06T05:10:43.882969Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

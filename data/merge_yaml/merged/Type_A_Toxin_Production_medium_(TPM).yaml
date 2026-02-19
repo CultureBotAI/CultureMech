@@ -1,0 +1,53 @@
+name: Type A Toxin Production medium (TPM)
+original_name: Type A Toxin Production medium (TPM)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '96.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Casein hydrolysate (NZ Case TT, Quest International)
+  concentration:
+    value: '2'
+    unit: PERCENT_W_V
+media_term:
+  preferred_term: TOGO Medium M2797
+  term:
+    id: TOGO:M2797
+    label: Type A Toxin Production medium (TPM)
+notes: 'Source: https://togomedium.org/medium/M2797'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.311514Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2797'
+- timestamp: '2026-01-28T19:48:16.753226Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4ec980e227d74547544fe5298d154b1221fd7b91218724456effcb6fc01b3c7d
+merged_from:
+- TOGO_M2797_Type_A_Toxin_Production_medium_TPM

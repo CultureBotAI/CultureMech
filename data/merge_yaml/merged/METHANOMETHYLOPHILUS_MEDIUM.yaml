@@ -1,0 +1,125 @@
+name: METHANOMETHYLOPHILUS MEDIUM
+original_name: METHANOMETHYLOPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-7.8
+media_term:
+  preferred_term: DSMZ Medium 1637
+  term:
+    id: mediadive.medium:1637
+    label: METHANOMETHYLOPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1637.pdf'
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '15.6863'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '6.86275'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '4.90196'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.490196'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000490196'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '7.76471'
+    unit: G_PER_L
+- preferred_term: DL-Dithiothreitol
+  term:
+    id: CHEBI:18320
+    label: DL-Dithiothreitol
+  concentration:
+    value: '0.980392'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '950'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except for methanol and dithiothreitol. Adjust
+    pH to 7.5 with 1 N NaOH and sparge medium with 100% N2 gas for 30 - 45 min to
+    make it anoxic. Distribute medium under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. After sterilization
+    add methanol from a sterile anoxic stock solution (15% v/v) autoclaved under 100%
+    N2 gas atmosphere and dithiothreitol from an anoxic stock solution sterilized
+    by filtration. Before use check the pH of the complete medium and adjust it to
+    7.6 - 7.8, if necessary.
+- step_number: 2
+  action: MIX
+  description: After inoculation, add sterile 80% H2 and 20% CO2 gas mixture to 0.5
+    bar overpressure. After growth becomes visible overpressure of 80% H2 and 20%
+    CO2 gas mixture can be increased to 1 bar.
+- step_number: 3
+  action: MIX
+  description: 'Note: Use 10% (v/v) as inoculum.'
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
+- step_number: 5
+  action: FILTER_STERILIZE
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.093308Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1637'
+merge_fingerprint: 998063e1cb9538eda1bb63376ecc72578c444bd338b922b81f57e34ced959eb0
+merged_from:
+- DSMZ_1637_METHANOMETHYLOPHILUS_MEDIUM

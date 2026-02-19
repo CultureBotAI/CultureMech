@@ -1,0 +1,180 @@
+name: G5G6 Medium
+original_name: G5G6 Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Solution A
+  concentration:
+    value: '882'
+    unit: G_PER_L
+- preferred_term: Solution B
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Solution C
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Distilled water
+  concentration:
+    value: '880'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Na2HPO4・12H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+- preferred_term: FeCl2 solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trace element solution (see below)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Distilled water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaHCO3
+  concentration:
+    value: '3.73'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: NH4HCO3
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:184335
+    label: ''
+- preferred_term: L--Cysteine・HCl・H2O
+  concentration:
+    value: '0.175'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: 1.0 M NaNO3 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Trace vitamins (see Medium [M190])
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 5.0 mM Toluene (water--saturated)
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Solution, Organic compound'
+- preferred_term: AlCl3・6H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Trace element solution (see Medium [M180])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M607
+  term:
+    id: TOGO:M607
+    label: G5G6 Medium
+notes: 'Source: https://togomedium.org/medium/M607
+
+  Original source: JCM - JCM_M600
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=600'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.393159Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M607'
+- timestamp: '2026-01-28T19:48:15.751677Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:59.692565'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2'
+merge_fingerprint: 67777a2283b413c100b36127abd1c5a71898f2d065e0b1d81c21457ab94c2549
+merged_from:
+- TOGO_M607_G5G6_Medium

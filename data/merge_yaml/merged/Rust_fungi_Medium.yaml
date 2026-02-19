@@ -1,0 +1,65 @@
+name: Rust fungi Medium
+original_name: Rust fungi Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water make up to
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Sucrose
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:17992
+    label: sucrose
+- preferred_term: Murashige & Skoog's plant salt mixture*
+  concentration:
+    value: '1.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
+- preferred_term: Bacto Agar (Difco)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Peptic Pepton (USB)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Lab-Lemco Broth (OXOID)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1422
+  term:
+    id: TOGO:M1422
+    label: Rust fungi Medium
+notes: 'Source: https://togomedium.org/medium/M1422
+
+  Original source: NBRC - NBRC_M19
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=19'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.661957Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1422'
+- timestamp: '2026-01-28T19:48:09.085014Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9ea9f4a0736cd15c3a6f2006fe13d1f7b981520530ef01ac690228346ca79e89
+merged_from:
+- TOGO_M1422_Rust_fungi_Medium

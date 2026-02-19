@@ -1,0 +1,134 @@
+name: JCM MEDIUM No. 1264
+original_name: JCM MEDIUM No. 1264
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: JCM Medium J1264
+  term:
+    id: mediadive.medium:J1264
+    label: JCM MEDIUM No. 1264
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1264'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Sodium formate
+  term:
+    id: CHEBI:62965
+    label: Sodium formate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Sodium lactate
+  term:
+    id: CHEBI:75228
+    label: Sodium lactate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Disodium succinate x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: DL-Malic acid
+  term:
+    id: CHEBI:6650
+    label: DL-Malic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Fumaric acid
+  term:
+    id: CHEBI:18012
+    label: Fumaric acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.29'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.27'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '9'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: After autoclaving, adjust pH to 10.0 with sterilized 10% Na2CO3 solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.221080Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1264'
+- timestamp: '2026-01-28T19:48:29.839890Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 0bd0433f60eb19e0bcb3f1cdb4bc052bc26484ac29a8daf40dbbc235a468b1e5
+merged_from:
+- JCM_J1264_JCM_MEDIUM_No._1264

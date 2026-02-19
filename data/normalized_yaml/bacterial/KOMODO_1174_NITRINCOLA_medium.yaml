@@ -11,7 +11,46 @@ media_term:
   term:
     id: komodo.medium:1174
     label: NITRINCOLA medium
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na acetate
+  term:
+    id: CHEBI:32954
+    label: Na acetate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '17.5'
+    unit: G_PER_L
+- preferred_term: Na2B4O7
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  term:
+    id: CHEBI:38892
+    label: ''
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +58,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1174'
+- timestamp: '2026-02-03T11:19:10.200134'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1174

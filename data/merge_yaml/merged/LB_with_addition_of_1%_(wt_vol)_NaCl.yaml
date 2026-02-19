@@ -1,0 +1,39 @@
+name: LB with addition of 1% (wt/vol) NaCl
+original_name: LB with addition of 1% (wt/vol) NaCl
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: LB
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2268
+  term:
+    id: TOGO:M2268
+    label: LB with addition of 1% (wt/vol) NaCl
+notes: 'Source: https://togomedium.org/medium/M2268'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.249400Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2268'
+- timestamp: '2026-01-28T19:48:24.179634Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ae055d0f6f041d75276e07517e7961cc3c6bf86ac2392ed7a3548310897d7176
+merged_from:
+- TOGO_M2268_LB_with_addition_of_1_wt_vol_NaCl

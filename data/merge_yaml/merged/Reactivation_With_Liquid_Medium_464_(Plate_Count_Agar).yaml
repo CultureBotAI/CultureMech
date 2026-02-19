@@ -1,0 +1,61 @@
+name: Reactivation With Liquid Medium 464 (Plate Count Agar)
+original_name: Reactivation With Liquid Medium 464 (Plate Count Agar)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar, if required
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2310
+  term:
+    id: TOGO:M2310
+    label: Reactivation With Liquid Medium 464 (Plate Count Agar)
+notes: 'Source: https://togomedium.org/medium/M2310
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium464a.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.319284Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2310'
+- timestamp: '2026-01-28T19:48:09.237137Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fdb503f37fbf38f65a9a65ca16263dae069d152af3557894dfebbb1fdb5e807e
+merged_from:
+- TOGO_M2310_Reactivation_With_Liquid_Medium_464_Plate_Count_Agar

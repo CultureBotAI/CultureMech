@@ -1,0 +1,35 @@
+name: Lactobacilli MRS Broth
+original_name: Lactobacilli MRS Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Lactobacilli MRS Broth (BD 288130)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2435
+  term:
+    id: TOGO:M2435
+    label: Lactobacilli MRS Broth
+notes: 'Source: https://togomedium.org/medium/M2435
+
+  Original URL: https://www.atcc.org/~/media/39839AC0CB884212A57DBF6936371D91.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.500910Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2435'
+merge_fingerprint: aa707f01da6ff8b18c948c246d8590a32d8b85570e35b1747a1bb39ed4f9aad5
+merged_from:
+- TOGO_M2435_Lactobacilli_MRS_Broth

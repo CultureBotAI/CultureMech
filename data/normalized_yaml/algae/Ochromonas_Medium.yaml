@@ -1,22 +1,30 @@
 name: Ochromonas Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Glucose(BACTO-dextrose or Sigma D 9634)
-- agent_term:
-    preferred_term: '2'
-  amount: Tryptone (Sigma T 9410)
-- agent_term:
-    preferred_term: '3'
-  amount: Yeast extract(Bacto, Difco)
-- agent_term:
-    preferred_term: '4'
-  amount: Liver extract infusion
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Glucose(BACTO-dextrose or Sigma D 9634)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Tryptone (Sigma T 9410)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Yeast extract(Bacto, Difco)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Liver extract infusion'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

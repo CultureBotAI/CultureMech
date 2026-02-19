@@ -11,7 +11,29 @@ media_term:
     label: CY-AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 67 | DSMZ Medium: 67 (mediadive.medium:67)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Casitone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +41,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 67'
+- timestamp: '2026-02-03T11:19:15.491667'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 67

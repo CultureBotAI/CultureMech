@@ -11,7 +11,81 @@ media_term:
   term:
     id: komodo.medium:938
     label: ST21 AGAR FOR CELLULOSE DEGRADERS
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.66667'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0333333'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '23.3333'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '600'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 7 H2O
+  term:
+    id: CHEBI:86360
+    label: MnSO4 x 7 H2O
+  concentration:
+    value: '0.333333'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '100'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +93,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 938'
+- timestamp: '2026-02-03T11:19:01.147638'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 938

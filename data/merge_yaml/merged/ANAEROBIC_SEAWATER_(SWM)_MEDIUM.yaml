@@ -1,0 +1,444 @@
+name: ANAEROBIC SEAWATER (SWM) MEDIUM
+original_name: ANAEROBIC SEAWATER (SWM) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 504
+  term:
+    id: mediadive.medium:504
+    label: ANAEROBIC SEAWATER (SWM) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium504.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.212314'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.265393'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1.06157'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.424628'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.530786'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.159236'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000530786'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 – 45 min
+    to make it anoxic, distribute under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Solution B is autoclaved separately under
+    80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared under 100% N2
+    gas and sterilized by filtration. Solution E is autoclaved under 100% N2 gas.
+    To complete the medium appropriate amounts of solutions B to E are added to the
+    sterile solution A in the sequence as indicated. Adjust the pH of the complete
+    medium to 7.2  – 7.4, if necessary.
+- step_number: 2
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.430426Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 504'
+- timestamp: '2026-02-03T22:26:00.432572+00:00'
+  curator: recipe-merger
+  action: Merged 38 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_503-11045_MEDIUM_503_MODIFIED_FOR_DSM_11045, KOMODO_503-11480_MEDIUM_503_MODIFIED_FOR_DSM_11480,
+    KOMODO_503-11493_MEDIUM_503_MODIFIED_FOR_DSM_11493, KOMODO_503-11_For_DSM_15206,
+    KOMODO_503-12018_MEDIUM_503_MODIFIED_FOR_DSM_12018, KOMODO_503-12_For_DSM_15970,
+    KOMODO_503-13_For_DSM_15978, KOMODO_503-14_For_DSM_16082, KOMODO_503-15_For_DSM_19636,
+    KOMODO_503-16_For_DSM_21662, KOMODO_503-17_For_DSM_14691, KOMODO_503-1_For_DSM_5847,
+    KOMODO_503-2_For_DSM_5849, KOMODO_503-3_For_DSM_5651, KOMODO_503-4_For_DSM_6779,
+    KOMODO_503-5_For_DSM_11046, KOMODO_503-6_For_DSM_11261, KOMODO_503-7_For_DSM_11262,
+    KOMODO_503-8_For_DSM_11263_and_DSM_11489, KOMODO_503-9_For_DSM_14424, KOMODO_503_FWM-MEDIUM,
+    KOMODO_503a_MODIFIED_VWM_MEDIUM, KOMODO_503b-14691_MEDIUM_503b_MODIFIED_FOR_DSM_14691,
+    KOMODO_503b-14692_MEDIUM_503b_MODIFIED_FOR_DSM_14692, KOMODO_503b_FWM_MEDIUM_MODIFIED,
+    KOMODO_503c_PROPIONISPORA_MEDIUM, KOMODO_503d-1_For_DSM_13326, KOMODO_503d-2_For_DSM_13327,
+    KOMODO_503d_TMAO3_TMPN3_medium, KOMODO_504-1_For_DSM_5848, KOMODO_504-2_For_DSM_6233,
+    KOMODO_504-3_For_DSM_9705, KOMODO_504-4_For_DSM_12881, KOMODO_504-5_For_DSM_13687,
+    KOMODO_504-6_For_DSM_19335, KOMODO_504_SWM-MEDIUM, DSMZ_503_ANAEROBIC_FRESHWATER_FWM_MEDIUM,
+    DSMZ_504_ANAEROBIC_SEAWATER_SWM_MEDIUM'
+synonyms:
+- name: MEDIUM 503 MODIFIED FOR DSM 11045
+  source: KOMODO
+  source_id: komodo.medium:503_11045
+  original_category: imported
+- name: MEDIUM 503 MODIFIED FOR DSM 11480
+  source: KOMODO
+  source_id: komodo.medium:503_11480
+  original_category: imported
+- name: MEDIUM 503 MODIFIED FOR DSM 11493
+  source: KOMODO
+  source_id: komodo.medium:503_11493
+  original_category: imported
+- name: For DSM 15206
+  source: KOMODO
+  source_id: komodo.medium:503.11
+  original_category: imported
+- name: MEDIUM 503 MODIFIED FOR DSM 12018
+  source: KOMODO
+  source_id: komodo.medium:503_12018
+  original_category: imported
+- name: For DSM 15970
+  source: KOMODO
+  source_id: komodo.medium:503.12
+  original_category: imported
+- name: For DSM 15978
+  source: KOMODO
+  source_id: komodo.medium:503.13
+  original_category: imported
+- name: For DSM 16082
+  source: KOMODO
+  source_id: komodo.medium:503.14
+  original_category: imported
+- name: 'For DSM 19636:'
+  source: KOMODO
+  source_id: komodo.medium:503.15
+  original_category: imported
+- name: For DSM 21662
+  source: KOMODO
+  source_id: komodo.medium:503.16
+  original_category: imported
+- name: For DSM 14691
+  source: KOMODO
+  source_id: komodo.medium:503.17
+  original_category: imported
+- name: For DSM 5847
+  source: KOMODO
+  source_id: komodo.medium:503.1
+  original_category: imported
+- name: For DSM 5849
+  source: KOMODO
+  source_id: komodo.medium:503.2
+  original_category: imported
+- name: For DSM 5651
+  source: KOMODO
+  source_id: komodo.medium:503.3
+  original_category: imported
+- name: For DSM 6779
+  source: KOMODO
+  source_id: komodo.medium:503.4
+  original_category: imported
+- name: For DSM 11046
+  source: KOMODO
+  source_id: komodo.medium:503.5
+  original_category: imported
+- name: For DSM 11261
+  source: KOMODO
+  source_id: komodo.medium:503.6
+  original_category: imported
+- name: For DSM 11262
+  source: KOMODO
+  source_id: komodo.medium:503.7
+  original_category: imported
+- name: For DSM 11263 and DSM 11489
+  source: KOMODO
+  source_id: komodo.medium:503.8
+  original_category: imported
+- name: For DSM 14424
+  source: KOMODO
+  source_id: komodo.medium:503.9
+  original_category: imported
+- name: FWM-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:503
+  original_category: imported
+- name: MODIFIED VWM MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:503a
+  original_category: imported
+- name: MEDIUM 503b MODIFIED FOR DSM 14691
+  source: KOMODO
+  source_id: komodo.medium:503b_14691
+  original_category: imported
+- name: MEDIUM 503b MODIFIED FOR DSM 14692
+  source: KOMODO
+  source_id: komodo.medium:503b_14692
+  original_category: imported
+- name: FWM MEDIUM (MODIFIED)
+  source: KOMODO
+  source_id: komodo.medium:503b
+  original_category: imported
+- name: PROPIONISPORA MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:503c
+  original_category: imported
+- name: For DSM 13326
+  source: KOMODO
+  source_id: komodo.medium:503d.1
+  original_category: imported
+- name: For DSM 13327
+  source: KOMODO
+  source_id: komodo.medium:503d.2
+  original_category: imported
+- name: TMAO3/TMPN3 medium
+  source: KOMODO
+  source_id: komodo.medium:503d
+  original_category: imported
+- name: For DSM 5848
+  source: KOMODO
+  source_id: komodo.medium:504.1
+  original_category: imported
+- name: For DSM 6233
+  source: KOMODO
+  source_id: komodo.medium:504.2
+  original_category: imported
+- name: For DSM 9705
+  source: KOMODO
+  source_id: komodo.medium:504.3
+  original_category: imported
+- name: For DSM 12881
+  source: KOMODO
+  source_id: komodo.medium:504.4
+  original_category: imported
+- name: For DSM 13687
+  source: KOMODO
+  source_id: komodo.medium:504.5
+  original_category: imported
+- name: For DSM 19335
+  source: KOMODO
+  source_id: komodo.medium:504.6
+  original_category: imported
+- name: SWM-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:504
+  original_category: imported
+- name: ANAEROBIC FRESHWATER (FWM) MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:503
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_503-11045_MEDIUM_503_MODIFIED_FOR_DSM_11045
+- KOMODO_503-11480_MEDIUM_503_MODIFIED_FOR_DSM_11480
+- KOMODO_503-11493_MEDIUM_503_MODIFIED_FOR_DSM_11493
+- KOMODO_503-11_For_DSM_15206
+- KOMODO_503-12018_MEDIUM_503_MODIFIED_FOR_DSM_12018
+- KOMODO_503-12_For_DSM_15970
+- KOMODO_503-13_For_DSM_15978
+- KOMODO_503-14_For_DSM_16082
+- KOMODO_503-15_For_DSM_19636
+- KOMODO_503-16_For_DSM_21662
+- KOMODO_503-17_For_DSM_14691
+- KOMODO_503-1_For_DSM_5847
+- KOMODO_503-2_For_DSM_5849
+- KOMODO_503-3_For_DSM_5651
+- KOMODO_503-4_For_DSM_6779
+- KOMODO_503-5_For_DSM_11046
+- KOMODO_503-6_For_DSM_11261
+- KOMODO_503-7_For_DSM_11262
+- KOMODO_503-8_For_DSM_11263_and_DSM_11489
+- KOMODO_503-9_For_DSM_14424
+- KOMODO_503_FWM-MEDIUM
+- KOMODO_503a_MODIFIED_VWM_MEDIUM
+- KOMODO_503b-14691_MEDIUM_503b_MODIFIED_FOR_DSM_14691
+- KOMODO_503b-14692_MEDIUM_503b_MODIFIED_FOR_DSM_14692
+- KOMODO_503b_FWM_MEDIUM_MODIFIED
+- KOMODO_503c_PROPIONISPORA_MEDIUM
+- KOMODO_503d-1_For_DSM_13326
+- KOMODO_503d-2_For_DSM_13327
+- KOMODO_503d_TMAO3_TMPN3_medium
+- KOMODO_504-1_For_DSM_5848
+- KOMODO_504-2_For_DSM_6233
+- KOMODO_504-3_For_DSM_9705
+- KOMODO_504-4_For_DSM_12881
+- KOMODO_504-5_For_DSM_13687
+- KOMODO_504-6_For_DSM_19335
+- KOMODO_504_SWM-MEDIUM
+- DSMZ_503_ANAEROBIC_FRESHWATER_FWM_MEDIUM
+- DSMZ_504_ANAEROBIC_SEAWATER_SWM_MEDIUM
+merge_fingerprint: ef7169583e69dd09065c1cc0fc2ebc697c81ff0e393fa422ce5771e24eb128fb

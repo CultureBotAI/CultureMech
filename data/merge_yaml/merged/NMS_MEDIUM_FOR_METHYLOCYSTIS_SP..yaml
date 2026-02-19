@@ -1,0 +1,149 @@
+name: NMS MEDIUM FOR METHYLOCYSTIS SP.
+original_name: NMS MEDIUM FOR METHYLOCYSTIS SP.
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1179
+  term:
+    id: mediadive.medium:1179
+    label: NMS MEDIUM FOR METHYLOCYSTIS SP.
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1179.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.272'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.717'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.8.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dispense the medium into the growth vessels. If using sealed vessels
+    it is appropriate to add 50% methane to the gas phase Autoclave at 121°C for 15
+    min.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.598572Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1179'
+- timestamp: '2026-02-03T22:25:29.797956+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1179_NMS_MEDIUM_FOR_METHYLOCYSTIS_SP., KOMODO_1179_NMS_MEDIUM_FOR_METHANOTROPHS'
+synonyms:
+- name: NMS MEDIUM FOR METHANOTROPHS
+  source: KOMODO
+  source_id: komodo.medium:1179
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1179_NMS_MEDIUM_FOR_METHYLOCYSTIS_SP.
+- KOMODO_1179_NMS_MEDIUM_FOR_METHANOTROPHS
+merge_fingerprint: 98070e4919d6d3f7499937b11145c03a78fd50f40c715c4c2a68dd0384aee22f

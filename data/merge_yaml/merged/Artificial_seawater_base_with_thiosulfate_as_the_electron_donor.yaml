@@ -1,0 +1,50 @@
+name: Artificial seawater base with thiosulfate as the electron donor
+original_name: Artificial seawater base with thiosulfate as the electron donor
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Artificial seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
+    component, Solution'
+- preferred_term: thiosulfate
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26977
+    label: Thiosulfate
+- preferred_term: O2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2252
+  term:
+    id: TOGO:M2252
+    label: Artificial seawater base with thiosulfate as the electron donor
+notes: 'Source: https://togomedium.org/medium/M2252'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.225535Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2252'
+- timestamp: '2026-01-28T19:48:40.656861Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.902039'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: O2'
+merge_fingerprint: 56d84f1f811c62af899070183b301188bcfdeb8edc3a3c2018f34769aa19e91f
+merged_from:
+- TOGO_M2252_Artificial_seawater_base_with_thiosulfate_as_the_electron_donor

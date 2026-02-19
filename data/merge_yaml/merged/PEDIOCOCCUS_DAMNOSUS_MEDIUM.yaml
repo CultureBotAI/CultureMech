@@ -1,0 +1,143 @@
+name: PEDIOCOCCUS DAMNOSUS MEDIUM
+original_name: PEDIOCOCCUS DAMNOSUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.2
+media_term:
+  preferred_term: DSMZ Medium 231
+  term:
+    id: mediadive.medium:231
+    label: PEDIOCOCCUS DAMNOSUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium231.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)3 citrate
+  term:
+    id: CHEBI:63037
+    label: (NH4)3 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Cysteine hydrochloride
+  term:
+    id: CHEBI:91248
+    label: Cysteine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Medium should be filled up into crew capped tubes (Wheaton).
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 5.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.561683Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 231'
+- timestamp: '2026-02-03T22:25:38.001599+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_231_PEDIOCOCCUS_DAMNOSUS_MEDIUM, KOMODO_231-12361_MEDIUM_231_MODIFIED_FOR_DSM_12361,
+    KOMODO_231-18631_MEDIUM_231_MODIFIED_FOR_DSM_18631, KOMODO_231-19117_MEDIUM_231_MODIFIED_FOR_DSM_19117,
+    KOMODO_231-20080_MEDIUM_231_MODIFIED_FOR_DSM_20080, KOMODO_231-20355_MEDIUM_231_MODIFIED_FOR_DSM_20355,
+    KOMODO_231-22467_MEDIUM_231_MODIFIED_FOR_DSM_22467, KOMODO_231_PEDIOCOCCUS_DAMNOSUS_medium'
+synonyms:
+- name: MEDIUM 231 MODIFIED FOR DSM 12361
+  source: KOMODO
+  source_id: komodo.medium:231_12361
+  original_category: imported
+- name: MEDIUM 231 MODIFIED FOR DSM 18631
+  source: KOMODO
+  source_id: komodo.medium:231_18631
+  original_category: imported
+- name: MEDIUM 231 MODIFIED FOR DSM 19117
+  source: KOMODO
+  source_id: komodo.medium:231_19117
+  original_category: imported
+- name: MEDIUM 231 MODIFIED FOR DSM 20080
+  source: KOMODO
+  source_id: komodo.medium:231_20080
+  original_category: imported
+- name: MEDIUM 231 MODIFIED FOR DSM 20355
+  source: KOMODO
+  source_id: komodo.medium:231_20355
+  original_category: imported
+- name: MEDIUM 231 MODIFIED FOR DSM 22467
+  source: KOMODO
+  source_id: komodo.medium:231_22467
+  original_category: imported
+- name: PEDIOCOCCUS DAMNOSUS medium
+  source: KOMODO
+  source_id: komodo.medium:231
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_231_PEDIOCOCCUS_DAMNOSUS_MEDIUM
+- KOMODO_231-12361_MEDIUM_231_MODIFIED_FOR_DSM_12361
+- KOMODO_231-18631_MEDIUM_231_MODIFIED_FOR_DSM_18631
+- KOMODO_231-19117_MEDIUM_231_MODIFIED_FOR_DSM_19117
+- KOMODO_231-20080_MEDIUM_231_MODIFIED_FOR_DSM_20080
+- KOMODO_231-20355_MEDIUM_231_MODIFIED_FOR_DSM_20355
+- KOMODO_231-22467_MEDIUM_231_MODIFIED_FOR_DSM_22467
+- KOMODO_231_PEDIOCOCCUS_DAMNOSUS_medium
+merge_fingerprint: e372db1001740c18c82ce5b05c92e4224cd7ea1be7be80e40e72efe235aafff1

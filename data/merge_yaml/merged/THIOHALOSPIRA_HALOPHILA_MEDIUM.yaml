@@ -1,0 +1,244 @@
+name: THIOHALOSPIRA HALOPHILA MEDIUM
+original_name: THIOHALOSPIRA HALOPHILA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 1058a
+  term:
+    id: mediadive.medium:1058a
+    label: THIOHALOSPIRA HALOPHILA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1058a.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '233'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium
+    chloride, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
+    Dispense solution under air atmosphere in Erlenmeyer flasks to 10% of volume,
+    close with screw caps and autoclave. Add trace elements, calcium chloride, magnesium
+    chloride, thiosulfate, bicarbonate and vitamins from sterile stock solutions and
+    adjust pH of the medium to 7.0 - 7.2, if necessary. Incubate with shaking.
+- step_number: 2
+  action: MIX
+  description: 'Note: Use at least 10% (v/v) as inoculum.'
+- step_number: 3
+  action: MIX
+  description: pH 3.0-4.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.245674Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1058a'
+- timestamp: '2026-02-03T22:25:25.150740+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1058a_THIOHALOSPIRA_HALOPHILA_MEDIUM, DSMZ_1058b_HALOTHIOBACILLUS_HL2_MEDIUM,
+    KOMODO_1058-1_For_DSM_15070_and_DSM_15071, KOMODO_1058-2_For_DSM_15074, KOMODO_1058-3_For_DSM_15699,
+    KOMODO_1058-4_For_DSM_15841_and_DSM_16925, KOMODO_1058-5_For_DSM_21152, KOMODO_1058_THIOHALOPHILUS_MEDIUM'
+synonyms:
+- name: HALOTHIOBACILLUS HL2 MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1058b
+  original_category: imported
+- name: For DSM 15070 and DSM 15071
+  source: KOMODO
+  source_id: komodo.medium:1058.1
+  original_category: imported
+- name: For DSM 15074
+  source: KOMODO
+  source_id: komodo.medium:1058.2
+  original_category: imported
+- name: For DSM 15699
+  source: KOMODO
+  source_id: komodo.medium:1058.3
+  original_category: imported
+- name: For DSM 15841 and DSM 16925
+  source: KOMODO
+  source_id: komodo.medium:1058.4
+  original_category: imported
+- name: For DSM 21152
+  source: KOMODO
+  source_id: komodo.medium:1058.5
+  original_category: imported
+- name: THIOHALOPHILUS MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:1058
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1058a_THIOHALOSPIRA_HALOPHILA_MEDIUM
+- DSMZ_1058b_HALOTHIOBACILLUS_HL2_MEDIUM
+- KOMODO_1058-1_For_DSM_15070_and_DSM_15071
+- KOMODO_1058-2_For_DSM_15074
+- KOMODO_1058-3_For_DSM_15699
+- KOMODO_1058-4_For_DSM_15841_and_DSM_16925
+- KOMODO_1058-5_For_DSM_21152
+- KOMODO_1058_THIOHALOPHILUS_MEDIUM
+merge_fingerprint: f7311681c956006a7a3ca8d85962c0b6dc26eb9a5326a33542c174fc7869baf9

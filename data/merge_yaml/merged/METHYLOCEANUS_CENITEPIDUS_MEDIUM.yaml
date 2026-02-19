@@ -1,0 +1,178 @@
+name: METHYLOCEANUS CENITEPIDUS MEDIUM
+original_name: METHYLOCEANUS CENITEPIDUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1488
+  term:
+    id: mediadive.medium:1488
+    label: METHYLOCEANUS CENITEPIDUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1488.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '18'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '71.6'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '26'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 6 H2O
+  term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.26'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dilute 100 ml solution 1 to 1 litre with 2% NaCl and then add 1 ml
+    of solution 3, 1 ml of the trace elements, and 0.1 ml of solution 2. If solid
+    media is required add 1.5% agar. Autoclave the phosphate buffer separately. When
+    the growth medium is cool 10 ml/l of the phosphate buffer is added - if too warm
+    the phosphate will precipitate.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Add filter-sterilized methanol to produce 1% (final concentration).
+- step_number: 3
+  action: HEAT
+  description: May be stored at 4°C in the dark
+- step_number: 4
+  action: ADJUST_PH
+  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up
+    to 1 litre.
+- step_number: 5
+  action: DISSOLVE
+  description: Dissolve the ingredients listed above (in that order) in about 700
+    ml of 2% NaCl, and then make up to 1 litre with 2% NaCl.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.586781Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1488'
+merge_fingerprint: aeb00091afa00feeb32faed6f76da073a3e2859fde9378037000a066ce9ee7ec
+merged_from:
+- DSMZ_1488_METHYLOCEANUS_CENITEPIDUS_MEDIUM

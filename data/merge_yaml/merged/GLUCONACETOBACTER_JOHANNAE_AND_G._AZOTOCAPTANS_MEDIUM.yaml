@@ -1,0 +1,90 @@
+name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM
+original_name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: DSMZ Medium 920
+  term:
+    id: mediadive.medium:920
+    label: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium920.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: MES buffer
+  concentration:
+    value: '4.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4.81'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.65'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final pH
+    6.7.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.752405Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 920'
+- timestamp: '2026-02-03T22:25:51.474494+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_MEDIUM,
+    KOMODO_920-1_DSM_13594_and_DSM_13595, KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium'
+synonyms:
+- name: DSM 13594 and DSM 13595
+  source: KOMODO
+  source_id: komodo.medium:920.1
+  original_category: imported
+- name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
+  source: KOMODO
+  source_id: komodo.medium:920
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_MEDIUM
+- KOMODO_920-1_DSM_13594_and_DSM_13595
+- KOMODO_920_GLUCONACETOBACTER_JOHANNAE_AND_G._AZOTOCAPTANS_medium
+merge_fingerprint: 999494acc91f2b417503a6898aa7defcc0c264ac2fa7b8a977b3ea2da8f3c063

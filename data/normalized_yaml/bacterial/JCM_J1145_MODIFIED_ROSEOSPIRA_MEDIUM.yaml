@@ -27,3 +27,9 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1145'
+- timestamp: '2026-02-03T11:26:53.148188'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
+data_quality_flags:
+- incomplete_composition

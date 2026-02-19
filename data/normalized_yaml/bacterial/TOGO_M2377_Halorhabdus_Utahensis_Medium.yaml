@@ -63,9 +63,6 @@ ingredients:
     value: '12'
     unit: G_PER_L
   notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
-  term:
-    id: CHEBI:1185531
-    label: ''
 - preferred_term: Glucose
   concentration:
     value: '2'
@@ -97,6 +94,9 @@ ingredients:
   term:
     id: CHEBI:32145
     label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -176,3 +176,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.510856'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+- timestamp: '2026-02-06T05:10:32.244430Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

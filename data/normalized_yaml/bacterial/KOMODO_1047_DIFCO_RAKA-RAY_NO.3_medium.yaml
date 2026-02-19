@@ -10,7 +10,94 @@ media_term:
     label: DIFCO RAKA-RAY NO.3 medium
 notes: 'Source: KOMODO ModelSEED | ID: 1047 | DSMZ Medium: 1047 (mediadive.medium:1047)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Liver Concentrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Betaine Hydrochloride
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Diammonium Citrate
+  term:
+    id: CHEBI:63076
+    label: Diammonium Citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Potassium Aspartate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.98'
+    unit: G_PER_L
+- preferred_term: Manganese Sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.42'
+    unit: G_PER_L
+- preferred_term: Dipotassium Phosphate
+  term:
+    id: CHEBI:131527
+    label: Dipotassium Phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Potassium Glutamate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '16'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +105,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1047'
+- timestamp: '2026-02-03T11:18:58.376129'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1047
+ph_value: 5.4

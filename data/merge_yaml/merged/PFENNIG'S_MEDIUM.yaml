@@ -1,0 +1,117 @@
+name: Pfennig's Medium
+original_name: Pfennig's Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2S・9H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NaHCO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Vitamin B12
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:176843
+    label: vitamin B12
+- preferred_term: Acetate (final concentration)
+  concentration:
+    value: '2'
+    unit: MILLIMOLAR
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Thiosulfate (final concentration)
+  concentration:
+    value: '10'
+    unit: MILLIMOLAR
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Trace element solution SL--10 (see Medium [M433])
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M700
+  term:
+    id: TOGO:M700
+    label: Pfennig's Medium
+notes: 'Source: https://togomedium.org/medium/M700
+
+  Original source: JCM - JCM_M681
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=681'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.560279Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M700'
+- timestamp: '2026-01-28T19:48:30.907211Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3978d5e8af9ff72ffac4ee60c0183b8b06100fe4f8c5dae8a40ef94c04798d0a
+merged_from:
+- TOGO_M700_Pfennig_s_Medium

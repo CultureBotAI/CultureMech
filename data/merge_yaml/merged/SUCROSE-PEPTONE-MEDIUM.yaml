@@ -1,0 +1,45 @@
+name: SUCROSE-PEPTONE-MEDIUM
+original_name: SUCROSE-PEPTONE-MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 459
+  term:
+    id: mediadive.medium:459
+    label: SUCROSE-PEPTONE-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium459.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.197014Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 459'
+- timestamp: '2026-02-03T22:25:42.662315+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_459_SUCROSE-PEPTONE-MEDIUM, KOMODO_459_SUCROSE-Peptone-MEDIUM'
+synonyms:
+- name: SUCROSE-Peptone-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:459
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_459_SUCROSE-PEPTONE-MEDIUM
+- KOMODO_459_SUCROSE-Peptone-MEDIUM
+merge_fingerprint: 5048b73d53ea8c368aa9e9dbb8249f823804c5150e934e9a764e618e16e405d2

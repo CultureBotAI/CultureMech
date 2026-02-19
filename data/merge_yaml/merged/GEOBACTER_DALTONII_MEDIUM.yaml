@@ -1,0 +1,162 @@
+name: Geobacter Daltonii Medium
+original_name: Geobacter Daltonii Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '940'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Trace element solution (see Medium [M439])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 8% NaHCO3 solution*
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M Sodium acetate solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Organic compound'
+- preferred_term: 1 M Sodium fumarate solution
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: Vitamin solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 5% L--Cysteine・HCl・H2O solution
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Solution, Organic compound'
+media_term:
+  preferred_term: TOGO Medium M781
+  term:
+    id: TOGO:M781
+    label: Geobacter Daltonii Medium
+notes: 'Source: https://togomedium.org/medium/M781
+
+  Original source: JCM - JCM_M756
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=756'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.702736Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M781'
+- timestamp: '2026-01-28T19:48:07.846017Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.528852'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+merge_fingerprint: 105c5af60f463e9b87a756d4278f5a5e4e0ed258bf6624c88e76a6f8fb9695e0
+merged_from:
+- TOGO_M781_Geobacter_Daltonii_Medium

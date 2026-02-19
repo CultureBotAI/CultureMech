@@ -1,0 +1,120 @@
+name: PER
+original_name: PER
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C75
+  term:
+    id: mediadive.medium:C75
+    label: PER
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PER.pdf'
+ingredients:
+- preferred_term: Complan
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 15 psi for 15 minutes.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water and autoclave at 15 psi for
+    15 minutes.
+- step_number: 3
+  action: MIX
+  description: "At the  CCAP, SE1 is  used for  marine algae, SE2 for freshwater \
+    \ and terrestrial\r\nprotozoa."
+- step_number: 4
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 5
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 6
+  action: AUTOCLAVE
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
+    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
+    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
+    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
+    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
+    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
+    \ until\r\nrequired."
+- step_number: 7
+  action: MIX
+  description: "Site selection for a good soil is very important and for most purposes\
+    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
+    \ showing obvious signs of man's activity\r\nand particular care should be taken\
+    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
+    \ have been used."
+- step_number: 8
+  action: HEAT
+  description: "A rich loam with good crumb structure should be sought. Stones, roots\
+    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
+    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
+    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
+    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
+    \ airtight container away from light and heat."
+- step_number: 9
+  action: AUTOCLAVE
+  description: "Soil is  prepared  as  above.  Air­-dried  soil and  twice  its  volume\
+    \  of  supernatant\r\ndistilled water are autoclaved together at 15 psi for 2\
+    \ hours and left to cool.  The \r\nsupernatant is then decanted and filtered through\
+    \ Whatman No 1 filter paper, then\r\ndistributed to containers in volumes suitable\
+    \ for making up batches of media. The \r\naliquots and their containers are autoclaved\
+    \ for an appropriate length of time (e.g.\r\n1 litre or less for 15 minutes) and\
+    \ are then kept in a cool place (e.g. a refrigerator) \r\nuntil required."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.731870Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C75'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:17.183532'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil; Added default concentration
+    for ingredient: Soil'
+merge_fingerprint: fb7d4c7bb2555545d13785252d9ecde3a876d24f665c518e68ff132a942cc587
+merged_from:
+- CCAP_C75_PER

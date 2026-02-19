@@ -1,0 +1,86 @@
+name: Chlamydia serpentis & poikilotherma Medium
+original_name: Chlamydia serpentis & poikilotherma Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1793
+  term:
+    id: mediadive.medium:1793
+    label: Chlamydia serpentis & poikilotherma Medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: MEM-Medium
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '60'
+    unit: G_PER_L
+- preferred_term: Demineralized water
+  term:
+    id: CHEBI:15377
+    label: Demineralized water
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Cycloheximid
+  term:
+    id: CHEBI:27641
+    label: Cycloheximid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Demineralized water
+  term:
+    id: CHEBI:15377
+    label: Demineralized water
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
+    room temperature to facilitate detection of contamination.
+- step_number: 2
+  action: HEAT
+  description: Prepare a 25 cm2 flask and seed cells according to standard protocols.
+    Incubate at 37°C plus 5% CO2. When a confluent layer has formed, infection can
+    be carried out.
+- step_number: 3
+  action: HEAT
+  description: Exchange medium with Infection Medium (as above with the addition of
+    cycloheximide) and add 500 - 1000 µl of EB stock solution (thawed quickly to 37°C).
+- step_number: 4
+  action: HEAT
+  description: Centrifuge for 1 h onto the cell layer at 1000 x g at >20°C.
+- step_number: 5
+  action: HEAT
+  description: Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions.
+    Not all Chlamydiae form well-visible inclusions, ultimately, immunofluorescence
+    or in situ-hybridization techniques are necessary to visualize inclusions.
+- step_number: 6
+  action: MIX
+  description: Filtrate.
+- step_number: 7
+  action: MIX
+  description: Filtrate.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.461458Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1793'
+merge_fingerprint: 8cd3120b35686a5dd5a0b073f8d3262bbe4b4dad6ef08424396c861ea8869850
+merged_from:
+- DSMZ_1793_Chlamydia_serpentis_poikilotherma_Medium

@@ -200,9 +200,6 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  term:
-    id: CHEBI:7773015
-    label: ''
 - preferred_term: Pantothenate
   concentration:
     value: '1'
@@ -423,6 +420,9 @@ ingredients:
   term:
     id: CHEBI:44115
     label: ''
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2239
   term:
@@ -440,3 +440,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.834879'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: MOPS buffer'
+- timestamp: '2026-02-06T05:10:46.923831Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

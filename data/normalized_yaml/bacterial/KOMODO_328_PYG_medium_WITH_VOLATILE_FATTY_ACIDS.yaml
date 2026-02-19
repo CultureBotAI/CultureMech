@@ -11,7 +11,155 @@ media_term:
     label: PYG medium WITH VOLATILE FATTY ACIDS
 notes: 'Source: KOMODO ModelSEED | ID: 328 | DSMZ Medium: 328 (mediadive.medium:328)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Vitamin K1
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.48'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Acetic acid
+  term:
+    id: CHEBI:15366
+    label: Acetic acid
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Propionic acid
+  term:
+    id: CHEBI:30768
+    label: Propionic acid
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: n-Butyric acid
+  term:
+    id: CHEBI:30772
+    label: n-Butyric acid
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: iso-Valeric acid
+  term:
+    id: CHEBI:503742
+    label: iso-Valeric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: iso-Butyric acid
+  term:
+    id: CHEBI:16135
+    label: iso-Butyric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: DL-2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-2-Methylbutyric acid
+  concentration:
+    value: '1'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +167,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 328'
+- timestamp: '2026-02-03T11:19:08.890455'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 328

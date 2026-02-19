@@ -10,7 +10,29 @@ media_term:
     label: FALCIVIBRIO MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 301 | DSMZ Medium: 301 (mediadive.medium:301)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Wilkins-Chalgren-Anaerobe-Broth
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Sterile serum
+  concentration:
+    value: '50'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +40,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 301'
+- timestamp: '2026-02-03T11:19:05.255283'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 301

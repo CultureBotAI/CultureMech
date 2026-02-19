@@ -1,0 +1,75 @@
+name: MODIFIED TRYPTONE SOY BROTH/AGAR
+original_name: MODIFIED TRYPTONE SOY BROTH/AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.5
+media_term:
+  preferred_term: DSMZ Medium 1530
+  term:
+    id: mediadive.medium:1530
+    label: MODIFIED TRYPTONE SOY BROTH/AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1530.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '45'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 10.5
+- step_number: 2
+  action: MIX
+  description: The basic medium is the same as Caso Bouillon (Merck or Oxoid). The
+    medium may be solidified by adding 20.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.760847Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1530'
+merge_fingerprint: 2028ef048b99ec205dc4f459fb800d652baac0406ec05c66d64f63e3cdd1aa6e
+merged_from:
+- DSMZ_1530_MODIFIED_TRYPTONE_SOY_BROTH_AGAR

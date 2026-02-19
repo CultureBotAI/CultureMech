@@ -1,0 +1,75 @@
+name: MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
+original_name: MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 570
+  term:
+    id: mediadive.medium:570
+    label: MEDIUM FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium570.pdf'
+ingredients:
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Maize extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH should be 6.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.625633Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 570'
+- timestamp: '2026-02-03T22:25:25.807676+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964, KOMODO_570_medium_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964'
+synonyms:
+- name: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
+  source: KOMODO
+  source_id: komodo.medium:570
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_570_MEDIUM_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964
+- KOMODO_570_medium_FOR_THERMOPHILIC_ACTINOMYCETES_AGRE_1964
+merge_fingerprint: db01f6625c2105a1799d2eccd70aa862d457b1b1ccea8ce205094264c3371eb1

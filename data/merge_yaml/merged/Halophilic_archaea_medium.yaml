@@ -1,0 +1,101 @@
+name: Halophilic archaea medium
+original_name: Halophilic archaea medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MgCl2·6H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Tris
+  concentration:
+    value: '12.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:9754
+    label: tris
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+media_term:
+  preferred_term: TOGO Medium M2039
+  term:
+    id: TOGO:M2039
+    label: Halophilic archaea medium
+notes: 'Source: https://togomedium.org/medium/M2039
+
+  Original source: NBRC - NBRC_M1337
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1337'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.938156Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2039'
+- timestamp: '2026-01-28T19:48:34.851339Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b0bc2a6643a3fcb4441298cb5dac01107c12c39b38667385a22ea7c1fdfd0bd6
+merged_from:
+- TOGO_M2039_Halophilic_archaea_medium

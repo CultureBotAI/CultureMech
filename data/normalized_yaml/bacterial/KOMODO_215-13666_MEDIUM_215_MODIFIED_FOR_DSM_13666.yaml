@@ -11,7 +11,11 @@ media_term:
     label: MEDIUM 215 MODIFIED FOR DSM 13666
 notes: 'Source: KOMODO ModelSEED | ID: 215_13666 | DSMZ Medium: 215 (mediadive.medium:215)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +23,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 215_13666'
+- timestamp: '2026-02-03T11:18:54.700238'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 215

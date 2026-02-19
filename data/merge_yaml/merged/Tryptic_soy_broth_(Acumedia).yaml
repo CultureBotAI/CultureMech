@@ -1,0 +1,27 @@
+name: Tryptic soy broth (Acumedia)
+original_name: Tryptic soy broth (Acumedia)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptic soy broth (Acumedia)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2918
+  term:
+    id: TOGO:M2918
+    label: Tryptic soy broth (Acumedia)
+notes: 'Source: https://togomedium.org/medium/M2918'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.403853Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2918'
+merge_fingerprint: ee05b5fedb1a994e2218ab77c2d960e975f50996c581814812dca5395b712428
+merged_from:
+- TOGO_M2918_Tryptic_soy_broth_Acumedia

@@ -1,0 +1,79 @@
+name: GYPS Medium
+original_name: GYPS Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: MES
+  concentration:
+    value: '3.9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:39010
+    label: MES
+- preferred_term: Sea salts (Sigma)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Complex component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M450
+  term:
+    id: TOGO:M450
+    label: GYPS Medium
+notes: 'Source: https://togomedium.org/medium/M450
+
+  Original source: JCM - JCM_M449
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=449'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.086111Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M450'
+- timestamp: '2026-01-28T19:48:35.473894Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.825240'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: 8427c0c1b1b345700f7831cbfee760780f1b5903f426e51ae968f77e90d91e20
+merged_from:
+- TOGO_M450_GYPS_Medium

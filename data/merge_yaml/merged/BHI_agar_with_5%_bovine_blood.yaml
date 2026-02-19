@@ -1,0 +1,32 @@
+name: BHI agar with 5% bovine blood
+original_name: BHI agar with 5% bovine blood
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Bovine blood
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source'
+- preferred_term: BHI agar (Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2247
+  term:
+    id: TOGO:M2247
+    label: BHI agar with 5% bovine blood
+notes: 'Source: https://togomedium.org/medium/M2247'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.218888Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2247'
+merge_fingerprint: d6cb77a690c808627468e6b3443b0c7d5f6b79118db7eab734040b98beb33f21
+merged_from:
+- TOGO_M2247_BHI_agar_with_5_bovine_blood

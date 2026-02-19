@@ -1,0 +1,81 @@
+name: 70:30 sporulation medium
+original_name: 70:30 sporulation medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1874
+  term:
+    id: mediadive.medium:1874
+    label: 70:30 sporulation medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '63'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Ammonium Sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: Tris base
+  term:
+    id: CHEBI:9754
+    label: Tris base
+  concentration:
+    value: '1.06'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '11.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 2
+  action: HEAT
+  description: Add cysteine solution after cooling to approximately 65°C.
+- step_number: 3
+  action: HEAT
+  description: Store plates at 4°C for up to 1 week.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Filtrate (pore size 0.22 µm).
+applications:
+- Microbial cultivation
+references:
+- reference: doi.org/10.1371/journal.pgen.1003660
+curation_history:
+- timestamp: '2026-01-26T17:53:15.565440Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1874'
+merge_fingerprint: a413b1014a0e7c81529d5b463716e16df3795b8b8061adc295cfee0458e9c7b5
+merged_from:
+- DSMZ_1874_70_30_sporulation_medium

@@ -10,7 +10,56 @@ media_term:
     label: MEDIUM 429 MODIFIED FOR DSM 15534
 notes: 'Source: KOMODO ModelSEED | ID: 429_15534 | DSMZ Medium: 429 (mediadive.medium:429)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +67,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 429_15534'
+- timestamp: '2026-02-03T11:19:16.531224'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 429

@@ -10,7 +10,37 @@ media_term:
     label: AE medium
 notes: 'Source: KOMODO ModelSEED | ID: 849 | DSMZ Medium: 849 (mediadive.medium:849)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Glacial acetic acid
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '9'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +48,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 849'
+- timestamp: '2026-02-03T11:19:03.159005'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 849

@@ -1,0 +1,82 @@
+name: HALOFERAX SULFURIFONTIS MEDIUM
+original_name: HALOFERAX SULFURIFONTIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1018
+  term:
+    id: mediadive.medium:1018
+    label: HALOFERAX SULFURIFONTIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1018.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '150'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.0
+- step_number: 2
+  action: MIX
+  description: The medium may be solidified by adding 20 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.121527Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1018'
+- timestamp: '2026-02-03T22:25:27.134246+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1018_HALOFERAX_SULFURIFONTIS_MEDIUM, KOMODO_1018_HALOFERAX_SULFURIFONTIS_medium'
+synonyms:
+- name: HALOFERAX SULFURIFONTIS medium
+  source: KOMODO
+  source_id: komodo.medium:1018
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1018_HALOFERAX_SULFURIFONTIS_MEDIUM
+- KOMODO_1018_HALOFERAX_SULFURIFONTIS_medium
+merge_fingerprint: f67f618dde7d2c6e250e1c1cb0a0d72ac2906a79a1f607151a01b5ea6173db3e

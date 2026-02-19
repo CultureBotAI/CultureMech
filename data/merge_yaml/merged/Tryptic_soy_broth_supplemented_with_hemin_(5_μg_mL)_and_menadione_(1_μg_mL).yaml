@@ -1,0 +1,50 @@
+name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1 μg/mL)
+original_name: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1
+  μg/mL)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Hemin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Menadione
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:28869
+    label: Menadione
+- preferred_term: Tryptic soy broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2798
+  term:
+    id: TOGO:M2798
+    label: Tryptic soy broth supplemented with hemin (5 μg/mL) and menadione (1 μg/mL)
+notes: 'Source: https://togomedium.org/medium/M2798'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.312353Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2798'
+- timestamp: '2026-01-28T19:48:24.548538Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 846e332bd6e5fef694e89eb828dada0257ad0151445ff2cefb77b8e8d93586d8
+merged_from:
+- TOGO_M2798_Tryptic_soy_broth_supplemented_with_hemin_5_μg_mL_and_menadione_1_μg_mL

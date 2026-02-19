@@ -1,0 +1,252 @@
+name: Saltwater Medium With Acetate And Ferric Citrate
+original_name: Saltwater Medium With Acetate And Ferric Citrate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sol. 1
+  concentration:
+    value: '906'
+    unit: G_PER_L
+- preferred_term: sodium acetate solution
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ferric citrate solution
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: NaHCO3 solution
+  concentration:
+    value: '31.25'
+    unit: G_PER_L
+- preferred_term: L--cysteine・HCl solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L--cysteine・HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Organic compound, Simple component, Defined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.75'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: KBr
+  concentration:
+    value: '0.09'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32030
+    label: potassium bromide
+- preferred_term: Trace element solution (see Medium [M439])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Riboflavin solution (see Medium [M463])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: sodium acetate
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Solution, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: ferric citrate
+  concentration:
+    value: '0.74'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Solution, Defined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaHCO3
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:32139
+    label: sodium hydrogencarbonate
+- preferred_term: Distilled water
+  concentration:
+    value: '31.3'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: L--cysteine・HCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Distilled water
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M464
+  term:
+    id: TOGO:M464
+    label: Saltwater Medium With Acetate And Ferric Citrate
+notes: 'Source: https://togomedium.org/medium/M464
+
+  Original source: JCM - JCM_M463
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=463'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.107684Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M464'
+- timestamp: '2026-01-28T19:48:36.085503Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.895139'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: N2'
+merge_fingerprint: 75e381c9f56030100a06a41e7698e26f300810bb19dc3436906663087de4c6cc
+merged_from:
+- TOGO_M464_Saltwater_Medium_With_Acetate_And_Ferric_Citrate

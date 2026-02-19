@@ -1,0 +1,61 @@
+name: Synthetic Dextrose (SD) Minimal Medium
+original_name: Synthetic Dextrose (SD) Minimal Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Bactp-Yeast Nitrogen Base w/o Amino Acids
+  concentration:
+    value: '6.7'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2091
+  term:
+    id: TOGO:M2091
+    label: Synthetic Dextrose (SD) Minimal Medium
+notes: 'Source: https://togomedium.org/medium/M2091
+
+  Original source: NBRC - NBRC_M1402
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1402'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.036207Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2091'
+- timestamp: '2026-01-28T19:48:33.006087Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4e7e05c4fd391815e39e1a6c93cf19059920a262d5fa23079a825a42edb616b3
+merged_from:
+- TOGO_M2091_Synthetic_Dextrose_SD_Minimal_Medium

@@ -5,6 +5,9 @@ medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
 - preferred_term: Tryptose blood agar base (Difco Laboratories, Detroit, MI)
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2512
   term:
@@ -18,3 +21,8 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2512'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.033591'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Tryptose blood agar base (Difco
+    Laboratories, Detroit, MI)'

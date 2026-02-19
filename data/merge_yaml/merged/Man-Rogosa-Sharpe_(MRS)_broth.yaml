@@ -1,0 +1,26 @@
+name: Man-Rogosa-Sharpe (MRS) broth
+original_name: Man-Rogosa-Sharpe (MRS) broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Man-Rogosa-Sharpe (MRS) broth (Biokar Diagnostic, Beauvais, France)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2495
+  term:
+    id: TOGO:M2495
+    label: Man-Rogosa-Sharpe (MRS) broth
+notes: 'Source: https://togomedium.org/medium/M2495'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.584791Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2495'
+merge_fingerprint: aceef0e03f8017d423ea401f32c0e6bb6fae6c650304dfb675931f355cbb22f0
+merged_from:
+- TOGO_M2495_Man-Rogosa-Sharpe_MRS_broth

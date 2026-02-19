@@ -1,0 +1,49 @@
+name: Chocolate Agar With  5% Sheep Blood
+original_name: Chocolate Agar With  5% Sheep Blood
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '950'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Columbia blood agar base (BD-Difco)
+  concentration:
+    value: '44'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1366
+  term:
+    id: TOGO:M1366
+    label: Chocolate Agar With  5% Sheep Blood
+notes: 'Source: https://togomedium.org/medium/M1366
+
+  Original source: JCM - JCM_M1270
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1270'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.439562Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1366'
+- timestamp: '2026-01-28T19:48:34.059512Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 83446b3ed14d7f5916a3b03ddb2d2a25028525221cd16eea2990b3022133960b
+merged_from:
+- TOGO_M1366_Chocolate_Agar_With_5_Sheep_Blood

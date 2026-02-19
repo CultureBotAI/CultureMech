@@ -1,0 +1,150 @@
+name: GEMMATIMONAS MEDIUM
+original_name: GEMMATIMONAS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1646
+  term:
+    id: mediadive.medium:1646
+    label: GEMMATIMONAS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1646.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '1.95'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.37'
+    unit: G_PER_L
+- preferred_term: CaSO4 x 2 H2O
+  term:
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
+  concentration:
+    value: '0.43'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pantothenic acid
+  term:
+    id: CHEBI:7916
+    label: Pantothenic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Pyridoxamine hydrochloride
+  term:
+    id: CHEBI:131531
+    label: Pyridoxamine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Nicotine amide
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: alpha-lipoic acid
+  term:
+    id: CHEBI:16494
+    label: alpha-lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 prior to the addition of agar.
+- step_number: 2
+  action: HEAT
+  description: After autoclaving and cooling to about 55°C, add 5 ml of vitamin solution.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Stir for some hours, filter sterilize the solution.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.109726Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1646'
+merge_fingerprint: 02c4868d81571d2ce725b77ec824b5aa07676dec53ae14651bc128938e9ef159
+merged_from:
+- DSMZ_1646_GEMMATIMONAS_MEDIUM

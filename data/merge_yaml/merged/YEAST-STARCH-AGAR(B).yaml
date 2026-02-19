@@ -1,0 +1,95 @@
+name: YEAST-STARCH-AGAR(B)
+original_name: YEAST-STARCH-AGAR(B)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: KOMODO Medium 656
+  term:
+    id: komodo.medium:656
+    label: YEAST-STARCH-AGAR(B)
+notes: 'Source: KOMODO ModelSEED | ID: 656 | DSMZ Medium: 656 (mediadive.medium:656)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:03.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 656'
+- timestamp: '2026-02-03T11:19:17.035974'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 656
+- timestamp: '2026-02-03T22:25:36.882538+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_190_YpSs_MEDIUM, JCM_J334_YpSs_AGAR, KOMODO_190_YpSs_medium,
+    KOMODO_656_YEAST-STARCH-AGAR_B, DSMZ_656_YEAST-STARCH-AGAR_B, JCM_J61_YEAST-STARCH_AGAR_B,
+    JCM_J73_EMERSON_S_YEAST-STARCH_AGAR'
+synonyms:
+- name: YpSs MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:190
+  original_category: imported
+- name: YpSs AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J334
+  original_category: imported
+- name: YpSs medium
+  source: KOMODO
+  source_id: komodo.medium:190
+  original_category: imported
+- name: YEAST-STARCH AGAR (B)
+  source: MediaDive
+  source_id: mediadive.medium:J61
+  original_category: imported
+- name: EMERSON'S YEAST-STARCH AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J73
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_190_YpSs_MEDIUM
+- JCM_J334_YpSs_AGAR
+- KOMODO_190_YpSs_medium
+- KOMODO_656_YEAST-STARCH-AGAR_B
+- DSMZ_656_YEAST-STARCH-AGAR_B
+- JCM_J61_YEAST-STARCH_AGAR_B
+- JCM_J73_EMERSON_S_YEAST-STARCH_AGAR
+merge_fingerprint: 5fa13a001db4e087839f6d5268635b8247762a1af0edfaddb2a9eb17c96fe2db

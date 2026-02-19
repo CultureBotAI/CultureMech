@@ -85,8 +85,14 @@ ingredients:
 - preferred_term: 1 N H2SO4
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -156,6 +162,9 @@ ingredients:
 - preferred_term: 1 N HCl
   notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2670
   term:
@@ -175,3 +184,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.478785'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 1 N H2SO4; Added default concentration
+    for ingredient: N2 gas; Added default concentration for ingredient: 1 N HCl'

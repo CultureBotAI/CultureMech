@@ -1,0 +1,113 @@
+name: T2U Medium
+original_name: T2U Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Uracil
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:17568
+    label: uracil
+- preferred_term: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Polypepton (Nihon Pharm. Co.)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Beef extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: erythromycin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaOH
+  notes: 'Properties: Defined component, Inorganic compound, Solution'
+  term:
+    id: CHEBI:32145
+    label: sodium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: ethanol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:16236
+    label: ethanol
+- preferred_term: erythromycin
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component'
+  term:
+    id: CHEBI:48923
+    label: Erythromycin
+media_term:
+  preferred_term: TOGO Medium M256
+  term:
+    id: TOGO:M256
+    label: T2U Medium
+notes: 'Source: https://togomedium.org/medium/M256
+
+  Original source: JCM - JCM_M264
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=264'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.709913Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M256'
+- timestamp: '2026-01-28T19:48:14.236305Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.570682'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaOH'
+merge_fingerprint: d4bc95cd1267a650de533674ec6e111469f903209a5a7a992d152a3bb1c2a01c
+merged_from:
+- TOGO_M256_T2U_Medium

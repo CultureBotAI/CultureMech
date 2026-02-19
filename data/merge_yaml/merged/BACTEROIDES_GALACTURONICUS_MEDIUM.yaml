@@ -1,0 +1,111 @@
+name: BACTEROIDES GALACTURONICUS MEDIUM
+original_name: BACTEROIDES GALACTURONICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 1265
+  term:
+    id: mediadive.medium:1265
+    label: BACTEROIDES GALACTURONICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1265.pdf'
+ingredients:
+- preferred_term: Sodium polygalacturonate
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.4'
+    unit: G_PER_L
+- preferred_term: L-Cysteine
+  term:
+    id: CHEBI:17561
+    label: L-Cysteine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.1 and prepare medium in a gas atmosphere of 100% N2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added
+    to the autoclaved medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.896049Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1265'
+- timestamp: '2026-01-28T19:48:36.468214Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:31.443328+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1265_BACTEROIDES_GALACTURONICUS_MEDIUM, KOMODO_1265_BACTEROIDES_GALACTURONICUS_medium'
+synonyms:
+- name: BACTEROIDES GALACTURONICUS medium
+  source: KOMODO
+  source_id: komodo.medium:1265
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1265_BACTEROIDES_GALACTURONICUS_MEDIUM
+- KOMODO_1265_BACTEROIDES_GALACTURONICUS_medium
+merge_fingerprint: 38c4b5c47b5da0ab44d0e7b9be9332ef54f8713ddbcec6b4c248c430fa3a924e

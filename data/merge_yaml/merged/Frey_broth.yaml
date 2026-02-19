@@ -1,0 +1,97 @@
+name: Frey broth
+original_name: Frey broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Monopotassium phosphate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Potassium chloride
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Disodium phosphate
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Magnesium sulphate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Horse Serum (RM1239)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Casein enzymic hydrolysate
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Papaic digest of soyabean meal
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2233
+  term:
+    id: TOGO:M2233
+    label: Frey broth
+notes: 'Source: https://togomedium.org/medium/M2233'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.193536Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2233'
+- timestamp: '2026-01-28T19:48:15.415050Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 888168470707a4731803db5b09d725856f8c5428e9b14bc96a2cf51c0647f613
+merged_from:
+- TOGO_M2233_Frey_broth

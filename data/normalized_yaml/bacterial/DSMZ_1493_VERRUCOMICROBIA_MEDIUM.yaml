@@ -153,9 +153,6 @@ ingredients:
     value: '0.21'
     unit: G_PER_L
 - preferred_term: MnCl2
-  term:
-    id: CHEBI:7773015
-    label: MnCl2
   concentration:
     value: '0.19'
     unit: G_PER_L
@@ -191,3 +188,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:18.299500Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

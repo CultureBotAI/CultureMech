@@ -1,0 +1,65 @@
+name: P-medium
+original_name: P-medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1854
+  term:
+    id: mediadive.medium:1854
+    label: P-medium
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: Soy peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Calcium Chloride
+  term:
+    id: CHEBI:3312
+    label: Calcium Chloride
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate heptahydrate
+  term:
+    id: CHEBI:31795
+    label: Magnesium sulfate heptahydrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '11.9'
+    unit: G_PER_L
+- preferred_term: FeNa-EDTA
+  concentration:
+    value: '8'
+    unit: MG_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+references:
+- reference: https://doi.org/10.1007/s00203-002-0479-2
+curation_history:
+- timestamp: '2026-01-26T17:53:15.550483Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1854'
+merge_fingerprint: 57a25d3fe4a0b14e074ba0286f96bdcd436cb47cbbdde48c1416462a50193656
+merged_from:
+- DSMZ_1854_P-medium

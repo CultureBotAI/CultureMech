@@ -11,7 +11,18 @@ media_term:
     label: For DSM 25945
 notes: 'Source: KOMODO ModelSEED | ID: 191.3 | DSMZ Medium: 191 (mediadive.medium:191)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: Corn meal
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +30,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 191.3'
+- timestamp: '2026-02-03T11:19:13.742998'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 191

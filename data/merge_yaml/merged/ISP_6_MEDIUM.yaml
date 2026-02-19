@@ -1,0 +1,67 @@
+name: ISP 6 MEDIUM
+original_name: ISP 6 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1269
+  term:
+    id: mediadive.medium:1269
+    label: ISP 6 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1269.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Dipotassium Phosphate
+  term:
+    id: CHEBI:131527
+    label: Dipotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium Thiosulfate
+  term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.924725Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1269'
+merge_fingerprint: d23d8755b14a7c42129f9f06346ad17e0f994fd2078297e9a31ee8d897e9a9aa
+merged_from:
+- DSMZ_1269_ISP_6_MEDIUM

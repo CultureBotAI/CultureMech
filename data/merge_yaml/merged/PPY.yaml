@@ -1,0 +1,38 @@
+name: PPY
+original_name: PPY
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C81
+  term:
+    id: mediadive.medium:C81
+    label: PPY
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_PPY.pdf'
+ingredients:
+- preferred_term: Proteose peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
+    minutes.
+- step_number: 2
+  action: MIX
+  description: Note. For test tubes, only use paper or pink silicone bungs.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.749703Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C81'
+merge_fingerprint: a67d7d3ace0162a6b0ab86e41cdd807951044d68022ca5c86d5ddb943ba4a489
+merged_from:
+- CCAP_C81_PPY

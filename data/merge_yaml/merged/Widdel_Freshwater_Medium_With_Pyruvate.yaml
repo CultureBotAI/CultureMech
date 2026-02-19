@@ -1,0 +1,151 @@
+name: Widdel Freshwater Medium With Pyruvate
+original_name: Widdel Freshwater Medium With Pyruvate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '988'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: MgCl2・6H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Na2SO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: sodium pyruvate solution
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+- preferred_term: Trace element solution (see Medium [M296])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Thiamine solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12 solution (see Medium [M401])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Selenite--tungstate solution (see Medium [M431])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: N2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: 5% Na2S・9H2O solution
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
+    component'
+media_term:
+  preferred_term: TOGO Medium M1317
+  term:
+    id: TOGO:M1317
+    label: Widdel Freshwater Medium With Pyruvate
+notes: 'Source: https://togomedium.org/medium/M1317
+
+  Original source: JCM - JCM_M1225
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1225'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.347915Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1317'
+- timestamp: '2026-01-28T19:48:19.801936Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:47.157021'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: N2'
+merge_fingerprint: cc9ca1ef45f4368f75c60d754d0518b60e476e3e14da5591f4745c8f47caf893
+merged_from:
+- TOGO_M1317_Widdel_Freshwater_Medium_With_Pyruvate

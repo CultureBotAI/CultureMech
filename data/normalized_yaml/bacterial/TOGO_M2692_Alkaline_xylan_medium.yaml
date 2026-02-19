@@ -88,8 +88,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: 10% Na2CO3 solution
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '50'
@@ -114,6 +120,9 @@ ingredients:
   notes: 'Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Sodium carbonate solution
   notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2692
   term:
@@ -133,3 +142,9 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.650120'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: 10% Na2CO3 solution; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    Sodium carbonate solution'

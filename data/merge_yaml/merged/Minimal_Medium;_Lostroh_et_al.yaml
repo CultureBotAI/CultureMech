@@ -1,0 +1,118 @@
+name: Minimal Medium; Lostroh et al
+original_name: Minimal Medium; Lostroh et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Succinate
+  term:
+    id: CHEBI:26806
+    label: Succinate
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:succ'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.008554'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.603712'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.151'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '4.8186'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.009111'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.03114'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.038082'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '7.5677'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.0015698'
+    unit: MILLIMOLAR
+- preferred_term: Sodium borate
+  concentration:
+    value: '0.0004641'
+    unit: MILLIMOLAR
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: '0.00016183'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt nitrate
+  concentration:
+    value: '0.000852146'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.800303Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 32, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 32
+  term:
+    id: MEDIADB:32
+    label: Minimal Medium; Lostroh et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: f6e40f09fa07d1792fe5627a5c276cae4284300570ddb59b2cdba66e43721720
+merged_from:
+- MEDIADB_32_Minimal_Medium_Lostroh_et_al

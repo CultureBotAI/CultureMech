@@ -1,0 +1,62 @@
+name: MCH
+original_name: MCH
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C51
+  term:
+    id: mediadive.medium:C51
+    label: MCH
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_MCH.pdf'
+ingredients:
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '80'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaHPO4
+  term:
+    id: CHEBI:32596
+    label: CaHPO4
+  concentration:
+    value: '0'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Make up to 1 litre with deionised water. Autoclave at 15 psi for 15
+    minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.649515Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C51'
+merge_fingerprint: ce5086d182dab475eb47634d6ce757ae924ad2ee8c9f3c081adc8d2d4cb322c9
+merged_from:
+- CCAP_C51_MCH

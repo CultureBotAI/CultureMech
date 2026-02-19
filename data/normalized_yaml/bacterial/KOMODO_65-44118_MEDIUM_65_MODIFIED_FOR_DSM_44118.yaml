@@ -10,7 +10,37 @@ media_term:
     label: MEDIUM 65 MODIFIED FOR DSM 44118
 notes: 'Source: KOMODO ModelSEED | ID: 65_44118 | DSMZ Medium: 65 (mediadive.medium:65)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: ' (if required)'
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +48,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 65_44118'
+- timestamp: '2026-02-03T11:19:08.713752'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 65
+ph_value: 7.2

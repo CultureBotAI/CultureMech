@@ -1,0 +1,101 @@
+name: ALKALIFLEXUS MEDIUM
+original_name: ALKALIFLEXUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: DSMZ Medium 1175
+  term:
+    id: mediadive.medium:1175
+    label: ALKALIFLEXUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1175.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '7.4'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '18.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 10.0
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose
+    or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen.
+    Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and
+    dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen.
+    Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate
+    amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic
+    stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.591472Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1175'
+- timestamp: '2026-02-03T22:25:29.767944+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1175_ALKALIFLEXUS_MEDIUM, KOMODO_1175_ALKALIFLEXUS_medium'
+synonyms:
+- name: ALKALIFLEXUS medium
+  source: KOMODO
+  source_id: komodo.medium:1175
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1175_ALKALIFLEXUS_MEDIUM
+- KOMODO_1175_ALKALIFLEXUS_medium
+merge_fingerprint: 53e3113a36309d3dff52cdf0616d03c002ffc11f9d6d34c38499001665227de5

@@ -1,0 +1,101 @@
+name: NICOTINIC ACID MEDIUM
+original_name: NICOTINIC ACID MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 152
+  term:
+    id: mediadive.medium:152
+    label: NICOTINIC ACID MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium152.pdf'
+ingredients:
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.008'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Add nicotinic acid to the given amount of water, boil until dissolved
+    and cool to room temperature. Add the other substances, adjust pH to 8.2 and distribute
+    under 100% nitrogen atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.358102Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 152'
+- timestamp: '2026-02-03T22:25:34.621347+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_152_NICOTINIC_ACID_MEDIUM, KOMODO_152_NICOTINIC_ACID_medium'
+synonyms:
+- name: NICOTINIC ACID medium
+  source: KOMODO
+  source_id: komodo.medium:152
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_152_NICOTINIC_ACID_MEDIUM
+- KOMODO_152_NICOTINIC_ACID_medium
+merge_fingerprint: 44b74a3a104e90eead2a9024f10bde9ed506508bda01b771fa24ea82df25ed9b

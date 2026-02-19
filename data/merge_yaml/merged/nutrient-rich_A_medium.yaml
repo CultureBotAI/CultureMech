@@ -1,0 +1,141 @@
+name: nutrient-rich A medium
+original_name: nutrient-rich A medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 · 7H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: FeSO4 · 7H2O
+  concentration:
+    value: '6'
+    unit: MG_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: biotin
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: MnSO4 · H2O
+  concentration:
+    value: '4.2'
+    unit: MG_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: thiamine
+  concentration:
+    value: '0.2'
+    unit: MG_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:26948
+    label: vitamin B1
+- preferred_term: chloramphenicol (if needed)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: kanamycin (if needed)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: glucose
+  concentration:
+    value: '4'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: gentamicin (if needed)
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: casamino acid
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: (NH2)2CO
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component, Organic compound'
+media_term:
+  preferred_term: TOGO Medium M2952
+  term:
+    id: TOGO:M2952
+    label: nutrient-rich A medium
+notes: 'Source: https://togomedium.org/medium/M2952'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.421541Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2952'
+- timestamp: '2026-01-28T19:48:28.270375Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: de5607538e4957977380455c2f7d355508948e93ecc1a9cb7c665e7706685fd3
+merged_from:
+- TOGO_M2952_nutrient-rich_A_medium

@@ -1,0 +1,192 @@
+name: Synthetic medium
+original_name: Synthetic medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '233.7'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lcts'
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '8.61'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.03'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '3.06'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.179'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.0696'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.072'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.00827'
+    unit: MILLIMOLAR
+- preferred_term: Cupric sulfate
+  concentration:
+    value: '0.00401'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium phosphate
+  concentration:
+    value: '121.2'
+    unit: MILLIMOLAR
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '8.69'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '6.84'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gln-L'
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '1.14'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '2.87'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.00153'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '9.41e-05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Pantothenate
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  concentration:
+    value: '0.000105'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pnto-R'
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.000292'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '8.85e-05'
+    unit: MILLIMOLAR
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.00313'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pydxn'
+- preferred_term: 4-Aminobenzoate
+  term:
+    id: CHEBI:17836
+    label: 4-aminobenzoate
+  concentration:
+    value: '0.000729'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.0487'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: myo-Inositol
+  term:
+    id: CHEBI:17268
+    label: Myo-inositol
+  concentration:
+    value: '0.527'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:inost'
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.373850Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 300, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 300
+  term:
+    id: MEDIADB:300
+    label: Synthetic medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: a5791444d70b52960628b1f3ef8b6b8ab3bcbfdabc848dd77b2b1c640cbcb334
+merged_from:
+- MEDIADB_300_Synthetic_medium

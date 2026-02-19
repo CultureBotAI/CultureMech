@@ -1,0 +1,39 @@
+name: Methanol-Utilizing Bacteria Medium D
+original_name: Methanol-Utilizing Bacteria Medium D
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Methanol--utilizing bacteria medium B (see Medium [M70])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3 solution
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M118
+  term:
+    id: TOGO:M118
+    label: Methanol-Utilizing Bacteria Medium D
+notes: 'Source: https://togomedium.org/medium/M118
+
+  Original source: JCM - JCM_M126
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=126'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.075522Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M118'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:46.418944'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: NaHCO3 solution'
+merge_fingerprint: b424b4601b1931ab76054e31b1f9925f66e944a916087e41a313f3aea43abb0b
+merged_from:
+- TOGO_M118_Methanol-Utilizing_Bacteria_Medium_D

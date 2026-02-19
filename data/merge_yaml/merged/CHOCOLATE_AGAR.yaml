@@ -1,0 +1,26 @@
+name: chocolate agar
+original_name: chocolate agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: chocolate agar
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2977
+  term:
+    id: TOGO:M2977
+    label: chocolate agar
+notes: 'Source: https://togomedium.org/medium/M2977'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.437777Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2977'
+merge_fingerprint: 3d89ae5c0b522b992f29ba90ed3775aa783a8b37ab15a5dcb276d5a633585c4a
+merged_from:
+- TOGO_M2977_chocolate_agar

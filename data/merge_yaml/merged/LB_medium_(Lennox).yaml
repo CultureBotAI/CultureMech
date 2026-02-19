@@ -1,0 +1,80 @@
+name: LB medium (Lennox)
+original_name: LB medium (Lennox)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2910
+  term:
+    id: TOGO:M2910
+    label: LB medium (Lennox)
+notes: 'Source: https://togomedium.org/medium/M2910'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.400051Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2910'
+- timestamp: '2026-01-28T19:48:13.936117Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:54.627102+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1236_LB_LURIA-BERTANI_MEDIUM_LENNOX, JCM_J321_2_x_YT_MEDIUM,
+    JCM_J813_LB_LURIA-BERTANI_BROTH_WITH_1_mM_DTT, TOGO_M2270_LB_medium_Difco, TOGO_M2910_LB_medium_Lennox,
+    DSMZ_1725_TRYPTONE-YEAST_EXTRACT_MEDIUM_modified, DSMZ_578_TRYPTONE-YEAST_EXTRACT_MEDIUM'
+synonyms:
+- name: LB (LURIA-BERTANI) MEDIUM (LENNOX)
+  source: MediaDive
+  source_id: mediadive.medium:J1236
+  original_category: imported
+- name: 2 x YT MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J321
+  original_category: imported
+- name: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
+  source: MediaDive
+  source_id: mediadive.medium:J813
+  original_category: imported
+- name: LB medium (Difco)
+  source: TOGO
+  source_id: TOGO:M2270
+  original_category: imported
+- name: TRYPTONE-YEAST EXTRACT MEDIUM modified
+  source: MediaDive
+  source_id: mediadive.medium:1725
+  original_category: imported
+- name: TRYPTONE-YEAST EXTRACT MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:578
+  original_category: imported
+categories:
+- imported
+merged_from:
+- JCM_J1236_LB_LURIA-BERTANI_MEDIUM_LENNOX
+- JCM_J321_2_x_YT_MEDIUM
+- JCM_J813_LB_LURIA-BERTANI_BROTH_WITH_1_mM_DTT
+- TOGO_M2270_LB_medium_Difco
+- TOGO_M2910_LB_medium_Lennox
+- DSMZ_1725_TRYPTONE-YEAST_EXTRACT_MEDIUM_modified
+- DSMZ_578_TRYPTONE-YEAST_EXTRACT_MEDIUM
+merge_fingerprint: 8bf16da58ad59480ed584a18bb7af1dc39a37e65773c066ab7633eaa69002f3d

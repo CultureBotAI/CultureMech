@@ -1,0 +1,206 @@
+name: BACILLUS INFERNUS MEDIUM
+original_name: BACILLUS INFERNUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 705
+  term:
+    id: mediadive.medium:705
+    label: BACILLUS INFERNUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium705.pdf'
+ingredients:
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5.63107'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.970874'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '0.38835'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.970874'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.94175'
+    unit: G_PER_L
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '1.94175'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.776699'
+    unit: G_PER_L
+- preferred_term: Na-lactate
+  term:
+    id: CHEBI:75228
+    label: Na-lactate
+  concentration:
+    value: '1.16505'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanesulfonate
+  term:
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '0.485437'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: AlCl3 x 6 H2O
+  term:
+    id: CHEBI:30115
+    label: AlCl3 x 6 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: "First, dissolve ferric citrate in water by heating and adjust to pH\
+    \ 7.5 with NaOH, then add other\r\nmedium ingredients except acetate, lactate,\
+    \ and coenzyme M. Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45\
+    \ min to make it anoxic. Dispense under 80% N2 and 20% CO2 gas atmosphere into\
+    \ anoxic Hungate-type tubes or serum vials and autoclave. Add acetate, lactate,\
+    \ and coenzyme M from sterile anoxic stock solutions prepared under 100% N2 gas."
+- step_number: 2
+  action: MIX
+  description: Prior to inoculation the pH of the complete medium should be checked
+    and adjusted to 7.5, if necessary.
+- step_number: 3
+  action: ADJUST_PH
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
+    NaOH, then dissolve remaining compounds.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.978314Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 705'
+- timestamp: '2026-02-03T22:25:47.264970+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_705_BACILLUS_INFERNUS_MEDIUM, KOMODO_705-replace-Na-lactate-with-Na-formate_MSA-Fe_medium_replace_Na-lactate_with_Na-formate,
+    KOMODO_705_MSA-Fe_medium'
+synonyms:
+- name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
+  source: KOMODO
+  source_id: komodo.medium:705_replace_Na-lactate_with_Na-formate
+  original_category: imported
+- name: MSA-Fe medium
+  source: KOMODO
+  source_id: komodo.medium:705
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_705_BACILLUS_INFERNUS_MEDIUM
+- KOMODO_705-replace-Na-lactate-with-Na-formate_MSA-Fe_medium_replace_Na-lactate_with_Na-formate
+- KOMODO_705_MSA-Fe_medium
+merge_fingerprint: 365379a923e1940ab575e68bad53f19f49bcf587e689024eb06d0ebb77010ca6

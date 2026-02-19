@@ -1,0 +1,78 @@
+name: MODIFIED YMA MEDIUM (HAMBI)
+original_name: MODIFIED YMA MEDIUM (HAMBI)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1545
+  term:
+    id: mediadive.medium:1545
+    label: MODIFIED YMA MEDIUM (HAMBI)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1545.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: adjust to pH 7.0
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.802719Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1545'
+- timestamp: '2026-02-03T22:25:32.270601+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1334_MODIFIED_YMA_MEDIUM, DSMZ_1545_MODIFIED_YMA_MEDIUM_HAMBI,
+    KOMODO_1334_MODIFIED_YMA_medium'
+synonyms:
+- name: MODIFIED YMA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1334
+  original_category: imported
+- name: MODIFIED YMA medium
+  source: KOMODO
+  source_id: komodo.medium:1334
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1334_MODIFIED_YMA_MEDIUM
+- DSMZ_1545_MODIFIED_YMA_MEDIUM_HAMBI
+- KOMODO_1334_MODIFIED_YMA_medium
+merge_fingerprint: ae93483df7beae26797c8d02723c9549c67e7e9ad26879bf91b48cd22c12dcee

@@ -1,7 +1,7 @@
 name: CHROMATIUM SALEXIGENS MEDIUM
 original_name: CHROMATIUM SALEXIGENS MEDIUM
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 421
@@ -10,7 +10,42 @@ media_term:
     label: CHROMATIUM SALEXIGENS MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 421 | DSMZ Medium: 421 (mediadive.medium:421)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Na acetate
+  term:
+    id: CHEBI:32954
+    label: Na acetate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Sodium Thiosulfate
+  term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +53,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 421'
+- timestamp: '2026-02-03T11:19:17.362293'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 421

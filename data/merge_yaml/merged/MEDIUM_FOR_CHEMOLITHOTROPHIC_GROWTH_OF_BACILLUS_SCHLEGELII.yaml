@@ -1,0 +1,158 @@
+name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+original_name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 261
+  term:
+    id: mediadive.medium:261
+    label: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium261.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
+    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
+- step_number: 2
+  action: MIX
+  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2,\
+    \ 45% H2"
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.610202Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 261'
+- timestamp: '2026-02-03T22:25:38.258061+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII,
+    DSMZ_369_BACILLUS_TUSCIAE_MEDIUM, KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII,
+    KOMODO_369_BACILLUS_TUSCIAE_MEDIUM'
+synonyms:
+- name: BACILLUS TUSCIAE MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:369
+  original_category: imported
+- name: BACILLUS TUSCIAE MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:369
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII
+- DSMZ_369_BACILLUS_TUSCIAE_MEDIUM
+- KOMODO_261_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_OF_BACILLUS_SCHLEGELII
+- KOMODO_369_BACILLUS_TUSCIAE_MEDIUM
+merge_fingerprint: 4b4971bb395cecb9008faea0031b90f9091e9b93814adf813911794812a0fa6b

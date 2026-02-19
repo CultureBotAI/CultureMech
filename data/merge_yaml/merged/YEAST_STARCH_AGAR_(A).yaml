@@ -1,0 +1,87 @@
+name: YEAST STARCH AGAR (A)
+original_name: YEAST STARCH AGAR (A)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: KOMODO Medium 1027
+  term:
+    id: komodo.medium:1027
+    label: YEAST STARCH AGAR (A)
+notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 1027'
+- timestamp: '2026-02-03T11:19:14.433818'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1027
+- timestamp: '2026-02-03T22:25:59.842576+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_1027_YEAST_STARCH_AGAR_A, KOMODO_1314_Yeast_extract-STARCH_AGAR_NBRC_MED._266,
+    DSMZ_1027_YEAST_STARCH_AGAR_A, DSMZ_1314_YEAST_EXTRACT-STARCH_AGAR_NBRC_MED._266,
+    JCM_J108_HALF_STRENGTH_YEAST-STARCH_AGAR, JCM_J137_1_10_YEAST-STARCH_AGAR, JCM_J202_1_5_YEAST-STARCH_AGAR,
+    JCM_J42_YEAST-STARCH_AGAR_A'
+synonyms:
+- name: Yeast extract-STARCH AGAR (NBRC MED. 266)
+  source: KOMODO
+  source_id: komodo.medium:1314
+  original_category: imported
+- name: YEAST EXTRACT-STARCH AGAR (NBRC MED. 266)
+  source: MediaDive
+  source_id: mediadive.medium:1314
+  original_category: imported
+- name: HALF STRENGTH YEAST-STARCH AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J108
+  original_category: imported
+- name: 1/10 YEAST-STARCH AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J137
+  original_category: imported
+- name: 1/5 YEAST-STARCH AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J202
+  original_category: imported
+- name: YEAST-STARCH AGAR (A)
+  source: MediaDive
+  source_id: mediadive.medium:J42
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_1027_YEAST_STARCH_AGAR_A
+- KOMODO_1314_Yeast_extract-STARCH_AGAR_NBRC_MED._266
+- DSMZ_1027_YEAST_STARCH_AGAR_A
+- DSMZ_1314_YEAST_EXTRACT-STARCH_AGAR_NBRC_MED._266
+- JCM_J108_HALF_STRENGTH_YEAST-STARCH_AGAR
+- JCM_J137_1_10_YEAST-STARCH_AGAR
+- JCM_J202_1_5_YEAST-STARCH_AGAR
+- JCM_J42_YEAST-STARCH_AGAR_A
+merge_fingerprint: ff31891568e1ec9b3784400cfc34b6933c71cb7de06b611f1b58d1bf43e80ca9

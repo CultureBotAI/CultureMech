@@ -1,0 +1,117 @@
+name: PHC MEDIUM
+original_name: PHC MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 885
+  term:
+    id: mediadive.medium:885
+    label: PHC MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium885.pdf'
+ingredients:
+- preferred_term: Poly hexamethylene carbonate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: MnSO4
+  term:
+    id: CHEBI:86360
+    label: MnSO4
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Surfactant
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.0
+- step_number: 2
+  action: MIX
+  description: 'PHC: Emulsified, number-average molecular mass Mn=2000; Toagosei'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.618972Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 885'
+- timestamp: '2026-02-03T22:25:50.858757+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_885_PHC_MEDIUM, KOMODO_885_PHC_medium'
+synonyms:
+- name: PHC medium
+  source: KOMODO
+  source_id: komodo.medium:885
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_885_PHC_MEDIUM
+- KOMODO_885_PHC_medium
+merge_fingerprint: 529eeb696c8bae993cd401c57497b83dade3b2f8d0764e7a2149e2ea369f9b1c

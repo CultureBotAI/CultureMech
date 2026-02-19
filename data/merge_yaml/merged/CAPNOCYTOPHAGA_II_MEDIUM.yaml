@@ -1,0 +1,96 @@
+name: CAPNOCYTOPHAGA II MEDIUM
+original_name: CAPNOCYTOPHAGA II MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.6-7.8
+media_term:
+  preferred_term: DSMZ Medium 779
+  term:
+    id: mediadive.medium:779
+    label: CAPNOCYTOPHAGA II MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium779.pdf'
+ingredients:
+- preferred_term: Lab-Lemco beef extract
+  concentration:
+    value: '2.4'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+- preferred_term: Horse blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.6 - 7.8.
+- step_number: 2
+  action: HEAT
+  description: Add the horse blood to the heat sterilized medium after being cooled
+    to 50°C. Incubate under air plus 5% CO2 or anaerobically under 95% N2 plus 5%
+    CO2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.219008Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 779'
+- timestamp: '2026-02-03T22:25:48.305433+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_779_CAPNOCYTOPHAGA_II_MEDIUM, KOMODO_779_CAPNOCYTOPHAGA_II_medium'
+synonyms:
+- name: CAPNOCYTOPHAGA II medium
+  source: KOMODO
+  source_id: komodo.medium:779
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_779_CAPNOCYTOPHAGA_II_MEDIUM
+- KOMODO_779_CAPNOCYTOPHAGA_II_medium
+merge_fingerprint: 99602cf539ace07b1078b3103ea19f78ab71c745c81ee45bfec4999b72ffa619

@@ -1,0 +1,91 @@
+name: M Medium
+original_name: M Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 2 M NaHCO3 solution
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: 1 M Na2CO3 solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound'
+- preferred_term: Distilled water
+  concentration:
+    value: '935'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.22'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: NaCl
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: KNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:17632
+    label: nitrate
+- preferred_term: Methanol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:17790
+    label: methanol
+media_term:
+  preferred_term: TOGO Medium M1263
+  term:
+    id: TOGO:M1263
+    label: M Medium
+notes: 'Source: https://togomedium.org/medium/M1263
+
+  Original source: JCM - JCM_M1179
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1179'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.246940Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1263'
+- timestamp: '2026-01-28T19:48:21.947838Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 14ee05376fc770f742b12395e0dd33ad0b4fc2febb6a5b138aabbad00d3463b8
+merged_from:
+- TOGO_M1263_M_Medium

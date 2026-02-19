@@ -10,7 +10,54 @@ media_term:
     label: MYKORRHIZA medium
 notes: 'Source: KOMODO ModelSEED | ID: 427 | DSMZ Medium: 427 (mediadive.medium:427)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Asparagine
+  term:
+    id: CHEBI:22653
+    label: Asparagine
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +65,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 427'
+- timestamp: '2026-02-03T11:19:08.433271'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 427

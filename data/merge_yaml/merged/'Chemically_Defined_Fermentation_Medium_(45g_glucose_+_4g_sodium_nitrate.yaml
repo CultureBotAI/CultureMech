@@ -1,0 +1,103 @@
+name: '''Chemically Defined Fermentation Medium (45g glucose + 4g sodium nitrate'
+original_name: '''Chemically Defined Fermentation Medium (45g glucose + 4g sodium
+  nitrate'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '28.71'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '249.8'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.1779'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.7194'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '36.74'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.136'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.4483'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.4057'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.6955'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.02933'
+    unit: MILLIMOLAR
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: '0.004045'
+    unit: MILLIMOLAR
+- preferred_term: Sodium nitrate
+  term:
+    id: CHEBI:63005
+    label: Sodium nitrate
+  concentration:
+    value: '47.06'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.660831Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 335, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 335
+  term:
+    id: MEDIADB:335
+    label: '''Chemically Defined Fermentation Medium (45g glucose + 4g sodium nitrate'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 0cf12d536d4b2dc05aabf1826378f99c79920534ee402e3aa663a5217705864b
+merged_from:
+- MEDIADB_335_Chemically_Defined_Fermentation_Medium_45g_glucose

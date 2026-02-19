@@ -1,0 +1,99 @@
+name: YMA-MEDIUM (modified)
+original_name: YMA-MEDIUM (modified)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 1031a
+  term:
+    id: mediadive.medium:1031a
+    label: YMA-MEDIUM (modified)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1031a.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '52.8'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '6.66'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: adjust to pH 6.8
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.160096Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1031a'
+- timestamp: '2026-02-03T22:25:27.309853+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1031a_YMA-MEDIUM_modified, KOMODO_1031_YMA-MEDIUM'
+synonyms:
+- name: YMA-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:1031
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1031a_YMA-MEDIUM_modified
+- KOMODO_1031_YMA-MEDIUM
+merge_fingerprint: 37ce78335539f3e67c7eabd0d1a3aacdd2f13a2f1415168e066856f6102281b0

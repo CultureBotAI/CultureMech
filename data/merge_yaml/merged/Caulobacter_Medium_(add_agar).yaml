@@ -1,0 +1,63 @@
+name: Caulobacter Medium (add agar)
+original_name: Caulobacter Medium (add agar)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component'
+  term:
+    id: CHEBI:15377
+    label: Tap water
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Bacto peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2356
+  term:
+    id: TOGO:M2356
+    label: Caulobacter Medium (add agar)
+notes: 'Source: https://togomedium.org/medium/M2356
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium595.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.391633Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2356'
+- timestamp: '2026-01-28T19:48:14.101262Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: e2c97581430cabb2ba551d8de12332e0a8a3cbf2fd0c142dc6d0107441d9969d
+merged_from:
+- TOGO_M2356_Caulobacter_Medium_add_agar

@@ -1,0 +1,160 @@
+name: THIOTHRIX MEDIUM
+original_name: THIOTHRIX MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 573
+  term:
+    id: mediadive.medium:573
+    label: THIOTHRIX MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium573.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CaSO4
+  term:
+    id: CHEBI:31346
+    label: CaSO4
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (if required)'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: 5e-06
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Co(NO3)2
+  term:
+    id: CHEBI:86209
+    label: Co(NO3)2
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v)
+    solution of Na2S x 9 H2O; add the following amount of this solution to the medium
+    after autoclaving (= shortly before using the medium).
+- step_number: 2
+  action: MIX
+  description: 'Note: For small volumes, such as 5 mL agar slants, you can use the
+    respective volume of a sterile neutralized 3% Na2S x 9 H2O solution (e.g., 50µL/5
+    mL = 0.3g/L)'
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.628087Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 573'
+- timestamp: '2026-02-03T22:25:45.158814+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_573_THIOTHRIX_MEDIUM, KOMODO_573_THIOTHRIX_MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_573_THIOTHRIX_MEDIUM
+- KOMODO_573_THIOTHRIX_MEDIUM
+merge_fingerprint: 97d417aa1e7e311542276024b231632b9aa8e7dc4496fb662564f1dd055dee8b

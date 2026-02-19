@@ -1,16 +1,20 @@
 name: 'Soilwater: GR-/NH4 Medium'
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: 'Soilwater: GR- Medium'
-- agent_term:
-    preferred_term: '2'
-  amount: NH4MgPO4(Sigma 529354)
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Soilwater: GR- Medium'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NH4MgPO4(Sigma 529354)'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

@@ -1,0 +1,60 @@
+name: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
+original_name: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1503
+  term:
+    id: mediadive.medium:1503
+    label: CULTIVATION MEDIUM FOR CHLAMYDOPHILA PECORUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1503.pdf'
+ingredients:
+- preferred_term: MEM-Medium
+  concentration:
+    value: '45'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Aminoacids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Cultivation of CACO-2 cells (ACC 169)
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
+    room temperature to facilitate detection of contamination.
+- step_number: 3
+  action: HEAT
+  description: Prepare a 25 cm2 flask and seed cells according to standard protocols
+    (see DSMZ catalogue for ACC 169). Incubate at 37°C plus 5% CO2. When a confluent
+    layer has formed, infection can be carried out.
+- step_number: 4
+  action: HEAT
+  description: Exchange medium with 6 ml of Infection Medium (as above with the addition
+    of 1 µg/ml cycloheximide (final concentration)) and add 500 - 1000 µl of EB stock
+    solution (thawed quickly to 37°C).
+- step_number: 5
+  action: HEAT
+  description: Centrifuge for 1 h onto the cell layer at 1600 rpm at 20°C.
+- step_number: 6
+  action: HEAT
+  description: Incubate at 37°C + 5% CO2. Control cells daily and look for inclusions.
+    Not all Chlamydiae form well-visible inclusions, ultimately, immunofluorescence
+    or in situ-hybridization techniques are necessary to visualize inclusions.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.643919Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1503'
+merge_fingerprint: 031aed77bb9396d94a0a5ebd5a2551023d9671189687c7145e480b383b5a7df2
+merged_from:
+- DSMZ_1503_CULTIVATION_MEDIUM_FOR_CHLAMYDOPHILA_PECORUM

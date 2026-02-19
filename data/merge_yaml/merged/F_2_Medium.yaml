@@ -1,0 +1,102 @@
+name: F/2 Medium
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for saltwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(Fisher BP360-500)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaH2PO4•H2O(MCIB 742)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2SiO3•9H2O(Sigma 307815)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Trace Metals Solution'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+salinity: marine (natural seawater or artificial seawater)
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: f-2-medium, URL: https://utex.org/products/f-2-medium'
+- timestamp: '2026-02-03T22:25:24.971704+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: 8_ppt_F_2_Medium, F_2_Medium'
+references:
+- reference_id: UTEX:f-2-medium
+- reference_id: https://utex.org/products/f-2-medium
+original_name: F/2 Medium
+synonyms:
+- name: 8 ppt F/2 Medium
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- 8_ppt_F_2_Medium
+- F_2_Medium
+merge_fingerprint: 8dae5bfc930f029e490887cee3f3f23255184001b3487f4c426b3193452a56c5

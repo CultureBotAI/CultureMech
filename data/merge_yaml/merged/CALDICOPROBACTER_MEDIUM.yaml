@@ -1,0 +1,141 @@
+name: CALDICOPROBACTER MEDIUM
+original_name: CALDICOPROBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.3-7.5
+media_term:
+  preferred_term: DSMZ Medium 1233
+  term:
+    id: mediadive.medium:1233
+    label: CALDICOPROBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1233.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.496524'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.19861'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.178749'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.0993049'
+    unit: G_PER_L
+- preferred_term: HEPES
+  term:
+    id: CHEBI:46756
+    label: HEPES
+  concentration:
+    value: '4.76663'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 7 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 7 H2O
+  concentration:
+    value: '0.0536246'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.00397219'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0019861'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.000993049'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.96524'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '2.48262'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000496524'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.993049'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4.96524'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine and glucose), then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid cysteine and adjust
+    pH to 7.3 - 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Before inoculation, add glucose
+    from a sterile anoxic stock solution prepared under 100% N2 gas.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v)
+    solution, freshly prepared under N2 and filter-sterilized) can be used to completely
+    reduce the medium and may stimulate growth at the beginning.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.796291Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1233'
+- timestamp: '2026-01-28T19:48:10.109831Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:30.916567+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1233_CALDICOPROBACTER_MEDIUM, KOMODO_1233_CALDICOPROBACTER_medium'
+synonyms:
+- name: CALDICOPROBACTER medium
+  source: KOMODO
+  source_id: komodo.medium:1233
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1233_CALDICOPROBACTER_MEDIUM
+- KOMODO_1233_CALDICOPROBACTER_medium
+merge_fingerprint: 6fe73c5651bebf4ba89f2cd22eb6ea633e892d5a4841de3dfdb318c5402eff57

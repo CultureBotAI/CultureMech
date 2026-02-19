@@ -1,0 +1,96 @@
+name: VOLCANOBACTER MEDIUM
+original_name: VOLCANOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: DSMZ Medium 1345
+  term:
+    id: mediadive.medium:1345
+    label: VOLCANOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1345.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 8.0 and sterilize by autoclaving. The medium may be solidified
+    by adding 15.0 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.156941Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1345'
+- timestamp: '2026-02-03T22:25:31.849319+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1289_ALCANIVORAX_BALERICUS_MEDIUM, DSMZ_1345_VOLCANOBACTER_MEDIUM,
+    DSMZ_1364_NA_SPHINGOBACTERIUM_MEDIUM, JCM_J22_NUTRIENT_AGAR_NO._2, JCM_J23_1_10_NUTRIENT_AGAR_NO._2,
+    JCM_J24_1_100_NUTRIENT_AGAR_NO._2, JCM_J407_NUTRIENT_AGAR_WITH_50_SOIL_EXTRACT_AND_5_NaCl,
+    KOMODO_1289_ALCANIVORAX_BALERICUS_medium'
+synonyms:
+- name: ALCANIVORAX BALERICUS MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1289
+  original_category: imported
+- name: NA SPHINGOBACTERIUM MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1364
+  original_category: imported
+- name: NUTRIENT AGAR NO. 2
+  source: MediaDive
+  source_id: mediadive.medium:J22
+  original_category: imported
+- name: 1/10 NUTRIENT AGAR NO. 2
+  source: MediaDive
+  source_id: mediadive.medium:J23
+  original_category: imported
+- name: 1/100 NUTRIENT AGAR NO. 2
+  source: MediaDive
+  source_id: mediadive.medium:J24
+  original_category: imported
+- name: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J407
+  original_category: imported
+- name: ALCANIVORAX BALERICUS medium
+  source: KOMODO
+  source_id: komodo.medium:1289
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1289_ALCANIVORAX_BALERICUS_MEDIUM
+- DSMZ_1345_VOLCANOBACTER_MEDIUM
+- DSMZ_1364_NA_SPHINGOBACTERIUM_MEDIUM
+- JCM_J22_NUTRIENT_AGAR_NO._2
+- JCM_J23_1_10_NUTRIENT_AGAR_NO._2
+- JCM_J24_1_100_NUTRIENT_AGAR_NO._2
+- JCM_J407_NUTRIENT_AGAR_WITH_50_SOIL_EXTRACT_AND_5_NaCl
+- KOMODO_1289_ALCANIVORAX_BALERICUS_medium
+merge_fingerprint: 4352086db8321d484a1a5e498d1c9d492c4bcca89f8f517df881ab41f4f30bb7

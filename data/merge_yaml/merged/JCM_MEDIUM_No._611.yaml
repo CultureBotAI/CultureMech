@@ -1,0 +1,95 @@
+name: JCM MEDIUM No. 611
+original_name: JCM MEDIUM No. 611
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: JCM Medium J611
+  term:
+    id: mediadive.medium:J611
+    label: JCM MEDIUM No. 611
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=611'
+ingredients:
+- preferred_term: Casamino acids
+  concentration:
+    value: '5.55556'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5.55556'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '1.11111'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate
+  term:
+    id: CHEBI:53258
+    label: Trisodium citrate
+  concentration:
+    value: '3.33333'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2.22222'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.222222'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '111.111'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '22.2222'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 2
+  action: ADJUST_PH
+  description: After autoclaving, aseptically add 100 ml of 10% Na2CO3 solution to
+    the medium. Check final pH to be about 9.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.086546Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J611'
+- timestamp: '2026-01-28T19:48:28.394568Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3fbef4c7698a9e1f184e1e1f888db743a5bfc0d5782f8c371a8bd0171b7eac5b
+merged_from:
+- JCM_J611_JCM_MEDIUM_No._611

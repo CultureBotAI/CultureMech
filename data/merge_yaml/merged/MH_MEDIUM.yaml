@@ -1,0 +1,114 @@
+name: MH MEDIUM
+original_name: MH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 624
+  term:
+    id: mediadive.medium:624
+    label: MH MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium624.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '81'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '9.6'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.026'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.767725Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 624'
+- timestamp: '2026-02-03T22:25:41.395346+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_434_MARINOCOCCUS_ALBUS_-_MEDIUM, DSMZ_624_MH_MEDIUM, KOMODO_434_MARINOCOCCUS_ALBUS_-_medium,
+    KOMODO_624_MH_medium'
+synonyms:
+- name: MARINOCOCCUS ALBUS - MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:434
+  original_category: imported
+- name: MARINOCOCCUS ALBUS - medium
+  source: KOMODO
+  source_id: komodo.medium:434
+  original_category: imported
+- name: MH medium
+  source: KOMODO
+  source_id: komodo.medium:624
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_434_MARINOCOCCUS_ALBUS_-_MEDIUM
+- DSMZ_624_MH_MEDIUM
+- KOMODO_434_MARINOCOCCUS_ALBUS_-_medium
+- KOMODO_624_MH_medium
+merge_fingerprint: a409936e66d0b4f48057483cb31f8690911fff9249c170184b5d475601c7eb67

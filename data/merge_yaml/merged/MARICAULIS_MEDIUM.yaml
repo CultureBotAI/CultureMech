@@ -1,0 +1,73 @@
+name: MARICAULIS MEDIUM
+original_name: MARICAULIS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1025
+  term:
+    id: mediadive.medium:1025
+    label: MARICAULIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1025.pdf'
+ingredients:
+- preferred_term: Sigma Sea salts
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave and cool the medium. Aseptically add from sterile stock solutions,
+    20 ml 50xPYE and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2 ml 50% glucose
+    per liter of medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.143187Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1025'
+- timestamp: '2026-02-03T22:25:27.238599+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1025_MARICAULIS_MEDIUM, KOMODO_1025_MARICAULIS_medium'
+synonyms:
+- name: MARICAULIS medium
+  source: KOMODO
+  source_id: komodo.medium:1025
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1025_MARICAULIS_MEDIUM
+- KOMODO_1025_MARICAULIS_medium
+merge_fingerprint: aa7b6f3074195eadcdaf4fdc784f806332eb8558425118eec6aae3303b1a86b7

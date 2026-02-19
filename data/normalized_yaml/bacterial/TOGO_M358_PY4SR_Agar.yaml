@@ -18,8 +18,14 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Water
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: rice straw
   notes: 'Role: Nutrient source'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M358
   term:
@@ -41,3 +47,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:58.312468'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: water; Added default concentration
+    for ingredient: rice straw'

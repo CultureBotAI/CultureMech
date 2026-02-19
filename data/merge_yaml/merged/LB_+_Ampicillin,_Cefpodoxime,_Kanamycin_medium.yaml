@@ -1,0 +1,80 @@
+name: LB + Ampicillin, Cefpodoxime, Kanamycin medium
+original_name: LB + Ampicillin, Cefpodoxime, Kanamycin medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Kanamycin solution (50 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Solution'
+- preferred_term: Ampicillin solution (50 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Solution'
+- preferred_term: Cefpodoxime solution (10 mg/ml)*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Antimicrobial agent; Properties: Solution'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptone (Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2012
+  term:
+    id: TOGO:M2012
+    label: LB + Ampicillin, Cefpodoxime, Kanamycin medium
+notes: 'Source: https://togomedium.org/medium/M2012
+
+  Original source: NBRC - NBRC_M1300
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1300'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.872425Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2012'
+- timestamp: '2026-01-28T19:48:16.409680Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 100398772422199091a61334117a64092fb481f16ec5e95f2e5ec6bded5b76e6
+merged_from:
+- TOGO_M2012_LB_Ampicillin_Cefpodoxime_Kanamycin_medium

@@ -51,8 +51,14 @@ ingredients:
   term:
     id: CHEBI:26836
     label: sulfuric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M233
   term:
@@ -74,3 +80,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.335025'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
+    for ingredient: N2'

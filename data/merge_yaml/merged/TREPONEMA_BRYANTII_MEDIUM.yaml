@@ -1,0 +1,148 @@
+name: Treponema Bryantii Medium
+original_name: Treponema Bryantii Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.05% Resazurin solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4・7H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: NaCl
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2・2H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.45'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na2CO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: L-Cysteine・HCl・H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Rumen fluid, clarified (see below)
+  concentration:
+    value: '300'
+    unit: G_PER_L
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Solution, Defined component'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: CO2
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: clarified rumen fluid
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1287
+  term:
+    id: TOGO:M1287
+    label: Treponema Bryantii Medium
+notes: 'Source: https://togomedium.org/medium/M1287
+
+  Original source: JCM - JCM_M1201
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1201'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.290615Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1287'
+- timestamp: '2026-01-28T19:48:32.639484Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:46.986805'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration
+    for ingredient: CO2; Added default concentration for ingredient: Nitrogen gas;
+    Added default concentration for ingredient: clarified rumen fluid'
+merge_fingerprint: 3f5f0e2ec1a75004030dd987ae1a2c4504e8f8299642ceb197993ff3f1d4c865
+merged_from:
+- TOGO_M1287_Treponema_Bryantii_Medium

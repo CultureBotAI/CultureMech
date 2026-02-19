@@ -1,0 +1,326 @@
+name: STARCH-MINERAL SALT-AGAR + 10% NACL
+original_name: STARCH-MINERAL SALT-AGAR + 10% NACL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1240
+  term:
+    id: mediadive.medium:1240
+    label: STARCH-MINERAL SALT-AGAR + 10% NACL
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1240.pdf'
+ingredients:
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.822285Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1240'
+- timestamp: '2026-02-03T22:25:31.122467+00:00'
+  curator: recipe-merger
+  action: Merged 41 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1240_STARCH-MINERAL_SALT-AGAR_10_NACL, DSMZ_1241_STARCH_-_MINERAL_SALT_-_AGAR_STMS_15_NaCl,
+    DSMZ_252_STARCH_-_MINERAL_SALT_-_AGAR_STMS, DSMZ_547_ISP_MEDIUM_4, JCM_J58_INORGANIC_SALTS-STARCH_AGAR_ISP-4,
+    KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL, KOMODO_252-41399_MEDIUM_252_MODIFIED_FOR_DSM_41399,
+    KOMODO_252-41400_MEDIUM_252_MODIFIED_FOR_DSM_41400, KOMODO_252-41403_MEDIUM_252_MODIFIED_FOR_DSM_41403,
+    KOMODO_252-41404_MEDIUM_252_MODIFIED_FOR_DSM_41404, KOMODO_252-41405_MEDIUM_252_MODIFIED_FOR_DSM_41405,
+    KOMODO_252-41406_MEDIUM_252_MODIFIED_FOR_DSM_41406, KOMODO_252-41407_MEDIUM_252_MODIFIED_FOR_DSM_41407,
+    KOMODO_252-41408_MEDIUM_252_MODIFIED_FOR_DSM_41408, KOMODO_252-41410_MEDIUM_252_MODIFIED_FOR_DSM_41410,
+    KOMODO_252-41411_MEDIUM_252_MODIFIED_FOR_DSM_41411, KOMODO_252-41412_MEDIUM_252_MODIFIED_FOR_DSM_41412,
+    KOMODO_252-41413_MEDIUM_252_MODIFIED_FOR_DSM_41413, KOMODO_252-41415_MEDIUM_252_MODIFIED_FOR_DSM_41415,
+    KOMODO_252-41416_MEDIUM_252_MODIFIED_FOR_DSM_41416, KOMODO_252-41417_MEDIUM_252_MODIFIED_FOR_DSM_41417,
+    KOMODO_252-41418_MEDIUM_252_MODIFIED_FOR_DSM_41418, KOMODO_252-41419_MEDIUM_252_MODIFIED_FOR_DSM_41419,
+    KOMODO_252-41420_MEDIUM_252_MODIFIED_FOR_DSM_41420, KOMODO_252-41877_MEDIUM_252_MODIFIED_FOR_DSM_41877,
+    KOMODO_252-44410_MEDIUM_252_MODIFIED_FOR_DSM_44410, KOMODO_252-44964_MEDIUM_252_MODIFIED_FOR_DSM_44964,
+    KOMODO_252-45004_MEDIUM_252_MODIFIED_FOR_DSM_45004, KOMODO_252-45007_MEDIUM_252_MODIFIED_FOR_DSM_45007,
+    KOMODO_252-45009_MEDIUM_252_MODIFIED_FOR_DSM_45009, KOMODO_252-45012_MEDIUM_252_MODIFIED_FOR_DSM_45012,
+    KOMODO_252-45015_MEDIUM_252_MODIFIED_FOR_DSM_45015, KOMODO_252-45017_MEDIUM_252_MODIFIED_FOR_DSM_45017,
+    KOMODO_252-45088_MEDIUM_252_MODIFIED_FOR_DSM_45088, KOMODO_252-45210_MEDIUM_252_MODIFIED_FOR_DSM_45210,
+    KOMODO_252-45211_MEDIUM_252_MODIFIED_FOR_DSM_45211, KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS,
+    KOMODO_547-44048_MEDIUM_547_MODIFIED_FOR_DSM_44048, KOMODO_547-44681_MEDIUM_547_MODIFIED_FOR_DSM_44681,
+    KOMODO_547-44682_MEDIUM_547_MODIFIED_FOR_DSM_44682, KOMODO_547_ISP_medium_4'
+synonyms:
+- name: STARCH - MINERAL SALT - AGAR (STMS) + 15% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:1241
+  original_category: imported
+- name: STARCH - MINERAL SALT - AGAR (STMS)
+  source: MediaDive
+  source_id: mediadive.medium:252
+  original_category: imported
+- name: ISP MEDIUM 4
+  source: MediaDive
+  source_id: mediadive.medium:547
+  original_category: imported
+- name: INORGANIC SALTS-STARCH AGAR (ISP-4)
+  source: MediaDive
+  source_id: mediadive.medium:J58
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41399
+  source: KOMODO
+  source_id: komodo.medium:252_41399
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41400
+  source: KOMODO
+  source_id: komodo.medium:252_41400
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41403
+  source: KOMODO
+  source_id: komodo.medium:252_41403
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41404
+  source: KOMODO
+  source_id: komodo.medium:252_41404
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41405
+  source: KOMODO
+  source_id: komodo.medium:252_41405
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41406
+  source: KOMODO
+  source_id: komodo.medium:252_41406
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41407
+  source: KOMODO
+  source_id: komodo.medium:252_41407
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41408
+  source: KOMODO
+  source_id: komodo.medium:252_41408
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41410
+  source: KOMODO
+  source_id: komodo.medium:252_41410
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41411
+  source: KOMODO
+  source_id: komodo.medium:252_41411
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41412
+  source: KOMODO
+  source_id: komodo.medium:252_41412
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41413
+  source: KOMODO
+  source_id: komodo.medium:252_41413
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41415
+  source: KOMODO
+  source_id: komodo.medium:252_41415
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41416
+  source: KOMODO
+  source_id: komodo.medium:252_41416
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41417
+  source: KOMODO
+  source_id: komodo.medium:252_41417
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41418
+  source: KOMODO
+  source_id: komodo.medium:252_41418
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41419
+  source: KOMODO
+  source_id: komodo.medium:252_41419
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41420
+  source: KOMODO
+  source_id: komodo.medium:252_41420
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 41877
+  source: KOMODO
+  source_id: komodo.medium:252_41877
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 44410
+  source: KOMODO
+  source_id: komodo.medium:252_44410
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 44964
+  source: KOMODO
+  source_id: komodo.medium:252_44964
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45004
+  source: KOMODO
+  source_id: komodo.medium:252_45004
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45007
+  source: KOMODO
+  source_id: komodo.medium:252_45007
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45009
+  source: KOMODO
+  source_id: komodo.medium:252_45009
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45012
+  source: KOMODO
+  source_id: komodo.medium:252_45012
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45015
+  source: KOMODO
+  source_id: komodo.medium:252_45015
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45017
+  source: KOMODO
+  source_id: komodo.medium:252_45017
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45088
+  source: KOMODO
+  source_id: komodo.medium:252_45088
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45210
+  source: KOMODO
+  source_id: komodo.medium:252_45210
+  original_category: imported
+- name: MEDIUM 252 MODIFIED FOR DSM 45211
+  source: KOMODO
+  source_id: komodo.medium:252_45211
+  original_category: imported
+- name: STARCH - MINERAL salt - AGAR (STMS)
+  source: KOMODO
+  source_id: komodo.medium:252
+  original_category: imported
+- name: MEDIUM 547 MODIFIED FOR DSM 44048
+  source: KOMODO
+  source_id: komodo.medium:547_44048
+  original_category: imported
+- name: MEDIUM 547 MODIFIED FOR DSM 44681
+  source: KOMODO
+  source_id: komodo.medium:547_44681
+  original_category: imported
+- name: MEDIUM 547 MODIFIED FOR DSM 44682
+  source: KOMODO
+  source_id: komodo.medium:547_44682
+  original_category: imported
+- name: ISP medium 4
+  source: KOMODO
+  source_id: komodo.medium:547
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1240_STARCH-MINERAL_SALT-AGAR_10_NACL
+- DSMZ_1241_STARCH_-_MINERAL_SALT_-_AGAR_STMS_15_NaCl
+- DSMZ_252_STARCH_-_MINERAL_SALT_-_AGAR_STMS
+- DSMZ_547_ISP_MEDIUM_4
+- JCM_J58_INORGANIC_SALTS-STARCH_AGAR_ISP-4
+- KOMODO_1240_STARCH-MINERAL_SALT-AGAR_10_NACL
+- KOMODO_252-41399_MEDIUM_252_MODIFIED_FOR_DSM_41399
+- KOMODO_252-41400_MEDIUM_252_MODIFIED_FOR_DSM_41400
+- KOMODO_252-41403_MEDIUM_252_MODIFIED_FOR_DSM_41403
+- KOMODO_252-41404_MEDIUM_252_MODIFIED_FOR_DSM_41404
+- KOMODO_252-41405_MEDIUM_252_MODIFIED_FOR_DSM_41405
+- KOMODO_252-41406_MEDIUM_252_MODIFIED_FOR_DSM_41406
+- KOMODO_252-41407_MEDIUM_252_MODIFIED_FOR_DSM_41407
+- KOMODO_252-41408_MEDIUM_252_MODIFIED_FOR_DSM_41408
+- KOMODO_252-41410_MEDIUM_252_MODIFIED_FOR_DSM_41410
+- KOMODO_252-41411_MEDIUM_252_MODIFIED_FOR_DSM_41411
+- KOMODO_252-41412_MEDIUM_252_MODIFIED_FOR_DSM_41412
+- KOMODO_252-41413_MEDIUM_252_MODIFIED_FOR_DSM_41413
+- KOMODO_252-41415_MEDIUM_252_MODIFIED_FOR_DSM_41415
+- KOMODO_252-41416_MEDIUM_252_MODIFIED_FOR_DSM_41416
+- KOMODO_252-41417_MEDIUM_252_MODIFIED_FOR_DSM_41417
+- KOMODO_252-41418_MEDIUM_252_MODIFIED_FOR_DSM_41418
+- KOMODO_252-41419_MEDIUM_252_MODIFIED_FOR_DSM_41419
+- KOMODO_252-41420_MEDIUM_252_MODIFIED_FOR_DSM_41420
+- KOMODO_252-41877_MEDIUM_252_MODIFIED_FOR_DSM_41877
+- KOMODO_252-44410_MEDIUM_252_MODIFIED_FOR_DSM_44410
+- KOMODO_252-44964_MEDIUM_252_MODIFIED_FOR_DSM_44964
+- KOMODO_252-45004_MEDIUM_252_MODIFIED_FOR_DSM_45004
+- KOMODO_252-45007_MEDIUM_252_MODIFIED_FOR_DSM_45007
+- KOMODO_252-45009_MEDIUM_252_MODIFIED_FOR_DSM_45009
+- KOMODO_252-45012_MEDIUM_252_MODIFIED_FOR_DSM_45012
+- KOMODO_252-45015_MEDIUM_252_MODIFIED_FOR_DSM_45015
+- KOMODO_252-45017_MEDIUM_252_MODIFIED_FOR_DSM_45017
+- KOMODO_252-45088_MEDIUM_252_MODIFIED_FOR_DSM_45088
+- KOMODO_252-45210_MEDIUM_252_MODIFIED_FOR_DSM_45210
+- KOMODO_252-45211_MEDIUM_252_MODIFIED_FOR_DSM_45211
+- KOMODO_252_STARCH_-_MINERAL_salt_-_AGAR_STMS
+- KOMODO_547-44048_MEDIUM_547_MODIFIED_FOR_DSM_44048
+- KOMODO_547-44681_MEDIUM_547_MODIFIED_FOR_DSM_44681
+- KOMODO_547-44682_MEDIUM_547_MODIFIED_FOR_DSM_44682
+- KOMODO_547_ISP_medium_4
+merge_fingerprint: d8ebfa5e95b8104fe9eafba59181d3d5f37d4fd79ef792fbef7a9d8f1296d5a8

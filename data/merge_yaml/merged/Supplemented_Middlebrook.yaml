@@ -1,0 +1,198 @@
+name: Supplemented Middlebrook
+original_name: Supplemented Middlebrook
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: DI Water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Mycobactin J
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Growth factor'
+- preferred_term: Middlebrook 7H9 Broth
+  concentration:
+    value: '4.7'
+    unit: G_PER_L
+- preferred_term: Dubos Oleic Albumin Complex (OADC)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Monopotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: potassium dihydrogen phosphate
+- preferred_term: Biotin
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Calcium Chloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: Disodium Phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:34683
+    label: disodium hydrogenphosphate
+- preferred_term: Magnesium Sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Copper Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:23414
+    label: copper(II) sulfate
+- preferred_term: Sodium Citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:32142
+    label: sodium citrate dihydrate
+- preferred_term: Ferric Ammonium Citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+- preferred_term: L-Glutamic Acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:16015
+    label: L-glutamic acid
+- preferred_term: Pyridoxine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:16709
+    label: pyridoxine
+- preferred_term: Zinc Sulfate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:35176
+    label: zinc sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '0.85'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Dextrose (BD 215530)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Albumin Fraction V Bovine (Sigma A9647)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: DI Water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: 'Oleic Acid (Sigma Cat # O-1008)'
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: Catalase (beef) (Sigma C-9322)
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+media_term:
+  preferred_term: TOGO Medium M2404
+  term:
+    id: TOGO:M2404
+    label: Supplemented Middlebrook
+notes: 'Source: https://togomedium.org/medium/M2404
+
+  Original URL: https://www.atcc.org/~/media/2C30C1AACE174F1887DA712958A3D182.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.469782Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2404'
+- timestamp: '2026-01-28T19:48:39.230859Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 90d09a3c148952678c135ff6f073d664a677a0c4a2bdf5be41856914db452403
+merged_from:
+- TOGO_M2404_Supplemented_Middlebrook

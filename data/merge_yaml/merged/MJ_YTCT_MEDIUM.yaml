@@ -1,0 +1,141 @@
+name: MJ/Ytct Medium
+original_name: MJ/Ytct Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na2CO3
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: NaNO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: Na2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:32149
+    label: sodium sulfate
+- preferred_term: Ferric citrate
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
+    component'
+- preferred_term: Trisodium citrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: Sodium tartrate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:63017
+    label: sodium L-tartrate
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Na2S2O3・5H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Inorganic compound, Simple component, Defined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: MJ(-N) synthetic seawater (see Medium [M260])
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M267
+  term:
+    id: TOGO:M267
+    label: MJ/Ytct Medium
+notes: 'Source: https://togomedium.org/medium/M267
+
+  Original source: JCM - JCM_M274
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=274'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.732365Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M267'
+- timestamp: '2026-01-28T19:48:19.508095Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.568550'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Nitrogen gas'
+merge_fingerprint: d494524e925c4a706b874dfb8b6495fdf5d2d5e2e92fe5f7615f1176d8a36f70
+merged_from:
+- TOGO_M267_MJ_Ytct_Medium

@@ -1,0 +1,93 @@
+name: HALOALKALIPHILIC GROWTH MEDIUM
+original_name: HALOALKALIPHILIC GROWTH MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: DSMZ Medium 1150
+  term:
+    id: mediadive.medium:1150
+    label: HALOALKALIPHILIC GROWTH MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1150.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2B4O7 x 10 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 10.0 with concentrated NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.519778Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1150'
+- timestamp: '2026-01-28T19:48:37.050152Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:29.367366+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1150_HALOALKALIPHILIC_GROWTH_MEDIUM, KOMODO_1150_HALOALKALIPHILIC_GROWTH_medium'
+synonyms:
+- name: HALOALKALIPHILIC GROWTH medium
+  source: KOMODO
+  source_id: komodo.medium:1150
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1150_HALOALKALIPHILIC_GROWTH_MEDIUM
+- KOMODO_1150_HALOALKALIPHILIC_GROWTH_medium
+merge_fingerprint: eea8ecb19d03410f38f9d323f738ca345c14f7bc7e034999c17d025df97aa239

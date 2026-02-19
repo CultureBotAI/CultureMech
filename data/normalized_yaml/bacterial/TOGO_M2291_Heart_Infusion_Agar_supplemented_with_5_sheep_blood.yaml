@@ -11,8 +11,14 @@ ingredients:
   notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: CO2
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Heart Infusion Agar (Difco)
   notes: 'Properties: Undefined component, Complex component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2291
   term:
@@ -26,3 +32,8 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2291'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:53.086029'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: Heart Infusion Agar (Difco)'

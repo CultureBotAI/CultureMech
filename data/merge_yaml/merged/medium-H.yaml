@@ -1,0 +1,63 @@
+name: medium-H
+original_name: medium-H
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source, Solvating media; Properties: Undefined component'
+- preferred_term: Monosodium glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+- preferred_term: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+media_term:
+  preferred_term: TOGO Medium M1748
+  term:
+    id: TOGO:M1748
+    label: medium-H
+notes: 'Source: https://togomedium.org/medium/M1748
+
+  Original source: NBRC - NBRC_M959
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=959'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.272351Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1748'
+- timestamp: '2026-01-28T19:48:08.271779Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: ee41f8659cad4ec15967af16ec2a01f5b140b5ec93bbd9a772655a8c1a7c4239
+merged_from:
+- TOGO_M1748_medium-H

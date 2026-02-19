@@ -10,7 +10,47 @@ media_term:
     label: DUNG EXTRACT AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 781 | DSMZ Medium: 781 (mediadive.medium:781)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Dung extract
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.72'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +58,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 781'
+- timestamp: '2026-02-03T11:18:59.248147'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 781

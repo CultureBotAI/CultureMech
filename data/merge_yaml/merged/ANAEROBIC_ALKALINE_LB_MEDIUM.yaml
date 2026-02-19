@@ -1,0 +1,54 @@
+name: ANAEROBIC ALKALINE LB MEDIUM
+original_name: ANAEROBIC ALKALINE LB MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.5
+media_term:
+  preferred_term: JCM Medium J1111
+  term:
+    id: mediadive.medium:J1111
+    label: ANAEROBIC ALKALINE LB MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1111'
+ingredients:
+- preferred_term: LB broth powder
+  concentration:
+    value: '24.8016'
+    unit: G_PER_L
+- preferred_term: Tris base
+  term:
+    id: CHEBI:9754
+    label: Tris base
+  concentration:
+    value: '2.97619'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave
+    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically
+    the following solutions (autoclaved and stored under N2):'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.668331Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1111'
+merge_fingerprint: 1e17c5d4c2861f78c5f839a2abc0683c3ad1f1367e9906d305e9a3f4fb8b9224
+merged_from:
+- JCM_J1111_ANAEROBIC_ALKALINE_LB_MEDIUM

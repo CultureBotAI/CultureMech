@@ -1,0 +1,52 @@
+name: GAM Semisolid
+original_name: GAM Semisolid
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: GAM broth (Nissui)
+  concentration:
+    value: '59'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M75
+  term:
+    id: TOGO:M75
+    label: GAM Semisolid
+notes: 'Source: https://togomedium.org/medium/M75
+
+  Original source: JCM - JCM_M84
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=84'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.644402Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M75'
+- timestamp: '2026-01-28T19:48:36.669476Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4b096491614b3df6ca8dfef1f1b98f2e6b2761ffc23be83c70ea66fb3d990641
+merged_from:
+- TOGO_M75_GAM_Semisolid

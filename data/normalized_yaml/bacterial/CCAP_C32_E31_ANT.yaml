@@ -54,6 +54,9 @@ ingredients:
     value: '0.1'
     unit: MICROG_PER_L
 - preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: KNO3
   term:
     id: CHEBI:58242
@@ -211,3 +214,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C32'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:17.005270'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'

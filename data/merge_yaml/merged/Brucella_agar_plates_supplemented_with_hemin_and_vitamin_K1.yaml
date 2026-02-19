@@ -1,0 +1,103 @@
+name: Brucella agar plates supplemented with hemin and vitamin K1
+original_name: Brucella agar plates supplemented with hemin and vitamin K1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast Extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Hemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:50385
+    label: hemin
+- preferred_term: Sheep Blood, defibrinated
+  concentration:
+    value: '5'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Vitamin K1
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:18067
+    label: Vitamin K1
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Sodium Bisulfite
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+- preferred_term: Pancreatic Digest of Casein
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptic Digest of Animal Tissue
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2694
+  term:
+    id: TOGO:M2694
+    label: Brucella agar plates supplemented with hemin and vitamin K1
+notes: 'Source: https://togomedium.org/medium/M2694'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.070287Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2694'
+- timestamp: '2026-01-28T19:48:16.049710Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 6eefa74311865c7d1c600fdf312d9246463169e51976a1e3ab2420721aa076f1
+merged_from:
+- TOGO_M2694_Brucella_agar_plates_supplemented_with_hemin_and_vitamin_K1

@@ -9,13 +9,22 @@ ingredients:
     id: CHEBI:16643
     label: L-Methionine
   notes: 'Cross-references: KEGG:met-L'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: L-Cysteine
   term:
     id: CHEBI:17561
     label: L-Cysteine
   notes: 'Cross-references: KEGG:cys-L'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: dTMP
   notes: 'Cross-references: KEGG:dtmp'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Magnesium chloride
   concentration:
     value: '0.984'
@@ -42,14 +51,23 @@ ingredients:
   term:
     id: CHEBI:31345
     label: Calcium pantothenate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Pyridoxine HCl
   term:
     id: CHEBI:131531
     label: pyridoxamine hydrochloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Thiamine HCl
   term:
     id: CHEBI:49105
     label: Thiamine HCl
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Manganese sulfate
   term:
     id: CHEBI:86364
@@ -107,6 +125,14 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:44.142114'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: L-Methionine; Added default
+    concentration for ingredient: L-Cysteine; Added default concentration for ingredient:
+    dTMP; Added default concentration for ingredient: Calcium pantothenate; Added
+    default concentration for ingredient: Pyridoxine HCl; Added default concentration
+    for ingredient: Thiamine HCl'
 media_term:
   preferred_term: MediaDB Medium 288
   term:

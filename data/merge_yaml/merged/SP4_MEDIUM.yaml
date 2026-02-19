@@ -1,0 +1,443 @@
+name: SP4 MEDIUM
+original_name: SP4 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1076
+  term:
+    id: mediadive.medium:1076
+    label: SP4 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.70874'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '3.39806'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '90'
+    unit: G_PER_L
+- preferred_term: CMRL 1066
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.0496876'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.4; autoclave at 121°C for 15 minutes.
+- step_number: 2
+  action: MIX
+  description: 'Add aseptically:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.305654Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1076'
+- timestamp: '2026-02-03T22:25:28.314377+00:00'
+  curator: recipe-merger
+  action: Merged 68 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1076_SP4_MEDIUM, KOMODO_1076-21848_MEDIUM_1076_MODIFIED_FOR_DSM_21848,
+    KOMODO_1076_SP4_MEDIUM, KOMODO_1076b-19104_MEDIUM_1076b_MODIFIED_FOR_DSM_19104,
+    KOMODO_1076b-19105_MEDIUM_1076b_MODIFIED_FOR_DSM_19105, KOMODO_1076b-19201_MEDIUM_1076b_MODIFIED_FOR_DSM_19201,
+    KOMODO_1076b-19202_MEDIUM_1076b_MODIFIED_FOR_DSM_19202, KOMODO_1076b-19518_MEDIUM_1076b_MODIFIED_FOR_DSM_19518,
+    KOMODO_1076b-19754_MEDIUM_1076b_MODIFIED_FOR_DSM_19754, KOMODO_1076b-19755_MEDIUM_1076b_MODIFIED_FOR_DSM_19755,
+    KOMODO_1076b-19775_MEDIUM_1076b_MODIFIED_FOR_DSM_19775, KOMODO_1076b-19793_MEDIUM_1076b_MODIFIED_FOR_DSM_19793,
+    KOMODO_1076b-19816_MEDIUM_1076b_MODIFIED_FOR_DSM_19816, KOMODO_1076b-19817_MEDIUM_1076b_MODIFIED_FOR_DSM_19817,
+    KOMODO_1076b-19900_MEDIUM_1076b_MODIFIED_FOR_DSM_19900, KOMODO_1076b-19901_MEDIUM_1076b_MODIFIED_FOR_DSM_19901,
+    KOMODO_1076b-19993_MEDIUM_1076b_MODIFIED_FOR_DSM_19993, KOMODO_1076b-19994_MEDIUM_1076b_MODIFIED_FOR_DSM_19994,
+    KOMODO_1076b-19995_MEDIUM_1076b_MODIFIED_FOR_DSM_19995, KOMODO_1076b-1_For_Ureaplasma,
+    KOMODO_1076b-21131_MEDIUM_1076b_MODIFIED_FOR_DSM_21131, KOMODO_1076b-21204_MEDIUM_1076b_MODIFIED_FOR_DSM_21204,
+    KOMODO_1076b-21430_MEDIUM_1076b_MODIFIED_FOR_DSM_21430, KOMODO_1076b-21477_MEDIUM_1076b_MODIFIED_FOR_DSM_21477,
+    KOMODO_1076b-21484_MEDIUM_1076b_MODIFIED_FOR_DSM_21484, KOMODO_1076b-21588_MEDIUM_1076b_MODIFIED_FOR_DSM_21588,
+    KOMODO_1076b-21589_MEDIUM_1076b_MODIFIED_FOR_DSM_21589, KOMODO_1076b-21657_MEDIUM_1076b_MODIFIED_FOR_DSM_21657,
+    KOMODO_1076b-21780_MEDIUM_1076b_MODIFIED_FOR_DSM_21780, KOMODO_1076b-21781_MEDIUM_1076b_MODIFIED_FOR_DSM_21781,
+    KOMODO_1076b-21782_MEDIUM_1076b_MODIFIED_FOR_DSM_21782, KOMODO_1076b-21833_MEDIUM_1076b_MODIFIED_FOR_DSM_21833,
+    KOMODO_1076b-21834_MEDIUM_1076b_MODIFIED_FOR_DSM_21834, KOMODO_1076b-21846_MEDIUM_1076b_MODIFIED_FOR_DSM_21846,
+    KOMODO_1076b-21865_MEDIUM_1076b_MODIFIED_FOR_DSM_21865, KOMODO_1076b-21866_MEDIUM_1076b_MODIFIED_FOR_DSM_21866,
+    KOMODO_1076b-22019_MEDIUM_1076b_MODIFIED_FOR_DSM_22019, KOMODO_1076b-22020_MEDIUM_1076b_MODIFIED_FOR_DSM_22020,
+    KOMODO_1076b-22021_MEDIUM_1076b_MODIFIED_FOR_DSM_22021, KOMODO_1076b-22061_MEDIUM_1076b_MODIFIED_FOR_DSM_22061,
+    KOMODO_1076b-22062_MEDIUM_1076b_MODIFIED_FOR_DSM_22062, KOMODO_1076b-22113_MEDIUM_1076b_MODIFIED_FOR_DSM_22113,
+    KOMODO_1076b-22114_MEDIUM_1076b_MODIFIED_FOR_DSM_22114, KOMODO_1076b-22144_MEDIUM_1076b_MODIFIED_FOR_DSM_22144,
+    KOMODO_1076b-22145_MEDIUM_1076b_MODIFIED_FOR_DSM_22145, KOMODO_1076b-22457_MEDIUM_1076b_MODIFIED_FOR_DSM_22457,
+    KOMODO_1076b-22551_MEDIUM_1076b_MODIFIED_FOR_DSM_22551, KOMODO_1076b-22552_MEDIUM_1076b_MODIFIED_FOR_DSM_22552,
+    KOMODO_1076b-22553_MEDIUM_1076b_MODIFIED_FOR_DSM_22553, KOMODO_1076b-22601_MEDIUM_1076b_MODIFIED_FOR_DSM_22601,
+    KOMODO_1076b-22603_MEDIUM_1076b_MODIFIED_FOR_DSM_22603, KOMODO_1076b-22604_MEDIUM_1076b_MODIFIED_FOR_DSM_22604,
+    KOMODO_1076b-22631_MEDIUM_1076b_MODIFIED_FOR_DSM_22631, KOMODO_1076b-22632_MEDIUM_1076b_MODIFIED_FOR_DSM_22632,
+    KOMODO_1076b-22633_MEDIUM_1076b_MODIFIED_FOR_DSM_22633, KOMODO_1076b-22781_MEDIUM_1076b_MODIFIED_FOR_DSM_22781,
+    KOMODO_1076b-22911_MEDIUM_1076b_MODIFIED_FOR_DSM_22911, KOMODO_1076b-22997_MEDIUM_1076b_MODIFIED_FOR_DSM_22997,
+    KOMODO_1076b-22998_MEDIUM_1076b_MODIFIED_FOR_DSM_22998, KOMODO_1076b-23060_MEDIUM_1076b_MODIFIED_FOR_DSM_23060,
+    KOMODO_1076b-23536_MEDIUM_1076b_MODIFIED_FOR_DSM_23536, KOMODO_1076b-23537-replace-Glucose-with-arginine_MEDIUM_1076b_MODIFIED_FOR_DSM_23537_replace_Glucose_with_arginine,
+    KOMODO_1076b-23537_MEDIUM_1076b_MODIFIED_FOR_DSM_23537, KOMODO_1076b-23978_MEDIUM_1076b_MODIFIED_FOR_DSM_23978,
+    KOMODO_1076b-23979_MEDIUM_1076b_MODIFIED_FOR_DSM_23979, KOMODO_1076b-25590_MEDIUM_1076b_MODIFIED_FOR_DSM_25590,
+    KOMODO_1076b-25592_MEDIUM_1076b_MODIFIED_FOR_DSM_25592, KOMODO_1076b_SP4-Z_medium'
+synonyms:
+- name: MEDIUM 1076 MODIFIED FOR DSM 21848
+  source: KOMODO
+  source_id: komodo.medium:1076_21848
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19104
+  source: KOMODO
+  source_id: komodo.medium:1076b_19104
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19105
+  source: KOMODO
+  source_id: komodo.medium:1076b_19105
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19201
+  source: KOMODO
+  source_id: komodo.medium:1076b_19201
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19202
+  source: KOMODO
+  source_id: komodo.medium:1076b_19202
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19518
+  source: KOMODO
+  source_id: komodo.medium:1076b_19518
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19754
+  source: KOMODO
+  source_id: komodo.medium:1076b_19754
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19755
+  source: KOMODO
+  source_id: komodo.medium:1076b_19755
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19775
+  source: KOMODO
+  source_id: komodo.medium:1076b_19775
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19793
+  source: KOMODO
+  source_id: komodo.medium:1076b_19793
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19816
+  source: KOMODO
+  source_id: komodo.medium:1076b_19816
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19817
+  source: KOMODO
+  source_id: komodo.medium:1076b_19817
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19900
+  source: KOMODO
+  source_id: komodo.medium:1076b_19900
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19901
+  source: KOMODO
+  source_id: komodo.medium:1076b_19901
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19993
+  source: KOMODO
+  source_id: komodo.medium:1076b_19993
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19994
+  source: KOMODO
+  source_id: komodo.medium:1076b_19994
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 19995
+  source: KOMODO
+  source_id: komodo.medium:1076b_19995
+  original_category: imported
+- name: For Ureaplasma
+  source: KOMODO
+  source_id: komodo.medium:1076b.1
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21131
+  source: KOMODO
+  source_id: komodo.medium:1076b_21131
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21204
+  source: KOMODO
+  source_id: komodo.medium:1076b_21204
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21430
+  source: KOMODO
+  source_id: komodo.medium:1076b_21430
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21477
+  source: KOMODO
+  source_id: komodo.medium:1076b_21477
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21484
+  source: KOMODO
+  source_id: komodo.medium:1076b_21484
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21588
+  source: KOMODO
+  source_id: komodo.medium:1076b_21588
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21589
+  source: KOMODO
+  source_id: komodo.medium:1076b_21589
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21657
+  source: KOMODO
+  source_id: komodo.medium:1076b_21657
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21780
+  source: KOMODO
+  source_id: komodo.medium:1076b_21780
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21781
+  source: KOMODO
+  source_id: komodo.medium:1076b_21781
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21782
+  source: KOMODO
+  source_id: komodo.medium:1076b_21782
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21833
+  source: KOMODO
+  source_id: komodo.medium:1076b_21833
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21834
+  source: KOMODO
+  source_id: komodo.medium:1076b_21834
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21846
+  source: KOMODO
+  source_id: komodo.medium:1076b_21846
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21865
+  source: KOMODO
+  source_id: komodo.medium:1076b_21865
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 21866
+  source: KOMODO
+  source_id: komodo.medium:1076b_21866
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22019
+  source: KOMODO
+  source_id: komodo.medium:1076b_22019
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22020
+  source: KOMODO
+  source_id: komodo.medium:1076b_22020
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22021
+  source: KOMODO
+  source_id: komodo.medium:1076b_22021
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22061
+  source: KOMODO
+  source_id: komodo.medium:1076b_22061
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22062
+  source: KOMODO
+  source_id: komodo.medium:1076b_22062
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22113
+  source: KOMODO
+  source_id: komodo.medium:1076b_22113
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22114
+  source: KOMODO
+  source_id: komodo.medium:1076b_22114
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22144
+  source: KOMODO
+  source_id: komodo.medium:1076b_22144
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22145
+  source: KOMODO
+  source_id: komodo.medium:1076b_22145
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22457
+  source: KOMODO
+  source_id: komodo.medium:1076b_22457
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22551
+  source: KOMODO
+  source_id: komodo.medium:1076b_22551
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22552
+  source: KOMODO
+  source_id: komodo.medium:1076b_22552
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22553
+  source: KOMODO
+  source_id: komodo.medium:1076b_22553
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22601
+  source: KOMODO
+  source_id: komodo.medium:1076b_22601
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22603
+  source: KOMODO
+  source_id: komodo.medium:1076b_22603
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22604
+  source: KOMODO
+  source_id: komodo.medium:1076b_22604
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22631
+  source: KOMODO
+  source_id: komodo.medium:1076b_22631
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22632
+  source: KOMODO
+  source_id: komodo.medium:1076b_22632
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22633
+  source: KOMODO
+  source_id: komodo.medium:1076b_22633
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22781
+  source: KOMODO
+  source_id: komodo.medium:1076b_22781
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22911
+  source: KOMODO
+  source_id: komodo.medium:1076b_22911
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22997
+  source: KOMODO
+  source_id: komodo.medium:1076b_22997
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 22998
+  source: KOMODO
+  source_id: komodo.medium:1076b_22998
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23060
+  source: KOMODO
+  source_id: komodo.medium:1076b_23060
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23536
+  source: KOMODO
+  source_id: komodo.medium:1076b_23536
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23537_replace_Glucose_with_arginine
+  source: KOMODO
+  source_id: komodo.medium:1076b_23537_replace_Glucose_with_arginine
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23537
+  source: KOMODO
+  source_id: komodo.medium:1076b_23537
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23978
+  source: KOMODO
+  source_id: komodo.medium:1076b_23978
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 23979
+  source: KOMODO
+  source_id: komodo.medium:1076b_23979
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 25590
+  source: KOMODO
+  source_id: komodo.medium:1076b_25590
+  original_category: imported
+- name: MEDIUM 1076b MODIFIED FOR DSM 25592
+  source: KOMODO
+  source_id: komodo.medium:1076b_25592
+  original_category: imported
+- name: SP4-Z medium
+  source: KOMODO
+  source_id: komodo.medium:1076b
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1076_SP4_MEDIUM
+- KOMODO_1076-21848_MEDIUM_1076_MODIFIED_FOR_DSM_21848
+- KOMODO_1076_SP4_MEDIUM
+- KOMODO_1076b-19104_MEDIUM_1076b_MODIFIED_FOR_DSM_19104
+- KOMODO_1076b-19105_MEDIUM_1076b_MODIFIED_FOR_DSM_19105
+- KOMODO_1076b-19201_MEDIUM_1076b_MODIFIED_FOR_DSM_19201
+- KOMODO_1076b-19202_MEDIUM_1076b_MODIFIED_FOR_DSM_19202
+- KOMODO_1076b-19518_MEDIUM_1076b_MODIFIED_FOR_DSM_19518
+- KOMODO_1076b-19754_MEDIUM_1076b_MODIFIED_FOR_DSM_19754
+- KOMODO_1076b-19755_MEDIUM_1076b_MODIFIED_FOR_DSM_19755
+- KOMODO_1076b-19775_MEDIUM_1076b_MODIFIED_FOR_DSM_19775
+- KOMODO_1076b-19793_MEDIUM_1076b_MODIFIED_FOR_DSM_19793
+- KOMODO_1076b-19816_MEDIUM_1076b_MODIFIED_FOR_DSM_19816
+- KOMODO_1076b-19817_MEDIUM_1076b_MODIFIED_FOR_DSM_19817
+- KOMODO_1076b-19900_MEDIUM_1076b_MODIFIED_FOR_DSM_19900
+- KOMODO_1076b-19901_MEDIUM_1076b_MODIFIED_FOR_DSM_19901
+- KOMODO_1076b-19993_MEDIUM_1076b_MODIFIED_FOR_DSM_19993
+- KOMODO_1076b-19994_MEDIUM_1076b_MODIFIED_FOR_DSM_19994
+- KOMODO_1076b-19995_MEDIUM_1076b_MODIFIED_FOR_DSM_19995
+- KOMODO_1076b-1_For_Ureaplasma
+- KOMODO_1076b-21131_MEDIUM_1076b_MODIFIED_FOR_DSM_21131
+- KOMODO_1076b-21204_MEDIUM_1076b_MODIFIED_FOR_DSM_21204
+- KOMODO_1076b-21430_MEDIUM_1076b_MODIFIED_FOR_DSM_21430
+- KOMODO_1076b-21477_MEDIUM_1076b_MODIFIED_FOR_DSM_21477
+- KOMODO_1076b-21484_MEDIUM_1076b_MODIFIED_FOR_DSM_21484
+- KOMODO_1076b-21588_MEDIUM_1076b_MODIFIED_FOR_DSM_21588
+- KOMODO_1076b-21589_MEDIUM_1076b_MODIFIED_FOR_DSM_21589
+- KOMODO_1076b-21657_MEDIUM_1076b_MODIFIED_FOR_DSM_21657
+- KOMODO_1076b-21780_MEDIUM_1076b_MODIFIED_FOR_DSM_21780
+- KOMODO_1076b-21781_MEDIUM_1076b_MODIFIED_FOR_DSM_21781
+- KOMODO_1076b-21782_MEDIUM_1076b_MODIFIED_FOR_DSM_21782
+- KOMODO_1076b-21833_MEDIUM_1076b_MODIFIED_FOR_DSM_21833
+- KOMODO_1076b-21834_MEDIUM_1076b_MODIFIED_FOR_DSM_21834
+- KOMODO_1076b-21846_MEDIUM_1076b_MODIFIED_FOR_DSM_21846
+- KOMODO_1076b-21865_MEDIUM_1076b_MODIFIED_FOR_DSM_21865
+- KOMODO_1076b-21866_MEDIUM_1076b_MODIFIED_FOR_DSM_21866
+- KOMODO_1076b-22019_MEDIUM_1076b_MODIFIED_FOR_DSM_22019
+- KOMODO_1076b-22020_MEDIUM_1076b_MODIFIED_FOR_DSM_22020
+- KOMODO_1076b-22021_MEDIUM_1076b_MODIFIED_FOR_DSM_22021
+- KOMODO_1076b-22061_MEDIUM_1076b_MODIFIED_FOR_DSM_22061
+- KOMODO_1076b-22062_MEDIUM_1076b_MODIFIED_FOR_DSM_22062
+- KOMODO_1076b-22113_MEDIUM_1076b_MODIFIED_FOR_DSM_22113
+- KOMODO_1076b-22114_MEDIUM_1076b_MODIFIED_FOR_DSM_22114
+- KOMODO_1076b-22144_MEDIUM_1076b_MODIFIED_FOR_DSM_22144
+- KOMODO_1076b-22145_MEDIUM_1076b_MODIFIED_FOR_DSM_22145
+- KOMODO_1076b-22457_MEDIUM_1076b_MODIFIED_FOR_DSM_22457
+- KOMODO_1076b-22551_MEDIUM_1076b_MODIFIED_FOR_DSM_22551
+- KOMODO_1076b-22552_MEDIUM_1076b_MODIFIED_FOR_DSM_22552
+- KOMODO_1076b-22553_MEDIUM_1076b_MODIFIED_FOR_DSM_22553
+- KOMODO_1076b-22601_MEDIUM_1076b_MODIFIED_FOR_DSM_22601
+- KOMODO_1076b-22603_MEDIUM_1076b_MODIFIED_FOR_DSM_22603
+- KOMODO_1076b-22604_MEDIUM_1076b_MODIFIED_FOR_DSM_22604
+- KOMODO_1076b-22631_MEDIUM_1076b_MODIFIED_FOR_DSM_22631
+- KOMODO_1076b-22632_MEDIUM_1076b_MODIFIED_FOR_DSM_22632
+- KOMODO_1076b-22633_MEDIUM_1076b_MODIFIED_FOR_DSM_22633
+- KOMODO_1076b-22781_MEDIUM_1076b_MODIFIED_FOR_DSM_22781
+- KOMODO_1076b-22911_MEDIUM_1076b_MODIFIED_FOR_DSM_22911
+- KOMODO_1076b-22997_MEDIUM_1076b_MODIFIED_FOR_DSM_22997
+- KOMODO_1076b-22998_MEDIUM_1076b_MODIFIED_FOR_DSM_22998
+- KOMODO_1076b-23060_MEDIUM_1076b_MODIFIED_FOR_DSM_23060
+- KOMODO_1076b-23536_MEDIUM_1076b_MODIFIED_FOR_DSM_23536
+- KOMODO_1076b-23537-replace-Glucose-with-arginine_MEDIUM_1076b_MODIFIED_FOR_DSM_23537_replace_Glucose_with_arginine
+- KOMODO_1076b-23537_MEDIUM_1076b_MODIFIED_FOR_DSM_23537
+- KOMODO_1076b-23978_MEDIUM_1076b_MODIFIED_FOR_DSM_23978
+- KOMODO_1076b-23979_MEDIUM_1076b_MODIFIED_FOR_DSM_23979
+- KOMODO_1076b-25590_MEDIUM_1076b_MODIFIED_FOR_DSM_25590
+- KOMODO_1076b-25592_MEDIUM_1076b_MODIFIED_FOR_DSM_25592
+- KOMODO_1076b_SP4-Z_medium
+merge_fingerprint: 9c1ffb6bc527fc38967daf30883c19423ee51fd05f24c672f378473f2a9ea91a

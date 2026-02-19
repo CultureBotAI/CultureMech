@@ -1,0 +1,80 @@
+name: TRYPTONE SOYA BROTH (TSB)
+original_name: TRYPTONE SOYA BROTH (TSB)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 545
+  term:
+    id: mediadive.medium:545
+    label: TRYPTONE SOYA BROTH (TSB)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium545.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 2
+  action: MIX
+  description: "Note:\r\nThe following brands are used at the DSMZ:\r\nDifco™ Trypton-Soja-Bouillon\
+    \ (Soja-Caseinpepton-Bouillon) BD 211825. \r\nBBL™ Trypticase Soja-Bouillon (Caseinpepton-Soja-Bouillon)\
+    \ BD 211768. \r\nOxoid Tryptone Soy Broth (Casein soya bean digest medium) CM0129\r\
+    \nMerck Tryptic Soy Broth (CASO-Bouillon) 105459"
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.580257Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 545'
+- timestamp: '2026-02-03T22:25:36.184225+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1716_DILUTED_TRYPTONE_SOYA_BROTH_TSB_1_10, DSMZ_545_TRYPTONE_SOYA_BROTH_TSB,
+    DSMZ_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB'
+synonyms:
+- name: DILUTED TRYPTONE SOYA BROTH (TSB) 1:10
+  source: MediaDive
+  source_id: mediadive.medium:1716
+  original_category: imported
+- name: DILUTED TRYPTONE SOYA BROTH (TSB)
+  source: MediaDive
+  source_id: mediadive.medium:545a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1716_DILUTED_TRYPTONE_SOYA_BROTH_TSB_1_10
+- DSMZ_545_TRYPTONE_SOYA_BROTH_TSB
+- DSMZ_545a_DILUTED_TRYPTONE_SOYA_BROTH_TSB
+merge_fingerprint: 77fcbbbb0eb57c1b31bc162ed7291a6255002212afe267e2c94ba78cd12e7fdf

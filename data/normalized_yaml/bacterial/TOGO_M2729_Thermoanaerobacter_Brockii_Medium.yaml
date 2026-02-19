@@ -107,6 +107,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -223,6 +226,9 @@ ingredients:
     label: iron dichloride tetrahydrate
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -312,6 +318,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
 - preferred_term: N2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2729
   term:
@@ -331,3 +340,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.987003'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2 gas; Added default concentration
+    for ingredient: KOH solution; Added default concentration for ingredient: N2 gas'

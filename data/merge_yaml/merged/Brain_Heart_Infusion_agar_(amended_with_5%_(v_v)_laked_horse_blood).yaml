@@ -1,0 +1,53 @@
+name: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+original_name: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: laked horse blood (Hema Resource & Supply, Aurora, OR)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+- preferred_term: Brain Heart Infusion agar (Becton Dickinson, Sparks, MD)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2932
+  term:
+    id: TOGO:M2932
+    label: Brain Heart Infusion agar (amended with 5% (v/v) laked horse blood)
+notes: 'Source: https://togomedium.org/medium/M2932'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.413636Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2932'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.855331'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'
+merge_fingerprint: 3632be7537e3d5e1998092f33f9ef821b4e8811e6e5beb5e463b68c448e058cb
+merged_from:
+- TOGO_M2932_Brain_Heart_Infusion_agar_amended_with_5_v_v_laked_horse_blood

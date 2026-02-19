@@ -1,0 +1,39 @@
+name: MRS supplemented with 0.05% cysteine
+original_name: MRS supplemented with 0.05% cysteine
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Cysteine
+  concentration:
+    value: '0.05'
+    unit: PERCENT_W_V
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+- preferred_term: MRS broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2795
+  term:
+    id: TOGO:M2795
+    label: MRS supplemented with 0.05% cysteine
+notes: 'Source: https://togomedium.org/medium/M2795'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.310102Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2795'
+- timestamp: '2026-01-28T19:48:18.488911Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 582b0b5860005c22cfb7235137572c0d74ee58f50ecbb81612810346a316df9b
+merged_from:
+- TOGO_M2795_MRS_supplemented_with_0.05_cysteine

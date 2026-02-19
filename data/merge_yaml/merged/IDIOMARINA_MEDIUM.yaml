@@ -1,0 +1,68 @@
+name: IDIOMARINA MEDIUM
+original_name: IDIOMARINA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1016
+  term:
+    id: mediadive.medium:1016
+    label: IDIOMARINA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1016.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '60'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '18'
+    unit: G_PER_L
+  notes: ' (if required)'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.119082Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1016'
+- timestamp: '2026-02-03T22:25:27.108883+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1016_IDIOMARINA_MEDIUM, KOMODO_1016_IDIOMARINA_medium'
+synonyms:
+- name: IDIOMARINA medium
+  source: KOMODO
+  source_id: komodo.medium:1016
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1016_IDIOMARINA_MEDIUM
+- KOMODO_1016_IDIOMARINA_medium
+merge_fingerprint: 9812656355ed708870fb39e696e5683e6c3794ebf41c6d294ecc224dd71fd3e6

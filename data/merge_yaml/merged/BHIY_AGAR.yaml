@@ -1,0 +1,57 @@
+name: BHIY Agar
+original_name: BHIY Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Brain heart infusion (BD-Difco)
+  concentration:
+    value: '37'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M132
+  term:
+    id: TOGO:M132
+    label: BHIY Agar
+notes: 'Source: https://togomedium.org/medium/M132
+
+  Original source: JCM - JCM_M141
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=141'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.352697Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M132'
+- timestamp: '2026-01-28T19:48:26.211675Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fad699049b70fb42b86546cb756ec396ca8d8c9a043a630c292c176824c23719
+merged_from:
+- TOGO_M132_BHIY_Agar

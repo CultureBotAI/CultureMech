@@ -1,0 +1,98 @@
+name: GRANULICELLA PALUDICOLA MEDIUM
+original_name: GRANULICELLA PALUDICOLA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 4-5
+media_term:
+  preferred_term: DSMZ Medium 1285
+  term:
+    id: mediadive.medium:1285
+    label: GRANULICELLA PALUDICOLA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1285.pdf'
+ingredients:
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0
+    with alginic acid.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.997866Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1285'
+- timestamp: '2026-01-28T19:48:28.300978Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:31.797257+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1285_GRANULICELLA_PALUDICOLA_MEDIUM, KOMODO_1285_GRANULICELLA_PALUDICOLA_medium'
+synonyms:
+- name: GRANULICELLA PALUDICOLA medium
+  source: KOMODO
+  source_id: komodo.medium:1285
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1285_GRANULICELLA_PALUDICOLA_MEDIUM
+- KOMODO_1285_GRANULICELLA_PALUDICOLA_medium
+merge_fingerprint: f2430fc9e8d5ea3b4245847569e6a75305d48a7f8069d938b5a0dfd79d4cdb0f

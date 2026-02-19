@@ -1,0 +1,117 @@
+name: LSG Medium
+original_name: LSG Medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Succinate
+  term:
+    id: CHEBI:26806
+    label: Succinate
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:succ'
+- preferred_term: beta-D-Glucose
+  concentration:
+    value: '27.753'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.004'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '5.0'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '12.5'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '12.5'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.002'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenite
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.002'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.277960Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 187, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 187
+  term:
+    id: MEDIADB:187
+    label: LSG Medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 2a66f802178d9aa0b467875e975bd4c111c72993327c3306a2942c2144444fe9
+merged_from:
+- MEDIADB_187_LSG_Medium

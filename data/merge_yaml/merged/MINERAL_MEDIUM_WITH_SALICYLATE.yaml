@@ -1,0 +1,102 @@
+name: MINERAL MEDIUM WITH SALICYLATE
+original_name: MINERAL MEDIUM WITH SALICYLATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 445
+  term:
+    id: mediadive.medium:445
+    label: MINERAL MEDIUM WITH SALICYLATE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium445.pdf'
+ingredients:
+- preferred_term: Salicylate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '9'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: CoSO4
+  term:
+    id: CHEBI:53470
+    label: CoSO4
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: To medium 442 add 0.05% salicylate as carbon source instead of toluene,
+    sterilized by filtration.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: MIX
+  description: One drop of toluene is evaporated in a desiccator so that the atmosphere
+    is saturated. 0.1% succinate may be added to the medium as additional carbon source.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.149490Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 445'
+merge_fingerprint: 68f2fdc4fa5e5ab590767eeae58b45abf08dc36d0b28debd2fd4583a379d4f14
+merged_from:
+- DSMZ_445_MINERAL_MEDIUM_WITH_SALICYLATE

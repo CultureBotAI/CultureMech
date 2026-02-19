@@ -1,0 +1,160 @@
+name: '''AMS1 (Pyruvate+Serine'
+original_name: '''AMS1 (Pyruvate+Serine'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Thiamine
+  term:
+    id: CHEBI:26948
+    label: Thiamine
+  concentration:
+    value: '0.006'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thm'
+- preferred_term: Pyruvate
+  term:
+    id: CHEBI:15361
+    label: Pyruvate
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pyr'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: 4e-06
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Nickel chloride
+  concentration:
+    value: 1e-06
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '27.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '0.05'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: Sodium bicarbonate
+  concentration:
+    value: '6.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: 3e-07
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '28.0'
+    unit: MILLIMOLAR
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.05'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenite
+  concentration:
+    value: 1e-06
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '9.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Cobalt chloride
+  concentration:
+    value: 5e-07
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '481.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium dihydrogen phosphate
+  concentration:
+    value: '0.05'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.4'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: 9e-06
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: 8e-07
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.000117'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:47.061689Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 478, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:09.757328Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 478
+  term:
+    id: MEDIADB:478
+    label: '''AMS1 (Pyruvate+Serine'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: d9856f0cd77551c0c7e8f945c969ab5c72f612830268e0705000fe4a6fd72685
+merged_from:
+- MEDIADB_478_AMS1_Pyruvate_Serine

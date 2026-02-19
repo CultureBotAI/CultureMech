@@ -1,0 +1,102 @@
+name: ARHODOMONAS MEDIUM RS91
+original_name: ARHODOMONAS MEDIUM RS91
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.5-7.5
+media_term:
+  preferred_term: DSMZ Medium 1482
+  term:
+    id: mediadive.medium:1482
+    label: ARHODOMONAS MEDIUM RS91
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1482.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: (NH4)2HPO4
+  term:
+    id: CHEBI:62476
+    label: (NH4)2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na pyruvate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Na acetate
+  term:
+    id: CHEBI:32954
+    label: Na acetate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: Casein hydrolysate
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 6.5-7.5
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.564459Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1482'
+merge_fingerprint: 56c2ff51e72f4c7e6e63add57b5702d669f6338363f5c959edcab99edc52a297
+merged_from:
+- DSMZ_1482_ARHODOMONAS_MEDIUM_RS91

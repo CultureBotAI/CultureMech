@@ -1,0 +1,86 @@
+name: Rhizobium Medium
+original_name: Rhizobium Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:29864
+    label: mannitol
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Soil extract
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: Air-dried garden soil
+  concentration:
+    value: '80'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2353
+  term:
+    id: TOGO:M2353
+    label: Rhizobium Medium
+notes: 'Source: https://togomedium.org/medium/M2353
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.388429Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2353'
+- timestamp: '2026-01-28T19:48:24.769493Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 97fed85c4c82514ceeab26abd35e925a112ece40bd472834675416ccdddf8e20
+merged_from:
+- TOGO_M2353_Rhizobium_Medium

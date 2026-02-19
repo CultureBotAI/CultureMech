@@ -1,0 +1,107 @@
+name: Wilkins Chalgren Anaerobic Medium
+original_name: Wilkins Chalgren Anaerobic Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+- preferred_term: Wilkins-Chalgren Anaerobe Broth (Oxoid CM0643)
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Yeast Extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Sodium Chloride
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+- preferred_term: Sodium Pyruvate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Haemin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
+    component'
+  term:
+    id: CHEBI:50385
+    label: Haemin
+- preferred_term: L-Arginine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:16467
+    label: L-arginine
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Menadione
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:28869
+    label: Menadione
+- preferred_term: Gelatin Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2751
+  term:
+    id: TOGO:M2751
+    label: Wilkins Chalgren Anaerobic Medium
+notes: 'Source: https://togomedium.org/medium/M2751
+
+  Original URL: https://www.atcc.org/~/media/5641393BAE4442CA9A9794EDF886F786.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.235779Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2751'
+- timestamp: '2026-01-28T19:48:31.725473Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: cafee058f70799c02f9bd176babc2c22d6f00f988cffa921ad27d1657ace4878
+merged_from:
+- TOGO_M2751_Wilkins_Chalgren_Anaerobic_Medium

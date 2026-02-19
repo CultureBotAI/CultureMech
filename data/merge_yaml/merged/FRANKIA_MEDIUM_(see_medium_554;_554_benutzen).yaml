@@ -1,0 +1,56 @@
+name: FRANKIA MEDIUM (see medium 554; 554 benutzen)
+original_name: FRANKIA MEDIUM (see medium 554; 554 benutzen)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 552
+  term:
+    id: mediadive.medium:552
+    label: FRANKIA MEDIUM (see medium 554; 554 benutzen)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium552.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: N-Z amine
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust medium pH with NaOH to 7.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.593437Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 552'
+merge_fingerprint: 9892a7bf8ccfbdc816671ccdcb18c3cdfa82e5ed5c561099d469faac3cede5a4
+merged_from:
+- DSMZ_552_FRANKIA_MEDIUM_see_medium_554_554_benutzen

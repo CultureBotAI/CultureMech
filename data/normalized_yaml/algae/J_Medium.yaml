@@ -1,22 +1,30 @@
 name: J Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: Macro Component 1 for J Medium
-- agent_term:
-    preferred_term: '2'
-  amount: Macro Component 2 for J medium
-- agent_term:
-    preferred_term: '3'
-  amount: CaCl2•2H2O(Sigma C-3881)
-- agent_term:
-    preferred_term: '4'
-  amount: G9 Trace Metals for J medium
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Macro Component 1 for J Medium'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Macro Component 2 for J medium'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(Sigma C-3881)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: G9 Trace Metals for J medium'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

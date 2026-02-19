@@ -11,7 +11,78 @@ media_term:
     label: ACIDAMINOCOCCUS FERMENTANS medium
 notes: 'Source: KOMODO ModelSEED | ID: 414 | DSMZ Medium: 414 (mediadive.medium:414)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Trypticase peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: DL-Tryptophan
+  term:
+    id: CHEBI:27897
+    label: DL-Tryptophan
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +90,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 414'
+- timestamp: '2026-02-03T11:19:13.855837'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 414

@@ -1,0 +1,315 @@
+name: DESULFOVIRGA MEDIUM
+original_name: DESULFOVIRGA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 194a
+  term:
+    id: mediadive.medium:194a
+    label: DESULFOVIRGA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium194a.pdf'
+ingredients:
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.50215'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.214592'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.321888'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1.07296'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.429185'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.536481'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.160944'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000536481'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: m-Xylene
+  term:
+    id: CHEBI:28488
+    label: m-Xylene
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: 2,2,4,4,6,8,8-Heptamethylnonane
+  term:
+    id: CHEBI:131383
+    label: 2,2,4,4,6,8,8-Heptamethylnonane
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '80'
+    unit: G_PER_L
+- preferred_term: H2SO4
+  term:
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 min ), then distributed under the same gas atmosphere
+    in anoxic serum vials (e.g., 50 ml medium in 100 ml serum bottles) and autoclaved.
+    Solutions B, D and G are autoclaved separately under 100% N2 gas. Solution C is
+    autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solutions E and F are prepared
+    under 100% N2 gas atmosphere and sterilized by filtration. Solutions B to G are
+    added to the sterile, cooled solution A in appropriate amounts in the sequence
+    as indicated. Final pH of the medium should be 7.2 - 7.4.
+- step_number: 2
+  action: MIX
+  description: 'Note: For transfers use 5 - 10% (v/v) inoculum. Incubate tubes in
+    a slanted position.'
+- step_number: 3
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.444052Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 194a'
+- timestamp: '2026-02-03T22:25:37.227938+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_194a_DESULFOVIRGA_MEDIUM, KOMODO_194-13527_MEDIUM_194_MODIFIED_FOR_DSM_13527,
+    KOMODO_194-1_For_DSM_1744, KOMODO_194-2_For_DSM_14880, KOMODO_194-3_For_DSM_21556,
+    KOMODO_194-5092_MEDIUM_194_MODIFIED_FOR_DSM_5092, KOMODO_194-6523_MEDIUM_194_MODIFIED_FOR_DSM_6523,
+    KOMODO_194_DESULFOBULBUS_MEDIUM'
+synonyms:
+- name: MEDIUM 194 MODIFIED FOR DSM 13527
+  source: KOMODO
+  source_id: komodo.medium:194_13527
+  original_category: imported
+- name: For DSM 1744
+  source: KOMODO
+  source_id: komodo.medium:194.1
+  original_category: imported
+- name: For DSM 14880
+  source: KOMODO
+  source_id: komodo.medium:194.2
+  original_category: imported
+- name: For DSM 21556
+  source: KOMODO
+  source_id: komodo.medium:194.3
+  original_category: imported
+- name: MEDIUM 194 MODIFIED FOR DSM 5092
+  source: KOMODO
+  source_id: komodo.medium:194_5092
+  original_category: imported
+- name: MEDIUM 194 MODIFIED FOR DSM 6523
+  source: KOMODO
+  source_id: komodo.medium:194_6523
+  original_category: imported
+- name: DESULFOBULBUS MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:194
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_194a_DESULFOVIRGA_MEDIUM
+- KOMODO_194-13527_MEDIUM_194_MODIFIED_FOR_DSM_13527
+- KOMODO_194-1_For_DSM_1744
+- KOMODO_194-2_For_DSM_14880
+- KOMODO_194-3_For_DSM_21556
+- KOMODO_194-5092_MEDIUM_194_MODIFIED_FOR_DSM_5092
+- KOMODO_194-6523_MEDIUM_194_MODIFIED_FOR_DSM_6523
+- KOMODO_194_DESULFOBULBUS_MEDIUM
+merge_fingerprint: 8c5bdb8f71d5c7fee44a7f76a7132117a94bbae36e4f6003b5f03bcf2453ecc2

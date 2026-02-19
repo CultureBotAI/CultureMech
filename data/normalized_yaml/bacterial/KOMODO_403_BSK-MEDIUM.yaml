@@ -11,7 +11,108 @@ media_term:
   term:
     id: komodo.medium:403
     label: BSK-MEDIUM
-ingredients: []
+ingredients:
+- preferred_term: CMRL 1066
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Proteose peptone no. 2
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose yeastolate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: HEPES buffer
+  term:
+    id: CHEBI:19708
+    label: HEPES buffer
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: N-Acetylglucosamine
+  term:
+    id: CHEBI:59640
+    label: N-Acetylglucosamine
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+- preferred_term: Gelatine
+  term:
+    id: CHEBI:5291
+    label: Gelatine
+  concentration:
+    value: '70'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Bovine serum albumin
+  concentration:
+    value: '350'
+    unit: G_PER_L
+- preferred_term: Double distilled water
+  term:
+    id: CHEBI:15377
+    label: Double distilled water
+  concentration:
+    value: '143'
+    unit: G_PER_L
+- preferred_term: Rabbit serum
+  concentration:
+    value: '86'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +120,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 403'
+- timestamp: '2026-02-03T11:19:15.646993'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 403

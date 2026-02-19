@@ -1,0 +1,49 @@
+name: YEAST EXTRACT - SKIM MILK MEDIUM
+original_name: YEAST EXTRACT - SKIM MILK MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 170
+  term:
+    id: mediadive.medium:170
+    label: YEAST EXTRACT - SKIM MILK MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium170.pdf'
+ingredients:
+- preferred_term: Skim milk
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.396214Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 170'
+- timestamp: '2026-02-03T22:26:00.059978+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_170_Yeast_extract_-_SKIM_MILK_medium, DSMZ_170_YEAST_EXTRACT_-_SKIM_MILK_MEDIUM'
+synonyms:
+- name: Yeast extract - SKIM MILK medium
+  source: KOMODO
+  source_id: komodo.medium:170
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_170_Yeast_extract_-_SKIM_MILK_medium
+- DSMZ_170_YEAST_EXTRACT_-_SKIM_MILK_MEDIUM
+merge_fingerprint: 0d49a45bf17e70e1b8ed3cd6d6fff18e052b14a798475b67b1ac278eefeb430f

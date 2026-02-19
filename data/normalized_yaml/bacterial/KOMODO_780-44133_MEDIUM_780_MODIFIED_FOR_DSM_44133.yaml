@@ -10,7 +10,29 @@ media_term:
     label: MEDIUM 780 MODIFIED FOR DSM 44133
 notes: 'Source: KOMODO ModelSEED | ID: 780_44133 | DSMZ Medium: 780 (mediadive.medium:780)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Mycobactine J
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Absolute ethanol
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Bacto Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Bacto Middlebrook 7H10 agar
+  concentration:
+    value: '20.9945'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +40,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 780_44133'
+- timestamp: '2026-02-03T11:19:05.832550'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 780

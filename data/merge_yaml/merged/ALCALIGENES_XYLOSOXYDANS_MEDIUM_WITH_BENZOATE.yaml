@@ -1,0 +1,166 @@
+name: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
+original_name: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 471
+  term:
+    id: mediadive.medium:471
+    label: ALCALIGENES XYLOSOXYDANS MEDIUM WITH BENZOATE
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium471.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '10.24'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Na-benzoate
+  term:
+    id: CHEBI:113455
+    label: Na-benzoate
+  concentration:
+    value: '1.84'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave solutions A, B and C separately, combine, adjust pH to 8.2.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 9.0 with KOH.
+- step_number: 3
+  action: ADJUST_PH
+  description: First dissolve EDTA in distilled water by adjusting the pH to 7.0 -
+    8.0 using a 2 M solution of NaOH; then add ferrous sulfate and the trace element
+    solution SL-6.
+- step_number: 4
+  action: ADJUST_PH
+  description: "First dissolve EDTA in distilled water by adjusting the pH to 7.0\
+    \ - 8.0 using a 2 M solution\r\nof NaOH; then add ferrous sulfate and the trace\
+    \ element solution SL–6."
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.280465Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 471'
+- timestamp: '2026-02-03T22:25:43.528411+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_471_ALCALIGENES_XYLOSOXYDANS_MEDIUM_WITH_BENZOATE, KOMODO_471-7136_MEDIUM_471_MODIFIED_FOR_DSM_7136,
+    KOMODO_471_ALCALIGENES_XYLOSOXYDANS_MEDIUM_WITH_BENZOATE'
+synonyms:
+- name: MEDIUM 471 MODIFIED FOR DSM 7136
+  source: KOMODO
+  source_id: komodo.medium:471_7136
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_471_ALCALIGENES_XYLOSOXYDANS_MEDIUM_WITH_BENZOATE
+- KOMODO_471-7136_MEDIUM_471_MODIFIED_FOR_DSM_7136
+- KOMODO_471_ALCALIGENES_XYLOSOXYDANS_MEDIUM_WITH_BENZOATE
+merge_fingerprint: cb9f335db5791b4a239eed7cd0e1d4f4574e39c04b9ddc33a559a2106ac2afa8

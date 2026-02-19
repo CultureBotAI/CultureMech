@@ -1,0 +1,108 @@
+name: MRS broth with 0.05% (w/v) cysteine hydrochloride
+original_name: MRS broth with 0.05% (w/v) cysteine hydrochloride
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Cysteine hydrochloride
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:91248
+    label: Cysteine hydrochloride
+- preferred_term: MRS broth (Oxoid)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Magnesium sulphate 7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Dipotassium hydrogen phosphate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Manganese sulphate 4H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Sorbitan mono-oleate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
+- preferred_term: Triammonium citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+- preferred_term: Sodium acetate 3H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: '`Lab-Lemco’ powder'
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2804
+  term:
+    id: TOGO:M2804
+    label: MRS broth with 0.05% (w/v) cysteine hydrochloride
+notes: 'Source: https://togomedium.org/medium/M2804'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.316150Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2804'
+- timestamp: '2026-01-28T19:48:14.647117Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 8f1b966380997eb8ba30e997603ec085038f72705d1e29a3c1e648bd633dfc44
+merged_from:
+- TOGO_M2804_MRS_broth_with_0.05_w_v_cysteine_hydrochloride

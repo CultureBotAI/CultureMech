@@ -1,0 +1,61 @@
+name: BACILLUS THERMANTARCTICUS MEDIUM
+original_name: BACILLUS THERMANTARCTICUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 5.6-5.8
+media_term:
+  preferred_term: DSMZ Medium 675
+  term:
+    id: mediadive.medium:675
+    label: BACILLUS THERMANTARCTICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium675.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Soil extract
+  concentration:
+    value: '500'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH between 5.6 - 5.8.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Soil extract is prepared by sieving air dried garden soil through a
+    coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for
+    one hour. After the mixture is cool and settled, the supernatant is carefully
+    decanted, filtered through paper, autoclaved in 200 ml quantities, and stored
+    at room temperature until cleared by sedimentation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.904902Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 675'
+- timestamp: '2026-02-03T22:25:46.821770+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_675_BACILLUS_THERMANTARCTICUS_MEDIUM, KOMODO_675_BACILLUS_THERMANTARCTICUS_medium'
+synonyms:
+- name: BACILLUS THERMANTARCTICUS medium
+  source: KOMODO
+  source_id: komodo.medium:675
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_675_BACILLUS_THERMANTARCTICUS_MEDIUM
+- KOMODO_675_BACILLUS_THERMANTARCTICUS_medium
+merge_fingerprint: 56fe9506a27a7a4ee8e73e064226121b28ad788ccc037fc1b02f3d05c3ae4f4b

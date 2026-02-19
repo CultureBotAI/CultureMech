@@ -1,0 +1,94 @@
+name: SCHAEDLER BROTH (Roth; 5772)
+original_name: SCHAEDLER BROTH (Roth; 5772)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 1669
+  term:
+    id: mediadive.medium:1669
+    label: SCHAEDLER BROTH (Roth; 5772)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1669.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '5.66'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Peptone mixture
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5.83'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.83'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1.66'
+    unit: G_PER_L
+- preferred_term: Tris
+  term:
+    id: CHEBI:9754
+    label: Tris
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Boil medium under CO2 until the resazurin indicator changes from pink
+    to colourless. Cool down under CO2 and adjust pH to 7.6. Switch to N2 to prevent
+    further lowering of the pH. Fill up into Hungate tubes under N2 and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.193168Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1669'
+merge_fingerprint: d792077bf3ba71dd1259badbbddf26b10715382371b8927111f19a04e3beb3d9
+merged_from:
+- DSMZ_1669_SCHAEDLER_BROTH_Roth_5772

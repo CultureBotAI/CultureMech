@@ -1,0 +1,69 @@
+name: GLUCOSE PEPTONE MEDIUM
+original_name: GLUCOSE PEPTONE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.0
+media_term:
+  preferred_term: DSMZ Medium 85
+  term:
+    id: mediadive.medium:85
+    label: GLUCOSE PEPTONE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium85.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.130982Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 85'
+- timestamp: '2026-02-03T22:25:50.376905+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_85_GLUCOSE_PEPTONE_MEDIUM, JCM_J597_GLUCOSE_AGAR, KOMODO_85_GLUCOSE_Peptone_medium'
+synonyms:
+- name: GLUCOSE AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J597
+  original_category: imported
+- name: GLUCOSE Peptone medium
+  source: KOMODO
+  source_id: komodo.medium:85
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_85_GLUCOSE_PEPTONE_MEDIUM
+- JCM_J597_GLUCOSE_AGAR
+- KOMODO_85_GLUCOSE_Peptone_medium
+merge_fingerprint: c30f658a08c9f5f55b72ddabf04f47bca15997eb1be0b97e1e7d2ccb1bb966bf

@@ -1,0 +1,85 @@
+name: RHIZOMONAS SUBERIFACIENS MEDIUM
+original_name: RHIZOMONAS SUBERIFACIENS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 726
+  term:
+    id: mediadive.medium:726
+    label: RHIZOMONAS SUBERIFACIENS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium726.pdf'
+ingredients:
+- preferred_term: Enzymatic digest of casein
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '11'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.044647Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 726'
+- timestamp: '2026-02-03T22:25:47.510751+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_726_RHIZOMONAS_SUBERIFACIENS_MEDIUM, KOMODO_726_RHIZOMONAS_SUBERIFACIENS_medium'
+synonyms:
+- name: RHIZOMONAS SUBERIFACIENS medium
+  source: KOMODO
+  source_id: komodo.medium:726
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_726_RHIZOMONAS_SUBERIFACIENS_MEDIUM
+- KOMODO_726_RHIZOMONAS_SUBERIFACIENS_medium
+merge_fingerprint: 6fe153b8898bf42998a86d0c604df7c1ec9c0368e9675c655d86c7edd0563eb6

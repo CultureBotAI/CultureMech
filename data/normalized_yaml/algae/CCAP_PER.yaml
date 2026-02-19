@@ -1,5 +1,5 @@
 name: PER
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from CCAP Culture Collection. Suitable for saltwater
@@ -18,6 +18,21 @@ curation_history:
   date: '2026-01-28'
   action: Imported from CCAP Culture Collection
   notes: 'Source ID: PER, PDF URL: https://www.ccap.ac.uk/wp-content/uploads/MR_PER.pdf'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:23:39.676998'
+  action: Applied schema defaults and normalizations
+  notes: Added placeholder ingredients for missing composition
+- timestamp: '2026-02-03T11:26:43.581375'
+  curator: quality-tagger-v1.0
+  action: Added data quality flag
+  notes: Marked as incomplete_composition due to placeholder ingredients
 references:
 - reference_id: CCAP:PER
 - reference_id: https://www.ccap.ac.uk/wp-content/uploads/MR_PER.pdf
+ingredients:
+- preferred_term: See source for composition
+  concentration:
+    value: variable
+    unit: VARIABLE
+data_quality_flags:
+- incomplete_composition

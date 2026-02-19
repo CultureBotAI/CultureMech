@@ -35,6 +35,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Solution 5
   concentration:
     value: '17'
@@ -161,6 +164,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Na2CO3
   concentration:
     value: '6'
@@ -178,6 +184,9 @@ ingredients:
     Simple component'
 - preferred_term: CO2 gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2635
   term:
@@ -197,3 +206,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.037595'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2 gas; Added default concentration
+    for ingredient: CO2 gas; Added default concentration for ingredient: CO2 gas'

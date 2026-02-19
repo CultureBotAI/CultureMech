@@ -1,0 +1,135 @@
+name: '''Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG'
+original_name: '''Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: '0.004045'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.1779'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '249.8'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.4057'
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.6955'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.02933'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.136'
+    unit: MILLIMOLAR
+- preferred_term: Manganese sulfate
+  term:
+    id: CHEBI:86364
+    label: Manganese Sulfate
+  concentration:
+    value: '0.4483'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.7194'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '28.71'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '36.74'
+    unit: MILLIMOLAR
+- preferred_term: Sodium Glutamate
+  concentration:
+    value: '66.8'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:64220
+    label: monosodium glutamate
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.554712Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 325, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:13.727643Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:02.680311+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_318_Chemically_Defined_Fermentation_Medium_45g_glucose,
+    MEDIADB_324_Chemically_Defined_Fermentation_Medium_20g_glucose, MEDIADB_325_Chemically_Defined_Fermentation_Medium_70g_glucose,
+    MEDIADB_337_Chemically_Defined_Fermentation_Medium_45g_glucose, MEDIADB_338_Chemically_Defined_Fermentation_Medium_45g_glucose'
+media_term:
+  preferred_term: MediaDB Medium 325
+  term:
+    id: MEDIADB:325
+    label: '''Chemically Defined Fermentation Medium (70g glucose + 12.5g MSG'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: '''Chemically Defined Fermentation Medium (45g glucose + 12.5g MSG'
+  source: unknown
+  source_id: MEDIADB:318
+  original_category: imported
+- name: '''Chemically Defined Fermentation Medium (20g glucose + 12.5g MSG'
+  source: unknown
+  source_id: MEDIADB:324
+  original_category: imported
+- name: '''Chemically Defined Fermentation Medium (45g glucose + 7g MSG'
+  source: unknown
+  source_id: MEDIADB:337
+  original_category: imported
+- name: '''Chemically Defined Fermentation Medium (45g glucose + 18g MSG'
+  source: unknown
+  source_id: MEDIADB:338
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_318_Chemically_Defined_Fermentation_Medium_45g_glucose
+- MEDIADB_324_Chemically_Defined_Fermentation_Medium_20g_glucose
+- MEDIADB_325_Chemically_Defined_Fermentation_Medium_70g_glucose
+- MEDIADB_337_Chemically_Defined_Fermentation_Medium_45g_glucose
+- MEDIADB_338_Chemically_Defined_Fermentation_Medium_45g_glucose
+merge_fingerprint: f24c321d9cc0abe22b896f1ef7964efd8f1af815f56c3eddcce5e842b1437c86

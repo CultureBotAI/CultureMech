@@ -1,0 +1,129 @@
+name: MS13 Medium
+original_name: MS13 Medium
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.002657'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: Nicotinate
+  term:
+    id: CHEBI:10716816
+    label: Nicotinate
+  concentration:
+    value: '0.008123'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: DL-Serine
+  concentration:
+    value: '3.235'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '55.51'
+    unit: MILLIMOLAR
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.04093'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Pyridoxamine
+  term:
+    id: CHEBI:16410
+    label: Pyridoxamine
+  concentration:
+    value: '0.02973'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pydam'
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.002099'
+    unit: MILLIMOLAR
+- preferred_term: DL-methionine
+  term:
+    id: CHEBI:16811
+    label: DL-Methionine
+  concentration:
+    value: '0.8042'
+    unit: MILLIMOLAR
+- preferred_term: L-Glutamate
+  concentration:
+    value: '0.6797'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Valine
+  concentration:
+    value: '2.817'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '42.92'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.9838'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Isoleucine
+  concentration:
+    value: '1.525'
+    unit: MILLIMOLAR
+- preferred_term: Leucine
+  concentration:
+    value: '3.583'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '66.13'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.351256Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 410, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:24.402901Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 410
+  term:
+    id: MEDIADB:410
+    label: MS13 Medium
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 793280acd0b84da23d184fe144ac4d4121acc3bd917dc2ad3d52b072c68246d1
+merged_from:
+- MEDIADB_410_MS13_Medium

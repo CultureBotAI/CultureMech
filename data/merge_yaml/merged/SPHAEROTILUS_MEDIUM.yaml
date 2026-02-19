@@ -1,0 +1,63 @@
+name: Sphaerotilus Medium
+original_name: Sphaerotilus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glycerol
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:15978
+    label: sn-glycerol 3-phosphate
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M618
+  term:
+    id: TOGO:M618
+    label: Sphaerotilus Medium
+notes: 'Source: https://togomedium.org/medium/M618
+
+  Original source: JCM - JCM_M610
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=610'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.413548Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M618'
+- timestamp: '2026-01-28T19:48:41.130904Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 32536fa9ed922f430a3db0c91091a1f58c1e718899ee6d2501a15312525b5024
+merged_from:
+- TOGO_M618_Sphaerotilus_Medium

@@ -11,7 +11,60 @@ media_term:
     label: ALICYCLOBACILLUS FERROOXYDANS medium
 notes: 'Source: KOMODO ModelSEED | ID: 1201 | DSMZ Medium: 1201 (mediadive.medium:1201)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.537634'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.430108'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.215054'
+    unit: G_PER_L
+- preferred_term: K2S4O6
+  concentration:
+    value: '0.16129'
+    unit: G_PER_L
+  term:
+    id: CHEBI:86466
+    label: ''
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.107527'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.0107527'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.215054'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '200'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +72,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1201'
+- timestamp: '2026-02-03T11:19:19.288396'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1201

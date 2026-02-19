@@ -1,0 +1,107 @@
+name: Modified Sea Water Agar
+original_name: Modified Sea Water Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4 x 7 H2O
+  concentration:
+    value: '4.46'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '17.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: CaCl2 x 2 H2O
+  concentration:
+    value: '0.98'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '3.4'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: KCl
+  concentration:
+    value: '0.48'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Hexadecane
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+  term:
+    id: CHEBI:45296
+    label: hexadecane
+- preferred_term: Peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2471
+  term:
+    id: TOGO:M2471
+    label: Modified Sea Water Agar
+notes: 'Source: https://togomedium.org/medium/M2471
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium917.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.552601Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2471'
+- timestamp: '2026-01-28T19:48:17.175336Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3ab37a4a51bb99a1a5366c199f42e6319b8e8eca7970d6974e08cf2063d2cd02
+merged_from:
+- TOGO_M2471_Modified_Sea_Water_Agar

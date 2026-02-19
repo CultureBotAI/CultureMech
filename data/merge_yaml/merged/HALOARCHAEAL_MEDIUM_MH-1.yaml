@@ -1,0 +1,205 @@
+name: HALOARCHAEAL MEDIUM MH-1
+original_name: HALOARCHAEAL MEDIUM MH-1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: DSMZ Medium 1396
+  term:
+    id: mediadive.medium:1396
+    label: HALOARCHAEAL MEDIUM MH-1
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1396.pdf'
+ingredients:
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '2.49377'
+    unit: G_PER_L
+- preferred_term: Trisodium citrate x 2 H2O
+  concentration:
+    value: '2.49377'
+    unit: G_PER_L
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1.24688'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.24688'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '6.23441'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '249.377'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '4.98753'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.49377'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 6 H2O
+  term:
+    id: CHEBI:75832
+    label: FeSO4 x 6 H2O
+  concentration:
+    value: '0.00498753'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '24.9377'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 6 H2O
+  term:
+    id: CHEBI:49553
+    label: CuCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlCl3
+  term:
+    id: CHEBI:30114
+    label: AlCl3
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: BaCl2 x 2 H2O
+  term:
+    id: CHEBI:86153
+    label: BaCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 4.5 with 40% KOH and sterilize by autoclaving.
+- step_number: 2
+  action: MIX
+  description: Adjust to pH 4.0.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.300524Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1396'
+- timestamp: '2026-01-28T19:48:09.637340Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:33.173638+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1396_HALOARCHAEAL_MEDIUM_MH-1, KOMODO_1396-replace-Mineral
+    salts solution for solid medium (medium 1396)-with-Mineral salts solution for
+    liquid medium (medium 1396)_HALOARCHAEAL_medium_MH-1_replace_Mineral_salts_solution_for_solid_medium_medium_,
+    KOMODO_1396_HALOARCHAEAL_medium_MH-1'
+synonyms:
+- name: HALOARCHAEAL medium MH-1_replace_Mineral salts solution for solid medium (medium
+    1396)_with_Mineral salts solution for liquid medium (medium 1396)
+  source: KOMODO
+  source_id: komodo.medium:1396_replace_Mineral salts solution for solid medium (medium
+    1396)_with_Mineral salts solution for liquid medium (medium 1396)
+  original_category: imported
+- name: HALOARCHAEAL medium MH-1
+  source: KOMODO
+  source_id: komodo.medium:1396
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1396_HALOARCHAEAL_MEDIUM_MH-1
+- KOMODO_1396-replace-Mineral salts solution for solid medium (medium 1396)-with-Mineral
+  salts solution for liquid medium (medium 1396)_HALOARCHAEAL_medium_MH-1_replace_Mineral_salts_solution_for_solid_medium_medium_
+- KOMODO_1396_HALOARCHAEAL_medium_MH-1
+merge_fingerprint: d2e9a1d3245b1a9fdcee9e1116e2d7cdc7f081c843a92801a4f9100c740f9612

@@ -1,0 +1,64 @@
+name: METHYLOVIRGULA MEDIUM
+original_name: METHYLOVIRGULA MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 5-5.5
+media_term:
+  preferred_term: DSMZ Medium 1368
+  term:
+    id: mediadive.medium:1368
+    label: METHYLOVIRGULA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1368.pdf'
+ingredients:
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.15'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the medium
+    into Hungate tubes. Sterilize by autoclaving. Before inoculation add filter sterilized
+    methanol (0.1% v/v).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.219830Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1368'
+merge_fingerprint: fa3e4ec84416453677e1fb7889379e4d5cb3ccaf6765c24ee49682143f881a6a
+merged_from:
+- DSMZ_1368_METHYLOVIRGULA_MEDIUM

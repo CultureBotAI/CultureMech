@@ -1,0 +1,302 @@
+name: MODIFIED MEDIUM 11
+original_name: MODIFIED MEDIUM 11
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 11a
+  term:
+    id: mediadive.medium:11a
+    label: MODIFIED MEDIUM 11
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium11a.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)3 citrate
+  term:
+    id: CHEBI:63037
+    label: (NH4)3 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare medium 11 with additional vitamins. Adjust pH to 6.2 - 6.5
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 6.2 - 6.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:09.973849Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 11a'
+- timestamp: '2026-02-03T22:25:30.264114+00:00'
+  curator: recipe-merger
+  action: Merged 27 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_11a_MODIFIED_MEDIUM_11, KOMODO_11-13613_MEDIUM_11_MODIFIED_FOR_DSM_13613,
+    KOMODO_11-14800_MEDIUM_11_MODIFIED_FOR_DSM_14800, KOMODO_11-14925_MEDIUM_11_MODIFIED_FOR_DSM_14925,
+    KOMODO_11-15429_MEDIUM_11_MODIFIED_FOR_DSM_15429, KOMODO_11-15502_MEDIUM_11_MODIFIED_FOR_DSM_15502,
+    KOMODO_11-15638_MEDIUM_11_MODIFIED_FOR_DSM_15638, KOMODO_11-15685_MEDIUM_11_MODIFIED_FOR_DSM_15685,
+    KOMODO_11-15814_MEDIUM_11_MODIFIED_FOR_DSM_15814, KOMODO_11-16043_MEDIUM_11_MODIFIED_FOR_DSM_16043,
+    KOMODO_11-16044_MEDIUM_11_MODIFIED_FOR_DSM_16044, KOMODO_11-16047_MEDIUM_11_MODIFIED_FOR_DSM_16047,
+    KOMODO_11-16048_MEDIUM_11_MODIFIED_FOR_DSM_16048, KOMODO_11-16381_MEDIUM_11_MODIFIED_FOR_DSM_16381,
+    KOMODO_11-16382_MEDIUM_11_MODIFIED_FOR_DSM_16382, KOMODO_11-17732_MEDIUM_11_MODIFIED_FOR_DSM_17732,
+    KOMODO_11-18631_MEDIUM_11_MODIFIED_FOR_DSM_18631, KOMODO_11-18933_MEDIUM_11_MODIFIED_FOR_DSM_18933,
+    KOMODO_11-19582_MEDIUM_11_MODIFIED_FOR_DSM_19582, KOMODO_11-19906_MEDIUM_11_MODIFIED_FOR_DSM_19906,
+    KOMODO_11-19910_MEDIUM_11_MODIFIED_FOR_DSM_19910, KOMODO_11-20355_MEDIUM_11_MODIFIED_FOR_DSM_20355,
+    KOMODO_11-20634_MEDIUM_11_MODIFIED_FOR_DSM_20634, KOMODO_11-22689_MEDIUM_11_MODIFIED_FOR_DSM_22689,
+    KOMODO_11-23246_MEDIUM_11_MODIFIED_FOR_DSM_23246, KOMODO_11_MRS_medium, KOMODO_11a_MODIFIED_medium_11'
+synonyms:
+- name: MEDIUM 11 MODIFIED FOR DSM 13613
+  source: KOMODO
+  source_id: komodo.medium:11_13613
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 14800
+  source: KOMODO
+  source_id: komodo.medium:11_14800
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 14925
+  source: KOMODO
+  source_id: komodo.medium:11_14925
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 15429
+  source: KOMODO
+  source_id: komodo.medium:11_15429
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 15502
+  source: KOMODO
+  source_id: komodo.medium:11_15502
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 15638
+  source: KOMODO
+  source_id: komodo.medium:11_15638
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 15685
+  source: KOMODO
+  source_id: komodo.medium:11_15685
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 15814
+  source: KOMODO
+  source_id: komodo.medium:11_15814
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16043
+  source: KOMODO
+  source_id: komodo.medium:11_16043
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16044
+  source: KOMODO
+  source_id: komodo.medium:11_16044
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16047
+  source: KOMODO
+  source_id: komodo.medium:11_16047
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16048
+  source: KOMODO
+  source_id: komodo.medium:11_16048
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16381
+  source: KOMODO
+  source_id: komodo.medium:11_16381
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 16382
+  source: KOMODO
+  source_id: komodo.medium:11_16382
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 17732
+  source: KOMODO
+  source_id: komodo.medium:11_17732
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 18631
+  source: KOMODO
+  source_id: komodo.medium:11_18631
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 18933
+  source: KOMODO
+  source_id: komodo.medium:11_18933
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 19582
+  source: KOMODO
+  source_id: komodo.medium:11_19582
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 19906
+  source: KOMODO
+  source_id: komodo.medium:11_19906
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 19910
+  source: KOMODO
+  source_id: komodo.medium:11_19910
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 20355
+  source: KOMODO
+  source_id: komodo.medium:11_20355
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 20634
+  source: KOMODO
+  source_id: komodo.medium:11_20634
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 22689
+  source: KOMODO
+  source_id: komodo.medium:11_22689
+  original_category: imported
+- name: MEDIUM 11 MODIFIED FOR DSM 23246
+  source: KOMODO
+  source_id: komodo.medium:11_23246
+  original_category: imported
+- name: MRS medium
+  source: KOMODO
+  source_id: komodo.medium:11
+  original_category: imported
+- name: MODIFIED medium 11
+  source: KOMODO
+  source_id: komodo.medium:11a
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_11a_MODIFIED_MEDIUM_11
+- KOMODO_11-13613_MEDIUM_11_MODIFIED_FOR_DSM_13613
+- KOMODO_11-14800_MEDIUM_11_MODIFIED_FOR_DSM_14800
+- KOMODO_11-14925_MEDIUM_11_MODIFIED_FOR_DSM_14925
+- KOMODO_11-15429_MEDIUM_11_MODIFIED_FOR_DSM_15429
+- KOMODO_11-15502_MEDIUM_11_MODIFIED_FOR_DSM_15502
+- KOMODO_11-15638_MEDIUM_11_MODIFIED_FOR_DSM_15638
+- KOMODO_11-15685_MEDIUM_11_MODIFIED_FOR_DSM_15685
+- KOMODO_11-15814_MEDIUM_11_MODIFIED_FOR_DSM_15814
+- KOMODO_11-16043_MEDIUM_11_MODIFIED_FOR_DSM_16043
+- KOMODO_11-16044_MEDIUM_11_MODIFIED_FOR_DSM_16044
+- KOMODO_11-16047_MEDIUM_11_MODIFIED_FOR_DSM_16047
+- KOMODO_11-16048_MEDIUM_11_MODIFIED_FOR_DSM_16048
+- KOMODO_11-16381_MEDIUM_11_MODIFIED_FOR_DSM_16381
+- KOMODO_11-16382_MEDIUM_11_MODIFIED_FOR_DSM_16382
+- KOMODO_11-17732_MEDIUM_11_MODIFIED_FOR_DSM_17732
+- KOMODO_11-18631_MEDIUM_11_MODIFIED_FOR_DSM_18631
+- KOMODO_11-18933_MEDIUM_11_MODIFIED_FOR_DSM_18933
+- KOMODO_11-19582_MEDIUM_11_MODIFIED_FOR_DSM_19582
+- KOMODO_11-19906_MEDIUM_11_MODIFIED_FOR_DSM_19906
+- KOMODO_11-19910_MEDIUM_11_MODIFIED_FOR_DSM_19910
+- KOMODO_11-20355_MEDIUM_11_MODIFIED_FOR_DSM_20355
+- KOMODO_11-20634_MEDIUM_11_MODIFIED_FOR_DSM_20634
+- KOMODO_11-22689_MEDIUM_11_MODIFIED_FOR_DSM_22689
+- KOMODO_11-23246_MEDIUM_11_MODIFIED_FOR_DSM_23246
+- KOMODO_11_MRS_medium
+- KOMODO_11a_MODIFIED_medium_11
+merge_fingerprint: 83d8620c705fca9e57deb5caddd5ffa1303db904ce174632671e9c47f6ee8fa9

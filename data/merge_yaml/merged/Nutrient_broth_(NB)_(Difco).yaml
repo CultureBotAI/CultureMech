@@ -1,0 +1,40 @@
+name: Nutrient broth (NB) (Difco)
+original_name: Nutrient broth (NB) (Difco)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Nutrient broth (NB) (Difco)
+  concentration:
+    value: '8'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2194
+  term:
+    id: TOGO:M2194
+    label: Nutrient broth (NB) (Difco)
+notes: 'Source: https://togomedium.org/medium/M2194'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.151019Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2194'
+- timestamp: '2026-01-28T19:48:41.652867Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 031dc283c59419c77c5d52d28041f798cb13a1c92638d0a84d3a468cf5123354
+merged_from:
+- TOGO_M2194_Nutrient_broth_NB_Difco

@@ -81,6 +81,39 @@ classes:
         range: CategoryEnum
         recommended: true
 
+      categories:
+        description: All categories this recipe appears in (for cross-category merges)
+        range: CategoryEnum
+        multivalued: true
+        comments:
+          - Used when recipes from different categories are merged based on identical ingredients
+          - Preserves all original category assignments
+
+      synonyms:
+        description: Alternate names from merged duplicate recipes
+        range: RecipeSynonym
+        multivalued: true
+        inlined_as_list: true
+        comments:
+          - Populated during merge process when duplicate recipes are consolidated
+          - Tracks all non-canonical names with their source provenance
+
+      merged_from:
+        description: Original recipe IDs that were merged into this record
+        range: string
+        multivalued: true
+        comments:
+          - List of recipe file IDs that were consolidated into this canonical record
+          - Format: source_id_sanitized_name (e.g., TOGO_M3236_Luria_Bertani_LB_medium)
+
+      merge_fingerprint:
+        description: SHA256 hash of ingredient set for deduplication tracking
+        range: string
+        comments:
+          - Generated from sorted list of CHEBI IDs and normalized ingredient names
+          - Includes both direct ingredients and solution compositions
+          - Order-independent, concentration-independent
+
       media_term:
         description: Reference to authoritative media database
         range: MediaTypeDescriptor
@@ -228,6 +261,35 @@ classes:
         range: CurationEvent
         multivalued: true
         inlined_as_list: true
+
+      data_quality_flags:
+        description: Data quality indicators for transparency
+        range: string
+        multivalued: true
+        comments:
+          - Used to mark recipes with known quality issues
+          - Common values: incomplete_composition, pending_curation, low_confidence
+
+  RecipeSynonym:
+    description: An alternate name for a recipe from a specific source
+    attributes:
+      name:
+        description: Alternate recipe name (non-canonical)
+        required: true
+        range: string
+
+      source:
+        description: Source database (KOMODO, MediaDive, TOGO, etc.)
+        required: true
+        range: string
+
+      source_id:
+        description: Original identifier in source database
+        range: string
+
+      original_category:
+        description: Original category assignment before merge
+        range: CategoryEnum
 
 # ================================================================
 # BASE DESCRIPTOR PATTERN (following dismech)

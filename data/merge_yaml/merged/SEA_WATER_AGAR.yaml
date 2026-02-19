@@ -1,0 +1,127 @@
+name: SEA WATER AGAR
+original_name: SEA WATER AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 246
+  term:
+    id: mediadive.medium:246
+    label: SEA WATER AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium246.pdf'
+ingredients:
+- preferred_term: Beef extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '250'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '28.13'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.77'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.6'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4.8'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve beef extract and peptone by heating in tap water, adjust pH
+    to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
+    for 20 min. Directly after autoclaving, add warm (55°C) sterile sea water. Liquid
+    medium without agar should be combined when cooled to room temperature.
+- step_number: 2
+  action: STORE
+  description: Natural sea water is stored in the dark for at least three weeks to
+    "age". If natural sea water is not available use artificial sea water.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.585956Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 246'
+- timestamp: '2026-02-03T22:25:38.153241+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_246_SEA_WATER_AGAR, DSMZ_246a_REACTIVATION_WITH_LIQUID_MEDIUM_246,
+    KOMODO_246-18675_MEDIUM_246_MODIFIED_FOR_DSM_18675, KOMODO_246-2165_MEDIUM_246_MODIFIED_FOR_DSM_2165,
+    KOMODO_246_SEA_WATER_AGAR'
+synonyms:
+- name: REACTIVATION WITH LIQUID MEDIUM 246
+  source: MediaDive
+  source_id: mediadive.medium:246a
+  original_category: imported
+- name: MEDIUM 246 MODIFIED FOR DSM 18675
+  source: KOMODO
+  source_id: komodo.medium:246_18675
+  original_category: imported
+- name: MEDIUM 246 MODIFIED FOR DSM 2165
+  source: KOMODO
+  source_id: komodo.medium:246_2165
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_246_SEA_WATER_AGAR
+- DSMZ_246a_REACTIVATION_WITH_LIQUID_MEDIUM_246
+- KOMODO_246-18675_MEDIUM_246_MODIFIED_FOR_DSM_18675
+- KOMODO_246-2165_MEDIUM_246_MODIFIED_FOR_DSM_2165
+- KOMODO_246_SEA_WATER_AGAR
+merge_fingerprint: a0d2fda5cc698640d4a31e6fbd13785f937b0ad11c7a93e3b9775fdacc08be8c

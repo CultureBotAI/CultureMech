@@ -1,0 +1,111 @@
+name: MMA; Klein et al
+original_name: MMA; Klein et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: ''
+  concentration:
+    value: '0.00603'
+    unit: MILLIMOLAR
+- preferred_term: Glutathione
+  term:
+    id: CHEBI:16856
+    label: Glutathione
+  concentration:
+    value: '0.65079'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gthrd'
+- preferred_term: D-Glutamate
+  concentration:
+    value: '8.83572'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-D'
+- preferred_term: Inosine
+  concentration:
+    value: '5.74373'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ins'
+- preferred_term: L-Citrulline
+  concentration:
+    value: '1.71243'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:citr-L'
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '4.51628'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.01982'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '25.719'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '99.2471'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.0133'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '15.4994'
+    unit: MILLIMOLAR
+- preferred_term: Hemin
+  term:
+    id: CHEBI:50385
+    label: Hemin
+  concentration:
+    value: '0.01534'
+    unit: MILLIMOLAR
+- preferred_term: Sodium Pantothenate
+  concentration:
+    value: '0.01825'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:45.192065Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 280, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:09.005213Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 280
+  term:
+    id: MEDIADB:280
+    label: MMA; Klein et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 79728218979255723198ae670cc40a031b176d7255bad0ed58e833e42602a40d
+merged_from:
+- MEDIADB_280_MMA_Klein_et_al

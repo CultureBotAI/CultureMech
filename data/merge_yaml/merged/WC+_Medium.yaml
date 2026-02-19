@@ -1,0 +1,134 @@
+name: WC+ Medium
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MES(CAS: 7365-45-9)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MWC Metal Solution'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: CaCl2•2H2O(CAS: 10035-04-8)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2Glycerophosphate.5H2O(CAS:  13408-09-8)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NaNO3(CAS: 7631-99-4)'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2SiO3•9H2O(CAS: 13517-24-3)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NH4NO3(CAS: 6484-52-2)'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KCl(CAS:7447-40-7)'
+- preferred_term: '10'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '11'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
+- preferred_term: '12'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Thiamine Vitamin Solution'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: wc-plus-medium, URL: https://utex.org/products/wc-plus-medium'
+- timestamp: '2026-02-03T22:25:25.028560+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DYIII_Medium, Modified_COMBO_Medium, P49_Medium, WC+_Medium'
+references:
+- reference_id: UTEX:wc-plus-medium
+- reference_id: https://utex.org/products/wc-plus-medium
+original_name: WC+ Medium
+synonyms:
+- name: DYIII Medium
+  source: unknown
+  original_category: ALGAE
+- name: Modified COMBO Medium
+  source: unknown
+  original_category: ALGAE
+- name: P49 Medium
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- DYIII_Medium
+- Modified_COMBO_Medium
+- P49_Medium
+- WC+_Medium
+merge_fingerprint: 6b820ca9a00625c3e6e7f38471ba0a5267d0b0ed57d40cc2ad07f7c754c0aab2

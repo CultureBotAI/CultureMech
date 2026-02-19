@@ -1,0 +1,81 @@
+name: GYM STREPTOMYCES MEDIUM 10% NACL
+original_name: GYM STREPTOMYCES MEDIUM 10% NACL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1159
+  term:
+    id: mediadive.medium:1159
+    label: GYM STREPTOMYCES MEDIUM 10% NACL
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1159.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2. Delete CaCO3 if liquid medium is used.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.541111Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1159'
+- timestamp: '2026-02-03T22:25:29.461794+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1159_GYM_STREPTOMYCES_MEDIUM_10_NACL, JCM_J999_GYM_AGAR_WITH_15_NaCl,
+    KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL'
+synonyms:
+- name: GYM AGAR WITH 15% NaCl
+  source: MediaDive
+  source_id: mediadive.medium:J999
+  original_category: imported
+- name: GYM STREPTOMYCES medium 10% NACL
+  source: KOMODO
+  source_id: komodo.medium:1159
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1159_GYM_STREPTOMYCES_MEDIUM_10_NACL
+- JCM_J999_GYM_AGAR_WITH_15_NaCl
+- KOMODO_1159_GYM_STREPTOMYCES_medium_10_NACL
+merge_fingerprint: 0ba7a14559831a63c6352c257a01f543d306c280959153c0ce2d3697d09bc70b

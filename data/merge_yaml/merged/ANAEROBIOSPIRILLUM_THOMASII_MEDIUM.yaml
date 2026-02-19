@@ -1,0 +1,63 @@
+name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+original_name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 800
+  term:
+    id: mediadive.medium:800
+    label: ANAEROBIOSPIRILLUM THOMASII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium800.pdf'
+ingredients:
+- preferred_term: Wilkins Chalgrene Anaerobe Broth
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: 5-Aminovaleric acid
+  term:
+    id: CHEBI:15887
+    label: 5-Aminovaleric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fildes Enrichment
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 3-Hydroxybenzoic acid
+  term:
+    id: CHEBI:30764
+    label: 3-Hydroxybenzoic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: 3-Hydroxybenzoic acid
+  term:
+    id: CHEBI:30764
+    label: 3-Hydroxybenzoic acid
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it
+    anaerobically under 80% N2 + 20% CO2 gas. After autoclaving and cooling to room
+    temperature add per 10 ml the following sterile, anaerobic solutions:'
+- step_number: 2
+  action: MIX
+  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar
+    plates, Columbia sheep blood agar plates (BBL) may be used and incubated under
+    an anaerobic atmosphere containig 5 - 10% CO2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.300974Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 800'
+merge_fingerprint: 8ca22612bc50f2f0ef4269b5db05a5cb8544e45db28b35973f8773d27b6e1516
+merged_from:
+- DSMZ_800_ANAEROBIOSPIRILLUM_THOMASII_MEDIUM

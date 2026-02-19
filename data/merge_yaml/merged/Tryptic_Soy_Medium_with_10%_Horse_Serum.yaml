@@ -1,0 +1,54 @@
+name: Tryptic Soy Medium with 10% Horse Serum
+original_name: Tryptic Soy Medium with 10% Horse Serum
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '900'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Horse serum*
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Tryptic Soy Broth (Difco)
+  concentration:
+    value: '30'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1737
+  term:
+    id: TOGO:M1737
+    label: Tryptic Soy Medium with 10% Horse Serum
+notes: 'Source: https://togomedium.org/medium/M1737
+
+  Original source: NBRC - NBRC_M946
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=946'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.255021Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1737'
+- timestamp: '2026-01-28T19:48:25.188682Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 9ea90e41a6701c0e8ed463fc076b6921788419eac7869705426cac9cca9d8b05
+merged_from:
+- TOGO_M1737_Tryptic_Soy_Medium_with_10_Horse_Serum

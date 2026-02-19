@@ -10,7 +10,46 @@ media_term:
     label: MEDIUM 460 MODIFIED FOR DSM 4166
 notes: 'Source: KOMODO ModelSEED | ID: 460_4166 | DSMZ Medium: 460 (mediadive.medium:460)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: DL-Na-malate
+  term:
+    id: CHEBI:91261
+    label: DL-Na-malate
+  concentration:
+    value: '6.6'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +57,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 460_4166'
+- timestamp: '2026-02-03T11:19:19.420785'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 460
+ph_value: 7.0

@@ -1,0 +1,109 @@
+name: R2A Gellan gum Plate
+original_name: R2A Gellan gum Plate
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: CaCl2 (100 mM)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Sodium pyruvate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:50144
+    label: sodium pyruvate
+- preferred_term: Gellan gum
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component; Properties: Undefined component, Organic compound'
+  term:
+    id: CHEBI:85248
+    label: Gellan Gum
+- preferred_term: Glucose
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Soluble starch
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto Proteose Peptone No. 3 (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Bacto Casamino Acids (Difco)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1901
+  term:
+    id: TOGO:M1901
+    label: R2A Gellan gum Plate
+notes: 'Source: https://togomedium.org/medium/M1901
+
+  Original source: NBRC - NBRC_M1160
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1160'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.608973Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1901'
+- timestamp: '2026-01-28T19:48:22.638748Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 168c90874c9b96be143c21a3e3e9ed40b17f580c63f444a3fcbb11c5c19ca493
+merged_from:
+- TOGO_M1901_R2A_Gellan_gum_Plate

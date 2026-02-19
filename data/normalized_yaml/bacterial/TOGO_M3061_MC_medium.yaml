@@ -73,30 +73,48 @@ ingredients:
   term:
     id: CHEBI:33118
     label: boric acid
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CoCl2·6H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4·7H2O
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: CuSO4·5H2O
   notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
     Simple component'
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: MnSO4·5H2O
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
   term:
     id: CHEBI:131524
     label: manganese(II) sulfate pentahydrate
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: (NH4)6Mo7O4·4H2O
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M3061
   term:
@@ -118,3 +136,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:57.332153'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: H3BO3; Added default concentration
+    for ingredient: CoCl2·6H2O; Added default concentration for ingredient: ZnSO4·7H2O;
+    Added default concentration for ingredient: CuSO4·5H2O; Added default concentration
+    for ingredient: MnSO4·5H2O; Added default concentration for ingredient: (NH4)6Mo7O4·4H2O'

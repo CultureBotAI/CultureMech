@@ -1,0 +1,259 @@
+name: PA-5052
+original_name: PA-5052
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Glutamate
+  concentration:
+    value: '1.35934'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '2.6641'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
+  concentration:
+    value: '2.24492'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ala-L'
+- preferred_term: L-Lysine
+  term:
+    id: CHEBI:18019
+    label: L-Lysine
+  concentration:
+    value: '3.4202'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lys-L'
+- preferred_term: L-Aspartate
+  concentration:
+    value: '1.5026'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asp-L'
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '1.1481'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '1.36855'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gln-L'
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '1.9031'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '1.34039'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.97928'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:trp-L'
+- preferred_term: L-Phenylalanine
+  term:
+    id: CHEBI:17295
+    label: L-Phenylalanine
+  concentration:
+    value: '1.21073'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:phe-L'
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '54.294'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '1.5247'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '1.28907'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:his-L'
+- preferred_term: L-Proline
+  term:
+    id: CHEBI:17203
+    label: L-Proline
+  concentration:
+    value: '1.73716'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pro-L'
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '1.51377'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asn-L'
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '1.7072'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:val-L'
+- preferred_term: L-Threonine
+  term:
+    id: CHEBI:16857
+    label: L-Threonine
+  concentration:
+    value: '1.67897'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:thr-L'
+- preferred_term: beta-D-Glucose
+  concentration:
+    value: '2.775'
+    unit: MILLIMOLAR
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '5.8428'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lcts'
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '1.5247'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.004'
+    unit: MILLIMOLAR
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '25.0'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.002'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenite
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: '''Iron(III'
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.002'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.285717Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 189, Reference:
+    Mazumdar et al. (2014) PLOS One'
+media_term:
+  preferred_term: MediaDB Medium 189
+  term:
+    id: MEDIADB:189
+    label: PA-5052
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: f020b5350ced8ad915748f1985ff73c90a572799f6af6ac1654df42f54c67ca5
+merged_from:
+- MEDIADB_189_PA-5052

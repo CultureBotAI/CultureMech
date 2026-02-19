@@ -1,0 +1,60 @@
+name: ACETOBACTER PEROXYDANS MEDIUM
+original_name: ACETOBACTER PEROXYDANS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 254
+  term:
+    id: mediadive.medium:254
+    label: ACETOBACTER PEROXYDANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium254.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Ethanol
+  term:
+    id: CHEBI:16236
+    label: Ethanol
+  concentration:
+    value: '60'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: After sterilization add 60 ml ethanol (50% v/v), sterilized by filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.600366Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 254'
+- timestamp: '2026-02-03T22:25:38.191586+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_254_ACETOBACTER_PEROXYDANS_MEDIUM, KOMODO_254_ACETOBACTER_PEROXYDANS_medium'
+synonyms:
+- name: ACETOBACTER PEROXYDANS medium
+  source: KOMODO
+  source_id: komodo.medium:254
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_254_ACETOBACTER_PEROXYDANS_MEDIUM
+- KOMODO_254_ACETOBACTER_PEROXYDANS_medium
+merge_fingerprint: 5d5a1f2033a64a98948717cd80c153cc11f050418504c6d664ae3365b392e247

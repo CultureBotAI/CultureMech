@@ -1,0 +1,60 @@
+name: Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1
+original_name: Medium containing PPLO broth, calf serum, glucose, penicillin G, and
+  Tris-HC1
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Tris-HC1 (pH 7.6)
+  concentration:
+    value: '50'
+    unit: MILLIMOLAR
+  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
+- preferred_term: Glucose
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Calf serum (Gibco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: PPLO broth (Difco)
+  concentration:
+    value: '2.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Penicillin G
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2240
+  term:
+    id: TOGO:M2240
+    label: Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1
+notes: 'Source: https://togomedium.org/medium/M2240'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.209724Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2240'
+- timestamp: '2026-01-28T19:48:35.266748Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.852356'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Penicillin G'
+merge_fingerprint: a36d5e3265b319ffcac6052730c176936a2a28f0664861570aa240caa6ba5bc4
+merged_from:
+- TOGO_M2240_Medium_containing_PPLO_broth_calf_serum_glucose_penicillin_G_and_Tris-HC1

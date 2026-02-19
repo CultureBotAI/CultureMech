@@ -1,0 +1,170 @@
+name: JCM MEDIUM No. 1241
+original_name: JCM MEDIUM No. 1241
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: JCM Medium J1241
+  term:
+    id: mediadive.medium:J1241
+    label: JCM MEDIUM No. 1241
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1241'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Na glutamate
+  term:
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na3-citrate
+  term:
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.00036'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.137126Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1241'
+- timestamp: '2026-01-28T19:48:14.521964Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:40.126356+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_372_HALOBACTERIA_MEDIUM, JCM_J1241_JCM_MEDIUM_No._1241, KOMODO_372-18341_MEDIUM_372_MODIFIED_FOR_DSM_18341,
+    KOMODO_372-18342_MEDIUM_372_MODIFIED_FOR_DSM_18342, KOMODO_372-18494_MEDIUM_372_MODIFIED_FOR_DSM_18494,
+    KOMODO_372-18495_MEDIUM_372_MODIFIED_FOR_DSM_18495, KOMODO_372-19336_MEDIUM_372_MODIFIED_FOR_DSM_19336,
+    KOMODO_372-21622_MEDIUM_372_MODIFIED_FOR_DSM_21622, KOMODO_372-21769_MEDIUM_372_MODIFIED_FOR_DSM_21769,
+    KOMODO_372-21771_MEDIUM_372_MODIFIED_FOR_DSM_21771, KOMODO_372-23158_MEDIUM_372_MODIFIED_FOR_DSM_23158,
+    KOMODO_372-23862_MEDIUM_372_MODIFIED_FOR_DSM_23862, KOMODO_372_HALOBACTERIA_medium'
+synonyms:
+- name: HALOBACTERIA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:372
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 18341
+  source: KOMODO
+  source_id: komodo.medium:372_18341
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 18342
+  source: KOMODO
+  source_id: komodo.medium:372_18342
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 18494
+  source: KOMODO
+  source_id: komodo.medium:372_18494
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 18495
+  source: KOMODO
+  source_id: komodo.medium:372_18495
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 19336
+  source: KOMODO
+  source_id: komodo.medium:372_19336
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 21622
+  source: KOMODO
+  source_id: komodo.medium:372_21622
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 21769
+  source: KOMODO
+  source_id: komodo.medium:372_21769
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 21771
+  source: KOMODO
+  source_id: komodo.medium:372_21771
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 23158
+  source: KOMODO
+  source_id: komodo.medium:372_23158
+  original_category: imported
+- name: MEDIUM 372 MODIFIED FOR DSM 23862
+  source: KOMODO
+  source_id: komodo.medium:372_23862
+  original_category: imported
+- name: HALOBACTERIA medium
+  source: KOMODO
+  source_id: komodo.medium:372
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_372_HALOBACTERIA_MEDIUM
+- JCM_J1241_JCM_MEDIUM_No._1241
+- KOMODO_372-18341_MEDIUM_372_MODIFIED_FOR_DSM_18341
+- KOMODO_372-18342_MEDIUM_372_MODIFIED_FOR_DSM_18342
+- KOMODO_372-18494_MEDIUM_372_MODIFIED_FOR_DSM_18494
+- KOMODO_372-18495_MEDIUM_372_MODIFIED_FOR_DSM_18495
+- KOMODO_372-19336_MEDIUM_372_MODIFIED_FOR_DSM_19336
+- KOMODO_372-21622_MEDIUM_372_MODIFIED_FOR_DSM_21622
+- KOMODO_372-21769_MEDIUM_372_MODIFIED_FOR_DSM_21769
+- KOMODO_372-21771_MEDIUM_372_MODIFIED_FOR_DSM_21771
+- KOMODO_372-23158_MEDIUM_372_MODIFIED_FOR_DSM_23158
+- KOMODO_372-23862_MEDIUM_372_MODIFIED_FOR_DSM_23862
+- KOMODO_372_HALOBACTERIA_medium
+merge_fingerprint: 69fde73d7b048117073918d248d1a5d30da5daf3dc83d832a29251b04c4514bb

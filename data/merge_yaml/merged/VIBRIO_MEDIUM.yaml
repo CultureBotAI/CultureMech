@@ -1,0 +1,64 @@
+name: VIBRIO MEDIUM
+original_name: VIBRIO MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 308
+  term:
+    id: mediadive.medium:308
+    label: VIBRIO MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium308.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.5.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.719022Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 308'
+- timestamp: '2026-02-03T22:25:39.031793+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_308_VIBRIO_MEDIUM, KOMODO_308_VIBRIO_medium'
+synonyms:
+- name: VIBRIO medium
+  source: KOMODO
+  source_id: komodo.medium:308
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_308_VIBRIO_MEDIUM
+- KOMODO_308_VIBRIO_medium
+merge_fingerprint: 6048f058cfe20bddd4498eb223a24202ad7348f0e6c0d1b854f7a1cd03be2395

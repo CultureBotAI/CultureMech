@@ -1,0 +1,286 @@
+name: MAGNETOSPIRILLUM MEDIUM
+original_name: MAGNETOSPIRILLUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.7
+media_term:
+  preferred_term: DSMZ Medium 380
+  term:
+    id: mediadive.medium:380
+    label: MAGNETOSPIRILLUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium380.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.674603'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.119048'
+    unit: G_PER_L
+- preferred_term: L(+)-Tartaric acid
+  term:
+    id: CHEBI:15671
+    label: L(+)-Tartaric acid
+  concentration:
+    value: '0.367063'
+    unit: G_PER_L
+- preferred_term: Succinic acid
+  term:
+    id: CHEBI:15741
+    label: Succinic acid
+  concentration:
+    value: '0.367063'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.0496032'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.0992064'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '1.28968'
+    unit: G_PER_L
+  notes: Optional ingredient (for semi-solid medium)
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000496032'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.0496032'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: D-(+)-biotin
+  term:
+    id: CHEBI:15956
+    label: D-(+)-biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '2.7'
+    unit: G_PER_L
+- preferred_term: (-)-Quinic acid
+  concentration:
+    value: '1.9'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients (except thioglycolate and vitamins) in the order
+    given and adjust pH to 6.75 with NaOH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Preparation of liquid medium: Sparge medium with 100% N2 gas for 30
+    -45 min and dispense under the same gas atmosphere into anoxic Hungate-type tubes
+    to 50% of their volume. Seal vials with screw caps and gas tight butyl rubber
+    closures. Autoclave at 121°C for 15 min. Before inoculation add thioglycolate
+    and vitamins from stock solutions prepared under 100% N2 gas and filter-sterilized.
+    Then add sterile air (with hypodermic syringe through the rubber closure) to a
+    concentration of ca. 1% (v/v) O2 in the vial (e.g., add 1 ml air to a Hungate-type
+    tube of 16 ml total volume).'
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Preparation of semi solid medium: Supplement medium with agar, bring
+    medium to the boil and cool under 100% N2 gas atmosphere. Dispense under same
+    gas atmosphere aliquots of 10 ml semi-solid medium into Hungate-type tubes. Prior
+    to inoculation add thioglycolate from a 0.5% (w/v) stock solution, freshly prepared
+    under 100% N2 gas and filter-sterilized. Then add sterile air (with hypodermic
+    syringe through the rubber closure) to a concentration of ca. 1% (v/v) in the
+    vial.'
+- step_number: 4
+  action: STORE
+  description: 'Note: Prior to inoculation media should be slightly pink in color.
+    Strongly reduced conditions will not support growth of microaerophilic Magnetospirillum
+    species. Use as inoculum 10% (v/v). Incubate tubes with medium without agitation
+    in an inclined position. During growth O2 will be consumed and the pH will increase.
+    For cultivation of magnetic cells we recommend preparation of liquid medium, while
+    semi-solid medium is more suitable for demonstration of microaerophilic band formation
+    and storage.'
+- step_number: 5
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
+- step_number: 6
+  action: MIX
+  description: Sterilize by filtration under 100% N2 gas atmosphere.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.964878Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 380'
+merge_fingerprint: c155f8e75881ea6fba0f1babc3e43d8aa359ef8a7a1dbd07291d63865d871024
+merged_from:
+- DSMZ_380_MAGNETOSPIRILLUM_MEDIUM

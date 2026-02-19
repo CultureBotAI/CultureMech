@@ -1,0 +1,96 @@
+name: COLUMBIA BLOOD AGAR WITH CHARCOAL
+original_name: COLUMBIA BLOOD AGAR WITH CHARCOAL
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 429a
+  term:
+    id: mediadive.medium:429a
+    label: COLUMBIA BLOOD AGAR WITH CHARCOAL
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429a.pdf'
+ingredients:
+- preferred_term: Columbia agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Activated charcoal
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Horse blood
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+- preferred_term: Casein peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
+  concentration:
+    value: '37'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Add 2 g/l activated charcoal to the columbia agar base solution before
+    autoclaving. Add 4% horse blood after cooling to 50°C. Swirl agar during suspending.
+    To prevent dry agar surface, spread about 1 ml of sterile medium or water over
+    the agar plates and briefly allow to soak into the agar before inoculation. Incubate
+    Neisseria strains in a humid microaerobic atmosphere. Rehydrate pellets of freeze-dried
+    ampoules in liquid medium 220, 215 or 1.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 3
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.106766Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 429a'
+merge_fingerprint: 6aa427337e7bbb269821353984919ffc55dd84bef1b715779fba42759998fa44
+merged_from:
+- DSMZ_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL

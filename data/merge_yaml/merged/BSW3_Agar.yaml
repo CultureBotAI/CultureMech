@@ -1,0 +1,63 @@
+name: BSW3 Agar
+original_name: BSW3 Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Malt extract (BD-Difco)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: 0.1 x Artificial seawater
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media, Mineral source; Properties: Solution, Defined component,
+    Complex component'
+- preferred_term: Glucose
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1304
+  term:
+    id: TOGO:M1304
+    label: BSW3 Agar
+notes: 'Source: https://togomedium.org/medium/M1304
+
+  Original source: JCM - JCM_M1216
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1216'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.325044Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1304'
+- timestamp: '2026-01-28T19:48:26.652775Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 4c3144cb6db8ff7bb1c65f5b3c38105a8a04f313ddcceafbdededd2e5ec71b0c
+merged_from:
+- TOGO_M1304_BSW3_Agar

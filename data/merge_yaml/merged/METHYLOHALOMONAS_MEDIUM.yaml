@@ -1,0 +1,159 @@
+name: METHYLOHALOMONAS MEDIUM
+original_name: METHYLOHALOMONAS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 1171
+  term:
+    id: mediadive.medium:1171
+    label: METHYLOHALOMONAS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1171.pdf'
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '120'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: NaS2O3 x 5 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+  term:
+    id: CHEBI:32150
+    label: ''
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1.7'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '1.584'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.5
+- step_number: 2
+  action: AUTOCLAVE
+  description: Prepare the medium without methanol, vitamin B12 MgSO4 x 7 H2O, NaHCO3
+    and NaS2O3 x 5 H2O in closed vessels with a medium to headspace ratio of 1:5 to
+    1:10. Add the methanol, MgSO4 x 7 H2O, NaHCO3 and NaS2O3 x 5 H2O from autoclaved
+    stock solutions after sterilisation of the medium. Vitamin B12 is added from a
+    filter sterilised stock solution to the sterile medium. Incubate the strains with
+    shaking at 150 rpm. Growth is faster in the presence of 20mM sodium acetate instead
+    of methanol.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.583531Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1171'
+- timestamp: '2026-01-28T19:48:25.120225Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:29.721883+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1171_METHYLOHALOMONAS_MEDIUM, KOMODO_1171-replace-Methanol-with-Sodium
+    acetate_METHYLOHALOMONAS_MEDIUM_replace_Methanol_with_Sodium_acetate, KOMODO_1171_METHYLOHALOMONAS_MEDIUM'
+synonyms:
+- name: METHYLOHALOMONAS MEDIUM_replace_Methanol_with_Sodium acetate
+  source: KOMODO
+  source_id: komodo.medium:1171_replace_Methanol_with_Sodium acetate
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1171_METHYLOHALOMONAS_MEDIUM
+- KOMODO_1171-replace-Methanol-with-Sodium acetate_METHYLOHALOMONAS_MEDIUM_replace_Methanol_with_Sodium_acetate
+- KOMODO_1171_METHYLOHALOMONAS_MEDIUM
+merge_fingerprint: 1d7fac8e15443779a83878618ab02688e6e89cdc3a28c189b7da83e2922a4f40

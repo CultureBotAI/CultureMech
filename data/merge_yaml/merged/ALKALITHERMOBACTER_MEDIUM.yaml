@@ -1,0 +1,104 @@
+name: ALKALITHERMOBACTER MEDIUM
+original_name: ALKALITHERMOBACTER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 10.0
+media_term:
+  preferred_term: DSMZ Medium 616
+  term:
+    id: mediadive.medium:616
+    label: ALKALITHERMOBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium616.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '0.36'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5.3'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except carbonate, glucose, cysteine and sulfide)
+    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and
+    dissolve carbonate, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Before use add glucose, cysteine and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas and adjust pH to
+    10 by adding sterile anoxic 3 N NaOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.745703Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 616'
+- timestamp: '2026-02-03T22:25:45.825856+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_616_ALKALITHERMOBACTER_MEDIUM, KOMODO_616-8682_MEDIUM_616_MODIFIED_FOR_DSM_8682,
+    KOMODO_616_YTG_medium'
+synonyms:
+- name: MEDIUM 616 MODIFIED FOR DSM 8682
+  source: KOMODO
+  source_id: komodo.medium:616_8682
+  original_category: imported
+- name: YTG medium
+  source: KOMODO
+  source_id: komodo.medium:616
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_616_ALKALITHERMOBACTER_MEDIUM
+- KOMODO_616-8682_MEDIUM_616_MODIFIED_FOR_DSM_8682
+- KOMODO_616_YTG_medium
+merge_fingerprint: 3e73d150b2ed1797fd1f2ff496ad2245b0bdbe8b22f91cffcaf0a3f3b692b63b

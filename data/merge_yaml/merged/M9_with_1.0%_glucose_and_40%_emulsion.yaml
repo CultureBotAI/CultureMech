@@ -1,0 +1,120 @@
+name: M9 with 1.0% glucose and 40% emulsion
+original_name: M9 with 1.0% glucose and 40% emulsion
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '38.8543'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '12.219'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '47.743'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '8.5557'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.0448'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '18.6947'
+    unit: MILLIMOLAR
+- preferred_term: Hexadecane
+  term:
+    id: CHEBI:45296
+    label: Hexadecane
+  concentration:
+    value: '1766.47'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.520580Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 101, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-03T22:26:01.340960+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_100_M9_with_0.7_glucose_and_40_emulsion, MEDIADB_101_M9_with_1.0_glucose_and_40_emulsion,
+    MEDIADB_95_M9_with_0.4_glucose_and_40_emulsion, MEDIADB_96_M9_with_0.4_glucose_and_5_emulsion,
+    MEDIADB_97_M9_with_0.4_glucose_and_20_emulsion'
+media_term:
+  preferred_term: MediaDB Medium 101
+  term:
+    id: MEDIADB:101
+    label: M9 with 1.0% glucose and 40% emulsion
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: M9 with 0.7% glucose and 40% emulsion
+  source: unknown
+  source_id: MEDIADB:100
+  original_category: imported
+- name: M9 with 0.4% glucose and 40% emulsion
+  source: unknown
+  source_id: MEDIADB:95
+  original_category: imported
+- name: M9 with 0.4% glucose and 5% emulsion
+  source: unknown
+  source_id: MEDIADB:96
+  original_category: imported
+- name: M9 with 0.4% glucose and 20% emulsion
+  source: unknown
+  source_id: MEDIADB:97
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_100_M9_with_0.7_glucose_and_40_emulsion
+- MEDIADB_101_M9_with_1.0_glucose_and_40_emulsion
+- MEDIADB_95_M9_with_0.4_glucose_and_40_emulsion
+- MEDIADB_96_M9_with_0.4_glucose_and_5_emulsion
+- MEDIADB_97_M9_with_0.4_glucose_and_20_emulsion
+merge_fingerprint: 06df6235b836cfa47d892090db11b0f9c4c95174cfae25f61f9e6578797db1b6

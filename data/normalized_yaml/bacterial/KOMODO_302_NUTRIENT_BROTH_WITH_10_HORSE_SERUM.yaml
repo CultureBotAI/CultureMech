@@ -10,7 +10,27 @@ media_term:
     label: NUTRIENT BROTH WITH 10% HORSE SERUM
 notes: 'Source: KOMODO ModelSEED | ID: 302 | DSMZ Medium: 302 (mediadive.medium:302)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+- preferred_term: Horse serum
+  concentration:
+    value: '100'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +38,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 302'
+- timestamp: '2026-02-03T11:19:16.349093'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 302
+ph_value: 7.0

@@ -1,0 +1,60 @@
+name: XED Agar
+original_name: XED Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Xylan
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Undefined component'
+  term:
+    id: CHEBI:37166
+    label: xylan
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M586
+  term:
+    id: TOGO:M586
+    label: XED Agar
+notes: 'Source: https://togomedium.org/medium/M586
+
+  Original source: JCM - JCM_M581
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=581'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.354946Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M586'
+- timestamp: '2026-01-28T19:48:32.039820Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a09907cd67dbfc969be2add9c0ab35be64758bc8a53de5227d01d1165b5cfea1
+merged_from:
+- TOGO_M586_XED_Agar

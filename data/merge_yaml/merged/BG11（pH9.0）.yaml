@@ -1,0 +1,205 @@
+name: BG11（pH9.0）
+original_name: BG11（pH9.0）
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 1M HEPES-KOH
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '75'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: CaCl2·2H2O
+  concentration:
+    value: '38'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86158
+    label: calcium chloride dihydrate
+- preferred_term: K2HPO4
+  concentration:
+    value: '39'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: Na2CO3
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: NaNO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: Citric acid·H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Stock solution1*
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Trace A5+Co**
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+- preferred_term: Na2EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:64734
+    label: EDTA disodium salt (anhydrous)
+- preferred_term: Citric acid·H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Defined component, Organic compound'
+- preferred_term: Distilled water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Na2MoO4·2H2O
+  concentration:
+    value: '39'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75215
+    label: sodium molybdate (anhydrous)
+- preferred_term: H3BO3
+  concentration:
+    value: '286'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCl2·4H2O
+  concentration:
+    value: '181'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4·7H2O
+  concentration:
+    value: '22.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4·5H2O
+  concentration:
+    value: '7.9'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: Co(NO3)2·6H2O
+  concentration:
+    value: '4.9'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
+media_term:
+  preferred_term: TOGO Medium M2136
+  term:
+    id: TOGO:M2136
+    label: BG11（pH9.0）
+notes: 'Source: https://togomedium.org/medium/M2136
+
+  Original source: NBRC - NBRC_M1474
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1474'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.150741Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2136'
+- timestamp: '2026-01-28T19:48:37.667709Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:11.458098+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1948_BG11, TOGO_M2136_BG11_pH9.0'
+synonyms:
+- name: BG11
+  source: TOGO
+  source_id: TOGO:M1948
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1948_BG11
+- TOGO_M2136_BG11_pH9.0
+merge_fingerprint: 2d217954d0f24b8e837176fe696c58f768ea13fec63da7e3d0f95b23cfba47eb

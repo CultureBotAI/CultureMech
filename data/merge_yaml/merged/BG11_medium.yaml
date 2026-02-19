@@ -1,0 +1,154 @@
+name: BG11 medium
+original_name: BG11 medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: MgSO4.7H2O
+  concentration:
+    value: '0.075'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: CaCl2.2H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Na2CO3
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
+- preferred_term: NaNO3
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:63005
+    label: ''
+- preferred_term: K2HPO4.3H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: Citric acid
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:53258
+    label: sodium citrate
+- preferred_term: EDTA (disodium magnesium salt)
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Simple component'
+- preferred_term: Trace metal mix A5 + Co*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4.2H2O
+  concentration:
+    value: '0.39'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:75213
+    label: sodium molybdate dihydrate
+- preferred_term: H3BO3
+  concentration:
+    value: '2.86'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:33118
+    label: boric acid
+- preferred_term: MnCI2.4H2O
+  concentration:
+    value: '1.81'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+- preferred_term: ZnSO4.7H2O
+  concentration:
+    value: '0.222'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:32312
+    label: zinc sulfate heptahydrate
+- preferred_term: CuSO4.5H2O
+  concentration:
+    value: '0.079'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: Co(NO3)2.6H2O
+  concentration:
+    value: '0.0494'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:86214
+    label: cobalt dinitrate hexahydrate
+- preferred_term: Deionized water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
+media_term:
+  preferred_term: TOGO Medium M3120
+  term:
+    id: TOGO:M3120
+    label: BG11 medium
+notes: 'Source: https://togomedium.org/medium/M3120'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.459835Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3120'
+- timestamp: '2026-01-28T19:48:27.424948Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 3cbf604c3040305a70a3a864e20fe19ff2d0d179985e0120f0535a22bfd9e372
+merged_from:
+- TOGO_M3120_BG11_medium

@@ -1,0 +1,88 @@
+name: RE-101/102 MEDIUM
+original_name: RE-101/102 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.8-7.2
+media_term:
+  preferred_term: DSMZ Medium 1130
+  term:
+    id: mediadive.medium:1130
+    label: RE-101/102 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1130.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '175'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 6.8-7.2
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Note: for Agar plates, autoclave NaCl separately.  Otherwise the salts
+    will precipitate and the plates not solidify properly.'
+- step_number: 3
+  action: MIX
+  description: 'Note: especially for strains DSM 17983 and 17984, yeast extract from
+    ThermoFisher has to be used. Yeast extract from other vendors might not support
+    growth.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.466060Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1130'
+- timestamp: '2026-02-03T22:25:29.086213+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1130_RE-101_102_MEDIUM, KOMODO_1130_RE-101_102_medium'
+synonyms:
+- name: RE-101/102 medium
+  source: KOMODO
+  source_id: komodo.medium:1130
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1130_RE-101_102_MEDIUM
+- KOMODO_1130_RE-101_102_medium
+merge_fingerprint: 7f825ef5b1c27e1cb8aa9bad4f883e625b2db451e0511cea442e95aff6ccc53c

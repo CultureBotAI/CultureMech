@@ -12,6 +12,9 @@ media_term:
 notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_SW_AMP.pdf'
 ingredients:
 - preferred_term: Soil
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: (NH4)MgPO4
   concentration:
     value: '0.01'
@@ -40,3 +43,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C100'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:16.836914'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Soil'

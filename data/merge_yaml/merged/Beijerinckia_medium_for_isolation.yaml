@@ -1,0 +1,83 @@
+name: Beijerinckia medium for isolation
+original_name: Beijerinckia medium for isolation
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.3-6.7
+media_term:
+  preferred_term: DSMZ Medium 1847
+  term:
+    id: mediadive.medium:1847
+    label: Beijerinckia medium for isolation
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: D-Sucrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeCl3
+  term:
+    id: CHEBI:30808
+    label: FeCl3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4
+  term:
+    id: CHEBI:75215
+    label: Na2MoO4
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
+- step_number: 2
+  action: DISSOLVE
+  description: Heat to boiling to dissolve the medium completely
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 4
+  action: HEAT
+  description: Cool down to 45-50°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.544839Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1847'
+merge_fingerprint: e76a2e0f5c5722cf31e07300c7e8eb9f228fd8dec8140d5088514f628d1df993
+merged_from:
+- DSMZ_1847_Beijerinckia_medium_for_isolation

@@ -1,0 +1,282 @@
+name: GALLIONELLA (ES) MEDIUM
+original_name: GALLIONELLA (ES) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.1-6.4
+media_term:
+  preferred_term: DSMZ Medium 1267b
+  term:
+    id: mediadive.medium:1267b
+    label: GALLIONELLA (ES) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1267b.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '1.10988'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.221976'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.110988'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.0554939'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.554939'
+    unit: G_PER_L
+- preferred_term: Agarose
+  term:
+    id: CHEBI:2511
+    label: Agarose
+  concentration:
+    value: '1.66482'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: (NH4)2Ni(SO4)2 x 6 H2O
+  term:
+    id: CHEBI:86149
+    label: (NH4)2Ni(SO4)2 x 6 H2O
+  concentration:
+    value: '2.8'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2SeO4
+  term:
+    id: CHEBI:59160
+    label: Na2SeO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  term:
+    id: CHEBI:1687714
+    label: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '154'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '123'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Preparation of the bottom layer: Mix 1 volume of solution A (except
+    NaHCO3 and agarose) with 1 volume of solution C and add 1% (w/v) agarose type
+    1, low EEO. After autoclaving, aseptically fill 1.2 ml of the suspension in sterile
+    screw capped tubes (10 ml total volume). The bottom layer solidifies in approx.
+    30 min.'
+- step_number: 2
+  action: AUTOCLAVE
+  description: 'Preparation of the top layer: Add bicarbonate and low melt agarose
+    to solution A and autoclave. Let the sterile solution cool to 40°C and add 10.00
+    ml/l of solution B. Sparge solution with sterile 100% CO2 gas until a pH of 6.1
+    - 6.4 is reached. Then, aseptically pipette aliquots of 6.0 ml over the bottom
+    layer of each tube and let medium equilibrate for at least three hours, but not
+    longer than 12 hours.'
+- step_number: 3
+  action: POUR_PLATES
+  description: 'Inoculation: Inoculate the semisolid top layer with a pipette that
+    is inserted just above the FeS layer; the pipette tip is drawn upward as the inoculum
+    is dispensed.'
+- step_number: 4
+  action: ADJUST_PH
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
+    salts.
+- step_number: 5
+  action: HEAT
+  description: Heat distilled water to 50°C in a 250 ml beaker with a stir bar present.
+    While rapidly stirring the water, add the ferrous sulfate followed immediately
+    by the sodium sulfide. The formed black FeS sludge is decanted into a glass bottle
+    that can be stoppered. The FeS is allowed to settle for several hours and then
+    the overlying water is decanted and replaced. This procedure is repeated at least
+    five times to wash the FeS. After washing, the pH of the FeS solution should be
+    close to neutrality. The FeS suspension can be kept in closed bottles or tubes
+    under a nitrogen atmosphere for at least three months.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.919649Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1267b'
+merge_fingerprint: af1be55aeaa027cc6178dcf43a815389798cd8e4976cc179371c8bc5ea2435e9
+merged_from:
+- DSMZ_1267b_GALLIONELLA_ES_MEDIUM

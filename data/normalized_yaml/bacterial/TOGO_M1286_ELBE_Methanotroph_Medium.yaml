@@ -66,11 +66,17 @@ ingredients:
     unit: G_PER_L
 - preferred_term: methane
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: agar
   notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
     label: agar
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M1286
   term:
@@ -92,3 +98,8 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:46.980913'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: methane; Added default concentration
+    for ingredient: agar'

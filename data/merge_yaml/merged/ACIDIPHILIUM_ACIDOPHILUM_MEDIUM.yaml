@@ -1,0 +1,98 @@
+name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
+original_name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 4.5
+media_term:
+  preferred_term: DSMZ Medium 108
+  term:
+    id: mediadive.medium:108
+    label: ACIDIPHILIUM ACIDOPHILUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium108.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Ca(NO3)2 x 4 H2O
+  term:
+    id: CHEBI:86159
+    label: Ca(NO3)2 x 4 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: 1e-05
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: In liquid medium, the pH should be adjusted to 3.5 with H2SO4. In solid
+    medium, the pH should be adjusted to 4.5 with H2SO4 after autoclaving the medium.
+    Sterilize the glucose separately and add to the sterile medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.181509Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 108'
+- timestamp: '2026-02-03T22:25:28.432957+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_108_ACIDIPHILIUM_ACIDOPHILUM_MEDIUM, KOMODO_108_THIOBACILLUS_ACIDOPHILUS_MEDIUM'
+synonyms:
+- name: THIOBACILLUS ACIDOPHILUS MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:108
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_108_ACIDIPHILIUM_ACIDOPHILUM_MEDIUM
+- KOMODO_108_THIOBACILLUS_ACIDOPHILUS_MEDIUM
+merge_fingerprint: e0c59589f41070a82ab819c6d6a7efe58b6ae243fe0e10fec3604d4f62f14ba1

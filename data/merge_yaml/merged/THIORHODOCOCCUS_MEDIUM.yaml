@@ -1,0 +1,99 @@
+name: THIORHODOCOCCUS MEDIUM
+original_name: THIORHODOCOCCUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.1-7.3
+media_term:
+  preferred_term: DSMZ Medium 28a
+  term:
+    id: mediadive.medium:28a
+    label: THIORHODOCOCCUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium28a.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium Thiosulfate
+  term:
+    id: CHEBI:132112
+    label: Sodium Thiosulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Incubate at 500 to 1000 lux light intensity.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.
+- step_number: 3
+  action: ALIQUOT
+  description: If needed, aliquot into sterile, N<sub>2</sub> gassed screw-cap tubes
+    under N<sub>2</sub> gas.
+- step_number: 4
+  action: MIX
+  description: During the first 24 h, the iron of the medium precipitates in the form
+    of black flocks. No other sediment should arise in the otherwise clear medium.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).
+- step_number: 6
+  action: MIX
+  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's
+    heterotrophic salts) and sterilize as given below.
+- step_number: 7
+  action: COOL
+  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin
+    (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic
+    salts solution). Bubble with CO2 in an ice bath under sterile conditions.
+- step_number: 8
+  action: MIX
+  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50
+    mL).
+- step_number: 9
+  action: MIX
+  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12
+    solution to each 100 mL bottle.
+- step_number: 10
+  action: MIX
+  description: Feed the actively growing culture periodically with neutralized 3%
+    solution of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation
+    stage) to replenish sulfide and with other supplement solutions (see Ref. 3365).
+- step_number: 11
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.000178Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 28a'
+merge_fingerprint: d29387859ef3ae622d482fbe73fd0dd4aa383be17d304dec75dafa7fbc8a0087
+merged_from:
+- DSMZ_28a_THIORHODOCOCCUS_MEDIUM

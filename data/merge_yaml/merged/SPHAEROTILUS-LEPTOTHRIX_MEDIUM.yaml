@@ -1,0 +1,98 @@
+name: Sphaerotilus-Leptothrix Medium
+original_name: Sphaerotilus-Leptothrix Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: FeCl3·6H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:86254
+    label: iron trichloride hexahydrate
+- preferred_term: CaCl2
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: MnSO4·H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:31604
+    label: ferric ammonium citrate
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Peptone
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1923
+  term:
+    id: TOGO:M1923
+    label: Sphaerotilus-Leptothrix Medium
+notes: 'Source: https://togomedium.org/medium/M1923
+
+  Original source: NBRC - NBRC_M1188
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1188'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.672587Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1923'
+- timestamp: '2026-01-28T19:48:29.104462Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: fe6ba91b6c53286f91e0611d5b1b7c0bd09524a33f4c1825a2a58d975fc5c722
+merged_from:
+- TOGO_M1923_Sphaerotilus-Leptothrix_Medium

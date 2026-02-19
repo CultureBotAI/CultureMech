@@ -1,0 +1,76 @@
+name: Modified 1/10 HD medium
+original_name: Modified 1/10 HD medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Glucose
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Yeast Extract (Difco)
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Hipolypepton*
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2134
+  term:
+    id: TOGO:M2134
+    label: Modified 1/10 HD medium
+notes: 'Source: https://togomedium.org/medium/M2134
+
+  Original source: NBRC - NBRC_M1472
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1472'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.145223Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2134'
+- timestamp: '2026-01-28T19:48:26.798963Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:52.389850'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+merge_fingerprint: 70d54f651aaac36ff0ea621209f670ecc9df94e7b612b80199f0a4f5dff1a8d4
+merged_from:
+- TOGO_M2134_Modified_1_10_HD_medium

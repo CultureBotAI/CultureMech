@@ -1,0 +1,72 @@
+name: Lactate salt; schaechter et al
+original_name: Lactate salt; schaechter et al
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Citrate
+  concentration:
+    value: '5.20497'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:cit'
+- preferred_term: '''(R'
+  concentration:
+    value: '22.4543'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lac-D'
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '28.0899'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '9.92605'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.405729'
+    unit: MILLIMOLAR
+- preferred_term: Sodium ammonium phosphate
+  concentration:
+    value: '8.32187'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.712188Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 230, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:20.863926Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 230
+  term:
+    id: MEDIADB:230
+    label: Lactate salt; schaechter et al
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 9d04bc171e6d1a555e53205c11bff49a8341f5d55374de1e375660758dd2e41f
+merged_from:
+- MEDIADB_230_Lactate_salt_schaechter_et_al

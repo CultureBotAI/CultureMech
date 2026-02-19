@@ -1,0 +1,80 @@
+name: Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04%
+  cysteine
+original_name: Brain heart infusion (BHI) broth containing C. difficile supplement
+  and 0.04% cysteine
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Cysteine
+  concentration:
+    value: '0.04'
+    unit: PERCENT_W_V
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+- preferred_term: Brain heart infusion (BHI) broth (Oxoid)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Carbon dioxide gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Nitrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Hydrogen gas
+  notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: C. difficile supplement
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: D-cycloserine
+  notes: 'Role: Antimicrobial agent'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: Cefoxitin
+  notes: 'Role: Antimicrobial agent'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2811
+  term:
+    id: TOGO:M2811
+    label: Brain heart infusion (BHI) broth containing C. difficile supplement and
+      0.04% cysteine
+notes: 'Source: https://togomedium.org/medium/M2811'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.325690Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2811'
+- timestamp: '2026-01-28T19:48:38.802614Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.586617'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: C. difficile supplement;
+    Added default concentration for ingredient: D-cycloserine; Added default concentration
+    for ingredient: Cefoxitin'
+merge_fingerprint: 46b41d9013826eaabf53bc2119e2cf4a8c4d0a72debbb6dfe652cafbabe857c0
+merged_from:
+- TOGO_M2811_Brain_heart_infusion_BHI_broth_containing_C._difficile_supplement_and_0.04_cysteine

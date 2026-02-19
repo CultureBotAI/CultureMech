@@ -1,0 +1,43 @@
+name: MARINE BROTH 2216 WITH PYRUVATE
+original_name: MARINE BROTH 2216 WITH PYRUVATE
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.0
+media_term:
+  preferred_term: JCM Medium J1244
+  term:
+    id: mediadive.medium:J1244
+    label: MARINE BROTH 2216 WITH PYRUVATE
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1244'
+ingredients:
+- preferred_term: Marine broth 2216
+  concentration:
+    value: '37.0297'
+    unit: G_PER_L
+- preferred_term: Sodium pyruvate
+  term:
+    id: CHEBI:50144
+    label: Sodium pyruvate
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add
+    the following solution (autoclaved):'
+- step_number: 2
+  action: MIX
+  description: 'Comments: Remove precipitate yielded after autoclaving by filtration,
+    if necessary.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.148393Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1244'
+merge_fingerprint: aae6fd6c12c17e9587973cdc73deea2806842f837e92c0de0f4c93b04c2c6e3e
+merged_from:
+- JCM_J1244_MARINE_BROTH_2216_WITH_PYRUVATE

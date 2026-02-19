@@ -1,0 +1,36 @@
+name: MARINE AGAR 2216 WITH 1% STARCH
+original_name: MARINE AGAR 2216 WITH 1% STARCH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1164
+  term:
+    id: mediadive.medium:J1164
+    label: MARINE AGAR 2216 WITH 1% STARCH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1164'
+ingredients:
+- preferred_term: Marine agar 2216
+  term:
+    id: CHEBI:2509
+    label: Marine agar 2216
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Starch
+  term:
+    id: CHEBI:28017
+    label: Starch
+  concentration:
+    value: '10'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:18.865982Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1164'
+merge_fingerprint: 779acea5898fb18ba4af2bb9fde04c4271ded16538a7660619d289583e4bf855
+merged_from:
+- JCM_J1164_MARINE_AGAR_2216_WITH_1_STARCH

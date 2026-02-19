@@ -1,0 +1,76 @@
+name: MRS Medium With 2.5% NaCl (pH 9.0)
+original_name: MRS Medium With 2.5% NaCl (pH 9.0)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Bacto agar (BD-Difco)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Lactobacilli MRS broth (BD-Difco)
+  concentration:
+    value: '55'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M977
+  term:
+    id: TOGO:M977
+    label: MRS Medium With 2.5% NaCl (pH 9.0)
+notes: 'Source: https://togomedium.org/medium/M977
+
+  Original source: JCM - JCM_M931
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=931'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.071138Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M977'
+- timestamp: '2026-01-28T19:48:18.100526Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:15.320643+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M249_MRS_Medium_With_10_NaCl, TOGO_M602_MRS_Medium_With_2.5_NaCl,
+    TOGO_M977_MRS_Medium_With_2.5_NaCl_pH_9.0'
+synonyms:
+- name: MRS Medium With 10% NaCl
+  source: TOGO
+  source_id: TOGO:M249
+  original_category: imported
+- name: MRS Medium With 2.5% NaCl
+  source: TOGO
+  source_id: TOGO:M602
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M249_MRS_Medium_With_10_NaCl
+- TOGO_M602_MRS_Medium_With_2.5_NaCl
+- TOGO_M977_MRS_Medium_With_2.5_NaCl_pH_9.0
+merge_fingerprint: 8527b26e09d54b728f00cb5cce2d246716e114972bd48eb385e1d28bcd430462

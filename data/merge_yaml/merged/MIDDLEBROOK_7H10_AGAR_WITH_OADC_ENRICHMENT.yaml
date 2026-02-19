@@ -1,0 +1,41 @@
+name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
+original_name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J386
+  term:
+    id: mediadive.medium:J386
+    label: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=386'
+ingredients:
+- preferred_term: Middlebrook 7H10 agar
+  term:
+    id: CHEBI:2509
+    label: Middlebrook 7H10 agar
+  concentration:
+    value: '21.1111'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: COOL
+  description: Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically add
+    100 ml of Middlebrook OADC Enrichment (BD-BBL) and mix thoroughly.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.472084Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J386'
+merge_fingerprint: adf81a1cf56625a81ca91eb04d6777b6f59df7995129596355599573bdcab692
+merged_from:
+- JCM_J386_MIDDLEBROOK_7H10_AGAR_WITH_OADC_ENRICHMENT

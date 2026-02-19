@@ -1,0 +1,95 @@
+name: R3 MEDIUM
+original_name: R3 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 966
+  term:
+    id: mediadive.medium:966
+    label: R3 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium966.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Proteose peptone
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na pyruvate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH should be 7.8
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave at 121°C for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.928319Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 966'
+- timestamp: '2026-01-28T19:48:35.257662Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:52.384011+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_966_R3_MEDIUM, KOMODO_966-17972_MEDIUM_966_MODIFIED_FOR_DSM_17972,
+    KOMODO_966_R3_medium'
+synonyms:
+- name: MEDIUM 966 MODIFIED FOR DSM 17972
+  source: KOMODO
+  source_id: komodo.medium:966_17972
+  original_category: imported
+- name: R3 medium
+  source: KOMODO
+  source_id: komodo.medium:966
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_966_R3_MEDIUM
+- KOMODO_966-17972_MEDIUM_966_MODIFIED_FOR_DSM_17972
+- KOMODO_966_R3_medium
+merge_fingerprint: d0a55330002c9d917cf5c8b80032912fcfbda91661f0e76419551dd9d2ee0c83

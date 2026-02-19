@@ -1,0 +1,107 @@
+name: ACIDIFERROBACTER (MS) MEDIUM
+original_name: ACIDIFERROBACTER (MS) MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 2.2
+media_term:
+  preferred_term: DSMZ Medium 670
+  term:
+    id: mediadive.medium:670
+    label: ACIDIFERROBACTER (MS) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium670.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.2 with
+    4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Before use, add  FeSO4
+    x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and filter-sterilized
+    under 100% N2 gas atmosphere.
+- step_number: 2
+  action: MIX
+  description: 'Note: Incubate statically without shaking.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.893371Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 670'
+- timestamp: '2026-02-03T22:25:46.772593+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_670_ACIDIFERROBACTER_MS_MEDIUM, KOMODO_670-1_For_DSM_9463,
+    KOMODO_670-2_For_DSM_2392_DSM_9464_and_DSM_9465, KOMODO_670-3_For_DSM_9466, KOMODO_670-4_For_DSM_9467,
+    KOMODO_670-5_For_DSM_9468, KOMODO_670_MS-MEDIUM'
+synonyms:
+- name: For DSM 9463
+  source: KOMODO
+  source_id: komodo.medium:670.1
+  original_category: imported
+- name: For DSM 2392, DSM 9464 and DSM 9465
+  source: KOMODO
+  source_id: komodo.medium:670.2
+  original_category: imported
+- name: For DSM 9466
+  source: KOMODO
+  source_id: komodo.medium:670.3
+  original_category: imported
+- name: For DSM 9467
+  source: KOMODO
+  source_id: komodo.medium:670.4
+  original_category: imported
+- name: For DSM 9468
+  source: KOMODO
+  source_id: komodo.medium:670.5
+  original_category: imported
+- name: MS-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:670
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_670_ACIDIFERROBACTER_MS_MEDIUM
+- KOMODO_670-1_For_DSM_9463
+- KOMODO_670-2_For_DSM_2392_DSM_9464_and_DSM_9465
+- KOMODO_670-3_For_DSM_9466
+- KOMODO_670-4_For_DSM_9467
+- KOMODO_670-5_For_DSM_9468
+- KOMODO_670_MS-MEDIUM
+merge_fingerprint: 6505c14ef6ee4c34d1f3e91df87c6d87ec8b6b5291a77e19216d4cc89f4fcef1

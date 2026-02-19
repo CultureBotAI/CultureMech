@@ -1,0 +1,53 @@
+name: MODIFIED EGGERTH-GAGNON MEDIUM
+original_name: MODIFIED EGGERTH-GAGNON MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1580
+  term:
+    id: mediadive.medium:1580
+    label: MODIFIED EGGERTH-GAGNON MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1580.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Mucin from porcine stomach Type III
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50 ml
+    sheep blood.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.899748Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1580'
+merge_fingerprint: 1cde3ecf6d9db9b3c662d5a4c3d8234a184f8ba879c38b58c176b767a8246231
+merged_from:
+- DSMZ_1580_MODIFIED_EGGERTH-GAGNON_MEDIUM

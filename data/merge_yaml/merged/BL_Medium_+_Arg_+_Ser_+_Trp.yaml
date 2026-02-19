@@ -1,0 +1,265 @@
+name: BL Medium + Arg + Ser + Trp
+original_name: BL Medium + Arg + Ser + Trp
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Leucine
+  term:
+    id: CHEBI:15603
+    label: L-Leucine
+  concentration:
+    value: '1.5'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:leu-L'
+- preferred_term: Potassium sulfate
+  concentration:
+    value: '0.28'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: L-Isoleucine
+  term:
+    id: CHEBI:17191
+    label: L-Isoleucine
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ile-L'
+- preferred_term: Folate
+  concentration:
+    value: '0.0023'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:fol'
+- preferred_term: L-Tryptophan
+  term:
+    id: CHEBI:16828
+    label: L-Tryptophan
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:trp-L'
+- preferred_term: L-Serine
+  term:
+    id: CHEBI:17115
+    label: L-Serine
+  concentration:
+    value: '2.9'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ser-L'
+- preferred_term: Pyridoxal HCl
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.7'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gln-L'
+- preferred_term: Tricine
+  concentration:
+    value: '4.0'
+    unit: MILLIMOLAR
+- preferred_term: L-Arginine
+  term:
+    id: CHEBI:16467
+    label: L-Arginine
+  concentration:
+    value: '1.1'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:arg-L'
+- preferred_term: L-Histidine
+  term:
+    id: CHEBI:15971
+    label: L-Histidine
+  concentration:
+    value: '0.3'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:his-L'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.5'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: L-Glutamate
+  concentration:
+    value: '21.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '0.8'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:asn-L'
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:btn'
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.008'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ncam'
+- preferred_term: Cupric sulfate
+  concentration:
+    value: 1e-05
+    unit: MILLIMOLAR
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '190.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '1.3'
+    unit: MILLIMOLAR
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.003'
+    unit: MILLIMOLAR
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '50.0'
+    unit: MILLIMOLAR
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0026'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:ribflv'
+- preferred_term: L-Valine
+  term:
+    id: CHEBI:16414
+    label: L-Valine
+  concentration:
+    value: '2.6'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:val-L'
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.01'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: 3e-05
+    unit: MILLIMOLAR
+- preferred_term: Zinc sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: 1e-05
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: 8e-05
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '0.52'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Pantothenate
+  term:
+    id: CHEBI:16454
+    label: Pantothenate
+  concentration:
+    value: '0.002'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:pnto-R'
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.0004'
+    unit: MILLIMOLAR
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.0005'
+    unit: MILLIMOLAR
+- preferred_term: Molybdic acid ammonium salt tetrahydrate
+  concentration:
+    value: 3e-06
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '9.5'
+    unit: MILLIMOLAR
+- preferred_term: Sodium acetate
+  term:
+    id: CHEBI:32954
+    label: Sodium acetate
+  concentration:
+    value: '15.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:46.310492Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 405, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:43.257656Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 405
+  term:
+    id: MEDIADB:405
+    label: BL Medium + Arg + Ser + Trp
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 7d0301ba9264714d0278669a170527304a50887b11dbac505f2576524481575f
+merged_from:
+- MEDIADB_405_BL_Medium_Arg_Ser_Trp

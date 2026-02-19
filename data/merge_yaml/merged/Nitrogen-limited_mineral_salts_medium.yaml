@@ -1,0 +1,139 @@
+name: Nitrogen-limited mineral salts medium
+original_name: Nitrogen-limited mineral salts medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Fructose solution
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4.7H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31795
+    label: magnesium sulfate heptahydrate
+- preferred_term: KH2PO4
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: NH4Cl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31206
+    label: ammonium chloride
+- preferred_term: Na2HPO4.12H2O
+  concentration:
+    value: '9'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+- preferred_term: Deionized water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: Trace element solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: 0.1 M HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: CoCl2.6H2O
+  concentration:
+    value: '0.218'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: NiCl3.6H2O
+  concentration:
+    value: '0.118'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
+- preferred_term: CuSO4.5H2O
+  concentration:
+    value: '0.156'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:31440
+    label: copper(II) sulfate pentahydrate
+- preferred_term: CaCl2
+  concentration:
+    value: '7.8'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:3312
+    label: calcium dichloride
+- preferred_term: FeCl3
+  concentration:
+    value: '9.7'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:30808
+    label: iron trichloride
+- preferred_term: CrCl3.6H2O
+  concentration:
+    value: '0.105'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: Fructose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:28645
+    label: beta-D-fructofuranose
+- preferred_term: Deionized water
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+media_term:
+  preferred_term: TOGO Medium M3115
+  term:
+    id: TOGO:M3115
+    label: Nitrogen-limited mineral salts medium
+notes: 'Source: https://togomedium.org/medium/M3115'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.448941Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M3115'
+- timestamp: '2026-01-28T19:48:32.944399Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: d64af4781dc6865f48ece8dabd61ff8247b81e3682fb412c7c57c201dd93f217
+merged_from:
+- TOGO_M3115_Nitrogen-limited_mineral_salts_medium

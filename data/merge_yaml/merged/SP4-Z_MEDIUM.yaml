@@ -1,0 +1,90 @@
+name: SP4-Z Medium
+original_name: SP4-Z Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: distilled water
+  concentration:
+    value: '126'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: agar
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: DNA (fish sperm; SERVA)
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+  notes: 'Role: Growth factor'
+- preferred_term: Bacto-Peptone (BD)
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: PPLO broth
+  concentration:
+    value: '0.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Fetal bovine serum (heat-inactivated)
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Yeastolate (BD; 2%, autoclaved)
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Swine serum (heat-inactivated)
+  concentration:
+    value: '17'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source'
+- preferred_term: CMRL-1066 medium (10x concentrated; GIBCO)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Complex component, Defined component'
+- preferred_term: Arginine HCl (50% aqueous solution)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source'
+media_term:
+  preferred_term: TOGO Medium M2453
+  term:
+    id: TOGO:M2453
+    label: SP4-Z Medium
+notes: 'Source: https://togomedium.org/medium/M2453
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1076b.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.520050Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2453'
+- timestamp: '2026-01-28T19:48:11.682994Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: b38a801fad1e017761760804790380602be98ba5ee18749ff8b3264c73bd01b3
+merged_from:
+- TOGO_M2453_SP4-Z_Medium

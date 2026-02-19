@@ -1,0 +1,81 @@
+name: PPLO-Glucose Broth
+original_name: PPLO-Glucose Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 0.4% Phenol red solution
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
+- preferred_term: 25% Solution of fresh baker's yeast extract (Gibco 360-8180)
+  concentration:
+    value: '100'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '700'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Sterile horse serum
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: PPLO broth (BD-Difco)
+  concentration:
+    value: '21'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: Penicillin
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:17334
+    label: Penicillin
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M154
+  term:
+    id: TOGO:M154
+    label: PPLO-Glucose Broth
+notes: 'Source: https://togomedium.org/medium/M154
+
+  Original source: JCM - JCM_M163
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=163'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.525986Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M154'
+- timestamp: '2026-01-28T19:48:37.652792Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.073395'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Penicillin'
+merge_fingerprint: 2d951e1e99e62744c46a1328558d7846366b475e5e91e5183bbdb56a05a4110a
+merged_from:
+- TOGO_M154_PPLO-Glucose_Broth

@@ -53,8 +53,14 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -237,6 +243,9 @@ ingredients:
     Simple component'
 - preferred_term: KOH solution
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1'
@@ -272,9 +281,6 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
 - preferred_term: Pyridoxine hydrochloride
   concentration:
     value: '10'
@@ -334,6 +340,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -350,6 +359,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -367,6 +379,9 @@ ingredients:
     Simple component'
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2707
   term:
@@ -387,3 +402,16 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:55.748997'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    KOH solution; Added default concentration for ingredient: Nitrogen gas; Added
+    default concentration for ingredient: Nitrogen gas; Added default concentration
+    for ingredient: Nitrogen gas'
+- timestamp: '2026-02-06T05:10:15.184121Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

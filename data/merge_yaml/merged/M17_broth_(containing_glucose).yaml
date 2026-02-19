@@ -1,0 +1,38 @@
+name: M17 broth (containing glucose)
+original_name: M17 broth (containing glucose)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: glucose
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: M17 broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M2492
+  term:
+    id: TOGO:M2492
+    label: M17 broth (containing glucose)
+notes: 'Source: https://togomedium.org/medium/M2492'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.582995Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2492'
+- timestamp: '2026-01-28T19:48:13.794791Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 27febafa35cbb3bf42148121ff2d191d417340175d01ffc32418ab32b2c60cea
+merged_from:
+- TOGO_M2492_M17_broth_containing_glucose

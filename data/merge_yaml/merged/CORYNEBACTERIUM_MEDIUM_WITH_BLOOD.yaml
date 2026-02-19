@@ -1,0 +1,76 @@
+name: CORYNEBACTERIUM MEDIUM WITH BLOOD
+original_name: CORYNEBACTERIUM MEDIUM WITH BLOOD
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 240
+  term:
+    id: mediadive.medium:240
+    label: CORYNEBACTERIUM MEDIUM WITH BLOOD
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium240.pdf'
+ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Defibrinated Blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize medium and cool to about 45°C . Aseptically add 5% defibrinated
+    blood.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.2 - 7.4.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.579040Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 240'
+- timestamp: '2026-02-03T22:25:38.120510+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_240_CORYNEBACTERIUM_MEDIUM_WITH_BLOOD, KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD'
+synonyms:
+- name: CORYNEBACTERIUM medium WITH BLOOD
+  source: KOMODO
+  source_id: komodo.medium:240
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_240_CORYNEBACTERIUM_MEDIUM_WITH_BLOOD
+- KOMODO_240_CORYNEBACTERIUM_medium_WITH_BLOOD
+merge_fingerprint: bc65e1a0bcfd4e5130b267aa5308a9eda74dd56abfa92841d9fbef573001e829

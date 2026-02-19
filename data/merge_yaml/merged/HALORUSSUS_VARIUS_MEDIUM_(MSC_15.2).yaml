@@ -1,0 +1,235 @@
+name: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
+original_name: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.9
+media_term:
+  preferred_term: DSMZ Medium 1685
+  term:
+    id: mediadive.medium:1685
+    label: HALORUSSUS VARIUS MEDIUM (MSC 15.2)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1685.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '210.21'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '23.4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x H2O
+  term:
+    id: CHEBI:3312
+    label: CaCl2 x H2O
+  concentration:
+    value: '21.7'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 6 H2O
+  term:
+    id: CHEBI:32599
+    label: MgSO4 x 6 H2O
+  concentration:
+    value: '4.49'
+    unit: G_PER_L
+- preferred_term: CaCO3
+  term:
+    id: CHEBI:3311
+    label: CaCO3
+  concentration:
+    value: '0.015'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '9.44'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.63'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1.54'
+    unit: G_PER_L
+- preferred_term: Na-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na-EDTA
+  concentration:
+    value: '2.06'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: Na2SeO4 x 10 H2O
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.12'
+    unit: G_PER_L
+- preferred_term: Na2MoO4
+  term:
+    id: CHEBI:75215
+    label: Na2MoO4
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: Na2WO4
+  term:
+    id: CHEBI:63940
+    label: Na2WO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.54'
+    unit: G_PER_L
+- preferred_term: AlCl3
+  term:
+    id: CHEBI:30114
+    label: AlCl3
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.11'
+    unit: G_PER_L
+- preferred_term: CuSO4
+  term:
+    id: CHEBI:23414
+    label: CuSO4
+  concentration:
+    value: '0.21'
+    unit: G_PER_L
+- preferred_term: MnCl2
+  term:
+    id: CHEBI:7773015
+    label: MnCl2
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust the pH 6.9
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals.
+- step_number: 3
+  action: MIX
+  description: Final pH 7.0 (with KOH).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.233430Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1685'
+- timestamp: '2026-01-28T19:48:06.690919Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: a71a41573e3b5be3e08ef8ce376e42cd79eafea7daca3f43ae618c1c3a3dcb5e
+merged_from:
+- DSMZ_1685_HALORUSSUS_VARIUS_MEDIUM_MSC_15.2

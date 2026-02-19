@@ -85,6 +85,9 @@ ingredients:
   notes: 'Properties: Defined component, Organic compound, Simple component'
 - preferred_term: N2
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 8% NaHCO3 solution*
   concentration:
     value: '30'
@@ -134,12 +137,24 @@ ingredients:
   term:
     id: CHEBI:17883
     label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hydrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: 1,2--Dichloropropane (10 mg/ml in methanol)
   concentration:
     value: '6'
@@ -167,3 +182,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.105552'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: HCl; Added default concentration for ingredient: Carbon dioxide
+    gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
+    for ingredient: Hydrogen gas'

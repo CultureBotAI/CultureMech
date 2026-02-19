@@ -1,0 +1,94 @@
+name: CHAETOMIUM MEDIUM
+original_name: CHAETOMIUM MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 188
+  term:
+    id: mediadive.medium:188
+    label: CHAETOMIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium188.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fe2(SO4)3 x H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1.2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Cellulose MN 300
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar
+    and inoculate on filter strip.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.419975Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 188'
+- timestamp: '2026-02-03T22:25:36.864144+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_188_CHAETOMIUM_MEDIUM, KOMODO_188_CHAETOMIUM_medium'
+synonyms:
+- name: CHAETOMIUM medium
+  source: KOMODO
+  source_id: komodo.medium:188
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_188_CHAETOMIUM_MEDIUM
+- KOMODO_188_CHAETOMIUM_medium
+merge_fingerprint: 36b11c4e61596cf12f6c782f4bb6eae4a4cd2830e0a8499a33fc02d64c7704c4

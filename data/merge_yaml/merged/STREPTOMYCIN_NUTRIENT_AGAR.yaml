@@ -1,0 +1,55 @@
+name: STREPTOMYCIN NUTRIENT AGAR
+original_name: STREPTOMYCIN NUTRIENT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 238
+  term:
+    id: mediadive.medium:238
+    label: STREPTOMYCIN NUTRIENT AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium238.pdf'
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+- preferred_term: Streptomycin sulfate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
+    x H2O is recommended for sporulation.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.576462Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 238'
+- timestamp: '2026-02-03T22:25:38.109432+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_238_STREPTOMYCIN_NUTRIENT_AGAR, KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR'
+categories:
+- imported
+merged_from:
+- DSMZ_238_STREPTOMYCIN_NUTRIENT_AGAR
+- KOMODO_238_STREPTOMYCIN_NUTRIENT_AGAR
+merge_fingerprint: 6905b68d7e5a396e7b79dcdab632178ad5a133f18b9871a9aa97ce3abf9f04b5

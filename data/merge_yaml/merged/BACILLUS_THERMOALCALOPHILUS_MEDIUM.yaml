@@ -1,0 +1,92 @@
+name: BACILLUS THERMOALCALOPHILUS MEDIUM
+original_name: BACILLUS THERMOALCALOPHILUS MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 610
+  term:
+    id: mediadive.medium:610
+    label: BACILLUS THERMOALCALOPHILUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium610.pdf'
+ingredients:
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 8.2
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.724562Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 610'
+- timestamp: '2026-02-03T22:25:45.721996+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_610_BACILLUS_THERMOALCALOPHILUS_MEDIUM, KOMODO_610_BACILLUS_THERMOALCALOPHILUS_medium'
+synonyms:
+- name: BACILLUS THERMOALCALOPHILUS medium
+  source: KOMODO
+  source_id: komodo.medium:610
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_610_BACILLUS_THERMOALCALOPHILUS_MEDIUM
+- KOMODO_610_BACILLUS_THERMOALCALOPHILUS_medium
+merge_fingerprint: 458024ad3e97bd2b6d122cd54a2458862bc91642b0f00f7334d966c60ddc53de

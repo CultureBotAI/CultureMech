@@ -1,0 +1,101 @@
+name: Alicyclobacillus cellulosilyticus Medium
+original_name: Alicyclobacillus cellulosilyticus Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1684
+  term:
+    id: mediadive.medium:1684
+    label: Alicyclobacillus cellulosilyticus Medium
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1684.pdf'
+ingredients:
+- preferred_term: Carboxymethylcellulose
+  term:
+    id: CHEBI:85146
+    label: Carboxymethylcellulose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: ' (sodium salt)'
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.37'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Tryptone
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.
+    Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution
+    separately.
+- step_number: 2
+  action: MIX
+  description: Aseptically add all solutions to the basal medium.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.231404Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1684'
+- timestamp: '2026-02-03T22:25:35.939668+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1684_Alicyclobacillus_cellulosilyticus_Medium, JCM_J1052_573C_MEDIUM'
+synonyms:
+- name: 573C MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J1052
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1684_Alicyclobacillus_cellulosilyticus_Medium
+- JCM_J1052_573C_MEDIUM
+merge_fingerprint: 7cfec1a8c5650fb80fa2a17181071866f63e721f1c038fa03491762857077e0d

@@ -1,0 +1,36 @@
+name: PPLO (pleuropneumonia-like organism) medium
+original_name: PPLO (pleuropneumonia-like organism) medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: PPLO (pleuropneumonia-like organism) medium
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2996
+  term:
+    id: TOGO:M2996
+    label: PPLO (pleuropneumonia-like organism) medium
+notes: 'Source: https://togomedium.org/medium/M2996'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.445900Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2996'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.965814'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2'
+merge_fingerprint: d47b777982a364409df4091e4615901b3862a3e2f2ac159352adea2b88dc9d10
+merged_from:
+- TOGO_M2996_PPLO_pleuropneumonia-like_organism_medium

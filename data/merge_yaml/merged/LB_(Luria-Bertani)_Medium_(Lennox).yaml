@@ -1,0 +1,89 @@
+name: LB (Luria-Bertani) Medium (Lennox)
+original_name: LB (Luria-Bertani) Medium (Lennox)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1330
+  term:
+    id: TOGO:M1330
+    label: LB (Luria-Bertani) Medium (Lennox)
+notes: 'Source: https://togomedium.org/medium/M1330
+
+  Original source: JCM - JCM_M1236-2
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1236'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:54.365453Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1330'
+- timestamp: '2026-01-28T19:48:14.401686Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:06.669035+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1330_LB_Luria-Bertani_Medium_Lennox, TOGO_M1334_LB_Luria-Bertani_Agar_With_5_NaCl,
+    TOGO_M443_LB_Luria-Bertani_Agar, TOGO_M878_1_3_LB_Agar'
+synonyms:
+- name: LB (Luria-Bertani) Agar With 5% NaCl
+  source: TOGO
+  source_id: TOGO:M1334
+  original_category: imported
+- name: LB (Luria-Bertani) Agar
+  source: TOGO
+  source_id: TOGO:M443
+  original_category: imported
+- name: 1/3 LB Agar
+  source: TOGO
+  source_id: TOGO:M878
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1330_LB_Luria-Bertani_Medium_Lennox
+- TOGO_M1334_LB_Luria-Bertani_Agar_With_5_NaCl
+- TOGO_M443_LB_Luria-Bertani_Agar
+- TOGO_M878_1_3_LB_Agar
+merge_fingerprint: 6b5c3f0cd2bf4f77ba7573f48673517e7df3e524e9ec217223a1704fff4f9927

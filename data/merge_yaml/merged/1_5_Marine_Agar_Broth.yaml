@@ -1,0 +1,54 @@
+name: 1/5 Marine Agar/Broth
+original_name: 1/5 Marine Agar/Broth
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Sea water*
+  concentration:
+    value: '800'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Undefined component, Complex component'
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1916
+  term:
+    id: TOGO:M1916
+    label: 1/5 Marine Agar/Broth
+notes: 'Source: https://togomedium.org/medium/M1916
+
+  Original source: NBRC - NBRC_M1180
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1180'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.662186Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1916'
+- timestamp: '2026-01-28T19:48:09.938537Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 260371502c683fd1e86fbb06d9170c92d886f84a71b646f9f0a54c3b93ac96aa
+merged_from:
+- TOGO_M1916_1_5_Marine_Agar_Broth

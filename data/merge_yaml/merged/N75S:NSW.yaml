@@ -1,0 +1,60 @@
+name: N75S:NSW
+original_name: N75S:NSW
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: CCAP Medium C62
+  term:
+    id: mediadive.medium:C62
+    label: N75S:NSW
+notes: 'Source: CCAP | Link: https://www.ccap.ac.uk/wp-content/uploads/MR_N75S_NSW.pdf'
+ingredients:
+- preferred_term: Natural sea water
+  concentration:
+    value: '750'
+    unit: G_PER_L
+- preferred_term: Cerophyll
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 2:1 mixture
+- step_number: 2
+  action: AUTOCLAVE
+  description: See separate recipes.  Autoclave separately.  Mix aseptically when
+    cool.
+- step_number: 3
+  action: AUTOCLAVE
+  description: "Bring 75% seawater to the boil, add the powdered cereal leaves and\
+    \ keep boiling \r\nfor  5 minutes.  Allow to cool and  restore  volume to 1 litre\
+    \ with deionized water. \r\nFilter through Whatman GF/C paper.  Autoclave at 15\
+    \ psi for 15 minutes."
+- step_number: 4
+  action: AUTOCLAVE
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.689503Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: CCAP, ID: C62'
+- timestamp: '2026-02-03T22:25:26.588861+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: CCAP_C61_N75S, CCAP_C62_N75S_NSW'
+synonyms:
+- name: N75S
+  source: MediaDive
+  source_id: mediadive.medium:C61
+  original_category: imported
+categories:
+- imported
+merged_from:
+- CCAP_C61_N75S
+- CCAP_C62_N75S_NSW
+merge_fingerprint: c565c2dd8b9efc08f60f4389e928731a4a02e0a24676683df5ae6b2e8667a074

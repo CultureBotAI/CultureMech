@@ -1,0 +1,98 @@
+name: 573C Medium
+original_name: 573C Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: 7% CaCl2・2H2O solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
+- preferred_term: 25% MgSO4・7H2O solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
+- preferred_term: 2% FeCl3・6H2O solution
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Mineral source'
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: KH2PO4
+  concentration:
+    value: '0.37'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1.3'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Carboxymethyl cellulose, sodium salt
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source'
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Tryptone (BD-Difco)
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M1119
+  term:
+    id: TOGO:M1119
+    label: 573C Medium
+notes: 'Source: https://togomedium.org/medium/M1119
+
+  Original source: JCM - JCM_M1052
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1052'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:53.955952Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M1119'
+- timestamp: '2026-01-28T19:48:39.476968Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: add666db67b63f78809ae183c5deaae1b8f27ac8588b158990fb5ca188228d48
+merged_from:
+- TOGO_M1119_573C_Medium

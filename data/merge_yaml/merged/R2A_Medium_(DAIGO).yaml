@@ -1,0 +1,49 @@
+name: R2A Medium (DAIGO)
+original_name: R2A Medium (DAIGO)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: R2A Broth \"DAIGO\"*
+  concentration:
+    value: '3.2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+media_term:
+  preferred_term: TOGO Medium M2125
+  term:
+    id: TOGO:M2125
+    label: R2A Medium (DAIGO)
+notes: 'Source: https://togomedium.org/medium/M2125
+
+  Original source: NBRC - NBRC_M1455
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1455'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.126853Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2125'
+- timestamp: '2026-01-28T19:48:43.366491Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: eb2995f7346ab2856075e5e988e8e5e63dbf39e06d5669e001f260e22633b4ab
+merged_from:
+- TOGO_M2125_R2A_Medium_DAIGO

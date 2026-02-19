@@ -1,0 +1,140 @@
+name: NAV medium
+original_name: NAV medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Beef extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Vitamin mixture*
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Biotin
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+  term:
+    id: CHEBI:15956
+    label: biotin
+- preferred_term: p-Aminobenzoic acid
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:30753
+    label: 4-aminobenzoic acid
+- preferred_term: Thiamin-HCl
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:49105
+    label: thiamine hydrochloride
+- preferred_term: Ca-pantothenate
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:29032
+    label: (R)-pantothenate
+- preferred_term: Pyridoxine-HCl
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:131531
+    label: pyridoxamine hydrochloride
+- preferred_term: Cyanocobalamin
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Organic compound, Simple component, Defined component'
+  term:
+    id: CHEBI:17439
+    label: cyanocob(III)alamin
+- preferred_term: Niacin
+  concentration:
+    value: '400'
+    unit: G_PER_L
+  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:15940
+    label: nicotinic acid
+- preferred_term: Inositol
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:24848
+    label: inositol
+media_term:
+  preferred_term: TOGO Medium M2024
+  term:
+    id: TOGO:M2024
+    label: NAV medium
+notes: 'Source: https://togomedium.org/medium/M2024
+
+  Original source: NBRC - NBRC_M1315
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1315'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:58.897648Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2024'
+- timestamp: '2026-01-28T19:48:21.082273Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 2360025990d2803384bc7c3087fc15995eb43438fa82f4ddf26c0ef122017932
+merged_from:
+- TOGO_M2024_NAV_medium

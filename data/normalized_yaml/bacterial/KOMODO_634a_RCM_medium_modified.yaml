@@ -10,7 +10,22 @@ media_term:
     label: RCM medium (modified)
 notes: 'Source: KOMODO ModelSEED | ID: 634a | DSMZ Medium: 634a (mediadive.medium:634a)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: dehydrated RCM medium
+  concentration:
+    value: '38'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Sodium carbonate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  term:
+    id: CHEBI:29377
+    label: sodium carbonate
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +33,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 634a'
+- timestamp: '2026-02-03T11:19:05.849226'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 634
+ph_value: 6.8

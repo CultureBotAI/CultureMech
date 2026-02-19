@@ -1,37 +1,55 @@
 name: MES-Volvox Medium
-category: algae
+category: ALGAE
 medium_type: complex
 physical_state: liquid
 description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
   algae cultivation.
 ingredients:
-- agent_term:
-    preferred_term: '1'
-  amount: 'Ca(NO3)2•4H2O(CAS: 13477-34-4)'
-- agent_term:
-    preferred_term: '2'
-  amount: 'MgSO4•7H2O(CAS: 10034-99-8)'
-- agent_term:
-    preferred_term: '3'
-  amount: 'Na2glycerophosphate•5H2O(CAS: 13408-09-8)'
-- agent_term:
-    preferred_term: '4'
-  amount: 'KCl(CAS: 7447-40-7)'
-- agent_term:
-    preferred_term: '5'
-  amount: 'MES(CAS: 1266615-59-1)'
-- agent_term:
-    preferred_term: '6'
-  amount: P-IV Metal Solution
-- agent_term:
-    preferred_term: '7'
-  amount: 'NH4Cl(CAS: 12125-02-9)'
-- agent_term:
-    preferred_term: '8'
-  amount: Vitamin B12
-- agent_term:
-    preferred_term: '9'
-  amount: Biotin Vitamin Solution
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Ca(NO3)2•4H2O(CAS: 13477-34-4)'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MgSO4•7H2O(CAS: 10034-99-8)'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Na2glycerophosphate•5H2O(CAS: 13408-09-8)'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: KCl(CAS: 7447-40-7)'
+- preferred_term: '5'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: MES(CAS: 1266615-59-1)'
+- preferred_term: '6'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: P-IV Metal Solution'
+- preferred_term: '7'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: NH4Cl(CAS: 12125-02-9)'
+- preferred_term: '8'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Vitamin B12'
+- preferred_term: '9'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Biotin Vitamin Solution'
 preparation_steps:
 - step_number: 1
   instruction: Important Notes To Consider:The quality of water, including natural

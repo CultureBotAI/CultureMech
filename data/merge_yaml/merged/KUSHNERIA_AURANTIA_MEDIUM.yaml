@@ -1,0 +1,134 @@
+name: KUSHNERIA AURANTIA MEDIUM
+original_name: KUSHNERIA AURANTIA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 7.2-7.4
+media_term:
+  preferred_term: DSMZ Medium 1195
+  term:
+    id: mediadive.medium:1195
+    label: KUSHNERIA AURANTIA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1195.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '32.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '50.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '195'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 7.2 - 7.4 and autoclave.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:13.643336Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1195'
+- timestamp: '2026-02-03T22:25:25.210621+00:00'
+  curator: recipe-merger
+  action: Merged 9 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1184_MEDIUM_FOR_HALOPHILIC_ARCHAEA, DSMZ_1194_HALORUBRUM_CALIFORNIENSE_MEDIUM,
+    DSMZ_1195_KUSHNERIA_AURANTIA_MEDIUM, DSMZ_1213_THALASSOBACILLUS_CYRI_MEDIUM, JCM_J980_KUSHNERIA_AURANTIA_MEDIUM,
+    KOMODO_1184_medium_FOR_HALOPHILIC_ARCHAEA, KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium,
+    KOMODO_1195_KUSHNERIA_AURANTIA_medium, KOMODO_1213_THALASSOBACILLUS_CYRI_medium'
+synonyms:
+- name: MEDIUM FOR HALOPHILIC ARCHAEA
+  source: MediaDive
+  source_id: mediadive.medium:1184
+  original_category: imported
+- name: HALORUBRUM CALIFORNIENSE MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1194
+  original_category: imported
+- name: THALASSOBACILLUS CYRI MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1213
+  original_category: imported
+- name: medium FOR HALOPHILIC ARCHAEA
+  source: KOMODO
+  source_id: komodo.medium:1184
+  original_category: imported
+- name: HALORUBRUM CALIFORNIENSE medium
+  source: KOMODO
+  source_id: komodo.medium:1194
+  original_category: imported
+- name: KUSHNERIA AURANTIA medium
+  source: KOMODO
+  source_id: komodo.medium:1195
+  original_category: imported
+- name: THALASSOBACILLUS CYRI medium
+  source: KOMODO
+  source_id: komodo.medium:1213
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_1184_MEDIUM_FOR_HALOPHILIC_ARCHAEA
+- DSMZ_1194_HALORUBRUM_CALIFORNIENSE_MEDIUM
+- DSMZ_1195_KUSHNERIA_AURANTIA_MEDIUM
+- DSMZ_1213_THALASSOBACILLUS_CYRI_MEDIUM
+- JCM_J980_KUSHNERIA_AURANTIA_MEDIUM
+- KOMODO_1184_medium_FOR_HALOPHILIC_ARCHAEA
+- KOMODO_1194_HALORUBRUM_CALIFORNIENSE_medium
+- KOMODO_1195_KUSHNERIA_AURANTIA_medium
+- KOMODO_1213_THALASSOBACILLUS_CYRI_medium
+merge_fingerprint: 23ca5eb5ef99c79f93998777a61bed49ccd51e3147917394d5e0c684c60e4439

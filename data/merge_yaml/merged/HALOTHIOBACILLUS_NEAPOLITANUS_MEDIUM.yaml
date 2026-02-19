@@ -1,0 +1,148 @@
+name: HALOTHIOBACILLUS NEAPOLITANUS MEDIUM
+original_name: HALOTHIOBACILLUS NEAPOLITANUS MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 6.6-7
+media_term:
+  preferred_term: DSMZ Medium 68
+  term:
+    id: mediadive.medium:68
+    label: HALOTHIOBACILLUS NEAPOLITANUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium68.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Bromocresol purple
+  term:
+    id: CHEBI:86154
+    label: Bromocresol purple
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: Optional ingredient (for solid medium)
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '22'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '5.54'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '5.06'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: (NH4)6Mo7O24 x 4 H2O
+  concentration:
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '1.57'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '1.61'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except thiosulfate, dispense into suitable cultivation
+    vessels and autoclave. Add thiosulfate to the autoclaved medium from a sterile
+    stock solution. Adjust pH of complete medium to 6.6 - 7.0.
+- step_number: 2
+  action: ADJUST_PH
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
+    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.081867Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 68'
+- timestamp: '2026-02-03T22:25:47.009141+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_68_HALOTHIOBACILLUS_NEAPOLITANUS_MEDIUM, KOMODO_68_THIOBACILLUS_NEAPOLITANUS_MEDIUM'
+synonyms:
+- name: THIOBACILLUS NEAPOLITANUS MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:68
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_68_HALOTHIOBACILLUS_NEAPOLITANUS_MEDIUM
+- KOMODO_68_THIOBACILLUS_NEAPOLITANUS_MEDIUM
+merge_fingerprint: 09bacacbc8509255f5689741a71a8cf3e0e98b3793dee6b15fc262033e33f99f

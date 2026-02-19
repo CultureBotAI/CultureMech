@@ -1,0 +1,102 @@
+name: Spirochaeta Stenostrepta Medium
+original_name: Spirochaeta Stenostrepta Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Resazurin
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+- preferred_term: Thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:47869
+    label: thioglycolate(2-)
+- preferred_term: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
+  term:
+    id: CHEBI:42758
+    label: aldehydo-D-glucose
+- preferred_term: Yeast extract (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Peptone (BD-Difco)
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: agar
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: KOH
+  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+  term:
+    id: CHEBI:32035
+    label: potassium hydroxide
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M844
+  term:
+    id: TOGO:M844
+    label: Spirochaeta Stenostrepta Medium
+notes: 'Source: https://togomedium.org/medium/M844
+
+  Original source: JCM - JCM_M809
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=809'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.816171Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M844'
+- timestamp: '2026-01-28T19:48:36.729223Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:21:00.840978'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: agar; Added default concentration
+    for ingredient: KOH; Added default concentration for ingredient: N2'
+merge_fingerprint: f8caf22c9898f98e88c7042cfd9ad76c13d0813726b344c32ef0d986a4455899
+merged_from:
+- TOGO_M844_Spirochaeta_Stenostrepta_Medium

@@ -79,8 +79,14 @@ ingredients:
   notes: 'Properties: Undefined component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -106,8 +112,14 @@ ingredients:
   notes: 'Role: Nitrogen source'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Nitrogen gas
   notes: 'Properties: ガス'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -137,6 +149,9 @@ ingredients:
     label: magnesium dichloride
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -234,8 +249,14 @@ ingredients:
     label: EDTA disodium salt (anhydrous)
 - preferred_term: 2N NaOH
   notes: 'Properties: Defined component, Inorganic compound, Solution'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Vitamin solution of medium 141
   concentration:
     value: '9'
@@ -246,6 +267,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '10'
@@ -266,6 +290,9 @@ ingredients:
     label: sodium sulfide nonahydrate
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Hexadecane
   concentration:
     value: '13.5'
@@ -283,6 +310,9 @@ ingredients:
     label: tetrachloroethene
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -372,6 +402,9 @@ ingredients:
   notes: 'Role: Vitamin; Properties: Defined component'
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '1000'
@@ -439,6 +472,9 @@ ingredients:
     label: biotin
 - preferred_term: N2 gas
   notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
 media_term:
   preferred_term: TOGO Medium M2745
   term:
@@ -458,3 +494,15 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.191388'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas;
+    Added default concentration for ingredient: N2 gas; Added default concentration
+    for ingredient: 2N NaOH; Added default concentration for ingredient: N2 gas; Added
+    default concentration for ingredient: N2 gas; Added default concentration for
+    ingredient: N2 gas; Added default concentration for ingredient: N2 gas; Added
+    default concentration for ingredient: N2 gas; Added default concentration for
+    ingredient: N2 gas'

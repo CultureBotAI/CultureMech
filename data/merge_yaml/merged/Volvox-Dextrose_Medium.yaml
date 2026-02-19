@@ -1,0 +1,179 @@
+name: Volvox-Dextrose Medium
+category: ALGAE
+medium_type: complex
+physical_state: liquid
+description: Algae culture medium from UTEX Culture Collection. Suitable for freshwater
+  algae cultivation.
+ingredients:
+- preferred_term: '1'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: DYIII Medium'
+- preferred_term: '2'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Pea'
+- preferred_term: '3'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: Soilwater: GR+ Medium'
+- preferred_term: '4'
+  concentration:
+    value: variable
+    unit: G_PER_L
+  notes: 'Original amount: DAS Vitamin Cocktail'
+preparation_steps:
+- step_number: 1
+  instruction: Important Notes To Consider:The quality of water, including natural
+    seawater, is important.
+- step_number: 2
+  instruction: The term 'dH2O' generally refers to distilled, deionized, distilled/deionized
+    water, Milli-Q water (Millipore Corp.), etc.
+- step_number: 3
+  instruction: Natural seawater and natural freshwater should be obtained from a non-polluted
+    source.When dissolving chemicals, wait for the first component to dissolve before
+    adding the second.
+- step_number: 4
+  instruction: Stirring, and sometimes the addition of heat, is often required to
+    dissolve the chemicals efficiently.
+- step_number: 5
+  instruction: Preparation of stock solutions for frequently made algal culture media
+    make preparing media convenient but also necessary to avoid errors from weighing
+    very tiny amounts.Attention should be given to the pH of the final medium.
+- step_number: 6
+  instruction: In most cases, if pH adjustment is required, this occurs before sterilization.
+- step_number: 7
+  instruction: Please note that autoclaving removes carbon dioxide from media lacking
+    carbonate stabilizing buffers.
+- step_number: 8
+  instruction: This would make the medium very alkaline soon after removal from the
+    autoclave.
+- step_number: 9
+  instruction: In these cases, you should wait approximately 24 hours for gaseous
+    equilibrium before inoculating the medium.
+light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
+light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark
+temperature_range: 15-30°C depending on species
+applications:
+- Algae cultivation
+- Phytoplankton culture
+- Microalgae research
+curation_history:
+- curator: utex-import
+  date: '2026-01-28'
+  action: Imported from UTEX Culture Collection
+  notes: 'Source ID: volvox-dextrose-medium, URL: https://utex.org/products/volvox-dextrose-medium'
+- timestamp: '2026-02-03T22:25:24.835284+00:00'
+  curator: recipe-merger
+  action: Merged 24 duplicate recipes into canonical record
+  notes: 'Sources: 1_1_DYIII_PEA_+_Gr+_Medium, 1_2_CHEV_Diatom_Medium, 1_2_Soil_+_Seawater_Medium,
+    1_3_CHEV_Diatom_Medium, 1_3_Soil_+_Seawater_Medium, 1_4_Soil_+_Seawater_Medium,
+    1_5_CHEV_Diatom_Medium, 1_5_Soil_+_Seawater_Medium, 2X_CHEV_Diatom_Medium, 2_3_CHEV_Diatom_Medium,
+    CHEV_Diatom_Medium, Cyanidium_Medium, Cyanophycean_Medium, Desmid_Medium, J_Medium,
+    Modified_2X_CHEV_+_Soil_Medium, Modified_CHEV_Medium, Ochromonas_Medium, Porphryridium_Medium,
+    Soilwater_BAR_Medium, Soilwater_PEA_Medium, TAP_Medium, Trebouxia_Medium, Volvox-Dextrose_Medium'
+references:
+- reference_id: UTEX:volvox-dextrose-medium
+- reference_id: https://utex.org/products/volvox-dextrose-medium
+original_name: Volvox-Dextrose Medium
+synonyms:
+- name: 1:1 DYIII/PEA + Gr+ Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/2 CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/2 Soil + Seawater Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/3 CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/3 Soil + Seawater Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/4 Soil + Seawater Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/5 CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: 1/5 Soil + Seawater Medium
+  source: unknown
+  original_category: ALGAE
+- name: 2X CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: 2/3 CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: CHEV Diatom Medium
+  source: unknown
+  original_category: ALGAE
+- name: Cyanidium Medium
+  source: unknown
+  original_category: ALGAE
+- name: Cyanophycean Medium
+  source: unknown
+  original_category: ALGAE
+- name: Desmid Medium
+  source: unknown
+  original_category: ALGAE
+- name: J Medium
+  source: unknown
+  original_category: ALGAE
+- name: Modified 2X CHEV + Soil Medium
+  source: unknown
+  original_category: ALGAE
+- name: Modified CHEV Medium
+  source: unknown
+  original_category: ALGAE
+- name: Ochromonas Medium
+  source: unknown
+  original_category: ALGAE
+- name: Porphryridium Medium
+  source: unknown
+  original_category: ALGAE
+- name: 'Soilwater: BAR Medium'
+  source: unknown
+  original_category: ALGAE
+- name: 'Soilwater: PEA Medium'
+  source: unknown
+  original_category: ALGAE
+- name: TAP Medium
+  source: unknown
+  original_category: ALGAE
+- name: Trebouxia Medium
+  source: unknown
+  original_category: ALGAE
+categories:
+- ALGAE
+merged_from:
+- 1_1_DYIII_PEA_+_Gr+_Medium
+- 1_2_CHEV_Diatom_Medium
+- 1_2_Soil_+_Seawater_Medium
+- 1_3_CHEV_Diatom_Medium
+- 1_3_Soil_+_Seawater_Medium
+- 1_4_Soil_+_Seawater_Medium
+- 1_5_CHEV_Diatom_Medium
+- 1_5_Soil_+_Seawater_Medium
+- 2X_CHEV_Diatom_Medium
+- 2_3_CHEV_Diatom_Medium
+- CHEV_Diatom_Medium
+- Cyanidium_Medium
+- Cyanophycean_Medium
+- Desmid_Medium
+- J_Medium
+- Modified_2X_CHEV_+_Soil_Medium
+- Modified_CHEV_Medium
+- Ochromonas_Medium
+- Porphryridium_Medium
+- Soilwater_BAR_Medium
+- Soilwater_PEA_Medium
+- TAP_Medium
+- Trebouxia_Medium
+- Volvox-Dextrose_Medium
+merge_fingerprint: 8e96dc5e83d405a518a3a93fcbaa8f6a21fd909fa989f73635fe74a093615f39

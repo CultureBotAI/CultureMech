@@ -1,0 +1,46 @@
+name: JCM MEDIUM No. 116
+original_name: JCM MEDIUM No. 116
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.5
+media_term:
+  preferred_term: JCM Medium J116
+  term:
+    id: mediadive.medium:J116
+    label: JCM MEDIUM No. 116
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=116'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Boil potatoes for 20 min.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 5.4-5.6.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.757088Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J116'
+merge_fingerprint: 33997ed30d41e8f15afc2767800eed24131a3880201ff79a7f4eba00b95d0d1e
+merged_from:
+- JCM_J116_JCM_MEDIUM_No._116

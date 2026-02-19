@@ -10,7 +10,110 @@ media_term:
     label: MEDIUM 909 MODIFIED FOR DSM 14222
 notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Brain heart infusion broth
+  concentration:
+    value: '12.5'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na-thioglycolate
+  term:
+    id: CHEBI:86481
+    label: Na-thioglycolate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Asparagine
+  term:
+    id: CHEBI:17196
+    label: L-Asparagine
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Thiamine pyrophosphate
+  term:
+    id: CHEBI:18290
+    label: Thiamine pyrophosphate
+  concentration:
+    value: '0.133333'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '44.4444'
+    unit: G_PER_L
+- preferred_term: Rabbit serum
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KOH
+  term:
+    id: CHEBI:32035
+    label: KOH
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Isobutyric acid
+  term:
+    id: CHEBI:16135
+    label: Isobutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: DL-2-Methylbutyric acid
+  term:
+    id: CHEBI:37070
+    label: DL-2-Methylbutyric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Isovaleric acid
+  term:
+    id: CHEBI:28484
+    label: Isovaleric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Valeric acid
+  term:
+    id: CHEBI:17418
+    label: Valeric acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +121,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 909_14222'
+- timestamp: '2026-02-03T11:19:03.741004'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 909

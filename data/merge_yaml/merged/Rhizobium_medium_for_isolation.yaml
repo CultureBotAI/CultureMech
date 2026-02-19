@@ -1,0 +1,76 @@
+name: Rhizobium medium for isolation
+original_name: Rhizobium medium for isolation
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.6-7
+media_term:
+  preferred_term: DSMZ Medium 1848
+  term:
+    id: mediadive.medium:1848
+    label: Rhizobium medium for isolation
+notes: 'Source: DSMZ'
+ingredients:
+- preferred_term: D-Mannitol
+  term:
+    id: CHEBI:16899
+    label: D-Mannitol
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MgSO4
+  term:
+    id: CHEBI:32599
+    label: MgSO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    distilled water.
+- step_number: 2
+  action: DISSOLVE
+  description: Heat to boiling to dissolve the medium completely
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 4
+  action: HEAT
+  description: Cool down to 45-50°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.547081Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1848'
+merge_fingerprint: 2fc65d21ac0c2ae91307b0188aab54e1d40f020cd8746ace3ade0dec28befb30
+merged_from:
+- DSMZ_1848_Rhizobium_medium_for_isolation

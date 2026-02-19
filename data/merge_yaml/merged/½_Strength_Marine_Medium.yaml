@@ -1,0 +1,47 @@
+name: ½ Strength Marine Medium
+original_name: ½ Strength Marine Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+- preferred_term: Marine Broth 2216 (BD 279110)
+  concentration:
+    value: '18.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2255
+  term:
+    id: TOGO:M2255
+    label: ½ Strength Marine Medium
+notes: 'Source: https://togomedium.org/medium/M2255
+
+  Original URL: https://www.atcc.org/~/media/C64DF5CA9E954F51A0B94D9B6BABAB21.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.226290Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2255'
+- timestamp: '2026-01-28T19:48:37.291817Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: dafe1eccf64ccb11a831823f377f0a05382afc7ef419c60132ae54af4e003831
+merged_from:
+- TOGO_M2255_½_Strength_Marine_Medium

@@ -1,0 +1,50 @@
+name: VIBRIO SEAWATER MEDIUM
+original_name: VIBRIO SEAWATER MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J1232
+  term:
+    id: mediadive.medium:J1232
+    label: VIBRIO SEAWATER MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1232'
+ingredients:
+- preferred_term: Sea water
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Aseptically combine. Cultivate with shaking (150 - 200 rpm) for 16
+    - 24 hr. Separate from the prey bacteria physically (e.g., centrifugation), if
+    necessary.
+- step_number: 2
+  action: DISSOLVE
+  description: Cultivate <I>Vibrio alginolyticus</I> JCM 32963 (or any <I>Vibrio</I>
+    strain that can be served as prey bacteria) in 100 ml Marine Broth 2216 (Medium
+    No. 41) with shaking at 150 - 200 rpm for 24 hr. Aseptically centrifuge the culture
+    at 8,000 x g for 5 min. Remove the supernatant and suspend precipitated cells
+    in 10 ml sterile seawater (pH 7.6 - 8.0). The cell suspension can be preserved
+    at 4C for a couple of days.
+- step_number: 3
+  action: AUTOCLAVE
+  description: 'Comment: For cultivation on solid media, the double-layer agar technique
+    can be used. Typically, pour autoclaved seawater containing 1.5% agar (cool to
+    50 - 60C) to 9 cm petri dishes (15.0 ml per dish) and allow to solidify (bottom
+    agar medium). Autoclave seawater containing 0.7% agar, cool to 60 - 65C and distribute
+    10 ml each of the molten agar solution into tubes kept at 50C (top agar medium).
+    Then, add 1 ml of inoculum (bacterial cell suspension) and 1 ml of the concentrated
+    <I>Vibrio</I> suspension to the top agar medium. Quickly mix the top agar medium
+    and pour onto the bottom agar medium.'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:19.113105Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1232'
+merge_fingerprint: 2a353e9cd464790a60a00858ba08179a5387a62eb42a2b32501d1d399e71b629
+merged_from:
+- JCM_J1232_VIBRIO_SEAWATER_MEDIUM

@@ -11,7 +11,43 @@ media_term:
     label: KPL medium
 notes: 'Source: KOMODO ModelSEED | ID: 456 | DSMZ Medium: 456 (mediadive.medium:456)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '8.76424'
+    unit: G_PER_L
+- preferred_term: Galactose
+  term:
+    id: CHEBI:28260
+    label: Galactose
+  concentration:
+    value: '8.76424'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '13.1464'
+    unit: G_PER_L
+- preferred_term: Skim milk
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: White wine
+  concentration:
+    value: '140'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +55,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 456'
+- timestamp: '2026-02-03T11:19:15.310296'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 456

@@ -1,0 +1,210 @@
+name: CYCLONATRONUM PROTEIVORANS MEDIUM (OMEGA)
+original_name: CYCLONATRONUM PROTEIVORANS MEDIUM (OMEGA)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 10-10.1
+media_term:
+  preferred_term: DSMZ Medium 1491
+  term:
+    id: mediadive.medium:1491
+    label: CYCLONATRONUM PROTEIVORANS MEDIUM (OMEGA)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1491.pdf'
+ingredients:
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ZnSO4
+  term:
+    id: CHEBI:35176
+    label: ZnSO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2
+  term:
+    id: CHEBI:7773015
+    label: MnCl2
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 5 H2O
+  term:
+    id: CHEBI:91245
+    label: CuCl2 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Thiamin
+  term:
+    id: CHEBI:18385
+    label: Thiamin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: PABA
+  term:
+    id: CHEBI:30753
+    label: PABA
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.0125'
+    unit: G_PER_L
+- preferred_term: B12
+  concentration:
+    value: '0.00125'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 10.0 - 10.1
+- step_number: 2
+  action: MIX
+  description: 'Prepare the liquid medium. Sterilize by autoclaving. Before inoculation
+    add from sterile stock solutions:'
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 3.0-4.0 with HCl.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 5
+  action: AUTOCLAVE
+  description: 'Note: autoclave in closed bottles'
+- step_number: 6
+  action: MIX
+  description: '1: acidic solution (HCl, pH3; 100ml)'
+- step_number: 7
+  action: MIX
+  description: '2: basic solution (100ml 0.1N NaOH)'
+- step_number: 8
+  action: MIX
+  description: '3: Neutral solution in 100 ml demi water'
+- step_number: 9
+  action: MIX
+  description: '4: neutral solution in 100 ml demi water'
+- step_number: 10
+  action: MIX
+  description: Sterilize by filtration.
+- step_number: 11
+  action: MIX
+  description: Mix 1:1:1:1 just after addition or add separatlely, each 1ml/L.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.595054Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1491'
+merge_fingerprint: 0d71a361a1bc5309c8244804ffc16d90485a54cc309d37b1cae8a649b187ee91
+merged_from:
+- DSMZ_1491_CYCLONATRONUM_PROTEIVORANS_MEDIUM_OMEGA

@@ -1,0 +1,117 @@
+name: GLUCOSE MEDIUM (NAKAYAMA)
+original_name: GLUCOSE MEDIUM (NAKAYAMA)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 452
+  term:
+    id: mediadive.medium:452
+    label: GLUCOSE MEDIUM (NAKAYAMA)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium452.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 5 H2O
+  term:
+    id: CHEBI:131524
+    label: MnSO4 x 5 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na3-citrate
+  term:
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Autoclave all solutions separately, final pH is 6.8.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.163126Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 452'
+- timestamp: '2026-02-03T22:25:41.537038+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_452_GLUCOSE_MEDIUM_NAKAYAMA, KOMODO_452_GLUCOSE_medium_NAKAYAMA'
+synonyms:
+- name: GLUCOSE medium (NAKAYAMA)
+  source: KOMODO
+  source_id: komodo.medium:452
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_452_GLUCOSE_MEDIUM_NAKAYAMA
+- KOMODO_452_GLUCOSE_medium_NAKAYAMA
+merge_fingerprint: 213f1b7538e2ec4094c6775a41882f369ec2478538a35d37579eefbd6a93c33e

@@ -10,7 +10,49 @@ media_term:
     label: MEDIUM 1076b MODIFIED FOR DSM 21204
 notes: 'Source: KOMODO ModelSEED | ID: 1076b_21204 | DSMZ Medium: 1076b (mediadive.medium:1076b)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '9.70874'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5.14563'
+    unit: G_PER_L
+- preferred_term: PPLO broth
+  concentration:
+    value: '3.39806'
+    unit: G_PER_L
+- preferred_term: Fetal bovine serum
+  concentration:
+    value: '90'
+    unit: G_PER_L
+- preferred_term: CMRL 1066
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: L-Glutamine
+  term:
+    id: CHEBI:18050
+    label: L-Glutamine
+  concentration:
+    value: '0.0496876'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +60,8 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 1076b_21204'
+- timestamp: '2026-02-03T11:19:00.103307'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 1076
+ph_value: 7.4

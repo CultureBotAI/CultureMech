@@ -1,0 +1,69 @@
+name: Half Strength Skim Milk Agar
+original_name: Half Strength Skim Milk Agar
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Solution A
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Solution B
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Skim milk (BD-Difco)
+  concentration:
+    value: '25'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Distilled water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
+media_term:
+  preferred_term: TOGO Medium M98
+  term:
+    id: TOGO:M98
+    label: Half Strength Skim Milk Agar
+notes: 'Source: https://togomedium.org/medium/M98
+
+  Original source: JCM - JCM_M106
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=106'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.076587Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M98'
+- timestamp: '2026-01-28T19:48:27.100947Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 35d7f7640e16605c7a1d776a4f4a9d7deb53a59a6554f1a8e6338cb63c5e4527
+merged_from:
+- TOGO_M98_Half_Strength_Skim_Milk_Agar

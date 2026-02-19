@@ -1,0 +1,222 @@
+name: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
+original_name: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: L-Glutamate
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glu-L'
+- preferred_term: Glycine
+  term:
+    id: CHEBI:15428
+    label: Glycine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:gly'
+- preferred_term: L-Methionine
+  term:
+    id: CHEBI:16643
+    label: L-Methionine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:met-L'
+- preferred_term: DL-Serine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Cysteine
+  term:
+    id: CHEBI:15356
+    label: Cysteine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Histidine
+  term:
+    id: CHEBI:27570
+    label: Histidine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Alanine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: DL-Tyrosine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Phenylalanine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Arginine
+  term:
+    id: CHEBI:29016
+    label: Arginine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium chloride
+  concentration:
+    value: '1.0'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:86345
+    label: magnesium dichloride hexahydrate
+- preferred_term: Boric acid
+  term:
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.0032346'
+    unit: MILLIMOLAR
+- preferred_term: Sodium sulfate
+  concentration:
+    value: '1.5'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '4.4'
+    unit: MILLIMOLAR
+- preferred_term: Sodium molybdate
+  concentration:
+    value: '0.0017986'
+    unit: MILLIMOLAR
+- preferred_term: Aspartate
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Isoleucine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Proline
+  term:
+    id: CHEBI:26271
+    label: Proline
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Valine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Leucine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Lysine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '330.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium chloride
+  concentration:
+    value: '1.34'
+    unit: MILLIMOLAR
+  term:
+    id: CHEBI:32588
+    label: potassium chloride
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '28.0'
+    unit: MILLIMOLAR
+- preferred_term: Cobalt chloride
+  concentration:
+    value: '0.014858'
+    unit: MILLIMOLAR
+- preferred_term: Manganese chloride
+  concentration:
+    value: '0.0224145'
+    unit: MILLIMOLAR
+- preferred_term: Cupric chloride
+  concentration:
+    value: '0.000117316'
+    unit: MILLIMOLAR
+- preferred_term: Sodium selenite
+  concentration:
+    value: '0.000228102'
+    unit: MILLIMOLAR
+- preferred_term: Zinc Chloride
+  concentration:
+    value: '0.0146718'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous chloride
+  concentration:
+    value: '0.0502992'
+    unit: MILLIMOLAR
+- preferred_term: Sodium tungstate
+  concentration:
+    value: '0.000242527'
+    unit: MILLIMOLAR
+- preferred_term: Nickel Sulfate
+  concentration:
+    value: '0.0038044'
+    unit: MILLIMOLAR
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium L-lactate
+  term:
+    id: CHEBI:867561
+    label: Sodium L-lactate
+  concentration:
+    value: '30.0'
+    unit: MILLIMOLAR
+- preferred_term: Threonine
+  concentration:
+    value: '0.025'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:44.259619Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 185, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-01-28T19:48:08.382688Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+media_term:
+  preferred_term: MediaDB Medium 185
+  term:
+    id: MEDIADB:185
+    label: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+merge_fingerprint: 6a22fef5ec087bc8c690e0c7e67f64108f69ee5ab74327f5c3bf5c30bc5f8aa9
+merged_from:
+- MEDIADB_185_Minimal_Medium_w_amino_acids_and_salt_stress_Tang_

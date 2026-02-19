@@ -1,0 +1,55 @@
+name: ALKALINE MALT EXTRACT AGAR
+original_name: ALKALINE MALT EXTRACT AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 9.4
+media_term:
+  preferred_term: JCM Medium J147
+  term:
+    id: mediadive.medium:J147
+    label: ALKALINE MALT EXTRACT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=147'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '11.1111'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '2.77778'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '22.2222'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '60'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with 1 N NaOH.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 9.4 with 6% NaHCO3 solution.
+- step_number: 3
+  action: AUTOCLAVE
+  description: Autoclave Solutions A and B separately, and mix aseptically.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.818731Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J147'
+merge_fingerprint: 21f4f5899a21bd29a5aaa64bef1bd8fa890fde5596f741f54cf2947b494cbf6f
+merged_from:
+- JCM_J147_ALKALINE_MALT_EXTRACT_AGAR

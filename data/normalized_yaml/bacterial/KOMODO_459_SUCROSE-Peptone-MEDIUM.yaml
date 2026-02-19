@@ -10,7 +10,18 @@ media_term:
     label: SUCROSE-Peptone-MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 459 | DSMZ Medium: 459 (mediadive.medium:459)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Peptone
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +29,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 459'
+- timestamp: '2026-02-03T11:19:12.888584'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 459

@@ -79,9 +79,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -133,3 +130,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J239'
+- timestamp: '2026-02-06T05:10:29.394524Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data

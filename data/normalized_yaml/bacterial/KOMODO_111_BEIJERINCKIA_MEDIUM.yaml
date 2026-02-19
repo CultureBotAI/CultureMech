@@ -11,7 +11,77 @@ media_term:
     label: BEIJERINCKIA MEDIUM
 notes: 'Source: KOMODO ModelSEED | ID: 111 | DSMZ Medium: 111 (mediadive.medium:111)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10.5263'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.842105'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.210526'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.105263'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0210526'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 6 H2O
+  term:
+    id: CHEBI:131523
+    label: MnSO4 x 6 H2O
+  concentration:
+    value: '0.00210526'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 6 H2O
+  term:
+    id: CHEBI:132762
+    label: ZnSO4 x 6 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 6 H2O
+  term:
+    id: CHEBI:91246
+    label: CuSO4 x 6 H2O
+  concentration:
+    value: '0.00421053'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.00526316'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15.7895'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +89,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 111'
+- timestamp: '2026-02-03T11:19:04.736112'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 111

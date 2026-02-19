@@ -1,0 +1,46 @@
+name: YM BROTH
+original_name: YM BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 6.2
+media_term:
+  preferred_term: JCM Medium J666
+  term:
+    id: mediadive.medium:J666
+    label: YM BROTH
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=666'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:17.227772Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J666'
+merge_fingerprint: 43caca1a341ea0b2cf01317ca7b8eff88d8862b50a08eb034982d9bfb6acc891
+merged_from:
+- JCM_J666_YM_BROTH

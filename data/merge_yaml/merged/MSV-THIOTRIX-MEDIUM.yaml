@@ -1,0 +1,202 @@
+name: MSV-THIOTRIX-MEDIUM
+original_name: MSV-THIOTRIX-MEDIUM
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 841
+  term:
+    id: mediadive.medium:841
+    label: MSV-THIOTRIX-MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium841.pdf'
+ingredients:
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.504541'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.100908'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0504541'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.110999'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.0857719'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.00201816'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
+  concentration:
+    value: '0.00302725'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '0.550959'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '0.403633'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '52.5'
+    unit: G_PER_L
+- preferred_term: Inositol
+  term:
+    id: CHEBI:24848
+    label: Inositol
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Final pH of appr. 7.4 should be controlled sterile.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave for 20 min. at 121°C.
+- step_number: 3
+  action: MIX
+  description: NaHCO3 2.625 g per 50 ml distilled water
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II shortly,
+    before inoculation of bacterial culture.
+- step_number: 5
+  action: MIX
+  description: H3P-vitamine solution (see medium 428)
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: Filter sterilize vitamine solution and add 1 ml/l medium.
+- step_number: 7
+  action: MIX
+  description: 10% inositol (1g/10 ml distilled water)
+- step_number: 8
+  action: FILTER_STERILIZE
+  description: Filter sterilize solution IV and add 0.1 ml/l medium.
+- step_number: 9
+  action: MIX
+  description: Final pH of appr. 7.4 should be controlled sterile.
+- step_number: 10
+  action: FILTER_STERILIZE
+  description: Filter sterilize (0.2 µm pore-size) and store at 4°C.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.462806Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 841'
+- timestamp: '2026-02-03T22:25:50.060680+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_841_MSV-THIOTRIX-MEDIUM, KOMODO_841_MSV-THIOTRIX-MEDIUM'
+categories:
+- imported
+merged_from:
+- DSMZ_841_MSV-THIOTRIX-MEDIUM
+- KOMODO_841_MSV-THIOTRIX-MEDIUM
+merge_fingerprint: 8edbd15fd01c934bb3eace77750cad6078cd989a278164a2811bf0998e524978

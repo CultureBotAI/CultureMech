@@ -1,7 +1,7 @@
 name: MEDIUM 339 MODIFIED FOR DSM 22006
 original_name: MEDIUM 339 MODIFIED FOR DSM 22006
 category: imported
-medium_type: DEFINED
+medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 339_22006
@@ -10,7 +10,22 @@ media_term:
     label: MEDIUM 339 MODIFIED FOR DSM 22006
 notes: 'Source: KOMODO ModelSEED | ID: 339_22006 | DSMZ Medium: 339 (mediadive.medium:339)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
+  concentration:
+    value: '33'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl
+  term:
+    id: CHEBI:52891
+    label: L-Cysteine HCl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +33,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 339_22006'
+- timestamp: '2026-02-03T11:18:55.867623'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 339

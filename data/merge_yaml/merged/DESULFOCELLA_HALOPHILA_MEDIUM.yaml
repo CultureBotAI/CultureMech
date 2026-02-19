@@ -1,0 +1,216 @@
+name: DESULFOCELLA HALOPHILA MEDIUM
+original_name: DESULFOCELLA HALOPHILA MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 815a
+  term:
+    id: mediadive.medium:815a
+    label: DESULFOCELLA HALOPHILA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium815a.pdf'
+ingredients:
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: SrCl2 x 6 H2O
+  term:
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MOPS
+  term:
+    id: CHEBI:39074
+    label: MOPS
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Na-pyruvate
+  term:
+    id: CHEBI:50144
+    label: Na-pyruvate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA x 2 H2O
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA x 2 H2O
+  concentration:
+    value: '5.2'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except pyruvate, bicarbonate and sulfide, adjust
+    pH to 6.0 with NaOH and sparge medium for 30 - 45 min with 100% N2 gas to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Before use add pyruvate (sterilized by filtration)
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas atmosphere. Final medium pH should be 7.2.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: Prior to inoculation 10-20 mg/l sodium dithionite (added from
+    a 5% w/v solution freshly prepared under N2 and filter-sterilized) can be added
+    to the medium to stimulate growth at the beginning.'
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
+    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.349702Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 815a'
+- timestamp: '2026-02-03T22:25:25.980165+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_815a_DESULFOCELLA_HALOPHILA_MEDIUM, KOMODO_815-1_For_DSM_11763,
+    KOMODO_815_DESULFOTOMACULUM_HALOPHILUM_medium'
+synonyms:
+- name: For DSM 11763
+  source: KOMODO
+  source_id: komodo.medium:815.1
+  original_category: imported
+- name: DESULFOTOMACULUM HALOPHILUM medium
+  source: KOMODO
+  source_id: komodo.medium:815
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_815a_DESULFOCELLA_HALOPHILA_MEDIUM
+- KOMODO_815-1_For_DSM_11763
+- KOMODO_815_DESULFOTOMACULUM_HALOPHILUM_medium
+merge_fingerprint: a604bca75c2b55fc7f4badafaf644a78d95a15330e10b221067bb0dae67b215a

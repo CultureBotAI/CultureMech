@@ -1,0 +1,67 @@
+name: NA + 0.5% Yeast Extract
+original_name: NA + 0.5% Yeast Extract
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Beef extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component'
+- preferred_term: Pepton
+  concentration:
+    value: '5'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M1575
+  term:
+    id: TOGO:M1575
+    label: NA + 0.5% Yeast Extract
+notes: 'Source: https://togomedium.org/medium/M1575
+
+  Original source: NBRC - NBRC_M380
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=380'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.867332Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M1575'
+- timestamp: '2026-01-28T19:48:26.884174Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+merge_fingerprint: 750059866f1b61f9ca5eb6ff2c039433395cf50653446df898d8d6cea73e8c0e
+merged_from:
+- TOGO_M1575_NA_0.5_Yeast_Extract

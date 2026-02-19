@@ -1,0 +1,93 @@
+name: MEDIUM FOR DSM 14457 AND 14458
+original_name: MEDIUM FOR DSM 14457 AND 14458
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 956
+  term:
+    id: mediadive.medium:956
+    label: MEDIUM FOR DSM 14457 AND 14458
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium956.pdf'
+ingredients:
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.125'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: Methanol
+  term:
+    id: CHEBI:17790
+    label: Methanol
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' (alternative)'
+- preferred_term: Methylamine
+  term:
+    id: CHEBI:16830
+    label: Methylamine
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: ' (alternative)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration
+    of 0.5%) or methylamine (to a final concentration of 0.3%).
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.889918Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 956'
+- timestamp: '2026-02-03T22:25:52.136193+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_956_MEDIUM_FOR_DSM_14457_AND_14458, KOMODO_956-replace-Methanol-with-Methylamine_MEDIUM_FOR_DSM_14457_AND_14458_replace_Methanol_with_Methylamine,
+    KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458'
+synonyms:
+- name: MEDIUM FOR DSM 14457 AND 14458_replace_Methanol_with_Methylamine
+  source: KOMODO
+  source_id: komodo.medium:956_replace_Methanol_with_Methylamine
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_956_MEDIUM_FOR_DSM_14457_AND_14458
+- KOMODO_956-replace-Methanol-with-Methylamine_MEDIUM_FOR_DSM_14457_AND_14458_replace_Methanol_with_Methylamine
+- KOMODO_956_MEDIUM_FOR_DSM_14457_AND_14458
+merge_fingerprint: ea4ec34b2f7f3a32bfbeb6efab62d9024b343ea27840b06118c95eb8574500c3

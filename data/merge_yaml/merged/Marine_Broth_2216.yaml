@@ -1,0 +1,35 @@
+name: Marine Broth 2216
+original_name: Marine Broth 2216
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: DI Water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+- preferred_term: Broth Medium Marine Broth 2216 (BD 279110)
+  concentration:
+    value: '37.4'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2481
+  term:
+    id: TOGO:M2481
+    label: Marine Broth 2216
+notes: 'Source: https://togomedium.org/medium/M2481
+
+  Original URL: https://www.atcc.org/~/media/B5025AB990724A91B4491C391E054448.ashx'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.573328Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2481'
+merge_fingerprint: 9722cf6c9201713315cdc938a18bc025cc7f7bc61688f6b51885d1529123ae28
+merged_from:
+- TOGO_M2481_Marine_Broth_2216

@@ -1,0 +1,39 @@
+name: NAM AGAR
+original_name: NAM AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: JCM Medium J278
+  term:
+    id: mediadive.medium:J278
+    label: NAM AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=278'
+ingredients:
+- preferred_term: Trypticase soy agar
+  concentration:
+    value: '38.0952'
+    unit: G_PER_L
+- preferred_term: Defibrinated sheep blood
+  concentration:
+    value: '50'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: FILTER_STERILIZE
+  description: After preparing the Trypticase soy agar plate with 5%sheep blood, spreading
+    the subculture on the agar surface and place one NAM disk aseptically. Incubate
+    the agar plate under a H2-CO2-N2 (1:1:8) gas mixture. To prepare the NAM disk,
+    impregnate with 20 ï¿½l filter-sterilized 1.5% NAM (<I>N</I>-acetylmuramic acid,
+    Sigma) aqueous solution to a sterile paper disk (0.64 cm in diameter). Stored
+    the air-dried disk at room temperature.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:16.160556Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J278'
+merge_fingerprint: 7facd0e5a4f5469dda437581b85ad43dab4f0e63ad9e1d830509c4b6621bc65a
+merged_from:
+- JCM_J278_NAM_AGAR

@@ -1,0 +1,35 @@
+name: VY MEDIUM
+original_name: VY MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 577
+  term:
+    id: mediadive.medium:577
+    label: VY MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium577.pdf'
+ingredients:
+- preferred_term: Veal infusion broth
+  concentration:
+    value: '25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.635722Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 577'
+merge_fingerprint: 9a8486e2440905fae2b4c2f0bc327770d838ef806df2101a06de55b43add60e2
+merged_from:
+- DSMZ_577_VY_MEDIUM

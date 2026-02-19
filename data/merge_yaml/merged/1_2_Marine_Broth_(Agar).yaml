@@ -1,0 +1,61 @@
+name: 1/2 Marine Broth (Agar)
+original_name: 1/2 Marine Broth (Agar)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar  (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Bacto Marine Broth 2216 (Difco)
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2164
+  term:
+    id: TOGO:M2164
+    label: 1/2 Marine Broth (Agar)
+notes: 'Source: https://togomedium.org/medium/M2164
+
+  Original source: NBRC - NBRC_M1542
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1542'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:59.190863Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: NBRC, ID: M2164'
+- timestamp: '2026-01-28T19:48:34.904672Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:09.937786+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1774_1_10_Marine_Broth_Agar, TOGO_M2164_1_2_Marine_Broth_Agar'
+synonyms:
+- name: 1/10 Marine Broth (Agar)
+  source: TOGO
+  source_id: TOGO:M1774
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M1774_1_10_Marine_Broth_Agar
+- TOGO_M2164_1_2_Marine_Broth_Agar
+merge_fingerprint: d5e67ebc3e43b20a2b5e584dc015360bd917a820d54848056a706b25e97739dd

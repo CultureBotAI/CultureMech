@@ -138,6 +138,9 @@ ingredients:
     unit: G_PER_L
 - preferred_term: Rice Extract
   notes: 'Properties: Undefined component, Simple component'
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Distilled water
   concentration:
     value: '100'
@@ -215,3 +218,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:51.857114'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: Rice Extract'

@@ -11,7 +11,32 @@ media_term:
     label: HELIOBACTERIUM CHLORUM medium
 notes: 'Source: KOMODO ModelSEED | ID: 370 | DSMZ Medium: 370 (mediadive.medium:370)
   | Aerobic: Yes'
-ingredients: []
+ingredients:
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sodium ascorbate
+  term:
+    id: CHEBI:113451
+    label: Sodium ascorbate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +44,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 370'
+- timestamp: '2026-02-03T11:19:10.576470'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 370

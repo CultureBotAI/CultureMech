@@ -1,0 +1,193 @@
+name: MINERAL MEDIUM WITH PYRROLIC ACID
+original_name: MINERAL MEDIUM WITH PYRROLIC ACID
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 461b
+  term:
+    id: mediadive.medium:461b
+    label: MINERAL MEDIUM WITH PYRROLIC ACID
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium461b.pdf'
+ingredients:
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '1.44135'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.248509'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.497018'
+    unit: G_PER_L
+- preferred_term: MnSO4
+  term:
+    id: CHEBI:86360
+    label: MnSO4
+  concentration:
+    value: '0.00994036'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.298211'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0497018'
+    unit: G_PER_L
+- preferred_term: Pyrrole-2-carboxylic acid
+  concentration:
+    value: '1111'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Prepare and autoclave medium 461 (vitamins not necessary). Add 10 ml
+    of pyrrolic acid solution per liter mineral medium.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Dissolve and autoclave the phosphates separately. Add the vitamin solution
+    and trace element solution after autoclaving. After mixing, pH should be 7.5.
+- step_number: 3
+  action: MIX
+  description: Rehydrate and cultivate the lyophilized cells in complex medium recommended
+    for the specific strain (e.g. medium 1, 220 or 535) first. After this reactivation,
+    cultivate on mineral medium 461 with the appropriate carbon source.
+- step_number: 4
+  action: FILTER_STERILIZE
+  description: Dissolve 10 mol pyrrole-2-carboxylic acid per liter potassium phosphate
+    buffer (50 mM; pH 7.2) and sterilize the solution by membrane filtration.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.205669Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 461b'
+- timestamp: '2026-02-03T22:25:42.730373+00:00'
+  curator: recipe-merger
+  action: Merged 18 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID, KOMODO_461-11853-replace-2,4-dichlorophenol-with-2,6-dichlorophenol_MEDIUM_461_MODIFIED_FOR_DSM_11853_replace_2_4-dichlorophenol_with_2_6-dichloroph,
+    KOMODO_461-11853_MEDIUM_461_MODIFIED_FOR_DSM_11853, KOMODO_461-13477_MEDIUM_461_MODIFIED_FOR_DSM_13477,
+    KOMODO_461-14262_MEDIUM_461_MODIFIED_FOR_DSM_14262, KOMODO_461-16637_MEDIUM_461_MODIFIED_FOR_DSM_16637,
+    KOMODO_461-6284_MEDIUM_461_MODIFIED_FOR_DSM_6284, KOMODO_461-6384_MEDIUM_461_MODIFIED_FOR_DSM_6384,
+    KOMODO_461-6387_MEDIUM_461_MODIFIED_FOR_DSM_6387, KOMODO_461-6388_MEDIUM_461_MODIFIED_FOR_DSM_6388,
+    KOMODO_461-6392_MEDIUM_461_MODIFIED_FOR_DSM_6392, KOMODO_461-7215_MEDIUM_461_MODIFIED_FOR_DSM_7215,
+    KOMODO_461-7216_MEDIUM_461_MODIFIED_FOR_DSM_7216, KOMODO_461-9506_MEDIUM_461_MODIFIED_FOR_DSM_9506,
+    KOMODO_461_MINERAL_MEDIUM_NAGEL_AND_ANDREESEN, KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE,
+    KOMODO_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID, KOMODO_461c_MINERAL_MEDIUM_WITH_O-NITROPHENOL'
+synonyms:
+- name: MEDIUM 461 MODIFIED FOR DSM 11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
+  source: KOMODO
+  source_id: komodo.medium:461_11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 11853
+  source: KOMODO
+  source_id: komodo.medium:461_11853
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 13477
+  source: KOMODO
+  source_id: komodo.medium:461_13477
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 14262
+  source: KOMODO
+  source_id: komodo.medium:461_14262
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 16637
+  source: KOMODO
+  source_id: komodo.medium:461_16637
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 6284
+  source: KOMODO
+  source_id: komodo.medium:461_6284
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 6384
+  source: KOMODO
+  source_id: komodo.medium:461_6384
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 6387
+  source: KOMODO
+  source_id: komodo.medium:461_6387
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 6388
+  source: KOMODO
+  source_id: komodo.medium:461_6388
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 6392
+  source: KOMODO
+  source_id: komodo.medium:461_6392
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 7215
+  source: KOMODO
+  source_id: komodo.medium:461_7215
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 7216
+  source: KOMODO
+  source_id: komodo.medium:461_7216
+  original_category: imported
+- name: MEDIUM 461 MODIFIED FOR DSM 9506
+  source: KOMODO
+  source_id: komodo.medium:461_9506
+  original_category: imported
+- name: MINERAL MEDIUM (NAGEL AND ANDREESEN)
+  source: KOMODO
+  source_id: komodo.medium:461
+  original_category: imported
+- name: MINERAL MEDIUM WITH QUINOLINE
+  source: KOMODO
+  source_id: komodo.medium:461a
+  original_category: imported
+- name: MINERAL MEDIUM WITH O-NITROPHENOL
+  source: KOMODO
+  source_id: komodo.medium:461c
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID
+- KOMODO_461-11853-replace-2,4-dichlorophenol-with-2,6-dichlorophenol_MEDIUM_461_MODIFIED_FOR_DSM_11853_replace_2_4-dichlorophenol_with_2_6-dichloroph
+- KOMODO_461-11853_MEDIUM_461_MODIFIED_FOR_DSM_11853
+- KOMODO_461-13477_MEDIUM_461_MODIFIED_FOR_DSM_13477
+- KOMODO_461-14262_MEDIUM_461_MODIFIED_FOR_DSM_14262
+- KOMODO_461-16637_MEDIUM_461_MODIFIED_FOR_DSM_16637
+- KOMODO_461-6284_MEDIUM_461_MODIFIED_FOR_DSM_6284
+- KOMODO_461-6384_MEDIUM_461_MODIFIED_FOR_DSM_6384
+- KOMODO_461-6387_MEDIUM_461_MODIFIED_FOR_DSM_6387
+- KOMODO_461-6388_MEDIUM_461_MODIFIED_FOR_DSM_6388
+- KOMODO_461-6392_MEDIUM_461_MODIFIED_FOR_DSM_6392
+- KOMODO_461-7215_MEDIUM_461_MODIFIED_FOR_DSM_7215
+- KOMODO_461-7216_MEDIUM_461_MODIFIED_FOR_DSM_7216
+- KOMODO_461-9506_MEDIUM_461_MODIFIED_FOR_DSM_9506
+- KOMODO_461_MINERAL_MEDIUM_NAGEL_AND_ANDREESEN
+- KOMODO_461a_MINERAL_MEDIUM_WITH_QUINOLINE
+- KOMODO_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID
+- KOMODO_461c_MINERAL_MEDIUM_WITH_O-NITROPHENOL
+merge_fingerprint: 2ae864d108735fda46267d172cc8ed3d4f16e3ff151352c8d647148a8a7c5967

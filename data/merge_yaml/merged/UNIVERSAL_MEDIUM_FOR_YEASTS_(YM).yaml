@@ -1,0 +1,60 @@
+name: UNIVERSAL MEDIUM FOR YEASTS (YM)
+original_name: UNIVERSAL MEDIUM FOR YEASTS (YM)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 186
+  term:
+    id: mediadive.medium:186
+    label: UNIVERSAL MEDIUM FOR YEASTS (YM)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium186.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Malt extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.417673Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 186'
+- timestamp: '2026-02-03T22:26:00.076647+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_186_UNIVERSAL_medium_FOR_YEASTS_YM, DSMZ_186_UNIVERSAL_MEDIUM_FOR_YEASTS_YM'
+synonyms:
+- name: UNIVERSAL medium FOR YEASTS (YM)
+  source: KOMODO
+  source_id: komodo.medium:186
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_186_UNIVERSAL_medium_FOR_YEASTS_YM
+- DSMZ_186_UNIVERSAL_MEDIUM_FOR_YEASTS_YM
+merge_fingerprint: 549977e627a625778d186c0b1a1783ad1c0fc9fd426735162d181b74b31d1f00

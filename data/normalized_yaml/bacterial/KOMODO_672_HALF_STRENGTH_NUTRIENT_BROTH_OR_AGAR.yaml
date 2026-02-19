@@ -10,7 +10,11 @@ media_term:
     label: HALF STRENGTH NUTRIENT BROTH OR AGAR
 notes: 'Source: KOMODO ModelSEED | ID: 672 | DSMZ Medium: 672 (mediadive.medium:672)
   | Aerobic: No'
-ingredients: []
+ingredients:
+- preferred_term: Difco 0001
+  concentration:
+    value: '1000'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -18,3 +22,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 672'
+- timestamp: '2026-02-03T11:18:58.643227'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 672

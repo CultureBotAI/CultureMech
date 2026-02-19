@@ -1,0 +1,54 @@
+name: MALT EXTRACT PEPTONE AGAR
+original_name: MALT EXTRACT PEPTONE AGAR
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 5.6
+media_term:
+  preferred_term: DSMZ Medium 90
+  term:
+    id: mediadive.medium:90
+    label: MALT EXTRACT PEPTONE AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium90.pdf'
+ingredients:
+- preferred_term: Malt extract
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:10.154387Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 90'
+- timestamp: '2026-02-03T22:26:01.266467+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_90_MALT_EXTRACT_Peptone_AGAR, DSMZ_90_MALT_EXTRACT_PEPTONE_AGAR'
+synonyms:
+- name: MALT EXTRACT Peptone AGAR
+  source: KOMODO
+  source_id: komodo.medium:90
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_90_MALT_EXTRACT_Peptone_AGAR
+- DSMZ_90_MALT_EXTRACT_PEPTONE_AGAR
+merge_fingerprint: 58c12c2e275e6fff20a5c2bdb53852b78f60308d340571f5bc4ded0a8692c0f8

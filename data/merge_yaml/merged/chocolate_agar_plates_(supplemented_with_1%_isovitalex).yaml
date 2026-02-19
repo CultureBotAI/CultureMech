@@ -1,0 +1,40 @@
+name: chocolate agar plates (supplemented with 1% isovitalex)
+original_name: chocolate agar plates (supplemented with 1% isovitalex)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: isovitalex (BD Biosciences)
+  concentration:
+    value: '1'
+    unit: PERCENT_W_V
+- preferred_term: CO2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+- preferred_term: chocolate agar plates
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2975
+  term:
+    id: TOGO:M2975
+    label: chocolate agar plates (supplemented with 1% isovitalex)
+notes: 'Source: https://togomedium.org/medium/M2975'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.436287Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2975'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:56.930359'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: chocolate agar plates'
+merge_fingerprint: ed8f80e0b020f085d86f75d2fe4faaacf642b94169c741cbb68b44d6590c4fc4
+merged_from:
+- TOGO_M2975_chocolate_agar_plates_supplemented_with_1_isovitalex

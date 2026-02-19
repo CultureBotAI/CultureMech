@@ -1,0 +1,125 @@
+name: Wolinella Medium
+original_name: Wolinella Medium
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Sodium resazurin (0.1% w/v)
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
+- preferred_term: Distilled water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: K2HPO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
+  term:
+    id: CHEBI:131527
+    label: dipotassium hydrogen phosphate
+- preferred_term: MgCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:6636
+    label: magnesium dichloride
+- preferred_term: Na2S x 9 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:76209
+    label: sodium sulfide nonahydrate
+- preferred_term: FeSO4 x 7 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+- preferred_term: (NH4)2SO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
+  term:
+    id: CHEBI:62946
+    label: ammonium sulfate
+- preferred_term: Na-formate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Inorganic compound, Simple component'
+  term:
+    id: CHEBI:62965
+    label: Na-formate
+- preferred_term: L-Cysteine-HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+  notes: 'Properties: Defined component, Organic compound, Simple component'
+  term:
+    id: CHEBI:17561
+    label: L-cysteine
+- preferred_term: Na2-fumarate
+  concentration:
+    value: '4'
+    unit: G_PER_L
+  notes: 'Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:115156
+    label: Na2-fumarate
+- preferred_term: N2
+  notes: 'Properties: Gas'
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M2617
+  term:
+    id: TOGO:M2617
+    label: Wolinella Medium
+notes: 'Source: https://togomedium.org/medium/M2617
+
+  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium157.pdf'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:56.877307Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2617'
+- timestamp: '2026-01-28T19:48:18.257680Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:54.974463'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: N2'
+merge_fingerprint: c8b43681155ff0fca7bda6b914e3d36ea44ccea85ebf5c41a6fe8cc2fa9d8153
+merged_from:
+- TOGO_M2617_Wolinella_Medium

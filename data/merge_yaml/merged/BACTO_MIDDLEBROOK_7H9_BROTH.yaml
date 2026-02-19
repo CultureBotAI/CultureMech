@@ -1,0 +1,139 @@
+name: BACTO MIDDLEBROOK 7H9 BROTH
+original_name: BACTO MIDDLEBROOK 7H9 BROTH
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_range: 6.4-6.8
+media_term:
+  preferred_term: DSMZ Medium 857
+  term:
+    id: mediadive.medium:857
+    label: BACTO MIDDLEBROOK 7H9 BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium857.pdf'
+ingredients:
+- preferred_term: Ammonium Sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Monopotassium Phosphate
+  term:
+    id: CHEBI:63036
+    label: Monopotassium Phosphate
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Disodium Phosphate
+  term:
+    id: CHEBI:34683
+    label: Disodium Phosphate
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium Chloride
+  term:
+    id: CHEBI:3312
+    label: Calcium Chloride
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Zinc Sulfate
+  term:
+    id: CHEBI:35176
+    label: Zinc Sulfate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Copper Sulfate
+  term:
+    id: CHEBI:23414
+    label: Copper Sulfate
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: L-Glutamic acid
+  term:
+    id: CHEBI:16015
+    label: L-Glutamic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: Pyridoxine
+  term:
+    id: CHEBI:16709
+    label: Pyridoxine
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Bovine albumin
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Catalase
+  term:
+    id: CHEBI:3463
+    label: Catalase
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C 6.6 ± 0.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: To prepare one liter of final medium, suspend the amount of dehydrated
+    powder indicated under FORMULAE-Solution (and on the package label) in 900 ml
+    distilled and deionized water containing 2 ml glycerol and heat to boiling to
+    dissolve completely. Sterilize in the autoclave for 10 or 15 min at 15 Ibs pressure
+    (121°C), per label copy. Cool to 50-55°C.
+- step_number: 3
+  action: MIX
+  description: Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.528434Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 857'
+merge_fingerprint: a27973eb6ca888512529bcfb0f606626f4d4d004f559c68f7bfa0913b2cd1199
+merged_from:
+- DSMZ_857_BACTO_MIDDLEBROOK_7H9_BROTH

@@ -1,0 +1,56 @@
+name: Ravot Modified Medium For Thermosipho SP. G60
+original_name: Ravot Modified Medium For Thermosipho SP. G60
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium
+    [M748])
+  concentration:
+    value: '1'
+    unit: G_PER_L
+media_term:
+  preferred_term: TOGO Medium M750
+  term:
+    id: TOGO:M750
+    label: Ravot Modified Medium For Thermosipho SP. G60
+notes: 'Source: https://togomedium.org/medium/M750
+
+  Original source: JCM - JCM_M727
+
+  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=727'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:55.645166Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: JCM, ID: M750'
+- timestamp: '2026-01-28T19:48:38.573251Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:26:22.778263+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M749_Ravot_Modified_Medium_For_Fervidobacterium_SP._R8, TOGO_M750_Ravot_Modified_Medium_For_Thermosipho_SP._G60'
+synonyms:
+- name: Ravot Modified Medium For Fervidobacterium SP. R8
+  source: TOGO
+  source_id: TOGO:M749
+  original_category: imported
+categories:
+- imported
+merged_from:
+- TOGO_M749_Ravot_Modified_Medium_For_Fervidobacterium_SP._R8
+- TOGO_M750_Ravot_Modified_Medium_For_Thermosipho_SP._G60
+merge_fingerprint: be319a62701ef78f25d1acdd87b9bf69332474631a3c994bb718f884e8d65ce1

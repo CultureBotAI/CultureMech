@@ -1,0 +1,100 @@
+name: M9zb with glycerol
+original_name: M9zb with glycerol
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '43.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glyc'
+- preferred_term: Calcium chloride anhydrous
+  concentration:
+    value: '0.1'
+    unit: MILLIMOLAR
+- preferred_term: Dibasic sodium phosphate
+  concentration:
+    value: '43.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '8.6'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dihydrogen phosphate
+  concentration:
+    value: '22.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '2.0'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '19.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:43.587128Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 110, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-03T22:26:01.418242+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_110_M9zb_with_glycerol, MEDIADB_190_M9_0.2_glycerol, MEDIADB_194_M9_0.4_glycerol,
+    MEDIADB_77_M9_minimal_medium_with_glycerol'
+media_term:
+  preferred_term: MediaDB Medium 110
+  term:
+    id: MEDIADB:110
+    label: M9zb with glycerol
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: M9 0.2% glycerol
+  source: unknown
+  source_id: MEDIADB:190
+  original_category: imported
+- name: M9 0.4% glycerol
+  source: unknown
+  source_id: MEDIADB:194
+  original_category: imported
+- name: M9 minimal medium with glycerol
+  source: unknown
+  source_id: MEDIADB:77
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_110_M9zb_with_glycerol
+- MEDIADB_190_M9_0.2_glycerol
+- MEDIADB_194_M9_0.4_glycerol
+- MEDIADB_77_M9_minimal_medium_with_glycerol
+merge_fingerprint: 5f69c0f0b616681b3ff640932a1c8b051b90f0f8c0ffd9aa61fae7883a7a6d44

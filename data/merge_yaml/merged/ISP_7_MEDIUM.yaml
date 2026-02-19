@@ -1,0 +1,33 @@
+name: ISP 7 MEDIUM
+original_name: ISP 7 MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1619
+  term:
+    id: mediadive.medium:1619
+    label: ISP 7 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1619.pdf'
+ingredients:
+- preferred_term: ISP 7 Medium
+  concentration:
+    value: '23.74'
+    unit: G_PER_L
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '15'
+    unit: G_PER_L
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:15.025329Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1619'
+merge_fingerprint: 974f50ba0c8747fe95fafcb0971472d5b3a63566d0ff13d4656ed8f2e98ca587
+merged_from:
+- DSMZ_1619_ISP_7_MEDIUM

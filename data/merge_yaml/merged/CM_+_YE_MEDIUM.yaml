@@ -1,0 +1,116 @@
+name: CM + YE MEDIUM
+original_name: CM + YE MEDIUM
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 549
+  term:
+    id: mediadive.medium:549
+    label: CM + YE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium549.pdf'
+ingredients:
+- preferred_term: Casamino acids
+  concentration:
+    value: '7.5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Na3-citrate
+  term:
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '200'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.03646'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.4 (NaOH)
+- step_number: 2
+  action: MIX
+  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl)
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.589060Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 549'
+- timestamp: '2026-01-28T19:48:28.711109Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-03T22:25:44.968782+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_549_CM_YE_MEDIUM, KOMODO_549-25790_MEDIUM_549_MODIFIED_FOR_DSM_25790,
+    KOMODO_549-44640_MEDIUM_549_MODIFIED_FOR_DSM_44640, KOMODO_549_CM_YE_medium'
+synonyms:
+- name: MEDIUM 549 MODIFIED FOR DSM 25790
+  source: KOMODO
+  source_id: komodo.medium:549_25790
+  original_category: imported
+- name: MEDIUM 549 MODIFIED FOR DSM 44640
+  source: KOMODO
+  source_id: komodo.medium:549_44640
+  original_category: imported
+- name: CM + YE medium
+  source: KOMODO
+  source_id: komodo.medium:549
+  original_category: imported
+categories:
+- imported
+merged_from:
+- DSMZ_549_CM_YE_MEDIUM
+- KOMODO_549-25790_MEDIUM_549_MODIFIED_FOR_DSM_25790
+- KOMODO_549-44640_MEDIUM_549_MODIFIED_FOR_DSM_44640
+- KOMODO_549_CM_YE_medium
+merge_fingerprint: 44bb6e605fb69f2de1b8aefe0e9e5807e6e227d29b526a1bc7257a5502ac34ae

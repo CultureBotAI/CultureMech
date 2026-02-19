@@ -1,0 +1,32 @@
+name: Todd-Hewitt broth containing 0.2% yeast extract (THBY)
+original_name: Todd-Hewitt broth containing 0.2% yeast extract (THBY)
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.2'
+    unit: PERCENT_W_V
+  notes: 'Role: Nutrient source; Properties: Undefined component'
+- preferred_term: Todd Hewitt Broth
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M2792
+  term:
+    id: TOGO:M2792
+    label: Todd-Hewitt broth containing 0.2% yeast extract (THBY)
+notes: 'Source: https://togomedium.org/medium/M2792'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-27T06:35:57.307604Z'
+  curator: togo-import
+  action: Imported from TOGO Medium
+  notes: 'Source: TOGO, ID: M2792'
+merge_fingerprint: 1f3b98f7b31cfe7d41dcc835a2198d45371ef4efb12b118dcf94854ddf4fead7
+merged_from:
+- TOGO_M2792_Todd-Hewitt_broth_containing_0.2_yeast_extract_THBY

@@ -1,0 +1,46 @@
+name: AGAR WITH E. COLI AS FEED
+original_name: AGAR WITH E. COLI AS FEED
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 942
+  term:
+    id: mediadive.medium:942
+    label: AGAR WITH E. COLI AS FEED
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium942.pdf'
+ingredients:
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli
+    (e.g. DSM 498) in liquid culture, collect cells by centrifugation and resuspend
+    them in enough water to receive a thick but ready-to-pipet suspension. Autoclave.
+    Place three separate drops on one CaCl2-agar plate and streak every drop once
+    to receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate
+    E. coli lines/drops with myxobacteria.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:12.839313Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 942'
+merge_fingerprint: 00f65b019aa693dbea23c7b7fe2141f84b3518ea9d455e15aa62e89af3742e1d
+merged_from:
+- DSMZ_942_AGAR_WITH_E._COLI_AS_FEED

@@ -11,7 +11,47 @@ media_term:
   term:
     id: komodo.medium:585
     label: BCYE AGAR
-ingredients: []
+ingredients:
+- preferred_term: OXOID Legionella CYE-Agar base
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+- preferred_term: ACES
+  term:
+    id: CHEBI:65994
+    label: ACES
+  concentration:
+    value: '20.4082'
+    unit: G_PER_L
+- preferred_term: Activated charcoal
+  concentration:
+    value: '4.08163'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '30.6122'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Fe4(PO4)2
+  term:
+    id: CHEBI:132767
+    label: Fe4(PO4)2
+  concentration:
+    value: '25'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
@@ -19,3 +59,7 @@ curation_history:
   curator: komodo-web-import
   action: Imported from KOMODO web table
   notes: 'Source: KOMODO, ID: 585'
+- timestamp: '2026-02-03T11:19:04.741899'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 585

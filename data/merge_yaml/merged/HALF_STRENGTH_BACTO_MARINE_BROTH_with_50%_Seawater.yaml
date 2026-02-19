@@ -1,0 +1,1016 @@
+name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
+original_name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
+category: imported
+medium_type: COMPLEX
+physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 514g
+  term:
+    id: mediadive.medium:514g
+    label: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium514g.pdf'
+ingredients:
+- preferred_term: Bacto peptone
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '9.725'
+    unit: G_PER_L
+- preferred_term: MgCl2
+  term:
+    id: CHEBI:6636
+    label: MgCl2
+  concentration:
+    value: '2.95'
+    unit: G_PER_L
+- preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
+  concentration:
+    value: '1.62'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.9'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.275'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+- preferred_term: KBr
+  term:
+    id: CHEBI:32030
+    label: KBr
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+- preferred_term: SrCl2
+  term:
+    id: CHEBI:36383
+    label: SrCl2
+  concentration:
+    value: '0.017'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.011'
+    unit: G_PER_L
+- preferred_term: Na-silicate
+  term:
+    id: CHEBI:60720
+    label: Na-silicate
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NaF
+  term:
+    id: CHEBI:28741
+    label: NaF
+  concentration:
+    value: '0.0012'
+    unit: G_PER_L
+- preferred_term: (NH4)NO3
+  term:
+    id: CHEBI:63038
+    label: (NH4)NO3
+  concentration:
+    value: '0.0008'
+    unit: G_PER_L
+- preferred_term: Na2HPO4
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '500'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using Difco Bacto Marine Broth
+    use 18.7 g/l to 1 litre water.
+- step_number: 2
+  action: MIX
+  description: The medium may be solidified by adding 15 g/l agar.
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:11.493527Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 514g'
+- timestamp: '2026-02-03T22:26:01.093032+00:00'
+  curator: recipe-merger
+  action: Merged 157 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_514-11573_MEDIUM_514_MODIFIED_FOR_DSM_11573, KOMODO_514-11708_MEDIUM_514_MODIFIED_FOR_DSM_11708,
+    KOMODO_514-11709_MEDIUM_514_MODIFIED_FOR_DSM_11709, KOMODO_514-12178_MEDIUM_514_MODIFIED_FOR_DSM_12178,
+    KOMODO_514-13445_MEDIUM_514_MODIFIED_FOR_DSM_13445, KOMODO_514-13778_MEDIUM_514_MODIFIED_FOR_DSM_13778,
+    KOMODO_514-13965_MEDIUM_514_MODIFIED_FOR_DSM_13965, KOMODO_514-14014_MEDIUM_514_MODIFIED_FOR_DSM_14014,
+    KOMODO_514-14161_MEDIUM_514_MODIFIED_FOR_DSM_14161, KOMODO_514-14323_MEDIUM_514_MODIFIED_FOR_DSM_14323,
+    KOMODO_514-14512_MEDIUM_514_MODIFIED_FOR_DSM_14512, KOMODO_514-14852_MEDIUM_514_MODIFIED_FOR_DSM_14852,
+    KOMODO_514-14866_MEDIUM_514_MODIFIED_FOR_DSM_14866, KOMODO_514-14867_MEDIUM_514_MODIFIED_FOR_DSM_14867,
+    KOMODO_514-14868_MEDIUM_514_MODIFIED_FOR_DSM_14868, KOMODO_514-14913_MEDIUM_514_MODIFIED_FOR_DSM_14913,
+    KOMODO_514-15140_MEDIUM_514_MODIFIED_FOR_DSM_15140, KOMODO_514-15367_MEDIUM_514_MODIFIED_FOR_DSM_15367,
+    KOMODO_514-15516_MEDIUM_514_MODIFIED_FOR_DSM_15516, KOMODO_514-15517_MEDIUM_514_MODIFIED_FOR_DSM_15517,
+    KOMODO_514-15547_MEDIUM_514_MODIFIED_FOR_DSM_15547, KOMODO_514-15686_MEDIUM_514_MODIFIED_FOR_DSM_15686,
+    KOMODO_514-15720_MEDIUM_514_MODIFIED_FOR_DSM_15720, KOMODO_514-15721_MEDIUM_514_MODIFIED_FOR_DSM_15721,
+    KOMODO_514-15722_MEDIUM_514_MODIFIED_FOR_DSM_15722, KOMODO_514-15723_MEDIUM_514_MODIFIED_FOR_DSM_15723,
+    KOMODO_514-15724_MEDIUM_514_MODIFIED_FOR_DSM_15724, KOMODO_514-15725_MEDIUM_514_MODIFIED_FOR_DSM_15725,
+    KOMODO_514-15911_MEDIUM_514_MODIFIED_FOR_DSM_15911, KOMODO_514-16094_MEDIUM_514_MODIFIED_FOR_DSM_16094,
+    KOMODO_514-16096_MEDIUM_514_MODIFIED_FOR_DSM_16096, KOMODO_514-16098_MEDIUM_514_MODIFIED_FOR_DSM_16098,
+    KOMODO_514-16108_MEDIUM_514_MODIFIED_FOR_DSM_16108, KOMODO_514-16189_MEDIUM_514_MODIFIED_FOR_DSM_16189,
+    KOMODO_514-16226_MEDIUM_514_MODIFIED_FOR_DSM_16226, KOMODO_514-16287_MEDIUM_514_MODIFIED_FOR_DSM_16287,
+    KOMODO_514-16303_MEDIUM_514_MODIFIED_FOR_DSM_16303, KOMODO_514-16354_MEDIUM_514_MODIFIED_FOR_DSM_16354,
+    KOMODO_514-16425_MEDIUM_514_MODIFIED_FOR_DSM_16425, KOMODO_514-16459_MEDIUM_514_MODIFIED_FOR_DSM_16459,
+    KOMODO_514-16460_MEDIUM_514_MODIFIED_FOR_DSM_16460, KOMODO_514-16461_MEDIUM_514_MODIFIED_FOR_DSM_16461,
+    KOMODO_514-16462_MEDIUM_514_MODIFIED_FOR_DSM_16462, KOMODO_514-16463_MEDIUM_514_MODIFIED_FOR_DSM_16463,
+    KOMODO_514-16464_MEDIUM_514_MODIFIED_FOR_DSM_16464, KOMODO_514-16465_MEDIUM_514_MODIFIED_FOR_DSM_16465,
+    KOMODO_514-16468_MEDIUM_514_MODIFIED_FOR_DSM_16468, KOMODO_514-16502_MEDIUM_514_MODIFIED_FOR_DSM_16502,
+    KOMODO_514-16628_MEDIUM_514_MODIFIED_FOR_DSM_16628, KOMODO_514-16817_MEDIUM_514_MODIFIED_FOR_DSM_16817,
+    KOMODO_514-16826_MEDIUM_514_MODIFIED_FOR_DSM_16826, KOMODO_514-16966_MEDIUM_514_MODIFIED_FOR_DSM_16966,
+    KOMODO_514-17056_MEDIUM_514_MODIFIED_FOR_DSM_17056, KOMODO_514-17110_MEDIUM_514_MODIFIED_FOR_DSM_17110,
+    KOMODO_514-17331_MEDIUM_514_MODIFIED_FOR_DSM_17331, KOMODO_514-17332_MEDIUM_514_MODIFIED_FOR_DSM_17332,
+    KOMODO_514-17333_MEDIUM_514_MODIFIED_FOR_DSM_17333, KOMODO_514-17334_MEDIUM_514_MODIFIED_FOR_DSM_17334,
+    KOMODO_514-17335_MEDIUM_514_MODIFIED_FOR_DSM_17335, KOMODO_514-17336_MEDIUM_514_MODIFIED_FOR_DSM_17336,
+    KOMODO_514-17337_MEDIUM_514_MODIFIED_FOR_DSM_17337, KOMODO_514-17346_MEDIUM_514_MODIFIED_FOR_DSM_17346,
+    KOMODO_514-17544_MEDIUM_514_MODIFIED_FOR_DSM_17544, KOMODO_514-17546_MEDIUM_514_MODIFIED_FOR_DSM_17546,
+    KOMODO_514-17547_MEDIUM_514_MODIFIED_FOR_DSM_17547, KOMODO_514-17548_MEDIUM_514_MODIFIED_FOR_DSM_17548,
+    KOMODO_514-17549_MEDIUM_514_MODIFIED_FOR_DSM_17549, KOMODO_514-17550_MEDIUM_514_MODIFIED_FOR_DSM_17550,
+    KOMODO_514-17551_MEDIUM_514_MODIFIED_FOR_DSM_17551, KOMODO_514-17586_MEDIUM_514_MODIFIED_FOR_DSM_17586,
+    KOMODO_514-17587_MEDIUM_514_MODIFIED_FOR_DSM_17587, KOMODO_514-17740_MEDIUM_514_MODIFIED_FOR_DSM_17740,
+    KOMODO_514-17747_MEDIUM_514_MODIFIED_FOR_DSM_17747, KOMODO_514-17846_MEDIUM_514_MODIFIED_FOR_DSM_17846,
+    KOMODO_514-17856_MEDIUM_514_MODIFIED_FOR_DSM_17856, KOMODO_514-17858_MEDIUM_514_MODIFIED_FOR_DSM_17858,
+    KOMODO_514-17892_MEDIUM_514_MODIFIED_FOR_DSM_17892, KOMODO_514-18005-replace-horse
+    blood-with-sheep blood_MEDIUM_514_MODIFIED_FOR_DSM_18005_replace_horse_blood_with_sheep_blood,
+    KOMODO_514-18005_MEDIUM_514_MODIFIED_FOR_DSM_18005, KOMODO_514-18045_MEDIUM_514_MODIFIED_FOR_DSM_18045,
+    KOMODO_514-18098_MEDIUM_514_MODIFIED_FOR_DSM_18098, KOMODO_514-18193_MEDIUM_514_MODIFIED_FOR_DSM_18193,
+    KOMODO_514-18252_MEDIUM_514_MODIFIED_FOR_DSM_18252, KOMODO_514-18393_MEDIUM_514_MODIFIED_FOR_DSM_18393,
+    KOMODO_514-18394_MEDIUM_514_MODIFIED_FOR_DSM_18394, KOMODO_514-18694_MEDIUM_514_MODIFIED_FOR_DSM_18694,
+    KOMODO_514-18936_MEDIUM_514_MODIFIED_FOR_DSM_18936, KOMODO_514-18961_MEDIUM_514_MODIFIED_FOR_DSM_18961,
+    KOMODO_514-19029_MEDIUM_514_MODIFIED_FOR_DSM_19029, KOMODO_514-19122_MEDIUM_514_MODIFIED_FOR_DSM_19122,
+    KOMODO_514-19219_MEDIUM_514_MODIFIED_FOR_DSM_19219, KOMODO_514-19340_MEDIUM_514_MODIFIED_FOR_DSM_19340,
+    KOMODO_514-19582_MEDIUM_514_MODIFIED_FOR_DSM_19582, KOMODO_514-19612_MEDIUM_514_MODIFIED_FOR_DSM_19612,
+    KOMODO_514-19633_MEDIUM_514_MODIFIED_FOR_DSM_19633, KOMODO_514-19751_MEDIUM_514_MODIFIED_FOR_DSM_19751,
+    KOMODO_514-19794_MEDIUM_514_MODIFIED_FOR_DSM_19794, KOMODO_514-19796_MEDIUM_514_MODIFIED_FOR_DSM_19796,
+    KOMODO_514-19797_MEDIUM_514_MODIFIED_FOR_DSM_19797, KOMODO_514-19802_MEDIUM_514_MODIFIED_FOR_DSM_19802,
+    KOMODO_514-19939_MEDIUM_514_MODIFIED_FOR_DSM_19939, KOMODO_514-19980_MEDIUM_514_MODIFIED_FOR_DSM_19980,
+    KOMODO_514-21077_MEDIUM_514_MODIFIED_FOR_DSM_21077, KOMODO_514-21189_MEDIUM_514_MODIFIED_FOR_DSM_21189,
+    KOMODO_514-21190_MEDIUM_514_MODIFIED_FOR_DSM_21190, KOMODO_514-21201_MEDIUM_514_MODIFIED_FOR_DSM_21201,
+    KOMODO_514-21365_MEDIUM_514_MODIFIED_FOR_DSM_21365, KOMODO_514-21475_MEDIUM_514_MODIFIED_FOR_DSM_21475,
+    KOMODO_514-21539_MEDIUM_514_MODIFIED_FOR_DSM_21539, KOMODO_514-21559_MEDIUM_514_MODIFIED_FOR_DSM_21559,
+    KOMODO_514-21619_MEDIUM_514_MODIFIED_FOR_DSM_21619, KOMODO_514-21620_MEDIUM_514_MODIFIED_FOR_DSM_21620,
+    KOMODO_514-21935_MEDIUM_514_MODIFIED_FOR_DSM_21935, KOMODO_514-22259_MEDIUM_514_MODIFIED_FOR_DSM_22259,
+    KOMODO_514-22302_MEDIUM_514_MODIFIED_FOR_DSM_22302, KOMODO_514-22388_MEDIUM_514_MODIFIED_FOR_DSM_22388,
+    KOMODO_514-22440_MEDIUM_514_MODIFIED_FOR_DSM_22440, KOMODO_514-22441_MEDIUM_514_MODIFIED_FOR_DSM_22441,
+    KOMODO_514-22530_MEDIUM_514_MODIFIED_FOR_DSM_22530, KOMODO_514-22782_MEDIUM_514_MODIFIED_FOR_DSM_22782,
+    KOMODO_514-22784_MEDIUM_514_MODIFIED_FOR_DSM_22784, KOMODO_514-22818_MEDIUM_514_MODIFIED_FOR_DSM_22818,
+    KOMODO_514-23007_MEDIUM_514_MODIFIED_FOR_DSM_23007, KOMODO_514-23008_MEDIUM_514_MODIFIED_FOR_DSM_23008,
+    KOMODO_514-23009_MEDIUM_514_MODIFIED_FOR_DSM_23009, KOMODO_514-23010_MEDIUM_514_MODIFIED_FOR_DSM_23010,
+    KOMODO_514-23111_MEDIUM_514_MODIFIED_FOR_DSM_23111, KOMODO_514-23127_MEDIUM_514_MODIFIED_FOR_DSM_23127,
+    KOMODO_514-23507_MEDIUM_514_MODIFIED_FOR_DSM_23507, KOMODO_514-23531_MEDIUM_514_MODIFIED_FOR_DSM_23531,
+    KOMODO_514-23775_MEDIUM_514_MODIFIED_FOR_DSM_23775, KOMODO_514-23924_MEDIUM_514_MODIFIED_FOR_DSM_23924,
+    KOMODO_514-23995_MEDIUM_514_MODIFIED_FOR_DSM_23995, KOMODO_514-44818_MEDIUM_514_MODIFIED_FOR_DSM_44818,
+    KOMODO_514-8798_MEDIUM_514_MODIFIED_FOR_DSM_8798, KOMODO_514_BACTO_MARINE_BROTH_DIFCO_2216,
+    KOMODO_514a-15882_MEDIUM_514a_MODIFIED_FOR_DSM_15882, KOMODO_514a-22212_MEDIUM_514a_MODIFIED_FOR_DSM_22212,
+    KOMODO_514a_HALF_STRENGTH_BACTO_MARINE_BROTH, KOMODO_514b-16010_MEDIUM_514b_MODIFIED_FOR_DSM_16010,
+    KOMODO_514b-1_For_strains_DSM_21167_DSM_21194, KOMODO_514b-21020_MEDIUM_514b_MODIFIED_FOR_DSM_21020,
+    KOMODO_514b-22359_MEDIUM_514b_MODIFIED_FOR_DSM_22359, KOMODO_514b-26530_MEDIUM_514b_MODIFIED_FOR_DSM_26530,
+    KOMODO_514b-2_For_strains_DSM_5349_DSM_24106_DSM_24107_DSM_24186_DSM_23100_DSM_21021_DSM_19800,
+    KOMODO_514b-3_For_strains_DSM_23438_DSM_21056_DSM_21166_DSM_21888_DSM_5160, KOMODO_514b-4_For_strains_DSM_5351_DSM_23229_DSM_22730_DSM_22404_DSM_22403_DSM_22402,
+    KOMODO_514b-5_For_strains_DSM_24014, KOMODO_514b-6_For_strains_DSM_23437_DSM_23508_DSM23509_DSM_21076_DSM_26132,
+    KOMODO_514b-735_MEDIUM_514b_MODIFIED_FOR_DSM_735, KOMODO_514b_medium_514_plus_additional_salt,
+    KOMODO_514c-23364_MEDIUM_514c_MODIFIED_FOR_DSM_23364, KOMODO_514d-1_For_strains_DSM_21373_DSM_21449_DSM_21450_DSM_21621_and_DSM_21632,
+    KOMODO_514d-21633_MEDIUM_514d_MODIFIED_FOR_DSM_21633, KOMODO_514d-21756_MEDIUM_514d_MODIFIED_FOR_DSM_21756,
+    KOMODO_514d_MODIFIED_BACTO_MARINE_BROTH, DSMZ_514g_HALF_STRENGTH_BACTO_MARINE_BROTH_with_50_Seawater'
+synonyms:
+- name: MEDIUM 514 MODIFIED FOR DSM 11573
+  source: KOMODO
+  source_id: komodo.medium:514_11573
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 11708
+  source: KOMODO
+  source_id: komodo.medium:514_11708
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 11709
+  source: KOMODO
+  source_id: komodo.medium:514_11709
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 12178
+  source: KOMODO
+  source_id: komodo.medium:514_12178
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 13445
+  source: KOMODO
+  source_id: komodo.medium:514_13445
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 13778
+  source: KOMODO
+  source_id: komodo.medium:514_13778
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 13965
+  source: KOMODO
+  source_id: komodo.medium:514_13965
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14014
+  source: KOMODO
+  source_id: komodo.medium:514_14014
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14161
+  source: KOMODO
+  source_id: komodo.medium:514_14161
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14323
+  source: KOMODO
+  source_id: komodo.medium:514_14323
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14512
+  source: KOMODO
+  source_id: komodo.medium:514_14512
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14852
+  source: KOMODO
+  source_id: komodo.medium:514_14852
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14866
+  source: KOMODO
+  source_id: komodo.medium:514_14866
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14867
+  source: KOMODO
+  source_id: komodo.medium:514_14867
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14868
+  source: KOMODO
+  source_id: komodo.medium:514_14868
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 14913
+  source: KOMODO
+  source_id: komodo.medium:514_14913
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15140
+  source: KOMODO
+  source_id: komodo.medium:514_15140
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15367
+  source: KOMODO
+  source_id: komodo.medium:514_15367
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15516
+  source: KOMODO
+  source_id: komodo.medium:514_15516
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15517
+  source: KOMODO
+  source_id: komodo.medium:514_15517
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15547
+  source: KOMODO
+  source_id: komodo.medium:514_15547
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15686
+  source: KOMODO
+  source_id: komodo.medium:514_15686
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15720
+  source: KOMODO
+  source_id: komodo.medium:514_15720
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15721
+  source: KOMODO
+  source_id: komodo.medium:514_15721
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15722
+  source: KOMODO
+  source_id: komodo.medium:514_15722
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15723
+  source: KOMODO
+  source_id: komodo.medium:514_15723
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15724
+  source: KOMODO
+  source_id: komodo.medium:514_15724
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15725
+  source: KOMODO
+  source_id: komodo.medium:514_15725
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 15911
+  source: KOMODO
+  source_id: komodo.medium:514_15911
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16094
+  source: KOMODO
+  source_id: komodo.medium:514_16094
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16096
+  source: KOMODO
+  source_id: komodo.medium:514_16096
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16098
+  source: KOMODO
+  source_id: komodo.medium:514_16098
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16108
+  source: KOMODO
+  source_id: komodo.medium:514_16108
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16189
+  source: KOMODO
+  source_id: komodo.medium:514_16189
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16226
+  source: KOMODO
+  source_id: komodo.medium:514_16226
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16287
+  source: KOMODO
+  source_id: komodo.medium:514_16287
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16303
+  source: KOMODO
+  source_id: komodo.medium:514_16303
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16354
+  source: KOMODO
+  source_id: komodo.medium:514_16354
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16425
+  source: KOMODO
+  source_id: komodo.medium:514_16425
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16459
+  source: KOMODO
+  source_id: komodo.medium:514_16459
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16460
+  source: KOMODO
+  source_id: komodo.medium:514_16460
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16461
+  source: KOMODO
+  source_id: komodo.medium:514_16461
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16462
+  source: KOMODO
+  source_id: komodo.medium:514_16462
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16463
+  source: KOMODO
+  source_id: komodo.medium:514_16463
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16464
+  source: KOMODO
+  source_id: komodo.medium:514_16464
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16465
+  source: KOMODO
+  source_id: komodo.medium:514_16465
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16468
+  source: KOMODO
+  source_id: komodo.medium:514_16468
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16502
+  source: KOMODO
+  source_id: komodo.medium:514_16502
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16628
+  source: KOMODO
+  source_id: komodo.medium:514_16628
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16817
+  source: KOMODO
+  source_id: komodo.medium:514_16817
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16826
+  source: KOMODO
+  source_id: komodo.medium:514_16826
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 16966
+  source: KOMODO
+  source_id: komodo.medium:514_16966
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17056
+  source: KOMODO
+  source_id: komodo.medium:514_17056
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17110
+  source: KOMODO
+  source_id: komodo.medium:514_17110
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17331
+  source: KOMODO
+  source_id: komodo.medium:514_17331
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17332
+  source: KOMODO
+  source_id: komodo.medium:514_17332
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17333
+  source: KOMODO
+  source_id: komodo.medium:514_17333
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17334
+  source: KOMODO
+  source_id: komodo.medium:514_17334
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17335
+  source: KOMODO
+  source_id: komodo.medium:514_17335
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17336
+  source: KOMODO
+  source_id: komodo.medium:514_17336
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17337
+  source: KOMODO
+  source_id: komodo.medium:514_17337
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17346
+  source: KOMODO
+  source_id: komodo.medium:514_17346
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17544
+  source: KOMODO
+  source_id: komodo.medium:514_17544
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17546
+  source: KOMODO
+  source_id: komodo.medium:514_17546
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17547
+  source: KOMODO
+  source_id: komodo.medium:514_17547
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17548
+  source: KOMODO
+  source_id: komodo.medium:514_17548
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17549
+  source: KOMODO
+  source_id: komodo.medium:514_17549
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17550
+  source: KOMODO
+  source_id: komodo.medium:514_17550
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17551
+  source: KOMODO
+  source_id: komodo.medium:514_17551
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17586
+  source: KOMODO
+  source_id: komodo.medium:514_17586
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17587
+  source: KOMODO
+  source_id: komodo.medium:514_17587
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17740
+  source: KOMODO
+  source_id: komodo.medium:514_17740
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17747
+  source: KOMODO
+  source_id: komodo.medium:514_17747
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17846
+  source: KOMODO
+  source_id: komodo.medium:514_17846
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17856
+  source: KOMODO
+  source_id: komodo.medium:514_17856
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17858
+  source: KOMODO
+  source_id: komodo.medium:514_17858
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 17892
+  source: KOMODO
+  source_id: komodo.medium:514_17892
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18005_replace_horse blood_with_sheep blood
+  source: KOMODO
+  source_id: komodo.medium:514_18005_replace_horse blood_with_sheep blood
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18005
+  source: KOMODO
+  source_id: komodo.medium:514_18005
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18045
+  source: KOMODO
+  source_id: komodo.medium:514_18045
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18098
+  source: KOMODO
+  source_id: komodo.medium:514_18098
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18193
+  source: KOMODO
+  source_id: komodo.medium:514_18193
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18252
+  source: KOMODO
+  source_id: komodo.medium:514_18252
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18393
+  source: KOMODO
+  source_id: komodo.medium:514_18393
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18394
+  source: KOMODO
+  source_id: komodo.medium:514_18394
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18694
+  source: KOMODO
+  source_id: komodo.medium:514_18694
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18936
+  source: KOMODO
+  source_id: komodo.medium:514_18936
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 18961
+  source: KOMODO
+  source_id: komodo.medium:514_18961
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19029
+  source: KOMODO
+  source_id: komodo.medium:514_19029
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19122
+  source: KOMODO
+  source_id: komodo.medium:514_19122
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19219
+  source: KOMODO
+  source_id: komodo.medium:514_19219
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19340
+  source: KOMODO
+  source_id: komodo.medium:514_19340
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19582
+  source: KOMODO
+  source_id: komodo.medium:514_19582
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19612
+  source: KOMODO
+  source_id: komodo.medium:514_19612
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19633
+  source: KOMODO
+  source_id: komodo.medium:514_19633
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19751
+  source: KOMODO
+  source_id: komodo.medium:514_19751
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19794
+  source: KOMODO
+  source_id: komodo.medium:514_19794
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19796
+  source: KOMODO
+  source_id: komodo.medium:514_19796
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19797
+  source: KOMODO
+  source_id: komodo.medium:514_19797
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19802
+  source: KOMODO
+  source_id: komodo.medium:514_19802
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19939
+  source: KOMODO
+  source_id: komodo.medium:514_19939
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 19980
+  source: KOMODO
+  source_id: komodo.medium:514_19980
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21077
+  source: KOMODO
+  source_id: komodo.medium:514_21077
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21189
+  source: KOMODO
+  source_id: komodo.medium:514_21189
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21190
+  source: KOMODO
+  source_id: komodo.medium:514_21190
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21201
+  source: KOMODO
+  source_id: komodo.medium:514_21201
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21365
+  source: KOMODO
+  source_id: komodo.medium:514_21365
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21475
+  source: KOMODO
+  source_id: komodo.medium:514_21475
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21539
+  source: KOMODO
+  source_id: komodo.medium:514_21539
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21559
+  source: KOMODO
+  source_id: komodo.medium:514_21559
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21619
+  source: KOMODO
+  source_id: komodo.medium:514_21619
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21620
+  source: KOMODO
+  source_id: komodo.medium:514_21620
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 21935
+  source: KOMODO
+  source_id: komodo.medium:514_21935
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22259
+  source: KOMODO
+  source_id: komodo.medium:514_22259
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22302
+  source: KOMODO
+  source_id: komodo.medium:514_22302
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22388
+  source: KOMODO
+  source_id: komodo.medium:514_22388
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22440
+  source: KOMODO
+  source_id: komodo.medium:514_22440
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22441
+  source: KOMODO
+  source_id: komodo.medium:514_22441
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22530
+  source: KOMODO
+  source_id: komodo.medium:514_22530
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22782
+  source: KOMODO
+  source_id: komodo.medium:514_22782
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22784
+  source: KOMODO
+  source_id: komodo.medium:514_22784
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 22818
+  source: KOMODO
+  source_id: komodo.medium:514_22818
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23007
+  source: KOMODO
+  source_id: komodo.medium:514_23007
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23008
+  source: KOMODO
+  source_id: komodo.medium:514_23008
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23009
+  source: KOMODO
+  source_id: komodo.medium:514_23009
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23010
+  source: KOMODO
+  source_id: komodo.medium:514_23010
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23111
+  source: KOMODO
+  source_id: komodo.medium:514_23111
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23127
+  source: KOMODO
+  source_id: komodo.medium:514_23127
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23507
+  source: KOMODO
+  source_id: komodo.medium:514_23507
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23531
+  source: KOMODO
+  source_id: komodo.medium:514_23531
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23775
+  source: KOMODO
+  source_id: komodo.medium:514_23775
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23924
+  source: KOMODO
+  source_id: komodo.medium:514_23924
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 23995
+  source: KOMODO
+  source_id: komodo.medium:514_23995
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 44818
+  source: KOMODO
+  source_id: komodo.medium:514_44818
+  original_category: imported
+- name: MEDIUM 514 MODIFIED FOR DSM 8798
+  source: KOMODO
+  source_id: komodo.medium:514_8798
+  original_category: imported
+- name: BACTO MARINE BROTH (DIFCO 2216)
+  source: KOMODO
+  source_id: komodo.medium:514
+  original_category: imported
+- name: MEDIUM 514a MODIFIED FOR DSM 15882
+  source: KOMODO
+  source_id: komodo.medium:514a_15882
+  original_category: imported
+- name: MEDIUM 514a MODIFIED FOR DSM 22212
+  source: KOMODO
+  source_id: komodo.medium:514a_22212
+  original_category: imported
+- name: HALF STRENGTH BACTO MARINE BROTH
+  source: KOMODO
+  source_id: komodo.medium:514a
+  original_category: imported
+- name: MEDIUM 514b MODIFIED FOR DSM 16010
+  source: KOMODO
+  source_id: komodo.medium:514b_16010
+  original_category: imported
+- name: For strains DSM 21167, DSM 21194
+  source: KOMODO
+  source_id: komodo.medium:514b.1
+  original_category: imported
+- name: MEDIUM 514b MODIFIED FOR DSM 21020
+  source: KOMODO
+  source_id: komodo.medium:514b_21020
+  original_category: imported
+- name: MEDIUM 514b MODIFIED FOR DSM 22359
+  source: KOMODO
+  source_id: komodo.medium:514b_22359
+  original_category: imported
+- name: MEDIUM 514b MODIFIED FOR DSM 26530
+  source: KOMODO
+  source_id: komodo.medium:514b_26530
+  original_category: imported
+- name: For strains DSM 5349, DSM 24106, DSM 24107, DSM 24186, DSM 23100, DSM 21021,
+    DSM 19800, DSM 19821
+  source: KOMODO
+  source_id: komodo.medium:514b.2
+  original_category: imported
+- name: For strains DSM 23438, DSM 21056, DSM 21166, DSM 21888, DSM 5160
+  source: KOMODO
+  source_id: komodo.medium:514b.3
+  original_category: imported
+- name: For strains DSM 5351, DSM 23229, DSM 22730, DSM 22404, DSM 22403, DSM 22402
+  source: KOMODO
+  source_id: komodo.medium:514b.4
+  original_category: imported
+- name: For strains DSM 24014
+  source: KOMODO
+  source_id: komodo.medium:514b.5
+  original_category: imported
+- name: For strains DSM 23437, DSM 23508, DSM23509, DSM 21076, DSM 26132
+  source: KOMODO
+  source_id: komodo.medium:514b.6
+  original_category: imported
+- name: MEDIUM 514b MODIFIED FOR DSM 735
+  source: KOMODO
+  source_id: komodo.medium:514b_735
+  original_category: imported
+- name: medium 514 plus additional salt
+  source: KOMODO
+  source_id: komodo.medium:514b
+  original_category: imported
+- name: MEDIUM 514c MODIFIED FOR DSM 23364
+  source: KOMODO
+  source_id: komodo.medium:514c_23364
+  original_category: imported
+- name: For strains DSM 21373, DSM 21449, DSM 21450, DSM 21621, and DSM 21632
+  source: KOMODO
+  source_id: komodo.medium:514d.1
+  original_category: imported
+- name: MEDIUM 514d MODIFIED FOR DSM 21633
+  source: KOMODO
+  source_id: komodo.medium:514d_21633
+  original_category: imported
+- name: MEDIUM 514d MODIFIED FOR DSM 21756
+  source: KOMODO
+  source_id: komodo.medium:514d_21756
+  original_category: imported
+- name: MODIFIED BACTO MARINE BROTH
+  source: KOMODO
+  source_id: komodo.medium:514d
+  original_category: imported
+categories:
+- imported
+merged_from:
+- KOMODO_514-11573_MEDIUM_514_MODIFIED_FOR_DSM_11573
+- KOMODO_514-11708_MEDIUM_514_MODIFIED_FOR_DSM_11708
+- KOMODO_514-11709_MEDIUM_514_MODIFIED_FOR_DSM_11709
+- KOMODO_514-12178_MEDIUM_514_MODIFIED_FOR_DSM_12178
+- KOMODO_514-13445_MEDIUM_514_MODIFIED_FOR_DSM_13445
+- KOMODO_514-13778_MEDIUM_514_MODIFIED_FOR_DSM_13778
+- KOMODO_514-13965_MEDIUM_514_MODIFIED_FOR_DSM_13965
+- KOMODO_514-14014_MEDIUM_514_MODIFIED_FOR_DSM_14014
+- KOMODO_514-14161_MEDIUM_514_MODIFIED_FOR_DSM_14161
+- KOMODO_514-14323_MEDIUM_514_MODIFIED_FOR_DSM_14323
+- KOMODO_514-14512_MEDIUM_514_MODIFIED_FOR_DSM_14512
+- KOMODO_514-14852_MEDIUM_514_MODIFIED_FOR_DSM_14852
+- KOMODO_514-14866_MEDIUM_514_MODIFIED_FOR_DSM_14866
+- KOMODO_514-14867_MEDIUM_514_MODIFIED_FOR_DSM_14867
+- KOMODO_514-14868_MEDIUM_514_MODIFIED_FOR_DSM_14868
+- KOMODO_514-14913_MEDIUM_514_MODIFIED_FOR_DSM_14913
+- KOMODO_514-15140_MEDIUM_514_MODIFIED_FOR_DSM_15140
+- KOMODO_514-15367_MEDIUM_514_MODIFIED_FOR_DSM_15367
+- KOMODO_514-15516_MEDIUM_514_MODIFIED_FOR_DSM_15516
+- KOMODO_514-15517_MEDIUM_514_MODIFIED_FOR_DSM_15517
+- KOMODO_514-15547_MEDIUM_514_MODIFIED_FOR_DSM_15547
+- KOMODO_514-15686_MEDIUM_514_MODIFIED_FOR_DSM_15686
+- KOMODO_514-15720_MEDIUM_514_MODIFIED_FOR_DSM_15720
+- KOMODO_514-15721_MEDIUM_514_MODIFIED_FOR_DSM_15721
+- KOMODO_514-15722_MEDIUM_514_MODIFIED_FOR_DSM_15722
+- KOMODO_514-15723_MEDIUM_514_MODIFIED_FOR_DSM_15723
+- KOMODO_514-15724_MEDIUM_514_MODIFIED_FOR_DSM_15724
+- KOMODO_514-15725_MEDIUM_514_MODIFIED_FOR_DSM_15725
+- KOMODO_514-15911_MEDIUM_514_MODIFIED_FOR_DSM_15911
+- KOMODO_514-16094_MEDIUM_514_MODIFIED_FOR_DSM_16094
+- KOMODO_514-16096_MEDIUM_514_MODIFIED_FOR_DSM_16096
+- KOMODO_514-16098_MEDIUM_514_MODIFIED_FOR_DSM_16098
+- KOMODO_514-16108_MEDIUM_514_MODIFIED_FOR_DSM_16108
+- KOMODO_514-16189_MEDIUM_514_MODIFIED_FOR_DSM_16189
+- KOMODO_514-16226_MEDIUM_514_MODIFIED_FOR_DSM_16226
+- KOMODO_514-16287_MEDIUM_514_MODIFIED_FOR_DSM_16287
+- KOMODO_514-16303_MEDIUM_514_MODIFIED_FOR_DSM_16303
+- KOMODO_514-16354_MEDIUM_514_MODIFIED_FOR_DSM_16354
+- KOMODO_514-16425_MEDIUM_514_MODIFIED_FOR_DSM_16425
+- KOMODO_514-16459_MEDIUM_514_MODIFIED_FOR_DSM_16459
+- KOMODO_514-16460_MEDIUM_514_MODIFIED_FOR_DSM_16460
+- KOMODO_514-16461_MEDIUM_514_MODIFIED_FOR_DSM_16461
+- KOMODO_514-16462_MEDIUM_514_MODIFIED_FOR_DSM_16462
+- KOMODO_514-16463_MEDIUM_514_MODIFIED_FOR_DSM_16463
+- KOMODO_514-16464_MEDIUM_514_MODIFIED_FOR_DSM_16464
+- KOMODO_514-16465_MEDIUM_514_MODIFIED_FOR_DSM_16465
+- KOMODO_514-16468_MEDIUM_514_MODIFIED_FOR_DSM_16468
+- KOMODO_514-16502_MEDIUM_514_MODIFIED_FOR_DSM_16502
+- KOMODO_514-16628_MEDIUM_514_MODIFIED_FOR_DSM_16628
+- KOMODO_514-16817_MEDIUM_514_MODIFIED_FOR_DSM_16817
+- KOMODO_514-16826_MEDIUM_514_MODIFIED_FOR_DSM_16826
+- KOMODO_514-16966_MEDIUM_514_MODIFIED_FOR_DSM_16966
+- KOMODO_514-17056_MEDIUM_514_MODIFIED_FOR_DSM_17056
+- KOMODO_514-17110_MEDIUM_514_MODIFIED_FOR_DSM_17110
+- KOMODO_514-17331_MEDIUM_514_MODIFIED_FOR_DSM_17331
+- KOMODO_514-17332_MEDIUM_514_MODIFIED_FOR_DSM_17332
+- KOMODO_514-17333_MEDIUM_514_MODIFIED_FOR_DSM_17333
+- KOMODO_514-17334_MEDIUM_514_MODIFIED_FOR_DSM_17334
+- KOMODO_514-17335_MEDIUM_514_MODIFIED_FOR_DSM_17335
+- KOMODO_514-17336_MEDIUM_514_MODIFIED_FOR_DSM_17336
+- KOMODO_514-17337_MEDIUM_514_MODIFIED_FOR_DSM_17337
+- KOMODO_514-17346_MEDIUM_514_MODIFIED_FOR_DSM_17346
+- KOMODO_514-17544_MEDIUM_514_MODIFIED_FOR_DSM_17544
+- KOMODO_514-17546_MEDIUM_514_MODIFIED_FOR_DSM_17546
+- KOMODO_514-17547_MEDIUM_514_MODIFIED_FOR_DSM_17547
+- KOMODO_514-17548_MEDIUM_514_MODIFIED_FOR_DSM_17548
+- KOMODO_514-17549_MEDIUM_514_MODIFIED_FOR_DSM_17549
+- KOMODO_514-17550_MEDIUM_514_MODIFIED_FOR_DSM_17550
+- KOMODO_514-17551_MEDIUM_514_MODIFIED_FOR_DSM_17551
+- KOMODO_514-17586_MEDIUM_514_MODIFIED_FOR_DSM_17586
+- KOMODO_514-17587_MEDIUM_514_MODIFIED_FOR_DSM_17587
+- KOMODO_514-17740_MEDIUM_514_MODIFIED_FOR_DSM_17740
+- KOMODO_514-17747_MEDIUM_514_MODIFIED_FOR_DSM_17747
+- KOMODO_514-17846_MEDIUM_514_MODIFIED_FOR_DSM_17846
+- KOMODO_514-17856_MEDIUM_514_MODIFIED_FOR_DSM_17856
+- KOMODO_514-17858_MEDIUM_514_MODIFIED_FOR_DSM_17858
+- KOMODO_514-17892_MEDIUM_514_MODIFIED_FOR_DSM_17892
+- KOMODO_514-18005-replace-horse blood-with-sheep blood_MEDIUM_514_MODIFIED_FOR_DSM_18005_replace_horse_blood_with_sheep_blood
+- KOMODO_514-18005_MEDIUM_514_MODIFIED_FOR_DSM_18005
+- KOMODO_514-18045_MEDIUM_514_MODIFIED_FOR_DSM_18045
+- KOMODO_514-18098_MEDIUM_514_MODIFIED_FOR_DSM_18098
+- KOMODO_514-18193_MEDIUM_514_MODIFIED_FOR_DSM_18193
+- KOMODO_514-18252_MEDIUM_514_MODIFIED_FOR_DSM_18252
+- KOMODO_514-18393_MEDIUM_514_MODIFIED_FOR_DSM_18393
+- KOMODO_514-18394_MEDIUM_514_MODIFIED_FOR_DSM_18394
+- KOMODO_514-18694_MEDIUM_514_MODIFIED_FOR_DSM_18694
+- KOMODO_514-18936_MEDIUM_514_MODIFIED_FOR_DSM_18936
+- KOMODO_514-18961_MEDIUM_514_MODIFIED_FOR_DSM_18961
+- KOMODO_514-19029_MEDIUM_514_MODIFIED_FOR_DSM_19029
+- KOMODO_514-19122_MEDIUM_514_MODIFIED_FOR_DSM_19122
+- KOMODO_514-19219_MEDIUM_514_MODIFIED_FOR_DSM_19219
+- KOMODO_514-19340_MEDIUM_514_MODIFIED_FOR_DSM_19340
+- KOMODO_514-19582_MEDIUM_514_MODIFIED_FOR_DSM_19582
+- KOMODO_514-19612_MEDIUM_514_MODIFIED_FOR_DSM_19612
+- KOMODO_514-19633_MEDIUM_514_MODIFIED_FOR_DSM_19633
+- KOMODO_514-19751_MEDIUM_514_MODIFIED_FOR_DSM_19751
+- KOMODO_514-19794_MEDIUM_514_MODIFIED_FOR_DSM_19794
+- KOMODO_514-19796_MEDIUM_514_MODIFIED_FOR_DSM_19796
+- KOMODO_514-19797_MEDIUM_514_MODIFIED_FOR_DSM_19797
+- KOMODO_514-19802_MEDIUM_514_MODIFIED_FOR_DSM_19802
+- KOMODO_514-19939_MEDIUM_514_MODIFIED_FOR_DSM_19939
+- KOMODO_514-19980_MEDIUM_514_MODIFIED_FOR_DSM_19980
+- KOMODO_514-21077_MEDIUM_514_MODIFIED_FOR_DSM_21077
+- KOMODO_514-21189_MEDIUM_514_MODIFIED_FOR_DSM_21189
+- KOMODO_514-21190_MEDIUM_514_MODIFIED_FOR_DSM_21190
+- KOMODO_514-21201_MEDIUM_514_MODIFIED_FOR_DSM_21201
+- KOMODO_514-21365_MEDIUM_514_MODIFIED_FOR_DSM_21365
+- KOMODO_514-21475_MEDIUM_514_MODIFIED_FOR_DSM_21475
+- KOMODO_514-21539_MEDIUM_514_MODIFIED_FOR_DSM_21539
+- KOMODO_514-21559_MEDIUM_514_MODIFIED_FOR_DSM_21559
+- KOMODO_514-21619_MEDIUM_514_MODIFIED_FOR_DSM_21619
+- KOMODO_514-21620_MEDIUM_514_MODIFIED_FOR_DSM_21620
+- KOMODO_514-21935_MEDIUM_514_MODIFIED_FOR_DSM_21935
+- KOMODO_514-22259_MEDIUM_514_MODIFIED_FOR_DSM_22259
+- KOMODO_514-22302_MEDIUM_514_MODIFIED_FOR_DSM_22302
+- KOMODO_514-22388_MEDIUM_514_MODIFIED_FOR_DSM_22388
+- KOMODO_514-22440_MEDIUM_514_MODIFIED_FOR_DSM_22440
+- KOMODO_514-22441_MEDIUM_514_MODIFIED_FOR_DSM_22441
+- KOMODO_514-22530_MEDIUM_514_MODIFIED_FOR_DSM_22530
+- KOMODO_514-22782_MEDIUM_514_MODIFIED_FOR_DSM_22782
+- KOMODO_514-22784_MEDIUM_514_MODIFIED_FOR_DSM_22784
+- KOMODO_514-22818_MEDIUM_514_MODIFIED_FOR_DSM_22818
+- KOMODO_514-23007_MEDIUM_514_MODIFIED_FOR_DSM_23007
+- KOMODO_514-23008_MEDIUM_514_MODIFIED_FOR_DSM_23008
+- KOMODO_514-23009_MEDIUM_514_MODIFIED_FOR_DSM_23009
+- KOMODO_514-23010_MEDIUM_514_MODIFIED_FOR_DSM_23010
+- KOMODO_514-23111_MEDIUM_514_MODIFIED_FOR_DSM_23111
+- KOMODO_514-23127_MEDIUM_514_MODIFIED_FOR_DSM_23127
+- KOMODO_514-23507_MEDIUM_514_MODIFIED_FOR_DSM_23507
+- KOMODO_514-23531_MEDIUM_514_MODIFIED_FOR_DSM_23531
+- KOMODO_514-23775_MEDIUM_514_MODIFIED_FOR_DSM_23775
+- KOMODO_514-23924_MEDIUM_514_MODIFIED_FOR_DSM_23924
+- KOMODO_514-23995_MEDIUM_514_MODIFIED_FOR_DSM_23995
+- KOMODO_514-44818_MEDIUM_514_MODIFIED_FOR_DSM_44818
+- KOMODO_514-8798_MEDIUM_514_MODIFIED_FOR_DSM_8798
+- KOMODO_514_BACTO_MARINE_BROTH_DIFCO_2216
+- KOMODO_514a-15882_MEDIUM_514a_MODIFIED_FOR_DSM_15882
+- KOMODO_514a-22212_MEDIUM_514a_MODIFIED_FOR_DSM_22212
+- KOMODO_514a_HALF_STRENGTH_BACTO_MARINE_BROTH
+- KOMODO_514b-16010_MEDIUM_514b_MODIFIED_FOR_DSM_16010
+- KOMODO_514b-1_For_strains_DSM_21167_DSM_21194
+- KOMODO_514b-21020_MEDIUM_514b_MODIFIED_FOR_DSM_21020
+- KOMODO_514b-22359_MEDIUM_514b_MODIFIED_FOR_DSM_22359
+- KOMODO_514b-26530_MEDIUM_514b_MODIFIED_FOR_DSM_26530
+- KOMODO_514b-2_For_strains_DSM_5349_DSM_24106_DSM_24107_DSM_24186_DSM_23100_DSM_21021_DSM_19800
+- KOMODO_514b-3_For_strains_DSM_23438_DSM_21056_DSM_21166_DSM_21888_DSM_5160
+- KOMODO_514b-4_For_strains_DSM_5351_DSM_23229_DSM_22730_DSM_22404_DSM_22403_DSM_22402
+- KOMODO_514b-5_For_strains_DSM_24014
+- KOMODO_514b-6_For_strains_DSM_23437_DSM_23508_DSM23509_DSM_21076_DSM_26132
+- KOMODO_514b-735_MEDIUM_514b_MODIFIED_FOR_DSM_735
+- KOMODO_514b_medium_514_plus_additional_salt
+- KOMODO_514c-23364_MEDIUM_514c_MODIFIED_FOR_DSM_23364
+- KOMODO_514d-1_For_strains_DSM_21373_DSM_21449_DSM_21450_DSM_21621_and_DSM_21632
+- KOMODO_514d-21633_MEDIUM_514d_MODIFIED_FOR_DSM_21633
+- KOMODO_514d-21756_MEDIUM_514d_MODIFIED_FOR_DSM_21756
+- KOMODO_514d_MODIFIED_BACTO_MARINE_BROTH
+- DSMZ_514g_HALF_STRENGTH_BACTO_MARINE_BROTH_with_50_Seawater
+merge_fingerprint: 0afc0a1f985a9b7ccbbb677c2b0e5cce0a2d1eee7589d96114d6dd94ad9ec402

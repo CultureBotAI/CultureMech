@@ -1,0 +1,100 @@
+name: Modified M63 medium with glucose and 2.5 M NaCl
+original_name: Modified M63 medium with glucose and 2.5 M NaCl
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '20.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:glc_D'
+- preferred_term: Potassium hydroxide
+  concentration:
+    value: '75.0'
+    unit: MILLIMOLAR
+- preferred_term: Potassium dibasic phosphate
+  concentration:
+    value: '100.0'
+    unit: MILLIMOLAR
+- preferred_term: Sodium chloride
+  term:
+    id: CHEBI:26710
+    label: Sodium Chloride
+  concentration:
+    value: '600.0'
+    unit: MILLIMOLAR
+- preferred_term: Magnesium sulfate
+  term:
+    id: CHEBI:32599
+    label: Magnesium sulfate
+  concentration:
+    value: '0.16'
+    unit: MILLIMOLAR
+- preferred_term: Ferrous sulfate
+  concentration:
+    value: '0.0018'
+    unit: MILLIMOLAR
+- preferred_term: Ammonium sulfate
+  term:
+    id: CHEBI:62946
+    label: Ammonium Sulfate
+  concentration:
+    value: '15.0'
+    unit: MILLIMOLAR
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if specified in original formulation
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
+curation_history:
+- timestamp: '2026-01-27T07:21:42.551660Z'
+  curator: mediadb-import
+  action: Imported from MediaDB
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 7, Reference:
+    Mazumdar et al. (2014) PLOS One'
+- timestamp: '2026-02-03T22:26:04.229385+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_4_Modified_M63_medium_with_glucose_and_0.6_M_NaCl, MEDIADB_5_Modified_M63_medium_with_glucose_and_0.75_M_NaCl,
+    MEDIADB_6_Modified_M63_medium_with_glucose_and_1.5_M_NaCl, MEDIADB_7_Modified_M63_medium_with_glucose_and_2.5_M_NaCl'
+media_term:
+  preferred_term: MediaDB Medium 7
+  term:
+    id: MEDIADB:7
+    label: Modified M63 medium with glucose and 2.5 M NaCl
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
+applications:
+- Cultivation of genome-sequenced organisms
+- Metabolic modeling
+- Systems biology research
+synonyms:
+- name: Modified M63 medium with glucose and 0.6 M NaCl
+  source: unknown
+  source_id: MEDIADB:4
+  original_category: imported
+- name: Modified M63 medium with glucose and 0.75 M NaCl
+  source: unknown
+  source_id: MEDIADB:5
+  original_category: imported
+- name: Modified M63 medium with glucose and 1.5 M NaCl
+  source: unknown
+  source_id: MEDIADB:6
+  original_category: imported
+categories:
+- imported
+merged_from:
+- MEDIADB_4_Modified_M63_medium_with_glucose_and_0.6_M_NaCl
+- MEDIADB_5_Modified_M63_medium_with_glucose_and_0.75_M_NaCl
+- MEDIADB_6_Modified_M63_medium_with_glucose_and_1.5_M_NaCl
+- MEDIADB_7_Modified_M63_medium_with_glucose_and_2.5_M_NaCl
+merge_fingerprint: a621d64f400ea33c4c57dcaf708059256383aa7c804e78d800ce384cbd50d686

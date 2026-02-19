@@ -43,10 +43,16 @@ ingredients:
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: ZnSO4 x 7 H2O
   term:
     id: CHEBI:32312
     label: ZnSO4 x 7 H2O
+  concentration:
+    value: variable
+    unit: VARIABLE
 - preferred_term: Agar
   term:
     id: CHEBI:2509
@@ -75,3 +81,8 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 204'
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:21.468248'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
+    concentration for ingredient: ZnSO4 x 7 H2O'

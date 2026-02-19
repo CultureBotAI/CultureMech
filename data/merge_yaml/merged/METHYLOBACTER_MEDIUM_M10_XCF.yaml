@@ -1,0 +1,137 @@
+name: METHYLOBACTER MEDIUM M10 XCF
+original_name: METHYLOBACTER MEDIUM M10 XCF
+category: imported
+medium_type: DEFINED
+physical_state: LIQUID
+ph_range: 8-8.4
+media_term:
+  preferred_term: DSMZ Medium 1502
+  term:
+    id: mediadive.medium:1502
+    label: METHYLOBACTER MEDIUM M10 XCF
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1502.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Fe(III)-EDTA
+  term:
+    id: CHEBI:30729
+    label: Fe(III)-EDTA
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: CuSO4
+  term:
+    id: CHEBI:23414
+    label: CuSO4
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '9.45'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.44'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 2 H2O
+  term:
+    id: CHEBI:86356
+    label: MnSO4 x 2 H2O
+  concentration:
+    value: '0.17'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust the pH with 1M NaOH or H2SO4 to 8.0-8.4 (after autoclaving and
+    mixing all solutions the pH should be 8.0-8.4)
+- step_number: 2
+  action: AUTOCLAVE
+  description: "Dispense the medium into the culture vessels. For small volumes serum\
+    \ bottles or\r\nHungate tubes may be used. The gas phase to liquid ratio should\
+    \ be about 1:10. Use a\r\ngas phase containing air, 10-20% methane and 5-10% CO2\
+    \ and autoclave at 121C for\r\n15 minutes. When the growth medium is cool the\
+    \ NaHCO3 is added.\r\nLiquid cultures should be grown with shaking."
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Add to the sterile medium per liter from a 8% filter sterilised stock
+    solution:'
+applications:
+- Microbial cultivation
+curation_history:
+- timestamp: '2026-01-26T17:53:14.641141Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1502'
+merge_fingerprint: f89823b091639266e3d23b61a7768692ec4f04a4a5addee307e09efcc43ac2f4
+merged_from:
+- DSMZ_1502_METHYLOBACTER_MEDIUM_M10_XCF
