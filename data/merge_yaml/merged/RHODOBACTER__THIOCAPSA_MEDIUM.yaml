@@ -138,7 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1197'
-- timestamp: '2026-02-03T22:25:29.971341+00:00'
+- timestamp: '2026-02-19T08:26:40.652173+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1197_RHODOBACTER_THIOCAPSA_MEDIUM, KOMODO_1197-1_For_DSM_18774,

@@ -138,7 +138,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 133'
-- timestamp: '2026-02-03T22:25:32.340433+00:00'
+- timestamp: '2026-02-19T08:26:42.639897+00:00'
   curator: recipe-merger
   action: Merged 10 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_133_CARBON_MONOXIDE_OXIDIZER_MEDIUM, KOMODO_133-1_For_chemoautotrophic_growth,

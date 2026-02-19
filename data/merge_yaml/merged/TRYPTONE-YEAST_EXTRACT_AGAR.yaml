@@ -1,66 +1,67 @@
-name: Tryptone-Yeast Extract Agar
-original_name: Tryptone-Yeast Extract Agar
+name: TRYPTONE-YEAST EXTRACT AGAR
+original_name: TRYPTONE-YEAST EXTRACT AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J140
+  term:
+    id: mediadive.medium:J140
+    label: TRYPTONE-YEAST EXTRACT AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=140'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
+- preferred_term: Tryptone
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M131
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
   term:
-    id: TOGO:M131
-    label: Tryptone-Yeast Extract Agar
-notes: 'Source: https://togomedium.org/medium/M131
-
-  Original source: JCM - JCM_M140
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=140'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.334522Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M131'
-- timestamp: '2026-01-28T19:48:35.115707Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: cd56880371faf23a22719babc822f03b297b0e55da84568c5a8277b25ec5f986
+- timestamp: '2026-01-26T17:53:15.803594Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J140'
+- timestamp: '2026-02-19T08:26:59.848406+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_680_TRYPTONE_Yeast_extract_AGAR_TYG, DSMZ_680_TRYPTONE_YEAST_EXTRACT_AGAR_TYG,
+    JCM_J140_TRYPTONE-YEAST_EXTRACT_AGAR'
+synonyms:
+- name: TRYPTONE Yeast extract AGAR (TYG)
+  source: KOMODO
+  source_id: komodo.medium:680
+  original_category: imported
+- name: TRYPTONE YEAST EXTRACT AGAR (TYG)
+  source: MediaDive
+  source_id: mediadive.medium:680
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M131_Tryptone-Yeast_Extract_Agar
+- KOMODO_680_TRYPTONE_Yeast_extract_AGAR_TYG
+- DSMZ_680_TRYPTONE_YEAST_EXTRACT_AGAR_TYG
+- JCM_J140_TRYPTONE-YEAST_EXTRACT_AGAR
+merge_fingerprint: 0cc83b7e899fdf08320d78018cdcccd3b687ab563ff8654398ea2957953176e8

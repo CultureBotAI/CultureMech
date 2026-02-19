@@ -1,179 +1,130 @@
-name: Leptospirillum (HH) Medium
-original_name: Leptospirillum (HH) Medium
+name: LEPTOSPIRILLUM (HH) MEDIUM
+original_name: LEPTOSPIRILLUM (HH) MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
+ph_value: 2.3
+media_term:
+  preferred_term: DSMZ Medium 882
+  term:
+    id: mediadive.medium:882
+    label: LEPTOSPIRILLUM (HH) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium882.pdf'
 ingredients:
-- preferred_term: Solution A*
-  concentration:
-    value: '950'
-    unit: G_PER_L
-- preferred_term: Solution B**
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Trace element solution***
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: (NH4)2SO4
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: CaCl2·2H2O
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
-    value: '147'
+    value: '0.138947'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.0557895'
+    unit: G_PER_L
 - preferred_term: KH2PO4
-  concentration:
-    value: '27'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: MgCl2·6H2O
   concentration:
-    value: '53'
+    value: '0.0284211'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: (NH4)2SO4
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '132'
+    value: '0.154737'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '400'
+    unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
   term:
     id: CHEBI:26836
-    label: sulfuric acid
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: H2SO4 Solution (0.25 N)
+    label: H2SO4
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: FeSO4·7H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: H3BO3
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '31'
+    value: '0.076'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2·6H2O
-  concentration:
-    value: '64'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: CuCl2·2H2O
-  concentration:
-    value: '67'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
 - preferred_term: ZnCl2
-  concentration:
-    value: '68'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: MnCl2·2H2O
+    label: ZnCl2
   concentration:
-    value: '62'
+    value: '0.068'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.064'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.031'
+    unit: G_PER_L
 - preferred_term: Na2MoO4
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Organic
-    compound'
   term:
     id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
+    label: Na2MoO4
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2038
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
   term:
-    id: TOGO:M2038
-    label: Leptospirillum (HH) Medium
-notes: 'Source: https://togomedium.org/medium/M2038
-
-  Original source: NBRC - NBRC_M1336
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1336'
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.067'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize solution A and solution C by autoclaving at 121°C for 20
+    min and solution B by autoclaving at 112°C for 30 min. Prior to use mix solutions
+    A and B and add trace elements solution. The final pH of the medium should be
+    2.3.
+- step_number: 2
+  action: MIX
+  description: 'Note: At the beginning of growth incubate statically without shaking.'
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 2.3 with 10 N H2SO4.
+- step_number: 4
+  action: MIX
+  description: The pH of this solution should be 1.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.935949Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M2038'
-- timestamp: '2026-01-28T19:48:29.166302Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:51.688212'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: H2SO4'
-merge_fingerprint: f397f235d7c48b1c02fa63cdbbadd494c40dd6bd56303c8ba5954f21a6732da5
+- timestamp: '2026-01-26T17:53:12.611472Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 882'
+- timestamp: '2026-02-19T08:26:56.324616+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_882_LEPTOSPIRILLUM_HH_MEDIUM, KOMODO_882_LEPTOSPIRILLUM_HH_MEDIUM'
+categories:
+- imported
 merged_from:
-- TOGO_M2038_Leptospirillum_HH_Medium
+- DSMZ_882_LEPTOSPIRILLUM_HH_MEDIUM
+- KOMODO_882_LEPTOSPIRILLUM_HH_MEDIUM
+merge_fingerprint: 4c1c7b19de971a25725749df709e1942a9f23d60308151a10f8ca404a5034b77

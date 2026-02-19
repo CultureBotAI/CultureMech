@@ -1,122 +1,108 @@
-name: Triple-Sugar-Iron Medium (Difco)
-original_name: Triple-Sugar-Iron Medium (Difco)
+name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
+original_name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 699
+  term:
+    id: mediadive.medium:699
+    label: TRIPLE-SUGAR-IRON MEDIUM (Difco)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium699.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Dextrose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Sucrose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:17992
-    label: sucrose
-- preferred_term: Phenol red
-  concentration:
-    value: '0.024'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:31991
-    label: Phenol red
-- preferred_term: FeSO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:75832
-    label: iron(2+) sulfate (anhydrous)
-- preferred_term: Lactose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:36218
-    label: beta-lactose
-- preferred_term: Agar
-  concentration:
-    value: '12'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Bacto yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Na2S2O3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Inorganic compound, Simple component, Defined component'
-  term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
 - preferred_term: Bacto beef extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2174
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Bacto peptone
+  concentration:
+    value: '15'
+    unit: G_PER_L
+- preferred_term: Dextrose
   term:
-    id: TOGO:M2174
-    label: Triple-Sugar-Iron Medium (Difco)
-notes: 'Source: https://togomedium.org/medium/M2174
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium699.pdf'
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Lactose
+  term:
+    id: CHEBI:17716
+    label: Lactose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Sucrose
+  term:
+    id: CHEBI:17992
+    label: Sucrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: FeSO4
+  term:
+    id: CHEBI:75832
+    label: FeSO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Na2S2O3
+  term:
+    id: CHEBI:59168
+    label: Na2S2O3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: Phenol red
+  term:
+    id: CHEBI:31991
+    label: Phenol red
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '12'
+    unit: G_PER_L
+  notes: ' (if required)'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.4
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.121763Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2174'
-- timestamp: '2026-01-28T19:48:29.520238Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 3d9bd0012137ab4ca6a5784f6dfa592202d85f953f635515eb9b6306edcd2529
+- timestamp: '2026-01-26T17:53:11.958580Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 699'
+- timestamp: '2026-02-19T08:26:53.111832+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_699_TRIPLE-SUGAR-IRON_MEDIUM_Difco, KOMODO_699_TRIPLE-SUGAR-IRON_medium_Difco'
+synonyms:
+- name: TRIPLE-SUGAR-IRON medium (Difco)
+  source: KOMODO
+  source_id: komodo.medium:699
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2174_Triple-Sugar-Iron_Medium_Difco
+- DSMZ_699_TRIPLE-SUGAR-IRON_MEDIUM_Difco
+- KOMODO_699_TRIPLE-SUGAR-IRON_medium_Difco
+merge_fingerprint: 35d2310e06212aa6f52ada3d9fbc093379c18c470215e1690b0a69ff3e7088d1

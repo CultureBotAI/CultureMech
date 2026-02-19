@@ -35,7 +35,7 @@ curation_history:
   date: '2026-02-03T11:20:56.382751'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sterile defibrinated horse blood'
-- timestamp: '2026-02-03T22:26:13.050258+00:00'
+- timestamp: '2026-02-19T08:27:01.483601+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M211_Columbia_Blood_Agar_With_10_Horse_Blood, TOGO_M276_Columbia_Blood_Agar_With_5_Horse_Blood'

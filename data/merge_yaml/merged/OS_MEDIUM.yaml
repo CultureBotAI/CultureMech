@@ -1,327 +1,229 @@
-name: OS Medium
-original_name: OS Medium
+name: OS MEDIUM
+original_name: OS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 887
+  term:
+    id: mediadive.medium:887
+    label: OS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium887.pdf'
 ingredients:
 - preferred_term: NaCl
-  concentration:
-    value: '256'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2 x 2 H2O
+    label: NaCl
   concentration:
-    value: '0.8'
+    value: '0.256'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
-  concentration:
-    value: '1.7'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: H3BO3
   concentration:
-    value: '10.3'
+    value: '0.0017'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: KCl
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaHCO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: FeCl3 x 6 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-- preferred_term: NaNO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:63005
-    label: ''
-- preferred_term: Na2SO4
-  concentration:
-    value: '23'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: MnSO4 x 4 H2O
-  concentration:
-    value: '0.06'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-- preferred_term: H2O
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media'
-  term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: Na2S2O3 x 5 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
-  term:
-    id: CHEBI:32150
-    label: sodium thiosulfate pentahydrate
-- preferred_term: Trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Oxygen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
 - preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Na2MoO4 x 2 H2O
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '0.01'
+    value: '0.0008'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:33118
-    label: boric acid
-- preferred_term: FeSO4 x 7 H2O
+    label: H3BO3
   concentration:
-    value: '0.1'
+    value: '0.0103'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Na2SO4
   term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: NiCl2 x 6 H2O
+    id: CHEBI:32149
+    label: Na2SO4
   concentration:
-    value: '0.03'
+    value: '0.023'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaNO3
   term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: ZnSO4 x 7 H2O
+    id: CHEBI:59148
+    label: NaNO3
   concentration:
-    value: '0.18'
+    value: '0.0003'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KCl
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuSO4 x 5 H2O
+    id: CHEBI:32588
+    label: KCl
   concentration:
-    value: '0.01'
+    value: '0.015'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: FeCl3 x 6 H2O
   term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: Na2SeO3 x 5 H2O
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   concentration:
-    value: '0.3'
+    value: '0.0001'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MnSO4 x 4 H2O
   term:
-    id: CHEBI:48843
-    label: disodium selenite
-- preferred_term: CoSO4 x 7 H2O
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
   concentration:
-    value: '0.18'
+    value: 6e-05
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Na2S2O3 x 5 H2O
   term:
-    id: CHEBI:53470
-    label: cobalt(2+) sulfate
-- preferred_term: KAl(SO4)2 x 12 H2O
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
   concentration:
-    value: '0.02'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaHCO3
   term:
-    id: CHEBI:86465
-    label: potassium aluminium sulfate dodecahydrate
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
 - preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: Na2WO4 x 2 H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '0.4'
+    value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:63939
-    label: sodium tungstate
 - preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaCl
   term:
-    id: CHEBI:75211
-    label: manganese(II) sulfate
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2282
+    value: '1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: TOGO:M2282
-    label: OS Medium
-notes: 'Source: https://togomedium.org/medium/M2282
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium887.pdf'
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
+  term:
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Sparge medium with 100% N2 gas mixture for 30 min to make anoxic.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 with H2SO4.
+- step_number: 3
+  action: MIX
+  description: Fill 10 ml medium into 100 ml Serum bottles under a stream of H2/CO2
+    gas and seal with a rubber stopper.
+- step_number: 4
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 20 min.
+- step_number: 5
+  action: MIX
+  description: After autoclaving add the following (e.g., from sterile stock solutions)
+- step_number: 6
+  action: MIX
+  description: Adjust the gas atmosphere strain specifically.
+- step_number: 7
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.269191Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2282'
-- timestamp: '2026-01-28T19:48:33.431321Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.043875'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Nitrogen gas; Added default concentration for ingredient: Oxygen gas; Added default
-    concentration for ingredient: Hydrogen gas; Added default concentration for ingredient:
-    KOH'
-merge_fingerprint: 32d7322d8e561868671dfcd146040bd40ed5d828ef39cec094b3c4e54873277b
+- timestamp: '2026-01-26T17:53:12.624075Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 887'
+- timestamp: '2026-02-19T08:26:56.383027+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_887_OS_MEDIUM, KOMODO_887_OS_MEDIUM'
+categories:
+- imported
 merged_from:
-- TOGO_M2282_OS_Medium
+- DSMZ_887_OS_MEDIUM
+- KOMODO_887_OS_MEDIUM
+merge_fingerprint: 30e4c3482092072d3ff60a088b34f6b2a168735d72cc023a907241b67816e8d5

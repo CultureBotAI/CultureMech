@@ -1,200 +1,197 @@
-name: Sulfolobus Medium (Anaerobic)
-original_name: Sulfolobus Medium (Anaerobic)
+name: SULFOLOBUS MEDIUM (ANAEROBIC)
+original_name: SULFOLOBUS MEDIUM (ANAEROBIC)
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 4.0
+media_term:
+  preferred_term: DSMZ Medium 88a
+  term:
+    id: mediadive.medium:88a
+    label: SULFOLOBUS MEDIUM (ANAEROBIC)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88a.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.28'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: Na2S x 9 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
 - preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.28'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
 - preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Sulfur
   term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-- preferred_term: Sulfur, powder
+    id: CHEBI:26833
+    label: Sulfur
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: Yeast extract (OXOID)
+- preferred_term: Yeast extract
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Allen’s trace element solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+- preferred_term: Na2S x 9 H2O
   term:
-    id: CHEBI:26836
-    label: sulfuric acid
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
 - preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '180'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: ZnSO4 x 7 H2O
-  concentration:
-    value: '22'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuCl2 x 2 H2O
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '5'
+    value: '0.18'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: VOSO4 x 2 H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:87014
-    label: vanadyl sulfate hexahydrate
 - preferred_term: Na2B4O7 x 10 H2O
   concentration:
-    value: '450'
+    value: '0.45'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoSO4
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   concentration:
-    value: '1'
+    value: '0.022'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: VOSO4 x 2 H2O
+  term:
+    id: CHEBI:87009
+    label: VOSO4 x 2 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: CoSO4 x 7 H2O
   term:
     id: CHEBI:53470
-    label: cobalt(2+) sulfate
-- preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
-    compound'
-  term:
-    id: CHEBI:17883
-    label: hydrogen chloride
+    label: CoSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2387
-  term:
-    id: TOGO:M2387
-    label: Sulfolobus Medium (Anaerobic)
-notes: 'Source: https://togomedium.org/medium/M2387
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium88a.pdf'
+    value: '0.001'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients (except sulfur, yeast extract and sulfide), adjust
+    pH of the salt solution at room temperature to 4.0 using 1 N H2SO4 and sparge
+    medium with 100% N2 gas to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials that contain already the appropriate
+    amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling
+    water bath for 1 - 2 hours on each of 3 successive days. Add yeast extract and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior
+    to inoculation check pH and adjust to 4.0, if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH of final solution to 2 with 1 N HCl.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.438279Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2387'
-- timestamp: '2026-01-28T19:48:22.580065Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.565295'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: HCl'
-merge_fingerprint: 05e7d401dc9c60911b89f5455e0302e454dbd5401c77625f118ccf235db805ad
+- timestamp: '2026-01-26T17:53:10.146336Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 88a'
+- timestamp: '2026-02-19T08:26:59.972247+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_88-10039_MEDIUM_88_MODIFIED_FOR_DSM_10039, KOMODO_88-12421_MEDIUM_88_MODIFIED_FOR_DSM_12421,
+    KOMODO_88-18247_MEDIUM_88_MODIFIED_FOR_DSM_18247, KOMODO_88-1_For_DSM_14429_and_DSM_14430,
+    KOMODO_88-2_For_DSM_18786, KOMODO_88-5389_MEDIUM_88_MODIFIED_FOR_DSM_5389, KOMODO_88-6482_MEDIUM_88_MODIFIED_FOR_DSM_6482,
+    KOMODO_88-7519_MEDIUM_88_MODIFIED_FOR_DSM_7519, KOMODO_88_SULFOLOBUS_medium, KOMODO_88b_V24N_medium,
+    DSMZ_88a_SULFOLOBUS_MEDIUM_ANAEROBIC'
+synonyms:
+- name: MEDIUM 88 MODIFIED FOR DSM 10039
+  source: KOMODO
+  source_id: komodo.medium:88_10039
+  original_category: imported
+- name: MEDIUM 88 MODIFIED FOR DSM 12421
+  source: KOMODO
+  source_id: komodo.medium:88_12421
+  original_category: imported
+- name: MEDIUM 88 MODIFIED FOR DSM 18247
+  source: KOMODO
+  source_id: komodo.medium:88_18247
+  original_category: imported
+- name: For DSM 14429 and DSM 14430
+  source: KOMODO
+  source_id: komodo.medium:88.1
+  original_category: imported
+- name: For DSM 18786
+  source: KOMODO
+  source_id: komodo.medium:88.2
+  original_category: imported
+- name: MEDIUM 88 MODIFIED FOR DSM 5389
+  source: KOMODO
+  source_id: komodo.medium:88_5389
+  original_category: imported
+- name: MEDIUM 88 MODIFIED FOR DSM 6482
+  source: KOMODO
+  source_id: komodo.medium:88_6482
+  original_category: imported
+- name: MEDIUM 88 MODIFIED FOR DSM 7519
+  source: KOMODO
+  source_id: komodo.medium:88_7519
+  original_category: imported
+- name: SULFOLOBUS medium
+  source: KOMODO
+  source_id: komodo.medium:88
+  original_category: imported
+- name: V24N medium
+  source: KOMODO
+  source_id: komodo.medium:88b
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2387_Sulfolobus_Medium_Anaerobic
+- KOMODO_88-10039_MEDIUM_88_MODIFIED_FOR_DSM_10039
+- KOMODO_88-12421_MEDIUM_88_MODIFIED_FOR_DSM_12421
+- KOMODO_88-18247_MEDIUM_88_MODIFIED_FOR_DSM_18247
+- KOMODO_88-1_For_DSM_14429_and_DSM_14430
+- KOMODO_88-2_For_DSM_18786
+- KOMODO_88-5389_MEDIUM_88_MODIFIED_FOR_DSM_5389
+- KOMODO_88-6482_MEDIUM_88_MODIFIED_FOR_DSM_6482
+- KOMODO_88-7519_MEDIUM_88_MODIFIED_FOR_DSM_7519
+- KOMODO_88_SULFOLOBUS_medium
+- KOMODO_88b_V24N_medium
+- DSMZ_88a_SULFOLOBUS_MEDIUM_ANAEROBIC
+merge_fingerprint: ddb3036a67bac8350f3a6934165ea1797a4bf524497af2ad90538a3f6ecee9c8

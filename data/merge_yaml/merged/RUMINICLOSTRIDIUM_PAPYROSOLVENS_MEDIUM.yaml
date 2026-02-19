@@ -107,7 +107,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 289'
-- timestamp: '2026-02-03T22:25:38.675454+00:00'
+- timestamp: '2026-02-19T08:26:45.765517+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_289_RUMINICLOSTRIDIUM_PAPYROSOLVENS_MEDIUM, KOMODO_289-replace-Cellobiose-with-Cellulose_CLOSTRIDIUM_PAPYROSOLVENS_medium_replace_Cellobiose_with_Cellulose,

@@ -345,7 +345,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas; Added default concentration
     for ingredient: KOH solution; Added default concentration for ingredient: N2 gas'
-- timestamp: '2026-02-03T22:26:17.513152+00:00'
+- timestamp: '2026-02-19T08:27:01.692620+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2729_Thermoanaerobacter_Brockii_Medium, TOGO_M2731_Thermoanaerobacter_Brockii_Medium'

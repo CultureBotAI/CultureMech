@@ -37,7 +37,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 90'
-- timestamp: '2026-02-03T22:26:01.266467+00:00'
+- timestamp: '2026-02-19T08:26:59.978802+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_90_MALT_EXTRACT_Peptone_AGAR, DSMZ_90_MALT_EXTRACT_PEPTONE_AGAR'

@@ -1,94 +1,92 @@
-name: Capnocytophaga Medium
-original_name: Capnocytophaga Medium
+name: CAPNOCYTOPHAGA MEDIUM
+original_name: CAPNOCYTOPHAGA MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 340
+  term:
+    id: mediadive.medium:340
+    label: CAPNOCYTOPHAGA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium340.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KNO3
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:17632
-    label: nitrate
-- preferred_term: Hemin
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:50385
-    label: hemin
-- preferred_term: Glucose
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trypticase peptone (BD-BBL)
+- preferred_term: Trypticase
   concentration:
     value: '17'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M459
   term:
-    id: TOGO:M459
-    label: Capnocytophaga Medium
-notes: 'Source: https://togomedium.org/medium/M459
-
-  Original source: JCM - JCM_M459
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=459'
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KNO3
+  term:
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Haemin
+  term:
+    id: CHEBI:50385
+    label: Haemin
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: MIX
+  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2
+    containing atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.098094Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M459'
-- timestamp: '2026-01-28T19:48:38.861602Z'
+- timestamp: '2026-01-26T17:53:10.854353Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 340'
+- timestamp: '2026-01-28T19:48:24.581122Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.859123'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2'
-merge_fingerprint: f483e636fcbd6d22e41f4b13a5b6dee8832a459fd906532ef74781e296be7483
+- timestamp: '2026-02-19T08:26:46.708110+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_340_CAPNOCYTOPHAGA_MEDIUM, KOMODO_340-7271_MEDIUM_340_MODIFIED_FOR_DSM_7271,
+    KOMODO_340_CAPNOCYTOPHAGA_medium'
+synonyms:
+- name: MEDIUM 340 MODIFIED FOR DSM 7271
+  source: KOMODO
+  source_id: komodo.medium:340_7271
+  original_category: imported
+- name: CAPNOCYTOPHAGA medium
+  source: KOMODO
+  source_id: komodo.medium:340
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M459_Capnocytophaga_Medium
+- DSMZ_340_CAPNOCYTOPHAGA_MEDIUM
+- KOMODO_340-7271_MEDIUM_340_MODIFIED_FOR_DSM_7271
+- KOMODO_340_CAPNOCYTOPHAGA_medium
+merge_fingerprint: 005c0bb34e1b0babcaa7fed97845843bcaeed2a80a59e8b1e9a27b868851f201

@@ -61,7 +61,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: soilwater-peat-medium, URL: https://utex.org/products/soilwater-peat-medium'
-- timestamp: '2026-02-03T22:25:24.962929+00:00'
+- timestamp: '2026-02-19T08:26:36.599336+00:00'
   curator: recipe-merger
   action: Merged 10 duplicate recipes into canonical record
   notes: 'Sources: 2X_Soil_+_Seawater_Medium, Ag_Diatom_Medium, CR1+_Diatom_Medium,

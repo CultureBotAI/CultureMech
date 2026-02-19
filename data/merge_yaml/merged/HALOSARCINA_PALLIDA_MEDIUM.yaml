@@ -1,105 +1,100 @@
-name: Halosarcina Pallida Medium
-original_name: Halosarcina Pallida Medium
+name: HALOSARCINA PALLIDA MEDIUM
+original_name: HALOSARCINA PALLIDA MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_value: 6.5
+media_term:
+  preferred_term: JCM Medium J645
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:J645
+    label: HALOSARCINA PALLIDA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=645'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '180'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2SO4
+  term:
+    id: CHEBI:32036
+    label: K2SO4
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '180'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: K2SO4
+- preferred_term: Casamino acids
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
   term:
-    id: CHEBI:32036
-    label: potassium sulfate
-- preferred_term: agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Casamino acids (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M660
-  term:
-    id: TOGO:M660
-    label: Halosarcina Pallida Medium
-notes: 'Source: https://togomedium.org/medium/M660
-
-  Original source: JCM - JCM_M645-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=645'
+    id: CHEBI:78020
+    label: heptacosanoate
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 6.5 and autoclave.
+- step_number: 2
+  action: MIX
+  description: For preparation of solid medium, add 20.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.488832Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M660'
-- timestamp: '2026-01-28T19:48:20.584616Z'
+- timestamp: '2026-01-26T17:53:17.175337Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J645'
+- timestamp: '2026-01-28T19:48:13.765785Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 88ea7034d5abd7b479439d22f4fe530261cd98dee97907e9c6aeef308d37c84f
+- timestamp: '2026-02-19T08:26:58.560143+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J645_HALOSARCINA_PALLIDA_MEDIUM, JCM_J878_HALOBACTERIA_HMD_MEDIUM'
+synonyms:
+- name: HALOBACTERIA HMD MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J878
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M660_Halosarcina_Pallida_Medium
+- JCM_J645_HALOSARCINA_PALLIDA_MEDIUM
+- JCM_J878_HALOBACTERIA_HMD_MEDIUM
+merge_fingerprint: fcf8d1da0a9e73225fc32236e21d0d8e2aaac655fb2cf7afc3887124d084776f

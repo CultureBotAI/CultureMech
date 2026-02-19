@@ -1,56 +1,128 @@
-name: SW-7.5 Medium
-original_name: SW-7.5 Medium
+name: SW-7.5 MEDIUM
+original_name: SW-7.5 MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: JCM Medium J1011
+  term:
+    id: mediadive.medium:J1011
+    label: SW-7.5 MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1011'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '700'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: NaCl
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: agar
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: '20'
+    value: '195'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '32.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '50.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: SW--25 solution (see Medium [M1068])
-  concentration:
-    value: '300'
-    unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1069
+- preferred_term: NaHCO3
   term:
-    id: TOGO:M1069
-    label: SW-7.5 Medium
-notes: 'Source: https://togomedium.org/medium/M1069
-
-  Original source: JCM - JCM_M1011-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1011'
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.16'
+    unit: G_PER_L
+- preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
+  concentration:
+    value: '0.6'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5 and autoclave. For preparation of solid medium, add
+    20.0 g/L agar.
+- step_number: 2
+  action: MIX
+  description: Add components to distilled water and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.864468Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1069'
-- timestamp: '2026-01-28T19:48:23.591425Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9efd00939efb7f9d382b1e68985284d41f69c12bded24dfbee3fda75a7330c68
+- timestamp: '2026-01-26T17:53:18.312584Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1011'
+- timestamp: '2026-02-19T08:26:39.970853+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1138_HALOPIGER_MEDIUM, DSMZ_936_SALINIBACTER_RUBER_MEDIUM,
+    JCM_J1011_SW-7.5_MEDIUM, JCM_J620_SW-20_MEDIUM, JCM_J797_SW-10_MEDIUM, KOMODO_1138_HALOPIGER_medium,
+    KOMODO_936_SALINIBACTER_RUBER_medium, JCM_J546_HALOPHILE_YEAST_EXTRACT_MEDIUM'
+synonyms:
+- name: HALOPIGER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1138
+  original_category: imported
+- name: SALINIBACTER RUBER MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:936
+  original_category: imported
+- name: SW-20 MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J620
+  original_category: imported
+- name: SW-10 MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J797
+  original_category: imported
+- name: HALOPIGER medium
+  source: KOMODO
+  source_id: komodo.medium:1138
+  original_category: imported
+- name: SALINIBACTER RUBER medium
+  source: KOMODO
+  source_id: komodo.medium:936
+  original_category: imported
+- name: HALOPHILE YEAST EXTRACT MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J546
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1069_SW-7.5_Medium
+- DSMZ_1138_HALOPIGER_MEDIUM
+- DSMZ_936_SALINIBACTER_RUBER_MEDIUM
+- JCM_J1011_SW-7.5_MEDIUM
+- JCM_J620_SW-20_MEDIUM
+- JCM_J797_SW-10_MEDIUM
+- KOMODO_1138_HALOPIGER_medium
+- KOMODO_936_SALINIBACTER_RUBER_medium
+- JCM_J546_HALOPHILE_YEAST_EXTRACT_MEDIUM
+merge_fingerprint: c2a2e1ebb7ff1830f5a15ce8f0faa408ab85e9b27f7b1c269be6d0da73e7a74c

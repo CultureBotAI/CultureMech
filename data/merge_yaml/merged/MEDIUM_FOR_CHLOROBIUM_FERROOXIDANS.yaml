@@ -226,7 +226,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 29a'
-- timestamp: '2026-02-03T22:25:38.980876+00:00'
+- timestamp: '2026-02-19T08:26:46.022501+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_29a_MEDIUM_FOR_CHLOROBIUM_FERROOXIDANS, KOMODO_29-12025_MEDIUM_29_MODIFIED_FOR_DSM_12025,

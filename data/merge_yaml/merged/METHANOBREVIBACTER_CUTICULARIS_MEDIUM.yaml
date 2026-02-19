@@ -261,7 +261,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:47.703560+00:00'
+- timestamp: '2026-02-19T08:26:53.618950+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_734a_METHANOBREVIBACTER_CUTICULARIS_MEDIUM, KOMODO_734-1_For_DSM_11111_strain_RFM-2,

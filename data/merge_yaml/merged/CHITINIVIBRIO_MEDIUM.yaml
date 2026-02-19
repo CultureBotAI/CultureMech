@@ -133,9 +133,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
 - preferred_term: MnCl2
-  term:
-    id: CHEBI:7773015
-    label: MnCl2
   concentration:
     value: '0.03'
     unit: G_PER_L
@@ -214,7 +211,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1464'
-- timestamp: '2026-02-03T22:25:33.931757+00:00'
+- timestamp: '2026-02-06T05:10:25.686817Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:43.508390+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1464_CHITINIVIBRIO_MEDIUM, DSMZ_1465_CHITINISPIRILLUM_MEDIUM'
@@ -228,4 +230,4 @@ categories:
 merged_from:
 - DSMZ_1464_CHITINIVIBRIO_MEDIUM
 - DSMZ_1465_CHITINISPIRILLUM_MEDIUM
-merge_fingerprint: 4ffb4e6dd6aded1130014f76dc79e528126274b291aa52239628563a739a7719
+merge_fingerprint: 8a80702872612a6d3f964e5fced6c40f4f2ccd74a12f42bc95600aa46b569e43

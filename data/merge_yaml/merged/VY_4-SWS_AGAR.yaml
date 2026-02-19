@@ -1,255 +1,183 @@
-name: VY/4-SWS Agar
-original_name: VY/4-SWS Agar
+name: VY/4-SWS AGAR
+original_name: VY/4-SWS AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 958
+  term:
+    id: mediadive.medium:958
+    label: VY/4-SWS AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium958.pdf'
 ingredients:
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Cyanocobalamine (vitamin B12)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: Yeast cell paste (bakers yeast,washed in deion. water) wet weight
+- preferred_term: Yeast cell paste
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Bacto agar
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Sea water salts solution (see below)
+- preferred_term: Cyanocobalamine
   concentration:
-    value: '1000'
+    value: '0.0005'
     unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Ferric citrate
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:144421
+    label: Ferric citrate
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
+    value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
 - preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: H3BO3
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
 - preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '0.16'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: SrCl2 x 6 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:36385
-    label: strontium dichloride hexahydrate
-- preferred_term: KBr
-  concentration:
-    value: '0.08'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32030
-    label: potassium bromide
-- preferred_term: Ferric citrate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: di-Na-ß-glycerophosphate
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: Trace elements solution SL-4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: FeSO4 x 7 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: EDTA
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:64755
-    label: EDTA(2-)
-- preferred_term: Trace element solution SL-6(see below)
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
 - preferred_term: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:33118
-    label: boric acid
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2 x 6 H2O
+    label: H3BO3
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KBr
   term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: ZnSO4 x 7 H2O
+    id: CHEBI:32030
+    label: KBr
   concentration:
-    value: '0.1'
+    value: '0.08'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: SrCl2 x 6 H2O
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuCl2 x 2 H2O
+    id: CHEBI:36385
+    label: SrCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Sodium beta-glycerophosphate
+  term:
+    id: CHEBI:132089
+    label: Sodium beta-glycerophosphate
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: EDTA
+  term:
+    id: CHEBI:64755
+    label: EDTA
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-media_term:
-  preferred_term: TOGO Medium M2300
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: TOGO:M2300
-    label: VY/4-SWS Agar
-notes: 'Source: https://togomedium.org/medium/M2300
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium958.pdf'
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.5 with 1M NaOH, autoclave at 121°C for 20 min. Add filter
+    sterilized cyanocobalamine solution after autoclaving and cooling.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.301035Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2300'
-- timestamp: '2026-01-28T19:48:32.541596Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.151587'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: 39ec7d5d8db6746382671dc9be0068edade0e5d8216d9500b92522bdbcf7fd10
+- timestamp: '2026-01-26T17:53:12.893107Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 958'
+- timestamp: '2026-02-19T08:26:57.518281+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_958_VY_4-SWS_AGAR, KOMODO_958_VY_4-SWS_AGAR'
+categories:
+- imported
 merged_from:
-- TOGO_M2300_VY_4-SWS_Agar
+- DSMZ_958_VY_4-SWS_AGAR
+- KOMODO_958_VY_4-SWS_AGAR
+merge_fingerprint: 1d113578ca3493c6b515cc0a6074e925f257e74cd129f2e0361e14b8debcc89e

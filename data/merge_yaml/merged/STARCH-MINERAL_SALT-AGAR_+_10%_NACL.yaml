@@ -99,7 +99,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1240'
-- timestamp: '2026-02-03T22:25:31.122467+00:00'
+- timestamp: '2026-02-19T08:26:41.628457+00:00'
   curator: recipe-merger
   action: Merged 41 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1240_STARCH-MINERAL_SALT-AGAR_10_NACL, DSMZ_1241_STARCH_-_MINERAL_SALT_-_AGAR_STMS_15_NaCl,

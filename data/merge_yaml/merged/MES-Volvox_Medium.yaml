@@ -91,7 +91,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: mes-volvox-medium, URL: https://utex.org/products/mes-volvox-medium'
-- timestamp: '2026-02-03T22:25:24.923323+00:00'
+- timestamp: '2026-02-19T08:26:36.560907+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: 1_F_2_Medium, 5_F_2_Medium, Allen_Medium, BG-11_-N_Medium, Bold_3N_Medium,

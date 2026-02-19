@@ -122,7 +122,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 166'
-- timestamp: '2026-02-03T22:25:35.844304+00:00'
+- timestamp: '2026-02-19T08:26:43.925096+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_166_HYPHOMICROBIUM_STRAIN_X_MEDIUM, JCM_J884_HYPHOMICROBIUM_MEDIUM,

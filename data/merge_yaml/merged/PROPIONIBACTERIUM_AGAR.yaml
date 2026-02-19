@@ -46,7 +46,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 91'
-- timestamp: '2026-02-03T22:25:51.466617+00:00'
+- timestamp: '2026-02-19T08:26:56.916357+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_91_PROPIONIBACTERIUM_AGAR, KOMODO_91_PROPIONIBACTERIUM_AGAR'

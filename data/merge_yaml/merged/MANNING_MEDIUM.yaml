@@ -40,9 +40,6 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: Ca(NO3)2
-  term:
-    id: CHEBI:10124375
-    label: Ca(NO3)2
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -70,7 +67,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1023'
-- timestamp: '2026-02-03T22:25:27.210084+00:00'
+- timestamp: '2026-02-06T05:10:21.197404Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:38.145024+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1023_MANNING_MEDIUM, KOMODO_1023_MANNING_medium'
@@ -84,4 +86,4 @@ categories:
 merged_from:
 - DSMZ_1023_MANNING_MEDIUM
 - KOMODO_1023_MANNING_medium
-merge_fingerprint: 21221706f41f797a458e3457f7c87fe550da072b42e47f795a9e9679fa385d23
+merge_fingerprint: 93eb2009932068de1a3bdcff7d3fd90a042ccf7c7f0571dbfa89f14d6dd72dd5

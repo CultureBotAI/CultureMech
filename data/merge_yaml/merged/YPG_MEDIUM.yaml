@@ -1,108 +1,113 @@
-name: YPG Medium
-original_name: YPG Medium
+name: YPG MEDIUM
+original_name: YPG MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: KCl
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Na2SO4
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: PIPES
-  concentration:
-    value: '3.46'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
-  term:
-    id: CHEBI:39033
-    label: PIPES
-- preferred_term: Glucose
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
+ph_value: 6.0
 media_term:
-  preferred_term: TOGO Medium M402
+  preferred_term: DSMZ Medium 1017
   term:
-    id: TOGO:M402
-    label: YPG Medium
-notes: 'Source: https://togomedium.org/medium/M402
-
-  Original source: JCM - JCM_M404
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=404'
+    id: mediadive.medium:1017
+    label: YPG MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1017.pdf'
+ingredients:
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '70'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust the pH to 6.0 with dilute HCl. Solid media may be prepared by
+    adding 15g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.994121Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M402'
-- timestamp: '2026-01-28T19:48:20.494682Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: a0d98b29365958f3d007985d9110cdf0c24997d692de18413eeec68634504559
+- timestamp: '2026-01-26T17:53:13.120325Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1017'
+- timestamp: '2026-02-19T08:26:38.077095+00:00'
+  curator: recipe-merger
+  action: Merged 12 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1017_YPG_MEDIUM, DSMZ_1172_YPG_MEDIUM, DSMZ_774_MEDIUM_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS,
+    DSMZ_7_ANCYLOBACTER_-_SPIROSOMA_MEDIUM, JCM_J139_PYG_AGAR_A, JCM_J349_ANCYLOBACTER-SPIROSOMA_MEDIUM,
+    KOMODO_1017_YPG_medium, KOMODO_1172_YPG_medium, KOMODO_7-9000_MEDIUM_7_MODIFIED_FOR_DSM_9000,
+    KOMODO_774_medium_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS, KOMODO_7_ANCYLOBACTER_-_SPIROSOMA_medium,
+    JCM_J259_GLUCOSE-YEAST-PEPTONE_MEDIUM'
+synonyms:
+- name: MEDIUM FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS
+  source: MediaDive
+  source_id: mediadive.medium:774
+  original_category: imported
+- name: ANCYLOBACTER - SPIROSOMA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:7
+  original_category: imported
+- name: PYG AGAR (A)
+  source: MediaDive
+  source_id: mediadive.medium:J139
+  original_category: imported
+- name: ANCYLOBACTER-SPIROSOMA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J349
+  original_category: imported
+- name: YPG medium
+  source: KOMODO
+  source_id: komodo.medium:1017
+  original_category: imported
+- name: YPG medium
+  source: KOMODO
+  source_id: komodo.medium:1172
+  original_category: imported
+- name: MEDIUM 7 MODIFIED FOR DSM 9000
+  source: KOMODO
+  source_id: komodo.medium:7_9000
+  original_category: imported
+- name: medium FOR PARACOCCUS AMINOPHILUS AND P. AMINOVORANS
+  source: KOMODO
+  source_id: komodo.medium:774
+  original_category: imported
+- name: ANCYLOBACTER - SPIROSOMA medium
+  source: KOMODO
+  source_id: komodo.medium:7
+  original_category: imported
+- name: GLUCOSE-YEAST-PEPTONE MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J259
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M402_YPG_Medium
+- DSMZ_1017_YPG_MEDIUM
+- DSMZ_1172_YPG_MEDIUM
+- DSMZ_774_MEDIUM_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS
+- DSMZ_7_ANCYLOBACTER_-_SPIROSOMA_MEDIUM
+- JCM_J139_PYG_AGAR_A
+- JCM_J349_ANCYLOBACTER-SPIROSOMA_MEDIUM
+- KOMODO_1017_YPG_medium
+- KOMODO_1172_YPG_medium
+- KOMODO_7-9000_MEDIUM_7_MODIFIED_FOR_DSM_9000
+- KOMODO_774_medium_FOR_PARACOCCUS_AMINOPHILUS_AND_P._AMINOVORANS
+- KOMODO_7_ANCYLOBACTER_-_SPIROSOMA_medium
+- JCM_J259_GLUCOSE-YEAST-PEPTONE_MEDIUM
+merge_fingerprint: 26de930f920797cdc34e2ab924aa5385bb0287a9f7b83de5d2c7cb36ab6e19c9

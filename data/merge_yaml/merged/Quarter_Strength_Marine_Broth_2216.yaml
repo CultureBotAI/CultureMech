@@ -21,7 +21,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1049'
-- timestamp: '2026-02-03T22:26:24.703432+00:00'
+- timestamp: '2026-02-19T08:27:01.963267+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: JCM_J1049_QUARTER_STRENGTH_MARINE_BROTH_2216, JCM_J41_MARINE_BROTH_2216'

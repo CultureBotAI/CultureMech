@@ -1,106 +1,139 @@
-name: Sporulation Medium
-original_name: Sporulation Medium
+name: SPORULATION MEDIUM
+original_name: SPORULATION MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 531
+  term:
+    id: mediadive.medium:531
+    label: SPORULATION MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium531.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Nutrient broth
   concentration:
-    value: '800'
+    value: '6'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: FeSO4·7H2O
-  concentration:
-    value: '0.278'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: KCl
+- preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: Trypticase
+  concentration:
+    value: '2'
+    unit: G_PER_L
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Nutrient broth
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: MnSO4 x H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Ca(NO3)2·4H2O
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   concentration:
-    value: '236.15'
+    value: '0.0005'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86159
-    label: calcium nitrate tetrahydrate
-- preferred_term: Distilled water
+- preferred_term: Marine Broth
   concentration:
-    value: '100'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+- preferred_term: Agar
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MnCl2·4H2O
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '1.979'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-media_term:
-  preferred_term: TOGO Medium M1868
+- preferred_term: Inosin
   term:
-    id: TOGO:M1868
-    label: Sporulation Medium
-notes: 'Source: https://togomedium.org/medium/M1868
-
-  Original source: NBRC - NBRC_M1113
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1113'
+    id: CHEBI:17596
+    label: Inosin
+  concentration:
+    value: '0.00134113'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.546074Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1868'
-- timestamp: '2026-01-28T19:48:17.696550Z'
+- timestamp: '2026-01-26T17:53:11.546402Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 531'
+- timestamp: '2026-01-28T19:48:37.602466Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: e9181da44051e164750e29442ba339ad8c3d4b6e6bc59d7670db6846846d0e00
+- timestamp: '2026-02-19T08:26:50.858824+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_531_SPORULATION_MEDIUM, KOMODO_531-1314_MEDIUM_531_MODIFIED_FOR_DSM_1314,
+    KOMODO_531-4332_MEDIUM_531_MODIFIED_FOR_DSM_4332, KOMODO_531-4333_MEDIUM_531_MODIFIED_FOR_DSM_4333,
+    KOMODO_531-4334_MEDIUM_531_MODIFIED_FOR_DSM_4334, KOMODO_531-4335_MEDIUM_531_MODIFIED_FOR_DSM_4335,
+    KOMODO_531-6800_MEDIUM_531_MODIFIED_FOR_DSM_6800, KOMODO_531-6801_MEDIUM_531_MODIFIED_FOR_DSM_6801,
+    KOMODO_531-6802_MEDIUM_531_MODIFIED_FOR_DSM_6802, KOMODO_531-6803_MEDIUM_531_MODIFIED_FOR_DSM_6803,
+    KOMODO_531-6804_MEDIUM_531_MODIFIED_FOR_DSM_6804, KOMODO_531-6805_MEDIUM_531_MODIFIED_FOR_DSM_6805,
+    KOMODO_531_SPORULATION_medium'
+synonyms:
+- name: MEDIUM 531 MODIFIED FOR DSM 1314
+  source: KOMODO
+  source_id: komodo.medium:531_1314
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 4332
+  source: KOMODO
+  source_id: komodo.medium:531_4332
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 4333
+  source: KOMODO
+  source_id: komodo.medium:531_4333
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 4334
+  source: KOMODO
+  source_id: komodo.medium:531_4334
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 4335
+  source: KOMODO
+  source_id: komodo.medium:531_4335
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6800
+  source: KOMODO
+  source_id: komodo.medium:531_6800
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6801
+  source: KOMODO
+  source_id: komodo.medium:531_6801
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6802
+  source: KOMODO
+  source_id: komodo.medium:531_6802
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6803
+  source: KOMODO
+  source_id: komodo.medium:531_6803
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6804
+  source: KOMODO
+  source_id: komodo.medium:531_6804
+  original_category: imported
+- name: MEDIUM 531 MODIFIED FOR DSM 6805
+  source: KOMODO
+  source_id: komodo.medium:531_6805
+  original_category: imported
+- name: SPORULATION medium
+  source: KOMODO
+  source_id: komodo.medium:531
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1868_Sporulation_Medium
+- DSMZ_531_SPORULATION_MEDIUM
+- KOMODO_531-1314_MEDIUM_531_MODIFIED_FOR_DSM_1314
+- KOMODO_531-4332_MEDIUM_531_MODIFIED_FOR_DSM_4332
+- KOMODO_531-4333_MEDIUM_531_MODIFIED_FOR_DSM_4333
+- KOMODO_531-4334_MEDIUM_531_MODIFIED_FOR_DSM_4334
+- KOMODO_531-4335_MEDIUM_531_MODIFIED_FOR_DSM_4335
+- KOMODO_531-6800_MEDIUM_531_MODIFIED_FOR_DSM_6800
+- KOMODO_531-6801_MEDIUM_531_MODIFIED_FOR_DSM_6801
+- KOMODO_531-6802_MEDIUM_531_MODIFIED_FOR_DSM_6802
+- KOMODO_531-6803_MEDIUM_531_MODIFIED_FOR_DSM_6803
+- KOMODO_531-6804_MEDIUM_531_MODIFIED_FOR_DSM_6804
+- KOMODO_531-6805_MEDIUM_531_MODIFIED_FOR_DSM_6805
+- KOMODO_531_SPORULATION_medium
+merge_fingerprint: a796b155355f196a255a899434711effbc5098925af39c640be490a3ca43e5da

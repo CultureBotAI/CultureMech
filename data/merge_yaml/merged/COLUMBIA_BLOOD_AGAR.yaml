@@ -1,47 +1,216 @@
-name: Columbia Blood Agar
-original_name: Columbia Blood Agar
+name: COLUMBIA BLOOD AGAR
+original_name: COLUMBIA BLOOD AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 429
+  term:
+    id: mediadive.medium:429
+    label: COLUMBIA BLOOD AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Columbia agar base
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Horse blood
   concentration:
-    value: '4'
-    unit: PERCENT_W_V
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Brain Heart Infusion (Difco)
+    value: '40'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '17'
+    unit: G_PER_L
+- preferred_term: Soy peptone
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: D(+)-Glucose
+  term:
+    id: CHEBI:17634
+    label: D(+)-Glucose
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Brain heart infusion
   concentration:
     value: '37'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M2545
-  term:
-    id: TOGO:M2545
-    label: Columbia Blood Agar
-notes: 'Source: https://togomedium.org/medium/M2545
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium429.pdf'
+- preferred_term: Peptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: STORE
+  description: Columbia agar base supplemented with 4% horse blood. Rehydrate pellets
+    of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below). For rehydration
+    of Helicobacter and Campylobacter spp., use medium 215 (brain heart infusion).
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.3.
+- step_number: 3
+  action: MIX
+  description: The same as Caso Bouillon (Merck or Oxoid, Germany).
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.674907Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2545'
-- timestamp: '2026-01-28T19:48:10.023135Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: b367bbf942be135413a80a1533fc43997fb258d68b3c44f8544064a75e8359e9
+- timestamp: '2026-01-26T17:53:11.105039Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 429'
+- timestamp: '2026-02-19T08:26:48.072828+00:00'
+  curator: recipe-merger
+  action: Merged 24 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_429_COLUMBIA_BLOOD_AGAR, DSMZ_429e_e._COLUMBIA_BLOOD_AGAR_10,
+    KOMODO_429-10000_MEDIUM_429_MODIFIED_FOR_DSM_10000, KOMODO_429-10001_COLUMBIA_BLOOD_AGAR_MODIFIED_FOR_DSM_10001,
+    KOMODO_429-11121_MEDIUM_429_MODIFIED_FOR_DSM_11121, KOMODO_429-11969_COLUMBIA_BLOOD_AGAR_MODIFIED_FOR_DSM_11969,
+    KOMODO_429-15534_MEDIUM_429_MODIFIED_FOR_DSM_15534, KOMODO_429-15746_MEDIUM_429_MODIFIED_FOR_DSM_15746,
+    KOMODO_429-17480_MEDIUM_429_MODIFIED_FOR_DSM_17480, KOMODO_429-17557_MEDIUM_429_MODIFIED_FOR_DSM_17557,
+    KOMODO_429-17739_MEDIUM_429_MODIFIED_FOR_DSM_17739, KOMODO_429-19655_MEDIUM_429_MODIFIED_FOR_DSM_19655,
+    KOMODO_429-21463_MEDIUM_429_MODIFIED_FOR_DSM_21463, KOMODO_429-21768_MEDIUM_429_MODIFIED_FOR_DSM_21768,
+    KOMODO_429-25354_MEDIUM_429_MODIFIED_FOR_DSM_25354, KOMODO_429_COLUMBIA_BLOOD_AGAR,
+    KOMODO_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL, KOMODO_429b-18554_MEDIUM_429b_MODIFIED_FOR_DSM_18554,
+    KOMODO_429b-replace-horse blood-with-sheep blood_CHOCOLATE_AGAR_replace_horse_blood_with_sheep_blood,
+    KOMODO_429b_CHOCOLATE_AGAR, KOMODO_429c-replace-horse blood-with-sheep blood_COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse_blood_with_sheep_blood,
+    KOMODO_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR, KOMODO_429d-replace-horse blood-with-sheep
+    blood_FRANCISELLA_HALIOTICIDA_medium_replace_horse_blood_with_sheep_blood, KOMODO_429d_FRANCISELLA_HALIOTICIDA_medium'
+synonyms:
+- name: e. COLUMBIA BLOOD AGAR 10%
+  source: MediaDive
+  source_id: mediadive.medium:429e
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 10000
+  source: KOMODO
+  source_id: komodo.medium:429_10000
+  original_category: imported
+- name: COLUMBIA BLOOD AGAR MODIFIED FOR DSM 10001
+  source: KOMODO
+  source_id: komodo.medium:429_10001
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 11121
+  source: KOMODO
+  source_id: komodo.medium:429_11121
+  original_category: imported
+- name: COLUMBIA BLOOD AGAR MODIFIED FOR DSM 11969
+  source: KOMODO
+  source_id: komodo.medium:429_11969
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 15534
+  source: KOMODO
+  source_id: komodo.medium:429_15534
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 15746
+  source: KOMODO
+  source_id: komodo.medium:429_15746
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 17480
+  source: KOMODO
+  source_id: komodo.medium:429_17480
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 17557
+  source: KOMODO
+  source_id: komodo.medium:429_17557
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 17739
+  source: KOMODO
+  source_id: komodo.medium:429_17739
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 19655
+  source: KOMODO
+  source_id: komodo.medium:429_19655
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 21463
+  source: KOMODO
+  source_id: komodo.medium:429_21463
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 21768
+  source: KOMODO
+  source_id: komodo.medium:429_21768
+  original_category: imported
+- name: MEDIUM 429 MODIFIED FOR DSM 25354
+  source: KOMODO
+  source_id: komodo.medium:429_25354
+  original_category: imported
+- name: COLUMBIA BLOOD AGAR WITH CHARCOAL
+  source: KOMODO
+  source_id: komodo.medium:429a
+  original_category: imported
+- name: MEDIUM 429b MODIFIED FOR DSM 18554
+  source: KOMODO
+  source_id: komodo.medium:429b_18554
+  original_category: imported
+- name: CHOCOLATE AGAR_replace_horse blood_with_sheep blood
+  source: KOMODO
+  source_id: komodo.medium:429b_replace_horse blood_with_sheep blood
+  original_category: imported
+- name: CHOCOLATE AGAR
+  source: KOMODO
+  source_id: komodo.medium:429b
+  original_category: imported
+- name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse blood_with_sheep blood
+  source: KOMODO
+  source_id: komodo.medium:429c_replace_horse blood_with_sheep blood
+  original_category: imported
+- name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+  source: KOMODO
+  source_id: komodo.medium:429c
+  original_category: imported
+- name: FRANCISELLA HALIOTICIDA medium_replace_horse blood_with_sheep blood
+  source: KOMODO
+  source_id: komodo.medium:429d_replace_horse blood_with_sheep blood
+  original_category: imported
+- name: FRANCISELLA HALIOTICIDA medium
+  source: KOMODO
+  source_id: komodo.medium:429d
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2545_Columbia_Blood_Agar
+- DSMZ_429_COLUMBIA_BLOOD_AGAR
+- DSMZ_429e_e._COLUMBIA_BLOOD_AGAR_10
+- KOMODO_429-10000_MEDIUM_429_MODIFIED_FOR_DSM_10000
+- KOMODO_429-10001_COLUMBIA_BLOOD_AGAR_MODIFIED_FOR_DSM_10001
+- KOMODO_429-11121_MEDIUM_429_MODIFIED_FOR_DSM_11121
+- KOMODO_429-11969_COLUMBIA_BLOOD_AGAR_MODIFIED_FOR_DSM_11969
+- KOMODO_429-15534_MEDIUM_429_MODIFIED_FOR_DSM_15534
+- KOMODO_429-15746_MEDIUM_429_MODIFIED_FOR_DSM_15746
+- KOMODO_429-17480_MEDIUM_429_MODIFIED_FOR_DSM_17480
+- KOMODO_429-17557_MEDIUM_429_MODIFIED_FOR_DSM_17557
+- KOMODO_429-17739_MEDIUM_429_MODIFIED_FOR_DSM_17739
+- KOMODO_429-19655_MEDIUM_429_MODIFIED_FOR_DSM_19655
+- KOMODO_429-21463_MEDIUM_429_MODIFIED_FOR_DSM_21463
+- KOMODO_429-21768_MEDIUM_429_MODIFIED_FOR_DSM_21768
+- KOMODO_429-25354_MEDIUM_429_MODIFIED_FOR_DSM_25354
+- KOMODO_429_COLUMBIA_BLOOD_AGAR
+- KOMODO_429a_COLUMBIA_BLOOD_AGAR_WITH_CHARCOAL
+- KOMODO_429b-18554_MEDIUM_429b_MODIFIED_FOR_DSM_18554
+- KOMODO_429b-replace-horse blood-with-sheep blood_CHOCOLATE_AGAR_replace_horse_blood_with_sheep_blood
+- KOMODO_429b_CHOCOLATE_AGAR
+- KOMODO_429c-replace-horse blood-with-sheep blood_COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse_blood_with_sheep_blood
+- KOMODO_429c_COLUMBIA-GLUCOSE-CYSTEINE-AGAR
+- KOMODO_429d-replace-horse blood-with-sheep blood_FRANCISELLA_HALIOTICIDA_medium_replace_horse_blood_with_sheep_blood
+- KOMODO_429d_FRANCISELLA_HALIOTICIDA_medium
+merge_fingerprint: d17805c914747fa5f0bb7b4506ad6a8b62ed0593a2952c7d77ab75ad643e9e7c

@@ -76,7 +76,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: volvocacean-3n-medium, URL: https://utex.org/products/volvocacean-3n-medium'
-- timestamp: '2026-02-03T22:25:24.937306+00:00'
+- timestamp: '2026-02-19T08:26:36.574536+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: 2X_Erdschreiber_s_Medium, Bristol_Medium, Erdschreiber_s_Medium,

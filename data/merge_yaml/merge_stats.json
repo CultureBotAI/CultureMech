@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-02-03T22:25:24.777916+00:00",
+  "timestamp": "2026-02-19T08:26:36.416501+00:00",
   "input_recipes": 10595,
-  "output_recipes": 5897,
-  "reduction": 4698,
-  "reduction_percentage": 44.3,
+  "output_recipes": 1350,
+  "reduction": 9245,
+  "reduction_percentage": 87.3,
   "cross_category_merges": 0,
   "largest_group_size": 157,
   "top_duplicates": [

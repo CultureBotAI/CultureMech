@@ -1,109 +1,97 @@
-name: Mycobacterium Medium
-original_name: Mycobacterium Medium
+name: MYCOBACTERIUM MEDIUM
+original_name: MYCOBACTERIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 219
+  term:
+    id: mediadive.medium:219
+    label: MYCOBACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium219.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '2'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 12 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: Tween 80
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
-- preferred_term: Glycerol
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-- preferred_term: Na2HPO4・12H2O
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-- preferred_term: Trisodium citrate
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Sodium citrate
+  term:
+    id: CHEBI:53258
+    label: Sodium citrate
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:53258
-    label: sodium citrate
-- preferred_term: Agar
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '15'
+    value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Tween
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
     id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
+    label: Agar
   concentration:
-    value: '2'
+    value: '20'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Proteose peptone No. 3
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casein peptone, tryptic digested
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M467
-  term:
-    id: TOGO:M467
-    label: Mycobacterium Medium
-notes: 'Source: https://togomedium.org/medium/M467
-
-  Original source: JCM - JCM_M466
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=466'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.112962Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M467'
-- timestamp: '2026-01-28T19:48:37.699855Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: bca2c0397a490f8a16547b9116834d0cee17875bbebe399ea8b1c0fca78bbc56
+- timestamp: '2026-01-26T17:53:10.541959Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 219'
+- timestamp: '2026-02-19T08:26:45.063563+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_219_MYCOBACTERIUM_MEDIUM, KOMODO_219_MYCOBACTERIUM_medium'
+synonyms:
+- name: MYCOBACTERIUM medium
+  source: KOMODO
+  source_id: komodo.medium:219
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M467_Mycobacterium_Medium
+- DSMZ_219_MYCOBACTERIUM_MEDIUM
+- KOMODO_219_MYCOBACTERIUM_medium
+merge_fingerprint: 5d28996697353a637a5cd232597d520d439b5b24f12764c34e898f7d982601c6

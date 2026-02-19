@@ -244,7 +244,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 386'
-- timestamp: '2026-02-03T22:25:40.642054+00:00'
+- timestamp: '2026-02-19T08:26:47.458193+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_386_DESULFOLUTIVIBRIO_MEDIUM, KOMODO_386_DESULFOVIBRIO_SULFODISMUTANS_MEDIUM,

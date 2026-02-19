@@ -175,7 +175,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 838'
-- timestamp: '2026-02-03T22:25:50.038137+00:00'
+- timestamp: '2026-02-19T08:26:55.591010+00:00'
   curator: recipe-merger
   action: Merged 6 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_838_GEOANAEROBACTER_MEDIUM, KOMODO_838-1_For_DSM_9736, KOMODO_838-2_For_DSM_15288_and_DSM_16228,

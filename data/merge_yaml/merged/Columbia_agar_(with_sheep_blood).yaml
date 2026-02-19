@@ -31,7 +31,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: sheep blood; Added default concentration
     for ingredient: Columbia agar'
-- timestamp: '2026-02-03T22:26:15.332438+00:00'
+- timestamp: '2026-02-19T08:27:01.634689+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2508_Columbia_agar_with_sheep_blood, TOGO_M2836_Columbia_agar_supplemented_with_5_sheep_blood'

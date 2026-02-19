@@ -1,149 +1,106 @@
-name: Hyphomicrobium Medium
-original_name: Hyphomicrobium Medium
+name: HYPHOMICROBIUM MEDIUM
+original_name: HYPHOMICROBIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 162
+  term:
+    id: mediadive.medium:162
+    label: HYPHOMICROBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium162.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: CHEBI:63036
+    label: KH2PO4
   concentration:
-    value: '0.2'
+    value: '1.36'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: K2HPO4
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+- preferred_term: Na2HPO4
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
+    id: CHEBI:34683
+    label: Na2HPO4
+  concentration:
+    value: '2.13'
+    unit: G_PER_L
 - preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Methylamine hydrochloride
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '2'
+    value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.006'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0015'
+    unit: G_PER_L
+- preferred_term: Methylamine hydrochloride
   term:
     id: CHEBI:59337
-    label: methylamine hydrochloride
-- preferred_term: NaH2PO4
+    label: Methylamine hydrochloride
   concentration:
-    value: '2.25'
+    value: '3.38'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:37585
-    label: sodium dihydrogenphosphate
-- preferred_term: Agar
+- preferred_term: Yeast extract
   concentration:
-    value: '15'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Visniac trace elements (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.733'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '0.499'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '0.506'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '0.161'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: ZnSO4・7H2O
-  concentration:
-    value: '2.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CuSO4・5H2O
-  concentration:
-    value: '0.157'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: (NH4)6Mo7O24・4H2O
-  concentration:
-    value: '0.11'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: EDTA・2Na
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-media_term:
-  preferred_term: TOGO Medium M925
-  term:
-    id: TOGO:M925
-    label: Hyphomicrobium Medium
-notes: 'Source: https://togomedium.org/medium/M925
-
-  Original source: JCM - JCM_M884
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=884'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Adjust pH to 7.4 with NaOH. Autoclave 20 min at 121°C; final pH: 7.2.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.972518Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M925'
-- timestamp: '2026-01-28T19:48:33.879801Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: b84c8d92454f1e3dceb6dcee2ba9a5560aed06991c685191cd7274e4f26bbda1
+- timestamp: '2026-01-26T17:53:10.377814Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 162'
+- timestamp: '2026-02-19T08:26:43.832265+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_162_HYPHOMICROBIUM_MEDIUM, KOMODO_162_HYPHOMICROBIUM_medium'
+synonyms:
+- name: HYPHOMICROBIUM medium
+  source: KOMODO
+  source_id: komodo.medium:162
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M925_Hyphomicrobium_Medium
+- DSMZ_162_HYPHOMICROBIUM_MEDIUM
+- KOMODO_162_HYPHOMICROBIUM_medium
+merge_fingerprint: c8032f6a503d33a048c2fa3f57e6708dd639bda6f5135d97cdab99179344dd48

@@ -182,7 +182,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1036'
-- timestamp: '2026-02-03T22:25:27.377801+00:00'
+- timestamp: '2026-02-19T08:26:38.282081+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1036_ACETIVIBRIO_ALKALICELLULOSI_MEDIUM, KOMODO_1036_CLOSTRIDIUM_ALKALICELLUM_medium'

@@ -1,44 +1,61 @@
-name: Potato Dextrose Agar
-original_name: Potato Dextrose Agar
+name: POTATO DEXTROSE AGAR
+original_name: POTATO DEXTROSE AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Nissui Potato Dextrose Agar
-  concentration:
-    value: '39'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 media_term:
-  preferred_term: TOGO Medium M1721
+  preferred_term: KOMODO Medium 129
   term:
-    id: TOGO:M1721
-    label: Potato Dextrose Agar
-notes: 'Source: https://togomedium.org/medium/M1721
-
-  Original source: NBRC - NBRC_M930
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=930'
+    id: komodo.medium:129
+    label: POTATO DEXTROSE AGAR
+notes: 'Source: KOMODO ModelSEED | ID: 129 | DSMZ Medium: 129 (mediadive.medium:129)
+  | Aerobic: No'
+ingredients:
+- preferred_term: Potato
+  concentration:
+    value: '200'
+    unit: G_PER_L
+  notes: ' ( peeled and cut)'
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.221326Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1721'
-- timestamp: '2026-01-28T19:48:39.785934Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 810b45e4967a8d02e118ed5462b6ec7c16d9790e8202d51660f6c5d957cfd94a
+- timestamp: 2026-01-27T01:15:01.fZ
+  curator: komodo-web-import
+  action: Imported from KOMODO web table
+  notes: 'Source: KOMODO, ID: 129'
+- timestamp: '2026-02-03T11:19:12.951759'
+  curator: dsmz-resolver-v1.0
+  action: Enriched with DSMZ composition
+  notes: Copied ingredients from DSMZ Medium 129
+- timestamp: '2026-02-19T08:26:58.464376+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J30_POTATO-DEXTROSE_AGAR, KOMODO_129_POTATO_DEXTROSE_AGAR,
+    DSMZ_129_POTATO_DEXTROSE_AGAR'
+ph_value: 5.6
+synonyms:
+- name: POTATO-DEXTROSE AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J30
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1721_Potato_Dextrose_Agar
+- JCM_J30_POTATO-DEXTROSE_AGAR
+- KOMODO_129_POTATO_DEXTROSE_AGAR
+- DSMZ_129_POTATO_DEXTROSE_AGAR
+merge_fingerprint: f23c3edb0839c9f5690bddc32074c18c5cd4420c6072c8b518febcf6e995d1b8

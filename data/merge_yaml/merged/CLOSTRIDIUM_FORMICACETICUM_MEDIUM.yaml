@@ -145,7 +145,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 14'
-- timestamp: '2026-02-03T22:25:34.281090+00:00'
+- timestamp: '2026-02-19T08:26:43.576181+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_14_CLOSTRIDIUM_FORMICACETICUM_MEDIUM, KOMODO_14_CLOSTRIDIUM_FORMICOACETICUM_medium'

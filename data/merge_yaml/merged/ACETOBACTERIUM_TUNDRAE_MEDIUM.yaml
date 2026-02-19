@@ -215,7 +215,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 900'
-- timestamp: '2026-02-03T22:25:51.160669+00:00'
+- timestamp: '2026-02-19T08:26:56.630519+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_900_ACETOBACTERIUM_TUNDRAE_MEDIUM, KOMODO_900_ACETOBACTERIUM_TUNDRAE_MEDIUM'

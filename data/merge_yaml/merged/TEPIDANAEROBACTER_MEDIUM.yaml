@@ -162,7 +162,7 @@ curation_history:
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: N2'
-- timestamp: '2026-02-03T22:26:20.268012+00:00'
+- timestamp: '2026-02-19T08:27:01.792643+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M364_Tepidanaerobacter_Medium, TOGO_M434_Anaerolinea_Medium'

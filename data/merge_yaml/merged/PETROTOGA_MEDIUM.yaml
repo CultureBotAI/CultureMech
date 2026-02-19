@@ -1,125 +1,344 @@
-name: Petrotoga Medium
-original_name: Petrotoga Medium
+name: PETROTOGA MEDIUM
+original_name: PETROTOGA MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
+ph_range: 6.5-6.7
+media_term:
+  preferred_term: DSMZ Medium 718
+  term:
+    id: mediadive.medium:718
+    label: PETROTOGA MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium718.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: KCl
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
+    id: CHEBI:32588
+    label: KCl
   concentration:
-    value: '30'
+    value: '0.335637'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
-    value: '0.1'
+    value: '3.94867'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:63036
-    label: KH2PO4
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.40573'
+    unit: G_PER_L
 - preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2・6H2O
+    label: NH4Cl
+  concentration:
+    value: '0.246792'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.138203'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.138203'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '49.3583'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 7 H2O
+  term:
+    id: CHEBI:131378
+    label: Fe(NH4)2(SO4)2 x 7 H2O
+  concentration:
+    value: '0.00197433'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000493583'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.987167'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1.97433'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '4.93583'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '0.493583'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
+  term:
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: KCl
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: NaCl
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: HEPES
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: '2.6'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:46756
-    label: HEPES
-- preferred_term: Maltose monohydrate
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
-    value: '3.6'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M295
+- preferred_term: CoSO4 x 7 H2O
   term:
-    id: TOGO:M295
-    label: Petrotoga Medium
-notes: 'Source: https://togomedium.org/medium/M295
-
-  Original source: JCM - JCM_M300
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=300'
+    id: CHEBI:53470
+    label: CoSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.18'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: AlK(SO4)2 x 12 H2O
+  term:
+    id: CHEBI:86465
+    label: AlK(SO4)2 x 12 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.0003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.0004'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate, glucose, yeast extract, vitamins
+    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
+    45 min to make it anoxic. Add bicarbonate, adjust pH to 6.5 and dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After autoclaving add glucose, yeast extract, vitamins, and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas. Vitamins should be sterilized
+    by filtration. Prior to inoculation adjust pH of complete medium to 6.5 - 6.7,
+    if necessary.
+- step_number: 2
+  action: ADJUST_PH
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals. Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.784998Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M295'
-- timestamp: '2026-01-28T19:48:29.393826Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.892278'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: dccead7e021a7c318046e4d727260113973d0238353d4696eae2714e7e8453cb
+- timestamp: '2026-01-26T17:53:12.021648Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 718'
+- timestamp: '2026-02-06T05:10:19.911651Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:37.511724+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_718a_PETROTOGA_HALOPHILA_MEDIUM, DSMZ_718_PETROTOGA_MEDIUM,
+    KOMODO_718-1_For_DSM_10674, KOMODO_718-2_For_DSM_10691, KOMODO_718-3_For_DSM_13782,
+    KOMODO_718-4_For_DSM_14811, KOMODO_718-5_For_DSM_16923, KOMODO_718_PETROTOGA_medium'
+synonyms:
+- name: PETROTOGA HALOPHILA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:718a
+  original_category: imported
+- name: 'For DSM 10674:'
+  source: KOMODO
+  source_id: komodo.medium:718.1
+  original_category: imported
+- name: 'For DSM 10691:'
+  source: KOMODO
+  source_id: komodo.medium:718.2
+  original_category: imported
+- name: 'For DSM 13782:'
+  source: KOMODO
+  source_id: komodo.medium:718.3
+  original_category: imported
+- name: 'For DSM 14811:'
+  source: KOMODO
+  source_id: komodo.medium:718.4
+  original_category: imported
+- name: 'For DSM 16923:'
+  source: KOMODO
+  source_id: komodo.medium:718.5
+  original_category: imported
+- name: PETROTOGA medium
+  source: KOMODO
+  source_id: komodo.medium:718
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M295_Petrotoga_Medium
+- DSMZ_718a_PETROTOGA_HALOPHILA_MEDIUM
+- DSMZ_718_PETROTOGA_MEDIUM
+- KOMODO_718-1_For_DSM_10674
+- KOMODO_718-2_For_DSM_10691
+- KOMODO_718-3_For_DSM_13782
+- KOMODO_718-4_For_DSM_14811
+- KOMODO_718-5_For_DSM_16923
+- KOMODO_718_PETROTOGA_medium
+merge_fingerprint: 6ae65cb8302bce4c630e8c539e5a86665d6688f2e7dc6886ff1feda1422d3aa4

@@ -251,7 +251,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1315
-- timestamp: '2026-02-03T22:25:59.984771+00:00'
+- timestamp: '2026-02-19T08:26:58.777016+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1315-1_For_strains_DSM_12138_12139_12140_and_12143, KOMODO_1315_ANAEROBIC_THAUERA_MEDIUM,

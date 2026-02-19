@@ -54,9 +54,6 @@ ingredients:
     value: '0.149701'
     unit: G_PER_L
 - preferred_term: Na2SiO3
-  term:
-    id: CHEBI:1344098
-    label: Na2SiO3
   concentration:
     value: '0.0299401'
     unit: G_PER_L
@@ -202,9 +199,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -251,7 +245,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 902'
-- timestamp: '2026-02-03T22:25:51.215906+00:00'
+- timestamp: '2026-02-06T05:10:37.675691Z'
+  curator: invalid-chebi-removal
+  action: Removed 2 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:56.672917+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_902_CARCBOXYDIBRACHIUM_MEDIUM, KOMODO_902_CARCBOXYDOBRACHIUM_PACIFICUM_medium'
@@ -265,4 +264,4 @@ categories:
 merged_from:
 - DSMZ_902_CARCBOXYDIBRACHIUM_MEDIUM
 - KOMODO_902_CARCBOXYDOBRACHIUM_PACIFICUM_medium
-merge_fingerprint: 7b7d25b3c3466e135142c05e9bb4a26b05f5de9dcf625141acbe88df511aa8d2
+merge_fingerprint: b716bfa2fd9ded305f6b6ce8225f6c180653c391a182482587082e3d58e25a4c

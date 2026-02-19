@@ -55,7 +55,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 551
-- timestamp: '2026-02-03T22:26:01.116954+00:00'
+- timestamp: '2026-02-19T08:26:59.835269+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_551_EMERSON_S_YEAST_STARCH_AGAR_EYS, DSMZ_551_EMERSON_S_YEAST_STARCH_AGAR_EYS'

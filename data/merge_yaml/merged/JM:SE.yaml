@@ -152,7 +152,7 @@ curation_history:
   date: '2026-02-03T11:20:17.049006'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-02-03T22:25:26.402631+00:00'
+- timestamp: '2026-02-19T08:26:37.695577+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: CCAP_C2_AJS, CCAP_C41_JM_SE'

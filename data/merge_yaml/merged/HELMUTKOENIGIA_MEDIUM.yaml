@@ -365,7 +365,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 843'
-- timestamp: '2026-02-03T22:25:50.122513+00:00'
+- timestamp: '2026-02-19T08:26:55.672469+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_843_HELMUTKOENIGIA_MEDIUM, KOMODO_843-18056_MEDIUM_843_MODIFIED_FOR_DSM_18056,

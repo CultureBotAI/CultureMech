@@ -1,98 +1,310 @@
-name: Bifidobacterium Medium
-original_name: Bifidobacterium Medium
+name: BIFIDOBACTERIUM MEDIUM
+original_name: BIFIDOBACTERIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 58
+  term:
+    id: mediadive.medium:58
+    label: BIFIDOBACTERIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium58.pdf'
 ingredients:
+- preferred_term: Casein peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: K2HPO4
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Tween 80
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
-- preferred_term: Tap water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
-  term:
-    id: CHEBI:15377
-    label: Tap water
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
 - preferred_term: Meat extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casein peptone, tryptic digest
+- preferred_term: Bacto Soytone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:8150
+    label: ''
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: sodium ascorbate
-  notes: 'Properties: Defined component, Organic compound, Solution'
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:113451
-    label: sodium ascorbate
+    id: CHEBI:131527
+    label: K2HPO4
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: cysteine-HCl
-  notes: 'Properties: Defined component, Solution, Organic compound'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M1578
+    value: '2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M1578
-    label: Bifidobacterium Medium
-notes: 'Source: https://togomedium.org/medium/M1578
-
-  Original source: NBRC - NBRC_M385
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=385'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: The cysteine are added after the medium has been boiled and cooled
+    under CO2. Adjust pH to 6.8 using 8 N NaOH. Distribute under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.871193Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1578'
-- timestamp: '2026-01-28T19:48:19.048413Z'
+- timestamp: '2026-01-26T17:53:10.062641Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 58'
+- timestamp: '2026-01-28T19:48:37.937813Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.196787'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sodium ascorbate; Added default
-    concentration for ingredient: cysteine-HCl'
-merge_fingerprint: ad9e567d96d6f5f5db04fbdc3285a442088915041868c0af5a55d0c70ebc25a7
+- timestamp: '2026-02-19T08:26:51.551822+00:00'
+  curator: recipe-merger
+  action: Merged 29 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_58_BIFIDOBACTERIUM_MEDIUM, KOMODO_58-16839_MEDIUM_58_MODIFIED_FOR_DSM_16839,
+    KOMODO_58-16840_MEDIUM_58_MODIFIED_FOR_DSM_16840, KOMODO_58-16980_MEDIUM_58_MODIFIED_FOR_DSM_16980,
+    KOMODO_58-16981_MEDIUM_58_MODIFIED_FOR_DSM_16981, KOMODO_58-17042_MEDIUM_58_MODIFIED_FOR_DSM_17042,
+    KOMODO_58-17774_MEDIUM_58_MODIFIED_FOR_DSM_17774, KOMODO_58-17775_MEDIUM_58_MODIFIED_FOR_DSM_17775,
+    KOMODO_58-17776_MEDIUM_58_MODIFIED_FOR_DSM_17776, KOMODO_58-17777_MEDIUM_58_MODIFIED_FOR_DSM_17777,
+    KOMODO_58-17778_MEDIUM_58_MODIFIED_FOR_DSM_17778, KOMODO_58-17779_MEDIUM_58_MODIFIED_FOR_DSM_17779,
+    KOMODO_58-20461_MEDIUM_58_MODIFIED_FOR_DSM_20461, KOMODO_58-20462_MEDIUM_58_MODIFIED_FOR_DSM_20462,
+    KOMODO_58-20465_MEDIUM_58_MODIFIED_FOR_DSM_20465, KOMODO_58-20466_MEDIUM_58_MODIFIED_FOR_DSM_20466,
+    KOMODO_58-20467_MEDIUM_58_MODIFIED_FOR_DSM_20467, KOMODO_58-20756_MEDIUM_58_MODIFIED_FOR_DSM_20756,
+    KOMODO_58-20757_MEDIUM_58_MODIFIED_FOR_DSM_20757, KOMODO_58-20762_MEDIUM_58_MODIFIED_FOR_DSM_20762,
+    KOMODO_58-20764_MEDIUM_58_MODIFIED_FOR_DSM_20764, KOMODO_58-20765_MEDIUM_58_MODIFIED_FOR_DSM_20765,
+    KOMODO_58-21655_MEDIUM_58_MODIFIED_FOR_DSM_21655, KOMODO_58-24661_MEDIUM_58_MODIFIED_FOR_DSM_24661,
+    KOMODO_58-7198_MEDIUM_58_MODIFIED_FOR_DSM_7198, KOMODO_58-7199_MEDIUM_58_MODIFIED_FOR_DSM_7199,
+    KOMODO_58-7200_MEDIUM_58_MODIFIED_FOR_DSM_7200, KOMODO_58-7201_MEDIUM_58_MODIFIED_FOR_DSM_7201,
+    KOMODO_58_BIFIDOBACTERIUM_medium'
+synonyms:
+- name: MEDIUM 58 MODIFIED FOR DSM 16839
+  source: KOMODO
+  source_id: komodo.medium:58_16839
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 16840
+  source: KOMODO
+  source_id: komodo.medium:58_16840
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 16980
+  source: KOMODO
+  source_id: komodo.medium:58_16980
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 16981
+  source: KOMODO
+  source_id: komodo.medium:58_16981
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17042
+  source: KOMODO
+  source_id: komodo.medium:58_17042
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17774
+  source: KOMODO
+  source_id: komodo.medium:58_17774
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17775
+  source: KOMODO
+  source_id: komodo.medium:58_17775
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17776
+  source: KOMODO
+  source_id: komodo.medium:58_17776
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17777
+  source: KOMODO
+  source_id: komodo.medium:58_17777
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17778
+  source: KOMODO
+  source_id: komodo.medium:58_17778
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 17779
+  source: KOMODO
+  source_id: komodo.medium:58_17779
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20461
+  source: KOMODO
+  source_id: komodo.medium:58_20461
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20462
+  source: KOMODO
+  source_id: komodo.medium:58_20462
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20465
+  source: KOMODO
+  source_id: komodo.medium:58_20465
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20466
+  source: KOMODO
+  source_id: komodo.medium:58_20466
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20467
+  source: KOMODO
+  source_id: komodo.medium:58_20467
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20756
+  source: KOMODO
+  source_id: komodo.medium:58_20756
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20757
+  source: KOMODO
+  source_id: komodo.medium:58_20757
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20762
+  source: KOMODO
+  source_id: komodo.medium:58_20762
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20764
+  source: KOMODO
+  source_id: komodo.medium:58_20764
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 20765
+  source: KOMODO
+  source_id: komodo.medium:58_20765
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 21655
+  source: KOMODO
+  source_id: komodo.medium:58_21655
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 24661
+  source: KOMODO
+  source_id: komodo.medium:58_24661
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 7198
+  source: KOMODO
+  source_id: komodo.medium:58_7198
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 7199
+  source: KOMODO
+  source_id: komodo.medium:58_7199
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 7200
+  source: KOMODO
+  source_id: komodo.medium:58_7200
+  original_category: imported
+- name: MEDIUM 58 MODIFIED FOR DSM 7201
+  source: KOMODO
+  source_id: komodo.medium:58_7201
+  original_category: imported
+- name: BIFIDOBACTERIUM medium
+  source: KOMODO
+  source_id: komodo.medium:58
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1578_Bifidobacterium_Medium
+- DSMZ_58_BIFIDOBACTERIUM_MEDIUM
+- KOMODO_58-16839_MEDIUM_58_MODIFIED_FOR_DSM_16839
+- KOMODO_58-16840_MEDIUM_58_MODIFIED_FOR_DSM_16840
+- KOMODO_58-16980_MEDIUM_58_MODIFIED_FOR_DSM_16980
+- KOMODO_58-16981_MEDIUM_58_MODIFIED_FOR_DSM_16981
+- KOMODO_58-17042_MEDIUM_58_MODIFIED_FOR_DSM_17042
+- KOMODO_58-17774_MEDIUM_58_MODIFIED_FOR_DSM_17774
+- KOMODO_58-17775_MEDIUM_58_MODIFIED_FOR_DSM_17775
+- KOMODO_58-17776_MEDIUM_58_MODIFIED_FOR_DSM_17776
+- KOMODO_58-17777_MEDIUM_58_MODIFIED_FOR_DSM_17777
+- KOMODO_58-17778_MEDIUM_58_MODIFIED_FOR_DSM_17778
+- KOMODO_58-17779_MEDIUM_58_MODIFIED_FOR_DSM_17779
+- KOMODO_58-20461_MEDIUM_58_MODIFIED_FOR_DSM_20461
+- KOMODO_58-20462_MEDIUM_58_MODIFIED_FOR_DSM_20462
+- KOMODO_58-20465_MEDIUM_58_MODIFIED_FOR_DSM_20465
+- KOMODO_58-20466_MEDIUM_58_MODIFIED_FOR_DSM_20466
+- KOMODO_58-20467_MEDIUM_58_MODIFIED_FOR_DSM_20467
+- KOMODO_58-20756_MEDIUM_58_MODIFIED_FOR_DSM_20756
+- KOMODO_58-20757_MEDIUM_58_MODIFIED_FOR_DSM_20757
+- KOMODO_58-20762_MEDIUM_58_MODIFIED_FOR_DSM_20762
+- KOMODO_58-20764_MEDIUM_58_MODIFIED_FOR_DSM_20764
+- KOMODO_58-20765_MEDIUM_58_MODIFIED_FOR_DSM_20765
+- KOMODO_58-21655_MEDIUM_58_MODIFIED_FOR_DSM_21655
+- KOMODO_58-24661_MEDIUM_58_MODIFIED_FOR_DSM_24661
+- KOMODO_58-7198_MEDIUM_58_MODIFIED_FOR_DSM_7198
+- KOMODO_58-7199_MEDIUM_58_MODIFIED_FOR_DSM_7199
+- KOMODO_58-7200_MEDIUM_58_MODIFIED_FOR_DSM_7200
+- KOMODO_58-7201_MEDIUM_58_MODIFIED_FOR_DSM_7201
+- KOMODO_58_BIFIDOBACTERIUM_medium
+merge_fingerprint: 474925c4715a15753d52a3bb8eada71fe6dfddec9ce6ef05ea737587dd8e35c5

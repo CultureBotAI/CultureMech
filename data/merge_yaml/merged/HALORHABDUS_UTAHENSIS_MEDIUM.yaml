@@ -1,188 +1,200 @@
-name: Halorhabdus Utahensis Medium
-original_name: Halorhabdus Utahensis Medium
+name: HALORHABDUS UTAHENSIS MEDIUM
+original_name: HALORHABDUS UTAHENSIS MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
+ph_value: 7.6
+media_term:
+  preferred_term: DSMZ Medium 927
+  term:
+    id: mediadive.medium:927
+    label: HALORHABDUS UTAHENSIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium927.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '270'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: NH4Cl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: KCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
 - preferred_term: NaBr
+  term:
+    id: CHEBI:63004
+    label: NaBr
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:63004
-    label: sodium bromide
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '2'
+    unit: G_PER_L
 - preferred_term: Tris-HCl
   concentration:
     value: '12'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Complex component, Solution'
-  term:
-    id: CHEBI:1185531
-    label: ''
-- preferred_term: Glucose
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Yeast extract (Difco)
+- preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: phosphate solution
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-- preferred_term: calcium chloride solution
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Fe/Mn solution
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Glucose
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:17234
+    label: Glucose
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
+    value: '2'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: HCl
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '6.5'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 7 H2O
+  term:
+    id: CHEBI:30812
+    label: FeCl2 x 7 H2O
+  concentration:
+    value: '1.5'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '70'
+    unit: MG_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '100'
+    unit: MG_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '62'
+    unit: MG_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '190'
+    unit: MG_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '17'
+    unit: MG_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '24'
+    unit: MG_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '36'
+    unit: MG_PER_L
 - preferred_term: KH2PO4
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '50'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: CaCl2 x 6 H2O
+  term:
+    id: CHEBI:91243
+    label: CaCl2 x 6 H2O
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:91243
-    label: calcium chloride hexahydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: FeCl2 x 4 H2O
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-media_term:
-  preferred_term: TOGO Medium M2377
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: TOGO:M2377
-    label: Halorhabdus Utahensis Medium
-notes: 'Source: https://togomedium.org/medium/M2377
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium927.pdf'
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Prepare the medium, and adjust the pH to 7.6 with 5M NaOH.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave and when the medium has cooled add 2.5 ml of the phosphate
+    solution, 0.5 ml of the calcium chloride solution, and 0.25 ml of the Fe/Mn solution.
+    This strain will not grow in normal media for halobacteria, such as DSM medium
+    372!
+- step_number: 3
+  action: MIX
+  description: Prepare and sterilise separately
+- step_number: 4
+  action: MIX
+  description: Prepare and sterilise separately
+- step_number: 5
+  action: MIX
+  description: Prepare and sterilise separately
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.420923Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2377'
-- timestamp: '2026-01-28T19:48:23.604657Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.510856'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: 684160147d0fd45108c6fb0c19b67ddb3a4bd23208aa4b3f7891e43549107c73
+- timestamp: '2026-01-26T17:53:12.785372Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 927'
+- timestamp: '2026-02-06T05:10:22.239313Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:57.048208+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_927_HALORHABDUS_UTAHENSIS_MEDIUM, KOMODO_927_HALORHABDUS_UTAHENSIS_medium'
+synonyms:
+- name: HALORHABDUS UTAHENSIS medium
+  source: KOMODO
+  source_id: komodo.medium:927
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2377_Halorhabdus_Utahensis_Medium
+- DSMZ_927_HALORHABDUS_UTAHENSIS_MEDIUM
+- KOMODO_927_HALORHABDUS_UTAHENSIS_medium
+merge_fingerprint: 605c91f2537fc09c296d737d91f2a012786b220058d8618619e63ecfd03001ed

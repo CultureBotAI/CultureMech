@@ -1,64 +1,61 @@
-name: Peptone Meat Extract Glycerol Agar
-original_name: Peptone Meat Extract Glycerol Agar
+name: PEPTONE MEAT EXTRACT GLYCEROL AGAR
+original_name: PEPTONE MEAT EXTRACT GLYCEROL AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 250
+  term:
+    id: mediadive.medium:250
+    label: PEPTONE MEAT EXTRACT GLYCEROL AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium250.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glycerol
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Meat extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Proteose peptone no. 3
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2329
+- preferred_term: Meat extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Glycerol
   term:
-    id: TOGO:M2329
-    label: Peptone Meat Extract Glycerol Agar
-notes: 'Source: https://togomedium.org/medium/M2329
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium250.pdf'
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.347514Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2329'
-- timestamp: '2026-01-28T19:48:28.765878Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9f9549cf884824c7fccfb14a7d88c4d8de1cf40c795feb49a1e781d5f27bee9c
+- timestamp: '2026-01-26T17:53:10.592521Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 250'
+- timestamp: '2026-02-19T08:26:45.279995+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_250_PEPTONE_MEAT_EXTRACT_GLYCEROL_AGAR, KOMODO_250_Peptone_MEAT_EXTRACT_GLYCEROL_AGAR'
+synonyms:
+- name: Peptone MEAT EXTRACT GLYCEROL AGAR
+  source: KOMODO
+  source_id: komodo.medium:250
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2329_Peptone_Meat_Extract_Glycerol_Agar
+- DSMZ_250_PEPTONE_MEAT_EXTRACT_GLYCEROL_AGAR
+- KOMODO_250_Peptone_MEAT_EXTRACT_GLYCEROL_AGAR
+merge_fingerprint: 14f6bae7ceae582d8e6676372b44e36590e797e72d1d5353f292f2ddb413c6d1

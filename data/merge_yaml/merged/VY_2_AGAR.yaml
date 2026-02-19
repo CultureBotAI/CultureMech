@@ -1,78 +1,142 @@
-name: VY/2 Agar
-original_name: VY/2 Agar
+name: VY/2 AGAR
+original_name: VY/2 AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 9
+  term:
+    id: mediadive.medium:9
+    label: VY/2 AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium9.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Vitamin B12
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
 - preferred_term: Baker's yeast
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Bacto Agar (Difco)
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-  term:
-    id: CHEBI:32035
-    label: potassium hydroxide
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M1589
-  term:
-    id: TOGO:M1589
-    label: VY/2 Agar
-notes: 'Source: https://togomedium.org/medium/M1589
-
-  Original source: NBRC - NBRC_M397
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=397'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Sterilize vitamin B12 separately by filtration. Prepare and store yeast
+    cells as autoclaved stock suspension (5 g baker's yeast/100 ml distilled water,
+    adjust pH to 6.5 and autoclave). Adjust pH of medium to 7.2 with KOH before, and
+    after autoclaving and cooling to 50°C (use pH-indicator paper).
+- step_number: 2
+  action: DISSOLVE
+  description: 'Cultures of myxobacteria delivered freeze-dried: Please see our video
+    tutorial and follow the special instructions: ''Reactivation of Myxobacteria''
+    given with the strain entry of our catalogue. For suspending the freeze-dried
+    cells from ampoules, add about 0.5 - 1.0 ml medium MD1 (per liter: casiton 3.0
+    g; CaCl2 x 2 H2O, 0.7 g; Mg2SO4 x 7 H2O, 2.0 g) to the vial with freeze dried
+    material.'
+- step_number: 3
+  action: HEAT
+  description: 'Cultures of myxobacteria delivered as active cultures (growing on
+    agar plates): Always use the rim of the swarm as inoculum for fresh media. If
+    the swarms are creamy, transfer high amounts of cell mass to several spots on
+    fresh VY/2 agar medium. If the swarm adheres to the agar or grows within the agar,
+    cut small agar cubes from the rim of the swarm and place onto a fresh agar plate
+    using an appropriate tool such as a lancet. Make sure that the pieces of swarm
+    colonies grown on the agar are transferred to the agar plate. Attempt to place
+    the inoculum in such a way that the swarms are in contact with the fresh agar
+    plate.'
+- step_number: 4
+  action: MIX
+  description: Incubate for up to 3 weeks (in particular Sorangium and Nannocystis
+    strains) at the temperature given for the strain, taking measures against desiccation.
+    If there is no growth after ten days, carefully split up the agar-culture-cubes
+    and squeeze the material to the agar plate and reincubate.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.903142Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1589'
-- timestamp: '2026-01-28T19:48:22.722014Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:48.312027'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-merge_fingerprint: dd400a9e0790b34a2614f498a26fa5dfbc8331295ec28052f62ec7bb42662c59
+- timestamp: '2026-01-26T17:53:09.967941Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 9'
+- timestamp: '2026-02-19T08:26:58.216092+00:00'
+  curator: recipe-merger
+  action: Merged 12 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_9_VY_2_AGAR, DSMZ_9a_VY_2_REDUCED_MEDIUM, KOMODO_9-14553_MEDIUM_9_MODIFIED_FOR_DSM_14553,
+    KOMODO_9-14608_MEDIUM_9_MODIFIED_FOR_DSM_14608, KOMODO_9-14670_MEDIUM_9_MODIFIED_FOR_DSM_14670,
+    KOMODO_9-1_For_DSM_11116, KOMODO_9-53191_MEDIUM_9_MODIFIED_FOR_DSM_53191, KOMODO_9-53271_MEDIUM_9_MODIFIED_FOR_DSM_53271,
+    KOMODO_9-53343_MEDIUM_9_MODIFIED_FOR_DSM_53343, KOMODO_9-53796_MEDIUM_9_MODIFIED_FOR_DSM_53796,
+    KOMODO_9_VY_2_AGAR, KOMODO_9a_VY_2_REDUCED_medium'
+synonyms:
+- name: VY/2, REDUCED MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:9a
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 14553
+  source: KOMODO
+  source_id: komodo.medium:9_14553
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 14608
+  source: KOMODO
+  source_id: komodo.medium:9_14608
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 14670
+  source: KOMODO
+  source_id: komodo.medium:9_14670
+  original_category: imported
+- name: For DSM 11116
+  source: KOMODO
+  source_id: komodo.medium:9.1
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 53191
+  source: KOMODO
+  source_id: komodo.medium:9_53191
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 53271
+  source: KOMODO
+  source_id: komodo.medium:9_53271
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 53343
+  source: KOMODO
+  source_id: komodo.medium:9_53343
+  original_category: imported
+- name: MEDIUM 9 MODIFIED FOR DSM 53796
+  source: KOMODO
+  source_id: komodo.medium:9_53796
+  original_category: imported
+- name: VY/2, REDUCED medium
+  source: KOMODO
+  source_id: komodo.medium:9a
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1589_VY_2_Agar
+- DSMZ_9_VY_2_AGAR
+- DSMZ_9a_VY_2_REDUCED_MEDIUM
+- KOMODO_9-14553_MEDIUM_9_MODIFIED_FOR_DSM_14553
+- KOMODO_9-14608_MEDIUM_9_MODIFIED_FOR_DSM_14608
+- KOMODO_9-14670_MEDIUM_9_MODIFIED_FOR_DSM_14670
+- KOMODO_9-1_For_DSM_11116
+- KOMODO_9-53191_MEDIUM_9_MODIFIED_FOR_DSM_53191
+- KOMODO_9-53271_MEDIUM_9_MODIFIED_FOR_DSM_53271
+- KOMODO_9-53343_MEDIUM_9_MODIFIED_FOR_DSM_53343
+- KOMODO_9-53796_MEDIUM_9_MODIFIED_FOR_DSM_53796
+- KOMODO_9_VY_2_AGAR
+- KOMODO_9a_VY_2_REDUCED_medium
+merge_fingerprint: 95d774a2eb3bdc2b1a19c0a76e62e5b79540f33cc50e8d0fedd503aeb9463747

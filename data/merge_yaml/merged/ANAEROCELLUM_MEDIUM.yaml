@@ -181,9 +181,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -230,7 +227,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 516'
-- timestamp: '2026-02-03T22:25:44.493805+00:00'
+- timestamp: '2026-02-06T05:10:12.495852Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:50.634392+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_516_ANAEROCELLUM_MEDIUM, KOMODO_516-1_For_DSM_6724, KOMODO_516-9003_MEDIUM_516_MODIFIED_FOR_DSM_9003,
@@ -255,4 +257,4 @@ merged_from:
 - KOMODO_516-1_For_DSM_6724
 - KOMODO_516-9003_MEDIUM_516_MODIFIED_FOR_DSM_9003
 - KOMODO_516_ANAEROCELLUM_medium
-merge_fingerprint: a0b4f4bb28c1a2891ebb5f6735dcbc2c89dda32e095f01d7086540c6c204297c
+merge_fingerprint: 13b4052733dd5aba96733eb694922b44eb1f958a55ef510c655be3472bff7eb1

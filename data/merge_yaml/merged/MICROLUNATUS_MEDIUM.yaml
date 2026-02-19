@@ -1,98 +1,82 @@
-name: Microlunatus Medium
-original_name: Microlunatus Medium
+name: MICROLUNATUS MEDIUM
+original_name: MICROLUNATUS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 776
+  term:
+    id: mediadive.medium:776
+    label: MICROLUNATUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium776.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.44'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: (NH4)2SO4
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Monosodium glutamate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:64220
-    label: monosodium glutamate
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Peptone
   concentration:
     value: '0.5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M204
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na glutamate
   term:
-    id: TOGO:M204
-    label: Microlunatus Medium
-notes: 'Source: https://togomedium.org/medium/M204
-
-  Original source: JCM - JCM_M211
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=211'
+    id: CHEBI:64220
+    label: Na glutamate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.608059Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M204'
-- timestamp: '2026-01-28T19:48:35.672257Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 221bc72629d6524d5e787c031c71b857112730dbd7fbd6802ec947ce965f6a30
+- timestamp: '2026-01-26T17:53:12.204160Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 776'
+- timestamp: '2026-02-19T08:26:54.094062+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_776_MICROLUNATUS_MEDIUM, KOMODO_776_MICROLUNATUS_medium'
+synonyms:
+- name: MICROLUNATUS medium
+  source: KOMODO
+  source_id: komodo.medium:776
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M204_Microlunatus_Medium
+- DSMZ_776_MICROLUNATUS_MEDIUM
+- KOMODO_776_MICROLUNATUS_medium
+merge_fingerprint: 120a72b6b0b1ceaef08b078d0d4bf74dadec5debb4bece17feedabed9f108acf

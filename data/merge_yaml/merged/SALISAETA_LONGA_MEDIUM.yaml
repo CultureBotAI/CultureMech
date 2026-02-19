@@ -81,7 +81,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:30.743406+00:00'
+- timestamp: '2026-02-19T08:26:41.257051+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1221_SALISAETA_LONGA_MEDIUM, JCM_J225_HALOBACULUM_MEDIUM,

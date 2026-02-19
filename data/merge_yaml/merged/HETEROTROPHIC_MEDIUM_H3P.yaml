@@ -263,7 +263,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 428'
-- timestamp: '2026-02-03T22:25:41.248022+00:00'
+- timestamp: '2026-02-19T08:26:48.014857+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_428_HETEROTROPHIC_MEDIUM_H3P, KOMODO_428_HETEROTROPHIC_medium_H3P'

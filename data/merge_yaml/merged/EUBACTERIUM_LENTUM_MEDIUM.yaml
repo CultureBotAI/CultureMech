@@ -147,7 +147,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 209'
-- timestamp: '2026-02-03T22:25:37.751170+00:00'
+- timestamp: '2026-02-19T08:26:44.918083+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_209_EUBACTERIUM_LENTUM_MEDIUM, KOMODO_209_EUBACTERIUM_LENTUM_medium'

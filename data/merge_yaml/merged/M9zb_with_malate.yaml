@@ -58,7 +58,7 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 113, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-02-03T22:26:01.437954+00:00'
+- timestamp: '2026-02-19T08:27:00.116404+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: MEDIADB_113_M9zb_with_malate, MEDIADB_78_M9_minimal_medium_with_l-lactate,

@@ -93,7 +93,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:40.126356+00:00'
+- timestamp: '2026-02-19T08:26:47.033561+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_372_HALOBACTERIA_MEDIUM, JCM_J1241_JCM_MEDIUM_No._1241, KOMODO_372-18341_MEDIUM_372_MODIFIED_FOR_DSM_18341,

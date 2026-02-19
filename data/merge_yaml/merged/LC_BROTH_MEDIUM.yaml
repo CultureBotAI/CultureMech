@@ -62,7 +62,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 546'
-- timestamp: '2026-02-03T22:25:44.948223+00:00'
+- timestamp: '2026-02-19T08:26:51.075883+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_546_LC_BROTH_MEDIUM, KOMODO_546_LC_BROTH_medium'

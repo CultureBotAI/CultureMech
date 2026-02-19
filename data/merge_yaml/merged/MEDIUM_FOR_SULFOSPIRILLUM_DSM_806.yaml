@@ -140,7 +140,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 121'
-- timestamp: '2026-02-03T22:25:30.722980+00:00'
+- timestamp: '2026-02-19T08:26:41.236863+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_121_MEDIUM_FOR_SULFOSPIRILLUM_DSM_806, KOMODO_121_medium_FOR_CAMPYLOBACTER_DSM_806'

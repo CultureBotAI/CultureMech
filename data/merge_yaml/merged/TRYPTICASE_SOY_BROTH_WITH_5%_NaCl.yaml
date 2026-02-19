@@ -15,39 +15,70 @@ ingredients:
     label: Distilled water
 - preferred_term: NaCl
   concentration:
-    value: '50'
+    value: '30'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
     compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
+- preferred_term: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+  term:
+    id: CHEBI:2509
+    label: agar
 - preferred_term: Trypticase soy broth (BD-BBL)
   concentration:
     value: '30'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 media_term:
-  preferred_term: TOGO Medium M906
+  preferred_term: TOGO Medium M907
   term:
-    id: TOGO:M906
+    id: TOGO:M907
     label: Trypticase Soy Broth With 5% NaCl
-notes: 'Source: https://togomedium.org/medium/M906
+notes: 'Source: https://togomedium.org/medium/M907
 
-  Original source: JCM - JCM_M869
+  Original source: JCM - JCM_M869-2
 
   Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=869'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.938825Z'
+- timestamp: '2026-01-27T06:35:55.939643Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M906'
-- timestamp: '2026-01-28T19:48:42.975082Z'
+  notes: 'Source: JCM, ID: M907'
+- timestamp: '2026-01-28T19:48:42.428428Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 4b6cf0821bcf4185c6f9696d5dc5ac98a36b5364a900f41c2957f2473ae50ea1
+- timestamp: '2026-02-19T08:27:00.956980+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1355_Trypticase_Soy_Broth_Agar_With_3_NaCl, TOGO_M488_Trypticase_Soy_Broth_Agar_With_10_NaCl,
+    TOGO_M489_Trypticase_Soy_Broth_Agar_With_5_NaCl_pH_8.0, TOGO_M907_Trypticase_Soy_Broth_With_5_NaCl'
+synonyms:
+- name: Trypticase Soy Broth Agar With 3% NaCl
+  source: TOGO
+  source_id: TOGO:M1355
+  original_category: imported
+- name: Trypticase Soy Broth Agar With 10% NaCl
+  source: TOGO
+  source_id: TOGO:M488
+  original_category: imported
+- name: Trypticase Soy Broth Agar With 5% NaCl (pH 8.0)
+  source: TOGO
+  source_id: TOGO:M489
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M906_Trypticase_Soy_Broth_With_5_NaCl
+- TOGO_M1355_Trypticase_Soy_Broth_Agar_With_3_NaCl
+- TOGO_M488_Trypticase_Soy_Broth_Agar_With_10_NaCl
+- TOGO_M489_Trypticase_Soy_Broth_Agar_With_5_NaCl_pH_8.0
+- TOGO_M907_Trypticase_Soy_Broth_With_5_NaCl
+merge_fingerprint: 584e8b543c1a8cd07ca5331359946236ded6d15c81465ff19f99f72ddd3c052f

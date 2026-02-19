@@ -33,7 +33,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J527'
-- timestamp: '2026-02-03T22:26:24.435195+00:00'
+- timestamp: '2026-02-19T08:27:01.927695+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: JCM_J1152_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_2_NaCl, JCM_J207_YEAST_EXTRACT-MALT_EXTRACT_AGAR_ISP-2_WITH_5_NaCl,

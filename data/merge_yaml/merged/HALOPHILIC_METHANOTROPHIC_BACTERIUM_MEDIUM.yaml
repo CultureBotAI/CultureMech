@@ -130,7 +130,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1156'
-- timestamp: '2026-02-03T22:25:25.183710+00:00'
+- timestamp: '2026-02-19T08:26:36.808020+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1156_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM, KOMODO_1156-replace-methane-with-Methanol_HALOPHILIC_METHANOTROPHIC_BACTERIUM_MEDIUM_replace_methane_with_Methanol,

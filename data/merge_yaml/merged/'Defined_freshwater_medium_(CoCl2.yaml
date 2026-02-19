@@ -11,11 +11,11 @@ ingredients:
   concentration:
     value: '0.001617'
     unit: MILLIMOLAR
-- preferred_term: Benzaldehyde
+- preferred_term: Folate
   concentration:
-    value: '0.5'
+    value: '4.531e-05'
     unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:bzal'
+  notes: 'Cross-references: KEGG:fol'
 - preferred_term: Biotin
   term:
     id: CHEBI:15956
@@ -39,24 +39,6 @@ ingredients:
   concentration:
     value: '7.378e-07'
     unit: MILLIMOLAR
-- preferred_term: Folate
-  concentration:
-    value: '4.531e-05'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:fol'
-- preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
-  concentration:
-    value: '0.0004061'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:nac'
-- preferred_term: Lipoate
-  concentration:
-    value: '0.0002423'
-    unit: MILLIMOLAR
-  notes: 'Cross-references: KEGG:lipoate'
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -65,6 +47,24 @@ ingredients:
     value: '0.0003646'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
+- preferred_term: Nicotinate
+  concentration:
+    value: '0.0004061'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:nac'
+- preferred_term: Toluene
+  term:
+    id: CHEBI:17578
+    label: Toluene
+  concentration:
+    value: '10.0'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tol'
+- preferred_term: Lipoate
+  concentration:
+    value: '0.0002423'
+    unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:lipoate'
 - preferred_term: Calcium chloride anhydrous
   concentration:
     value: '0.687'
@@ -189,19 +189,28 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
-- timestamp: '2026-01-27T07:21:46.997455Z'
+- timestamp: '2026-01-27T07:21:46.847609Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 471, Reference:
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 457, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-01-28T19:48:12.544744Z'
+- timestamp: '2026-01-28T19:48:08.798095Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:14.287909Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:27:00.697180+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_457_Defined_freshwater_medium_CoCl2, MEDIADB_463_Defined_freshwater_medium_CoCl2'
 media_term:
-  preferred_term: MediaDB Medium 471
+  preferred_term: MediaDB Medium 457
   term:
-    id: MEDIADB:471
+    id: MEDIADB:457
     label: '''Defined freshwater medium (CoCl2'
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
@@ -209,6 +218,9 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: 586dcf6aa9d3b6473602e5be549b9ff76ec1d63c388f2b919e611853955a84a0
+categories:
+- imported
 merged_from:
-- MEDIADB_471_Defined_freshwater_medium_CoCl2
+- MEDIADB_457_Defined_freshwater_medium_CoCl2
+- MEDIADB_463_Defined_freshwater_medium_CoCl2
+merge_fingerprint: b87621e862462a4a5405a94b866900ef0239beef2a8a67fc2921776b7d138a32

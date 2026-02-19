@@ -227,9 +227,6 @@ ingredients:
     value: '0.05'
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.05'
     unit: G_PER_L
@@ -281,7 +278,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 683'
-- timestamp: '2026-02-03T22:25:46.886100+00:00'
+- timestamp: '2026-02-06T05:10:20.414823Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:52.857057+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_683_TISSIERELLA_AMO.1_MEDIUM, KOMODO_683-replace-N-Methylhydantoin-with-creatinine_AMO.1_medium_replace_N-Methylhydantoin_with_creatinine,
@@ -301,4 +303,4 @@ merged_from:
 - DSMZ_683_TISSIERELLA_AMO.1_MEDIUM
 - KOMODO_683-replace-N-Methylhydantoin-with-creatinine_AMO.1_medium_replace_N-Methylhydantoin_with_creatinine
 - KOMODO_683_AMO.1_medium
-merge_fingerprint: 74e8398d17eddb0a09f42b9277a75e1b175d0d80a436c10712a71cb4f6cf40c0
+merge_fingerprint: bd77870434a6c821a21b11936c3aa1bc238c7c6af27125cfea0150de3667f768

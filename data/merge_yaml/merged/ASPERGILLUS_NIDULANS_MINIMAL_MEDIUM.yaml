@@ -86,7 +86,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
     concentration for ingredient: ZnSO4 x 7 H2O'
-- timestamp: '2026-02-03T22:25:37.692174+00:00'
+- timestamp: '2026-02-19T08:26:44.858979+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM, KOMODO_204_ASPERGILLUS_NIDULANS_MINIMAL_MEDIUM'

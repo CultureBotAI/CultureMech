@@ -127,7 +127,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1323'
-- timestamp: '2026-02-03T22:25:32.151521+00:00'
+- timestamp: '2026-02-19T08:26:42.480653+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1323_METHYLOCAPSA_AUREA_MEDIUM, KOMODO_1323_METHYLOCAPSA_AUREA_MEDIUM'

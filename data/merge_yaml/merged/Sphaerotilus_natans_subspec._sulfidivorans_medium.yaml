@@ -200,7 +200,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1664'
-- timestamp: '2026-02-03T22:25:35.780879+00:00'
+- timestamp: '2026-02-19T08:26:43.910603+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1664_Sphaerotilus_natans_subspec._sulfidivorans_medium, DSMZ_1664a_Modified_Sphaerotilus_natans_ssp._sulfidivorans_medium'

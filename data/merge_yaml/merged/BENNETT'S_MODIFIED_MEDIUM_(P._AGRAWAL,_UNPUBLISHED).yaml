@@ -81,7 +81,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
     for ingredient: Ferric ammonium citrate'
-- timestamp: '2026-02-03T22:25:50.996301+00:00'
+- timestamp: '2026-02-19T08:26:56.471633+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_894_BENNETT_S_MODIFIED_MEDIUM_P._AGRAWAL_UNPUBLISHED, KOMODO_894_BENNETT_S_MODIFIED_medium_P._AGRAWAL_UNPUBLISHED'

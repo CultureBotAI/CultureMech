@@ -1,82 +1,69 @@
-name: Glycerol-Soil Medium
-original_name: Glycerol-Soil Medium
+name: GLYCEROL-SOIL MEDIUM
+original_name: GLYCEROL-SOIL MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 80
+  term:
+    id: mediadive.medium:80
+    label: GLYCEROL-SOIL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium80.pdf'
 ingredients:
-- preferred_term: Glycerol
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:15978
-    label: sn-glycerol 3-phosphate
-- preferred_term: Tap water
-  concentration:
-    value: '850'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
-  term:
-    id: CHEBI:15377
-    label: Tap water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Bacto peptone (BD-Difco)
+- preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
+- preferred_term: Beef extract
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Soil extract (See below)
+- preferred_term: Glycerol
+  term:
+    id: CHEBI:17754
+    label: Glycerol
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Soil extract
   concentration:
     value: '150'
     unit: G_PER_L
-- preferred_term: tap water
-  concentration:
-    value: '960'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Undefined component'
+- preferred_term: Agar
   term:
-    id: CHEBI:15377
-    label: Tap water
-- preferred_term: air--dried garden soil
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '400'
+    value: '15'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M379
-  term:
-    id: TOGO:M379
-    label: Glycerol-Soil Medium
-notes: 'Source: https://togomedium.org/medium/M379
-
-  Original source: JCM - JCM_M384
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=384'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.0. Soil extract is prepared by sieving air dried garden
+    soil through a coarse sieve and autoclaving 400 g with 960 ml of distilled water
+    at 121°C for one hour. After the mixture is cool and settled, the supernatant
+    is carefully decanted, filtered through paper, autoclaved in 200 ml quantities,
+    and stored at room temperature until cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.947617Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M379'
-- timestamp: '2026-01-28T19:48:34.878401Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 8ecd209cacdb91a7150608858ce8d4b952a7d4811aef2cdd8d100b67b9cbdc34
+- timestamp: '2026-01-26T17:53:10.118072Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 80'
+- timestamp: '2026-02-19T08:26:54.786981+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_80_GLYCEROL-SOIL_MEDIUM, KOMODO_80_GLYCEROL-SOIL_medium'
+synonyms:
+- name: GLYCEROL-SOIL medium
+  source: KOMODO
+  source_id: komodo.medium:80
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M379_Glycerol-Soil_Medium
+- DSMZ_80_GLYCEROL-SOIL_MEDIUM
+- KOMODO_80_GLYCEROL-SOIL_medium
+merge_fingerprint: fe7850519cd2c9102b4c5f049c7fd14c40f59ecfeaae3d064b471b8521449a27

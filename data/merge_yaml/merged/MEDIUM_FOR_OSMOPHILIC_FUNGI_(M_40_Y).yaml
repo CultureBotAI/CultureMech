@@ -44,7 +44,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 187'
-- timestamp: '2026-02-03T22:25:36.857365+00:00'
+- timestamp: '2026-02-19T08:26:44.100473+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_187_MEDIUM_FOR_OSMOPHILIC_FUNGI_M_40_Y, JCM_J33_M40Y_AGAR,

@@ -135,7 +135,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 523'
-- timestamp: '2026-02-03T22:25:44.613100+00:00'
+- timestamp: '2026-02-19T08:26:50.751036+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_523_CLOSTRIDIUM_CHARTATABIDUM_MEDIUM, KOMODO_523_CLOSTRIDIUM_CHARTATABIDUM_medium'

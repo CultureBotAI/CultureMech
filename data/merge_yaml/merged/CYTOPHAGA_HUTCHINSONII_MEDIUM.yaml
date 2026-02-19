@@ -1,61 +1,76 @@
-name: Cytophaga Hutchinsonii Medium
-original_name: Cytophaga Hutchinsonii Medium
+name: CYTOPHAGA HUTCHINSONII MEDIUM
+original_name: CYTOPHAGA HUTCHINSONII MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 160
+  term:
+    id: mediadive.medium:160
+    label: CYTOPHAGA HUTCHINSONII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: cellobiose (filter-sterilized)
-  concentration:
-    value: '0.5'
-    unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Solution, Organic compound, Defined component'
 - preferred_term: Casitone
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2337
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: TOGO:M2337
-    label: Cytophaga Hutchinsonii Medium
-notes: 'Source: https://togomedium.org/medium/M2337
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium160.pdf'
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (alternative)'
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' (alternative)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: To medium add 0.5% cellobiose (filter-sterilized) or distribute medium
+    (without agar) in 5 ml amounts in test tubes, add a strip of filter paper (7 cm
+    long) to each and autoclave, or place sterile pieces of filter paper on the surface
+    of agarized medium.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.363974Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2337'
-- timestamp: '2026-01-28T19:48:13.898366Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: b6268d2cb711fcfe287a458821751dc399ca896808c24e536d05ce908e1457b7
+- timestamp: '2026-01-26T17:53:10.371048Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 160'
+- timestamp: '2026-02-19T08:26:43.767835+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_160_CYTOPHAGA_HUTCHINSONII_MEDIUM, KOMODO_160_CYTOPHAGA_HUTCHINSONII_medium'
+synonyms:
+- name: CYTOPHAGA HUTCHINSONII medium
+  source: KOMODO
+  source_id: komodo.medium:160
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2337_Cytophaga_Hutchinsonii_Medium
+- DSMZ_160_CYTOPHAGA_HUTCHINSONII_MEDIUM
+- KOMODO_160_CYTOPHAGA_HUTCHINSONII_medium
+merge_fingerprint: eded288620cafa5db5781c56dfd31cdb6895979cde4807dab29029b8503b1d7d

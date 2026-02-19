@@ -219,7 +219,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1313
-- timestamp: '2026-02-03T22:25:59.958117+00:00'
+- timestamp: '2026-02-19T08:26:58.730610+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_1313-25384_MEDIUM_1313_MODIFIED_FOR_DSM_25384, KOMODO_1313_MARINE_AMMONIUM_MINERAL_SALTS,

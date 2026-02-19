@@ -62,7 +62,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 248'
-- timestamp: '2026-02-03T22:26:00.097991+00:00'
+- timestamp: '2026-02-19T08:26:58.882788+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_248_OAT_FLAKES_AGAR_WITH_Yeast_extract, DSMZ_248_OAT_FLAKES_AGAR_WITH_YEAST_EXTRACT'

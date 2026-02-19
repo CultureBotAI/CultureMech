@@ -58,7 +58,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1302'
-- timestamp: '2026-02-03T22:25:32.016173+00:00'
+- timestamp: '2026-02-19T08:26:42.360182+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1302_YIM_MEDIUM_10_NaCl, DSMZ_1452_AQUISALIMONAS_MEDIUM, DSMZ_1467_T5_MEDIUM,

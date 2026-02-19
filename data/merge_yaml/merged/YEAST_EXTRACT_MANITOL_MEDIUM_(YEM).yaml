@@ -61,7 +61,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1626'
-- timestamp: '2026-02-03T22:25:35.374922+00:00'
+- timestamp: '2026-02-19T08:26:43.824848+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1628_M408_MEDIUM, DSMZ_1626_YEAST_EXTRACT_MANITOL_MEDIUM_YEM'

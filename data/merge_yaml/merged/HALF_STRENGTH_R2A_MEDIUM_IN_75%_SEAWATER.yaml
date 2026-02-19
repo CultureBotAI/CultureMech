@@ -97,7 +97,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:29.424842+00:00'
+- timestamp: '2026-02-19T08:26:40.170409+00:00'
   curator: recipe-merger
   action: Merged 11 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1153_R3_A_MEDIUM, DSMZ_1320_HALF_STRENGTH_R2A_MEDIUM_IN_75_SEAWATER,

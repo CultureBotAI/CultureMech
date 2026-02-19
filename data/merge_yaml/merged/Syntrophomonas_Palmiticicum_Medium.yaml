@@ -162,7 +162,7 @@ curation_history:
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     Nitrogen gas; Added default concentration for ingredient: N2'
-- timestamp: '2026-02-03T22:26:19.964778+00:00'
+- timestamp: '2026-02-19T08:27:01.771164+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M325_Sporotomaculum_Medium, TOGO_M347_JT_Medium, TOGO_M580_Syntrophomonas_Palmiticicum_Medium'

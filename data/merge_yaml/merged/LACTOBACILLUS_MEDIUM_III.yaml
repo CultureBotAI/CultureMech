@@ -1,139 +1,140 @@
-name: Lactobacillus Medium III
-original_name: Lactobacillus Medium III
+name: LACTOBACILLUS MEDIUM III
+original_name: LACTOBACILLUS MEDIUM III
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 6.3
+media_term:
+  preferred_term: DSMZ Medium 638
+  term:
+    id: mediadive.medium:638
+    label: LACTOBACILLUS MEDIUM III
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium638.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: K2HPO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: FeSO4・7H2O
+- preferred_term: Tryptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: Sodium acetate
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Tween 80
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:53426
-    label: polysorbate 80
-- preferred_term: MnSO4・xH2O
-  concentration:
-    value: '7.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: Ethanol
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:16236
-    label: ethanol
-- preferred_term: DL--Mevalonic acid
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
-- preferred_term: Glucose
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
+- preferred_term: Meat extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Fructose
+  term:
+    id: CHEBI:28757
+    label: Fructose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Maltose
+  term:
+    id: CHEBI:17306
+    label: Maltose
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: Na-gluconate
+  term:
+    id: CHEBI:84997
+    label: Na-gluconate
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casein peptone, tryptic digest
+- preferred_term: Na-acetate x 3 H2O
   concentration:
-    value: '10'
+    value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M14
+- preferred_term: (NH4)2 citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
   term:
-    id: TOGO:M14
-    label: Lactobacillus Medium III
-notes: 'Source: https://togomedium.org/medium/M14
-
-  Original source: JCM - JCM_M21
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=21'
+    id: CHEBI:63076
+    label: ''
+- preferred_term: K2HPO4 x 3 H2O
+  term:
+    id: CHEBI:131527
+    label: K2HPO4 x 3 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Tween 80
+  term:
+    id: CHEBI:53426
+    label: Tween 80
+  concentration:
+    value: '1'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 6.3
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.493068Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M14'
-- timestamp: '2026-01-28T19:48:39.931323Z'
+- timestamp: '2026-01-26T17:53:11.800144Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 638'
+- timestamp: '2026-01-28T19:48:16.726914Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0e89aa4f263abb484adb0aea94950c880ab3ccb51abd6093638b8894b7f22db5
+- timestamp: '2026-02-19T08:26:52.159999+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_638_LACTOBACILLUS_MEDIUM_III, KOMODO_638-17896_MEDIUM_638_MODIFIED_FOR_DSM_17896,
+    KOMODO_638-22696_MEDIUM_638_MODIFIED_FOR_DSM_22696, KOMODO_638_LACTOBACILLUS_medium_III'
+synonyms:
+- name: MEDIUM 638 MODIFIED FOR DSM 17896
+  source: KOMODO
+  source_id: komodo.medium:638_17896
+  original_category: imported
+- name: MEDIUM 638 MODIFIED FOR DSM 22696
+  source: KOMODO
+  source_id: komodo.medium:638_22696
+  original_category: imported
+- name: LACTOBACILLUS medium III
+  source: KOMODO
+  source_id: komodo.medium:638
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M14_Lactobacillus_Medium_III
+- DSMZ_638_LACTOBACILLUS_MEDIUM_III
+- KOMODO_638-17896_MEDIUM_638_MODIFIED_FOR_DSM_17896
+- KOMODO_638-22696_MEDIUM_638_MODIFIED_FOR_DSM_22696
+- KOMODO_638_LACTOBACILLUS_medium_III
+merge_fingerprint: 4a6bc0c179d29059a3347672a3ea6f928bb3afd3e476e03cced6b6f8582747d9

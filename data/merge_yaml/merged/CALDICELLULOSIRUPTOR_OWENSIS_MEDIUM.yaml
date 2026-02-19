@@ -206,9 +206,6 @@ ingredients:
     value: '0.005'
     unit: G_PER_L
 - preferred_term: Calcium D-(+)-pantothenate
-  term:
-    id: CHEBI:1687714
-    label: Calcium D-(+)-pantothenate
   concentration:
     value: '0.005'
     unit: G_PER_L
@@ -254,7 +251,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 144b'
-- timestamp: '2026-02-03T22:25:33.806006+00:00'
+- timestamp: '2026-02-06T05:10:55.105683Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:43.453095+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_144b_CALDICELLULOSIRUPTOR_OWENSIS_MEDIUM, KOMODO_144-12299_MEDIUM_144_MODIFIED_FOR_DSM_12299,
@@ -285,4 +287,4 @@ merged_from:
 - KOMODO_144-7040_MEDIUM_144_MODIFIED_FOR_DSM_7040
 - KOMODO_144-replace-Tryptone-with-Trypticase_THERMOANAEROBIUM_medium_replace_Tryptone_with_Trypticase
 - KOMODO_144_THERMOANAEROBIUM_medium
-merge_fingerprint: 18aed2775b445c123dec39ff943f5f54174899d37fcc900079528dbc213d6d45
+merge_fingerprint: 0a46ec109a75cff36757bac27c468e53c910510dbf5e6c9ce2b1280fbcae7e88

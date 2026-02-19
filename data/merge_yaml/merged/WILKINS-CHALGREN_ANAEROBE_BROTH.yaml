@@ -1,132 +1,122 @@
-name: Wilkins-Chalgren Anaerobe Broth
-original_name: Wilkins-Chalgren Anaerobe Broth
+name: WILKINS-CHALGREN ANAEROBE BROTH
+original_name: WILKINS-CHALGREN ANAEROBE BROTH
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_range: 6.8-7
+media_term:
+  preferred_term: DSMZ Medium 339
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Wilkins-Chalgren medium (Oxoid CM0643)
+    id: mediadive.medium:339
+    label: WILKINS-CHALGREN ANAEROBE BROTH
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium339.pdf'
+ingredients:
+- preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:
     value: '33'
     unit: G_PER_L
-- preferred_term: N2 gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: L-cysteine-HCL x H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:17561
-    label: L-cysteine
-- preferred_term: Yeast extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Sodium chloride
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: Sodium Chloride
-- preferred_term: Sodium pyruvate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:50144
-    label: sodium pyruvate
-- preferred_term: Haemin
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:50385
-    label: Haemin
-- preferred_term: L-Arginine
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:16467
-    label: L-arginine
-- preferred_term: Glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Menadione
+- preferred_term: Sodium resazurin
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+- preferred_term: L-Cysteine HCl
   term:
-    id: CHEBI:28869
-    label: Menadione
-- preferred_term: Gelatin peptone
+    id: CHEBI:52891
+    label: L-Cysteine HCl
   concentration:
-    value: '10'
+    value: '0.3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2586
-  term:
-    id: TOGO:M2586
-    label: Wilkins-Chalgren Anaerobe Broth
-notes: 'Source: https://togomedium.org/medium/M2586
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium339.pdf'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve 33.0 g/l dehydrated Wilkins-Chalgren medium (Oxoid CM0643)
+    in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v), bring to
+    the boil and cool to room temperature while sparging with 100% N2 gas. Add L-cysteine-HCL
+    x H2O (0.3 g/l), dispense the medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. After autoclaving check pH and adjust to pH
+    6.8 - 7.0, if necessary.
+- step_number: 2
+  action: FILTER_STERILIZE
+  description: 'Note: In case resazurin is not colourless addition of 10 - 20 mg sodium
+    dithionite per liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and
+    filter-sterilized) can be used to completely reduce the medium.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.792160Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2586'
-- timestamp: '2026-01-28T19:48:42.763283Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.664396'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2 gas'
-merge_fingerprint: 6bfaac309b88d19ebf8a0772ac9f4c1e3635f1b667895d610832174a7cbd4e30
+- timestamp: '2026-01-26T17:53:10.851639Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 339'
+- timestamp: '2026-02-19T08:26:46.699329+00:00'
+  curator: recipe-merger
+  action: Merged 12 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_339_WILKINS-CHALGREN_ANAEROBE_BROTH, KOMODO_339-12679_MEDIUM_339_MODIFIED_FOR_DSM_12679,
+    KOMODO_339-12858_MEDIUM_339_MODIFIED_FOR_DSM_12858, KOMODO_339-19450_MEDIUM_339_MODIFIED_FOR_DSM_19450,
+    KOMODO_339-1_For_DSM_14204_DSM_14205_DSM_14206_DSM_14207_DSM_14924_DSM_15176_DSM_15243_DSM_15,
+    KOMODO_339-22006_MEDIUM_339_MODIFIED_FOR_DSM_22006, KOMODO_339-2_For_DSM_14428,
+    KOMODO_339-3_For_DSM_23669, KOMODO_339-5676_MEDIUM_339_MODIFIED_FOR_DSM_5676,
+    KOMODO_339-6011_MEDIUM_339_MODIFIED_FOR_DSM_6011, KOMODO_339-6400_MEDIUM_339_MODIFIED_FOR_DSM_6400,
+    KOMODO_339_WILKINS-CHALGREN_ANAEROBE_BROTH_Oxoid_CM_643'
+synonyms:
+- name: MEDIUM 339 MODIFIED FOR DSM 12679
+  source: KOMODO
+  source_id: komodo.medium:339_12679
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 12858
+  source: KOMODO
+  source_id: komodo.medium:339_12858
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 19450
+  source: KOMODO
+  source_id: komodo.medium:339_19450
+  original_category: imported
+- name: For DSM 14204, DSM 14205, DSM 14206, DSM 14207, DSM 14924, DSM 15176, DSM
+    15243, DSM 15248, DSM 15480, DSM 15481, DSM 15498, DSM 15567, DSM 15692, DSM 17763
+    and DSM 22608
+  source: KOMODO
+  source_id: komodo.medium:339.1
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 22006
+  source: KOMODO
+  source_id: komodo.medium:339_22006
+  original_category: imported
+- name: For DSM 14428
+  source: KOMODO
+  source_id: komodo.medium:339.2
+  original_category: imported
+- name: For DSM 23669
+  source: KOMODO
+  source_id: komodo.medium:339.3
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 5676
+  source: KOMODO
+  source_id: komodo.medium:339_5676
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 6011
+  source: KOMODO
+  source_id: komodo.medium:339_6011
+  original_category: imported
+- name: MEDIUM 339 MODIFIED FOR DSM 6400
+  source: KOMODO
+  source_id: komodo.medium:339_6400
+  original_category: imported
+- name: WILKINS-CHALGREN ANAEROBE BROTH (Oxoid CM 643)
+  source: KOMODO
+  source_id: komodo.medium:339
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2586_Wilkins-Chalgren_Anaerobe_Broth
+- DSMZ_339_WILKINS-CHALGREN_ANAEROBE_BROTH
+- KOMODO_339-12679_MEDIUM_339_MODIFIED_FOR_DSM_12679
+- KOMODO_339-12858_MEDIUM_339_MODIFIED_FOR_DSM_12858
+- KOMODO_339-19450_MEDIUM_339_MODIFIED_FOR_DSM_19450
+- KOMODO_339-1_For_DSM_14204_DSM_14205_DSM_14206_DSM_14207_DSM_14924_DSM_15176_DSM_15243_DSM_15
+- KOMODO_339-22006_MEDIUM_339_MODIFIED_FOR_DSM_22006
+- KOMODO_339-2_For_DSM_14428
+- KOMODO_339-3_For_DSM_23669
+- KOMODO_339-5676_MEDIUM_339_MODIFIED_FOR_DSM_5676
+- KOMODO_339-6011_MEDIUM_339_MODIFIED_FOR_DSM_6011
+- KOMODO_339-6400_MEDIUM_339_MODIFIED_FOR_DSM_6400
+- KOMODO_339_WILKINS-CHALGREN_ANAEROBE_BROTH_Oxoid_CM_643
+merge_fingerprint: 92aa200b0ad9019dce04fc683dcce3eabff169ba6f9d500f52e36619165d4129

@@ -241,7 +241,7 @@ curation_history:
   date: '2026-02-03T11:20:51.914389'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
-- timestamp: '2026-02-03T22:26:12.636292+00:00'
+- timestamp: '2026-02-19T08:27:01.442312+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2075_Halo_2a, TOGO_M2076_Halo_1a'

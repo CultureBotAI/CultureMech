@@ -81,9 +81,6 @@ ingredients:
     value: '256.7'
     unit: MILLIMOLAR
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.0004061'
     unit: MILLIMOLAR
@@ -179,7 +176,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:03.070732+00:00'
+- timestamp: '2026-02-06T05:10:49.791015Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:27:00.334028+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: MEDIADB_381_RDM_Base_Medium_Vitamins_Maltose_1_g_L_NH4Cl, MEDIADB_382_RDM_Base_Medium_Vitamins_Maltose_0.5_g_L_NH4Cl'
@@ -204,4 +206,4 @@ categories:
 merged_from:
 - MEDIADB_381_RDM_Base_Medium_Vitamins_Maltose_1_g_L_NH4Cl
 - MEDIADB_382_RDM_Base_Medium_Vitamins_Maltose_0.5_g_L_NH4Cl
-merge_fingerprint: 2cf273f05867eca2fca86ae292ec04fc46ba23c15620dc84f16f742187e47453
+merge_fingerprint: 3d6f031ed0ab877b2091a28fb0027d214fded5517662a5dc14b6173800f935e0

@@ -4,40 +4,58 @@ category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: DI Water
+- preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '1'
     unit: G_PER_L
   notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
     Simple component'
-- preferred_term: Nutrient Broth
-  concentration:
-    value: '8'
-    unit: G_PER_L
-- preferred_term: Beef Extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
-  concentration:
-    value: '5'
-    unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M2193
   term:
-    id: TOGO:M2193
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Nutrient Broth (OXOID)
+  concentration:
+    value: '6.5'
+    unit: G_PER_L
+  notes: 'Properties: Undefined component, Complex component'
+media_term:
+  preferred_term: TOGO Medium M1744
+  term:
+    id: TOGO:M1744
     label: Nutrient Agar/Broth
-notes: 'Source: https://togomedium.org/medium/M2193
+notes: 'Source: https://togomedium.org/medium/M1744
 
-  Original URL: https://www.atcc.org/~/media/E6FA2163B72E4DCD880719A2612F2C92.ashx'
+  Original source: NBRC - NBRC_M954
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=954'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.150220Z'
+- timestamp: '2026-01-27T06:35:58.261524Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2193'
-merge_fingerprint: 12af3a4d8531e3e79f8742509448aff04aa1fb0e4613d070ba4ca6faa95c5509
+  notes: 'Source: NBRC, ID: M1744'
+- timestamp: '2026-01-28T19:48:24.670732Z'
+  curator: chebi-enrichment
+  action: Added CHEBI ontology terms to ingredients
+  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-19T08:27:01.135198+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1570_Unnamed_medium, TOGO_M1744_Nutrient_Agar_Broth'
+synonyms:
+- name: (Unnamed medium)
+  source: TOGO
+  source_id: TOGO:M1570
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2193_Nutrient_Agar_Broth
+- TOGO_M1570_Unnamed_medium
+- TOGO_M1744_Nutrient_Agar_Broth
+merge_fingerprint: 17e10dc87fc3ba61de047d6f31a9bba521ac30547728fff788b9b4903ce6918c

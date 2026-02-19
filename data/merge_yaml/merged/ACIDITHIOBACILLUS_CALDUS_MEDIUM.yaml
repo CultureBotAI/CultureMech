@@ -119,7 +119,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 150a'
-- timestamp: '2026-02-03T22:25:34.371038+00:00'
+- timestamp: '2026-02-19T08:26:43.592941+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_150a_ACIDITHIOBACILLUS_CALDUS_MEDIUM, KOMODO_150-1_For_DSM_18786,

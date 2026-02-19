@@ -237,7 +237,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 407'
-- timestamp: '2026-02-03T22:25:41.051185+00:00'
+- timestamp: '2026-02-19T08:26:47.819575+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_407_SYNTROPHOMONAS_SD2_MEDIUM, KOMODO_407_SYNTROPHOMONAS_SP._medium'

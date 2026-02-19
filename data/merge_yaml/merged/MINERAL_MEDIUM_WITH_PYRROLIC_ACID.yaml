@@ -92,7 +92,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 461b'
-- timestamp: '2026-02-03T22:25:42.730373+00:00'
+- timestamp: '2026-02-19T08:26:49.213959+00:00'
   curator: recipe-merger
   action: Merged 18 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_461b_MINERAL_MEDIUM_WITH_PYRROLIC_ACID, KOMODO_461-11853-replace-2,4-dichlorophenol-with-2,6-dichlorophenol_MEDIUM_461_MODIFIED_FOR_DSM_11853_replace_2_4-dichlorophenol_with_2_6-dichloroph,

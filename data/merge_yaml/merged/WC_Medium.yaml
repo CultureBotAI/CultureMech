@@ -101,7 +101,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: wc-medium, URL: https://utex.org/products/wc-medium'
-- timestamp: '2026-02-03T22:25:25.011346+00:00'
+- timestamp: '2026-02-19T08:26:36.646971+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: Artificial_Seawater_Medium, LDM_Medium, Modified_Bolds_3N_Medium,

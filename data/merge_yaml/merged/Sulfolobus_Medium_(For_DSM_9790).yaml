@@ -175,7 +175,7 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
     for ingredient: HCl'
-- timestamp: '2026-02-03T22:26:14.333080+00:00'
+- timestamp: '2026-02-19T08:27:01.582835+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2323_Sulfolobus_Medium_For_DSM_9790, TOGO_M2385_Sulfolobus_Medium'

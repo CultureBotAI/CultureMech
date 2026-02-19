@@ -220,7 +220,7 @@ curation_history:
   date: '2026-02-03T11:20:50.360020'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-- timestamp: '2026-02-03T22:26:10.379060+00:00'
+- timestamp: '2026-02-19T08:27:01.312767+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1827_Medium_for_strain_JA349_and_JA350, TOGO_M1863_Medium_for_strains_JA430'

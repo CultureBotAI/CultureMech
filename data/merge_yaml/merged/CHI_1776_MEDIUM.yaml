@@ -19,9 +19,6 @@ ingredients:
     value: '7.00935'
     unit: G_PER_L
 - preferred_term: Tris-HCl
-  term:
-    id: CHEBI:1185531
-    label: Tris-HCl
   concentration:
     value: '20'
     unit: G_PER_L
@@ -68,7 +65,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 394'
-- timestamp: '2026-02-03T22:25:40.755378+00:00'
+- timestamp: '2026-02-06T05:10:26.653297Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:47.568856+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_394_CHI_1776_MEDIUM, KOMODO_394_CHI_1776_medium'
@@ -82,4 +84,4 @@ categories:
 merged_from:
 - DSMZ_394_CHI_1776_MEDIUM
 - KOMODO_394_CHI_1776_medium
-merge_fingerprint: eedc3397983d0757e3844d69fbe02355a303e29c61c46a07b1b3fbb0ee417bb3
+merge_fingerprint: f8f2f25fb8b68625f65b10dc98ed24c37b597d2b5c9ab4339b589a9177bd8bbb

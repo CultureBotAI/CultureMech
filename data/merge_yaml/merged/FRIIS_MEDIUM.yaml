@@ -1,170 +1,121 @@
-name: Friis medium
-original_name: Friis medium
+name: FRIIS MEDIUM
+original_name: FRIIS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1078
+  term:
+    id: mediadive.medium:1078
+    label: FRIIS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1078.pdf'
 ingredients:
-- preferred_term: Horse serum
+- preferred_term: Bacto brain heart infusion
   concentration:
-    value: '40'
+    value: '5.09317'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Swine serum
+- preferred_term: PPLO broth
   concentration:
-    value: '40'
+    value: '5.40373'
     unit: G_PER_L
-  notes: 'Role: Nutrient source'
-- preferred_term: Basal broth
+- preferred_term: Porcine serum
   concentration:
-    value: '320'
+    value: '30'
     unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
-    value: '180'
+    value: '0.83'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Phenol red solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Bacitracin
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component'
-- preferred_term: Meticillin
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Antimicrobial agent'
-- preferred_term: Solution 1
-  concentration:
-    value: '557'
-    unit: G_PER_L
-- preferred_term: Water
-  concentration:
-    value: '1400'
-    unit: G_PER_L
-  notes: 'Role: Solvating media'
+- preferred_term: Phenol red
   term:
-    id: CHEBI:15377
-    label: Water
-- preferred_term: Bacto brain heart infusion
+    id: CHEBI:31991
+    label: Phenol red
   concentration:
-    value: '15'
+    value: '0.00133'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Bacto pleuropneumonia-like organisms (PPLO) broth without crystal
-    violet
-  concentration:
-    value: '16'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Hanks' balanced salt solution
-  concentration:
-    value: '2500'
-    unit: G_PER_L
-- preferred_term: Water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media'
-  term:
-    id: CHEBI:15377
-    label: Water
-- preferred_term: Stock A
-  concentration:
-    value: '25'
-    unit: G_PER_L
-- preferred_term: Stock B
-  concentration:
-    value: '25'
-    unit: G_PER_L
-- preferred_term: MgSO4 . 7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
 - preferred_term: NaCl
-  concentration:
-    value: '80'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: MgCl2 . 6H2O
+    label: NaCl
   concentration:
-    value: '1'
+    value: '160'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
 - preferred_term: KCl
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
   term:
     id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: CaCl2 (anhydrous)
+    label: KCl
   concentration:
-    value: '1.4'
+    value: '8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: Water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:15377
-    label: Water
-- preferred_term: KH2PO4
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '0.6'
+    value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
+- preferred_term: Na2HPO4 x 2 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: Na2HPO4 . 12H2O
   concentration:
-    value: '1.5'
+    value: '1.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-- preferred_term: Water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media'
-  term:
-    id: CHEBI:15377
-    label: Water
-media_term:
-  preferred_term: TOGO Medium M2228
-  term:
-    id: TOGO:M2228
-    label: Friis medium
-notes: 'Source: https://togomedium.org/medium/M2228'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 7.4.
+- step_number: 2
+  action: MIX
+  description: 'After autoclaving add:'
+- step_number: 3
+  action: AUTOCLAVE
+  description: 25 ml solution 1 (4 g NaCl, 0.2 g KCl, 0.05 g MgSO4 x 7 H2O, 0.05 g
+    MgCl2 x 6 H2O dissolved in 25 ml distilled water; then 0.0925 g CaCl2 added and
+    dissolved) and 25 ml of solution 2 (0.075 g Na2HPO4 x 2 H2O, 0.03 g KH2PO4 dissolved
+    in 25 ml distilled water) are autoclaved separately and then combined with 450
+    ml sterile H2O.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.180773Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2228'
-- timestamp: '2026-01-28T19:48:28.725827Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 591ad017237c9464e3ec76068ff048a7234905c84f3254513e93e88b412eac45
+- timestamp: '2026-01-26T17:53:13.312522Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1078'
+- timestamp: '2026-02-19T08:26:39.155492+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1078_FRIIS_MEDIUM, KOMODO_1078_FRIIS_medium'
+synonyms:
+- name: FRIIS medium
+  source: KOMODO
+  source_id: komodo.medium:1078
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2228_Friis_medium
+- DSMZ_1078_FRIIS_MEDIUM
+- KOMODO_1078_FRIIS_medium
+merge_fingerprint: bbdf40385a0d84c7d1c971db03e748d8251db08f81fc702b1406d94406874809

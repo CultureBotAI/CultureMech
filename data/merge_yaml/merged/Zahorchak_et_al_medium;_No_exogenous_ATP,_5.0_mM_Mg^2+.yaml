@@ -202,7 +202,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:03.598928+00:00'
+- timestamp: '2026-02-19T08:27:00.610101+00:00'
   curator: recipe-merger
   action: Merged 30 duplicate recipes into canonical record
   notes: 'Sources: MEDIADB_41_Zahorchak_et_al_medium_No_exogenous_ATP_1.25_mM_Mg,

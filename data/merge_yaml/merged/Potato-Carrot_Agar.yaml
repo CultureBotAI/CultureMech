@@ -52,7 +52,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:20.940315+00:00'
+- timestamp: '2026-02-19T08:27:01.814495+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M46_Potato-Carrot_Agar, TOGO_M47_1_10_Potato-Carrot_Agar'

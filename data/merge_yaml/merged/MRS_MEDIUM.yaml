@@ -1,10 +1,10 @@
-name: MRS medium
-original_name: MRS medium
+name: MRS Medium
+original_name: MRS Medium
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: distilled water
+- preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
@@ -13,103 +13,128 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: MgSO4 · 7H2O
+- preferred_term: MgSO4·7H2O
   concentration:
-    value: '200'
+    value: '0.2'
     unit: G_PER_L
   notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
     compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: Yeast extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: K2HPO4
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
-- preferred_term: polyoxyethylene sorbitan mono-oleate (Tween 80)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Simple component, Organic
-    compound'
-- preferred_term: MnSO4 · 4 H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: triammonium citrate
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Organic compound'
-- preferred_term: xylose
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:18222
-    label: xylose
-- preferred_term: arabinose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:22599
-    label: Arabinose
-- preferred_term: CH3COONa.3H2O
+- preferred_term: Sodium acetate
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-- preferred_term: glucose
+  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+  term:
+    id: CHEBI:32954
+    label: sodium acetate
+- preferred_term: Tween 80
   concentration:
-    value: '12'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: MnSO4·nH2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: Diammonium hydrogen citrate
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Nutrient source; Properties: Defined component, Organic compound,
+    Simple component'
+  term:
+    id: CHEBI:63076
+    label: diammonium citrate
+- preferred_term: Glucose
+  concentration:
+    value: '20'
+    unit: G_PER_L
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
     component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: Oxoid peptone
+- preferred_term: Agar (if needed)
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: 'Role: Solidifying component'
+- preferred_term: Meat extract
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: Lab-Lemco (Oxoid)
+- preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Yeast extract (Difco or Oxoid)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Complex component, Undefined component'
 media_term:
-  preferred_term: TOGO Medium M2833
+  preferred_term: TOGO Medium M1523
   term:
-    id: TOGO:M2833
-    label: MRS medium
-notes: 'Source: https://togomedium.org/medium/M2833'
+    id: TOGO:M1523
+    label: MRS Medium
+notes: 'Source: https://togomedium.org/medium/M1523
+
+  Original source: NBRC - NBRC_M310
+
+  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=310'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.342413Z'
+- timestamp: '2026-01-27T06:35:57.794722Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2833'
-- timestamp: '2026-01-28T19:48:25.291673Z'
+  notes: 'Source: NBRC, ID: M1523'
+- timestamp: '2026-01-28T19:48:13.517278Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 42690da9cccb38501b1d50c7d2e655aed990d45daf851abb8eb3310c38d8fd9c
+- timestamp: '2026-02-19T08:27:01.113307+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1523_MRS_Medium, TOGO_M1625_Acidic_MRS_Medium_pH_4.8, TOGO_M1828_Alkalic_MRS_Medium_pH_8.0,
+    TOGO_M1900_Acidic_MRS_Medium_pH_5.2'
+synonyms:
+- name: Acidic MRS Medium (pH 4.8)
+  source: TOGO
+  source_id: TOGO:M1625
+  original_category: imported
+- name: Alkalic MRS Medium (pH 8.0)
+  source: TOGO
+  source_id: TOGO:M1828
+  original_category: imported
+- name: Acidic MRS Medium (pH 5.2)
+  source: TOGO
+  source_id: TOGO:M1900
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2833_MRS_medium
+- TOGO_M1523_MRS_Medium
+- TOGO_M1625_Acidic_MRS_Medium_pH_4.8
+- TOGO_M1828_Alkalic_MRS_Medium_pH_8.0
+- TOGO_M1900_Acidic_MRS_Medium_pH_5.2
+merge_fingerprint: f8dd39a811299ce9a009532771e5776245fa35e74113005aa554f01229c3b483

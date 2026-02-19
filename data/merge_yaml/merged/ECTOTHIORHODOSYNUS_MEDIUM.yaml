@@ -154,7 +154,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1002'
-- timestamp: '2026-02-03T22:25:26.792042+00:00'
+- timestamp: '2026-02-19T08:26:37.809073+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1002_ECTOTHIORHODOSYNUS_MEDIUM, KOMODO_1002_ECTOTHIORHODOSYNUS_medium'

@@ -1,94 +1,93 @@
-name: TSBY Salt Medium
-original_name: TSBY Salt Medium
+name: TSBY SALT MEDIUM
+original_name: TSBY SALT MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 466
+  term:
+    id: mediadive.medium:466
+    label: TSBY SALT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium466.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NaCl
-  concentration:
-    value: '13'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.14'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2・6H2O
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: KCl
-  concentration:
-    value: '0.34'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trypticase soy broth (BD-BBL)
+- preferred_term: Trypticase soy broth
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M427
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: NaCl
   term:
-    id: TOGO:M427
-    label: TSBY Salt Medium
-notes: 'Source: https://togomedium.org/medium/M427
-
-  Original source: JCM - JCM_M427
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=427'
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '13'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.34'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '3.45'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.14'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2
+- step_number: 2
+  action: MIX
+  description: Incubate under microaerophilic conditions
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.036692Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M427'
-- timestamp: '2026-01-28T19:48:35.753220Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9130834c1b5e1f8ee2afc26873dff49ae0ebef2d7e9d090dafb2e1377803bea6
+- timestamp: '2026-01-26T17:53:11.271618Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 466'
+- timestamp: '2026-02-19T08:26:49.833196+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_466_TSBY_SALT_MEDIUM, JCM_J427_TSBY_SALT_MEDIUM, KOMODO_466_TSBY_salt_medium'
+synonyms:
+- name: TSBY salt medium
+  source: KOMODO
+  source_id: komodo.medium:466
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M427_TSBY_Salt_Medium
+- DSMZ_466_TSBY_SALT_MEDIUM
+- JCM_J427_TSBY_SALT_MEDIUM
+- KOMODO_466_TSBY_salt_medium
+merge_fingerprint: 72a85e1dd820a7c7acb3d788afd75eca3be30e869ad7e1dbdc929fedab216df5

@@ -1,180 +1,440 @@
-name: Desulfonauticus Medium
-original_name: Desulfonauticus Medium
+name: DESULFONAUTICUS MEDIUM
+original_name: DESULFONAUTICUS MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 383b
+  term:
+    id: mediadive.medium:383b
+    label: DESULFONAUTICUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium383b.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: Na2SO4
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
+    id: CHEBI:32149
+    label: Na2SO4
   concentration:
-    value: '30'
+    value: '3.08642'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.15'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '0.3'
+    value: '0.205761'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Resazurin
+    label: NH4Cl
   concentration:
-    value: '1'
+    value: '0.308642'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+- preferred_term: NaCl
   term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: '3'
+    value: '21.6049'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: Na2S・9H2O
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
-    value: '0.1'
+    value: '3.08642'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Simple component'
 - preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.514403'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.154321'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.000514403'
+    unit: G_PER_L
+- preferred_term: Na2CO3
+  term:
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30.7692'
+    unit: G_PER_L
+- preferred_term: NaOH
+  term:
+    id: CHEBI:32145
+    label: NaOH
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: Na2SeO3 x 5 H2O
   term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaHCO3
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.003'
+    unit: G_PER_L
+- preferred_term: Na2WO4 x 2 H2O
+  term:
+    id: CHEBI:63939
+    label: Na2WO4 x 2 H2O
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+- preferred_term: FeCl2 x 4 H2O
   term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: sodium acetate
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
   concentration:
-    value: '0.7'
+    value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+- preferred_term: ZnCl2
   term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Na2SO4
+    id: CHEBI:49976
+    label: ZnCl2
   concentration:
-    value: '3'
+    value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: Na2SeO3
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '3'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: H3BO3
   term:
-    id: CHEBI:48843
-    label: disodium selenite
-- preferred_term: Yeast extract (BD-Difco)
+    id: CHEBI:33118
+    label: H3BO3
   concentration:
-    value: '2'
+    value: '0.006'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: sodium dithionite solution
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: FeCl2 solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace element solution (see Medium [M180])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M472
+- preferred_term: CoCl2 x 6 H2O
   term:
-    id: TOGO:M472
-    label: Desulfonauticus Medium
-notes: 'Source: https://togomedium.org/medium/M472
-
-  Original source: JCM - JCM_M471
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=471'
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.036'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Thiamine HCl
+  term:
+    id: CHEBI:49105
+    label: Thiamine HCl
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Riboflavin
+  term:
+    id: CHEBI:17015
+    label: Riboflavin
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid
+  term:
+    id: CHEBI:15940
+    label: Nicotinic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
+  term:
+    id: CHEBI:16494
+    label: (DL)-alpha-Lipoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Solution A is sparged with 80% H2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 min), then dispensed under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclaved.
+    Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions
+    C and E are autoclaved under 100% N2 gas. Solution D is prepared under 100% N2
+    gas and filter-sterilized. To complete the medium appropriate amounts of solutions
+    B to E are added to the sterile solution A in the sequence as indicated. Final
+    pH of the medium should be 7.0 – 7.2.
+- step_number: 2
+  action: MIX
+  description: After inoculation pressurize vials to 2 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution freshly prepared under N2 and filter-sterilized) may stimulate
+    growth of some strains at the beginning. For transfers use 5 - 10% inoculum. Incubate
+    all strains in the dark.'
+- step_number: 4
+  action: DISSOLVE
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.122401Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M472'
-- timestamp: '2026-01-28T19:48:13.044952Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.933451'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Hydrogen gas'
-merge_fingerprint: b19b80af3f3d28cc3b15b3c05829b71396e241b7926c4dc8224f17522d1fe514
+- timestamp: '2026-01-26T17:53:10.988062Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 383b'
+- timestamp: '2026-02-06T05:10:54.071309Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:47.408703+00:00'
+  curator: recipe-merger
+  action: Merged 31 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_383b_DESULFONAUTICUS_MEDIUM, KOMODO_383-10085_MEDIUM_383_MODIFIED_FOR_DSM_10085,
+    KOMODO_383-10141_MEDIUM_383_MODIFIED_FOR_DSM_10141, KOMODO_383-10259_MEDIUM_383_MODIFIED_FOR_DSM_10259,
+    KOMODO_383-11384_MEDIUM_383_MODIFIED_FOR_DSM_11384, KOMODO_383-11_For_DSM_14728,
+    KOMODO_383-12_For_DSM_14982, KOMODO_383-13_For_DSM_15286_and_DSM_21156, KOMODO_383-14_For_DSM_16109_and_DSM_17464,
+    KOMODO_383-15_For_DSM_17291, KOMODO_383-16_For_DSM_17477, KOMODO_383-17_For_DSM_18378_and_DSM_18379,
+    KOMODO_383-18_For_DSM_3379_DSM_3380_DSM_3381, KOMODO_383-19_For_DSM_14454, KOMODO_383-1_For_DSM_3382,
+    KOMODO_383-2_For_DSM_3383, KOMODO_383-3_For_DSM_3384, KOMODO_383-4_For_DSM_3385,
+    KOMODO_383-5_For_DSM_8541, KOMODO_383-6_For_DSM_9120_DSM_17456_and_DSM_19275,
+    KOMODO_383-7_For_DSM_12861_and_DSM_12883, KOMODO_383-8540_MEDIUM_383_MODIFIED_FOR_DSM_8540,
+    KOMODO_383-8_For_DSM_12888, KOMODO_383-9755_MEDIUM_383_MODIFIED_FOR_DSM_9755,
+    KOMODO_383-9_For_DSM_14367_DSM_15579_DSM_15816_DSM_19338_DSM_22027, KOMODO_383_DESULFOBACTERIUM_MEDIUM,
+    KOMODO_383a-1_For_DSM_18732, KOMODO_383a_DESULFOVIBRIO_SAX_medium, KOMODO_383b_DESULFOBACULA_TOLUOLICA_MEDIUM,
+    KOMODO_383c_DESULFOVIBRIO_ZOSTERAE_MEDIUM, KOMODO_383d_DESULFONAUTICUS_medium'
+synonyms:
+- name: MEDIUM 383 MODIFIED FOR DSM 10085
+  source: KOMODO
+  source_id: komodo.medium:383_10085
+  original_category: imported
+- name: MEDIUM 383 MODIFIED FOR DSM 10141
+  source: KOMODO
+  source_id: komodo.medium:383_10141
+  original_category: imported
+- name: MEDIUM 383 MODIFIED FOR DSM 10259
+  source: KOMODO
+  source_id: komodo.medium:383_10259
+  original_category: imported
+- name: MEDIUM 383 MODIFIED FOR DSM 11384
+  source: KOMODO
+  source_id: komodo.medium:383_11384
+  original_category: imported
+- name: For DSM 14728
+  source: KOMODO
+  source_id: komodo.medium:383.11
+  original_category: imported
+- name: For DSM 14982
+  source: KOMODO
+  source_id: komodo.medium:383.12
+  original_category: imported
+- name: 'For DSM 15286 and DSM 21156:'
+  source: KOMODO
+  source_id: komodo.medium:383.13
+  original_category: imported
+- name: For DSM 16109 and DSM 17464
+  source: KOMODO
+  source_id: komodo.medium:383.14
+  original_category: imported
+- name: For DSM 17291
+  source: KOMODO
+  source_id: komodo.medium:383.15
+  original_category: imported
+- name: For DSM 17477
+  source: KOMODO
+  source_id: komodo.medium:383.16
+  original_category: imported
+- name: For DSM 18378 and DSM 18379
+  source: KOMODO
+  source_id: komodo.medium:383.17
+  original_category: imported
+- name: For DSM 3379, DSM 3380, DSM 3381
+  source: KOMODO
+  source_id: komodo.medium:383.18
+  original_category: imported
+- name: For DSM 14454
+  source: KOMODO
+  source_id: komodo.medium:383.19
+  original_category: imported
+- name: For DSM 3382
+  source: KOMODO
+  source_id: komodo.medium:383.1
+  original_category: imported
+- name: For DSM 3383
+  source: KOMODO
+  source_id: komodo.medium:383.2
+  original_category: imported
+- name: For DSM 3384
+  source: KOMODO
+  source_id: komodo.medium:383.3
+  original_category: imported
+- name: For DSM 3385
+  source: KOMODO
+  source_id: komodo.medium:383.4
+  original_category: imported
+- name: For DSM 8541
+  source: KOMODO
+  source_id: komodo.medium:383.5
+  original_category: imported
+- name: For DSM 9120, DSM 17456 and DSM 19275
+  source: KOMODO
+  source_id: komodo.medium:383.6
+  original_category: imported
+- name: For DSM 12861 and DSM 12883
+  source: KOMODO
+  source_id: komodo.medium:383.7
+  original_category: imported
+- name: MEDIUM 383 MODIFIED FOR DSM 8540
+  source: KOMODO
+  source_id: komodo.medium:383_8540
+  original_category: imported
+- name: For DSM 12888
+  source: KOMODO
+  source_id: komodo.medium:383.8
+  original_category: imported
+- name: MEDIUM 383 MODIFIED FOR DSM 9755
+  source: KOMODO
+  source_id: komodo.medium:383_9755
+  original_category: imported
+- name: For DSM 14367, DSM 15579, DSM 15816, DSM 19338, DSM 22027
+  source: KOMODO
+  source_id: komodo.medium:383.9
+  original_category: imported
+- name: DESULFOBACTERIUM MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:383
+  original_category: imported
+- name: For DSM 18732
+  source: KOMODO
+  source_id: komodo.medium:383a.1
+  original_category: imported
+- name: DESULFOVIBRIO SAX medium
+  source: KOMODO
+  source_id: komodo.medium:383a
+  original_category: imported
+- name: DESULFOBACULA TOLUOLICA MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:383b
+  original_category: imported
+- name: DESULFOVIBRIO ZOSTERAE MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:383c
+  original_category: imported
+- name: DESULFONAUTICUS medium
+  source: KOMODO
+  source_id: komodo.medium:383d
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M472_Desulfonauticus_Medium
+- DSMZ_383b_DESULFONAUTICUS_MEDIUM
+- KOMODO_383-10085_MEDIUM_383_MODIFIED_FOR_DSM_10085
+- KOMODO_383-10141_MEDIUM_383_MODIFIED_FOR_DSM_10141
+- KOMODO_383-10259_MEDIUM_383_MODIFIED_FOR_DSM_10259
+- KOMODO_383-11384_MEDIUM_383_MODIFIED_FOR_DSM_11384
+- KOMODO_383-11_For_DSM_14728
+- KOMODO_383-12_For_DSM_14982
+- KOMODO_383-13_For_DSM_15286_and_DSM_21156
+- KOMODO_383-14_For_DSM_16109_and_DSM_17464
+- KOMODO_383-15_For_DSM_17291
+- KOMODO_383-16_For_DSM_17477
+- KOMODO_383-17_For_DSM_18378_and_DSM_18379
+- KOMODO_383-18_For_DSM_3379_DSM_3380_DSM_3381
+- KOMODO_383-19_For_DSM_14454
+- KOMODO_383-1_For_DSM_3382
+- KOMODO_383-2_For_DSM_3383
+- KOMODO_383-3_For_DSM_3384
+- KOMODO_383-4_For_DSM_3385
+- KOMODO_383-5_For_DSM_8541
+- KOMODO_383-6_For_DSM_9120_DSM_17456_and_DSM_19275
+- KOMODO_383-7_For_DSM_12861_and_DSM_12883
+- KOMODO_383-8540_MEDIUM_383_MODIFIED_FOR_DSM_8540
+- KOMODO_383-8_For_DSM_12888
+- KOMODO_383-9755_MEDIUM_383_MODIFIED_FOR_DSM_9755
+- KOMODO_383-9_For_DSM_14367_DSM_15579_DSM_15816_DSM_19338_DSM_22027
+- KOMODO_383_DESULFOBACTERIUM_MEDIUM
+- KOMODO_383a-1_For_DSM_18732
+- KOMODO_383a_DESULFOVIBRIO_SAX_medium
+- KOMODO_383b_DESULFOBACULA_TOLUOLICA_MEDIUM
+- KOMODO_383c_DESULFOVIBRIO_ZOSTERAE_MEDIUM
+- KOMODO_383d_DESULFONAUTICUS_medium
+merge_fingerprint: a6db08dafae743dca7040ec22831d340a942906e3bc92d794d6fe96e69f4e25a

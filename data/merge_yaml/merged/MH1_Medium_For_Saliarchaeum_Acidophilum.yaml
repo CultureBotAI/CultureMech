@@ -119,7 +119,7 @@ curation_history:
   date: '2026-02-03T11:21:00.669928'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
-- timestamp: '2026-02-03T22:26:23.167350+00:00'
+- timestamp: '2026-02-19T08:27:01.903581+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M807_MH1_Medium_For_Saliarchaeum_Acidophilum, TOGO_M821_MH1_Medium_For_Halarchaeum,

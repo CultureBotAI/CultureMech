@@ -8,8 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +17,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -31,7 +31,7 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
     component'
   term:
     id: CHEBI:131527
@@ -40,8 +40,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:50144
     label: Na-pyruvate
@@ -49,7 +49,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
     component'
   term:
     id: CHEBI:42758
@@ -80,125 +80,32 @@ ingredients:
     value: '0.5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: 'Vitamin solution:'
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Biotin
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: p-aminobenzoic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Folic acid
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Riboflavin
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Nicotine amide
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:132751
-    label: Thiamine-HCl x 2 H2O
-- preferred_term: Pantothenic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:7916
-    label: pantothenic acid
-- preferred_term: Pyridoxamine-HCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-- preferred_term: α-lipoic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:43796
-    label: (S)-lipoic acid
 media_term:
-  preferred_term: TOGO Medium M2520
+  preferred_term: TOGO Medium M2301
   term:
-    id: TOGO:M2520
+    id: TOGO:M2301
     label: R2A Medium
-notes: 'Source: https://togomedium.org/medium/M2520
+notes: 'Source: https://togomedium.org/medium/M2301
 
   Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium830.pdf'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.601262Z'
+- timestamp: '2026-01-27T06:35:56.304427Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2520'
-- timestamp: '2026-01-28T19:48:29.864294Z'
+  notes: 'Source: TOGO, ID: M2301'
+- timestamp: '2026-01-28T19:48:12.713451Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 228e075942a7673d5562c4fe244de1f287dbd04ad6dd4832d9eec996e2b1aeeb
+- timestamp: '2026-02-19T08:27:01.550017+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M2301_R2A_Medium, TOGO_M2592_R2A_Medium'
+categories:
+- imported
 merged_from:
-- TOGO_M2520_R2A_Medium
+- TOGO_M2301_R2A_Medium
+- TOGO_M2592_R2A_Medium
+merge_fingerprint: 98141fe6f20daadc691db54322b83b814e24576d0657be9708fd6dfb9487f015

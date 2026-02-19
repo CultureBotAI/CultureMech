@@ -95,7 +95,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:08.767631+00:00'
+- timestamp: '2026-02-19T08:27:01.177978+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1646_R2A_Medium, TOGO_M1940_5_R2A_Medium, TOGO_M1942_R2A_medium_pH_6.0,

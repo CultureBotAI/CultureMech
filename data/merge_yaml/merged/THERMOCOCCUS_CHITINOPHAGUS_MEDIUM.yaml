@@ -273,7 +273,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 766'
-- timestamp: '2026-02-03T22:25:48.097974+00:00'
+- timestamp: '2026-02-19T08:26:53.959222+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM, KOMODO_766_THERMOCOCCUS_CHITINOPHAGUS_MEDIUM'

@@ -188,7 +188,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 597'
-- timestamp: '2026-02-03T22:25:45.537795+00:00'
+- timestamp: '2026-02-19T08:26:51.632043+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_597_SALINIVIBRIO_COSTICOLA_SUBSP._VALLISMORTIS_MEDIUM, KOMODO_597_SALINIVIBRIO_COSTICOLA_SUBSP._VALLISMORTIS_medium'

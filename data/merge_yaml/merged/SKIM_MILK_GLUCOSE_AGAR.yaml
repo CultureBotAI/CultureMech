@@ -40,7 +40,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 810'
-- timestamp: '2026-02-03T22:25:49.072143+00:00'
+- timestamp: '2026-02-19T08:26:54.791174+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_810_SKIM_MILK_GLUCOSE_AGAR, KOMODO_810_SKIM_MILK_GLUCOSE_AGAR'

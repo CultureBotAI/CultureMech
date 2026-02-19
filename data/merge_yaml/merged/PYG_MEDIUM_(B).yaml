@@ -1,127 +1,101 @@
-name: PYG Medium (B)
-original_name: PYG Medium (B)
+name: PYG MEDIUM (B)
+original_name: PYG MEDIUM (B)
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1139
+  term:
+    id: mediadive.medium:1139
+    label: PYG MEDIUM (B)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1139.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Polypeptone
   concentration:
-    value: '960'
+    value: '5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
+- preferred_term: Tryptone
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '10'
+    unit: G_PER_L
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Tryptone (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Polypepton (Nihon Pharm. Co.)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Salts solution (see below)
-  concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '0.4'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: NaCl
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: NaHCO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
 - preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:3312
-    label: calcium dichloride
-media_term:
-  preferred_term: TOGO Medium M423
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: K2HPO4
   term:
-    id: TOGO:M423
-    label: PYG Medium (B)
-notes: 'Source: https://togomedium.org/medium/M423
-
-  Original source: JCM - JCM_M423
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=423'
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.031069Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M423'
-- timestamp: '2026-01-28T19:48:28.242428Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 5abecb0c4e5298a1f72e9e882ff2449b3be3fe2b63056567689ba26e13453b72
+- timestamp: '2026-01-26T17:53:13.489284Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1139'
+- timestamp: '2026-02-19T08:26:39.981628+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1139_PYG_MEDIUM_B, JCM_J423_PYG_MEDIUM_B, KOMODO_1139_PYG_medium_B'
+synonyms:
+- name: PYG medium (B)
+  source: KOMODO
+  source_id: komodo.medium:1139
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M423_PYG_Medium_B
+- DSMZ_1139_PYG_MEDIUM_B
+- JCM_J423_PYG_MEDIUM_B
+- KOMODO_1139_PYG_medium_B
+merge_fingerprint: 664c12a8c00a22ffbaef33dd2f268520eeccc3466cd7c2bdead67b103bee60e4

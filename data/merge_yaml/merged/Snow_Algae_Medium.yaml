@@ -97,7 +97,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: snow-algae-medium, URL: https://utex.org/products/snow-algae-medium'
-- timestamp: '2026-02-03T22:25:24.991012+00:00'
+- timestamp: '2026-02-19T08:26:36.627440+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: A+_Medium, BG-11_Medium, Bold_1NV_Medium, Bold_Basal_Medium, Snow_Algae_Medium'

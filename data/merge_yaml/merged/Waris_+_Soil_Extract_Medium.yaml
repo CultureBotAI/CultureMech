@@ -56,7 +56,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: waris-plus-soil-extract-medium, URL: https://utex.org/products/waris-plus-soil-extract-medium'
-- timestamp: '2026-02-03T22:25:24.899965+00:00'
+- timestamp: '2026-02-19T08:26:36.538041+00:00'
   curator: recipe-merger
   action: Merged 29 duplicate recipes into canonical record
   notes: 'Sources: 1_2_Enriched_Seawater, 1_2_Erdschreiber_Medium, 1_4_Erdschreiber_s_Medium,

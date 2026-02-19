@@ -1,52 +1,204 @@
-name: Trypticase Soy Yeast Extract Medium
-original_name: Trypticase Soy Yeast Extract Medium
+name: TRYPTICASE SOY YEAST EXTRACT MEDIUM
+original_name: TRYPTICASE SOY YEAST EXTRACT MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 92
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar, if necessary
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
+    id: mediadive.medium:92
+    label: TRYPTICASE SOY YEAST EXTRACT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium92.pdf'
+ingredients:
 - preferred_term: Trypticase soy broth
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-media_term:
-  preferred_term: TOGO Medium M2330
+- preferred_term: Yeast extract
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
-    id: TOGO:M2330
-    label: Trypticase Soy Yeast Extract Medium
-notes: 'Source: https://togomedium.org/medium/M2330
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium92.pdf'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0 - 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.351503Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2330'
-- timestamp: '2026-01-28T19:48:39.422099Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: c1f6257ce3379af855569ccfbba6ec93e6d0d9343093f3950a4819640c48cb6e
+- timestamp: '2026-01-26T17:53:10.156258Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 92'
+- timestamp: '2026-02-19T08:27:00.015704+00:00'
+  curator: recipe-merger
+  action: Merged 29 duplicate recipes into canonical record
+  notes: 'Sources: KOMODO_92-10249_MEDIUM_92_MODIFIED_FOR_DSM_10249, KOMODO_92-10672_MEDIUM_92_MODIFIED_FOR_DSM_10672,
+    KOMODO_92-10673_MEDIUM_92_MODIFIED_FOR_DSM_10673, KOMODO_92-11865_MEDIUM_92_MODIFIED_FOR_DSM_11865,
+    KOMODO_92-13240_MEDIUM_92_MODIFIED_FOR_DSM_13240, KOMODO_92-14684_MEDIUM_92_MODIFIED_FOR_DSM_14684,
+    KOMODO_92-15461_MEDIUM_92_MODIFIED_FOR_DSM_15461, KOMODO_92-17027_MEDIUM_92_MODIFIED_FOR_DSM_17027,
+    KOMODO_92-17065_MEDIUM_92_MODIFIED_FOR_DSM_17065, KOMODO_92-17066_MEDIUM_92_MODIFIED_FOR_DSM_17066,
+    KOMODO_92-18607_MEDIUM_92_MODIFIED_FOR_DSM_18607, KOMODO_92-18966_MEDIUM_92_MODIFIED_FOR_DSM_18966,
+    KOMODO_92-19663_MEDIUM_92_MODIFIED_FOR_DSM_19663, KOMODO_92-21577_MEDIUM_92_MODIFIED_FOR_DSM_21577,
+    KOMODO_92-23765_MEDIUM_92_MODIFIED_FOR_DSM_23765, KOMODO_92-23766_MEDIUM_92_MODIFIED_FOR_DSM_23766,
+    KOMODO_92-25585_MEDIUM_92_MODIFIED_FOR_DSM_25585, KOMODO_92-43846_MEDIUM_92_MODIFIED_FOR_DSM_43846,
+    KOMODO_92-6685_MEDIUM_92_MODIFIED_FOR_DSM_6685, KOMODO_92-6688_MEDIUM_92_MODIFIED_FOR_DSM_6688,
+    KOMODO_92-7109_MEDIUM_92_MODIFIED_FOR_DSM_7109, KOMODO_92-7110_MEDIUM_92_MODIFIED_FOR_DSM_7110,
+    KOMODO_92-7111_MEDIUM_92_MODIFIED_FOR_DSM_7111, KOMODO_92-7112_MEDIUM_92_MODIFIED_FOR_DSM_7112,
+    KOMODO_92-7113_MEDIUM_92_MODIFIED_FOR_DSM_7113, KOMODO_92-7171_MEDIUM_92_MODIFIED_FOR_DSM_7171,
+    KOMODO_92_TRYPTICASE_SOY_Yeast_extract_medium, KOMODO_92a_MODIFIED_medium_92,
+    DSMZ_92_TRYPTICASE_SOY_YEAST_EXTRACT_MEDIUM'
+synonyms:
+- name: MEDIUM 92 MODIFIED FOR DSM 10249
+  source: KOMODO
+  source_id: komodo.medium:92_10249
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 10672
+  source: KOMODO
+  source_id: komodo.medium:92_10672
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 10673
+  source: KOMODO
+  source_id: komodo.medium:92_10673
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 11865
+  source: KOMODO
+  source_id: komodo.medium:92_11865
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 13240
+  source: KOMODO
+  source_id: komodo.medium:92_13240
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 14684
+  source: KOMODO
+  source_id: komodo.medium:92_14684
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 15461
+  source: KOMODO
+  source_id: komodo.medium:92_15461
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 17027
+  source: KOMODO
+  source_id: komodo.medium:92_17027
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 17065
+  source: KOMODO
+  source_id: komodo.medium:92_17065
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 17066
+  source: KOMODO
+  source_id: komodo.medium:92_17066
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 18607
+  source: KOMODO
+  source_id: komodo.medium:92_18607
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 18966
+  source: KOMODO
+  source_id: komodo.medium:92_18966
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 19663
+  source: KOMODO
+  source_id: komodo.medium:92_19663
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 21577
+  source: KOMODO
+  source_id: komodo.medium:92_21577
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 23765
+  source: KOMODO
+  source_id: komodo.medium:92_23765
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 23766
+  source: KOMODO
+  source_id: komodo.medium:92_23766
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 25585
+  source: KOMODO
+  source_id: komodo.medium:92_25585
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 43846
+  source: KOMODO
+  source_id: komodo.medium:92_43846
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 6685
+  source: KOMODO
+  source_id: komodo.medium:92_6685
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 6688
+  source: KOMODO
+  source_id: komodo.medium:92_6688
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7109
+  source: KOMODO
+  source_id: komodo.medium:92_7109
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7110
+  source: KOMODO
+  source_id: komodo.medium:92_7110
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7111
+  source: KOMODO
+  source_id: komodo.medium:92_7111
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7112
+  source: KOMODO
+  source_id: komodo.medium:92_7112
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7113
+  source: KOMODO
+  source_id: komodo.medium:92_7113
+  original_category: imported
+- name: MEDIUM 92 MODIFIED FOR DSM 7171
+  source: KOMODO
+  source_id: komodo.medium:92_7171
+  original_category: imported
+- name: TRYPTICASE SOY Yeast extract medium
+  source: KOMODO
+  source_id: komodo.medium:92
+  original_category: imported
+- name: MODIFIED medium 92
+  source: KOMODO
+  source_id: komodo.medium:92a
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2330_Trypticase_Soy_Yeast_Extract_Medium
+- KOMODO_92-10249_MEDIUM_92_MODIFIED_FOR_DSM_10249
+- KOMODO_92-10672_MEDIUM_92_MODIFIED_FOR_DSM_10672
+- KOMODO_92-10673_MEDIUM_92_MODIFIED_FOR_DSM_10673
+- KOMODO_92-11865_MEDIUM_92_MODIFIED_FOR_DSM_11865
+- KOMODO_92-13240_MEDIUM_92_MODIFIED_FOR_DSM_13240
+- KOMODO_92-14684_MEDIUM_92_MODIFIED_FOR_DSM_14684
+- KOMODO_92-15461_MEDIUM_92_MODIFIED_FOR_DSM_15461
+- KOMODO_92-17027_MEDIUM_92_MODIFIED_FOR_DSM_17027
+- KOMODO_92-17065_MEDIUM_92_MODIFIED_FOR_DSM_17065
+- KOMODO_92-17066_MEDIUM_92_MODIFIED_FOR_DSM_17066
+- KOMODO_92-18607_MEDIUM_92_MODIFIED_FOR_DSM_18607
+- KOMODO_92-18966_MEDIUM_92_MODIFIED_FOR_DSM_18966
+- KOMODO_92-19663_MEDIUM_92_MODIFIED_FOR_DSM_19663
+- KOMODO_92-21577_MEDIUM_92_MODIFIED_FOR_DSM_21577
+- KOMODO_92-23765_MEDIUM_92_MODIFIED_FOR_DSM_23765
+- KOMODO_92-23766_MEDIUM_92_MODIFIED_FOR_DSM_23766
+- KOMODO_92-25585_MEDIUM_92_MODIFIED_FOR_DSM_25585
+- KOMODO_92-43846_MEDIUM_92_MODIFIED_FOR_DSM_43846
+- KOMODO_92-6685_MEDIUM_92_MODIFIED_FOR_DSM_6685
+- KOMODO_92-6688_MEDIUM_92_MODIFIED_FOR_DSM_6688
+- KOMODO_92-7109_MEDIUM_92_MODIFIED_FOR_DSM_7109
+- KOMODO_92-7110_MEDIUM_92_MODIFIED_FOR_DSM_7110
+- KOMODO_92-7111_MEDIUM_92_MODIFIED_FOR_DSM_7111
+- KOMODO_92-7112_MEDIUM_92_MODIFIED_FOR_DSM_7112
+- KOMODO_92-7113_MEDIUM_92_MODIFIED_FOR_DSM_7113
+- KOMODO_92-7171_MEDIUM_92_MODIFIED_FOR_DSM_7171
+- KOMODO_92_TRYPTICASE_SOY_Yeast_extract_medium
+- KOMODO_92a_MODIFIED_medium_92
+- DSMZ_92_TRYPTICASE_SOY_YEAST_EXTRACT_MEDIUM
+merge_fingerprint: 9dfe9958aa37a0c5a021ef24cd4e5856bac3894b15041115ce74c650688d494a

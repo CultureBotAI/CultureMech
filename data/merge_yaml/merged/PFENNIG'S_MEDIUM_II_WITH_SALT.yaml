@@ -1,411 +1,404 @@
-name: Pfennig's Medium II With Salt
-original_name: Pfennig's Medium II With Salt
+name: PFENNIG'S MEDIUM II WITH SALT
+original_name: PFENNIG'S MEDIUM II WITH SALT
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 40
+  term:
+    id: mediadive.medium:40
+    label: PFENNIG'S MEDIUM II WITH SALT
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium40.pdf'
 ingredients:
 - preferred_term: NaCl
-  concentration:
-    value: '1'
-    unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
   term:
     id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: 'Solution A:'
+    label: NaCl
   concentration:
-    value: '46'
+    value: '10'
     unit: G_PER_L
-- preferred_term: Sol. 1
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: 'Solution B:'
-  concentration:
-    value: '4'
-    unit: G_PER_L
-- preferred_term: 'Solution F:'
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Na2CO3
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: CO2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 'Solution C:'
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: 'Solution D:'
-  concentration:
-    value: '450'
-    unit: G_PER_L
-- preferred_term: 'Solution E:'
-  concentration:
-    value: '25'
-    unit: G_PER_L
-- preferred_term: CO2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '460'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
+    label: CaCl2 x 2 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '135'
+    value: '0.543478'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2S x 9 H2O
+- preferred_term: Yeast extract
   concentration:
-    value: '2'
+    value: '0.543478'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: NaHCO3
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: H2O
+    label: NaHCO3
   concentration:
-    value: '50'
+    value: '30'
     unit: G_PER_L
-  notes: 'Role: Solvating media'
+- preferred_term: Resazurin
   term:
-    id: CHEBI:15377
-    label: water
-- preferred_term: CO2
-  notes: 'Properties: ガス'
+    id: CHEBI:8806
+    label: Resazurin
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '450'
+    value: '0.005'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Resazurin (0,1%)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.35'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
 - preferred_term: Ammonium chloride
-  concentration:
-    value: '0.35'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Dextrose
+    label: Ammonium chloride
   concentration:
-    value: '0.25'
+    value: '14'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: Ammonium acetate
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: KCL
+    id: CHEBI:62947
+    label: Ammonium acetate
   concentration:
-    value: '0.35'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
 - preferred_term: Pyruvic acid sodium salt
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:113246
     label: Pyruvic acid sodium salt
-- preferred_term: Ammonium acetate
   concentration:
-    value: '0.25'
+    value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '14'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '14.8148'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.0111111'
+    unit: G_PER_L
+- preferred_term: Ammonium chloride
+  term:
+    id: CHEBI:31206
+    label: Ammonium chloride
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: Ammonium acetate
   term:
     id: CHEBI:62947
-    label: ammonium acetate
-- preferred_term: Trace element solution SL-10 B
+    label: Ammonium acetate
   concentration:
-    value: '1'
+    value: '9.61539'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Pyruvic acid sodium salt
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:113246
+    label: Pyruvic acid sodium salt
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '9.61539'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '19.2308'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '13.4615'
+    unit: G_PER_L
 - preferred_term: Vitamin B12
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: HCl (25%)
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
-    value: '7.7'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: FeSO4 x 7 H2O
-  concentration:
-    value: '1.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '190'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2 x 6 H2O
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: CuCl2 x 2 H2O
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-- preferred_term: ZnCl2
-  concentration:
-    value: '70'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+- preferred_term: Na2-EDTA
+  term:
+    id: CHEBI:64734
+    label: Na2-EDTA
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2477
+    value: '1.1'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
   term:
-    id: TOGO:M2477
-    label: Pfennig's Medium II With Salt
-notes: 'Source: https://togomedium.org/medium/M2477
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium40.pdf'
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.19'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.042'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.024'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.002'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).
+- step_number: 2
+  action: MIX
+  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's
+    heterotrophic salts) and sterilize as given below.
+- step_number: 3
+  action: COOL
+  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin
+    (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic
+    salts solution). Bubble with CO2 in an ice bath under sterile conditions.
+- step_number: 4
+  action: MIX
+  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50
+    mL).
+- step_number: 5
+  action: MIX
+  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12
+    solution to each 100 mL bottle.
+- step_number: 6
+  action: MIX
+  description: During the first 24 h, the iron of the medium precipitates in the form
+    of black flocks. No other sediment should arise in the otherwise clear medium.
+    Feed periodically with neutralized 3% solution of sodium sulfide to replenish
+    sulfide and with other supplement solutions (see Ref. 3365).
+- step_number: 7
+  action: FILTER_STERILIZE
+  description: Adjust pH to 6.8-7.1 with 1M Na2CO3 (filter-sterilized).
+- step_number: 8
+  action: AUTOCLAVE
+  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave
+    121°C 15 min.
+- step_number: 9
+  action: AUTOCLAVE
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
+    tightly and autoclave.
+- step_number: 10
+  action: FILTER_STERILIZE
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
+    screw-cap bottle.
+- step_number: 11
+  action: AUTOCLAVE
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
+    for medium, connected to a glass outlet at the bottom of the vessel and has, at
+    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+    dispensing of the medium into bottles.
+- step_number: 12
+  action: COOL
+  description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
+- step_number: 13
+  action: FILTER_STERILIZE
+  description: Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
+- step_number: 14
+  action: FILTER_STERILIZE
+  description: Filter sterilized
+- step_number: 15
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min.
+- step_number: 16
+  action: FILTER_STERILIZE
+  description: Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.
+- step_number: 17
+  action: ALIQUOT
+  description: If needed, aliquot into sterile, N<sub>2</sub> gassed screw-cap tubes
+    under N<sub>2</sub> gas.
+- step_number: 18
+  action: MIX
+  description: During the first 24 h, the iron of the medium precipitates in the form
+    of black flocks. No other sediment should arise in the otherwise clear medium.
+- step_number: 19
+  action: AUTOCLAVE
+  description: Aliquot Solution A into 100 mL screw-cap bottles, filled with 46 mL
+    each. Bubble with N2/CO2 and autoclave at 121°C for 15 min (as decribed below).
+- step_number: 20
+  action: MIX
+  description: Prepare the following solutions (resazurin, bicarbonate and Pfennig's
+    heterotrophic salts) and sterilize as given below.
+- step_number: 21
+  action: COOL
+  description: Add bicarbonate solution and Pfennig's heterotrophic salts to the resazurin
+    (complete volumina, i.e. 50 mL bicarbonate solution and 26 mL Pfennig's heterotrophic
+    salts solution). Bubble with CO2 in an ice bath under sterile conditions.
+- step_number: 22
+  action: MIX
+  description: Fill 50 ml of this mixture to each bottle of solution A (46 mL + 50
+    mL).
+- step_number: 23
+  action: MIX
+  description: Before use, add 4 ml sulfide solution (1.5%) and 0.1 ml Vitamin B12
+    solution to each 100 mL bottle.
+- step_number: 24
+  action: MIX
+  description: Feed the actively growing culture periodically with neutralized 3%
+    solution of sodium sulfide (use 1 -3 mL/100 mL depending on strain and cultivation
+    stage) to replenish sulfide and with other supplement solutions (see Ref. 3365).
+- step_number: 25
+  action: AUTOCLAVE
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
+    tightly and autoclave.
+- step_number: 26
+  action: FILTER_STERILIZE
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
+    screw-cap bottle.
+- step_number: 27
+  action: AUTOCLAVE
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
+    for medium, connected to a glass outlet at the bottom of the vessel and has, at
+    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
+    dispensing of the medium into bottles.
+- step_number: 28
+  action: COOL
+  description: Cool to room temperature under an atmosphere of N2/CO2 in an ice bath.
+- step_number: 29
+  action: FILTER_STERILIZE
+  description: Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
+- step_number: 30
+  action: FILTER_STERILIZE
+  description: Filter sterilized
+- step_number: 31
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+- step_number: 32
+  action: ADJUST_PH
+  description: Adjust pH to 6.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.568695Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2477'
-- timestamp: '2026-01-28T19:48:10.714238Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.956932'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Na2CO3; Added default concentration
-    for ingredient: CO2; Added default concentration for ingredient: N2; Added default
-    concentration for ingredient: CO2; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas;
-    Added default concentration for ingredient: N2; Added default concentration for
-    ingredient: CO2; Added default concentration for ingredient: Carbon dioxide gas;
-    Added default concentration for ingredient: Nitrogen gas; Added default concentration
-    for ingredient: H2SO4; Added default concentration for ingredient: N2'
-merge_fingerprint: ed5246ff9e53aa7cc831b3b0a2b87cafaabaa57cfb073e49a17481f674ebc974
+- timestamp: '2026-01-26T17:53:10.029941Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 40'
+- timestamp: '2026-02-19T08:26:47.859224+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_40_PFENNIG_S_MEDIUM_II_WITH_SALT, KOMODO_40_PFENNIG_S_MEDIUM_II_WITH_SALT'
+categories:
+- imported
 merged_from:
-- TOGO_M2477_Pfennig_s_Medium_II_With_Salt
+- DSMZ_40_PFENNIG_S_MEDIUM_II_WITH_SALT
+- KOMODO_40_PFENNIG_S_MEDIUM_II_WITH_SALT
+merge_fingerprint: dc2075f84b3bbfa3b1495e4e8240a89573969f1893d82536cf9cee6c97bc994e

@@ -1,131 +1,126 @@
-name: Clostridium (GS) Medium
-original_name: Clostridium (GS) Medium
+name: CLOSTRIDIUM (GS) MEDIUM
+original_name: CLOSTRIDIUM (GS) MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 255
+  term:
+    id: mediadive.medium:255
+    label: CLOSTRIDIUM (GS) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium255.pdf'
 ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: MgCl2 x 6 H2O
   concentration:
-    value: '0.5'
+    value: '0.499002'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
 - preferred_term: K2HPO4 x 3 H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Cellobiose
+    label: K2HPO4 x 3 H2O
   concentration:
-    value: '5'
+    value: '0.998004'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+- preferred_term: Urea
   term:
-    id: CHEBI:17057
-    label: cellobiose
-- preferred_term: 'Morpholinopropane sulfonic acid '
+    id: CHEBI:16199
+    label: Urea
   concentration:
-    value: '10'
+    value: '1.99601'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '0.499002'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0499002'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0012475'
+    unit: G_PER_L
+- preferred_term: Morpholinopropane sulfonic acid
   term:
     id: CHEBI:44115
     label: Morpholinopropane sulfonic acid
-- preferred_term: FeSO4 x 7 H2O solution (0.1% w/v in 0.1 N H2SO4)
   concentration:
-    value: '1.25'
+    value: '9.98004'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: Urea
+- preferred_term: Sodium resazurin
   concentration:
-    value: '2'
+    value: '0.000499002'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:16199
-    label: urea
-- preferred_term: L-Cysteine-HCl x H2O
+- preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '5.98802'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:17561
-    label: L-cysteine
-- preferred_term: N2 gas
-  notes: 'Properties: Gas'
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2741
+    value: '0.998004'
+    unit: G_PER_L
+- preferred_term: Cellobiose
   term:
-    id: TOGO:M2741
-    label: Clostridium (GS) Medium
-notes: 'Source: https://togomedium.org/medium/M2741
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium255.pdf'
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '4.99002'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except cysteine and cellobiose and adjust pH to
+    7.2. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add
+    cysteine and readjust pH to 7.2, if necessary. Dispense medium under the same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Prior
+    to inoculation add cellobiose from an anoxic stock solution prepared under 100%
+    N2 gas and sterilized by filtration.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.208140Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2741'
-- timestamp: '2026-01-28T19:48:32.834448Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.153000'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2 gas'
-merge_fingerprint: e18b5d86987d2c261b8bc12b04e549a2f355d118a936c32604589cba0aa569c9
+- timestamp: '2026-01-26T17:53:10.601371Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 255'
+- timestamp: '2026-02-19T08:26:45.318131+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_255_CLOSTRIDIUM_GS_MEDIUM, KOMODO_255-14427_MEDIUM_255_MODIFIED_FOR_DSM_14427,
+    KOMODO_255-8532_MEDIUM_255_MODIFIED_FOR_DSM_8532, KOMODO_255_GS_medium'
+synonyms:
+- name: MEDIUM 255 MODIFIED FOR DSM 14427
+  source: KOMODO
+  source_id: komodo.medium:255_14427
+  original_category: imported
+- name: MEDIUM 255 MODIFIED FOR DSM 8532
+  source: KOMODO
+  source_id: komodo.medium:255_8532
+  original_category: imported
+- name: GS medium
+  source: KOMODO
+  source_id: komodo.medium:255
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2741_Clostridium_GS_Medium
+- DSMZ_255_CLOSTRIDIUM_GS_MEDIUM
+- KOMODO_255-14427_MEDIUM_255_MODIFIED_FOR_DSM_14427
+- KOMODO_255-8532_MEDIUM_255_MODIFIED_FOR_DSM_8532
+- KOMODO_255_GS_medium
+merge_fingerprint: 727e537f7e034203385d663e60f75d4446fa3f68de641ab8e3bae0e62d3dc7c9

@@ -52,7 +52,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:21.018660+00:00'
+- timestamp: '2026-02-19T08:27:01.819471+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M482_Reinforced_Clostridial_Medium_With_3_Sea_Salt, TOGO_M483_Reinforced_Clostridial_Medium_With_4_Sea_Salt'

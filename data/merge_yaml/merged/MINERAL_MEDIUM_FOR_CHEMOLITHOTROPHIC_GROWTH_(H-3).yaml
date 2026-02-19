@@ -1,317 +1,242 @@
-name: Mineral Medium For Chemolithotrophic Growth (H-3)
-original_name: Mineral Medium For Chemolithotrophic Growth (H-3)
+name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
+original_name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '50'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '920'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '20'
-    unit: G_PER_L
-- preferred_term: Standard vitamin solution
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Nitrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Oxygen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+ph_value: 6.8
+media_term:
+  preferred_term: DSMZ Medium 81
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:81
+    label: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium81.pdf'
+ingredients:
 - preferred_term: KH2PO4
-  concentration:
-    value: '2.3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: Na2HPO4 x 2 H2O
   concentration:
-    value: '2.9'
+    value: '46'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+- preferred_term: Na2HPO4 x 2 H2O
   term:
     id: CHEBI:34683
-    label: disodium hydrogenphosphate
-- preferred_term: Distilled water
+    label: Na2HPO4 x 2 H2O
   concentration:
-    value: '915'
+    value: '58'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: NH4Cl
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:31206
-    label: ammonium chloride
+    label: NH4Cl
+  concentration:
+    value: '1.08696'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.543478'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.0108696'
+    unit: G_PER_L
 - preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
   concentration:
-    value: '0.005'
+    value: '0.00543478'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: NaVO3 x H2O
-  concentration:
-    value: '0.005'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:132095
     label: NaVO3 x H2O
-- preferred_term: Agar (if necessary)
   concentration:
-    value: '20'
+    value: '0.00543478'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Trace element sol. SL-6
-  concentration:
-    value: '5'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Agar
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Ferric ammonium citrate
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '0.05'
+    value: '21.7391'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
+  notes: ' (if required)'
+- preferred_term: Ferric ammonium citrate
   term:
     id: CHEBI:31604
-    label: ferric ammonium citrate
-- preferred_term: Distilled water
+    label: Ferric ammonium citrate
   concentration:
-    value: '100'
+    value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Riboflavin
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Biotin
+    id: CHEBI:17015
+    label: Riboflavin
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: Ca-pantothenate
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:29032
-    label: (R)-pantothenate
-- preferred_term: Pyridoxine-HCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-- preferred_term: Folic acid
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Riboflavin
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:15940
-    label: nicotinic acid
 - preferred_term: Thiamine-HCl x 2 H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:132751
     label: Thiamine-HCl x 2 H2O
-- preferred_term: Distilled water
   concentration:
-    value: '1000'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Nicotinic acid
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
+    id: CHEBI:15940
+    label: Nicotinic acid
   concentration:
-    value: '0.03'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Pyridoxine hydrochloride
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
   concentration:
-    value: '0.3'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Calcium pantothenate
   term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: MnCl2 x 4 H2O
+    id: CHEBI:31345
+    label: Calcium pantothenate
   concentration:
-    value: '0.03'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Biotin
   term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2 x 6 H2O
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '0.02'
+    value: '0.001'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Folic acid
   term:
-    id: CHEBI:34887
-    label: nickel dichloride
-- preferred_term: ZnSO4 x 7 H2O
+    id: CHEBI:27470
+    label: Folic acid
   concentration:
-    value: '0.1'
+    value: '0.002'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Vitamin B12
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuCl2 x 2 H2O
+    id: CHEBI:17439
+    label: Vitamin B12
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
   term:
     id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-media_term:
-  preferred_term: TOGO Medium M3126
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: TOGO:M3126
-    label: Mineral Medium For Chemolithotrophic Growth (H-3)
-notes: 'Source: https://togomedium.org/medium/M3126
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium81.pdf'
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Solutions A, B, C are autoclaved separately for 15 min at 121°C, cooled
+    down to 50°C and then mixed aseptically with 5.0 ml filter-sterilized standard
+    vitamin solution (see below).The final pH of this medium should be 6.8 without
+    adjustment.
+- step_number: 2
+  action: MIX
+  description: For chemolithotrophic growth incubate the culture under an atmosphere
+    of 2% (v/v) O2, 10% CO2, 60% H2 and 28% N2. For heterotrophic growth supplement
+    the mineral medium with an appropriate carbon source (0.2% carbohydrate or 0.1%
+    organic acid). For growth on nitrogen-free medium, omit NH4Cl and incubate the
+    culture under an atmosphere of 2% (v/v) O2, 10% CO2, 10% H2 and 78% N2 or heterotrophically
+    under 2% (v/v) O2 and 98% N2. For more details see Ref. 1515 and Ref. 3363.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.472056Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3126'
-- timestamp: '2026-01-28T19:48:18.013229Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.460800'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Oxygen gas; Added default concentration for ingredient: Hydrogen gas'
-merge_fingerprint: a708a5ba74ac6e1ab581057269dd54689690a819e8a09bd7a77a2bfefddfa7b9
+- timestamp: '2026-01-26T17:53:10.119248Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 81'
+- timestamp: '2026-02-19T08:26:54.989003+00:00'
+  curator: recipe-merger
+  action: Merged 7 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3, KOMODO_81-1_For_heterotrophic_growth,
+    KOMODO_81-21442_MEDIUM_81_MODIFIED_FOR_DSM_21442, KOMODO_81-2_For_growth_on_nitrogen-free_medium,
+    KOMODO_81-3_For_heterotrophic_growth, KOMODO_81-4_For_DSM_21436, KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3'
+synonyms:
+- name: For heterotrophic growth
+  source: KOMODO
+  source_id: komodo.medium:81.1
+  original_category: imported
+- name: MEDIUM 81 MODIFIED FOR DSM 21442
+  source: KOMODO
+  source_id: komodo.medium:81_21442
+  original_category: imported
+- name: For growth on nitrogen-free medium
+  source: KOMODO
+  source_id: komodo.medium:81.2
+  original_category: imported
+- name: For heterotrophic growth
+  source: KOMODO
+  source_id: komodo.medium:81.3
+  original_category: imported
+- name: For DSM 21436
+  source: KOMODO
+  source_id: komodo.medium:81.4
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M3126_Mineral_Medium_For_Chemolithotrophic_Growth_H-3
+- DSMZ_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3
+- KOMODO_81-1_For_heterotrophic_growth
+- KOMODO_81-21442_MEDIUM_81_MODIFIED_FOR_DSM_21442
+- KOMODO_81-2_For_growth_on_nitrogen-free_medium
+- KOMODO_81-3_For_heterotrophic_growth
+- KOMODO_81-4_For_DSM_21436
+- KOMODO_81_MINERAL_MEDIUM_FOR_CHEMOLITHOTROPHIC_GROWTH_H-3
+merge_fingerprint: 1d329f4b25be39579d1a78f2195b99f408d0a0ea2ea597c278a1aa372b02a091

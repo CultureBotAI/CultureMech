@@ -68,7 +68,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 750'
-- timestamp: '2026-02-03T22:26:01.141813+00:00'
+- timestamp: '2026-02-19T08:26:59.857624+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_750_medium_FOR_MARINE_METHYLOTROPHS, DSMZ_750_MEDIUM_FOR_MARINE_METHYLOTROPHS'

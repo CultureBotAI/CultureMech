@@ -104,7 +104,7 @@ curation_history:
   date: '2026-02-03T11:20:16.996609'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil'
-- timestamp: '2026-02-03T22:25:26.372449+00:00'
+- timestamp: '2026-02-19T08:26:37.665820+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: CCAP_C28_E26_Biotin, CCAP_C31_E31'

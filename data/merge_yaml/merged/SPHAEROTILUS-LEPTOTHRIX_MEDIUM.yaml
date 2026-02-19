@@ -1,98 +1,96 @@
-name: Sphaerotilus-Leptothrix Medium
-original_name: Sphaerotilus-Leptothrix Medium
+name: SPHAEROTILUS-LEPTOTHRIX MEDIUM
+original_name: SPHAEROTILUS-LEPTOTHRIX MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.1
+media_term:
+  preferred_term: DSMZ Medium 803
+  term:
+    id: mediadive.medium:803
+    label: SPHAEROTILUS-LEPTOTHRIX MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium803.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: FeCl3·6H2O
-  concentration:
-    value: '0.01'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86254
-    label: iron trichloride hexahydrate
-- preferred_term: CaCl2
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:3312
-    label: calcium dichloride
-- preferred_term: MnSO4·H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: Ferric ammonium citrate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:31604
-    label: ferric ammonium citrate
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Peptone
   concentration:
     value: '1.5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1923
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M1923
-    label: Sphaerotilus-Leptothrix Medium
-notes: 'Source: https://togomedium.org/medium/M1923
-
-  Original source: NBRC - NBRC_M1188
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1188'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CaCl2
+  term:
+    id: CHEBI:3312
+    label: CaCl2
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Ferric ammonium citrate
+  term:
+    id: CHEBI:31604
+    label: Ferric ammonium citrate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FeCl3 x 6 H2O
+  term:
+    id: CHEBI:86254
+    label: FeCl3 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.1.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.672587Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1923'
-- timestamp: '2026-01-28T19:48:29.104462Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: fe6ba91b6c53286f91e0611d5b1b7c0bd09524a33f4c1825a2a58d975fc5c722
+- timestamp: '2026-01-26T17:53:12.306740Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 803'
+- timestamp: '2026-02-19T08:26:54.723756+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_803_SPHAEROTILUS-LEPTOTHRIX_MEDIUM, KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium'
+synonyms:
+- name: SPHAEROTILUS-LEPTOTHRIX medium
+  source: KOMODO
+  source_id: komodo.medium:803
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1923_Sphaerotilus-Leptothrix_Medium
+- DSMZ_803_SPHAEROTILUS-LEPTOTHRIX_MEDIUM
+- KOMODO_803_SPHAEROTILUS-LEPTOTHRIX_medium
+merge_fingerprint: d039f0d5eb886406ced92df4c2d3da493bf265447d034325e7cb091f61a49040

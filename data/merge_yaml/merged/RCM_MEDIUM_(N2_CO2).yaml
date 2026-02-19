@@ -48,7 +48,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:46.073591+00:00'
+- timestamp: '2026-02-19T08:26:52.111252+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_634c_RCM_MEDIUM_N2_CO2, KOMODO_634_RCM_medium, KOMODO_634a_RCM_medium_modified,

@@ -1,71 +1,72 @@
-name: Bennett's Agar
-original_name: Bennett's Agar
+name: BENNETT'S AGAR
+original_name: BENNETT'S AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.3
+media_term:
+  preferred_term: DSMZ Medium 548
+  term:
+    id: mediadive.medium:548
+    label: BENNETT'S AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium548.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Beef extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N--Z amine, type A (Sheffield)
+- preferred_term: N-Z amine
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Beef extract (BD-Difco)
+- preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M36
+- preferred_term: Agar
   term:
-    id: TOGO:M36
-    label: Bennett's Agar
-notes: 'Source: https://togomedium.org/medium/M36
-
-  Original source: JCM - JCM_M44
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=44'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.3 with NaOH.
+- step_number: 2
+  action: MIX
+  description: Modified Bennett's agar can also be used. In it, glucose is replaced
+    by glycerol (10.0 g) and N-Z amine by Bacto casein (2.0 g, Difco).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.908820Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M36'
-- timestamp: '2026-01-28T19:48:18.683449Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 0e470c633d1bcf3affb62a9548fdc64cebf28ce006884071dd279a11af8f6a43
+- timestamp: '2026-01-26T17:53:11.587855Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 548'
+- timestamp: '2026-02-19T08:26:51.083952+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_548_BENNETT_S_AGAR, JCM_J44_BENNETT_S_AGAR, KOMODO_548-41755_MEDIUM_548_MODIFIED_FOR_DSM_41755,
+    KOMODO_548_BENNETT_S_AGAR'
+synonyms:
+- name: MEDIUM 548 MODIFIED FOR DSM 41755
+  source: KOMODO
+  source_id: komodo.medium:548_41755
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M36_Bennett_s_Agar
+- DSMZ_548_BENNETT_S_AGAR
+- JCM_J44_BENNETT_S_AGAR
+- KOMODO_548-41755_MEDIUM_548_MODIFIED_FOR_DSM_41755
+- KOMODO_548_BENNETT_S_AGAR
+merge_fingerprint: 3537c3f57c2f034ab493afd826e8a723947121250feb1dd4c32ec56672ad72a8

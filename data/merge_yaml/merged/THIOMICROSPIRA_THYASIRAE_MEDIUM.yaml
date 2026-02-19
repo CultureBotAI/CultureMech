@@ -200,7 +200,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 484'
-- timestamp: '2026-02-03T22:25:43.766683+00:00'
+- timestamp: '2026-02-19T08:26:50.053495+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_484_THIOMICROSPIRA_THYASIRAE_MEDIUM, KOMODO_484-1_For_Thiobacillus_halophilus_DSM_6132,

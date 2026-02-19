@@ -91,7 +91,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1021'
-- timestamp: '2026-02-03T22:25:27.190256+00:00'
+- timestamp: '2026-02-19T08:26:38.138399+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1021_SODALIS_GLOSSINIDIUS_MEDIUM, KOMODO_1021-16929_MEDIUM_1021_MODIFIED_FOR_DSM_16929,

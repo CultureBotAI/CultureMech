@@ -379,7 +379,7 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     KOH solution; Added default concentration for ingredient: N2 gas'
-- timestamp: '2026-02-03T22:26:17.484906+00:00'
+- timestamp: '2026-02-19T08:27:01.665511+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2728_Thermoanaerobacter_BA_Medium, TOGO_M2730_Thermoanaerobacter_BA_Medium'

@@ -131,7 +131,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 356'
-- timestamp: '2026-02-03T22:25:39.957371+00:00'
+- timestamp: '2026-02-19T08:26:46.878442+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_356_THIOSPHAERA_PANTOTROPHA_MEDIUM, KOMODO_356_THIOSPHAERA_PANTOTROPHA_medium'

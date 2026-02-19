@@ -36,7 +36,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:54.627102+00:00'
+- timestamp: '2026-02-19T08:26:58.381621+00:00'
   curator: recipe-merger
   action: Merged 7 duplicate recipes into canonical record
   notes: 'Sources: JCM_J1236_LB_LURIA-BERTANI_MEDIUM_LENNOX, JCM_J321_2_x_YT_MEDIUM,

@@ -1,104 +1,107 @@
-name: Halomonas Medium
-original_name: Halomonas Medium
+name: HALOMONAS MEDIUM
+original_name: HALOMONAS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 276
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+    id: mediadive.medium:276
+    label: HALOMONAS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium276.pdf'
+ingredients:
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '80'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: K2HPO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: Fe(NH4)2(SO4)2・6H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-- preferred_term: Sodium citrate
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-  term:
-    id: CHEBI:32142
-    label: sodium citrate dihydrate
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Proteose peptone No. 3 (BD-Difco)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids (BD-Difco)
+- preferred_term: Casamino acids
   concentration:
     value: '7.5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: Proteose peptone no. 3
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M616
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na3-citrate
   term:
-    id: TOGO:M616
-    label: Halomonas Medium
-notes: 'Source: https://togomedium.org/medium/M616
-
-  Original source: JCM - JCM_M608
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=608'
+    id: CHEBI:53258
+    label: Na3-citrate
+  concentration:
+    value: '3'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Fe(NH4)2(SO4)2 x 6 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+  term:
+    id: CHEBI:76181
+    label: ''
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Before autoclaving adjust pH to 7.5 with NaOH
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.412101Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M616'
-- timestamp: '2026-01-28T19:48:14.987387Z'
+- timestamp: '2026-01-26T17:53:10.633589Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 276'
+- timestamp: '2026-01-28T19:48:35.370352Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:59.746854'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-merge_fingerprint: 2fe0dd5a1f44d3a1f09fbcc2229c6a5437566b7d2528e9c913b9d691d36d4d44
+- timestamp: '2026-02-19T08:26:45.587186+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_276_HALOMONAS_MEDIUM, KOMODO_276-11845_MEDIUM_276_MODIFIED_FOR_DSM_11845,
+    KOMODO_276_HALOMONAS_medium'
+synonyms:
+- name: MEDIUM 276 MODIFIED FOR DSM 11845
+  source: KOMODO
+  source_id: komodo.medium:276_11845
+  original_category: imported
+- name: HALOMONAS medium
+  source: KOMODO
+  source_id: komodo.medium:276
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M616_Halomonas_Medium
+- DSMZ_276_HALOMONAS_MEDIUM
+- KOMODO_276-11845_MEDIUM_276_MODIFIED_FOR_DSM_11845
+- KOMODO_276_HALOMONAS_medium
+merge_fingerprint: 9ebaa09787122819e570e001f586b83f97ad98b09a11a9114a34070191b426ca

@@ -1,121 +1,105 @@
-name: Halobacteroides Halobius Medium
-original_name: Halobacteroides Halobius Medium
+name: HALOBACTEROIDES HALOBIUS MEDIUM
+original_name: HALOBACTEROIDES HALOBIUS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 6.5
+media_term:
+  preferred_term: DSMZ Medium 588
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:588
+    label: HALOBACTEROIDES HALOBIUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium588.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '87.8'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '20.3'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '7.35'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '3.7'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '87.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: L-Cysteine HCl x H2O
   term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '7.35'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Resazurin
-  concentration:
-    value: '0.0001'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: MgCl2 x 6 H2O
-  concentration:
-    value: '20.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-- preferred_term: KCl
-  concentration:
-    value: '3.7'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: PIPES
-  concentration:
-    value: '12.096'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Organic compound, Defined component'
-  term:
-    id: CHEBI:39033
-    label: PIPES
-- preferred_term: Glucose
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Cysteine-HCl x H2O
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
+- preferred_term: Resazurin
   term:
-    id: CHEBI:17561
-    label: L-cysteine
-- preferred_term: N2
-  notes: 'Properties: Gas'
+    id: CHEBI:8806
+    label: Resazurin
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2740
+    value: '0.0001'
+    unit: G_PER_L
+- preferred_term: Glucose
   term:
-    id: TOGO:M2740
-    label: Halobacteroides Halobius Medium
-notes: 'Source: https://togomedium.org/medium/M2740
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium588.pdf'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: PIPES
+  term:
+    id: CHEBI:39033
+    label: PIPES
+  concentration:
+    value: '12.096'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 6.5
+- step_number: 2
+  action: MIX
+  description: Prepare salts (in 850 ml distilled water, do not adjust the pH), glucose
+    (50 ml of a 10% solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100
+    ml), separately under nitrogen using normal anaerobic techniques. Add glucose
+    and PIPES using anaerobic techniques.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.206593Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2740'
-- timestamp: '2026-01-28T19:48:42.508549Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.147177'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: de6b0e9760dac4a34c1e8fa61211ab042367163317ae04ad2795b2e2377f2953
+- timestamp: '2026-01-26T17:53:11.657274Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 588'
+- timestamp: '2026-02-19T08:26:51.423046+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_588_HALOBACTEROIDES_HALOBIUS_MEDIUM, KOMODO_588_HALOBACTEROIDES_HALOBIUS_medium'
+synonyms:
+- name: HALOBACTEROIDES HALOBIUS medium
+  source: KOMODO
+  source_id: komodo.medium:588
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2740_Halobacteroides_Halobius_Medium
+- DSMZ_588_HALOBACTEROIDES_HALOBIUS_MEDIUM
+- KOMODO_588_HALOBACTEROIDES_HALOBIUS_medium
+merge_fingerprint: 9b652e46fde641464549a22223cbde431b9577a6ed7ebbde0c596faaf664d7d8

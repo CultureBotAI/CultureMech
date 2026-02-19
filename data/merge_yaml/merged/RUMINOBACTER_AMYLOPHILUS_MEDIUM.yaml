@@ -99,7 +99,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 147'
-- timestamp: '2026-02-03T22:25:34.063514+00:00'
+- timestamp: '2026-02-19T08:26:43.532602+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_147_RUMINOBACTER_AMYLOPHILUS_MEDIUM, KOMODO_147_RUMINOBACTER_AMYLOPHILUS_medium'

@@ -198,7 +198,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:43.714947+00:00'
+- timestamp: '2026-02-19T08:26:50.003065+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_481_COPROTHERMOBACTER_PROTEOLYTICUS_MEDIUM, KOMODO_481_THERMOBACTEROIDES_PROTEOLYTICUS_medium'

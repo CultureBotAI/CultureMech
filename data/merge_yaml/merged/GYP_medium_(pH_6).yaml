@@ -17,19 +17,10 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:32954
     label: sodium acetate
-- preferred_term: CaCO3
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Simple
-    component, Inorganic compound'
-  term:
-    id: CHEBI:3311
-    label: calcium carbonate
 - preferred_term: Glucose
   concentration:
     value: '10'
@@ -39,14 +30,6 @@ ingredients:
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Bacto Yeast Extract (Difco)
   concentration:
     value: '10'
@@ -57,35 +40,117 @@ ingredients:
     value: '5'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
-- preferred_term: '**Tween 80 solution (see Medium [M1675])'
+- preferred_term: Tween 80 solution**
   concentration:
     value: '10'
     unit: G_PER_L
-- preferred_term: '***Salts solution (see Medium [M1675])'
+- preferred_term: Salts solution***
   concentration:
     value: '5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M1676
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
-    id: TOGO:M1676
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: Tween 80
+  concentration:
+    value: '50'
+    unit: G_PER_L
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
+    component'
+  term:
+    id: CHEBI:53426
+    label: polysorbate 80
+- preferred_term: Distilled water
+  concentration:
+    value: '1'
+    unit: G_PER_L
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound'
+  term:
+    id: CHEBI:15377
+    label: Distilled water
+- preferred_term: MgSO4·7H2O
+  concentration:
+    value: '40'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:32599
+    label: magnesium sulfate
+- preferred_term: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+  term:
+    id: CHEBI:26710
+    label: sodium chloride
+- preferred_term: FeSO4·7H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
+- preferred_term: MnSO4·4H2O
+  concentration:
+    value: '2'
+    unit: G_PER_L
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
+- preferred_term: HCl
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
+  term:
+    id: CHEBI:17883
+    label: hydrogen chloride
+  concentration:
+    value: variable
+    unit: VARIABLE
+media_term:
+  preferred_term: TOGO Medium M1675
+  term:
+    id: TOGO:M1675
     label: GYP medium (pH 6)
-notes: 'Source: https://togomedium.org/medium/M1676
+notes: 'Source: https://togomedium.org/medium/M1675
 
-  Original source: NBRC - NBRC_M881-2
+  Original source: NBRC - NBRC_M881
 
   Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=881'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.120835Z'
+- timestamp: '2026-01-27T06:35:58.118958Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1676'
-- timestamp: '2026-01-28T19:48:23.004773Z'
+  notes: 'Source: NBRC, ID: M1675'
+- timestamp: '2026-01-28T19:48:26.596788Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 869d7650b7261e5308793b2847b0d77514a664b50e89ae257645e9a5e9cf9d57
+- curator: schema-defaulter-v1.0
+  date: '2026-02-03T11:20:48.971509'
+  action: Applied schema defaults and normalizations
+  notes: 'Added default concentration for ingredient: HCl'
+- timestamp: '2026-02-19T08:27:01.213293+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M1675_GYP_medium_pH_6, TOGO_M1692_GYP_medium'
+synonyms:
+- name: GYP medium
+  source: TOGO
+  source_id: TOGO:M1692
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1676_GYP_medium_pH_6
+- TOGO_M1675_GYP_medium_pH_6
+- TOGO_M1692_GYP_medium
+merge_fingerprint: e2c52a950f4b56751d2955fa4424e502246c3dac4c2a7fe1cae16ff1c334220b

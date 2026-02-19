@@ -270,7 +270,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 600a'
-- timestamp: '2026-02-03T22:25:45.607461+00:00'
+- timestamp: '2026-02-19T08:26:51.687499+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_600a_M13a_PIRELLULA_MEDIUM, DSMZ_600b_M13_3x_PIRELLULA_MEDIUM,

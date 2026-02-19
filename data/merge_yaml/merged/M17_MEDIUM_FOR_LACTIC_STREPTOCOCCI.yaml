@@ -69,7 +69,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 449'
-- timestamp: '2026-02-03T22:25:41.516158+00:00'
+- timestamp: '2026-02-19T08:26:48.233231+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_449_M17_MEDIUM_FOR_LACTIC_STREPTOCOCCI, KOMODO_449_M17_medium_FOR_LACTIC_STREPTOCOCCI'

@@ -161,7 +161,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 27'
-- timestamp: '2026-02-03T22:25:38.421744+00:00'
+- timestamp: '2026-02-19T08:26:45.526045+00:00'
   curator: recipe-merger
   action: Merged 23 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_26_ACID_RHODOSPIRILLACEAE_MEDIUM, DSMZ_27_RHODOSPIRILLACEAE_MEDIUM_modified,

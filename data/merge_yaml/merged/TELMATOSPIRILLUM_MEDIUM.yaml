@@ -136,7 +136,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1126'
-- timestamp: '2026-02-03T22:25:29.061647+00:00'
+- timestamp: '2026-02-19T08:26:39.844854+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1126_TELMATOSPIRILLUM_MEDIUM, KOMODO_1126_TELMATOSPIRILLUM_MEDIUM'

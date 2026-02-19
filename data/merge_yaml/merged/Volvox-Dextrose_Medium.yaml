@@ -66,7 +66,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: volvox-dextrose-medium, URL: https://utex.org/products/volvox-dextrose-medium'
-- timestamp: '2026-02-03T22:25:24.835284+00:00'
+- timestamp: '2026-02-19T08:26:36.472510+00:00'
   curator: recipe-merger
   action: Merged 24 duplicate recipes into canonical record
   notes: 'Sources: 1_1_DYIII_PEA_+_Gr+_Medium, 1_2_CHEV_Diatom_Medium, 1_2_Soil_+_Seawater_Medium,

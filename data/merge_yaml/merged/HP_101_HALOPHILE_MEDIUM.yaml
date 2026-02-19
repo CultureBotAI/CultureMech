@@ -1,80 +1,77 @@
-name: HP 101 Halophile Medium
-original_name: HP 101 Halophile Medium
+name: HP 101 HALOPHILE MEDIUM
+original_name: HP 101 HALOPHILE MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 625
+  term:
+    id: mediadive.medium:625
+    label: HP 101 HALOPHILE MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium625.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '4.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: NaNO3
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:63005
-    label: ''
-- preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Peptone
   concentration:
     value: '10'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M465
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M465
-    label: HP 101 Halophile Medium
-notes: 'Source: https://togomedium.org/medium/M465
-
-  Original source: JCM - JCM_M464
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=464'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '4.3'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '100'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.111045Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M465'
-- timestamp: '2026-01-28T19:48:31.159092Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 9b0c4d958677da014c1243cab7a2d0297a45898a2a54ffcd6b46b8ba6875f9ba
+- timestamp: '2026-01-26T17:53:11.769418Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 625'
+- timestamp: '2026-02-19T08:26:37.365082+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_625_HP_101_HALOPHILE_MEDIUM, JCM_J464_HP_101_HALOPHILE_MEDIUM,
+    KOMODO_625_HP_101_HALOPHILE_medium'
+synonyms:
+- name: HP 101 HALOPHILE medium
+  source: KOMODO
+  source_id: komodo.medium:625
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M465_HP_101_Halophile_Medium
+- DSMZ_625_HP_101_HALOPHILE_MEDIUM
+- JCM_J464_HP_101_HALOPHILE_MEDIUM
+- KOMODO_625_HP_101_HALOPHILE_medium
+merge_fingerprint: 48df74bf5c1ac4268b123b8b7ea86fbdb0731450d09c825546de0df83049d864

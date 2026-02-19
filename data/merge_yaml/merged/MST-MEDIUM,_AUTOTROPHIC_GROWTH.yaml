@@ -126,7 +126,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1416'
-- timestamp: '2026-02-03T22:25:33.356273+00:00'
+- timestamp: '2026-02-19T08:26:43.241348+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1416_MST-MEDIUM_AUTOTROPHIC_GROWTH, KOMODO_1416-25733_MEDIUM_1416_MODIFIED_FOR_DSM_25733,

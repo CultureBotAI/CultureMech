@@ -170,7 +170,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 196'
-- timestamp: '2026-02-03T22:25:37.333149+00:00'
+- timestamp: '2026-02-19T08:26:44.519214+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_196_DESULFOCAPSA_SULFEXIGENS_MEDIUM, KOMODO_196-11383_MEDIUM_196_MODIFIED_FOR_DSM_11383,

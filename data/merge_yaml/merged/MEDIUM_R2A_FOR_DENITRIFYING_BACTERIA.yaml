@@ -149,7 +149,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:49.883784+00:00'
+- timestamp: '2026-02-19T08:26:55.442317+00:00'
   curator: recipe-merger
   action: Merged 58 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_830b_MEDIUM_R2A_FOR_DENITRIFYING_BACTERIA, KOMODO_830-13665_MEDIUM_830_MODIFIED_FOR_DSM_13665,

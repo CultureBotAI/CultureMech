@@ -81,7 +81,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:07.487644+00:00'
+- timestamp: '2026-02-19T08:27:01.032533+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1467_Oatmeal_Agar_ISP_Medium_No.3, TOGO_M1820_Oatmeal_Agar_ISP_medium_No.3_pH_5.5'

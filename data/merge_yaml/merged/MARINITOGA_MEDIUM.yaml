@@ -1,96 +1,84 @@
-name: Marinitoga Medium
-original_name: Marinitoga Medium
+name: MARINITOGA MEDIUM
+original_name: MARINITOGA MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: JCM Medium J1047
+  term:
+    id: mediadive.medium:J1047
+    label: MARINITOGA MEDIUM
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1047'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Sea Salt
   concentration:
-    value: '1'
+    value: '29.0135'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Resazurin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
-    component, Organic compound'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
 - preferred_term: PIPES
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:39033
     label: PIPES
-- preferred_term: Sea salts (Sigma)
   concentration:
-    value: '30'
+    value: '5.80271'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Complex component, Defined component'
-- preferred_term: Tryptone (BD-Difco)
+- preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '0.967118'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N2
-  notes: 'Properties: Gas'
+- preferred_term: Tryptone
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 1.0 M Glucose solution
+    value: '0.967118'
+    unit: G_PER_L
+- preferred_term: Resazurin
+  term:
+    id: CHEBI:8806
+    label: Resazurin
+  concentration:
+    value: '0.000483559'
+    unit: G_PER_L
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '14'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 5% Na2S・9H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: 5% L--Cysteine・HCl・H2O solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Solution'
-media_term:
-  preferred_term: TOGO Medium M1112
+- preferred_term: Na2S x 9 H2O
   term:
-    id: TOGO:M1112
-    label: Marinitoga Medium
-notes: 'Source: https://togomedium.org/medium/M1112
-
-  Original source: JCM - JCM_M1047
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1047'
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '10'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: 'Mix components and adjust pH to 7.0. Bubble the medium with N2 for
+    5 min, then distribute the medium into culture vessels under N2, seal with butyl
+    rubber stoppers and autoclave. After cooling, add the following solutions aseptically
+    and anaerobically (autoclaved and stored under a N2 gas atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.942333Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1112'
-- timestamp: '2026-01-28T19:48:10.976162Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:45.983767'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: cb9f3b3cacc75723e346cfaa58fec170564d542dcbe87080c215f0bafb57536f
+- timestamp: '2026-01-26T17:53:18.438717Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1047'
+- timestamp: '2026-02-19T08:26:58.243858+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J1047_MARINITOGA_MEDIUM, JCM_J997_MARINITOGA_MEDIUM'
+categories:
+- imported
 merged_from:
-- TOGO_M1112_Marinitoga_Medium
+- JCM_J1047_MARINITOGA_MEDIUM
+- JCM_J997_MARINITOGA_MEDIUM
+merge_fingerprint: 5eedfc6b7ce38e433820456246dbcd3d2b7a0813d8668d580ad7557a488b576c

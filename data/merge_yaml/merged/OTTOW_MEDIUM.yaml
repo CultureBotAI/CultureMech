@@ -3,82 +3,81 @@ original_name: OTTOW MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: DSMZ Medium 467
+  term:
+    id: mediadive.medium:467
+    label: OTTOW MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium467.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Gellan Gum (if needed)
-  concentration:
-    value: '7'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Organic compound, Undefined component'
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Meat extract
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casamino acids
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-  term:
-    id: CHEBI:78020
-    label: heptacosanoate
 - preferred_term: Peptone
   concentration:
     value: '7.5'
     unit: G_PER_L
-media_term:
-  preferred_term: TOGO Medium M3060
+- preferred_term: Meat extract
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Casamino acids
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
   term:
-    id: TOGO:M3060
-    label: OTTOW MEDIUM
-notes: 'Source: https://togomedium.org/medium/M3060
-
-  Original source: NBRC - NBRC_M1631
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1631'
+    id: CHEBI:78020
+    label: heptacosanoate
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Tap water
+  term:
+    id: CHEBI:15377
+    label: Tap water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.5.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:59.254451Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M3060'
-- timestamp: '2026-01-28T19:48:37.992056Z'
+- timestamp: '2026-01-26T17:53:11.273290Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 467'
+- timestamp: '2026-01-28T19:48:27.461563Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: be83eb8508e5a3658ee858fe7d71483e75112e6889d2960cb6825e0e1a96ccd4
+- timestamp: '2026-02-19T08:26:49.839803+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_467_OTTOW_MEDIUM, KOMODO_467_OTTOW_medium'
+synonyms:
+- name: OTTOW medium
+  source: KOMODO
+  source_id: komodo.medium:467
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M3060_OTTOW_MEDIUM
+- DSMZ_467_OTTOW_MEDIUM
+- KOMODO_467_OTTOW_medium
+merge_fingerprint: 3a60d2c2ac0d989acefa688fd921336c1db1b43a9405a82e3445eba226e490b8

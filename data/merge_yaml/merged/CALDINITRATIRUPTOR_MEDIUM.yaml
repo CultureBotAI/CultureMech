@@ -211,7 +211,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1251'
-- timestamp: '2026-02-03T22:25:31.284992+00:00'
+- timestamp: '2026-02-19T08:26:41.778439+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1251_CALDINITRATIRUPTOR_MEDIUM, KOMODO_1251_CALDINITRATIRUPTOR_medium'

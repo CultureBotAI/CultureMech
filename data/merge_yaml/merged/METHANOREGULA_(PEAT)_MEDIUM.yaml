@@ -1,419 +1,288 @@
-name: Methanoregula (Peat) Medium
-original_name: Methanoregula (Peat) Medium
+name: METHANOREGULA (PEAT) MEDIUM
+original_name: METHANOREGULA (PEAT) MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '950'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution C
-  concentration:
-    value: '12.55'
-    unit: G_PER_L
-- preferred_term: Solution D
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution E
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Solution F
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: KCl solution (0.1% w/v)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+ph_value: 5.1
+media_term:
+  preferred_term: DSMZ Medium 1280
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: KH2PO4
+    id: mediadive.medium:1280
+    label: METHANOREGULA (PEAT) MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1280.pdf'
+ingredients:
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
   concentration:
-    value: '14'
+    value: '0.0283019'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+- preferred_term: KH2PO4
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '27'
+    value: '0.0146751'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KCl
   term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Na-acetate
+    id: CHEBI:32588
+    label: KCl
   concentration:
-    value: '17'
+    value: '0.00209644'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Na-acetate
   term:
     id: CHEBI:32954
     label: Na-acetate
-- preferred_term: Trace elements solution
   concentration:
-    value: '1'
+    value: '0.0178197'
     unit: G_PER_L
-- preferred_term: 1 N HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
+- preferred_term: Sodium resazurin
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Carbon dioxide gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Hydrogen gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: HCl (25%)
-  concentration:
-    value: '10'
+    value: '0.000524109'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Solution, Defined
-    component'
-- preferred_term: Distilled water
+- preferred_term: Homo-PIPES
   concentration:
-    value: '1000'
+    value: '158'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaOH
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
+    id: CHEBI:32145
+    label: NaOH
   concentration:
-    value: '1.56'
+    value: '18'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaOH
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2 x 2 H2O
+    id: CHEBI:32145
+    label: NaOH
   concentration:
-    value: '2.34'
+    value: '0.109432'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Nitrilotriacetate
   term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Na2MoO4 x 2 H2O
+    id: CHEBI:25548
+    label: Nitrilotriacetate
   concentration:
-    value: '24'
+    value: '0.458736'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
+- preferred_term: TiCl3
   concentration:
-    value: '19'
+    value: '6.34615'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Yeast extract
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: 2-Mercaptoethanesulfonate
   term:
-    id: CHEBI:33118
-    label: boric acid
+    id: CHEBI:17905
+    label: 2-Mercaptoethanesulfonate
+  concentration:
+    value: '7'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '2.47525'
+    unit: G_PER_L
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.32673'
+    unit: G_PER_L
 - preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2 x 6 H2O
+    label: CoCl2 x 6 H2O
   concentration:
-    value: '24'
+    value: '0.0237624'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
 - preferred_term: ZnCl2
-  concentration:
-    value: '75'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: CuSO4 x 5 H2O
+    label: ZnCl2
   concentration:
-    value: '9'
+    value: '0.0742574'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.0188119'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.0237624'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0237624'
+    unit: G_PER_L
+- preferred_term: MnSO4 x 4 H2O
+  term:
+    id: CHEBI:86358
+    label: MnSO4 x 4 H2O
+  concentration:
+    value: '0.0257426'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '1.54455'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '2.31683'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
   term:
     id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: AlK(SO4)2 x 12 H2O
+    label: CuSO4 x 5 H2O
   concentration:
-    value: '3.45'
+    value: '0.00891089'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: AlK(SO4)2 x 12 H2O
   term:
     id: CHEBI:86465
     label: AlK(SO4)2 x 12 H2O
-- preferred_term: MnSO4 x 4 H2O
   concentration:
-    value: '26'
+    value: '3.41584'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86360
-    label: manganese(II) sulfate
-- preferred_term: FeCl2 x 4 H2O
-  concentration:
-    value: '1.34'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86249
-    label: iron dichloride tetrahydrate
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Homo-PIPES (SIGMA)
-  concentration:
-    value: '1.58'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: NaOH
-  concentration:
-    value: '0.18'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Simple component'
-  term:
-    id: CHEBI:32145
-    label: sodium hydroxide
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: NaOH (0.38 M)
-  concentration:
-    value: '7.2'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Nitrilotriacetate solution (0.5 M, neutralized with 10 N NaOH)
-  concentration:
-    value: '4.8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: TiCl3 solution (15% w/v in HCl, RIEDEL-de HAEN)
-  concentration:
-    value: '0.55'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Inorganic compound'
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: 2-Mercaptoethanesulfonate (coenzyme M)
-  concentration:
-    value: '0.07'
-    unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Biotin
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15956
-    label: biotin
-- preferred_term: p-Aminobenzoic acid
+    label: Biotin
   concentration:
-    value: '5'
+    value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Thiamine-HCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:49105
-    label: thiamine hydrochloride
-- preferred_term: Pyridoxine-HCl
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
 - preferred_term: Folic acid
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
+    label: Folic acid
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thiamine HCl
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Riboflavin
+    id: CHEBI:49105
+    label: Thiamine HCl
   concentration:
-    value: '5'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Riboflavin
   term:
     id: CHEBI:17015
-    label: riboflavin
-- preferred_term: Nicotinic acid
+    label: Riboflavin
   concentration:
-    value: '5'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Nicotinic acid
   term:
     id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Lipoic acid
+    label: Nicotinic acid
   concentration:
-    value: '5'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: Calcium D-(+)-pantothenate
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.001'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: (DL)-alpha-Lipoic acid
   term:
     id: CHEBI:16494
-    label: lipoic acid
-- preferred_term: D-Ca-pantothenate
+    label: (DL)-alpha-Lipoic acid
   concentration:
-    value: '5'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component'
-- preferred_term: N2 gas
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2654
-  term:
-    id: TOGO:M2654
-    label: Methanoregula (Peat) Medium
-notes: 'Source: https://togomedium.org/medium/M2654
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1280.pdf'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients of solution A, adjust pH to 5.0 with 0.1 N HCl,
+    and sparge with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense solution A under the same gas atmosphere into anoxic serum vials (20
+    ml medium in 100 ml bottles) and autoclave. Solutions B to F are prepared under
+    a 100% N2 gas atmosphere and sterilized by filtration. Before inoculation, complete
+    the medium by adding the appropriate amounts of solutions B to F to sterile solution
+    A in the sequence indicated.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH of the complete medium to 5.1 with a sterile anoxic solution
+    of 1 N HCl. After inoculation pressurize vials to 1 bar overpressure with sterile
+    80% H2 and 20% CO2 gas mixture.
+- step_number: 3
+  action: MIX
+  description: 'Note: Use 10-20% (v/v) as inoculum.'
+- step_number: 4
+  action: ADJUST_PH
+  description: Adjust pH of buffer to 5.5.
+- step_number: 5
+  action: DISSOLVE
+  description: First dissolve ferrous chloride in the HCl, then dilute in water and
+    dissolve the other salts. Finally make up to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.946093Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2654'
-- timestamp: '2026-01-28T19:48:22.543113Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.229100'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 1 N HCl; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Hydrogen gas; Added default concentration for ingredient: N2 gas; Added default
-    concentration for ingredient: N2 gas; Added default concentration for ingredient:
-    N2 gas; Added default concentration for ingredient: N2 gas; Added default concentration
-    for ingredient: N2 gas'
-merge_fingerprint: 119446ea7f4f628da2ea58f6930e984440d1ab4e39b83406b82cf8c24c646519
+- timestamp: '2026-01-26T17:53:13.980915Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1280'
+- timestamp: '2026-02-06T05:10:39.703066Z'
+  curator: invalid-chebi-removal
+  action: Removed 2 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:42.123142+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1280_METHANOREGULA_PEAT_MEDIUM, KOMODO_1280_METHANOREGULA_medium'
+synonyms:
+- name: METHANOREGULA medium
+  source: KOMODO
+  source_id: komodo.medium:1280
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2654_Methanoregula_Peat_Medium
+- DSMZ_1280_METHANOREGULA_PEAT_MEDIUM
+- KOMODO_1280_METHANOREGULA_medium
+merge_fingerprint: 6f34139527e064660e06b45889462638914e89155d514e40f6aa6720a2b0cedb

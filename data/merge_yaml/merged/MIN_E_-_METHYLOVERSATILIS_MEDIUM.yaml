@@ -152,7 +152,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1341'
-- timestamp: '2026-02-03T22:25:32.364448+00:00'
+- timestamp: '2026-02-19T08:26:42.652217+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM, KOMODO_1341_MIN_E_-_METHYLOVERSATILIS_MEDIUM'

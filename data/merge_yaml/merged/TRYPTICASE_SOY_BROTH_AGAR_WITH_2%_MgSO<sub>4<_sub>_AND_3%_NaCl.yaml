@@ -48,7 +48,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1165'
-- timestamp: '2026-02-03T22:25:32.432035+00:00'
+- timestamp: '2026-02-19T08:26:42.685738+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1350_TRYPTICASE_SOY_AGAR_NA-MG, JCM_J1165_TRYPTICASE_SOY_BROTH_AGAR_WITH_2_MgSO_sub_4_sub_AND_3_NaCl'

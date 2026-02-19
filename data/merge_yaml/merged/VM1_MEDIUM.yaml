@@ -199,7 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 890'
-- timestamp: '2026-02-03T22:25:50.961076+00:00'
+- timestamp: '2026-02-19T08:26:56.437166+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_890_VM1_MEDIUM, KOMODO_890-1_VM1_MEDIUM_for_heterotrophic_growth,

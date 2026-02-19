@@ -170,7 +170,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 640a'
-- timestamp: '2026-02-03T22:25:46.242453+00:00'
+- timestamp: '2026-02-19T08:26:52.259397+00:00'
   curator: recipe-merger
   action: Merged 13 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_640a_THERMOCLOSTRIDIUM_CAENICOLA_MEDIUM, KOMODO_640-10061_MEDIUM_640_MODIFIED_FOR_DSM_10061,

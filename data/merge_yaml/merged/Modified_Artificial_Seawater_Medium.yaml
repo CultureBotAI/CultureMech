@@ -112,7 +112,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: modified-artificial-seawater-medium, URL: https://utex.org/products/modified-artificial-seawater-medium'
-- timestamp: '2026-02-03T22:25:25.039241+00:00'
+- timestamp: '2026-02-19T08:26:36.673832+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DYV_Medium, Modified_Artificial_Seawater_Medium'

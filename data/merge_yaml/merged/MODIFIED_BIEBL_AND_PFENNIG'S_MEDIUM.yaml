@@ -1,164 +1,171 @@
-name: Modified Biebl And Pfennig's Medium
-original_name: Modified Biebl And Pfennig's Medium
+name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
+original_name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 1069
+  term:
+    id: mediadive.medium:1069
+    label: MODIFIED BIEBL AND PFENNIG'S MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1069.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2・2H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '0.6'
+    value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Sorbitol
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '3'
+    value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:30911
-    label: glucitol
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace element solution SL-12 (see below)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4・2H2O
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: H3BO3
-  concentration:
-    value: '300'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '1.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: MnCl2・4H2O
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2・6H2O
-  concentration:
-    value: '190'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: NiCl2・6H2O
-  concentration:
-    value: '24'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CuCl2・2H2O
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: ZnCl2
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
   concentration:
-    value: '42'
+    value: '0.34'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '20'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.4'
+    unit: G_PER_L
+- preferred_term: Ferric citrate
+  term:
+    id: CHEBI:144421
+    label: Ferric citrate
+  concentration:
+    value: '0.005'
+    unit: G_PER_L
+- preferred_term: HCl
+  term:
+    id: CHEBI:17883
+    label: HCl
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: ZnCl2
   term:
     id: CHEBI:49976
-    label: zinc dichloride
-- preferred_term: EDTA・2Na
+    label: ZnCl2
   concentration:
-    value: '3'
+    value: '0.07'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-media_term:
-  preferred_term: TOGO Medium M497
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: TOGO:M497
-    label: Modified Biebl And Pfennig's Medium
-notes: 'Source: https://togomedium.org/medium/M497
-
-  Original source: JCM - JCM_M496
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=496'
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.06'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.04'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
+    a rubber septum under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.164525Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M497'
-- timestamp: '2026-01-28T19:48:36.892000Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 07350bcad793fb18821ee0b4c026430079d4d6bb5dd82a4bd69a376160029d27
+- timestamp: '2026-01-26T17:53:13.288071Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1069'
+- timestamp: '2026-02-19T08:26:38.939690+00:00'
+  curator: recipe-merger
+  action: Merged 8 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM, KOMODO_1069-1_For_DSM_18064,
+    KOMODO_1069-2_For_DSM_18713_and_18859, KOMODO_1069-3_For_DSM_19947_and_19784,
+    KOMODO_1069-4_For_DSM_18985, KOMODO_1069-5_For_DSM_21808_and_21809, KOMODO_1069-6_For_DSM_24766,
+    KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM'
+synonyms:
+- name: For DSM 18064
+  source: KOMODO
+  source_id: komodo.medium:1069.1
+  original_category: imported
+- name: For DSM 18713 and 18859
+  source: KOMODO
+  source_id: komodo.medium:1069.2
+  original_category: imported
+- name: For DSM 19947 and 19784
+  source: KOMODO
+  source_id: komodo.medium:1069.3
+  original_category: imported
+- name: For DSM 18985
+  source: KOMODO
+  source_id: komodo.medium:1069.4
+  original_category: imported
+- name: For DSM 21808 and 21809
+  source: KOMODO
+  source_id: komodo.medium:1069.5
+  original_category: imported
+- name: For DSM 24766
+  source: KOMODO
+  source_id: komodo.medium:1069.6
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M497_Modified_Biebl_And_Pfennig_s_Medium
+- DSMZ_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM
+- KOMODO_1069-1_For_DSM_18064
+- KOMODO_1069-2_For_DSM_18713_and_18859
+- KOMODO_1069-3_For_DSM_19947_and_19784
+- KOMODO_1069-4_For_DSM_18985
+- KOMODO_1069-5_For_DSM_21808_and_21809
+- KOMODO_1069-6_For_DSM_24766
+- KOMODO_1069_MODIFIED_BIEBL_AND_PFENNIG_S_MEDIUM
+merge_fingerprint: 2dbff5b41e4170fb1f45b46158b76e8b504bd6c107dbbc9cb69fcc5c22bbdb54

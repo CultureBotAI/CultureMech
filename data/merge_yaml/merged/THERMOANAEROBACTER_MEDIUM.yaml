@@ -1,97 +1,91 @@
-name: Thermoanaerobacter Medium
-original_name: Thermoanaerobacter Medium
+name: THERMOANAEROBACTER MEDIUM
+original_name: THERMOANAEROBACTER MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_range: 6.8-7.5
+media_term:
+  preferred_term: DSMZ Medium 61
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:61
+    label: THERMOANAEROBACTER MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium61.pdf'
+ingredients:
+- preferred_term: Tryptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: FeSO4 x 7 H2O
+- preferred_term: Sodium resazurin
   concentration:
-    value: '0.2'
+    value: '0.0005'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: FeSO4 x 7 H2O
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
-- preferred_term: Na2SeO3 x 5 H2O
-  concentration:
-    value: '0.08'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:48843
-    label: disodium selenite
-- preferred_term: Sucrose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:17992
-    label: sucrose
-- preferred_term: Na2SO3
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: Sucrose
   term:
-    id: CHEBI:86477
-    label: sodium sulfite
-- preferred_term: Tryptone (BD BBL)
+    id: CHEBI:17992
+    label: Sucrose
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2541
+- preferred_term: Na2SO3
   term:
-    id: TOGO:M2541
-    label: Thermoanaerobacter Medium
-notes: 'Source: https://togomedium.org/medium/M2541
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium61.pdf'
+    id: CHEBI:86477
+    label: Na2SO3
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '0.08'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except ferrous sulfate, sucrose, sulfite, and
+    thiosulfate), adjust pH to 6.8 - 7.5, and sparge medium with 100% N2 gas for 30
+    - 45 min to make it anoxic. Add ferrous sulfate, then dispense medium under the
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add sucrose, sulfite, and thiosulfate from anoxic stock solutions
+    prepared under 100% N2 gas and sterilized by filtration. The stock solution of
+    sulfite should be freshly prepared.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.664141Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2541'
-- timestamp: '2026-01-28T19:48:42.614564Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:54.237103'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: 1da0fefdbf475fc331850cca2da85135c902e19dfdab603697ce60f324288500
+- timestamp: '2026-01-26T17:53:10.069452Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 61'
+- timestamp: '2026-02-19T08:26:51.938941+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_61_THERMOANAEROBACTER_MEDIUM, KOMODO_61-1_For_DSM_8686_and_DSM_8690,
+    KOMODO_61_CLOSTRIDIUM_THERMOHYDROSULFURICUM_medium'
+synonyms:
+- name: For DSM 8686 and DSM 8690
+  source: KOMODO
+  source_id: komodo.medium:61.1
+  original_category: imported
+- name: CLOSTRIDIUM THERMOHYDROSULFURICUM medium
+  source: KOMODO
+  source_id: komodo.medium:61
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2541_Thermoanaerobacter_Medium
+- DSMZ_61_THERMOANAEROBACTER_MEDIUM
+- KOMODO_61-1_For_DSM_8686_and_DSM_8690
+- KOMODO_61_CLOSTRIDIUM_THERMOHYDROSULFURICUM_medium
+merge_fingerprint: 3ea5d1f06f63d1aa56e655b3d97e5c44f21672e9c9fe37939c9495b7b734e805

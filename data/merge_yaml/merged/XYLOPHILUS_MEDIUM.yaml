@@ -54,7 +54,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 587'
-- timestamp: '2026-02-03T22:25:45.313056+00:00'
+- timestamp: '2026-02-19T08:26:51.415945+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_587_XYLOPHILUS_MEDIUM, KOMODO_587-7250_MEDIUM_587_MODIFIED_FOR_DSM_7250,

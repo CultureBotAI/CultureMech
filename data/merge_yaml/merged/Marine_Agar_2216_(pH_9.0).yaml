@@ -34,7 +34,7 @@ curation_history:
   date: '2026-02-03T11:20:45.785589'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
-- timestamp: '2026-02-03T22:26:04.739756+00:00'
+- timestamp: '2026-02-19T08:27:00.766557+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1057_Marine_Agar_2216_pH_8.5, TOGO_M1074_Marine_Agar_2216_pH_9.0'

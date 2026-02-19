@@ -151,7 +151,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1264'
-- timestamp: '2026-02-03T22:25:31.434259+00:00'
+- timestamp: '2026-02-19T08:26:41.923790+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1264_SPIROCHAETA_SP._MEDIUM, KOMODO_1264-1_for_DSM_14994,

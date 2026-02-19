@@ -47,7 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 583'
-- timestamp: '2026-02-03T22:25:45.223700+00:00'
+- timestamp: '2026-02-19T08:26:51.330986+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_583_CORYNEBACTERIUM_MEDIUM_CII, KOMODO_583_CORYNEBACTERIUM_medium_CII'

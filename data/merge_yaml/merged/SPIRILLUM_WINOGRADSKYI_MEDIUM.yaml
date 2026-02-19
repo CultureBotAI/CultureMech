@@ -199,7 +199,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 845'
-- timestamp: '2026-02-03T22:25:50.146065+00:00'
+- timestamp: '2026-02-19T08:26:55.695537+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_845_SPIRILLUM_WINOGRADSKYI_MEDIUM, KOMODO_845_SPIRILLUM_D427_medium'

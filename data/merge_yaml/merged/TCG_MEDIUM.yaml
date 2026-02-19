@@ -1,63 +1,66 @@
-name: TCG Medium
-original_name: TCG Medium
+name: TCG MEDIUM
+original_name: TCG MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 1009
+  term:
+    id: mediadive.medium:1009
+    label: TCG MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1009.pdf'
 ingredients:
-- preferred_term: Artificial seawater
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
-- preferred_term: Glucose
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Tryptone (BD-Difco)
+- preferred_term: Tryptone
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Casitone (BD-Difco)
+- preferred_term: Casitone
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M743
+- preferred_term: Glucose
   term:
-    id: TOGO:M743
-    label: TCG Medium
-notes: 'Source: https://togomedium.org/medium/M743
-
-  Original source: JCM - JCM_M720
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=720'
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '4'
+    unit: G_PER_L
+- preferred_term: Sea water
+  concentration:
+    value: '1000'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
+    in 1000 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.632799Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M743'
-- timestamp: '2026-01-28T19:48:19.511779Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2e0f2453d03a22f3a5a1e334c852043360d74758e2729ddfcecaaa6a466bffcf
+- timestamp: '2026-01-26T17:53:13.073069Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1009'
+- timestamp: '2026-02-19T08:26:37.934389+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1009_TCG_MEDIUM, JCM_J720_TCG_MEDIUM, KOMODO_1009_TCG_medium'
+synonyms:
+- name: TCG medium
+  source: KOMODO
+  source_id: komodo.medium:1009
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M743_TCG_Medium
+- DSMZ_1009_TCG_MEDIUM
+- JCM_J720_TCG_MEDIUM
+- KOMODO_1009_TCG_medium
+merge_fingerprint: 464475b5df6f419f071a397417a17f4ffe784926fc16f912aff664d8dc70dac2

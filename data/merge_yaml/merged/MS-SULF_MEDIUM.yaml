@@ -282,7 +282,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1316'
-- timestamp: '2026-02-03T22:25:26.090062+00:00'
+- timestamp: '2026-02-19T08:26:37.625966+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: JCM_J1315_METHANOGEN_MS-I_MEDIUM, JCM_J1316_MS-SULF_MEDIUM'

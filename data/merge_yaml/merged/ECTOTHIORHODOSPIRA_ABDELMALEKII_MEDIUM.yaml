@@ -1,168 +1,250 @@
-name: Ectothiorhodospira Abdelmalekii Medium
-original_name: Ectothiorhodospira Abdelmalekii Medium
+name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
+original_name: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
+ph_value: 8.5
+media_term:
+  preferred_term: DSMZ Medium 430
+  term:
+    id: mediadive.medium:430
+    label: ECTOTHIORHODOSPIRA ABDELMALEKII MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium430.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: NaCl
-  concentration:
-    value: '120'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.8'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
     value: '0.8'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: NH4Cl
   term:
     id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2·6H2O
+    label: NH4Cl
+  concentration:
+    value: '0.8'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: NaCl
   term:
-    id: CHEBI:86345
-    label: magnesium dichloride hexahydrate
-- preferred_term: Na2S·9H2O
+    id: CHEBI:26710
+    label: NaCl
   concentration:
-    value: '0.5'
+    value: '120'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: NaHCO3
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Sodium acetate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:32954
-    label: sodium acetate
-- preferred_term: Na2CO3
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
 - preferred_term: Na2SO4
+  term:
+    id: CHEBI:32149
+    label: Na2SO4
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+- preferred_term: Na-acetate
   term:
-    id: CHEBI:32149
-    label: sodium sulfate
-- preferred_term: Trace element solution SLA (see Medium [M352])
+    id: CHEBI:32954
+    label: Na-acetate
   concentration:
     value: '1'
     unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Vitamin solution VA (see Medium [M352])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Na2S·9H2O solution (see Medium [M3029])
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+- preferred_term: Na2CO3
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2S·9H2O
+    id: CHEBI:29377
+    label: Na2CO3
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  notes: ' (adjust if required)'
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: FeCl2 x 4 H2O
+  term:
+    id: CHEBI:86249
+    label: FeCl2 x 4 H2O
+  concentration:
+    value: '1.8'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
+  term:
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.07'
+    unit: G_PER_L
+- preferred_term: ZnCl2
+  term:
+    id: CHEBI:49976
+    label: ZnCl2
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2SeO3 x 5 H2O
+  term:
+    id: CHEBI:131361
+    label: Na2SeO3 x 5 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Nicotinic acid amide
+  term:
+    id: CHEBI:17154
+    label: Nicotinic acid amide
+  concentration:
+    value: '0.35'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: Pyridoxal hydrochloride
+  term:
+    id: CHEBI:131529
+    label: Pyridoxal hydrochloride
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
   term:
     id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-media_term:
-  preferred_term: TOGO Medium M3030
-  term:
-    id: TOGO:M3030
-    label: Ectothiorhodospira Abdelmalekii Medium
-notes: 'Source: https://togomedium.org/medium/M3030
-
-  Original source: JCM - JCM_M1387
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1387'
+    label: Na2S x 9 H2O
+  concentration:
+    value: '100'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve and bring to the boil.
+- step_number: 2
+  action: COOL
+  description: Allow to cool down to room temperature under N2 gas phase. Then add
+    bicarbonate.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 8.5.
+- step_number: 4
+  action: POUR_PLATES
+  description: Dispense into appropriate vessels, e.g. Hungate tubes, under N2 atmosphere.
+- step_number: 5
+  action: AUTOCLAVE
+  description: Autoclave at 121 °C for 15 min.
+- step_number: 6
+  action: FILTER_STERILIZE
+  description: After autoclaving add sterile-filtered vitamin and sulfide solutions.
+- step_number: 7
+  action: ADJUST_PH
+  description: Adjust pH to 2.0 - 3.0.
+- step_number: 8
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.701500Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3030'
-- timestamp: '2026-01-28T19:48:11.000653Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.129058'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: Na2S·9H2O solution (see Medium [M3029])'
-merge_fingerprint: 5838561e910ee5c5995fc1bf8fb6c67fe11fe87305d8958f782c1f5d1a230ac8
+- timestamp: '2026-01-26T17:53:11.115336Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 430'
+- timestamp: '2026-02-19T08:26:48.096349+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_430_ECTOTHIORHODOSPIRA_ABDELMALEKII_MEDIUM, KOMODO_430-13718_MEDIUM_430_MODIFIED_FOR_DSM_13718,
+    KOMODO_430_ECTOTHIORHODOSPIRA_ABDELMALEKII_MEDIUM'
+synonyms:
+- name: MEDIUM 430 MODIFIED FOR DSM 13718
+  source: KOMODO
+  source_id: komodo.medium:430_13718
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M3030_Ectothiorhodospira_Abdelmalekii_Medium
+- DSMZ_430_ECTOTHIORHODOSPIRA_ABDELMALEKII_MEDIUM
+- KOMODO_430-13718_MEDIUM_430_MODIFIED_FOR_DSM_13718
+- KOMODO_430_ECTOTHIORHODOSPIRA_ABDELMALEKII_MEDIUM
+merge_fingerprint: 828e5ee624aeb252227d9f60ae3c74c0ebd510354bd5a41b2b342bbeadeae471

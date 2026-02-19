@@ -1,65 +1,351 @@
-name: Alkaline Nutrient Agar
-original_name: Alkaline Nutrient Agar
+name: ALKALINE NUTRIENT AGAR
+original_name: ALKALINE NUTRIENT AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 9.7
+media_term:
+  preferred_term: DSMZ Medium 31
+  term:
+    id: mediadive.medium:31
+    label: ALKALINE NUTRIENT AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium31.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Beef extract
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Peptone
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Na2CO3 solution
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: Meat extract
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M92
+    value: '3'
+    unit: G_PER_L
+- preferred_term: Agar
   term:
-    id: TOGO:M92
-    label: Alkaline Nutrient Agar
-notes: 'Source: https://togomedium.org/medium/M92
-
-  Original source: JCM - JCM_M100
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=100'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (if necessary)'
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '42'
+    unit: G_PER_L
+- preferred_term: Na2CO3 anhydrous
+  term:
+    id: CHEBI:29377
+    label: Na2CO3 anhydrous
+  concentration:
+    value: '53'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
+- step_number: 2
+  action: MIX
+  description: After sterilization add sterile 1 M Na-sesquicarbonate solution (1
+    ml in 10 ml)  to achieve a pH of 9.7
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.962240Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M92'
-- timestamp: '2026-01-28T19:48:14.309533Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:01.308888'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Na2CO3 solution'
-merge_fingerprint: ffbf5beca86bf1a447865c912189afc646f06ed63d4254ac489552d9f626edb9
+- timestamp: '2026-01-26T17:53:10.014257Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 31'
+- timestamp: '2026-02-19T08:26:46.352669+00:00'
+  curator: recipe-merger
+  action: Merged 53 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_31_ALKALINE_NUTRIENT_AGAR, KOMODO_31-16130_MEDIUM_31_MODIFIED_FOR_DSM_16130,
+    KOMODO_31-23228_MEDIUM_31_MODIFIED_FOR_DSM_23228, KOMODO_31-5271_MEDIUM_31_MODIFIED_FOR_DSM_5271,
+    KOMODO_31-6716_MEDIUM_31_MODIFIED_FOR_DSM_6716, KOMODO_31-8714_MEDIUM_31_MODIFIED_FOR_DSM_8714,
+    KOMODO_31-8716_MEDIUM_31_MODIFIED_FOR_DSM_8716, KOMODO_31-8717_MEDIUM_31_MODIFIED_FOR_DSM_8717,
+    KOMODO_31-8719_MEDIUM_31_MODIFIED_FOR_DSM_8719, KOMODO_31-8720_MEDIUM_31_MODIFIED_FOR_DSM_8720,
+    KOMODO_31-8721_MEDIUM_31_MODIFIED_FOR_DSM_8721, KOMODO_31-8722_MEDIUM_31_MODIFIED_FOR_DSM_8722,
+    KOMODO_31-8723_MEDIUM_31_MODIFIED_FOR_DSM_8723, KOMODO_31-8724_MEDIUM_31_MODIFIED_FOR_DSM_8724,
+    KOMODO_31-8725_MEDIUM_31_MODIFIED_FOR_DSM_8725, KOMODO_31-9473_MEDIUM_31_MODIFIED_FOR_DSM_9473,
+    KOMODO_31-9474_MEDIUM_31_MODIFIED_FOR_DSM_9474, KOMODO_31-9475_MEDIUM_31_MODIFIED_FOR_DSM_9475,
+    KOMODO_31-9476_MEDIUM_31_MODIFIED_FOR_DSM_9476, KOMODO_31-9477_MEDIUM_31_MODIFIED_FOR_DSM_9477,
+    KOMODO_31-9478_MEDIUM_31_MODIFIED_FOR_DSM_9478, KOMODO_31-9479_MEDIUM_31_MODIFIED_FOR_DSM_9479,
+    KOMODO_31-9480_MEDIUM_31_MODIFIED_FOR_DSM_9480, KOMODO_31-9481_MEDIUM_31_MODIFIED_FOR_DSM_9481,
+    KOMODO_31-9482_MEDIUM_31_MODIFIED_FOR_DSM_9482, KOMODO_31-9706_MEDIUM_31_MODIFIED_FOR_DSM_9706,
+    KOMODO_31-9711_MEDIUM_31_MODIFIED_FOR_DSM_9711, KOMODO_31-9712_MEDIUM_31_MODIFIED_FOR_DSM_9712,
+    KOMODO_31-9713_MEDIUM_31_MODIFIED_FOR_DSM_9713, KOMODO_31-9714_MEDIUM_31_MODIFIED_FOR_DSM_9714,
+    KOMODO_31-9725_MEDIUM_31_MODIFIED_FOR_DSM_9725, KOMODO_31-9726_MEDIUM_31_MODIFIED_FOR_DSM_9726,
+    KOMODO_31-9727_MEDIUM_31_MODIFIED_FOR_DSM_9727, KOMODO_31-9728_MEDIUM_31_MODIFIED_FOR_DSM_9728,
+    KOMODO_31-9729_MEDIUM_31_MODIFIED_FOR_DSM_9729, KOMODO_31-9730_MEDIUM_31_MODIFIED_FOR_DSM_9730,
+    KOMODO_31-9731_MEDIUM_31_MODIFIED_FOR_DSM_9731, KOMODO_31-9763_MEDIUM_31_MODIFIED_FOR_DSM_9763,
+    KOMODO_31-9768_MEDIUM_31_MODIFIED_FOR_DSM_9768, KOMODO_31-9778_MEDIUM_31_MODIFIED_FOR_DSM_9778,
+    KOMODO_31-9779_MEDIUM_31_MODIFIED_FOR_DSM_9779, KOMODO_31-9780_MEDIUM_31_MODIFIED_FOR_DSM_9780,
+    KOMODO_31-9781_MEDIUM_31_MODIFIED_FOR_DSM_9781, KOMODO_31-9782_MEDIUM_31_MODIFIED_FOR_DSM_9782,
+    KOMODO_31-9783_MEDIUM_31_MODIFIED_FOR_DSM_9783, KOMODO_31-9784_MEDIUM_31_MODIFIED_FOR_DSM_9784,
+    KOMODO_31-9785_MEDIUM_31_MODIFIED_FOR_DSM_9785, KOMODO_31-9813_MEDIUM_31_MODIFIED_FOR_DSM_9813,
+    KOMODO_31-9818_MEDIUM_31_MODIFIED_FOR_DSM_9818, KOMODO_31-9822_MEDIUM_31_MODIFIED_FOR_DSM_9822,
+    KOMODO_31-9823_MEDIUM_31_MODIFIED_FOR_DSM_9823, KOMODO_31-9881_MEDIUM_31_MODIFIED_FOR_DSM_9881,
+    KOMODO_31_ALKALINE_NUTRIENT_AGAR'
+synonyms:
+- name: MEDIUM 31 MODIFIED FOR DSM 16130
+  source: KOMODO
+  source_id: komodo.medium:31_16130
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 23228
+  source: KOMODO
+  source_id: komodo.medium:31_23228
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 5271
+  source: KOMODO
+  source_id: komodo.medium:31_5271
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 6716
+  source: KOMODO
+  source_id: komodo.medium:31_6716
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8714
+  source: KOMODO
+  source_id: komodo.medium:31_8714
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8716
+  source: KOMODO
+  source_id: komodo.medium:31_8716
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8717
+  source: KOMODO
+  source_id: komodo.medium:31_8717
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8719
+  source: KOMODO
+  source_id: komodo.medium:31_8719
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8720
+  source: KOMODO
+  source_id: komodo.medium:31_8720
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8721
+  source: KOMODO
+  source_id: komodo.medium:31_8721
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8722
+  source: KOMODO
+  source_id: komodo.medium:31_8722
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8723
+  source: KOMODO
+  source_id: komodo.medium:31_8723
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8724
+  source: KOMODO
+  source_id: komodo.medium:31_8724
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 8725
+  source: KOMODO
+  source_id: komodo.medium:31_8725
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9473
+  source: KOMODO
+  source_id: komodo.medium:31_9473
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9474
+  source: KOMODO
+  source_id: komodo.medium:31_9474
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9475
+  source: KOMODO
+  source_id: komodo.medium:31_9475
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9476
+  source: KOMODO
+  source_id: komodo.medium:31_9476
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9477
+  source: KOMODO
+  source_id: komodo.medium:31_9477
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9478
+  source: KOMODO
+  source_id: komodo.medium:31_9478
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9479
+  source: KOMODO
+  source_id: komodo.medium:31_9479
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9480
+  source: KOMODO
+  source_id: komodo.medium:31_9480
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9481
+  source: KOMODO
+  source_id: komodo.medium:31_9481
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9482
+  source: KOMODO
+  source_id: komodo.medium:31_9482
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9706
+  source: KOMODO
+  source_id: komodo.medium:31_9706
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9711
+  source: KOMODO
+  source_id: komodo.medium:31_9711
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9712
+  source: KOMODO
+  source_id: komodo.medium:31_9712
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9713
+  source: KOMODO
+  source_id: komodo.medium:31_9713
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9714
+  source: KOMODO
+  source_id: komodo.medium:31_9714
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9725
+  source: KOMODO
+  source_id: komodo.medium:31_9725
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9726
+  source: KOMODO
+  source_id: komodo.medium:31_9726
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9727
+  source: KOMODO
+  source_id: komodo.medium:31_9727
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9728
+  source: KOMODO
+  source_id: komodo.medium:31_9728
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9729
+  source: KOMODO
+  source_id: komodo.medium:31_9729
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9730
+  source: KOMODO
+  source_id: komodo.medium:31_9730
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9731
+  source: KOMODO
+  source_id: komodo.medium:31_9731
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9763
+  source: KOMODO
+  source_id: komodo.medium:31_9763
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9768
+  source: KOMODO
+  source_id: komodo.medium:31_9768
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9778
+  source: KOMODO
+  source_id: komodo.medium:31_9778
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9779
+  source: KOMODO
+  source_id: komodo.medium:31_9779
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9780
+  source: KOMODO
+  source_id: komodo.medium:31_9780
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9781
+  source: KOMODO
+  source_id: komodo.medium:31_9781
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9782
+  source: KOMODO
+  source_id: komodo.medium:31_9782
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9783
+  source: KOMODO
+  source_id: komodo.medium:31_9783
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9784
+  source: KOMODO
+  source_id: komodo.medium:31_9784
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9785
+  source: KOMODO
+  source_id: komodo.medium:31_9785
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9813
+  source: KOMODO
+  source_id: komodo.medium:31_9813
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9818
+  source: KOMODO
+  source_id: komodo.medium:31_9818
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9822
+  source: KOMODO
+  source_id: komodo.medium:31_9822
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9823
+  source: KOMODO
+  source_id: komodo.medium:31_9823
+  original_category: imported
+- name: MEDIUM 31 MODIFIED FOR DSM 9881
+  source: KOMODO
+  source_id: komodo.medium:31_9881
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M92_Alkaline_Nutrient_Agar
+- DSMZ_31_ALKALINE_NUTRIENT_AGAR
+- KOMODO_31-16130_MEDIUM_31_MODIFIED_FOR_DSM_16130
+- KOMODO_31-23228_MEDIUM_31_MODIFIED_FOR_DSM_23228
+- KOMODO_31-5271_MEDIUM_31_MODIFIED_FOR_DSM_5271
+- KOMODO_31-6716_MEDIUM_31_MODIFIED_FOR_DSM_6716
+- KOMODO_31-8714_MEDIUM_31_MODIFIED_FOR_DSM_8714
+- KOMODO_31-8716_MEDIUM_31_MODIFIED_FOR_DSM_8716
+- KOMODO_31-8717_MEDIUM_31_MODIFIED_FOR_DSM_8717
+- KOMODO_31-8719_MEDIUM_31_MODIFIED_FOR_DSM_8719
+- KOMODO_31-8720_MEDIUM_31_MODIFIED_FOR_DSM_8720
+- KOMODO_31-8721_MEDIUM_31_MODIFIED_FOR_DSM_8721
+- KOMODO_31-8722_MEDIUM_31_MODIFIED_FOR_DSM_8722
+- KOMODO_31-8723_MEDIUM_31_MODIFIED_FOR_DSM_8723
+- KOMODO_31-8724_MEDIUM_31_MODIFIED_FOR_DSM_8724
+- KOMODO_31-8725_MEDIUM_31_MODIFIED_FOR_DSM_8725
+- KOMODO_31-9473_MEDIUM_31_MODIFIED_FOR_DSM_9473
+- KOMODO_31-9474_MEDIUM_31_MODIFIED_FOR_DSM_9474
+- KOMODO_31-9475_MEDIUM_31_MODIFIED_FOR_DSM_9475
+- KOMODO_31-9476_MEDIUM_31_MODIFIED_FOR_DSM_9476
+- KOMODO_31-9477_MEDIUM_31_MODIFIED_FOR_DSM_9477
+- KOMODO_31-9478_MEDIUM_31_MODIFIED_FOR_DSM_9478
+- KOMODO_31-9479_MEDIUM_31_MODIFIED_FOR_DSM_9479
+- KOMODO_31-9480_MEDIUM_31_MODIFIED_FOR_DSM_9480
+- KOMODO_31-9481_MEDIUM_31_MODIFIED_FOR_DSM_9481
+- KOMODO_31-9482_MEDIUM_31_MODIFIED_FOR_DSM_9482
+- KOMODO_31-9706_MEDIUM_31_MODIFIED_FOR_DSM_9706
+- KOMODO_31-9711_MEDIUM_31_MODIFIED_FOR_DSM_9711
+- KOMODO_31-9712_MEDIUM_31_MODIFIED_FOR_DSM_9712
+- KOMODO_31-9713_MEDIUM_31_MODIFIED_FOR_DSM_9713
+- KOMODO_31-9714_MEDIUM_31_MODIFIED_FOR_DSM_9714
+- KOMODO_31-9725_MEDIUM_31_MODIFIED_FOR_DSM_9725
+- KOMODO_31-9726_MEDIUM_31_MODIFIED_FOR_DSM_9726
+- KOMODO_31-9727_MEDIUM_31_MODIFIED_FOR_DSM_9727
+- KOMODO_31-9728_MEDIUM_31_MODIFIED_FOR_DSM_9728
+- KOMODO_31-9729_MEDIUM_31_MODIFIED_FOR_DSM_9729
+- KOMODO_31-9730_MEDIUM_31_MODIFIED_FOR_DSM_9730
+- KOMODO_31-9731_MEDIUM_31_MODIFIED_FOR_DSM_9731
+- KOMODO_31-9763_MEDIUM_31_MODIFIED_FOR_DSM_9763
+- KOMODO_31-9768_MEDIUM_31_MODIFIED_FOR_DSM_9768
+- KOMODO_31-9778_MEDIUM_31_MODIFIED_FOR_DSM_9778
+- KOMODO_31-9779_MEDIUM_31_MODIFIED_FOR_DSM_9779
+- KOMODO_31-9780_MEDIUM_31_MODIFIED_FOR_DSM_9780
+- KOMODO_31-9781_MEDIUM_31_MODIFIED_FOR_DSM_9781
+- KOMODO_31-9782_MEDIUM_31_MODIFIED_FOR_DSM_9782
+- KOMODO_31-9783_MEDIUM_31_MODIFIED_FOR_DSM_9783
+- KOMODO_31-9784_MEDIUM_31_MODIFIED_FOR_DSM_9784
+- KOMODO_31-9785_MEDIUM_31_MODIFIED_FOR_DSM_9785
+- KOMODO_31-9813_MEDIUM_31_MODIFIED_FOR_DSM_9813
+- KOMODO_31-9818_MEDIUM_31_MODIFIED_FOR_DSM_9818
+- KOMODO_31-9822_MEDIUM_31_MODIFIED_FOR_DSM_9822
+- KOMODO_31-9823_MEDIUM_31_MODIFIED_FOR_DSM_9823
+- KOMODO_31-9881_MEDIUM_31_MODIFIED_FOR_DSM_9881
+- KOMODO_31_ALKALINE_NUTRIENT_AGAR
+merge_fingerprint: 485bbb74a3d160667b81afca9a8a69e7721b2bf18cdb3962b90160745d54b358

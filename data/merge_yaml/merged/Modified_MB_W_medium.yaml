@@ -353,7 +353,7 @@ curation_history:
   notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
     concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
     NaOH'
-- timestamp: '2026-02-03T22:26:12.943650+00:00'
+- timestamp: '2026-02-19T08:27:01.468193+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M2111_MM_W_medium_MeOH, TOGO_M2132_Modified_MB_W_medium'

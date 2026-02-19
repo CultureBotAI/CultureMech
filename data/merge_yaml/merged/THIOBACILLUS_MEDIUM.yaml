@@ -88,7 +88,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 36'
-- timestamp: '2026-02-03T22:25:40.068638+00:00'
+- timestamp: '2026-02-19T08:26:46.977457+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_36_THIOBACILLUS_MEDIUM, KOMODO_36-1_For_DSM_18181, KOMODO_36_THIOBACILLUS_THIOPARUS_MEDIUM'

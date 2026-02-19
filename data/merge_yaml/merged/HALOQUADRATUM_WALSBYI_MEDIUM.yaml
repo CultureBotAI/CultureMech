@@ -1,140 +1,127 @@
-name: Haloquadratum Walsbyi Medium
-original_name: Haloquadratum Walsbyi Medium
+name: HALOQUADRATUM WALSBYI MEDIUM
+original_name: HALOQUADRATUM WALSBYI MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.4
+media_term:
+  preferred_term: DSMZ Medium 1091
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:1091
+    label: HALOQUADRATUM WALSBYI MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1091.pdf'
+ingredients:
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '195'
+    unit: G_PER_L
 - preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '35'
+    unit: G_PER_L
+- preferred_term: KCl
+  term:
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: NH4Cl
+  term:
+    id: CHEBI:31206
+    label: NH4Cl
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Tris buffer
+  term:
+    id: CHEBI:9754
+    label: Tris buffer
+  concentration:
+    value: '2.4228'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '195'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: NH4Cl
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: MgCl2 x 6 H2O
-  concentration:
-    value: '35'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-- preferred_term: KCl
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaHCO3
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: NaNO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
-  term:
-    id: CHEBI:63005
-    label: ''
 - preferred_term: Sodium pyruvate
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
   term:
     id: CHEBI:50144
-    label: sodium pyruvate
-- preferred_term: Tris buffer 1M
+    label: Sodium pyruvate
   concentration:
-    value: '20'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Complex component, Defined component, Solution'
-  term:
-    id: CHEBI:9754
-    label: tris
-media_term:
-  preferred_term: TOGO Medium M2375
-  term:
-    id: TOGO:M2375
-    label: Haloquadratum Walsbyi Medium
-notes: 'Source: https://togomedium.org/medium/M2375
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1091.pdf'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: 'Add after autoclaving:'
+- step_number: 2
+  action: MIX
+  description: Final pH 7.4
+- step_number: 3
+  action: AUTOCLAVE
+  description: Yeast extract and sodium pyruvate are added from sterile (autoclaved)
+    stock solutions to the respective concentrations.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.417074Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2375'
-- timestamp: '2026-01-28T19:48:10.072500Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 1556e12e7048edb1ffda5d8757dac25026fba9a0ddc2ba29069fc5f7691a45ba
+- timestamp: '2026-01-26T17:53:13.340827Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1091'
+- timestamp: '2026-02-19T08:26:39.246605+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1091_HALOQUADRATUM_WALSBYI_MEDIUM, KOMODO_1091_HALOQUADRATUM_WALSBYI_medium'
+synonyms:
+- name: HALOQUADRATUM WALSBYI medium
+  source: KOMODO
+  source_id: komodo.medium:1091
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2375_Haloquadratum_Walsbyi_Medium
+- DSMZ_1091_HALOQUADRATUM_WALSBYI_MEDIUM
+- KOMODO_1091_HALOQUADRATUM_WALSBYI_medium
+merge_fingerprint: 3eedc9721a71b80fc29e2ef4ed76320acbbfe115c8713bcabbb10cf7ddc4c733

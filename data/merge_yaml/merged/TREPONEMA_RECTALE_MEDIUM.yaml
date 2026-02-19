@@ -375,7 +375,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 212a'
-- timestamp: '2026-02-03T22:25:37.833248+00:00'
+- timestamp: '2026-02-19T08:26:44.988189+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_212a_TREPONEMA_RECTALE_MEDIUM, KOMODO_212_SYNTHROPHOMONAS_medium'

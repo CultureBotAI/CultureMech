@@ -1,117 +1,106 @@
-name: Selenomonas Ruminantium Medium
-original_name: Selenomonas Ruminantium Medium
+name: SELENOMONAS RUMINANTIUM MEDIUM
+original_name: SELENOMONAS RUMINANTIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 181
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:181
+    label: SELENOMONAS RUMINANTIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium181.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Trypticase
+  concentration:
+    value: '5'
+    unit: G_PER_L
+  term:
+    id: CHEBI:78018
+    label: dodecylphosphocholine
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na-acetate
+  term:
+    id: CHEBI:32954
+    label: Na-acetate
+  concentration:
+    value: '4'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: KH2PO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: Resazurin
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: Na-acetate
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:32954
-    label: Na-acetate
-- preferred_term: Na2CO3
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:29377
-    label: sodium carbonate
 - preferred_term: n-Valeric acid
+  term:
+    id: CHEBI:17418
+    label: n-Valeric acid
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+- preferred_term: Resazurin
   term:
-    id: CHEBI:17418
-    label: valeric acid
-- preferred_term: Glucose
+    id: CHEBI:8806
+    label: Resazurin
   concentration:
-    value: '1'
+    value: '0.001'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+- preferred_term: Na2CO3
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Trypticase (BBL)
+    id: CHEBI:29377
+    label: Na2CO3
   concentration:
-    value: '5'
+    value: '4'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Cysteine-HCl x H2O
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
-  term:
-    id: CHEBI:17561
-    label: L-cysteine
-- preferred_term: CO2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2638
-  term:
-    id: TOGO:M2638
-    label: Selenomonas Ruminantium Medium
-notes: 'Source: https://togomedium.org/medium/M2638
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium181.pdf'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: 'Adjust pH to 7.0. Gas atmosphere: 100% CO2.'
+- step_number: 2
+  action: AUTOCLAVE
+  description: Distribute into Hungate tubes and autoclave.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.901682Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2638'
-- timestamp: '2026-01-28T19:48:29.847440Z'
+- timestamp: '2026-01-26T17:53:10.407882Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 181'
+- timestamp: '2026-01-28T19:48:15.202209Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:55.061205'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2'
-merge_fingerprint: 609f01c67c431f8dcf32db44ae8591845f7bbd95c30fd02d40b87545abf34d57
+- timestamp: '2026-02-19T08:26:44.063135+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_181_SELENOMONAS_RUMINANTIUM_MEDIUM, KOMODO_181_SELENOMONAS_RUMINANTIUM_medium'
+synonyms:
+- name: SELENOMONAS RUMINANTIUM medium
+  source: KOMODO
+  source_id: komodo.medium:181
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2638_Selenomonas_Ruminantium_Medium
+- DSMZ_181_SELENOMONAS_RUMINANTIUM_MEDIUM
+- KOMODO_181_SELENOMONAS_RUMINANTIUM_medium
+merge_fingerprint: 9b7b28ca08e1dd4a28ace8b23503358108e7ddaa4461bb53c06160580153b12e

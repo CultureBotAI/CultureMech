@@ -62,7 +62,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:11.572926+00:00'
+- timestamp: '2026-02-19T08:27:01.383390+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1967_Gluconacetobacter_xylinus_Medium, TOGO_M2048_Acetobacter_diazotrophicus_medium'

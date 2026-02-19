@@ -61,7 +61,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 259'
-- timestamp: '2026-02-03T22:26:00.103814+00:00'
+- timestamp: '2026-02-19T08:26:58.888170+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_259_Yeast_extract_MINERAL_medium, DSMZ_259_YEAST_EXTRACT_MINERAL_MEDIUM'

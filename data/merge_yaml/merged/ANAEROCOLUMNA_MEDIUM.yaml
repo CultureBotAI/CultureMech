@@ -180,7 +180,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 860'
-- timestamp: '2026-02-03T22:25:50.419888+00:00'
+- timestamp: '2026-02-19T08:26:55.944743+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_860_ANAEROCOLUMNA_MEDIUM, KOMODO_860-1_For_DSM_12503, KOMODO_860-2_For_DSM_12504,

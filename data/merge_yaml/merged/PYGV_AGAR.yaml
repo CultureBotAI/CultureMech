@@ -1,81 +1,241 @@
-name: PYGV Agar
-original_name: PYGV Agar
+name: PYGV AGAR
+original_name: PYGV AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 621
+  term:
+    id: mediadive.medium:621
+    label: PYGV AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium621.pdf'
 ingredients:
-- preferred_term: 2.5% Glucose solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '960'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Peptone
   concentration:
     value: '0.25'
     unit: G_PER_L
-- preferred_term: Mineral salt solution (see Medium [M299])
+- preferred_term: Yeast extract
   concentration:
-    value: '20'
+    value: '0.25'
     unit: G_PER_L
-- preferred_term: Vitamin solution (see Medium [M299])
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
-    value: '10'
+    value: '15'
     unit: G_PER_L
-- preferred_term: KOH
-  notes: 'Role: Mineral source; Properties: Defined component, Solution'
+- preferred_term: Glucose
   term:
-    id: CHEBI:32035
-    label: potassium hydroxide
+    id: CHEBI:17234
+    label: Glucose
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M382
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Nitrilotriacetic acid
   term:
-    id: TOGO:M382
-    label: PYGV Agar
-notes: 'Source: https://togomedium.org/medium/M382
-
-  Original source: JCM - JCM_M387
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=387'
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
+  concentration:
+    value: '10.5263'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '31.2632'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '3.51579'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.0133368'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.104211'
+    unit: G_PER_L
+- preferred_term: Metall salt sol. 44
+  concentration:
+    value: '50'
+    unit: G_PER_L
+- preferred_term: Biotin
+  term:
+    id: CHEBI:15956
+    label: Biotin
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.004'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Riboflavine
+  term:
+    id: CHEBI:17015
+    label: Riboflavine
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Thiamine-HCl x 2 H2O
+  term:
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Nicotinamide
+  term:
+    id: CHEBI:17154
+    label: Nicotinamide
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: D-Calcium pantothenate
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.0002'
+    unit: G_PER_L
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx.
+    10 drops/l medium of 6 N KOH).
+- step_number: 3
+  action: ADJUST_PH
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
+    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
+    water.
+- step_number: 4
+  action: HEAT
+  description: Store in the dark and cold (5°C).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.951799Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M382'
-- timestamp: '2026-01-28T19:48:24.283447Z'
+- timestamp: '2026-01-26T17:53:11.755792Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 621'
+- timestamp: '2026-01-28T19:48:38.616484Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:58.457101'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH'
-merge_fingerprint: c3461e7a761c03019f008ba4593ce1cf0f2f75552ad42945f742b212fa1e6177
+- timestamp: '2026-02-19T08:26:52.008038+00:00'
+  curator: recipe-merger
+  action: Merged 14 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_621_PYGV_AGAR, KOMODO_621-45328_MEDIUM_621_MODIFIED_FOR_DSM_45328,
+    KOMODO_621_PYGV_AGAR, KOMODO_621a-11439_MEDIUM_621a_MODIFIED_FOR_DSM_11439, KOMODO_621a-11440_MEDIUM_621a_MODIFIED_FOR_DSM_11440,
+    KOMODO_621a-11443_MEDIUM_621a_MODIFIED_FOR_DSM_11443, KOMODO_621a-11445_MEDIUM_621a_MODIFIED_FOR_DSM_11445,
+    KOMODO_621a-11457_MEDIUM_621a_MODIFIED_FOR_DSM_11457, KOMODO_621a-11458_MEDIUM_621a_MODIFIED_FOR_DSM_11458,
+    KOMODO_621a-11463_MEDIUM_621a_MODIFIED_FOR_DSM_11463, KOMODO_621a-11465_MEDIUM_621a_MODIFIED_FOR_DSM_11465,
+    KOMODO_621a-11466_MEDIUM_621a_MODIFIED_FOR_DSM_11466, KOMODO_621a-11469_MEDIUM_621a_MODIFIED_FOR_DSM_11469,
+    KOMODO_621a_EKHO_LAKE_STRAINS_medium'
+synonyms:
+- name: MEDIUM 621 MODIFIED FOR DSM 45328
+  source: KOMODO
+  source_id: komodo.medium:621_45328
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11439
+  source: KOMODO
+  source_id: komodo.medium:621a_11439
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11440
+  source: KOMODO
+  source_id: komodo.medium:621a_11440
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11443
+  source: KOMODO
+  source_id: komodo.medium:621a_11443
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11445
+  source: KOMODO
+  source_id: komodo.medium:621a_11445
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11457
+  source: KOMODO
+  source_id: komodo.medium:621a_11457
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11458
+  source: KOMODO
+  source_id: komodo.medium:621a_11458
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11463
+  source: KOMODO
+  source_id: komodo.medium:621a_11463
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11465
+  source: KOMODO
+  source_id: komodo.medium:621a_11465
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11466
+  source: KOMODO
+  source_id: komodo.medium:621a_11466
+  original_category: imported
+- name: MEDIUM 621a MODIFIED FOR DSM 11469
+  source: KOMODO
+  source_id: komodo.medium:621a_11469
+  original_category: imported
+- name: EKHO LAKE STRAINS medium
+  source: KOMODO
+  source_id: komodo.medium:621a
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M382_PYGV_Agar
+- DSMZ_621_PYGV_AGAR
+- KOMODO_621-45328_MEDIUM_621_MODIFIED_FOR_DSM_45328
+- KOMODO_621_PYGV_AGAR
+- KOMODO_621a-11439_MEDIUM_621a_MODIFIED_FOR_DSM_11439
+- KOMODO_621a-11440_MEDIUM_621a_MODIFIED_FOR_DSM_11440
+- KOMODO_621a-11443_MEDIUM_621a_MODIFIED_FOR_DSM_11443
+- KOMODO_621a-11445_MEDIUM_621a_MODIFIED_FOR_DSM_11445
+- KOMODO_621a-11457_MEDIUM_621a_MODIFIED_FOR_DSM_11457
+- KOMODO_621a-11458_MEDIUM_621a_MODIFIED_FOR_DSM_11458
+- KOMODO_621a-11463_MEDIUM_621a_MODIFIED_FOR_DSM_11463
+- KOMODO_621a-11465_MEDIUM_621a_MODIFIED_FOR_DSM_11465
+- KOMODO_621a-11466_MEDIUM_621a_MODIFIED_FOR_DSM_11466
+- KOMODO_621a-11469_MEDIUM_621a_MODIFIED_FOR_DSM_11469
+- KOMODO_621a_EKHO_LAKE_STRAINS_medium
+merge_fingerprint: c242179a9d8237efc25ef49561a35c0789dab1a1b684168e89cca9bed4dcf403

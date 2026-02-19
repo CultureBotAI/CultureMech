@@ -285,7 +285,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:39.203258+00:00'
+- timestamp: '2026-02-19T08:26:46.217675+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_315_BACTEROIDES_CELLULOSOLVENS_MEDIUM, KOMODO_315-replace-Cellobiose-with-Cellulose_BACTEROIDES_CELLULOSOLVENS_MEDIUM_replace_Cellobiose_with_Cellulose,

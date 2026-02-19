@@ -1,86 +1,78 @@
-name: Rhizobium Medium
-original_name: Rhizobium Medium
+name: RHIZOBIUM MEDIUM
+original_name: RHIZOBIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '800'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 98
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:98
+    label: RHIZOBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf'
+ingredients:
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
 - preferred_term: Mannitol
+  term:
+    id: CHEBI:29864
+    label: Mannitol
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:29864
-    label: mannitol
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Soil extract
+- preferred_term: air-dried garden soil
   concentration:
-    value: '200'
+    value: '400'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '200'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Na2CO3
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
   term:
     id: CHEBI:29377
-    label: sodium carbonate
-- preferred_term: Air-dried garden soil
+    label: Na2CO3
   concentration:
-    value: '80'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2353
-  term:
-    id: TOGO:M2353
-    label: Rhizobium Medium
-notes: 'Source: https://togomedium.org/medium/M2353
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium98.pdf'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.0.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear
+    supernatant allow to settle and centrifuge. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.388429Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2353'
-- timestamp: '2026-01-28T19:48:24.769493Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 97fed85c4c82514ceeab26abd35e925a112ece40bd472834675416ccdddf8e20
+- timestamp: '2026-01-26T17:53:10.165786Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 98'
+- timestamp: '2026-02-19T08:26:58.044807+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_98_RHIZOBIUM_MEDIUM, KOMODO_98-15010_MEDIUM_98_MODIFIED_FOR_DSM_15010,
+    KOMODO_98_RHIZOBIUM_medium'
+synonyms:
+- name: MEDIUM 98 MODIFIED FOR DSM 15010
+  source: KOMODO
+  source_id: komodo.medium:98_15010
+  original_category: imported
+- name: RHIZOBIUM medium
+  source: KOMODO
+  source_id: komodo.medium:98
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2353_Rhizobium_Medium
+- DSMZ_98_RHIZOBIUM_MEDIUM
+- KOMODO_98-15010_MEDIUM_98_MODIFIED_FOR_DSM_15010
+- KOMODO_98_RHIZOBIUM_medium
+merge_fingerprint: c23d3b65f61c2a07186caed2b857a87e847ed75bdddb14beb255052b1275847d

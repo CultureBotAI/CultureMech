@@ -55,7 +55,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 658'
-- timestamp: '2026-02-03T22:25:46.507484+00:00'
+- timestamp: '2026-02-19T08:26:52.505054+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_658_HICKEY-TRESNER-AGAR, KOMODO_658_HICKEY-TRESNER-AGAR'

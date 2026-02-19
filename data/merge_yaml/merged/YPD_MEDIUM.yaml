@@ -60,7 +60,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:06.548576+00:00'
+- timestamp: '2026-02-19T08:27:00.923863+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M130_PYG_Agar_A, TOGO_M1434_YPD_Medium, TOGO_M251_Glucose-Yeast-Peptone_Medium,

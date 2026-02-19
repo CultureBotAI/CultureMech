@@ -45,7 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 423'
-- timestamp: '2026-02-03T22:25:36.402942+00:00'
+- timestamp: '2026-02-19T08:26:44.018196+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1737_STAPPIA_QUADRATIBRACATA_MEDIUM_28M-7, DSMZ_364_PYEA_MEDIUM,

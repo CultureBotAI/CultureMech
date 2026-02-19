@@ -76,7 +76,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 993'
-- timestamp: '2026-02-03T22:25:52.698041+00:00'
+- timestamp: '2026-02-19T08:26:58.058705+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_993_ISP_5_MEDIUM, JCM_J60_GLYCEROL-ASPARAGINE_AGAR_ISP-5'

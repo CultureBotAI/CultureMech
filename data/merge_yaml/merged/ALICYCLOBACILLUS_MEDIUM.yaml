@@ -1,192 +1,249 @@
-name: Alicyclobacillus Medium
-original_name: Alicyclobacillus Medium
+name: ALICYCLOBACILLUS MEDIUM
+original_name: ALICYCLOBACILLUS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 402
+  term:
+    id: mediadive.medium:402
+    label: ALICYCLOBACILLUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'
 ingredients:
-- preferred_term: 'Solution A:'
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 'Solution B:'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 'Solution C:'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water (for solid medium)
-  concentration:
-    value: '500'
+    value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
 - preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: (NH4)2SO4
   term:
-    id: CHEBI:32599
-    label: magnesium sulfate
+    id: CHEBI:62946
+    label: (NH4)2SO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  concentration:
-    value: '3'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
-- preferred_term: (NH4)2SO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:62946
-    label: ammonium sulfate
 - preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Trace element solution SL-6
+    id: CHEBI:63036
+    label: KH2PO4
   concentration:
-    value: '1'
+    value: '3'
     unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: agar
-- preferred_term: Distilled water
+    label: Agar
   concentration:
-    value: '1000'
+    value: '30'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: MnCl2 x 4 H2O
-  concentration:
-    value: '0.03'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: NiCl2 x 6 H2O
-  concentration:
-    value: '0.02'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:34887
-    label: nickel dichloride
 - preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
 - preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: NiCl2 x 6 H2O
   term:
-    id: CHEBI:86318
-    label: copper(II) chloride dihydrate
-media_term:
-  preferred_term: TOGO Medium M2391
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
   term:
-    id: TOGO:M2391
-    label: Alicyclobacillus Medium
-notes: 'Source: https://togomedium.org/medium/M2391
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium402.pdf'
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Sterilize separately. For liquid medium combine solution A (with 1000.0
+    ml distilled water) and solution B. For solid medium combine solution A (with
+    500 ml distilled water), solution B and solution C. For strains of A. cycloheptanicus
+    add 5 g/l of yeast extract instead of 2 g/l.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 4.0
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.445412Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2391'
-- timestamp: '2026-01-28T19:48:23.407444Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.587494'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Solution A:; Added default concentration
-    for ingredient: Solution B:; Added default concentration for ingredient: Solution
-    C:'
-merge_fingerprint: 45571250b4ceefc3f3a3b55a5ca9cb58c9eceb1b6dc935cb54a04aff5fbb424a
+- timestamp: '2026-01-26T17:53:11.053029Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 402'
+- timestamp: '2026-02-19T08:26:47.759468+00:00'
+  curator: recipe-merger
+  action: Merged 22 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_402_ALICYCLOBACILLUS_MEDIUM, KOMODO_402-11983_MEDIUM_402_MODIFIED_FOR_DSM_11983,
+    KOMODO_402-14558_MEDIUM_402_MODIFIED_FOR_DSM_14558, KOMODO_402-14745_MEDIUM_402_MODIFIED_FOR_DSM_14745,
+    KOMODO_402-14955_MEDIUM_402_MODIFIED_FOR_DSM_14955, KOMODO_402-16176_MEDIUM_402_MODIFIED_FOR_DSM_16176,
+    KOMODO_402-17614_MEDIUM_402_MODIFIED_FOR_DSM_17614, KOMODO_402-18237_MEDIUM_402_MODIFIED_FOR_DSM_18237,
+    KOMODO_402-1_For_strains_of_A._cycloheptanicus, KOMODO_402-2498_MEDIUM_402_MODIFIED_FOR_DSM_2498,
+    KOMODO_402-3922_MEDIUM_402_MODIFIED_FOR_DSM_3922, KOMODO_402-3923_MEDIUM_402_MODIFIED_FOR_DSM_3923,
+    KOMODO_402-3924_MEDIUM_402_MODIFIED_FOR_DSM_3924, KOMODO_402-446_MEDIUM_402_MODIFIED_FOR_DSM_446,
+    KOMODO_402-448_MEDIUM_402_MODIFIED_FOR_DSM_448, KOMODO_402-449_MEDIUM_402_MODIFIED_FOR_DSM_449,
+    KOMODO_402-451_MEDIUM_402_MODIFIED_FOR_DSM_451, KOMODO_402-452_MEDIUM_402_MODIFIED_FOR_DSM_452,
+    KOMODO_402-453_MEDIUM_402_MODIFIED_FOR_DSM_453, KOMODO_402-454_MEDIUM_402_MODIFIED_FOR_DSM_454,
+    KOMODO_402-455_MEDIUM_402_MODIFIED_FOR_DSM_455, KOMODO_402_ALICYCLOBACILLUS_medium'
+synonyms:
+- name: MEDIUM 402 MODIFIED FOR DSM 11983
+  source: KOMODO
+  source_id: komodo.medium:402_11983
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 14558
+  source: KOMODO
+  source_id: komodo.medium:402_14558
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 14745
+  source: KOMODO
+  source_id: komodo.medium:402_14745
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 14955
+  source: KOMODO
+  source_id: komodo.medium:402_14955
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 16176
+  source: KOMODO
+  source_id: komodo.medium:402_16176
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 17614
+  source: KOMODO
+  source_id: komodo.medium:402_17614
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 18237
+  source: KOMODO
+  source_id: komodo.medium:402_18237
+  original_category: imported
+- name: For strains of A. cycloheptanicus
+  source: KOMODO
+  source_id: komodo.medium:402.1
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 2498
+  source: KOMODO
+  source_id: komodo.medium:402_2498
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 3922
+  source: KOMODO
+  source_id: komodo.medium:402_3922
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 3923
+  source: KOMODO
+  source_id: komodo.medium:402_3923
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 3924
+  source: KOMODO
+  source_id: komodo.medium:402_3924
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 446
+  source: KOMODO
+  source_id: komodo.medium:402_446
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 448
+  source: KOMODO
+  source_id: komodo.medium:402_448
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 449
+  source: KOMODO
+  source_id: komodo.medium:402_449
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 451
+  source: KOMODO
+  source_id: komodo.medium:402_451
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 452
+  source: KOMODO
+  source_id: komodo.medium:402_452
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 453
+  source: KOMODO
+  source_id: komodo.medium:402_453
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 454
+  source: KOMODO
+  source_id: komodo.medium:402_454
+  original_category: imported
+- name: MEDIUM 402 MODIFIED FOR DSM 455
+  source: KOMODO
+  source_id: komodo.medium:402_455
+  original_category: imported
+- name: ALICYCLOBACILLUS medium
+  source: KOMODO
+  source_id: komodo.medium:402
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2391_Alicyclobacillus_Medium
+- DSMZ_402_ALICYCLOBACILLUS_MEDIUM
+- KOMODO_402-11983_MEDIUM_402_MODIFIED_FOR_DSM_11983
+- KOMODO_402-14558_MEDIUM_402_MODIFIED_FOR_DSM_14558
+- KOMODO_402-14745_MEDIUM_402_MODIFIED_FOR_DSM_14745
+- KOMODO_402-14955_MEDIUM_402_MODIFIED_FOR_DSM_14955
+- KOMODO_402-16176_MEDIUM_402_MODIFIED_FOR_DSM_16176
+- KOMODO_402-17614_MEDIUM_402_MODIFIED_FOR_DSM_17614
+- KOMODO_402-18237_MEDIUM_402_MODIFIED_FOR_DSM_18237
+- KOMODO_402-1_For_strains_of_A._cycloheptanicus
+- KOMODO_402-2498_MEDIUM_402_MODIFIED_FOR_DSM_2498
+- KOMODO_402-3922_MEDIUM_402_MODIFIED_FOR_DSM_3922
+- KOMODO_402-3923_MEDIUM_402_MODIFIED_FOR_DSM_3923
+- KOMODO_402-3924_MEDIUM_402_MODIFIED_FOR_DSM_3924
+- KOMODO_402-446_MEDIUM_402_MODIFIED_FOR_DSM_446
+- KOMODO_402-448_MEDIUM_402_MODIFIED_FOR_DSM_448
+- KOMODO_402-449_MEDIUM_402_MODIFIED_FOR_DSM_449
+- KOMODO_402-451_MEDIUM_402_MODIFIED_FOR_DSM_451
+- KOMODO_402-452_MEDIUM_402_MODIFIED_FOR_DSM_452
+- KOMODO_402-453_MEDIUM_402_MODIFIED_FOR_DSM_453
+- KOMODO_402-454_MEDIUM_402_MODIFIED_FOR_DSM_454
+- KOMODO_402-455_MEDIUM_402_MODIFIED_FOR_DSM_455
+- KOMODO_402_ALICYCLOBACILLUS_medium
+merge_fingerprint: b875278279eabaf2d50958ba22876d4389b3969744a69b4ef48c2f14fa010fb8

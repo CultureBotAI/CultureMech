@@ -13,9 +13,6 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:btn'
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.00040614'
     unit: MILLIMOLAR
@@ -203,7 +200,12 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:26:01.752434+00:00'
+- timestamp: '2026-02-06T05:10:24.725775Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:27:00.190063+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: MEDIADB_178_Modified_m1_medium_with_20_mm_lactate_pinchuk_et_a,
@@ -229,4 +231,4 @@ categories:
 merged_from:
 - MEDIADB_178_Modified_m1_medium_with_20_mm_lactate_pinchuk_et_a
 - MEDIADB_179_Modified_m1_medium_with_18_mm_lactate_pinchuk_et_a
-merge_fingerprint: e440297e2268c760795c68c4fb88c70547a734e8a61dca523a64d98b84f42e4f
+merge_fingerprint: 9ac216d17029b69edd7ed17525b262d940f7fd6d976acde4581f84cb2ee6b7ef

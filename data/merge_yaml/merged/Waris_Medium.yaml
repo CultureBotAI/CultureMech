@@ -71,7 +71,7 @@ curation_history:
   date: '2026-01-28'
   action: Imported from UTEX Culture Collection
   notes: 'Source ID: waris-medium, URL: https://utex.org/products/waris-medium'
-- timestamp: '2026-02-03T22:25:25.049754+00:00'
+- timestamp: '2026-02-19T08:26:36.683907+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: Dasycladales_Seawater_Medium, Euglena_Medium, Waris_Medium'

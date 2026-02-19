@@ -213,7 +213,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 457e'
-- timestamp: '2026-02-03T22:25:42.637353+00:00'
+- timestamp: '2026-02-19T08:26:49.136486+00:00'
   curator: recipe-merger
   action: Merged 157 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_457e_MINERAL_MEDIUM_WITH_DIBENZOFURAN, KOMODO_457-10330_MEDIUM_457_MODIFIED_FOR_DSM_10330,

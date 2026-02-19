@@ -1,124 +1,128 @@
-name: Acetivibrio Medium
-original_name: Acetivibrio Medium
+name: ACETIVIBRIO MEDIUM
+original_name: ACETIVIBRIO MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: NaHCO3 (5%, w/v)
-  concentration:
-    value: '30'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Solution'
-- preferred_term: Sucrose (20%, w/v)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source'
-- preferred_term: Yeast extract
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Na2S・9H2O
-  concentration:
-    value: '0.25'
-    unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: Basal medium (see below)
-  concentration:
-    value: '950'
-    unit: G_PER_L
-- preferred_term: Trace element solution SL--10 (see Medium [M433])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Selenite--tungstate solution (see Medium [M558])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Trace vitamins (see Medium [M190])
-  concentration:
-    value: '10'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '950'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 122
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: CaCl2・2H2O
+    id: mediadive.medium:122
+    label: ACETIVIBRIO MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium122.pdf'
+ingredients:
+- preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
-    value: '0.15'
+    value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+- preferred_term: MgCl2 x 6 H2O
+  term:
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
+  concentration:
+    value: '2.6'
+    unit: G_PER_L
 - preferred_term: KH2PO4
-  concentration:
-    value: '1.4'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: NH4Cl
   concentration:
-    value: '0.5'
+    value: '1.43'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:31206
-    label: ammonium chloride
-- preferred_term: Resazurin
+    id: CHEBI:131527
+    label: K2HPO4
   concentration:
-    value: '1'
+    value: '5.5'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: CHEBI:8806
-    label: Resazurin
-- preferred_term: MgCl2・6H2O
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
   concentration:
-    value: '0.2'
+    value: '0.13'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-media_term:
-  preferred_term: TOGO Medium M1071
+- preferred_term: Na2-ß-glycerophosphate x 5 H2O
+  concentration:
+    value: '6'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: TOGO:M1071
-    label: Acetivibrio Medium
-notes: 'Source: https://togomedium.org/medium/M1071
-
-  Original source: JCM - JCM_M1013
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1013'
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.0011'
+    unit: G_PER_L
+- preferred_term: L-Glutathione
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '4.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: Cellobiose
+  term:
+    id: CHEBI:17057
+    label: Cellobiose
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: Cellulose
+  term:
+    id: CHEBI:18246
+    label: Cellulose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+  notes: Optional ingredient
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients except cellobiose, sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Then adjust pH to 7.0 -
+    7.2, distribute under same gas atmosphere in anoxic Hungate-type tubes or serum
+    vials and autoclave. Cellobiose is added to the sterile medium from an anoxic
+    10% (w/v) stock solution prepared under 100% N2 gas and sterilized by filtration.
+    Some strains can be adapted to cellulose as substrate using 10.00 g/l cellulose
+    (Avicel or MN 301, MACHEREY-NAGEL).
+- step_number: 2
+  action: MIX
+  description: 'Note: A white precipitate forms after mixing the ingredients of this
+    medium, but this has no negative effect on growth.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.867995Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1071'
-- timestamp: '2026-01-28T19:48:33.231377Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:45.772384'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2'
-merge_fingerprint: c5b3adcaee456ba0cc0309f765eab13bf5aabbc73a0f83040aac5d749f5dcdc0
+- timestamp: '2026-01-26T17:53:10.249982Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 122'
+- timestamp: '2026-02-19T08:26:41.373294+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_122_ACETIVIBRIO_MEDIUM, KOMODO_122-replace-Cellulose-with-Cellobiose_CLOSTRIDIUM_THERMOCELLUM_medium_replace_Cellulose_with_Cellobiose,
+    KOMODO_122_CLOSTRIDIUM_THERMOCELLUM_medium'
+synonyms:
+- name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
+  source: KOMODO
+  source_id: komodo.medium:122_replace_Cellulose_with_Cellobiose
+  original_category: imported
+- name: CLOSTRIDIUM THERMOCELLUM medium
+  source: KOMODO
+  source_id: komodo.medium:122
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1071_Acetivibrio_Medium
+- DSMZ_122_ACETIVIBRIO_MEDIUM
+- KOMODO_122-replace-Cellulose-with-Cellobiose_CLOSTRIDIUM_THERMOCELLUM_medium_replace_Cellulose_with_Cellobiose
+- KOMODO_122_CLOSTRIDIUM_THERMOCELLUM_medium
+merge_fingerprint: a38bf4526b3b145cebe513e295146473ff3b9f038215f479b8840a54a6d33ee9

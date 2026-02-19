@@ -4,13 +4,13 @@ category: imported
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: Sodium bicarbonate
-  concentration:
-    value: '29.76'
-    unit: MILLIMOLAR
+- preferred_term: Boric acid
   term:
-    id: CHEBI:32139
-    label: ''
+    id: CHEBI:33118
+    label: Boric acid
+  concentration:
+    value: '0.001617'
+    unit: MILLIMOLAR
 - preferred_term: Folate
   concentration:
     value: '4.531e-05'
@@ -32,10 +32,14 @@ ingredients:
     value: '0.0001329'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:ribflv'
-- preferred_term: Calcium chloride anhydrous
+- preferred_term: Toluene
+  term:
+    id: CHEBI:17578
+    label: Toluene
   concentration:
-    value: '0.687'
+    value: '10.0'
     unit: MILLIMOLAR
+  notes: 'Cross-references: KEGG:tol'
 - preferred_term: 4-Aminobenzoate
   term:
     id: CHEBI:17836
@@ -45,9 +49,6 @@ ingredients:
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:4abz'
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.0004061'
     unit: MILLIMOLAR
@@ -64,12 +65,9 @@ ingredients:
     value: '0.0002423'
     unit: MILLIMOLAR
   notes: 'Cross-references: KEGG:lipoate'
-- preferred_term: Boric acid
-  term:
-    id: CHEBI:33118
-    label: Boric acid
+- preferred_term: Calcium chloride anhydrous
   concentration:
-    value: '0.001617'
+    value: '0.687'
     unit: MILLIMOLAR
 - preferred_term: Ferric oxide
   concentration:
@@ -143,10 +141,6 @@ ingredients:
   term:
     id: CHEBI:32588
     label: potassium chloride
-- preferred_term: Nickel chloride
-  concentration:
-    value: '0.00101'
-    unit: MILLIMOLAR
 - preferred_term: Nitrilotriacetic acid
   term:
     id: CHEBI:44557
@@ -154,13 +148,20 @@ ingredients:
   concentration:
     value: '0.07848'
     unit: MILLIMOLAR
-- preferred_term: 4-Cresol
+- preferred_term: Sodium bicarbonate
   concentration:
-    value: '0.5'
+    value: '29.76'
     unit: MILLIMOLAR
+  term:
+    id: CHEBI:32139
+    label: ''
 - preferred_term: Sodium molybdate
   concentration:
     value: '0.001627'
+    unit: MILLIMOLAR
+- preferred_term: Nickel chloride
+  concentration:
+    value: '0.00101'
     unit: MILLIMOLAR
 - preferred_term: Magnesium sulfate
   term:
@@ -188,19 +189,28 @@ preparation_steps:
   action: FILTER_STERILIZE
   description: Sterilize by filtration (0.22 μm) to preserve heat-sensitive components
 curation_history:
-- timestamp: '2026-01-27T07:21:46.697956Z'
+- timestamp: '2026-01-27T07:21:46.605464Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 443, Reference:
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 434, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-01-28T19:48:33.916937Z'
+- timestamp: '2026-01-28T19:48:29.919141Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-06T05:10:39.659648Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:27:00.631855+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: MEDIADB_434_Defined_freshwater_medium_CoSO4, MEDIADB_435_Defined_freshwater_medium_CoSO4'
 media_term:
-  preferred_term: MediaDB Medium 443
+  preferred_term: MediaDB Medium 434
   term:
-    id: MEDIADB:443
+    id: MEDIADB:434
     label: '''Defined freshwater medium (CoSO4'
 notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
   Reference: https://mediadb.systemsbiology.net/'
@@ -208,6 +218,9 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
-merge_fingerprint: a0ea2fad2477c339510382fa3242b72f94727a8f6011708fb4695c1830fd7546
+categories:
+- imported
 merged_from:
-- MEDIADB_443_Defined_freshwater_medium_CoSO4
+- MEDIADB_434_Defined_freshwater_medium_CoSO4
+- MEDIADB_435_Defined_freshwater_medium_CoSO4
+merge_fingerprint: fde5e7eba74f936b1aedb9bb4f246c602ed1bebcd0267377b7fa60fa8dc9d0da

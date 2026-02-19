@@ -18,20 +18,19 @@ ingredients:
   concentration:
     value: '206'
     unit: G_PER_L
-  notes: ' (for Agar medium autoclave separately)'
-- preferred_term: MgSO4 x 7 H2O
-  term:
-    id: CHEBI:31795
-    label: MgSO4 x 7 H2O
-  concentration:
-    value: '36'
-    unit: G_PER_L
 - preferred_term: KCl
   term:
     id: CHEBI:32588
     label: KCl
   concentration:
     value: '0.37'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '36'
     unit: G_PER_L
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -40,22 +39,21 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
+- preferred_term: MnCl2
+  concentration:
+    value: '0.013'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '5'
-    unit: G_PER_L
-- preferred_term: MnCl2 x 2 H2O
-  concentration:
-    value: '0.0075'
     unit: G_PER_L
 - preferred_term: Agar
   term:
     id: CHEBI:2509
     label: Agar
   concentration:
-    value: '15'
+    value: '20'
     unit: G_PER_L
-  notes: Optional ingredient
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
@@ -70,6 +68,18 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1797'
-merge_fingerprint: 2ad7716363ae99e6626042811fc4ae4994bf5d5699d15816d4a366a8c5f792ea
+- timestamp: '2026-02-19T08:26:43.660600+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1535_MEDIUM_D_20.6_NACL, DSMZ_1797_RE-103_Medium'
+synonyms:
+- name: MEDIUM D (20.6%NACL)
+  source: MediaDive
+  source_id: mediadive.medium:1535
+  original_category: imported
+categories:
+- imported
 merged_from:
+- DSMZ_1535_MEDIUM_D_20.6_NACL
 - DSMZ_1797_RE-103_Medium
+merge_fingerprint: 2ad7716363ae99e6626042811fc4ae4994bf5d5699d15816d4a366a8c5f792ea

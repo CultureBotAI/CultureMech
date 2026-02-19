@@ -49,7 +49,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 245'
-- timestamp: '2026-02-03T22:25:38.136871+00:00'
+- timestamp: '2026-02-19T08:26:45.252040+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_245_BLOOD_AGAR_II, KOMODO_245_BLOOD_AGAR_II'

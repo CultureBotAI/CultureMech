@@ -59,7 +59,7 @@ curation_history:
   date: '2026-02-03T11:20:23.259284'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: FeSO4'
-- timestamp: '2026-02-03T22:25:45.004655+00:00'
+- timestamp: '2026-02-19T08:26:51.122370+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_555_SPORULATION-AGAR_SA, KOMODO_555_SPORULATION-AGAR_SA'

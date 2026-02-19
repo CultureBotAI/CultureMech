@@ -1,105 +1,444 @@
-name: Anaerobaculum Medium
-original_name: Anaerobaculum Medium
+name: ANAEROBACULUM MEDIUM
+original_name: ANAEROBACULUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.0
+media_term:
+  preferred_term: DSMZ Medium 104a
+  term:
+    id: mediadive.medium:104a
+    label: ANAEROBACULUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium104a.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '960'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: NaCl
-  concentration:
-    value: '8'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Resazurin
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
-  term:
-    id: CHEBI:8806
-    label: Resazurin
 - preferred_term: Trypticase peptone
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone
+- preferred_term: Meat peptone
   concentration:
     value: '5'
     unit: G_PER_L
-- preferred_term: Salt solution (see Medium [M695])
-  concentration:
-    value: '40'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 5% L-Cysteine・HCl・H2O solution
+- preferred_term: Yeast extract
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Solution, Organic compound'
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: 1 M Glucose solution
-  concentration:
-    value: '6'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: 1 M Na2S2O3 solution
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
-media_term:
-  preferred_term: TOGO Medium M1336
+- preferred_term: NaCl
   term:
-    id: TOGO:M1336
-    label: Anaerobaculum Medium
-notes: 'Source: https://togomedium.org/medium/M1336
-
-  Original source: JCM - JCM_M1242
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1242'
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '8'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: D-Glucose
+  term:
+    id: CHEBI:17634
+    label: D-Glucose
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Na2S2O3 x 5 H2O
+  term:
+    id: CHEBI:32150
+    label: Na2S2O3 x 5 H2O
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: KH2PO4
+  term:
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '2'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except cysteine, glucose and thiosulfate), boil
+    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
+    Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+    add glucose and thiosulfate from sterile anoxic stock solutions prepared under
+    100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.375444Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M1336'
-- timestamp: '2026-01-28T19:48:22.518997Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:47.230447'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: N2'
-merge_fingerprint: a1081c2851cc8075412dcafa4cf6a37176d19e47b7faa3967a7d9d84158f03f7
+- timestamp: '2026-01-26T17:53:10.172079Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 104a'
+- timestamp: '2026-02-19T08:26:38.641755+00:00'
+  curator: recipe-merger
+  action: Merged 59 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_104a_ANAEROBACULUM_MEDIUM, KOMODO_104-15597_MEDIUM_104_MODIFIED_FOR_DSM_15597,
+    KOMODO_104-15598_MEDIUM_104_MODIFIED_FOR_DSM_15598, KOMODO_104-15923_MEDIUM_104_MODIFIED_FOR_DSM_15923,
+    KOMODO_104-16980_MEDIUM_104_MODIFIED_FOR_DSM_16980, KOMODO_104-17217_MEDIUM_104_MODIFIED_FOR_DSM_17217,
+    KOMODO_104-17234_MEDIUM_104_MODIFIED_FOR_DSM_17234, KOMODO_104-17242_MEDIUM_104_MODIFIED_FOR_DSM_17242,
+    KOMODO_104-17243_MEDIUM_104_MODIFIED_FOR_DSM_17243, KOMODO_104-17476_MEDIUM_104_MODIFIED_FOR_DSM_17476,
+    KOMODO_104-17678_MEDIUM_104_MODIFIED_FOR_DSM_17678, KOMODO_104-18011_MEDIUM_104_MODIFIED_FOR_DSM_18011,
+    KOMODO_104-18083_MEDIUM_104_MODIFIED_FOR_DSM_18083, KOMODO_104-18960_MEDIUM_104_MODIFIED_FOR_DSM_18960,
+    KOMODO_104-19450_MEDIUM_104_MODIFIED_FOR_DSM_19450, KOMODO_104-19559_MEDIUM_104_MODIFIED_FOR_DSM_19559,
+    KOMODO_104-19756_MEDIUM_104_MODIFIED_FOR_DSM_19756, KOMODO_104-19857_MEDIUM_104_MODIFIED_FOR_DSM_19857,
+    KOMODO_104-2008_MEDIUM_104_MODIFIED_FOR_DSM_2008, KOMODO_104-20698_MEDIUM_104_MODIFIED_FOR_DSM_20698,
+    KOMODO_104-20732_MEDIUM_104_MODIFIED_FOR_DSM_20732, KOMODO_104-21469_MEDIUM_104_MODIFIED_FOR_DSM_21469,
+    KOMODO_104-21651_MEDIUM_104_MODIFIED_FOR_DSM_21651, KOMODO_104-21825_MEDIUM_104_MODIFIED_FOR_DSM_21825,
+    KOMODO_104-21843_MEDIUM_104_MODIFIED_FOR_DSM_21843, KOMODO_104-21845_MEDIUM_104_MODIFIED_FOR_DSM_21845,
+    KOMODO_104-21887_MEDIUM_104_MODIFIED_FOR_DSM_21887, KOMODO_104-22317_MEDIUM_104_MODIFIED_FOR_DSM_22317,
+    KOMODO_104-22474_MEDIUM_104_MODIFIED_FOR_DSM_22474, KOMODO_104-22477_MEDIUM_104_MODIFIED_FOR_DSM_22477,
+    KOMODO_104-22478_MEDIUM_104_MODIFIED_FOR_DSM_22478, KOMODO_104-22811_MEDIUM_104_MODIFIED_FOR_DSM_22811,
+    KOMODO_104-22835_MEDIUM_104_MODIFIED_FOR_DSM_22835, KOMODO_104-22836_MEDIUM_104_MODIFIED_FOR_DSM_22836,
+    KOMODO_104-22959_MEDIUM_104_MODIFIED_FOR_DSM_22959, KOMODO_104-23047_MEDIUM_104_MODIFIED_FOR_DSM_23047,
+    KOMODO_104-23056_MEDIUM_104_MODIFIED_FOR_DSM_23056, KOMODO_104-23059_MEDIUM_104_MODIFIED_FOR_DSM_23059,
+    KOMODO_104-23594_MEDIUM_104_MODIFIED_FOR_DSM_23594, KOMODO_104-25311_MEDIUM_104_MODIFIED_FOR_DSM_25311,
+    KOMODO_104-3353_MEDIUM_104_MODIFIED_FOR_DSM_3353, KOMODO_104-3985_MEDIUM_104_MODIFIED_FOR_DSM_3985,
+    KOMODO_104-6400_MEDIUM_104_MODIFIED_FOR_DSM_6400, KOMODO_104-9536_MEDIUM_104_MODIFIED_FOR_DSM_9536,
+    KOMODO_104_PYG-MEDIUM_modified, KOMODO_104a_ANAEROBACULUM_THERMOTERRENUM_medium,
+    KOMODO_104b-11_For_DSM_21761, KOMODO_104b-12_For_DSM_21650, KOMODO_104b-13275_MEDIUM_104b_MODIFIED_FOR_DSM_13275,
+    KOMODO_104b-1_For_DSM_753_DSM_6589_DSM_7320_DSM_15930_DSM_17592_DSM_19522_DSM_22681_DSM_23576_,
+    KOMODO_104b-2_For_DSM_753, KOMODO_104b-3_For_DSM_7320, KOMODO_104b-4_For_DSM_5387,
+    KOMODO_104b-5_For_DSM_12857_DSM_13479_and_DSM_13480, KOMODO_104b-6_For_DSM_13181,
+    KOMODO_104b-7_For_DSM_14760_DSM_14761_and_DSM_14762, KOMODO_104b-8_For_DSM_19022,
+    KOMODO_104b-9_For_DSM_21120, KOMODO_104b_PYX-MEDIUM'
+synonyms:
+- name: MEDIUM 104 MODIFIED FOR DSM 15597
+  source: KOMODO
+  source_id: komodo.medium:104_15597
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 15598
+  source: KOMODO
+  source_id: komodo.medium:104_15598
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 15923
+  source: KOMODO
+  source_id: komodo.medium:104_15923
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 16980
+  source: KOMODO
+  source_id: komodo.medium:104_16980
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17217
+  source: KOMODO
+  source_id: komodo.medium:104_17217
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17234
+  source: KOMODO
+  source_id: komodo.medium:104_17234
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17242
+  source: KOMODO
+  source_id: komodo.medium:104_17242
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17243
+  source: KOMODO
+  source_id: komodo.medium:104_17243
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17476
+  source: KOMODO
+  source_id: komodo.medium:104_17476
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 17678
+  source: KOMODO
+  source_id: komodo.medium:104_17678
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 18011
+  source: KOMODO
+  source_id: komodo.medium:104_18011
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 18083
+  source: KOMODO
+  source_id: komodo.medium:104_18083
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 18960
+  source: KOMODO
+  source_id: komodo.medium:104_18960
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 19450
+  source: KOMODO
+  source_id: komodo.medium:104_19450
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 19559
+  source: KOMODO
+  source_id: komodo.medium:104_19559
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 19756
+  source: KOMODO
+  source_id: komodo.medium:104_19756
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 19857
+  source: KOMODO
+  source_id: komodo.medium:104_19857
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 2008
+  source: KOMODO
+  source_id: komodo.medium:104_2008
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 20698
+  source: KOMODO
+  source_id: komodo.medium:104_20698
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 20732
+  source: KOMODO
+  source_id: komodo.medium:104_20732
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21469
+  source: KOMODO
+  source_id: komodo.medium:104_21469
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21651
+  source: KOMODO
+  source_id: komodo.medium:104_21651
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21825
+  source: KOMODO
+  source_id: komodo.medium:104_21825
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21843
+  source: KOMODO
+  source_id: komodo.medium:104_21843
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21845
+  source: KOMODO
+  source_id: komodo.medium:104_21845
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 21887
+  source: KOMODO
+  source_id: komodo.medium:104_21887
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22317
+  source: KOMODO
+  source_id: komodo.medium:104_22317
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22474
+  source: KOMODO
+  source_id: komodo.medium:104_22474
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22477
+  source: KOMODO
+  source_id: komodo.medium:104_22477
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22478
+  source: KOMODO
+  source_id: komodo.medium:104_22478
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22811
+  source: KOMODO
+  source_id: komodo.medium:104_22811
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22835
+  source: KOMODO
+  source_id: komodo.medium:104_22835
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22836
+  source: KOMODO
+  source_id: komodo.medium:104_22836
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 22959
+  source: KOMODO
+  source_id: komodo.medium:104_22959
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 23047
+  source: KOMODO
+  source_id: komodo.medium:104_23047
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 23056
+  source: KOMODO
+  source_id: komodo.medium:104_23056
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 23059
+  source: KOMODO
+  source_id: komodo.medium:104_23059
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 23594
+  source: KOMODO
+  source_id: komodo.medium:104_23594
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 25311
+  source: KOMODO
+  source_id: komodo.medium:104_25311
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 3353
+  source: KOMODO
+  source_id: komodo.medium:104_3353
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 3985
+  source: KOMODO
+  source_id: komodo.medium:104_3985
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 6400
+  source: KOMODO
+  source_id: komodo.medium:104_6400
+  original_category: imported
+- name: MEDIUM 104 MODIFIED FOR DSM 9536
+  source: KOMODO
+  source_id: komodo.medium:104_9536
+  original_category: imported
+- name: PYG-MEDIUM (modified)
+  source: KOMODO
+  source_id: komodo.medium:104
+  original_category: imported
+- name: ANAEROBACULUM THERMOTERRENUM medium
+  source: KOMODO
+  source_id: komodo.medium:104a
+  original_category: imported
+- name: For DSM 21761
+  source: KOMODO
+  source_id: komodo.medium:104b.11
+  original_category: imported
+- name: For DSM 21650
+  source: KOMODO
+  source_id: komodo.medium:104b.12
+  original_category: imported
+- name: MEDIUM 104b MODIFIED FOR DSM 13275
+  source: KOMODO
+  source_id: komodo.medium:104b_13275
+  original_category: imported
+- name: For DSM 753, DSM 6589, DSM 7320, DSM 15930, DSM 17592, DSM 19522, DSM 22681,
+    DSM 23576 and DSM 24553
+  source: KOMODO
+  source_id: komodo.medium:104b.1
+  original_category: imported
+- name: For DSM 753
+  source: KOMODO
+  source_id: komodo.medium:104b.2
+  original_category: imported
+- name: For DSM 7320
+  source: KOMODO
+  source_id: komodo.medium:104b.3
+  original_category: imported
+- name: For DSM 5387
+  source: KOMODO
+  source_id: komodo.medium:104b.4
+  original_category: imported
+- name: For DSM 12857, DSM 13479 and DSM 13480
+  source: KOMODO
+  source_id: komodo.medium:104b.5
+  original_category: imported
+- name: For DSM 13181
+  source: KOMODO
+  source_id: komodo.medium:104b.6
+  original_category: imported
+- name: For DSM 14760, DSM 14761 and DSM 14762
+  source: KOMODO
+  source_id: komodo.medium:104b.7
+  original_category: imported
+- name: For DSM 19022
+  source: KOMODO
+  source_id: komodo.medium:104b.8
+  original_category: imported
+- name: For DSM 21120
+  source: KOMODO
+  source_id: komodo.medium:104b.9
+  original_category: imported
+- name: PYX-MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:104b
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1336_Anaerobaculum_Medium
+- DSMZ_104a_ANAEROBACULUM_MEDIUM
+- KOMODO_104-15597_MEDIUM_104_MODIFIED_FOR_DSM_15597
+- KOMODO_104-15598_MEDIUM_104_MODIFIED_FOR_DSM_15598
+- KOMODO_104-15923_MEDIUM_104_MODIFIED_FOR_DSM_15923
+- KOMODO_104-16980_MEDIUM_104_MODIFIED_FOR_DSM_16980
+- KOMODO_104-17217_MEDIUM_104_MODIFIED_FOR_DSM_17217
+- KOMODO_104-17234_MEDIUM_104_MODIFIED_FOR_DSM_17234
+- KOMODO_104-17242_MEDIUM_104_MODIFIED_FOR_DSM_17242
+- KOMODO_104-17243_MEDIUM_104_MODIFIED_FOR_DSM_17243
+- KOMODO_104-17476_MEDIUM_104_MODIFIED_FOR_DSM_17476
+- KOMODO_104-17678_MEDIUM_104_MODIFIED_FOR_DSM_17678
+- KOMODO_104-18011_MEDIUM_104_MODIFIED_FOR_DSM_18011
+- KOMODO_104-18083_MEDIUM_104_MODIFIED_FOR_DSM_18083
+- KOMODO_104-18960_MEDIUM_104_MODIFIED_FOR_DSM_18960
+- KOMODO_104-19450_MEDIUM_104_MODIFIED_FOR_DSM_19450
+- KOMODO_104-19559_MEDIUM_104_MODIFIED_FOR_DSM_19559
+- KOMODO_104-19756_MEDIUM_104_MODIFIED_FOR_DSM_19756
+- KOMODO_104-19857_MEDIUM_104_MODIFIED_FOR_DSM_19857
+- KOMODO_104-2008_MEDIUM_104_MODIFIED_FOR_DSM_2008
+- KOMODO_104-20698_MEDIUM_104_MODIFIED_FOR_DSM_20698
+- KOMODO_104-20732_MEDIUM_104_MODIFIED_FOR_DSM_20732
+- KOMODO_104-21469_MEDIUM_104_MODIFIED_FOR_DSM_21469
+- KOMODO_104-21651_MEDIUM_104_MODIFIED_FOR_DSM_21651
+- KOMODO_104-21825_MEDIUM_104_MODIFIED_FOR_DSM_21825
+- KOMODO_104-21843_MEDIUM_104_MODIFIED_FOR_DSM_21843
+- KOMODO_104-21845_MEDIUM_104_MODIFIED_FOR_DSM_21845
+- KOMODO_104-21887_MEDIUM_104_MODIFIED_FOR_DSM_21887
+- KOMODO_104-22317_MEDIUM_104_MODIFIED_FOR_DSM_22317
+- KOMODO_104-22474_MEDIUM_104_MODIFIED_FOR_DSM_22474
+- KOMODO_104-22477_MEDIUM_104_MODIFIED_FOR_DSM_22477
+- KOMODO_104-22478_MEDIUM_104_MODIFIED_FOR_DSM_22478
+- KOMODO_104-22811_MEDIUM_104_MODIFIED_FOR_DSM_22811
+- KOMODO_104-22835_MEDIUM_104_MODIFIED_FOR_DSM_22835
+- KOMODO_104-22836_MEDIUM_104_MODIFIED_FOR_DSM_22836
+- KOMODO_104-22959_MEDIUM_104_MODIFIED_FOR_DSM_22959
+- KOMODO_104-23047_MEDIUM_104_MODIFIED_FOR_DSM_23047
+- KOMODO_104-23056_MEDIUM_104_MODIFIED_FOR_DSM_23056
+- KOMODO_104-23059_MEDIUM_104_MODIFIED_FOR_DSM_23059
+- KOMODO_104-23594_MEDIUM_104_MODIFIED_FOR_DSM_23594
+- KOMODO_104-25311_MEDIUM_104_MODIFIED_FOR_DSM_25311
+- KOMODO_104-3353_MEDIUM_104_MODIFIED_FOR_DSM_3353
+- KOMODO_104-3985_MEDIUM_104_MODIFIED_FOR_DSM_3985
+- KOMODO_104-6400_MEDIUM_104_MODIFIED_FOR_DSM_6400
+- KOMODO_104-9536_MEDIUM_104_MODIFIED_FOR_DSM_9536
+- KOMODO_104_PYG-MEDIUM_modified
+- KOMODO_104a_ANAEROBACULUM_THERMOTERRENUM_medium
+- KOMODO_104b-11_For_DSM_21761
+- KOMODO_104b-12_For_DSM_21650
+- KOMODO_104b-13275_MEDIUM_104b_MODIFIED_FOR_DSM_13275
+- KOMODO_104b-1_For_DSM_753_DSM_6589_DSM_7320_DSM_15930_DSM_17592_DSM_19522_DSM_22681_DSM_23576_
+- KOMODO_104b-2_For_DSM_753
+- KOMODO_104b-3_For_DSM_7320
+- KOMODO_104b-4_For_DSM_5387
+- KOMODO_104b-5_For_DSM_12857_DSM_13479_and_DSM_13480
+- KOMODO_104b-6_For_DSM_13181
+- KOMODO_104b-7_For_DSM_14760_DSM_14761_and_DSM_14762
+- KOMODO_104b-8_For_DSM_19022
+- KOMODO_104b-9_For_DSM_21120
+- KOMODO_104b_PYX-MEDIUM
+merge_fingerprint: ae2881eae19d15451b1b44577b8c3f90096efd8de09e4658493b3726ed971706

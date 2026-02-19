@@ -45,7 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 790'
-- timestamp: '2026-02-03T22:26:01.152643+00:00'
+- timestamp: '2026-02-19T08:26:59.867940+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: KOMODO_790_Peptone-YEAST_medium_with_MgSO4, DSMZ_790_PEPTONE-YEAST_MEDIUM_with_MgSO4'

@@ -212,7 +212,7 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- timestamp: '2026-02-03T22:25:48.068418+00:00'
+- timestamp: '2026-02-19T08:26:53.939374+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_764_HALOANAEROBIUM_LACUSROSEUS_MEDIUM, KOMODO_764_HALOANAEROBIUM_LACUSROSEUS_medium'

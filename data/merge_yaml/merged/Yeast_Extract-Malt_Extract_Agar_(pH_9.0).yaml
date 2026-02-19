@@ -34,7 +34,7 @@ curation_history:
   date: '2026-02-03T11:20:59.269700'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
-- timestamp: '2026-02-03T22:26:21.405784+00:00'
+- timestamp: '2026-02-19T08:27:01.824292+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M529_Yeast_Extract-Malt_Extract_Agar_pH_9.0, TOGO_M73_Alkaline_Yeast_Extract-Malt_Extract_Agar,

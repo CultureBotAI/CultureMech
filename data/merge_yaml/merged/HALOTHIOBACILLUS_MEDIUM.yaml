@@ -149,7 +149,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 864'
-- timestamp: '2026-02-03T22:25:50.507817+00:00'
+- timestamp: '2026-02-19T08:26:56.040395+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_864_HALOTHIOBACILLUS_MEDIUM, KOMODO_864_HALOTHIOBACILLUS_MEDIUM'

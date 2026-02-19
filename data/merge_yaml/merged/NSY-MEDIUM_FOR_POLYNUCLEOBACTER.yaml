@@ -146,7 +146,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1167'
-- timestamp: '2026-02-03T22:25:29.660712+00:00'
+- timestamp: '2026-02-19T08:26:40.365279+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1167_NSY-MEDIUM_FOR_POLYNUCLEOBACTER, KOMODO_1167_NSY-MEDIUM_FOR_POLYNUCLEOBACTER'

@@ -218,7 +218,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 965'
-- timestamp: '2026-02-03T22:25:52.372679+00:00'
+- timestamp: '2026-02-19T08:26:57.757202+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_965_THERMOANAEROBACTER_KREATINOPHILUS_MEDIUM, KOMODO_965_THERMOANAEROBACTER_TENGCONGENSIS_medium'

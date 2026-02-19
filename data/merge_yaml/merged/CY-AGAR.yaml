@@ -1,64 +1,63 @@
-name: CY-Agar
-original_name: CY-Agar
+name: CY-AGAR
+original_name: CY-AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 67
+  term:
+    id: mediadive.medium:67
+    label: CY-AGAR
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Yeast extract
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2 x 2 H2O
-  concentration:
-    value: '1.36'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: Agar
-  concentration:
-    value: '15'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
 - preferred_term: Casitone
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2335
+- preferred_term: CaCl2 x 2 H2O
   term:
-    id: TOGO:M2335
-    label: CY-Agar
-notes: 'Source: https://togomedium.org/medium/M2335
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium67.pdf'
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '1.36'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.360813Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2335'
-- timestamp: '2026-01-28T19:48:17.197007Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 2b917782482334de964a2124364ad021f1951cbd72718693e45b40300dd64b86
+- timestamp: '2026-01-26T17:53:10.080780Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 67'
+- timestamp: '2026-02-19T08:26:52.822857+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_67_CY-AGAR, KOMODO_67-21789_MEDIUM_67_MODIFIED_FOR_DSM_21789,
+    KOMODO_67_CY-AGAR'
+synonyms:
+- name: MEDIUM 67 MODIFIED FOR DSM 21789
+  source: KOMODO
+  source_id: komodo.medium:67_21789
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2335_CY-Agar
+- DSMZ_67_CY-AGAR
+- KOMODO_67-21789_MEDIUM_67_MODIFIED_FOR_DSM_21789
+- KOMODO_67_CY-AGAR
+merge_fingerprint: 5c2a69eb6d605327b00f8d1277cc2608cbc913ba8461e6834ae17b55b2aba63f

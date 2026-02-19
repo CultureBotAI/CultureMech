@@ -55,7 +55,7 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 656
-- timestamp: '2026-02-03T22:25:36.882538+00:00'
+- timestamp: '2026-02-19T08:26:44.124560+00:00'
   curator: recipe-merger
   action: Merged 7 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_190_YpSs_MEDIUM, JCM_J334_YpSs_AGAR, KOMODO_190_YpSs_medium,

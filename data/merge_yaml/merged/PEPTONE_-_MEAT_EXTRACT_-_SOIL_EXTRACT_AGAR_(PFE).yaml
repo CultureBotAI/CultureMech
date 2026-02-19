@@ -52,7 +52,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 251'
-- timestamp: '2026-02-03T22:25:38.170317+00:00'
+- timestamp: '2026-02-19T08:26:45.284571+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_251_PEPTONE_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE, KOMODO_251_Peptone_-_MEAT_EXTRACT_-_SOIL_EXTRACT_AGAR_PFE'

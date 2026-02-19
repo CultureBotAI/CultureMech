@@ -1,108 +1,135 @@
-name: Bacillus Acidocaldarius Medium
-original_name: Bacillus Acidocaldarius Medium
+name: BACILLUS ACIDOCALDARIUS MEDIUM
+original_name: BACILLUS ACIDOCALDARIUS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Solution A
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: Solution B
-  concentration:
-    value: '500'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '500'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+media_term:
+  preferred_term: DSMZ Medium 13
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: mediadive.medium:13
+    label: BACILLUS ACIDOCALDARIUS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium13.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: CaCl2・2H2O
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: '0.25'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
 - preferred_term: KH2PO4
-  concentration:
-    value: '0.6'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
-- preferred_term: (NH4)2SO4
   concentration:
-    value: '0.2'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
+- preferred_term: (NH4)2SO4
   term:
     id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: Distilled water
+    label: (NH4)2SO4
   concentration:
-    value: '500'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Glucose
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
 - preferred_term: Agar
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
   term:
     id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M93
-  term:
-    id: TOGO:M93
-    label: Bacillus Acidocaldarius Medium
-notes: 'Source: https://togomedium.org/medium/M93
-
-  Original source: JCM - JCM_M101
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=101'
+    label: Agar
+  concentration:
+    value: '15'
+    unit: G_PER_L
+  notes: ' (for solid medium)'
+preparation_steps:
+- step_number: 1
+  action: HEAT
+  description: Sterilize solution A and B separately at 121°C for 15 min. Cool to
+    50°C and then combine.
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH to 3.0 - 4.0.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.980522Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M93'
-- timestamp: '2026-01-28T19:48:16.276934Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: d70aa5a55ee7558f34f2a56d66aed7212a9a33b0ef213b75287b1177d81a479b
+- timestamp: '2026-01-26T17:53:09.980173Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 13'
+- timestamp: '2026-02-19T08:26:42.192683+00:00'
+  curator: recipe-merger
+  action: Merged 11 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1286_BRYOCELLA_ELONGATA_MEDIUM, DSMZ_13_BACILLUS_ACIDOCALDARIUS_MEDIUM,
+    JCM_J101_BACILLUS_ACIDOCALDARIUS_MEDIUM, KOMODO_13-13609_MEDIUM_13_MODIFIED_FOR_DSM_13609,
+    KOMODO_13-17974_MEDIUM_13_MODIFIED_FOR_DSM_17974, KOMODO_13-17975_MEDIUM_13_MODIFIED_FOR_DSM_17975,
+    KOMODO_13-17978_MEDIUM_13_MODIFIED_FOR_DSM_17978, KOMODO_13-17979_MEDIUM_13_MODIFIED_FOR_DSM_17979,
+    KOMODO_13-17980_MEDIUM_13_MODIFIED_FOR_DSM_17980, KOMODO_13-17981_MEDIUM_13_MODIFIED_FOR_DSM_17981,
+    KOMODO_13_BACILLUS_ACIDOCALDARIUS_medium'
+synonyms:
+- name: BRYOCELLA ELONGATA MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:1286
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 13609
+  source: KOMODO
+  source_id: komodo.medium:13_13609
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17974
+  source: KOMODO
+  source_id: komodo.medium:13_17974
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17975
+  source: KOMODO
+  source_id: komodo.medium:13_17975
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17978
+  source: KOMODO
+  source_id: komodo.medium:13_17978
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17979
+  source: KOMODO
+  source_id: komodo.medium:13_17979
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17980
+  source: KOMODO
+  source_id: komodo.medium:13_17980
+  original_category: imported
+- name: MEDIUM 13 MODIFIED FOR DSM 17981
+  source: KOMODO
+  source_id: komodo.medium:13_17981
+  original_category: imported
+- name: BACILLUS ACIDOCALDARIUS medium
+  source: KOMODO
+  source_id: komodo.medium:13
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M93_Bacillus_Acidocaldarius_Medium
+- DSMZ_1286_BRYOCELLA_ELONGATA_MEDIUM
+- DSMZ_13_BACILLUS_ACIDOCALDARIUS_MEDIUM
+- JCM_J101_BACILLUS_ACIDOCALDARIUS_MEDIUM
+- KOMODO_13-13609_MEDIUM_13_MODIFIED_FOR_DSM_13609
+- KOMODO_13-17974_MEDIUM_13_MODIFIED_FOR_DSM_17974
+- KOMODO_13-17975_MEDIUM_13_MODIFIED_FOR_DSM_17975
+- KOMODO_13-17978_MEDIUM_13_MODIFIED_FOR_DSM_17978
+- KOMODO_13-17979_MEDIUM_13_MODIFIED_FOR_DSM_17979
+- KOMODO_13-17980_MEDIUM_13_MODIFIED_FOR_DSM_17980
+- KOMODO_13-17981_MEDIUM_13_MODIFIED_FOR_DSM_17981
+- KOMODO_13_BACILLUS_ACIDOCALDARIUS_medium
+merge_fingerprint: 272654b528ae20b833e45f3b2da57f80b3add9a2e9d637a025fec5a2cb2e0d8a

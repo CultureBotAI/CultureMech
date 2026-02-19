@@ -1,68 +1,66 @@
-name: BTT medium
-original_name: BTT medium
+name: BTT MEDIUM
+original_name: BTT MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_range: 5.5-6
+media_term:
+  preferred_term: DSMZ Medium 1109
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:1109
+    label: BTT MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1109.pdf'
+ingredients:
+- preferred_term: Glucose
+  term:
+    id: CHEBI:17234
+    label: Glucose
+  concentration:
+    value: '10'
+    unit: G_PER_L
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
-- preferred_term: Agar (if needed)
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Solidifying component'
-- preferred_term: Meat Extract
+- preferred_term: Meat extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
 - preferred_term: Casitone
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2107
+- preferred_term: Agar
   term:
-    id: TOGO:M2107
-    label: BTT medium
-notes: 'Source: https://togomedium.org/medium/M2107
-
-  Original source: NBRC - NBRC_M1430
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=1430'
+    id: CHEBI:2509
+    label: Agar
+  concentration:
+    value: '20'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: Adjust to pH 5.5 - 6.0 (can optionally be buffered with 25 mM MES).
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:59.068941Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M2107'
-- timestamp: '2026-01-28T19:48:22.603579Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 53dcfb9864eaa4a6ed7438be79b6b0279498593e71b604edab4c5676c321d3be
+- timestamp: '2026-01-26T17:53:13.408227Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1109'
+- timestamp: '2026-02-19T08:26:39.532729+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1109_BTT_MEDIUM, JCM_J1178_BTT_MEDIUM, KOMODO_1109_BTT_medium'
+synonyms:
+- name: BTT medium
+  source: KOMODO
+  source_id: komodo.medium:1109
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2107_BTT_medium
+- DSMZ_1109_BTT_MEDIUM
+- JCM_J1178_BTT_MEDIUM
+- KOMODO_1109_BTT_medium
+merge_fingerprint: 94077f9d01d78a8d4a752eebff3f2c1b237bd3516e66fe1548a546c5278b5af4

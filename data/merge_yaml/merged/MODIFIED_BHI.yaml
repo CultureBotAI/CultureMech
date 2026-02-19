@@ -1,53 +1,150 @@
-name: Modified BHI
-original_name: Modified BHI
+name: MODIFIED BHI
+original_name: MODIFIED BHI
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.4
+media_term:
+  preferred_term: JCM Medium J290
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Brain heart infusion (BD-Difco)
+    id: mediadive.medium:J290
+    label: MODIFIED BHI
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=290'
+ingredients:
+- preferred_term: Brain heart infusion
   concentration:
     value: '37'
     unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
-- preferred_term: sterile defibrinated horse serum
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-  concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M284
-  term:
-    id: TOGO:M284
-    label: Modified BHI
-notes: 'Source: https://togomedium.org/medium/M284
-
-  Original source: JCM - JCM_M290
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=290'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.4.
+- step_number: 2
+  action: COOL
+  description: After autoclaving, cool to 50C and add aseptically 20% (final) sterile
+    defibrinated horse serum.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.764954Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M284'
-- timestamp: '2026-01-28T19:48:11.833228Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.686599'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sterile defibrinated horse serum'
-merge_fingerprint: beb0a0ea86a1c31175bf59aa4f7283c34df62a83818fbed57e9578ba7ee87edb
+- timestamp: '2026-01-26T17:53:16.197677Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J290'
+- timestamp: '2026-02-19T08:26:45.043894+00:00'
+  curator: recipe-merger
+  action: Merged 21 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_215_BHI_MEDIUM, JCM_J290_MODIFIED_BHI, KOMODO_215-10548_MEDIUM_215_MODIFIED_FOR_DSM_10548,
+    KOMODO_215-10599_MEDIUM_215_MODIFIED_FOR_DSM_10599, KOMODO_215-13140_MEDIUM_215_MODIFIED_FOR_DSM_13140,
+    KOMODO_215-13191_MEDIUM_215_MODIFIED_FOR_DSM_13191, KOMODO_215-13666_MEDIUM_215_MODIFIED_FOR_DSM_13666,
+    KOMODO_215-13667_MEDIUM_215_MODIFIED_FOR_DSM_13667, KOMODO_215-21511_MEDIUM_215_MODIFIED_FOR_DSM_21511,
+    KOMODO_215-22834_MEDIUM_215_MODIFIED_FOR_DSM_22834, KOMODO_215-23150_MEDIUM_215_MODIFIED_FOR_DSM_23150,
+    KOMODO_215-25050_MEDIUM_215_MODIFIED_FOR_DSM_25050, KOMODO_215-8629_MEDIUM_215_MODIFIED_FOR_DSM_8629,
+    KOMODO_215_BHI_medium, KOMODO_215a_BHI_medium_modified, KOMODO_215b-41834_MEDIUM_215b_MODIFIED_FOR_DSM_41834,
+    KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE, KOMODO_215c-1_For_DSM_10643, KOMODO_215c-2_For_DSM_15692,
+    KOMODO_215c-3_For_DSM_19851, KOMODO_215c_BHI_medium_FOR_STRICT_ANAEROBES'
+synonyms:
+- name: BHI MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:215
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 10548
+  source: KOMODO
+  source_id: komodo.medium:215_10548
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 10599
+  source: KOMODO
+  source_id: komodo.medium:215_10599
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 13140
+  source: KOMODO
+  source_id: komodo.medium:215_13140
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 13191
+  source: KOMODO
+  source_id: komodo.medium:215_13191
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 13666
+  source: KOMODO
+  source_id: komodo.medium:215_13666
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 13667
+  source: KOMODO
+  source_id: komodo.medium:215_13667
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 21511
+  source: KOMODO
+  source_id: komodo.medium:215_21511
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 22834
+  source: KOMODO
+  source_id: komodo.medium:215_22834
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 23150
+  source: KOMODO
+  source_id: komodo.medium:215_23150
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 25050
+  source: KOMODO
+  source_id: komodo.medium:215_25050
+  original_category: imported
+- name: MEDIUM 215 MODIFIED FOR DSM 8629
+  source: KOMODO
+  source_id: komodo.medium:215_8629
+  original_category: imported
+- name: BHI medium
+  source: KOMODO
+  source_id: komodo.medium:215
+  original_category: imported
+- name: BHI medium (modified)
+  source: KOMODO
+  source_id: komodo.medium:215a
+  original_category: imported
+- name: MEDIUM 215b MODIFIED FOR DSM 41834
+  source: KOMODO
+  source_id: komodo.medium:215b_41834
+  original_category: imported
+- name: BHI medium WITH ADDITIONAL GLUCOSE
+  source: KOMODO
+  source_id: komodo.medium:215b
+  original_category: imported
+- name: For DSM 10643
+  source: KOMODO
+  source_id: komodo.medium:215c.1
+  original_category: imported
+- name: For DSM 15692
+  source: KOMODO
+  source_id: komodo.medium:215c.2
+  original_category: imported
+- name: For DSM 19851
+  source: KOMODO
+  source_id: komodo.medium:215c.3
+  original_category: imported
+- name: BHI medium FOR STRICT ANAEROBES
+  source: KOMODO
+  source_id: komodo.medium:215c
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M284_Modified_BHI
+- DSMZ_215_BHI_MEDIUM
+- JCM_J290_MODIFIED_BHI
+- KOMODO_215-10548_MEDIUM_215_MODIFIED_FOR_DSM_10548
+- KOMODO_215-10599_MEDIUM_215_MODIFIED_FOR_DSM_10599
+- KOMODO_215-13140_MEDIUM_215_MODIFIED_FOR_DSM_13140
+- KOMODO_215-13191_MEDIUM_215_MODIFIED_FOR_DSM_13191
+- KOMODO_215-13666_MEDIUM_215_MODIFIED_FOR_DSM_13666
+- KOMODO_215-13667_MEDIUM_215_MODIFIED_FOR_DSM_13667
+- KOMODO_215-21511_MEDIUM_215_MODIFIED_FOR_DSM_21511
+- KOMODO_215-22834_MEDIUM_215_MODIFIED_FOR_DSM_22834
+- KOMODO_215-23150_MEDIUM_215_MODIFIED_FOR_DSM_23150
+- KOMODO_215-25050_MEDIUM_215_MODIFIED_FOR_DSM_25050
+- KOMODO_215-8629_MEDIUM_215_MODIFIED_FOR_DSM_8629
+- KOMODO_215_BHI_medium
+- KOMODO_215a_BHI_medium_modified
+- KOMODO_215b-41834_MEDIUM_215b_MODIFIED_FOR_DSM_41834
+- KOMODO_215b_BHI_medium_WITH_ADDITIONAL_GLUCOSE
+- KOMODO_215c-1_For_DSM_10643
+- KOMODO_215c-2_For_DSM_15692
+- KOMODO_215c-3_For_DSM_19851
+- KOMODO_215c_BHI_medium_FOR_STRICT_ANAEROBES
+merge_fingerprint: 0032594688dd7e6bf4eab7f536a7b892f35462d653a9c4e4b0b5b6aaedf95755

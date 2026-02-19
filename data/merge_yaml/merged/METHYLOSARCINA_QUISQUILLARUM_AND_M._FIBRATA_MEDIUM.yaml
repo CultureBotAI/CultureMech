@@ -160,7 +160,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 921'
-- timestamp: '2026-02-03T22:25:51.489287+00:00'
+- timestamp: '2026-02-19T08:26:56.938592+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_921_METHYLOSARCINA_QUISQUILLARUM_AND_M._FIBRATA_MEDIUM, KOMODO_921-23269_MEDIUM_921_MODIFIED_FOR_DSM_23269,

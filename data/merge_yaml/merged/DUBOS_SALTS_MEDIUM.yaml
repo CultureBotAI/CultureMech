@@ -1,86 +1,79 @@
-name: Dubos Salts Medium
-original_name: Dubos Salts Medium
+name: DUBOS SALTS MEDIUM
+original_name: DUBOS SALTS MEDIUM
 category: imported
-medium_type: COMPLEX
+medium_type: DEFINED
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 1161
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: mediadive.medium:1161
+    label: DUBOS SALTS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1161.pdf'
+ingredients:
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
 - preferred_term: K2HPO4
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
   term:
     id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: FeSO4・7H2O
+    label: K2HPO4
   concentration:
-    value: '10'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: KCl
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+- preferred_term: KCl
   term:
     id: CHEBI:32588
-    label: potassium chloride
-- preferred_term: NaNO3
+    label: KCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+- preferred_term: FeSO4 x 7 H2O
   term:
-    id: CHEBI:63005
-    label: ''
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M146
-  term:
-    id: TOGO:M146
-    label: Dubos Salts Medium
-notes: 'Source: https://togomedium.org/medium/M146
-
-  Original source: JCM - JCM_M155
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=155'
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust to pH 7.2. Autoclave at 121°C/15 min. Dispense into slopes.
+    When the agar has solidified, place a strip of sterile filter paper on to the
+    surface of each slope. Inoculate on to the filter paper.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.516206Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M146'
-- timestamp: '2026-01-28T19:48:11.557684Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 06107246fe1512fa00e50761f6475ef5a028e76ef60227912301cb233c0860f8
+- timestamp: '2026-01-26T17:53:13.544545Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 1161'
+- timestamp: '2026-02-19T08:26:40.213729+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1161_DUBOS_SALTS_MEDIUM, JCM_J155_DUBOS_SALTS_MEDIUM, KOMODO_1161_DUBOS_SALTS_MEDIUM'
+categories:
+- imported
 merged_from:
-- TOGO_M146_Dubos_Salts_Medium
+- DSMZ_1161_DUBOS_SALTS_MEDIUM
+- JCM_J155_DUBOS_SALTS_MEDIUM
+- KOMODO_1161_DUBOS_SALTS_MEDIUM
+merge_fingerprint: 44a83112fcb16df5cd7f9db5023ff043e49b15d505d996494290255387ecea41

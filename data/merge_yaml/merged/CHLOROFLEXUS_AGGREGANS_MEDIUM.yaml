@@ -1,241 +1,254 @@
-name: Chloroflexus Aggregans Medium
-original_name: Chloroflexus Aggregans Medium
+name: CHLOROFLEXUS AGGREGANS MEDIUM
+original_name: CHLOROFLEXUS AGGREGANS MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 8.2
+media_term:
+  preferred_term: DSMZ Medium 87a
+  term:
+    id: mediadive.medium:87a
+    label: CHLOROFLEXUS AGGREGANS MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium87a.pdf'
 ingredients:
-- preferred_term: Distilled water
+- preferred_term: Yeast extract
   concentration:
-    value: '1050'
+    value: '0.952381'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: NaCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: NaNO3
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:63005
-    label: ''
-- preferred_term: KNO3
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:17632
-    label: nitrate
-- preferred_term: Fe(III) citrate solution (0.1 g in 100 ml)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Solution'
-- preferred_term: Na2HPO4·2H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
 - preferred_term: Glycyl-glycine
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
-    Simple component'
   term:
     id: CHEBI:17201
     label: Glycyl-glycine
-- preferred_term: Yeast extract (BD-Difco)
   concentration:
-    value: '1'
+    value: '0.952381'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: SL-6 trace element solution (see Medium [M158])
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Neutralized sulfide solution
-  concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: Vitamin solution CA
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Na2HPO4 x 2 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2S·9H2O
+    id: CHEBI:34683
+    label: Na2HPO4 x 2 H2O
   concentration:
-    value: '3'
+    value: '0.0952381'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: CHEBI:76209
-    label: sodium sulfide nonahydrate
-- preferred_term: 2 M H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: ガス'
-  concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '100'
+    value: '0.0952381'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: KNO3
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Biotin
+    id: CHEBI:58242
+    label: KNO3
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: NaNO3
+  term:
+    id: CHEBI:59148
+    label: NaNO3
+  concentration:
+    value: '0.47619'
+    unit: G_PER_L
+- preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
+  concentration:
+    value: '0.0952381'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.047619'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Nicotinic acid
   term:
-    id: CHEBI:15956
-    label: biotin
-- preferred_term: p-Aminobenzoic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:30753
-    label: 4-aminobenzoic acid
-- preferred_term: Ca-pantothenate
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:29032
-    label: (R)-pantothenate
-- preferred_term: Pyridoxine-HCl
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:131531
-    label: pyridoxamine hydrochloride
-- preferred_term: Folic acid
-  concentration:
-    value: '50'
-    unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
-  term:
-    id: CHEBI:27470
-    label: folic acid
-- preferred_term: Vitamin B12
+    id: CHEBI:15940
+    label: Nicotinic acid
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Thiamine-HCl x 2 H2O
   term:
-    id: CHEBI:176843
-    label: vitamin B12
-- preferred_term: Nicotinic acid
+    id: CHEBI:132751
+    label: Thiamine-HCl x 2 H2O
   concentration:
-    value: '100'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: Biotin
   term:
-    id: CHEBI:15940
-    label: nicotinic acid
-- preferred_term: Thiamine-HCl·2H2O
+    id: CHEBI:15956
+    label: Biotin
   concentration:
-    value: '100'
+    value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Organic compound, Defined component, Simple component'
+- preferred_term: p-Aminobenzoic acid
+  term:
+    id: CHEBI:30753
+    label: p-Aminobenzoic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Vitamin B12
+  term:
+    id: CHEBI:17439
+    label: Vitamin B12
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Calcium pantothenate
+  term:
+    id: CHEBI:31345
+    label: Calcium pantothenate
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Pyridoxine hydrochloride
+  term:
+    id: CHEBI:30961
+    label: Pyridoxine hydrochloride
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: Folic acid
+  term:
+    id: CHEBI:27470
+    label: Folic acid
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
 - preferred_term: Na3-EDTA
+  term:
+    id: CHEBI:63125
+    label: Na3-EDTA
   concentration:
-    value: '200'
+    value: '2'
     unit: G_PER_L
-  notes: 'Properties: Defined component, Simple component, Organic compound'
+- preferred_term: ZnSO4 x 7 H2O
   term:
-    id: CHEBI:64734
-    label: EDTA disodium salt (anhydrous)
-media_term:
-  preferred_term: TOGO Medium M3032
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: MnCl2 x 4 H2O
   term:
-    id: TOGO:M3032
-    label: Chloroflexus Aggregans Medium
-notes: 'Source: https://togomedium.org/medium/M3032
-
-  Original source: JCM - JCM_M1398
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1398'
+    id: CHEBI:86368
+    label: MnCl2 x 4 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: CuCl2 x 2 H2O
+  term:
+    id: CHEBI:86318
+    label: CuCl2 x 2 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: NiCl2 x 6 H2O
+  term:
+    id: CHEBI:34887
+    label: NiCl2 x 6 H2O
+  concentration:
+    value: '0.02'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.03'
+    unit: G_PER_L
+- preferred_term: Na2S x 9 H2O
+  term:
+    id: CHEBI:76209
+    label: Na2S x 9 H2O
+  concentration:
+    value: '30'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 8.2.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Boil the medium under a stream of nitrogen gas for a few minutes and
+    distribute 90 ml medium into 100 ml screw-capped bottles. Bubble each bottle with
+    nitrogen gas and close immediately with a rubber septum and screw tight. Autoclave
+    at 121°C for 15 min. After autoclaving inject 1.0 ml of neutralized sulfide solution
+    (0.03% end concentration) to each bottle. This medium can be stored for several
+    months. Incubate the culture at 50°C at a light intensity of 300 - 500 lux. For
+    heavy cell suspension supplement periodically with sterile yeast extract solution
+    (0.1% end concentration, for more details see Ref. 3365, 3366).
+- step_number: 3
+  action: FILTER_STERILIZE
+  description: Adjust pH to 7.5. The solution is filter-sterilized.
+- step_number: 4
+  action: AUTOCLAVE
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
+    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
+    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
+    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
+    a syringe without opening the bottle.
+- step_number: 5
+  action: ADJUST_PH
+  description: Appearance of a yellow colour indicates the drop of pH to about 8.
+    The solution should be stirred continuously to avoid precipitation of elemental
+    sulfur. The final solution should be clear and is yellow in colour.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:53.705832Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3032'
-- timestamp: '2026-01-28T19:48:31.988415Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.146734'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: 2 M H2SO4; Added default concentration for ingredient: N2'
-merge_fingerprint: a19df37106db019ffa37af6c45c15553fd3c6ffba37a83e5c89f66c6a182f051
+- timestamp: '2026-01-26T17:53:10.140063Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 87a'
+- timestamp: '2026-02-19T08:26:56.275237+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_87a_CHLOROFLEXUS_AGGREGANS_MEDIUM, KOMODO_87_CHLOROFLEXUS_medium_modified,
+    KOMODO_87a-13941_MEDIUM_87a_MODIFIED_FOR_DSM_13941, KOMODO_87a_CHLOROFLEXUS_AGGREGANS_medium'
+synonyms:
+- name: CHLOROFLEXUS medium (modified)
+  source: KOMODO
+  source_id: komodo.medium:87
+  original_category: imported
+- name: MEDIUM 87a MODIFIED FOR DSM 13941
+  source: KOMODO
+  source_id: komodo.medium:87a_13941
+  original_category: imported
+- name: CHLOROFLEXUS AGGREGANS medium
+  source: KOMODO
+  source_id: komodo.medium:87a
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M3032_Chloroflexus_Aggregans_Medium
+- DSMZ_87a_CHLOROFLEXUS_AGGREGANS_MEDIUM
+- KOMODO_87_CHLOROFLEXUS_medium_modified
+- KOMODO_87a-13941_MEDIUM_87a_MODIFIED_FOR_DSM_13941
+- KOMODO_87a_CHLOROFLEXUS_AGGREGANS_medium
+merge_fingerprint: e3f912c1dd561fa31493ee14581336249516374af734da870f2ca938a91c31aa

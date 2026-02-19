@@ -1,68 +1,73 @@
-name: Medium For Erythrobacter Longus
-original_name: Medium For Erythrobacter Longus
+name: MEDIUM FOR ERYTHROBACTER LONGUS
+original_name: MEDIUM FOR ERYTHROBACTER LONGUS
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_value: 7.5
+media_term:
+  preferred_term: DSMZ Medium 695
+  term:
+    id: mediadive.medium:695
+    label: MEDIUM FOR ERYTHROBACTER LONGUS
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf'
 ingredients:
-- preferred_term: 5% Fe(III) citrate
+- preferred_term: Peptone
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Distilled water
+- preferred_term: Soytone
   concentration:
-    value: '300'
+    value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: CHEBI:8150
+    label: ''
 - preferred_term: Yeast extract
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: Artificial seawater
+- preferred_term: Proteose peptone no. 3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: Fe(III) citrate
+  term:
+    id: CHEBI:144421
+    label: Fe(III) citrate
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: Sea water
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
-- preferred_term: Proteose peptone no.3 (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Soytone (Difco)
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Peptone (BBL 11910)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M2354
-  term:
-    id: TOGO:M2354
-    label: Medium For Erythrobacter Longus
-notes: 'Source: https://togomedium.org/medium/M2354
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium695.pdf'
+preparation_steps:
+- step_number: 1
+  action: MIX
+  description: pH 7.5
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.389635Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2354'
-- timestamp: '2026-01-28T19:48:13.189566Z'
+- timestamp: '2026-01-26T17:53:11.952946Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 695'
+- timestamp: '2026-01-28T19:48:13.278045Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: eeab2411000c15e3c2688c2a733cf50a276d2cde1371644b4a2d531462c962cb
+- timestamp: '2026-02-19T08:26:53.076077+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_695_MEDIUM_FOR_ERYTHROBACTER_LONGUS, KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS'
+synonyms:
+- name: medium FOR ERYTHROBACTER LONGUS
+  source: KOMODO
+  source_id: komodo.medium:695
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2354_Medium_For_Erythrobacter_Longus
+- DSMZ_695_MEDIUM_FOR_ERYTHROBACTER_LONGUS
+- KOMODO_695_medium_FOR_ERYTHROBACTER_LONGUS
+merge_fingerprint: c0a59917a767348f2cdb195af906e3c4cab4a0eb93f33820cf82606d5030d335

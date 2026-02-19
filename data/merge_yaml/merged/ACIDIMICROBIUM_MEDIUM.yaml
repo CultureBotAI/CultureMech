@@ -1,91 +1,101 @@
-name: Acidimicrobium Medium
-original_name: Acidimicrobium Medium
+name: ACIDIMICROBIUM MEDIUM
+original_name: ACIDIMICROBIUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 2.0
+media_term:
+  preferred_term: DSMZ Medium 709
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4・7H2O
+    id: mediadive.medium:709
+    label: ACIDIMICROBIUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium709.pdf'
+ingredients:
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: K2HPO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
-  term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: FeSO4・7H2O
-  concentration:
-    value: '13.9'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-- preferred_term: KCl
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32588
-    label: potassium chloride
 - preferred_term: (NH4)2SO4
+  term:
+    id: CHEBI:62946
+    label: (NH4)2SO4
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+- preferred_term: K2HPO4
   term:
-    id: CHEBI:62946
-    label: ammonium sulfate
-- preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
+    id: CHEBI:131527
+    label: K2HPO4
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M719
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: KCl
   term:
-    id: TOGO:M719
-    label: Acidimicrobium Medium
-notes: 'Source: https://togomedium.org/medium/M719
-
-  Original source: JCM - JCM_M698-2
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=698'
+    id: CHEBI:32588
+    label: KCl
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.01'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '0.25'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Dissolve ingredients except yeast extract and adjust pH to 2.0 with
+    H2SO4. After autoclaving add yeast extract from a sterile stock solution.
+- step_number: 2
+  action: ADJUST_PH
+  description: 'Note: For autotrophic growth omit yeast extract and add to the medium
+    13.90 g/l FeSO4 x 7 H2O. Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:55.592118Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M719'
-- timestamp: '2026-01-28T19:48:11.022129Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:21:00.222249'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4'
-merge_fingerprint: b97ec468a7f5007a33bb38d60346e1ba58e55d26b194daf55d16b3a52d6ef49b
+- timestamp: '2026-01-26T17:53:11.986879Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 709'
+- timestamp: '2026-02-19T08:26:53.263794+00:00'
+  curator: recipe-merger
+  action: Merged 6 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_709_ACIDIMICROBIUM_MEDIUM, JCM_J283_FERROPLASMA_ACIDIPHILUM_MEDIUM,
+    JCM_J698_ACIDIMICROBIUM_MEDIUM, KOMODO_709-1_Heterotrophic_growth_on_Yeast_extract,
+    KOMODO_709-2_Autotrophic_growth_on_ferrous_sulfate, KOMODO_709_ACIDIMICROBIUM_medium'
+synonyms:
+- name: FERROPLASMA ACIDIPHILUM MEDIUM
+  source: MediaDive
+  source_id: mediadive.medium:J283
+  original_category: imported
+- name: Heterotrophic growth on Yeast extract
+  source: KOMODO
+  source_id: komodo.medium:709.1
+  original_category: imported
+- name: Autotrophic growth on ferrous sulfate
+  source: KOMODO
+  source_id: komodo.medium:709.2
+  original_category: imported
+- name: ACIDIMICROBIUM medium
+  source: KOMODO
+  source_id: komodo.medium:709
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M719_Acidimicrobium_Medium
+- DSMZ_709_ACIDIMICROBIUM_MEDIUM
+- JCM_J283_FERROPLASMA_ACIDIPHILUM_MEDIUM
+- JCM_J698_ACIDIMICROBIUM_MEDIUM
+- KOMODO_709-1_Heterotrophic_growth_on_Yeast_extract
+- KOMODO_709-2_Autotrophic_growth_on_ferrous_sulfate
+- KOMODO_709_ACIDIMICROBIUM_medium
+merge_fingerprint: 7509cd6f4d81cc9c1888eedb525b1ebd62485f98a4c4a262458ef678f89202e7

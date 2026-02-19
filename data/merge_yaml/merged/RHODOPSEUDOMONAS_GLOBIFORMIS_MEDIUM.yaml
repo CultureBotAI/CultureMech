@@ -157,7 +157,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 25'
-- timestamp: '2026-02-03T22:25:38.227598+00:00'
+- timestamp: '2026-02-19T08:26:45.338152+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_25_RHODOPSEUDOMONAS_GLOBIFORMIS_MEDIUM, KOMODO_25_RHODOPSEUDOMONAS_GLOBIFORMIS_medium'

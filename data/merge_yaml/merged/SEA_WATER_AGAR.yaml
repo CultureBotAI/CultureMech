@@ -97,7 +97,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 246'
-- timestamp: '2026-02-03T22:25:38.153241+00:00'
+- timestamp: '2026-02-19T08:26:45.267958+00:00'
   curator: recipe-merger
   action: Merged 5 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_246_SEA_WATER_AGAR, DSMZ_246a_REACTIVATION_WITH_LIQUID_MEDIUM_246,

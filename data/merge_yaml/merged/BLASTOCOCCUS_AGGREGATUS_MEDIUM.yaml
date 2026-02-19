@@ -23,9 +23,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
 - preferred_term: Tris HCl
-  term:
-    id: CHEBI:1185531
-    label: Tris HCl
   concentration:
     value: '1'
     unit: G_PER_L
@@ -111,7 +108,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 596'
-- timestamp: '2026-02-03T22:25:45.524240+00:00'
+- timestamp: '2026-02-06T05:10:28.632182Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:51.618977+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM, KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM'
@@ -120,4 +122,4 @@ categories:
 merged_from:
 - DSMZ_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM
 - KOMODO_596_BLASTOCOCCUS_AGGREGATUS_MEDIUM
-merge_fingerprint: 9a3cf83876ab8bcc00e8c84917c15712dafa3d1e4a4b27896233ca068aface59
+merge_fingerprint: 08f9cd54a375d308b765bc22fca0672fcaae7fa53656dfd2b4cb441eac075b7b

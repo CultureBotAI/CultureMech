@@ -76,11 +76,6 @@ ingredients:
   concentration:
     value: variable
     unit: VARIABLE
-- preferred_term: N2
-  notes: 'Properties: Gas'
-  concentration:
-    value: variable
-    unit: VARIABLE
 - preferred_term: Vishniac and Santer trace elements solution
   concentration:
     value: variable
@@ -94,12 +89,12 @@ ingredients:
   term:
     id: CHEBI:15377
     label: Distilled water
-- preferred_term: CuSO4
+- preferred_term: CaCl2
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
   term:
-    id: CHEBI:23414
-    label: copper(II) sulfate
+    id: CHEBI:3312
+    label: calcium dichloride
   concentration:
     value: variable
     unit: VARIABLE
@@ -124,9 +119,6 @@ ingredients:
 - preferred_term: MnCl2
   notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
     Simple component'
-  term:
-    id: CHEBI:7773015
-    label: ''
   concentration:
     value: variable
     unit: VARIABLE
@@ -154,36 +146,47 @@ ingredients:
     value: variable
     unit: VARIABLE
 media_term:
-  preferred_term: TOGO Medium M3202
+  preferred_term: TOGO Medium M3200
   term:
-    id: TOGO:M3202
+    id: TOGO:M3200
     label: Defined minimal medium
-notes: 'Source: https://togomedium.org/medium/M3202'
+notes: 'Source: https://togomedium.org/medium/M3200'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.593958Z'
+- timestamp: '2026-01-27T06:35:57.590946Z'
   curator: togo-import
   action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M3202'
-- timestamp: '2026-01-28T19:48:10.365544Z'
+  notes: 'Source: TOGO, ID: M3200'
+- timestamp: '2026-01-28T19:48:33.467317Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
 - curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:57.901475'
+  date: '2026-02-03T11:20:57.887604'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration
     for ingredient: NH4Cl; Added default concentration for ingredient: NaNO3; Added
     default concentration for ingredient: Na2HPO4; Added default concentration for
     ingredient: Sodium Succinate; Added default concentration for ingredient: MgSO4;
     Added default concentration for ingredient: NaNO2; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: Vishniac and Santer
-    trace elements solution; Added default concentration for ingredient: CuSO4; Added
-    default concentration for ingredient: CoCl2; Added default concentration for ingredient:
-    FeSO4; Added default concentration for ingredient: MnCl2; Added default concentration
-    for ingredient: ZnSO4; Added default concentration for ingredient: (NH4)6Mo7O24;
-    Added default concentration for ingredient: EDTA'
-merge_fingerprint: 1b44677742138ef94871db5f3e16f3eb87ed13c1b5a16096e1e68e526e9f3027
+    for ingredient: Vishniac and Santer trace elements solution; Added default concentration
+    for ingredient: CaCl2; Added default concentration for ingredient: CoCl2; Added
+    default concentration for ingredient: FeSO4; Added default concentration for ingredient:
+    MnCl2; Added default concentration for ingredient: ZnSO4; Added default concentration
+    for ingredient: (NH4)6Mo7O24; Added default concentration for ingredient: EDTA'
+- timestamp: '2026-02-06T05:10:43.435743Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:27:01.749773+00:00'
+  curator: recipe-merger
+  action: Merged 2 duplicate recipes into canonical record
+  notes: 'Sources: TOGO_M3200_Defined_minimal_medium, TOGO_M3201_Defined_minimal_medium'
+categories:
+- imported
 merged_from:
-- TOGO_M3202_Defined_minimal_medium
+- TOGO_M3200_Defined_minimal_medium
+- TOGO_M3201_Defined_minimal_medium
+merge_fingerprint: 923e629f2584af4c758018ea81d96d17866eee72c14d7b59b8397f1e317c8172

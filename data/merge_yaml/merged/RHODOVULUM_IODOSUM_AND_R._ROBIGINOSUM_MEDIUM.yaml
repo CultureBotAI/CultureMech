@@ -194,9 +194,6 @@ ingredients:
     value: '0.01'
     unit: G_PER_L
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.1'
     unit: G_PER_L
@@ -263,7 +260,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 929'
-- timestamp: '2026-02-03T22:25:51.652468+00:00'
+- timestamp: '2026-02-06T05:10:24.551260Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:57.079072+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM, KOMODO_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM'
@@ -272,4 +274,4 @@ categories:
 merged_from:
 - DSMZ_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM
 - KOMODO_929_RHODOVULUM_IODOSUM_AND_R._ROBIGINOSUM_MEDIUM
-merge_fingerprint: d9ecf0fe2e23c3b2b56c1ddff6fdf95c6f9f0de0e81c8f864a8d82d7720cf3a6
+merge_fingerprint: 56c590466a95e957b7ebdfac701769457dc7abc88cd0ab7e89b3096463cb3523

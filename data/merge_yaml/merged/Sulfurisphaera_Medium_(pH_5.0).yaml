@@ -148,7 +148,7 @@ curation_history:
   date: '2026-02-03T11:20:48.833251'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
-- timestamp: '2026-02-03T22:26:08.919598+00:00'
+- timestamp: '2026-02-19T08:27:01.194045+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1657_Sulfurisphaera_Medium_pH_2.5, TOGO_M1658_Sulfurisphaera_Medium_pH_5.0'

@@ -5,19 +5,12 @@ medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
 media_term:
-  preferred_term: DSMZ Medium 647a
+  preferred_term: DSMZ Medium 647
   term:
-    id: mediadive.medium:647a
+    id: mediadive.medium:647
     label: DESULFUROMONAS THIOPHILA MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium647a.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium647.pdf'
 ingredients:
-- preferred_term: NaCl
-  term:
-    id: CHEBI:26710
-    label: NaCl
-  concentration:
-    value: '20'
-    unit: G_PER_L
 - preferred_term: KH2PO4
   term:
     id: CHEBI:63036
@@ -37,14 +30,7 @@ ingredients:
     id: CHEBI:31795
     label: MgSO4 x 7 H2O
   concentration:
-    value: '1'
-    unit: G_PER_L
-- preferred_term: MgCl2 x 6 H2O
-  term:
-    id: CHEBI:86345
-    label: MgCl2 x 6 H2O
-  concentration:
-    value: '2'
+    value: '0.4'
     unit: G_PER_L
 - preferred_term: CaCl2 x 2 H2O
   term:
@@ -220,17 +206,18 @@ ingredients:
     unit: G_PER_L
 preparation_steps:
 - step_number: 1
-  action: ADJUST_PH
+  action: AUTOCLAVE
   description: Dissolve ingredients (except sulfur, carbonate, pyruvate, vitamins
     and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
     45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials that contain already the appropriate amount
-    of sulfur. Sterilize medium by heating cultivation vessels in a boiling water
-    bath for 2 - 3 hours on each of 3 successive days. Complete the medium by adding
-    pyruvate, vitamins and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas atmosphere and carbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas atmosphere. Pyruvate and vitamins are sterilized
-    by filtration. Adjust pH of the complete medium to 7.0 - 7.2, if necessary.
+    Hungate-type tubes or serum vials and autoclave. Sulfur is sterilized by steaming
+    for 3 hours on each of 3 successive days (see medium 35) and added aseptically
+    to the sterile medium while retaining anoxic conditions. Complete the medium by
+    adding pyruvate, vitamins and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas atmosphere and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas atmosphere. Stock solutions of pyruvate
+    and vitamins are sterilized by filtration. Adjust pH of the complete medium to
+    7.0 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
   description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
@@ -238,10 +225,28 @@ preparation_steps:
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-26T17:53:11.831340Z'
+- timestamp: '2026-01-26T17:53:11.827391Z'
   curator: mediadive-import
   action: Imported from MediaDive
-  notes: 'Source: DSMZ, ID: 647a'
-merge_fingerprint: a1b89c4d0f14b04682a112b9a737097b1c41e0359070a1263505e2244445a73f
+  notes: 'Source: DSMZ, ID: 647'
+- timestamp: '2026-02-19T08:26:52.429616+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_647_DESULFUROMONAS_THIOPHILA_MEDIUM, KOMODO_647-1_For_DSM_8988,
+    KOMODO_647_DESULFUROMONAS_ACETEXIGENES_MEDIUM'
+synonyms:
+- name: For DSM 8988
+  source: KOMODO
+  source_id: komodo.medium:647.1
+  original_category: imported
+- name: DESULFUROMONAS ACETEXIGENES MEDIUM
+  source: KOMODO
+  source_id: komodo.medium:647
+  original_category: imported
+categories:
+- imported
 merged_from:
-- DSMZ_647a_DESULFUROMONAS_THIOPHILA_MEDIUM
+- DSMZ_647_DESULFUROMONAS_THIOPHILA_MEDIUM
+- KOMODO_647-1_For_DSM_8988
+- KOMODO_647_DESULFUROMONAS_ACETEXIGENES_MEDIUM
+merge_fingerprint: cfc92b036c8f70250cb0aa92ebb83b5152b02fa9b853702f4509b9c6bd64ace2

@@ -232,7 +232,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 602'
-- timestamp: '2026-02-03T22:25:45.626159+00:00'
+- timestamp: '2026-02-19T08:26:51.705561+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_602_HALOMONAS_SUBGLACIESCOLA, KOMODO_602_HALOMONAS_SUBGLACIESCOLA_Artificial_ORGANIC_LAKE_medium'

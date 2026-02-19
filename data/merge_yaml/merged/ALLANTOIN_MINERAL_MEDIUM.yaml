@@ -1,104 +1,92 @@
-name: Allantoin Mineral Medium
-original_name: Allantoin Mineral Medium
+name: ALLANTOIN MINERAL MEDIUM
+original_name: ALLANTOIN MINERAL MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+media_term:
+  preferred_term: DSMZ Medium 6
+  term:
+    id: mediadive.medium:6
+    label: ALLANTOIN MINERAL MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium6.pdf'
 ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4·7H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: CaCl2·2H2O
-  concentration:
-    value: '0.05'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:86158
-    label: calcium chloride dihydrate
-- preferred_term: KH2PO4
-  concentration:
-    value: '0.2'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
-  term:
-    id: CHEBI:63036
-    label: KH2PO4
 - preferred_term: K2HPO4
+  term:
+    id: CHEBI:131527
+    label: K2HPO4
   concentration:
     value: '0.8'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+- preferred_term: KH2PO4
   term:
-    id: CHEBI:131527
-    label: dipotassium hydrogen phosphate
-- preferred_term: FeSO4·7H2O
+    id: CHEBI:63036
+    label: KH2PO4
+  concentration:
+    value: '0.2'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
+  term:
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CaCl2 x 2 H2O
+  term:
+    id: CHEBI:86158
+    label: CaCl2 x 2 H2O
+  concentration:
+    value: '0.05'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
-- preferred_term: MnSO4·H2O
+- preferred_term: MnSO4 x H2O
+  term:
+    id: CHEBI:86364
+    label: MnSO4 x H2O
   concentration:
-    value: '1'
+    value: '0.001'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
 - preferred_term: Allantoin
-  concentration:
-    value: '20'
-    unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
   term:
     id: CHEBI:15676
     label: Allantoin
+  concentration:
+    value: '20'
+    unit: G_PER_L
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-media_term:
-  preferred_term: TOGO Medium M1681
-  term:
-    id: TOGO:M1681
-    label: Allantoin Mineral Medium
-notes: 'Source: https://togomedium.org/medium/M1681
-
-  Original source: NBRC - NBRC_M886
-
-  Original URL: https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=886'
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:58.129138Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: NBRC, ID: M1681'
-- timestamp: '2026-01-28T19:48:35.544958Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: b0753feb5f451b606b4095fb73866e638293b3563ccccb64648b1f4a1372187d
+- timestamp: '2026-01-26T17:53:09.963903Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 6'
+- timestamp: '2026-02-19T08:26:53.132238+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_6_ALLANTOIN_MINERAL_MEDIUM, KOMODO_6-1306_MEDIUM_6_MODIFIED_FOR_DSM_1306,
+    KOMODO_6_ALLANTOIN_MINERAL_MEDIUM'
+synonyms:
+- name: MEDIUM 6 MODIFIED FOR DSM 1306
+  source: KOMODO
+  source_id: komodo.medium:6_1306
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M1681_Allantoin_Mineral_Medium
+- DSMZ_6_ALLANTOIN_MINERAL_MEDIUM
+- KOMODO_6-1306_MEDIUM_6_MODIFIED_FOR_DSM_1306
+- KOMODO_6_ALLANTOIN_MINERAL_MEDIUM
+merge_fingerprint: 369a9fd7d0954cc0a1ec66adbcbdadb45e9967952f8a0d927f550a129e4f10c9

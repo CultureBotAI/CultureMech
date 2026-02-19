@@ -1,44 +1,102 @@
-name: Corn Meal Agar
-original_name: Corn Meal Agar
+name: CORN MEAL AGAR
+original_name: CORN MEAL AGAR
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Corn meal agar (Nissui)
-  concentration:
-    value: '17'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component, Complex component'
 media_term:
-  preferred_term: TOGO Medium M3004
+  preferred_term: JCM Medium J1329
   term:
-    id: TOGO:M3004
-    label: Corn Meal Agar
-notes: 'Source: https://togomedium.org/medium/M3004
-
-  Original source: JCM - JCM_M1329
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1329'
+    id: mediadive.medium:J1329
+    label: CORN MEAL AGAR
+notes: 'Source: JCM | Link: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=1329'
+ingredients:
+- preferred_term: BCYE agar
+  term:
+    id: CHEBI:2509
+    label: BCYE agar
+  concentration:
+    value: '37'
+    unit: G_PER_L
+- preferred_term: Legionella agar enrichment
+  term:
+    id: CHEBI:2509
+    label: Legionella agar enrichment
+  concentration:
+    value: '100'
+    unit: G_PER_L
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:54.811183Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M3004'
-- timestamp: '2026-01-28T19:48:33.904604Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: edd1883a8da7164ebe3d5ceaa1de7b683b25270bcc202fe1114bcde08941396d
+- timestamp: '2026-01-26T17:53:19.468678Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: JCM, ID: J1329'
+- timestamp: '2026-02-19T08:26:58.351691+00:00'
+  curator: recipe-merger
+  action: Merged 13 duplicate recipes into canonical record
+  notes: 'Sources: JCM_J119_BCYE_AGAR, JCM_J1202_WEAK_OATMEAL_AGAR, JCM_J1329_CORN_MEAL_AGAR,
+    JCM_J150_CORN_MEAL_AGAR, JCM_J258_ME_AGAR, JCM_J455_ALKALI-REINFORCED_CLOSTRIDIAL_AGAR,
+    JCM_J655_MODIFIED_GAM_AGAR, JCM_J804_1_10_R2A_AGAR, JCM_J845_1_2_R2A_AGAR, KOMODO_604_BACTO_MARINE_AGAR,
+    TOGO_M2859_BCYE_agar, DSMZ_604_BACTO_MARINE_AGAR, JCM_J118_MARINE_AGAR_2216'
+synonyms:
+- name: BCYE AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J119
+  original_category: imported
+- name: WEAK OATMEAL AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J1202
+  original_category: imported
+- name: ME AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J258
+  original_category: imported
+- name: ALKALI-REINFORCED CLOSTRIDIAL AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J455
+  original_category: imported
+- name: MODIFIED GAM AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J655
+  original_category: imported
+- name: 1/10 R2A AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J804
+  original_category: imported
+- name: 1/2 R2A AGAR
+  source: MediaDive
+  source_id: mediadive.medium:J845
+  original_category: imported
+- name: BACTO MARINE AGAR
+  source: KOMODO
+  source_id: komodo.medium:604
+  original_category: imported
+- name: BCYE agar
+  source: TOGO
+  source_id: TOGO:M2859
+  original_category: imported
+- name: BACTO MARINE AGAR
+  source: MediaDive
+  source_id: mediadive.medium:604
+  original_category: imported
+- name: MARINE AGAR 2216
+  source: MediaDive
+  source_id: mediadive.medium:J118
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M3004_Corn_Meal_Agar
+- JCM_J119_BCYE_AGAR
+- JCM_J1202_WEAK_OATMEAL_AGAR
+- JCM_J1329_CORN_MEAL_AGAR
+- JCM_J150_CORN_MEAL_AGAR
+- JCM_J258_ME_AGAR
+- JCM_J455_ALKALI-REINFORCED_CLOSTRIDIAL_AGAR
+- JCM_J655_MODIFIED_GAM_AGAR
+- JCM_J804_1_10_R2A_AGAR
+- JCM_J845_1_2_R2A_AGAR
+- KOMODO_604_BACTO_MARINE_AGAR
+- TOGO_M2859_BCYE_agar
+- DSMZ_604_BACTO_MARINE_AGAR
+- JCM_J118_MARINE_AGAR_2216
+merge_fingerprint: 4aa0cdc82922e6c9424793721864cf1b8ef0ef4c3d561c7c9037ae0dad41c7d4

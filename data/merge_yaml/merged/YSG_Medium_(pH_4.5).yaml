@@ -88,7 +88,7 @@ curation_history:
   date: '2026-02-03T11:20:49.726354'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
-- timestamp: '2026-02-03T22:26:09.638253+00:00'
+- timestamp: '2026-02-19T08:27:01.256834+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1739_YSG_Medium, TOGO_M1780_YSG_Medium_pH_4.5'

@@ -93,9 +93,6 @@ ingredients:
     value: '0.1'
     unit: G_PER_L
 - preferred_term: MnCl2
-  term:
-    id: CHEBI:7773015
-    label: MnCl2
   concentration:
     value: '0.03'
     unit: G_PER_L
@@ -164,7 +161,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1105'
-- timestamp: '2026-02-03T22:25:28.693015+00:00'
+- timestamp: '2026-02-06T05:10:41.629971Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:39.489448+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM, KOMODO_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM'
@@ -173,4 +175,4 @@ categories:
 merged_from:
 - DSMZ_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM
 - KOMODO_1105_NITRILIRUPTOR_ALKALIPHILUS_MEDIUM
-merge_fingerprint: 82c53a5a6d34b9fc7b89cdf81d4a9189211b53a0919bc2f71d78b72264a41169
+merge_fingerprint: 08d0caa073ceae57d910d4f54df5d10e9d428b2cedf3a48194bef91e771fbd14

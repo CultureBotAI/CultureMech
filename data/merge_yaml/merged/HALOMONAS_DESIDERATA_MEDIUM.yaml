@@ -66,7 +66,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 762'
-- timestamp: '2026-02-03T22:25:48.048276+00:00'
+- timestamp: '2026-02-19T08:26:53.918742+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_762_HALOMONAS_DESIDERATA_MEDIUM, KOMODO_762_HALOMONAS_DESIDERATA_MEDIUM'

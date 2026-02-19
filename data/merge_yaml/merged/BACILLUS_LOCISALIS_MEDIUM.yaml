@@ -73,7 +73,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1309'
-- timestamp: '2026-02-03T22:25:29.833028+00:00'
+- timestamp: '2026-02-19T08:26:40.531927+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1182_AQUISALIMONAS_MEDIUM, DSMZ_1309_BACILLUS_LOCISALIS_MEDIUM,

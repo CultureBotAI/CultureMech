@@ -206,7 +206,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 891'
-- timestamp: '2026-02-03T22:25:48.351559+00:00'
+- timestamp: '2026-02-19T08:26:54.185292+00:00'
   curator: recipe-merger
   action: Merged 4 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_783_HYDROGENOTHERMUS_HIRSCHII_MEDIUM, DSMZ_891_SME_MEDIUM_MODIFIED_FOR_IS7,

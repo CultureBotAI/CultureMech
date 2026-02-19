@@ -157,9 +157,6 @@ ingredients:
     value: '0.02'
     unit: G_PER_L
 - preferred_term: Nicotinate
-  term:
-    id: CHEBI:10716816
-    label: Nicotinate
   concentration:
     value: '0.02'
     unit: G_PER_L
@@ -187,7 +184,12 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 998'
-- timestamp: '2026-02-03T22:25:52.830722+00:00'
+- timestamp: '2026-02-06T05:10:14.318764Z'
+  curator: invalid-chebi-removal
+  action: Removed 1 invalid CHEBI ID(s)
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+- timestamp: '2026-02-19T08:26:58.177710+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_998_MEDIUM_FOR_ROSEOSPIRA, KOMODO_998-1_For_strains_DSM_15114_and_AT2115,
@@ -207,4 +209,4 @@ merged_from:
 - DSMZ_998_MEDIUM_FOR_ROSEOSPIRA
 - KOMODO_998-1_For_strains_DSM_15114_and_AT2115
 - KOMODO_998_medium_FOR_ROSEOSPIRA
-merge_fingerprint: fb95aef7908c213e190133884dd7f6991e2c30c494dc9b62efbbd515564d2e31
+merge_fingerprint: f84781c848a7a7c030102ecfd5d7db29453c1fac115340b7555c38184d051e96

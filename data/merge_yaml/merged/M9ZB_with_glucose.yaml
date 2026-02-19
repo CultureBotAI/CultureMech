@@ -61,7 +61,7 @@ curation_history:
   action: Imported from MediaDB
   notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 106, Reference:
     Mazumdar et al. (2014) PLOS One'
-- timestamp: '2026-02-03T22:26:01.381869+00:00'
+- timestamp: '2026-02-19T08:27:00.078510+00:00'
   curator: recipe-merger
   action: Merged 8 duplicate recipes into canonical record
   notes: 'Sources: MEDIADB_106_M9ZB_with_glucose, MEDIADB_122_M9_farmer_et_al, MEDIADB_146_M9_medium_Kolisnychenko_et_al,

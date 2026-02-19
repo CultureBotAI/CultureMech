@@ -1,115 +1,107 @@
-name: Anaerotignum Medium
-original_name: Anaerotignum Medium
+name: ANAEROTIGNUM MEDIUM
+original_name: ANAEROTIGNUM MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
+ph_range: 7-7.2
+media_term:
+  preferred_term: DSMZ Medium 156
+  term:
+    id: mediadive.medium:156
+    label: ANAEROTIGNUM MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium156.pdf'
 ingredients:
-- preferred_term: Na-resazurin solution (0.1% w/v)
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: MgSO4 x 7 H2O
-  concentration:
-    value: '0.1'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
-  term:
-    id: CHEBI:32599
-    label: magnesium sulfate
-- preferred_term: Yeast extract
-  concentration:
-    value: '4'
-    unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: FeSO4 x 7 H2O
-  concentration:
-    value: '18'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:75836
-    label: FeSO4 x 7 H2O
-- preferred_term: NaHCO3
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
-  term:
-    id: CHEBI:32139
-    label: sodium hydrogencarbonate
-- preferred_term: Potassium phosphate buffer (1 M, pH 7.1)
-  concentration:
-    value: '5'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
-    Complex component'
 - preferred_term: L-Alanine
+  term:
+    id: CHEBI:16977
+    label: L-Alanine
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
-  term:
-    id: CHEBI:16977
-    label: L-alanine
-- preferred_term: CaSO4 (saturated aq. solution)
-  concentration:
-    value: '2.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution'
-- preferred_term: L-Cysteine-HCl x H2O
-  concentration:
-    value: '0.3'
-    unit: G_PER_L
-  notes: 'Properties: Defined component, Organic compound, Simple component'
-  term:
-    id: CHEBI:17561
-    label: L-cysteine
 - preferred_term: Peptone
   concentration:
     value: '3'
     unit: G_PER_L
-- preferred_term: N2 gas
-  notes: 'Properties: Gas'
+- preferred_term: Yeast extract
   concentration:
-    value: variable
-    unit: VARIABLE
-media_term:
-  preferred_term: TOGO Medium M2752
+    value: '4'
+    unit: G_PER_L
+- preferred_term: MgSO4 x 7 H2O
   term:
-    id: TOGO:M2752
-    label: Anaerotignum Medium
-notes: 'Source: https://togomedium.org/medium/M2752
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium156.pdf'
+    id: CHEBI:31795
+    label: MgSO4 x 7 H2O
+  concentration:
+    value: '0.1'
+    unit: G_PER_L
+- preferred_term: FeSO4 x 7 H2O
+  term:
+    id: CHEBI:75836
+    label: FeSO4 x 7 H2O
+  concentration:
+    value: '0.018'
+    unit: G_PER_L
+- preferred_term: Potassium phosphate buffer
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: CaSO4
+  term:
+    id: CHEBI:31346
+    label: CaSO4
+  concentration:
+    value: '2.5'
+    unit: G_PER_L
+- preferred_term: Sodium resazurin
+  concentration:
+    value: '0.0005'
+    unit: G_PER_L
+- preferred_term: NaHCO3
+  term:
+    id: CHEBI:32139
+    label: NaHCO3
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: L-Cysteine HCl x H2O
+  term:
+    id: CHEBI:91248
+    label: L-Cysteine HCl x H2O
+  concentration:
+    value: '0.3'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Dissolve ingredients (except bicarbonate and cysteine), adjust pH to
+    7.0, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
+    and dissolve bicarbonate and cysteine, then dispense medium under 100% N2 gas
+    atmosphere into anoxic Hungate-type tubes or seruim vials and autoclave. Adjust
+    pH of complete medium to 7.0 - 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:57.237352Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2752'
-- timestamp: '2026-01-28T19:48:41.562297Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:56.261402'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2 gas'
-merge_fingerprint: 683290e9d32c0f8efca51cb92109b2c112762ed4759ceef76b97ee389fe9f2cc
+- timestamp: '2026-01-26T17:53:10.363426Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 156'
+- timestamp: '2026-02-19T08:26:43.730422+00:00'
+  curator: recipe-merger
+  action: Merged 3 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_156_ANAEROTIGNUM_MEDIUM, KOMODO_156-6251_MEDIUM_156_MODIFIED_FOR_DSM_6251,
+    KOMODO_156_CLOSTRIDIUM_PROPIONICUM_medium'
+synonyms:
+- name: MEDIUM 156 MODIFIED FOR DSM 6251
+  source: KOMODO
+  source_id: komodo.medium:156_6251
+  original_category: imported
+- name: CLOSTRIDIUM PROPIONICUM medium
+  source: KOMODO
+  source_id: komodo.medium:156
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2752_Anaerotignum_Medium
+- DSMZ_156_ANAEROTIGNUM_MEDIUM
+- KOMODO_156-6251_MEDIUM_156_MODIFIED_FOR_DSM_6251
+- KOMODO_156_CLOSTRIDIUM_PROPIONICUM_medium
+merge_fingerprint: 8690b3f684f810c87e01d5ab97d075e1d03aee5e85221a5d0248ea7e3a25077f

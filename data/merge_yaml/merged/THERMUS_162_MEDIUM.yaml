@@ -1,206 +1,168 @@
-name: Thermus 162 Medium
-original_name: Thermus 162 Medium
+name: THERMUS 162 MEDIUM
+original_name: THERMUS 162 MEDIUM
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: 0.01 M Fe citrate
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Solution'
-- preferred_term: Distilled water
-  concentration:
-    value: '900'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+ph_value: 7.2
+media_term:
+  preferred_term: DSMZ Medium 878
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:878
+    label: THERMUS 162 MEDIUM
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium878.pdf'
+ingredients:
 - preferred_term: Yeast extract
   concentration:
-    value: '1'
+    value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Undefined component'
-- preferred_term: MgCl2 x 6 H2O
+- preferred_term: Tryptone
   concentration:
-    value: '200'
+    value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:6636
-    label: magnesium dichloride
-- preferred_term: Nitrilotriacetic acid
-  concentration:
-    value: '100'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
-  term:
-    id: CHEBI:44557
-    label: nitrilotriacetic acid
-- preferred_term: CaSO4 x 2 H2O
-  concentration:
-    value: '40'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32583
-    label: calcium sulfate dihydrate
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '28'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
+- preferred_term: Nitrilotriacetic acid
   term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Tryptone
+    id: CHEBI:44557
+    label: Nitrilotriacetic acid
   concentration:
-    value: '1'
+    value: '0.1'
     unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Trace element solution
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-- preferred_term: Phosphate buffer
-  concentration:
-    value: '100'
-    unit: G_PER_L
-- preferred_term: NaOH
-  notes: 'Properties: Defined component, Inorganic compound, Solution'
+- preferred_term: CaSO4 x 2 H2O
   term:
-    id: CHEBI:32145
-    label: sodium hydroxide
+    id: CHEBI:32583
+    label: CaSO4 x 2 H2O
   concentration:
-    value: variable
-    unit: VARIABLE
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
+    value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: MgCl2 x 6 H2O
   term:
-    id: CHEBI:15377
-    label: Distilled water
-- preferred_term: Na2MoO4 x 2 H2O
+    id: CHEBI:86345
+    label: MgCl2 x 6 H2O
   concentration:
-    value: '25'
+    value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+- preferred_term: Fe(III) citrate
   term:
-    id: CHEBI:75215
-    label: sodium molybdate (anhydrous)
-- preferred_term: H3BO3
+    id: CHEBI:144421
+    label: Fe(III) citrate
   concentration:
-    value: '0.5'
+    value: '0.00122472'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:33118
-    label: boric acid
-- preferred_term: CoCl2 x 6 H2O
-  concentration:
-    value: '45'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:35696
-    label: cobalt dichloride
-- preferred_term: ZnSO4 x 7 H2O
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:32312
-    label: zinc sulfate heptahydrate
-- preferred_term: CuSO4 x 5 H2O
-  concentration:
-    value: '25'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:31440
-    label: copper(II) sulfate pentahydrate
-- preferred_term: MnSO4 x H2O
-  concentration:
-    value: '2.28'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:75211
-    label: manganese(II) sulfate
-- preferred_term: H2SO4
-  concentration:
-    value: '0.5'
-    unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
-  term:
-    id: CHEBI:26836
-    label: sulfuric acid
-- preferred_term: Distilled water
-  concentration:
-    value: '1000'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
-  term:
-    id: CHEBI:15377
-    label: Distilled water
 - preferred_term: KH2PO4
-  concentration:
-    value: '5.44'
-    unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
+  concentration:
+    value: '5.44'
+    unit: G_PER_L
 - preferred_term: Na2HPO4 x 12 H2O
+  term:
+    id: CHEBI:34683
+    label: Na2HPO4 x 12 H2O
   concentration:
     value: '43'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+- preferred_term: H2SO4
   term:
-    id: CHEBI:34683
-    label: disodium hydrogenphosphate
-media_term:
-  preferred_term: TOGO Medium M2338
+    id: CHEBI:26836
+    label: H2SO4
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: MnSO4 x H2O
   term:
-    id: TOGO:M2338
-    label: Thermus 162 Medium
-notes: 'Source: https://togomedium.org/medium/M2338
-
-  Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium878.pdf'
+    id: CHEBI:86364
+    label: MnSO4 x H2O
+  concentration:
+    value: '2.28'
+    unit: G_PER_L
+- preferred_term: ZnSO4 x 7 H2O
+  term:
+    id: CHEBI:32312
+    label: ZnSO4 x 7 H2O
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: H3BO3
+  term:
+    id: CHEBI:33118
+    label: H3BO3
+  concentration:
+    value: '0.5'
+    unit: G_PER_L
+- preferred_term: CuSO4 x 5 H2O
+  term:
+    id: CHEBI:31440
+    label: CuSO4 x 5 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: Na2MoO4 x 2 H2O
+  term:
+    id: CHEBI:75213
+    label: Na2MoO4 x 2 H2O
+  concentration:
+    value: '0.025'
+    unit: G_PER_L
+- preferred_term: CoCl2 x 6 H2O
+  term:
+    id: CHEBI:35696
+    label: CoCl2 x 6 H2O
+  concentration:
+    value: '0.045'
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: AUTOCLAVE
+  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min.
+- step_number: 2
+  action: AUTOCLAVE
+  description: Autoclave the phosphate buffer separately and then add to the medium.
+- step_number: 3
+  action: ADJUST_PH
+  description: Adjust pH to 7.2
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.365042Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: TOGO, ID: M2338'
-- timestamp: '2026-01-28T19:48:40.079469Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-- curator: schema-defaulter-v1.0
-  date: '2026-02-03T11:20:53.327247'
-  action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH'
-merge_fingerprint: a974a99025c3df6440b802920907109ca6588c8bbed5129216a6e25933809a83
+- timestamp: '2026-01-26T17:53:12.594627Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 878'
+- timestamp: '2026-02-19T08:26:43.872131+00:00'
+  curator: recipe-merger
+  action: Merged 5 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_1655_MODIFIED_THERMUS_MEDIUM_878, DSMZ_878_THERMUS_162_MEDIUM,
+    KOMODO_878-21543_MEDIUM_878_MODIFIED_FOR_DSM_21543, KOMODO_878-9941_MEDIUM_878_MODIFIED_FOR_DSM_9941,
+    KOMODO_878_THERMUS_162_medium'
+synonyms:
+- name: MODIFIED THERMUS MEDIUM 878
+  source: MediaDive
+  source_id: mediadive.medium:1655
+  original_category: imported
+- name: MEDIUM 878 MODIFIED FOR DSM 21543
+  source: KOMODO
+  source_id: komodo.medium:878_21543
+  original_category: imported
+- name: MEDIUM 878 MODIFIED FOR DSM 9941
+  source: KOMODO
+  source_id: komodo.medium:878_9941
+  original_category: imported
+- name: THERMUS 162 medium
+  source: KOMODO
+  source_id: komodo.medium:878
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M2338_Thermus_162_Medium
+- DSMZ_1655_MODIFIED_THERMUS_MEDIUM_878
+- DSMZ_878_THERMUS_162_MEDIUM
+- KOMODO_878-21543_MEDIUM_878_MODIFIED_FOR_DSM_21543
+- KOMODO_878-9941_MEDIUM_878_MODIFIED_FOR_DSM_9941
+- KOMODO_878_THERMUS_162_medium
+merge_fingerprint: b4424967f7c7c0750926accf20317a5aedb61c550b6bf6c18fcd408743d81d53

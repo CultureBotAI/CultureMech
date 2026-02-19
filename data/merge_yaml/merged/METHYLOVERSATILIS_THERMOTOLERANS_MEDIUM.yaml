@@ -82,7 +82,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1122a'
-- timestamp: '2026-02-03T22:25:29.041262+00:00'
+- timestamp: '2026-02-19T08:26:39.823994+00:00'
   curator: recipe-merger
   action: Merged 3 duplicate recipes into canonical record
   notes: 'Sources: DSMZ_1122a_METHYLOVERSATILIS_THERMOTOLERANS_MEDIUM, KOMODO_1122-1_For_DSM_23053,

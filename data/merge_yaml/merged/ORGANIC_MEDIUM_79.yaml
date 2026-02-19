@@ -1,80 +1,83 @@
-name: Organic Medium 79
-original_name: Organic Medium 79
+name: ORGANIC MEDIUM 79
+original_name: ORGANIC MEDIUM 79
 category: imported
 medium_type: COMPLEX
 physical_state: LIQUID
-ingredients:
-- preferred_term: Distilled water
-  concentration:
-    value: '1'
-    unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+ph_value: 7.8
+media_term:
+  preferred_term: DSMZ Medium 426
   term:
-    id: CHEBI:15377
-    label: Distilled water
+    id: mediadive.medium:426
+    label: ORGANIC MEDIUM 79
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium426.pdf'
+ingredients:
+- preferred_term: Dextrose
+  term:
+    id: CHEBI:4167
+    label: Dextrose
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Peptone
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: Casein peptone
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: Yeast extract
+  concentration:
+    value: '2'
+    unit: G_PER_L
 - preferred_term: NaCl
+  term:
+    id: CHEBI:26710
+    label: NaCl
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
-  term:
-    id: CHEBI:26710
-    label: sodium chloride
-- preferred_term: Glucose
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
-  term:
-    id: CHEBI:42758
-    label: aldehydo-D-glucose
 - preferred_term: Agar
+  term:
+    id: CHEBI:2509
+    label: Agar
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solidifying component'
-  term:
-    id: CHEBI:2509
-    label: agar
-- preferred_term: Yeast extract (BD-Difco)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: Bacto peptone (BD-Difco)
-  concentration:
-    value: '10'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-- preferred_term: N--Z amine, type A (Sheffield)
-  concentration:
-    value: '2'
-    unit: G_PER_L
-  notes: 'Properties: Undefined component'
-media_term:
-  preferred_term: TOGO Medium M95
-  term:
-    id: TOGO:M95
-    label: Organic Medium 79
-notes: 'Source: https://togomedium.org/medium/M95
-
-  Original source: JCM - JCM_M103
-
-  Original URL: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=103'
+preparation_steps:
+- step_number: 1
+  action: ADJUST_PH
+  description: Adjust pH to 7.8.
 applications:
 - Microbial cultivation
 curation_history:
-- timestamp: '2026-01-27T06:35:56.019056Z'
-  curator: togo-import
-  action: Imported from TOGO Medium
-  notes: 'Source: JCM, ID: M95'
-- timestamp: '2026-01-28T19:48:15.083605Z'
-  curator: chebi-enrichment
-  action: Added CHEBI ontology terms to ingredients
-  notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
-merge_fingerprint: 62162611f89d61b69d3fb2a5b381df298851da63f54d8cfd5c5b8c591eb44d01
+- timestamp: '2026-01-26T17:53:11.097654Z'
+  curator: mediadive-import
+  action: Imported from MediaDive
+  notes: 'Source: DSMZ, ID: 426'
+- timestamp: '2026-02-19T08:26:47.991884+00:00'
+  curator: recipe-merger
+  action: Merged 4 duplicate recipes into canonical record
+  notes: 'Sources: DSMZ_426_ORGANIC_MEDIUM_79, KOMODO_426-46365_MEDIUM_426_MODIFIED_FOR_DSM_46365,
+    KOMODO_426-46628_MEDIUM_426_MODIFIED_FOR_DSM_46628, KOMODO_426_ORGANIC_medium_79'
+synonyms:
+- name: MEDIUM 426 MODIFIED FOR DSM 46365
+  source: KOMODO
+  source_id: komodo.medium:426_46365
+  original_category: imported
+- name: MEDIUM 426 MODIFIED FOR DSM 46628
+  source: KOMODO
+  source_id: komodo.medium:426_46628
+  original_category: imported
+- name: ORGANIC medium 79
+  source: KOMODO
+  source_id: komodo.medium:426
+  original_category: imported
+categories:
+- imported
 merged_from:
-- TOGO_M95_Organic_Medium_79
+- DSMZ_426_ORGANIC_MEDIUM_79
+- KOMODO_426-46365_MEDIUM_426_MODIFIED_FOR_DSM_46365
+- KOMODO_426-46628_MEDIUM_426_MODIFIED_FOR_DSM_46628
+- KOMODO_426_ORGANIC_medium_79
+merge_fingerprint: 43431c92bb8aff5e718f92f0365626f293741909815aea93a978ef3c3ba3a96f

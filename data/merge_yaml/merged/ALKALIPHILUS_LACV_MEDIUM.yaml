@@ -156,7 +156,7 @@ curation_history:
   notes: 'Added default concentration for ingredient: NaOH; Added default concentration
     for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
     N2'
-- timestamp: '2026-02-03T22:26:05.371694+00:00'
+- timestamp: '2026-02-19T08:27:00.848002+00:00'
   curator: recipe-merger
   action: Merged 2 duplicate recipes into canonical record
   notes: 'Sources: TOGO_M1146_Alkaliphilus_LACV_Medium, TOGO_M1147_Alkaliphilus_3B_Medium'
