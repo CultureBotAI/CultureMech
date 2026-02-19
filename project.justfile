@@ -664,11 +664,13 @@ validate file:
 
     echo ""
     echo "=== Term validation ==="
-    uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}} || echo "⚠ Term validation failed (may need ontologies downloaded)"
+    uv run linkml-term-validator validate-data {{file}} -s {{schema_path}} -t MediaRecipe --labels -c {{oak_config}}
+    echo "✓ Term validation passed"
 
     echo ""
-    echo "=== Reference validation (optional) ==="
-    uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe || echo "⚠ Reference validation skipped (optional for historical recipes)"
+    echo "=== Reference validation ==="
+    uv run linkml-reference-validator validate data {{file}} --schema {{schema_path}} --target-class MediaRecipe
+    echo "✓ Reference validation passed"
 
 [group('QC')]
 validate-schema file:
