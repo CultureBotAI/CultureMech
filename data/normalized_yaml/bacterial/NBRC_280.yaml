@@ -1,0 +1,49 @@
+name: '280'
+original_name: '280'
+category: imported
+description: 280. NBRC 279.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Bacto Tryptone (Difco)3gYeast extract5gGlucose5gDistilled water1LAgar20gpH
+    7.0
+- preferred_term: ''
+  concentration:
+    value: Bacto Tryptone (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.0
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.946909Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 279, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=279.
+    Imported via ethical web scraping.'

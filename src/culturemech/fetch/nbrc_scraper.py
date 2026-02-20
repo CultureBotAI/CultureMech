@@ -348,18 +348,13 @@ class NBRCScraper:
         failed = []
 
         for i, media_item in enumerate(media_list, 1):
-            logger.info(
-                f"  [{i}/{len(media_list)}] {media_item['media_name']}...",
-                end="",
-            )
-
             recipe = self.scrape_media_details(media_item)
             if recipe:
                 all_recipes.append(recipe)
-                logger.info(" ✓")
+                logger.info(f"  [{i}/{len(media_list)}] {media_item['media_name']} ✓")
             else:
                 failed.append(media_item["media_name"])
-                logger.info(" ✗")
+                logger.info(f"  [{i}/{len(media_list)}] {media_item['media_name']} ✗")
 
         logger.info(f"\n✓ Scraped {len(all_recipes)} media recipes")
         if failed:

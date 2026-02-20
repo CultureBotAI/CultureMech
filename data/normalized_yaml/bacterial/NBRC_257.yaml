@@ -1,0 +1,126 @@
+name: '257'
+original_name: '257'
+category: imported
+description: 257. NBRC 256.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4\xB7\
+    7H2O0.24gCaSO4\xB72H2O0.17gSodium glutamate1gNa2CO35gNaCl250gDistilled water,\
+    \ make up to1LAgar (if needed)*20gAdjust pH to 6.5 before autoclaving. Sterilize\
+    \ Na2CO3in solution separately, and add to other autoclaved ingredients. Check\
+    \ the final pH is between 9.0 - 9.5.*Dissolve agar by heating before adding NaCl."
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Casamino Acids (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaSO4\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium glutamate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2CO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water, make up to
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)*
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Bacto Casamino Acids (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaSO4\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium glutamate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2CO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water, make up to
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)*
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.943092Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 256, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=256.
+    Imported via ethical web scraping.'

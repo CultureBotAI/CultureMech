@@ -1,0 +1,167 @@
+name: '848'
+original_name: '848'
+category: imported
+description: 848. NBRC 847.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "(NH4)2SO41.3gKH2PO40.28gMgSO4\xB77H2O0.25gCaCl2\xB72H2O0.07gFeCl3\xB7\
+    6H2O0.02gMnCl2\xB74H2O1.8mgNa2B4O7\xB710H2O4.5mgZnSO4\xB77H2O0.22mgCuCl2\xB72H2O0.05mgNa2MoO4\xB7\
+    2H2O0.03mgVOSO4\xB7nH2O0.03mgCoSO4\xB77H2O0.01mgBacto Yeast Extract (Difco)1gSulfur\
+    \ (powder)5gNa2S\xB79H2O0.5gResazurin1mgDistilled water1LMix ingredients except\
+    \ yeast extract, sulfur and Na2S\xB79H2O, and autoclave under a N2atmosphere.\
+    \ Separately autoclave yeast extract as a 10% solution and Na2S\xB79H2O as a 5%\
+    \ solution under a N2atmosphere.  Sulfur is autoclaved for 60 min at 105\u2103\
+    \ on each of 3 successive days. Aseptically and anaerobically add yeast extract\
+    \ and sulfur to the medium. Prior to inoculation, add sterile Na2S\xB79H2O solution,\
+    \ and adjust pH to 4.5-5.0 with sterile 1 N H2SO4."
+- preferred_term: ''
+  concentration:
+    value: (NH4)2SO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "FeCl3\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MnCl2\xB74H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2B4O7\xB710H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "ZnSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CuCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2MoO4\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "VOSO4\xB7nH2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CoSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sulfur (powder)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "FeCl3\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MnCl2\xB74H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2B4O7\xB710H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "ZnSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CuCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2MoO4\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "VOSO4\xB7nH2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CoSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sulfur (powder)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.972225Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 847, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=847.
+    Imported via ethical web scraping.'

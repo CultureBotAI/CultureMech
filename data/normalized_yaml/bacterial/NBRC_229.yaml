@@ -1,0 +1,53 @@
+name: '229'
+original_name: '229'
+category: imported
+description: 229. NBRC 228.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH
+    7.3
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Beef extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: N-Z-Amine A
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.3
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.940581Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 228, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=228.
+    Imported via ethical web scraping.'

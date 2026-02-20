@@ -1,0 +1,73 @@
+name: '270'
+original_name: '270'
+category: imported
+description: 270. NBRC 268.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Soluble starch10gK2HPO4(anhydrous base)1gMgSO4\xB77H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace\
+    \ salts solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should\
+    \ be 7.0 - 7.4*Trace salts solutionFeSO4\xB77H2O0.1gMnCl2\xB74H2O0.1gZnSO4\xB7\
+    7H2O0.1gDistilled water100ml"
+- preferred_term: ''
+  concentration:
+    value: Soluble starch
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4(anhydrous base)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: (NH4)2SO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: CaCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace salts solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Agar (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: The unadjusted pH should be 7.0 - 7.4
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.945442Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 268, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=268.
+    Imported via ethical web scraping.'

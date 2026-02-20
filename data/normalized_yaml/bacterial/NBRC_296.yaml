@@ -1,0 +1,37 @@
+name: '296'
+original_name: '296'
+category: imported
+description: 296. NBRC 294.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Bacto Yeast Extract (Difco)5gDistilled water1LAdjust pH to 5.0 with
+    1 N HCl
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Adjust pH to 5.0 with 1 N HCl
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.947874Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 294, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=294.
+    Imported via ethical web scraping.'

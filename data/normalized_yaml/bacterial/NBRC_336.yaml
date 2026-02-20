@@ -1,0 +1,81 @@
+name: '336'
+original_name: '336'
+category: imported
+description: 336. NBRC 335.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "KNO30.5gSodium glycerophosphate0.1gTrace element solution*1mlTris\
+    \ (hydroxymethyl) aminomethane1gBacto Tryptone (Difco)5gYeast extract5gAgar (if\
+    \ needed)15gSeawater**1LpH 7.0*Trace element solutionH3BO42.85gMnCl2\xB74H2O1.8gFeSO4\xB7\
+    7H2O1.36gCuCl2\xB72H2O26.9mgZnCl220.8mgCoCl2\xB76H2O40.4mgNa2MoO4\xB72H2O25.2mgSodium\
+    \ tartrate1.77gDistilled water1L**Filtered, aged seawater or artificial seawater\
+    \ (Daigo's Artificial Seawater SP***).***Wako Pure Chemical Ind., Ltd., Osaka,\
+    \ Japan."
+- preferred_term: ''
+  concentration:
+    value: KNO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium glycerophosphate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Tris (hydroxymethyl) aminomethane
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Tryptone (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Seawater**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.0
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.951125Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 335, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=335.
+    Imported via ethical web scraping.'

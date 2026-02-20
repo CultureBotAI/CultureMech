@@ -1,0 +1,32 @@
+name: '219'
+original_name: '219'
+category: imported
+description: 219. NBRC 214.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: Skim milk100gDistilled water1L
+- preferred_term: ''
+  concentration:
+    value: Skim milk
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.939802Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 214, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=214.
+    Imported via ethical web scraping.'

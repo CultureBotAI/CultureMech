@@ -1,0 +1,47 @@
+name: '14'
+original_name: '14'
+category: imported
+description: 14. NBRC 13.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Soytone1gSoluble starch10gSeawater (2% Salinity)*1LAgar15gpH 8.2*Dilute
+    artificial seawater or natural seawater with distilled water.
+- preferred_term: ''
+  concentration:
+    value: Soytone
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Soluble starch
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Seawater (2% Salinity)*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 8.2
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.936139Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 13, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=13.
+    Imported via ethical web scraping.'

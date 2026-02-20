@@ -1,0 +1,68 @@
+name: '1340'
+original_name: '1340'
+category: imported
+description: 1340. NBRC 1339.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution\
+    \ (0.1 M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter\
+    \ autoclaving of agar solution, aseptically mix 10xM9, MgSO4and CaCl2solutions.\
+    \ After cooling to 65\xB0C, aseptically add phenanthrene solution, mix by sonication\
+    \ for approximately 30 seconds and pour into the plates.*Agar solutionDissolve\
+    \ 15 g of agar in 900 ml of distilled water and sterilize by autoclaving.**10xM9\
+    \ solutionKH2PO430gNa2HPO460gNH4Cl10gNaCl5gDistilled water1LSterilize separately\
+    \ by autoclaving.***Dissolve in distilled water and sterilize by autoclaving.****Sterilized\
+    \ by filtration. The use of DMSO-safe filters is recommended."
+- preferred_term: ''
+  concentration:
+    value: Agar solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '10'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: MgSO4solution (1 M)***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: CaCl2solution (0.1 M)***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Phenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.064419Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1339, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1339.
+    Imported via ethical web scraping.'

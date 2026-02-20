@@ -1,0 +1,165 @@
+name: '990'
+original_name: '990'
+category: imported
+description: 990. NBRC 989.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "Trypticase Peptone (BBL)2gBacto Yeast Extract (Difco)2g50% Sodium\
+    \ lactate25mlBiotin solution*2mlK solution**10mlM solution***2.5mlC solution****2.5mlResazurin1mg15%\
+    \ Na2CO3solution20mlCysteine-HCl0.75gDistilled water1LpH 7Mix ingredients except\
+    \ for Na2CO3and cysteine-HCl, dispense the medium into suitable culture vessels\
+    \ under a stream of N2/CO2(80/20), seal with butyl rubber stoppers, and autoclave\
+    \ at 115\u2103 for 25 min. Aseptically and anaerobically add filter-sterile Na2CO3and\
+    \ cysteine-HCl solutions, and adjust pH to 7.0 with 3 N HCl.*Biotin solutionBiotin5mgEthanol100ml**K\
+    \ solutionKH2PO490gNaCl90g(NH4)2SO490gDistilled water1L***M solutionMnCl2\xB7\
+    4H2O4gCoCl2\xB76H2O4gDistilled water1L****C solutionCaCl2\xB72H2O10.6gDistilled\
+    \ water1L"
+- preferred_term: ''
+  concentration:
+    value: Trypticase Peptone (BBL)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Biotin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: M solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: C solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '5'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Biotin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: M solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: C solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.001571Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 989, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=989.
+    Imported via ethical web scraping.'

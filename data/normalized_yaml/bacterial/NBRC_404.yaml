@@ -1,0 +1,69 @@
+name: '404'
+original_name: '404'
+category: imported
+description: 404. NBRC 403.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "K2HPO40.5gKH2PO40.6gMgSO4\xB77H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium\
+    \ glutamate6gAgar (if needed)15gDistilled water1LpH 6.7\xB10.2"
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: CaCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Arabinose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium glutamate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "pH 6.7\xB10.2"
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.959767Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 403, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=403.
+    Imported via ethical web scraping.'

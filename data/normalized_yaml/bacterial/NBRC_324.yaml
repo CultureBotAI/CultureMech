@@ -1,0 +1,53 @@
+name: '324'
+original_name: '324'
+category: imported
+description: 324. NBRC 323.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4\xB7\
+    7H2O0.5gCaCl2\xB72H2O0.25gKH2PO40.6gDistilled water500mlpH 3.0 - 4.0**Solution\
+    \ BGlucose1gAgar (if needed)20gDistilled water500mlSolutions A and B are separately\
+    \ sterilized by autoclaving and mixed."
+- preferred_term: ''
+  concentration:
+    value: Solution A*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Solution B**
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: pH 3.0 - 4.0
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.949973Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 323, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=323.
+    Imported via ethical web scraping.'

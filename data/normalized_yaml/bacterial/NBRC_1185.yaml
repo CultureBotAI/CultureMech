@@ -1,0 +1,71 @@
+name: '1185'
+original_name: '1185'
+category: imported
+description: 1185. NBRC 1183.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "KNO30.50gNa-glycerophosphate0.10gTris HCl1.00gTryptone (Difco 0123)2.00gYeast\
+    \ extract2.00gTrace elements (see below)1.00mlArtificial sea water999.00mlpH 7.0Artificial\
+    \ sea water is prepared from a marine aquarium salts mixture.Trace elements:H3BO32.85gMnCl2\xB7\
+    4H2O1.80gFeSO41.36gNa-tartrate1.77gCuCl2\xB72H2O26.90mgZnCl220.80mgCoCl2\xB76H2O40.40mgNa2MoO4\xB7\
+    2H2O25.20mgDistilled water1000.00ml"
+- preferred_term: ''
+  concentration:
+    value: KNO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na-glycerophosphate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Tris HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Tryptone (Difco 0123)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements (see below)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Artificial sea water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.0
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.033903Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1183, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1183.
+    Imported via ethical web scraping.'

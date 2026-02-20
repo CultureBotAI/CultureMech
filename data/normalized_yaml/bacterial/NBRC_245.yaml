@@ -1,0 +1,53 @@
+name: '245'
+original_name: '245'
+category: imported
+description: 245. NBRC 244.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar
+    (if needed)20gpH 7.6
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Malt extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Seawater
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.6
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.941875Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 244, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=244.
+    Imported via ethical web scraping.'

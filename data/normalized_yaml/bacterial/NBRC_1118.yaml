@@ -1,0 +1,199 @@
+name: '1118'
+original_name: '1118'
+category: imported
+description: 1118. NBRC 1117.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "KH2PO40.5gMgSO4\xB77H2O0.5gNaCl0.4gNH4Cl0.68gCaCl2\xB72H2O0.25gSodium\
+    \ pyruvate0.5gSodium succinate0.5gSodium acetate0.5gYeast extract0.5gFerric citrate\
+    \ solution* (0.1%)5mlTrace element solution SL7**1mlNaHCO3(10% (w/v))15mlVitamin\
+    \ B12(0.002% (w/v))1mlNa2S\xB79H2O0.24gResazurin1mgDistilled water1LpH 6.6 - 7.4Mix\
+    \ ingredients except for vitamin B12, NaHCO3and Na2S\xB79H2O, and autoclave under\
+    \ a N2atmosphere. Separately autoclave Na2S\xB79H2O solution under a N2atmosphere.\
+    \ Sterilize vitamin B12and NaHCO3solutions by filtration. Prior to inoculation,\
+    \ aseptically and anaerobically add them.*Soluble in hot water.**Trace element\
+    \ solution SL7HCl (25%; 7.7 M)10mlFeCl2\xB74H2O1.5gZnCl270mgMnCl2\xB74H2O100mgH3BO360mgCoCl2\xB7\
+    6H2O200mgCuCl2\xB72H2O20mgNiCl2\xB76H2O20mgNa2MoO4\xB72H2O40mgDistilled water990mlInitially,\
+    \ dissolve FeCl2\xB74H2O in 25% HCl, then add distilled water followed by the\
+    \ other components."
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium pyruvate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium succinate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Ferric citrate solution* (0.1%)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution SL7**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3(10% (w/v))
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin B12(0.002% (w/v))
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 6.6 - 7.4
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium pyruvate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium succinate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Ferric citrate solution* (0.1%)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution SL7**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3(10% (w/v))
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin B12(0.002% (w/v))
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 6.6 - 7.4
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.024227Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1117, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1117.
+    Imported via ethical web scraping.'

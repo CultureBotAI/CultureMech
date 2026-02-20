@@ -1,0 +1,218 @@
+name: '1170'
+original_name: '1170'
+category: imported
+description: 1170. NBRC 1169.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "NH4Cl0.33gKH2PO40.33gKCl0.33gCaCl2\xB72H2O0.33gMgCl2\xB76H2O0.33gMgSO4\xB7\
+    7H2O4gNaCl250gCoenzyme M0.142gBacto Yeast Extract (Difco)0.5gVitamin solution*10mlTrace\
+    \ elements solution**1mlTrimethylamine-HCl5gResazurin1mgNaHCO35gNa2S\xB79H2O0.5gDistilled\
+    \ water1LMix ingredients except for vitamin solution, trimethylamine-HCl, NaHCO3and\
+    \ Na2S\xB79H2O, and autoclave under a N2/CO2atmosphere (80/20).  Separately autoclave\
+    \ Na2S\xB79H2O solution as 5% solution under a N2atmosphere.  Prior to inoculation,\
+    \ add the filter-sterile vitamin, 50% trimethylamine-HCl and 5% NaHCO3solutions,\
+    \ and Na2S\xB79H2O. Adjust pH of the medium to 7.4 with filter-sterile 5% Na2CO3solution\
+    \ (approximately final concentration of Na2CO3is 0.5 g/L).*Vitamin solutionBiotin2mgFolic\
+    \ acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic\
+    \ acid1mgVitamin B120.01mgDistilled water1L**Trace elements solutionNitrilotriacetic\
+    \ acid (NTA)12.8gFeCl3\xB76H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB76H2O0.024gCaCl2\xB7\
+    2H2O0.1gZnCl20.1gCuCl2\xB72H2O0.025gH3BO30.01gNa2MoO4\xB72H2O0.024gNaCl1gNiCl2\xB7\
+    6H2O0.12gDistilled water1LFirst dissolve nitrilotriacetic acid and adjust pH to\
+    \ 6.5 with NaOH, and then add minerals. Final pH 7.0."
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Coenzyme M
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trimethylamine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Coenzyme M
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trimethylamine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.029597Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1169, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1169.
+    Imported via ethical web scraping.'

@@ -1,0 +1,49 @@
+name: '1038'
+original_name: '1038'
+category: imported
+description: 1038. NBRC 1035.
+medium_type: DEFINED
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Bacto Tryptic Soy Broth w/o Dextrose (Difco)2.75gNaCl5gK2HPO42.5gAgar
+    (if needed)15gDistilled water1LpH 5.0
+- preferred_term: ''
+  concentration:
+    value: Bacto Tryptic Soy Broth w/o Dextrose (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 5.0
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.010533Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1035, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1035.
+    Imported via ethical web scraping.'

@@ -1,0 +1,54 @@
+name: '1003'
+original_name: '1003'
+category: imported
+description: 1003. NBRC 1002.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "MgSO4\xB77H2O0.5g(NH4)2SO40.4gK2HPO40.2gKCl0.1gDistilled water1LAdjust\
+    \ pH to 2.0 with H2SO4.Heterotrophic growth on yeast extract:Add 10 mg/l of FeSO4\xB7\
+    7H2O to the medium. After autoclaving, add yeast extract from sterile stock solution\
+    \ to final concentration of 0.25 g/l.Autotrophic growth on ferrous sulfate:Add\
+    \ 13.9 g/l of FeSO4\xB77H2O to the medium, and adjust medium pH to 1.7 with H2SO4prior\
+    \ to autoclaving."
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: (NH4)2SO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.004823Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1002, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1002.
+    Imported via ethical web scraping.'

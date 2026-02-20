@@ -1,0 +1,69 @@
+name: '310'
+original_name: '310'
+category: imported
+description: 310. NBRC 309.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "K2HPO42.9gKH2PO42.1gNH4Cl2gMgSO4\xB77H2O0.4gNaCl30mgCaCl2\xB72H2O3mgFeSO4\xB7\
+    7H2O1mgYeast extract3gRhamnose10gDistilled water1LpH 7.0"
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "FeSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Rhamnose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.0
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.948677Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 309, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=309.
+    Imported via ethical web scraping.'

@@ -1,0 +1,179 @@
+name: '937'
+original_name: '937'
+category: imported
+description: 937. NBRC 936.
+medium_type: DEFINED
+physical_state: LIQUID
+ingredients:
+- preferred_term: "KP buffer*10mlMgCl2\xB76H2O0.75gCaCl2\xB72H2O0.15gNH4Cl0.54gNa2S2O31.6gTrace\
+    \ elements solution**2mlVitamin solution***2mlNa2CO30.5gDistilled water1LMix ingredients\
+    \ except KP buffer and vitamin solution. Dispense the medium into suitable culture\
+    \ vessels under a stream of H2/CO2/O2(75/20/5) and seal with butyl rubber stoppers.\
+    \ Separately autoclave KP buffer under a N2atmosphere. Sterilize vitamin solution\
+    \ by filtration. Prior to inoculation, aseptically add KP buffer and vitamin solution.\
+    \ Pressurize the inoculated vessels to 150 kPa with H2/CO2/O2.*KP bufferKH2PO4119gK2HPO421gDistilled\
+    \ water1LAutoclaved under N2.**Trace elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB7\
+    6H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB76H2O0.024gCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB7\
+    2H2O0.025gH3BO30.01gNa2MoO4\xB72H2O0.024gNaCl1gNiCl2\xB76H2O0.12gNa2SeO40.004gNa2WO40.004gKAl(SO4)2\xB7\
+    12H2O0.02gDistilled water1LFirst dissolve nitrilotriacetic acid and adjust pH\
+    \ to 6.5 with NaOH, and then add minerals. Final pH 7.0.***Vitamin solutionBiotin2mgFolic\
+    \ acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic\
+    \ acid1mgVitamin B120.01mgDistilled water1L"
+- preferred_term: ''
+  concentration:
+    value: KP buffer*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2S2O3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2CO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2S2O3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Na2CO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.993417Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 936, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=936.
+    Imported via ethical web scraping.'

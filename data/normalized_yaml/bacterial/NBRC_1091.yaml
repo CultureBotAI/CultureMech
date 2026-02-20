@@ -1,0 +1,209 @@
+name: '1091'
+original_name: '1091'
+category: imported
+description: 1091. NBRC 1086.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "KH2PO40.2gNH4Cl0.1gMgCl2\xB76H2O0.4gCaCl2\xB72H2O0.1gNaCl1gKCl0.5gNaHCO32.52gBacto\
+    \ Yeast Extract (Difco)0.1gSodium acetate0.1gTrace elements solution*2mlVitamin\
+    \ solution**10mlResazurin0.5mgCysteine-HCl0.3gNa2S\xB79H2O0.3gDistilled water1LMix\
+    \ ingredients except for vitamin solution, cysteine-HCl and Na2S\xB79H2O, and\
+    \ autoclave under H2/CO2(80/20) condition. Separately autoclave cysteine-HCl and\
+    \ Na2S\xB79H2O as a 6% solution under a N2atmosphere. Aseptically and anaerobically\
+    \ add filter-sterile vitamin solution, and cysteine-HCl and Na2S\xB79H2O solutions,\
+    \ and pressurize inoculated bottles to 150 kPa with H2/CO2. The pH of medium is\
+    \ 7.0.*Trace elements solutionNitrilotriacetic acid (NTA)4.1gFeCl3\xB76H2O0.36gMnCl2\xB7\
+    4H2O0.09gCoCl2\xB76H2O0.15gCaCl2\xB72H2O0.018gZnCl20.09gH3BO30.017gNa2MoO4\xB7\
+    2H2O0.009gNiCl2\xB76H2O0.018gNa2SeO40.004gNa2WO40.004gDistilled water1LFirst dissolve\
+    \ nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals.\
+    \ Final pH 7.0.**Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
+    \ acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L"
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace elements solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.018312Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1086, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1086.
+    Imported via ethical web scraping.'

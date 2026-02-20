@@ -1,0 +1,228 @@
+name: '1021'
+original_name: '1021'
+category: imported
+description: 1021. NBRC 1020.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "Ethanol0.46mlYeast extract0.1gKH2PO40.14gMgCl2\xB76H2O0.2gCaCl2\xB7\
+    2H2O0.15gNH4Cl0.54gSodium acetate0.82gVitamin solution*2mlTrace element solution**2mlSe/W\
+    \ solution***1mlResazurin solution****1mlNaHCO32.5gNa2S\xB79H2O0.3gCysteine-HCl0.3gDistilled\
+    \ water1LFor vial cultures, dissolve all ingredients except for ethanol, vitamin\
+    \ solution, Na2S\xB79H2O and cysteine-HCl, flush N2/CO2(80/20) and autoclave.\
+    \  Concentrated Na2S\xB79H2O and cysteine-HCl solutions are sterilized separately\
+    \ by autoclaving under a N2atmosphere in tightly closed vessels.  Add filter-sterilized\
+    \ 0.8 M ethanol and vitamin solutions, and autoclaved Na2S\xB79H2O and cysteine-HCl\
+    \ solutions . Inoculum size 10-20%.*Vitamin solutionBiotin0.5mgFolic acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic\
+    \ acid0.2mgCa-pantothenate0.5mgVitamin B122.7mgp-Aminobenzoic acid0.3mgLipoic\
+    \ acid0.4mgDistilled water1L**Trace element solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB7\
+    6H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB76H2O24mgCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB7\
+    2H2O25mgH3BO310mgNa2MoO4\xB72H2O24mgNiCl2\xB76H2O0.12gDistilled water1LFirst dissolve\
+    \ NTA in 200 ml of water and adjust the pH to 6.5 with KOH.***Se/W solutionNa2SeO34mgNa2WO44mgDistilled\
+    \ water1L****Resazurin solutionResazurin1gDistilled water1L"
+- preferred_term: ''
+  concentration:
+    value: Ethanol
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Se/W solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Se/W solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.006067Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1020, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1020.
+    Imported via ethical web scraping.'

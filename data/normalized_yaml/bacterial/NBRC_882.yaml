@@ -1,0 +1,76 @@
+name: '882'
+original_name: '882'
+category: imported
+description: 882. NBRC 881.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween\
+    \ 80 solution**10mlSalts solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and\
+    \ 15 g/L agar after the pH is adjusted for the solid medium.*Wako Pure Chemical\
+    \ Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled water1L***Salts\
+    \ solutionMgSO4\xB77H2O40gMnSO4\xB74H2O2gFeSO4\xB77H2O2gNaCl2gDistilled water1LAdd\
+    \ a drop of 12 N HCl to 500 ml of the salts solution."
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Hipolypepton*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Tween 80 solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Salts solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 6.0
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.980773Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 881, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=881.
+    Imported via ethical web scraping.'

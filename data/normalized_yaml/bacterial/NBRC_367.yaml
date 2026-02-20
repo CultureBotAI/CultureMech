@@ -1,0 +1,78 @@
+name: '367'
+original_name: '367'
+category: imported
+description: 367. NBRC 366.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Peptone10gMeat extract10gYeast extract5gGlucose20gTween 801gK2HPO42gSodium\
+    \ acetate5gDiammonium hydrogencitrate2gMgSO4\xB77H2O0.2gMnSO4\xB7nH2O0.05gDistilled\
+    \ water1LAgar (if needed)15gpH 5.5"
+- preferred_term: ''
+  concentration:
+    value: Peptone
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Meat extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Tween 80
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Diammonium hydrogencitrate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MnSO4\xB7nH2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 5.5
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.953837Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 366, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=366.
+    Imported via ethical web scraping.'

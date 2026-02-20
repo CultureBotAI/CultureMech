@@ -1,0 +1,45 @@
+name: '815'
+original_name: '815'
+category: imported
+description: 815. NBRC 814.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Trypticase Soy Broth (Difco)30gYeast extract3gAgar (if needed)15gDistilled
+    water1LpH 7.0 - 7.2
+- preferred_term: ''
+  concentration:
+    value: Trypticase Soy Broth (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.0 - 7.2
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.962577Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 814, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=814.
+    Imported via ethical web scraping.'

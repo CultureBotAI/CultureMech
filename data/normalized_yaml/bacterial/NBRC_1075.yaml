@@ -1,0 +1,63 @@
+name: '1075'
+original_name: '1075'
+category: imported
+description: 1075. NBRC 1074.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4\xB7\
+    7H2O0.2g20% NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave\
+    \ NaCl and Na2CO3solutions separately and add the solutions to the medium aseptically."
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Peptone (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '2'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: '1'
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.017019Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1074, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1074.
+    Imported via ethical web scraping.'

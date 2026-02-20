@@ -1,0 +1,70 @@
+name: '1210'
+original_name: '1210'
+category: imported
+description: 1210. NBRC 1209.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: "Bacto Yeast Extract (Difco)2.5gBacto Proteose Peptone No. 3 (Difco)2.5gBacto\
+    \ Casamino Acids (Difco)2.5gGlucose2.5gSoluble starch2.5gSodium pyruvate1.5gK2HPO41.5gMgSO4\xB7\
+    7H2O0.25gAgar (if needed)15gDistilled water1LpH 7.2+/-0.2"
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Proteose Peptone No. 3 (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Casamino Acids (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Soluble starch
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium pyruvate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar (if needed)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.2+/-0.2
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.037277Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1209, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1209.
+    Imported via ethical web scraping.'

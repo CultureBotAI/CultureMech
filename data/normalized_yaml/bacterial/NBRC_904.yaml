@@ -1,0 +1,230 @@
+name: '904'
+original_name: '904'
+category: imported
+description: 904. NBRC 903.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "NaCl30gKCl0.33gNH4Cl0.25gMgCl2\xB76H2O2.8gMgSO4\xB77H2O3.4gFeSO4\xB7\
+    7H2O0.025gK2HPO40.3gNaBr0.01gTrace minerals*10mlVitamin solution**10mlBacto Yeast\
+    \ Extract (Difco)3gBacto Tryptone (Difco)3gPIPES6gSulfur (powder)10gResazurin1mgNa2S\xB7\
+    9H2O0.5gDistilled water1LMix ingredients except vitamin solution, sulfur and Na2S\xB7\
+    9H2O, and adjust pH to 7. Autoclave under a N2atmosphere. Filter-sterilize vitamin\
+    \ solution. Sulfur is sterilized separately by autoclaving for 60 min at 105\u2103\
+    \ on each of 3 successive days. Neutralize Na2S\xB79H2O as 5% solution and autoclave\
+    \ under a N2atmosphere. Prior to inoculation, aseptically and anaerobically add\
+    \ vitamin, sulfur and Na2S\xB79H2O.*Trace mineralsNitrilotriacetic acid1.5gMgSO4\xB7\
+    7H2O3gMnSO4\xB7xH2O0.5gNaCl1gFeSO4\xB77H2O0.1gCoSO4\xB77H2O0.1gCaCl2\xB72H2O0.1gZnSO4\xB7\
+    7H2O0.1gCuSO4\xB75H2O0.01gAlK(SO4)20.01gH3BO30.01gNa2MoO4\xB72H2O0.01gDistilled\
+    \ water1LDissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.\
+    \ Then proceed to add minerals. Adjust final pH to 7.0.** Vitamin solutionBiotin2mgFolic\
+    \ acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgVitamin\
+    \ B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled water1L"
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "FeSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaBr
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace minerals*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Tryptone (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: PIPES
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sulfur (powder)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: KCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "FeSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaBr
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace minerals*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Tryptone (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: PIPES
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sulfur (powder)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.983280Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 903, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=903.
+    Imported via ethical web scraping.'

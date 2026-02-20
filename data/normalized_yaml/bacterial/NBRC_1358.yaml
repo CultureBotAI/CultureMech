@@ -1,0 +1,238 @@
+name: '1358'
+original_name: '1358'
+category: imported
+description: 1358. NBRC 1356.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "Mineral base 1*500mlMineral base 2**500mlMgCl2\xB76H2O0.2gBacto\
+    \ Yeast Extract (Difco)0.02gCoenzyme M0.014gVitamin solution***5mlTrace element\
+    \ solution****10mlMethanol2mlSodium formate3.4gSodium acetate0.16gFeS slurry solution*****2mlNa2S\xB7\
+    9H2O0.12gMix mineral base 1 with mineral base 2 in 1:1 proportion in tightly closed\
+    \ vessels under a N2atmosphere. Separately autoclave concentrated Bacto Yeast\
+    \ Extract, coenzyme M, sodium acetate, Na2S\xB79H2O and FeS solution under a N2atmosphere\
+    \ in tightly closed vessels. Add the autoclaved concentrated solutions, and filter-sterile\
+    \ concentrated MgCl2\xB76H2O, vitamin solution, trace element solution, methanol\
+    \ and sodium formate solution. After re-exchanging with N2, add 1 drop of filter-sterile\
+    \ 10% sodium dithionaite solution in 1 M NaHCO3by syringe. Final pH of the complete\
+    \ medium should be 9.*Mineral base 1Na2CO3185gNaHCO335gNaCl16gK2HPO41gDistilled\
+    \ water1LMix ingredients and autoclave under a N2atmosphere. Because some precipitate\
+    \ appears on the bottom for 1 day after autoclaving, use only supernatant for\
+    \ making the medium. Final pH should be 10.**Mineral base 2NaCl240gNH4Cl0.5gK2HPO42.5gKCl5gDistilled\
+    \ water1LMix ingredients and autoclave under a N2atmosphere. Final pH should be\
+    \ 7.3.***Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
+    \ acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L****Trace\
+    \ elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB76H2O1.35gMnCl2\xB7\
+    4H2O0.1gCoCl2\xB76H2O0.024gCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB72H2O0.025gH3BO30.01gNa2MoO4\xB7\
+    2H2O0.024gNaCl1gNiCl2\xB76H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled water1LFirst\
+    \ dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add\
+    \ minerals. Final pH 7.0.*****FeS slurry solutionMix 0.5 M FeSO4\xB77H2O and 0.5\
+    \ M Na2S\xB79H2O solutions, wash with pure water several times, finally resuspend\
+    \ the FeS precipitate as 20% solution and autoclave (110\xB0C, 30 min) under a\
+    \ N2atmosphere."
+- preferred_term: ''
+  concentration:
+    value: Mineral base 1*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Mineral base 2**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Coenzyme M
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Methanol
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium formate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: FeS slurry solution*****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Mineral base 2**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Coenzyme M
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Methanol
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium formate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: FeS slurry solution*****
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.066067Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1356, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1356.
+    Imported via ethical web scraping.'

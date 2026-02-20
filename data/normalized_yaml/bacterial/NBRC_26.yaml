@@ -1,0 +1,44 @@
+name: '26'
+original_name: '26'
+category: imported
+description: 26. NBRC 25.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Proteose peptone1gYeast extract1gGlucose1gDistilled water1LAgar15g
+- preferred_term: ''
+  concentration:
+    value: Proteose peptone
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.937541Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 25, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=25.
+    Imported via ethical web scraping.'

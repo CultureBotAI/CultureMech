@@ -1,0 +1,49 @@
+name: '892'
+original_name: '892'
+category: imported
+description: 892. NBRC 891.
+medium_type: COMPLEX
+physical_state: SOLID_AGAR
+ingredients:
+- preferred_term: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled water1LpH
+    7.1-7.5
+- preferred_term: ''
+  concentration:
+    value: Casein peptone
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Soybean peptone
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Agar
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH 7.1-7.5
+    unit: G_PER_L
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.982294Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 891, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=891.
+    Imported via ethical web scraping.'

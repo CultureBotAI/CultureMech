@@ -1,0 +1,217 @@
+name: '838'
+original_name: '838'
+category: imported
+description: 838. NBRC 837.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "KH2PO40.75gK2HPO40.75gMgCl2\xB76H2O0.36gNH4Cl1gBacto Yeast Extract\
+    \ (Difco)0.1gHipolypepton*0.1gSodium acetate2.5gTrimethylamine-HCl8gTrace mineral\
+    \ solution**9mlTrace vitamins***10mlNaHCO30.8gNa2S\xB79H2O0.5gCysteine-HCl0.5gResazurin1mgDistilled\
+    \ water981mlMix ingredients except trace vitamins, Na2S\xB79H2O and cysteine-HCl,\
+    \ and autoclave under a N2/CO2(80/20) atmosphere. Separately autoclave Na2S\xB7\
+    9H2O and cysteine-HCl as 5% solutions under a N2atmosphere. Aseptically and anaerobically\
+    \ add filter-sterile vitamin solution to the medium. Prior to inoculation, add\
+    \ the sterile Na2S\xB79H2O and cysteine-HCl solutions, and adjust pH to 6.8.*Wako\
+    \ Pure Chemicals Ind. Ltd., Osaka, Japan.**Trace mineral solutionNitrilotriacetic\
+    \ acid4.5gFeCl2\xB74H2O0.4gMnCl2\xB74H2O0.1gCoCl2\xB76H2O0.17gZnCl20.1gCaCl2\xB7\
+    2H2O0.02gH3BO30.019gNa2MoO4\xB72H2O0.01gNiCl2\xB76H2O0.03gDistilled water1LAdjust\
+    \ pH to 7.0 with 1 N KOH***Trace vitaminsBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
+    \ acid5mgCa-pantothenate5mgVitamin B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled\
+    \ water1L"
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Hipolypepton*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trimethylamine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace mineral solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace vitamins***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Adjust pH to 7.0 with 1 N KOH
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: K2HPO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgCl2\xB76H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Bacto Yeast Extract (Difco)
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Hipolypepton*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Sodium acetate
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trimethylamine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace mineral solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace vitamins***
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: Adjust pH to 7.0 with 1 N KOH
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:35.968016Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 837, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=837.
+    Imported via ethical web scraping.'

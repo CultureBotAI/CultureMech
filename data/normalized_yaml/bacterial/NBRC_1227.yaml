@@ -1,0 +1,205 @@
+name: '1227'
+original_name: '1227'
+category: imported
+description: 1227. NBRC 1226.
+medium_type: COMPLEX
+physical_state: LIQUID
+ingredients:
+- preferred_term: "NH4Cl1gKH2PO40.27gMgSO4\xB77H2O0.25gCaCl2\xB72H2O0.15gNaHCO32.5gGlucose10gYeast\
+    \ extract3gNa2S\xB79H2O30gCysteine-HCl30gResazurin1mgTrace element solution*1mlVitamin\
+    \ solution**1mlDistilled water1LpH unajustedMix ingredients except vitamin, bicarbonate,\
+    \ cysteine and sulfide, and dispense the medium into suitable culture vessels\
+    \ under a stream of N2/CO2(80/20) and seal with butyl rubber stoppers. After autoclaving\
+    \ (121\xB0C, 15 min), aseptically and anaerobically add vitamin solution, bicarbonate\
+    \ solution, and cysteine and sulfide solutions using sterile syringes. The bicarbonate\
+    \ and vitamin solutions should be sterilized by filtration.*Trace element solutionNitrilotriacetic\
+    \ acid (NTA)12.8gFeCl3\xB76H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB76H2O24mgAlCl313.3mgZnCl20.1gCuCl2\xB7\
+    2H2O25mgH3BO310mgNa2MoO4\xB72H2O24mgNa2WO4\xB72H2O3mgNiCl2\xB76H2O0.12gNa2SeO326mgDistilled\
+    \ water1LFirst dissolve NTA in 200 ml of water and adjust the pH to 6.5 with KOH.**Vitamin\
+    \ solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
+    \ acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B125mgLipoic acid5mgDistilled\
+    \ water1L"
+- preferred_term: ''
+  concentration:
+    value: NH4Cl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH unajusted
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+  concentration:
+    value: KH2PO4
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "MgSO4\xB77H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "CaCl2\xB72H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: NaHCO3
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Glucose
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Yeast extract
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: "Na2S\xB79H2O"
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Cysteine-HCl
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Resazurin
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Trace element solution*
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Vitamin solution**
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: Distilled water
+    unit: G_PER_L
+- preferred_term: ''
+  concentration:
+    value: pH unajusted
+    unit: G_PER_L
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+- preferred_term: ''
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve ingredients in distilled water
+- step_number: 2
+  action: ADJUST_PH
+  description: Adjust pH if needed
+- step_number: 3
+  action: DISSOLVE
+  description: Sterilize by autoclaving
+curation_history:
+- timestamp: '2026-02-20T00:22:36.038693Z'
+  curator: nbrc-import
+  action: Imported from NBRC
+  notes: 'Source: NBRC, Media No. 1226, URL: http://www.nbrc.nite.go.jp/NBRC2/NBRCMediumDetailServlet?NO=1226.
+    Imported via ethical web scraping.'
