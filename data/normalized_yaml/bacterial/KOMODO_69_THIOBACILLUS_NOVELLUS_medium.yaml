@@ -130,3 +130,10 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 69
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: THIOBACILLUS NOVELLUS, culture_type: isolate'
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: THIOBACILLUS NOVELLUS

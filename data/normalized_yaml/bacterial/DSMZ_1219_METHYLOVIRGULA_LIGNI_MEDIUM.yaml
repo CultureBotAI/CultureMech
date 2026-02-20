@@ -121,3 +121,10 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1219'
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: METHYLOVIRGULA LIGNI, culture_type: isolate'
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: METHYLOVIRGULA LIGNI

@@ -141,3 +141,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: EGGC Liquid, culture_type: isolate'
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: EGGC Liquid

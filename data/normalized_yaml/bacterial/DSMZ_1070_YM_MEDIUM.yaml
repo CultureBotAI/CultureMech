@@ -9,7 +9,10 @@ media_term:
   term:
     id: mediadive.medium:1070
     label: YM MEDIUM
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1070.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1070.pdf
+
+
+  Cross-reference: ATCC:416 (GYM MEDIUM)'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -61,3 +64,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1070'
+- timestamp: '2026-02-20T07:33:34.000000Z'
+  curator: atcc-crossref-backfill
+  action: Added ATCC cross-reference
+  notes: ATCC:416 verified equivalent (verified 2026-02-19)

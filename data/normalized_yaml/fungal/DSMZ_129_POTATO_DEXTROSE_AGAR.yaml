@@ -9,7 +9,10 @@ media_term:
   term:
     id: mediadive.medium:129
     label: POTATO DEXTROSE AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium129.pdf
+
+
+  Cross-reference: ATCC:2 (POTATO DEXTROSE AGAR)'
 ingredients:
 - preferred_term: Glucose
   term:
@@ -44,3 +47,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 129'
+- timestamp: '2026-02-20T07:33:34.000000Z'
+  curator: atcc-crossref-backfill
+  action: Added ATCC cross-reference
+  notes: ATCC:2 verified equivalent (verified 2026-02-19)

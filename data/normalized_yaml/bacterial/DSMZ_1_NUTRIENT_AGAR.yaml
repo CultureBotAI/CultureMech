@@ -9,7 +9,10 @@ media_term:
   term:
     id: mediadive.medium:1
     label: NUTRIENT AGAR
-notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf'
+notes: 'Source: DSMZ | Link: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1.pdf
+
+
+  Cross-reference: ATCC:1 (NUTRIENT AGAR)'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -42,3 +45,7 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1'
+- timestamp: '2026-02-20T07:33:34.000000Z'
+  curator: atcc-crossref-backfill
+  action: Added ATCC cross-reference
+  notes: ATCC:1 verified equivalent (verified 2026-02-19)

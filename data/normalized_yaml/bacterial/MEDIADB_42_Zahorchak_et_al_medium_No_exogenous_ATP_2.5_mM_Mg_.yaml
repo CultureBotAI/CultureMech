@@ -202,6 +202,10 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+- timestamp: '2026-02-20T07:49:55.000000Z'
+  curator: organism-data-backfill
+  action: Added curated organism data
+  notes: 'Added organism: Zahorchak et, culture_type: isolate'
 media_term:
   preferred_term: MediaDB Medium 42
   term:
@@ -213,3 +217,6 @@ applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+organism_culture_type: isolate
+target_organisms:
+- preferred_term: Zahorchak et
