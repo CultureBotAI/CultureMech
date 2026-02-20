@@ -1,0 +1,227 @@
+{
+  "generated_date": "2026-02-19",
+  "total_candidates": 20,
+  "verified_count": 1,
+  "candidates": [
+    {
+      "atcc_id": "1",
+      "dsmz_id": "1",
+      "atcc_name": "NUTRIENT AGAR",
+      "dsmz_name": "NUTRIENT AGAR",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": true,
+      "notes": "Auto-verified: literature source with name match"
+    },
+    {
+      "atcc_id": "3",
+      "dsmz_id": "92",
+      "atcc_name": "TRYPTICASE SOY AGAR/BROTH",
+      "dsmz_name": "TRYPTICASE SOY YEAST EXTRACT MEDIUM",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "18",
+      "dsmz_id": "92",
+      "atcc_name": "TRYPTICASE SOY BROTH",
+      "dsmz_name": "TRYPTICASE SOY YEAST EXTRACT MEDIUM",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "632",
+      "dsmz_id": "1",
+      "atcc_name": "NUTRIENT BROTH",
+      "dsmz_name": "NUTRIENT AGAR",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "745",
+      "dsmz_id": "63",
+      "atcc_name": "KING'S MEDIUM B",
+      "dsmz_name": "DESULFOVIBRIO (POSTGATE) MEDIUM",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "325",
+      "dsmz_id": "65",
+      "atcc_name": "CZAPEK-DOX AGAR",
+      "dsmz_name": "GYM STREPTOMYCES MEDIUM",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "28",
+      "dsmz_id": "1",
+      "atcc_name": "EMERSON YpSs AGAR",
+      "dsmz_name": "NUTRIENT AGAR",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "200",
+      "dsmz_id": "14",
+      "atcc_name": "YM AGAR/BROTH",
+      "dsmz_name": "CLOSTRIDIUM FORMICACETICUM MEDIUM",
+      "similarity_score": 1.0,
+      "source": "literature",
+      "confidence": "high",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "325",
+      "dsmz_id": "130",
+      "atcc_name": "CZAPEK-DOX AGAR",
+      "dsmz_name": "CZAPEK-DOX AGAR",
+      "similarity_score": 1.0,
+      "source": "name_match",
+      "confidence": "medium",
+      "verified": true,
+      "notes": "Auto-verified: exact name match"
+    },
+    {
+      "atcc_id": "2",
+      "dsmz_id": "129",
+      "atcc_name": "POTATO DEXTROSE AGAR",
+      "dsmz_name": "POTATO DEXTROSE AGAR",
+      "similarity_score": 1.0,
+      "source": "name_match",
+      "confidence": "medium",
+      "verified": true,
+      "notes": "Auto-verified: exact name match"
+    },
+    {
+      "atcc_id": "1",
+      "dsmz_id": "1259",
+      "atcc_name": "NUTRIENT AGAR",
+      "dsmz_name": "NUTRIMENT AGAR",
+      "similarity_score": 0.941,
+      "source": "name_match",
+      "confidence": "medium",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "632",
+      "dsmz_id": "1259",
+      "atcc_name": "NUTRIENT BROTH",
+      "dsmz_name": "NUTRIMENT AGAR",
+      "similarity_score": 0.941,
+      "source": "name_match",
+      "confidence": "medium",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "3",
+      "dsmz_id": "1350",
+      "atcc_name": "TRYPTICASE SOY AGAR/BROTH",
+      "dsmz_name": "TRYPTICASE SOY AGAR NA-MG",
+      "similarity_score": 0.844,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "18",
+      "dsmz_id": "535c",
+      "atcc_name": "TRYPTICASE SOY BROTH",
+      "dsmz_name": "TRYPTICASE SOY BROTH AGAR",
+      "similarity_score": 0.824,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "18",
+      "dsmz_id": "535",
+      "atcc_name": "TRYPTICASE SOY BROTH",
+      "dsmz_name": "TRYPTICASE SOY BROTH AGAR",
+      "similarity_score": 0.824,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "416",
+      "dsmz_id": "1070",
+      "atcc_name": "GYM MEDIUM",
+      "dsmz_name": "YM MEDIUM",
+      "similarity_score": 0.8,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": true,
+      "notes": "Auto-verified: literature source with name match"
+    },
+    {
+      "atcc_id": "3",
+      "dsmz_id": "535c",
+      "atcc_name": "TRYPTICASE SOY AGAR/BROTH",
+      "dsmz_name": "TRYPTICASE SOY BROTH AGAR",
+      "similarity_score": 0.8,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "1",
+      "dsmz_id": "118",
+      "atcc_name": "NUTRIENT AGAR",
+      "dsmz_name": "DAP-NUTRIENT AGAR",
+      "similarity_score": 0.8,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "632",
+      "dsmz_id": "118",
+      "atcc_name": "NUTRIENT BROTH",
+      "dsmz_name": "DAP-NUTRIENT AGAR",
+      "similarity_score": 0.8,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    },
+    {
+      "atcc_id": "3",
+      "dsmz_id": "535",
+      "atcc_name": "TRYPTICASE SOY AGAR/BROTH",
+      "dsmz_name": "TRYPTICASE SOY BROTH AGAR",
+      "similarity_score": 0.8,
+      "source": "name_match",
+      "confidence": "low",
+      "verified": false,
+      "notes": ""
+    }
+  ]
+}

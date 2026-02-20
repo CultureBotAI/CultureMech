@@ -1,7 +1,5 @@
-"""Enrichment infrastructure for CultureMech recipes."""
+"""Enrichment tools for adding data from external sources."""
 
-from .dsmz_resolver import DSMZCompositionResolver
+from culturemech.enrich.preparation_steps_extractor import PreparationStepsExtractor
 
-__all__ = [
-    'DSMZCompositionResolver',
-]
+__all__ = ["PreparationStepsExtractor"]

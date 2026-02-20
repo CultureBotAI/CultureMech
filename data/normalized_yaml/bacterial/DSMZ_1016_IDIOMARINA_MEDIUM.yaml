@@ -51,3 +51,14 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1016'
+- timestamp: '2026-02-20T02:26:04.000000Z'
+  curator: preparation-steps-enrichment
+  action: Added preparation steps from MediaDive API
+  notes: Extracted 2 preparation steps from solution data
+preparation_steps:
+- step_number: 1
+  action: DISSOLVE
+  description: Dissolve all ingredients in distilled water to specified concentrations
+- step_number: 2
+  action: AUTOCLAVE
+  description: Sterilize by autoclaving (121°C, 15 psi, 15-20 min)
