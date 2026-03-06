@@ -2,18 +2,18 @@
 
 **Comprehensive Microbial Culture Media Knowledge Graph**
 
-A production-ready knowledge base containing **10,595 culture media recipes** from 10 major international repositories, with LinkML schema validation, ontology grounding, and browser-based exploration.
+A production-ready knowledge base containing **10,657 culture media recipes** from 10 major international repositories, with LinkML schema validation, ontology grounding, and browser-based exploration.
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 [![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 
 ## 📊 Current Coverage
 
-**Total Recipes**: **10,595** culture media formulations
+**Total Recipes**: **10,657** culture media formulations
 
 | Category | Recipes | Sources |
 |----------|---------|---------|
-| **Bacterial** | 10,072 | MediaDive, TOGO, BacDive, ATCC, NBRC, KOMODO, MediaDB |
+| **Bacterial** | 10,134 | MediaDive, TOGO, BacDive, ATCC, NBRC, KOMODO, MediaDB |
 | **Algae** | 242 | UTEX, CCAP, SAG |
 | **Fungal** | 119 | MediaDive, TOGO |
 | **Specialized** | 99 | KOMODO |
@@ -66,6 +66,14 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 - Organisms: NCBITaxon (NCBI Taxonomy)
 - Media databases: DSMZ, TOGO, ATCC prefixes
 
+**Unmapped Ingredients Tracking System** (2026-03-05):
+- 🎯 **136 unmapped ingredients** identified across 522 media (4.9% of total)
+- 📊 **3,084 total instances** requiring ontology term mapping
+- 🔍 Automated detection of numeric placeholders ('1', '2', '3'), generic terms, and empty values
+- 🧪 Chemical name extraction from notes fields for mapping assistance
+- 📈 Priority-based mapping recommendations (critical: 51+ occurrences)
+- See [UNMAPPED_INGREDIENTS_SUMMARY.md](UNMAPPED_INGREDIENTS_SUMMARY.md) and [docs/unmapped_ingredients_guide.md](docs/unmapped_ingredients_guide.md)
+
 **Advanced Normalization & SSSOM Enrichment** (2026-02):
 - ✨ Integrated MicroMediaParam's production-grade 16-step chemical normalization pipeline
 - 📚 100+ curated biological products (yeast extract, peptone, serum, DNA, agar, etc.)
@@ -77,9 +85,15 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 - 📈 **68.4% increase** in coverage (27.1% → 45.6%)
 - See [PROJECT_STATUS_SUMMARY.md](PROJECT_STATUS_SUMMARY.md) and [GAS_MAPPING_SUMMARY.md](GAS_MAPPING_SUMMARY.md) for details
 
+**Enum Normalization** (2026-02-20):
+- 🔧 Normalized **10,657 YAML files** for schema compliance
+- ✅ Fixed capitalization: `medium_type` (COMPLEX, DEFINED), `physical_state` (LIQUID, SOLID_AGAR)
+- 📁 Recategorized all "imported" files to proper organism types (bacterial, fungal, archaea, algae, specialized)
+- 🎯 **100% schema compliance** across all enum fields
+
 ## ✨ Features
 
-✅ **10,595 recipes** - Production-ready dataset from 10 authoritative sources
+✅ **10,657 recipes** - Production-ready dataset from 10 authoritative sources
 ✅ **Four-tier architecture** - Clean separation: raw → raw_yaml → normalized_yaml → merge_yaml
 ✅ **Recipe deduplication** - Merge recipes with same ingredient sets (~344 unique base formulations)
 ✅ **LinkML schema validation** - Comprehensive data quality enforcement
@@ -88,6 +102,9 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 ✅ **Automated pipelines** - Fetchers, converters, and importers for all sources
 ✅ **Browser interface** - Faceted search and filtering
 ✅ **Knowledge graph export** - Biolink-compliant KGX format
+✅ **Literature verification** - 6-tier cascading PDF retrieval for cross-reference validation
+✅ **ATCC cross-references** - Automated equivalency detection with DSMZ media
+✅ **Unmapped ingredients tracking** - Automated detection and prioritization of ingredients needing ontology mapping
 ✅ **Comprehensive documentation** - 30+ guides in `docs/`
 
 ## 🚀 Quick Start
@@ -206,7 +223,8 @@ just import-nbrc
 CultureMech/
 ├── src/culturemech/              # Python package
 │   ├── schema/                   # LinkML schema definitions
-│   │   └── culturemech.yaml     # Main schema (1800+ lines)
+│   │   ├── culturemech.yaml     # Main schema (1800+ lines)
+│   │   └── unmapped_ingredients_schema.yaml  # Unmapped ingredients schema
 │   ├── fetch/                    # Data fetchers (10 sources)
 │   │   ├── utex_fetcher.py      # UTEX algae media
 │   │   ├── ccap_fetcher.py      # CCAP algae media
@@ -222,6 +240,13 @@ CultureMech/
 │   │   ├── browser_export.py    # Browser data generator
 │   │   └── kgx_export.py        # Knowledge graph export
 │   └── render.py                 # HTML page generator
+│
+├── scripts/                      # Utility scripts
+│   ├── aggregate_unmapped_ingredients.py  # Aggregate unmapped ingredients
+│   └── unmapped_ingredients_stats.py      # Generate statistics reports
+│
+├── output/                       # Generated outputs
+│   └── unmapped_ingredients.yaml # Aggregated unmapped ingredients (502KB)
 │
 ├── data/                         # Three-tier data architecture
 │   ├── raw/                      # Layer 1: Source files (git ignored)
@@ -273,8 +298,11 @@ Comprehensive documentation is available in the [`docs/`](docs/) directory:
 - **[CCAP/SAG Deployment](docs/CCAP_SAG_PRODUCTION_DEPLOYMENT.md)** - Metadata import details
 - **[Data Sources Summary](docs/DATA_SOURCES_SUMMARY.md)** - All source repositories
 
-### Data Quality
+### Data Quality & Enrichment
 - **[Enrichment Guide](docs/ENRICHMENT_GUIDE.md)** - Data quality improvement workflow
+- **[Implementation Summary](IMPLEMENTATION_SUMMARY.md)** - Literature verification & enum normalization
+- **[Unmapped Ingredients Guide](docs/unmapped_ingredients_guide.md)** - System for tracking ingredients needing ontology mapping
+- **[Unmapped Ingredients Summary](UNMAPPED_INGREDIENTS_SUMMARY.md)** - Executive summary with statistics and priorities
 
 ## 🧬 Recipe Format
 
@@ -283,8 +311,8 @@ Recipes are stored as YAML files following the LinkML schema:
 ```yaml
 name: BG-11 Medium
 category: algae
-medium_type: complex
-physical_state: liquid
+medium_type: COMPLEX
+physical_state: LIQUID
 
 description: Standard cyanobacteria medium from UTEX Culture Collection
 
@@ -403,6 +431,65 @@ Every recipe includes:
 - Cross-references to original sources
 - PDF URLs for detailed protocols (CCAP/SAG)
 
+## 🔬 Literature Verification
+
+**NEW** (2026-02-20): CultureMech now includes a comprehensive literature verification system for validating cross-references through scientific papers.
+
+### 6-Tier Cascading PDF Retrieval
+
+The system attempts to retrieve PDFs from multiple sources in order:
+
+1. **Direct Publisher Access** - ASM, PLOS, Frontiers, MDPI, Nature, Science, Elsevier
+2. **PubMed Central (PMC)** - NCBI idconv API
+3. **Unpaywall API** - Open access aggregator
+4. **Semantic Scholar** - Open PDF endpoint
+5. **Sci-Hub Fallback** - Optional, disabled by default (requires explicit opt-in)
+6. **Web Search** - arXiv, bioRxiv, Europe PMC
+
+### Key Features
+
+- ✅ **Legal sources first** - Always tries publisher, PMC, Unpaywall, and Semantic Scholar before fallback
+- ✅ **Sci-Hub opt-in only** - Disabled by default, requires `--enable-scihub-fallback` flag
+- ✅ **Full provenance** - Tracks which tier successfully retrieved each PDF
+- ✅ **Evidence extraction** - 8 regex patterns for detecting media equivalencies
+- ✅ **Batch processing** - Verify multiple candidates efficiently
+- ✅ **Caching layer** - Metadata and PDFs cached locally to avoid repeated requests
+
+### Usage Examples
+
+```bash
+# Generate ATCC-DSMZ cross-reference candidates (name-based matching only)
+python -m culturemech.enrich.atcc_crossref_builder generate
+
+# Verify candidates using legal sources only (no Sci-Hub)
+python -m culturemech.enrich.atcc_crossref_builder generate \
+    --verify-literature
+
+# Verify with Sci-Hub fallback enabled (explicit opt-in)
+python -m culturemech.enrich.atcc_crossref_builder generate \
+    --verify-literature \
+    --enable-scihub-fallback
+
+# Configure via environment variables
+export ENABLE_SCIHUB_FALLBACK=true
+export LITERATURE_EMAIL="your@email.com"
+export FALLBACK_PDF_MIRRORS="https://sci-hub.se,https://sci-hub.st"
+python -m culturemech.enrich.atcc_crossref_builder generate --verify-literature
+```
+
+### Institutional Compliance
+
+⚠️ **Important**: The Sci-Hub fallback tier is disabled by default and requires explicit opt-in. Use may violate publisher agreements or local laws. Users are responsible for compliance with institutional policies.
+
+**Safety features:**
+- Default: `use_fallback_pdf=False`
+- Legal sources exhausted first
+- Clear warnings when Sci-Hub is enabled
+- Full provenance tracking
+- No auto-distribution of PDFs
+
+See [IMPLEMENTATION_SUMMARY.md](IMPLEMENTATION_SUMMARY.md) for complete documentation.
+
 ## 🌐 Browser Interface
 
 The faceted search browser (`app/index.html`) provides:
@@ -432,6 +519,42 @@ just import-utex         # Import UTEX to normalized format
 just validate-all        # Validate all recipes
 just gen-browser-data    # Generate browser search data
 just test                # Run test suite
+```
+
+### Cross-Reference & Enrichment
+
+```bash
+# Generate ATCC-DSMZ cross-reference candidates
+python -m culturemech.enrich.atcc_crossref_builder generate \
+    --output data/curation/atcc_candidates.json
+
+# Verify candidates via literature search (legal sources only)
+python -m culturemech.enrich.atcc_crossref_builder generate \
+    --verify-literature
+
+# Verify with Sci-Hub fallback (opt-in, requires explicit flag)
+python -m culturemech.enrich.atcc_crossref_builder generate \
+    --verify-literature \
+    --enable-scihub-fallback
+
+# Normalize enum values (medium_type, physical_state, category)
+python -m culturemech.enrich.normalize_enums --dry-run  # Preview changes
+python -m culturemech.enrich.normalize_enums            # Apply changes
+
+# Aggregate unmapped ingredients for mapping prioritization
+python scripts/aggregate_unmapped_ingredients.py --verbose --min-occurrences 2
+
+# View unmapped ingredients statistics
+python scripts/unmapped_ingredients_stats.py --top 20
+
+# View full aggregated data
+less output/unmapped_ingredients.yaml
+
+# Read the comprehensive guide
+cat docs/unmapped_ingredients_guide.md
+
+# Read the executive summary
+cat UNMAPPED_INGREDIENTS_SUMMARY.md
 ```
 
 ### Adding New Recipes
@@ -493,17 +616,18 @@ pytest tests/test_kgx_export.py
 $ just count-recipes
 Recipe count by category:
 
-  algae:      242
+  algae:        242
   archaea:       63
-  bacterial:    10072
-  fungal:      119
-  specialized:       99
+  bacterial:  10,134
+  fungal:       119
+  specialized:   99
 
-Total recipes:    10595
+Total recipes:  10,657
 ```
 
 **Data Quality**:
 - ✅ 100% schema-validated
+- ✅ 100% enum compliance (10,657 files normalized)
 - ✅ Full source attribution
 - ✅ Comprehensive provenance tracking
 - ✅ LinkML compliance
@@ -513,6 +637,13 @@ Total recipes:    10595
 - ✅ 11 import pipelines operational
 - ✅ 3 algae collections (UTEX, CCAP, SAG)
 - ✅ Automated fetch → convert → import workflow
+
+**Enrichment Features**:
+- ✅ Literature verification with 6-tier PDF retrieval
+- ✅ ATCC-DSMZ cross-reference detection
+- ✅ Automated enum normalization
+- ✅ Evidence extraction from scientific papers
+- ✅ Unmapped ingredients aggregation and tracking (136 ingredients, 3,084 instances)
 
 ## 🤝 Contributing
 
@@ -602,4 +733,4 @@ If you use CultureMech in your research, please cite:
 
 **Built with ❤️ for microbiology research**
 
-**10,595 recipes** • **10 sources** • **Production ready** • **Public domain**
+**10,657 recipes** • **10 sources** • **Production ready** • **Public domain**
