@@ -1,0 +1,214 @@
+id: https://w3id.org/culturemech/mapped-ingredients
+name: mapped-ingredients-schema
+title: Mapped Media Ingredients Schema
+description: >-
+  LinkML schema for aggregating successfully mapped media ingredients with proper ontology terms.
+  This provides statistics and tracking for ingredients that have been successfully mapped to
+  ontology terms (CHEBI, FOODON, etc.).
+
+license: MIT
+see_also:
+  - https://github.com/CultureBotAI/CultureMech
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  culturemech: https://w3id.org/culturemech/
+  CHEBI: http://purl.obolibrary.org/obo/CHEBI_
+  FOODON: http://purl.obolibrary.org/obo/FOODON_
+
+default_prefix: culturemech
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+  MappedIngredientsCollection:
+    tree_root: true
+    description: Root container for all successfully mapped media ingredients
+    attributes:
+      generation_date:
+        range: datetime
+        description: Timestamp when this aggregation was generated
+      total_mapped_count:
+        range: integer
+        description: Total number of unique mapped ingredients found
+      total_instances:
+        range: integer
+        description: Total instances of mapped ingredients across all media
+      media_count:
+        range: integer
+        description: Number of media containing mapped ingredients
+      mapped_ingredients:
+        range: MappedIngredient
+        multivalued: true
+        inlined_as_list: true
+        description: List of all mapped ingredients with ontology terms
+      summary_by_category:
+        range: MappedCategorySummary
+        multivalued: true
+        inlined_as_list: true
+        description: Summary statistics by media category
+      summary_by_ontology:
+        range: OntologySummary
+        multivalued: true
+        inlined_as_list: true
+        description: Summary statistics by ontology source
+
+  MappedIngredient:
+    description: A media ingredient with proper ontology mapping
+    attributes:
+      preferred_term:
+        identifier: true
+        description: The preferred term label for the ingredient
+      ontology_id:
+        description: Ontology term ID (e.g., CHEBI:12345, FOODON:00001234)
+      ontology_label:
+        description: Official label from the ontology
+      ontology_source:
+        range: OntologySourceEnum
+        description: Source ontology for this term
+      occurrence_count:
+        range: integer
+        description: Number of times this ingredient appears across all media
+      media_occurrences:
+        range: MappedMediaOccurrence
+        multivalued: true
+        inlined_as_list: true
+        description: List of media where this ingredient appears
+      concentration_info:
+        range: MappedConcentrationInfo
+        multivalued: true
+        inlined_as_list: true
+        description: Concentration values found for this ingredient
+      synonyms:
+        description: Alternative names or synonyms found in media
+        multivalued: true
+      mapping_quality:
+        range: MappingQualityEnum
+        description: Quality assessment of the mapping
+
+  MappedMediaOccurrence:
+    description: Reference to a specific medium containing the mapped ingredient
+    attributes:
+      medium_name:
+        required: true
+        description: Name of the medium
+      medium_category:
+        range: MediaCategoryEnum
+        description: Category of the medium (algae, bacterial, etc.)
+      medium_file_path:
+        description: Relative path to the medium YAML file
+      ingredient_index:
+        range: integer
+        description: Index of this ingredient in the medium's ingredient list
+
+  MappedConcentrationInfo:
+    description: Concentration information for a mapped ingredient
+    attributes:
+      value:
+        description: Concentration value
+      unit:
+        range: ConcentrationUnitEnum
+        description: Unit of measurement
+      notes:
+        description: Additional notes about concentration
+
+  MappedCategorySummary:
+    description: Summary statistics for mapped ingredients in a media category
+    attributes:
+      category:
+        range: MediaCategoryEnum
+        required: true
+        description: Media category name
+      media_with_mapped:
+        range: integer
+        description: Number of media with mapped ingredients in this category
+      total_mapped_instances:
+        range: integer
+        description: Total mapped ingredient instances in this category
+      unique_mapped_count:
+        range: integer
+        description: Number of unique mapped ingredients in this category
+
+  OntologySummary:
+    description: Summary statistics by ontology source
+    attributes:
+      ontology_source:
+        range: OntologySourceEnum
+        required: true
+        description: Ontology name
+      unique_terms_count:
+        range: integer
+        description: Number of unique terms from this ontology
+      total_instances:
+        range: integer
+        description: Total ingredient instances using this ontology
+      coverage_percentage:
+        range: float
+        description: Percentage of all mapped ingredients from this ontology
+
+enums:
+  MappingQualityEnum:
+    permissible_values:
+      DIRECT_MATCH:
+        description: Direct match to ontology term
+      SYNONYM_MATCH:
+        description: Matched via synonym
+      INFERRED:
+        description: Mapping inferred from context
+      MANUAL_CURATION:
+        description: Manually curated mapping
+      NEEDS_REVIEW:
+        description: Mapping needs expert review
+
+  MediaCategoryEnum:
+    permissible_values:
+      ALGAE:
+        description: Algae culture media
+      BACTERIAL:
+        description: Bacterial culture media
+      ARCHAEA:
+        description: Archaea culture media
+      FUNGAL:
+        description: Fungal culture media
+      SPECIALIZED:
+        description: Specialized or mixed culture media
+      UNKNOWN:
+        description: Category not specified
+
+  ConcentrationUnitEnum:
+    permissible_values:
+      G_PER_L:
+        description: Grams per liter
+      MG_PER_L:
+        description: Milligrams per liter
+      UG_PER_L:
+        description: Micrograms per liter
+      MOLAR:
+        description: Molar concentration
+      MILLIMOLAR:
+        description: Millimolar concentration
+      MICROMOLAR:
+        description: Micromolar concentration
+      PERCENT:
+        description: Percentage (w/v or v/v)
+      VARIABLE:
+        description: Variable or unspecified amount
+
+  OntologySourceEnum:
+    permissible_values:
+      CHEBI:
+        description: Chemical Entities of Biological Interest
+      FOODON:
+        description: Food Ontology
+      NCIT:
+        description: NCI Thesaurus
+      MESH:
+        description: Medical Subject Headings
+      UBERON:
+        description: Uber Anatomy Ontology
+      ENVO:
+        description: Environment Ontology
+      OTHER:
+        description: Other ontology source
