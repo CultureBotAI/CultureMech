@@ -1,21 +1,19 @@
-name: (Unnamed medium)
+name: TOGO Medium M1441
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water make up to
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Glycerol
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -28,8 +26,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -62,7 +59,7 @@ media_term:
   preferred_term: TOGO Medium M1441
   term:
     id: TOGO:M1441
-    label: (Unnamed medium)
+    label: TOGO Medium M1441
 notes: 'Source: https://togomedium.org/medium/M1441
 
   Original source: NBRC - NBRC_M201

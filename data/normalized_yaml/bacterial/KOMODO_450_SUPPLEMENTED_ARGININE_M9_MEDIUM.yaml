@@ -1,6 +1,6 @@
 name: SUPPLEMENTED (ARGININE) M9 MEDIUM
 original_name: SUPPLEMENTED (ARGININE) M9 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:450
     label: SUPPLEMENTED (ARGININE) M9 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 450 | DSMZ Medium: 450 (mediadive.medium:450)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 450 | DSMZ Medium: 450 (mediadive.medium:450) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4
   term:

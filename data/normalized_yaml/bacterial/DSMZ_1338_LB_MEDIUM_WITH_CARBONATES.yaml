@@ -1,8 +1,8 @@
 name: LB MEDIUM WITH CARBONATES
 original_name: LB MEDIUM WITH CARBONATES
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.6
 media_term:
   preferred_term: DSMZ Medium 1338
@@ -51,11 +51,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the Mineral Salts and the Carbonate Salts separately. Combine
-    both solutions after cooling. The medium may be solidified by adding 20.0 g/l
-    agar. The agar is added to Minerals Salts Solution and after autoclaving both
-    the Mineral Salts Solution and the Carbonate Salts Solution are cooled to 50-55°C,
-    mixed and poured into Petri dishes. Final pH 9.6.
+  description: Autoclave the Mineral Salts and the Carbonate Salts separately. Combine both solutions
+    after cooling. The medium may be solidified by adding 20.0 g/l agar. The agar is added to Minerals
+    Salts Solution and after autoclaving both the Mineral Salts Solution and the Carbonate Salts Solution
+    are cooled to 50-55°C, mixed and poured into Petri dishes. Final pH 9.6.
 applications:
 - Microbial cultivation
 curation_history:

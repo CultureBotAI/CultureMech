@@ -1,6 +1,6 @@
 name: 9K MEDIUM
 original_name: 9K MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
@@ -71,5 +71,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.566544Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

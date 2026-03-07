@@ -1,6 +1,6 @@
 name: MIZ14 Medium
 original_name: MIZ14 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '0.83'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -25,8 +24,7 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate

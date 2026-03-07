@@ -1,6 +1,6 @@
 name: Rumen fluid, clarified
 original_name: Rumen fluid, clarified
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:6003
     label: Rumen fluid, clarified
-notes: 'Source: KOMODO ModelSEED | ID: 6003 | DSMZ Medium: 6003 (mediadive.medium:6003)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 6003 | DSMZ Medium: 6003 (mediadive.medium:6003) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

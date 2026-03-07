@@ -1,6 +1,6 @@
 name: PYROBACULUM ARSENATICUM MEDIUM
 original_name: PYROBACULUM ARSENATICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 184 without sulfur, and supplement with 2.0 g/L (final)
-    Na2S2O3.
+  description: Use Medium No. 184 without sulfur, and supplement with 2.0 g/L (final) Na2S2O3.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.

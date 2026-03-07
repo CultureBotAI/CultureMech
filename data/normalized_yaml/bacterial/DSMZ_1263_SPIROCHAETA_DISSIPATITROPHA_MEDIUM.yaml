@@ -1,6 +1,6 @@
 name: SPIROCHAETA DISSIPATITROPHA MEDIUM
 original_name: SPIROCHAETA DISSIPATITROPHA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.4
@@ -257,18 +257,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, bicarbonate, yeast extract,
-    cellobiose, vitamins and sulfide), then sparge medium with 100% N2 gas for 30
-    - 45 min to make it anoxic. Add solid carbonate and bicarbonate to the medium,
-    dissolve and adjust to pH 9.4. Dispense medium under 100% N2 gas atmosphere into
-    anoxic Hungate-type tubes or serum bottles and autoclave. To the autoclaved medium
-    add yeast extract, cellobiose, vitamins and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas atmosphere. Stock solutions of vitamins and
-    cellobiose should be sterilized by filtration.
+  description: Dissolve ingredients (except carbonate, bicarbonate, yeast extract, cellobiose, vitamins
+    and sulfide), then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate
+    and bicarbonate to the medium, dissolve and adjust to pH 9.4. Dispense medium under 100% N2 gas atmosphere
+    into anoxic Hungate-type tubes or serum bottles and autoclave. To the autoclaved medium add yeast
+    extract, cellobiose, vitamins and sulfide from sterile anoxic stock solutions prepared under 100%
+    N2 gas atmosphere. Stock solutions of vitamins and cellobiose should be sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -279,5 +277,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.977391Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

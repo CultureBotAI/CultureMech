@@ -1,6 +1,6 @@
 name: BHI medium WITH ADDITIONAL GLUCOSE
 original_name: BHI medium WITH ADDITIONAL GLUCOSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:215b
     label: BHI medium WITH ADDITIONAL GLUCOSE
-notes: 'Source: KOMODO ModelSEED | ID: 215b | DSMZ Medium: 215b (mediadive.medium:215b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 215b | DSMZ Medium: 215b (mediadive.medium:215b) | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

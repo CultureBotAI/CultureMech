@@ -1,11 +1,11 @@
 name: MMJS MEDIUM (modified)
 original_name: MMJS MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1121 | DSMZ Medium: 1121
-  (mediadive.medium:1121) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1121 | DSMZ Medium: 1121 (mediadive.medium:1121)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1121
   term:

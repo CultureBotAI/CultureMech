@@ -1,6 +1,6 @@
 name: BBL ACTINOMYCES BROTH
 original_name: BBL ACTINOMYCES BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1029
     label: BBL ACTINOMYCES BROTH
-notes: 'Source: KOMODO ModelSEED | ID: 1029 | DSMZ Medium: 1029 (mediadive.medium:1029)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1029 | DSMZ Medium: 1029 (mediadive.medium:1029) | Aerobic: No'
 ingredients:
 - preferred_term: Potassium Phosphate
   term:

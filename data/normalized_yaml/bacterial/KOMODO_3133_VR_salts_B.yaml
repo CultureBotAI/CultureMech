@@ -1,11 +1,11 @@
 name: VR salts B
 original_name: VR salts B
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133
-  (mediadive.medium:3133) | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 3133 | DSMZ Medium: 3133 (mediadive.medium:3133)
+  | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 3133
   term:

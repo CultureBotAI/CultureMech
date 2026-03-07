@@ -1,6 +1,6 @@
 name: RHODOPSEUDOMONAS SULFOVIRIDIS medium
 original_name: RHODOPSEUDOMONAS SULFOVIRIDIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:109
     label: RHODOPSEUDOMONAS SULFOVIRIDIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 109 | DSMZ Medium: 109 (mediadive.medium:109)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 109 | DSMZ Medium: 109 (mediadive.medium:109) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

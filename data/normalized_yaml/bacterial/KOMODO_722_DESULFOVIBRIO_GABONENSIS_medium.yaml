@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO GABONENSIS medium
 original_name: DESULFOVIBRIO GABONENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:722
     label: DESULFOVIBRIO GABONENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 722 | DSMZ Medium: 722 (mediadive.medium:722)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 722 | DSMZ Medium: 722 (mediadive.medium:722) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2SO4
   term:

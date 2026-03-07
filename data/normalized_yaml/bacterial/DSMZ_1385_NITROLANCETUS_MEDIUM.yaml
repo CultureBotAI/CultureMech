@@ -1,6 +1,6 @@
 name: NITROLANCETUS MEDIUM
 original_name: NITROLANCETUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -116,9 +116,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium into
-    serum bottles. Inject 10 % CO2. Sterilize by autoclaving. Before inoculation add
-    from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 7.2. Dispense the medium into serum bottles. Inject
+    10 % CO2. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:'
 applications:
 - Microbial cultivation
 curation_history:

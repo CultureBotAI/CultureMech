@@ -1,6 +1,6 @@
 name: CALDICELLULOSIRUPTOR ACETIGENUS MEDIUM
 original_name: CALDICELLULOSIRUPTOR ACETIGENUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -229,17 +229,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add glucose, vitamins (sterilized by filtration) and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2
-    - 7.4.
+  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge medium with 100% N2
+    gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration) and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2 - 7.4.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
-    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
-    up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
+    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -250,5 +247,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:30.972381Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

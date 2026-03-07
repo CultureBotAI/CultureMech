@@ -1,6 +1,6 @@
 name: AZC 1502 MEDIUM
 original_name: AZC 1502 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.0
@@ -165,11 +165,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 5.0. Bring to a boil and
-    cool under a N2 gas stream. Distribute the medium into culture vessels (e.g.,
-    5 ml of the medium in the Hungate tubes) under the same gas atmosphere, seal with
-    butyl rubber stoppers, and autoclave. After cooling, replace the gas phase with
-    a H2-CO2 (4:1, v/v) gas mixture and add per liter the following solution (freshly
+  description: 'Mix components thoroughly and adjust pH to 5.0. Bring to a boil and cool under a N2 gas
+    stream. Distribute the medium into culture vessels (e.g., 5 ml of the medium in the Hungate tubes)
+    under the same gas atmosphere, seal with butyl rubber stoppers, and autoclave. After cooling, replace
+    the gas phase with a H2-CO2 (4:1, v/v) gas mixture and add per liter the following solution (freshly
     prepared and filter-sterilized):'
 - step_number: 2
   action: MIX

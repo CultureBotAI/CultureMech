@@ -1,6 +1,6 @@
 name: TRYPTONE THIOGLYCOLATE MEDIUM
 original_name: TRYPTONE THIOGLYCOLATE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -96,13 +96,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose), adjust pH to 7.5 and sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients (except glucose), adjust pH to 7.5 and sparge medium with 100% N2
+    gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave.
 - step_number: 2
   action: MIX
-  description: Add glucose to the medium after autoclaving from a sterile stock solution
-    prepared under 100% N2 gas.
+  description: Add glucose to the medium after autoclaving from a sterile stock solution prepared under
+    100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:

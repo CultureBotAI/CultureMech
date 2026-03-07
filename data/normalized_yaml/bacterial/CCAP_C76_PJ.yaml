@@ -1,6 +1,6 @@
 name: PJ
 original_name: PJ
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -41,8 +41,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

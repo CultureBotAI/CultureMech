@@ -1,6 +1,6 @@
 name: GEOBACTER DALTONII MEDIUM
 original_name: GEOBACTER DALTONII MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -187,15 +187,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. After cooling,
-    replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture and add the following
-    solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave under a N2 atmosphere. After cooling, replace the gas phase
+    with a N2-CO2 (4:1, v/v) gas mixture and add the following solutions from sterile anaerobic stocks
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into sterile culture vessels (e.g., 20 ml of
-    the medium in 50 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal
-    with sterile butyl rubber stoppers. Adjust pH to 7.0, if necessary. Prior to use,
-    add per liter the following solution from an anaerobic stock (autoclaved):'
+  description: 'Distribute the medium into sterile culture vessels (e.g., 20 ml of the medium in 50 ml
+    serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal with sterile butyl rubber stoppers.
+    Adjust pH to 7.0, if necessary. Prior to use, add per liter the following solution from an anaerobic
+    stock (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

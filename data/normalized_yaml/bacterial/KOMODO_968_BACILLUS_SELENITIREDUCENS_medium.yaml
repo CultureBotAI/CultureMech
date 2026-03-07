@@ -1,6 +1,6 @@
 name: BACILLUS SELENITIREDUCENS medium
 original_name: BACILLUS SELENITIREDUCENS medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:968
     label: BACILLUS SELENITIREDUCENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 968 | DSMZ Medium: 968 (mediadive.medium:968)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 968 | DSMZ Medium: 968 (mediadive.medium:968) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -244,5 +243,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.619987Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

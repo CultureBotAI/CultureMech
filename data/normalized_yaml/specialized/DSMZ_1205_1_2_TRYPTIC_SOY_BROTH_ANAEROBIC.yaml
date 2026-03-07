@@ -1,6 +1,6 @@
 name: 1/2 TRYPTIC SOY BROTH (ANAEROBIC)
 original_name: 1/2 TRYPTIC SOY BROTH (ANAEROBIC)
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -43,11 +43,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose and DTT, then sparge medium with
-    100% N2 gas for 30 - 45 min to make it anoxic. Adjust pH to 7.2 with HCl, then
-    dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave at 121°C for 20 min. Add glucose and DTT from anoxic stock
-    solutions prepared under 100% N2 gas atmosphere and sterilized by filtration.
+  description: Dissolve ingredients except glucose and DTT, then sparge medium with 100% N2 gas for 30
+    - 45 min to make it anoxic. Adjust pH to 7.2 with HCl, then dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 20 min. Add glucose and DTT
+    from anoxic stock solutions prepared under 100% N2 gas atmosphere and sterilized by filtration.
 applications:
 - Microbial cultivation
 curation_history:

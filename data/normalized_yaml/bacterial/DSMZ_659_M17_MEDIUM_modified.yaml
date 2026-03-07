@@ -1,6 +1,6 @@
 name: M17 MEDIUM (modified)
 original_name: M17 MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.1-7.2
@@ -65,9 +65,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving add a lactose solution (sterilized by filtration)
-    up to a concentration of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15
-    ± 0.05.
+  description: After autoclaving add a lactose solution (sterilized by filtration) up to a concentration
+    of 8.0 g/l, and 1.2 ml 1M CaCl2 x 2 H2O. Adjust pH to 7.15 ± 0.05.
 applications:
 - Microbial cultivation
 curation_history:

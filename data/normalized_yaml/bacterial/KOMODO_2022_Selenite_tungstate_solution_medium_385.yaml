@@ -1,6 +1,6 @@
 name: Selenite/tungstate solution (medium 385)
 original_name: Selenite/tungstate solution (medium 385)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2022
     label: Selenite/tungstate solution (medium 385)
-notes: 'Source: KOMODO ModelSEED | ID: 2022 | DSMZ Medium: 2022 (mediadive.medium:2022)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2022 | DSMZ Medium: 2022 (mediadive.medium:2022) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

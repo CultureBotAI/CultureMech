@@ -1,6 +1,6 @@
 name: Vitamin solution V10
 original_name: Vitamin solution V10
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2105
     label: Vitamin solution V10
-notes: 'Source: KOMODO ModelSEED | ID: 2105 | DSMZ Medium: 2105 (mediadive.medium:2105)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2105 | DSMZ Medium: 2105 (mediadive.medium:2105) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

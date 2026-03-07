@@ -1,6 +1,6 @@
 name: Acidiferrobacter Medium
 original_name: Acidiferrobacter Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '885'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '26.64'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Sulfur (powder)
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:14258
     label: ''
@@ -33,8 +30,7 @@ ingredients:
     value: '50'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -45,8 +41,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: 100 mM Potassium tetrathionate solution
   concentration:
     value: '5'

@@ -1,8 +1,8 @@
 name: TSB (pH 9.0 with K2CO3)
 original_name: TSB (pH 9.0 with K2CO3)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: K2CO3 solution
   concentration:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water

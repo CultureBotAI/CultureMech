@@ -1,15 +1,14 @@
 name: MEDIUM 31 MODIFIED FOR DSM 8716
 original_name: MEDIUM 31 MODIFIED FOR DSM 8716
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 31_8716
   term:
     id: komodo.medium:31_8716
     label: MEDIUM 31 MODIFIED FOR DSM 8716
-notes: 'Source: KOMODO ModelSEED | ID: 31_8716 | DSMZ Medium: 31 (mediadive.medium:31)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 31_8716 | DSMZ Medium: 31 (mediadive.medium:31) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

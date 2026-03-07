@@ -1,6 +1,6 @@
 name: TREPONEMA BRYANTII medium
 original_name: TREPONEMA BRYANTII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:159
     label: TREPONEMA BRYANTII medium
-notes: 'Source: KOMODO ModelSEED | ID: 159 | DSMZ Medium: 159 (mediadive.medium:159)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 159 | DSMZ Medium: 159 (mediadive.medium:159) | Aerobic: Yes'
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:

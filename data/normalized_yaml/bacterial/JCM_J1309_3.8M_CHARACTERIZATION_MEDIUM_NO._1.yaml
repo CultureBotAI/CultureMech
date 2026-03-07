@@ -1,6 +1,6 @@
 name: 3.8M CHARACTERIZATION MEDIUM NO. 1
 original_name: 3.8M CHARACTERIZATION MEDIUM NO. 1
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -194,20 +194,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave. After cooling, add the following solutions (autoclaved or
+    *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels (e.g., 10 ml
-    medium in Balch tubes), seal with butyl rubber stoppers and replace the gas phase
-    with N2.
+  description: Aseptically distribute the medium into culture vessels (e.g., 10 ml medium in Balch tubes),
+    seal with butyl rubber stoppers and replace the gas phase with N2.
 - step_number: 3
   action: MIX
   description: '30% Salt water:'
 - step_number: 4
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.5.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:

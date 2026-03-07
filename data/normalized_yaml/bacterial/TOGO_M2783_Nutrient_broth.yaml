@@ -1,6 +1,6 @@
 name: Nutrient broth
 original_name: Nutrient broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,8 +18,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -32,8 +31,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -41,8 +39,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: Nutrient broth
   concentration:
     value: '8'

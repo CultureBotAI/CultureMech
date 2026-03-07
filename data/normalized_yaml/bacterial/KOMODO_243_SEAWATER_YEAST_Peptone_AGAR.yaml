@@ -1,16 +1,15 @@
 name: SEAWATER YEAST Peptone AGAR
 original_name: SEAWATER YEAST Peptone AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: KOMODO Medium 243
   term:
     id: komodo.medium:243
     label: SEAWATER YEAST Peptone AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 243 | DSMZ Medium: 243 (mediadive.medium:243)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 243 | DSMZ Medium: 243 (mediadive.medium:243) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM (GS) MEDIUM
 original_name: CLOSTRIDIUM (GS) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -85,12 +85,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and cellobiose and adjust pH to
-    7.2. Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add
-    cysteine and readjust pH to 7.2, if necessary. Dispense medium under the same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Prior
-    to inoculation add cellobiose from an anoxic stock solution prepared under 100%
-    N2 gas and sterilized by filtration.
+  description: Dissolve ingredients except cysteine and cellobiose and adjust pH to 7.2. Sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic, then add cysteine and readjust pH to 7.2, if necessary.
+    Dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Prior to inoculation add cellobiose from an anoxic stock solution prepared under 100% N2 gas and sterilized
+    by filtration.
 applications:
 - Microbial cultivation
 curation_history:

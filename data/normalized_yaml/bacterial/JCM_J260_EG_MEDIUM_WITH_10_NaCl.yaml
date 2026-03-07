@@ -1,6 +1,6 @@
 name: EG MEDIUM WITH 10% NaCl
 original_name: EG MEDIUM WITH 10% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit
-    horse blood.
+  description: Use EG medium (see Medium No. 14) with 100 g/L (final) NaCl, and omit horse blood.
 applications:
 - Microbial cultivation
 curation_history:

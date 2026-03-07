@@ -1,6 +1,6 @@
 name: BM FOR SYNTROPHICUS SCHINKII
 original_name: BM FOR SYNTROPHICUS SCHINKII
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -189,10 +189,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components under a N2-CO2 (80:20, v/v) gas mixture and autoclave
-    under the same gas mixture in bottles sealed with butyl rubber stoppers. After
-    cooling, aseptically and anaerobically add the following solutions from anaerobic
-    stocks (autoclaved or *filter-sterilized) to the medium:'
+  description: 'Mix components under a N2-CO2 (80:20, v/v) gas mixture and autoclave under the same gas
+    mixture in bottles sealed with butyl rubber stoppers. After cooling, aseptically and anaerobically
+    add the following solutions from anaerobic stocks (autoclaved or *filter-sterilized) to the medium:'
 applications:
 - Microbial cultivation
 curation_history:

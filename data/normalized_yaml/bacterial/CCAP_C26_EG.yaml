@@ -1,8 +1,8 @@
 name: EG
 original_name: EG
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C26
   term:
@@ -44,9 +44,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add constituents above and make up to 1 litre with deionized water.\
-    \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
-    \ 15 psi for 15 minutes."
+  description: "Add constituents above and make up to 1 litre with deionized water. For agar add 15 g\
+    \ per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:

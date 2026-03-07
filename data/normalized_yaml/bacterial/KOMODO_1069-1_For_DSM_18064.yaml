@@ -1,6 +1,6 @@
 name: For DSM 18064
 original_name: For DSM 18064
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1069.1
     label: For DSM 18064
-notes: 'Source: KOMODO ModelSEED | ID: 1069.1 | DSMZ Medium: 1069 (mediadive.medium:1069)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1069.1 | DSMZ Medium: 1069 (mediadive.medium:1069) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

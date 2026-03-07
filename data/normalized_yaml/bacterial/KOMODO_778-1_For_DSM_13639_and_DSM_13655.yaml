@@ -1,6 +1,6 @@
 name: For DSM 13639 and DSM 13655
 original_name: For DSM 13639 and DSM 13655
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:778.1
     label: For DSM 13639 and DSM 13655
-notes: 'Source: KOMODO ModelSEED | ID: 778.1 | DSMZ Medium: 778 (mediadive.medium:778)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 778.1 | DSMZ Medium: 778 (mediadive.medium:778) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2-9,10-anthraquinone-2,6-disulfonate
   concentration:
@@ -234,5 +233,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.893410Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

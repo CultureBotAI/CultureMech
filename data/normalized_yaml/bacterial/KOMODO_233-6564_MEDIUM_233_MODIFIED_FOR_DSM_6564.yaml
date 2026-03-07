@@ -1,6 +1,6 @@
 name: MEDIUM 233 MODIFIED FOR DSM 6564
 original_name: MEDIUM 233 MODIFIED FOR DSM 6564
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:233_6564
     label: MEDIUM 233 MODIFIED FOR DSM 6564
-notes: 'Source: KOMODO ModelSEED | ID: 233_6564 | DSMZ Medium: 233 (mediadive.medium:233)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 233_6564 | DSMZ Medium: 233 (mediadive.medium:233) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -285,6 +284,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.895017Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.5

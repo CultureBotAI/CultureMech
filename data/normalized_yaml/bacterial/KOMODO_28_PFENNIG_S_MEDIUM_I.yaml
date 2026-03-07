@@ -1,6 +1,6 @@
 name: PFENNIG'S MEDIUM I
 original_name: PFENNIG'S MEDIUM I
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:28
     label: PFENNIG'S MEDIUM I
-notes: 'Source: KOMODO ModelSEED | ID: 28 | DSMZ Medium: 28 (mediadive.medium:28)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 28 | DSMZ Medium: 28 (mediadive.medium:28) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

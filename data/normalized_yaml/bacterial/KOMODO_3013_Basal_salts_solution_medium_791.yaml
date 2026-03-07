@@ -1,6 +1,6 @@
 name: Basal salts solution (medium 791)
 original_name: Basal salts solution (medium 791)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3013
     label: Basal salts solution (medium 791)
-notes: 'Source: KOMODO ModelSEED | ID: 3013 | DSMZ Medium: 3013 (mediadive.medium:3013)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3013 | DSMZ Medium: 3013 (mediadive.medium:3013) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

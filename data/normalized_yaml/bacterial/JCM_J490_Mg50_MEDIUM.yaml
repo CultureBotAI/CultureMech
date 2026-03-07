@@ -1,6 +1,6 @@
 name: Mg50 MEDIUM
 original_name: Mg50 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave
-    1 M glucose solution separately under a N2 atmosphere, and add to the medium.
+  description: Use Medium No. 480 with 3.6 g/L D-glucose instead of mannitol. Autoclave 1 M glucose solution
+    separately under a N2 atmosphere, and add to the medium.
 applications:
 - Microbial cultivation
 curation_history:

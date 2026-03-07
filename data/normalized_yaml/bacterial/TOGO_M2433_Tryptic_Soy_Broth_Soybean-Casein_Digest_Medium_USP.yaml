@@ -1,6 +1,6 @@
 name: Tryptic Soy Broth (Soybean-Casein Digest Medium, USP)
 original_name: Tryptic Soy Broth (Soybean-Casein Digest Medium, USP)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Tryptic Soy Broth (BD cat 211825
   concentration:
     value: '30'

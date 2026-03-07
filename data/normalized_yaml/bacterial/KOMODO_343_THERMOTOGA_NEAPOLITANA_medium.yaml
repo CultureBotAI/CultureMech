@@ -1,6 +1,6 @@
 name: THERMOTOGA NEAPOLITANA medium
 original_name: THERMOTOGA NEAPOLITANA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:343
     label: THERMOTOGA NEAPOLITANA medium
-notes: 'Source: KOMODO ModelSEED | ID: 343 | DSMZ Medium: 343 (mediadive.medium:343)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 343 | DSMZ Medium: 343 (mediadive.medium:343) | Aerobic: Yes'
 ingredients:
 - preferred_term: Starch
   term:

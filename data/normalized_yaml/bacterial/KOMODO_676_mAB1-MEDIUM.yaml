@@ -1,6 +1,6 @@
 name: mAB1-MEDIUM
 original_name: mAB1-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:676
     label: mAB1-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 676 | DSMZ Medium: 676 (mediadive.medium:676)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 676 | DSMZ Medium: 676 (mediadive.medium:676) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

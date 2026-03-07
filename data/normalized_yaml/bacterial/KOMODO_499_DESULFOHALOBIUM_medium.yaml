@@ -1,6 +1,6 @@
 name: DESULFOHALOBIUM medium
 original_name: DESULFOHALOBIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:499
     label: DESULFOHALOBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 499 | DSMZ Medium: 499 (mediadive.medium:499)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 499 | DSMZ Medium: 499 (mediadive.medium:499) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

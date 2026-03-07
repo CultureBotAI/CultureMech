@@ -1,8 +1,8 @@
 name: AQUASPIRILLUM MEDIUM II
 original_name: AQUASPIRILLUM MEDIUM II
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.4-7.6
 media_term:
   preferred_term: DSMZ Medium 1495
@@ -180,9 +180,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.4-7.6 Autoclave and add 1.0 ml/l vitamin solution from
-    a filter sterilised stock solution (see below). The medium may be solidified by
-    adding 15.0 g/l agar.
+  description: Adjust pH to 7.4-7.6 Autoclave and add 1.0 ml/l vitamin solution from a filter sterilised
+    stock solution (see below). The medium may be solidified by adding 15.0 g/l agar.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0

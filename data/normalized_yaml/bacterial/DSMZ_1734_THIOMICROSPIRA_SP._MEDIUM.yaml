@@ -1,6 +1,6 @@
 name: THIOMICROSPIRA SP. MEDIUM
 original_name: THIOMICROSPIRA SP. MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -165,17 +165,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except hydrogenphosphate, hydrogencarbonate and
-    vitamins), adjust pH to 7.5 and autoclave. K2HPO4 is autoclaved separately. Filter
-    sterilize the vitamins and NaHCO3 stock solutions. Adjust pH of the complete medium
-    to 8.0 with sterile 0.4% (w/v) Na2CO3 solution, if necessary.
+  description: Dissolve ingredients (except hydrogenphosphate, hydrogencarbonate and vitamins), adjust
+    pH to 7.5 and autoclave. K2HPO4 is autoclaved separately. Filter sterilize the vitamins and NaHCO3
+    stock solutions. Adjust pH of the complete medium to 8.0 with sterile 0.4% (w/v) Na2CO3 solution,
+    if necessary.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate in Erlenmeyer flasks with shaking.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
+    Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:

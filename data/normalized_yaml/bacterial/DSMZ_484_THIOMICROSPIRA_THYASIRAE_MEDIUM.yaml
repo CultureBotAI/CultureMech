@@ -1,8 +1,8 @@
 name: THIOMICROSPIRA THYASIRAE MEDIUM
 original_name: THIOMICROSPIRA THYASIRAE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.6
 media_term:
   preferred_term: DSMZ Medium 484
@@ -180,9 +180,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A, B and C separately and mix when cool. After
-    autoclaving, add thiosulfate, trace elements and vitamins from sterile stock solutions
-    to complete the medium. Adjust pH of complete medium to 7.3 - 7.6.
+  description: Autoclave solutions A, B and C separately and mix when cool. After autoclaving, add thiosulfate,
+    trace elements and vitamins from sterile stock solutions to complete the medium. Adjust pH of complete
+    medium to 7.3 - 7.6.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.6.
@@ -191,8 +191,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
+    Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:

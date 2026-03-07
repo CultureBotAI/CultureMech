@@ -1,6 +1,6 @@
 name: 1/10 PYGV MEDIUM modified
 original_name: 1/10 PYGV MEDIUM modified
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -140,10 +140,9 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the vitamin solution under an atmosphere
-    of N2 and dispense into Hungate tubes. Seal under an atmosphere of nitrogen with
-    rubber stoppers and autoclave. Aseptically add the vitamin solution from a filter
-    sterilised stock solution to the sterile medium.
+  description: Prepare the medium without the vitamin solution under an atmosphere of N2 and dispense
+    into Hungate tubes. Seal under an atmosphere of nitrogen with rubber stoppers and autoclave. Aseptically
+    add the vitamin solution from a filter sterilised stock solution to the sterile medium.
 - step_number: 3
   action: MIX
   description: SII

@@ -1,8 +1,8 @@
 name: MEDIUM FOR ENHYDROMYXA SALSUGINOSA
 original_name: MEDIUM FOR ENHYDROMYXA SALSUGINOSA
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1102
@@ -165,12 +165,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust to pH 7.2, check and adjust pH after autoclaving. Add vitamin
-    B12 from a filter sterilized stock solution after autoclaving.
+  description: Adjust to pH 7.2, check and adjust pH after autoclaving. Add vitamin B12 from a filter
+    sterilized stock solution after autoclaving.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

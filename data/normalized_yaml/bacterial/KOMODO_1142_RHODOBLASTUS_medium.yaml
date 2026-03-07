@@ -1,6 +1,6 @@
 name: RHODOBLASTUS medium
 original_name: RHODOBLASTUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1142
     label: RHODOBLASTUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1142 | DSMZ Medium: 1142 (mediadive.medium:1142)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1142 | DSMZ Medium: 1142 (mediadive.medium:1142) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

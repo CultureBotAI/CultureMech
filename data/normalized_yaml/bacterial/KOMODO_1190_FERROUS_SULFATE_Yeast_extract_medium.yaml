@@ -1,11 +1,11 @@
 name: FERROUS SULFATE/Yeast extract medium
 original_name: FERROUS SULFATE/Yeast extract medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1190 | DSMZ Medium: 1190
-  (mediadive.medium:1190) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1190 | DSMZ Medium: 1190 (mediadive.medium:1190)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1190
   term:

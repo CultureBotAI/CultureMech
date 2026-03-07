@@ -1,6 +1,6 @@
 name: YTPS MEDIUM
 original_name: YTPS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -281,15 +281,14 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: AUTOCLAVE
-  description: Mix ingredients, except L-cysteine x HCl x H2O, and bring to the boil
-    while gassing with N2-H2 (95:5) gas mixture. When the color turns from blue to
-    reddish pink, add L-cysteine x HCl x H2O during continuous gassing and boiling.
-    Anaerobically dispense the medium in tubes under a N2-H2 (95:5) atmosphere. Stopper
-    the tubes and autoclave.
+  description: Mix ingredients, except L-cysteine x HCl x H2O, and bring to the boil while gassing with
+    N2-H2 (95:5) gas mixture. When the color turns from blue to reddish pink, add L-cysteine x HCl x H2O
+    during continuous gassing and boiling. Anaerobically dispense the medium in tubes under a N2-H2 (95:5)
+    atmosphere. Stopper the tubes and autoclave.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals in the order listed.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals
+    in the order listed.
 - step_number: 4
   action: STORE
   description: Store at -20C or 4C in the absence of light.

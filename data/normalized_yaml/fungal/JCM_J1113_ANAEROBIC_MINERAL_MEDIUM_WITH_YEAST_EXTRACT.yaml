@@ -1,6 +1,6 @@
 name: ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT
 original_name: ANAEROBIC MINERAL MEDIUM WITH YEAST EXTRACT
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -239,16 +239,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 7.0 and autoclave under a N2 atmosphere
-    in a bottle capped with a butyl rubber stopper. After cooling, add the following
-    solution (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Mix components, adjust pH to 7.0 and autoclave under a N2 atmosphere in a bottle capped
+    with a butyl rubber stopper. After cooling, add the following solution (autoclaved and stored under
+    a N2 gas atmosphere):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH solution.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust final pH to 7.0.

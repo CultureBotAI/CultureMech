@@ -1,8 +1,8 @@
 name: NUTRIENT-METHANOL AGAR
 original_name: NUTRIENT-METHANOL AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J281
   term:
@@ -42,8 +42,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add methanol aseptically to the autoclaved medium and mix well before
-    dispensation.
+  description: Add methanol aseptically to the autoclaved medium and mix well before dispensation.
 applications:
 - Microbial cultivation
 curation_history:

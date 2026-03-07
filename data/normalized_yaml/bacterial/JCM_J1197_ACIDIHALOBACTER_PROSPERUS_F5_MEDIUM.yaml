@@ -1,6 +1,6 @@
 name: ACIDIHALOBACTER PROSPERUS F5 MEDIUM
 original_name: ACIDIHALOBACTER PROSPERUS F5 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -140,12 +140,11 @@ preparation_steps:
   description: Adjust pH 2.5 with H2SO4 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Adjust pH to 2.5 and filter-sterilize. Prepare the solution just prior
-    to use.
+  description: Adjust pH to 2.5 and filter-sterilize. Prepare the solution just prior to use.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Aseptically combine solution A and solution B (freshly prepared).
-    Then, add the following solutions (autoclaved):'
+  description: 'Aseptically combine solution A and solution B (freshly prepared). Then, add the following
+    solutions (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: CALDIMICROBIUM MEDIUM
 original_name: CALDIMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -243,18 +243,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, calcium chloride, fumarate,
-    thiosulfate, vitamins and sulfide). Sparge medium with 80% N2 and 20% CO2 gas
-    mixture for 30 - 45 min to make it anoxic, add solid bicarbonate and adjust pH
-    to 7.2. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. Add calcium chloride, fumarate, thiosulfate, vitamins
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere.
-    Stock solutions of fumarate, thiosulfate and vitamins are sterilized by filtration.
-    Adjust pH of complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate, calcium chloride, fumarate, thiosulfate, vitamins
+    and sulfide). Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    add solid bicarbonate and adjust pH to 7.2. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add calcium chloride, fumarate, thiosulfate, vitamins
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Stock solutions
+    of fumarate, thiosulfate and vitamins are sterilized by filtration. Adjust pH of complete medium to
+    7.0 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,5 +264,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.121445Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

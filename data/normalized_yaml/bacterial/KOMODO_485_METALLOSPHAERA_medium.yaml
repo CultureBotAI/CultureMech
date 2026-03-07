@@ -1,6 +1,6 @@
 name: METALLOSPHAERA medium
 original_name: METALLOSPHAERA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:485
     label: METALLOSPHAERA medium
-notes: 'Source: KOMODO ModelSEED | ID: 485 | DSMZ Medium: 485 (mediadive.medium:485)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 485 | DSMZ Medium: 485 (mediadive.medium:485) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

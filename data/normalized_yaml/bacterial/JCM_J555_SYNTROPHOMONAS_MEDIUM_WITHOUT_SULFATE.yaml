@@ -1,6 +1,6 @@
 name: SYNTROPHOMONAS MEDIUM WITHOUT SULFATE
 original_name: SYNTROPHOMONAS MEDIUM WITHOUT SULFATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 519 without sodium sulfate, replacing butyric acid with
-    1.7 g/L crotonic acid. Otherwise, prepare medium as described in the recipe of
-    Medium No. 519.
+  description: Use Medium No. 519 without sodium sulfate, replacing butyric acid with 1.7 g/L crotonic
+    acid. Otherwise, prepare medium as described in the recipe of Medium No. 519.
 applications:
 - Microbial cultivation
 curation_history:

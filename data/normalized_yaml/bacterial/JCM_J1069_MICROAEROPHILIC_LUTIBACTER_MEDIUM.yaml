@@ -1,6 +1,6 @@
 name: MICROAEROPHILIC LUTIBACTER MEDIUM
 original_name: MICROAEROPHILIC LUTIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.2
@@ -253,13 +253,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.2 to 6.5. Distribute the medium into
-    culture vessels, replace the gas phase with N2-CO2-O2 (90:10:2, v/v/v), seal with
-    butyl rubber stoppers and autoclave.
+  description: Mix components and adjust pH to 6.2 to 6.5. Distribute the medium into culture vessels,
+    replace the gas phase with N2-CO2-O2 (90:10:2, v/v/v), seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

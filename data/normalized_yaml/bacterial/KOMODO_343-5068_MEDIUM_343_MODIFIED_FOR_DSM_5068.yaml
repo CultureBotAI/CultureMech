@@ -1,6 +1,6 @@
 name: MEDIUM 343 MODIFIED FOR DSM 5068
 original_name: MEDIUM 343 MODIFIED FOR DSM 5068
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:343_5068
     label: MEDIUM 343 MODIFIED FOR DSM 5068
-notes: 'Source: KOMODO ModelSEED | ID: 343_5068 | DSMZ Medium: 343 (mediadive.medium:343)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 343_5068 | DSMZ Medium: 343 (mediadive.medium:343) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

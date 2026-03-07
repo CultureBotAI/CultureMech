@@ -1,8 +1,6 @@
-name: Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04%
-  cysteine
-original_name: Brain heart infusion (BHI) broth containing C. difficile supplement
-  and 0.04% cysteine
-category: imported
+name: Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04% cysteine
+original_name: Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04% cysteine
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -10,8 +8,7 @@ ingredients:
   concentration:
     value: '0.04'
     unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:15356
     label: Cysteine
@@ -53,8 +50,7 @@ media_term:
   preferred_term: TOGO Medium M2811
   term:
     id: TOGO:M2811
-    label: Brain heart infusion (BHI) broth containing C. difficile supplement and
-      0.04% cysteine
+    label: Brain heart infusion (BHI) broth containing C. difficile supplement and 0.04% cysteine
 notes: 'Source: https://togomedium.org/medium/M2811'
 applications:
 - Microbial cultivation
@@ -70,8 +66,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.586617'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Hydrogen gas; Added default concentration for ingredient: C. difficile supplement;
-    Added default concentration for ingredient: D-cycloserine; Added default concentration
-    for ingredient: Cefoxitin'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Hydrogen gas; Added default
+    concentration for ingredient: C. difficile supplement; Added default concentration for ingredient:
+    D-cycloserine; Added default concentration for ingredient: Cefoxitin'

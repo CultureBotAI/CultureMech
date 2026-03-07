@@ -1,8 +1,8 @@
 name: KISTIMONAS ASTERIAE MEDIUM
 original_name: KISTIMONAS ASTERIAE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1252
@@ -48,8 +48,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding
-    20.0 g/l agar.
+  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

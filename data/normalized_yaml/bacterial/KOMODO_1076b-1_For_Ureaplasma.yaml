@@ -1,6 +1,6 @@
 name: For Ureaplasma
 original_name: For Ureaplasma
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1076b.1
     label: For Ureaplasma
-notes: 'Source: KOMODO ModelSEED | ID: 1076b.1 | DSMZ Medium: 1076b (mediadive.medium:1076b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1076b.1 | DSMZ Medium: 1076b (mediadive.medium:1076b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

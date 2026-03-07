@@ -1,6 +1,6 @@
 name: TEPIDANAEROBACTER GT38 MEDIUM
 original_name: TEPIDANAEROBACTER GT38 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -95,10 +95,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Distribute the medium in culture vessels
-    (e.g., 9.0 ml in Balch tubes), replace the gas phase with CO2, seal with butyl
-    rubber stoppers, and autoclave. After cooling, aseptically and anaerobically add
-    per 900 ml the following solution (autoclaved under a N2 atmosphere):'
+  description: 'Mix components thoroughly. Distribute the medium in culture vessels (e.g., 9.0 ml in Balch
+    tubes), replace the gas phase with CO2, seal with butyl rubber stoppers, and autoclave. After cooling,
+    aseptically and anaerobically add per 900 ml the following solution (autoclaved under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0, if necessary.

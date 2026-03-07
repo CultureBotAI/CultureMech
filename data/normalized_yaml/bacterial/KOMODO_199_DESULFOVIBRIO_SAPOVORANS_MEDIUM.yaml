@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO SAPOVORANS MEDIUM
 original_name: DESULFOVIBRIO SAPOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:199
     label: DESULFOVIBRIO SAPOVORANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 199 | DSMZ Medium: 199 (mediadive.medium:199)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 199 | DSMZ Medium: 199 (mediadive.medium:199) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
 original_name: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465d
   term:
     id: komodo.medium:465d
     label: MINERAL MEDIUM WITH BENZYLCYANIDE AS NITROGEN SOURCE
-notes: 'Source: KOMODO ModelSEED | ID: 465d | DSMZ Medium: 465d (mediadive.medium:465d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465d | DSMZ Medium: 465d (mediadive.medium:465d) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

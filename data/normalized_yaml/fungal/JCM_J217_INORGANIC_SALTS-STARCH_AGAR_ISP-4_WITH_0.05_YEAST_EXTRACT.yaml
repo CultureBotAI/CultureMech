@@ -1,8 +1,8 @@
 name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
 original_name: INORGANIC SALTS-STARCH AGAR (ISP-4) WITH 0.05% YEAST EXTRACT
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J217
   term:

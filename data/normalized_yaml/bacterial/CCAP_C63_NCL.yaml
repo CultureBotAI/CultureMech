@@ -1,6 +1,6 @@
 name: NCL
 original_name: NCL
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -45,16 +45,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up 1 litre of PJ (Main sol. C 76) with deionized water. Bring\
-    \ 500 ml of PJ (Main sol. C 76) to the boil then\r\nadd cereal leaves. Continue\
-    \ to boil for 5 minutes. Allow to cool to room temperature then\r\nrestore volume\
-    \ to 500 ml with deionized water. Filter through GF/C paper and decant back\r\n\
-    into the rest of the PJ (Main sol. C 76). Mix well and autoclave at 15 psi for\
+  description: "Make up 1 litre of PJ (Main sol. C 76) with deionized water. Bring 500 ml of PJ (Main\
+    \ sol. C 76) to the boil then\r\nadd cereal leaves. Continue to boil for 5 minutes. Allow to cool\
+    \ to room temperature then\r\nrestore volume to 500 ml with deionized water. Filter through GF/C paper\
+    \ and decant back\r\ninto the rest of the PJ (Main sol. C 76). Mix well and autoclave at 15 psi for\
     \ 15 minutes."
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

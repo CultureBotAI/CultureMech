@@ -1,8 +1,8 @@
 name: ZAVARZINELLA FORMOSA MEDIUM
 original_name: ZAVARZINELLA FORMOSA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.8-6
 media_term:
   preferred_term: DSMZ Medium 1196
@@ -128,8 +128,8 @@ preparation_steps:
   description: Final pH 5.8 - 6.0
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

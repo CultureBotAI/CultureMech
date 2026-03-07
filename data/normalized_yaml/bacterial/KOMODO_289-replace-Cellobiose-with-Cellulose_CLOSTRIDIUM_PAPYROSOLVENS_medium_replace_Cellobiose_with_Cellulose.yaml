@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
 original_name: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:289_replace_Cellobiose_with_Cellulose
     label: CLOSTRIDIUM PAPYROSOLVENS medium_replace_Cellobiose_with_Cellulose
-notes: 'Source: KOMODO ModelSEED | ID: 289_replace_Cellobiose_with_Cellulose | DSMZ
-  Medium: 289 (mediadive.medium:289) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 289_replace_Cellobiose_with_Cellulose | DSMZ Medium: 289 (mediadive.medium:289)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea water
   concentration:

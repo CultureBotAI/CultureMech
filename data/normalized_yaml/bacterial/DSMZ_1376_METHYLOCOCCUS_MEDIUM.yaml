@@ -1,6 +1,6 @@
 name: METHYLOCOCCUS MEDIUM
 original_name: METHYLOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
@@ -193,19 +193,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the vitamin solution and the phosphate buffer.
-    Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
-    to add 50% methane to the gas phase and autoclave at 121°C for 15 minutes. Autoclave
-    the phosphate buffer separately. When the growth medium is cool add 0.1 ml/l of
-    vitamin solution (filter sterilized) and 2 ml/l of the phosphate buffer - if too
-    warm the phosphate will precipitate. Liquid cultures should be grown with shaking.
+  description: Prepare the medium without the vitamin solution and the phosphate buffer. Dispense the
+    medium into the growth vessels. If using sealed vessels it is appropriate to add 50% methane to the
+    gas phase and autoclave at 121°C for 15 minutes. Autoclave the phosphate buffer separately. When the
+    growth medium is cool add 0.1 ml/l of vitamin solution (filter sterilized) and 2 ml/l of the phosphate
+    buffer - if too warm the phosphate will precipitate. Liquid cultures should be grown with shaking.
 - step_number: 2
   action: MIX
   description: pH 6.7
 - step_number: 3
   action: DISSOLVE
-  description: After the disodium phosphate has been dissolved in distilled water,
-    pH should be between 8-9 without adjustment.
+  description: After the disodium phosphate has been dissolved in distilled water, pH should be between
+    8-9 without adjustment.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.

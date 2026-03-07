@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM GRANTII medium
 original_name: CLOSTRIDIUM GRANTII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.6
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:648
     label: CLOSTRIDIUM GRANTII medium
-notes: 'Source: KOMODO ModelSEED | ID: 648 | DSMZ Medium: 648 (mediadive.medium:648)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 648 | DSMZ Medium: 648 (mediadive.medium:648) | Aerobic: Yes'
 ingredients:
 - preferred_term: Marine Broth
   concentration:

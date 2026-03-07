@@ -1,6 +1,6 @@
 name: METHANOCALCULUS PUMILUS medium
 original_name: METHANOCALCULUS PUMILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:892
     label: METHANOCALCULUS PUMILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 892 | DSMZ Medium: 892 (mediadive.medium:892)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 892 | DSMZ Medium: 892 (mediadive.medium:892) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -252,5 +251,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.965247Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

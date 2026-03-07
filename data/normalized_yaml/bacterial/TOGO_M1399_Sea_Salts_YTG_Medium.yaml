@@ -1,6 +1,6 @@
 name: Sea Salts YTG Medium
 original_name: Sea Salts YTG Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -27,8 +26,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -41,8 +40,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

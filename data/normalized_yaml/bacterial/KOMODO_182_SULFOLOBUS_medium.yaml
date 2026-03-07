@@ -1,6 +1,6 @@
 name: SULFOLOBUS medium
 original_name: SULFOLOBUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 4.0-4.2

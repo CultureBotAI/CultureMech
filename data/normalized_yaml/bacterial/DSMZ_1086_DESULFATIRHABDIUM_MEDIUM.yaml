@@ -1,6 +1,6 @@
 name: DESULFATIRHABDIUM MEDIUM
 original_name: DESULFATIRHABDIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -257,27 +257,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, benzoate, crotonate, vitamins
-    and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
-    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add benzoate, crotonate, vitamins and sulfide
-    form sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    The crotonate and vitamin solutions should be sterilized by filtration. Adjust
-    pH of the complete medium to 7.0 - 7.2.
+  description: Dissolve ingredients (except carbonate, benzoate, crotonate, vitamins and sulfide) and
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add benzoate,
+    crotonate, vitamins and sulfide form sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. The
+    crotonate and vitamin solutions should be sterilized by filtration. Adjust pH of the complete medium
+    to 7.0 - 7.2.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize the vessels with sterile 80% N2 and 20%
-    CO2 gas mixture to 0.7 bar overpressure.
+  description: After inoculation pressurize the vessels with sterile 80% N2 and 20% CO2 gas mixture to
+    0.7 bar overpressure.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml
-    of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000
-    ml. Sterilize by filtration under 100% N2 gas atmosphere.
+  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust
+    pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2
+    gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -288,5 +287,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.124864Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

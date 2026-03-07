@@ -1,6 +1,6 @@
 name: ANOXYBACILLUS AMYLOLYTICUS medium
 original_name: ANOXYBACILLUS AMYLOLYTICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.6
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1046
     label: ANOXYBACILLUS AMYLOLYTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1046 | DSMZ Medium: 1046 (mediadive.medium:1046)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1046 | DSMZ Medium: 1046 (mediadive.medium:1046) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

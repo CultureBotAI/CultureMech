@@ -1,6 +1,6 @@
 name: LENTIBACILLUS GANOUSIS MEDIUM
 original_name: LENTIBACILLUS GANOUSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -78,8 +78,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.2. For preparation of solid medium, add 20.0 g/L agar.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.2. For preparation
+    of solid medium, add 20.0 g/L agar.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2.

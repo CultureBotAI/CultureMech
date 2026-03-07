@@ -1,6 +1,6 @@
 name: ACIDIANUS BRIERLEYI MEDIUM
 original_name: ACIDIANUS BRIERLEYI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
@@ -57,8 +57,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.0 with 10 N H2SO4. Autoclave yeast extract separately.
-    Steam sulfur for 3 hr on each of 3 successive days.
+  description: Adjust pH to 2.0 with 10 N H2SO4. Autoclave yeast extract separately. Steam sulfur for
+    3 hr on each of 3 successive days.
 applications:
 - Microbial cultivation
 curation_history:
@@ -69,5 +69,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.257787Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

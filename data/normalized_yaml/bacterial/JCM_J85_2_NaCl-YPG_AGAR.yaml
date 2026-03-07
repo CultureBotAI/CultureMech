@@ -1,8 +1,8 @@
 name: 2% NaCl-YPG AGAR
 original_name: 2% NaCl-YPG AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.3
 media_term:
   preferred_term: JCM Medium J85

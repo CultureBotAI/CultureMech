@@ -1,8 +1,8 @@
 name: EG:JM
 original_name: EG:JM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C27
   term:
@@ -141,17 +141,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 1:1 mixture. See separate recipes. Mix then autoclave at 15 psi for
-    15 minutes.
+  description: 1:1 mixture. See separate recipes. Mix then autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Add constituents above and make up to 1 litre with deionized water.\
-    \ For agar add 15 g per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at\
-    \ 15 psi for 15 minutes."
+  description: "Add constituents above and make up to 1 litre with deionized water. For agar add 15 g\
+    \ per\r\nlitre Bacteriological Agar (Oxoid L11). Autoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per
-    litre of Bacterial Agar (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
+  description: Make up to 1 litre with deionized water.  For agar, add 15.0 g per litre of Bacterial Agar
+    (Oxoid L11).  Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

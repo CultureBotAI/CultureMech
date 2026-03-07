@@ -1,16 +1,15 @@
 name: FLEXIBACTER medium
 original_name: FLEXIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 344
   term:
     id: komodo.medium:344
     label: FLEXIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 344 | DSMZ Medium: 344 (mediadive.medium:344)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 344 | DSMZ Medium: 344 (mediadive.medium:344) | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:

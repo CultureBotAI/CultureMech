@@ -1,6 +1,6 @@
 name: AMO.1 medium_replace_N-Methylhydantoin_with_creatinine
 original_name: AMO.1 medium_replace_N-Methylhydantoin_with_creatinine
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.3
@@ -266,5 +266,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.462919Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

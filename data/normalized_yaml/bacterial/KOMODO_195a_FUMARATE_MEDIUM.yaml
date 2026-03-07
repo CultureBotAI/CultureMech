@@ -1,11 +1,11 @@
 name: FUMARATE MEDIUM
 original_name: FUMARATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
-notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 195a | DSMZ
-  Medium: 195a (mediadive.medium:195a) | Aerobic: No'
+notes: 'pH buffer: sodium bicarbonate | Source: KOMODO ModelSEED | ID: 195a | DSMZ Medium: 195a (mediadive.medium:195a)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 195a
   term:
@@ -251,5 +251,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.045601Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

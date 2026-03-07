@@ -1,6 +1,6 @@
 name: THERMODESULFATATOR ATLANTICUS MEDIUM
 original_name: THERMODESULFATATOR ATLANTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
@@ -228,16 +228,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except Na2S x 9H2O and adjust pH to 6.7. Distribute
-    the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) under a
-    gas stream of H2-CO2 (4:1, v/v), seal with butyl rubber stoppers and autoclave.
-    Separately autoclave 3% Na2S x 9H2O solution under a N2 gas atmosphere. Prior
-    to inoculation, reduce the medium by the addition of the Na2S x 9H2O solution.
-    Pressurized the inoculated culture vessels to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix components except Na2S x 9H2O and adjust pH to 6.7. Distribute the medium into culture
+    vessels (e.g., 20 ml in 120 ml serum bottles) under a gas stream of H2-CO2 (4:1, v/v), seal with butyl
+    rubber stoppers and autoclave. Separately autoclave 3% Na2S x 9H2O solution under a N2 gas atmosphere.
+    Prior to inoculation, reduce the medium by the addition of the Na2S x 9H2O solution. Pressurized the
+    inoculated culture vessels to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

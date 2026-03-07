@@ -1,15 +1,15 @@
 name: MEDIUM 630 MODIFIED FOR DSM 22673
 original_name: MEDIUM 630 MODIFIED FOR DSM 22673
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 630_22673
   term:
     id: komodo.medium:630_22673
     label: MEDIUM 630 MODIFIED FOR DSM 22673
-notes: 'Source: KOMODO ModelSEED | ID: 630_22673 | DSMZ Medium: 630 (mediadive.medium:630)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 630_22673 | DSMZ Medium: 630 (mediadive.medium:630) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,16 +1,15 @@
 name: GLUCONACETOBACTER RHAETICUS medium
 original_name: GLUCONACETOBACTER RHAETICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: KOMODO Medium 1044
   term:
     id: komodo.medium:1044
     label: GLUCONACETOBACTER RHAETICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1044 | DSMZ Medium: 1044 (mediadive.medium:1044) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

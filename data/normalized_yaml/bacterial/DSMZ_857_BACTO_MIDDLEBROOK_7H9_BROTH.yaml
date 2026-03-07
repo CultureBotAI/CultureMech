@@ -1,6 +1,6 @@
 name: BACTO MIDDLEBROOK 7H9 BROTH
 original_name: BACTO MIDDLEBROOK 7H9 BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.4-6.8
@@ -119,11 +119,10 @@ preparation_steps:
   description: Solution g/liter (final solution) 4.7 g/l. Final pH at 25°C 6.6 ± 0.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: To prepare one liter of final medium, suspend the amount of dehydrated
-    powder indicated under FORMULAE-Solution (and on the package label) in 900 ml
-    distilled and deionized water containing 2 ml glycerol and heat to boiling to
-    dissolve completely. Sterilize in the autoclave for 10 or 15 min at 15 Ibs pressure
-    (121°C), per label copy. Cool to 50-55°C.
+  description: To prepare one liter of final medium, suspend the amount of dehydrated powder indicated
+    under FORMULAE-Solution (and on the package label) in 900 ml distilled and deionized water containing
+    2 ml glycerol and heat to boiling to dissolve completely. Sterilize in the autoclave for 10 or 15
+    min at 15 Ibs pressure (121°C), per label copy. Cool to 50-55°C.
 - step_number: 3
   action: MIX
   description: Aseptically add 100 ml of the appropriate ADC Enrichment and mix throughly.

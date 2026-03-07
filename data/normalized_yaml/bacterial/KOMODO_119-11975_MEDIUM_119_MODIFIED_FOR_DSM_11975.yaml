@@ -1,6 +1,6 @@
 name: MEDIUM 119 MODIFIED FOR DSM 11975
 original_name: MEDIUM 119 MODIFIED FOR DSM 11975
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:119_11975
     label: MEDIUM 119 MODIFIED FOR DSM 11975
-notes: 'Source: KOMODO ModelSEED | ID: 119_11975 | DSMZ Medium: 119 (mediadive.medium:119)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 119_11975 | DSMZ Medium: 119 (mediadive.medium:119) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

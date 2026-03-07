@@ -1,6 +1,6 @@
 name: MB Medium For Methanobacterium
 original_name: MB Medium For Methanobacterium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '932'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: NaCl
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,14 +29,12 @@ ingredients:
   concentration:
     value: '0.08'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -47,8 +42,7 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -56,8 +50,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
-    component, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -65,8 +59,7 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -112,8 +105,7 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: 5% L--Cysteine・HCl・H2O solution
   concentration:
     value: '6'
@@ -133,8 +125,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -142,20 +133,17 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: Na2MoO4・2H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: H3BO3
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -163,32 +151,27 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: CoSO4・7H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
@@ -196,8 +179,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: KOH
   notes: 'Role: Mineral source; Properties: Defined component, Solution'
   term:
@@ -230,9 +212,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:01.656182'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: N2; Added default
-    concentration for ingredient: Hydrogen gas; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas;
-    Added default concentration for ingredient: KOH'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas; Added
+    default concentration for ingredient: N2; Added default concentration for ingredient: Hydrogen gas;
+    Added default concentration for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: KOH'

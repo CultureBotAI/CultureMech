@@ -1,6 +1,6 @@
 name: LYALIKOVIELLA MEDIUM
 original_name: LYALIKOVIELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -148,8 +148,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Prepare the liquid medium. Adjust to pH 8.5. Before inoculation add
-    from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 8.5. Before inoculation add from sterile stock
+    solutions:'
 applications:
 - Microbial cultivation
 curation_history:

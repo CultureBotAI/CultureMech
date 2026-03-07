@@ -1,6 +1,6 @@
 name: VULCANO HIGH SALT MEDIUM
 original_name: VULCANO HIGH SALT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -207,16 +207,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.3 and autoclave under a
-    N2-CO2 (4:1, v/v) gas atmosphere. After cooling, add the following solutions from
-    anaerobic stocks (autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 6.3 and autoclave under a N2-CO2 (4:1, v/v) gas
+    atmosphere. After cooling, add the following solutions from anaerobic stocks (autoclaved):'
 - step_number: 2
   action: MIX
   description: 'Comment:'
 - step_number: 3
   action: ADJUST_PH
-  description: For JCM 39183, add 1.0 M glucose solution (final 10 mM), instead of
-    sodium fumarate solution, and adjust pH to 5.5.
+  description: For JCM 39183, add 1.0 M glucose solution (final 10 mM), instead of sodium fumarate solution,
+    and adjust pH to 5.5.
 applications:
 - Microbial cultivation
 curation_history:

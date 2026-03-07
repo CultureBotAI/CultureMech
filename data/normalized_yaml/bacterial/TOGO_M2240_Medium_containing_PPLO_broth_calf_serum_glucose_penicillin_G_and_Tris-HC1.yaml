@@ -1,7 +1,6 @@
 name: Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1
-original_name: Medium containing PPLO broth, calf serum, glucose, penicillin G, and
-  Tris-HC1
-category: imported
+original_name: Medium containing PPLO broth, calf serum, glucose, penicillin G, and Tris-HC1
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -14,8 +13,7 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

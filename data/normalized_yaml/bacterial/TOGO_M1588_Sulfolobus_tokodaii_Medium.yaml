@@ -1,6 +1,6 @@
 name: Sulfolobus tokodaii Medium
 original_name: Sulfolobus tokodaii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -14,8 +14,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined component'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -26,8 +25,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -35,8 +33,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -44,8 +41,7 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -53,8 +49,7 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -62,8 +57,7 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
@@ -71,14 +65,12 @@ ingredients:
   concentration:
     value: '1.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: ZnSO4·7H2O
   concentration:
     value: '0.22'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
@@ -86,8 +78,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
@@ -95,8 +86,7 @@ ingredients:
   concentration:
     value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -104,8 +94,7 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
@@ -113,14 +102,12 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: VOSO4·xH2O
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:87020
     label: vanadyl sulfate hydrate
@@ -128,11 +115,9 @@ ingredients:
   concentration:
     value: '4.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -163,5 +148,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:48.307059'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: H2SO4'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient:
+    H2SO4'

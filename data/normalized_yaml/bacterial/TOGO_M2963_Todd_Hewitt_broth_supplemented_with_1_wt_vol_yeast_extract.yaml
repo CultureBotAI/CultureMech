@@ -1,11 +1,10 @@
 name: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
 original_name: Todd Hewitt broth (supplemented with 1% (wt/vol) yeast extract)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes,
-    NJ, USA)
+- preferred_term: Todd Hewitt broth (Becton, Dickinson and Company, Franklin Lakes, NJ, USA)
   concentration:
     value: '1'
     unit: G_PER_L

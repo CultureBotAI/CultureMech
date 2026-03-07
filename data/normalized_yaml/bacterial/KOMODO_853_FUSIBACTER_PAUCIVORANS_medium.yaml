@@ -1,6 +1,6 @@
 name: FUSIBACTER PAUCIVORANS medium
 original_name: FUSIBACTER PAUCIVORANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:853
     label: FUSIBACTER PAUCIVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 853 | DSMZ Medium: 853 (mediadive.medium:853)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 853 | DSMZ Medium: 853 (mediadive.medium:853) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

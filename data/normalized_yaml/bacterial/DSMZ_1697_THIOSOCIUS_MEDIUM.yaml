@@ -1,6 +1,6 @@
 name: THIOSOCIUS MEDIUM
 original_name: THIOSOCIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -214,12 +214,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except HEPES buffer, magnesium chloride, bicarbonate,
-    thiosulfate and vitamins), dispense medium in test tubes or Erlenmeyrer flasks
-    to 20% of volume, close with screw caps and autoclave. Add HEPES buffer, magnesium
-    chloride, bicarbonate, thiosulfate and vitamins to the autoclaved medium from
-    sterile stock solutions sterilized by filtration. Adjust pH of complete medium
-    to 8.0.
+  description: Dissolve ingredients (except HEPES buffer, magnesium chloride, bicarbonate, thiosulfate
+    and vitamins), dispense medium in test tubes or Erlenmeyrer flasks to 20% of volume, close with screw
+    caps and autoclave. Add HEPES buffer, magnesium chloride, bicarbonate, thiosulfate and vitamins to
+    the autoclaved medium from sterile stock solutions sterilized by filtration. Adjust pH of complete
+    medium to 8.0.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -233,5 +232,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.749570Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

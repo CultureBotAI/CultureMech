@@ -1,8 +1,8 @@
 name: MODIFIED HORIKOSHI-I MEDIUM
 original_name: MODIFIED HORIKOSHI-I MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: JCM Medium J182
@@ -57,8 +57,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a sterile 10% NaHCO3 solution
-    to the medium. Check final pH to be about 9.0.
+  description: After autoclaving, aseptically add 100 ml of a sterile 10% NaHCO3 solution to the medium.
+    Check final pH to be about 9.0.
 applications:
 - Microbial cultivation
 curation_history:

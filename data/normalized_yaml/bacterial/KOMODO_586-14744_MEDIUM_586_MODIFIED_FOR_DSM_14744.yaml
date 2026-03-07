@@ -1,6 +1,6 @@
 name: MEDIUM 586 MODIFIED FOR DSM 14744
 original_name: MEDIUM 586 MODIFIED FOR DSM 14744
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:586_14744
     label: MEDIUM 586 MODIFIED FOR DSM 14744
-notes: 'Source: KOMODO ModelSEED | ID: 586_14744 | DSMZ Medium: 586 (mediadive.medium:586)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 586_14744 | DSMZ Medium: 586 (mediadive.medium:586) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

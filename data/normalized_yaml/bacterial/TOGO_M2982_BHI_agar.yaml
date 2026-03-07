@@ -1,8 +1,8 @@
 name: BHI agar
 original_name: BHI agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: BHI agar
   concentration:

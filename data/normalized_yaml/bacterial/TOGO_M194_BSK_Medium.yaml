@@ -1,6 +1,6 @@
 name: BSK Medium
 original_name: BSK Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -16,8 +16,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -25,8 +24,7 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -34,8 +32,7 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -59,8 +56,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
 - preferred_term: Bovine albumin, Fraction V
   concentration:
     value: '50'
@@ -70,8 +66,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

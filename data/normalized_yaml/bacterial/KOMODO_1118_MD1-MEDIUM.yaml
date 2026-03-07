@@ -1,6 +1,6 @@
 name: MD1-MEDIUM
 original_name: MD1-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1118
     label: MD1-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1118 | DSMZ Medium: 1118 (mediadive.medium:1118)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1118 | DSMZ Medium: 1118 (mediadive.medium:1118) | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:

@@ -1,8 +1,8 @@
 name: Columbia Blood Agar
 original_name: Columbia Blood Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: 4% horse blood
   notes: 'Role: Nutrient source; Properties: Undefined component'
@@ -31,5 +31,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.432488'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 4% horse blood; Added default
-    concentration for ingredient: Columbia agar base'
+  notes: 'Added default concentration for ingredient: 4% horse blood; Added default concentration for
+    ingredient: Columbia agar base'

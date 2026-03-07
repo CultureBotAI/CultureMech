@@ -1,8 +1,8 @@
 name: Yeast extract-malt extract agar (ISP-2) with artificial seawater
 original_name: Yeast extract-malt extract agar (ISP-2) with artificial seawater
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bacto Malt Extract (Difco)
   concentration:
@@ -13,14 +13,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Solution, Defined component,
-    Complex component'
+  notes: 'Role: Solvating media, Mineral source; Properties: Solution, Defined component, Complex component'
 - preferred_term: Glucose
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

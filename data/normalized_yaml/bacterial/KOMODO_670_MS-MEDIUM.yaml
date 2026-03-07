@@ -1,6 +1,6 @@
 name: MS-MEDIUM
 original_name: MS-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:670
     label: MS-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 670 | DSMZ Medium: 670 (mediadive.medium:670)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 670 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

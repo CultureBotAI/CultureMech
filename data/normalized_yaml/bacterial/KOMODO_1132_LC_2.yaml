@@ -1,6 +1,6 @@
 name: LC 2
 original_name: LC 2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1132
     label: LC 2
-notes: 'Source: KOMODO ModelSEED | ID: 1132 | DSMZ Medium: 1132 (mediadive.medium:1132)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1132 | DSMZ Medium: 1132 (mediadive.medium:1132) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

@@ -1,8 +1,8 @@
 name: PELAGICOCCUS AGAR
 original_name: PELAGICOCCUS AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: JCM Medium J659
@@ -66,9 +66,9 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: MIX
-  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216
-    (BD-Difco) instead of Marine agar 2216 and R2A broth instead of R2A agar by omitting
-    agar from the R2A agar medium composition (see Medium No. 346).'
+  description: 'Comment: For preparation of the liquid medium, use Marine broth 2216 (BD-Difco) instead
+    of Marine agar 2216 and R2A broth instead of R2A agar by omitting agar from the R2A agar medium composition
+    (see Medium No. 346).'
 applications:
 - Microbial cultivation
 curation_history:

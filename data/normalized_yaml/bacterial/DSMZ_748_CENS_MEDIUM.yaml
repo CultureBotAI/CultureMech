@@ -1,6 +1,6 @@
 name: CENS MEDIUM
 original_name: CENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -181,8 +181,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve chemicals one at a time in approximately 200.0 ml distilled
-    water. Bring final volume to 250.0 ml with additional water.
+  description: Dissolve chemicals one at a time in approximately 200.0 ml distilled water. Bring final
+    volume to 250.0 ml with additional water.
 applications:
 - Microbial cultivation
 curation_history:

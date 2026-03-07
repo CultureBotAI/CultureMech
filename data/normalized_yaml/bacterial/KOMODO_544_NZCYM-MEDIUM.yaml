@@ -1,6 +1,6 @@
 name: NZCYM-MEDIUM
 original_name: NZCYM-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:544
     label: NZCYM-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 544 | DSMZ Medium: 544 (mediadive.medium:544)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 544 | DSMZ Medium: 544 (mediadive.medium:544) | Aerobic: No'
 ingredients:
 - preferred_term: Casein hydrolysate
   concentration:

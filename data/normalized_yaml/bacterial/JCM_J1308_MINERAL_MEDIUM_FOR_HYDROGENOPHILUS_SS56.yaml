@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM FOR HYDROGENOPHILUS SS56
 original_name: MINERAL MEDIUM FOR HYDROGENOPHILUS SS56
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -123,13 +123,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.8 and autoclave. After cooling,
-    add the following solutions (autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 6.8 and autoclave. After cooling, add the following
+    solutions (autoclaved):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
-    in 120 ml serum bottles) and seal with butyl rubber stoppers. Replace the gas
-    phase with N2 containing 5-10% O2 (by volume).
+  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
+    and seal with butyl rubber stoppers. Replace the gas phase with N2 containing 5-10% O2 (by volume).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.

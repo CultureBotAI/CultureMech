@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M1449
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '4.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -40,8 +37,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -49,14 +45,12 @@ ingredients:
   concentration:
     value: '35'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: Uric acid
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Nutrient source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:27226
     label: Uric acid
@@ -64,8 +58,7 @@ ingredients:
   concentration:
     value: '0.67'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32035
     label: potassium hydroxide
@@ -93,7 +86,7 @@ media_term:
   preferred_term: TOGO Medium M1449
   term:
     id: TOGO:M1449
-    label: (Unnamed medium)
+    label: TOGO Medium M1449
 notes: 'Source: https://togomedium.org/medium/M1449
 
   Original source: NBRC - NBRC_M221
@@ -113,5 +106,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.717544'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas'

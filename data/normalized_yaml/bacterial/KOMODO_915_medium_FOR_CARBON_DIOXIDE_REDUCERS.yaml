@@ -1,6 +1,6 @@
 name: medium FOR CARBON DIOXIDE REDUCERS
 original_name: medium FOR CARBON DIOXIDE REDUCERS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:915
     label: medium FOR CARBON DIOXIDE REDUCERS
-notes: 'Source: KOMODO ModelSEED | ID: 915 | DSMZ Medium: 915 (mediadive.medium:915)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 915 | DSMZ Medium: 915 (mediadive.medium:915) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -283,6 +282,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.802983Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.0

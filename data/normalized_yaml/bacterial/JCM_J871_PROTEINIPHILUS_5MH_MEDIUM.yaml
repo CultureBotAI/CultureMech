@@ -1,6 +1,6 @@
 name: PROTEINIPHILUS 5MH MEDIUM
 original_name: PROTEINIPHILUS 5MH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -171,16 +171,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except NaHCO3, bring to a boil and cool down under
-    a N2-CO2 (4:1, v/v) gas mixture. While gassing, add NaHCO3 to the medium, distribute
-    it into culture vessels under the same gas mixture, seal with butyl rubber stoppers
-    and autoclave. After autoclaving, stand the medium overnight. Prior to inoculation,
-    add per liter the following solutions (autoclaved under a N2 atmosphere):'
+  description: 'Mix components except NaHCO3, bring to a boil and cool down under a N2-CO2 (4:1, v/v)
+    gas mixture. While gassing, add NaHCO3 to the medium, distribute it into culture vessels under the
+    same gas mixture, seal with butyl rubber stoppers and autoclave. After autoclaving, stand the medium
+    overnight. Prior to inoculation, add per liter the following solutions (autoclaved under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and
-    adjust pH to 6.5 with KOH. Then add the remaining salts and bring volume to 1.0
-    L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and adjust pH to 6.5
+    with KOH. Then add the remaining salts and bring volume to 1.0 L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

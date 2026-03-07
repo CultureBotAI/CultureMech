@@ -1,6 +1,6 @@
 name: BACTO MARINE BROTH (DIFCO 2216)
 original_name: BACTO MARINE BROTH (DIFCO 2216)
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -120,13 +120,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
-    from Difco add 37.40 g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
+    g to 1 litre water.
 - step_number: 2
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
-    brands (even if they refer to Difco2216) have not been tested and might not support
-    growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
+    they refer to Difco2216) have not been tested and might not support growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:

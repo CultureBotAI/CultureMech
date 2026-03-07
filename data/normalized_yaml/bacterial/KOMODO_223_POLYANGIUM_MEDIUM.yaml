@@ -1,16 +1,15 @@
 name: POLYANGIUM MEDIUM
 original_name: POLYANGIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 223
   term:
     id: komodo.medium:223
     label: POLYANGIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 223 | DSMZ Medium: 223 (mediadive.medium:223)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 223 | DSMZ Medium: 223 (mediadive.medium:223) | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:

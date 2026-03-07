@@ -1,6 +1,6 @@
 name: For strain DSM 1498, DSM 15558 and DSM 22353
 original_name: For strain DSM 1498, DSM 15558 and DSM 22353
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:141.4
     label: For strain DSM 1498, DSM 15558 and DSM 22353
-notes: 'Source: KOMODO ModelSEED | ID: 141.4 | DSMZ Medium: 141 (mediadive.medium:141)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 141.4 | DSMZ Medium: 141 (mediadive.medium:141) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -294,5 +293,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.830843Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

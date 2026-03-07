@@ -1,8 +1,8 @@
 name: PSEUDOMONAS INDIGOFERA MEDIUM
 original_name: PSEUDOMONAS INDIGOFERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 365
@@ -39,8 +39,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid
-    broth and on agar.
+  description: Adjust pH to 7.0 - 7.2. Rehydrate and grow lyophilized cells in liquid broth and on agar.
 applications:
 - Microbial cultivation
 curation_history:

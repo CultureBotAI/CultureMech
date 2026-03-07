@@ -1,6 +1,6 @@
 name: PY Medium (C)
 original_name: PY Medium (C)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -40,14 +39,12 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -55,14 +52,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: NaCl
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -70,14 +65,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: KH2PO4
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -85,8 +78,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -94,8 +86,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate

@@ -1,6 +1,6 @@
 name: Mueller-Hinton broth
 original_name: Mueller-Hinton broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:4003
     label: Mueller-Hinton broth
-notes: 'Source: KOMODO ModelSEED | ID: 4003 | DSMZ Medium: 4003 (mediadive.medium:4003)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4003 | DSMZ Medium: 4003 (mediadive.medium:4003) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,8 +1,8 @@
 name: CGM
 original_name: CGM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C21
   term:
@@ -134,9 +134,8 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
-    \ Bacteriological Agar (Thermo\r\nScientific&trade; Oxoid&trade; Agar No.1). Autoclave\
-    \ at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre Bacteriological Agar\
+    \ (Thermo\r\nScientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
   description: 'Ensure elements are added in the following sequence:'

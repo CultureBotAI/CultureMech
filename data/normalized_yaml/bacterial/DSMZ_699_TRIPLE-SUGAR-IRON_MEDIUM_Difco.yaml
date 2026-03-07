@@ -1,8 +1,8 @@
 name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
 original_name: TRIPLE-SUGAR-IRON MEDIUM (Difco)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: DSMZ Medium 699

@@ -1,6 +1,6 @@
 name: MODIFIED HALOANAEROBIUM MEDIUM
 original_name: MODIFIED HALOANAEROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -215,9 +215,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH 8.0 with NaOH. Autoclave under a N2 atmosphere. After cooling, add anaerobically
-    the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust pH 8.0 with NaOH.
+    Autoclave under a N2 atmosphere. After cooling, add anaerobically the following solutions (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 8.0, if necessary.
@@ -226,8 +226,8 @@ preparation_steps:
   description: Prepare just before use. Filter-sterilize.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

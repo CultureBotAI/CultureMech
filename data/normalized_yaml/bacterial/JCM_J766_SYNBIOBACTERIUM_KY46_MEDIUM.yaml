@@ -1,6 +1,6 @@
 name: SYNBIOBACTERIUM KY46 MEDIUM
 original_name: SYNBIOBACTERIUM KY46 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -50,9 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium
-    into culture vessels, replace the gas phase with a N2 gas and autoclave. After
-    cooling, aseptically and anaerobically add per liter the following solution (filter-sterilized):'
+  description: 'Mix components and adjust pH to 8.0 with NaOH. Distribute the medium into culture vessels,
+    replace the gas phase with a N2 gas and autoclave. After cooling, aseptically and anaerobically add
+    per liter the following solution (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

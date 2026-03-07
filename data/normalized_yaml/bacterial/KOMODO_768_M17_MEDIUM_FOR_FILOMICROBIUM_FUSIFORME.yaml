@@ -1,6 +1,6 @@
 name: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
 original_name: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:768
     label: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
-notes: 'Source: KOMODO ModelSEED | ID: 768 | DSMZ Medium: 768 (mediadive.medium:768)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 768 | DSMZ Medium: 768 (mediadive.medium:768) | Aerobic: No'
 ingredients:
 - preferred_term: Na-acetate
   term:

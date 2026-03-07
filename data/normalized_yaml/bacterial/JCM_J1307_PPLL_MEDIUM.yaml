@@ -1,6 +1,6 @@
 name: PPLL MEDIUM
 original_name: PPLL MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -236,15 +236,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. Cool down under a N2 gas stream. Aseptically
-    and anaerobically add per liter the following solutions from sterile anaerobic
-    stocks :'
+  description: 'Mix components and autoclave. Cool down under a N2 gas stream. Aseptically and anaerobically
+    add per liter the following solutions from sterile anaerobic stocks :'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.0-7.3. Aseptically and anaerobically distribute the
-    medium into culture vessels (e.g., 10 ml medium in Balch tubes), fill the head
-    space with a gas mixture of N2-CO2 (4:1, v/v), and seal with butyl rubber stoppers.
-    Prior to inoculation, add per liter the following solution.
+  description: Adjust pH to 7.0-7.3. Aseptically and anaerobically distribute the medium into culture
+    vessels (e.g., 10 ml medium in Balch tubes), fill the head space with a gas mixture of N2-CO2 (4:1,
+    v/v), and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution.
 applications:
 - Microbial cultivation
 curation_history:

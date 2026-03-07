@@ -1,6 +1,6 @@
 name: For DSM 18786
 original_name: For DSM 18786
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 0.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:150.1
     label: For DSM 18786
-notes: 'Source: KOMODO ModelSEED | ID: 150.1 | DSMZ Medium: 150 (mediadive.medium:150)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 150.1 | DSMZ Medium: 150 (mediadive.medium:150) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

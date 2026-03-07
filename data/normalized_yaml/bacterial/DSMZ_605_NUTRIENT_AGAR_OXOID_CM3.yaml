@@ -1,8 +1,8 @@
 name: NUTRIENT AGAR (OXOID CM3)
 original_name: NUTRIENT AGAR (OXOID CM3)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 605
   term:

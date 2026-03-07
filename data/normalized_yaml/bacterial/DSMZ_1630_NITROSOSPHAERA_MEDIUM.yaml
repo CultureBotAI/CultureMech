@@ -1,6 +1,6 @@
 name: NITROSOSPHAERA MEDIUM
 original_name: NITROSOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -221,23 +221,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except trace elements, HEPES buffer, ammonium
-    chloride, pyruvate, bicarbonate and vitamins) and dispense medium under air atmosphere
-    into culture vessels suitable for anaerobic cultivation (e.g., 20 ml medium per
-    100 ml serum bottle), seal with grey butyl rubber stoppers and autoclave. Add
-    HEPES buffer and ammonium chloride from stock solutions sterilized by autoclaving.
-    Trace elements, pyruvate, bicarbonate, and vitamins are added from sterile stock
-    solutions sterilized by filtration. Adjust pH of the complete medium to 7.5 using
-    a sterile solution of bicarbonate (5% w/v) or 1 N HCl.
+  description: Dissolve ingredients (except trace elements, HEPES buffer, ammonium chloride, pyruvate,
+    bicarbonate and vitamins) and dispense medium under air atmosphere into culture vessels suitable for
+    anaerobic cultivation (e.g., 20 ml medium per 100 ml serum bottle), seal with grey butyl rubber stoppers
+    and autoclave. Add HEPES buffer and ammonium chloride from stock solutions sterilized by autoclaving.
+    Trace elements, pyruvate, bicarbonate, and vitamins are added from sterile stock solutions sterilized
+    by filtration. Adjust pH of the complete medium to 7.5 using a sterile solution of bicarbonate (5%
+    w/v) or 1 N HCl.
 - step_number: 2
   action: ADJUST_PH
-  description: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH to
-    7.5 and fill up to 1000 ml volume.
+  description: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH to 7.5 and fill up to
+    1000 ml volume.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,5 +247,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.569945Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

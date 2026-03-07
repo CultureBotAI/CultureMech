@@ -1,8 +1,8 @@
 name: SUCROSE-NITRATE AGAR (CZAPEK-DOX AGAR)
 original_name: SUCROSE-NITRATE AGAR (CZAPEK-DOX AGAR)
-category: imported
+category: fungal
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: JCM Medium J441

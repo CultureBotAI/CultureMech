@@ -1,6 +1,6 @@
 name: MARINITOGA AEOLICA MEDIUM
 original_name: MARINITOGA AEOLICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -103,16 +103,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and sulfide. Sparge medium with
-    100% N2 gas for at least 30 - 45 min to make it anoxic and adjust pH to 5.5 with
-    NaOH. Distribute the medium under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Prior to inoculation add cysteine and sulfide
-    and from sterile anoxic stock solutions prepared under 100% N2 gas. After inoculation
-    pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.
+  description: Dissolve ingredients except cysteine and sulfide. Sparge medium with 100% N2 gas for at
+    least 30 - 45 min to make it anoxic and adjust pH to 5.5 with NaOH. Distribute the medium under 100%
+    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Prior to inoculation
+    add cysteine and sulfide and from sterile anoxic stock solutions prepared under 100% N2 gas. After
+    inoculation pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize tubes to 2 bar overpressure with sterile
-    100% N2 gas.
+  description: After inoculation pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:

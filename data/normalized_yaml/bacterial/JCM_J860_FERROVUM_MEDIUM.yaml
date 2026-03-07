@@ -1,6 +1,6 @@
 name: FERROVUM  MEDIUM
 original_name: FERROVUM  MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.7
@@ -109,12 +109,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix thoroughly, adjust pH to 2.3 with H2SO4 and autoclave. After cooling,
-    add the following solutions (filter-sterilized) to the medium:'
+  description: 'Mix thoroughly, adjust pH to 2.3 with H2SO4 and autoclave. After cooling, add the following
+    solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to
-    1.7.'
+  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to 1.7.'
 applications:
 - Microbial cultivation
 curation_history:

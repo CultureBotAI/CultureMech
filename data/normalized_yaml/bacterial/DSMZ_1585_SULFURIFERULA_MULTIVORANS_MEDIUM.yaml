@@ -1,6 +1,6 @@
 name: SULFURIFERULA MULTIVORANS MEDIUM
 original_name: SULFURIFERULA MULTIVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7
@@ -70,11 +70,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except thiosulfate and adjust pH of medium to
-    6.5 -7.0. Dispense medium under air atmosphere into serum vials suitable for anaerobic
-    cultivation (e.g., 20 ml medium in 100 ml bottles) and close with butyl rubber
-    septa. After autoclaving complete medium with thiosulfate added from a stock solution
-    sterilized by filtration and add 3% (v/v) sterile CO2 to the gas phase.
+  description: Dissolve ingredients except thiosulfate and adjust pH of medium to 6.5 -7.0. Dispense medium
+    under air atmosphere into serum vials suitable for anaerobic cultivation (e.g., 20 ml medium in 100
+    ml bottles) and close with butyl rubber septa. After autoclaving complete medium with thiosulfate
+    added from a stock solution sterilized by filtration and add 3% (v/v) sterile CO2 to the gas phase.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: Singulisphaera Medium
 original_name: Singulisphaera Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:59640
     label: N-acetylglucosamine
@@ -58,8 +55,7 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -67,8 +63,7 @@ ingredients:
   concentration:
     value: '29.7'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -76,8 +71,7 @@ ingredients:
   concentration:
     value: '3.34'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -85,8 +79,7 @@ ingredients:
   concentration:
     value: '99'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
@@ -94,8 +87,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
@@ -103,8 +95,7 @@ ingredients:
   concentration:
     value: '9.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: “Metals 44” (see below)
   concentration:
     value: '50'
@@ -129,8 +120,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -138,8 +128,7 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
@@ -147,8 +136,7 @@ ingredients:
   concentration:
     value: '1095'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:32312
     label: zinc sulfate heptahydrate
@@ -156,8 +144,7 @@ ingredients:
   concentration:
     value: '39.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:31440
     label: copper(II) sulfate pentahydrate
@@ -165,8 +152,7 @@ ingredients:
   concentration:
     value: '154'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:75211
     label: manganese(II) sulfate
@@ -174,8 +160,7 @@ ingredients:
   concentration:
     value: '24.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:86214
     label: Co(NO3)2 x 6 H2O
@@ -183,8 +168,7 @@ ingredients:
   concentration:
     value: '17.7'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: Na-EDTA
   concentration:
     value: '250'
@@ -194,8 +178,7 @@ ingredients:
     id: CHEBI:64734
     label: EDTA disodium salt (anhydrous)
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -224,5 +207,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:52.999530'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KOH; Added default concentration
-    for ingredient: NaOH; Added default concentration for ingredient: H2SO4'
+  notes: 'Added default concentration for ingredient: KOH; Added default concentration for ingredient:
+    NaOH; Added default concentration for ingredient: H2SO4'

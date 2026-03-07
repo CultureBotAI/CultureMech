@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M1502
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:17992
     label: sucrose
@@ -50,8 +48,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -131,8 +128,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:133341
     label: choline chloride
@@ -140,8 +136,7 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:17268
     label: myo-inositol
@@ -149,7 +144,7 @@ media_term:
   preferred_term: TOGO Medium M1502
   term:
     id: TOGO:M1502
-    label: (Unnamed medium)
+    label: TOGO Medium M1502
 notes: 'Source: https://togomedium.org/medium/M1502
 
   Original source: NBRC - NBRC_M283

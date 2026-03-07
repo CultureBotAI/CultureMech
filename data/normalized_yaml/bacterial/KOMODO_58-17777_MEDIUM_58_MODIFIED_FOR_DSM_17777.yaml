@@ -1,6 +1,6 @@
 name: MEDIUM 58 MODIFIED FOR DSM 17777
 original_name: MEDIUM 58 MODIFIED FOR DSM 17777
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:58_17777
     label: MEDIUM 58 MODIFIED FOR DSM 17777
-notes: 'Source: KOMODO ModelSEED | ID: 58_17777 | DSMZ Medium: 58 (mediadive.medium:58)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 58_17777 | DSMZ Medium: 58 (mediadive.medium:58) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

@@ -1,6 +1,6 @@
 name: DESULFURISPIRILLUM INDICUM MEDIUM
 original_name: DESULFURISPIRILLUM INDICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1294
     label: DESULFURISPIRILLUM INDICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1294 | DSMZ Medium: 1294 (mediadive.medium:1294)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1294 | DSMZ Medium: 1294 (mediadive.medium:1294) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -300,5 +299,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.145847Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

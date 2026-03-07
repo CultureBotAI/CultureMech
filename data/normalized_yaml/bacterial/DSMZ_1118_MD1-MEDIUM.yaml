@@ -1,6 +1,6 @@
 name: MD1-MEDIUM
 original_name: MD1-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -102,8 +102,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a filter
-    sterilized stock solution. pH should be 7.0 -7.2.
+  description: After autoclaving and cooling, add 0.5 mg /l vitamin B12 from a filter sterilized stock
+    solution. pH should be 7.0 -7.2.
 applications:
 - Microbial cultivation
 curation_history:

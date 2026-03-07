@@ -1,6 +1,6 @@
 name: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
 original_name: M17 MEDIUM FOR FILOMICROBIUM FUSIFORME
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -242,8 +242,7 @@ preparation_steps:
   description: Final pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Add NaHCO3 from a filter-sterilized stock solution when the medium
-    has cooled.
+  description: Add NaHCO3 from a filter-sterilized stock solution when the medium has cooled.
 - step_number: 3
   action: DISSOLVE
   description: Dissolve the nitrilotriacetic acid.
@@ -258,8 +257,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 7
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 - step_number: 8
   action: HEAT
   description: Store in the dark and cold (5°C).

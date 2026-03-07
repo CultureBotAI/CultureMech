@@ -1,6 +1,6 @@
 name: Trypticase soy broth (plus 1% sodium chloride)
 original_name: Trypticase soy broth (plus 1% sodium chloride)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: Sodium Chloride

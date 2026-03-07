@@ -1,15 +1,14 @@
 name: UNIVERSAL medium FOR YEASTS (YM)
 original_name: UNIVERSAL medium FOR YEASTS (YM)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 186
   term:
     id: komodo.medium:186
     label: UNIVERSAL medium FOR YEASTS (YM)
-notes: 'Source: KOMODO ModelSEED | ID: 186 | DSMZ Medium: 186 (mediadive.medium:186)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 186 | DSMZ Medium: 186 (mediadive.medium:186) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

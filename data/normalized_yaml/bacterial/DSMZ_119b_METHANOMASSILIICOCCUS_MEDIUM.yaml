@@ -1,6 +1,6 @@
 name: METHANOMASSILIICOCCUS MEDIUM
 original_name: METHANOMASSILIICOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -233,33 +233,30 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except methanol, bicarbonate, cysteine and sulfide.
-    Adjust pH of medium to 7.2 and sparge with 100% N2 gas for 30 - 45 min to make
-    it anoxic. Then dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes to 30% v/v of their volume and autoclave. Add methanol (from 15% v/v stock
-    solution), cysteine and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under
-    80% N2 and 20% CO2 gas mixture. Prior to use check pH of complete medium and adjust
-    to 7.6, if necessary.
+  description: Dissolve ingredients except methanol, bicarbonate, cysteine and sulfide. Adjust pH of medium
+    to 7.2 and sparge with 100% N2 gas for 30 - 45 min to make it anoxic. Then dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes to 30% v/v of their volume and autoclave. Add methanol
+    (from 15% v/v stock solution), cysteine and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. Prior to use check pH of complete medium and adjust to 7.6, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation, add sterile 80% H2 and 20% CO2 gas mixture to 0.5
-    bar overpressure. After growth becomes visible overpressure of 80% H2 and 20%
-    CO2 gas mixture can be increased to 1 bar.
+  description: After inoculation, add sterile 80% H2 and 20% CO2 gas mixture to 0.5 bar overpressure.
+    After growth becomes visible overpressure of 80% H2 and 20% CO2 gas mixture can be increased to 1
+    bar.
 - step_number: 3
   action: MIX
   description: 'Note: Use 10% (v/v) as inoculum.'
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 5
   action: AUTOCLAVE
-  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
-    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
-    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
-    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
-    8-12°C in the dark.
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after gassing with nitrogen
+    gas for a few minutes incubate it at 37°C for 24 hours. Then centrifuge the sludge at 13000 g and
+    autoclave the resulting, clear supernatant in screw-capped vessels under nitrogen gas. The sludge
+    fluid can be stored at 8-12°C in the dark.
 - step_number: 6
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH.

@@ -1,6 +1,6 @@
 name: MOORELLA AN10 MEDIUM
 original_name: MOORELLA AN10 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -198,10 +198,9 @@ preparation_steps:
   description: Filter-sterilize and store under a N2-CO2 (4:1, v/v) atmosphere.
 - step_number: 4
   action: AUTOCLAVE
-  description: To complete the medium, mix Solutions A, B and C under a N2-CO2 (4:1,
-    v/v) atmosphere. Reduce the medium with 0.3 g/L L-cysteine x HCl x H2O and 0.3
-    g/L Na2S x 9H2O from sterile stock solutions (autoclaved and stored under a N2
-    atmosphere).
+  description: To complete the medium, mix Solutions A, B and C under a N2-CO2 (4:1, v/v) atmosphere.
+    Reduce the medium with 0.3 g/L L-cysteine x HCl x H2O and 0.3 g/L Na2S x 9H2O from sterile stock solutions
+    (autoclaved and stored under a N2 atmosphere).
 - step_number: 5
   action: MIX
   description: Use Trace element solution of Medium No. 243 without Na2SeO3 x 5H2O.

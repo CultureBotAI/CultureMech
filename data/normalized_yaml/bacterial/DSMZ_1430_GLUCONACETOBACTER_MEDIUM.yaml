@@ -1,8 +1,8 @@
 name: GLUCONACETOBACTER MEDIUM
 original_name: GLUCONACETOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1430
   term:
@@ -50,9 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: The ethanol and acetic acid are sterilized separately by filtration
-    (use filters resistant to these solvents) and added aseptically to the sterile
-    medium. The medium may be solidified by adding 15.0 g/l agar.
+  description: The ethanol and acetic acid are sterilized separately by filtration (use filters resistant
+    to these solvents) and added aseptically to the sterile medium. The medium may be solidified by adding
+    15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

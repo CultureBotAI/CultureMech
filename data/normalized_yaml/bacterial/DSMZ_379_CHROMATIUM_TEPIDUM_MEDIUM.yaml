@@ -1,6 +1,6 @@
 name: CHROMATIUM TEPIDUM MEDIUM
 original_name: CHROMATIUM TEPIDUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -154,10 +154,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare bicarbonate and sulfide as separate solutions. Sterilize all
-    solutions by autoclaving. After cooling mix all three solutions, adding the sulfide
-    last. Adjust pH to 7.0 and dispense in completely filled screw-capped tubes or
-    bottles. Incubate at 500 - 1000 Lux light intensity.
+  description: Prepare bicarbonate and sulfide as separate solutions. Sterilize all solutions by autoclaving.
+    After cooling mix all three solutions, adding the sulfide last. Adjust pH to 7.0 and dispense in completely
+    filled screw-capped tubes or bottles. Incubate at 500 - 1000 Lux light intensity.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: For DSM 17883
 original_name: For DSM 17883
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:740.1
     label: For DSM 17883
-notes: 'Source: KOMODO ModelSEED | ID: 740.1 | DSMZ Medium: 740 (mediadive.medium:740)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 740.1 | DSMZ Medium: 740 (mediadive.medium:740) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -266,5 +265,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.488286Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

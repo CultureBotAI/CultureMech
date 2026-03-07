@@ -1,6 +1,6 @@
 name: Bifidobacterium Medium
 original_name: Bifidobacterium Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Surfactant; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -39,8 +37,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -91,5 +88,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:48.196787'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sodium ascorbate; Added default
-    concentration for ingredient: cysteine-HCl'
+  notes: 'Added default concentration for ingredient: sodium ascorbate; Added default concentration for
+    ingredient: cysteine-HCl'

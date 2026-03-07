@@ -1,6 +1,6 @@
 name: MEDIUM 666 MODIFIED FOR DSM 11004
 original_name: MEDIUM 666 MODIFIED FOR DSM 11004
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:666_11004
     label: MEDIUM 666 MODIFIED FOR DSM 11004
-notes: 'Source: KOMODO ModelSEED | ID: 666_11004 | DSMZ Medium: 666 (mediadive.medium:666)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 666_11004 | DSMZ Medium: 666 (mediadive.medium:666) | Aerobic:
+  No'
 ingredients:
 - preferred_term: K2HPO4
   term:

@@ -1,6 +1,6 @@
 name: NE23-3 MEDIUM
 original_name: NE23-3 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,10 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 without yeast extract and supplemented with final
-    1.0 ml Trace vitamins solution in Solution A (per 900 ml), replacing sodium pyruvate
-    with 0.9 g 2,3-butanediol in Solution B (per 100 ml). Otherwise, prepare the medium
-    as described in the recipe of Medium No. 284.
+  description: Use Medium No. 284 without yeast extract and supplemented with final 1.0 ml Trace vitamins
+    solution in Solution A (per 900 ml), replacing sodium pyruvate with 0.9 g 2,3-butanediol in Solution
+    B (per 100 ml). Otherwise, prepare the medium as described in the recipe of Medium No. 284.
 - step_number: 2
   action: MIX
   description: 'Comment: For cultivation of strain JCM 13382, incubate with a 5% inoculum.'

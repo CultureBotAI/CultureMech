@@ -1,8 +1,8 @@
 name: SIMONSIELLA MEDIUM
 original_name: SIMONSIELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 303
   term:
@@ -54,9 +54,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare the medium without horse serum. After autoclaving cool to 50°C,
-    then add 100 ml/l of sterile horse serum. Transfer cultures when actively growing.
-    Cultures die rapidly in stationary growth phase!
+  description: Prepare the medium without horse serum. After autoclaving cool to 50°C, then add 100 ml/l
+    of sterile horse serum. Transfer cultures when actively growing. Cultures die rapidly in stationary
+    growth phase!
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: CALROANAEROBACTER MEDIUM
 original_name: CALROANAEROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -264,12 +264,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Distribute the medium into culture vessels under
-    a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+  description: Adjust pH to 7.0. Distribute the medium into culture vessels under a N2 gas atmosphere,
+    seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

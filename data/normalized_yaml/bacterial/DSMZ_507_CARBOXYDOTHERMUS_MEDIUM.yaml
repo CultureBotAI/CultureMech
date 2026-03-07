@@ -1,6 +1,6 @@
 name: CARBOXYDOTHERMUS MEDIUM
 original_name: CARBOXYDOTHERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -201,30 +201,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, yeast extract, vitamins and
-    sulfide, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials to 30% of their volume and autoclave. Add yeast extract, vitamins (sterilized
-    by filtration) and sulfide from sterile anoxic stock solutions prepared under
-    100% N2 gas atmosphere and bicarbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. Neutralize the sodium sulfide with sterile
-    H2SO4 (see medium 29). After completing the medium adjust pH to 6.8-7.0.
+  description: Dissolve ingredients except bicarbonate, yeast extract, vitamins and sulfide, then sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add yeast extract,
+    vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions prepared under
+    100% N2 gas atmosphere and bicarbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Neutralize the sodium sulfide with sterile H2SO4 (see medium 29). After completing
+    the medium adjust pH to 6.8-7.0.
 - step_number: 2
   action: MIX
-  description: Inoculated vessels are pressurized with sterile carbon monoxide gas
-    to 2 bar overpressure.
+  description: Inoculated vessels are pressurized with sterile carbon monoxide gas to 2 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 - step_number: 4
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -235,5 +232,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.023550Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

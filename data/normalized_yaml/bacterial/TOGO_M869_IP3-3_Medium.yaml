@@ -1,6 +1,6 @@
 name: IP3-3 Medium
 original_name: IP3-3 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '960'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -26,14 +24,12 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -41,8 +37,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -50,8 +45,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
-    component, Defined component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -59,14 +54,12 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: KCl
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -94,8 +87,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Solution, Organic
-    compound'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Solution, Organic compound'
 - preferred_term: Trace element solution (see Medium [M439])
   concentration:
     value: '1'
@@ -135,8 +127,7 @@ ingredients:
   concentration:
     value: '46'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Titanium citrate solution (see below)
   concentration:
     value: '10'
@@ -145,8 +136,7 @@ ingredients:
   concentration:
     value: '55'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -189,7 +179,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.996288'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Nitrogen gas; Added default concentration for ingredient: Hydrogen gas; Added
-    default concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
+    for ingredient: Hydrogen gas; Added default concentration for ingredient: N2'

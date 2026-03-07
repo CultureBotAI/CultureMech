@@ -1,6 +1,6 @@
 name: For DSM 23669
 original_name: For DSM 23669
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:339.3
     label: For DSM 23669
-notes: 'Source: KOMODO ModelSEED | ID: 339.3 | DSMZ Medium: 339 (mediadive.medium:339)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 339.3 | DSMZ Medium: 339 (mediadive.medium:339) | Aerobic: Yes'
 ingredients:
 - preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:

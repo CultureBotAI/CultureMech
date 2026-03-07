@@ -1,8 +1,8 @@
 name: CHERRY AGAR (CBS formula)
 original_name: CHERRY AGAR (CBS formula)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 3.8-4.6
 media_term:
   preferred_term: DSMZ Medium 277
@@ -25,8 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml cherry
-    extract, distribute in presterilized tubes and sterilize for 5 min at 120°C.
+  description: Dissolve 20.0 g agar in 800 ml water and sterilize. Add 200 ml cherry extract, distribute
+    in presterilized tubes and sterilize for 5 min at 120°C.
 - step_number: 2
   action: MIX
   description: Final pH 3.8 - 4.6.
@@ -35,8 +35,8 @@ preparation_steps:
   description: Add 1 l water to 200.0 g pulp of sour stone cherries.
 - step_number: 4
   action: HEAT
-  description: Heat to boiling and simmer gently for 2 h . Strain through cloth and
-    sterilize at 110°C for 30 minutes .
+  description: Heat to boiling and simmer gently for 2 h . Strain through cloth and sterilize at 110°C
+    for 30 minutes .
 applications:
 - Microbial cultivation
 curation_history:

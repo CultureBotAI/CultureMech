@@ -1,6 +1,6 @@
 name: ACIDULIPROFUNDUM MEDIUM
 original_name: ACIDULIPROFUNDUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.5
@@ -201,17 +201,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfur and sulfide) and sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    containing already the appropriate amount of powdered sulfur and autoclave for
-    60 min at <b>105°C</b>. Prior to inoculation add sulfide from a sterile anoxic
-    stock solution prepared under 100% N2 gas and adjust pH of complete medium to
-    4.5.
+  description: Dissolve ingredients (except sulfur and sulfide) and sparge medium with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials containing already the appropriate amount of powdered sulfur
+    and autoclave for 60 min at <b>105°C</b>. Prior to inoculation add sulfide from a sterile anoxic stock
+    solution prepared under 100% N2 gas and adjust pH of complete medium to 4.5.
 - step_number: 2
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,16 +1,15 @@
 name: KR medium
 original_name: KR medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1283
   term:
     id: komodo.medium:1283
     label: KR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1283 | DSMZ Medium: 1283 (mediadive.medium:1283)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1283 | DSMZ Medium: 1283 (mediadive.medium:1283) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

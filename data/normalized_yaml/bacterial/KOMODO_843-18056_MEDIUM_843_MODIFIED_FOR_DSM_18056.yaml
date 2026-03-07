@@ -1,6 +1,6 @@
 name: MEDIUM 843 MODIFIED FOR DSM 18056
 original_name: MEDIUM 843 MODIFIED FOR DSM 18056
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:843_18056
     label: MEDIUM 843 MODIFIED FOR DSM 18056
-notes: 'Source: KOMODO ModelSEED | ID: 843_18056 | DSMZ Medium: 843 (mediadive.medium:843)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 843_18056 | DSMZ Medium: 843 (mediadive.medium:843) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

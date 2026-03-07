@@ -1,15 +1,14 @@
 name: MEDIUM 110 MODIFIED FOR DSM 6400
 original_name: MEDIUM 110 MODIFIED FOR DSM 6400
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 110_6400
   term:
     id: komodo.medium:110_6400
     label: MEDIUM 110 MODIFIED FOR DSM 6400
-notes: 'Source: KOMODO ModelSEED | ID: 110_6400 | DSMZ Medium: 110 (mediadive.medium:110)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 110_6400 | DSMZ Medium: 110 (mediadive.medium:110) | Aerobic: No'
 ingredients:
 - preferred_term: Ground beef
   concentration:

@@ -1,8 +1,8 @@
 name: JCM MEDIUM No. 248
 original_name: JCM MEDIUM No. 248
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J248
   term:
@@ -24,9 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil
-    for 1 hr. Filter, first through cheesecloth and then paper. Make up volume to
-    1.0 L.
+  description: Suspend 50.0 g of dry cow manure in 1.0 L of distilled water. Boil for 1 hr. Filter, first
+    through cheesecloth and then paper. Make up volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

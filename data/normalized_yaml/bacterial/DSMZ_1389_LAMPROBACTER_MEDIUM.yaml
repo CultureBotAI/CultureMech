@@ -1,6 +1,6 @@
 name: LAMPROBACTER MEDIUM
 original_name: LAMPROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -154,14 +154,14 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O
-    and vitamin B12, under a nitrogen atmosphere. Autoclave and add the vitamin B12
-    from a filter-sterilised stock solution and the NaHCO3, Na2S x 9 H2O, Na2S2O3
-    x 5 H2O from sterile stock solutions. The final pH of the medium should be 7.5.
+  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O and vitamin B12, under
+    a nitrogen atmosphere. Autoclave and add the vitamin B12 from a filter-sterilised stock solution and
+    the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O from sterile stock solutions. The final pH of the medium
+    should be 7.5.
 - step_number: 3
   action: MIX
-  description: For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl
-    to 10.0 g/l and increase the amount of NH4Cl to 0.64 g/l.
+  description: For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl to 10.0 g/l and increase
+    the amount of NH4Cl to 0.64 g/l.
 - step_number: 4
   action: MIX
   description: pH 3.0-4.0

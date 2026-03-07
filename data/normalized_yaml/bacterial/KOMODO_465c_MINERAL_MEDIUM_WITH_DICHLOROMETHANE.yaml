@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH DICHLOROMETHANE
 original_name: MINERAL MEDIUM WITH DICHLOROMETHANE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465c
   term:
     id: komodo.medium:465c
     label: MINERAL MEDIUM WITH DICHLOROMETHANE
-notes: 'Source: KOMODO ModelSEED | ID: 465c | DSMZ Medium: 465c (mediadive.medium:465c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465c | DSMZ Medium: 465c (mediadive.medium:465c) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

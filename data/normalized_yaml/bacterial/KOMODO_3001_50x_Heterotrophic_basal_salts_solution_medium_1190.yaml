@@ -1,6 +1,6 @@
 name: 50x Heterotrophic basal salts solution (medium 1190)
 original_name: 50x Heterotrophic basal salts solution (medium 1190)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3001
     label: 50x Heterotrophic basal salts solution (medium 1190)
-notes: 'Source: KOMODO ModelSEED | ID: 3001 | DSMZ Medium: 3001 (mediadive.medium:3001)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3001 | DSMZ Medium: 3001 (mediadive.medium:3001) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

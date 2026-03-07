@@ -1,6 +1,6 @@
 name: PAS for Acanthamoeba hatchetti
 original_name: PAS for Acanthamoeba hatchetti
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -49,8 +49,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 with 1 N NaOH.
@@ -62,16 +61,13 @@ preparation_steps:
   description: Store at room temperature.
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with MilliQ water.
 - step_number: 6
   action: MIX
-  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with MilliQ water.
 - step_number: 7
   action: MIX
-  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with MilliQ water.
 applications:
 - Microbial cultivation
 curation_history:

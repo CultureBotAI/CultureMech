@@ -1,6 +1,6 @@
 name: PPLO broth
 original_name: PPLO broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.6-8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5013
     label: PPLO broth
-notes: 'Source: KOMODO ModelSEED | ID: 5013 | DSMZ Medium: 5013 (mediadive.medium:5013)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5013 | DSMZ Medium: 5013 (mediadive.medium:5013) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

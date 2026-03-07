@@ -1,6 +1,6 @@
 name: Hayflick medium
 original_name: Hayflick medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,8 +18,7 @@ ingredients:
   concentration:
     value: '24'
     unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: pH indicator; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:31991
     label: Phenol red
@@ -27,8 +26,7 @@ ingredients:
   concentration:
     value: '843'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: DNA sodium salt (Sigma, D1501)
   concentration:
     value: '0.24'

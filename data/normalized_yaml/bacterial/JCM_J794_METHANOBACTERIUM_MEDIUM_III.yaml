@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM MEDIUM (III)
 original_name: METHANOBACTERIUM MEDIUM (III)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -231,18 +231,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, bring to a boil for several seconds and cool down
-    under a stream of H2-CO2 (80:20, v/v). Distribute the medium into culture vessels
-    (e.g., 5 ml in the Hungate tube) under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. Add per liter the following sterile solutions from anaerobic
-    stocks (autoclaved under a N2 atmosphere):'
+  description: 'Mix components, bring to a boil for several seconds and cool down under a stream of H2-CO2
+    (80:20, v/v). Distribute the medium into culture vessels (e.g., 5 ml in the Hungate tube) under the
+    same gas mixture, seal with butyl rubber stoppers and autoclave. Add per liter the following sterile
+    solutions from anaerobic stocks (autoclaved under a N2 atmosphere):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated vessels to 150 kPa H2-CO2 (80:20, v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

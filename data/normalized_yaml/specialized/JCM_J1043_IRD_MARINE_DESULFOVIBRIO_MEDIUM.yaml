@@ -1,6 +1,6 @@
 name: IRD MARINE DESULFOVIBRIO MEDIUM
 original_name: IRD MARINE DESULFOVIBRIO MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -172,15 +172,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.0. Bring to a boil and cool down
-    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After
-    cooling, aseptically and anaerobically add per liter the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix ingredients and adjust pH to 7.0. Bring to a boil and cool down under a N2-CO2 (4:1,
+    v/v) gas stream. Distribute the medium into culture vessels under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically add per liter the
+    following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to use, reduce the medium by the addition of the following solution
-    (autoclaved and stored under N2, per liter):'
+  description: 'Prior to use, reduce the medium by the addition of the following solution (autoclaved
+    and stored under N2, per liter):'
 applications:
 - Microbial cultivation
 curation_history:

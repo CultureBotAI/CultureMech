@@ -1,6 +1,6 @@
 name: TISSIRELLA CREATINOPHILA medium
 original_name: TISSIRELLA CREATINOPHILA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:824
     label: TISSIRELLA CREATINOPHILA medium
-notes: 'Source: KOMODO ModelSEED | ID: 824 | DSMZ Medium: 824 (mediadive.medium:824)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 824 | DSMZ Medium: 824 (mediadive.medium:824) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na-formate
   term:
@@ -304,5 +303,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.147851Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

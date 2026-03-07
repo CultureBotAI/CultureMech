@@ -1,15 +1,14 @@
 name: SEMISOLID BRUCELLA BROTH
 original_name: SEMISOLID BRUCELLA BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 703
   term:
     id: komodo.medium:703
     label: SEMISOLID BRUCELLA BROTH
-notes: 'Source: KOMODO ModelSEED | ID: 703 | DSMZ Medium: 703 (mediadive.medium:703)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 703 | DSMZ Medium: 703 (mediadive.medium:703) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

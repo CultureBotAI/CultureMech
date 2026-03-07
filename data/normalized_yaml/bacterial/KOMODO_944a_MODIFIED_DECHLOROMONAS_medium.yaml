@@ -1,6 +1,6 @@
 name: MODIFIED DECHLOROMONAS medium
 original_name: MODIFIED DECHLOROMONAS medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:944a
     label: MODIFIED DECHLOROMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 944a | DSMZ Medium: 944a (mediadive.medium:944a)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 944a | DSMZ Medium: 944a (mediadive.medium:944a) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

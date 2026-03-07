@@ -1,8 +1,8 @@
 name: MAIZE MEAL-SARDINE AGAR
 original_name: MAIZE MEAL-SARDINE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1054
   term:
@@ -28,8 +28,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil maize meal and dried sardine with 500 ml of distilled water for
-    20 min. Filtered through cloth, make up to 1 L, add agar, and boil till dissolved.
+  description: Boil maize meal and dried sardine with 500 ml of distilled water for 20 min. Filtered through
+    cloth, make up to 1 L, add agar, and boil till dissolved.
 applications:
 - Microbial cultivation
 curation_history:

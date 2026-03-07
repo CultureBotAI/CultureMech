@@ -1,6 +1,6 @@
 name: METHANOTHRIX MEDIUM
 original_name: METHANOTHRIX MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -239,21 +239,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, dispense under same gas atmosphere into anoxic serum vials
-    (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to inoculation complete
-    the medium by adding appropriate amounts of sterile solutions C, D, E and F prepared
-    under 100% N2 gas and solution B prepared under 80% N2 and 20% CO2 gas atmosphere.
-    Vitamins are sterilized by filtration. Adjust the pH of the complete medium to
-    7.2.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 50 ml bottles) and
+    autoclave. Prior to inoculation complete the medium by adding appropriate amounts of sterile solutions
+    C, D, E and F prepared under 100% N2 gas and solution B prepared under 80% N2 and 20% CO2 gas atmosphere.
+    Vitamins are sterilized by filtration. Adjust the pH of the complete medium to 7.2.
 - step_number: 2
   action: MIX
   description: 'Note: Use 20% (v/v) inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
-    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
-    up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
+    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -264,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.018143Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: SPOROHALOBACTER SALINUS MEDIUM
 original_name: SPOROHALOBACTER SALINUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -208,22 +208,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, magnesium sulfate, carbonate,
-    glucose and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for
-    30 - 45 min to make it anoxic. Add and dissolve cysteine, adjust pH to 6.0, dispense
-    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. After sterilization add magnesium sulfate, glucose and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
-    Prior to inoculation check pH of complete medium and adjust to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients (except cysteine, magnesium sulfate, carbonate, glucose and sulfide),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and
+    dissolve cysteine, adjust pH to 6.0, dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add magnesium sulfate, glucose
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Prior to inoculation check
+    pH of complete medium and adjust to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: STORE
-  description: 'Note: This medium cannot be stored over a longer period and should
-    be prepared freshly before use!'
+  description: 'Note: This medium cannot be stored over a longer period and should be prepared freshly
+    before use!'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

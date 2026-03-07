@@ -1,6 +1,6 @@
 name: EXILISPIRA THERMOPHILA MEDIUM
 original_name: EXILISPIRA THERMOPHILA MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -169,9 +169,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.8. Distribute the medium into culture
-    vessels (e.g., 18 ml in 50 ml serum bottle) under a stream of a N2-CO2 (80:20,
-    v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Mix components and adjust pH to 6.8. Distribute the medium into culture vessels (e.g.,
+    18 ml in 50 ml serum bottle) under a stream of a N2-CO2 (80:20, v/v) gas mixture, seal with butyl
+    rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
   description: Mix components and autoclave under a N2 atmosphere.
@@ -180,9 +180,8 @@ preparation_steps:
   description: Autoclave under a N2 atmosphere.
 - step_number: 4
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically combine Solutions A, B and C in the
-    culture vessels. Then, add (per liter) the following solutions (autoclaved and
-    stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically combine Solutions A, B and C in the culture vessels. Then,
+    add (per liter) the following solutions (autoclaved and stored under a N2 atmosphere):'
 - step_number: 5
   action: MIX
   description: 'Comment: For strain JCM 14728, incubate with a 5% inoculum.'

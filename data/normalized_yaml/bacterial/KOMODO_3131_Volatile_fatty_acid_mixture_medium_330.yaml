@@ -1,6 +1,6 @@
 name: Volatile fatty acid mixture (medium 330)
 original_name: Volatile fatty acid mixture (medium 330)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3131
     label: Volatile fatty acid mixture (medium 330)
-notes: 'Source: KOMODO ModelSEED | ID: 3131 | DSMZ Medium: 3131 (mediadive.medium:3131)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3131 | DSMZ Medium: 3131 (mediadive.medium:3131) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

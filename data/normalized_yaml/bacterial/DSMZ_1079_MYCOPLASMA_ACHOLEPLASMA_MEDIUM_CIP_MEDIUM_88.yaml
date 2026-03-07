@@ -1,6 +1,6 @@
 name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
 original_name: MYCOPLASMA/ACHOLEPLASMA MEDIUM (CIP MEDIUM 88)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.4-7.8
@@ -47,8 +47,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add all components except sterile supplement; adjust pH to 7.6 + 0.2.
-    Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.
+  description: Add all components except sterile supplement; adjust pH to 7.6 + 0.2. Autoclave at 121°C
+    for 15 minutes; add aseptically sterile supplement.
 - step_number: 2
   action: AUTOCLAVE
   description: Adjust pH to 7.0 + 0.2 and autoclave at 121°C for 15 minutes.

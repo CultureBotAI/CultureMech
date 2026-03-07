@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M1797
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -35,8 +32,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -44,8 +40,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -53,8 +48,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -62,8 +56,7 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:77732
     label: cadmium nitrate
@@ -71,13 +64,12 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound, Simple component'
 media_term:
   preferred_term: TOGO Medium M1797
   term:
     id: TOGO:M1797
-    label: (Unnamed medium)
+    label: TOGO Medium M1797
 notes: 'Source: https://togomedium.org/medium/M1797
 
   Original source: NBRC - NBRC_M1022

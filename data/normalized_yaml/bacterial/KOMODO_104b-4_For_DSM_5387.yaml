@@ -1,6 +1,6 @@
 name: For DSM 5387
 original_name: For DSM 5387
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:104b.4
     label: For DSM 5387
-notes: 'Source: KOMODO ModelSEED | ID: 104b.4 | DSMZ Medium: 104b (mediadive.medium:104b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 104b.4 | DSMZ Medium: 104b (mediadive.medium:104b) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

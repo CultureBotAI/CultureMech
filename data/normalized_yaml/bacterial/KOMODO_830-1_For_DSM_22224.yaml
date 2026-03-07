@@ -1,6 +1,6 @@
 name: For DSM 22224
 original_name: For DSM 22224
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:830.1
     label: For DSM 22224
-notes: 'Source: KOMODO ModelSEED | ID: 830.1 | DSMZ Medium: 830 (mediadive.medium:830)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830.1 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,6 +1,6 @@
 name: METHANOREGULA medium
 original_name: METHANOREGULA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.1
@@ -249,5 +249,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.809227Z'
   curator: invalid-chebi-removal
   action: Removed 2 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

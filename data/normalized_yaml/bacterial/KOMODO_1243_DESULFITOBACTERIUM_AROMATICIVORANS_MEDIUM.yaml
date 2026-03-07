@@ -1,6 +1,6 @@
 name: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
 original_name: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1243
     label: DESULFITOBACTERIUM AROMATICIVORANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1243 | DSMZ Medium: 1243 (mediadive.medium:1243)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1243 | DSMZ Medium: 1243 (mediadive.medium:1243) | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:
@@ -268,5 +267,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.268372Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

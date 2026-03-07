@@ -1,15 +1,15 @@
 name: MEDIUM 993 MODIFIED FOR DSM 45010
 original_name: MEDIUM 993 MODIFIED FOR DSM 45010
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 993_45010
   term:
     id: komodo.medium:993_45010
     label: MEDIUM 993 MODIFIED FOR DSM 45010
-notes: 'Source: KOMODO ModelSEED | ID: 993_45010 | DSMZ Medium: 993 (mediadive.medium:993)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 993_45010 | DSMZ Medium: 993 (mediadive.medium:993) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

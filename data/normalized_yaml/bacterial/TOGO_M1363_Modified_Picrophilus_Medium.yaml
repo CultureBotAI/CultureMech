@@ -1,6 +1,6 @@
 name: Modified Picrophilus Medium
 original_name: Modified Picrophilus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,26 +16,22 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -70,8 +65,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -143,14 +137,12 @@ ingredients:
   concentration:
     value: '25'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
 - preferred_term: Lipoic acid
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:16494
     label: lipoic acid

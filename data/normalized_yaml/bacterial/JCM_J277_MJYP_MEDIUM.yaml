@@ -1,6 +1,6 @@
 name: MJYP* MEDIUM
 original_name: MJYP* MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -113,11 +113,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaNO3, FeSO4 x 7H2O and Na2S x 9H2O, and autoclave
-    under a N2 atmosphere. Separately autoclave NaNO3, FeSO4 x 7H2O and Na2S x 9H2O
-    solutions (pH 7.0, 7.5 and 7.5, respectively) under a N2 atmosphere. Aseptically
-    and anaerobically add the NaNO3, FeSO4 x 7H2O and Na2S x 9H2O solutions to the
-    medium and adjust pH to 6.0. Pressurize the inoculated bottle to 200 kPa N2.
+  description: Mix ingredients, except NaNO3, FeSO4 x 7H2O and Na2S x 9H2O, and autoclave under a N2 atmosphere.
+    Separately autoclave NaNO3, FeSO4 x 7H2O and Na2S x 9H2O solutions (pH 7.0, 7.5 and 7.5, respectively)
+    under a N2 atmosphere. Aseptically and anaerobically add the NaNO3, FeSO4 x 7H2O and Na2S x 9H2O solutions
+    to the medium and adjust pH to 6.0. Pressurize the inoculated bottle to 200 kPa N2.
 applications:
 - Microbial cultivation
 curation_history:

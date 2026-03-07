@@ -1,6 +1,6 @@
 name: PYRODICTIUM MEDIUM
 original_name: PYRODICTIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -232,24 +232,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without sulfur, yeast extract and sodium sulfide,
-    adjust pH to 5.0 - 5.5 with 10 N sulfuric acid, then sparge medium with 80% H2
-    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under
-    80% H2 and CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials  that
-    contain already the appropriate amount of sulfur, only to 30% of their volume
-    to allow for a large headspace. For sterilization of medium heat vessels for at
-    least 1 hour to 90 - 100°C on each of 3 successive days. Do not autoclave! Complete
-    the medium by adding yeast extract and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 5.5, if
-    necessary.
+  description: Prepare the medium without sulfur, yeast extract and sodium sulfide, adjust pH to 5.0 -
+    5.5 with 10 N sulfuric acid, then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic. Dispense medium under 80% H2 and CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials  that contain already the appropriate amount of sulfur, only to 30% of their volume
+    to allow for a large headspace. For sterilization of medium heat vessels for at least 1 hour to 90
+    - 100°C on each of 3 successive days. Do not autoclave! Complete the medium by adding yeast extract
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. Adjust pH of
+    complete medium to 5.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize the vessels to 2 bar overpressure with
-    sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize the vessels to 2 bar overpressure with sterile 80% H2 and
+    20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

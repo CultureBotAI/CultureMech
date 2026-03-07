@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH GLUCOSE
 original_name: MINERAL MEDIUM WITH GLUCOSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -197,12 +197,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.4 and autoclave. After cooling,
-    add the following solution (autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 7.4 and autoclave. After cooling, add the following
+    solution (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust final pH to 7.0.

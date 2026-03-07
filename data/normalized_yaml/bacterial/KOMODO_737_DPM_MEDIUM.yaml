@@ -1,6 +1,6 @@
 name: DPM MEDIUM
 original_name: DPM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:737
     label: DPM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 737 | DSMZ Medium: 737 (mediadive.medium:737) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

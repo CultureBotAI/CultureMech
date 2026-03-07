@@ -1,8 +1,8 @@
 name: BEIJERINCKIA MEDIUM (LMG 18)
 original_name: BEIJERINCKIA MEDIUM (LMG 18)
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: DSMZ Medium 1736

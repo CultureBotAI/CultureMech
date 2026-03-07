@@ -1,6 +1,6 @@
 name: Postgate J. R'S Medium C
 original_name: Postgate J. R'S Medium C
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,14 +26,12 @@ ingredients:
   concentration:
     value: '0.06'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -43,8 +39,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -52,14 +47,12 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Na2SO4
   concentration:
     value: '4.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:32149
     label: sodium sulfate

@@ -1,8 +1,8 @@
 name: OAT FLAKE MEDIUM
 original_name: OAT FLAKE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: DSMZ Medium 189
@@ -25,8 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave
-    20 min at 121°C. Shake before pouring. pH 6.0.
+  description: Boil oat flakes in water for 10 min; fill up to 1 l and add agar. Autoclave 20 min at 121°C.
+    Shake before pouring. pH 6.0.
 applications:
 - Microbial cultivation
 curation_history:

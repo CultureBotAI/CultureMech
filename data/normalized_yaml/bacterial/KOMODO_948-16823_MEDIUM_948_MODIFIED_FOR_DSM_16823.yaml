@@ -1,6 +1,6 @@
 name: MEDIUM 948 MODIFIED FOR DSM 16823
 original_name: MEDIUM 948 MODIFIED FOR DSM 16823
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:948_16823
     label: MEDIUM 948 MODIFIED FOR DSM 16823
-notes: 'Source: KOMODO ModelSEED | ID: 948_16823 | DSMZ Medium: 948 (mediadive.medium:948)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 948_16823 | DSMZ Medium: 948 (mediadive.medium:948) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:

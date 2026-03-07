@@ -1,15 +1,14 @@
 name: DAP-NUTRIENT AGAR
 original_name: DAP-NUTRIENT AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 118
   term:
     id: komodo.medium:118
     label: DAP-NUTRIENT AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 118 | DSMZ Medium: 118 (mediadive.medium:118)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 118 | DSMZ Medium: 118 (mediadive.medium:118) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

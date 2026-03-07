@@ -1,8 +1,8 @@
 name: modified cytophaga agar
 original_name: modified cytophaga agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: yeast extract
   concentration:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -30,8 +29,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
@@ -47,8 +45,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: agar
   concentration:
     value: '1.5'

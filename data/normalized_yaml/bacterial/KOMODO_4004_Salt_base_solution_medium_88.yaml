@@ -1,6 +1,6 @@
 name: Salt base solution (medium 88)
 original_name: Salt base solution (medium 88)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:4004
     label: Salt base solution (medium 88)
-notes: 'Source: KOMODO ModelSEED | ID: 4004 | DSMZ Medium: 4004 (mediadive.medium:4004)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4004 | DSMZ Medium: 4004 (mediadive.medium:4004) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

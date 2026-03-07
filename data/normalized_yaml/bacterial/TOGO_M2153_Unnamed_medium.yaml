@@ -1,8 +1,8 @@
-name: (Unnamed medium)
+name: TOGO Medium M2153
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -18,8 +18,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Agar powder
   concentration:
     value: '14'
@@ -34,7 +33,7 @@ media_term:
   preferred_term: TOGO Medium M2153
   term:
     id: TOGO:M2153
-    label: (Unnamed medium)
+    label: TOGO Medium M2153
 notes: 'Source: https://togomedium.org/medium/M2153
 
   Original source: NBRC - NBRC_M1508

@@ -1,6 +1,6 @@
 name: Trace mineral solution (medium 997)
 original_name: Trace mineral solution (medium 997)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2078
     label: Trace mineral solution (medium 997)
-notes: 'Source: KOMODO ModelSEED | ID: 2078 | DSMZ Medium: 2078 (mediadive.medium:2078)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2078 | DSMZ Medium: 2078 (mediadive.medium:2078) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

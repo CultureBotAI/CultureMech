@@ -1,10 +1,10 @@
-name: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM 16022, DSM
-  16057, DSM 16059, DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965, DSM 18033,
-  DSM 19190, DSM 19191, DSM 19430, DSM 19637 and DSM 23265
-original_name: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM
-  16022, DSM 16057, DSM 16059, DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965,
-  DSM 18033, DSM 19190, DSM 19191, DSM 19430, DSM 19637 and DSM 23265
-category: imported
+name: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM 16022, DSM 16057, DSM 16059,
+  DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965, DSM 18033, DSM 19190, DSM 19191, DSM 19430, DSM
+  19637 and DSM 23265
+original_name: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM 16022, DSM 16057, DSM
+  16059, DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965, DSM 18033, DSM 19190, DSM 19191, DSM 19430,
+  DSM 19637 and DSM 23265
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -12,11 +12,10 @@ media_term:
   preferred_term: KOMODO Medium 641.1
   term:
     id: komodo.medium:641.1
-    label: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM 16022,
-      DSM 16057, DSM 16059, DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965,
-      DSM 18033, DSM 19190, DSM 19191, DSM 19430, DSM 19637 and DSM 23265
-notes: 'Source: KOMODO ModelSEED | ID: 641.1 | DSMZ Medium: 641 (mediadive.medium:641)
-  | Aerobic: Yes'
+    label: For DSM 749, DSM 1741, DSM 7074, DSM 7075, DSM 8344, DSM 15449, DSM 16022, DSM 16057, DSM 16059,
+      DSM 16695, DSM 17215, DSM 17524, DSM 17734, DSM 17965, DSM 18033, DSM 19190, DSM 19191, DSM 19430,
+      DSM 19637 and DSM 23265
+notes: 'Source: KOMODO ModelSEED | ID: 641.1 | DSMZ Medium: 641 (mediadive.medium:641) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -254,5 +253,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:34.969188Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

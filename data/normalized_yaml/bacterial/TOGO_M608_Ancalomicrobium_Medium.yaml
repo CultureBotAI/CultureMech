@@ -1,6 +1,6 @@
 name: Ancalomicrobium Medium
 original_name: Ancalomicrobium Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '980'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '0.071'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -35,8 +32,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

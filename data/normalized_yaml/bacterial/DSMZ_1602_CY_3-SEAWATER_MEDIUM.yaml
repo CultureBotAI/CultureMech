@@ -1,6 +1,6 @@
 name: CY/3-SEAWATER MEDIUM
 original_name: CY/3-SEAWATER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -166,8 +166,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.5 with 1M NaOH, autoclave at 121°C for 20 min. Add cyanocobalamine
-    from a filter sterilized solution after autoclaving and cooling.
+  description: Adjust pH to 7.5 with 1M NaOH, autoclave at 121°C for 20 min. Add cyanocobalamine from
+    a filter sterilized solution after autoclaving and cooling.
 applications:
 - Microbial cultivation
 curation_history:

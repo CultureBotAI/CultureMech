@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO AESPOEENSIS MEDIUM
 original_name: DESULFOVIBRIO AESPOEENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:721
     label: DESULFOVIBRIO AESPOEENSIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 721 | DSMZ Medium: 721 (mediadive.medium:721)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 721 | DSMZ Medium: 721 (mediadive.medium:721) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

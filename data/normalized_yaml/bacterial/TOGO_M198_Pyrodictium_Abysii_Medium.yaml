@@ -1,6 +1,6 @@
 name: Pyrodictium Abysii Medium
 original_name: Pyrodictium Abysii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,14 +8,13 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Resazurin
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -23,14 +22,12 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Sulfur (powder)
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:14258
     label: ''
@@ -48,8 +45,7 @@ ingredients:
     value: '10'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -95,6 +91,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:51.257812'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    N2; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: N2; Added default concentration for
+    ingredient: Hydrogen gas'

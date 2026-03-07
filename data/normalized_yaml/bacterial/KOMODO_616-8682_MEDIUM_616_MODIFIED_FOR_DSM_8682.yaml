@@ -1,6 +1,6 @@
 name: MEDIUM 616 MODIFIED FOR DSM 8682
 original_name: MEDIUM 616 MODIFIED FOR DSM 8682
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:616_8682
     label: MEDIUM 616 MODIFIED FOR DSM 8682
-notes: 'Source: KOMODO ModelSEED | ID: 616_8682 | DSMZ Medium: 616 (mediadive.medium:616)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 616_8682 | DSMZ Medium: 616 (mediadive.medium:616) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

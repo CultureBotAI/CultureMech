@@ -1,6 +1,6 @@
 name: '? S? HELIORESTIS medium'
 original_name: '? S? HELIORESTIS medium'
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1381
     label: '? S? HELIORESTIS medium'
-notes: 'Source: KOMODO ModelSEED | ID: 1381 | DSMZ Medium: 1381 (mediadive.medium:1381)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1381 | DSMZ Medium: 1381 (mediadive.medium:1381) | Aerobic: Yes'
 ingredients:
 - preferred_term: EDTA
   term:

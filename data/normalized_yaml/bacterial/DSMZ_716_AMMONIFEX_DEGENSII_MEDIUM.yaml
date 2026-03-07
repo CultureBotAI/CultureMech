@@ -1,6 +1,6 @@
 name: AMMONIFEX DEGENSII MEDIUM
 original_name: AMMONIFEX DEGENSII MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -200,22 +200,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except nitrate, carbonate, and dithiothreitol),
-    then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under the same gas atmosphere into anoxic serum vials
-    (e.g., 10 ml medium in 25 ml Balch-type tubes) and autoclave. Before use, add
-    nitrate from a sterile anoxic stock solution prepared under 100% N2 gas and carbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Before inoculation add dithiothreitol from an anoxic stock solution sterilized
-    by filtration under 100% N2 gas and adjust the pH of the medium to 7.2.
+  description: Dissolve ingredients (except nitrate, carbonate, and dithiothreitol), then sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same
+    gas atmosphere into anoxic serum vials (e.g., 10 ml medium in 25 ml Balch-type tubes) and autoclave.
+    Before use, add nitrate from a sterile anoxic stock solution prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Before inoculation
+    add dithiothreitol from an anoxic stock solution sterilized by filtration under 100% N2 gas and adjust
+    the pH of the medium to 7.2.
 - step_number: 2
   action: MIX
-  description: After growth has started pressurize vials to 0.5 bar overpressure with
-    a sterile 80% H2 and 20% CO2 gas mixture.
+  description: After growth has started pressurize vials to 0.5 bar overpressure with a sterile 80% H2
+    and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

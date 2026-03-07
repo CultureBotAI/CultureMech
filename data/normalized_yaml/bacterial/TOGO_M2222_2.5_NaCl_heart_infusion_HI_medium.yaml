@@ -1,6 +1,6 @@
 name: 2.5% NaCl heart infusion (HI) medium
 original_name: 2.5% NaCl heart infusion (HI) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -26,14 +24,12 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component,
-    Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Ampicillin
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
-    Organic compound'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:28971
     label: Ampicillin

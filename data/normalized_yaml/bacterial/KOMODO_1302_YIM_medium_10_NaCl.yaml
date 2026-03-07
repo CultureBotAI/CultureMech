@@ -1,16 +1,15 @@
 name: YIM medium + 10 % NaCl
 original_name: YIM medium + 10 % NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1302
   term:
     id: komodo.medium:1302
     label: YIM medium + 10 % NaCl
-notes: 'Source: KOMODO ModelSEED | ID: 1302 | DSMZ Medium: 1302 (mediadive.medium:1302)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1302 | DSMZ Medium: 1302 (mediadive.medium:1302) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

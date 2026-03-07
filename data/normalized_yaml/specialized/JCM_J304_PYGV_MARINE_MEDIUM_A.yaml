@@ -1,8 +1,8 @@
 name: PYGV MARINE MEDIUM (A)
 original_name: PYGV MARINE MEDIUM (A)
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: JCM Medium J304
@@ -247,15 +247,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except the glucose solution and Vitamin solution, to
-    artificial seawater and mix thoroughly. Gently heat and bring to a boil. Autoclave
-    and then cool to 45 - 50C. Aseptically add the filter-sterilized glucose solution
-    and Vitamin solution. Adjust pH to 7.5 with sterile KOH, if necessary.
+  description: Add components except the glucose solution and Vitamin solution, to artificial seawater
+    and mix thoroughly. Gently heat and bring to a boil. Autoclave and then cool to 45 - 50C. Aseptically
+    add the filter-sterilized glucose solution and Vitamin solution. Adjust pH to 7.5 with sterile KOH,
+    if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by
-    adjusting pH to 6.5 with KOH. Add the remaining components and distilled water.
-    Readjust pH to 7.2.
+  description: Add nitrilotriacetic acid to 500 ml of distilled water. Dissolve by adjusting pH to 6.5
+    with KOH. Add the remaining components and distilled water. Readjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: MEDIUM 78 MODIFIED FOR DSM 6011
 original_name: MEDIUM 78 MODIFIED FOR DSM 6011
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78_6011
   term:
     id: komodo.medium:78_6011
     label: MEDIUM 78 MODIFIED FOR DSM 6011
-notes: 'Source: KOMODO ModelSEED | ID: 78_6011 | DSMZ Medium: 78 (mediadive.medium:78)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 78_6011 | DSMZ Medium: 78 (mediadive.medium:78) | Aerobic: No'
 ingredients:
 - preferred_term: L-Histidine
   term:

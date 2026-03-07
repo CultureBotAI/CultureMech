@@ -1,6 +1,6 @@
 name: FRR medium
 original_name: FRR medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1249
     label: FRR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1249 | DSMZ Medium: 1249 (mediadive.medium:1249)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1249 | DSMZ Medium: 1249 (mediadive.medium:1249) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

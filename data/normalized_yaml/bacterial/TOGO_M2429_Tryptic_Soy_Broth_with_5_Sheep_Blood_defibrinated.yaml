@@ -1,6 +1,6 @@
 name: Tryptic Soy Broth with 5% Sheep Blood (defibrinated)
 original_name: Tryptic Soy Broth with 5% Sheep Blood (defibrinated)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Tryptic Soy Broth (BD 211825)
   concentration:
     value: '30'

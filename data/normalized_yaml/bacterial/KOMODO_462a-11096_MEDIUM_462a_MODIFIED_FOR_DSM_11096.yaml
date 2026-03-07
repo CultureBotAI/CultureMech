@@ -1,15 +1,15 @@
 name: MEDIUM 462a MODIFIED FOR DSM 11096
 original_name: MEDIUM 462a MODIFIED FOR DSM 11096
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 462a_11096
   term:
     id: komodo.medium:462a_11096
     label: MEDIUM 462a MODIFIED FOR DSM 11096
-notes: 'Source: KOMODO ModelSEED | ID: 462a_11096 | DSMZ Medium: 462a (mediadive.medium:462a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 462a_11096 | DSMZ Medium: 462a (mediadive.medium:462a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Fluoranthene
   concentration:

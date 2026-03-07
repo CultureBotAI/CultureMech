@@ -1,6 +1,6 @@
 name: BACILLUS AA MEDIUM
 original_name: BACILLUS AA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -162,20 +162,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients and adjust pH to 7.2. Distribute the solution into
-    tubes (e.g., 10 ml in the Hungate tubes) under a N2-CO2 gas mixture (4:1, v/v),
-    seal with butyl rubber stoppers and autoclave.
+  description: Mix ingredients and adjust pH to 7.2. Distribute the solution into tubes (e.g., 10 ml in
+    the Hungate tubes) under a N2-CO2 gas mixture (4:1, v/v), seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: MIX
-  description: 'To complete medium, aseptically add the following solutions to the
-    medium (per 10 ml):'
+  description: 'To complete medium, aseptically add the following solutions to the medium (per 10 ml):'
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave under a N2 atmosphere.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

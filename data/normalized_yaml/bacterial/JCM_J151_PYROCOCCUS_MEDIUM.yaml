@@ -1,6 +1,6 @@
 name: PYROCOCCUS MEDIUM
 original_name: PYROCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -208,16 +208,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5
-    with H2SO4. Sterilize by filtration under a N2 atmosphere. Steam sulfur for 3
-    hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and
-    autoclave under a N2 atmosphere. Aseptically and anaerobically add sterile sulfur
-    to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
-    readjust pH to 6.5, if necessary.
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.5 with H2SO4. Sterilize
+    by filtration under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize
+    Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere. Aseptically and anaerobically add
+    sterile sulfur to the medium. Prior to inoculation, add the sterile Na2S x 9H2O solution, and readjust
+    pH to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

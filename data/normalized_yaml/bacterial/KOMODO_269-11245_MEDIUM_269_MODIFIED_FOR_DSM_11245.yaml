@@ -1,6 +1,6 @@
 name: MEDIUM 269 MODIFIED FOR DSM 11245
 original_name: MEDIUM 269 MODIFIED FOR DSM 11245
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:269_11245
     label: MEDIUM 269 MODIFIED FOR DSM 11245
-notes: 'Source: KOMODO ModelSEED | ID: 269_11245 | DSMZ Medium: 269 (mediadive.medium:269)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 269_11245 | DSMZ Medium: 269 (mediadive.medium:269) | Aerobic:
+  No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

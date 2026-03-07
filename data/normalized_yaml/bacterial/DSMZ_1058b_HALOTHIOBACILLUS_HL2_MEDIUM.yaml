@@ -1,6 +1,6 @@
 name: HALOTHIOBACILLUS HL2 MEDIUM
 original_name: HALOTHIOBACILLUS HL2 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -175,14 +175,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium
-    chloride, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
-    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
-    Dispense solution under air atmosphere in Erlenmeyer flasks to 10% of volume,
-    close with screw caps and autoclave. Add trace elements, calcium chloride, magnesium
-    chloride, thiosulfate, bicarbonate and vitamins from sterile stock solutions and
-    adjust pH of the medium to 7.5 using a sterile stock solution of sodium carbonate
-    (5% w/v). Incubate with shaking.
+  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium chloride, then sparge
+    solution with 80% N2 and 20% CO2 gas mixture for at least 30 - 45 min to remove dissolved oxygen and
+    to saturate the solution with CO2. Dispense solution under air atmosphere in Erlenmeyer flasks to
+    10% of volume, close with screw caps and autoclave. Add trace elements, calcium chloride, magnesium
+    chloride, thiosulfate, bicarbonate and vitamins from sterile stock solutions and adjust pH of the
+    medium to 7.5 using a sterile stock solution of sodium carbonate (5% w/v). Incubate with shaking.
 - step_number: 2
   action: MIX
   description: 'Note: Use at least 10% (v/v) as inoculum.'

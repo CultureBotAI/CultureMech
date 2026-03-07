@@ -1,15 +1,15 @@
 name: MEDIUM 535 MODIFIED FOR DSM 43989_replace_sheep blood_with_rabbit blood
 original_name: MEDIUM 535 MODIFIED FOR DSM 43989_replace_sheep blood_with_rabbit blood
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535_43989_replace_sheep blood_with_rabbit blood
   term:
     id: komodo.medium:535_43989_replace_sheep blood_with_rabbit blood
     label: MEDIUM 535 MODIFIED FOR DSM 43989_replace_sheep blood_with_rabbit blood
-notes: 'Source: KOMODO ModelSEED | ID: 535_43989_replace_sheep blood_with_rabbit blood
-  | DSMZ Medium: 535 (mediadive.medium:535) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 535_43989_replace_sheep blood_with_rabbit blood | DSMZ Medium:
+  535 (mediadive.medium:535) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

@@ -1,6 +1,6 @@
 name: CHM
 original_name: CHM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,8 +21,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add the above constituents to 1 litre of deionised water. Autoclave
-    at 15 psi for 15 minutes.
+  description: Add the above constituents to 1 litre of deionised water. Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

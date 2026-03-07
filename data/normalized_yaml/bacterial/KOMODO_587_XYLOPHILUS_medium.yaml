@@ -1,15 +1,14 @@
 name: XYLOPHILUS medium
 original_name: XYLOPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 587
   term:
     id: komodo.medium:587
     label: XYLOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 587 | DSMZ Medium: 587 (mediadive.medium:587)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 587 | DSMZ Medium: 587 (mediadive.medium:587) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

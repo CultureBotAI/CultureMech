@@ -1,6 +1,6 @@
 name: SPIROCHAETA SP. MEDIUM
 original_name: SPIROCHAETA SP. MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -142,8 +142,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Boil medium and cool under N2 stream on ice. Check pH (7.4). Autoclave
-    aliquots and add the following sterile solutions (per 10 ml):'
+  description: 'Boil medium and cool under N2 stream on ice. Check pH (7.4). Autoclave aliquots and add
+    the following sterile solutions (per 10 ml):'
 applications:
 - Microbial cultivation
 curation_history:

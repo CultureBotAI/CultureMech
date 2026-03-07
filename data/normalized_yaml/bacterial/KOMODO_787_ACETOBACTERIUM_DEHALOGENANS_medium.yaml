@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM DEHALOGENANS medium
 original_name: ACETOBACTERIUM DEHALOGENANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:787
     label: ACETOBACTERIUM DEHALOGENANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 787 | DSMZ Medium: 787 (mediadive.medium:787)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 787 | DSMZ Medium: 787 (mediadive.medium:787) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

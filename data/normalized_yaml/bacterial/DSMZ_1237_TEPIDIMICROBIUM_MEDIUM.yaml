@@ -1,6 +1,6 @@
 name: TEPIDIMICROBIUM MEDIUM
 original_name: TEPIDIMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -279,19 +279,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous chloride, carbonate, glucose,
-    vitamins, cysteine and sulfide), adjust pH to 7.5 with NaOH and sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under 100%
-    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add glucose, vitamins, ferrous chloride, cysteine and sulfide form sterile anoxic
-    stock solutions prepared under 100% N2 gas and carbonate from a sterile stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. Solutions of ferrous chloride
-    and vitamins should be sterilized by filtration. Adjust pH of the complete medium
-    to 8.5, if necessary.
+  description: Dissolve ingredients (except ferrous chloride, carbonate, glucose, vitamins, cysteine and
+    sulfide), adjust pH to 7.5 with NaOH and sparge medium with 100% N2 gas for 30 - 45 min to make it
+    anoxic. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add glucose, vitamins, ferrous chloride, cysteine and sulfide form sterile anoxic stock
+    solutions prepared under 100% N2 gas and carbonate from a sterile stock solution prepared under 80%
+    N2 and 20% CO2 gas mixture. Solutions of ferrous chloride and vitamins should be sterilized by filtration.
+    Adjust pH of the complete medium to 8.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -302,5 +300,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.889833Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

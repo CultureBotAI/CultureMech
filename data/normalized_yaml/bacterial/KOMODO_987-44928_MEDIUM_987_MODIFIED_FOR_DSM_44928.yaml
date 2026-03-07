@@ -1,16 +1,16 @@
 name: MEDIUM 987 MODIFIED FOR DSM 44928
 original_name: MEDIUM 987 MODIFIED FOR DSM 44928
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.5
 media_term:
   preferred_term: KOMODO Medium 987_44928
   term:
     id: komodo.medium:987_44928
     label: MEDIUM 987 MODIFIED FOR DSM 44928
-notes: 'Source: KOMODO ModelSEED | ID: 987_44928 | DSMZ Medium: 987 (mediadive.medium:987)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 987_44928 | DSMZ Medium: 987 (mediadive.medium:987) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

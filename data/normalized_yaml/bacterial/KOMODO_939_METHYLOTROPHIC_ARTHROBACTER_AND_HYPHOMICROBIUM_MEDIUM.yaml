@@ -1,6 +1,6 @@
 name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
 original_name: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:939
     label: METHYLOTROPHIC ARTHROBACTER AND HYPHOMICROBIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 939 | DSMZ Medium: 939 (mediadive.medium:939)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 939 | DSMZ Medium: 939 (mediadive.medium:939) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

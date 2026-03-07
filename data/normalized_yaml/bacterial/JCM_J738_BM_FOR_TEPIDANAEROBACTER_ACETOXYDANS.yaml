@@ -1,6 +1,6 @@
 name: BM FOR TEPIDANAEROBACTER ACETOXYDANS
 original_name: BM FOR TEPIDANAEROBACTER ACETOXYDANS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Use JCM medium No. 737, replacing 0.1 M L-sodium lactate solution
-    with 0.1 M glucose solution (filter-sterilized: 100 ml/L).'
+  description: 'Use JCM medium No. 737, replacing 0.1 M L-sodium lactate solution with 0.1 M glucose solution
+    (filter-sterilized: 100 ml/L).'
 applications:
 - Microbial cultivation
 curation_history:

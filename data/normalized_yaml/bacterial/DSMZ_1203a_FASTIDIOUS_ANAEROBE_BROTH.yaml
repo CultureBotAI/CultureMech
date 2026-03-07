@@ -1,6 +1,6 @@
 name: FASTIDIOUS ANAEROBE BROTH
 original_name: FASTIDIOUS ANAEROBE BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,8 +17,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Boil medium and cool under N2, distribute under N2 and sterilize by
-    autoclaving at 121°C for 20 minutes.
+  description: Boil medium and cool under N2, distribute under N2 and sterilize by autoclaving at 121°C
+    for 20 minutes.
 applications:
 - Microbial cultivation
 curation_history:

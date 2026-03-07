@@ -1,6 +1,6 @@
 name: ARCHAEOGLOBUS medium
 original_name: ARCHAEOGLOBUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:399
     label: ARCHAEOGLOBUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 399 | DSMZ Medium: 399 (mediadive.medium:399)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 399 | DSMZ Medium: 399 (mediadive.medium:399) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:

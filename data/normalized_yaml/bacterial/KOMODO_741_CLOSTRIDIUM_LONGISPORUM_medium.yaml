@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM LONGISPORUM medium
 original_name: CLOSTRIDIUM LONGISPORUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:741
     label: CLOSTRIDIUM LONGISPORUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 741 | DSMZ Medium: 741 (mediadive.medium:741)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 741 | DSMZ Medium: 741 (mediadive.medium:741) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

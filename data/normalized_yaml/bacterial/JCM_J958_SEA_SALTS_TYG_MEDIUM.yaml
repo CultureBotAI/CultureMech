@@ -1,6 +1,6 @@
 name: SEA SALTS TYG MEDIUM
 original_name: SEA SALTS TYG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -156,10 +156,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 gas mixture.
-    After cooling, adjust pH to 7.2 - 7.5 with 5% Na2CO3 solution (autoclaved and
-    stored under N2). Then, add per litter the following solutions (autoclaved and
-    stored under N2):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 gas mixture. After cooling, adjust
+    pH to 7.2 - 7.5 with 5% Na2CO3 solution (autoclaved and stored under N2). Then, add per litter the
+    following solutions (autoclaved and stored under N2):'
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.

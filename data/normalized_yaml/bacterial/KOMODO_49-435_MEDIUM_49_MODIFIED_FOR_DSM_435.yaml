@@ -1,15 +1,14 @@
 name: MEDIUM 49 MODIFIED FOR DSM 435
 original_name: MEDIUM 49 MODIFIED FOR DSM 435
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 49_435
   term:
     id: komodo.medium:49_435
     label: MEDIUM 49 MODIFIED FOR DSM 435
-notes: 'Source: KOMODO ModelSEED | ID: 49_435 | DSMZ Medium: 49 (mediadive.medium:49)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 49_435 | DSMZ Medium: 49 (mediadive.medium:49) | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:

@@ -1,6 +1,6 @@
 name: Glucose minimal media; Shehata et al
 original_name: Glucose minimal media; Shehata et al
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -83,8 +83,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:43.897344Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 145, Reference:
-    Mazumdar et al. (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 145, Reference: Mazumdar et al.
+    (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:21.902144Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -94,8 +94,7 @@ media_term:
   term:
     id: MEDIADB:145
     label: Glucose minimal media; Shehata et al
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

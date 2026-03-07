@@ -1,6 +1,6 @@
 name: modified Yeast nitrogen base
 original_name: modified Yeast nitrogen base
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -42,8 +42,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "autoclave MgSO4 x 7 H2O und Gellan Gum separate (500 ml),\r\nliquid\
-    \ medium without MgSO4 x 7 H2O und Gellan Gum"
+  description: "autoclave MgSO4 x 7 H2O und Gellan Gum separate (500 ml),\r\nliquid medium without MgSO4\
+    \ x 7 H2O und Gellan Gum"
 applications:
 - Microbial cultivation
 curation_history:

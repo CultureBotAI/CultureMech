@@ -1,6 +1,6 @@
 name: Corn steep liquor medium (CSL medium)
 original_name: Corn steep liquor medium (CSL medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -35,8 +32,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
@@ -44,8 +40,7 @@ ingredients:
   concentration:
     value: '3.1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -53,8 +48,7 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:86254
     label: iron trichloride hexahydrate
@@ -62,8 +56,7 @@ ingredients:
   concentration:
     value: '90'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:18222
     label: xylose

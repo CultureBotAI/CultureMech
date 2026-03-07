@@ -1,16 +1,15 @@
 name: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
 original_name: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 4.3
 media_term:
   preferred_term: KOMODO Medium 674
   term:
     id: komodo.medium:674
     label: medium FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
-notes: 'Source: KOMODO ModelSEED | ID: 674 | DSMZ Medium: 674 (mediadive.medium:674)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 674 | DSMZ Medium: 674 (mediadive.medium:674) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

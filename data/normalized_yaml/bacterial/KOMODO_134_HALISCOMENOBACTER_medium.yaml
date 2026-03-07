@@ -1,6 +1,6 @@
 name: HALISCOMENOBACTER medium
 original_name: HALISCOMENOBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:134
     label: HALISCOMENOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 134 | DSMZ Medium: 134 (mediadive.medium:134)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 134 | DSMZ Medium: 134 (mediadive.medium:134) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

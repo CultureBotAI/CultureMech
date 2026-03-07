@@ -1,6 +1,6 @@
 name: R - CW MEDIUM
 original_name: R - CW MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -75,8 +75,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 5.5 and distribute into screw-capped Wheaton tubes or
-    Hungate tubes.
+  description: Adjust pH to 5.5 and distribute into screw-capped Wheaton tubes or Hungate tubes.
 applications:
 - Microbial cultivation
 curation_history:

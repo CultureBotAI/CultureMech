@@ -1,15 +1,14 @@
 name: '257'
 original_name: '257'
-category: imported
+category: bacterial
 description: 257. NBRC 256.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4\xB7\
-    7H2O0.24gCaSO4\xB72H2O0.17gSodium glutamate1gNa2CO35gNaCl250gDistilled water,\
-    \ make up to1LAgar (if needed)*20gAdjust pH to 6.5 before autoclaving. Sterilize\
-    \ Na2CO3in solution separately, and add to other autoclaved ingredients. Check\
-    \ the final pH is between 9.0 - 9.5.*Dissolve agar by heating before adding NaCl."
+- preferred_term: Yeast extract5gBacto Casamino Acids (Difco)5gKH2PO41gKCl1gNH4Cl1gMgSO4·7H2O0.24gCaSO4·2H2O0.17gSodium
+    glutamate1gNa2CO35gNaCl250gDistilled water, make up to1LAgar (if needed)*20gAdjust pH to 6.5 before
+    autoclaving. Sterilize Na2CO3in solution separately, and add to other autoclaved ingredients. Check
+    the final pH is between 9.0 - 9.5.*Dissolve agar by heating before adding NaCl.
 - preferred_term: ''
   concentration:
     value: Yeast extract
@@ -32,11 +31,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaSO4\xB72H2O"
+    value: CaSO4·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -79,11 +78,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaSO4\xB72H2O"
+    value: CaSO4·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

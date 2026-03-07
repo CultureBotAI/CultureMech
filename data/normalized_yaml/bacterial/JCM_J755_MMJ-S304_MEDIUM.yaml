@@ -1,6 +1,6 @@
 name: MMJ-S304 MEDIUM
 original_name: MMJ-S304 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.2
@@ -179,16 +179,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 6.5 with NaOH. Bring to a boil for
-    a few seconds and cool down under a stream of a N2-CO2 (4:1, v/v) gas mixture.
-    Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. Add
-    per liter the following solutions (autoclaved or *filter-sterilize) from anaerobic
+  description: 'Mix components and adjust pH to 6.5 with NaOH. Bring to a boil for a few seconds and cool
+    down under a stream of a N2-CO2 (4:1, v/v) gas mixture. Distribute the medium into culture vessels
+    (e.g., 20 ml in 120 ml serum bottles) under the same gas mixture, seal with butyl rubber stoppers
+    and autoclave. Add per liter the following solutions (autoclaved or *filter-sterilize) from anaerobic
     stocks:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH of the medium to 6.0 - 6.5, if necessary. Pressurize the
-    inoculated bottles to 200 kPa N2-CO2 (4:1, v/v).
+  description: Adjust pH of the medium to 6.0 - 6.5, if necessary. Pressurize the inoculated bottles to
+    200 kPa N2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

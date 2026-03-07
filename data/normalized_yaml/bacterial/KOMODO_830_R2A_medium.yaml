@@ -1,6 +1,6 @@
 name: R2A medium
 original_name: R2A medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:830
     label: R2A medium
-notes: 'Source: KOMODO ModelSEED | ID: 830 | DSMZ Medium: 830 (mediadive.medium:830)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

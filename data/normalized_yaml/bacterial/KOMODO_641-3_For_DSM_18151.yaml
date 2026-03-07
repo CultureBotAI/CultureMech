@@ -1,6 +1,6 @@
 name: For DSM 18151
 original_name: For DSM 18151
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:641.3
     label: For DSM 18151
-notes: 'Source: KOMODO ModelSEED | ID: 641.3 | DSMZ Medium: 641 (mediadive.medium:641)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 641.3 | DSMZ Medium: 641 (mediadive.medium:641) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -248,5 +247,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.010781Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

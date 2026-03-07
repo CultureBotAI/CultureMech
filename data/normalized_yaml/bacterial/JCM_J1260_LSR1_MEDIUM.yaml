@@ -1,6 +1,6 @@
 name: LSR1 MEDIUM
 original_name: LSR1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -146,8 +146,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a microaerophilic atmosphere
-    (1.0 - 3.0% O2 in N2). Aseptically add per liter the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a microaerophilic atmosphere (1.0 - 3.0%
+    O2 in N2). Aseptically add per liter the following solutions (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

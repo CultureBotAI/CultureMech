@@ -1,8 +1,8 @@
 name: COLUMBIA BLOOD AGAR
 original_name: COLUMBIA BLOOD AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 687
   term:
@@ -50,8 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to
-    boiling to dissolve completely.
+  description: Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to boiling to dissolve
+    completely.
 - step_number: 2
   action: AUTOCLAVE
   description: Sterilize in autoclave for 15 min at 121°C.

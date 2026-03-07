@@ -1,8 +1,8 @@
 name: MIDDLEBROOK MEDIUM
 original_name: MIDDLEBROOK MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 645
   term:
@@ -157,12 +157,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook
-    OADC enrichment (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
+  description: Sterilize for 15 min by 121°C cool to 50 - 55°C. Add 100 ml Middlebrook OADC enrichment
+    (Becton Dickinson 212240) under aseptic conditions and mix thoroughly.
 - step_number: 2
   action: MIX
-  description: 'If you can´t order the commercial media then prepare the media in
-    this way:'
+  description: 'If you can´t order the commercial media then prepare the media in this way:'
 - step_number: 3
   action: HEAT
   description: Final pH at 25°C 6.6 ± 0.2.

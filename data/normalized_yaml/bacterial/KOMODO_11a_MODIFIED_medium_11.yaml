@@ -1,6 +1,6 @@
 name: MODIFIED medium 11
 original_name: MODIFIED medium 11
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:11a
     label: MODIFIED medium 11
-notes: 'Source: KOMODO ModelSEED | ID: 11a | DSMZ Medium: 11a (mediadive.medium:11a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 11a | DSMZ Medium: 11a (mediadive.medium:11a) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

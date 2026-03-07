@@ -1,16 +1,15 @@
 name: THIOMONAS INTERMEDIA MEDIUM
 original_name: THIOMONAS INTERMEDIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.5-6.0
 media_term:
   preferred_term: KOMODO Medium 35a
   term:
     id: komodo.medium:35a
     label: THIOMONAS INTERMEDIA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 35a | DSMZ Medium: 35a (mediadive.medium:35a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 35a | DSMZ Medium: 35a (mediadive.medium:35a) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

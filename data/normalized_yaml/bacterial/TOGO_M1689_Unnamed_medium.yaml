@@ -1,8 +1,8 @@
-name: (Unnamed medium)
+name: TOGO Medium M1689
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Solution A*
   concentration:
@@ -16,8 +16,7 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -30,8 +29,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -41,8 +39,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -53,8 +50,7 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -70,7 +66,7 @@ media_term:
   preferred_term: TOGO Medium M1689
   term:
     id: TOGO:M1689
-    label: (Unnamed medium)
+    label: TOGO Medium M1689
 notes: 'Source: https://togomedium.org/medium/M1689
 
   Original source: NBRC - NBRC_M895

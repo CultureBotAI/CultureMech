@@ -1,6 +1,6 @@
 name: LIP-solution (medium 391)
 original_name: LIP-solution (medium 391)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3022
     label: LIP-solution (medium 391)
-notes: 'Source: KOMODO ModelSEED | ID: 3022 | DSMZ Medium: 3022 (mediadive.medium:3022)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3022 | DSMZ Medium: 3022 (mediadive.medium:3022) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

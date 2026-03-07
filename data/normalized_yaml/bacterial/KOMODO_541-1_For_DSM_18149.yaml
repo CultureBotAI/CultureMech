@@ -1,6 +1,6 @@
 name: For DSM 18149
 original_name: For DSM 18149
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:541.1
     label: For DSM 18149
-notes: 'Source: KOMODO ModelSEED | ID: 541.1 | DSMZ Medium: 541 (mediadive.medium:541)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 541.1 | DSMZ Medium: 541 (mediadive.medium:541) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

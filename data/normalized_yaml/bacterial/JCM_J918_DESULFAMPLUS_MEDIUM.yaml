@@ -1,6 +1,6 @@
 name: DESULFAMPLUS MEDIUM
 original_name: DESULFAMPLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -169,27 +169,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute
-    the medium into culture vessels under a stream of a N2 gas, seal with butyl rubber
-    stoppers, and autoclave. After cooling, aseptically and anaerobically add per
-    liter the following solutions from anaerobic stock solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute the medium into culture
+    vessels under a stream of a N2 gas, seal with butyl rubber stoppers, and autoclave. After cooling,
+    aseptically and anaerobically add per liter the following solutions from anaerobic stock solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Readjust pH to 7.2 - 7.5, if necessary, with sterile HCl or NaOH solution.
-    Inoculate when the medium turns colorless.
+  description: Readjust pH to 7.2 - 7.5, if necessary, with sterile HCl or NaOH solution. Inoculate when
+    the medium turns colorless.
 - step_number: 3
   action: MIX
-  description: 'Comment: Optionally add the FeSO4 x 5H2O solution as described, for
-    the formation of magnetosome.'
+  description: 'Comment: Optionally add the FeSO4 x 5H2O solution as described, for the formation of magnetosome.'
 - step_number: 4
   action: MIX
-  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4
-    x 2H2O, 0.02 g/L CuSO4 x 5H2O and 0.01 g/L NiCl2 x 6H2O.
+  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4 x 2H2O, 0.02 g/L CuSO4
+    x 5H2O and 0.01 g/L NiCl2 x 6H2O.
 - step_number: 5
   action: MIX
-  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere.
-    In this case, prior to use, fill the head space with air and allow to stand until
-    the O2 gradient is formed.'
+  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere. In this case, prior
+    to use, fill the head space with air and allow to stand until the O2 gradient is formed.'
 applications:
 - Microbial cultivation
 curation_history:

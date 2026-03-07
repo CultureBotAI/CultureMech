@@ -1,6 +1,6 @@
 name: HLH-700 MEDIUM
 original_name: HLH-700 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -224,8 +224,8 @@ preparation_steps:
   description: Adjust pH to 8.0
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Sterilize at 121°C for 15 minutes. After sterilization add 1 ml/l filter-sterilized
-    Wolfe´s vitamin solution.
+  description: Sterilize at 121°C for 15 minutes. After sterilization add 1 ml/l filter-sterilized Wolfe´s
+    vitamin solution.
 applications:
 - Microbial cultivation
 curation_history:

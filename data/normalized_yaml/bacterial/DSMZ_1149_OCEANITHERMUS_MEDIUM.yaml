@@ -1,6 +1,6 @@
 name: OCEANITHERMUS MEDIUM
 original_name: OCEANITHERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -228,10 +228,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without vitamins, boil and cool under a nitrogen:carbon
-    dioxide (80:20 v/v) atmosphere. Vitamins (filter sterilized and stored under nitrogen)
-    and 100 ml 0.6 M NaHCO3 solution (sterilized and stored under nitrogen) are added
-    from stock solutions.
+  description: Prepare the medium without vitamins, boil and cool under a nitrogen:carbon dioxide (80:20
+    v/v) atmosphere. Vitamins (filter sterilized and stored under nitrogen) and 100 ml 0.6 M NaHCO3 solution
+    (sterilized and stored under nitrogen) are added from stock solutions.
 - step_number: 2
   action: MIX
   description: The pH should be pH 6.5.

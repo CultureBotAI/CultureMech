@@ -1,8 +1,8 @@
 name: Mueller-Hinton (MH; Difco) agar
 original_name: Mueller-Hinton (MH; Difco) agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Mueller-Hinton (MH; Difco) agar
   concentration:

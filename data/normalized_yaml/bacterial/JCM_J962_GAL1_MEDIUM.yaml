@@ -1,6 +1,6 @@
 name: GAL1 MEDIUM
 original_name: GAL1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -151,15 +151,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH and autoclave
-    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solution
-    from an anaerobic stock [filter-sterilized and stored under N2-CO2 (4:1, v/v)]:'
+  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH and autoclave under a N2-CO2 (4:1,
+    v/v) gas mixture. After cooling, add the following solution from an anaerobic stock [filter-sterilized
+    and stored under N2-CO2 (4:1, v/v)]:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a stream
-    of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
-    add per liter the following solution from an anaerobic stock (autoclave and store
-    under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under a stream of N2-CO2 (4:1,
+    v/v) and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution
+    from an anaerobic stock (autoclave and store under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

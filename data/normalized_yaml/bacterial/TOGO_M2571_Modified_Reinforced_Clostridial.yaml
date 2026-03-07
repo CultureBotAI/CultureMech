@@ -1,6 +1,6 @@
 name: Modified Reinforced Clostridial
 original_name: Modified Reinforced Clostridial
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,8 +18,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -27,8 +26,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -44,8 +42,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Soluble Starch
   concentration:
     value: '1'

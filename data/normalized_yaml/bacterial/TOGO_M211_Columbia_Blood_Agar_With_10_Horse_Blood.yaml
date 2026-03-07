@@ -1,8 +1,8 @@
 name: Columbia Blood Agar With 10% Horse Blood
 original_name: Columbia Blood Agar With 10% Horse Blood
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Columbia blood agar base (Oxoid CM331)
   concentration:

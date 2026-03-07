@@ -1,6 +1,6 @@
 name: OCEANITHERMUS PROFUNDUS MEDIUM
 original_name: OCEANITHERMUS PROFUNDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.5
@@ -250,21 +250,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2,
-    MgCl2, KNO3, tryptone, yeast extract, vitamins and sucrose. The pH should be 7.0-7.5.
-    Dispense the medium into vessels suitable for anaerobic growth (Hungate tubes
-    or serum bottles) under an atmosphere of nitrogen and autoclave. To the sterile,
-    cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
-    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract,
-    and sucrose stock solutions should be autoclaved, while the vitamin solution is
-    sterile filtered. This strain grows anaerobically in the presence of nitrate,
-    but microaerophilic growth has been reported provided the oxygen concentration
-    does not exceed 6 % (v/v). Under anaerobic conditions a redox agent, such as sulphide
-    is not required.
+  description: Prepare the medium anaerobically, under nitrogen, omitting the CaCl2, MgCl2, KNO3, tryptone,
+    yeast extract, vitamins and sucrose. The pH should be 7.0-7.5. Dispense the medium into vessels suitable
+    for anaerobic growth (Hungate tubes or serum bottles) under an atmosphere of nitrogen and autoclave.
+    To the sterile, cooled medium add, from sterile stock solutions the CaCl2, MgCl2, KNO3, tryptone,
+    yeast extract, vitamins and sucrose. The CaCl2, MgCl2, KNO3, tryptone, yeast extract, and sucrose
+    stock solutions should be autoclaved, while the vitamin solution is sterile filtered. This strain
+    grows anaerobically in the presence of nitrate, but microaerophilic growth has been reported provided
+    the oxygen concentration does not exceed 6 % (v/v). Under anaerobic conditions a redox agent, such
+    as sulphide is not required.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -275,5 +273,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.250291Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

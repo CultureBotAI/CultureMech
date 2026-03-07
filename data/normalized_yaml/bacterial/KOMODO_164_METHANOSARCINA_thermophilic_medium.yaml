@@ -1,6 +1,6 @@
 name: METHANOSARCINA (thermophilic) medium
 original_name: METHANOSARCINA (thermophilic) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:164
     label: METHANOSARCINA (thermophilic) medium
-notes: 'Source: KOMODO ModelSEED | ID: 164 | DSMZ Medium: 164 (mediadive.medium:164)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 164 | DSMZ Medium: 164 (mediadive.medium:164) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: Solution A (medium 1267)
 original_name: Solution A (medium 1267)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:4051
     label: Solution A (medium 1267)
-notes: 'Source: KOMODO ModelSEED | ID: 4051 | DSMZ Medium: 4051 (mediadive.medium:4051)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4051 | DSMZ Medium: 4051 (mediadive.medium:4051) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

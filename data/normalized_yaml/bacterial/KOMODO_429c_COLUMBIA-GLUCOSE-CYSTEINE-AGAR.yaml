@@ -1,15 +1,14 @@
 name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
 original_name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429c
   term:
     id: komodo.medium:429c
     label: COLUMBIA-GLUCOSE-CYSTEINE-AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 429c | DSMZ Medium: 429c (mediadive.medium:429c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429c | DSMZ Medium: 429c (mediadive.medium:429c) | Aerobic: No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

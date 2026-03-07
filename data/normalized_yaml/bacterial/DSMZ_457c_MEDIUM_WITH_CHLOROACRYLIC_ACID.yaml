@@ -1,8 +1,8 @@
 name: MEDIUM WITH CHLOROACRYLIC ACID
 original_name: MEDIUM WITH CHLOROACRYLIC ACID
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 457c
   term:
@@ -164,33 +164,29 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare medium 457. Make a stock solution of 4 g/l 3-chloroacrylic
-    acid in water, neutralize and filter sterilize. Add 20 ml of this stock solution
-    to 1 l of autoclaved medium. For better growth, 1 g/l glucose may be supplied
-    additionally or instead of the chloroacrylic acid.
+  description: Prepare medium 457. Make a stock solution of 4 g/l 3-chloroacrylic acid in water, neutralize
+    and filter sterilize. Add 20 ml of this stock solution to 1 l of autoclaved medium. For better growth,
+    1 g/l glucose may be supplied additionally or instead of the chloroacrylic acid.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.9.
 - step_number: 3
   action: AUTOCLAVE
-  description: Prepare a separate solution of the phosphates and autoclave separately.
-    Combine the two solutions after cooling.
+  description: Prepare a separate solution of the phosphates and autoclave separately. Combine the two
+    solutions after cooling.
 - step_number: 4
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium
-    1, 220 or 535). After this reactivation, cultivate in mineral medium 457 with
-    the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium 1, 220 or 535).
+    After this reactivation, cultivate in mineral medium 457 with the appropriate carbon source.
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 6
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
 - step_number: 7
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
 - step_number: 8
   action: MIX
   description: pH 7.3

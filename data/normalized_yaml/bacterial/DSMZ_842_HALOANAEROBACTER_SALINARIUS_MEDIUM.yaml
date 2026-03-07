@@ -1,6 +1,6 @@
 name: HALOANAEROBACTER SALINARIUS MEDIUM
 original_name: HALOANAEROBACTER SALINARIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -200,12 +200,10 @@ preparation_steps:
   description: Final pH 7.2 - 7.4
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without yeast extract, Na2S x 9 H2O, NaHCO3, glucose
-    and vitamin solution (prepared as anaerobic, sterile stock solutions). Boil the
-    medium and cool under anaerobic gas mixture of N2:CO2 (80:20). Dispense medium
-    into Hungate tubes or serum bottles using the same gas mixture. Autoclave. Add
-    the remaining components to the medium once it has cooled and check the final
-    pH.
+  description: Prepare the medium without yeast extract, Na2S x 9 H2O, NaHCO3, glucose and vitamin solution
+    (prepared as anaerobic, sterile stock solutions). Boil the medium and cool under anaerobic gas mixture
+    of N2:CO2 (80:20). Dispense medium into Hungate tubes or serum bottles using the same gas mixture.
+    Autoclave. Add the remaining components to the medium once it has cooled and check the final pH.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.0.

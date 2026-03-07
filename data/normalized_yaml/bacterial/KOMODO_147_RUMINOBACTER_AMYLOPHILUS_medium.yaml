@@ -1,6 +1,6 @@
 name: RUMINOBACTER AMYLOPHILUS medium
 original_name: RUMINOBACTER AMYLOPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:147
     label: RUMINOBACTER AMYLOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 147 | DSMZ Medium: 147 (mediadive.medium:147)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 147 | DSMZ Medium: 147 (mediadive.medium:147) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

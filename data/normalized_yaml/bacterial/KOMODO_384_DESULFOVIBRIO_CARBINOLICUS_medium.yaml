@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO CARBINOLICUS medium
 original_name: DESULFOVIBRIO CARBINOLICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:384
     label: DESULFOVIBRIO CARBINOLICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 384 | DSMZ Medium: 384 (mediadive.medium:384)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 384 | DSMZ Medium: 384 (mediadive.medium:384) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

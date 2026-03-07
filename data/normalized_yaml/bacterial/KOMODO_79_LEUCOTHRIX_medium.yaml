@@ -1,6 +1,6 @@
 name: LEUCOTHRIX medium
 original_name: LEUCOTHRIX medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:79
     label: LEUCOTHRIX medium
-notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 79 | DSMZ Medium: 79 (mediadive.medium:79) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

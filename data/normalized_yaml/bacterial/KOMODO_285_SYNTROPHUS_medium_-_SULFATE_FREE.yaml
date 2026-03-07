@@ -1,6 +1,6 @@
 name: SYNTROPHUS medium - SULFATE FREE
 original_name: SYNTROPHUS medium - SULFATE FREE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:285
     label: SYNTROPHUS medium - SULFATE FREE
-notes: 'Source: KOMODO ModelSEED | ID: 285 | DSMZ Medium: 285 (mediadive.medium:285)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 285 | DSMZ Medium: 285 (mediadive.medium:285) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

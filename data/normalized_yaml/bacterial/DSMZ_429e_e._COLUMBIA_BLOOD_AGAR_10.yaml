@@ -1,8 +1,8 @@
 name: e. COLUMBIA BLOOD AGAR 10%
 original_name: e. COLUMBIA BLOOD AGAR 10%
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 429e
   term:
@@ -62,9 +62,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: STORE
-  description: Columbia agar base supplemented with 10% horse blood. Rehydrate pellets
-    of freeze-dried ampoules in liquid medium 545, 215 or 1 (see below). For rehydration
-    of Helicobacter and Campylobacter spp., use medium 215 (brain heart infusion).
+  description: Columbia agar base supplemented with 10% horse blood. Rehydrate pellets of freeze-dried
+    ampoules in liquid medium 545, 215 or 1 (see below). For rehydration of Helicobacter and Campylobacter
+    spp., use medium 215 (brain heart infusion).
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.3.

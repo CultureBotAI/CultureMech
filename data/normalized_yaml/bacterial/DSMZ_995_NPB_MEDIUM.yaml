@@ -1,8 +1,8 @@
 name: NPB MEDIUM
 original_name: NPB MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 995
@@ -61,10 +61,9 @@ preparation_steps:
   description: For solid medium 15 g of agar is mixed, and autoclaved. pH 7.0.
 - step_number: 2
   action: HEAT
-  description: Inoculate the cells to 5 ml of NPB medium, and incubate at 30°C with
-    shaking (160 strokes per min.). Cell turbidity at 660 nm after 4 days of cultivation
-    will be 0.4-0.5. On NPB agar plate, colony formation is observed after 3-4 days
-    of incubation at 30°C.
+  description: Inoculate the cells to 5 ml of NPB medium, and incubate at 30°C with shaking (160 strokes
+    per min.). Cell turbidity at 660 nm after 4 days of cultivation will be 0.4-0.5. On NPB agar plate,
+    colony formation is observed after 3-4 days of incubation at 30°C.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: TYE MEDIUM
 original_name: TYE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -96,9 +96,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S x 9H2O and adjust pH to 7.0 with 1 N NaOH.
-    Distribute the medium into culture vessels under a N2 gas atmosphere, add Na2S
-    x 9H2O (as a 5% solution), seal with butyl rubber stoppers and autoclave.
+  description: Mix ingredients except Na2S x 9H2O and adjust pH to 7.0 with 1 N NaOH. Distribute the medium
+    into culture vessels under a N2 gas atmosphere, add Na2S x 9H2O (as a 5% solution), seal with butyl
+    rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

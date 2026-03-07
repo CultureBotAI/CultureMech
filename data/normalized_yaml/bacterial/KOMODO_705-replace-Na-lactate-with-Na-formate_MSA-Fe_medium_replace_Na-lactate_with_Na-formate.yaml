@@ -1,6 +1,6 @@
 name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
 original_name: MSA-Fe medium_replace_Na-lactate_with_Na-formate
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:705_replace_Na-lactate_with_Na-formate
     label: MSA-Fe medium_replace_Na-lactate_with_Na-formate
-notes: 'Source: KOMODO ModelSEED | ID: 705_replace_Na-lactate_with_Na-formate | DSMZ
-  Medium: 705 (mediadive.medium:705) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 705_replace_Na-lactate_with_Na-formate | DSMZ Medium: 705 (mediadive.medium:705)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:

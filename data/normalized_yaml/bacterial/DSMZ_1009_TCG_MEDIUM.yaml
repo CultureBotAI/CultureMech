@@ -1,8 +1,8 @@
 name: TCG MEDIUM
 original_name: TCG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1009
   term:
@@ -39,8 +39,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
-    in 1000 ml distilled water.
+  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved in 1000 ml distilled
+    water.
 applications:
 - Microbial cultivation
 curation_history:

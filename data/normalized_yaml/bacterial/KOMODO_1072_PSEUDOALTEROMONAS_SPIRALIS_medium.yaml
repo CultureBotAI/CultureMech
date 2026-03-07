@@ -1,11 +1,11 @@
 name: PSEUDOALTEROMONAS SPIRALIS medium
 original_name: PSEUDOALTEROMONAS SPIRALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
-notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1072 | DSMZ Medium: 1072
-  (mediadive.medium:1072) | Aerobic: No'
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 1072 | DSMZ Medium: 1072 (mediadive.medium:1072)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1072
   term:

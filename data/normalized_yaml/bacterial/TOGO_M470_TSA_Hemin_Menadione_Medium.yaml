@@ -1,8 +1,8 @@
 name: TSA Hemin Menadione Medium
 original_name: TSA Hemin Menadione Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: TRYPTICASE SOY BLOOD AGAR (see Medium [M147])
   concentration:
@@ -28,8 +28,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -37,8 +36,7 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:50385
     label: hemin
@@ -46,8 +44,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -55,8 +52,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:16236
     label: ethanol

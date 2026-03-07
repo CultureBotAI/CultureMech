@@ -1,6 +1,6 @@
 name: MARICAULIS MEDIUM
 original_name: MARICAULIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -46,9 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave and cool the medium. Aseptically add from sterile stock solutions,
-    20 ml 50xPYE and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2 ml 50% glucose
-    per liter of medium.
+  description: Autoclave and cool the medium. Aseptically add from sterile stock solutions, 20 ml 50xPYE
+    and 5 ml 0.2 mg/ml riboflavin (filter sterilised), and 2 ml 50% glucose per liter of medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PYSE medium
 original_name: PYSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1120
     label: PYSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 1120 | DSMZ Medium: 1120 (mediadive.medium:1120)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1120 | DSMZ Medium: 1120 (mediadive.medium:1120) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

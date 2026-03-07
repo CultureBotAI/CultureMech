@@ -1,6 +1,6 @@
 name: ACIDIMICROBIUM MEDIUM
 original_name: ACIDIMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
@@ -53,12 +53,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except yeast extract and adjust pH to 2.0 with
-    H2SO4. After autoclaving add yeast extract from a sterile stock solution.
+  description: Dissolve ingredients except yeast extract and adjust pH to 2.0 with H2SO4. After autoclaving
+    add yeast extract from a sterile stock solution.
 - step_number: 2
   action: ADJUST_PH
-  description: 'Note: For autotrophic growth omit yeast extract and add to the medium
-    13.90 g/l FeSO4 x 7 H2O. Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.'
+  description: 'Note: For autotrophic growth omit yeast extract and add to the medium 13.90 g/l FeSO4
+    x 7 H2O. Adjust medium pH to 1.7 with H2SO4 prior to autoclaving.'
 applications:
 - Microbial cultivation
 curation_history:

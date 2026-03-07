@@ -1,6 +1,6 @@
 name: MIN E - Base (10x)
 original_name: MIN E - Base (10x)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2009
     label: MIN E - Base (10x)
-notes: 'Source: KOMODO ModelSEED | ID: 2009 | DSMZ Medium: 2009 (mediadive.medium:2009)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2009 | DSMZ Medium: 2009 (mediadive.medium:2009) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

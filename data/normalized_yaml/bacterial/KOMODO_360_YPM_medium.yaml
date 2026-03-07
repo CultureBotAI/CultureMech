@@ -1,15 +1,14 @@
 name: YPM medium
 original_name: YPM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 360
   term:
     id: komodo.medium:360
     label: YPM medium
-notes: 'Source: KOMODO ModelSEED | ID: 360 | DSMZ Medium: 360 (mediadive.medium:360)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 360 | DSMZ Medium: 360 (mediadive.medium:360) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

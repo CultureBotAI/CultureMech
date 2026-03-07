@@ -1,6 +1,6 @@
 name: medium FOR ECTOTHIORHODOSPIRA
 original_name: medium FOR ECTOTHIORHODOSPIRA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:253
     label: medium FOR ECTOTHIORHODOSPIRA
-notes: 'Source: KOMODO ModelSEED | ID: 253 | DSMZ Medium: 253 (mediadive.medium:253)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 253 | DSMZ Medium: 253 (mediadive.medium:253) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,6 +1,6 @@
 name: MB MEDIUM FOR METHANOBACTERIUM
 original_name: MB MEDIUM FOR METHANOBACTERIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -214,22 +214,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. After cooling, aseptically and anaerobically add the following
-    solutions (filter-sterilized):'
+  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
+    cooling, aseptically and anaerobically add the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (leave >80% gas phase by
-    volume) under a H2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber stoppers.
-    Finally, add per liter the following solutions from anaerobic stocks (autoclaved
-    and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels (leave >80% gas phase by volume) under a H2-CO2
+    (80:20, v/v) gas mixture, seal with butyl rubber stoppers. Finally, add per liter the following solutions
+    from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PENNASSAY G-THY medium
 original_name: PENNASSAY G-THY medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:542
     label: PENNASSAY G-THY medium
-notes: 'Source: KOMODO ModelSEED | ID: 542 | DSMZ Medium: 542 (mediadive.medium:542)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 542 | DSMZ Medium: 542 (mediadive.medium:542) | Aerobic: No'
 ingredients:
 - preferred_term: Pennassay Broth
   concentration:

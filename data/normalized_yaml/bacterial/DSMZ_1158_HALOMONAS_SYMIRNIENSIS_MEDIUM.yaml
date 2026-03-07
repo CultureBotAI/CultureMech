@@ -1,8 +1,8 @@
 name: HALOMONAS SYMIRNIENSIS MEDIUM
 original_name: HALOMONAS SYMIRNIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
   preferred_term: DSMZ Medium 1158
@@ -54,8 +54,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Minimum NaCl concentration must be 5%. Adjust to pH 6.9. The medium
-    may be solidified by adding 15.0 g/l agar.
+  description: Minimum NaCl concentration must be 5%. Adjust to pH 6.9. The medium may be solidified by
+    adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

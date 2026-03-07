@@ -1,6 +1,6 @@
 name: RPMI medium (supplemented with 2% fetal bovine serum)
 original_name: RPMI medium (supplemented with 2% fetal bovine serum)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:

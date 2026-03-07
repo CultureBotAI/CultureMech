@@ -1,6 +1,6 @@
 name: DEFLUVIITOGA medium
 original_name: DEFLUVIITOGA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1328
     label: DEFLUVIITOGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1328 | DSMZ Medium: 1328 (mediadive.medium:1328)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1328 | DSMZ Medium: 1328 (mediadive.medium:1328) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,15 +1,15 @@
 name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
 original_name: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457_6900_replace_naphthalene_with_3-xylene
   term:
     id: komodo.medium:457_6900_replace_naphthalene_with_3-xylene
     label: MEDIUM 457 MODIFIED FOR DSM 6900_replace_naphthalene_with_3-xylene
-notes: 'Source: KOMODO ModelSEED | ID: 457_6900_replace_naphthalene_with_3-xylene
-  | DSMZ Medium: 457 (mediadive.medium:457) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457_6900_replace_naphthalene_with_3-xylene | DSMZ Medium: 457 (mediadive.medium:457)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

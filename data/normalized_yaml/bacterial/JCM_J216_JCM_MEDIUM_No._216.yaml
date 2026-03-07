@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 216
 original_name: JCM MEDIUM No. 216
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -326,15 +326,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2S x 9H2O, adjust pH to 6.0 with H2SO4. Sterilize
-    by filtration while gassing with H2-CO2 (80:20) gas mixture. Autoclave Na2S x
-    9H2O as a 5% solution under a N2 atmosphere. Prior to inoculation, anaerobically
-    add the sterile Na2S x 9H2O solution, and readjust pH to 6.5 with sterile H2SO4.
-    Pressurize the inoculated bottle to 200 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except Na2S x 9H2O, adjust pH to 6.0 with H2SO4. Sterilize by filtration
+    while gassing with H2-CO2 (80:20) gas mixture. Autoclave Na2S x 9H2O as a 5% solution under a N2 atmosphere.
+    Prior to inoculation, anaerobically add the sterile Na2S x 9H2O solution, and readjust pH to 6.5 with
+    sterile H2SO4. Pressurize the inoculated bottle to 200 kPa H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

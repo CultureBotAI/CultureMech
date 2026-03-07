@@ -1,8 +1,8 @@
 name: VERRUCOMICROBIUM MEDIUM (IG)
 original_name: VERRUCOMICROBIUM MEDIUM (IG)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 1631
@@ -148,13 +148,12 @@ preparation_steps:
   description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx.
-    10 drops/l medium of 6 N KOH).
+  description: Adjust pH to 7.5 (the medium is only weakly buffered; one needs approx. 10 drops/l medium
+    of 6 N KOH).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
-    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
-    water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts. Adjust pH to 7.2 with
+    KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).

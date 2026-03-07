@@ -1,6 +1,6 @@
 name: DESULFOMICROBIUM WHB MEDIUM
 original_name: DESULFOMICROBIUM WHB MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:724
     label: DESULFOMICROBIUM WHB MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 724 | DSMZ Medium: 724 (mediadive.medium:724)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 724 | DSMZ Medium: 724 (mediadive.medium:724) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

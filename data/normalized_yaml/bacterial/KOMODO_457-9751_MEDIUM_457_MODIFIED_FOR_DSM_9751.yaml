@@ -1,15 +1,14 @@
 name: MEDIUM 457 MODIFIED FOR DSM 9751
 original_name: MEDIUM 457 MODIFIED FOR DSM 9751
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457_9751
   term:
     id: komodo.medium:457_9751
     label: MEDIUM 457 MODIFIED FOR DSM 9751
-notes: 'Source: KOMODO ModelSEED | ID: 457_9751 | DSMZ Medium: 457 (mediadive.medium:457)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457_9751 | DSMZ Medium: 457 (mediadive.medium:457) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

@@ -1,6 +1,6 @@
 name: TRYPTONE Yeast extract MINERAL medium
 original_name: TRYPTONE Yeast extract MINERAL medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:230
     label: TRYPTONE Yeast extract MINERAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 230 | DSMZ Medium: 230 (mediadive.medium:230)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 230 | DSMZ Medium: 230 (mediadive.medium:230) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

@@ -1,6 +1,6 @@
 name: CARYOPHANON LATUM medium
 original_name: CARYOPHANON LATUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:34
     label: CARYOPHANON LATUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 34 | DSMZ Medium: 34 (mediadive.medium:34)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 34 | DSMZ Medium: 34 (mediadive.medium:34) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

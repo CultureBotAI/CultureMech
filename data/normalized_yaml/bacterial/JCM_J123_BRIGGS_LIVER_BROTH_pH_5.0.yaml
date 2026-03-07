@@ -1,6 +1,6 @@
 name: BRIGGS LIVER BROTH (pH 5.0)
 original_name: BRIGGS LIVER BROTH (pH 5.0)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -68,8 +68,8 @@ preparation_steps:
   description: Adjust pH to 5.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dilute Tomato juice (Del Monte) with an equal volume of distilled water,
-    adjust pH to 7.0 with 10% NaOH and filter with filter paper.
+  description: Dilute Tomato juice (Del Monte) with an equal volume of distilled water, adjust pH to 7.0
+    with 10% NaOH and filter with filter paper.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: Yeast nitrogen base glucose (YNBG)
 original_name: Yeast nitrogen base glucose (YNBG)
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 4.0
 media_term:
   preferred_term: DSMZ Medium 1682
@@ -37,9 +37,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to
-    4.0 and autoclave. Dissolve 20 g agar in 500 mL distilled water and autoclave.
-    Combine both after autoclavation.
+  description: Dissolve the ingredients in 500 mL distilled water and adjust pH to 4.0 and autoclave.
+    Dissolve 20 g agar in 500 mL distilled water and autoclave. Combine both after autoclavation.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: ANAEROMYXOBACTER-MEDIUM
 original_name: ANAEROMYXOBACTER-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -259,11 +259,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare solutions A, B, and D separately and anaerobically under 80%
-    N2 + 20% CO2 and autoclave. Filter-sterilize solutions C, E and F and outgas with
-    N2. After cooling, add about 1 ml solution B per 10 ml solution A, by this way
-    adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution D, 0.2 ml solution
-    F and 0.05 ml solution E, each per 10 ml solution A.
+  description: Prepare solutions A, B, and D separately and anaerobically under 80% N2 + 20% CO2 and autoclave.
+    Filter-sterilize solutions C, E and F and outgas with N2. After cooling, add about 1 ml solution B
+    per 10 ml solution A, by this way adjusting pH to 7.2. Add 0.2 ml solution C, 0.2 ml solution D, 0.2
+    ml solution F and 0.05 ml solution E, each per 10 ml solution A.
 applications:
 - Microbial cultivation
 curation_history:

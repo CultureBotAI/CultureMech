@@ -1,6 +1,6 @@
 name: MICROLUNATUS medium
 original_name: MICROLUNATUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:776
     label: MICROLUNATUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 776 | DSMZ Medium: 776 (mediadive.medium:776)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 776 | DSMZ Medium: 776 (mediadive.medium:776) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

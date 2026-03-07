@@ -1,8 +1,8 @@
 name: chocolate agar
 original_name: chocolate agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: chocolate agar
   concentration:

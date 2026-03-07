@@ -1,6 +1,6 @@
 name: HALOQUADRATUM WALSBYI MEDIUM
 original_name: HALOQUADRATUM WALSBYI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -101,8 +101,8 @@ preparation_steps:
   description: Final pH 7.4
 - step_number: 3
   action: AUTOCLAVE
-  description: Yeast extract and sodium pyruvate are added from sterile (autoclaved)
-    stock solutions to the respective concentrations.
+  description: Yeast extract and sodium pyruvate are added from sterile (autoclaved) stock solutions to
+    the respective concentrations.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 830a MODIFIED FOR DSM 15637
 original_name: MEDIUM 830a MODIFIED FOR DSM 15637
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:830a_15637
     label: MEDIUM 830a MODIFIED FOR DSM 15637
-notes: 'Source: KOMODO ModelSEED | ID: 830a_15637 | DSMZ Medium: 830a (mediadive.medium:830a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830a_15637 | DSMZ Medium: 830a (mediadive.medium:830a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM SUBMARINUS MEDIUM
 original_name: ACETOBACTERIUM SUBMARINUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -212,20 +212,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except methanol, NaHCO3 and Na2S x 9H2O, bring to a
-    boil and cool down under a stream of N2 gas. Add methanol to the medium and distribute
-    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under
-    a stream of H2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers, and
-    autoclave. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
-    Filer-sterilize 8% NaHCO3 solution and store under a N2-CO2 (4:1, v/v) gas mixture.
-    Before inoculation, add the sterile NaHCO3 and Na2S x 9H2O solutions to the medium,
-    and readjust pH to 7.0, if necessary. Pressurize the inoculated bottles to 200
-    kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except methanol, NaHCO3 and Na2S x 9H2O, bring to a boil and cool down
+    under a stream of N2 gas. Add methanol to the medium and distribute into culture vessels (e.g., 20
+    ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture, seal with
+    butyl rubber stoppers, and autoclave. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
+    Filer-sterilize 8% NaHCO3 solution and store under a N2-CO2 (4:1, v/v) gas mixture. Before inoculation,
+    add the sterile NaHCO3 and Na2S x 9H2O solutions to the medium, and readjust pH to 7.0, if necessary.
+    Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: NMS MEDIUM FOR METHANOTROPHS
 original_name: NMS MEDIUM FOR METHANOTROPHS
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1179
     label: NMS MEDIUM FOR METHANOTROPHS
-notes: 'Source: KOMODO ModelSEED | ID: 1179 | DSMZ Medium: 1179 (mediadive.medium:1179)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1179 | DSMZ Medium: 1179 (mediadive.medium:1179) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

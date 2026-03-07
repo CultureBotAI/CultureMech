@@ -1,15 +1,14 @@
 name: MPYCY Agar Medium
 original_name: MPYCY Agar Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
 - preferred_term: Agar (if necessary)
   concentration:
     value: '12'

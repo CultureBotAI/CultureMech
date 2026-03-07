@@ -1,6 +1,6 @@
 name: STREPTOCOCCUS SUIS MEDIUM
 original_name: STREPTOCOCCUS SUIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -85,8 +85,8 @@ preparation_steps:
   description: After sterilization add 5% bovine serum.
 - step_number: 3
   action: MIX
-  description: For anaerobic handling prepare and distribute into tubes under 100%
-    N2 by using the Hungate technique.
+  description: For anaerobic handling prepare and distribute into tubes under 100% N2 by using the Hungate
+    technique.
 applications:
 - Microbial cultivation
 curation_history:

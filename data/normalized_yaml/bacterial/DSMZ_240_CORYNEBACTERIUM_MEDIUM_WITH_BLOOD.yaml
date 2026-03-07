@@ -1,8 +1,8 @@
 name: CORYNEBACTERIUM MEDIUM WITH BLOOD
 original_name: CORYNEBACTERIUM MEDIUM WITH BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: DSMZ Medium 240
@@ -47,8 +47,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize medium and cool to about 45°C . Aseptically add 5% defibrinated
-    blood.
+  description: Sterilize medium and cool to about 45°C . Aseptically add 5% defibrinated blood.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2 - 7.4.

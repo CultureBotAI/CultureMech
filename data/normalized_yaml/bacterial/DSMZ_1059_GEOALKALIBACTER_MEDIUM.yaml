@@ -1,6 +1,6 @@
 name: GEOALKALIBACTER MEDIUM
 original_name: GEOALKALIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.2
@@ -165,17 +165,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (ecxept carbonate, hydrogencarbonate, sulfur,
-    yeast extract and acetate), then sparge medium with 100% N2 gas for 30 - 45 min
-    to make it anoxic. Add solid carbonate and bicarbonate, adjust pH to 9.0 - 9.2,
-    and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials containing already the appropriate amount of sulfur. Sterilize medium by
-    autoclaving at <b>110°C</b> for 20 min. Add yeast extract and acetate from sterile
-    anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve ingredients (ecxept carbonate, hydrogencarbonate, sulfur, yeast extract and acetate),
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add solid carbonate and bicarbonate,
+    adjust pH to 9.0 - 9.2, and dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
+    serum vials containing already the appropriate amount of sulfur. Sterilize medium by autoclaving at
+    <b>110°C</b> for 20 min. Add yeast extract and acetate from sterile anoxic stock solutions prepared
+    under 100% N2 gas.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

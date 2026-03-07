@@ -1,6 +1,6 @@
 name: ROSEINATRONOBACTER MONICUS medium
 original_name: ROSEINATRONOBACTER MONICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.0-9.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1218
     label: ROSEINATRONOBACTER MONICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1218 | DSMZ Medium: 1218 (mediadive.medium:1218)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1218 | DSMZ Medium: 1218 (mediadive.medium:1218) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

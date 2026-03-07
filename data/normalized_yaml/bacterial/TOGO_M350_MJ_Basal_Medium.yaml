@@ -1,6 +1,6 @@
 name: MJ Basal Medium
 original_name: MJ Basal Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -74,6 +72,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:58.264874'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Oxygen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen gas'

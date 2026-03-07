@@ -1,6 +1,6 @@
 name: DILUTED TRYPTONE SOYA BROTH (TSB)
 original_name: DILUTED TRYPTONE SOYA BROTH (TSB)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -48,10 +48,9 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 3
   action: MIX
-  description: "Note:\r\nThe following brands are used at the DSMZ:\r\nDifco™ Trypton-Soja-Bouillon\
-    \ (Soja-Caseinpepton-Bouillon) BD 211825. \r\nBBL™ Trypticase Soja-Bouillon (Caseinpepton-Soja-Bouillon)\
-    \ BD 211768. \r\nOxoid Tryptone Soy Broth (Casein soya bean digest medium) CM0129\r\
-    \nMerck Tryptic Soy Broth (CASO-Bouillon) 105459"
+  description: "Note:\r\nThe following brands are used at the DSMZ:\r\nDifco™ Trypton-Soja-Bouillon (Soja-Caseinpepton-Bouillon)\
+    \ BD 211825. \r\nBBL™ Trypticase Soja-Bouillon (Caseinpepton-Soja-Bouillon) BD 211768. \r\nOxoid Tryptone\
+    \ Soy Broth (Casein soya bean digest medium) CM0129\r\nMerck Tryptic Soy Broth (CASO-Bouillon) 105459"
 applications:
 - Microbial cultivation
 curation_history:

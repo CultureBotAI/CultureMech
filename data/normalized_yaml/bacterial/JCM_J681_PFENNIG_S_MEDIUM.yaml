@@ -1,6 +1,6 @@
 name: PFENNIG'S MEDIUM
 original_name: PFENNIG'S MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -153,8 +153,8 @@ preparation_steps:
   description: Adjust pH of the medium to 7.2.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

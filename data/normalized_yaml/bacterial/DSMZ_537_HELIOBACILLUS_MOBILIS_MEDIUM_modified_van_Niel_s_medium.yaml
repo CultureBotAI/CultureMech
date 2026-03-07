@@ -1,6 +1,6 @@
 name: HELIOBACILLUS MOBILIS MEDIUM (modified van Niel's medium)
 original_name: HELIOBACILLUS MOBILIS MEDIUM (modified van Niel's medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -102,10 +102,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 6.8. Boil the medium for few minutes. Fill in tubes with
-    rubber stoppers under nitrogen gas. Fill immediately about 45 ml Sterilize at
-    121°C for 15 min. Cool to room temperature and aseptically add the following filter-sterilized
-    solutions.
+  description: Adjust pH to 6.8. Boil the medium for few minutes. Fill in tubes with rubber stoppers under
+    nitrogen gas. Fill immediately about 45 ml Sterilize at 121°C for 15 min. Cool to room temperature
+    and aseptically add the following filter-sterilized solutions.
 applications:
 - Microbial cultivation
 curation_history:

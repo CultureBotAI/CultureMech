@@ -1,15 +1,14 @@
 name: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
 original_name: Mueller Hinton Medium with 10% Rabbit Serum (Agar)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Mueller Hinton Agar (BD 225250)
   concentration:
     value: '38'

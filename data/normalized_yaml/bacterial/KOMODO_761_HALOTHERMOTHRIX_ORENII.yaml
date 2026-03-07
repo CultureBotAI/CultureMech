@@ -1,6 +1,6 @@
 name: HALOTHERMOTHRIX ORENII
 original_name: HALOTHERMOTHRIX ORENII
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:761
     label: HALOTHERMOTHRIX ORENII
-notes: 'Source: KOMODO ModelSEED | ID: 761 | DSMZ Medium: 761 (mediadive.medium:761)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 761 | DSMZ Medium: 761 (mediadive.medium:761) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

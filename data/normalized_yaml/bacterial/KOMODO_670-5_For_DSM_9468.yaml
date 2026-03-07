@@ -1,6 +1,6 @@
 name: For DSM 9468
 original_name: For DSM 9468
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.6
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:670.5
     label: For DSM 9468
-notes: 'Source: KOMODO ModelSEED | ID: 670.5 | DSMZ Medium: 670 (mediadive.medium:670)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 670.5 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

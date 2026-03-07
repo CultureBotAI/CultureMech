@@ -1,6 +1,6 @@
 name: AN1 MEDIUM
 original_name: AN1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -59,9 +59,8 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: MIX
-  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate
-    and sulfur separately. Sterilize the sulfur by steaming for 3 h on each of three
-    successive days.
+  description: Prepare the medium anaerobically under 100% nitrogen. Sterilize thioglycolate and sulfur
+    separately. Sterilize the sulfur by steaming for 3 h on each of three successive days.
 applications:
 - Microbial cultivation
 curation_history:

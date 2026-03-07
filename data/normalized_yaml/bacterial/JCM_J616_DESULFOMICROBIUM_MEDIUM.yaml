@@ -1,6 +1,6 @@
 name: DESULFOMICROBIUM MEDIUM
 original_name: DESULFOMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.1
@@ -186,12 +186,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and autoclave. Cool under a N2-CO2 gas mixture (4:1,
-    v/v) and add the following solutions from sterile stocks:'
+  description: 'Mix ingredients and autoclave. Cool under a N2-CO2 gas mixture (4:1, v/v) and add the
+    following solutions from sterile stocks:'
 - step_number: 2
   action: ADJUST_PH
-  description: Distribute the medium into culture vessels under the same gas mixture
-    and seal with butyl rubber stoppers. Adjust pH to 7.0 - 7.2, if necessary.
+  description: Distribute the medium into culture vessels under the same gas mixture and seal with butyl
+    rubber stoppers. Adjust pH to 7.0 - 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

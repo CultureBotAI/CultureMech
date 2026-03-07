@@ -1,6 +1,6 @@
 name: MMJ-HO MEDIUM
 original_name: MMJ-HO MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -175,11 +175,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3 and sulfur, adjust pH to 7.0 with NaOH
-    and autoclave under a N2 atmosphere. Filter-sterilize 8% NaHCO3 solution and add
-    to the medium. Steam sulfur for 3 hr on each of 3 successive days. Distribute
-    the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) containing
-    sulfur under a stream of a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
+  description: Mix ingredients except NaHCO3 and sulfur, adjust pH to 7.0 with NaOH and autoclave under
+    a N2 atmosphere. Filter-sterilize 8% NaHCO3 solution and add to the medium. Steam sulfur for 3 hr
+    on each of 3 successive days. Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum
+    bottles) containing sulfur under a stream of a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
     stoppers. Pressurize the inoculated bottles to 200 kPa N2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation

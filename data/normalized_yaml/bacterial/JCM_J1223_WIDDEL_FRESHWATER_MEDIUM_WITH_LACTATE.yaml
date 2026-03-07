@@ -1,6 +1,6 @@
 name: WIDDEL FRESHWATER MEDIUM WITH LACTATE
 original_name: WIDDEL FRESHWATER MEDIUM WITH LACTATE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -218,20 +218,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 7.5 and autoclave under a N2 gas atmosphere.
-    After cooling, add the following solutions from sterile anaerobic stocks (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components, adjust pH to 7.5 and autoclave under a N2 gas atmosphere. After cooling,
+    add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Readjust pH to 7.5, if necessary. Separately autoclave and dry iron
-    metal (grain). Aseptically distribute the medium and iron metal into culture vessels
-    (e.g., 10 ml medium and 100 mg iron in Hungate tubes) under a N2 gas stream and
-    seal with butyl rubber stoppers. Prior to use, add per liter the following solution:'
+  description: 'Readjust pH to 7.5, if necessary. Separately autoclave and dry iron metal (grain). Aseptically
+    distribute the medium and iron metal into culture vessels (e.g., 10 ml medium and 100 mg iron in Hungate
+    tubes) under a N2 gas stream and seal with butyl rubber stoppers. Prior to use, add per liter the
+    following solution:'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

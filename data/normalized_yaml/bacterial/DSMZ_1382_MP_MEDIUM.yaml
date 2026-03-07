@@ -1,6 +1,6 @@
 name: MP MEDIUM
 original_name: MP MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5-6.5
@@ -112,8 +112,7 @@ preparation_steps:
   description: Adjust pH to 5.0-6.5
 - step_number: 2
   action: MIX
-  description: Hungate tubes are filled with medium by 2/3 of the total volume (e.g.,
-    10 ml in 15 ml tubes).
+  description: Hungate tubes are filled with medium by 2/3 of the total volume (e.g., 10 ml in 15 ml tubes).
 - step_number: 3
   action: HEAT
   description: Sterilize at 121°C for 15 minutes.

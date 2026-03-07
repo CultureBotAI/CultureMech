@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
 original_name: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465a
   term:
     id: komodo.medium:465a
     label: MINERAL MEDIUM WITH 2-HYDROXYBIPHENYL
-notes: 'Source: KOMODO ModelSEED | ID: 465a | DSMZ Medium: 465a (mediadive.medium:465a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465a | DSMZ Medium: 465a (mediadive.medium:465a) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

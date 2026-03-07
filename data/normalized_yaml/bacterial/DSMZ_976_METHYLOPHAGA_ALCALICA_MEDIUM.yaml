@@ -1,8 +1,8 @@
 name: METHYLOPHAGA ALCALICA MEDIUM
 original_name: METHYLOPHAGA ALCALICA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.5
 media_term:
   preferred_term: DSMZ Medium 976
@@ -99,11 +99,11 @@ preparation_steps:
   description: Final pH 9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2CO3, which can be sterilised separately
-    by autoclaving. 10 ml/l sterile methanol is added to the cooled medium. When preparing
-    liquid media cool the mineral salts solution and Na2CO3 to room temperature before
-    mixing. When preparing agar add 2.0 % agar to the mineral salts solution and autoclave.
-    Cool the Na2CO3 stock solution and agar to 50-55°C before mixing.
+  description: Prepare the medium without the Na2CO3, which can be sterilised separately by autoclaving.
+    10 ml/l sterile methanol is added to the cooled medium. When preparing liquid media cool the mineral
+    salts solution and Na2CO3 to room temperature before mixing. When preparing agar add 2.0 % agar to
+    the mineral salts solution and autoclave. Cool the Na2CO3 stock solution and agar to 50-55°C before
+    mixing.
 applications:
 - Microbial cultivation
 curation_history:

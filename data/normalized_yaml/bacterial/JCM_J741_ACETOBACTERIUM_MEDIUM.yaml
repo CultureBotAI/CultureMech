@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM MEDIUM
 original_name: ACETOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -246,17 +246,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except NaHCO3, fructose, cysteine and sodium sulfide,
-    bring to a boil for a few minutes and cool to room temperature under a N2-CO2
-    (80:20, v/v) gas mixture. Add NaHCO3 (solid) and equilibrate the medium with the
-    gas until pH reaches ca. 7.4. Then distribute and autoclave under the same gas
-    atmosphere. Before use, adjust pH to 8.2 by adding sterile anaerobic Na2CO3 solution
-    (ca. 0.25 ml of 5% Na2CO3 per 10 ml medium) and add fructose, cysteine and sodium
-    sulfide from anaerobic sterile stock solutions.
+  description: Dissolve ingredients except NaHCO3, fructose, cysteine and sodium sulfide, bring to a boil
+    for a few minutes and cool to room temperature under a N2-CO2 (80:20, v/v) gas mixture. Add NaHCO3
+    (solid) and equilibrate the medium with the gas until pH reaches ca. 7.4. Then distribute and autoclave
+    under the same gas atmosphere. Before use, adjust pH to 8.2 by adding sterile anaerobic Na2CO3 solution
+    (ca. 0.25 ml of 5% Na2CO3 per 10 ml medium) and add fructose, cysteine and sodium sulfide from anaerobic
+    sterile stock solutions.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH,
-    then add the remaining minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH, then add the remaining
+    minerals.
 - step_number: 3
   action: MIX
   description: Adjust final pH of the medium to 7.0 with KOH.

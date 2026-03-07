@@ -1,6 +1,6 @@
 name: PROPIONISPORA MEDIUM
 original_name: PROPIONISPORA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:503c
     label: PROPIONISPORA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 503c | DSMZ Medium: 503c (mediadive.medium:503c)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503c | DSMZ Medium: 503c (mediadive.medium:503c) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

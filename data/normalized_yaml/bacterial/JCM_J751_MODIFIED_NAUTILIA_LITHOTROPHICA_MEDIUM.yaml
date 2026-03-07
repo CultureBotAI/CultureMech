@@ -1,6 +1,6 @@
 name: MODIFIED NAUTILIA LITHOTROPHICA MEDIUM
 original_name: MODIFIED NAUTILIA LITHOTROPHICA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -204,19 +204,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, adjust pH to 6.8 and autoclave under
-    a N2-CO2 (4:1, v/v) atmosphere. Distribute medium into culture vessels (e.g.,
-    18 ml in 100 ml serum bottles) containing appropriate amount of sulfur under a
-    N2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers. Aseptically
-    and anaerobically add the following solutions (autoclaved or *filter-sterilized)
-    to the above described basal medium (900 ml):'
+  description: 'Mix components except sulfur, adjust pH to 6.8 and autoclave under a N2-CO2 (4:1, v/v)
+    atmosphere. Distribute medium into culture vessels (e.g., 18 ml in 100 ml serum bottles) containing
+    appropriate amount of sulfur under a N2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers.
+    Aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized) to the
+    above described basal medium (900 ml):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 6.8, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

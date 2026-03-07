@@ -1,6 +1,6 @@
 name: PC
 original_name: PC
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -48,21 +48,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Using aseptic technique, make up to 1 litre with sterile deionized\
-    \ water. It may be necessary\r\nto decant supernatant from precipitate in final\
-    \ medium."
+  description: "Using aseptic technique, make up to 1 litre with sterile deionized water. It may be necessary\r\
+    \nto decant supernatant from precipitate in final medium."
 - step_number: 2
   action: FILTER_STERILIZE
-  description: "Alternatively, after autoclaving, it might be necessary to filter\
-    \ through 0.2 micron filter\r\n(removes precipitates etc)."
+  description: "Alternatively, after autoclaving, it might be necessary to filter through 0.2 micron filter\r\
+    \n(removes precipitates etc)."
 - step_number: 3
   action: AUTOCLAVE
-  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
-    \ 10 ml aliquots\r\nand freeze."
+  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into 10 ml aliquots\r\n\
+    and freeze."
 - step_number: 4
   action: AUTOCLAVE
-  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into\
-    \ 10 ml aliquots\r\nand freeze."
+  description: "Autoclave at 15 psi for 15 minutes. Dispense any excess stocks into 10 ml aliquots\r\n\
+    and freeze."
 applications:
 - Microbial cultivation
 curation_history:

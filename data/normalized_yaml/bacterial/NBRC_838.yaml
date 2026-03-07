@@ -1,24 +1,19 @@
 name: '838'
 original_name: '838'
-category: imported
+category: bacterial
 description: 838. NBRC 837.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "KH2PO40.75gK2HPO40.75gMgCl2\xB76H2O0.36gNH4Cl1gBacto Yeast Extract\
-    \ (Difco)0.1gHipolypepton*0.1gSodium acetate2.5gTrimethylamine-HCl8gTrace mineral\
-    \ solution**9mlTrace vitamins***10mlNaHCO30.8gNa2S\xB79H2O0.5gCysteine-HCl0.5gResazurin1mgDistilled\
-    \ water981mlMix ingredients except trace vitamins, Na2S\xB79H2O and cysteine-HCl,\
-    \ and autoclave under a N2/CO2(80/20) atmosphere. Separately autoclave Na2S\xB7\
-    9H2O and cysteine-HCl as 5% solutions under a N2atmosphere. Aseptically and anaerobically\
-    \ add filter-sterile vitamin solution to the medium. Prior to inoculation, add\
-    \ the sterile Na2S\xB79H2O and cysteine-HCl solutions, and adjust pH to 6.8.*Wako\
-    \ Pure Chemicals Ind. Ltd., Osaka, Japan.**Trace mineral solutionNitrilotriacetic\
-    \ acid4.5gFeCl2\xB74H2O0.4gMnCl2\xB74H2O0.1gCoCl2\xB76H2O0.17gZnCl20.1gCaCl2\xB7\
-    2H2O0.02gH3BO30.019gNa2MoO4\xB72H2O0.01gNiCl2\xB76H2O0.03gDistilled water1LAdjust\
-    \ pH to 7.0 with 1 N KOH***Trace vitaminsBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
-    \ acid5mgCa-pantothenate5mgVitamin B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled\
-    \ water1L"
+- preferred_term: KH2PO40.75gK2HPO40.75gMgCl2·6H2O0.36gNH4Cl1gBacto Yeast Extract (Difco)0.1gHipolypepton*0.1gSodium
+    acetate2.5gTrimethylamine-HCl8gTrace mineral solution**9mlTrace vitamins***10mlNaHCO30.8gNa2S·9H2O0.5gCysteine-HCl0.5gResazurin1mgDistilled
+    water981mlMix ingredients except trace vitamins, Na2S·9H2O and cysteine-HCl, and autoclave under a
+    N2/CO2(80/20) atmosphere. Separately autoclave Na2S·9H2O and cysteine-HCl as 5% solutions under a
+    N2atmosphere. Aseptically and anaerobically add filter-sterile vitamin solution to the medium. Prior
+    to inoculation, add the sterile Na2S·9H2O and cysteine-HCl solutions, and adjust pH to 6.8.*Wako Pure
+    Chemicals Ind. Ltd., Osaka, Japan.**Trace mineral solutionNitrilotriacetic acid4.5gFeCl2·4H2O0.4gMnCl2·4H2O0.1gCoCl2·6H2O0.17gZnCl20.1gCaCl2·2H2O0.02gH3BO30.019gNa2MoO4·2H2O0.01gNiCl2·6H2O0.03gDistilled
+    water1LAdjust pH to 7.0 with 1 N KOH***Trace vitaminsBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
+    acid5mgCa-pantothenate5mgVitamin B120.1mgp-Aminobenzoic acid5mgLipoic acid5mgDistilled water1L
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -29,7 +24,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -65,7 +60,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -117,7 +112,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -153,7 +148,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

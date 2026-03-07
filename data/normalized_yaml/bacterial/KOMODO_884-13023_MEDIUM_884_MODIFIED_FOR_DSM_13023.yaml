@@ -1,15 +1,15 @@
 name: MEDIUM 884 MODIFIED FOR DSM 13023
 original_name: MEDIUM 884 MODIFIED FOR DSM 13023
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 884_13023
   term:
     id: komodo.medium:884_13023
     label: MEDIUM 884 MODIFIED FOR DSM 13023
-notes: 'Source: KOMODO ModelSEED | ID: 884_13023 | DSMZ Medium: 884 (mediadive.medium:884)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 884_13023 | DSMZ Medium: 884 (mediadive.medium:884) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Peptone
   concentration:

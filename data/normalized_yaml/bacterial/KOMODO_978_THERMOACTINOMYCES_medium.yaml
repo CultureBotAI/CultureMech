@@ -1,16 +1,15 @@
 name: THERMOACTINOMYCES medium
 original_name: THERMOACTINOMYCES medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 978
   term:
     id: komodo.medium:978
     label: THERMOACTINOMYCES medium
-notes: 'Source: KOMODO ModelSEED | ID: 978 | DSMZ Medium: 978 (mediadive.medium:978)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 978 | DSMZ Medium: 978 (mediadive.medium:978) | Aerobic: No'
 ingredients:
 - preferred_term: L-Asparagine
   term:
@@ -129,5 +128,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.161578Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

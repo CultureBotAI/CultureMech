@@ -1,15 +1,14 @@
 name: MEDIUM 473 MODIFIED FOR DSM 6780
 original_name: MEDIUM 473 MODIFIED FOR DSM 6780
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 473_6780
   term:
     id: komodo.medium:473_6780
     label: MEDIUM 473 MODIFIED FOR DSM 6780
-notes: 'Source: KOMODO ModelSEED | ID: 473_6780 | DSMZ Medium: 473 (mediadive.medium:473)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 473_6780 | DSMZ Medium: 473 (mediadive.medium:473) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

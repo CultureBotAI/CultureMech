@@ -1,6 +1,6 @@
 name: HALANAEROBIUM HYDROGENIFORMANS MEDIUM
 original_name: HALANAEROBIUM HYDROGENIFORMANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -189,19 +189,17 @@ preparation_steps:
   description: 'Solution B:'
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Autoclave solutions A and B, separately, under a N2 gas atmosphere.
-    After cooling, combine both solutions and add the following solution (autoclaved
-    and stored under N2):'
+  description: 'Autoclave solutions A and B, separately, under a N2 gas atmosphere. After cooling, combine
+    both solutions and add the following solution (autoclaved and stored under N2):'
 - step_number: 4
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically, distribute the medium into culture
-    vessels (e.g., 10 ml in Balch type tubes) under a N2 gas stream and seal with
-    butyl rubber stoppers. Finally, add per liter the following solutions (autoclaved
-    and stored under N2):'
+  description: 'Aseptically and anaerobically, distribute the medium into culture vessels (e.g., 10 ml
+    in Balch type tubes) under a N2 gas stream and seal with butyl rubber stoppers. Finally, add per liter
+    the following solutions (autoclaved and stored under N2):'
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

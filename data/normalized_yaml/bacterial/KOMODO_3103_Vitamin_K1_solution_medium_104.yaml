@@ -1,6 +1,6 @@
 name: Vitamin K1 solution (medium 104)
 original_name: Vitamin K1 solution (medium 104)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3103
     label: Vitamin K1 solution (medium 104)
-notes: 'Source: KOMODO ModelSEED | ID: 3103 | DSMZ Medium: 3103 (mediadive.medium:3103)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3103 | DSMZ Medium: 3103 (mediadive.medium:3103) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

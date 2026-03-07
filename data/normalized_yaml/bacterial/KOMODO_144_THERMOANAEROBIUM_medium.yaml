@@ -1,6 +1,6 @@
 name: THERMOANAEROBIUM medium
 original_name: THERMOANAEROBIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:144
     label: THERMOANAEROBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 144 | DSMZ Medium: 144 (mediadive.medium:144)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 144 | DSMZ Medium: 144 (mediadive.medium:144) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -245,5 +244,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.608608Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

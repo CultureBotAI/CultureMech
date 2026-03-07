@@ -1,34 +1,30 @@
 name: '393'
 original_name: '393'
-category: imported
+category: bacterial
 description: 393. NBRC 392.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "KCl0.34gMgCl2\xB76H2O4gMgSO4\xB77H2O3.45gNH4Cl0.25gCaCl2\xB72H2O0.14gK2HPO40.14gNaCl18gNaHCO33gBacto\
-    \ Yeast Extract (Difco)0.5gSodium lactate1.5gFe(NH4)2(SO4)2\xB77H2O2mgTrace element\
-    \ solution*10mlResazurin1mgNa2S\xB79H2O0.5gDistilled water1LDissolve ingredients\
-    \ except bicarbonate and sulfide, bring to boil for few minutes, then cool quickly\
-    \ to room temperature while gassing with N2/CO2(80/20), add sodium bicarbonate\
-    \ and adjust pH to 6.9. Distribute in serum bottles (20 ml per 100 ml bottle)\
-    \ under N2/CO2, seal, pressurize bottles up to 2 bar overpressure, then autoclave.\
-    \ Before use, reduce the medium with sodium sulfide from anaerobic sterile neutral\
-    \ stock solution.*Trace element solutionNitrilotriacetic acid1.5gMgSO4\xB77H2O3gMnSO4\xB7\
-    2H2O0.5gNaCl1gFeSO4\xB77H2O0.1gCoSO4\xB77H2O0.18gCaCl2\xB72H2O0.1gZnSO4\xB77H2O0.18gCuSO4\xB7\
-    5H2O0.01gKAl(SO4)2\xB712H2O4mgH3BO30.01gNa2MoO4\xB72H2O0.01gNiCl2\xB76H2O0.025gNa2SeO3\xB7\
-    5H2O0.8mgNa2WO4\xB7H2O0.8mgDistilled water1LFirst dissolve nitrilotriacetic acid\
-    \ and adjust pH to 6.5 with KOH, then add minerals. Final pH 7.0 (with KOH)."
+- preferred_term: KCl0.34gMgCl2·6H2O4gMgSO4·7H2O3.45gNH4Cl0.25gCaCl2·2H2O0.14gK2HPO40.14gNaCl18gNaHCO33gBacto
+    Yeast Extract (Difco)0.5gSodium lactate1.5gFe(NH4)2(SO4)2·7H2O2mgTrace element solution*10mlResazurin1mgNa2S·9H2O0.5gDistilled
+    water1LDissolve ingredients except bicarbonate and sulfide, bring to boil for few minutes, then cool
+    quickly to room temperature while gassing with N2/CO2(80/20), add sodium bicarbonate and adjust pH
+    to 6.9. Distribute in serum bottles (20 ml per 100 ml bottle) under N2/CO2, seal, pressurize bottles
+    up to 2 bar overpressure, then autoclave. Before use, reduce the medium with sodium sulfide from anaerobic
+    sterile neutral stock solution.*Trace element solutionNitrilotriacetic acid1.5gMgSO4·7H2O3gMnSO4·2H2O0.5gNaCl1gFeSO4·7H2O0.1gCoSO4·7H2O0.18gCaCl2·2H2O0.1gZnSO4·7H2O0.18gCuSO4·5H2O0.01gKAl(SO4)2·12H2O4mgH3BO30.01gNa2MoO4·2H2O0.01gNiCl2·6H2O0.025gNa2SeO3·5H2O0.8mgNa2WO4·H2O0.8mgDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals. Final
+    pH 7.0 (with KOH).
 - preferred_term: ''
   concentration:
     value: KCl
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -36,7 +32,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -60,7 +56,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Fe(NH4)2(SO4)2\xB77H2O"
+    value: Fe(NH4)2(SO4)2·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -72,7 +68,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -100,11 +96,11 @@ ingredients:
 - preferred_term: ''
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -112,7 +108,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -136,7 +132,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Fe(NH4)2(SO4)2\xB77H2O"
+    value: Fe(NH4)2(SO4)2·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -148,7 +144,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

@@ -1,6 +1,6 @@
 name: Cytophaga Hutchinsonii Medium
 original_name: Cytophaga Hutchinsonii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '1.36'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate

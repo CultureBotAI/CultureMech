@@ -1,6 +1,6 @@
 name: AN1 medium
 original_name: AN1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:376
     label: AN1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 376 | DSMZ Medium: 376 (mediadive.medium:376)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 376 | DSMZ Medium: 376 (mediadive.medium:376) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase
   concentration:

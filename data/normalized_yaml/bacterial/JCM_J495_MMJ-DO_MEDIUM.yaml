@@ -1,6 +1,6 @@
 name: MMJ-DO MEDIUM
 original_name: MMJ-DO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -123,9 +123,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, adjust pH to 7.0 with NaOH and autoclave
-    under a H2-CO2 (4:1, v/v) gas mixture. Filter-sterilize 8% NaHCO3 solution and
-    add to the medium. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except NaHCO3, adjust pH to 7.0 with NaOH and autoclave under a H2-CO2
+    (4:1, v/v) gas mixture. Filter-sterilize 8% NaHCO3 solution and add to the medium. Pressurize the
+    inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

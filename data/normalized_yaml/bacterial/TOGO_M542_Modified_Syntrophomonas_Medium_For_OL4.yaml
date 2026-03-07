@@ -1,6 +1,6 @@
 name: Modified Syntrophomonas Medium For OL4
 original_name: Modified Syntrophomonas Medium For OL4
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: L--cysteine・HCl・H2O
   concentration:
     value: '0.3'
@@ -42,8 +41,7 @@ ingredients:
   concentration:
     value: '745'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -51,8 +49,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
-    component, Organic compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -60,8 +58,7 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -95,8 +92,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -104,8 +100,7 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:81860
     label: Sodium oleate
@@ -133,6 +128,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.333395'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: N2; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: N2; Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'

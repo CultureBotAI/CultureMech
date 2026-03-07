@@ -1,6 +1,6 @@
 name: CYCLONATRUM PROTEILYTICUM MEDIUM
 original_name: CYCLONATRUM PROTEILYTICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -183,9 +183,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 9.5 with HCl and autoclave. After cooling, aseptically add per liter the
-    following solutions (autoclaved or *filter-sterilized):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust pH to 9.5 with HCl
+    and autoclave. After cooling, aseptically add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.6.

@@ -1,15 +1,14 @@
 name: Potato solid medium
 original_name: Potato solid medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
-  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Inorganic
-    compound, Simple component'
+  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -26,8 +25,7 @@ ingredients:
   concentration:
     value: '1.5'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -35,8 +33,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

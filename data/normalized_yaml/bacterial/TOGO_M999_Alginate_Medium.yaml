@@ -1,6 +1,6 @@
 name: Alginate Medium
 original_name: Alginate Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,20 +16,17 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: K2HPO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -38,8 +34,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -47,20 +42,17 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: Sodium alginate
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solidifying component; Properties: Simple component, Organic compound,
-    Defined component'
+  notes: 'Role: Solidifying component; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:53311
     label: Sodium alginate
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride

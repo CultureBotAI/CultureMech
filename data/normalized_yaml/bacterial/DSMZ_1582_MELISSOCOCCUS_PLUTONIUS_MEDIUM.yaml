@@ -1,6 +1,6 @@
 name: MELISSOCOCCUS PLUTONIUS MEDIUM
 original_name: MELISSOCOCCUS PLUTONIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.6
@@ -46,8 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.6 with NaOH. Boil medium and cool under N2, distribute
-    under N2 and sterilize by autoclaving at 121°C for 20 minutes.
+  description: Adjust pH to 6.6 with NaOH. Boil medium and cool under N2, distribute under N2 and sterilize
+    by autoclaving at 121°C for 20 minutes.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: MY10-12 medium
 original_name: MY10-12 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 982
   term:
     id: komodo.medium:982
     label: MY10-12 medium
-notes: 'Source: KOMODO ModelSEED | ID: 982 | DSMZ Medium: 982 (mediadive.medium:982)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 982 | DSMZ Medium: 982 (mediadive.medium:982) | Aerobic: No'
 ingredients:
 - preferred_term: Malt extract
   concentration:

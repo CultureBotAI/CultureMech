@@ -1,6 +1,6 @@
 name: THERMOTOGA MEDIUM
 original_name: THERMOTOGA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -211,14 +211,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except Na2S x 9H2O, adjust pH to 6.5 and autoclave under
-    a N2 atmosphere. Separately autoclave a 5% Na2S x 9H2O solution (pH 7.0) under
-    a N2 atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O solution to
-    the medium.
+  description: Mix components except Na2S x 9H2O, adjust pH to 6.5 and autoclave under a N2 atmosphere.
+    Separately autoclave a 5% Na2S x 9H2O solution (pH 7.0) under a N2 atmosphere. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution to the medium.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

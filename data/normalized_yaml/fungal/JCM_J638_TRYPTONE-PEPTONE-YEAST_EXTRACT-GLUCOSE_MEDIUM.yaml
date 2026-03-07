@@ -1,6 +1,6 @@
 name: TRYPTONE-PEPTONE-YEAST EXTRACT-GLUCOSE MEDIUM
 original_name: TRYPTONE-PEPTONE-YEAST EXTRACT-GLUCOSE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -82,10 +82,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except L-cysteine x HCl x H2O and adjust pH to 6.9.
-    Bring to a boil and cool down under a N2 gas and add L-cysteine x HCl x H2O. Distribute
-    the medium anaerobically into culture vessels, seal with butyl rubber stoppers
-    and autoclave.
+  description: Mix components except L-cysteine x HCl x H2O and adjust pH to 6.9. Bring to a boil and
+    cool down under a N2 gas and add L-cysteine x HCl x H2O. Distribute the medium anaerobically into
+    culture vessels, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

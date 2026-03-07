@@ -1,6 +1,6 @@
 name: ACIDOLOBUS ACETICUS MEDIUM
 original_name: ACIDOLOBUS ACETICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 3.5-3.8
@@ -201,25 +201,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide.
-    Adjust pH to 3.5 with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min
-    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials containing the appropriate amount of sulfur. Heat vessels
-    containing medium to 90°C for 1 hour on each of 3 succesive days. Add yeast extract,
-    vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized
-    before use (see medium 29). The pH of the complete medium should be at 3.5 - 3.8.
+  description: Dissolve ingredients except sulfur, yeast extract, vitamins and sulfide. Adjust pH to 3.5
+    with H2SO4 and sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials containing the appropriate
+    amount of sulfur. Heat vessels containing medium to 90°C for 1 hour on each of 3 succesive days. Add
+    yeast extract, vitamins (sterilized by filtration) and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The sulfide stock solution (3% w/v) should be neutralized before use (see
+    medium 29). The pH of the complete medium should be at 3.5 - 3.8.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -230,5 +228,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.618396Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

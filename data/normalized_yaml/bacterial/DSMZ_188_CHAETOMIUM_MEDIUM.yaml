@@ -1,8 +1,8 @@
 name: CHAETOMIUM MEDIUM
 original_name: CHAETOMIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 188
@@ -68,8 +68,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar
-    and inoculate on filter strip.
+  description: Adjust pH to 7.2. Place a strip of sterile filter paper on cooled agar and inoculate on
+    filter strip.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM BS MEDIUM
 original_name: DESULFOTOMACULUM BS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -252,11 +252,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 with KOH, distribute the
-    medium into culture vessels (e.g., 9.4 ml in Balch tubes) under a N2-CO2 (4:1,
-    v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
-    aseptically and anaerobically add the following solutions (per 9.4 ml medium,
-    autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 with KOH, distribute the medium into culture
+    vessels (e.g., 9.4 ml in Balch tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
+    stoppers and autoclave. After cooling, aseptically and anaerobically add the following solutions (per
+    9.4 ml medium, autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

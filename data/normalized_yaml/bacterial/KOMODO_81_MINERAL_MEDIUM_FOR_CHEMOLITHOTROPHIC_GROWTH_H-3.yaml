@@ -1,16 +1,15 @@
 name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
 original_name: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: KOMODO Medium 81
   term:
     id: komodo.medium:81
     label: MINERAL MEDIUM FOR CHEMOLITHOTROPHIC GROWTH (H-3)
-notes: 'Source: KOMODO ModelSEED | ID: 81 | DSMZ Medium: 81 (mediadive.medium:81)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 81 | DSMZ Medium: 81 (mediadive.medium:81) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

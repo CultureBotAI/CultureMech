@@ -1,6 +1,6 @@
 name: FILOBACILLUS MILOSENSIS medium
 original_name: FILOBACILLUS MILOSENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:607a
     label: FILOBACILLUS MILOSENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 607a | DSMZ Medium: 607a (mediadive.medium:607a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 607a | DSMZ Medium: 607a (mediadive.medium:607a) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

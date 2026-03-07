@@ -1,15 +1,14 @@
 name: Lactobacillus Medium III
 original_name: Lactobacillus Medium III
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -32,8 +29,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -41,8 +37,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: Sodium acetate
   concentration:
     value: '20'
@@ -55,8 +50,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Surfactant; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -64,14 +58,12 @@ ingredients:
   concentration:
     value: '7.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Ethanol
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Solvating media; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:16236
     label: ethanol
@@ -79,14 +71,12 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

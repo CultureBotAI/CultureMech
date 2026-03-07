@@ -1,12 +1,11 @@
 name: '296'
 original_name: '296'
-category: imported
+category: bacterial
 description: 296. NBRC 294.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Bacto Yeast Extract (Difco)5gDistilled water1LAdjust pH to 5.0 with
-    1 N HCl
+- preferred_term: Bacto Yeast Extract (Difco)5gDistilled water1LAdjust pH to 5.0 with 1 N HCl
 - preferred_term: ''
   concentration:
     value: Bacto Yeast Extract (Difco)

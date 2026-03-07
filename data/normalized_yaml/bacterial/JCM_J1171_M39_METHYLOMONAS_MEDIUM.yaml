@@ -1,6 +1,6 @@
 name: M39 METHYLOMONAS MEDIUM
 original_name: M39 METHYLOMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -246,14 +246,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0
-    g/L agarose. Autoclave and, after cooling to 60C, add the following solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0 g/L agarose. Autoclave
+    and, after cooling to 60C, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 6.5 - 7.0 with 0.2 N H2SO4 solution (autoclaved). Cultivate
-    under an air containing 10% (v/v) methane in gas tight flasks or jars leaving
-    &; 80% gas phase by volume.
+  description: Adjust pH to 6.5 - 7.0 with 0.2 N H2SO4 solution (autoclaved). Cultivate under an air containing
+    10% (v/v) methane in gas tight flasks or jars leaving &; 80% gas phase by volume.
 - step_number: 3
   action: MIX
   description: 'Trace element solution:'

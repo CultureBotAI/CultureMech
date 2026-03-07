@@ -1,8 +1,8 @@
 name: THERMUS MEDIUM
 original_name: THERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.2
 media_term:
   preferred_term: DSMZ Medium 1033
@@ -127,12 +127,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH to 8.0
-    with 1 M NaOH.
+  description: Dissolve the nitrilotriacetic acid (C6H9NO6), adjust the pH to 8.0 with 1 M NaOH.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve the remaining ingredients in the nitrilotriacetic acid solution
-    and adjust to pH 8.2 with 1 M NaOH.
+  description: Dissolve the remaining ingredients in the nitrilotriacetic acid solution and adjust to
+    pH 8.2 with 1 M NaOH.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121° C for 15 minutes.

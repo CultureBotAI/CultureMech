@@ -1,12 +1,11 @@
 name: '229'
 original_name: '229'
-category: imported
+category: bacterial
 description: 229. NBRC 228.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH
-    7.3
+- preferred_term: Yeast extract1gBeef extract1gN-Z-Amine A2gGlucose10gDistilled water1LAgar20gpH 7.3
 - preferred_term: ''
   concentration:
     value: Yeast extract

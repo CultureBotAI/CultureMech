@@ -1,8 +1,8 @@
 name: TRYPTONE-STARCH MEDIUM
 original_name: TRYPTONE-STARCH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1559
@@ -61,8 +61,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Sterilize vitamin B12 separately by filtration. Adjust pH of medium
-    to 7.0 with KOH prior to autoclaving.
+  description: Sterilize vitamin B12 separately by filtration. Adjust pH of medium to 7.0 with KOH prior
+    to autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

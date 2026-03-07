@@ -1,16 +1,15 @@
 name: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
 original_name: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 894
   term:
     id: komodo.medium:894
     label: BENNETT'S MODIFIED medium (P. AGRAWAL, UNPUBLISHED)
-notes: 'Source: KOMODO ModelSEED | ID: 894 | DSMZ Medium: 894 (mediadive.medium:894)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 894 | DSMZ Medium: 894 (mediadive.medium:894) | Aerobic: No'
 ingredients:
 - preferred_term: Lab-Lemco beef extract
   concentration:
@@ -80,5 +79,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:42.530189'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration
-    for ingredient: Ferric ammonium citrate'
+  notes: 'Added default concentration for ingredient: CoCl2; Added default concentration for ingredient:
+    Ferric ammonium citrate'

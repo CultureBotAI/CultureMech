@@ -1,8 +1,8 @@
 name: YIM MEDIUM WITH NaCl
 original_name: YIM MEDIUM WITH NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1342

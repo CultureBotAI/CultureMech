@@ -1,6 +1,6 @@
 name: MMJ-S304 Medium
 original_name: MMJ-S304 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined
-    component, Organic compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -62,8 +61,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -98,7 +96,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.522674'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
-    Added default concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'

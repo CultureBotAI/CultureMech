@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M3052
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Yeast extract
   concentration:
     value: '2.5'
@@ -28,8 +26,7 @@ ingredients:
   concentration:
     value: '0.9'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,8 +34,7 @@ ingredients:
   concentration:
     value: '0.45'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -46,8 +42,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -55,8 +50,7 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:29377
     label: ''
@@ -64,8 +58,7 @@ ingredients:
   concentration:
     value: '0.09'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -73,8 +66,7 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -82,8 +74,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Organic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:15356
     label: Cysteine
@@ -149,7 +140,7 @@ media_term:
   preferred_term: TOGO Medium M3052
   term:
     id: TOGO:M3052
-    label: (Unnamed medium)
+    label: TOGO Medium M3052
 notes: 'Source: https://togomedium.org/medium/M3052
 
   Original source: NBRC - NBRC_M1604
@@ -169,9 +160,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.285372'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Cobalamin (1 μg/μL); Added default
-    concentration for ingredient: Resazurin (1 mg/L); Added default concentration
-    for ingredient: p-aminobenzoic acid (0.3 μg/μL); Added default concentration for
-    ingredient: Folic acid (5 μg/μL); Added default concentration for ingredient:
-    Pyridoxamine (15 μg/μL); Added default concentration for ingredient: Biotin (1
-    μg/μL); Added default concentration for ingredient: Thiamine (0.05 μg/mL)'
+  notes: 'Added default concentration for ingredient: Cobalamin (1 μg/μL); Added default concentration
+    for ingredient: Resazurin (1 mg/L); Added default concentration for ingredient: p-aminobenzoic acid
+    (0.3 μg/μL); Added default concentration for ingredient: Folic acid (5 μg/μL); Added default concentration
+    for ingredient: Pyridoxamine (15 μg/μL); Added default concentration for ingredient: Biotin (1 μg/μL);
+    Added default concentration for ingredient: Thiamine (0.05 μg/mL)'

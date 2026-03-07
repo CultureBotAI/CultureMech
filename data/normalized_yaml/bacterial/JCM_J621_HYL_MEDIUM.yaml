@@ -1,6 +1,6 @@
 name: HYL MEDIUM
 original_name: HYL MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -249,12 +249,11 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave and cool down to room temperature while flushing with N2.
-    Then add the following solutions from sterile anaerobic stocks:'
+  description: 'Autoclave and cool down to room temperature while flushing with N2. Then add the following
+    solutions from sterile anaerobic stocks:'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
-    minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
 applications:
 - Microbial cultivation
 curation_history:

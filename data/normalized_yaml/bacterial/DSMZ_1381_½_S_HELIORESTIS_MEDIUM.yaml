@@ -1,6 +1,6 @@
 name: ½ S° HELIORESTIS MEDIUM
 original_name: ½ S° HELIORESTIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -183,9 +183,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide
-    as single sterile stock solutions to sterile medium after autoclaving. Adjust
-    pH to 9 - 9.5.
+  description: Prepare under N2 gas and add vitamin B12, NaHCO3, Na2CO3 and sulfide as single sterile
+    stock solutions to sterile medium after autoclaving. Adjust pH to 9 - 9.5.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: THERMOMICROBIUM ROSEUM MEDIUM
 original_name: THERMOMICROBIUM ROSEUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.5
 media_term:
   preferred_term: DSMZ Medium 592
@@ -107,8 +107,8 @@ preparation_steps:
   description: Adjust pH to 8.5.
 - step_number: 2
   action: ADD_AGAR
-  description: Add 20.0 g/l agar for solid media and pour short slants with a long
-    butt in screw-capped tubes.
+  description: Add 20.0 g/l agar for solid media and pour short slants with a long butt in screw-capped
+    tubes.
 - step_number: 3
   action: MIX
   description: pH adjusted to 2.0 with H2SO4.

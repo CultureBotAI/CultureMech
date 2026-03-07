@@ -1,6 +1,6 @@
 name: H3P-Vitamin solution (medium 428)
 original_name: H3P-Vitamin solution (medium 428)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3018
     label: H3P-Vitamin solution (medium 428)
-notes: 'Source: KOMODO ModelSEED | ID: 3018 | DSMZ Medium: 3018 (mediadive.medium:3018)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3018 | DSMZ Medium: 3018 (mediadive.medium:3018) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

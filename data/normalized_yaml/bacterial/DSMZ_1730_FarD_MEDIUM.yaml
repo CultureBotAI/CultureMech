@@ -1,6 +1,6 @@
 name: FarD MEDIUM
 original_name: FarD MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -63,8 +63,7 @@ preparation_steps:
   description: Final pH 7.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Sterilize NaCl solution separately and combine autoclaved solutions
-    after cooling.
+  description: Sterilize NaCl solution separately and combine autoclaved solutions after cooling.
 applications:
 - Microbial cultivation
 curation_history:

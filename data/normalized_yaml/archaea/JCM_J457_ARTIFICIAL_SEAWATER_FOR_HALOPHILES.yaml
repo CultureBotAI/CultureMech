@@ -1,6 +1,6 @@
 name: ARTIFICIAL SEAWATER FOR HALOPHILES
 original_name: ARTIFICIAL SEAWATER FOR HALOPHILES
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -88,10 +88,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except NaHCO3 and sodium pyruvate to distilled water
-    and bring volume to 1.0 L. Adjust pH to 7.4 with 1 M Tris base and autoclave.
-    Filter-sterilize 8% (w/v) NaHCO3 and 25% (w/v) sodium pyruvate solutions and add
-    to the medium aseptically.
+  description: Add components except NaHCO3 and sodium pyruvate to distilled water and bring volume to
+    1.0 L. Adjust pH to 7.4 with 1 M Tris base and autoclave. Filter-sterilize 8% (w/v) NaHCO3 and 25%
+    (w/v) sodium pyruvate solutions and add to the medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:

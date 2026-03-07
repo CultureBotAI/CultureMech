@@ -1,6 +1,6 @@
 name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
 original_name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -66,11 +66,10 @@ preparation_steps:
   description: Dissolve in final 100 ml of 0.2 N H2SO4 and filter-sterilize.
 - step_number: 3
   action: AUTOCLAVE
-  description: To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For
-    solid medium, prepare double-strength Solution A and autoclave. Separately autoclave
-    an equal amount of 1.4% Gerlite (gellan gum) solution. After autoclaving, keep
-    the two solutions at 70C and mix thoroughly. Then, add filter-sterilized Solution
-    B (70 ml/L) and pour into petri dishes.
+  description: To complete the medium, add 70 ml Solution B to 1.0 L Solution A. For solid medium, prepare
+    double-strength Solution A and autoclave. Separately autoclave an equal amount of 1.4% Gerlite (gellan
+    gum) solution. After autoclaving, keep the two solutions at 70C and mix thoroughly. Then, add filter-sterilized
+    Solution B (70 ml/L) and pour into petri dishes.
 applications:
 - Microbial cultivation
 curation_history:

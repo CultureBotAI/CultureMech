@@ -1,6 +1,6 @@
 name: NAS-02 MEDIUM
 original_name: NAS-02 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.2
@@ -183,9 +183,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 5.2. Autoclave under a
-    N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions anaerobically
-    and aseptically (autoclaved or *filter-sterilized and store under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 5.2. Autoclave under a N2-CO2 (4:1, v/v) gas
+    mixture. After cooling, add the following solutions anaerobically and aseptically (autoclaved or *filter-sterilized
+    and store under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

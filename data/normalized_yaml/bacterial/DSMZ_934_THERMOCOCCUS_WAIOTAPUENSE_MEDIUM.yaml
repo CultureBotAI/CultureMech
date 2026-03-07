@@ -1,6 +1,6 @@
 name: THERMOCOCCUS WAIOTAPUENSE MEDIUM
 original_name: THERMOCOCCUS WAIOTAPUENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -109,9 +109,8 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically under N2. Steam the medium for 3 hours
-    (in a boiling water bath) on three successive days. Alternatively, sterilize in
-    an autoclave at 110°C for 20 minutes.
+  description: Prepare the medium anaerobically under N2. Steam the medium for 3 hours (in a boiling water
+    bath) on three successive days. Alternatively, sterilize in an autoclave at 110°C for 20 minutes.
 applications:
 - Microbial cultivation
 curation_history:

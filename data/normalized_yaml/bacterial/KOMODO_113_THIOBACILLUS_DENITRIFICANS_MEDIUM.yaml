@@ -1,6 +1,6 @@
 name: THIOBACILLUS DENITRIFICANS MEDIUM
 original_name: THIOBACILLUS DENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:113
     label: THIOBACILLUS DENITRIFICANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 113 | DSMZ Medium: 113 (mediadive.medium:113)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 113 | DSMZ Medium: 113 (mediadive.medium:113) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -218,5 +217,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.470952Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

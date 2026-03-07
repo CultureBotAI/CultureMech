@@ -1,6 +1,6 @@
 name: Vitamin solution (medium 628)
 original_name: Vitamin solution (medium 628)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3121
     label: Vitamin solution (medium 628)
-notes: 'Source: KOMODO ModelSEED | ID: 3121 | DSMZ Medium: 3121 (mediadive.medium:3121)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3121 | DSMZ Medium: 3121 (mediadive.medium:3121) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

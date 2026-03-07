@@ -1,6 +1,6 @@
 name: THERMOFILUM PENDENS MEDIUM
 original_name: THERMOFILUM PENDENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.2
@@ -130,14 +130,12 @@ preparation_steps:
   description: Adjust final pH to 5.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under 100% nitrogen. The following
-    constituents are prepared separately and added to the autoclaved mineral salt
-    solution: Yeast extract (20 ml of 10% w/v solution)-boiled for few minutes, not
-    autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10
-    g)-sterilized by steaming for 3 h on each of three successive days; polar lipid
-    fraction (6 - 12ml)-prepared as described by W. Zillig et al. (1983), Syst. Appl.
-    Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under
-    nitrogen atmosphere.'
+  description: 'Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared
+    separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled
+    for few minutes, not autoclaved; sucrose (20 ml of 10% w/v solution)-filter-sterilized; sulfur (10
+    g)-sterilized by steaming for 3 h on each of three successive days; polar lipid fraction (6 - 12ml)-prepared
+    as described by W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87; Na2S x 9 H2O (10 ml of
+    3% w/v solution)-autoclaved under nitrogen atmosphere.'
 - step_number: 3
   action: MIX
   description: Sparge medium with 100% N2 gas mixture to make anoxic.
@@ -149,11 +147,10 @@ preparation_steps:
   description: 'after autoclaving add the following sterile solutions:'
 - step_number: 6
   action: FILTER_STERILIZE
-  description: "Note: lipid fraction can be prepared from fresh or freeze-dried biomass.\
-    \ Cells are disrupted by autoclaving or sonication, then filter-sterilized.\r\n\
-    \r\nUse 5 g wet or 0,2 g dried biomass in 10 ml water or buffer, and use 10ml/l\
-    \ of the sterile-filtered extract. Prepare under N2 conditions.\r\n\r\nModified\
-    \ from  W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87"
+  description: "Note: lipid fraction can be prepared from fresh or freeze-dried biomass. Cells are disrupted\
+    \ by autoclaving or sonication, then filter-sterilized.\r\n\r\nUse 5 g wet or 0,2 g dried biomass\
+    \ in 10 ml water or buffer, and use 10ml/l of the sterile-filtered extract. Prepare under N2 conditions.\r\
+    \n\r\nModified from  W. Zillig et al. (1983), Syst. Appl. Microbiol. 4: 79 - 87"
 applications:
 - Microbial cultivation
 curation_history:

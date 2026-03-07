@@ -1,6 +1,6 @@
 name: DILUTED NITRATE MINERAL MEDIUM
 original_name: DILUTED NITRATE MINERAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -132,13 +132,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. For preparation of agar medium, add 15.0
-    g/L agar. Autoclave and, after cooling to 60C, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of agar medium, add 15.0 g/L agar. Autoclave
+    and, after cooling to 60C, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: pH of the medium should be around 6.8. Cultivate under an air containing
-    methane in gastight flasks or jars leaving &;80% gas phase by volume (20% methane
-    for liquid cultures; 50% methane for agar plate cultures).
+  description: pH of the medium should be around 6.8. Cultivate under an air containing methane in gastight
+    flasks or jars leaving &;80% gas phase by volume (20% methane for liquid cultures; 50% methane for
+    agar plate cultures).
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.

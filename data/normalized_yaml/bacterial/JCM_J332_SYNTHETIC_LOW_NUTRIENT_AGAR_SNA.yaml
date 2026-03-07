@@ -1,8 +1,8 @@
 name: SYNTHETIC LOW NUTRIENT AGAR (SNA)
 original_name: SYNTHETIC LOW NUTRIENT AGAR (SNA)
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J332
@@ -66,9 +66,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Where necessary, put a piece of sterilized filter paper (ca. 1 x 2
-    cm) or carnation leaf on the agar medium and incubate cultures under near-UV light
-    for sporulation.
+  description: Where necessary, put a piece of sterilized filter paper (ca. 1 x 2 cm) or carnation leaf
+    on the agar medium and incubate cultures under near-UV light for sporulation.
 applications:
 - Microbial cultivation
 curation_history:

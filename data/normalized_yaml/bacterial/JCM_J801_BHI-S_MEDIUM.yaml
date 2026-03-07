@@ -1,6 +1,6 @@
 name: BHI-S MEDIUM
 original_name: BHI-S MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -53,12 +53,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0 - 7.2
-    and autoclave under N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Neutralize Na2S x 9H2O as a 5% solution and autoclave under a N2 gas atmosphere.
-    Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
-    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
-    solution and readjust pH to 7.0 - 7.2, if necessary.
+  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0 - 7.2 and autoclave under
+    N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5%
+    solution and autoclave under a N2 gas atmosphere. Distribute the medium and sulfur into culture vessels
+    under a N2 stream, and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S
+    x 9H2O solution and readjust pH to 7.0 - 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

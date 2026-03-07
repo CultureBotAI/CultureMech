@@ -1,6 +1,6 @@
 name: MODIFIED MV MEDIUM
 original_name: MODIFIED MV MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -241,18 +241,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients, bring to a boil and cool down under a N2-CO2 (4:1,
-    v/v) gas stream and autoclave under the same gas mixture. After cooling, aseptically
-    and anaerobically add per liter the following solutions (filter-sterilized):'
+  description: 'Mix ingredients, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas stream and
+    autoclave under the same gas mixture. After cooling, aseptically and anaerobically add per liter the
+    following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Prior to inoculation, aseptically and anaerobically add 0.01 volume
-    of L-cysteine x HCl x H2O to the medium (3% solution, autoclaved and stored under
-    a N2 atmosphere).
+  description: Prior to inoculation, aseptically and anaerobically add 0.01 volume of L-cysteine x HCl
+    x H2O to the medium (3% solution, autoclaved and stored under a N2 atmosphere).
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

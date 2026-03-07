@@ -1,6 +1,6 @@
 name: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
 original_name: Cyanobacteria Medium SWES (Seawater - Soil Extract - Salts)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -101,8 +101,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    natural sea water (Helgolandwasser).
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with natural sea water
+    (Helgolandwasser).
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -111,9 +111,9 @@ preparation_steps:
   description: 'After cooling, add the following filter sterilized components:'
 - step_number: 4
   action: MIX
-  description: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
-    \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too\
-    \ much clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)"
+  description: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with H2Odist to 700 ml\r\n\
+    (The soil should not contain too much humus and not too much clay – avoid soil\r\ncontaminated with\
+    \ fertilizers, herbicides or fungicides)"
 - step_number: 5
   action: MIX
   description: Shake vigorously
@@ -137,8 +137,7 @@ preparation_steps:
   description: Store at 4°C – 10°C
 - step_number: 12
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
 - step_number: 13
   action: HEAT
   description: Prepare aliquots and store them at -20 °C.

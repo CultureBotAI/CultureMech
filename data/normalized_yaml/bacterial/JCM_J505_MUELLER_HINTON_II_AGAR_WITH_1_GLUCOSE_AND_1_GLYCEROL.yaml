@@ -1,8 +1,8 @@
 name: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
 original_name: MUELLER HINTON II AGAR WITH 1% GLUCOSE AND 1% GLYCEROL
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J505
   term:

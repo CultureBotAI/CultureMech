@@ -1,6 +1,6 @@
 name: DC-8A Medium
 original_name: DC-8A Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -88,11 +88,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 9.0. Distribute the medium
-    into culture vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with
-    N2, seal with butyl rubber stoppers, and autoclave. After cooling, aseptically
-    and anaerobically add per 900 ml the following solution (autoclaved under a N2
-    atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 9.0. Distribute the medium into culture vessels
+    (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2, seal with butyl rubber stoppers, and
+    autoclave. After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved
+    under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

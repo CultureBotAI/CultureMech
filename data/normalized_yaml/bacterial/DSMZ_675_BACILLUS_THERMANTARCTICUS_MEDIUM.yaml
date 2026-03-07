@@ -1,6 +1,6 @@
 name: BACILLUS THERMANTARCTICUS MEDIUM
 original_name: BACILLUS THERMANTARCTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.6-5.8
@@ -32,11 +32,10 @@ preparation_steps:
   description: Adjust pH between 5.6 - 5.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Soil extract is prepared by sieving air dried garden soil through a
-    coarse sieve and autoclaving 400 g with 960 ml of distilled water at 121°C for
-    one hour. After the mixture is cool and settled, the supernatant is carefully
-    decanted, filtered through paper, autoclaved in 200 ml quantities, and stored
-    at room temperature until cleared by sedimentation.
+  description: Soil extract is prepared by sieving air dried garden soil through a coarse sieve and autoclaving
+    400 g with 960 ml of distilled water at 121°C for one hour. After the mixture is cool and settled,
+    the supernatant is carefully decanted, filtered through paper, autoclaved in 200 ml quantities, and
+    stored at room temperature until cleared by sedimentation.
 applications:
 - Microbial cultivation
 curation_history:

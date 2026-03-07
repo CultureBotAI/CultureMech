@@ -1,6 +1,6 @@
 name: Mineral solution B (medium 492)
 original_name: Mineral solution B (medium 492)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2014
     label: Mineral solution B (medium 492)
-notes: 'Source: KOMODO ModelSEED | ID: 2014 | DSMZ Medium: 2014 (mediadive.medium:2014)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2014 | DSMZ Medium: 2014 (mediadive.medium:2014) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

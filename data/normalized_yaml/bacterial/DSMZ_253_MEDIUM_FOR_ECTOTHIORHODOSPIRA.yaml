@@ -1,6 +1,6 @@
 name: MEDIUM FOR ECTOTHIORHODOSPIRA
 original_name: MEDIUM FOR ECTOTHIORHODOSPIRA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -203,10 +203,10 @@ preparation_steps:
   description: Adjust pH to 8.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Bubble with nitrogen gas and fill in tubes with a rubber septum under
-    a stream of nitrogen gas. Autoclave at 121°C for 15 min. After sterilization add
-    1 ml/l filter-sterilized vitamin solution (B), 200 ml of filter-sterilized solution
-    Bicarbonate solution (C) and 10 ml/l sterilised Na2S x 9H2O solution (D). pH 8.5
+  description: Bubble with nitrogen gas and fill in tubes with a rubber septum under a stream of nitrogen
+    gas. Autoclave at 121°C for 15 min. After sterilization add 1 ml/l filter-sterilized vitamin solution
+    (B), 200 ml of filter-sterilized solution Bicarbonate solution (C) and 10 ml/l sterilised Na2S x 9H2O
+    solution (D). pH 8.5
 - step_number: 3
   action: ADJUST_PH
   description: For dissolving adjust pH to about 3 with 1 N HCl.

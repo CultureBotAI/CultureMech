@@ -1,15 +1,14 @@
 name: CORYNEBACTERIUM medium WITH BLOOD
 original_name: CORYNEBACTERIUM medium WITH BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 240
   term:
     id: komodo.medium:240
     label: CORYNEBACTERIUM medium WITH BLOOD
-notes: 'Source: KOMODO ModelSEED | ID: 240 | DSMZ Medium: 240 (mediadive.medium:240)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 240 | DSMZ Medium: 240 (mediadive.medium:240) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

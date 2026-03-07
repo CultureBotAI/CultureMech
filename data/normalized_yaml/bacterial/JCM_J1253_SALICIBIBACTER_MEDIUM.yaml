@@ -1,8 +1,8 @@
 name: SALICIBIBACTER MEDIUM
 original_name: SALICIBIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.8
 media_term:
   preferred_term: JCM Medium J1253
@@ -137,9 +137,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1 L. Adjust
-    pH to 6.5 and autoclave. Aseptically add the following solution (autoclaved) to
-    the medium:'
+  description: 'Add components to distilled water and bring volume to 1 L. Adjust pH to 6.5 and autoclave.
+    Aseptically add the following solution (autoclaved) to the medium:'
 - step_number: 2
   action: MIX
   description: Check final pH of the medium to be 7.5-8.0.

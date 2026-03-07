@@ -1,6 +1,6 @@
 name: ANAEROTIGNUM MEDIUM
 original_name: ANAEROTIGNUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -72,11 +72,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate and cysteine), adjust pH to
-    7.0, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
-    and dissolve bicarbonate and cysteine, then dispense medium under 100% N2 gas
-    atmosphere into anoxic Hungate-type tubes or seruim vials and autoclave. Adjust
-    pH of complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients (except bicarbonate and cysteine), adjust pH to 7.0, then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate and cysteine, then
+    dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or seruim vials and autoclave.
+    Adjust pH of complete medium to 7.0 - 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

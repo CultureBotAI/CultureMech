@@ -1,6 +1,6 @@
 name: HALOPHILE MEDIUM
 original_name: HALOPHILE MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-8
@@ -99,8 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5-8.0. Boil the medium for few minutes. Fill in tubes
-    with rubber stoppers under nitrogen gas. Sterilize at 121°C for 15 min.
+  description: Adjust pH to 7.5-8.0. Boil the medium for few minutes. Fill in tubes with rubber stoppers
+    under nitrogen gas. Sterilize at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:

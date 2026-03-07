@@ -1,13 +1,12 @@
 name: '367'
 original_name: '367'
-category: imported
+category: bacterial
 description: 367. NBRC 366.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Peptone10gMeat extract10gYeast extract5gGlucose20gTween 801gK2HPO42gSodium\
-    \ acetate5gDiammonium hydrogencitrate2gMgSO4\xB77H2O0.2gMnSO4\xB7nH2O0.05gDistilled\
-    \ water1LAgar (if needed)15gpH 5.5"
+- preferred_term: Peptone10gMeat extract10gYeast extract5gGlucose20gTween 801gK2HPO42gSodium acetate5gDiammonium
+    hydrogencitrate2gMgSO4·7H2O0.2gMnSO4·nH2O0.05gDistilled water1LAgar (if needed)15gpH 5.5
 - preferred_term: ''
   concentration:
     value: Peptone
@@ -42,11 +41,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MnSO4\xB7nH2O"
+    value: MnSO4·nH2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

@@ -1,6 +1,6 @@
 name: IRD MARINIFILUM MEDIUM
 original_name: IRD MARINIFILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -165,11 +165,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2. Bring to a boil, cool
-    down under a N2-CO2 (4:1, v/v) gas stream, seal with butyl rubber stoppers and
-    autoclave. Aseptically and anaerobically add the following stock solutions [autoclaved
-    and stored under a N2 atmosphere or *filter-sterilize and store under a N2-CO2
-    (4:1, v/v) gas mixture]:'
+  description: 'Mix components thoroughly and adjust pH to 7.2. Bring to a boil, cool down under a N2-CO2
+    (4:1, v/v) gas stream, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically
+    add the following stock solutions [autoclaved and stored under a N2 atmosphere or *filter-sterilize
+    and store under a N2-CO2 (4:1, v/v) gas mixture]:'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.2, if necessary.

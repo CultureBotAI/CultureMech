@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO (MG-1) MEDIUM
 original_name: DESULFOVIBRIO (MG-1) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -85,9 +85,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, adjust pH to 7.5 and sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients, adjust pH to 7.5 and sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

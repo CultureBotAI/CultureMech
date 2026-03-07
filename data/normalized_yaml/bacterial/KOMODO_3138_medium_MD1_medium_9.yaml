@@ -1,6 +1,6 @@
 name: medium MD1 (medium 9)
 original_name: medium MD1 (medium 9)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3138
     label: medium MD1 (medium 9)
-notes: 'Source: KOMODO ModelSEED | ID: 3138 | DSMZ Medium: 3138 (mediadive.medium:3138)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3138 | DSMZ Medium: 3138 (mediadive.medium:3138) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

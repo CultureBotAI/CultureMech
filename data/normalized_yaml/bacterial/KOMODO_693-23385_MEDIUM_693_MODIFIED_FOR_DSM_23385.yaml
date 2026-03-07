@@ -1,15 +1,15 @@
 name: MEDIUM 693 MODIFIED FOR DSM 23385
 original_name: MEDIUM 693 MODIFIED FOR DSM 23385
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 693_23385
   term:
     id: komodo.medium:693_23385
     label: MEDIUM 693 MODIFIED FOR DSM 23385
-notes: 'Source: KOMODO ModelSEED | ID: 693_23385 | DSMZ Medium: 693 (mediadive.medium:693)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 693_23385 | DSMZ Medium: 693 (mediadive.medium:693) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

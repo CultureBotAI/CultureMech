@@ -1,6 +1,6 @@
 name: THERMOTOGA II medium
 original_name: THERMOTOGA II medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:498
     label: THERMOTOGA II medium
-notes: 'Source: KOMODO ModelSEED | ID: 498 | DSMZ Medium: 498 (mediadive.medium:498)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 498 | DSMZ Medium: 498 (mediadive.medium:498) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

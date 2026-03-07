@@ -1,8 +1,8 @@
 name: POTATO-SUCROSE AGAR
 original_name: POTATO-SUCROSE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.6
 media_term:
   preferred_term: JCM Medium J333
@@ -35,11 +35,10 @@ preparation_steps:
   description: Adjust pH to 5.6.
 - step_number: 2
   action: AUTOCLAVE
-  description: Wash potatoes with tap water, peel and cut into 1 cm cubes. Rinse with
-    tap water quickly and boil 200 g of potato cubes with 1.0 L of distilled water
-    for 20 min. Mash and squeeze through a muslin bag. Add agar and boil until melting.
-    Add sucrose and mix thoroughly. Make up to 1.0 L, adjust pH and autoclave for
-    sterilization.
+  description: Wash potatoes with tap water, peel and cut into 1 cm cubes. Rinse with tap water quickly
+    and boil 200 g of potato cubes with 1.0 L of distilled water for 20 min. Mash and squeeze through
+    a muslin bag. Add agar and boil until melting. Add sucrose and mix thoroughly. Make up to 1.0 L, adjust
+    pH and autoclave for sterilization.
 applications:
 - Microbial cultivation
 curation_history:

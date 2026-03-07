@@ -1,6 +1,6 @@
 name: RAEH MEDIUM
 original_name: RAEH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -102,14 +102,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 6.8. Bring to a boil for
-    a seconds, cool down under a stream of N2-CO2 (80:20, v/v). Dispense the medium
-    into culture vessels (e.g., 20 ml in 120 ml serum bottles) under a H2-CO2 (80:20,
-    v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly and adjust pH to 6.8. Bring to a boil for a seconds, cool down
+    under a stream of N2-CO2 (80:20, v/v). Dispense the medium into culture vessels (e.g., 20 ml in 120
+    ml serum bottles) under a H2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: MIX
-  description: Mix components thoroughly. Dilute the stock solution 1:25 to receive
-    the trace mineral working solution.
+  description: Mix components thoroughly. Dilute the stock solution 1:25 to receive the trace mineral
+    working solution.
 applications:
 - Microbial cultivation
 curation_history:

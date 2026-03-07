@@ -1,6 +1,6 @@
 name: KALLOTENUE MEDIUM
 original_name: KALLOTENUE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -253,15 +253,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose, peptone and vitamins) and adjust
-    pH to 8.1. Dispense medium under air atmosphere into culture vessels suitable
-    for anaerobic cultivation (e.g., 10 ml medium per Balch-type tube), seal and autoclave.
-    Add glucose, peptone and vitamins from sterile stock solutions sterilized by filtration.
-    Adjust pH of complete medium to 7.5, if necessary.
+  description: Dissolve ingredients (except glucose, peptone and vitamins) and adjust pH to 8.1. Dispense
+    medium under air atmosphere into culture vessels suitable for anaerobic cultivation (e.g., 10 ml medium
+    per Balch-type tube), seal and autoclave. Add glucose, peptone and vitamins from sterile stock solutions
+    sterilized by filtration. Adjust pH of complete medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -272,5 +271,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.085198Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

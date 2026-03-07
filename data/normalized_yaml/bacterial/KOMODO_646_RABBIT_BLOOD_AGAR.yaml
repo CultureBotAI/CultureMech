@@ -1,15 +1,14 @@
 name: RABBIT BLOOD AGAR
 original_name: RABBIT BLOOD AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 646
   term:
     id: komodo.medium:646
     label: RABBIT BLOOD AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 646 | DSMZ Medium: 646 (mediadive.medium:646)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 646 | DSMZ Medium: 646 (mediadive.medium:646) | Aerobic: No'
 ingredients:
 - preferred_term: Blood Agar Base
   concentration:

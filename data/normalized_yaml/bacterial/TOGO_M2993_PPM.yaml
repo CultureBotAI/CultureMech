@@ -1,6 +1,6 @@
 name: PPM
 original_name: PPM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -34,8 +32,7 @@ ingredients:
   concentration:
     value: '0.053'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:62982
     label: ''
@@ -48,14 +45,12 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
-    Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound, Defined component'
 - preferred_term: Pectin
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:17309
     label: Pectin

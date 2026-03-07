@@ -1,16 +1,15 @@
 name: STARCH-MINERAL SALT-AGAR + 10% NACL
 original_name: STARCH-MINERAL SALT-AGAR + 10% NACL
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1240
   term:
     id: komodo.medium:1240
     label: STARCH-MINERAL SALT-AGAR + 10% NACL
-notes: 'Source: KOMODO ModelSEED | ID: 1240 | DSMZ Medium: 1240 (mediadive.medium:1240)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1240 | DSMZ Medium: 1240 (mediadive.medium:1240) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

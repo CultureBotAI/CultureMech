@@ -1,6 +1,6 @@
 name: THERMOSIPHO AFRICANUS medium
 original_name: THERMOSIPHO AFRICANUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:483
     label: THERMOSIPHO AFRICANUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 483 | DSMZ Medium: 483 (mediadive.medium:483)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 483 | DSMZ Medium: 483 (mediadive.medium:483) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

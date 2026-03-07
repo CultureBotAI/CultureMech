@@ -1,6 +1,6 @@
 name: HALOANAEROBIUM ALCALIPHILUM medium
 original_name: HALOANAEROBIUM ALCALIPHILUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:807
     label: HALOANAEROBIUM ALCALIPHILUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 807 | DSMZ Medium: 807 (mediadive.medium:807)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 807 | DSMZ Medium: 807 (mediadive.medium:807) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

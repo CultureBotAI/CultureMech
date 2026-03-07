@@ -1,6 +1,6 @@
 name: 9K WITH SULFUR MEDIUM
 original_name: 9K WITH SULFUR MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -53,8 +53,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except sulfur, adjust pH to 2.5 with H2SO4 and autoclave.
-    Separately sterilize sulfur by steaming for 3 hr on each of 3 successive days.
+  description: Mix components except sulfur, adjust pH to 2.5 with H2SO4 and autoclave. Separately sterilize
+    sulfur by steaming for 3 hr on each of 3 successive days.
 applications:
 - Microbial cultivation
 curation_history:
@@ -65,5 +65,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.041110Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

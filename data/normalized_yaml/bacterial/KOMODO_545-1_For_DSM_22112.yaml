@@ -1,6 +1,6 @@
 name: For DSM 22112
 original_name: For DSM 22112
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:545.1
     label: For DSM 22112
-notes: 'Source: KOMODO ModelSEED | ID: 545.1 | DSMZ Medium: 545 (mediadive.medium:545)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 545.1 | DSMZ Medium: 545 (mediadive.medium:545) | Aerobic: Yes'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

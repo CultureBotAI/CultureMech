@@ -1,6 +1,6 @@
 name: Beer Medium
 original_name: Beer Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,14 +8,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: K2HPO4
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -40,14 +37,12 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
 - preferred_term: Diammonium citrate
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Nutrient source; Properties: Simple component, Defined component,
-    Organic compound'
+  notes: 'Role: Nutrient source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:63076
     label: diammonium citrate
@@ -55,8 +50,7 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

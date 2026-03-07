@@ -1,6 +1,6 @@
 name: MMJS MEDIUM 2
 original_name: MMJS MEDIUM 2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
@@ -256,18 +256,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 5.5. Distribute the medium into culture
-    vessels (e.g., 20 ml in 60 ml-serum bottles) under a stream of N2, seal with butyl
-    rubber stoppers and add Autoclave. After cooling, add per liter the following
-    solutions (filter-sterilized):'
+  description: 'Mix components and adjust pH to 5.5. Distribute the medium into culture vessels (e.g.,
+    20 ml in 60 ml-serum bottles) under a stream of N2, seal with butyl rubber stoppers and add Autoclave.
+    After cooling, add per liter the following solutions (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Replace the gas phase with N2-CO2-O2 (94:5:1, v/v/v, 100 kPa). Check
-    final pH to be around 6.2.
+  description: Replace the gas phase with N2-CO2-O2 (94:5:1, v/v/v, 100 kPa). Check final pH to be around
+    6.2.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
 original_name: METHANOTHERMOBACTER/METHANOBACTERIUM TRANSDUCTION MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 863
@@ -128,38 +128,35 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Anaerobically dispense liquid minimal medium in 10-ml portions into
-    100-ml serum vials under an atmosphere of N2/CO2 (80:20). Seal vials with butyl
-    rubber stoppers secured with aluminium crimp seals. Sterilize by autoclaving for
-    15 minutes at 121°C. Prior to inoculation, pressurize bottles to 2 x 102 kPa with
-    H2/CO2. For solidified plating medium, add the following components per liter
+  description: 'Anaerobically dispense liquid minimal medium in 10-ml portions into 100-ml serum vials
+    under an atmosphere of N2/CO2 (80:20). Seal vials with butyl rubber stoppers secured with aluminium
+    crimp seals. Sterilize by autoclaving for 15 minutes at 121°C. Prior to inoculation, pressurize bottles
+    to 2 x 102 kPa with H2/CO2. For solidified plating medium, add the following components per liter
     of liquid minimal medium:'
 - step_number: 2
   action: HEAT
-  description: Add titanium(III) citrate solution to warm (60°C) agar medium after
-    autoclaving. For preparation of solidified agar medium.
+  description: Add titanium(III) citrate solution to warm (60°C) agar medium after autoclaving. For preparation
+    of solidified agar medium.
 - step_number: 3
   action: ADJUST_PH
-  description: Adjust pH of nitrilotriacetic acid in solution to 7.0 with KOH. Add
-    minerals and adjust the final pH to 7.0.
+  description: Adjust pH of nitrilotriacetic acid in solution to 7.0 with KOH. Add minerals and adjust
+    the final pH to 7.0.
 - step_number: 4
   action: AUTOCLAVE
-  description: Dissolve 106 g Na2CO3 in 1 liter of degassed H2O. Autoclave in sealed
-    serum bottles under CO2.
+  description: Dissolve 106 g Na2CO3 in 1 liter of degassed H2O. Autoclave in sealed serum bottles under
+    CO2.
 - step_number: 5
   action: ADJUST_PH
-  description: "To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of\
-    \ L-cysteine hydrochloride\r\n. Adjust pH to 10 with 3N NaOH and store under N2\
-    \ in a serum bottle sealed with a butyl rubber stopper."
+  description: "To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of L-cysteine hydrochloride\r\
+    \n. Adjust pH to 10 with 3N NaOH and store under N2 in a serum bottle sealed with a butyl rubber stopper."
 - step_number: 6
   action: STORE
-  description: Neutralize pH with a saturated sodium carbonate solution and store
-    in a serum bottle under N2.
+  description: Neutralize pH with a saturated sodium carbonate solution and store in a serum bottle under
+    N2.
 - step_number: 7
   action: ADJUST_PH
-  description: To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of
-    Na2S x 9 H2O. Adjust pH to 10 with 3N NaOH and store under N2 in a serum bottle
-    sealed with a butyl rubber stopper.
+  description: To 50 ml of boiled and cooled distilled or deionized H2O add 5 g of Na2S x 9 H2O. Adjust
+    pH to 10 with 3N NaOH and store under N2 in a serum bottle sealed with a butyl rubber stopper.
 applications:
 - Microbial cultivation
 curation_history:

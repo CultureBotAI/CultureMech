@@ -1,8 +1,8 @@
 name: SC MEDIUM
 original_name: SC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.6
 media_term:
   preferred_term: JCM Medium J220
@@ -75,8 +75,8 @@ preparation_steps:
   description: Adjust pH to 6.6.
 - step_number: 2
   action: MIX
-  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions
-    by filtration, and aseptically add to the medium.
+  description: Separately sterilize bovine serum albumin, glucose and cysteine solutions by filtration,
+    and aseptically add to the medium.
 applications:
 - Microbial cultivation
 curation_history:

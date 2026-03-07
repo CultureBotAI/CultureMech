@@ -1,6 +1,6 @@
 name: L?WENSTEIN-JENSEN medium
 original_name: L?WENSTEIN-JENSEN medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:354
     label: L?WENSTEIN-JENSEN medium
-notes: 'Source: KOMODO ModelSEED | ID: 354 | DSMZ Medium: 354 (mediadive.medium:354)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 354 | DSMZ Medium: 354 (mediadive.medium:354) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,15 +1,14 @@
 name: ROLLED OATS MINERAL medium
 original_name: ROLLED OATS MINERAL medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 84
   term:
     id: komodo.medium:84
     label: ROLLED OATS MINERAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 84 | DSMZ Medium: 84 (mediadive.medium:84) | Aerobic: No'
 ingredients:
 - preferred_term: Rolled oats
   concentration:

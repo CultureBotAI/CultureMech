@@ -1,6 +1,6 @@
 name: Solution B, medium 1275
 original_name: Solution B, medium 1275
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:4053
     label: Solution B, medium 1275
-notes: 'Source: KOMODO ModelSEED | ID: 4053 | DSMZ Medium: 4053 (mediadive.medium:4053)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4053 | DSMZ Medium: 4053 (mediadive.medium:4053) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: salt solution (medium 1191)
 original_name: salt solution (medium 1191)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3047
     label: salt solution (medium 1191)
-notes: 'Source: KOMODO ModelSEED | ID: 3047 | DSMZ Medium: 3047 (mediadive.medium:3047)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3047 | DSMZ Medium: 3047 (mediadive.medium:3047) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

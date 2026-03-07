@@ -1,6 +1,6 @@
 name: METHANOTHERMOCOCCUS HHB MEDIUM
 original_name: METHANOTHERMOCOCCUS HHB MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -227,11 +227,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil and cool down under a H2-CO2
-    (4:1, v/v) gas stream. Distribute the medium into culture vessels (e.g., 20 ml
-    medium in 120 ml serum bottles) under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. After cooling, aseptically and anaerobically add per liter
-    the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. Bring to a boil and cool down under a H2-CO2 (4:1, v/v) gas
+    stream. Distribute the medium into culture vessels (e.g., 20 ml medium in 120 ml serum bottles) under
+    the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
+    anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20, v/v).

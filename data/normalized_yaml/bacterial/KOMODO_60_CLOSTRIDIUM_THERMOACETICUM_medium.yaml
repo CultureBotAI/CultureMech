@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOACETICUM medium
 original_name: CLOSTRIDIUM THERMOACETICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:60
     label: CLOSTRIDIUM THERMOACETICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 60 | DSMZ Medium: 60 (mediadive.medium:60)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 60 | DSMZ Medium: 60 (mediadive.medium:60) | Aerobic: Yes'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

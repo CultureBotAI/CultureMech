@@ -1,6 +1,6 @@
 name: Vitamin solution (medium 148)
 original_name: Vitamin solution (medium 148)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2090
     label: Vitamin solution (medium 148)
-notes: 'Source: KOMODO ModelSEED | ID: 2090 | DSMZ Medium: 2090 (mediadive.medium:2090)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2090 | DSMZ Medium: 2090 (mediadive.medium:2090) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

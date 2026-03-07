@@ -1,6 +1,6 @@
 name: PY4S
 original_name: PY4S
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1308
     label: PY4S
-notes: 'Source: KOMODO ModelSEED | ID: 1308 | DSMZ Medium: 1308 (mediadive.medium:1308)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1308 | DSMZ Medium: 1308 (mediadive.medium:1308) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

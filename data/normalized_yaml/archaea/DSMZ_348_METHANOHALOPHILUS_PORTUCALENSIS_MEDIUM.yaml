@@ -1,6 +1,6 @@
 name: METHANOHALOPHILUS PORTUCALENSIS MEDIUM
 original_name: METHANOHALOPHILUS PORTUCALENSIS MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.4
@@ -187,18 +187,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, carbonate, trimethylamine and
-    sulfide, bring medium to the boil, then cool to room temperature while sparging
-    with 80% N2 and 20% CO2 gas mixture. Add cysteine and adjust pH to 6.5, then dispense
-    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Thereafter, add trimethylamine and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete
-    medium to 7.3 - 7.4, if necessary.
+  description: Dissolve ingredients except cysteine, carbonate, trimethylamine and sulfide, bring medium
+    to the boil, then cool to room temperature while sparging with 80% N2 and 20% CO2 gas mixture. Add
+    cysteine and adjust pH to 6.5, then dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Thereafter, add trimethylamine and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to 7.3 - 7.4, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
 original_name: ARTIFICIAL SEAWATER YEAST EXTRACT-TRYPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -99,8 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Distribute the medium in culture vessels under a
-    N2 gas atmosphere, seal with butyl rubber stoppers and autoclave.
+  description: Adjust pH to 7.0. Distribute the medium in culture vessels under a N2 gas atmosphere, seal
+    with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

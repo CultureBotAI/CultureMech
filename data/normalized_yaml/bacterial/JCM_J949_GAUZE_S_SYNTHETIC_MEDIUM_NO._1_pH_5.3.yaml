@@ -1,6 +1,6 @@
 name: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
 original_name: GAUZE'S SYNTHETIC MEDIUM NO. 1 (pH 5.3)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.3
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Gauze's synthetic medium No. 1 (see Medium No. 81) and adjust
-    pH to 5.3.
+  description: Prepare Gauze's synthetic medium No. 1 (see Medium No. 81) and adjust pH to 5.3.
 applications:
 - Microbial cultivation
 curation_history:

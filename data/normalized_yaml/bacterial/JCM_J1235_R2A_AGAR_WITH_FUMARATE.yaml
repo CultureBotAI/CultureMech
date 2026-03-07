@@ -1,8 +1,8 @@
 name: R2A AGAR WITH FUMARATE
 original_name: R2A AGAR WITH FUMARATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1235
   term:
@@ -27,8 +27,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic
-    gas generating system, such as AnaeroPackTM, is also available.
+  description: When cultivate anaerobically, replace the gas phase with N2. An anaerobic gas generating
+    system, such as AnaeroPackTM, is also available.
 applications:
 - Microbial cultivation
 curation_history:

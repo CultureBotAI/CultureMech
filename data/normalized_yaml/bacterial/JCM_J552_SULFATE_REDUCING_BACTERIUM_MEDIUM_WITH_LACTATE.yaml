@@ -1,6 +1,6 @@
 name: SULFATE REDUCING BACTERIUM MEDIUM WITH LACTATE
 original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH LACTATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -165,11 +165,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except L-sodium lactate and L-cysteine x H2O x HCl,
-    adjust pH to 7.5 and autoclave under a N2 atmosphere. Separately autoclave L-sodium
-    lactate and L-cysteine x H2O x HCl in 10 ml distilled water under a N2 atmosphere
-    and add to the medium. Readjust pH to 7.5 with 1 N NaOH (from a sterile stock
-    solution).
+  description: Mix ingredients except L-sodium lactate and L-cysteine x H2O x HCl, adjust pH to 7.5 and
+    autoclave under a N2 atmosphere. Separately autoclave L-sodium lactate and L-cysteine x H2O x HCl
+    in 10 ml distilled water under a N2 atmosphere and add to the medium. Readjust pH to 7.5 with 1 N
+    NaOH (from a sterile stock solution).
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 15 g/L agar (BD-Difco).

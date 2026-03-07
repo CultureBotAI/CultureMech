@@ -1,8 +1,8 @@
 name: SPOROCYTOPHAGA MEDIUM
 original_name: SPOROCYTOPHAGA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 167
@@ -71,11 +71,10 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Place a strip of sterile cellulose filter paper onto an agar plate.
-    Alternatively, place a strip of sterile cellulose filter paper into a culture
-    tube containing 5 ml of medium, thereby leaving 1 - 2 cm of the strip outside
-    of the medium. Inoculate the strain onto the cellulose filter paper. The strain
-    will grow on the cellulose paper only.
+  description: Place a strip of sterile cellulose filter paper onto an agar plate. Alternatively, place
+    a strip of sterile cellulose filter paper into a culture tube containing 5 ml of medium, thereby leaving
+    1 - 2 cm of the strip outside of the medium. Inoculate the strain onto the cellulose filter paper.
+    The strain will grow on the cellulose paper only.
 applications:
 - Microbial cultivation
 curation_history:

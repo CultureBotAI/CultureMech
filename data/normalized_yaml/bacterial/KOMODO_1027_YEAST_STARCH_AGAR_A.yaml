@@ -1,16 +1,15 @@
 name: YEAST STARCH AGAR (A)
 original_name: YEAST STARCH AGAR (A)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: KOMODO Medium 1027
   term:
     id: komodo.medium:1027
     label: YEAST STARCH AGAR (A)
-notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1027 | DSMZ Medium: 1027 (mediadive.medium:1027) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

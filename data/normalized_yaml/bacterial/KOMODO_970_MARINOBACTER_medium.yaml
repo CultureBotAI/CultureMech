@@ -1,6 +1,6 @@
 name: MARINOBACTER medium
 original_name: MARINOBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:970
     label: MARINOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 970 | DSMZ Medium: 970 (mediadive.medium:970)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 970 | DSMZ Medium: 970 (mediadive.medium:970) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

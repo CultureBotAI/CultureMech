@@ -1,6 +1,6 @@
 name: Vitamin solution (medium 315)
 original_name: Vitamin solution (medium 315)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2091
     label: Vitamin solution (medium 315)
-notes: 'Source: KOMODO ModelSEED | ID: 2091 | DSMZ Medium: 2091 (mediadive.medium:2091)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2091 | DSMZ Medium: 2091 (mediadive.medium:2091) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

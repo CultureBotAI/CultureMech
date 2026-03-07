@@ -1,8 +1,8 @@
 name: 3N-BBM+V recipe for customer orders
 original_name: 3N-BBM+V recipe for customer orders
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C15
   term:
@@ -119,8 +119,8 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
-    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre Bacterialogical Agar.\r\
+    \nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterile

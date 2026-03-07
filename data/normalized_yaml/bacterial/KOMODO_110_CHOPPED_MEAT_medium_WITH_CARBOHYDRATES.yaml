@@ -1,15 +1,14 @@
 name: CHOPPED MEAT medium WITH CARBOHYDRATES
 original_name: CHOPPED MEAT medium WITH CARBOHYDRATES
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 110
   term:
     id: komodo.medium:110
     label: CHOPPED MEAT medium WITH CARBOHYDRATES
-notes: 'Source: KOMODO ModelSEED | ID: 110 | DSMZ Medium: 110 (mediadive.medium:110)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 110 | DSMZ Medium: 110 (mediadive.medium:110) | Aerobic: No'
 ingredients:
 - preferred_term: Ground beef
   concentration:

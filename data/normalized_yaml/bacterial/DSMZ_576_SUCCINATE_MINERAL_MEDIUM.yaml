@@ -1,6 +1,6 @@
 name: SUCCINATE MINERAL MEDIUM
 original_name: SUCCINATE MINERAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -129,8 +129,7 @@ preparation_steps:
   description: pH 6.8
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave trace element solutions A and B separately and mix identical
-    volumes:'
+  description: 'Autoclave trace element solutions A and B separately and mix identical volumes:'
 applications:
 - Microbial cultivation
 curation_history:

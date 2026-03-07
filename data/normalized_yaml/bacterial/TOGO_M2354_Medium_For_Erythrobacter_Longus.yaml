@@ -1,6 +1,6 @@
 name: Medium For Erythrobacter Longus
 original_name: Medium For Erythrobacter Longus
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '300'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -27,8 +26,7 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
-    component, Solution'
+  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined component, Solution'
 - preferred_term: Proteose peptone no.3 (Difco)
   concentration:
     value: '1'

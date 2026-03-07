@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M318
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Yeast extract
   concentration:
     value: '2'
@@ -41,7 +39,7 @@ media_term:
   preferred_term: TOGO Medium M318
   term:
     id: TOGO:M318
-    label: (Unnamed medium)
+    label: TOGO Medium M318
 notes: 'Source: https://togomedium.org/medium/M318
 
   Original source: JCM - JCM_M323

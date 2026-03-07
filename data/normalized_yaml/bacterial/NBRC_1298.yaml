@@ -1,13 +1,12 @@
 name: '1298'
 original_name: '1298'
-category: imported
+category: bacterial
 description: 1298. NBRC 1296.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Nutrient Broth Powder (Kyokuto*)6gPyruvic acid sodium salt1gDistilled
-    water1LAgar (if needed)15gpH 7.0*Kyokuto Pharmaceutical Industrial Co., LTD.,
-    Code; 551-02480-7
+- preferred_term: Nutrient Broth Powder (Kyokuto*)6gPyruvic acid sodium salt1gDistilled water1LAgar (if
+    needed)15gpH 7.0*Kyokuto Pharmaceutical Industrial Co., LTD., Code; 551-02480-7
 - preferred_term: ''
   concentration:
     value: Nutrient Broth Powder (Kyokuto*)

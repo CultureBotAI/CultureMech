@@ -1,6 +1,6 @@
 name: MC II
 original_name: MC II
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -53,10 +53,9 @@ preparation_steps:
   description: 'To be added later:'
 - step_number: 2
   action: POUR_PLATES
-  description: "Add  the  first six  constituents  in the  order  shown to 900 ml\
-    \ of  deionised  water, \r\nallowing  each to dissolve  completely  before  adding\
-    \ the  next.  Adjust to pH 6.9. \r\nDispense into 5 x 180 ml aliquots and sterilise\
-    \ by pressure cooking at 10 psi for 15\r\nminutes."
+  description: "Add  the  first six  constituents  in the  order  shown to 900 ml of  deionised  water,\
+    \ \r\nallowing  each to dissolve  completely  before  adding the  next.  Adjust to pH 6.9. \r\nDispense\
+    \ into 5 x 180 ml aliquots and sterilise by pressure cooking at 10 psi for 15\r\nminutes."
 - step_number: 3
   action: MIX
   description: Aseptically add the foetal calf serum to a final concentration of 10%.

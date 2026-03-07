@@ -1,6 +1,6 @@
 name: MV/PYRUVATE MEDIUM
 original_name: MV/PYRUVATE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 388 with 1.0 g/L sodium pyruvate instead of sodium lactate.
-    Otherwise, prepare the medium as described in the recipe of Medium No. 388.
+  description: Use Medium No. 388 with 1.0 g/L sodium pyruvate instead of sodium lactate. Otherwise, prepare
+    the medium as described in the recipe of Medium No. 388.
 applications:
 - Microbial cultivation
 curation_history:

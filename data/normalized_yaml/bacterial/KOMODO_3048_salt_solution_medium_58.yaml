@@ -1,6 +1,6 @@
 name: salt solution (medium 58)
 original_name: salt solution (medium 58)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3048
     label: salt solution (medium 58)
-notes: 'Source: KOMODO ModelSEED | ID: 3048 | DSMZ Medium: 3048 (mediadive.medium:3048)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3048 | DSMZ Medium: 3048 (mediadive.medium:3048) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,15 +1,15 @@
 name: MEDIUM 1160 MODIFIED FOR DSM 23178
 original_name: MEDIUM 1160 MODIFIED FOR DSM 23178
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1160_23178
   term:
     id: komodo.medium:1160_23178
     label: MEDIUM 1160 MODIFIED FOR DSM 23178
-notes: 'Source: KOMODO ModelSEED | ID: 1160_23178 | DSMZ Medium: 1160 (mediadive.medium:1160)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1160_23178 | DSMZ Medium: 1160 (mediadive.medium:1160) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:

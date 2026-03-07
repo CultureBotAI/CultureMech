@@ -1,15 +1,15 @@
 name: MEDIUM 78a MODIFIED FOR DSM 12168
 original_name: MEDIUM 78a MODIFIED FOR DSM 12168
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 78a_12168
   term:
     id: komodo.medium:78a_12168
     label: MEDIUM 78a MODIFIED FOR DSM 12168
-notes: 'Source: KOMODO ModelSEED | ID: 78a_12168 | DSMZ Medium: 78a (mediadive.medium:78a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 78a_12168 | DSMZ Medium: 78a (mediadive.medium:78a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: L-Histidine
   term:

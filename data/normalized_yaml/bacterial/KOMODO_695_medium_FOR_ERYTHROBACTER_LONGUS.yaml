@@ -1,6 +1,6 @@
 name: medium FOR ERYTHROBACTER LONGUS
 original_name: medium FOR ERYTHROBACTER LONGUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:695
     label: medium FOR ERYTHROBACTER LONGUS
-notes: 'Source: KOMODO ModelSEED | ID: 695 | DSMZ Medium: 695 (mediadive.medium:695)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 695 | DSMZ Medium: 695 (mediadive.medium:695) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

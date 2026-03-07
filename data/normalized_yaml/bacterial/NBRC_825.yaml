@@ -1,28 +1,23 @@
 name: '825'
 original_name: '825'
-category: imported
+category: bacterial
 description: 825. NBRC 824.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "Na-terephthalate0.42gYeast extract0.2gKH2PO40.14gMgCl2\xB7H2O0.2gCaCl2\xB7\
-    2H2O0.15gNH4Cl0.54gVitamin solution*3mlTrace element solution**1mlSe/W solution***1mlResazurin\
-    \ solution****1mlNaHCO32.5gNa2S\xB79H2O0.3gCysteine-HCl0.3gDistilled water1LThis\
-    \ medium is for co-culture of strain JT withMethanospirillum hungateistrain NBRC\
-    \ 100397.For vial cultures, dissolve all ingredients except for Na-terephthalate,\
-    \ Na2S\xB79H2O and cysteine-HCl (up to 900ml), flush N2/CO2(80/20), and autoclave.\
-    \  Add 0.5 ml of each of filter-sterilized Na2S\xB79H2O solution (0.6g Na2S\xB7\
-    9H2O/50 ml) and cysteine-HCl solution (0.6g cysteine-HCl/ 50ml) per each vial\
-    \ separately.  Add 0.2 ml of neutralized and filter-sterilized 0.2 M Na-terephthalate\
-    \ solution. Yeast extract is also added at final concentration about 0.02%.  Inoculum\
-    \ size 10-20%.  Growth was observed after 3-4 weeks of incubation.*Vitamin solutionBiotin0.5mgFolic\
-    \ acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic acid0.2mgCa-pantothenate0.5mgVitamin\
-    \ B122.7mgp-Aminobenzoic acid0.3mgLipoic acid0.4mgDistilled water1L**Trace element\
-    \ solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB76H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB7\
-    6H2O24mgCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB72H2O25mgH3BO310mgNa2MoO4\xB72H2O24mgNiCl2\xB7\
-    6H2O0.12gDistilled water1LFirst dissolve NTA in 200 ml of water and adjust the\
-    \ pH to 6.5 with KOH.***Se/W solutionNa2SeO34mgNa2WO44mg****Resazurin solutionResazurin1gDistilled\
-    \ water1L"
+- preferred_term: Na-terephthalate0.42gYeast extract0.2gKH2PO40.14gMgCl2·H2O0.2gCaCl2·2H2O0.15gNH4Cl0.54gVitamin
+    solution*3mlTrace element solution**1mlSe/W solution***1mlResazurin solution****1mlNaHCO32.5gNa2S·9H2O0.3gCysteine-HCl0.3gDistilled
+    water1LThis medium is for co-culture of strain JT withMethanospirillum hungateistrain NBRC 100397.For
+    vial cultures, dissolve all ingredients except for Na-terephthalate, Na2S·9H2O and cysteine-HCl (up
+    to 900ml), flush N2/CO2(80/20), and autoclave.  Add 0.5 ml of each of filter-sterilized Na2S·9H2O
+    solution (0.6g Na2S·9H2O/50 ml) and cysteine-HCl solution (0.6g cysteine-HCl/ 50ml) per each vial
+    separately.  Add 0.2 ml of neutralized and filter-sterilized 0.2 M Na-terephthalate solution. Yeast
+    extract is also added at final concentration about 0.02%.  Inoculum size 10-20%.  Growth was observed
+    after 3-4 weeks of incubation.*Vitamin solutionBiotin0.5mgFolic acid0.9mgPyridoxine-HCl0.4mgThiamine-HCl0.7mgRiboflavin0.8mgNicotinic
+    acid0.2mgCa-pantothenate0.5mgVitamin B122.7mgp-Aminobenzoic acid0.3mgLipoic acid0.4mgDistilled water1L**Trace
+    element solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O24mgCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O25mgH3BO310mgNa2MoO4·2H2O24mgNiCl2·6H2O0.12gDistilled
+    water1LFirst dissolve NTA in 200 ml of water and adjust the pH to 6.5 with KOH.***Se/W solutionNa2SeO34mgNa2WO44mg****Resazurin
+    solutionResazurin1gDistilled water1L
 - preferred_term: ''
   concentration:
     value: Na-terephthalate
@@ -37,11 +32,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB7H2O"
+    value: MgCl2·H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -69,7 +64,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -126,11 +121,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB7H2O"
+    value: MgCl2·H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -158,7 +153,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

@@ -1,6 +1,6 @@
 name: METHANOHALOPHILUS ZHILINAE medium
 original_name: METHANOHALOPHILUS ZHILINAE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.2-9.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:396
     label: METHANOHALOPHILUS ZHILINAE medium
-notes: 'Source: KOMODO ModelSEED | ID: 396 | DSMZ Medium: 396 (mediadive.medium:396)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 396 | DSMZ Medium: 396 (mediadive.medium:396) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

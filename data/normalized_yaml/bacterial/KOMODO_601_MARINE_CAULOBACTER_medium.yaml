@@ -1,6 +1,6 @@
 name: MARINE CAULOBACTER medium
 original_name: MARINE CAULOBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:601
     label: MARINE CAULOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

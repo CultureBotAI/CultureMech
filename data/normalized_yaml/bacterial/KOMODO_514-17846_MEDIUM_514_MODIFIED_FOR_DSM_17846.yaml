@@ -1,15 +1,15 @@
 name: MEDIUM 514 MODIFIED FOR DSM 17846
 original_name: MEDIUM 514 MODIFIED FOR DSM 17846
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514_17846
   term:
     id: komodo.medium:514_17846
     label: MEDIUM 514 MODIFIED FOR DSM 17846
-notes: 'Source: KOMODO ModelSEED | ID: 514_17846 | DSMZ Medium: 514 (mediadive.medium:514)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514_17846 | DSMZ Medium: 514 (mediadive.medium:514) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

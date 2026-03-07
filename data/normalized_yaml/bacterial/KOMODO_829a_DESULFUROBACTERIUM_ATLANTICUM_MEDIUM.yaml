@@ -1,6 +1,6 @@
 name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
 original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:829a
     label: DESULFUROBACTERIUM ATLANTICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 829a | DSMZ Medium: 829a (mediadive.medium:829a)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 829a | DSMZ Medium: 829a (mediadive.medium:829a) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

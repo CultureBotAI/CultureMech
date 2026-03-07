@@ -1,6 +1,6 @@
 name: CYCLONATRONUM PROTEIVORANS MEDIUM (OMEGA)
 original_name: CYCLONATRONUM PROTEIVORANS MEDIUM (OMEGA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 10-10.1
@@ -166,8 +166,8 @@ preparation_steps:
   description: pH 10.0 - 10.1
 - step_number: 2
   action: MIX
-  description: 'Prepare the liquid medium. Sterilize by autoclaving. Before inoculation
-    add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Sterilize by autoclaving. Before inoculation add from sterile
+    stock solutions:'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.0-4.0 with HCl.
@@ -205,5 +205,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.775084Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

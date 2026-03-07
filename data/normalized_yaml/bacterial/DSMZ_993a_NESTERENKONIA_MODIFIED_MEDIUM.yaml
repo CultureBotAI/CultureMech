@@ -1,8 +1,8 @@
 name: NESTERENKONIA MODIFIED MEDIUM
 original_name: NESTERENKONIA MODIFIED MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 993a
@@ -74,16 +74,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6
-    H20 (10%).
+  description: Use medium 993 supplemented with Yeast extract (0.5%) and MgCl2 x 6 H20 (10%).
 - step_number: 2
   action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
-    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it is within this range.
+    Liquefy agar by steaming at 100°C for 15-20 minutes.
 - step_number: 3
   action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
-    mm dishes containing 25 ml per dish.
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
+    25 ml per dish.
 applications:
 - Microbial cultivation
 curation_history:

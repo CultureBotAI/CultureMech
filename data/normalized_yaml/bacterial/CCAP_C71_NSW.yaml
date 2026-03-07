@@ -1,6 +1,6 @@
 name: NSW
 original_name: NSW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,8 +17,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
-    for 15 minutes.
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

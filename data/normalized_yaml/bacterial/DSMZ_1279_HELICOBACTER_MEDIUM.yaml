@@ -1,6 +1,6 @@
 name: HELICOBACTER MEDIUM
 original_name: HELICOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.0
@@ -41,8 +41,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2, distribute
-    in Hungate tubes to 8 ml and autoclave.
+  description: Adjust with HCl to pH 5.0, make anoxic under a stream of N2/CO2, distribute in Hungate
+    tubes to 8 ml and autoclave.
 - step_number: 2
   action: MIX
   description: 'Add aseptically to each tube:'

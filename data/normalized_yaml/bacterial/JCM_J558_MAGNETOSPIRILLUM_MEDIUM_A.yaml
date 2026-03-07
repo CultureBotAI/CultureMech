@@ -1,6 +1,6 @@
 name: MAGNETOSPIRILLUM MEDIUM (A)
 original_name: MAGNETOSPIRILLUM MEDIUM (A)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -171,9 +171,9 @@ preparation_steps:
   description: Adjust pH to 7.2 - 7.4.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Trace x 10 solution, Se/W solution and Mg/Ca solution,
-    and filter-sterilize Na benzoate solution, 7 vitamins solution and FeSO4 solution.
-    Aseptically add all solutions to the medium.
+  description: Separately autoclave Trace x 10 solution, Se/W solution and Mg/Ca solution, and filter-sterilize
+    Na benzoate solution, 7 vitamins solution and FeSO4 solution. Aseptically add all solutions to the
+    medium.
 applications:
 - Microbial cultivation
 curation_history:

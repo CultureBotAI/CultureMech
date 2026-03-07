@@ -1,6 +1,6 @@
 name: PEAT MEDIUM WITH SUCROSE
 original_name: PEAT MEDIUM WITH SUCROSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -130,13 +130,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0
-    g/L agar. After autoclaving and cooling (for solid medium, cooling to 55C), add
-    the following solution (filter-sterilized):'
+  description: 'Mix components thoroughly. For preparation of solid medium, add 15.0 g/L agar. After autoclaving
+    and cooling (for solid medium, cooling to 55C), add the following solution (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Aseptically distribute the medium into culture vessels and replace
-    the gas phase with a N2-CO2 (4:1, v/v) gas atmosphere.
+  description: Aseptically distribute the medium into culture vessels and replace the gas phase with a
+    N2-CO2 (4:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

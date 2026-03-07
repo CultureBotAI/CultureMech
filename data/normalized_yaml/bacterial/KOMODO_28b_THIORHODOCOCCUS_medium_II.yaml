@@ -1,6 +1,6 @@
 name: THIORHODOCOCCUS medium II
 original_name: THIORHODOCOCCUS medium II
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:28b
     label: THIORHODOCOCCUS medium II
-notes: 'Source: KOMODO ModelSEED | ID: 28b | DSMZ Medium: 28b (mediadive.medium:28b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 28b | DSMZ Medium: 28b (mediadive.medium:28b) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,6 +1,6 @@
 name: METHANOLOBUS TAYLORI medium
 original_name: METHANOLOBUS TAYLORI medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:490a
     label: METHANOLOBUS TAYLORI medium
-notes: 'Source: KOMODO ModelSEED | ID: 490a | DSMZ Medium: 490a (mediadive.medium:490a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 490a | DSMZ Medium: 490a (mediadive.medium:490a) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

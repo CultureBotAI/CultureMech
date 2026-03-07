@@ -1,8 +1,8 @@
 name: BACILLUS PASTEURII MEDIUM
 original_name: BACILLUS PASTEURII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 2
   term:
@@ -36,8 +36,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH
-    raises to about 8 due to heat degraded urea.
+  description: To medium 1 add 20 g/l urea before autoclaving. Do not adjust pH; pH raises to about 8
+    due to heat degraded urea.
 - step_number: 2
   action: MIX
   description: For sporulation enhancement add 10 mg/l MnSO4 x H2O.
@@ -46,8 +46,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 4
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
 applications:
 - Microbial cultivation
 curation_history:

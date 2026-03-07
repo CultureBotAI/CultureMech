@@ -1,8 +1,8 @@
 name: ALLOCATENOCOCCUS MEDIUM
 original_name: ALLOCATENOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 644
@@ -145,10 +145,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and
-    acetate, adjust pH of solution to 7.0 - 7.2 and autoclave. After autoclaving add
-    trace elements, magnesium sulfate, calcium chloride, yeast extract and glucose
-    from sterile stock solutions. Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve sodium chloride, hydrogenphosphates, ammonium chloride and acetate, adjust pH
+    of solution to 7.0 - 7.2 and autoclave. After autoclaving add trace elements, magnesium sulfate, calcium
+    chloride, yeast extract and glucose from sterile stock solutions. Adjust pH of complete medium to
+    7.0, if necessary.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0

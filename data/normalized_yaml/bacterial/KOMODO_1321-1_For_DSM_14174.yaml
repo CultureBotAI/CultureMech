@@ -1,11 +1,11 @@
 name: For DSM 14174
 original_name: For DSM 14174
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.7
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1321.1 | DSMZ Medium: 1321
-  (mediadive.medium:1321) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1321.1 | DSMZ Medium: 1321 (mediadive.medium:1321)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1321.1
   term:

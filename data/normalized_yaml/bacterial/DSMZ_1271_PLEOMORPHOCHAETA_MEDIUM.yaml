@@ -1,6 +1,6 @@
 name: PLEOMORPHOCHAETA MEDIUM
 original_name: PLEOMORPHOCHAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -243,18 +243,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, vitamins, cysteine and sulfide),
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. After autoclaving add vitamins, cysteine and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
-    from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
-    The vitamin solution should be sterilized by filtration. Adjust pH of the complete
-    medium to 7.3 - 7.5, if necessary.
+  description: Dissolve ingredients (except carbonate, vitamins, cysteine and sulfide), then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add
+    vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. The vitamin
+    solution should be sterilized by filtration. Adjust pH of the complete medium to 7.3 - 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add remaining compounds.
+  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride.
+    After ferrous chloride has dissolved add remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,5 +263,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.339757Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

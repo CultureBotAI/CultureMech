@@ -1,6 +1,6 @@
 name: HALORHABDUS SEGORENSIS MEDIUM
 original_name: HALORHABDUS SEGORENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -60,10 +60,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve MgCl2 x 6H2O in distilled water and bring volume to 500.0
-    ml. Separately dissolve the remaining components in 500 ml distilled water and
-    adjust pH to 7.0. For preparation of solid medium, add 20.0 g agar to the latter
-    solution. Autoclave the two solutions separately and combine them after autoclaving.
+  description: Dissolve MgCl2 x 6H2O in distilled water and bring volume to 500.0 ml. Separately dissolve
+    the remaining components in 500 ml distilled water and adjust pH to 7.0. For preparation of solid
+    medium, add 20.0 g agar to the latter solution. Autoclave the two solutions separately and combine
+    them after autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: JCM MEDIUM No. 167
 original_name: JCM MEDIUM No. 167
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 3.6
 media_term:
   preferred_term: JCM Medium J167
@@ -137,10 +137,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except Na2CO3 to distilled water and bring volume to
-    900 ml. Adjust pH to 6.5 and autoclave. Dissolve Na2CO3 in 100 ml distilled water
-    and autoclave separately. Aseptically add the sterile Na2CO3 solution to the medium.
-    Check final pH to be 9.0-9.5.
+  description: Add components except Na2CO3 to distilled water and bring volume to 900 ml. Adjust pH to
+    6.5 and autoclave. Dissolve Na2CO3 in 100 ml distilled water and autoclave separately. Aseptically
+    add the sterile Na2CO3 solution to the medium. Check final pH to be 9.0-9.5.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.6.

@@ -1,6 +1,6 @@
 name: METHANOCALDOCOCCUS LAUENSIS MEDIUM
 original_name: METHANOCALDOCOCCUS LAUENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
@@ -267,21 +267,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, cysteine, and sulfide), sparge
-    medium  with  80% H2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30
-    min), then dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. After sterilization
-    add cysteine and sulfide from sterile anoxic stock solutions autoclaved under
-    100% N2 gas atmosphere. Vitamins are prepared under 100% N2 gas atmosphere and
-    sterilized by filtration. Adjust the pH of the final medium to 6.2.
+  description: Dissolve ingredients (except vitamins, cysteine, and sulfide), sparge medium  with  80%
+    H2 and 20% CO2 gas mixture to reach a pH below 6 (at least 30 min), then dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    After sterilization add cysteine and sulfide from sterile anoxic stock solutions autoclaved under
+    100% N2 gas atmosphere. Vitamins are prepared under 100% N2 gas atmosphere and sterilized by filtration.
+    Adjust the pH of the final medium to 6.2.
 - step_number: 2
   action: MIX
-  description: For incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres
-    of pressure.
+  description: For incubation use sterile 80% H2 and 20% CO2 gas mixture at two atmospheres of pressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -296,5 +294,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.227495Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

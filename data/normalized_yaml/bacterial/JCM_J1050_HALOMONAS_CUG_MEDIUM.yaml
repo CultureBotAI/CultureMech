@@ -1,6 +1,6 @@
 name: HALOMONAS/CUG MEDIUM
 original_name: HALOMONAS/CUG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -106,8 +106,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix components thoroughly and adjust pH to 7.5. For preparation of
-    solid medium, add 15.0 g/L agar.
+  description: Mix components thoroughly and adjust pH to 7.5. For preparation of solid medium, add 15.0
+    g/L agar.
 applications:
 - Microbial cultivation
 curation_history:

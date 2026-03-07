@@ -1,12 +1,12 @@
 name: '1401'
 original_name: '1401'
-category: imported
+category: bacterial
 description: 1401. NBRC 1396.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Maltose20gYeast extract3gTween 800.3gTrypticase peptone6gDistilled
-    water1LAgar (if needed)15gpH 5.6
+- preferred_term: Maltose20gYeast extract3gTween 800.3gTrypticase peptone6gDistilled water1LAgar (if needed)15gpH
+    5.6
 - preferred_term: ''
   concentration:
     value: Maltose

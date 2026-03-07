@@ -1,6 +1,6 @@
 name: medium FOR CAMPYLOBACTER DSM 806
 original_name: medium FOR CAMPYLOBACTER DSM 806
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:121
     label: medium FOR CAMPYLOBACTER DSM 806
-notes: 'Source: KOMODO ModelSEED | ID: 121 | DSMZ Medium: 121 (mediadive.medium:121)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 121 | DSMZ Medium: 121 (mediadive.medium:121) | Aerobic: No'
 ingredients:
 - preferred_term: Na-aspartate
   concentration:

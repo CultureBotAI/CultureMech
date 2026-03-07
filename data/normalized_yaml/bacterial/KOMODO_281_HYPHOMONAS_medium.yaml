@@ -1,6 +1,6 @@
 name: HYPHOMONAS medium
 original_name: HYPHOMONAS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:281
     label: HYPHOMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 281 | DSMZ Medium: 281 (mediadive.medium:281)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 281 | DSMZ Medium: 281 (mediadive.medium:281) | Aerobic: No'
 ingredients:
 - preferred_term: Casitone
   concentration:

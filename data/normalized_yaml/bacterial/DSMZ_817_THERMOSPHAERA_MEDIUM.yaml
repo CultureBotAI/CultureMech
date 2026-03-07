@@ -1,6 +1,6 @@
 name: THERMOSPHAERA MEDIUM
 original_name: THERMOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -156,18 +156,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, vitamins and sulfide. Sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials to 30% of their volume and autoclave. Add vitamins and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins
-    should be sterilized by filtration. The pH of the complete medium should be adjusted
-    to 6.5.
+  description: Dissolve ingredients except carbonate, vitamins and sulfide. Sparge medium with 80% N2
+    and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add vitamins and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized
+    by filtration. The pH of the complete medium should be adjusted to 6.5.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize tubes or bottles (heavy walled) to 2 bar
-    overpressure with sterile 80% N2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize tubes or bottles (heavy walled) to 2 bar overpressure with
+    sterile 80% N2 and 20% CO2 gas mixture.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,5 +176,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.062230Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

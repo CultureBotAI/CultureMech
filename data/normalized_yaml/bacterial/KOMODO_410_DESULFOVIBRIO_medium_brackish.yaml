@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO medium (brackish)
 original_name: DESULFOVIBRIO medium (brackish)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:410
     label: DESULFOVIBRIO medium (brackish)
-notes: 'Source: KOMODO ModelSEED | ID: 410 | DSMZ Medium: 410 (mediadive.medium:410)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 410 | DSMZ Medium: 410 (mediadive.medium:410) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

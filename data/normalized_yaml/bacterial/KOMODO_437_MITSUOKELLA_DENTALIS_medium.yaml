@@ -1,6 +1,6 @@
 name: MITSUOKELLA DENTALIS medium
 original_name: MITSUOKELLA DENTALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:437
     label: MITSUOKELLA DENTALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 437 | DSMZ Medium: 437 (mediadive.medium:437)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 437 | DSMZ Medium: 437 (mediadive.medium:437) | Aerobic: Yes'
 ingredients:
 - preferred_term: Beef extract
   concentration:

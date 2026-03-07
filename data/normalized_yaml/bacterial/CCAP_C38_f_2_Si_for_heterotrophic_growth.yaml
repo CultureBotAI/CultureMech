@@ -1,6 +1,6 @@
 name: f/2 + Si for heterotrophic growth
 original_name: f/2 + Si for heterotrophic growth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -109,17 +109,15 @@ preparation_steps:
   description: 'Add while stirring:'
 - step_number: 2
   action: STORE
-  description: "Silicate can react with glass, ensure this stock solution is stored\
-    \ in plastic\r\nbottles."
+  description: "Silicate can react with glass, ensure this stock solution is stored in plastic\r\nbottles."
 - step_number: 3
   action: FILTER_STERILIZE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or\r\nHCl. Sterilise by autoclaving for 15 minutes at 15 psi and\
-    \ use when cooled to room\r\ntemperature."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or\r\n\
+    HCl. Sterilise by autoclaving for 15 minutes at 15 psi and use when cooled to room\r\ntemperature."
 - step_number: 4
   action: MIX
-  description: For heterotrophic growth (in the dark) add either  0.5 g/l yeast extract
-    and 5 g/l glucose or 0.5 g/l yeast extract and 3 g/l sodium acetate.
+  description: For heterotrophic growth (in the dark) add either  0.5 g/l yeast extract and 5 g/l glucose
+    or 0.5 g/l yeast extract and 3 g/l sodium acetate.
 applications:
 - Microbial cultivation
 curation_history:

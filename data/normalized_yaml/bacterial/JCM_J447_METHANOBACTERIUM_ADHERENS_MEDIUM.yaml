@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM ADHERENS MEDIUM
 original_name: METHANOBACTERIUM ADHERENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.7
@@ -242,21 +242,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3 and Na2S x 9H2O, and bring to a boil
-    for 5 min, then, cool down under a stream of a H2-CO2 (80:20, v/v) gas mixture.
-    Distribute the medium into culture vessels (e.g., 20 ml of the medium in 120 ml
-    serum bottles) under the same gas mixture, seal with butyl rubber stoppers and
-    autoclave. Filter-sterilize NaHCO3 as an 8% solution while gassing with N2-CO2
-    (80:20, v/v). Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
-    Aseptically and anaerobically add the NaHCO3 solution to the medium and readjust
-    pH to 7.6 - 7.8 with a sterile 1% Na2CO3 solution (stocked anaerobically). Prior
-    to inoculation, add the sterile Na2S x 9H2O solution. Pressurize inoculated bottles
-    to 200 kPa H2-CO2 (80:20, v/v).
+  description: Mix ingredients except NaHCO3 and Na2S x 9H2O, and bring to a boil for 5 min, then, cool
+    down under a stream of a H2-CO2 (80:20, v/v) gas mixture. Distribute the medium into culture vessels
+    (e.g., 20 ml of the medium in 120 ml serum bottles) under the same gas mixture, seal with butyl rubber
+    stoppers and autoclave. Filter-sterilize NaHCO3 as an 8% solution while gassing with N2-CO2 (80:20,
+    v/v). Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Aseptically and anaerobically
+    add the NaHCO3 solution to the medium and readjust pH to 7.6 - 7.8 with a sterile 1% Na2CO3 solution
+    (stocked anaerobically). Prior to inoculation, add the sterile Na2S x 9H2O solution. Pressurize inoculated
+    bottles to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

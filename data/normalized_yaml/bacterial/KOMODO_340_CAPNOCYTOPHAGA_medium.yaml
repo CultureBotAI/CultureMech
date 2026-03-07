@@ -1,6 +1,6 @@
 name: CAPNOCYTOPHAGA medium
 original_name: CAPNOCYTOPHAGA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:340
     label: CAPNOCYTOPHAGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 340 | DSMZ Medium: 340 (mediadive.medium:340)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 340 | DSMZ Medium: 340 (mediadive.medium:340) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase
   concentration:

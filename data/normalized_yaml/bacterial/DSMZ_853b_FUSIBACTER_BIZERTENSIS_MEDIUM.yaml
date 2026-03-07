@@ -1,6 +1,6 @@
 name: FUSIBACTER BIZERTENSIS MEDIUM
 original_name: FUSIBACTER BIZERTENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -215,18 +215,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except thiosulfate, cysteine, carbonate, glucose,
-    and sulfide, then sparge medium for 30 - 45 min with 80% N2 and 20% CO2 gas mixture
-    to make it anoxic. Add thiosulfate and cysteine, then adjust pH to 7.0 and dispense
-    medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials to 30% of their volume and autoclave. After autoclaving, add glucose
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas atmosphere. Adjust the pH of the complete medium to 7.2 - 7.4, if necessary.
+  description: Dissolve ingredients, except thiosulfate, cysteine, carbonate, glucose, and sulfide, then
+    sparge medium for 30 - 45 min with 80% N2 and 20% CO2 gas mixture to make it anoxic. Add thiosulfate
+    and cysteine, then adjust pH to 7.0 and dispense medium under 80% N2 and 20% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. After autoclaving,
+    add glucose and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust the
+    pH of the complete medium to 7.2 - 7.4, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

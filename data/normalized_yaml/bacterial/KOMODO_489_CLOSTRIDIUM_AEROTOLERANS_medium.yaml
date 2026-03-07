@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM AEROTOLERANS medium
 original_name: CLOSTRIDIUM AEROTOLERANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:489
     label: CLOSTRIDIUM AEROTOLERANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 489 | DSMZ Medium: 489 (mediadive.medium:489) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

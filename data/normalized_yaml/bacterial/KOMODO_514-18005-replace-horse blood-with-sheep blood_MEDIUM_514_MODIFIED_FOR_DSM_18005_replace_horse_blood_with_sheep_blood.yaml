@@ -1,15 +1,15 @@
 name: MEDIUM 514 MODIFIED FOR DSM 18005_replace_horse blood_with_sheep blood
 original_name: MEDIUM 514 MODIFIED FOR DSM 18005_replace_horse blood_with_sheep blood
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514_18005_replace_horse blood_with_sheep blood
   term:
     id: komodo.medium:514_18005_replace_horse blood_with_sheep blood
     label: MEDIUM 514 MODIFIED FOR DSM 18005_replace_horse blood_with_sheep blood
-notes: 'Source: KOMODO ModelSEED | ID: 514_18005_replace_horse blood_with_sheep blood
-  | DSMZ Medium: 514 (mediadive.medium:514) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514_18005_replace_horse blood_with_sheep blood | DSMZ Medium: 514
+  (mediadive.medium:514) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

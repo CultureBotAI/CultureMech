@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO medium (choline)
 original_name: DESULFOVIBRIO medium (choline)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:272
     label: DESULFOVIBRIO medium (choline)
-notes: 'Source: KOMODO ModelSEED | ID: 272 | DSMZ Medium: 272 (mediadive.medium:272)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 272 | DSMZ Medium: 272 (mediadive.medium:272) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

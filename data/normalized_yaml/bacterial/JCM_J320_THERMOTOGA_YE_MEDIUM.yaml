@@ -1,6 +1,6 @@
 name: THERMOTOGA YE MEDIUM
 original_name: THERMOTOGA YE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -260,16 +260,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract and Na2S x 9H2O, adjust pH to
-    6.5 with H2SO4, and filter-sterilize under a N2 atmosphere. Separately autoclave
-    10% yeast extract solution and neutralized 5% Na2S x 9H2O solution under a N2
-    atmosphere. Aseptically and anaerobically add the yeast extract solution to the
-    medium. Prior to inoculation, add the Na2S x 9H2O solution to the medium, and
-    readjust pH to 6.5 - 7.0, if necessary. Cultivate under a N2 atmosphere.
+  description: Mix ingredients, except yeast extract and Na2S x 9H2O, adjust pH to 6.5 with H2SO4, and
+    filter-sterilize under a N2 atmosphere. Separately autoclave 10% yeast extract solution and neutralized
+    5% Na2S x 9H2O solution under a N2 atmosphere. Aseptically and anaerobically add the yeast extract
+    solution to the medium. Prior to inoculation, add the Na2S x 9H2O solution to the medium, and readjust
+    pH to 6.5 - 7.0, if necessary. Cultivate under a N2 atmosphere.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

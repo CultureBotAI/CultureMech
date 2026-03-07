@@ -1,6 +1,6 @@
 name: For DSM 19089
 original_name: For DSM 19089
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1104.1
     label: For DSM 19089
-notes: 'Source: KOMODO ModelSEED | ID: 1104.1 | DSMZ Medium: 1104 (mediadive.medium:1104)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1104.1 | DSMZ Medium: 1104 (mediadive.medium:1104) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -258,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.405344Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: HALOANAEROBIUM LACUSROSEUS medium
 original_name: HALOANAEROBIUM LACUSROSEUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:764
     label: HALOANAEROBIUM LACUSROSEUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 764 | DSMZ Medium: 764 (mediadive.medium:764)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 764 | DSMZ Medium: 764 (mediadive.medium:764) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

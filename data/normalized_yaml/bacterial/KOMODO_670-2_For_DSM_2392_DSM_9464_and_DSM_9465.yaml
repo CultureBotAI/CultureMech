@@ -1,6 +1,6 @@
 name: For DSM 2392, DSM 9464 and DSM 9465
 original_name: For DSM 2392, DSM 9464 and DSM 9465
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:670.2
     label: For DSM 2392, DSM 9464 and DSM 9465
-notes: 'Source: KOMODO ModelSEED | ID: 670.2 | DSMZ Medium: 670 (mediadive.medium:670)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 670.2 | DSMZ Medium: 670 (mediadive.medium:670) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

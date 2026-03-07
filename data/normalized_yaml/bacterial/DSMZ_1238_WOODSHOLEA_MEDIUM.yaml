@@ -1,6 +1,6 @@
 name: WOODSHOLEA MEDIUM
 original_name: WOODSHOLEA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -46,9 +46,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g peptone
-    and 50 g yeast extract in 1l distilled water, autoclaved), 2 ml 50 % glucose (autoclaved)
-    and 5 ml filter-sterilized riboflavin (0.2 mg ml-1) were added.
+  description: After autoclaving and cooling the medium, 20 ml 50 x PYE (100 g peptone and 50 g yeast
+    extract in 1l distilled water, autoclaved), 2 ml 50 % glucose (autoclaved) and 5 ml filter-sterilized
+    riboflavin (0.2 mg ml-1) were added.
 - step_number: 2
   action: AUTOCLAVE
   description: autoclaved

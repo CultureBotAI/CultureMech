@@ -1,16 +1,15 @@
 name: BAF medium
 original_name: BAF medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.8-6.3
 media_term:
   preferred_term: KOMODO Medium 392
   term:
     id: komodo.medium:392
     label: BAF medium
-notes: 'Source: KOMODO ModelSEED | ID: 392 | DSMZ Medium: 392 (mediadive.medium:392)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 392 | DSMZ Medium: 392 (mediadive.medium:392) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

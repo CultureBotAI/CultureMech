@@ -1,6 +1,6 @@
 name: MBM MEDIUM 2
 original_name: MBM MEDIUM 2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -246,22 +246,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil for a few seconds, cool
-    down under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and
-    autoclave. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly. Bring to a boil for a few seconds, cool down under a N2-CO2
+    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels (e.g., 5 ml
-    of the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture and
-    seal with butyl rubber stoppers. Add per liter the following solutions from anaerobic
-    stocks (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels (e.g., 5 ml of the medium in the
+    Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Add per
+    liter the following solutions from anaerobic stocks (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.5, if necessary.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

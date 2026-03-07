@@ -1,6 +1,6 @@
 name: YM-CATALASE MEDIUM
 original_name: YM-CATALASE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -50,9 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water
-    each, and sterilize separately by filtration. Cool down autoclaved main solution
-    to 50°C, and aseptically add catalase and MgSO4 solution.
+  description: Adjust pH to 7.0. Add catalase and MgSO4 to 10 ml of distilled water each, and sterilize
+    separately by filtration. Cool down autoclaved main solution to 50°C, and aseptically add catalase
+    and MgSO4 solution.
 applications:
 - Microbial cultivation
 curation_history:

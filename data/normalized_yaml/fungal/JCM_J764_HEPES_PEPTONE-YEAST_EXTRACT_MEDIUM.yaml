@@ -1,6 +1,6 @@
 name: HEPES PEPTONE-YEAST EXTRACT MEDIUM
 original_name: HEPES PEPTONE-YEAST EXTRACT MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -229,12 +229,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 7.25. Autoclave and after cooling, add the following
-    solution (filter-sterilized):'
+  description: 'Adjust pH to 7.25. Autoclave and after cooling, add the following solution (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
-    minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
 applications:
 - Microbial cultivation
 curation_history:

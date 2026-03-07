@@ -1,6 +1,6 @@
 name: Wilkins-Chalgren Anaerobe Broth
 original_name: Wilkins-Chalgren Anaerobe Broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -44,8 +43,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: Sodium Chloride
@@ -53,8 +51,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -62,8 +59,7 @@ ingredients:
   concentration:
     value: '0.005'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -71,8 +67,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:16467
     label: L-arginine
@@ -80,8 +75,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -89,8 +83,7 @@ ingredients:
   concentration:
     value: '0.0005'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:28869
     label: Menadione

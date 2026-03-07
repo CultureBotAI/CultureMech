@@ -1,6 +1,6 @@
 name: For DSM 4301
 original_name: For DSM 4301
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 2-3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:398.1
     label: For DSM 4301
-notes: 'Source: KOMODO ModelSEED | ID: 398.1 | DSMZ Medium: 398 (mediadive.medium:398)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 398.1 | DSMZ Medium: 398 (mediadive.medium:398) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

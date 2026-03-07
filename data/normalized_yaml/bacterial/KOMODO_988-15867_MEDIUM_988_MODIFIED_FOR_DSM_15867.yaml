@@ -1,15 +1,15 @@
 name: MEDIUM 988 MODIFIED FOR DSM 15867
 original_name: MEDIUM 988 MODIFIED FOR DSM 15867
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 988_15867
   term:
     id: komodo.medium:988_15867
     label: MEDIUM 988 MODIFIED FOR DSM 15867
-notes: 'Source: KOMODO ModelSEED | ID: 988_15867 | DSMZ Medium: 988 (mediadive.medium:988)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 988_15867 | DSMZ Medium: 988 (mediadive.medium:988) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

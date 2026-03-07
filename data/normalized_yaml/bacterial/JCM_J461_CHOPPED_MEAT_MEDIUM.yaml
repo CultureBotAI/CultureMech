@@ -1,6 +1,6 @@
 name: CHOPPED MEAT MEDIUM
 original_name: CHOPPED MEAT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -47,20 +47,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Use lean beef or horse meat. Remove fat and connective tissue before
-    grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
-    room temperature, skim fat off surface and filter, retaining both meat particles
-    and filtrate. Add water to the filtrate to a final volume of 1.0 L and then add
-    the following:'
+  description: 'Use lean beef or horse meat. Remove fat and connective tissue before grinding. Mix meat,
+    water and NaOH, then boil for 15 min with stirring. Cool to room temperature, skim fat off surface
+    and filter, retaining both meat particles and filtrate. Add water to the filtrate to a final volume
+    of 1.0 L and then add the following:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil, cool, add 0.5 g L-cysteine x HCl x H2O and adjust pH to 7.0.
-    Dispense 7 ml into tubes containing meat particles (use 1 part meat particles
-    to 4 or 5 parts fluid) under a N2 atmosphere and seal with butyl rubber stoppers.
-    Autoclave at 121C for 30 min. For agar slants, use 15 g agar per 1.0 L medium.
-    Alternatively, commercially available Cooked Meat Medium may be used (Oxoid CM81;
-    Merck 10928; Difco 0267-01-7). The medium should be supplemented with 5 g/L yeast
-    extract, 5 g/L K2HPO4, 1 mg/L resazurin, and 0.5 g/L L-cysteine x HCl x H2O.
+  description: Boil, cool, add 0.5 g L-cysteine x HCl x H2O and adjust pH to 7.0. Dispense 7 ml into tubes
+    containing meat particles (use 1 part meat particles to 4 or 5 parts fluid) under a N2 atmosphere
+    and seal with butyl rubber stoppers. Autoclave at 121C for 30 min. For agar slants, use 15 g agar
+    per 1.0 L medium. Alternatively, commercially available Cooked Meat Medium may be used (Oxoid CM81;
+    Merck 10928; Difco 0267-01-7). The medium should be supplemented with 5 g/L yeast extract, 5 g/L K2HPO4,
+    1 mg/L resazurin, and 0.5 g/L L-cysteine x HCl x H2O.
 applications:
 - Microbial cultivation
 curation_history:

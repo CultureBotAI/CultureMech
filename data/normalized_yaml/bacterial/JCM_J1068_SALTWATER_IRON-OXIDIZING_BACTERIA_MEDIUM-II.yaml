@@ -1,6 +1,6 @@
 name: SALTWATER IRON-OXIDIZING BACTERIA  MEDIUM-II
 original_name: SALTWATER IRON-OXIDIZING BACTERIA  MEDIUM-II
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -255,17 +255,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, distribute the medium into culture vessels (e.g.,
-    10 ml in Balch-type tubes), seal with butyl rubber stoppers and autoclave. After
-    autoclaving, aseptically add per liter the following solutions (filter-sterilized):'
+  description: 'Mix components, distribute the medium into culture vessels (e.g., 10 ml in Balch-type
+    tubes), seal with butyl rubber stoppers and autoclave. After autoclaving, aseptically add per liter
+    the following solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Replace the gas phase with a N2-CO2-O2 (80:20:3, v/v/v) gas mixture
-    and pressurize to 200 kPa with the same gas mixture.
+  description: Replace the gas phase with a N2-CO2-O2 (80:20:3, v/v/v) gas mixture and pressurize to 200
+    kPa with the same gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MS-MEDIUM (MODIFIED)
 original_name: MS-MEDIUM (MODIFIED)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1145
     label: MS-MEDIUM (MODIFIED)
-notes: 'Source: KOMODO ModelSEED | ID: 1145 | DSMZ Medium: 1145 (mediadive.medium:1145)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1145 | DSMZ Medium: 1145 (mediadive.medium:1145) | Aerobic: Yes'
 ingredients:
 - preferred_term: Double distilled water
   term:

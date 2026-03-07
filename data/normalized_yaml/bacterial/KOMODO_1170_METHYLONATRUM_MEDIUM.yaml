@@ -1,6 +1,6 @@
 name: METHYLONATRUM MEDIUM
 original_name: METHYLONATRUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1170
     label: METHYLONATRUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1170 | DSMZ Medium: 1170 (mediadive.medium:1170)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1170 | DSMZ Medium: 1170 (mediadive.medium:1170) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

@@ -1,6 +1,6 @@
 name: METHANOHALOPHILUS PROFUNDI MEDIUM
 original_name: METHANOHALOPHILUS PROFUNDI MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -201,16 +201,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except trimethylamine, coenzyme M and sulfide.
-    Adjust pH to 7.5 and sparge medium with 100% N2 gas for 30 - 45 min to make it
-    anoxic; then dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add trimethylamine, coenzyme M and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
+  description: Dissolve ingredients except trimethylamine, coenzyme M and sulfide. Adjust pH to 7.5 and
+    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic; then dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add trimethylamine, coenzyme
+    M and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete
     medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

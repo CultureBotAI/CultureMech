@@ -1,6 +1,6 @@
 name: MJTSO MEDIUM
 original_name: MJTSO MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -165,13 +165,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3 and sulfur, adjust pH to 7.5 with NaOH
-    and autoclave. Filter-sterilize 8% NaHCO3 solution and add to the medium. Steam
-    sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture
-    vessels containing appropriate amount of sulfur (e.g., 20 ml of medium in 120
-    ml serum bottles containing 0.06 g sulfur) under a stream of CO2-O2 (93:7, v/v)
-    gas mixture, seal with butyl rubber stoppers and readjust pH to 7.5 with NaOH.
-    Pressurize the inoculated vessel to 100 kPa CO2-O2 (93:7, v/v).
+  description: Mix ingredients except NaHCO3 and sulfur, adjust pH to 7.5 with NaOH and autoclave. Filter-sterilize
+    8% NaHCO3 solution and add to the medium. Steam sulfur for 3 hr on each of 3 successive days. Distribute
+    the medium into culture vessels containing appropriate amount of sulfur (e.g., 20 ml of medium in
+    120 ml serum bottles containing 0.06 g sulfur) under a stream of CO2-O2 (93:7, v/v) gas mixture, seal
+    with butyl rubber stoppers and readjust pH to 7.5 with NaOH. Pressurize the inoculated vessel to 100
+    kPa CO2-O2 (93:7, v/v).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PY + X MEDIUM (N2/CO2)
 original_name: PY + X MEDIUM (N2/CO2)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -93,13 +93,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, carbonate and glucose) and sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Add cysteine, then dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add glucose from a sterile anoxic
-    stock solution prepared under 100% N2 gas atmosphere and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust
-    pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except cysteine, carbonate and glucose) and sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine, then dispense under 80%
+    N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose
+    from a sterile anoxic stock solution prepared under 100% N2 gas atmosphere and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium
+    to 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

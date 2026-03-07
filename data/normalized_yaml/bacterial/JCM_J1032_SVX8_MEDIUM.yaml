@@ -1,6 +1,6 @@
 name: SVX8 MEDIUM
 original_name: SVX8 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -266,13 +266,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components, bring to a boil and cool down under a CO2 (100%) gas
-    stream. While gassing, add the following components to the medium:'
+  description: 'Mix components, bring to a boil and cool down under a CO2 (100%) gas stream. While gassing,
+    add the following components to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Bubble N2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH
-    to the range if necessary. Autoclave under a CO2 gas atmosphere. Add the following
-    solution to the medium (separately autoclaved under N2):'
+  description: 'Bubble N2 for 3 - 4 min and check pH to be 6.5 - 6.8. Readjust pH to the range if necessary.
+    Autoclave under a CO2 gas atmosphere. Add the following solution to the medium (separately autoclaved
+    under N2):'
 applications:
 - Microbial cultivation
 curation_history:

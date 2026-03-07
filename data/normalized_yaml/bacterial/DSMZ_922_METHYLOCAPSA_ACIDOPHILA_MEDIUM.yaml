@@ -1,6 +1,6 @@
 name: METHYLOCAPSA ACIDOPHILA MEDIUM
 original_name: METHYLOCAPSA ACIDOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 4-4.5
@@ -95,10 +95,9 @@ preparation_steps:
   description: Final pH 4.0-4.5.
 - step_number: 2
   action: MIX
-  description: The medium is fairly weakly buffered so the pH should be checked before
-    and after autoclaving. In the early stage of growth the strain may form aggregates
-    which break as the culture ages. 10-30% methane is added to the gas phase. Adding
-    100 mg/litre KNO3 enhances growth.
+  description: The medium is fairly weakly buffered so the pH should be checked before and after autoclaving.
+    In the early stage of growth the strain may form aggregates which break as the culture ages. 10-30%
+    methane is added to the gas phase. Adding 100 mg/litre KNO3 enhances growth.
 - step_number: 3
   action: MIX
   description: The strain should be grown with shaking.

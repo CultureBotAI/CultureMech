@@ -1,16 +1,15 @@
 name: BTT medium
 original_name: BTT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.5-6.0
 media_term:
   preferred_term: KOMODO Medium 1109
   term:
     id: komodo.medium:1109
     label: BTT medium
-notes: 'Source: KOMODO ModelSEED | ID: 1109 | DSMZ Medium: 1109 (mediadive.medium:1109)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1109 | DSMZ Medium: 1109 (mediadive.medium:1109) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

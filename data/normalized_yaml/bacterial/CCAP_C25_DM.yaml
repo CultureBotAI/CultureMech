@@ -1,6 +1,6 @@
 name: DM
 original_name: DM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
@@ -96,12 +96,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water. Adjust to pH 6.9 with 1M\
-    \ NaOH or 1M HCl, prior to\r\nautoclaving. Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with deionized water. Adjust to pH 6.9 with 1M NaOH or 1M HCl, prior\
+    \ to\r\nautoclaving. Autoclave at 15 psi for 15 minutes."
 - step_number: 2
   action: STORE
-  description: "Silicate can react with glass, ensure this stock solution is stored\
-    \ in plastic\r\nbottles."
+  description: "Silicate can react with glass, ensure this stock solution is stored in plastic\r\nbottles."
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 63 MODIFIED FOR DSM 21064
 original_name: MEDIUM 63 MODIFIED FOR DSM 21064
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:63_21064
     label: MEDIUM 63 MODIFIED FOR DSM 21064
-notes: 'Source: KOMODO ModelSEED | ID: 63_21064 | DSMZ Medium: 63 (mediadive.medium:63)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 63_21064 | DSMZ Medium: 63 (mediadive.medium:63) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

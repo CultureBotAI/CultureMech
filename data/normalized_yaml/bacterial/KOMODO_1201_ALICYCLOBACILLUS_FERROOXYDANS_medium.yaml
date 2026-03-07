@@ -1,6 +1,6 @@
 name: ALICYCLOBACILLUS FERROOXYDANS medium
 original_name: ALICYCLOBACILLUS FERROOXYDANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.8-2.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1201
     label: ALICYCLOBACILLUS FERROOXYDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1201 | DSMZ Medium: 1201 (mediadive.medium:1201)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1201 | DSMZ Medium: 1201 (mediadive.medium:1201) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

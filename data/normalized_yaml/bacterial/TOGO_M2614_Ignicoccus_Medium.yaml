@@ -1,6 +1,6 @@
 name: Ignicoccus Medium
 original_name: Ignicoccus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,14 +18,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Solution, Defined component, Inorganic compound'
 - preferred_term: Distilled water
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -33,8 +31,7 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -42,8 +39,7 @@ ingredients:
   concentration:
     value: '13.65'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -51,8 +47,7 @@ ingredients:
   concentration:
     value: '0.38'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -60,8 +55,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -69,8 +63,7 @@ ingredients:
   concentration:
     value: '2.75'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:6636
     label: magnesium dichloride
@@ -78,8 +71,7 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
@@ -87,8 +79,7 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -96,8 +87,7 @@ ingredients:
   concentration:
     value: '0.33'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -105,8 +95,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -114,14 +103,12 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: NaBr
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:63004
     label: sodium bromide
@@ -131,8 +118,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: 2 N H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   concentration:
     value: variable
     unit: VARIABLE
@@ -173,6 +159,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.953531'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 2 N H2SO4; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: Carbon dioxide
-    gas; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: 2 N H2SO4; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Carbon dioxide gas; Added default concentration for
+    ingredient: Hydrogen gas'

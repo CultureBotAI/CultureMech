@@ -1,6 +1,6 @@
 name: m TGE-GP Medium
 original_name: m TGE-GP Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -18,8 +17,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: KH2PO4
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4

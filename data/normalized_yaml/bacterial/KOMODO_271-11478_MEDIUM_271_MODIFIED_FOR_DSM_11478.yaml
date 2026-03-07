@@ -1,6 +1,6 @@
 name: MEDIUM 271 MODIFIED FOR DSM 11478
 original_name: MEDIUM 271 MODIFIED FOR DSM 11478
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:271_11478
     label: MEDIUM 271 MODIFIED FOR DSM 11478
-notes: 'Source: KOMODO ModelSEED | ID: 271_11478 | DSMZ Medium: 271 (mediadive.medium:271)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 271_11478 | DSMZ Medium: 271 (mediadive.medium:271) | Aerobic:
+  No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

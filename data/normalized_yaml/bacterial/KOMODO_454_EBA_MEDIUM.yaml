@@ -1,6 +1,6 @@
 name: EBA MEDIUM
 original_name: EBA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:454
     label: EBA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 454 | DSMZ Medium: 454 (mediadive.medium:454)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 454 | DSMZ Medium: 454 (mediadive.medium:454) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

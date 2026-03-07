@@ -1,6 +1,6 @@
 name: A1 MEDIUM
 original_name: A1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -250,11 +250,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix ingredients except NaHCO3, adjust pH to 6.8 and add NaHCO3 to the
-    medium. Dispense the medium (9 ml) into 26-ml anaerobic pressure tubes under a
-    stream of oxygen-free N2-CO2 (80:20) and seal. After autoclaving, aseptically
-    and anaerobically add 0.2 ml APM salts solution and 0.1 ml Sulfide stock solution
-    and 0.1 ml Galactose stock solution.
+  description: Mix ingredients except NaHCO3, adjust pH to 6.8 and add NaHCO3 to the medium. Dispense
+    the medium (9 ml) into 26-ml anaerobic pressure tubes under a stream of oxygen-free N2-CO2 (80:20)
+    and seal. After autoclaving, aseptically and anaerobically add 0.2 ml APM salts solution and 0.1 ml
+    Sulfide stock solution and 0.1 ml Galactose stock solution.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,11 +1,11 @@
 name: MEDIUM 830 MODIFIED FOR DSM 17997
 original_name: MEDIUM 830 MODIFIED FOR DSM 17997
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 830_17997 | DSMZ Medium:
-  830 (mediadive.medium:830) | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 830_17997 | DSMZ Medium: 830 (mediadive.medium:830)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 830_17997
   term:

@@ -1,8 +1,8 @@
 name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
 original_name: MEDIUM FOR CHEMOLITHOTROPHIC GROWTH OF BACILLUS SCHLEGELII
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:
   preferred_term: DSMZ Medium 261
@@ -120,12 +120,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml
-    amounts in Erlenmeyer flasks and sterilize for 15 minutes at 121°C.
+  description: Adjust pH to 7.1. Agar if necessary 15.0 g. Distribute in 30 - 50 ml amounts in Erlenmeyer
+    flasks and sterilize for 15 minutes at 121°C.
 - step_number: 2
   action: MIX
-  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2,\
-    \ 45% H2"
+  description: "Incubate at 65C without agitation under 5% (v/v)\r\nO2, 10% CO2, 45% H2"
 applications:
 - Microbial cultivation
 curation_history:

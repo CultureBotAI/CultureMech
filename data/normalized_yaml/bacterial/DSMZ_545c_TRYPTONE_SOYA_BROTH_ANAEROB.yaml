@@ -1,6 +1,6 @@
 name: TRYPTONE SOYA BROTH (ANAEROB)
 original_name: TRYPTONE SOYA BROTH (ANAEROB)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -61,11 +61,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium
-    for 1 minute, then cool to room temperature under 100% N2 gas atmosphere. Add
-    cysteine and thioglycolate, then adjust the pH to 8.0. Dispense medium under the
-    same gas atmosphere in culture vessels and autoclave at 121ºC for <b>15</b> minutes.
-    Check and adjust the pH of the complete medium to 8.0, if necessary.
+  description: Dissolve ingredients (except cysteine and thioglycolate), boil medium for 1 minute, then
+    cool to room temperature under 100% N2 gas atmosphere. Add cysteine and thioglycolate, then adjust
+    the pH to 8.0. Dispense medium under the same gas atmosphere in culture vessels and autoclave at 121ºC
+    for <b>15</b> minutes. Check and adjust the pH of the complete medium to 8.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

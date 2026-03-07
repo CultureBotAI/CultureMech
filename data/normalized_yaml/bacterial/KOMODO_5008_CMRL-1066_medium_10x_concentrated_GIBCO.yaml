@@ -1,6 +1,6 @@
 name: CMRL-1066 medium (10x concentrated; GIBCO)
 original_name: CMRL-1066 medium (10x concentrated; GIBCO)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:5008
     label: CMRL-1066 medium (10x concentrated; GIBCO)
-notes: 'Source: KOMODO ModelSEED | ID: 5008 | DSMZ Medium: 5008 (mediadive.medium:5008)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5008 | DSMZ Medium: 5008 (mediadive.medium:5008) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

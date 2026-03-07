@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTER MEDIUM
 original_name: THERMOANAEROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.5
@@ -54,13 +54,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferrous sulfate, sucrose, sulfite, and
-    thiosulfate), adjust pH to 6.8 - 7.5, and sparge medium with 100% N2 gas for 30
-    - 45 min to make it anoxic. Add ferrous sulfate, then dispense medium under the
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    After sterilization add sucrose, sulfite, and thiosulfate from anoxic stock solutions
-    prepared under 100% N2 gas and sterilized by filtration. The stock solution of
-    sulfite should be freshly prepared.
+  description: Dissolve ingredients (except ferrous sulfate, sucrose, sulfite, and thiosulfate), adjust
+    pH to 6.8 - 7.5, and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add ferrous
+    sulfate, then dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. After sterilization add sucrose, sulfite, and thiosulfate from anoxic stock solutions
+    prepared under 100% N2 gas and sterilized by filtration. The stock solution of sulfite should be freshly
+    prepared.
 applications:
 - Microbial cultivation
 curation_history:

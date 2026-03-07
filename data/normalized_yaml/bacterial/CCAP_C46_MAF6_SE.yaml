@@ -1,6 +1,6 @@
 name: MAF6:SE
 original_name: MAF6:SE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.6
@@ -117,12 +117,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. pH is adjusted to 6.6.  Autoclave\
-    \ at 15 psi for \r\n15 minutes."
+  description: "Make up to 1 litre with distilled water. pH is adjusted to 6.6.  Autoclave at 15 psi for\
+    \ \r\n15 minutes."
 - step_number: 2
   action: MIX
-  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
-    \ in exactly the \r\nfollowing sequence:"
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \r\n\
+    following sequence:"
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterile
@@ -131,26 +131,23 @@ preparation_steps:
   description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
 - step_number: 5
   action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid are\
-    \ those showing obvious \r\nsigns of man's activity and particular care should\
-    \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
-    \ may have been used."
+  description: "Site selection for a good soil is very important and for most purposes a soil from \r\n\
+    undisturbed deciduous woodland is best.  Sites to avoid are those showing obvious \r\nsigns of man's\
+    \ activity and particular care should be taken to avoid areas where \r\nfertilizers, crop sprays or\
+    \ other toxic chemicals may have been used."
 - step_number: 6
   action: STORE
-  description: "A rich loam with good crumb structure should be sought.  Stones, roots\
-    \ and larger \r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh.  The sieved soil should be spread to air dry and hand picked for\
-    \ smaller \r\ninvertebrates and roots.  It should be turned periodically and picked\
-    \ over again.  When dry it may be sieved through a finer mesh (2­4 mm) or stored\
-    \ as it is prior to\r\nuse."
+  description: "A rich loam with good crumb structure should be sought.  Stones, roots and larger \r\n\
+    invertebrates should be removed during an initial sieving through a 1 cm mesh.  The sieved soil should\
+    \ be spread to air dry and hand picked for smaller \r\ninvertebrates and roots.  It should be turned\
+    \ periodically and picked over again.  When dry it may be sieved through a finer mesh (2­4 mm) or\
+    \ stored as it is prior to\r\nuse."
 - step_number: 7
   action: AUTOCLAVE
-  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660\
-    \ ml of deionized \r\nwater are placed in a 1 litre bottle and autoclaved once\
-    \ at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The contents of the\
-    \ bottle are left to settle (usually for \r\nat least a week) and then the supernatant\
-    \ is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
+  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660 ml of deionized \r\n\
+    water are placed in a 1 litre bottle and autoclaved once at 15 psi for 15 minutes, \r\nthen again\
+    \ after 24 hours.  The contents of the bottle are left to settle (usually for \r\nat least a week)\
+    \ and then the supernatant is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
 applications:
 - Microbial cultivation
 curation_history:

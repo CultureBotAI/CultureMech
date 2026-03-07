@@ -1,6 +1,6 @@
 name: CHLOROFLEXUS MEDIUM (modified)
 original_name: CHLOROFLEXUS MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
@@ -133,23 +133,22 @@ preparation_steps:
   description: Adjust pH to 8.2.
 - step_number: 2
   action: HEAT
-  description: Boil the medium under a stream of nitrogen gas for a few minutes and
-    distribute 10 ml medium into 15 ml hungate tubes. Bubble each tube with nitrogen
-    gas and close immediately with a rubber septum and screw tight.
+  description: Boil the medium under a stream of nitrogen gas for a few minutes and distribute 10 ml medium
+    into 15 ml hungate tubes. Bubble each tube with nitrogen gas and close immediately with a rubber septum
+    and screw tight.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 4
   action: MIX
-  description: After autoclaving inject 0.1 ml of neutralized sulfide solution (0.03%
-    end concentration) to each tube.
+  description: After autoclaving inject 0.1 ml of neutralized sulfide solution (0.03% end concentration)
+    to each tube.
 - step_number: 5
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:

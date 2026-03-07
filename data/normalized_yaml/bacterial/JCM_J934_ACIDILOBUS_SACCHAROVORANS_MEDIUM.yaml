@@ -1,6 +1,6 @@
 name: ACIDILOBUS SACCHAROVORANS MEDIUM
 original_name: ACIDILOBUS SACCHAROVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract
-    and 2.0 g/L glucose (separately autoclaved).
+  description: Use JCM medium No. 308 supplemented with 0.1 g/L (final) yeast extract and 2.0 g/L glucose
+    (separately autoclaved).
 applications:
 - Microbial cultivation
 curation_history:

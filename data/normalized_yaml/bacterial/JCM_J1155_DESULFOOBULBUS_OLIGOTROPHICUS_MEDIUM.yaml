@@ -1,6 +1,6 @@
 name: DESULFOOBULBUS OLIGOTROPHICUS MEDIUM
 original_name: DESULFOOBULBUS OLIGOTROPHICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
@@ -172,15 +172,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave
-    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave under a N2-CO2 (4:1,
+    v/v) gas mixture. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels
-    (e.g., 20 ml medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture
-    and seal with butyl rubber stoppers. Then, add per liter the following solution
-    (autoclaved and stored under N2):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml
+    medium in 60 ml serum bottles) under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
+    Then, add per liter the following solution (autoclaved and stored under N2):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.6, if necessary.

@@ -1,6 +1,6 @@
 name: COPROTHERMOBACTER (CP) MEDIUM
 original_name: COPROTHERMOBACTER (CP) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -180,17 +180,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, gelatine and sulfide), then
-    sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add and dissolve
-    bicarbonate and equilibrate the medium with the CO2 gas to achieve a pH of 7.0.
-    Dispense the medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. After sterilization add gelatine and sulfide from
-    sterile anoxic stock solutions autoclaved under 100% N2 gas. Prior to inoculation
-    check pH of complete medium and adjust to 7.0, if necessary.
+  description: Dissolve ingredients (except bicarbonate, gelatine and sulfide), then sparge medium with
+    100% CO2 gas for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate and equilibrate the medium
+    with the CO2 gas to achieve a pH of 7.0. Dispense the medium under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add gelatine and sulfide from
+    sterile anoxic stock solutions autoclaved under 100% N2 gas. Prior to inoculation check pH of complete
+    medium and adjust to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

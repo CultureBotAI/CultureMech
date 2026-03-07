@@ -1,8 +1,8 @@
 name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
 original_name: NUTRIENT AGAR (OXOID CM3) WITH PHOSPHATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 605a
@@ -54,8 +54,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O.
-    Final pH of the medium should be 6.8.
+  description: To medium 605 add 0.45 g/l KH2PO4 and 2.39 g/l of Na2HPO4 x 12 H2O. Final pH of the medium
+    should be 6.8.
 applications:
 - Microbial cultivation
 curation_history:

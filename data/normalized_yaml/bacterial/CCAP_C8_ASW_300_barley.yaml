@@ -1,6 +1,6 @@
 name: ASW 300 + barley
 original_name: ASW 300 + barley
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -48,8 +48,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4\
-    \ autoclaved \r\nbarley grains to a T­25 tissue culture flask (Corning 25100)."
+  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4 autoclaved \r\nbarley\
+    \ grains to a T­25 tissue culture flask (Corning 25100)."
 applications:
 - Microbial cultivation
 curation_history:

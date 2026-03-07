@@ -1,6 +1,6 @@
 name: STREPTOCOCCUS SUIS medium
 original_name: STREPTOCOCCUS SUIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:696
     label: STREPTOCOCCUS SUIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 696 | DSMZ Medium: 696 (mediadive.medium:696)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 696 | DSMZ Medium: 696 (mediadive.medium:696) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

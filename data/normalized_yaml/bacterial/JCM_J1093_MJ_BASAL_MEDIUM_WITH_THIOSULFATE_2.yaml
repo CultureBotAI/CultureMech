@@ -1,6 +1,6 @@
 name: MJ BASAL MEDIUM WITH THIOSULFATE/2
 original_name: MJ BASAL MEDIUM WITH THIOSULFATE/2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -256,18 +256,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following
-    solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
-    in 120 ml serum bottles) and seal with butyl rubber stoppers. Replace the gas
-    phase with a N2-CO2 (80:20, v/v) gas mixture, and pressurize to 200 kPa. Adjust
-    pH to 6.0, if necessary.
+  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
+    and seal with butyl rubber stoppers. Replace the gas phase with a N2-CO2 (80:20, v/v) gas mixture,
+    and pressurize to 200 kPa. Adjust pH to 6.0, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PYX-MEDIUM
 original_name: PYX-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:104b
     label: PYX-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 104b | DSMZ Medium: 104b (mediadive.medium:104b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 104b | DSMZ Medium: 104b (mediadive.medium:104b) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

@@ -1,6 +1,6 @@
 name: R2A MEDIUM (MICROAEROBIC)
 original_name: R2A MEDIUM (MICROAEROBIC)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5-5.5
@@ -65,19 +65,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, then sparge solution with 80% N2 and 20% CO2
-    gas mixture for at least 30 - 45 min to remove dissolved oxygen and to saturate
-    the solution with CO2. Dispense solution in vials suitable for anaerobic cultures
-    (e.g., Balch-type tubes or serum vials) to 30% volume (e.g., 5 ml medium in a
-    16 ml Hungate-type tube) under the 80% N2 and 20% CO2 gas atmosphere. Close vials
-    with butyl rubber septa to prevent the free exchange of oxygen with the external
-    atmosphere and autoclave them. Adjust pH of the autoclaved medium to 5.0 - 5.5
-    using a sterile stock solution of sodium carbonate (5% w/v), prepared under 80%
-    N2 and 20% CO2 gas mixture.
+  description: Dissolve ingredients, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2. Dispense solution in
+    vials suitable for anaerobic cultures (e.g., Balch-type tubes or serum vials) to 30% volume (e.g.,
+    5 ml medium in a 16 ml Hungate-type tube) under the 80% N2 and 20% CO2 gas atmosphere. Close vials
+    with butyl rubber septa to prevent the free exchange of oxygen with the external atmosphere and autoclave
+    them. Adjust pH of the autoclaved medium to 5.0 - 5.5 using a sterile stock solution of sodium carbonate
+    (5% w/v), prepared under 80% N2 and 20% CO2 gas mixture.
 - step_number: 2
   action: MIX
-  description: Before inoculation, add sterile air to obtain 5% O2 in headspace gas
-    atmosphere (e.g., add 2 ml air to a Hungate-type tube).
+  description: Before inoculation, add sterile air to obtain 5% O2 in headspace gas atmosphere (e.g.,
+    add 2 ml air to a Hungate-type tube).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,15 @@
 name: MEDIUM 621 MODIFIED FOR DSM 45328
 original_name: MEDIUM 621 MODIFIED FOR DSM 45328
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 621_45328
   term:
     id: komodo.medium:621_45328
     label: MEDIUM 621 MODIFIED FOR DSM 45328
-notes: 'Source: KOMODO ModelSEED | ID: 621_45328 | DSMZ Medium: 621 (mediadive.medium:621)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 621_45328 | DSMZ Medium: 621 (mediadive.medium:621) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Peptone
   concentration:

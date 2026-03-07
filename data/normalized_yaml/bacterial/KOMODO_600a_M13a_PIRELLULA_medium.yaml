@@ -1,6 +1,6 @@
 name: M13a (PIRELLULA) medium
 original_name: M13a (PIRELLULA) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:600a
     label: M13a (PIRELLULA) medium
-notes: 'Source: KOMODO ModelSEED | ID: 600a | DSMZ Medium: 600a (mediadive.medium:600a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 600a | DSMZ Medium: 600a (mediadive.medium:600a) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

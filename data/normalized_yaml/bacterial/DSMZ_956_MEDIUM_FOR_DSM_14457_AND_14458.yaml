@@ -1,6 +1,6 @@
 name: MEDIUM FOR DSM 14457 AND 14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -65,8 +65,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration
-    of 0.5%) or methylamine (to a final concentration of 0.3%).
+  description: pH 7.2. To the sterilised medium add sterile methanol (to a final concentration of 0.5%)
+    or methylamine (to a final concentration of 0.3%).
 applications:
 - Microbial cultivation
 curation_history:

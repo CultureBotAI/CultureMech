@@ -1,6 +1,6 @@
 name: METHERMICOCCUS medium
 original_name: METHERMICOCCUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1084
     label: METHERMICOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1084 | DSMZ Medium: 1084 (mediadive.medium:1084)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1084 | DSMZ Medium: 1084 (mediadive.medium:1084) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:

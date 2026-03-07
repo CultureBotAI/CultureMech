@@ -1,6 +1,6 @@
 name: Substrate for DSM 6222
 original_name: Substrate for DSM 6222
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:500.3
     label: Substrate for DSM 6222
-notes: 'Source: KOMODO ModelSEED | ID: 500.3 | DSMZ Medium: 500 (mediadive.medium:500)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 500.3 | DSMZ Medium: 500 (mediadive.medium:500) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -262,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.050708Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

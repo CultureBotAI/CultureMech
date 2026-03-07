@@ -1,6 +1,6 @@
 name: M2-MEDIUM
 original_name: M2-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -105,9 +105,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Final pH 5.5.The medium is fairly weakly
-    buffered so the pH should be checked before and after autoclaving. Dispense the
-    medium into serum bottles. Add 10-20% methane to the gas phase. Sterilize by autoclaving.
+  description: Prepare the liquid medium. Final pH 5.5.The medium is fairly weakly buffered so the pH
+    should be checked before and after autoclaving. Dispense the medium into serum bottles. Add 10-20%
+    methane to the gas phase. Sterilize by autoclaving.
 - step_number: 2
   action: MIX
   description: The strain should be grown with shaking.

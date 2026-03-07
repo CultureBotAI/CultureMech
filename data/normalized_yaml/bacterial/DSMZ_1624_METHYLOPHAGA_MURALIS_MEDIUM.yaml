@@ -1,6 +1,6 @@
 name: METHYLOPHAGA MURALIS MEDIUM
 original_name: METHYLOPHAGA MURALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
@@ -45,11 +45,10 @@ preparation_steps:
   description: pH 5.0
 - step_number: 2
   action: AUTOCLAVE
-  description: pH is adjusted to 9.0 by adding 100 ml/l 1M sterilized NaHCO3 and 10
-    ml/l 1M sterilized Na2CO3. 5 ml/l sterile methanol is added to the cooled medium.
-    When preparing liquid media cool the mineral salts solution, Na2CO3 solution and
-    NaHCO3 solution to room temperature before mixing. When preparing agar add 2.0
-    % agar to the mineral salts solution and autoclave. Cool the Na2CO3 solution,
+  description: pH is adjusted to 9.0 by adding 100 ml/l 1M sterilized NaHCO3 and 10 ml/l 1M sterilized
+    Na2CO3. 5 ml/l sterile methanol is added to the cooled medium. When preparing liquid media cool the
+    mineral salts solution, Na2CO3 solution and NaHCO3 solution to room temperature before mixing. When
+    preparing agar add 2.0 % agar to the mineral salts solution and autoclave. Cool the Na2CO3 solution,
     NaHCO3 solution and agar to 50-55°C before mixing.
 applications:
 - Microbial cultivation

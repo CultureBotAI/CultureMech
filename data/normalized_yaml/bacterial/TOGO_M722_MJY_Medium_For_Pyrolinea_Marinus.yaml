@@ -1,6 +1,6 @@
 name: MJY Medium For Pyrolinea Marinus
 original_name: MJY Medium For Pyrolinea Marinus
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63005
     label: ''
@@ -50,8 +48,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Solution, Inorganic compound'
 - preferred_term: Rumen fluid, clarified (see Medium [M258])
   concentration:
     value: '20'
@@ -90,6 +87,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.239191'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas; Added
+    default concentration for ingredient: Nitrogen gas'

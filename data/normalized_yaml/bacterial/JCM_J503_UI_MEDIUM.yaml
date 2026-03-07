@@ -1,6 +1,6 @@
 name: UI MEDIUM
 original_name: UI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,10 +18,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and
-    1.0 ml Trace vitamins solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic
-    acid in Solution B (per 100 ml) instead of sodium pyruvate. Otherwise, prepare
-    the medium as described in the recipe of Medium No. 284.
+  description: Use Medium No. 284 supplemented with final 0.2 g yeast extract and 1.0 ml Trace vitamins
+    solution in Solution A (per 900 ml) and with 0.414 g 4-hydroxybenzoic acid in Solution B (per 100
+    ml) instead of sodium pyruvate. Otherwise, prepare the medium as described in the recipe of Medium
+    No. 284.
 - step_number: 2
   action: MIX
   description: 'Comment: For strain JCM 13376, incubate with a 15 - 20% inoculum.'

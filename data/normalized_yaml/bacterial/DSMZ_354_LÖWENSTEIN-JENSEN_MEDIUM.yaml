@@ -1,6 +1,6 @@
 name: LÖWENSTEIN-JENSEN MEDIUM
 original_name: LÖWENSTEIN-JENSEN MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -70,13 +70,12 @@ preparation_steps:
   description: pH 7.0
 - step_number: 3
   action: HEAT
-  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh egg
-    mixture carefully to the medium.
+  description: Sterilize medium for 30 min at 121°C, cool to 30°C and add fresh egg mixture carefully
+    to the medium.
 - step_number: 4
   action: MIX
-  description: '* You need for 1 l of egg mixture 20 - 25 fresh eggs (not older then
-    1 week). Clean the eggs, wipe away with 70% alcohol, open the eggs and homogenize
-    the egg mixture carefully.'
+  description: '* You need for 1 l of egg mixture 20 - 25 fresh eggs (not older then 1 week). Clean the
+    eggs, wipe away with 70% alcohol, open the eggs and homogenize the egg mixture carefully.'
 applications:
 - Microbial cultivation
 curation_history:

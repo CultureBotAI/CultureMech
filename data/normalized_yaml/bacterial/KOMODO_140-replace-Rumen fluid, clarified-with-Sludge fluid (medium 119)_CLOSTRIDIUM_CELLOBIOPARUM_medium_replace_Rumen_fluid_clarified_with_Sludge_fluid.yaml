@@ -1,21 +1,17 @@
-name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge
-  fluid (medium 119)
-original_name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge
-  fluid (medium 119)
-category: imported
+name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)
+original_name: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge fluid (medium
+  119)
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
 media_term:
-  preferred_term: KOMODO Medium 140_replace_Rumen fluid, clarified_with_Sludge fluid
-    (medium 119)
+  preferred_term: KOMODO Medium 140_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)
   term:
-    id: komodo.medium:140_replace_Rumen fluid, clarified_with_Sludge fluid (medium
-      119)
-    label: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge
-      fluid (medium 119)
-notes: 'Source: KOMODO ModelSEED | ID: 140_replace_Rumen fluid, clarified_with_Sludge
-  fluid (medium 119) | DSMZ Medium: 140 (mediadive.medium:140) | Aerobic: Yes'
+    id: komodo.medium:140_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)
+    label: CLOSTRIDIUM CELLOBIOPARUM medium_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)
+notes: 'Source: KOMODO ModelSEED | ID: 140_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)
+  | DSMZ Medium: 140 (mediadive.medium:140) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -105,8 +101,7 @@ curation_history:
 - timestamp: 2026-01-27T01:15:02.fZ
   curator: komodo-web-import
   action: Imported from KOMODO web table
-  notes: 'Source: KOMODO, ID: 140_replace_Rumen fluid, clarified_with_Sludge fluid
-    (medium 119)'
+  notes: 'Source: KOMODO, ID: 140_replace_Rumen fluid, clarified_with_Sludge fluid (medium 119)'
 - timestamp: '2026-02-03T11:18:55.777655'
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition

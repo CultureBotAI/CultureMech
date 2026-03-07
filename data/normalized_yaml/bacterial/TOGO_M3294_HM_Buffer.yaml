@@ -1,6 +1,6 @@
 name: HM Buffer
 original_name: HM Buffer
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -16,8 +16,7 @@ ingredients:
   concentration:
     value: '600'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined
-    component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Solution, Defined component'
 - preferred_term: MgCl2 solution
   concentration:
     value: '333'
@@ -27,8 +26,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 media_term:
   preferred_term: TOGO Medium M3294
   term:

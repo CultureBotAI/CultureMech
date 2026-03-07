@@ -1,6 +1,6 @@
 name: For DSM 16401
 original_name: For DSM 16401
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:838.3
     label: For DSM 16401
-notes: 'Source: KOMODO ModelSEED | ID: 838.3 | DSMZ Medium: 838 (mediadive.medium:838)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 838.3 | DSMZ Medium: 838 (mediadive.medium:838) | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:

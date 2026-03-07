@@ -1,6 +1,6 @@
 name: MJYP* Medium
 original_name: MJYP* Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -17,20 +17,17 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '1.39'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: NaNO3
   concentration:
     value: '1.7'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63005
     label: ''

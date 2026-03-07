@@ -1,6 +1,6 @@
 name: THIOGLYCOLLATE MEDIUM
 original_name: THIOGLYCOLLATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -20,8 +20,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Comment: The medium is semisolid. For strain JCM 13596, prepare the
-    medium anaerobically (under N2).'
+  description: 'Comment: The medium is semisolid. For strain JCM 13596, prepare the medium anaerobically
+    (under N2).'
 applications:
 - Microbial cultivation
 curation_history:

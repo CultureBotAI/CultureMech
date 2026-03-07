@@ -1,6 +1,6 @@
 name: YE/10 + Ca MEDIUM
 original_name: YE/10 + Ca MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -33,16 +33,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add all the components together, except calcium chloride which is added
-    from a sterilized stock solution when the autoclaved medium has cooled. Adjust
-    final pH to 7.5.
+  description: Add all the components together, except calcium chloride which is added from a sterilized
+    stock solution when the autoclaved medium has cooled. Adjust final pH to 7.5.
 - step_number: 2
   action: MIX
-  description: "<b>Propagation of DSM 25223 in liquid cultures:</b>\r\n\r\nAdd 3 ml\
-    \ of a <i>Caulobacter vibrioides</i> DSM 25117 culture (grown for 24 h in DSMZ\
-    \ medium 1462) to 20 ml of medium and inoculate with 1 ml of a liquid culture\
-    \ of DSM 25223 or transfer some material with an inoculation loop from the lysis\
-    \ zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for approximately\
+  description: "<b>Propagation of DSM 25223 in liquid cultures:</b>\r\n\r\nAdd 3 ml of a <i>Caulobacter\
+    \ vibrioides</i> DSM 25117 culture (grown for 24 h in DSMZ medium 1462) to 20 ml of medium and inoculate\
+    \ with 1 ml of a liquid culture of DSM 25223 or transfer some material with an inoculation loop from\
+    \ the lysis zone of a double layer agar plate. Incubate with shaking (ca. 150 rpm) for approximately\
     \ 48 h."
 applications:
 - Microbial cultivation

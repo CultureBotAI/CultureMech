@@ -1,8 +1,8 @@
-name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan and
-  phenylalanine + 1% glucose + 0.2% KNO3; Nakano et al','N
-original_name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan
-  and phenylalanine + 1% glucose + 0.2% KNO3; Nakano et al','N
-category: imported
+name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan and phenylalanine + 1%
+  glucose + 0.2% KNO3; Nakano et al','N
+original_name: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan and phenylalanine
+  + 1% glucose + 0.2% KNO3; Nakano et al','N
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -112,16 +112,15 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.487039Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 210, Reference:
-    Mazumdar et al. (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 210, Reference: Mazumdar et al.
+    (2014) PLOS One'
 media_term:
   preferred_term: MediaDB Medium 210
   term:
     id: MEDIADB:210
-    label: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan
-      and phenylalanine + 1% glucose + 0.2% KNO3; Nakano et al','N
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+    label: Spizizen's medium + trace elements + 0.2% glutamate + 50 ug/mL tryptophan and phenylalanine
+      + 1% glucose + 0.2% KNO3; Nakano et al','N
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

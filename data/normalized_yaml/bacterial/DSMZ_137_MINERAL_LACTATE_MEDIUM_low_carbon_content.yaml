@@ -1,6 +1,6 @@
 name: MINERAL LACTATE MEDIUM (low carbon content)
 original_name: MINERAL LACTATE MEDIUM (low carbon content)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -119,8 +119,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
+    Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

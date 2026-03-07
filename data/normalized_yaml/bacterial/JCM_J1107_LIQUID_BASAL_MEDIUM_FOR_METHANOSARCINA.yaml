@@ -1,6 +1,6 @@
 name: LIQUID BASAL MEDIUM FOR METHANOSARCINA
 original_name: LIQUID BASAL MEDIUM FOR METHANOSARCINA
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -235,14 +235,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a
-    N2-CO2 (80:20, v/v) gas atmosphere. After cooling, aseptically and anaerobically
-    add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a N2-CO2 (80:20, v/v)
+    gas atmosphere. After cooling, aseptically and anaerobically add the following solutions (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under the same
-    gas mixture and seal with butyl rubber stoppers. Finally, add per liter the following
-    solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under the same gas mixture and
+    seal with butyl rubber stoppers. Finally, add per liter the following solutions from anaerobic stocks
+    (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.2, if necessary.

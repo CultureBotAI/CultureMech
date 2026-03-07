@@ -1,6 +1,6 @@
 name: ACIDIANUS INFERNUS medium
 original_name: ACIDIANUS INFERNUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:358
     label: ACIDIANUS INFERNUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 358 | DSMZ Medium: 358 (mediadive.medium:358)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 358 | DSMZ Medium: 358 (mediadive.medium:358) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

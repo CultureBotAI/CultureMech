@@ -1,6 +1,6 @@
 name: Vitamin solution (medium 1263)
 original_name: Vitamin solution (medium 1263)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3112
     label: Vitamin solution (medium 1263)
-notes: 'Source: KOMODO ModelSEED | ID: 3112 | DSMZ Medium: 3112 (mediadive.medium:3112)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3112 | DSMZ Medium: 3112 (mediadive.medium:3112) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

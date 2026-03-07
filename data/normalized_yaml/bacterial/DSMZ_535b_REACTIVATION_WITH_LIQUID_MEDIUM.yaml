@@ -1,8 +1,8 @@
 name: REACTIVATION WITH LIQUID MEDIUM
 original_name: REACTIVATION WITH LIQUID MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 535b
@@ -61,9 +61,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid
-    broth 545. Subsequent subculturing may be carried out in liquid medium 545 or
-    on agar plates.
+  description: Rehydrate and grow lyophilized cells from the ampoule in 5 ml liquid broth 545. Subsequent
+    subculturing may be carried out in liquid medium 545 or on agar plates.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.3.

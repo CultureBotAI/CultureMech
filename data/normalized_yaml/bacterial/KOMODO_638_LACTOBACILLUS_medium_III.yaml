@@ -1,6 +1,6 @@
 name: LACTOBACILLUS medium III
 original_name: LACTOBACILLUS medium III
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:638
     label: LACTOBACILLUS medium III
-notes: 'Source: KOMODO ModelSEED | ID: 638 | DSMZ Medium: 638 (mediadive.medium:638)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 638 | DSMZ Medium: 638 (mediadive.medium:638) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

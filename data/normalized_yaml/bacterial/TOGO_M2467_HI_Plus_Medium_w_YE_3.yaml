@@ -1,8 +1,8 @@
 name: 'HI Plus Medium w/ YE #3'
 original_name: 'HI Plus Medium w/ YE #3'
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Agar Noble (if required)
   concentration:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Heart Infusion Broth
   concentration:
     value: '17.5'
@@ -32,8 +31,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component, Inorganic compound'
 - preferred_term: Yeast (Store bought Fleischmann’s yeast)
   concentration:
     value: '150'

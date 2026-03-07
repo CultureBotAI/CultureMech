@@ -1,6 +1,6 @@
 name: For DSM 22050
 original_name: For DSM 22050
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1011.2
     label: For DSM 22050
-notes: 'Source: KOMODO ModelSEED | ID: 1011.2 | DSMZ Medium: 1011 (mediadive.medium:1011)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1011.2 | DSMZ Medium: 1011 (mediadive.medium:1011) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -268,5 +267,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:11.996473Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

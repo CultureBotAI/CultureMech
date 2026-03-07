@@ -1,6 +1,6 @@
 name: Methanobacterum Medium (IX)
 original_name: Methanobacterum Medium (IX)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '922'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Yeast extract
   concentration:
     value: '1'
@@ -28,8 +26,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,14 +34,12 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -52,8 +47,7 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -61,8 +55,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -70,8 +64,7 @@ ingredients:
   concentration:
     value: '0.002'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Sodium acetate
   concentration:
     value: '1'
@@ -143,8 +136,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: 5% L-Cysteine・HCl・H2O solution
   concentration:
     value: '10'
@@ -184,8 +176,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.667198'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: N2; Added default
-    concentration for ingredient: Hydrogen gas; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Carbon dioxide gas; Added
+    default concentration for ingredient: N2; Added default concentration for ingredient: Hydrogen gas;
+    Added default concentration for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas'

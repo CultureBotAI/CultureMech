@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOHYDROSULFURICUM medium
 original_name: CLOSTRIDIUM THERMOHYDROSULFURICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:61
     label: CLOSTRIDIUM THERMOHYDROSULFURICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 61 | DSMZ Medium: 61 (mediadive.medium:61)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 61 | DSMZ Medium: 61 (mediadive.medium:61) | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:

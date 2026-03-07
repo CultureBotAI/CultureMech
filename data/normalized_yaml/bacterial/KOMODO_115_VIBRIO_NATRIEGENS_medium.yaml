@@ -1,15 +1,14 @@
 name: VIBRIO NATRIEGENS medium
 original_name: VIBRIO NATRIEGENS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 115
   term:
     id: komodo.medium:115
     label: VIBRIO NATRIEGENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 115 | DSMZ Medium: 115 (mediadive.medium:115)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 115 | DSMZ Medium: 115 (mediadive.medium:115) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

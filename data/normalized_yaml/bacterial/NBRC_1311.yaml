@@ -1,23 +1,19 @@
 name: '1311'
 original_name: '1311'
-category: imported
+category: bacterial
 description: 1311. NBRC 1308.
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: "KH2PO40.136gNH4Cl0.54gMgCl2\xB76H2O3.05gCaCl2\xB72H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin\
-    \ solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S\xB7\
-    9H2O0.5gDistilled water1LMix ingredients except for vitamin solution, cysteine-HCl\
-    \ and Na2S\xB79H2O, and autoclave under a N2/CO2atmosphere (80/20).  Separately\
-    \ autoclave cysteine-HCl and Na2S\xB79H2O solutions as 5% solutions under a N2atmosphere.\
-    \  Sterilize vitamin solution by filtration. Prior to inoculation, add vitamin\
-    \ solution, cysteine-HCl and Na2S\xB79H2O.*Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
-    \ acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L**Trace\
-    \ elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB76H2O1.35gMnCl2\xB7\
-    4H2O0.1gCoCl2\xB76H2O0.024gCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB72H2O0.025gH3BO30.01gNa2MoO4\xB7\
-    2H2O0.024gNaCl1gNiCl2\xB76H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled water1LFirst\
-    \ dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add\
-    \ minerals. Final pH 7.0."
+- preferred_term: KH2PO40.136gNH4Cl0.54gMgCl2·6H2O3.05gCaCl2·2H2O0.147gNaCl20gTrimethylamine-HCl1.2gNaHCO32.52gVitamin
+    solution*2mlTrace element solution**1mlResazurin1mgCysteine-HCl0.5gNa2S·9H2O0.5gDistilled water1LMix
+    ingredients except for vitamin solution, cysteine-HCl and Na2S·9H2O, and autoclave under a N2/CO2atmosphere
+    (80/20).  Separately autoclave cysteine-HCl and Na2S·9H2O solutions as 5% solutions under a N2atmosphere.  Sterilize
+    vitamin solution by filtration. Prior to inoculation, add vitamin solution, cysteine-HCl and Na2S·9H2O.*Vitamin
+    solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic
+    acid1mgVitamin B120.01mgDistilled water1L**Trace elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals.
+    Final pH 7.0.
 - preferred_term: ''
   concentration:
     value: KH2PO4
@@ -28,11 +24,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -64,7 +60,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -106,11 +102,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -142,7 +138,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

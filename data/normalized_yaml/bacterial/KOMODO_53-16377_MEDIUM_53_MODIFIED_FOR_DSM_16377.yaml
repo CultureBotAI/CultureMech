@@ -1,15 +1,14 @@
 name: MEDIUM 53 MODIFIED FOR DSM 16377
 original_name: MEDIUM 53 MODIFIED FOR DSM 16377
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 53_16377
   term:
     id: komodo.medium:53_16377
     label: MEDIUM 53 MODIFIED FOR DSM 16377
-notes: 'Source: KOMODO ModelSEED | ID: 53_16377 | DSMZ Medium: 53 (mediadive.medium:53)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 53_16377 | DSMZ Medium: 53 (mediadive.medium:53) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

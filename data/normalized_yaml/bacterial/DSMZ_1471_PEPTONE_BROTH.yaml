@@ -1,6 +1,6 @@
 name: PEPTONE BROTH
 original_name: PEPTONE BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,8 +17,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Put a 3 inch strip of Whatman no. 1 filter paper into each test tube
-    with the above solution to cover approximately 2/3 the length of the paper.
+  description: Put a 3 inch strip of Whatman no. 1 filter paper into each test tube with the above solution
+    to cover approximately 2/3 the length of the paper.
 applications:
 - Microbial cultivation
 curation_history:

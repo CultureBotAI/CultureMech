@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO MEDIUM
 original_name: DESULFOVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -88,11 +88,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except FeSO4 x 7H2O, sodium thioglycolate and ascorbic
-    acid, bring to a boil, and cool down to room temperature under a N2 gas stream.
-    Add FeSO4 x 7H2O in 10 ml distilled water, and sodium thioglycolate and ascorbic
-    acid in 10 ml distilled water, and adjust pH to 7.8 with NaOH. While swirling
-    the medium, dispense into culture vessels under a N2 gas stream, seal with butyl
+  description: Mix ingredients, except FeSO4 x 7H2O, sodium thioglycolate and ascorbic acid, bring to
+    a boil, and cool down to room temperature under a N2 gas stream. Add FeSO4 x 7H2O in 10 ml distilled
+    water, and sodium thioglycolate and ascorbic acid in 10 ml distilled water, and adjust pH to 7.8 with
+    NaOH. While swirling the medium, dispense into culture vessels under a N2 gas stream, seal with butyl
     rubber stoppers, and autoclave. Adjust pH to 6.8-7.0, if necessary.
 applications:
 - Microbial cultivation

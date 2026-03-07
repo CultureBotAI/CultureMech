@@ -1,6 +1,6 @@
 name: BBL Actinomyces broth (medium 1029)
 original_name: BBL Actinomyces broth (medium 1029)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3135
     label: BBL Actinomyces broth (medium 1029)
-notes: 'Source: KOMODO ModelSEED | ID: 3135 | DSMZ Medium: 3135 (mediadive.medium:3135)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3135 | DSMZ Medium: 3135 (mediadive.medium:3135) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

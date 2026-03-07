@@ -1,6 +1,6 @@
 name: SPIROCHAETA COCCOIDES medium
 original_name: SPIROCHAETA COCCOIDES medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1204
     label: SPIROCHAETA COCCOIDES medium
-notes: 'Source: KOMODO ModelSEED | ID: 1204 | DSMZ Medium: 1204 (mediadive.medium:1204)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1204 | DSMZ Medium: 1204 (mediadive.medium:1204) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

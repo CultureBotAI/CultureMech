@@ -1,6 +1,6 @@
 name: ACETOBACTER LAMBICUS MEDIUM
 original_name: ACETOBACTER LAMBICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.5
@@ -43,9 +43,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: The ethanol and acetic acid are sterilized separately by filtration
-    (use filter resistant to these solvents), and added aseptically to the sterile
-    medium.
+  description: The ethanol and acetic acid are sterilized separately by filtration (use filter resistant
+    to these solvents), and added aseptically to the sterile medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3,5 with concentrated HCl after autoclaving.

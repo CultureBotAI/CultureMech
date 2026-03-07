@@ -1,6 +1,6 @@
 name: MH1 MEDIUM FOR SALIARCHAEUM ACIDOPHILUM
 original_name: MH1 MEDIUM FOR SALIARCHAEUM ACIDOPHILUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.5
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 776 with 2.0 g/L MgCl2 x 6H2O (final) and adjust pH
-    to 4.5.
+  description: Use Medium No. 776 with 2.0 g/L MgCl2 x 6H2O (final) and adjust pH to 4.5.
 applications:
 - Microbial cultivation
 curation_history:

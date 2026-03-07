@@ -1,6 +1,6 @@
 name: CAPNOCYTOPHAGA MEDIUM
 original_name: CAPNOCYTOPHAGA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -56,8 +56,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2
-    containing atmosphere.
+  description: Sterilize glucose separately. Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

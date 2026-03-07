@@ -1,15 +1,15 @@
 name: MEDIUM 547 MODIFIED FOR DSM 44048
 original_name: MEDIUM 547 MODIFIED FOR DSM 44048
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 547_44048
   term:
     id: komodo.medium:547_44048
     label: MEDIUM 547 MODIFIED FOR DSM 44048
-notes: 'Source: KOMODO ModelSEED | ID: 547_44048 | DSMZ Medium: 547 (mediadive.medium:547)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 547_44048 | DSMZ Medium: 547 (mediadive.medium:547) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Agar
   term:

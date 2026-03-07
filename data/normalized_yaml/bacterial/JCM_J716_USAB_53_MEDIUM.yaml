@@ -1,6 +1,6 @@
 name: USAB 53 MEDIUM
 original_name: USAB 53 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -158,14 +158,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 6.8 - 7.0 with NaOH. Bring to a boil,
-    cool down under a N2 gas stream and add 2 ml of 5% Na2S x 9H2O solution. Anaerobically
-    distribute the medium into culture vessels, seal with butyl rubber stoppers and
-    autoclave.
+  description: Mix components and adjust pH to 6.8 - 7.0 with NaOH. Bring to a boil, cool down under a
+    N2 gas stream and add 2 ml of 5% Na2S x 9H2O solution. Anaerobically distribute the medium into culture
+    vessels, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH.
-    Then proceed to add the minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH. Then proceed to
+    add the minerals.
 applications:
 - Microbial cultivation
 curation_history:

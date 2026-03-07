@@ -1,8 +1,8 @@
 name: Modified Provasoli
 original_name: Modified Provasoli
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C56
   term:
@@ -105,21 +105,19 @@ preparation_steps:
   description: Prepare the following primary stocks solutions first.
 - step_number: 2
   action: MIX
-  description: "To prepare the final stock solution, Using the primary stocks as shown\
-    \ below, make up to\r\n1 litre of deionised water."
+  description: "To prepare the final stock solution, Using the primary stocks as shown below, make up\
+    \ to\r\n1 litre of deionised water."
 - step_number: 3
   action: AUTOCLAVE
-  description: Dispense the final stock solution into 10ml aliquots. Autoclave at
-    15 psi for 15 minutes.
+  description: Dispense the final stock solution into 10ml aliquots. Autoclave at 15 psi for 15 minutes.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: "Finally, to use add 20 ml per litre to sterile 30 ppt filtered seawater\
-    \ (950mls filtered seawater:\r\n30mls deionised water)"
+  description: "Finally, to use add 20 ml per litre to sterile 30 ppt filtered seawater (950mls filtered\
+    \ seawater:\r\n30mls deionised water)"
 - step_number: 5
   action: FILTER_STERILIZE
-  description: "For 1/2 strength Modified Provasoli add 10 ml sterile stock per litre\
-    \ of sterile 30 ppt filtered\r\nseawater (950mls filtered seawater: 40mls deionised\
-    \ water)"
+  description: "For 1/2 strength Modified Provasoli add 10 ml sterile stock per litre of sterile 30 ppt\
+    \ filtered\r\nseawater (950mls filtered seawater: 40mls deionised water)"
 - step_number: 6
   action: MIX
   description: For agar add 15g per litre Bacteriological Agar.

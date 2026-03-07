@@ -1,6 +1,6 @@
 name: BIFIDOBACTERIUM MEDIUM
 original_name: BIFIDOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -131,8 +131,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The cysteine are added after the medium has been boiled and cooled
-    under CO2. Adjust pH to 6.8 using 8 N NaOH. Distribute under N2 and autoclave.
+  description: The cysteine are added after the medium has been boiled and cooled under CO2. Adjust pH
+    to 6.8 using 8 N NaOH. Distribute under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

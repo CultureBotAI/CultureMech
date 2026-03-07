@@ -1,6 +1,6 @@
 name: ALKALINE TRYPTONE SOYA BROTH MEDIUM
 original_name: ALKALINE TRYPTONE SOYA BROTH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.8
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and autoclave. After cooling, adjust pH to
-    8.5 - 9.0 with sterile 20% sodium carbonate solution (autoclaved).
+  description: Mix components thoroughly and autoclave. After cooling, adjust pH to 8.5 - 9.0 with sterile
+    20% sodium carbonate solution (autoclaved).
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 20.0 g/L agar.

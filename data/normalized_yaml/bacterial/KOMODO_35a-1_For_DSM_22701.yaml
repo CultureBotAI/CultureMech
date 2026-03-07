@@ -1,16 +1,15 @@
 name: For DSM 22701
 original_name: For DSM 22701
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.5-6.0
 media_term:
   preferred_term: KOMODO Medium 35a.1
   term:
     id: komodo.medium:35a.1
     label: For DSM 22701
-notes: 'Source: KOMODO ModelSEED | ID: 35a.1 | DSMZ Medium: 35a (mediadive.medium:35a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 35a.1 | DSMZ Medium: 35a (mediadive.medium:35a) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

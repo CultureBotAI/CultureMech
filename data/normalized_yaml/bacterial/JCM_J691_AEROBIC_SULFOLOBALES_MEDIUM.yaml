@@ -1,6 +1,6 @@
 name: AEROBIC SULFOLOBALES MEDIUM
 original_name: AEROBIC SULFOLOBALES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -99,9 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Salt base solution and yeast extract (as a 10% solution)
-    separately and combine after cooling. Steam sulfur for 3 hr on each of 3 successive
-    days.
+  description: Autoclave Salt base solution and yeast extract (as a 10% solution) separately and combine
+    after cooling. Steam sulfur for 3 hr on each of 3 successive days.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.5 with 10 N H2SO4.

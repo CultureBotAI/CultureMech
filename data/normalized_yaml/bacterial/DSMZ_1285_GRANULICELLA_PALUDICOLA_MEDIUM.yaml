@@ -1,8 +1,8 @@
 name: GRANULICELLA PALUDICOLA MEDIUM
 original_name: GRANULICELLA PALUDICOLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4-5
 media_term:
   preferred_term: DSMZ Medium 1285
@@ -68,8 +68,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0
-    with alginic acid.
+  description: The medium may be solidified with 15 g/l agar. Adjust to pH 4.0 - 5.0 with alginic acid.
 applications:
 - Microbial cultivation
 curation_history:

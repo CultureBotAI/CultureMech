@@ -1,6 +1,6 @@
 name: MLMS-1 MEDIUM
 original_name: MLMS-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:968b
     label: MLMS-1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 968b | DSMZ Medium: 968b (mediadive.medium:968b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 968b | DSMZ Medium: 968b (mediadive.medium:968b) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -244,5 +243,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.940019Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

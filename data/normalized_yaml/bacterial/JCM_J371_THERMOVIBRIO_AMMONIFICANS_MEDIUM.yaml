@@ -1,6 +1,6 @@
 name: THERMOVIBRIO AMMONIFICANS MEDIUM
 original_name: THERMOVIBRIO AMMONIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -239,18 +239,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil, and
-    cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O solution
-    to the medium, wait for the medium to become colorless, then adjust pH to 5.5.
-    Distribute medium into culture vessels under the same gas mixture, seal with butyl
-    rubber stoppers, and autoclave. Separately autoclave 10% KNO3 and 20% MES solutions
-    (pH 5.5) under a N2 atmosphere. Prior to inoculation, add the sterile KNO3 and
-    MES solutions. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v)
-    gas mixture.
+  description: Mix ingredients, except KNO3, MES and Na2S x 9H2O, bring to boil, and cool under a H2-CO2
+    (4:1, v/v) gas mixture. Slowly add 5% Na2S x 9H2O solution to the medium, wait for the medium to become
+    colorless, then adjust pH to 5.5. Distribute medium into culture vessels under the same gas mixture,
+    seal with butyl rubber stoppers, and autoclave. Separately autoclave 10% KNO3 and 20% MES solutions
+    (pH 5.5) under a N2 atmosphere. Prior to inoculation, add the sterile KNO3 and MES solutions. Pressurize
+    the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

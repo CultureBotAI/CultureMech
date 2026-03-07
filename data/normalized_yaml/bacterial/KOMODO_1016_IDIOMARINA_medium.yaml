@@ -1,15 +1,14 @@
 name: IDIOMARINA medium
 original_name: IDIOMARINA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1016
   term:
     id: komodo.medium:1016
     label: IDIOMARINA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1016 | DSMZ Medium: 1016 (mediadive.medium:1016)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1016 | DSMZ Medium: 1016 (mediadive.medium:1016) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

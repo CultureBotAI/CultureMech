@@ -1,8 +1,8 @@
 name: Serpulina Murdochii Medium
 original_name: Serpulina Murdochii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: defibrinated sheep blood
   concentration:

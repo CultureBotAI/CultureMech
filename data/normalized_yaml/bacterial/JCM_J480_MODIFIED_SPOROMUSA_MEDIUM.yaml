@@ -1,6 +1,6 @@
 name: MODIFIED SPOROMUSA MEDIUM
 original_name: MODIFIED SPOROMUSA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -175,12 +175,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve components, except NaHCO3, dithiothreitol and mannitol, in
-    900 ml distilled water and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately
-    autoclave 3% (w/v) dithiothreitol solution and 1 M mannitol solution under a N2
-    atmosphere. Add filter-sterilized 5% NaHCO3 [stored under a N2-CO2 (4:1, v/v)
-    atmosphere] to the medium. Prior to inoculation, add the sterile dithiothreitol
-    and mannitol solutions.
+  description: Dissolve components, except NaHCO3, dithiothreitol and mannitol, in 900 ml distilled water
+    and autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately autoclave 3% (w/v) dithiothreitol solution
+    and 1 M mannitol solution under a N2 atmosphere. Add filter-sterilized 5% NaHCO3 [stored under a N2-CO2
+    (4:1, v/v) atmosphere] to the medium. Prior to inoculation, add the sterile dithiothreitol and mannitol
+    solutions.
 - step_number: 2
   action: MIX
   description: Use Trace element solution of Medium No. 243 without Na2SeO3 x 5H2O.

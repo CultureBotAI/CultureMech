@@ -1,6 +1,6 @@
 name: AMINIPHILUS CIRCUMSRIPTUS MEDIUM
 original_name: AMINIPHILUS CIRCUMSRIPTUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -159,13 +159,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients and adjust pH to 7.0. Distribute into tubes (e.g.,
-    5 ml of the medium in the Hungate tubes) under a N2 atmosphere, seal with butyl
-    rubber stoppers and autoclave.
+  description: Mix ingredients and adjust pH to 7.0. Distribute into tubes (e.g., 5 ml of the medium in
+    the Hungate tubes) under a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

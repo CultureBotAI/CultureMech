@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
 original_name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465g
   term:
     id: komodo.medium:465g
     label: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
-notes: 'Source: KOMODO ModelSEED | ID: 465g | DSMZ Medium: 465g (mediadive.medium:465g)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465g | DSMZ Medium: 465g (mediadive.medium:465g) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

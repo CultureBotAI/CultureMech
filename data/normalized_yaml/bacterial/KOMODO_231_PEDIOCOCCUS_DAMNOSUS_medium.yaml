@@ -1,6 +1,6 @@
 name: PEDIOCOCCUS DAMNOSUS medium
 original_name: PEDIOCOCCUS DAMNOSUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:231
     label: PEDIOCOCCUS DAMNOSUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 231 | DSMZ Medium: 231 (mediadive.medium:231)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 231 | DSMZ Medium: 231 (mediadive.medium:231) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

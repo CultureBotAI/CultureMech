@@ -1,8 +1,8 @@
 name: REACTIVATION WITH LIQUID MEDIUM 464
 original_name: REACTIVATION WITH LIQUID MEDIUM 464
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 464a
@@ -36,9 +36,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium
-    464. Subsequently subculturing may be carried out in liquid medium or an agar
-    medium.
+  description: Rehydrate and grow lyophilized cells from the ampoule in liquid medium 464. Subsequently
+    subculturing may be carried out in liquid medium or an agar medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.

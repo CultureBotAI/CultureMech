@@ -1,6 +1,6 @@
 name: PYROBACULUM MEDIUM
 original_name: PYROBACULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -124,11 +124,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x 9H2O,
-    and autoclave under a N2 atmosphere. Separately autoclave yeast extract and peptone
-    as 10% solutions, and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam
-    sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically add
-    the yeast extract and peptone solutions and sulfur to the medium. Prior to inoculation,
+  description: Mix ingredients, except yeast extract, peptone, sulfur and Na2S x 9H2O, and autoclave under
+    a N2 atmosphere. Separately autoclave yeast extract and peptone as 10% solutions, and Na2S x 9H2O
+    as a 5% solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Aseptically
+    and anaerobically add the yeast extract and peptone solutions and sulfur to the medium. Prior to inoculation,
     add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4.
 applications:
 - Microbial cultivation

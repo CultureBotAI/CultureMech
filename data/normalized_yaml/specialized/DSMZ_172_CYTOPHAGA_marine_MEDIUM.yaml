@@ -1,8 +1,8 @@
 name: CYTOPHAGA (marine) MEDIUM
 original_name: CYTOPHAGA (marine) MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 172
@@ -71,8 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2. Sodium bicarbonate and calcium chloride are autoclaved
-    separately, each in a small volume of distilled water.
+  description: Adjust pH to 7.2. Sodium bicarbonate and calcium chloride are autoclaved separately, each
+    in a small volume of distilled water.
 applications:
 - Microbial cultivation
 curation_history:

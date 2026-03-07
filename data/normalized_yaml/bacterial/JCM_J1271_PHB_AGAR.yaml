@@ -1,8 +1,8 @@
 name: PHB AGAR
 original_name: PHB AGAR
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1271
   term:

@@ -1,6 +1,6 @@
 name: BHI medium (modified)
 original_name: BHI medium (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:215a
     label: BHI medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 215a | DSMZ Medium: 215a (mediadive.medium:215a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 215a | DSMZ Medium: 215a (mediadive.medium:215a) | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

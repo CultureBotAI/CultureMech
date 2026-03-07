@@ -1,6 +1,6 @@
 name: L-15B Tick Cell Medium
 original_name: L-15B Tick Cell Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: For medium and tick cell cultivation please see 'Tick Cell Culture
-    Methods'
+  description: For medium and tick cell cultivation please see 'Tick Cell Culture Methods'
 - step_number: 2
   action: MIX
   description: https://www.dsmz.de/fileadmin/Bereiche/Microbiology/Dateien/Kultivierungshinweise/TickCellCultureMethods-4.pdf

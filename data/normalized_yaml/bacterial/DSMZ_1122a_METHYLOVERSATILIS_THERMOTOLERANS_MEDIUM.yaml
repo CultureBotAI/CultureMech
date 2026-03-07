@@ -1,8 +1,8 @@
 name: METHYLOVERSATILIS THERMOTOLERANS MEDIUM
 original_name: METHYLOVERSATILIS THERMOTOLERANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1122a
@@ -73,8 +73,8 @@ preparation_steps:
   description: Adjust to pH 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving add methanol (sterilized separately) to a concentration
-    of 0.5 % (v/v) and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
+  description: After autoclaving add methanol (sterilized separately) to a concentration of 0.5 % (v/v)
+    and 0.1 ml vitamin solution B12 (10µg /ml, filter sterilized).
 applications:
 - Microbial cultivation
 curation_history:

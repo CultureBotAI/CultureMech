@@ -1,6 +1,6 @@
 name: CAMPYLOBACTER RECTUS MEDIUM
 original_name: CAMPYLOBACTER RECTUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -81,8 +81,8 @@ preparation_steps:
   description: Adjust pH to 7.5. Prepare the medium anaerobically under 100% N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted
-    with water to 10 ml and neutralized), formate, and fumarate separately under nitrogen.
+  description: Autoclave solutions of haemin (dissolved in 0.1 ml 1N NaOH, then diluted with water to
+    10 ml and neutralized), formate, and fumarate separately under nitrogen.
 applications:
 - Microbial cultivation
 curation_history:

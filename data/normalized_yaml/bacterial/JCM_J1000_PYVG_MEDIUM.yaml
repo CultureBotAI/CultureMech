@@ -1,6 +1,6 @@
 name: PYVG MEDIUM
 original_name: PYVG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -141,12 +141,11 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare medium anaerobically under a 100% N2 gas-atmosphere. Dispense
-    in anaerobic vials (1/3 vol.) and autoclave.
+  description: Prepare medium anaerobically under a 100% N2 gas-atmosphere. Dispense in anaerobic vials
+    (1/3 vol.) and autoclave.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

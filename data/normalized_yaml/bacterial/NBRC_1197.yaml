@@ -1,14 +1,12 @@
 name: '1197'
 original_name: '1197'
-category: imported
+category: bacterial
 description: 1197. NBRC 1196.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Substrates*10mMKH2PO40.85gNa2HPO4\xB77H2O4.9g(NH4)2SO40.5gMgSO4\xB7\
-    7H2O0.1gFeSO4\xB77H2O9.5mgMgO10.75mgCaCO32mgZnSO4\xB77H2O1.44mgMnSO4\xB74H2O1.12mgCuSO4\xB7\
-    5H2O0.25mgCoSO4\xB77H2O0.28mgH3BO40.06mgConcentrated HCl51.3\u03BClDistilled water1LAgar\
-    \ (if needed)15g*Vanillic acid and syringic acid etc."
+- preferred_term: Substrates*10mMKH2PO40.85gNa2HPO4·7H2O4.9g(NH4)2SO40.5gMgSO4·7H2O0.1gFeSO4·7H2O9.5mgMgO10.75mgCaCO32mgZnSO4·7H2O1.44mgMnSO4·4H2O1.12mgCuSO4·5H2O0.25mgCoSO4·7H2O0.28mgH3BO40.06mgConcentrated
+    HCl51.3μlDistilled water1LAgar (if needed)15g*Vanillic acid and syringic acid etc.
 - preferred_term: ''
   concentration:
     value: Substrates*
@@ -19,7 +17,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2HPO4\xB77H2O"
+    value: Na2HPO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -27,11 +25,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "FeSO4\xB77H2O"
+    value: FeSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -43,19 +41,19 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "ZnSO4\xB77H2O"
+    value: ZnSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MnSO4\xB74H2O"
+    value: MnSO4·4H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CuSO4\xB75H2O"
+    value: CuSO4·5H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CoSO4\xB77H2O"
+    value: CoSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

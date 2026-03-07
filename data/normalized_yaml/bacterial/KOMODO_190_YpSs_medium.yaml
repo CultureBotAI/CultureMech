@@ -1,15 +1,14 @@
 name: YpSs medium
 original_name: YpSs medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 190
   term:
     id: komodo.medium:190
     label: YpSs medium
-notes: 'Source: KOMODO ModelSEED | ID: 190 | DSMZ Medium: 190 (mediadive.medium:190)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 190 | DSMZ Medium: 190 (mediadive.medium:190) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

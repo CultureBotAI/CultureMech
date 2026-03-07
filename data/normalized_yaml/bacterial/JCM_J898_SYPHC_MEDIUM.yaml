@@ -1,6 +1,6 @@
 name: SYPHC MEDIUM
 original_name: SYPHC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.7
@@ -208,8 +208,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.7. After autoclaving,
-    add the following solution (autoclaved):'
+  description: 'Mix components thoroughly and adjust pH to 7.7. After autoclaving, add the following solution
+    (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.

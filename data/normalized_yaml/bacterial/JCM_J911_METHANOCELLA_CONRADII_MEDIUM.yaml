@@ -1,6 +1,6 @@
 name: METHANOCELLA CONRADII MEDIUM
 original_name: METHANOCELLA CONRADII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -218,24 +218,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
-    of N2-CO2 (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g.,
-    5 ml in the Hungate tubes) under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. Aseptically and anaerobically, add per liter the following
-    solutions (filter-sterilized):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream of N2-CO2 (4:1,
+    v/v) gas mixture. Distribute the medium into culture vessels (e.g., 5 ml in the Hungate tubes) under
+    the same gas mixture, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically,
+    add per liter the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to inoculation, replace the gas phase with a H2-CO2 (4:1, v/v)
-    gas mixture and add per liter the following solution from an anaerobic stock (autoclaved
-    and stored under a N2 gas atmosphere):'
+  description: 'Prior to inoculation, replace the gas phase with a H2-CO2 (4:1, v/v) gas mixture and add
+    per liter the following solution from an anaerobic stock (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculate culture vessels to 150 kPa H2-CO2 (4:1, v/v).
 - step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 17849, inoculate with a 10% inoculum. When
-    the cellular density increases, re-pressure the culture vessels to 150 kPa with
-    the same gas mixture.'
+  description: 'Comment: For strain JCM 17849, inoculate with a 10% inoculum. When the cellular density
+    increases, re-pressure the culture vessels to 150 kPa with the same gas mixture.'
 applications:
 - Microbial cultivation
 curation_history:

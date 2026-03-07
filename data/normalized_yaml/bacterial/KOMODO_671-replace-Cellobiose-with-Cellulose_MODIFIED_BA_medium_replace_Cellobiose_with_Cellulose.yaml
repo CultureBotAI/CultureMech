@@ -1,6 +1,6 @@
 name: MODIFIED BA medium_replace_Cellobiose_with_Cellulose
 original_name: MODIFIED BA medium_replace_Cellobiose_with_Cellulose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.9-7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:671_replace_Cellobiose_with_Cellulose
     label: MODIFIED BA medium_replace_Cellobiose_with_Cellulose
-notes: 'Source: KOMODO ModelSEED | ID: 671_replace_Cellobiose_with_Cellulose | DSMZ
-  Medium: 671 (mediadive.medium:671) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 671_replace_Cellobiose_with_Cellulose | DSMZ Medium: 671 (mediadive.medium:671)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -270,6 +270,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.662613Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.0

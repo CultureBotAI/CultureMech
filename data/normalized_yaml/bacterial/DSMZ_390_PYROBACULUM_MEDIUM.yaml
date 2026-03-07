@@ -1,6 +1,6 @@
 name: PYROBACULUM MEDIUM
 original_name: PYROBACULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -121,13 +121,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium
-    thiosulfate and sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas
-    for at least 30 min to remove dissolved oxygen. After autoclaving add peptone,
-    yeast extract, thiosulfate and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Stock solutions of substrates can be autoclaved with the exception
-    of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation
-    adjust pH of final medium to 6.0.
+  description: Dissolve ingredients (except Trypticase peptone, yeast extract, sodium thiosulfate and
+    sulfide), adjust pH to 6.0 and sparge medium with 100% N2 gas for at least 30 min to remove dissolved
+    oxygen. After autoclaving add peptone, yeast extract, thiosulfate and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas. Stock solutions of substrates can be autoclaved with the
+    exception of sodium thiosulfate which should be sterilized by filtration. Prior to inoculation adjust
+    pH of final medium to 6.0.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

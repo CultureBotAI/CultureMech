@@ -1,11 +1,11 @@
 name: THIOBACILLUS CALDUS MEDIUM
 original_name: THIOBACILLUS CALDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 150a | DSMZ Medium: 150a
-  (mediadive.medium:150a) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 150a | DSMZ Medium: 150a (mediadive.medium:150a)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 150a
   term:

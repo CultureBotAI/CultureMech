@@ -1,15 +1,15 @@
 name: MEDIUM 1081a MODIFIED FOR DSM 18086
 original_name: MEDIUM 1081a MODIFIED FOR DSM 18086
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1081a_18086
   term:
     id: komodo.medium:1081a_18086
     label: MEDIUM 1081a MODIFIED FOR DSM 18086
-notes: 'Source: KOMODO ModelSEED | ID: 1081a_18086 | DSMZ Medium: 1081a (mediadive.medium:1081a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1081a_18086 | DSMZ Medium: 1081a (mediadive.medium:1081a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Glucose
   term:

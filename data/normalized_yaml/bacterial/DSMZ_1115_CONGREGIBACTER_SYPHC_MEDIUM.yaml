@@ -1,6 +1,6 @@
 name: CONGREGIBACTER (SYPHC) MEDIUM
 original_name: CONGREGIBACTER (SYPHC) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -211,22 +211,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except vitamins and hydrogenphosphate) and adjust
-    pH to 7.7. After autoclaving add vitamins and hydrogenphosphate from sterile stock
-    solutions sterilized by filtration. Adjust pH of complete medium to 7.3 - 7.5,
-    if necessary.
+  description: Dissolve ingredients (except vitamins and hydrogenphosphate) and adjust pH to 7.7. After
+    autoclaving add vitamins and hydrogenphosphate from sterile stock solutions sterilized by filtration.
+    Adjust pH of complete medium to 7.3 - 7.5, if necessary.
 - step_number: 2
   action: POUR_PLATES
-  description: 'Note: Growth of most strains is stimulated by using microaerophilic
-    conditions with only 10% (v/v) oxygen in the head space gas atmosphere. For microaerophilic
-    growth medium is prepared without HEPES, sparged with 80% N2 and 20% CO2 gas mixture
-    to make it anoxic and then dispensed under air atmosphere into serum vials to
-    50% volume. After autoclaving the pH is adjusted to 7.5 using a sterile anoxic
-    stock solution of Na2CO3 (5% w/v) prepared under 80% N2 and 20% CO2 gas mixture.'
+  description: 'Note: Growth of most strains is stimulated by using microaerophilic conditions with only
+    10% (v/v) oxygen in the head space gas atmosphere. For microaerophilic growth medium is prepared without
+    HEPES, sparged with 80% N2 and 20% CO2 gas mixture to make it anoxic and then dispensed under air
+    atmosphere into serum vials to 50% volume. After autoclaving the pH is adjusted to 7.5 using a sterile
+    anoxic stock solution of Na2CO3 (5% w/v) prepared under 80% N2 and 20% CO2 gas mixture.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:

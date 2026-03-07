@@ -1,6 +1,6 @@
 name: MEDIUM FOR HYDROGENOPHILUS
 original_name: MEDIUM FOR HYDROGENOPHILUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -123,13 +123,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly, adjust pH to 6.8. Distribute the medium
-    into culture vessels (e.g., 17.0 ml in 120 ml serum bottles), seal with butyl
-    rubber stoppers and autoclave.
+  description: Mix components thoroughly, adjust pH to 6.8. Distribute the medium into culture vessels
+    (e.g., 17.0 ml in 120 ml serum bottles), seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'After cooling, add the following autoclaved solutions (for final 20
-    ml):'
+  description: 'After cooling, add the following autoclaved solutions (for final 20 ml):'
 - step_number: 3
   action: MIX
   description: Pressurize to 100 kPa with H2-CO2 (4:1, v/v).

@@ -1,11 +1,11 @@
 name: FLUID THIOGLYCOLATE medium
 original_name: FLUID THIOGLYCOLATE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.1
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 153 | DSMZ Medium: 153
-  (mediadive.medium:153) | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 153 | DSMZ Medium: 153 (mediadive.medium:153)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 153
   term:

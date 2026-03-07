@@ -1,6 +1,6 @@
 name: METHANOGENIUM SP. medium
 original_name: METHANOGENIUM SP. medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:532
     label: METHANOGENIUM SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 532 | DSMZ Medium: 532 (mediadive.medium:532)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 532 | DSMZ Medium: 532 (mediadive.medium:532) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

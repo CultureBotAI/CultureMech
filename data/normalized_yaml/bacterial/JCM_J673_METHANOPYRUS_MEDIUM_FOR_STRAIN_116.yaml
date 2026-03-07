@@ -1,6 +1,6 @@
 name: METHANOPYRUS MEDIUM FOR STRAIN 116
 original_name: METHANOPYRUS MEDIUM FOR STRAIN 116
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -332,17 +332,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except iron powder and filter-sterilize. Dispense the
-    medium and iron powder (autoclaved) into sterile culture vessels (typically, 15
-    - 20 ml medium in 120 ml serum bottles) under a H2-CO2 (80:20, v/v) gas atmosphere
-    and seal with butyl rubber stoppers. Prior to inoculation, reduce the medium with
-    0.01 volume of 5% Na2S x 9H2O solution (neutralized with H2SO4, autoclaved and
-    stored under a N2 atmosphere). Pressurize the inoculated bottle to 200 kPa H2-CO2
-    (80:20, v/v).
+  description: Mix components except iron powder and filter-sterilize. Dispense the medium and iron powder
+    (autoclaved) into sterile culture vessels (typically, 15 - 20 ml medium in 120 ml serum bottles) under
+    a H2-CO2 (80:20, v/v) gas atmosphere and seal with butyl rubber stoppers. Prior to inoculation, reduce
+    the medium with 0.01 volume of 5% Na2S x 9H2O solution (neutralized with H2SO4, autoclaved and stored
+    under a N2 atmosphere). Pressurize the inoculated bottle to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

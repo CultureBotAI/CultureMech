@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM SP. medium I
 original_name: DESULFOTOMACULUM SP. medium I
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:63a
     label: DESULFOTOMACULUM SP. medium I
-notes: 'Source: KOMODO ModelSEED | ID: 63a | DSMZ Medium: 63a (mediadive.medium:63a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 63a | DSMZ Medium: 63a (mediadive.medium:63a) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

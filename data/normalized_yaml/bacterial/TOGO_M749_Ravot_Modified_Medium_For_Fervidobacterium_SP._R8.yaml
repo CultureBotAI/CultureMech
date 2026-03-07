@@ -1,6 +1,6 @@
 name: Ravot Modified Medium For Fervidobacterium SP. R8
 original_name: Ravot Modified Medium For Fervidobacterium SP. R8
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,13 +8,11 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
-- preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium
-    [M748])
+- preferred_term: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101 (see Medium [M748])
   concentration:
     value: '1'
     unit: G_PER_L

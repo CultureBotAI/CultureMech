@@ -1,6 +1,6 @@
 name: MBM MEDIUM
 original_name: MBM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -182,12 +182,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except SL-4 trace element solution and Na2S x 9H2O,
-    and autoclave. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere.
-    Filter-sterilize SL-4 trace element solution, and add to the medium. Distribute
-    the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) under a
-    stream of N2-CO2 (4:1, v/v), and seal with butyl rubber stoppers. Prior to inoculation,
-    add the Na2S x 9H2O solution to the medium, and adjust pH to 7.0, if necessary.
+  description: Mix ingredients except SL-4 trace element solution and Na2S x 9H2O, and autoclave. Separately
+    autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Filter-sterilize SL-4 trace element solution,
+    and add to the medium. Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
+    under a stream of N2-CO2 (4:1, v/v), and seal with butyl rubber stoppers. Prior to inoculation, add
+    the Na2S x 9H2O solution to the medium, and adjust pH to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.6.

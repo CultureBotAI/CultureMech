@@ -1,6 +1,6 @@
 name: STANDARD I medium
 original_name: STANDARD I medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:453
     label: STANDARD I medium
-notes: 'Source: KOMODO ModelSEED | ID: 453 | DSMZ Medium: 453 (mediadive.medium:453)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 453 | DSMZ Medium: 453 (mediadive.medium:453) | Aerobic: No'
 ingredients:
 - preferred_term: Meat peptone
   concentration:

@@ -1,6 +1,6 @@
 name: MJ MEDIUM FOR MICROAEROPHILIC AUTOTROPHS
 original_name: MJ MEDIUM FOR MICROAEROPHILIC AUTOTROPHS
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -168,13 +168,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 5.5 and autoclave. After cooling, add
-    aseptically the following solutions (filter-sterilized):'
+  description: 'Mix components, adjust pH to 5.5 and autoclave. After cooling, add aseptically the following
+    solutions (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into sterile culture vessels under a N2-CO2-O2
-    (76:19:5, v/v) gas mixture and seal with butyl rubber stoppers. Pressurize the
-    culture vessels to 50 kPa with the same gas mixture.
+  description: Distribute the medium into sterile culture vessels under a N2-CO2-O2 (76:19:5, v/v) gas
+    mixture and seal with butyl rubber stoppers. Pressurize the culture vessels to 50 kPa with the same
+    gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

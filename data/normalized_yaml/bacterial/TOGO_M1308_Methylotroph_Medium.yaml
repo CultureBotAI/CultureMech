@@ -1,6 +1,6 @@
 name: Methylotroph Medium
 original_name: Methylotroph Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '970'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '0.07'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.27'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -32,14 +29,12 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: NaNO3
   concentration:
     value: '0.42'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:63005
     label: ''
@@ -47,8 +42,7 @@ ingredients:
   concentration:
     value: '0.014'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -94,8 +88,7 @@ ingredients:
   concentration:
     value: '0.81'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:17790
     label: methanol

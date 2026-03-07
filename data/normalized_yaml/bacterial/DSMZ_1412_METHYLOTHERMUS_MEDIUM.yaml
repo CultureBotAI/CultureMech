@@ -1,6 +1,6 @@
 name: METHYLOTHERMUS MEDIUM
 original_name: METHYLOTHERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.2
@@ -322,16 +322,15 @@ preparation_steps:
   description: or
 - step_number: 2
   action: POUR_PLATES
-  description: Prepare the liquid medium. Adjust to pH 6.2 with HCl or NaOH. Dispense
-    the medium into serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute.
-    20% methane and 5% air is added to the gas phase
+  description: Prepare the liquid medium. Adjust to pH 6.2 with HCl or NaOH. Dispense the medium into
+    serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute. 20% methane and 5% air is added
+    to the gas phase
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.2.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense the medium into serum bottles under gassing with N2:CO2 (80:20
-    v/v) for one minute.
+  description: Dispense the medium into serum bottles under gassing with N2:CO2 (80:20 v/v) for one minute.
 - step_number: 5
   action: MIX
   description: 20% methane and 5% air is added to the gas phase.

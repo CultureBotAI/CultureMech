@@ -1,6 +1,6 @@
 name: CELLULOSILYTICUM RUMINICOLA MEDIUM
 original_name: CELLULOSILYTICUM RUMINICOLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -74,11 +74,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Solutions A and B separately and filter-sterilize Solution
-    C. Combine the three solutions, distribute into culture vessels under a stream
-    of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
-    reduce the medium with 0.05% L-cysteine x HCl x H2O (autoclaved as a 5% solution
-    under a N2 atmosphere).
+  description: Autoclave Solutions A and B separately and filter-sterilize Solution C. Combine the three
+    solutions, distribute into culture vessels under a stream of N2-CO2 (80:20, v/v) and seal with butyl
+    rubber stoppers. Prior to inoculation, reduce the medium with 0.05% L-cysteine x HCl x H2O (autoclaved
+    as a 5% solution under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:

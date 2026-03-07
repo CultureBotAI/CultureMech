@@ -1,8 +1,8 @@
 name: Oatmeal Agar (ISP-3) With 0.1% Yeast Extract
 original_name: Oatmeal Agar (ISP-3) With 0.1% Yeast Extract
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract (BD-Difco)
   concentration:

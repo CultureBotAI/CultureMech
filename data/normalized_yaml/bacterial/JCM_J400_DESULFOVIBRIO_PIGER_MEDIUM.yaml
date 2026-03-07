@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO PIGER MEDIUM
 original_name: DESULFOVIBRIO PIGER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 388 with 2.5 g/L (final) sodium lactate. Add Trace minerals
-    of Medium No. 151, instead of FeCl2 solution, and Trace element solution of Medium
-    No. 230.
+  description: Use Medium No. 388 with 2.5 g/L (final) sodium lactate. Add Trace minerals of Medium No.
+    151, instead of FeCl2 solution, and Trace element solution of Medium No. 230.
 applications:
 - Microbial cultivation
 curation_history:

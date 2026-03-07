@@ -1,6 +1,6 @@
 name: MODIFIED ROSEOSPIRA MEDIUM
 original_name: MODIFIED ROSEOSPIRA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM
-    (final) Na2S2O3 x 5H2O.
+  description: Use Medium No. 568 with 1.0 mM (final) Na2S x 9H2O instead of 2.0 mM (final) Na2S2O3 x
+    5H2O.
 applications:
 - Microbial cultivation
 curation_history:

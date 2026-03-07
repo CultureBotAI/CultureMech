@@ -1,37 +1,32 @@
 name: '859'
 original_name: '859'
-category: imported
+category: bacterial
 description: 859. NBRC 857.
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
-- preferred_term: "KP buffer*10mlMgCl2\xB76H2O0.75gCaCl2\xB72H2O0.15gNH4Cl0.54gNa2S2O31.6gNa2SO41.4gTrace\
-    \ elements solution**2mlVitamin solution***2mlResazurin1mgNa2CO30.5gNa2S\xB79H2O0.36gDistilled\
-    \ water1LpH unadjustedMix ingredients except KP buffer, vitamin solution, Na2CO3and\
-    \ Na2S\xB79H2O. Dispense the medium into suitable culture vessels under a stream\
-    \ of H2/CO2(80/20) and seal with butyl rubber stoppers. Separately autoclave KP\
-    \ buffer and Na2S\xB79H2O (5% solution) under a N2atmosphere. Sterilize vitamin\
-    \ and 10% Na2CO3solutions by filtration. Prior to inoculation, aseptically and\
-    \ anaerobically add KP buffer, vitamin, Na2CO3and Na2S\xB79H2O solutions. Pressurize\
-    \ the inoculated vessels to 150 kPa with H2/CO2(80/20).*KP bufferKH2PO4119gK2HPO421gDistilled\
-    \ water1LAutoclaved under N2.**Trace elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3\xB7\
-    6H2O1.35gMnCl2\xB74H2O0.1gCoCl2\xB76H2O0.024gCaCl2\xB72H2O0.1gZnCl20.1gCuCl2\xB7\
-    2H2O0.025gH3BO30.01gNa2MoO4\xB72H2O0.024gNaCl1gNiCl2\xB76H2O0.12gNa2SeO40.004gNa2WO40.004gKAl(SO4)2\xB7\
-    12H2O0.02gDistilled water1LFirst dissolve nitrilotriacetic acid and adjust pH\
-    \ to 6.5 with NaOH, and then add minerals. Final pH 7.0.***Vitamin solutionBiotin2mgFolic\
-    \ acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic acid5mgCa-pantothenate5mgp-Aminobenzoic\
-    \ acid1mgVitamin B120.01mgDistilled water1L"
+- preferred_term: KP buffer*10mlMgCl2·6H2O0.75gCaCl2·2H2O0.15gNH4Cl0.54gNa2S2O31.6gNa2SO41.4gTrace elements
+    solution**2mlVitamin solution***2mlResazurin1mgNa2CO30.5gNa2S·9H2O0.36gDistilled water1LpH unadjustedMix
+    ingredients except KP buffer, vitamin solution, Na2CO3and Na2S·9H2O. Dispense the medium into suitable
+    culture vessels under a stream of H2/CO2(80/20) and seal with butyl rubber stoppers. Separately autoclave
+    KP buffer and Na2S·9H2O (5% solution) under a N2atmosphere. Sterilize vitamin and 10% Na2CO3solutions
+    by filtration. Prior to inoculation, aseptically and anaerobically add KP buffer, vitamin, Na2CO3and
+    Na2S·9H2O solutions. Pressurize the inoculated vessels to 150 kPa with H2/CO2(80/20).*KP bufferKH2PO4119gK2HPO421gDistilled
+    water1LAutoclaved under N2.**Trace elements solutionNitrilotriacetic acid (NTA)12.8gFeCl3·6H2O1.35gMnCl2·4H2O0.1gCoCl2·6H2O0.024gCaCl2·2H2O0.1gZnCl20.1gCuCl2·2H2O0.025gH3BO30.01gNa2MoO4·2H2O0.024gNaCl1gNiCl2·6H2O0.12gNa2SeO40.004gNa2WO40.004gKAl(SO4)2·12H2O0.02gDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add minerals.
+    Final pH 7.0.***Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
+    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L
 - preferred_term: ''
   concentration:
     value: KP buffer*
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -63,7 +58,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -112,11 +107,11 @@ ingredients:
 - preferred_term: ''
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -148,7 +143,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

@@ -1,6 +1,6 @@
 name: ALKALINUS ABYSSINIESE MEDIUM
 original_name: ALKALINUS ABYSSINIESE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -109,9 +109,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 900 ml. For
-    preparation of solid medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C
-    for agar medium). Then, add aseptically the following solutions (separately autoclaved):'
+  description: 'Add components to distilled water and bring volume to 900 ml. For preparation of solid
+    medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C for agar medium). Then, add aseptically
+    the following solutions (separately autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

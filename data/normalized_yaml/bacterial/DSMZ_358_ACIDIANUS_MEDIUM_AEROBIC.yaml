@@ -1,6 +1,6 @@
 name: ACIDIANUS MEDIUM (AEROBIC)
 original_name: ACIDIANUS MEDIUM (AEROBIC)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -106,13 +106,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients, except sulfur, bring medium to the boil, then
-    cool to room temperature and adjust pH to 2.5 using 10 N H2SO4. Dispense medium
-    under air atmosphere enriched with 1 - 10% CO2 in culture vessels suitable for
-    anaerobic cultivation (e.g., 20 ml medium in 100 ml serum bottles) containing
-    already the appropriate amount of sulfur. For sterilization sealed bottles with
-    medium are heated in a boiling water bath for 2 - 3 h on each of 3 successive
-    days.
+  description: Dissolve ingredients, except sulfur, bring medium to the boil, then cool to room temperature
+    and adjust pH to 2.5 using 10 N H2SO4. Dispense medium under air atmosphere enriched with 1 - 10%
+    CO2 in culture vessels suitable for anaerobic cultivation (e.g., 20 ml medium in 100 ml serum bottles)
+    containing already the appropriate amount of sulfur. For sterilization sealed bottles with medium
+    are heated in a boiling water bath for 2 - 3 h on each of 3 successive days.
 - step_number: 2
   action: MIX
   description: 'Note: Inoculate with 5% (w/v) culture. Incubate without shaking.'

@@ -1,6 +1,6 @@
 name: Clostridium Thermocellum Medium
 original_name: Clostridium Thermocellum Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,14 +21,12 @@ ingredients:
   concentration:
     value: '0.13'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '1.43'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -37,8 +34,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -46,20 +43,17 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: FeSO4・7H2O
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -67,20 +61,17 @@ ingredients:
   concentration:
     value: '7.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Cellulose (Avicel or MN 300)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
 - preferred_term: Glutathione
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:16856
     label: glutathione
@@ -88,8 +79,7 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -124,5 +114,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.673513'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas'

@@ -1,6 +1,6 @@
 name: COPROTHERMOBACTER PLATENSIS medium
 original_name: COPROTHERMOBACTER PLATENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:834
     label: COPROTHERMOBACTER PLATENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 834 | DSMZ Medium: 834 (mediadive.medium:834)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 834 | DSMZ Medium: 834 (mediadive.medium:834) | Aerobic: Yes'
 ingredients:
 - preferred_term: Meat peptone
   concentration:
@@ -228,5 +227,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.988604Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

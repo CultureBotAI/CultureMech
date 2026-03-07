@@ -1,6 +1,6 @@
 name: PROLIXIBACTER MEDIUM
 original_name: PROLIXIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -169,10 +169,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, and adjust pH to 7.0. Dispense the medium into suitable
-    culture vessels under a stream of N2-CO2 (80:20, v/v), seal with butyl rubber
-    stoppers, and autoclave. Prior to inoculation, aseptically and anaerobically add
-    per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components, and adjust pH to 7.0. Dispense the medium into suitable culture vessels
+    under a stream of N2-CO2 (80:20, v/v), seal with butyl rubber stoppers, and autoclave. Prior to inoculation,
+    aseptically and anaerobically add per liter the following solutions (autoclaved and stored under a
+    N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: High-sugar PYE medium (3% sucrose)
 original_name: High-sugar PYE medium (3% sucrose)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '3'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:17992
     label: sucrose
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate

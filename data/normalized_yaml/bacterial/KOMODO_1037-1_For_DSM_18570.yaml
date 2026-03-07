@@ -1,16 +1,15 @@
 name: For DSM 18570
 original_name: For DSM 18570
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: KOMODO Medium 1037.1
   term:
     id: komodo.medium:1037.1
     label: For DSM 18570
-notes: 'Source: KOMODO ModelSEED | ID: 1037.1 | DSMZ Medium: 1037 (mediadive.medium:1037)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1037.1 | DSMZ Medium: 1037 (mediadive.medium:1037) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

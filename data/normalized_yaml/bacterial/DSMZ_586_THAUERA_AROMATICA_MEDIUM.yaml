@@ -1,6 +1,6 @@
 name: THAUERA AROMATICA MEDIUM
 original_name: THAUERA AROMATICA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -200,13 +200,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust solutions A and B to pH 7.2, autoclave separately and combine
-    after cooling. Add 10 ml of sterile trace elements solution SL-10 (see below)
-    and 5 ml vitamin solution (see below).
+  description: Adjust solutions A and B to pH 7.2, autoclave separately and combine after cooling. Add
+    10 ml of sterile trace elements solution SL-10 (see below) and 5 ml vitamin solution (see below).
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.

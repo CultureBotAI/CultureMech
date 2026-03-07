@@ -1,8 +1,8 @@
 name: MRS agar
 original_name: MRS agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MRS agar (Oxoid)
   concentration:

@@ -1,6 +1,6 @@
 name: ACIDITHIOBACILLUS FERROOXIDANS MEDIUM
 original_name: ACIDITHIOBACILLUS FERROOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.8
@@ -49,8 +49,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 1.8 with 2N sulfuric acid. Sterilize by autoclaving for
-    15 min at 121°C.
+  description: Adjust pH to 1.8 with 2N sulfuric acid. Sterilize by autoclaving for 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:

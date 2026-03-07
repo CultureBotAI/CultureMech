@@ -1,8 +1,8 @@
 name: MODIFIED SEA WATER AGAR
 original_name: MODIFIED SEA WATER AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 917
@@ -71,9 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A stock
-    solution of calcium chloride should be sterilized separately and added to the
-    medium after autoclaving.
+  description: Adjust to pH 7.2. Add agar and autoclave at 121°C for 20 min. A stock solution of calcium
+    chloride should be sterilized separately and added to the medium after autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

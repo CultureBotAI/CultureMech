@@ -1,6 +1,6 @@
 name: SSE/HD 1:10 MEDIUM
 original_name: SSE/HD 1:10 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -252,15 +252,14 @@ preparation_steps:
   description: 'Add to 1000 ml of medium after autoclaving:'
 - step_number: 3
   action: AUTOCLAVE
-  description: For solid medium use purified agar (Oxoid LP0028) which has to be autoclaved
-    separately.
+  description: For solid medium use purified agar (Oxoid LP0028) which has to be autoclaved separately.
 - step_number: 4
   action: DISSOLVE
   description: Dissolve by shaking overnight. Sterilize by autoclaving.
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: BACTERIOVORAX MEDIUM
 original_name: BACTERIOVORAX MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 844
   term:
@@ -43,9 +43,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve ingredients except magnesium chloride and calcium chloride.
-    Add magnesium chloride and calcium chloride after autoclaving from sterile stock
-    solutions of 5% (w/v) each. For agar plates add 1.2% Bacto agar
+  description: Dissolve ingredients except magnesium chloride and calcium chloride. Add magnesium chloride
+    and calcium chloride after autoclaving from sterile stock solutions of 5% (w/v) each. For agar plates
+    add 1.2% Bacto agar
 applications:
 - Microbial cultivation
 curation_history:

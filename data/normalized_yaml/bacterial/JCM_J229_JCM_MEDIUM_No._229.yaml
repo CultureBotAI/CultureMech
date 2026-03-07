@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 229
 original_name: JCM MEDIUM No. 229
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -232,8 +232,7 @@ preparation_steps:
   description: Check final pH to be about 10.0.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve nitrilotriacetic acid with KOH to pH 6.5, then proceed to
-    add minerals.
+  description: Dissolve nitrilotriacetic acid with KOH to pH 6.5, then proceed to add minerals.
 applications:
 - Microbial cultivation
 curation_history:

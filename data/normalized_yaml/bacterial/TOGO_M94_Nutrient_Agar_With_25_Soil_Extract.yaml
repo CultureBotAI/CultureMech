@@ -1,8 +1,8 @@
 name: Nutrient Agar With 25% Soil Extract
 original_name: Nutrient Agar With 25% Soil Extract
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tap water
   concentration:

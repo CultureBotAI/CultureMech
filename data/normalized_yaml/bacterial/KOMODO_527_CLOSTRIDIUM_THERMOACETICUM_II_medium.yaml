@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOACETICUM II medium
 original_name: CLOSTRIDIUM THERMOACETICUM II medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:527
     label: CLOSTRIDIUM THERMOACETICUM II medium
-notes: 'Source: KOMODO ModelSEED | ID: 527 | DSMZ Medium: 527 (mediadive.medium:527)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 527 | DSMZ Medium: 527 (mediadive.medium:527) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

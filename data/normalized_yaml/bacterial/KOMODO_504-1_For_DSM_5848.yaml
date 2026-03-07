@@ -1,6 +1,6 @@
 name: For DSM 5848
 original_name: For DSM 5848
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:504.1
     label: For DSM 5848
-notes: 'Source: KOMODO ModelSEED | ID: 504.1 | DSMZ Medium: 504 (mediadive.medium:504)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 504.1 | DSMZ Medium: 504 (mediadive.medium:504) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

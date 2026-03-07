@@ -1,6 +1,6 @@
 name: TINDALLIA medium
 original_name: TINDALLIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:798
     label: TINDALLIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 798 | DSMZ Medium: 798 (mediadive.medium:798)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 798 | DSMZ Medium: 798 (mediadive.medium:798) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2CO3
   term:
@@ -202,5 +201,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.808133Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

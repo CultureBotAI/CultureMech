@@ -1,6 +1,6 @@
 name: VIRGIBACILLUS MERV MEDIUM
 original_name: VIRGIBACILLUS MERV MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -50,9 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation
-    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution
-    (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation of solid
+    medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 8.0, if necessary.

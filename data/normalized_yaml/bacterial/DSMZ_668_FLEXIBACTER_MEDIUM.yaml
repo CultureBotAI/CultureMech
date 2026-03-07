@@ -1,8 +1,8 @@
 name: FLEXIBACTER MEDIUM
 original_name: FLEXIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 668
   term:

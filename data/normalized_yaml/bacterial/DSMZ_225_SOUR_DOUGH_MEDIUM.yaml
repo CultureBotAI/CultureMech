@@ -1,6 +1,6 @@
 name: SOUR DOUGH MEDIUM
 original_name: SOUR DOUGH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.6
@@ -40,12 +40,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 5.6 with 20% lactic acid or HCl. Fresh yeast extract is
-    prepared by autoclaving a 20% suspension of commercial baker's yeast in distilled
-    water for 30 minutes at 121°C, allowing the suspension to settle overnight at
-    2 to 8°C, decanting and further clarifying the supernatant by centrifugation.
-    The extract prepared in this manner contains 1.5% solids and if not to be used
-    within a few days, should be frozen or freeze-dried immediately.
+  description: Adjust pH to 5.6 with 20% lactic acid or HCl. Fresh yeast extract is prepared by autoclaving
+    a 20% suspension of commercial baker's yeast in distilled water for 30 minutes at 121°C, allowing
+    the suspension to settle overnight at 2 to 8°C, decanting and further clarifying the supernatant by
+    centrifugation. The extract prepared in this manner contains 1.5% solids and if not to be used within
+    a few days, should be frozen or freeze-dried immediately.
 applications:
 - Microbial cultivation
 curation_history:

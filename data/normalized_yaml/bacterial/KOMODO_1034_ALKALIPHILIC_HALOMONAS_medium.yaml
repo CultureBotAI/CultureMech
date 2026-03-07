@@ -1,6 +1,6 @@
 name: ALKALIPHILIC HALOMONAS medium
 original_name: ALKALIPHILIC HALOMONAS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1034
     label: ALKALIPHILIC HALOMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1034 | DSMZ Medium: 1034 (mediadive.medium:1034)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1034 | DSMZ Medium: 1034 (mediadive.medium:1034) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

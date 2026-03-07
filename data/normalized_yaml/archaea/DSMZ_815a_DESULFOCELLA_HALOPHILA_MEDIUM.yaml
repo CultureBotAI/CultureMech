@@ -1,6 +1,6 @@
 name: DESULFOCELLA HALOPHILA MEDIUM
 original_name: DESULFOCELLA HALOPHILA MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -169,23 +169,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except pyruvate, bicarbonate and sulfide, adjust
-    pH to 6.0 with NaOH and sparge medium for 30 - 45 min with 100% N2 gas to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Before use add pyruvate (sterilized by filtration)
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas atmosphere. Final medium pH should be 7.2.
+  description: Dissolve ingredients except pyruvate, bicarbonate and sulfide, adjust pH to 6.0 with NaOH
+    and sparge medium for 30 - 45 min with 100% N2 gas to make it anoxic. Dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before use add pyruvate (sterilized
+    by filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Final medium
+    pH should be 7.2.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Prior to inoculation 10-20 mg/l sodium dithionite (added from
-    a 5% w/v solution freshly prepared under N2 and filter-sterilized) can be added
-    to the medium to stimulate growth at the beginning.'
+  description: 'Note: Prior to inoculation 10-20 mg/l sodium dithionite (added from a 5% w/v solution
+    freshly prepared under N2 and filter-sterilized) can be added to the medium to stimulate growth at
+    the beginning.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

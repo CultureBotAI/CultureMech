@@ -1,6 +1,6 @@
 name: DESULFOBACTER MEDIUM
 original_name: DESULFOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.1-7.4
@@ -236,23 +236,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 min), then distributed under the same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved
-    separately under 80% N2 and 20% CO2 gas atmosphere. Solutions C and E are autoclaved
-    under 100% N2 gas. Solution D is prepared under 100% N2 gas atmosphere and sterilized
-    by filtration. To complete the medium appropriate amounts of solutions B to E
-    are added to the sterile solution A in the sequence as indicated. Final pH of
-    the medium should be 7.1 - 7.4.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
+    30 min), then distributed under the same gas atmosphere in anoxic Hungate-type tubes or serum vials
+    and autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions
+    C and E are autoclaved under 100% N2 gas. Solution D is prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. To complete the medium appropriate amounts of solutions B to E are added
+    to the sterile solution A in the sequence as indicated. Final pH of the medium should be 7.1 - 7.4.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth of some strains at the beginning. For transfers use 5 - 10% (v/v) inoculum.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
+    freshly prepared under N2 and filter-sterilized) may stimulate growth of some strains at the beginning.
+    For transfers use 5 - 10% (v/v) inoculum.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.445896Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

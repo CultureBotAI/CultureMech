@@ -1,6 +1,6 @@
 name: METHANOBREVIBACTER CUTICULARIS MEDIUM
 original_name: METHANOBREVIBACTER CUTICULARIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.7
@@ -232,24 +232,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, MOPS buffer, vitamins and DTT),
-    bring medium to the boil, then cool to room temperature under 80% H2 and 20% CO2
-    gas mixture. Dispense under same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. Add MOPS buffer adjusted to pH 7.7, vitamins and
-    DTT from anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration
-    and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
-    CO2 gas mixture. Adjust pH of complete medium to 7.7, if necessary.
+  description: Dissolve ingredients (except carbonate, MOPS buffer, vitamins and DTT), bring medium to
+    the boil, then cool to room temperature under 80% H2 and 20% CO2 gas mixture. Dispense under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add MOPS buffer adjusted
+    to pH 7.7, vitamins and DTT from anoxic stock solutions prepared under 100% N2 gas and sterilized
+    by filtration and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. Adjust pH of complete medium to 7.7, if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

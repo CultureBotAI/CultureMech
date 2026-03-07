@@ -1,6 +1,6 @@
 name: HALOMONAS SUBGLACIESCOLA (Artificial ORGANIC LAKE medium)
 original_name: HALOMONAS SUBGLACIESCOLA (Artificial ORGANIC LAKE medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:602
     label: HALOMONAS SUBGLACIESCOLA (Artificial ORGANIC LAKE medium)
-notes: 'Source: KOMODO ModelSEED | ID: 602 | DSMZ Medium: 602 (mediadive.medium:602)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 602 | DSMZ Medium: 602 (mediadive.medium:602) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

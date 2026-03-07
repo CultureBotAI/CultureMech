@@ -1,6 +1,6 @@
 name: PETROTOGA OLEARIA MEDIUM
 original_name: PETROTOGA OLEARIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -100,12 +100,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except maltose and sulfide, adjust pH to 7.0 -
-    7.2 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas atmosphere. The pH of the complete medium
-    should be 7.5.
+  description: Dissolve ingredients except maltose and sulfide, adjust pH to 7.0 - 7.2 and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add maltose and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. The pH of the complete
+    medium should be 7.5.
 applications:
 - Microbial cultivation
 curation_history:

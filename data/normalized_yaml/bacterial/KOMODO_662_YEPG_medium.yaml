@@ -1,6 +1,6 @@
 name: YEPG medium
 original_name: YEPG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:662
     label: YEPG medium
-notes: 'Source: KOMODO ModelSEED | ID: 662 | DSMZ Medium: 662 (mediadive.medium:662)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 662 | DSMZ Medium: 662 (mediadive.medium:662) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

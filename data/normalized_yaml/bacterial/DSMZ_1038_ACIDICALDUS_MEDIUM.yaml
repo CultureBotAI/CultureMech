@@ -1,6 +1,6 @@
 name: ACIDICALDUS MEDIUM
 original_name: ACIDICALDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -60,9 +60,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose and yeast extract, adjust pH to
-    2.5, dispense in suitable cultivation vessels and autoclave. Add glucose and yeast
-    extract after autoclaving from sterile stock solutions.
+  description: Dissolve ingredients except glucose and yeast extract, adjust pH to 2.5, dispense in suitable
+    cultivation vessels and autoclave. Add glucose and yeast extract after autoclaving from sterile stock
+    solutions.
 applications:
 - Microbial cultivation
 curation_history:

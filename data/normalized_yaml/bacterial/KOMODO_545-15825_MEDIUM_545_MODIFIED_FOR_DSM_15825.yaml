@@ -1,6 +1,6 @@
 name: MEDIUM 545 MODIFIED FOR DSM 15825
 original_name: MEDIUM 545 MODIFIED FOR DSM 15825
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:545_15825
     label: MEDIUM 545 MODIFIED FOR DSM 15825
-notes: 'Source: KOMODO ModelSEED | ID: 545_15825 | DSMZ Medium: 545 (mediadive.medium:545)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 545_15825 | DSMZ Medium: 545 (mediadive.medium:545) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

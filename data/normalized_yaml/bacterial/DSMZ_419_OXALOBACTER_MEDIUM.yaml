@@ -1,6 +1,6 @@
 name: OXALOBACTER MEDIUM
 original_name: OXALOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -166,15 +166,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate and cysteine, adjust pH to 6.8,
-    bring medium to the boil and then cool to room temperature under 100% CO2 gas
-    atmosphere. Add solid carbonate and cysteine, then equilibrate pH to 6.8. Dispense
-    under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave.
+  description: Dissolve ingredients except carbonate and cysteine, adjust pH to 6.8, bring medium to the
+    boil and then cool to room temperature under 100% CO2 gas atmosphere. Add solid carbonate and cysteine,
+    then equilibrate pH to 6.8. Dispense under 100% CO2 gas atmosphere into anoxic Hungate-type tubes
+    or serum vials and autoclave.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

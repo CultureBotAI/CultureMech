@@ -1,6 +1,6 @@
 name: ML-15 MEDIUM
 original_name: ML-15 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -49,8 +49,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix thoroughly and autoclave. After cooling, add the following solution
-    (autoclaved).
+  description: Mix thoroughly and autoclave. After cooling, add the following solution (autoclaved).
 applications:
 - Microbial cultivation
 curation_history:

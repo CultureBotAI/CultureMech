@@ -1,6 +1,6 @@
 name: THAUERA AROMATICA MEDIUM (ANAEROB)
 original_name: THAUERA AROMATICA MEDIUM (ANAEROB)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -232,23 +232,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
-    a pH below 6 (at least 30 min), then distributed under the same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclaved. Solutions B and
-    C are autoclaved separately under 100% N2 gas. Solution D is autoclaved under
-    80% N2 and 20% CO2 gas atmosphere. Solution E is prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. Solutions B to E are added to the sterile, cooled
-    solution A in appropriate amounts in the sequence as indicated. Adjust pH of final
-    medium to 7.2, if necessary.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
+    30 min), then distributed under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclaved. Solutions B and C are autoclaved separately under 100% N2 gas. Solution D is autoclaved
+    under 80% N2 and 20% CO2 gas atmosphere. Solution E is prepared under 100% N2 gas atmosphere and sterilized
+    by filtration. Solutions B to E are added to the sterile, cooled solution A in appropriate amounts
+    in the sequence as indicated. Adjust pH of final medium to 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: For aerobic growth prepare medium under air. Omit carbonate and KNO3.
-    3,5-Dihydroxybenzoic acid or Na-benzoate as substrate can be replaced with 10
-    mM Na-malate. Adjust medium pH to 7.2.
+  description: For aerobic growth prepare medium under air. Omit carbonate and KNO3. 3,5-Dihydroxybenzoic
+    acid or Na-benzoate as substrate can be replaced with 10 mM Na-malate. Adjust medium pH to 7.2.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -259,5 +256,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.066064Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

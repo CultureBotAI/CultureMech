@@ -1,6 +1,6 @@
 name: HALOPHILE YEAST EXTRACT MEDIUM
 original_name: HALOPHILE YEAST EXTRACT MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -67,9 +67,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except NaHCO3 to distilled water and bring volume to
-    1.0 L. Adjust pH to 8.0 with 1 M NaOH and autoclave. Filter-sterilize 8% (w/v)
-    NaHCO3 and add to the medium aseptically.
+  description: Add components except NaHCO3 to distilled water and bring volume to 1.0 L. Adjust pH to
+    8.0 with 1 M NaOH and autoclave. Filter-sterilize 8% (w/v) NaHCO3 and add to the medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MITSUOKELLA DENTALIS MEDIUM
 original_name: MITSUOKELLA DENTALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -116,18 +116,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine-HCl in water, boil for 5 min,
-    cool to room temperature while gassing with 100% CO2, add cysteine-HCl and adjust
-    pH to 6.9 with 8 N NaOH while gassing is continued. Switch to 100% N2 gas after
-    pH has reached the desired value, distribute in anaerobic tubes under nitrogen,
-    and autoclave.
+  description: Dissolve ingredients except cysteine-HCl in water, boil for 5 min, cool to room temperature
+    while gassing with 100% CO2, add cysteine-HCl and adjust pH to 6.9 with 8 N NaOH while gassing is
+    continued. Switch to 100% N2 gas after pH has reached the desired value, distribute in anaerobic tubes
+    under nitrogen, and autoclave.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.9.
 - step_number: 3
   action: MIX
-  description: Before use add 5% (v/v) bovine serum (made anaerobic by preincubation
-    in a GasPak container over-night).
+  description: Before use add 5% (v/v) bovine serum (made anaerobic by preincubation in a GasPak container
+    over-night).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SP4-Z medium
 original_name: SP4-Z medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1076b
     label: SP4-Z medium
-notes: 'Source: KOMODO ModelSEED | ID: 1076b | DSMZ Medium: 1076b (mediadive.medium:1076b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1076b | DSMZ Medium: 1076b (mediadive.medium:1076b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

@@ -1,6 +1,6 @@
 name: MJAIS/MD MEDIUM
 original_name: MJAIS/MD MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -203,19 +203,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Trace vitamins, NaHCO3, sulfur and Na2S x 9H2O,
-    adjust pH to 6.0, and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3
-    solution, and add to the medium. Steam sulfur for 3 hr on each of 3 successive
-    days. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Distribute
-    the medium into culture vessels containing appropriate amount of sulfur (e.g.,
-    20 ml of medium in 120 ml serum bottles containing 0.6 g sulfur) under a stream
-    of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Aseptically
-    and anaerobically add the sterile Na2S x 9H2O solution. Pressurize the inoculated
-    bottle to 300 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients, except Trace vitamins, NaHCO3, sulfur and Na2S x 9H2O, adjust pH to 6.0,
+    and autoclave. Filter-sterilize Trace vitamins and 5% NaHCO3 solution, and add to the medium. Steam
+    sulfur for 3 hr on each of 3 successive days. Separately autoclave 5% Na2S x 9H2O solution under a
+    N2 atmosphere. Distribute the medium into culture vessels containing appropriate amount of sulfur
+    (e.g., 20 ml of medium in 120 ml serum bottles containing 0.6 g sulfur) under a stream of H2-CO2 (4:1,
+    v/v) gas mixture and seal with butyl rubber stoppers. Aseptically and anaerobically add the sterile
+    Na2S x 9H2O solution. Pressurize the inoculated bottle to 300 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: MIX
-  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01
-    g/L SrCl2 x H2O, 0.01 g/L NaBr and 0.01 g/L KI.
+  description: Use Trace mineral solution of Medium No. 324 supplemented with 0.01 g/L SrCl2 x H2O, 0.01
+    g/L NaBr and 0.01 g/L KI.
 applications:
 - Microbial cultivation
 curation_history:

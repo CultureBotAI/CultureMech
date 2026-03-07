@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M706
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: (NH4)2SO4
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -32,20 +29,17 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: MnSO4・xH2O
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Sodium succinate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -74,7 +68,7 @@ media_term:
   preferred_term: TOGO Medium M706
   term:
     id: TOGO:M706
-    label: (Unnamed medium)
+    label: TOGO Medium M706
 notes: 'Source: https://togomedium.org/medium/M706
 
   Original source: JCM - JCM_M686

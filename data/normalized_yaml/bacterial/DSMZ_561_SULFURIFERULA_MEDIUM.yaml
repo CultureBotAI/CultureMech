@@ -1,6 +1,6 @@
 name: SULFURIFERULA MEDIUM
 original_name: SULFURIFERULA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -182,19 +182,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, adjust pH to 6.0 with H2SO4 and sparge medium
-    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into serum vials (e.g., 20 ml medium in 100 ml
-    bottles) and autoclave. Adjust medium pH to 6.0, if necessary.
+  description: Dissolve ingredients, adjust pH to 6.0 with H2SO4 and sparge medium with 80% H2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    serum vials (e.g., 20 ml medium in 100 ml bottles) and autoclave. Adjust medium pH to 6.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation, add by injection 3% (v/v) sterile air (usually 9
-    ml per bottle) and pressurize bottles with sterile 80% H2 and 20% CO2 gas mixture
-    to 2 bar overpressure.
+  description: After inoculation, add by injection 3% (v/v) sterile air (usually 9 ml per bottle) and
+    pressurize bottles with sterile 80% H2 and 20% CO2 gas mixture to 2 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

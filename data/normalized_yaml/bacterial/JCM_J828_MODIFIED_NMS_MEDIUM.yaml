@@ -1,6 +1,6 @@
 name: MODIFIED NMS MEDIUM
 original_name: MODIFIED NMS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -126,14 +126,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solutions
-    (autoclaved) to the medium:'
+  description: 'Mix components and autoclave. After cooling, add the following solutions (autoclaved)
+    to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 6.8, if necessary. Aseptically distribute the medium into
-    sterile serum bottles (leave &; 80% gas phase by volume) and seal with rubber
-    stoppers. Replace the gas phase with an air-methane gas mixture (75:25, v/v).
-    Cultivate with shaking.
+  description: Adjust pH to 6.8, if necessary. Aseptically distribute the medium into sterile serum bottles
+    (leave &; 80% gas phase by volume) and seal with rubber stoppers. Replace the gas phase with an air-methane
+    gas mixture (75:25, v/v). Cultivate with shaking.
 applications:
 - Microbial cultivation
 curation_history:

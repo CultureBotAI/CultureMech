@@ -1,6 +1,6 @@
 name: VY/2-SWS AGAR
 original_name: VY/2-SWS AGAR
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -157,8 +157,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Use Medium No. 341 with the following seawater solution instead of
-    the artificial seawater:'
+  description: 'Use Medium No. 341 with the following seawater solution instead of the artificial seawater:'
 applications:
 - Microbial cultivation
 curation_history:

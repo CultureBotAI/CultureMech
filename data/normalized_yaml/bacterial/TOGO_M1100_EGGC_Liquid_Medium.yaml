@@ -1,6 +1,6 @@
 name: EGGC Liquid Medium
 original_name: EGGC Liquid Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -25,8 +24,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
-    compound, Simple component'
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -34,8 +33,7 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -56,8 +54,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -65,20 +62,17 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: KCl
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -86,8 +80,7 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -95,8 +88,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
-    Complex component'
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound, Complex component'
 - preferred_term: Vitamins mix solution (see Medium [M290])
   concentration:
     value: '5'
@@ -109,8 +101,7 @@ ingredients:
   concentration:
     value: '300'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -118,8 +109,7 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 media_term:
   preferred_term: TOGO Medium M1100
   term:

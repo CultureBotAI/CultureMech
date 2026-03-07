@@ -1,15 +1,14 @@
 name: R Agar With 0.5% Tween 80
 original_name: R Agar With 0.5% Tween 80
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tween 80
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:53426
     label: polysorbate 80

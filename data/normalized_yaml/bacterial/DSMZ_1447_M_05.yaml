@@ -1,8 +1,8 @@
 name: M 05
 original_name: M 05
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1447
   term:
@@ -24,8 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 5.5. Dissolve malt extract in water and autoclave 15 min
-    at 121°C; filter until entirely clear. Fill up to 1 L add agar and autoclave again.
+  description: Adjust pH to 5.5. Dissolve malt extract in water and autoclave 15 min at 121°C; filter
+    until entirely clear. Fill up to 1 L add agar and autoclave again.
 applications:
 - Microbial cultivation
 curation_history:

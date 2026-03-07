@@ -1,6 +1,6 @@
 name: MODIFIED HALOBACTERIA MEDIUM-3
 original_name: MODIFIED HALOBACTERIA MEDIUM-3
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0
-    g/L MgSO4 x 7H2O. Adjust pH to 7.5.
+  description: Use Medium No. 168 supplemented with 270.0 g/L NaCl (final) and 15.0 g/L MgSO4 x 7H2O.
+    Adjust pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:

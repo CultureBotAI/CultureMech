@@ -1,6 +1,6 @@
 name: for Arhodomonas
 original_name: for Arhodomonas
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:941.1
     label: for Arhodomonas
-notes: 'Source: KOMODO ModelSEED | ID: 941.1 | DSMZ Medium: 941 (mediadive.medium:941)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 941.1 | DSMZ Medium: 941 (mediadive.medium:941) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -216,5 +215,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.748975Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

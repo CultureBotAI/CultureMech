@@ -1,18 +1,17 @@
-name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741,
-  and Tv.denitrificans ALJD = DSM 13742
-original_name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM
-  13741, and Tv.denitrificans ALJD = DSM 13742
-category: imported
+name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741, and Tv.denitrificans
+  ALJD = DSM 13742
+original_name: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741, and Tv.denitrificans
+  ALJD = DSM 13742
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
   preferred_term: KOMODO Medium 925.5
   term:
     id: komodo.medium:925.5
-    label: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741,
-      and Tv.denitrificans ALJD = DSM 13742
-notes: 'Source: KOMODO ModelSEED | ID: 925.5 | DSMZ Medium: 925 (mediadive.medium:925)
-  | Aerobic: No'
+    label: Thioalkalivibrio versutus AL 2 = DSM 13738, Tv.nitratus ALJ 12 = DSM 13741, and Tv.denitrificans
+      ALJD = DSM 13742
+notes: 'Source: KOMODO ModelSEED | ID: 925.5 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

@@ -1,6 +1,6 @@
 name: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
 original_name: GAM Broth, mod. (Gifu Anaerobic Medium Broth, modified)
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,8 +17,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Suspend the dehydrated medium in deionized water, and heat do dissolve
-    the medium, sterilize by autoclaving at 115 °C for 15 minutes.
+  description: Suspend the dehydrated medium in deionized water, and heat do dissolve the medium, sterilize
+    by autoclaving at 115 °C for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

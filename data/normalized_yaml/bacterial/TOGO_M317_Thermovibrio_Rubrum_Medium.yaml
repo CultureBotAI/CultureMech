@@ -1,6 +1,6 @@
 name: Thermovibrio Rubrum Medium
 original_name: Thermovibrio Rubrum Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -26,8 +24,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
-    component, Organic compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -35,14 +33,12 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: (NH4)2SO4
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -50,8 +46,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:17632
     label: nitrate
@@ -60,8 +55,7 @@ ingredients:
     value: '500'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -107,6 +101,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.822372'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
-    N2; Added default concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient:
+    Carbon dioxide gas; Added default concentration for ingredient: N2; Added default concentration for
+    ingredient: Hydrogen gas'

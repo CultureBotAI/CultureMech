@@ -1,8 +1,8 @@
 name: BRUCELLA AGAR
 original_name: BRUCELLA AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 584
   term:
@@ -24,8 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving,
-    then add 100 ml/l sheep blood.
+  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving, then add 100 ml/l sheep
+    blood.
 applications:
 - Microbial cultivation
 curation_history:

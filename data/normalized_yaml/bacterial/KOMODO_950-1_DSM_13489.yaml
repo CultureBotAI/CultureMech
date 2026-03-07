@@ -1,11 +1,11 @@
 name: DSM 13489
 original_name: DSM 13489
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950.1 | DSMZ Medium: 950
-  (mediadive.medium:950) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950.1 | DSMZ Medium: 950 (mediadive.medium:950)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 950.1
   term:

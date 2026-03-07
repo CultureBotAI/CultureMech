@@ -1,6 +1,6 @@
 name: GEOBACTER MEDIUM
 original_name: GEOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:826
     label: GEOBACTER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 826 | DSMZ Medium: 826 (mediadive.medium:826)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 826 | DSMZ Medium: 826 (mediadive.medium:826) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -240,5 +239,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.904264Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

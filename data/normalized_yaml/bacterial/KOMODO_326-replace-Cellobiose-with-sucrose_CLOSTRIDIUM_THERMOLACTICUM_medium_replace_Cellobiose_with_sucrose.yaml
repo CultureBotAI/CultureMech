@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
 original_name: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:326_replace_Cellobiose_with_sucrose
     label: CLOSTRIDIUM THERMOLACTICUM medium_replace_Cellobiose_with_sucrose
-notes: 'Source: KOMODO ModelSEED | ID: 326_replace_Cellobiose_with_sucrose | DSMZ
-  Medium: 326 (mediadive.medium:326) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 326_replace_Cellobiose_with_sucrose | DSMZ Medium: 326 (mediadive.medium:326)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -217,8 +217,7 @@ curation_history:
 - timestamp: '2026-02-06T05:10:11.877531Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 - timestamp: '2026-02-20T07:49:55.000000Z'
   curator: organism-data-backfill
   action: Added curated organism data

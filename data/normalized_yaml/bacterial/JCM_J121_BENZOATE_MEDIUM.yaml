@@ -1,8 +1,8 @@
 name: BENZOATE MEDIUM
 original_name: BENZOATE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J121
   term:
@@ -60,8 +60,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Separately sterilize a solution of sodium benzoate by filtration, and
-    aseptically add it to the medium.
+  description: Separately sterilize a solution of sodium benzoate by filtration, and aseptically add it
+    to the medium.
 applications:
 - Microbial cultivation
 curation_history:

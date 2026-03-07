@@ -1,6 +1,6 @@
 name: GBS SALTS MEDIUM FOR RHODOTHERMUS
 original_name: GBS SALTS MEDIUM FOR RHODOTHERMUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -127,16 +127,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.5 and autoclave. After cooling,
-    aseptically add per liter the following solutions (autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 7.5 and autoclave. After cooling, aseptically
+    add per liter the following solutions (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH.
 - step_number: 3
   action: HEAT
-  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
-    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
-    by boiling in distilled H2O (1 hr, twice).'
+  description: 'Comment: Consistent growth in serum tubes requires pretreatment of butyl rubber stoppers
+    by boiling in 1% sodium sulfide solution (1 hr) followed by boiling in distilled H2O (1 hr, twice).'
 applications:
 - Microbial cultivation
 curation_history:

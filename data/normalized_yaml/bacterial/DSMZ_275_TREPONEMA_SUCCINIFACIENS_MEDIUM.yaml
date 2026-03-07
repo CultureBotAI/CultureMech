@@ -1,6 +1,6 @@
 name: TREPONEMA SUCCINIFACIENS MEDIUM
 original_name: TREPONEMA SUCCINIFACIENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -89,20 +89,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except for cysteine, carbonate, and glucose, and
-    sparge medium with 80% N2 and 20% CO2 gas atmosphere to make it anoxic. Add cysteine
-    and adjust pH to 7.2 - 7.4 by adding and dissolving solid Na2CO3. Then distribute
-    the medium under the same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. After autoclaving add glucose from a sterile anoxic stock
-    solution prepared under a 100% N2 gas atmosphere. The final pH of the medium should
-    be at 7.4.
+  description: Dissolve ingredients except for cysteine, carbonate, and glucose, and sparge medium with
+    80% N2 and 20% CO2 gas atmosphere to make it anoxic. Add cysteine and adjust pH to 7.2 - 7.4 by adding
+    and dissolving solid Na2CO3. Then distribute the medium under the same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After autoclaving add glucose from a sterile anoxic
+    stock solution prepared under a 100% N2 gas atmosphere. The final pH of the medium should be at 7.4.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:

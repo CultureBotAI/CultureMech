@@ -1,6 +1,6 @@
 name: For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM 5814
 original_name: For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM 5814
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.9-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:525.1
     label: For DSM 5700, DSM 5701, DSM 5702, DSM 5703 and DSM 5814
-notes: 'Source: KOMODO ModelSEED | ID: 525.1 | DSMZ Medium: 525 (mediadive.medium:525)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 525.1 | DSMZ Medium: 525 (mediadive.medium:525) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -293,5 +292,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.194051Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

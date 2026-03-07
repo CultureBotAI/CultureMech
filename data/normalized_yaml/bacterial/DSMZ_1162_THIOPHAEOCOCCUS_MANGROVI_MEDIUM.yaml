@@ -1,6 +1,6 @@
 name: THIOPHAEOCOCCUS MANGROVI MEDIUM
 original_name: THIOPHAEOCOCCUS MANGROVI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -154,12 +154,12 @@ preparation_steps:
   description: Adjust to pH 7.5
 - step_number: 2
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
+    under a stream of nitrogen gas.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Notes: Filter-sterilized Vitamin B12, Na2S x 9 H2O, Na2S2O3 x 5 H2O
-    are to be added only after autoclaving the medium.'
+  description: 'Notes: Filter-sterilized Vitamin B12, Na2S x 9 H2O, Na2S2O3 x 5 H2O are to be added only
+    after autoclaving the medium.'
 applications:
 - Microbial cultivation
 curation_history:

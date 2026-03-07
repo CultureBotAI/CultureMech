@@ -1,6 +1,6 @@
 name: MEDIUM 339 MODIFIED FOR DSM 12858
 original_name: MEDIUM 339 MODIFIED FOR DSM 12858
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:339_12858
     label: MEDIUM 339 MODIFIED FOR DSM 12858
-notes: 'Source: KOMODO ModelSEED | ID: 339_12858 | DSMZ Medium: 339 (mediadive.medium:339)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 339_12858 | DSMZ Medium: 339 (mediadive.medium:339) | Aerobic:
+  No'
 ingredients:
 - preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:

@@ -1,6 +1,6 @@
 name: Salt concentrate (medium 517)
 original_name: Salt concentrate (medium 517)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2021
     label: Salt concentrate (medium 517)
-notes: 'Source: KOMODO ModelSEED | ID: 2021 | DSMZ Medium: 2021 (mediadive.medium:2021)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2021 | DSMZ Medium: 2021 (mediadive.medium:2021) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

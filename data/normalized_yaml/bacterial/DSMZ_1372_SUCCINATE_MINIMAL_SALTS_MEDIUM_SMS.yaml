@@ -1,6 +1,6 @@
 name: SUCCINATE MINIMAL SALTS MEDIUM (SMS)
 original_name: SUCCINATE MINIMAL SALTS MEDIUM (SMS)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -157,8 +157,7 @@ preparation_steps:
   description: Prepare the medium without the vitamin solution.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave and add the vitamin solution from a filter-sterilised stock
-    solution.
+  description: Autoclave and add the vitamin solution from a filter-sterilised stock solution.
 - step_number: 4
   action: MIX
   description: Incubate strains in liquid culture with air headspace in closed vessels.

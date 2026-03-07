@@ -1,6 +1,6 @@
 name: MEDIUM 141 MODIFIED FOR DSM 11571
 original_name: MEDIUM 141 MODIFIED FOR DSM 11571
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:141_11571
     label: MEDIUM 141 MODIFIED FOR DSM 11571
-notes: 'Source: KOMODO ModelSEED | ID: 141_11571 | DSMZ Medium: 141 (mediadive.medium:141)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 141_11571 | DSMZ Medium: 141 (mediadive.medium:141) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -294,5 +294,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.041832Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

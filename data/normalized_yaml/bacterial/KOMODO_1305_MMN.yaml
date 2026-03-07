@@ -1,15 +1,14 @@
 name: MMN
 original_name: MMN
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1305
   term:
     id: komodo.medium:1305
     label: MMN
-notes: 'Source: KOMODO ModelSEED | ID: 1305 | DSMZ Medium: 1305 (mediadive.medium:1305)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1305 | DSMZ Medium: 1305 (mediadive.medium:1305) | Aerobic: No'
 ingredients:
 - preferred_term: Malt extract powder
   concentration:

@@ -1,6 +1,6 @@
 name: LX-D MEDIUM
 original_name: LX-D MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -235,17 +235,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components, except NaHCO3, and adjust pH to 6.5. Bring to a boil
-    for 5-10 sec, cool down under a stream of a N2-CO2 (80:20 v/v) gas mixture and
-    add NaHCO3 to the solution. Distribute the medium into culture vessels (e.g.,
-    20 ml medium in 60 ml serum bottle) under the same gas mixture and seal with butyl
-    rubber stoppers. After autoclaving, stand the medium overnight. Then, add per
+  description: 'Mix components, except NaHCO3, and adjust pH to 6.5. Bring to a boil for 5-10 sec, cool
+    down under a stream of a N2-CO2 (80:20 v/v) gas mixture and add NaHCO3 to the solution. Distribute
+    the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottle) under the same gas mixture
+    and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight. Then, add per
     liter the following solutions:'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and
-    adjust pH to 6.5 with KOH. Then add the remaining salts and bring volume to 1.0
-    L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and adjust pH to 6.5
+    with KOH. Then add the remaining salts and bring volume to 1.0 L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

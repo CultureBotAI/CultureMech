@@ -1,6 +1,6 @@
 name: For DSM 11139 (strain RFM-1)
 original_name: For DSM 11139 (strain RFM-1)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:734.2
     label: For DSM 11139 (strain RFM-1)
-notes: 'Source: KOMODO ModelSEED | ID: 734.2 | DSMZ Medium: 734 (mediadive.medium:734)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 734.2 | DSMZ Medium: 734 (mediadive.medium:734) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

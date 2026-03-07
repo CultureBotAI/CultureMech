@@ -1,6 +1,6 @@
 name: METHANOGENIUM AGGREGANS medium
 original_name: METHANOGENIUM AGGREGANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:321
     label: METHANOGENIUM AGGREGANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 321 | DSMZ Medium: 321 (mediadive.medium:321)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 321 | DSMZ Medium: 321 (mediadive.medium:321) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

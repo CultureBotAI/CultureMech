@@ -1,8 +1,8 @@
-name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430, DSM11431,
-  DSM 11432, DSM 11433 and DSM 11434
-original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
-  DSM11431, DSM 11432, DSM 11433 and DSM 11434
-category: imported
+name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430, DSM11431, DSM 11432, DSM
+  11433 and DSM 11434
+original_name: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430, DSM11431, DSM 11432,
+  DSM 11433 and DSM 11434
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-6.8
@@ -10,10 +10,9 @@ media_term:
   preferred_term: KOMODO Medium 120.2
   term:
     id: komodo.medium:120.2
-    label: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430,
-      DSM11431, DSM 11432, DSM 11433 and DSM 11434
-notes: 'Source: KOMODO ModelSEED | ID: 120.2 | DSMZ Medium: 120 (mediadive.medium:120)
-  | Aerobic: Yes'
+    label: For strains of Methanosarcina mazei and DSM 1538, DSM 11429, DSM 11430, DSM11431, DSM 11432,
+      DSM 11433 and DSM 11434
+notes: 'Source: KOMODO ModelSEED | ID: 120.2 | DSMZ Medium: 120 (mediadive.medium:120) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -255,5 +254,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.131293Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

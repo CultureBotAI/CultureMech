@@ -1,6 +1,6 @@
 name: LACTATE SULFATE MEDIUM
 original_name: LACTATE SULFATE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -231,13 +231,12 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave under a N2 gas atmosphere. After cooling, add the following
-    sterile solutions (autoclaved or *filter-sterilized):'
+  description: 'Autoclave under a N2 gas atmosphere. After cooling, add the following sterile solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THIOALKALIVIBRIO JANNASCHI
 original_name: THIOALKALIVIBRIO JANNASCHI
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
@@ -112,8 +112,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 110°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle). pH after sterilization will about 10.
+  description: Sterilize at 110°C 20 min in a closed vessel (i.e. a serum tube or bottle). pH after sterilization
+    will about 10.
 - step_number: 2
   action: DISSOLVE
   description: (a white colloid will form which will rapidly dissolve after mixing)

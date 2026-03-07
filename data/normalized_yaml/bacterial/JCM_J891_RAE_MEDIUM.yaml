@@ -1,8 +1,8 @@
 name: RAE MEDIUM
 original_name: RAE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 3.8
 media_term:
   preferred_term: JCM Medium J891
@@ -61,9 +61,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Separately filter-sterilize glacial acetic acid and ethanol (use Teflon
-    filters), and aseptically add to the sterile medium. Final pH should be about
-    3.8.
+  description: Separately filter-sterilize glacial acetic acid and ethanol (use Teflon filters), and aseptically
+    add to the sterile medium. Final pH should be about 3.8.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,16 +1,15 @@
 name: MEDIUM 125 WITH METHANOL
 original_name: MEDIUM 125 WITH METHANOL
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4.0-5.4
 media_term:
   preferred_term: KOMODO Medium 569
   term:
     id: komodo.medium:569
     label: MEDIUM 125 WITH METHANOL
-notes: 'Source: KOMODO ModelSEED | ID: 569 | DSMZ Medium: 569 (mediadive.medium:569)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 569 | DSMZ Medium: 569 (mediadive.medium:569) | Aerobic: No'
 ingredients:
 - preferred_term: Methanol
   term:

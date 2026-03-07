@@ -1,6 +1,6 @@
 name: mMMJS/PT
 original_name: mMMJS/PT
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 592 supplemented with 2.0 g/L yeast extract, and replace
-    the gas phase of the final medium with a N2-CO2-O2 (77:20:3, by volume) gas mixture
-    at 200 kPa.
+  description: Use Medium No. 592 supplemented with 2.0 g/L yeast extract, and replace the gas phase of
+    the final medium with a N2-CO2-O2 (77:20:3, by volume) gas mixture at 200 kPa.
 applications:
 - Microbial cultivation
 curation_history:

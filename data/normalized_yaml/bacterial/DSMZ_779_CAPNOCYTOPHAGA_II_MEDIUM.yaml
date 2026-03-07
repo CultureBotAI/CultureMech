@@ -1,8 +1,8 @@
 name: CAPNOCYTOPHAGA II MEDIUM
 original_name: CAPNOCYTOPHAGA II MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.6-7.8
 media_term:
   preferred_term: DSMZ Medium 779
@@ -69,9 +69,8 @@ preparation_steps:
   description: Adjust pH to 7.6 - 7.8.
 - step_number: 2
   action: HEAT
-  description: Add the horse blood to the heat sterilized medium after being cooled
-    to 50°C. Incubate under air plus 5% CO2 or anaerobically under 95% N2 plus 5%
-    CO2.
+  description: Add the horse blood to the heat sterilized medium after being cooled to 50°C. Incubate
+    under air plus 5% CO2 or anaerobically under 95% N2 plus 5% CO2.
 applications:
 - Microbial cultivation
 curation_history:

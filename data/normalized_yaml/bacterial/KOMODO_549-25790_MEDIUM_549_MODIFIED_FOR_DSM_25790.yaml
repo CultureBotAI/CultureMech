@@ -1,15 +1,15 @@
 name: MEDIUM 549 MODIFIED FOR DSM 25790
 original_name: MEDIUM 549 MODIFIED FOR DSM 25790
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 549_25790
   term:
     id: komodo.medium:549_25790
     label: MEDIUM 549 MODIFIED FOR DSM 25790
-notes: 'Source: KOMODO ModelSEED | ID: 549_25790 | DSMZ Medium: 549 (mediadive.medium:549)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 549_25790 | DSMZ Medium: 549 (mediadive.medium:549) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:

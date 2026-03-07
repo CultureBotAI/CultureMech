@@ -1,6 +1,6 @@
 name: RHODOVULUM STRICTUM MEDIUM
 original_name: RHODOVULUM STRICTUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -127,16 +127,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Boil both solutions under a stream of nitrogen gas for few minutes\
-    \ and autoclave\r\nseparately under anaerobic conditions at 121C for 15 minutes.\
-    \ Mix aseptically after\r\nautoclaving under a stream of sterile nitrogen gas\
-    \ and adjust final pH to 7.8. Distribute\r\nin screw-capped bottles or tubes."
+  description: "Boil both solutions under a stream of nitrogen gas for few minutes and autoclave\r\nseparately\
+    \ under anaerobic conditions at 121C for 15 minutes. Mix aseptically after\r\nautoclaving under a\
+    \ stream of sterile nitrogen gas and adjust final pH to 7.8. Distribute\r\nin screw-capped bottles\
+    \ or tubes."
 - step_number: 2
   action: AUTOCLAVE
-  description: Boil both solutions under a stream of nitrogen gas for few minutes
-    and autoclave separately under anaerobic conditions at 121°C for 15 minutes. Mix
-    aseptically after autoclaving under a stream of sterile nitrogen gas and adjust
-    final pH to 7.8. Distribute in screw-capped bottles or tubes.
+  description: Boil both solutions under a stream of nitrogen gas for few minutes and autoclave separately
+    under anaerobic conditions at 121°C for 15 minutes. Mix aseptically after autoclaving under a stream
+    of sterile nitrogen gas and adjust final pH to 7.8. Distribute in screw-capped bottles or tubes.
 - step_number: 3
   action: MIX
   description: pH 6.8

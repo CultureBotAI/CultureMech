@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM TERMITIDIS medium
 original_name: CLOSTRIDIUM TERMITIDIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:539
     label: CLOSTRIDIUM TERMITIDIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 539 | DSMZ Medium: 539 (mediadive.medium:539)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 539 | DSMZ Medium: 539 (mediadive.medium:539) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

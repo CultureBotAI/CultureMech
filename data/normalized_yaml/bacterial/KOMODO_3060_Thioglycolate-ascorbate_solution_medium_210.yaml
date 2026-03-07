@@ -1,6 +1,6 @@
 name: Thioglycolate-ascorbate solution (medium 210)
 original_name: Thioglycolate-ascorbate solution (medium 210)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3060
     label: Thioglycolate-ascorbate solution (medium 210)
-notes: 'Source: KOMODO ModelSEED | ID: 3060 | DSMZ Medium: 3060 (mediadive.medium:3060)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3060 | DSMZ Medium: 3060 (mediadive.medium:3060) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

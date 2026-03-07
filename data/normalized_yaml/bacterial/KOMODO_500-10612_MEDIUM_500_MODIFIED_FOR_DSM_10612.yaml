@@ -1,6 +1,6 @@
 name: MEDIUM 500 MODIFIED FOR DSM 10612
 original_name: MEDIUM 500 MODIFIED FOR DSM 10612
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:500_10612
     label: MEDIUM 500 MODIFIED FOR DSM 10612
-notes: 'Source: KOMODO ModelSEED | ID: 500_10612 | DSMZ Medium: 500 (mediadive.medium:500)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 500_10612 | DSMZ Medium: 500 (mediadive.medium:500) | Aerobic:
+  No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -261,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.648806Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

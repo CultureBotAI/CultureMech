@@ -1,6 +1,6 @@
 name: MJ/YTCT MEDIUM
 original_name: MJ/YTCT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 11.5
@@ -141,9 +141,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 11.0-12.0 with KOH and autoclave under a N2 atmosphere.
-    After autoclaving, replace the gas phase with N2-CO2 (80:20) and pressurize to
-    200 kPa.
+  description: Adjust pH to 11.0-12.0 with KOH and autoclave under a N2 atmosphere. After autoclaving,
+    replace the gas phase with N2-CO2 (80:20) and pressurize to 200 kPa.
 applications:
 - Microbial cultivation
 curation_history:

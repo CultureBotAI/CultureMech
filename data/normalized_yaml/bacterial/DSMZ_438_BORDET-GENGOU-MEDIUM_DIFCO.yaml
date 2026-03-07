@@ -1,8 +1,8 @@
 name: BORDET-GENGOU-MEDIUM (DIFCO)
 original_name: BORDET-GENGOU-MEDIUM (DIFCO)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 438
   term:
@@ -62,19 +62,16 @@ preparation_steps:
   description: Bordet-Gengou-Agar-Base supplemented with 15% horse blood.
 - step_number: 2
   action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or
-    1.
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 1.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 4
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
 applications:
 - Microbial cultivation
 curation_history:

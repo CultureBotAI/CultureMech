@@ -1,6 +1,6 @@
 name: PFENNIG THERMOFILUM MEDIUM
 original_name: PFENNIG THERMOFILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -218,19 +218,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.0 and autoclave under a
-    N2 gas atmosphere. Before inoculation, add per liter the following solution (autoclaved
-    and stored under a N2 gas atmosphere):'
+  description: 'Mix components thoroughly, adjust pH to 6.0 and autoclave under a N2 gas atmosphere. Before
+    inoculation, add per liter the following solution (autoclaved and stored under a N2 gas atmosphere):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Cultivate <I>Desulfurococcus kamchatkensis</I> strain 1221n (=JCM 16383)
-    in the above described medium supplemented with 0.6 g/L (final) yeast extract
-    (without the archaeal culture filtrate). After three days of the cultivation,
-    filtrate the grown culture with 0.22 ï¿½m (pore size) filter.
+  description: Cultivate <I>Desulfurococcus kamchatkensis</I> strain 1221n (=JCM 16383) in the above described
+    medium supplemented with 0.6 g/L (final) yeast extract (without the archaeal culture filtrate). After
+    three days of the cultivation, filtrate the grown culture with 0.22 ï¿½m (pore size) filter.
 - step_number: 3
   action: MIX
-  description: 'Comment: For cultivation of JCM 19810, increase amount of yeast extract
-    to 1.0 g/L. Growth may be affected by quality of yeast extract.'
+  description: 'Comment: For cultivation of JCM 19810, increase amount of yeast extract to 1.0 g/L. Growth
+    may be affected by quality of yeast extract.'
 applications:
 - Microbial cultivation
 curation_history:

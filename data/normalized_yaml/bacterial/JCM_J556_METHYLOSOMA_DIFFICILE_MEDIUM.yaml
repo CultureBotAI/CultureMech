@@ -1,6 +1,6 @@
 name: METHYLOSOMA DIFFICILE MEDIUM
 original_name: METHYLOSOMA DIFFICILE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -174,20 +174,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solutions
-    (autoclaved or filter-sterilized) to the medium:'
+  description: 'Mix components and autoclave. After cooling, add the following solutions (autoclaved or
+    filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
-  description: Distribute the culture medium into culture tubes (leave >80% volume
-    as a gas phase) and seal with butyl rubber stoppers.
+  description: Distribute the culture medium into culture tubes (leave >80% volume as a gas phase) and
+    seal with butyl rubber stoppers.
 - step_number: 3
   action: MIX
-  description: Finally, replace the gas phase with 20% methane and 5% CO2 in air (by
-    volume).
+  description: Finally, replace the gas phase with 20% methane and 5% CO2 in air (by volume).
 - step_number: 4
   action: MIX
-  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml
-    of 1 M phosphate buffer.
+  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml of 1 M phosphate buffer.
 applications:
 - Microbial cultivation
 curation_history:

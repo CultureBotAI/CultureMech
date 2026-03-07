@@ -1,15 +1,14 @@
 name: MINERALMEDIUM WITH 6-METHYLNICOTINATE
 original_name: MINERALMEDIUM WITH 6-METHYLNICOTINATE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465h
   term:
     id: komodo.medium:465h
     label: MINERALMEDIUM WITH 6-METHYLNICOTINATE
-notes: 'Source: KOMODO ModelSEED | ID: 465h | DSMZ Medium: 465h (mediadive.medium:465h)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465h | DSMZ Medium: 465h (mediadive.medium:465h) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

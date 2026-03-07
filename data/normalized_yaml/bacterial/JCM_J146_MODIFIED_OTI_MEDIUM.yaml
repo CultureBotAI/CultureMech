@@ -1,8 +1,8 @@
 name: MODIFIED OTI MEDIUM
 original_name: MODIFIED OTI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J146
@@ -114,12 +114,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.0. Prepare medium anaerobically and dispense into rubber-stoppered
-    tubes under oxygen-free N2. Add inactivated sterile rabbit serum to give final
-    concentration in each tube of 5%. Add filter-sterilized thiamine pyrophosphate
-    to each tube to give a final concentration of 0.75 mg/100 ml. Subculture with
-    a Pasteur pipette (20-30 drops). Gas phase for culture system should be oxygen-free
-    N2 or N2-CO2 (90:10).
+  description: Adjust pH to 7.0. Prepare medium anaerobically and dispense into rubber-stoppered tubes
+    under oxygen-free N2. Add inactivated sterile rabbit serum to give final concentration in each tube
+    of 5%. Add filter-sterilized thiamine pyrophosphate to each tube to give a final concentration of
+    0.75 mg/100 ml. Subculture with a Pasteur pipette (20-30 drops). Gas phase for culture system should
+    be oxygen-free N2 or N2-CO2 (90:10).
 applications:
 - Microbial cultivation
 curation_history:

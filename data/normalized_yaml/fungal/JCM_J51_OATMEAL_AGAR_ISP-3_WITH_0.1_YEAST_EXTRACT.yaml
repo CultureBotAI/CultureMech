@@ -1,8 +1,8 @@
 name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
 original_name: OATMEAL AGAR (ISP-3) WITH 0.1% YEAST EXTRACT
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J51
   term:

@@ -1,6 +1,6 @@
 name: HALOMONAS DESIDERATA MEDIUM
 original_name: HALOMONAS DESIDERATA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 9.5-10
@@ -56,9 +56,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water
-    and autoclave. Prepare the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately
-    and add to the cooled medium. Final pH 9.5-10.0.
+  description: Prepare the medium without Na2CO3 and NaHCO3 in 900 ml distilled water and autoclave. Prepare
+    the Na2CO3 and NaHCO3 in 100 ml water, sterilise separately and add to the cooled medium. Final pH
+    9.5-10.0.
 applications:
 - Microbial cultivation
 curation_history:

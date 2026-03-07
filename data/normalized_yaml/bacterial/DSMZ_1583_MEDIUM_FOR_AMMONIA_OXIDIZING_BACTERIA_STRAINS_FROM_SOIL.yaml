@@ -1,6 +1,6 @@
 name: MEDIUM FOR AMMONIA OXIDIZING BACTERIA (STRAINS FROM SOIL)
 original_name: MEDIUM FOR AMMONIA OXIDIZING BACTERIA (STRAINS FROM SOIL)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.8
@@ -110,18 +110,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave, subsequently adjust pH of the medium to about 7.8 by addition
-    of sterile 10% NaHCO3 (medium is turning from yellow to pink).
+  description: Autoclave, subsequently adjust pH of the medium to about 7.8 by addition of sterile 10%
+    NaHCO3 (medium is turning from yellow to pink).
 - step_number: 2
   action: ADJUST_PH
-  description: 'Important: During growth, add NaHCO3 to readjust pH as soon as pH
-    indicator changes to yellow. For stock cultures, 5 g l-1 CaCO3 (will stay as a
-    precipitate) or 4.8 g l-1 HEPES may be added to keep pH neutral for a longer time.'
+  description: 'Important: During growth, add NaHCO3 to readjust pH as soon as pH indicator changes to
+    yellow. For stock cultures, 5 g l-1 CaCO3 (will stay as a precipitate) or 4.8 g l-1 HEPES may be added
+    to keep pH neutral for a longer time.'
 - step_number: 3
   action: MIX
-  description: Aeration must be adjusted according to the density and activity of
-    the culture. At low cell concentrations (which is the case most of the time) cells
-    are sensitive to strong aeration (don't shake the cultures).
+  description: Aeration must be adjusted according to the density and activity of the culture. At low
+    cell concentrations (which is the case most of the time) cells are sensitive to strong aeration (don't
+    shake the cultures).
 applications:
 - Microbial cultivation
 curation_history:

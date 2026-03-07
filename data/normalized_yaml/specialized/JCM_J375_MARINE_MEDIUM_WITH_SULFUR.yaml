@@ -1,6 +1,6 @@
 name: MARINE MEDIUM WITH SULFUR
 original_name: MARINE MEDIUM WITH SULFUR
-category: imported
+category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -84,14 +84,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, adjust pH to 6.0 with
-    NaOH, and autoclave. Steam sulfur for 3 hr on each of 3 successive days. Neutralize
-    5% Na2S x 9H2O solution and autoclave under a N2 atmosphere. Distribute the medium
-    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) containing
-    sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
-    stoppers. Prior to inoculation, add the sterile Na2S solution to the medium, and
-    readjust pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2
-    (4:1, v/v).
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, adjust pH to 6.0 with NaOH, and autoclave.
+    Steam sulfur for 3 hr on each of 3 successive days. Neutralize 5% Na2S x 9H2O solution and autoclave
+    under a N2 atmosphere. Distribute the medium into culture vessels (e.g., 20 ml of the medium in 120
+    ml serum bottles) containing sulfur under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with
+    butyl rubber stoppers. Prior to inoculation, add the sterile Na2S solution to the medium, and readjust
+    pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

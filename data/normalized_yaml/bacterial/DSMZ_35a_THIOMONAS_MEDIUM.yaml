@@ -1,8 +1,8 @@
 name: THIOMONAS MEDIUM
 original_name: THIOMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: DSMZ Medium 35a
@@ -61,10 +61,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Solutions A, B and D are sterilized separately by autoclaving. Solution
-    C is sterilized by filtration. After autoclaving the solutions A and B are combined
-    and then supplemented with the sterile solutions C and D. Best growth is observed
-    in the syneresis water of slant agar tubes.
+  description: Solutions A, B and D are sterilized separately by autoclaving. Solution C is sterilized
+    by filtration. After autoclaving the solutions A and B are combined and then supplemented with the
+    sterile solutions C and D. Best growth is observed in the syneresis water of slant agar tubes.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with NaOH.

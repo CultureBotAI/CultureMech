@@ -1,6 +1,6 @@
 name: BACILLUS MACYAE MEDIUM
 original_name: BACILLUS MACYAE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -277,13 +277,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium anaerobically under 100% N2. Add vitamins (filter-sterilized),
-    sodium lactate and nitrate from sterile, anaerobic stock solutions. Adjust final
-    pH to 7.4 - 7.8.
+  description: Prepare the medium anaerobically under 100% N2. Add vitamins (filter-sterilized), sodium
+    lactate and nitrate from sterile, anaerobic stock solutions. Adjust final pH to 7.4 - 7.8.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,16 +1,15 @@
 name: LACTOBACILLUS medium II
 original_name: LACTOBACILLUS medium II
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.2
 media_term:
   preferred_term: KOMODO Medium 93
   term:
     id: komodo.medium:93
     label: LACTOBACILLUS medium II
-notes: 'Source: KOMODO ModelSEED | ID: 93 | DSMZ Medium: 93 (mediadive.medium:93)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 93 | DSMZ Medium: 93 (mediadive.medium:93) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

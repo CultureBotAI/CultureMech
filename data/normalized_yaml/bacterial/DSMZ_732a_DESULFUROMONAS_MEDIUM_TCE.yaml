@@ -1,6 +1,6 @@
 name: DESULFUROMONAS MEDIUM (TCE)
 original_name: DESULFUROMONAS MEDIUM (TCE)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -296,24 +296,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials
-    (e.g., 9 ml in 50 ml bottles) and autoclave. Solution B is autoclaved separately
-    under 80% N2 and 20% CO2 gas atmosphere. Solutions C, D and F are autoclave under
-    100% N2 gas atmosphere. Solution E is prepared under 100% N2 gas atmosphere and
-    sterilized by filtration. Prepare solution G by filling 13.5 ml hexadecane into
-    a 50 ml serum bottle, then sparge with 100% N2 gas to make it anoxic and autoclave.
-    Add 1.50 ml anoxic autoclaved tetrachloroethene to the sterile anoxic hexadecane
-    solution by syringe. To complete the medium add appropriate amounts of solutions
-    B to F to the sterile solution A in the sequence as indicated. The pH of the medium
-    before inoculation should be at 7.2.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic serum vials (e.g., 9 ml in 50 ml bottles) and
+    autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas atmosphere. Solutions
+    C, D and F are autoclave under 100% N2 gas atmosphere. Solution E is prepared under 100% N2 gas atmosphere
+    and sterilized by filtration. Prepare solution G by filling 13.5 ml hexadecane into a 50 ml serum
+    bottle, then sparge with 100% N2 gas to make it anoxic and autoclave. Add 1.50 ml anoxic autoclaved
+    tetrachloroethene to the sterile anoxic hexadecane solution by syringe. To complete the medium add
+    appropriate amounts of solutions B to F to the sterile solution A in the sequence as indicated. The
+    pH of the medium before inoculation should be at 7.2.
 - step_number: 2
   action: MIX
   description: Add solution G only after inoculation of the medium!
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add remaining compounds.
+  description: First dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride.
+    After ferrous chloride has dissolved add remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -324,5 +322,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.918943Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

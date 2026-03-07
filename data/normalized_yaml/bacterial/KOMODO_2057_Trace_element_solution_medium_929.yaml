@@ -1,6 +1,6 @@
 name: Trace element solution (medium 929)
 original_name: Trace element solution (medium 929)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2057
     label: Trace element solution (medium 929)
-notes: 'Source: KOMODO ModelSEED | ID: 2057 | DSMZ Medium: 2057 (mediadive.medium:2057)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2057 | DSMZ Medium: 2057 (mediadive.medium:2057) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

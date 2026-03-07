@@ -1,11 +1,11 @@
 name: For DSM 14283
 original_name: For DSM 14283
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 945.1 | DSMZ Medium: 945
-  (mediadive.medium:945) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 945.1 | DSMZ Medium: 945 (mediadive.medium:945)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 945.1
   term:

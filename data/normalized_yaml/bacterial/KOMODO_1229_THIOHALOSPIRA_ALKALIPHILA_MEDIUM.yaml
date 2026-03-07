@@ -1,6 +1,6 @@
 name: THIOHALOSPIRA ALKALIPHILA MEDIUM
 original_name: THIOHALOSPIRA ALKALIPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1229
     label: THIOHALOSPIRA ALKALIPHILA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1229 | DSMZ Medium: 1229 (mediadive.medium:1229)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1229 | DSMZ Medium: 1229 (mediadive.medium:1229) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

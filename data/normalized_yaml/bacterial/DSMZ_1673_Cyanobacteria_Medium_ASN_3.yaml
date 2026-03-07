@@ -1,6 +1,6 @@
 name: Cyanobacteria Medium ASN 3+
 original_name: Cyanobacteria Medium ASN 3+
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -136,8 +136,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -146,8 +145,7 @@ preparation_steps:
   description: 'After cooling, add the following filter-sterilized components:'
 - step_number: 4
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 applications:
 - Microbial cultivation
 curation_history:

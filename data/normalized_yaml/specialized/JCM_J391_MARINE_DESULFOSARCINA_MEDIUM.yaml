@@ -1,6 +1,6 @@
 name: MARINE DESULFOSARCINA MEDIUM
 original_name: MARINE DESULFOSARCINA MEDIUM
-category: imported
+category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -232,22 +232,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH 7.0. Bring to a boil and cool
-    down under a N2-CO2 (4:1, v/v) gas stream. Autoclave under the same gas mixture.
-    After cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH 7.0. Bring to a boil and cool down under a N2-CO2
+    (4:1, v/v) gas stream. Autoclave under the same gas mixture. After cooling, add the following solutions
+    (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels
-    (e.g., 10 ml medium in Balch tubes) and seal with butyl rubber stoppers. Add per
-    liter the following solution (autoclave or *filter-sterilize and store under a
-    N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 10 ml
+    medium in Balch tubes) and seal with butyl rubber stoppers. Add per liter the following solution (autoclave
+    or *filter-sterilize and store under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.0 - 7.3, if necessary.
 - step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 31729, replace sodium lactate with final 10
-    mM sodium fumarate and 0.01% yeast extract.'
+  description: 'Comment: For strain JCM 31729, replace sodium lactate with final 10 mM sodium fumarate
+    and 0.01% yeast extract.'
 applications:
 - Microbial cultivation
 curation_history:

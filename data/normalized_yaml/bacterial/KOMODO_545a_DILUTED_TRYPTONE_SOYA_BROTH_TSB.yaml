@@ -1,6 +1,6 @@
 name: DILUTED TRYPTONE SOYA BROTH (TSB)
 original_name: DILUTED TRYPTONE SOYA BROTH (TSB)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:545a
     label: DILUTED TRYPTONE SOYA BROTH (TSB)
-notes: 'Source: KOMODO ModelSEED | ID: 545a | DSMZ Medium: 545a (mediadive.medium:545a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 545a | DSMZ Medium: 545a (mediadive.medium:545a) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

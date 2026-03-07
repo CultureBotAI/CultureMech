@@ -1,6 +1,6 @@
 name: MO-SEDI MEDIUM
 original_name: MO-SEDI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 846 but omit glucose and tryptone. Supplement the medium
-    with final 2.75 g/L sodium pyruvate. Otherwise, prepare the medium as described
-    in the recipe of Medium No. 846.
+  description: Use Medium No. 846 but omit glucose and tryptone. Supplement the medium with final 2.75
+    g/L sodium pyruvate. Otherwise, prepare the medium as described in the recipe of Medium No. 846.
 applications:
 - Microbial cultivation
 curation_history:

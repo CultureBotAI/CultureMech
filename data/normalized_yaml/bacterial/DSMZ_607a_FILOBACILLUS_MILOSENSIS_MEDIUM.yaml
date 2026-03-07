@@ -1,6 +1,6 @@
 name: FILOBACILLUS MILOSENSIS MEDIUM
 original_name: FILOBACILLUS MILOSENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -240,16 +240,15 @@ preparation_steps:
   description: Autoclave at 121°C for 15 min.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
-    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
-    NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 7.3 g). Dissolve
+    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter-sterilized
 - step_number: 4
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

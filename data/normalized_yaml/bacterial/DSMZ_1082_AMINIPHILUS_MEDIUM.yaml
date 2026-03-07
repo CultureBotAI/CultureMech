@@ -1,6 +1,6 @@
 name: AMINIPHILUS MEDIUM
 original_name: AMINIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -187,15 +187,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine), then sparge medium for 30 -
-    45 min with 100% N2 gas atmosphere to make it anoxic. Add cysteine, adjust pH
-    to 7.1 and dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave.  The pH of the complete medium should be 7.0
-    - 7.2.
+  description: Dissolve ingredients (except cysteine), then sparge medium for 30 - 45 min with 100% N2
+    gas atmosphere to make it anoxic. Add cysteine, adjust pH to 7.1 and dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.  The pH of the complete medium
+    should be 7.0 - 7.2.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,16 +1,15 @@
 name: PARACOCCUS BOGORIENSIS medium
 original_name: PARACOCCUS BOGORIENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.5
 media_term:
   preferred_term: KOMODO Medium 1325
   term:
     id: komodo.medium:1325
     label: PARACOCCUS BOGORIENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1325 | DSMZ Medium: 1325 (mediadive.medium:1325)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1325 | DSMZ Medium: 1325 (mediadive.medium:1325) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

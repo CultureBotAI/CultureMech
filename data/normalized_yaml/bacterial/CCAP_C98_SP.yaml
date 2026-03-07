@@ -1,6 +1,6 @@
 name: SP
 original_name: SP
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -192,13 +192,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "This medium is made up in 2 parts to reduce precipitation when autoclaving.\
-    \ For\r\neach part add the components to around 900 mls deionised water and then\
-    \ top up\r\nto 1 litre with deionised water."
+  description: "This medium is made up in 2 parts to reduce precipitation when autoclaving. For\r\neach\
+    \ part add the components to around 900 mls deionised water and then top up\r\nto 1 litre with deionised\
+    \ water."
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave parts 1 and 2 separately at 15 psi, allow to cool then mix
-    1:1 aseptically.
+  description: Autoclave parts 1 and 2 separately at 15 psi, allow to cool then mix 1:1 aseptically.
 - step_number: 3
   action: HEAT
   description: May be stored frozen at -20 °C.

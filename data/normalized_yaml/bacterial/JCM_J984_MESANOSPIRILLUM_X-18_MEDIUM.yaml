@@ -1,6 +1,6 @@
 name: MESANOSPIRILLUM X-18 MEDIUM
 original_name: MESANOSPIRILLUM X-18 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -215,17 +215,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Distribute medium into culture vessels
-    under a stream of H2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber stoppers
-    and autoclave. After cooling, add per liter the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly. Distribute medium into culture vessels under a stream of H2-CO2
+    (80:20, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter
+    the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to inoculation, reduce the medium by the addition of the following
-    solution (per liter, autoclaved and stored under a N2 atmosphere):'
+  description: 'Prior to inoculation, reduce the medium by the addition of the following solution (per
+    liter, autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+    Adjust final pH to 7.0.
 - step_number: 4
   action: MIX
   description: 'Comment: Incubate with a 10 to 20% inoculum.'

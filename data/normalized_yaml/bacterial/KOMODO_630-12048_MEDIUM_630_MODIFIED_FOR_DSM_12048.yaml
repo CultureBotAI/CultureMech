@@ -1,16 +1,16 @@
 name: MEDIUM 630 MODIFIED FOR DSM 12048
 original_name: MEDIUM 630 MODIFIED FOR DSM 12048
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: KOMODO Medium 630_12048
   term:
     id: komodo.medium:630_12048
     label: MEDIUM 630 MODIFIED FOR DSM 12048
-notes: 'Source: KOMODO ModelSEED | ID: 630_12048 | DSMZ Medium: 630 (mediadive.medium:630)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 630_12048 | DSMZ Medium: 630 (mediadive.medium:630) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

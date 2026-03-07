@@ -1,6 +1,6 @@
 name: MEDIUM 215b MODIFIED FOR DSM 41834
 original_name: MEDIUM 215b MODIFIED FOR DSM 41834
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.5-10.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:215b_41834
     label: MEDIUM 215b MODIFIED FOR DSM 41834
-notes: 'Source: KOMODO ModelSEED | ID: 215b_41834 | DSMZ Medium: 215b (mediadive.medium:215b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 215b_41834 | DSMZ Medium: 215b (mediadive.medium:215b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

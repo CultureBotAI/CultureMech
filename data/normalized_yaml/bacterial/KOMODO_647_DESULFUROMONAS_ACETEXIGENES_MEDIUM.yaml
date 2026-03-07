@@ -1,6 +1,6 @@
 name: DESULFUROMONAS ACETEXIGENES MEDIUM
 original_name: DESULFUROMONAS ACETEXIGENES MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:647
     label: DESULFUROMONAS ACETEXIGENES MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 647 | DSMZ Medium: 647 (mediadive.medium:647)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 647 | DSMZ Medium: 647 (mediadive.medium:647) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

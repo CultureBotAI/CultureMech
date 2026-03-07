@@ -1,11 +1,11 @@
 name: METHANOHALOPHILUS OREGONESE medium
 original_name: METHANOHALOPHILUS OREGONESE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 490 | DSMZ Medium: 490
-  (mediadive.medium:490) | Aerobic: Yes'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 490 | DSMZ Medium: 490 (mediadive.medium:490)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 490
   term:

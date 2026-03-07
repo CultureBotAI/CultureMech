@@ -1,6 +1,6 @@
 name: SYNTROPHOCOCCUS SUCROMUTANS medium
 original_name: SYNTROPHOCOCCUS SUCROMUTANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.4-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:337
     label: SYNTROPHOCOCCUS SUCROMUTANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 337 | DSMZ Medium: 337 (mediadive.medium:337)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 337 | DSMZ Medium: 337 (mediadive.medium:337) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

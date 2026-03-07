@@ -1,6 +1,6 @@
 name: ACIDIMICROBIUM MEDIUM
 original_name: ACIDIMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.7
@@ -53,13 +53,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 2.0 with H2SO4. After autoclaving, add the following
-    solution (autoclaved):'
+  description: 'Adjust pH to 2.0 with H2SO4. After autoclaving, add the following solution (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: For autotrophic growth on ferrous sulfate, prepare the medium
-    without yeast extract, add 13.9 g/L (final) FeSO4 x 7H2O and adjust pH to 1.7
-    with H2SO4.'
+  description: 'Comment: For autotrophic growth on ferrous sulfate, prepare the medium without yeast extract,
+    add 13.9 g/L (final) FeSO4 x 7H2O and adjust pH to 1.7 with H2SO4.'
 applications:
 - Microbial cultivation
 curation_history:

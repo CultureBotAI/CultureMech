@@ -1,6 +1,6 @@
 name: METHANOSPIRILLUM LACUNAE MEDIUM
 original_name: METHANOSPIRILLUM LACUNAE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1273
     label: METHANOSPIRILLUM LACUNAE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1273 | DSMZ Medium: 1273 (mediadive.medium:1273)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1273 | DSMZ Medium: 1273 (mediadive.medium:1273) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -262,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.718270Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

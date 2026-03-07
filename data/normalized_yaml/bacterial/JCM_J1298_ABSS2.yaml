@@ -1,6 +1,6 @@
 name: ABSS2
 original_name: ABSS2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -196,15 +196,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and autoclave. After cooling, aseptically and anaerobically add per liter
+    the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5 by bubbling with a N2-CO2 (4:1, v/v) gas mixture.
 - step_number: 3
   action: DISSOLVE
-  description: Initially, dissolve FeCl2 x 4H2O in 25% HCl, then add distilled water
-    followed by the other components.
+  description: Initially, dissolve FeCl2 x 4H2O in 25% HCl, then add distilled water followed by the other
+    components.
 applications:
 - Microbial cultivation
 curation_history:

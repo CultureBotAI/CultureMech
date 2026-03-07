@@ -1,11 +1,11 @@
 name: DESULFUROMONAS ACETOXIDANS medium
 original_name: DESULFUROMONAS ACETOXIDANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 95 | DSMZ Medium: 95 (mediadive.medium:95)
-  | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 95 | DSMZ Medium: 95 (mediadive.medium:95) |
+  Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 95
   term:

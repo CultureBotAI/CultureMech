@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM HYDROXYBENZOICUM medium
 original_name: CLOSTRIDIUM HYDROXYBENZOICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:643
     label: CLOSTRIDIUM HYDROXYBENZOICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 643 | DSMZ Medium: 643 (mediadive.medium:643)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 643 | DSMZ Medium: 643 (mediadive.medium:643) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sodium Potassium phosphate buffer
   concentration:
@@ -273,5 +272,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.822412Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,8 +1,8 @@
-name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but
-  supplemented with 0.1 M sodium lactate
-original_name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without
-  glucose but supplemented with 0.1 M sodium lactate
-category: imported
+name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but supplemented with
+  0.1 M sodium lactate
+original_name: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but supplemented
+  with 0.1 M sodium lactate
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -10,8 +10,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -24,8 +23,7 @@ ingredients:
   concentration:
     value: '1.66'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -33,8 +31,7 @@ ingredients:
   concentration:
     value: '0.83'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -42,8 +39,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -51,8 +48,7 @@ ingredients:
   concentration:
     value: '0.1'
     unit: MOLAR
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:75228
     label: sodium lactate
@@ -65,8 +61,7 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -107,8 +102,8 @@ media_term:
   preferred_term: TOGO Medium M2699
   term:
     id: TOGO:M2699
-    label: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose
-      but supplemented with 0.1 M sodium lactate
+    label: Modified Schaedler medium (Infect. Immun. 29:768-777,1980) without glucose but supplemented
+      with 0.1 M sodium lactate
 notes: 'Source: https://togomedium.org/medium/M2699
 
   Original URL: https://www.dsmz.de/microorganisms/medium/pdf/DSMZ_Medium1669.pdf'
@@ -126,5 +121,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:55.701848'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2 ; Added default concentration
-    for ingredient: N2'
+  notes: 'Added default concentration for ingredient: CO2 ; Added default concentration for ingredient:
+    N2'

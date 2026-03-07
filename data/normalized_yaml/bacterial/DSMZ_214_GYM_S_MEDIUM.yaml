@@ -1,8 +1,8 @@
 name: GYM+S MEDIUM
 original_name: GYM+S MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 214
@@ -51,8 +51,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium
-    is used.
+  description: Adjust pH to 7.2 before adding agar. Delete CaCO3 if liquid medium is used.
 applications:
 - Microbial cultivation
 curation_history:

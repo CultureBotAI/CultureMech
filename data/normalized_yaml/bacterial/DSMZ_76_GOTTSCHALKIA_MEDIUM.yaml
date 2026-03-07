@@ -1,6 +1,6 @@
 name: GOTTSCHALKIA MEDIUM
 original_name: GOTTSCHALKIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.5
@@ -162,18 +162,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: First dissolve KOH and K2HPO4 in water, then add uric acid and boil
-    until the acid is dissolved. Cool medium to room temperature under 100% N2 gas
-    atmosphere and add all other compounds, except carbonate and thioglycolate. Dispense
-    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave for 15 min at 121°C. Then add carbonate (filter-sterilized stock solution
-    prepared under 80% N2 and 20% CO2 gas atmosphere) and thioglycolate (stock solution,
-    autoclaved separately under 100% N2 gas). Adjust pH of complete medium to 7.0
-    - 7.5, if necessary.
+  description: First dissolve KOH and K2HPO4 in water, then add uric acid and boil until the acid is dissolved.
+    Cool medium to room temperature under 100% N2 gas atmosphere and add all other compounds, except carbonate
+    and thioglycolate. Dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave for 15 min at 121°C. Then add carbonate (filter-sterilized stock solution prepared under
+    80% N2 and 20% CO2 gas atmosphere) and thioglycolate (stock solution, autoclaved separately under
+    100% N2 gas). Adjust pH of complete medium to 7.0 - 7.5, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M2142
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:26710
     label: Sodium Chloride
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Complex component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Complex component, Defined component'
   term:
     id: CHEBI:85248
     label: gellan gum
@@ -52,7 +49,7 @@ media_term:
   preferred_term: TOGO Medium M2142
   term:
     id: TOGO:M2142
-    label: (Unnamed medium)
+    label: TOGO Medium M2142
 notes: 'Source: https://togomedium.org/medium/M2142
 
   Original source: NBRC - NBRC_M1486

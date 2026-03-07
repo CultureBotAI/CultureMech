@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
 original_name: METHANOBACTERIUM THERMOAUTOTROPHICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -249,19 +249,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and adjust
-    pH to 7.2. Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2
-    (80:20). Dispense the medium into suitable culture vessels (e.g., 20 ml of the
-    medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20) and seal with
-    butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately
-    autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions, respectively, under
-    a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add the cysteine
-    x HCl and Na2S x 9H2O solutions. Pressurize the inoculated bottles to 100 kPa
-    H2-CO2 (80:20).
+  description: Mix ingredients, except cysteine x HCl and Na2S x 9H2O, and adjust pH to 7.2. Bring to
+    a boil for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20). Dispense the medium into suitable
+    culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20)
+    and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately autoclave
+    cysteine x HCl and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior to inoculation,
+    aseptically and anaerobically add the cysteine x HCl and Na2S x 9H2O solutions. Pressurize the inoculated
+    bottles to 100 kPa H2-CO2 (80:20).
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve EDTA x 2Na first in 500 ml of distilled water. Then add the
-    remaining salts and adjust volume to 1000 ml.
+  description: Dissolve EDTA x 2Na first in 500 ml of distilled water. Then add the remaining salts and
+    adjust volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

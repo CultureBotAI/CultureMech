@@ -1,15 +1,15 @@
 name: MEDIUM 909 MODIFIED FOR DSM 14222
 original_name: MEDIUM 909 MODIFIED FOR DSM 14222
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 909_14222
   term:
     id: komodo.medium:909_14222
     label: MEDIUM 909 MODIFIED FOR DSM 14222
-notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 909_14222 | DSMZ Medium: 909 (mediadive.medium:909) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Brain heart infusion broth
   concentration:

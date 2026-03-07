@@ -1,6 +1,6 @@
 name: 1/2 Tryptic Soy Broth (Anaerobic)
 original_name: 1/2 Tryptic Soy Broth (Anaerobic)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '3.6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -52,8 +49,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
@@ -82,5 +78,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.343557'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: HCl'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
+    HCl'

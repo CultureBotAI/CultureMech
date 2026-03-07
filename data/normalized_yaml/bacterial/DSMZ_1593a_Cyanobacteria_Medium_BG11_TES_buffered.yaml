@@ -1,6 +1,6 @@
 name: Cyanobacteria Medium BG11+ (TES buffered)
 original_name: Cyanobacteria Medium BG11+ (TES buffered)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -126,8 +126,7 @@ preparation_steps:
   description: Adjust pH to 8.0.
 - step_number: 2
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -136,8 +135,7 @@ preparation_steps:
   description: 'After Cooling, add the following filter sterilized components:'
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 applications:
 - Microbial cultivation
 curation_history:

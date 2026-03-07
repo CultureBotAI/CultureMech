@@ -1,6 +1,6 @@
 name: ACETOMICROBIUM FAECALIS medium
 original_name: ACETOMICROBIUM FAECALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:412
     label: ACETOMICROBIUM FAECALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 412 | DSMZ Medium: 412 (mediadive.medium:412)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 412 | DSMZ Medium: 412 (mediadive.medium:412) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -282,5 +281,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.296892Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

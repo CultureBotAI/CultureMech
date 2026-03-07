@@ -1,16 +1,15 @@
 name: RHIZOMONAS SUBERIFACIENS medium
 original_name: RHIZOMONAS SUBERIFACIENS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 726
   term:
     id: komodo.medium:726
     label: RHIZOMONAS SUBERIFACIENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 726 | DSMZ Medium: 726 (mediadive.medium:726)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 726 | DSMZ Medium: 726 (mediadive.medium:726) | Aerobic: No'
 ingredients:
 - preferred_term: Enzymatic digest of casein
   concentration:

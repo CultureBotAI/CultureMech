@@ -1,6 +1,6 @@
 name: ROSEOCOCCUS SUDUNTUYENSIS MEDIUM
 original_name: ROSEOCOCCUS SUDUNTUYENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -169,9 +169,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add
-    the vitamin B12 solution from a filter sterilised stock solution to the autoclaved,
-    cooled medium. Final is pH 8.5.
+  description: Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add the vitamin B12 solution
+    from a filter sterilised stock solution to the autoclaved, cooled medium. Final is pH 8.5.
 applications:
 - Microbial cultivation
 curation_history:

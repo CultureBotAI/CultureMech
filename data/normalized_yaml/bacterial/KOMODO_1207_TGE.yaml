@@ -1,16 +1,15 @@
 name: TGE
 original_name: TGE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 1207
   term:
     id: komodo.medium:1207
     label: TGE
-notes: 'Source: KOMODO ModelSEED | ID: 1207 | DSMZ Medium: 1207 (mediadive.medium:1207)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1207 | DSMZ Medium: 1207 (mediadive.medium:1207) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

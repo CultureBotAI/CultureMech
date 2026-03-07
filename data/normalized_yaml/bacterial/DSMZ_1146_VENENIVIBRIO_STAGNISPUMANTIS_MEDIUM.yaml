@@ -1,6 +1,6 @@
 name: VENENIVIBRIO STAGNISPUMANTIS MEDIUM
 original_name: VENENIVIBRIO STAGNISPUMANTIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -151,11 +151,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust the pH to 5.5 and gas the media with N2/CO2 (80/20) for 15 min
-    at least. Fill 20 ml medium into 100 ml serum bottles, gas the flask containing
-    the media with H2/CO2 (80/20) and seal with a rubber stopper. Autoclave the medium
-    for 20 min at 121°C. After the inoculation the tubes are pressurized with H2/CO2/O2
-    (79%/15%/6%,170 kPa).
+  description: Adjust the pH to 5.5 and gas the media with N2/CO2 (80/20) for 15 min at least. Fill 20
+    ml medium into 100 ml serum bottles, gas the flask containing the media with H2/CO2 (80/20) and seal
+    with a rubber stopper. Autoclave the medium for 20 min at 121°C. After the inoculation the tubes are
+    pressurized with H2/CO2/O2 (79%/15%/6%,170 kPa).
 - step_number: 2
   action: MIX
   description: Adjust the pH of the solution to 3.0 with HCl.

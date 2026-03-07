@@ -1,15 +1,14 @@
 name: TCG medium
 original_name: TCG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1009
   term:
     id: komodo.medium:1009
     label: TCG medium
-notes: 'Source: KOMODO ModelSEED | ID: 1009 | DSMZ Medium: 1009 (mediadive.medium:1009)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1009 | DSMZ Medium: 1009 (mediadive.medium:1009) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

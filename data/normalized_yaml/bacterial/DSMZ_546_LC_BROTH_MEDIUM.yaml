@@ -1,6 +1,6 @@
 name: LC BROTH MEDIUM
 original_name: LC BROTH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -53,8 +53,8 @@ preparation_steps:
   description: Adjust pH to 7.4.
 - step_number: 2
   action: HEAT
-  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2
-    x 2 H2O and 5 ml 1 M MgSO4 x 7 H2O as sterile solutions.
+  description: Sterilize at 121°C for 15 min. Cool to 50°C and add 5 ml 1 M CaCl2 x 2 H2O and 5 ml 1 M
+    MgSO4 x 7 H2O as sterile solutions.
 applications:
 - Microbial cultivation
 curation_history:

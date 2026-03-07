@@ -1,6 +1,6 @@
 name: MJ/ANHOX-NO<sub>3</sub> WITH THIOSULFATE MEDIUM
 original_name: MJ/ANHOX-NO<sub>3</sub> WITH THIOSULFATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -179,10 +179,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Distribute medium into culture vessels (e.g., 20 ml of medium in 120
-    ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture, seal with butyl
-    rubber stoppers, and autoclave. Adjust pH to 7.5, if necessary. Pressurize the
-    inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Distribute medium into culture vessels (e.g., 20 ml of medium in 120 ml serum bottles)
+    under a stream of H2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers, and autoclave. Adjust
+    pH to 7.5, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:
@@ -197,5 +196,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.899557Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

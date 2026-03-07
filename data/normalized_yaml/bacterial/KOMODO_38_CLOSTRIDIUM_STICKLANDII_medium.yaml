@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM STICKLANDII medium
 original_name: CLOSTRIDIUM STICKLANDII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:38
     label: CLOSTRIDIUM STICKLANDII medium
-notes: 'Source: KOMODO ModelSEED | ID: 38 | DSMZ Medium: 38 (mediadive.medium:38)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 38 | DSMZ Medium: 38 (mediadive.medium:38) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

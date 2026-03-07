@@ -1,6 +1,6 @@
 name: CEJFB1T MEDIUM
 original_name: CEJFB1T MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -173,15 +173,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave
-    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add the following solutions
-    from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.6 with KOH and autoclave under a N2-CO2 (4:1,
+    v/v) gas mixture. After cooling, add the following solutions from anaerobic stocks (autoclaved or
+    *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Aseptically distribute the medium into culture vessels under a stream
-    of N2-CO2 (4:1, v/v), and seal with butyl rubber stoppers. Prior to inoculation,
-    add per liter the following solution from an anaerobic stock (autoclave and store
-    under a N2 atmosphere).
+  description: Aseptically distribute the medium into culture vessels under a stream of N2-CO2 (4:1, v/v),
+    and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution from
+    an anaerobic stock (autoclave and store under a N2 atmosphere).
 applications:
 - Microbial cultivation
 curation_history:

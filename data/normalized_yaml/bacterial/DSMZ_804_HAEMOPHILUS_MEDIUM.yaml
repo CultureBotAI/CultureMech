@@ -1,6 +1,6 @@
 name: HAEMOPHILUS MEDIUM
 original_name: HAEMOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -27,8 +27,8 @@ preparation_steps:
   description: 'NAD stock solution: dissolve 1 mg NAD per ml dist. water, filter sterilize.'
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make
-    up to 25 ml with dist. water, filter sterilize.'
+  description: 'Hemine stock solution: dissolve 50 mg hemine in 1 ml 1 M NaOH, make up to 25 ml with dist.
+    water, filter sterilize.'
 applications:
 - Microbial cultivation
 curation_history:

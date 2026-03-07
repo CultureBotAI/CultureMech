@@ -1,15 +1,14 @@
 name: DIFCO RAKA-RAY NO.3 medium
 original_name: DIFCO RAKA-RAY NO.3 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1047
   term:
     id: komodo.medium:1047
     label: DIFCO RAKA-RAY NO.3 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1047 | DSMZ Medium: 1047 (mediadive.medium:1047)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1047 | DSMZ Medium: 1047 (mediadive.medium:1047) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

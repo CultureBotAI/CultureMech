@@ -1,6 +1,6 @@
 name: ALKALIPHILIC THERMOCOCCUS medium
 original_name: ALKALIPHILIC THERMOCOCCUS medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:926
     label: ALKALIPHILIC THERMOCOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 926 | DSMZ Medium: 926 (mediadive.medium:926)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 926 | DSMZ Medium: 926 (mediadive.medium:926) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,8 +1,8 @@
 name: 2YT medium
 original_name: 2YT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride

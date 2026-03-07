@@ -1,6 +1,6 @@
 name: OCEANISPIROCHAETA LITORALIS MEDIUM
 original_name: OCEANISPIROCHAETA LITORALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -48,10 +48,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine) and sparge medium for 30 - 45
-    min with 100% N2 gas to make it anoxic. Add cysteine and adjust pH to 7.2 - 7.4,
-    then distribute medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. Final pH of the medium should be about 7.2.
+  description: Dissolve ingredients (except cysteine) and sparge medium for 30 - 45 min with 100% N2 gas
+    to make it anoxic. Add cysteine and adjust pH to 7.2 - 7.4, then distribute medium under 100% N2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Final pH of the medium should
+    be about 7.2.
 applications:
 - Microbial cultivation
 curation_history:

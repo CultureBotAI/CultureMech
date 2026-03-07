@@ -1,8 +1,8 @@
 name: R Agar With Catalase
 original_name: R Agar With Catalase
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Catalase (Sigma C--10)
   concentration:

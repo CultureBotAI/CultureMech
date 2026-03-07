@@ -1,8 +1,8 @@
 name: CASMAN-MEDIUM
 original_name: CASMAN-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 439
   term:
@@ -25,8 +25,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
-    water-lysed sheep blood.
+  description: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15% water-lysed sheep blood.
 applications:
 - Microbial cultivation
 curation_history:

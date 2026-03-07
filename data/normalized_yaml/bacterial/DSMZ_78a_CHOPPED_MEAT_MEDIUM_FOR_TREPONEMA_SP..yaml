@@ -1,8 +1,8 @@
 name: CHOPPED MEAT MEDIUM FOR TREPONEMA SP.
 original_name: CHOPPED MEAT MEDIUM FOR TREPONEMA SP.
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 78a
   term:
@@ -195,42 +195,40 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: To the ready medium, add 50 ml/l amino acid solution and 5 ml/l vitamin
-    solution. These solutions must not be prepared under anaerobic conditions.
+  description: To the ready medium, add 50 ml/l amino acid solution and 5 ml/l vitamin solution. These
+    solutions must not be prepared under anaerobic conditions.
 - step_number: 2
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 3
   action: AUTOCLAVE
-  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
-    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
-    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
-    demanding meat particles put those first into the tube (use 1 part meat particles
-    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
-    g agar per 1000.0 ml medium.
+  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere, add 0.5 g/l
+    L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100% N2 gas atmosphere by filling 7
+    ml medium into anoxic Hungate-type tubes (for strains demanding meat particles put those first into
+    the tube (use 1 part meat particles to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar
+    slants use 15.0 g agar per 1000.0 ml medium.
 - step_number: 4
   action: MIX
-  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
-    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin and Vitamin K1 or
+    Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
 - step_number: 5
   action: FILTER_STERILIZE
-  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
-    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
-    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
-    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
-    \ ml, and then add:"
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before grinding. Mix\r\n\
+    meat, water and NaOH, then boil for 15 min with stirring. Cool to room temperature,\r\nskim fat off\
+    \ surface, and filter, retaining both meat particles and filtrate. To the filtrate\r\nadd water to\
+    \ a final volume of 1000 ml, and then add:"
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
-    in water and filter sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml in water and filter
+    sterilize. Store refrigerated in a brown bottle.
 - step_number: 8
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
+    in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PYS medium
 original_name: PYS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1117
     label: PYS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1117 | DSMZ Medium: 1117 (mediadive.medium:1117)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1117 | DSMZ Medium: 1117 (mediadive.medium:1117) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

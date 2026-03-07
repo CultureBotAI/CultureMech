@@ -1,6 +1,6 @@
 name: DESULFUROMONAS ACETOXIDANS MEDIUM
 original_name: DESULFUROMONAS ACETOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -162,21 +162,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Dispense solution under same gas atmosphere into anoxic Hungate-type tubes or
-    serum vials and sterilize by autoclaving. Solutions B and D are autoclaved separately
-    under 100% N2 gas atmosphere. Solution C is autoclaved under 80% N2 and 20% CO2
-    gas atmosphere. The medium is completed before use by adding appropriate amounts
-    of solutions B, C and D to solution A. Adjust pH of complete medium to 7.2, if
-    necessary.
+  description: Sparge solution A with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense solution
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and sterilize by autoclaving.
+    Solutions B and D are autoclaved separately under 100% N2 gas atmosphere. Solution C is autoclaved
+    under 80% N2 and 20% CO2 gas atmosphere. The medium is completed before use by adding appropriate
+    amounts of solutions B, C and D to solution A. Adjust pH of complete medium to 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with 2 N NaOH.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

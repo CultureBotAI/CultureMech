@@ -1,8 +1,8 @@
 name: TUA ACETOBACTER MEDIUM
 original_name: TUA ACETOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1363
@@ -51,9 +51,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize
-    by autoclaving. Add sterile ethanol to the sterile cooled medium. The medium may
-    be solidified by adding 15.0 g/l agar.
+  description: Make up the medium without the ethanol, adjust to pH 7.0 and sterilize by autoclaving.
+    Add sterile ethanol to the sterile cooled medium. The medium may be solidified by adding 15.0 g/l
+    agar.
 applications:
 - Microbial cultivation
 curation_history:

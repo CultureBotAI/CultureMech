@@ -1,8 +1,8 @@
 name: SMB MEDIUM
 original_name: SMB MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7.1
 media_term:
   preferred_term: DSMZ Medium 1185

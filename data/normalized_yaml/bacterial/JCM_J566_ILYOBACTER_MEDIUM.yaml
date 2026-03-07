@@ -1,6 +1,6 @@
 name: ILYOBACTER MEDIUM
 original_name: ILYOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -211,9 +211,9 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: POUR_PLATES
-  description: Boil until the volume decreases to 1.0 L and dispense under an atmosphere
-    of N2 into 15 ml Hungate tube. If the medium stays pink (O2 is present), add one
-    drop of 5% Na2S from the sterile stock solution.
+  description: Boil until the volume decreases to 1.0 L and dispense under an atmosphere of N2 into 15
+    ml Hungate tube. If the medium stays pink (O2 is present), add one drop of 5% Na2S from the sterile
+    stock solution.
 applications:
 - Microbial cultivation
 curation_history:

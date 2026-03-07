@@ -1,6 +1,6 @@
 name: Nutrient broth (Difco)
 original_name: Nutrient broth (Difco)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:5011
     label: Nutrient broth (Difco)
-notes: 'Source: KOMODO ModelSEED | ID: 5011 | DSMZ Medium: 5011 (mediadive.medium:5011)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5011 | DSMZ Medium: 5011 (mediadive.medium:5011) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

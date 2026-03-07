@@ -1,6 +1,6 @@
 name: HSM
 original_name: HSM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -46,22 +46,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Aseptically add stock solutions (2), (3) and (4) in above amounts\
-    \ to each test tube.\r\nIncubate at room temperature for 3 days to check sterility\
-    \ prior to use."
+  description: "Aseptically add stock solutions (2), (3) and (4) in above amounts to each test tube.\r\
+    \nIncubate at room temperature for 3 days to check sterility prior to use."
 - step_number: 2
   action: AUTOCLAVE
-  description: "Dispense 8.5 ml aliquots into test tubes.  Cap and autoclave at 15\
-    \ psi\r\nfor 15 minutes."
+  description: "Dispense 8.5 ml aliquots into test tubes.  Cap and autoclave at 15 psi\r\nfor 15 minutes."
 - step_number: 3
   action: FILTER_STERILIZE
   description: Sterilise by passing through 0.22 µm filter.
 - step_number: 4
   action: AUTOCLAVE
-  description: "Place dry  rice starch into a dry 50 ml bottle, and cap. Place 20\
-    \ ml\r\ndeionised water into a separate bottle. Autoclave separately  at 15 \r\
-    \npsi for 15 minutes.  When cool, aseptically combine the contents of \r\nthe\
-    \ two bottles.  Mix thoroughly by shaking."
+  description: "Place dry  rice starch into a dry 50 ml bottle, and cap. Place 20 ml\r\ndeionised water\
+    \ into a separate bottle. Autoclave separately  at 15 \r\npsi for 15 minutes.  When cool, aseptically\
+    \ combine the contents of \r\nthe two bottles.  Mix thoroughly by shaking."
 applications:
 - Microbial cultivation
 curation_history:

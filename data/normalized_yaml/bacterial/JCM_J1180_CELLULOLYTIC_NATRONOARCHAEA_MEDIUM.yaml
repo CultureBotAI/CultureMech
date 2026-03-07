@@ -1,6 +1,6 @@
 name: CELLULOLYTIC NATRONOARCHAEA MEDIUM
 original_name: CELLULOLYTIC NATRONOARCHAEA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -206,8 +206,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. After
-    cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. After cooling, add the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.6.

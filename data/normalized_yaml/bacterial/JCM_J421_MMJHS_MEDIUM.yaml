@@ -1,6 +1,6 @@
 name: MMJHS MEDIUM
 original_name: MMJHS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -175,15 +175,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Mix ingredients except sulfur, adjust pH to 6.5 - 7.0 with NaOH and
-    filter-sterilize. Steam sulfur for 3 hr on each of 3 successive days. Distribute
-    the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) containing
-    sulfur under a H2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers.
-    Pressurize the inoculated bottles to 300 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except sulfur, adjust pH to 6.5 - 7.0 with NaOH and filter-sterilize. Steam
+    sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture vessels (e.g., 20
+    ml in 120 ml serum bottles) containing sulfur under a H2-CO2 (4:1, v/v) gas mixture, and seal with
+    butyl rubber stoppers. Pressurize the inoculated bottles to 300 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: Adjust final pH to 7.0 (for strain JCM 12458) or 6.5 (for
-    strain JCM 12459).'
+  description: 'Comment: Adjust final pH to 7.0 (for strain JCM 12458) or 6.5 (for strain JCM 12459).'
 applications:
 - Microbial cultivation
 curation_history:

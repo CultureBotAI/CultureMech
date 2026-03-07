@@ -1,6 +1,6 @@
 name: OCEANITHERMUS medium
 original_name: OCEANITHERMUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1149
     label: OCEANITHERMUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1149 | DSMZ Medium: 1149 (mediadive.medium:1149)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1149 | DSMZ Medium: 1149 (mediadive.medium:1149) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

@@ -1,6 +1,6 @@
 name: SULFURIMONAS TB MEDIUM
 original_name: SULFURIMONAS TB MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -169,15 +169,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH to 6.5 with NaOH, then distribute the medium
-    into culture vessels (e.g., 50 ml per 120 ml serum bottles), seal with butyl rubber
-    stoppers and autoclave at 110C for 5 min. Replace the gas phase with N2-air-H2S-CO2
-    (52:32:13:3, by vol).
+  description: Mix components, adjust pH to 6.5 with NaOH, then distribute the medium into culture vessels
+    (e.g., 50 ml per 120 ml serum bottles), seal with butyl rubber stoppers and autoclave at 110C for
+    5 min. Replace the gas phase with N2-air-H2S-CO2 (52:32:13:3, by vol).
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Artificial seawater can be replaced with natural seawater. In this
-    case, filtrate seawater (pore size, 02 ï¿½m) and boil. After cooling, filtrate
-    again (pore size, 0.45 ï¿½m).
+  description: Artificial seawater can be replaced with natural seawater. In this case, filtrate seawater
+    (pore size, 02 ï¿½m) and boil. After cooling, filtrate again (pore size, 0.45 ï¿½m).
 applications:
 - Microbial cultivation
 curation_history:

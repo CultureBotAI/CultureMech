@@ -1,6 +1,6 @@
 name: RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM
 original_name: RHODOPSEUDOMONAS GLOBIFORMIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.9
@@ -147,9 +147,9 @@ preparation_steps:
   description: 'Adjust pH to 4.9, then add:'
 - step_number: 2
   action: COOL
-  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each\
-    \ 100 ml medium add\r\n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3\
-    \ </sub>solution. Incubate in the light using a tungsten lamp"
+  description: "Sterilize in screw-capped bottles. Cool to room temperature; to each 100 ml medium add\r\
+    \n0.2 ml of a sterile 10% Na<sub>2</sub>S<sub>2</sub>0<sub>3 </sub>solution. Incubate in the light\
+    \ using a tungsten lamp"
 applications:
 - Microbial cultivation
 curation_history:

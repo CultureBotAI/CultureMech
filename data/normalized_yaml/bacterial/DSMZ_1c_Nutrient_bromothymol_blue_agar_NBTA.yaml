@@ -1,8 +1,8 @@
 name: Nutrient bromothymol blue agar NBTA
 original_name: Nutrient bromothymol blue agar NBTA
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1c
   term:
@@ -39,8 +39,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 21 min.
 - step_number: 2
   action: MIX
-  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium
-    chloride stock solution (1% w/v).
+  description: After autoclavation add 4 mL from a sterile 2,3,5-triphenyltetrazolium chloride stock solution
+    (1% w/v).
 applications:
 - Microbial cultivation
 references:

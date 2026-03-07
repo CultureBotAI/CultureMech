@@ -1,6 +1,6 @@
 name: medium R2A MODIFIED
 original_name: medium R2A MODIFIED
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:830a
     label: medium R2A MODIFIED
-notes: 'Source: KOMODO ModelSEED | ID: 830a | DSMZ Medium: 830a (mediadive.medium:830a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830a | DSMZ Medium: 830a (mediadive.medium:830a) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

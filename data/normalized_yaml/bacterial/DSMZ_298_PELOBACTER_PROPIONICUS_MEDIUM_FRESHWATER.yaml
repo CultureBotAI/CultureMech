@@ -1,6 +1,6 @@
 name: PELOBACTER PROPIONICUS MEDIUM (FRESHWATER)
 original_name: PELOBACTER PROPIONICUS MEDIUM (FRESHWATER)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.5
@@ -144,22 +144,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, 2,3-butanediol and sulfide,
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium in anoxic Hungate-type tubes or serum vials under the
-    same gas atmosphere and autoclave. Add 2,3-butanediol and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to
-    use adjust pH of complete medium to 7.2 - 7.5.
+  description: Dissolve ingredients except carbonate, 2,3-butanediol and sulfide, then sparge medium with
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium in anoxic Hungate-type
+    tubes or serum vials under the same gas atmosphere and autoclave. Add 2,3-butanediol and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium
+    to 7.2 - 7.5.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution freshly prepared under N2 and filter-sterilized) may stimulate
-    growth of some strains at the beginning.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution
+    freshly prepared under N2 and filter-sterilized) may stimulate growth of some strains at the beginning.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

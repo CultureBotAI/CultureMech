@@ -1,6 +1,6 @@
 name: ACIDULIPROFUNDUM medium
 original_name: ACIDULIPROFUNDUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1083
     label: ACIDULIPROFUNDUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1083 | DSMZ Medium: 1083 (mediadive.medium:1083)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1083 | DSMZ Medium: 1083 (mediadive.medium:1083) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

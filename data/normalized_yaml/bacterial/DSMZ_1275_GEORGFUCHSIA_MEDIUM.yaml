@@ -1,6 +1,6 @@
 name: GEORGFUCHSIA MEDIUM
 original_name: GEORGFUCHSIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -238,25 +238,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solutions are prepared anaerobically under N2:CO2. Solutions A, B,
-    C and D are autoclaved. After cooling, the solutions are combined under N2 gas.
-    To 10 ml solution A, add 0.5 ml solution B, 0.5 ml solution C, 0.25 ml solution
-    D and 0.4 ml solution E.
+  description: Solutions are prepared anaerobically under N2:CO2. Solutions A, B, C and D are autoclaved.
+    After cooling, the solutions are combined under N2 gas. To 10 ml solution A, add 0.5 ml solution B,
+    0.5 ml solution C, 0.25 ml solution D and 0.4 ml solution E.
 - step_number: 2
   action: MIX
-  description: pH should be 7.3 without further adjustment. Add new toluene solution
-    to the cultures about every 7 days.
+  description: pH should be 7.3 without further adjustment. Add new toluene solution to the cultures about
+    every 7 days.
 - step_number: 3
   action: COOL
   description: Add 1 ml vitamin solution (see below) after autoclaving and cooling.
 - step_number: 4
   action: MIX
-  description: Sterile distilled water gassed with dinitrogen, 100.00 ml. Add 58 µl
-    toluene.
+  description: Sterile distilled water gassed with dinitrogen, 100.00 ml. Add 58 µl toluene.
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

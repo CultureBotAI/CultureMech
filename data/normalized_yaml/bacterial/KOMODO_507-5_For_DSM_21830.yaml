@@ -1,6 +1,6 @@
 name: For DSM 21830
 original_name: For DSM 21830
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:507.5
     label: For DSM 21830
-notes: 'Source: KOMODO ModelSEED | ID: 507.5 | DSMZ Medium: 507 (mediadive.medium:507)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 507.5 | DSMZ Medium: 507 (mediadive.medium:507) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -206,5 +205,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.944797Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

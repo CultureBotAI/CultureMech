@@ -1,6 +1,6 @@
 name: MEDIUM for Z-1701, Z-1702
 original_name: MEDIUM for Z-1701, Z-1702
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -129,9 +129,8 @@ preparation_steps:
   description: Final pH 9.0 - 9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare and boil the medium in the absence NaHCO3, Na2CO3.Cool under
-    a stream of nitrogen and add the remaining components. Dispense into tubes or
-    bottle fitted with rubber stoppers and autoclave.
+  description: Prepare and boil the medium in the absence NaHCO3, Na2CO3.Cool under a stream of nitrogen
+    and add the remaining components. Dispense into tubes or bottle fitted with rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

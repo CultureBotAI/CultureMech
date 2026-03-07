@@ -1,6 +1,6 @@
 name: SYMBIOBACTERIUM MEDIUM
 original_name: SYMBIOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -43,10 +43,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0. Distribute the medium into culture
-    vessels and replace the gas phase with a N2-CO2-H2 (80:10:10, v/v) gas mixture.
-    Seal with butyl rubber stoppers and autoclave. After cooling, aseptically add
-    the following solution (filter-sterilized) to the medium:'
+  description: 'Mix components and adjust pH to 8.0. Distribute the medium into culture vessels and replace
+    the gas phase with a N2-CO2-H2 (80:10:10, v/v) gas mixture. Seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically add the following solution (filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 10.0 g/L gellan gum.

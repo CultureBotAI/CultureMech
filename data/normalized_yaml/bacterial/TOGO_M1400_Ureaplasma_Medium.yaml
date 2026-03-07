@@ -1,6 +1,6 @@
 name: Ureaplasma Medium
 original_name: Ureaplasma Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '85'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -40,8 +39,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: pH indicator; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:31991
     label: Phenol red
@@ -54,8 +52,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: Distilled water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -66,8 +63,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -108,5 +104,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.582867'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
-    for ingredient: Distilled water'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
+    Distilled water'

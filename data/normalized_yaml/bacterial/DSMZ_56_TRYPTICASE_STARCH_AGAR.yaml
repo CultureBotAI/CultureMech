@@ -1,8 +1,8 @@
 name: TRYPTICASE STARCH AGAR
 original_name: TRYPTICASE STARCH AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 56
   term:

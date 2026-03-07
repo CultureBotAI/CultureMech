@@ -1,16 +1,15 @@
 name: XYLAN medium
 original_name: XYLAN medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 1235
   term:
     id: komodo.medium:1235
     label: XYLAN medium
-notes: 'Source: KOMODO ModelSEED | ID: 1235 | DSMZ Medium: 1235 (mediadive.medium:1235)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1235 | DSMZ Medium: 1235 (mediadive.medium:1235) | Aerobic: No'
 ingredients:
 - preferred_term: Xylan
   term:

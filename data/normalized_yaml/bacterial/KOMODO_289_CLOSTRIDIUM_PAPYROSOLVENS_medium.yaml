@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM PAPYROSOLVENS medium
 original_name: CLOSTRIDIUM PAPYROSOLVENS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:289
     label: CLOSTRIDIUM PAPYROSOLVENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 289 | DSMZ Medium: 289 (mediadive.medium:289)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 289 | DSMZ Medium: 289 (mediadive.medium:289) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea water
   concentration:

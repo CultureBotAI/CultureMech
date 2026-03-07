@@ -1,15 +1,14 @@
 name: MEDIUM 1 MODIFIED FOR DSM 21399
 original_name: MEDIUM 1 MODIFIED FOR DSM 21399
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_21399
   term:
     id: komodo.medium:1_21399
     label: MEDIUM 1 MODIFIED FOR DSM 21399
-notes: 'Source: KOMODO ModelSEED | ID: 1_21399 | DSMZ Medium: 1 (mediadive.medium:1)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_21399 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

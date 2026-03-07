@@ -1,6 +1,6 @@
 name: MSA-Fe medium
 original_name: MSA-Fe medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:705
     label: MSA-Fe medium
-notes: 'Source: KOMODO ModelSEED | ID: 705 | DSMZ Medium: 705 (mediadive.medium:705)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 705 | DSMZ Medium: 705 (mediadive.medium:705) | Aerobic: Yes'
 ingredients:
 - preferred_term: Ferric citrate
   term:

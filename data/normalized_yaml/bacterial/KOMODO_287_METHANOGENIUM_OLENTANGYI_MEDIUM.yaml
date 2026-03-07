@@ -1,6 +1,6 @@
 name: METHANOGENIUM OLENTANGYI MEDIUM
 original_name: METHANOGENIUM OLENTANGYI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:287
     label: METHANOGENIUM OLENTANGYI MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 287 | DSMZ Medium: 287 (mediadive.medium:287)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 287 | DSMZ Medium: 287 (mediadive.medium:287) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -279,5 +278,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.681008Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

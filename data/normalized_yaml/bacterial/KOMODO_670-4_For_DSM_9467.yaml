@@ -1,11 +1,11 @@
 name: For DSM 9467
 original_name: For DSM 9467
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670
-  (mediadive.medium:670) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 670.4 | DSMZ Medium: 670 (mediadive.medium:670)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 670.4
   term:

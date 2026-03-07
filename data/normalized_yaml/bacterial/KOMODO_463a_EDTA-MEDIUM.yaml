@@ -1,6 +1,6 @@
 name: EDTA-MEDIUM
 original_name: EDTA-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:463a
     label: EDTA-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 463a | DSMZ Medium: 463a (mediadive.medium:463a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 463a | DSMZ Medium: 463a (mediadive.medium:463a) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

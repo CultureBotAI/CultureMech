@@ -1,6 +1,6 @@
 name: CATONELLA UREILYTICA MEDIUM
 original_name: CATONELLA UREILYTICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -57,12 +57,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except urea and sodium thioglycolate, bring to a boil
-    for a few seconds and cool to room temperature under a N2-CO2 (4:1, v/v) gas mixture.
-    Add sodium thioglycolate, dispense the medium into culture vessels under the same
-    gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add
-    10% urea solution (filter-sterilized and stored under a N2 gas atmosphere) to
-    the medium and adjust pH to 7.4.
+  description: Mix components except urea and sodium thioglycolate, bring to a boil for a few seconds
+    and cool to room temperature under a N2-CO2 (4:1, v/v) gas mixture. Add sodium thioglycolate, dispense
+    the medium into culture vessels under the same gas mixture, seal with butyl rubber stoppers and autoclave.
+    After cooling, add 10% urea solution (filter-sterilized and stored under a N2 gas atmosphere) to the
+    medium and adjust pH to 7.4.
 applications:
 - Microbial cultivation
 curation_history:

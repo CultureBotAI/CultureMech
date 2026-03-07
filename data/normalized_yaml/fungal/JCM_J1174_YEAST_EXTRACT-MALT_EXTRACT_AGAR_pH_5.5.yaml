@@ -1,6 +1,6 @@
 name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (pH 5.5)
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43)
-    and adjust pH to 5.5.
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43) and adjust pH to 5.5.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SPIROCHAETA STENOSTREPTA MEDIUM
 original_name: SPIROCHAETA STENOSTREPTA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -43,8 +43,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.6 with KOH before autoclaving. Add 1% agar for stabs.
-    Pre-reduced medium is prepared under 100% nitrogen atmosphere.
+  description: Adjust pH to 7.6 with KOH before autoclaving. Add 1% agar for stabs. Pre-reduced medium
+    is prepared under 100% nitrogen atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

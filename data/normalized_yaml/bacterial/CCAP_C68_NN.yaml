@@ -1,8 +1,8 @@
 name: NN
 original_name: NN
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C68
   term:
@@ -55,9 +55,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add stock solutions to deionized water and make up to 1 litre. In\
-    \ suitable vessels thoroughly\r\ndisperse the agar in cold amoeba saline solution.\
-    \ Autoclave at 15 psi for 15 minutes."
+  description: "Add stock solutions to deionized water and make up to 1 litre. In suitable vessels thoroughly\r\
+    \ndisperse the agar in cold amoeba saline solution. Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:

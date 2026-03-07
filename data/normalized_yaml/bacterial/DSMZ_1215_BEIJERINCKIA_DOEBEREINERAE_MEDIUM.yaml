@@ -1,8 +1,8 @@
 name: BEIJERINCKIA DOEBEREINERAE MEDIUM
 original_name: BEIJERINCKIA DOEBEREINERAE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: DSMZ Medium 1215

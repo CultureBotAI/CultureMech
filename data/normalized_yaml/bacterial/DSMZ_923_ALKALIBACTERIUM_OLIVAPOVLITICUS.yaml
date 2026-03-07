@@ -1,8 +1,8 @@
 name: ALKALIBACTERIUM OLIVAPOVLITICUS
 original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 923
   term:
@@ -60,11 +60,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: We recommend that liquid media be made by autoclaving the Na2CO3 separately,
-    otherwise the high pH will cause ammonia to be lost. When making media solidified
-    with agar (20 g/l) the agar should also not be autoclaved with the Na2CO3 otherwise
-    the agar will be hydrolysed. When mixing the ingredients for solid media cool
-    all components to about 55°C otherwise hydrolysis of the agar may occur.
+  description: We recommend that liquid media be made by autoclaving the Na2CO3 separately, otherwise
+    the high pH will cause ammonia to be lost. When making media solidified with agar (20 g/l) the agar
+    should also not be autoclaved with the Na2CO3 otherwise the agar will be hydrolysed. When mixing the
+    ingredients for solid media cool all components to about 55°C otherwise hydrolysis of the agar may
+    occur.
 applications:
 - Microbial cultivation
 curation_history:

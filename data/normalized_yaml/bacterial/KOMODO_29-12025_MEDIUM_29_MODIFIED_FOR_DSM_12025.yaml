@@ -1,6 +1,6 @@
 name: MEDIUM 29 MODIFIED FOR DSM 12025
 original_name: MEDIUM 29 MODIFIED FOR DSM 12025
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:29_12025
     label: MEDIUM 29 MODIFIED FOR DSM 12025
-notes: 'Source: KOMODO ModelSEED | ID: 29_12025 | DSMZ Medium: 29 (mediadive.medium:29)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 29_12025 | DSMZ Medium: 29 (mediadive.medium:29) | Aerobic: No'
 ingredients:
 - preferred_term: Bicarbonate
   concentration:

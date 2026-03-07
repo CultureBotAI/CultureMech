@@ -1,6 +1,6 @@
 name: PYRODICTIUM BROCKII MEDIUM
 original_name: PYRODICTIUM BROCKII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -204,20 +204,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, adjust pH to 5.5 with H2SO4 and autoclave
-    under a N2 gas atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
-    Aseptically distribute the medium and sulfur into culture vessels (e.g., 20 ml
-    of the medium and 0.6 g sulfur in 120 ml serum bottles) under a stream of a H2-CO4
-    (80:20, v/v) gas mixture and seal with butyl rubber stoppers. Prior to inoculation,
-    add per litter the following solution (autoclave and stored under a N2 atmosphere):'
+  description: 'Mix components except sulfur, adjust pH to 5.5 with H2SO4 and autoclave under a N2 gas
+    atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Aseptically distribute the medium
+    and sulfur into culture vessels (e.g., 20 ml of the medium and 0.6 g sulfur in 120 ml serum bottles)
+    under a stream of a H2-CO4 (80:20, v/v) gas mixture and seal with butyl rubber stoppers. Prior to
+    inoculation, add per litter the following solution (autoclave and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Readjust pH to 5.5, if necessary. Pressurize inoculated vessels to
-    200kPa H2 -CO2 (80:20, v/v).
+  description: Readjust pH to 5.5, if necessary. Pressurize inoculated vessels to 200kPa H2 -CO2 (80:20,
+    v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

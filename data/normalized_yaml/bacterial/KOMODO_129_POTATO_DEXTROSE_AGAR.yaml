@@ -1,15 +1,14 @@
 name: POTATO DEXTROSE AGAR
 original_name: POTATO DEXTROSE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 129
   term:
     id: komodo.medium:129
     label: POTATO DEXTROSE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 129 | DSMZ Medium: 129 (mediadive.medium:129)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 129 | DSMZ Medium: 129 (mediadive.medium:129) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

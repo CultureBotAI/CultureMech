@@ -1,6 +1,6 @@
 name: Artificial sea water (medium 600)
 original_name: Artificial sea water (medium 600)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2113
     label: Artificial sea water (medium 600)
-notes: 'Source: KOMODO ModelSEED | ID: 2113 | DSMZ Medium: 2113 (mediadive.medium:2113)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2113 | DSMZ Medium: 2113 (mediadive.medium:2113) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

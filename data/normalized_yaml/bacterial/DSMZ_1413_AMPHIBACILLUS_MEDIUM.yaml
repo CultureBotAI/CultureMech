@@ -1,6 +1,6 @@
 name: AMPHIBACILLUS MEDIUM
 original_name: AMPHIBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -123,8 +123,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Dispense the medium into serum bottles.
-    After sterilization pH 10.0. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Dispense the medium into serum bottles. After sterilization
+    pH 10.0. Before inoculation add from sterile stock solutions:'
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0

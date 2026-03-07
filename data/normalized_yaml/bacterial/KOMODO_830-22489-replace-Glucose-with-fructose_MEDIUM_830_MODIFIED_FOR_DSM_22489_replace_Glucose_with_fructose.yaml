@@ -1,6 +1,6 @@
 name: MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose
 original_name: MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.0-5.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:830_22489_replace_Glucose_with_fructose
     label: MEDIUM 830 MODIFIED FOR DSM 22489_replace_Glucose_with_fructose
-notes: 'Source: KOMODO ModelSEED | ID: 830_22489_replace_Glucose_with_fructose | DSMZ
-  Medium: 830 (mediadive.medium:830) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830_22489_replace_Glucose_with_fructose | DSMZ Medium: 830 (mediadive.medium:830)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

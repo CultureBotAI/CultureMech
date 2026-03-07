@@ -1,6 +1,6 @@
 name: For DSM 24436
 original_name: For DSM 24436
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:853.1
     label: For DSM 24436
-notes: 'Source: KOMODO ModelSEED | ID: 853.1 | DSMZ Medium: 853 (mediadive.medium:853)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 853.1 | DSMZ Medium: 853 (mediadive.medium:853) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

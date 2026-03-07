@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM NIACINI MEDIUM
 original_name: DESULFOBACTERIUM NIACINI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 383 supplemented with 13.5 g/L (final) NaCl and 2.2
-    g/L (final) MgCl2 x 6H2O, with 0.725 g/L sodium nicotinate (filter-sterilized)
-    instead of sodium lactate, and without yeast extract.
+  description: Use Medium No. 383 supplemented with 13.5 g/L (final) NaCl and 2.2 g/L (final) MgCl2 x
+    6H2O, with 0.725 g/L sodium nicotinate (filter-sterilized) instead of sodium lactate, and without
+    yeast extract.
 applications:
 - Microbial cultivation
 curation_history:

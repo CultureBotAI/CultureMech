@@ -1,8 +1,8 @@
 name: HALOMONAS MAGADIENSIS MEDIUM
 original_name: HALOMONAS MAGADIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: DSMZ Medium 971
@@ -64,8 +64,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: NaCl and Na2CO3 were autoclaved separately and added to the organic
-    components at 60°C before pouring the agar media. Final pH should be about 10.0.
+  description: NaCl and Na2CO3 were autoclaved separately and added to the organic components at 60°C
+    before pouring the agar media. Final pH should be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:

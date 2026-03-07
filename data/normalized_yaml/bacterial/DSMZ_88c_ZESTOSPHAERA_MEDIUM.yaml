@@ -1,6 +1,6 @@
 name: ZESTOSPHAERA MEDIUM
 original_name: ZESTOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -124,12 +124,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Dissolve ingredients (except thiosulfate, yeast extract, Tryptone,
-    Casamino acids and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture
-    to make it anoxic and dispense medium under same gas atmosphere into serum bottels.
-    After autoclaving add thiosulfate, yeast extract, Tryptone, Casamino acids and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior
-    to inoculation check pH and adjust to 6.0, if necessary.
+  description: Dissolve ingredients (except thiosulfate, yeast extract, Tryptone, Casamino acids and sulfide),
+    sparge medium with 80% N2 and 20% CO2 gas mixture to make it anoxic and dispense medium under same
+    gas atmosphere into serum bottels. After autoclaving add thiosulfate, yeast extract, Tryptone, Casamino
+    acids and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation
+    check pH and adjust to 6.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

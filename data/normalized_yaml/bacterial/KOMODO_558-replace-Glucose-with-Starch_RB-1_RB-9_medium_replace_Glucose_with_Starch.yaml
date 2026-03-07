@@ -1,6 +1,6 @@
 name: RB-1/RB-9 medium_replace_Glucose_with_Starch
 original_name: RB-1/RB-9 medium_replace_Glucose_with_Starch
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 3.5-6
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:558_replace_Glucose_with_Starch
     label: RB-1/RB-9 medium_replace_Glucose_with_Starch
-notes: 'Source: KOMODO ModelSEED | ID: 558_replace_Glucose_with_Starch | DSMZ Medium:
-  558 (mediadive.medium:558) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 558_replace_Glucose_with_Starch | DSMZ Medium: 558 (mediadive.medium:558)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -262,5 +262,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.942428Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

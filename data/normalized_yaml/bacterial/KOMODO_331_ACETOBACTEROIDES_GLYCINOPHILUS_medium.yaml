@@ -1,6 +1,6 @@
 name: ACETOBACTEROIDES GLYCINOPHILUS medium
 original_name: ACETOBACTEROIDES GLYCINOPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -244,5 +244,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.529373Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

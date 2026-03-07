@@ -1,6 +1,6 @@
 name: THIORHODOCOCCUS BHEEMLICUM MEDIUM
 original_name: THIORHODOCOCCUS BHEEMLICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -147,9 +147,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave except NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O. After cooling,
-    aseptically add filter-sterilized NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O solutions
-    to the medium.
+  description: Autoclave except NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O. After cooling, aseptically add
+    filter-sterilized NaHCO3, Na2S x 9H2O and Na2S2O3 x 5H2O solutions to the medium.
 applications:
 - Microbial cultivation
 curation_history:

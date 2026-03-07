@@ -1,43 +1,37 @@
 name: '1323'
 original_name: '1323'
-category: imported
+category: bacterial
 description: 1323. NBRC 1321.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "NaCl20gMgCl2\xB76H2O3gCaCl2\xB72H2O0.15gNa2SO44gNH4Cl0.25gKH2PO40.2gKCl0.5gSodium\
-    \ formate0.68gYeast extract0.5gResazurin1mgTrace element mixture*1mlSelenite-tungstate\
-    \ solution**1mlBicarbonate solution (1.0 M)***30mlVitamin solution****1mlThiamine\
-    \ solution*****1mlVitamin B12solution******1mlSulfide solution (1.0 M)*******1.5mlDistilled\
-    \ water963.5mlpH 7.0-7.3Mix ingredients except for yeast extract, bicarbonate,\
-    \ vitamin, thiamine, cyanocobalamin and sulfide solutions. Dispense the medium\
-    \ into suitable culture vessels under a stream of the N2/CO2(80/20) mixed gas,\
-    \ seal with butyl rubber stoppers, and autoclave at 121\xB0C for 15 min. Aseptically\
-    \ and anaerobically add other ingredients using sterile syringes. Adjust pH to\
-    \ 7.0-7.3 using compact pH meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4\xB7\
-    7H2O2100mgH3BO330mgMnCl2\xB74H2O100mgCoCl2\xB76H2O190mgNiCl2\xB76H2O24mgCuCl2\xB7\
-    2H2O2mgZnSO4\xB77H2O144mgNa2MoO4\xB72H2O36mgDistilled water987mlSterilized by\
-    \ autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3\xB75H2O6mgNa2WO4\xB7\
-    2H2O8mgDistilled water1LSterilized by autoclaving.***Bicarbonate solution (1.0\
-    \ M)NaHCO38.4gDistilled water100mlSaturated with CO2gas. Tightly sealed in bottles\
-    \ filled with CO2gas and then sterilized by autoclaving.****Vitamine solutionp-Aminobenzoic\
-    \ acid4mgBiotin1mgNicotinic acid10mgCa-pantothenate5mgPyridoxine-HCl15mgSodium\
-    \ phosphate buffer (10 mM; pH7.1)100mlSterilized by filtration.*****Thiamine solutionThiamine-HCl10mgSodium\
-    \ phosphate buffer (25 mM; pH 3.4)100mlSterilized by filtration.******Vitamin\
-    \ B12solutionCyanocobalamin5mgDistilled water100mlSterilized by filtration.*******Sulfide\
-    \ solution (1.0 M)Na2S\xB79H2O24gDistilled water100mlSterilized by filtration\
-    \ and stored under N2gas."
+- preferred_term: NaCl20gMgCl2·6H2O3gCaCl2·2H2O0.15gNa2SO44gNH4Cl0.25gKH2PO40.2gKCl0.5gSodium formate0.68gYeast
+    extract0.5gResazurin1mgTrace element mixture*1mlSelenite-tungstate solution**1mlBicarbonate solution
+    (1.0 M)***30mlVitamin solution****1mlThiamine solution*****1mlVitamin B12solution******1mlSulfide
+    solution (1.0 M)*******1.5mlDistilled water963.5mlpH 7.0-7.3Mix ingredients except for yeast extract,
+    bicarbonate, vitamin, thiamine, cyanocobalamin and sulfide solutions. Dispense the medium into suitable
+    culture vessels under a stream of the N2/CO2(80/20) mixed gas, seal with butyl rubber stoppers, and
+    autoclave at 121°C for 15 min. Aseptically and anaerobically add other ingredients using sterile syringes.
+    Adjust pH to 7.0-7.3 using compact pH meter.*Trace element mixtureHCl (25%; 7.7 M)12.5mlFeSO4·7H2O2100mgH3BO330mgMnCl2·4H2O100mgCoCl2·6H2O190mgNiCl2·6H2O24mgCuCl2·2H2O2mgZnSO4·7H2O144mgNa2MoO4·2H2O36mgDistilled
+    water987mlSterilized by autoclaving.**Selenite-tungstate solutionNaOH0.4gNa2SeO3·5H2O6mgNa2WO4·2H2O8mgDistilled
+    water1LSterilized by autoclaving.***Bicarbonate solution (1.0 M)NaHCO38.4gDistilled water100mlSaturated
+    with CO2gas. Tightly sealed in bottles filled with CO2gas and then sterilized by autoclaving.****Vitamine
+    solutionp-Aminobenzoic acid4mgBiotin1mgNicotinic acid10mgCa-pantothenate5mgPyridoxine-HCl15mgSodium
+    phosphate buffer (10 mM; pH7.1)100mlSterilized by filtration.*****Thiamine solutionThiamine-HCl10mgSodium
+    phosphate buffer (25 mM; pH 3.4)100mlSterilized by filtration.******Vitamin B12solutionCyanocobalamin5mgDistilled
+    water100mlSterilized by filtration.*******Sulfide solution (1.0 M)Na2S·9H2O24gDistilled water100mlSterilized
+    by filtration and stored under N2gas.
 - preferred_term: ''
   concentration:
     value: NaCl
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -155,11 +149,11 @@ ingredients:
 - preferred_term: ''
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

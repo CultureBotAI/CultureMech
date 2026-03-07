@@ -1,6 +1,6 @@
 name: PYROLOBUS MEDIUM
 original_name: PYROLOBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
@@ -214,12 +214,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components of solution A, adjust pH to 5.7, then boil for 1 min
-    and cool down to room temperature under a stream of H2-CO2 (4:1, v/v) gas mixture.
-    Dispense the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. Separately
-    autoclave Solutions B and C under a N2 atmosphere. Prior to inoculation, add Solutions
-    B and C (10.0 ml each per liter of Solution A) and readjust pH to 5.7, if necessary.
+  description: Mix components of solution A, adjust pH to 5.7, then boil for 1 min and cool down to room
+    temperature under a stream of H2-CO2 (4:1, v/v) gas mixture. Dispense the medium into culture vessels
+    (e.g., 20 ml in 120 ml serum bottles) under the same gas mixture, seal with butyl rubber stoppers
+    and autoclave. Separately autoclave Solutions B and C under a N2 atmosphere. Prior to inoculation,
+    add Solutions B and C (10.0 ml each per liter of Solution A) and readjust pH to 5.7, if necessary.
     Pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH

@@ -1,8 +1,8 @@
 name: TETRAMETHYL AMMONIUM MEDIUM
 original_name: TETRAMETHYL AMMONIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J149
   term:
@@ -120,8 +120,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: After nitrilotriacetic acid is dissolved in distilled water and neutralized
-    with ca. 7.3 g of KOH, add the remaining salts.
+  description: After nitrilotriacetic acid is dissolved in distilled water and neutralized with ca. 7.3
+    g of KOH, add the remaining salts.
 applications:
 - Microbial cultivation
 curation_history:

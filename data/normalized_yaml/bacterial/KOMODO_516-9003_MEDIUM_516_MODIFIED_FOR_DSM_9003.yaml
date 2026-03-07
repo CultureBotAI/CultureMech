@@ -1,6 +1,6 @@
 name: MEDIUM 516 MODIFIED FOR DSM 9003
 original_name: MEDIUM 516 MODIFIED FOR DSM 9003
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:516_9003
     label: MEDIUM 516 MODIFIED FOR DSM 9003
-notes: 'Source: KOMODO ModelSEED | ID: 516_9003 | DSMZ Medium: 516 (mediadive.medium:516)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 516_9003 | DSMZ Medium: 516 (mediadive.medium:516) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -219,5 +218,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.076013Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

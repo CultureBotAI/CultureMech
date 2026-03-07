@@ -1,6 +1,6 @@
 name: MEDIUM 282 MODIFIED FOR DSM 16983
 original_name: MEDIUM 282 MODIFIED FOR DSM 16983
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:282_16983
     label: MEDIUM 282 MODIFIED FOR DSM 16983
-notes: 'Source: KOMODO ModelSEED | ID: 282_16983 | DSMZ Medium: 282 (mediadive.medium:282)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 282_16983 | DSMZ Medium: 282 (mediadive.medium:282) | Aerobic:
+  No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -286,6 +286,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.445728Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.0

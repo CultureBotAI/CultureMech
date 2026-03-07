@@ -1,6 +1,6 @@
 name: HALANAEROBACTER JERIDENSE MEDIUM
 original_name: HALANAEROBACTER JERIDENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.3
@@ -196,14 +196,13 @@ preparation_steps:
   description: Final pH 8.3
 - step_number: 2
   action: POUR_PLATES
-  description: 'Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine and
-    substrates. Boil the medium and cool under a stream of nitrogen. Dispense the
-    medium into Hungate tubes or serum bottles under gassing with N2. Sterilize by
-    autoclaving. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the medium without the Na2S, Na2CO3, NaHCO3, L-cysteine and substrates. Boil the
+    medium and cool under a stream of nitrogen. Dispense the medium into Hungate tubes or serum bottles
+    under gassing with N2. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:

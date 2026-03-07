@@ -1,8 +1,8 @@
 name: EGGC MEDIUM
 original_name: EGGC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: JCM Medium J296
@@ -158,8 +158,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2-7.4. Autoclave at 115C for 20 min. Separately sterilize
-    Solution A by filtration, and add to the medium aseptically.
+  description: Adjust pH to 7.2-7.4. Autoclave at 115C for 20 min. Separately sterilize Solution A by
+    filtration, and add to the medium aseptically.
 - step_number: 2
   action: MIX
   description: Prepare just before use.

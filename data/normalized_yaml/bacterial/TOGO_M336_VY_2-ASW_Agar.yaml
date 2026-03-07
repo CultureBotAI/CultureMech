@@ -1,15 +1,14 @@
 name: VY/2-ASW Agar
 original_name: VY/2-ASW Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Vitamin B12
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:176843
     label: vitamin B12
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution,
-    Defined component'
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Solution, Defined component'
 - preferred_term: Yeast cell paste (see below)
   concentration:
     value: '5'

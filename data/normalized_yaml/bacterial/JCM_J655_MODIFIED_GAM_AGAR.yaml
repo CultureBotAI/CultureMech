@@ -1,8 +1,8 @@
 name: MODIFIED GAM AGAR
 original_name: MODIFIED GAM AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J655
   term:

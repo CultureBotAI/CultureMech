@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH PYRROLIC ACID
 original_name: MINERAL MEDIUM WITH PYRROLIC ACID
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:461b
     label: MINERAL MEDIUM WITH PYRROLIC ACID
-notes: 'Source: KOMODO ModelSEED | ID: 461b | DSMZ Medium: 461b (mediadive.medium:461b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 461b | DSMZ Medium: 461b (mediadive.medium:461b) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

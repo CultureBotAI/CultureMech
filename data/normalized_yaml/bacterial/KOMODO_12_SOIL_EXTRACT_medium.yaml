@@ -1,16 +1,15 @@
 name: SOIL EXTRACT medium
 original_name: SOIL EXTRACT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7.0
 media_term:
   preferred_term: KOMODO Medium 12
   term:
     id: komodo.medium:12
     label: SOIL EXTRACT medium
-notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 12 | DSMZ Medium: 12 (mediadive.medium:12) | Aerobic: No'
 ingredients:
 - preferred_term: air-dried garden soil
   concentration:

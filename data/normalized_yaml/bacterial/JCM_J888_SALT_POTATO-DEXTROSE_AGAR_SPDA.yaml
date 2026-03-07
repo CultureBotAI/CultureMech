@@ -1,8 +1,8 @@
 name: SALT POTATO-DEXTROSE AGAR (SPDA)
 original_name: SALT POTATO-DEXTROSE AGAR (SPDA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.5
 media_term:
   preferred_term: JCM Medium J888
@@ -40,13 +40,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Boil potatoes for 20 min. Strain through a fine sieve. Add glucose,
-    NaCl and agar, and boil until dissolved. Do not use new potatoes. Adjust pH to
-    5.4 - 5.6.
+  description: Boil potatoes for 20 min. Strain through a fine sieve. Add glucose, NaCl and agar, and
+    boil until dissolved. Do not use new potatoes. Adjust pH to 5.4 - 5.6.
 - step_number: 2
   action: MIX
-  description: 'Comment: Commercial potato dextrose agar (BD-Difco or Oxoid) supplemented
-    with NaCl can be used.'
+  description: 'Comment: Commercial potato dextrose agar (BD-Difco or Oxoid) supplemented with NaCl can
+    be used.'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: ACIDITHIOBACILLUS FERRIVORANS MEDIUM
 original_name: ACIDITHIOBACILLUS FERRIVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -181,15 +181,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except tetrathionate and ferrous sulfate), adjust
-    pH to 2.5 with H2SO4 and autoclave. After cooling, add tetrathionate from a 100
-    mM stock solution and FeSO4 from a 10 mM stock solution (prepared in water adjusted
-    to pH 2.0 with H2SO4). Both solutions should be freshly prepared and sterilized
-    by filtration.
+  description: Dissolve ingredients (except tetrathionate and ferrous sulfate), adjust pH to 2.5 with
+    H2SO4 and autoclave. After cooling, add tetrathionate from a 100 mM stock solution and FeSO4 from
+    a 10 mM stock solution (prepared in water adjusted to pH 2.0 with H2SO4). Both solutions should be
+    freshly prepared and sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

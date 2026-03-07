@@ -1,6 +1,6 @@
 name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
 original_name: ALKALINE TRYPTONE-YEAST EXTRACT MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -53,8 +53,8 @@ preparation_steps:
   description: Mix components, adjust pH to 9.0 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Mix components and filter-sterilize. Combine Solutions A and B aseptically
-    and readjust pH to 9.0, if necessary.
+  description: Mix components and filter-sterilize. Combine Solutions A and B aseptically and readjust
+    pH to 9.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: HEMIN medium FOR MYCOBACTERIUM
 original_name: HEMIN medium FOR MYCOBACTERIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 645a
   term:
     id: komodo.medium:645a
     label: HEMIN medium FOR MYCOBACTERIUM
-notes: 'Source: KOMODO ModelSEED | ID: 645a | DSMZ Medium: 645a (mediadive.medium:645a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 645a | DSMZ Medium: 645a (mediadive.medium:645a) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:

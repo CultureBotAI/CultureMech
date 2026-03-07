@@ -1,8 +1,8 @@
 name: BACILLUS LOCISALIS MEDIUM
 original_name: BACILLUS LOCISALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1309
   term:
@@ -63,8 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The NaCl and Na2CO3 were dissolved and autoclaved separately and added
-    to the organic components at 60°C before pouring the agar medium.
+  description: The NaCl and Na2CO3 were dissolved and autoclaved separately and added to the organic components
+    at 60°C before pouring the agar medium.
 applications:
 - Microbial cultivation
 curation_history:

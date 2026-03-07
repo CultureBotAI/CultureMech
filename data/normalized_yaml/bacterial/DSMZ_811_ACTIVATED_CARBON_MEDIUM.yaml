@@ -1,8 +1,8 @@
 name: ACTIVATED CARBON MEDIUM
 original_name: ACTIVATED CARBON MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 811
@@ -130,8 +130,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Befor autoclaving add trace element solution to the medium. Dissolve
-    first all ingredients then add activated carbon. Finally autoclave.
+  description: Befor autoclaving add trace element solution to the medium. Dissolve first all ingredients
+    then add activated carbon. Finally autoclave.
 - step_number: 2
   action: MIX
   description: pH 7.5

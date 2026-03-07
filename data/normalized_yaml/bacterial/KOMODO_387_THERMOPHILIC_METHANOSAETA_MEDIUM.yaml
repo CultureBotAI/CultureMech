@@ -1,6 +1,6 @@
 name: THERMOPHILIC METHANOSAETA MEDIUM
 original_name: THERMOPHILIC METHANOSAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:387
     label: THERMOPHILIC METHANOSAETA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 387 | DSMZ Medium: 387 (mediadive.medium:387)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 387 | DSMZ Medium: 387 (mediadive.medium:387) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

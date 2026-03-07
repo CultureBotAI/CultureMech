@@ -1,6 +1,6 @@
 name: G-S MEDIUM
 original_name: G-S MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -102,10 +102,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.4. Distribute the medium
-    into culture vessels under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber
-    stoppers and autoclave. After cooling, add per liter 1 ml following sterile solution
-    from anaerobic stock.
+  description: Mix components thoroughly and adjust pH to 7.4. Distribute the medium into culture vessels
+    under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add per liter 1 ml following sterile solution from anaerobic stock.
 - step_number: 2
   action: MIX
   description: '<I>Mineral solution</I>:'

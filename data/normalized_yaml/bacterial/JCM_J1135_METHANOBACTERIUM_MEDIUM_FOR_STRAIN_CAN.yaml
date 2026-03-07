@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM MEDIUM FOR STRAIN CAN
 original_name: METHANOBACTERIUM MEDIUM FOR STRAIN CAN
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -244,20 +244,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil for several seconds, and
-    cool down under a stream of N2-CO2 (80:20, v/v). Distribute the medium into culture
-    vessels (e.g., 5 ml in the Hungate tube) under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. Add per liter the following sterile solutions
-    from anaerobic stocks (autoclaved or filter-sterilized):'
+  description: 'Mix components thoroughly, bring to a boil for several seconds, and cool down under a
+    stream of N2-CO2 (80:20, v/v). Distribute the medium into culture vessels (e.g., 5 ml in the Hungate
+    tube) under the same gas mixture, seal with butyl rubber stoppers and autoclave. Add per liter the
+    following sterile solutions from anaerobic stocks (autoclaved or filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to inoculation, replace the gas phase with a gas mixture of
-    H2-CO2 (80:20, v/v), and add per liter the following solution (autoclaved and
-    stored under a N2 atmosphere):'
+  description: 'Prior to inoculation, replace the gas phase with a gas mixture of H2-CO2 (80:20, v/v),
+    and add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
-  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20,
-    v/v).
+  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20, v/v).
 applications:
 - Microbial cultivation
 curation_history:

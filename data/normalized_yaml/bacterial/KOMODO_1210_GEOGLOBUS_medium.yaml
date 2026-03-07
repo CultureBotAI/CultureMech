@@ -1,6 +1,6 @@
 name: GEOGLOBUS medium
 original_name: GEOGLOBUS medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1210
     label: GEOGLOBUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1210 | DSMZ Medium: 1210 (mediadive.medium:1210)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1210 | DSMZ Medium: 1210 (mediadive.medium:1210) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -251,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.527912Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

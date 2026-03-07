@@ -1,6 +1,6 @@
 name: ISS1 MEDIUM
 original_name: ISS1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -189,9 +189,9 @@ preparation_steps:
   description: Adjust pH to 7.0 using H2SO4.
 - step_number: 2
   action: HEAT
-  description: Prepare the medium under H2 gas and fill 20 ml medium into 100 ml serum
-    bottles and seal with a rubber stopper. Steam/heat the medium in an almost boiling
-    waterbath for 3 hours on each of 3 successive days to sterilize.
+  description: Prepare the medium under H2 gas and fill 20 ml medium into 100 ml serum bottles and seal
+    with a rubber stopper. Steam/heat the medium in an almost boiling waterbath for 3 hours on each of
+    3 successive days to sterilize.
 - step_number: 3
   action: AUTOCLAVE
   description: Add bicarbonate from a autoclaved and neutralized stock solution.
@@ -200,12 +200,11 @@ preparation_steps:
   description: Check pH and adjust accordingly.
 - step_number: 5
   action: MIX
-  description: Give an atmosphere of H2/CO2/O2 (78/20/2) with an overpressure of two
-    atmospheres.
+  description: Give an atmosphere of H2/CO2/O2 (78/20/2) with an overpressure of two atmospheres.
 - step_number: 6
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

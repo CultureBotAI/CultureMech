@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM ACIDIURICI medium
 original_name: CLOSTRIDIUM ACIDIURICI medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:76
     label: CLOSTRIDIUM ACIDIURICI medium
-notes: 'Source: KOMODO ModelSEED | ID: 76 | DSMZ Medium: 76 (mediadive.medium:76)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 76 | DSMZ Medium: 76 (mediadive.medium:76) | Aerobic: Yes'
 ingredients:
 - preferred_term: KOH
   term:

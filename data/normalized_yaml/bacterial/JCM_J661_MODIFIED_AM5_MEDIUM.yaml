@@ -1,6 +1,6 @@
 name: MODIFIED AM5 MEDIUM
 original_name: MODIFIED AM5 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -200,9 +200,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas mixture. After cooling, aseptically and anaerobically add the following solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,
+    aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

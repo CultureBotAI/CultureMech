@@ -1,6 +1,6 @@
 name: CLOSTRIDUM G4 MEDIUM
 original_name: CLOSTRIDUM G4 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -63,9 +63,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0 with KOH. Distribute
-    the medium into culture vessels (e.g., 5 ml of the medium in Hungate tubes) under
-    a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly and adjust pH to 7.0 with KOH. Distribute the medium into culture
+    vessels (e.g., 5 ml of the medium in Hungate tubes) under a N2 atmosphere, seal with butyl rubber
+    stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

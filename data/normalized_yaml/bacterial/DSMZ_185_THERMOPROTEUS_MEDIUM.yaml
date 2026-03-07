@@ -1,6 +1,6 @@
 name: THERMOPROTEUS MEDIUM
 original_name: THERMOPROTEUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -127,11 +127,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare medium (without starch, sodium sulfide, sulfur) anaerobically
-    under N2 gas atmosphere. Adjust pH to 5.5 with H2SO4 before sterilization. Distribute
-    the medium into tubes containing the appropriate amount of sulfur powder. Sterilize
-    medium by heating for 3 h at 90 - 100°C on three subsequent days. Before use,
-    add to the medium starch and sodium sulfide.
+  description: Prepare medium (without starch, sodium sulfide, sulfur) anaerobically under N2 gas atmosphere.
+    Adjust pH to 5.5 with H2SO4 before sterilization. Distribute the medium into tubes containing the
+    appropriate amount of sulfur powder. Sterilize medium by heating for 3 h at 90 - 100°C on three subsequent
+    days. Before use, add to the medium starch and sodium sulfide.
 - step_number: 2
   action: MIX
   description: Medium pH is 5.5.

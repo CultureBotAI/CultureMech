@@ -1,12 +1,11 @@
 name: '892'
 original_name: '892'
-category: imported
+category: bacterial
 description: 892. NBRC 891.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled water1LpH
-    7.1-7.5
+- preferred_term: Casein peptone15gSoybean peptone5gNaCl5gAgar15gDistilled water1LpH 7.1-7.5
 - preferred_term: ''
   concentration:
     value: Casein peptone

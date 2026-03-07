@@ -1,6 +1,6 @@
 name: PYRODICTIUM ABYSII MEDIUM
 original_name: PYRODICTIUM ABYSII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 203 with 0.5 g/L (final) yeast extract and 0.1 mg/L
-    Na2WO4 x 2H2O, and omit citric acid.
+  description: Use Medium No. 203 with 0.5 g/L (final) yeast extract and 0.1 mg/L Na2WO4 x 2H2O, and omit
+    citric acid.
 applications:
 - Microbial cultivation
 curation_history:

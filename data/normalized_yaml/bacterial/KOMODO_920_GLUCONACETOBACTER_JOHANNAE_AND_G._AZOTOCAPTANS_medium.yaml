@@ -1,16 +1,15 @@
 name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
 original_name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.7
 media_term:
   preferred_term: KOMODO Medium 920
   term:
     id: komodo.medium:920
     label: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 920 | DSMZ Medium: 920 (mediadive.medium:920)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 920 | DSMZ Medium: 920 (mediadive.medium:920) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

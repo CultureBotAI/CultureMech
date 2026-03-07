@@ -1,6 +1,6 @@
 name: STYGIOLOBUS MEDIUM
 original_name: STYGIOLOBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 175 with 0.5 g/L (final) yeast extract and 5.0 g/L (final)
-    sulfur, and cultivate under 200 kPa H2-CO2 (80:20).
+  description: Use Medium No. 175 with 0.5 g/L (final) yeast extract and 5.0 g/L (final) sulfur, and cultivate
+    under 200 kPa H2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:

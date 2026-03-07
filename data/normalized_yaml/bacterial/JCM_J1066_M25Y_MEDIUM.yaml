@@ -1,6 +1,6 @@
 name: M25Y MEDIUM
 original_name: M25Y MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -173,13 +173,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 5.5. Autoclave under a N2 atmosphere. After cooling,
-    aseptically and anaerobically add per liter the following solutions (autoclaved
-    or *filter sterilized):'
+  description: 'Adjust pH to 5.5. Autoclave under a N2 atmosphere. After cooling, aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the
-    minerals.
+  description: First dissolve EDTA x 2Na and adjust pH to 8.0 with KOH. Then add the minerals.
 applications:
 - Microbial cultivation
 curation_history:

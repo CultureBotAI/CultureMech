@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO ALCOHOLOVORANS medium
 original_name: DESULFOVIBRIO ALCOHOLOVORANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:488
     label: DESULFOVIBRIO ALCOHOLOVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 488 | DSMZ Medium: 488 (mediadive.medium:488)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 488 | DSMZ Medium: 488 (mediadive.medium:488) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

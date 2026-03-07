@@ -1,8 +1,8 @@
 name: CARBOXYMETHYL CELLULOSE MEDIUM
 original_name: CARBOXYMETHYL CELLULOSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1111
   term:
@@ -66,8 +66,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Carboxymethyl cellulose, sodium salt, high viscosity (Sigma No. C-5013),
-    works well.
+  description: Carboxymethyl cellulose, sodium salt, high viscosity (Sigma No. C-5013), works well.
 applications:
 - Microbial cultivation
 curation_history:

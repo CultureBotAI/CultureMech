@@ -1,6 +1,6 @@
 name: METHANOCELLA MEDIUM
 original_name: METHANOCELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,13 +18,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Solution A of Medium No. 284 supplemented with 0.1 g sodium acetate
-    and bring final volume to 1.0 L. Replace the gas phase with H2-CO2 (80:20, v/v)
-    and pressurize an inoculated bottle to 150 kPa with the same gas mixture.
+  description: Use Solution A of Medium No. 284 supplemented with 0.1 g sodium acetate and bring final
+    volume to 1.0 L. Replace the gas phase with H2-CO2 (80:20, v/v) and pressurize an inoculated bottle
+    to 150 kPa with the same gas mixture.
 - step_number: 2
   action: MIX
-  description: 'Comment: For cultivation of strain JCM 13418, incubate with a 10%
-    inoculum.'
+  description: 'Comment: For cultivation of strain JCM 13418, incubate with a 10% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:

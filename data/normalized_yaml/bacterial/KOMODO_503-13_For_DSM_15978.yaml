@@ -1,6 +1,6 @@
 name: For DSM 15978
 original_name: For DSM 15978
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:503.13
     label: For DSM 15978
-notes: 'Source: KOMODO ModelSEED | ID: 503.13 | DSMZ Medium: 503 (mediadive.medium:503)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503.13 | DSMZ Medium: 503 (mediadive.medium:503) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

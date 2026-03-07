@@ -1,6 +1,6 @@
 name: ENDOMICROBIUM PROAVITUM RSA MEDIUM
 original_name: ENDOMICROBIUM PROAVITUM RSA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -253,14 +253,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. Cool medium under a N2-CO2
-    (4:1, v/v) gas stream, and add the following solutions (autoclaved or *filter-sterilized)
-    anaerobically and aseptically:'
+  description: 'Mix components thoroughly and autoclave. Cool medium under a N2-CO2 (4:1, v/v) gas stream,
+    and add the following solutions (autoclaved or *filter-sterilized) anaerobically and aseptically:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Adjust pH to 7.1 - 7.2. Distribute the medium into culture vessels
-    under the same gas mixture and seal with butyl rubber stoppers. Finally, add per
-    liter the following solution (filter-sterilized):'
+  description: 'Adjust pH to 7.1 - 7.2. Distribute the medium into culture vessels under the same gas
+    mixture and seal with butyl rubber stoppers. Finally, add per liter the following solution (filter-sterilized):'
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.

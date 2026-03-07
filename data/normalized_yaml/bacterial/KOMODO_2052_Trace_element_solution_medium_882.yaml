@@ -1,11 +1,11 @@
 name: Trace element solution (medium 882)
 original_name: Trace element solution (medium 882)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.8
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2052 | DSMZ Medium: 2052
-  (mediadive.medium:2052) | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 2052 | DSMZ Medium: 2052 (mediadive.medium:2052)
+  | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2052
   term:

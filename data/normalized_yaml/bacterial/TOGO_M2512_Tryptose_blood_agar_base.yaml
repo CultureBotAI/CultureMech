@@ -1,8 +1,8 @@
 name: Tryptose blood agar base
 original_name: Tryptose blood agar base
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tryptose blood agar base (Difco Laboratories, Detroit, MI)
   concentration:
@@ -24,5 +24,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.033591'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Tryptose blood agar base (Difco
-    Laboratories, Detroit, MI)'
+  notes: 'Added default concentration for ingredient: Tryptose blood agar base (Difco Laboratories, Detroit,
+    MI)'

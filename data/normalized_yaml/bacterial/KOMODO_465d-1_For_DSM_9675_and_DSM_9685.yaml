@@ -1,15 +1,14 @@
 name: For DSM 9675 and DSM 9685
 original_name: For DSM 9675 and DSM 9685
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465d.1
   term:
     id: komodo.medium:465d.1
     label: For DSM 9675 and DSM 9685
-notes: 'Source: KOMODO ModelSEED | ID: 465d.1 | DSMZ Medium: 465d (mediadive.medium:465d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465d.1 | DSMZ Medium: 465d (mediadive.medium:465d) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

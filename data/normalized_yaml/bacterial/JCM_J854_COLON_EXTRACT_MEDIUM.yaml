@@ -1,6 +1,6 @@
 name: COLON EXTRACT MEDIUM
 original_name: COLON EXTRACT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -141,15 +141,13 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Dilute (1:1, w/v) the content of terminal pig colon with the following
-    buffer: 167 ml Solution A (see above) and 167 ml Solution B (see above). Make
-    up to 1.0 L with distilled water. Stomach the suspension and filter through a
-    cheese cloth. Incubate at 37C for 48 h and adjust pH to 7.0. Centrifuge at 20,000
-    x g for 20 min. Retrieve the supernatant and store at -20C until use.'
+  description: 'Dilute (1:1, w/v) the content of terminal pig colon with the following buffer: 167 ml
+    Solution A (see above) and 167 ml Solution B (see above). Make up to 1.0 L with distilled water. Stomach
+    the suspension and filter through a cheese cloth. Incubate at 37C for 48 h and adjust pH to 7.0. Centrifuge
+    at 20,000 x g for 20 min. Retrieve the supernatant and store at -20C until use.'
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 1143 MODIFIED FOR DSM 23293
 original_name: MEDIUM 1143 MODIFIED FOR DSM 23293
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1143_23293
     label: MEDIUM 1143 MODIFIED FOR DSM 23293
-notes: 'Source: KOMODO ModelSEED | ID: 1143_23293 | DSMZ Medium: 1143 (mediadive.medium:1143)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1143_23293 | DSMZ Medium: 1143 (mediadive.medium:1143) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

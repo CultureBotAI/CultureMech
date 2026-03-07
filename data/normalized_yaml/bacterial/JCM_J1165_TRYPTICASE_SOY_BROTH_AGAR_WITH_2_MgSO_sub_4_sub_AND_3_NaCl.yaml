@@ -1,8 +1,8 @@
 name: TRYPTICASE SOY BROTH AGAR WITH 2% MgSO<sub>4</sub> AND 3% NaCl
 original_name: TRYPTICASE SOY BROTH AGAR WITH 2% MgSO<sub>4</sub> AND 3% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J1165

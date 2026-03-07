@@ -1,6 +1,6 @@
 name: METHERMICOCCUS (METHANOGEN) MEDIUM
 original_name: METHERMICOCCUS (METHANOGEN) MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6-6.5
@@ -100,21 +100,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, sludge fluid, methanol, coenzyme
-    M, cysteine and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Add sludge fluid, methanol
-    (50% v/v solution), coenzyme M (sterilized by filtration), cysteine and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Adjust pH of complete medium to 6.0 - 6.5, if necessary.
+  description: Dissolve ingredients (except carbonate, sludge fluid, methanol, coenzyme M, cysteine and
+    sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add sludge fluid, methanol (50% v/v solution), coenzyme M (sterilized by filtration), cysteine and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium
+    to 6.0 - 6.5, if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
-    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
-    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
-    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
-    8-12°C in the dark.
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after gassing with nitrogen
+    gas for a few minutes incubate it at 37°C for 24 hours. Then centrifuge the sludge at 13000 g and
+    autoclave the resulting, clear supernatant in screw-capped vessels under nitrogen gas. The sludge
+    fluid can be stored at 8-12°C in the dark.
 applications:
 - Microbial cultivation
 curation_history:

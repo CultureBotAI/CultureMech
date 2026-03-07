@@ -1,6 +1,6 @@
 name: SPOROLITUUS THERMOPHILUS MEDIUM
 original_name: SPOROLITUUS THERMOPHILUS MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -231,14 +231,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly. Bring to a boil, cool down and distribute
-    into culture vessels under a N2 gas stream. Seal with butyl rubber stoppers and
-    autoclave. Prior to inoculation, add the following solution (autoclaved under
-    a N2 atmosphere) into the medium (per liter):'
+  description: 'Mix components thoroughly. Bring to a boil, cool down and distribute into culture vessels
+    under a N2 gas stream. Seal with butyl rubber stoppers and autoclave. Prior to inoculation, add the
+    following solution (autoclaved under a N2 atmosphere) into the medium (per liter):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH.
-    Then proceed to add the minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH. Then proceed to
+    add the minerals.
 applications:
 - Microbial cultivation
 curation_history:

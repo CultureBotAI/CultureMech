@@ -1,6 +1,6 @@
 name: Trace element solution (medium 84)
 original_name: Trace element solution (medium 84)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2119
     label: Trace element solution (medium 84)
-notes: 'Source: KOMODO ModelSEED | ID: 2119 | DSMZ Medium: 2119 (mediadive.medium:2119)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2119 | DSMZ Medium: 2119 (mediadive.medium:2119) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

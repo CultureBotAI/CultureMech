@@ -1,15 +1,15 @@
 name: MEDIUM 621a MODIFIED FOR DSM 11440
 original_name: MEDIUM 621a MODIFIED FOR DSM 11440
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 621a_11440
   term:
     id: komodo.medium:621a_11440
     label: MEDIUM 621a MODIFIED FOR DSM 11440
-notes: 'Source: KOMODO ModelSEED | ID: 621a_11440 | DSMZ Medium: 621a (mediadive.medium:621a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 621a_11440 | DSMZ Medium: 621a (mediadive.medium:621a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Peptone
   concentration:

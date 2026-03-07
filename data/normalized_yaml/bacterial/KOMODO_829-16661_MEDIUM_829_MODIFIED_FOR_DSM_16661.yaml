@@ -1,6 +1,6 @@
 name: MEDIUM 829 MODIFIED FOR DSM 16661
 original_name: MEDIUM 829 MODIFIED FOR DSM 16661
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:829_16661
     label: MEDIUM 829 MODIFIED FOR DSM 16661
-notes: 'Source: KOMODO ModelSEED | ID: 829_16661 | DSMZ Medium: 829 (mediadive.medium:829)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 829_16661 | DSMZ Medium: 829 (mediadive.medium:829) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

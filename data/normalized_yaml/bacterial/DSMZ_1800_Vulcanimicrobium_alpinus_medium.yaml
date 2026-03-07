@@ -1,6 +1,6 @@
 name: Vulcanimicrobium alpinus medium
 original_name: Vulcanimicrobium alpinus medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -241,15 +241,15 @@ preparation_steps:
   description: Dissolve the vitamins in 10mM phosphate buffer, pH7.2.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Titrate with NaOH until vitamins are dissolved, filter sterilize afterwards,
-    and freeze in appropriate aliquots until usage.
+  description: Titrate with NaOH until vitamins are dissolved, filter sterilize afterwards, and freeze
+    in appropriate aliquots until usage.
 - step_number: 8
   action: DISSOLVE
   description: Dissolve the vitamin B12 in water.
 - step_number: 9
   action: FILTER_STERILIZE
-  description: Titrate with HCl until vitamin B12 is dissolved, filter sterilize afterwards,
-    and freeze in appropriate aliquots until usage.
+  description: Titrate with HCl until vitamin B12 is dissolved, filter sterilize afterwards, and freeze
+    in appropriate aliquots until usage.
 - step_number: 10
   action: MIX
   description: pH 6.8

@@ -1,6 +1,6 @@
 name: BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
 original_name: BACILLUS ALKALIDIAZOTROPHICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -225,18 +225,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except ammonium chloride, magnesium chloride,
-    yeast extract, trace elements, vitamins, boil medium for 1 min, then cool to room
-    temperature under N2 gas atmosphere. Dispense under same gas atmosphere in culture
-    vessels and autoclave. After sterilization add ammonium chloride, magnesium chloride,
-    yeast extract, trace elements, vitamins, from sterile, anoxic stock solution prepared
-    under N2. The vitamin solution should be sterilized by filtration. Adjust pH of
+  description: Dissolve ingredients except ammonium chloride, magnesium chloride, yeast extract, trace
+    elements, vitamins, boil medium for 1 min, then cool to room temperature under N2 gas atmosphere.
+    Dispense under same gas atmosphere in culture vessels and autoclave. After sterilization add ammonium
+    chloride, magnesium chloride, yeast extract, trace elements, vitamins, from sterile, anoxic stock
+    solution prepared under N2. The vitamin solution should be sterilized by filtration. Adjust pH of
     final medium to 10.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -247,5 +246,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.120145Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

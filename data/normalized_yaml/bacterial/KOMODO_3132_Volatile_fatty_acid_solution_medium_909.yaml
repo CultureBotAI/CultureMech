@@ -1,6 +1,6 @@
 name: Volatile fatty acid solution (medium 909)
 original_name: Volatile fatty acid solution (medium 909)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3132
     label: Volatile fatty acid solution (medium 909)
-notes: 'Source: KOMODO ModelSEED | ID: 3132 | DSMZ Medium: 3132 (mediadive.medium:3132)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3132 | DSMZ Medium: 3132 (mediadive.medium:3132) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

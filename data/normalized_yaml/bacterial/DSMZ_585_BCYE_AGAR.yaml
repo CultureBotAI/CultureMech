@@ -1,8 +1,8 @@
 name: BCYE AGAR
 original_name: BCYE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 585
   term:
@@ -59,23 +59,21 @@ preparation_steps:
   description: We use OXOID Legionella CYE-Agar base with Legionella BCYE supplement.
 - step_number: 3
   action: MIX
-  description: For solubilization of the lyophilized pellet use standard liquid media.
-    Although Legionellae do not grow in those media they are suitable for resuspension
-    and transfer onto agar plates.
+  description: For solubilization of the lyophilized pellet use standard liquid media. Although Legionellae
+    do not grow in those media they are suitable for resuspension and transfer onto agar plates.
 - step_number: 4
   action: MIX
   description: 'Note: Alternatively use CYE-ACES AGAR'
 - step_number: 5
   action: POUR_PLATES
-  description: Add Cysteine-HCl, then ferric pyrophosphate solution to solution A.
-    Adjust the complete medium to pH 6.9 ± 0.5 at 50°C with sterile 1.0 N KOH or HCl.
-    The pH of the medium is critical. Finally, add solution B. Swirl medium in flask
-    during dispensing to petri dishes or tubes in order to keep charcoal suspended.
+  description: Add Cysteine-HCl, then ferric pyrophosphate solution to solution A. Adjust the complete
+    medium to pH 6.9 ± 0.5 at 50°C with sterile 1.0 N KOH or HCl. The pH of the medium is critical. Finally,
+    add solution B. Swirl medium in flask during dispensing to petri dishes or tubes in order to keep
+    charcoal suspended.
 - step_number: 6
   action: AUTOCLAVE
-  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the
-    other components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool
-    to 50 - 55°C.
+  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the other components and
+    dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool to 50 - 55°C.
 - step_number: 7
   action: AUTOCLAVE
   description: Autoclave at 121°C and cool to 50 - 55°C.
@@ -84,13 +82,12 @@ preparation_steps:
   description: Prepare a fresh solution and filter-sterilize it.
 - step_number: 9
   action: FILTER_STERILIZE
-  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize
-    solution separately.
+  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize solution
+    separately.
 - step_number: 10
   action: MIX
-  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in
-    the dark. Do not use if chemical looses its green colour and becomes brown or
-    yellow.'
+  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in the dark. Do not use
+    if chemical looses its green colour and becomes brown or yellow.'
 applications:
 - Microbial cultivation
 curation_history:

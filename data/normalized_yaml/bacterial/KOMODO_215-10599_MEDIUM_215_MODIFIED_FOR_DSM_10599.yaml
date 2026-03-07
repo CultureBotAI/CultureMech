@@ -1,6 +1,6 @@
 name: MEDIUM 215 MODIFIED FOR DSM 10599
 original_name: MEDIUM 215 MODIFIED FOR DSM 10599
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:215_10599
     label: MEDIUM 215 MODIFIED FOR DSM 10599
-notes: 'Source: KOMODO ModelSEED | ID: 215_10599 | DSMZ Medium: 215 (mediadive.medium:215)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 215_10599 | DSMZ Medium: 215 (mediadive.medium:215) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

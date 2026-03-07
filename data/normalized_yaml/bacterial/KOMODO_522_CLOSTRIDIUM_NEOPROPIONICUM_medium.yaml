@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM NEOPROPIONICUM medium
 original_name: CLOSTRIDIUM NEOPROPIONICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:522
     label: CLOSTRIDIUM NEOPROPIONICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 522 | DSMZ Medium: 522 (mediadive.medium:522)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 522 | DSMZ Medium: 522 (mediadive.medium:522) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

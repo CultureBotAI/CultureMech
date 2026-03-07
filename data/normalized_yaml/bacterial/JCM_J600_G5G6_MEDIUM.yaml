@@ -1,6 +1,6 @@
 name: G5G6 MEDIUM
 original_name: G5G6 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -231,23 +231,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling,
-    combine the solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture.
-    Then, add the following autoclaved or *filter-sterilized solutions to the medium:'
+  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling, combine the
+    solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Then, add the following
+    autoclaved or *filter-sterilized solutions to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Check the final pH to be around 7.3.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Distribute appropriate amount of the medium into culture vessels under
-    the same gas mixture (e.g., 40.0 ml in 120 ml serum bottle) and seal with Viton
-    rubber stoppers. Finally add per liter the following solution from an anaerobic
-    stock (autoclaved):'
+  description: 'Distribute appropriate amount of the medium into culture vessels under the same gas mixture
+    (e.g., 40.0 ml in 120 ml serum bottle) and seal with Viton rubber stoppers. Finally add per liter
+    the following solution from an anaerobic stock (autoclaved):'
 - step_number: 4
   action: MIX
-  description: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum. When
-    toluene is depleted, re-add the toluene solution (normally every 3 to 4 days,
-    until enough cell growth is seen).'
+  description: 'Comment: For strain JCM 14632, incubate with a 5-10% inoculum. When toluene is depleted,
+    re-add the toluene solution (normally every 3 to 4 days, until enough cell growth is seen).'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THIOBACTER MJ MEDIUM
 original_name: THIOBACTER MJ MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.7
@@ -256,22 +256,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, thiosulfate and vitamins),
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials up to a volume of 20% and autoclave. Add bicarbonate, thiosulfate
-    and vitamins to the autoclaved medium from sterile anoxic stock solutions. Solutions
-    of vitamins and thiosulfate are sterilized by filtration and stored under 100%
-    N2 gas, whereas the solution of bicarbonate is prepared under 80% N2 and 20% CO2
-    gas mixture and autoclaved. Adjust pH of the complete medium to 6.7.
+  description: Dissolve ingredients (except bicarbonate, thiosulfate and vitamins), then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials up to a volume of 20% and autoclave.
+    Add bicarbonate, thiosulfate and vitamins to the autoclaved medium from sterile anoxic stock solutions.
+    Solutions of vitamins and thiosulfate are sterilized by filtration and stored under 100% N2 gas, whereas
+    the solution of bicarbonate is prepared under 80% N2 and 20% CO2 gas mixture and autoclaved. Adjust
+    pH of the complete medium to 6.7.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile air in an amount that is equivalent to
-    a volume of 50% of the headspace.
+  description: After inoculation add sterile air in an amount that is equivalent to a volume of 50% of
+    the headspace.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -286,5 +285,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.992845Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

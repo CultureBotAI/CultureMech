@@ -1,6 +1,6 @@
 name: MICROAEROPHILIC THERMUS MEDIUM
 original_name: MICROAEROPHILIC THERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2 (99:1,
-    v/v) gas atmosphere.
+  description: Use Medium No. 276 and adjust pH to 8.0. Cultivate under a N2-O2 (99:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

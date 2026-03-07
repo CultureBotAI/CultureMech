@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM OLEOVORANS MEDIUM
 original_name: DESULFOBACTERIUM OLEOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:517
     label: DESULFOBACTERIUM OLEOVORANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 517 | DSMZ Medium: 517 (mediadive.medium:517)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 517 | DSMZ Medium: 517 (mediadive.medium:517) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -258,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.351510Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

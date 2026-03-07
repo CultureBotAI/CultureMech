@@ -1,6 +1,6 @@
 name: THERMOVIBRIO MEDIUM
 original_name: THERMOVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -113,19 +113,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve resazurin in seawater, then sparge medium with 80% H2 and
-    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
-    gas atmosphere into serum vials (e.g., 20 ml medium per 100 ml bottle) and autoclave.
-    Add nitrate, yeast extract and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.
+  description: Dissolve resazurin in seawater, then sparge medium with 80% H2 and 20% CO2 gas mixture
+    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into serum vials (e.g.,
+    20 ml medium per 100 ml bottle) and autoclave. Add nitrate, yeast extract and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize bottles to 2 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize bottles to 2 bar overpressure with sterile 80% H2 and 20%
+    CO2 gas mixture.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Note: Alternatively, aged filtered seawater can be used instead of
-    synthetic seawater.'
+  description: 'Note: Alternatively, aged filtered seawater can be used instead of synthetic seawater.'
 applications:
 - Microbial cultivation
 curation_history:

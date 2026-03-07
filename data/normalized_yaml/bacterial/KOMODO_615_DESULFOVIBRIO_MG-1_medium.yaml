@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO MG-1 medium
 original_name: DESULFOVIBRIO MG-1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:615
     label: DESULFOVIBRIO MG-1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 615 | DSMZ Medium: 615 (mediadive.medium:615)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 615 | DSMZ Medium: 615 (mediadive.medium:615) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

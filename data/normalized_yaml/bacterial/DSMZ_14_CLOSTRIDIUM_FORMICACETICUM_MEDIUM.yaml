@@ -1,8 +1,8 @@
 name: CLOSTRIDIUM FORMICACETICUM MEDIUM
 original_name: CLOSTRIDIUM FORMICACETICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: DSMZ Medium 14
@@ -128,16 +128,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate and fructose) and sparge medium
-    with 100% N2 gas for at least 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add fructose from a sterile anoxic stock solution prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas atmosphere. Adjust pH of complete medium to 8.0.
+  description: Dissolve ingredients (except carbonate and fructose) and sparge medium with 100% N2 gas
+    for at least 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add fructose from a sterile anoxic stock solution
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas atmosphere. Adjust pH of complete medium to 8.0.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

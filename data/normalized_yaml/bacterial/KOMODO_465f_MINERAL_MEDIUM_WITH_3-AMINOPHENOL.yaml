@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH 3-AMINOPHENOL
 original_name: MINERAL MEDIUM WITH 3-AMINOPHENOL
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465f
   term:
     id: komodo.medium:465f
     label: MINERAL MEDIUM WITH 3-AMINOPHENOL
-notes: 'Source: KOMODO ModelSEED | ID: 465f | DSMZ Medium: 465f (mediadive.medium:465f)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465f | DSMZ Medium: 465f (mediadive.medium:465f) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

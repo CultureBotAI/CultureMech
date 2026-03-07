@@ -1,6 +1,6 @@
 name: LEBETIMONAS MEDIUM
 original_name: LEBETIMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -318,25 +318,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, vitamins, sulfur, and sulfide),
-    then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic and adjust pH to 5.5 with H2SO4. Dispense under the same gas atmosphere
-    in suitable culture vessels (e.g. 20 ml of the medium in 100 ml serum bottles)
-    and autoclave. Steam sulfur for 3 hours on each of 3 successive days (see medium
-    35). Aseptically mix the sterilized sulfur with the sterile medium while retaining
-    anoxic conditions. Add vitamins from an anoxic stock solution prepared under 100%
-    N2 gas atmosphere and sterilized by filtration and bicarbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to
-    inoculation add sulfide from a sterile anoxic stock solution prepared under 100%
-    N2 gas atmosphere. Check pH and adjust to 5.5, if necessary.
+  description: Dissolve ingredients (except bicarbonate, vitamins, sulfur, and sulfide), then sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic and adjust pH to 5.5 with H2SO4.
+    Dispense under the same gas atmosphere in suitable culture vessels (e.g. 20 ml of the medium in 100
+    ml serum bottles) and autoclave. Steam sulfur for 3 hours on each of 3 successive days (see medium
+    35). Aseptically mix the sterilized sulfur with the sterile medium while retaining anoxic conditions.
+    Add vitamins from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by
+    filtration and bicarbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
+    gas mixture. Prior to inoculation add sulfide from a sterile anoxic stock solution prepared under
+    100% N2 gas atmosphere. Check pH and adjust to 5.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 1 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vials to 1 bar overpressure with sterile 80% H2 and 20% CO2
+    gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -347,5 +345,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.019677Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

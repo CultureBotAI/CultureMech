@@ -1,6 +1,6 @@
 name: YCFA MEDIUM
 original_name: YCFA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -214,8 +214,7 @@ preparation_steps:
   description: Adjust pH to 7.45.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized 1.0 ml Vitamin solution II
-    (see below).
+  description: After autoclaving, add filter-sterilized 1.0 ml Vitamin solution II (see below).
 - step_number: 3
   action: MIX
   description: Adjust volume to 100 ml with distilled water.

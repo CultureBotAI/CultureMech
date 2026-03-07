@@ -1,6 +1,6 @@
 name: MEDIUM 453 MODIFIED FOR DSM 6455
 original_name: MEDIUM 453 MODIFIED FOR DSM 6455
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:453_6455
     label: MEDIUM 453 MODIFIED FOR DSM 6455
-notes: 'Source: KOMODO ModelSEED | ID: 453_6455 | DSMZ Medium: 453 (mediadive.medium:453)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 453_6455 | DSMZ Medium: 453 (mediadive.medium:453) | Aerobic: No'
 ingredients:
 - preferred_term: Meat peptone
   concentration:

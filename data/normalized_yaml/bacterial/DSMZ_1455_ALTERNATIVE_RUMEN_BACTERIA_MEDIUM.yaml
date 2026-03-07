@@ -1,6 +1,6 @@
 name: ALTERNATIVE RUMEN BACTERIA MEDIUM
 original_name: ALTERNATIVE RUMEN BACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.6-6.8
@@ -226,18 +226,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine
-    and sulfide, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
-    Add the bicarbonate and equilibrate the medium with the CO2 gas to reach a pH
-    between 6.5 and 7.0. Dispense medium under 100% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The
-    vitamin solution should be sterilized by filtration. Prior to use adjust pH of
-    complete medium to 6.6 - 6.8, if necessary.
+  description: Dissolve ingredients except bicarbonate, succinate, vitamins, cysteine and sulfide, then
+    sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the bicarbonate and equilibrate
+    the medium with the CO2 gas to reach a pH between 6.5 and 7.0. Dispense medium under 100% CO2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add succinate, vitamins, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The vitamin solution should
+    be sterilized by filtration. Prior to use adjust pH of complete medium to 6.6 - 6.8, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 applications:
 - Microbial cultivation
 curation_history:
@@ -248,5 +246,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.755230Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

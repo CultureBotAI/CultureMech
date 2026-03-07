@@ -1,8 +1,8 @@
 name: MBBM
 original_name: MBBM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C48
   term:
@@ -127,12 +127,12 @@ preparation_steps:
   description: Add to 1000 ml of 3N­BBM+V 1g of Bacto peptone and 5g of sucrose.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water.  For agar add 15 g per litre\
-    \ Bacterial Agar.\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water.  For agar add 15 g per litre Bacterial Agar.\r\
+    \nAutoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
-  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
-    \ in exactly the \r\nfollowing sequence:"
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \r\n\
+    following sequence:"
 - step_number: 4
   action: FILTER_STERILIZE
   description: Filter sterile

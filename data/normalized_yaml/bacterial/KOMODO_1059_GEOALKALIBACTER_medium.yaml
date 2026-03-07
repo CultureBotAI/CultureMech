@@ -1,6 +1,6 @@
 name: GEOALKALIBACTER medium
 original_name: GEOALKALIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.0-9.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1059
     label: GEOALKALIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1059 | DSMZ Medium: 1059 (mediadive.medium:1059)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1059 | DSMZ Medium: 1059 (mediadive.medium:1059) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

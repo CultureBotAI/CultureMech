@@ -1,6 +1,6 @@
 name: THERMOPROTEUS NEUTROPHILUS MEDIUM
 original_name: THERMOPROTEUS NEUTROPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -127,15 +127,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, sodium dithionite and sulfur,
-    and adjust pH to 6.5. Autoclave, then cool under H2-CO2 (80:20) gas mixture. Separately
-    autoclave yeast extract as a 10% solution under a N2 atmosphere. Filter-sterilize
-    NaHCO3 as an 8% solution while gassing with N2. Steam sulfur for 3 hr on each
-    of 3 successive days. Aseptically and anaerobically add the yeast extract and
-    NaHCO3 solutions, and sulfur to the medium under a H2-CO2 (80:20) atmosphere.
-    Readjust pH to 6.5 by further gassing with H2-CO2 (80:20) gas mixture, if necessary.
-    Prior to inoculation, add filter-sterilized 2.5% sodium dithionite solution. Pressurize
-    inoculated bottles to 100 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except yeast extract, sodium dithionite and sulfur, and adjust pH to 6.5.
+    Autoclave, then cool under H2-CO2 (80:20) gas mixture. Separately autoclave yeast extract as a 10%
+    solution under a N2 atmosphere. Filter-sterilize NaHCO3 as an 8% solution while gassing with N2. Steam
+    sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically add the yeast extract
+    and NaHCO3 solutions, and sulfur to the medium under a H2-CO2 (80:20) atmosphere. Readjust pH to 6.5
+    by further gassing with H2-CO2 (80:20) gas mixture, if necessary. Prior to inoculation, add filter-sterilized
+    2.5% sodium dithionite solution. Pressurize inoculated bottles to 100 kPa H2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:

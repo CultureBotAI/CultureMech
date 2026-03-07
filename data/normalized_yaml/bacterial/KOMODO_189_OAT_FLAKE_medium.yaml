@@ -1,15 +1,14 @@
 name: OAT FLAKE medium
 original_name: OAT FLAKE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 189
   term:
     id: komodo.medium:189
     label: OAT FLAKE medium
-notes: 'Source: KOMODO ModelSEED | ID: 189 | DSMZ Medium: 189 (mediadive.medium:189)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 189 | DSMZ Medium: 189 (mediadive.medium:189) | Aerobic: No'
 ingredients:
 - preferred_term: Oat flakes
   concentration:

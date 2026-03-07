@@ -1,6 +1,6 @@
 name: FERMENTATIVE CELLULOLYTIC ANAEROBES MEDIUM
 original_name: FERMENTATIVE CELLULOLYTIC ANAEROBES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -179,19 +179,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and bring to a boil for 5-10 sec, then, cool down under
-    a N2-CO2 (80:20, v/v) gas stream. Dispense the medium into culture vessels under
-    the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
-    add per liter the following solutions from sterile anaerobic stocks (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components and bring to a boil for 5-10 sec, then, cool down under a N2-CO2 (80:20,
+    v/v) gas stream. Dispense the medium into culture vessels under the same gas mixture, seal with butyl
+    rubber stoppers and autoclave. After cooling, add per liter the following solutions from sterile anaerobic
+    stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml
-    of 1 M phosphate buffer.
+  description: Mix 28 ml of 1 M KH2PO4 and 78 ml of 1 M Na2HPO4 to prepare 100 ml of 1 M phosphate buffer.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

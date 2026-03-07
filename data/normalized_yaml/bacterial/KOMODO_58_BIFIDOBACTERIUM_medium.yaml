@@ -1,11 +1,11 @@
 name: BIFIDOBACTERIUM medium
 original_name: BIFIDOBACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 58 | DSMZ Medium: 58 (mediadive.medium:58)
-  | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 58 | DSMZ Medium: 58 (mediadive.medium:58) |
+  Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 58
   term:

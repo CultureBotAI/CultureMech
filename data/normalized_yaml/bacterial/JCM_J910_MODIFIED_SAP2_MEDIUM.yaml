@@ -1,6 +1,6 @@
 name: MODIFIED SAP2 MEDIUM
 original_name: MODIFIED SAP2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 651 with 1.0 x artificial seawater (instead of the 0.5
-    x artificial seawater). For preparation of liquid medium, omit agar.
+  description: Use Medium No. 651 with 1.0 x artificial seawater (instead of the 0.5 x artificial seawater).
+    For preparation of liquid medium, omit agar.
 applications:
 - Microbial cultivation
 curation_history:

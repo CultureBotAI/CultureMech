@@ -1,15 +1,14 @@
 name: STARCH NITRATE medium
 original_name: STARCH NITRATE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 856
   term:
     id: komodo.medium:856
     label: STARCH NITRATE medium
-notes: 'Source: KOMODO ModelSEED | ID: 856 | DSMZ Medium: 856 (mediadive.medium:856)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 856 | DSMZ Medium: 856 (mediadive.medium:856) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

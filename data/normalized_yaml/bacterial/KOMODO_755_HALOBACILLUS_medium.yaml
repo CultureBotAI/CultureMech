@@ -1,6 +1,6 @@
 name: HALOBACILLUS medium
 original_name: HALOBACILLUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:755
     label: HALOBACILLUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 755 | DSMZ Medium: 755 (mediadive.medium:755)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 755 | DSMZ Medium: 755 (mediadive.medium:755) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

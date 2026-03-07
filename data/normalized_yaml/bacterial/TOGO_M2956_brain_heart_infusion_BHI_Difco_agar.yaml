@@ -1,8 +1,8 @@
 name: brain heart infusion (BHI; Difco) agar
 original_name: brain heart infusion (BHI; Difco) agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: brain heart infusion (BHI; Difco) agar
   concentration:

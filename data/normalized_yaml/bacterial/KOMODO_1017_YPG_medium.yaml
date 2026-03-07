@@ -1,8 +1,8 @@
 name: YPG medium
 original_name: YPG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 1017 | DSMZ Medium: 1017 (mediadive.medium:1017)
   | Aerobic: No'

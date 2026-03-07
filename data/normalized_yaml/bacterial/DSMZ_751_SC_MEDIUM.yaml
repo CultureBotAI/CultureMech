@@ -1,8 +1,8 @@
 name: SC MEDIUM
 original_name: SC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.6
 media_term:
   preferred_term: DSMZ Medium 751
@@ -72,12 +72,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized
-    components:'
+  description: 'Adjust pH to 6.6. Autoclave, cool to 50°C and add the following filter-sterilized components:'
 - step_number: 2
   action: MIX
-  description: For liquid medium, omit corn meal agar and change the phosphate concentration
-    to KH2PO4, 1.5 g and K2HPO4, 0.5 g.
+  description: For liquid medium, omit corn meal agar and change the phosphate concentration to KH2PO4,
+    1.5 g and K2HPO4, 0.5 g.
 applications:
 - Microbial cultivation
 curation_history:

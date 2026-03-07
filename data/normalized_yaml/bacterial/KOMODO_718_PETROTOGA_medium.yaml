@@ -1,6 +1,6 @@
 name: PETROTOGA medium
 original_name: PETROTOGA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-6.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:718
     label: PETROTOGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 718 | DSMZ Medium: 718 (mediadive.medium:718)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 718 | DSMZ Medium: 718 (mediadive.medium:718) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -283,5 +282,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.809522Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

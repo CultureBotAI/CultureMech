@@ -1,15 +1,14 @@
 name: BHI-GLUCOSE medium
 original_name: BHI-GLUCOSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 82
   term:
     id: komodo.medium:82
     label: BHI-GLUCOSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 82 | DSMZ Medium: 82 (mediadive.medium:82)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 82 | DSMZ Medium: 82 (mediadive.medium:82) | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

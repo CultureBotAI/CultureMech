@@ -1,6 +1,6 @@
 name: Bs 107 MEDIUM
 original_name: Bs 107 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 866, replacing yeast extract with 3.0 &mu;g/L Na2SeO3
-    x 5H2O.
+  description: Use Medium No. 866, replacing yeast extract with 3.0 &mu;g/L Na2SeO3 x 5H2O.
 applications:
 - Microbial cultivation
 curation_history:

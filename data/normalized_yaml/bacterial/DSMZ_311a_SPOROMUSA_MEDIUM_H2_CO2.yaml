@@ -1,6 +1,6 @@
 name: SPOROMUSA MEDIUM (H2/CO2)
 original_name: SPOROMUSA MEDIUM (H2/CO2)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -240,18 +240,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except phosphates, carbonate, vitamins, and dithiothreitol)
-    and sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense under the same gas atmosphere in anoxic Hungate-type tubes
-    or serum vials to 30% of their volume and autoclave. Add phosphates to the medium
-    after autoclaving from sterile stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas
-    mixture. Vitamins and dithiothreitol should be prepared under N2 gas and sterilized
-    by filtration. Adjust the pH of the completed medium to pH 7.0.
+  description: Dissolve ingredients (except phosphates, carbonate, vitamins, and dithiothreitol) and sparge
+    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense under the same
+    gas atmosphere in anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add
+    phosphates to the medium after autoclaving from sterile stock solutions prepared under 100% N2 gas
+    and carbonate from a sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins
+    and dithiothreitol should be prepared under N2 gas and sterilized by filtration. Adjust the pH of
+    the completed medium to pH 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -262,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.261953Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,16 +1,16 @@
 name: MEDIUM 554 MODIFIED FOR DSM 44396
 original_name: MEDIUM 554 MODIFIED FOR DSM 44396
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-8.0
 media_term:
   preferred_term: KOMODO Medium 554_44396
   term:
     id: komodo.medium:554_44396
     label: MEDIUM 554 MODIFIED FOR DSM 44396
-notes: 'Source: KOMODO ModelSEED | ID: 554_44396 | DSMZ Medium: 554 (mediadive.medium:554)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 554_44396 | DSMZ Medium: 554 (mediadive.medium:554) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Glucose
   term:

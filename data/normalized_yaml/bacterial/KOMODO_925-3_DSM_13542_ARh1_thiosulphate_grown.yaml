@@ -1,6 +1,6 @@
 name: DSM 13542 = ARh1 (thiosulphate grown)
 original_name: DSM 13542 = ARh1 (thiosulphate grown)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:925.3
     label: DSM 13542 = ARh1 (thiosulphate grown)
-notes: 'Source: KOMODO ModelSEED | ID: 925.3 | DSMZ Medium: 925 (mediadive.medium:925)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925.3 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

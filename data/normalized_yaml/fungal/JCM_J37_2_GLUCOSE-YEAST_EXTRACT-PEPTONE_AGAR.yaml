@@ -1,8 +1,8 @@
 name: 2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR
 original_name: 2% GLUCOSE-YEAST EXTRACT-PEPTONE AGAR
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J37
   term:

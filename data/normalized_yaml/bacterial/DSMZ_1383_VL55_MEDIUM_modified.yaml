@@ -1,6 +1,6 @@
 name: VL55 MEDIUM modified
 original_name: VL55 MEDIUM modified
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -203,8 +203,7 @@ preparation_steps:
   description: Adjust to pH 5.5 with NaOH/KOH (about 6 ml).
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave and add 3 ml/l vitamin solution (see Medium1266) and 2mM
-    Glucose end-concentration.
+  description: Autoclave and add 3 ml/l vitamin solution (see Medium1266) and 2mM Glucose end-concentration.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterilize the solution.

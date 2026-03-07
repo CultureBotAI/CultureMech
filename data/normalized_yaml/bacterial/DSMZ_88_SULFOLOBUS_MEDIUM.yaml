@@ -1,6 +1,6 @@
 name: SULFOLOBUS MEDIUM
 original_name: SULFOLOBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
@@ -99,10 +99,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except yeast extract or other substrates), adjust
-    pH of the salt solution at room temperature to 2.0 using 10 N H2SO4 and autoclave.
-    Yeast extract and other organic substrates are sterilized separately by autoclaving
-    of a 10% (w/v) stock solution at neutral pH.
+  description: Dissolve ingredients (except yeast extract or other substrates), adjust pH of the salt
+    solution at room temperature to 2.0 using 10 N H2SO4 and autoclave. Yeast extract and other organic
+    substrates are sterilized separately by autoclaving of a 10% (w/v) stock solution at neutral pH.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

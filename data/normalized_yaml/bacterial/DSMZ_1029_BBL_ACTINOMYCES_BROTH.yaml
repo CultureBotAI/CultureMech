@@ -1,6 +1,6 @@
 name: BBL ACTINOMYCES BROTH
 original_name: BBL ACTINOMYCES BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -78,8 +78,8 @@ preparation_steps:
   description: final pH 6.9
 - step_number: 2
   action: HEAT
-  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling
-    prepare and distribute into Hungate tubes by using the Hungate technique.
+  description: Distribute into screw-capped Wheaton tubes. For anaerobic handling prepare and distribute
+    into Hungate tubes by using the Hungate technique.
 applications:
 - Microbial cultivation
 curation_history:

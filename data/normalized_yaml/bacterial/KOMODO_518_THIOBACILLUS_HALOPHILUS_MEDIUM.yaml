@@ -1,16 +1,15 @@
 name: THIOBACILLUS HALOPHILUS MEDIUM
 original_name: THIOBACILLUS HALOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.5
 media_term:
   preferred_term: KOMODO Medium 518
   term:
     id: komodo.medium:518
     label: THIOBACILLUS HALOPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 518 | DSMZ Medium: 518 (mediadive.medium:518)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 518 | DSMZ Medium: 518 (mediadive.medium:518) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

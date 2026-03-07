@@ -1,16 +1,15 @@
 name: CHOPPED MEAT medium
 original_name: CHOPPED MEAT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 78
   term:
     id: komodo.medium:78
     label: CHOPPED MEAT medium
-notes: 'Source: KOMODO ModelSEED | ID: 78 | DSMZ Medium: 78 (mediadive.medium:78)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 78 | DSMZ Medium: 78 (mediadive.medium:78) | Aerobic: No'
 ingredients:
 - preferred_term: L-Histidine
   term:

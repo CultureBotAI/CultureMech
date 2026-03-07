@@ -1,8 +1,8 @@
 name: MMB MEDIUM
 original_name: MMB MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1417
@@ -170,13 +170,11 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 2
   action: ADJUST_PH
-  description: 'Note: Dissolve and neutralize the nitrilotriacetic acid with KOH (7.3
-    g); add the other ingredients and adjust the pH to 6.6 - 6.8 before bringing the
-    volume to 1.0 L with distilled water.'
+  description: 'Note: Dissolve and neutralize the nitrilotriacetic acid with KOH (7.3 g); add the other
+    ingredients and adjust the pH to 6.6 - 6.8 before bringing the volume to 1.0 L with distilled water.'
 - step_number: 3
   action: MIX
-  description: "Note: Initially add a few drops of H2SO4 to the distilled water to\
-    \ retard\r\nprecipitation."
+  description: "Note: Initially add a few drops of H2SO4 to the distilled water to retard\r\nprecipitation."
 applications:
 - Microbial cultivation
 curation_history:

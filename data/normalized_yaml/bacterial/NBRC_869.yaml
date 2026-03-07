@@ -1,13 +1,13 @@
 name: '869'
 original_name: '869'
-category: imported
+category: bacterial
 description: 869. NBRC 868.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea
-    water*800mlDistilled water200mlpH 7.6*Filtered, aged seawater or artificial seawater
-    (Daigo's Artificial Seawater SP**)**Wako Pure Chemical Ind., Ltd., Osaka, Japan.
+- preferred_term: Bacto Marine Broth 2216 (Difco)7.5gSodium pyruvate5gAgar (if needed)15gSea water*800mlDistilled
+    water200mlpH 7.6*Filtered, aged seawater or artificial seawater (Daigo's Artificial Seawater SP**)**Wako
+    Pure Chemical Ind., Ltd., Osaka, Japan.
 - preferred_term: ''
   concentration:
     value: Bacto Marine Broth 2216 (Difco)

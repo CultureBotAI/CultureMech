@@ -1,16 +1,15 @@
 name: medium FOR MARINE METHYLOTROPHS
 original_name: medium FOR MARINE METHYLOTROPHS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 750
   term:
     id: komodo.medium:750
     label: medium FOR MARINE METHYLOTROPHS
-notes: 'Source: KOMODO ModelSEED | ID: 750 | DSMZ Medium: 750 (mediadive.medium:750)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 750 | DSMZ Medium: 750 (mediadive.medium:750) | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:

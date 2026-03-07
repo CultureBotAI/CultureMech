@@ -1,6 +1,6 @@
 name: ARTIFICIAL SEAWATER MEDIUM WITH PULLULAN
 original_name: ARTIFICIAL SEAWATER MEDIUM WITH PULLULAN
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -238,9 +238,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas mixture. Aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized and stored under N2):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. Aseptically
+    and anaerobically add the following solutions (autoclaved or *filter-sterilized and stored under N2):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2 - 7.5 with a 5% Na2CO3 solution, if necessary.

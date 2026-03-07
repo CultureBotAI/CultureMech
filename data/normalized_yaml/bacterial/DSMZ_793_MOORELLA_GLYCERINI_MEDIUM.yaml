@@ -1,6 +1,6 @@
 name: MOORELLA GLYCERINI MEDIUM
 original_name: MOORELLA GLYCERINI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.7
@@ -229,16 +229,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, vitamins, and sulfide, then
-    sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Dissolve carbonate
-    and adjust pH to 6.7, then dispense medium under the same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Add vitamins and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins should
-    be sterilized by filtration.
+  description: Dissolve ingredients except carbonate, vitamins, and sulfide, then sparge medium with 100%
+    CO2 gas for 30 - 45 min to make it anoxic. Dissolve carbonate and adjust pH to 6.7, then dispense
+    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Add vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins
+    should be sterilized by filtration.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -249,5 +248,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.389076Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

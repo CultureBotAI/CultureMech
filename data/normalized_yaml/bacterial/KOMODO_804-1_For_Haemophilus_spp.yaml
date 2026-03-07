@@ -1,6 +1,6 @@
 name: For Haemophilus spp
 original_name: For Haemophilus spp
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:804.1
     label: For Haemophilus spp
-notes: 'Source: KOMODO ModelSEED | ID: 804.1 | DSMZ Medium: 804 (mediadive.medium:804)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 804.1 | DSMZ Medium: 804 (mediadive.medium:804) | Aerobic: No'
 ingredients:
 - preferred_term: Mueller-Hinton broth
   concentration:

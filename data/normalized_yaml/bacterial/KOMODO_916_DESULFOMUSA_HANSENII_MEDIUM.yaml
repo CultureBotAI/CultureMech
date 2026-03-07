@@ -1,6 +1,6 @@
 name: DESULFOMUSA HANSENII MEDIUM
 original_name: DESULFOMUSA HANSENII MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:916
     label: DESULFOMUSA HANSENII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 916 | DSMZ Medium: 916 (mediadive.medium:916)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 916 | DSMZ Medium: 916 (mediadive.medium:916) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -258,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.597439Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

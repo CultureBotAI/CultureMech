@@ -1,6 +1,6 @@
 name: DESULFITOBACTERIUM (PCE II) MEDIUM
 original_name: DESULFITOBACTERIUM (PCE II) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -246,24 +246,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, ferrous iron sulfate, vitamins
-    and organic substrates), then sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials and autoclave. Add ferrous iron sulfate
-    (dissolved in 0.1 N H2SO4), vitamins, pyruvate, fumarate and yeast extract from
-    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
-    sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
-    Stock solutions of ferrous iron sulfate, vitamins, pyruvate and fumarate should
-    be sterilized by filtration. Adjust pH of the complete medium to 7.5, if necessary.
+  description: Dissolve ingredients (except carbonate, ferrous iron sulfate, vitamins and organic substrates),
+    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
+    ferrous iron sulfate (dissolved in 0.1 N H2SO4), vitamins, pyruvate, fumarate and yeast extract from
+    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock
+    solution prepared under 80% N2 and 20% CO2 gas atmosphere. Stock solutions of ferrous iron sulfate,
+    vitamins, pyruvate and fumarate should be sterilized by filtration. Adjust pH of the complete medium
+    to 7.5, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per litre (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth at the beginning.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per litre (e.g. from 5% (w/v) solution,
+    freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

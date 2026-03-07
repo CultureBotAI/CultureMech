@@ -1,6 +1,6 @@
 name: A-MMX Medium
 original_name: A-MMX Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '775'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '113'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -40,8 +37,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -49,8 +45,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -58,8 +54,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Reducing agent; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
@@ -84,8 +79,7 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water

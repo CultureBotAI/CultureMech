@@ -1,6 +1,6 @@
 name: Trace element solution (medium 1190)
 original_name: Trace element solution (medium 1190)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3150
     label: Trace element solution (medium 1190)
-notes: 'Source: KOMODO ModelSEED | ID: 3150 | DSMZ Medium: 3150 (mediadive.medium:3150)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3150 | DSMZ Medium: 3150 (mediadive.medium:3150) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

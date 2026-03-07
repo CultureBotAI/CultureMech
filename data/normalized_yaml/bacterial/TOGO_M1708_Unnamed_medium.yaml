@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M1708
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '800'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '0.87'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -31,14 +29,12 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined
-    component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Solution, Defined component'
 - preferred_term: Spectinomycin solution (500 μg/ml)*
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex
-    component'
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Defined component, Complex component'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -53,7 +49,7 @@ media_term:
   preferred_term: TOGO Medium M1708
   term:
     id: TOGO:M1708
-    label: (Unnamed medium)
+    label: TOGO Medium M1708
 notes: 'Source: https://togomedium.org/medium/M1708
 
   Original source: NBRC - NBRC_M915

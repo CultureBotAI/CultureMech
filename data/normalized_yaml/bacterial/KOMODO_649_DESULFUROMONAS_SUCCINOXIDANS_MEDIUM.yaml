@@ -1,6 +1,6 @@
 name: DESULFUROMONAS SUCCINOXIDANS MEDIUM
 original_name: DESULFUROMONAS SUCCINOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:649
     label: DESULFUROMONAS SUCCINOXIDANS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 649 | DSMZ Medium: 649 (mediadive.medium:649)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 649 | DSMZ Medium: 649 (mediadive.medium:649) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

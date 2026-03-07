@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH PCP
 original_name: MINERAL MEDIUM WITH PCP
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465b
   term:
     id: komodo.medium:465b
     label: MINERAL MEDIUM WITH PCP
-notes: 'Source: KOMODO ModelSEED | ID: 465b | DSMZ Medium: 465b (mediadive.medium:465b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465b | DSMZ Medium: 465b (mediadive.medium:465b) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

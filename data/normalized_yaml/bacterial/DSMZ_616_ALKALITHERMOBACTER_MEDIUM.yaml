@@ -1,6 +1,6 @@
 name: ALKALITHERMOBACTER MEDIUM
 original_name: ALKALITHERMOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -68,12 +68,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, glucose, cysteine and sulfide)
-    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add and
-    dissolve carbonate, dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Before use add glucose, cysteine and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and adjust pH to
-    10 by adding sterile anoxic 3 N NaOH.
+  description: Dissolve ingredients (except carbonate, glucose, cysteine and sulfide) and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add and dissolve carbonate, dispense medium under
+    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before use add
+    glucose, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and adjust
+    pH to 10 by adding sterile anoxic 3 N NaOH.
 applications:
 - Microbial cultivation
 curation_history:

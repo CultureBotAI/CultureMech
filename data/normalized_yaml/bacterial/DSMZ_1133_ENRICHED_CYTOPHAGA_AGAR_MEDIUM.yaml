@@ -1,8 +1,8 @@
 name: ENRICHED CYTOPHAGA AGAR MEDIUM
 original_name: ENRICHED CYTOPHAGA AGAR MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: DSMZ Medium 1133
@@ -51,9 +51,8 @@ preparation_steps:
   description: Adjust to pH 7.2-7.4 and autoclave at 121°C/15 min.
 - step_number: 2
   action: POUR_PLATES
-  description: For soft agar for the maintenance of active cultures reduce agar content
-    to 4.0 g/l. Dispense in 3 to 4 ml amounts in 7 ml screw-capped bottles (bijou
-    bottles).
+  description: For soft agar for the maintenance of active cultures reduce agar content to 4.0 g/l. Dispense
+    in 3 to 4 ml amounts in 7 ml screw-capped bottles (bijou bottles).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: Vitamin solution (double conc.) (medium 621)
 original_name: Vitamin solution (double conc.) (medium 621)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3105
     label: Vitamin solution (double conc.) (medium 621)
-notes: 'Source: KOMODO ModelSEED | ID: 3105 | DSMZ Medium: 3105 (mediadive.medium:3105)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3105 | DSMZ Medium: 3105 (mediadive.medium:3105) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,15 +1,14 @@
 name: MALTEXTRACT/CHARCOAL medium
 original_name: MALTEXTRACT/CHARCOAL medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 801
   term:
     id: komodo.medium:801
     label: MALTEXTRACT/CHARCOAL medium
-notes: 'Source: KOMODO ModelSEED | ID: 801 | DSMZ Medium: 801 (mediadive.medium:801)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 801 | DSMZ Medium: 801 (mediadive.medium:801) | Aerobic: No'
 ingredients:
 - preferred_term: Malt extract
   concentration:

@@ -1,6 +1,6 @@
 name: THIOPHAEOCOCCUS MANGROVI medium
 original_name: THIOPHAEOCOCCUS MANGROVI medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1162
     label: THIOPHAEOCOCCUS MANGROVI medium
-notes: 'Source: KOMODO ModelSEED | ID: 1162 | DSMZ Medium: 1162 (mediadive.medium:1162)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1162 | DSMZ Medium: 1162 (mediadive.medium:1162) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

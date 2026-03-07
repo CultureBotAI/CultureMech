@@ -1,15 +1,14 @@
 name: MEDIUM 381 MODIFIED FOR DSM 7144
 original_name: MEDIUM 381 MODIFIED FOR DSM 7144
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 381_7144
   term:
     id: komodo.medium:381_7144
     label: MEDIUM 381 MODIFIED FOR DSM 7144
-notes: 'Source: KOMODO ModelSEED | ID: 381_7144 | DSMZ Medium: 381 (mediadive.medium:381)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 381_7144 | DSMZ Medium: 381 (mediadive.medium:381) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

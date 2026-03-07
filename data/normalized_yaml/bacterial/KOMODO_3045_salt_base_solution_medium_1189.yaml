@@ -1,11 +1,11 @@
 name: salt base solution (medium 1189)
 original_name: salt base solution (medium 1189)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 3045 | DSMZ Medium: 3045
-  (mediadive.medium:3045) | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 3045 | DSMZ Medium: 3045 (mediadive.medium:3045)
+  | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 3045
   term:

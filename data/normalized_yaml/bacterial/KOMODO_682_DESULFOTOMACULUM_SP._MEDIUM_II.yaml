@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM SP. MEDIUM II
 original_name: DESULFOTOMACULUM SP. MEDIUM II
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:682
     label: DESULFOTOMACULUM SP. MEDIUM II
-notes: 'Source: KOMODO ModelSEED | ID: 682 | DSMZ Medium: 682 (mediadive.medium:682)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 682 | DSMZ Medium: 682 (mediadive.medium:682) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

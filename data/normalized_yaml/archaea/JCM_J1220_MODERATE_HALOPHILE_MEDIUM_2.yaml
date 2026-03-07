@@ -1,6 +1,6 @@
 name: MODERATE HALOPHILE MEDIUM 2
 original_name: MODERATE HALOPHILE MEDIUM 2
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -82,8 +82,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.0-7.2. For preparation of solid medium, add 20.0 g/L agar.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0-7.2. For
+    preparation of solid medium, add 20.0 g/L agar.
 applications:
 - Microbial cultivation
 curation_history:

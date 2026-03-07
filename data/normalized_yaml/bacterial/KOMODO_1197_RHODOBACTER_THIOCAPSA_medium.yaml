@@ -1,6 +1,6 @@
 name: RHODOBACTER /THIOCAPSA medium
 original_name: RHODOBACTER /THIOCAPSA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1197
     label: RHODOBACTER /THIOCAPSA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1197 | DSMZ Medium: 1197 (mediadive.medium:1197)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1197 | DSMZ Medium: 1197 (mediadive.medium:1197) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

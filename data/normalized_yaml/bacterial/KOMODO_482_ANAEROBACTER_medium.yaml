@@ -1,6 +1,6 @@
 name: ANAEROBACTER medium
 original_name: ANAEROBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:482
     label: ANAEROBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 482 | DSMZ Medium: 482 (mediadive.medium:482)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 482 | DSMZ Medium: 482 (mediadive.medium:482) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,6 +1,6 @@
 name: RUMINOCOCCUS ALBUS medium
 original_name: RUMINOCOCCUS ALBUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:436
     label: RUMINOCOCCUS ALBUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 436 | DSMZ Medium: 436 (mediadive.medium:436)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 436 | DSMZ Medium: 436 (mediadive.medium:436) | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:

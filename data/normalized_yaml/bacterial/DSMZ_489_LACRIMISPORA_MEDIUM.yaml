@@ -1,6 +1,6 @@
 name: LACRIMISPORA MEDIUM
 original_name: LACRIMISPORA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -85,11 +85,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0,
-    bring medium to the boil, then cool to room temperature under 100% N2 gas. Dispense
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    After sterilization add cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas.
+  description: Dissolve ingredients (except cysteine and sulfide), adjust pH to 7.0, bring medium to the
+    boil, then cool to room temperature under 100% N2 gas. Dispense under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add cysteine and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:

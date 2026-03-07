@@ -1,6 +1,6 @@
 name: RUMEN BACTERIA MEDIUM
 original_name: RUMEN BACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-6.8
@@ -188,17 +188,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, glucose, maltose, cellobiose,
-    soluble starch, cysteine and sulfide), then sparge medium with 100% CO2 gas for
-    30 - 45 min to make it anoxic. Add the carbonate and equilibrate the medium with
-    the CO2 gas to pH 6.8. Distribute under 100% CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Thereafter, add glucose, maltose, cellobiose,
-    soluble starch, cysteine and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, glucose, maltose, cellobiose, soluble starch, cysteine
+    and sulfide), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add the carbonate
+    and equilibrate the medium with the CO2 gas to pH 6.8. Distribute under 100% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose, maltose, cellobiose,
+    soluble starch, cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
+    atmosphere. Adjust pH of complete medium to 6.7 - 6.8, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 applications:
 - Microbial cultivation
 curation_history:

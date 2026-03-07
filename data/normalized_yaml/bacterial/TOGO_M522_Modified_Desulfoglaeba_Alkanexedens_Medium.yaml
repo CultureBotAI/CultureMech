@@ -1,6 +1,6 @@
 name: Modified Desulfoglaeba Alkanexedens Medium
 original_name: Modified Desulfoglaeba Alkanexedens Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -16,8 +16,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -25,8 +24,7 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -34,8 +32,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
-    compound, Defined component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -43,8 +41,7 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -82,8 +79,7 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:41808
     label: decane
@@ -99,8 +95,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -108,8 +103,7 @@ ingredients:
   concentration:
     value: '12.5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Reducing agent; Properties: Simple component, Inorganic compound, Defined component'
 - preferred_term: L--Cysteine・HCl・H2O
   concentration:
     value: '12.5'
@@ -144,6 +138,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.233099'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: N2'

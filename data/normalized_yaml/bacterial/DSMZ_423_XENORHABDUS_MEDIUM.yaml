@@ -1,8 +1,8 @@
 name: XENORHABDUS MEDIUM
 original_name: XENORHABDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 423
@@ -37,8 +37,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve and adjust pH to 7.2. Add 1.5% agar if required. Sterilize
-    at 121°C for 20 min.
+  description: Dissolve and adjust pH to 7.2. Add 1.5% agar if required. Sterilize at 121°C for 20 min.
 applications:
 - Microbial cultivation
 curation_history:

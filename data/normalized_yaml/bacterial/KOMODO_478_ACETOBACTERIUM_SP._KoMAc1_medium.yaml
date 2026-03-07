@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM SP. KoMAc1 medium
 original_name: ACETOBACTERIUM SP. KoMAc1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:478
     label: ACETOBACTERIUM SP. KoMAc1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 478 | DSMZ Medium: 478 (mediadive.medium:478)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 478 | DSMZ Medium: 478 (mediadive.medium:478) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

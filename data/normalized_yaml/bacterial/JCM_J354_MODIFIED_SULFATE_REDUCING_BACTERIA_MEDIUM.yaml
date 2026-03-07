@@ -1,6 +1,6 @@
 name: MODIFIED SULFATE REDUCING BACTERIA MEDIUM
 original_name: MODIFIED SULFATE REDUCING BACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.7
@@ -186,13 +186,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.7 with HCl.
-    After autoclaving under a N2 atmosphere, distribute the medium into sterile culture
-    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of
-    H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Neutralize
-    5% Na2S x 9H2O solution, and autoclave under a N2 atmosphere. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution to the medium. Pressurize the inoculated
-    vessels to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.7 with HCl. After autoclaving under
+    a N2 atmosphere, distribute the medium into sterile culture vessels (e.g., 20 ml of the medium in
+    120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
+    Neutralize 5% Na2S x 9H2O solution, and autoclave under a N2 atmosphere. Prior to inoculation, add
+    the sterile Na2S x 9H2O solution to the medium. Pressurize the inoculated vessels to 200 kPa H2-CO2
+    (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

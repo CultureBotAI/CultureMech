@@ -1,6 +1,6 @@
 name: BHI/2 medium
 original_name: BHI/2 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:217
     label: BHI/2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 217 | DSMZ Medium: 217 (mediadive.medium:217)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 217 | DSMZ Medium: 217 (mediadive.medium:217) | Aerobic: No'
 ingredients:
 - preferred_term: Brain heart infusion
   concentration:

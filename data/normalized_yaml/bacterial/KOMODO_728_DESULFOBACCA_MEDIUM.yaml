@@ -1,6 +1,6 @@
 name: DESULFOBACCA MEDIUM
 original_name: DESULFOBACCA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:728
     label: DESULFOBACCA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 728 | DSMZ Medium: 728 (mediadive.medium:728)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 728 | DSMZ Medium: 728 (mediadive.medium:728) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

@@ -1,6 +1,6 @@
 name: TEA FUNGUS medium
 original_name: TEA FUNGUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:268
     label: TEA FUNGUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 268 | DSMZ Medium: 268 (mediadive.medium:268)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 268 | DSMZ Medium: 268 (mediadive.medium:268) | Aerobic: No'
 ingredients:
 - preferred_term: Tea
   concentration:

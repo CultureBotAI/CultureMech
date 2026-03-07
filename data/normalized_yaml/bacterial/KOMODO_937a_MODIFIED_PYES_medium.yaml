@@ -1,15 +1,14 @@
 name: MODIFIED PYES medium
 original_name: MODIFIED PYES medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 937a
   term:
     id: komodo.medium:937a
     label: MODIFIED PYES medium
-notes: 'Source: KOMODO ModelSEED | ID: 937a | DSMZ Medium: 937a (mediadive.medium:937a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 937a | DSMZ Medium: 937a (mediadive.medium:937a) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

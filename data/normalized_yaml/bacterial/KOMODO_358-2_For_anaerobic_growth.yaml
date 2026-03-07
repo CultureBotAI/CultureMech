@@ -1,6 +1,6 @@
 name: For anaerobic growth
 original_name: For anaerobic growth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:358.2
     label: For anaerobic growth
-notes: 'Source: KOMODO ModelSEED | ID: 358.2 | DSMZ Medium: 358 (mediadive.medium:358)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 358.2 | DSMZ Medium: 358 (mediadive.medium:358) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

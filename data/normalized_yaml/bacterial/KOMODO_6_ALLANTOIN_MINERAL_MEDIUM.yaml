@@ -1,15 +1,14 @@
 name: ALLANTOIN MINERAL MEDIUM
 original_name: ALLANTOIN MINERAL MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 6
   term:
     id: komodo.medium:6
     label: ALLANTOIN MINERAL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 6 | DSMZ Medium: 6 (mediadive.medium:6) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 6 | DSMZ Medium: 6 (mediadive.medium:6) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

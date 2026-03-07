@@ -1,6 +1,6 @@
 name: METHYLOPROFUNDUS SEDIMENTI MEDIUM
 original_name: METHYLOPROFUNDUS SEDIMENTI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -233,26 +233,24 @@ preparation_steps:
   description: Bring to 1 liter with distilled water.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Dilute 100 ml solution 1 to 1 litre with distilled water and then\
-    \ add 1 ml of solution 3,\r\n66 ml solution 5 and 0.4 ml of solution 6. Dispense\
-    \ the medium into the growth vessels.\r\nIf using sealed vessels it is appropriate\
-    \ to add 50% methane to the gas phase and\r\nautoclave at 121C (15psi) for 15\
-    \ minutes. Autoclave the phosphate buffer separately.\r\nFilter sterilized the\
-    \ vitamin solution. When the growth medium is cool 1.0 ml/l vitamin\r\nsolution\
-    \ and 10 ml/l of the phosphate buffer are added - if too warm the phosphate will\r\
-    \nprecipitate. Liquid cultures should be grown with shaking."
+  description: "Dilute 100 ml solution 1 to 1 litre with distilled water and then add 1 ml of solution\
+    \ 3,\r\n66 ml solution 5 and 0.4 ml of solution 6. Dispense the medium into the growth vessels.\r\n\
+    If using sealed vessels it is appropriate to add 50% methane to the gas phase and\r\nautoclave at\
+    \ 121C (15psi) for 15 minutes. Autoclave the phosphate buffer separately.\r\nFilter sterilized the\
+    \ vitamin solution. When the growth medium is cool 1.0 ml/l vitamin\r\nsolution and 10 ml/l of the\
+    \ phosphate buffer are added - if too warm the phosphate will\r\nprecipitate. Liquid cultures should\
+    \ be grown with shaking."
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700
-    ml of distilled water, and then make up to 1 litre.
+  description: Dissolve the ingredients listed above (in that order) in about 700 ml of distilled water,
+    and then make up to 1 litre.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up
-    to 1 litre.
+  description: Dissolve in about 800 ml of water, adjust the pH to 6.8 and make up to 1 litre.
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:

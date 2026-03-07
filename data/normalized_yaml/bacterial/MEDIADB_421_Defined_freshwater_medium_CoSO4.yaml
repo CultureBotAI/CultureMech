@@ -1,6 +1,6 @@
 name: '''Defined freshwater medium (CoSO4'
 original_name: '''Defined freshwater medium (CoSO4'
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -193,8 +193,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:46.470594Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 421, Reference:
-    Mazumdar et al. (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 421, Reference: Mazumdar et al.
+    (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:16.434439Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -202,15 +202,13 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.643603Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 media_term:
   preferred_term: MediaDB Medium 421
   term:
     id: MEDIADB:421
     label: '''Defined freshwater medium (CoSO4'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

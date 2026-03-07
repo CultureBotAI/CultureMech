@@ -1,6 +1,6 @@
 name: GEOBACTER NBAF MEDIUM
 original_name: GEOBACTER NBAF MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.2
@@ -249,16 +249,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and autoclave under a N2 atmosphere. After cooling,
-    replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture, and add the following
-    solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized).
+  description: Mix components and autoclave under a N2 atmosphere. After cooling, replace the gas phase
+    with a N2-CO2 (4:1, v/v) gas mixture, and add the following solutions from sterile anaerobic stocks
+    (autoclaved or *filter-sterilized).
 - step_number: 2
   action: ADJUST_PH
   description: Check final pH to be around 7.0.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 8.0-8.5 with NaOH.
-    Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 8.0-8.5 with NaOH. Then proceed to add
+    minerals.
 applications:
 - Microbial cultivation
 curation_history:

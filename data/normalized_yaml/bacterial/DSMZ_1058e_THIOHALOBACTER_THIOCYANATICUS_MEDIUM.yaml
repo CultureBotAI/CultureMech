@@ -1,6 +1,6 @@
 name: THIOHALOBACTER THIOCYANATICUS MEDIUM
 original_name: THIOHALOBACTER THIOCYANATICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -175,16 +175,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium
-    chloride, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
-    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
-    Dispense solution under air atmosphere in serum vials to 10% of volume, seal with
-    butyl rubber stoppers and autoclave. Add trace elements, calcium chloride, magnesium
-    sulfate, thiosulfate, and vitamins from sterile stock solutions prepared under
-    100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared under
-    80% N2 and 20% CO2. Thiosulfate and vitamins are sterilized by filtration. Adjust
-    pH of the medium to 7.5 using a sterile stock solution of sodium carbonate (5%
-    w/v). Incubate with shaking.
+  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium chloride, then sparge
+    solution with 80% N2 and 20% CO2 gas mixture for at least 30 - 45 min to remove dissolved oxygen and
+    to saturate the solution with CO2. Dispense solution under air atmosphere in serum vials to 10% of
+    volume, seal with butyl rubber stoppers and autoclave. Add trace elements, calcium chloride, magnesium
+    sulfate, thiosulfate, and vitamins from sterile stock solutions prepared under 100% N2 gas and bicarbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2. Thiosulfate and vitamins are
+    sterilized by filtration. Adjust pH of the medium to 7.5 using a sterile stock solution of sodium
+    carbonate (5% w/v). Incubate with shaking.
 - step_number: 2
   action: MIX
   description: 'Note: Use at least 10% (v/v) as inoculum.'

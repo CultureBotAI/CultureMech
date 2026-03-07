@@ -1,6 +1,6 @@
 name: HALOBACTERIA MEDIUM WITH 15% NaCl
 original_name: HALOBACTERIA MEDIUM WITH 15% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 168 with 150.0 g/L (final) NaCl. Omit agar for preparation
-    of liquid medium.
+  description: Use Medium No. 168 with 150.0 g/L (final) NaCl. Omit agar for preparation of liquid medium.
 applications:
 - Microbial cultivation
 curation_history:

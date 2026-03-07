@@ -1,15 +1,15 @@
 name: MEDIUM 940 MODIFIED FOR DSM 18940
 original_name: MEDIUM 940 MODIFIED FOR DSM 18940
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 940_18940
   term:
     id: komodo.medium:940_18940
     label: MEDIUM 940 MODIFIED FOR DSM 18940
-notes: 'Source: KOMODO ModelSEED | ID: 940_18940 | DSMZ Medium: 940 (mediadive.medium:940)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 940_18940 | DSMZ Medium: 940 (mediadive.medium:940) | Aerobic:
+  No'
 ingredients:
 - preferred_term: D-Glucose
   term:

@@ -1,8 +1,8 @@
 name: MARINE MEDIUM WITH PYRUVATE
 original_name: MARINE MEDIUM WITH PYRUVATE
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 1303
@@ -74,8 +74,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solution A and B separately and combine 250 ml Solution A
-    and 750 ml Solution B after cooling. Adjust to pH 7.5.
+  description: Autoclave solution A and B separately and combine 250 ml Solution A and 750 ml Solution
+    B after cooling. Adjust to pH 7.5.
 applications:
 - Microbial cultivation
 curation_history:

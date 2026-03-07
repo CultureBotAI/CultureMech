@@ -1,6 +1,6 @@
 name: METHANOSARCINA (MP) medium
 original_name: METHANOSARCINA (MP) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:317
     label: METHANOSARCINA (MP) medium
-notes: 'Source: KOMODO ModelSEED | ID: 317 | DSMZ Medium: 317 (mediadive.medium:317)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 317 | DSMZ Medium: 317 (mediadive.medium:317) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

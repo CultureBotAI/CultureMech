@@ -1,6 +1,6 @@
 name: THERMOVIBRIO medium
 original_name: THERMOVIBRIO medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:961
     label: THERMOVIBRIO medium
-notes: 'Source: KOMODO ModelSEED | ID: 961 | DSMZ Medium: 961 (mediadive.medium:961)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 961 | DSMZ Medium: 961 (mediadive.medium:961) | Aerobic: No'
 ingredients:
 - preferred_term: Sodium resazurin
   concentration:

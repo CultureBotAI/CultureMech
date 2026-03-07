@@ -1,6 +1,6 @@
 name: TG 408 MEDIUM
 original_name: TG 408 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-8
@@ -103,8 +103,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving add 10 ml of Vitamine Solution 141 to 1 litre of
-    the sterile Main Solution. Final pH 7.5 - 8.0.
+  description: After autoclaving add 10 ml of Vitamine Solution 141 to 1 litre of the sterile Main Solution.
+    Final pH 7.5 - 8.0.
 applications:
 - Microbial cultivation
 curation_history:

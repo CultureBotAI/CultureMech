@@ -1,8 +1,8 @@
 name: MODIFIED LB
 original_name: MODIFIED LB
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 381a
@@ -34,8 +34,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.2 and sterilize by autoclaving. The medium may be solidified
-    by adding 12.0 g/l agar.
+  description: Adjust to pH 7.2 and sterilize by autoclaving. The medium may be solidified by adding 12.0
+    g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

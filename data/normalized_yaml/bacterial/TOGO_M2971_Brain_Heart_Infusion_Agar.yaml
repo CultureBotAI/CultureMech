@@ -1,8 +1,8 @@
 name: Brain Heart Infusion Agar
 original_name: Brain Heart Infusion Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Brain Heart Infusion Agar (Nissui, Tokyo, Japan)
   concentration:

@@ -1,15 +1,14 @@
 name: MIDDELBROOK medium
 original_name: MIDDELBROOK medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 645
   term:
     id: komodo.medium:645
     label: MIDDELBROOK medium
-notes: 'Source: KOMODO ModelSEED | ID: 645 | DSMZ Medium: 645 (mediadive.medium:645)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 645 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:

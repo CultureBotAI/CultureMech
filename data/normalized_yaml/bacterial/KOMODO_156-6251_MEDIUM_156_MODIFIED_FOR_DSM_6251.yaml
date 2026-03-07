@@ -1,6 +1,6 @@
 name: MEDIUM 156 MODIFIED FOR DSM 6251
 original_name: MEDIUM 156 MODIFIED FOR DSM 6251
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:156_6251
     label: MEDIUM 156 MODIFIED FOR DSM 6251
-notes: 'Source: KOMODO ModelSEED | ID: 156_6251 | DSMZ Medium: 156 (mediadive.medium:156)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 156_6251 | DSMZ Medium: 156 (mediadive.medium:156) | Aerobic: No'
 ingredients:
 - preferred_term: L-Alanine
   term:

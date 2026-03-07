@@ -1,6 +1,6 @@
 name: THIOALKALIBACTER HALOPHILUS MEDIUM
 original_name: THIOALKALIBACTER HALOPHILUS MEDIUM
-category: imported
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -125,9 +125,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle) with an air to liquid ratio of 10:1. pH after sterilization will be about
-    10.
+  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or bottle) with an air
+    to liquid ratio of 10:1. pH after sterilization will be about 10.
 - step_number: 2
   action: MIX
   description: 'After sterilization add:'

@@ -1,6 +1,6 @@
 name: PY MEDIUM (C)
 original_name: PY MEDIUM (C)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -77,9 +77,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically
-    and anaerobically add the following solutions (autoclaved under a N2 atmosphere)
-    to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. Aseptically and anaerobically
+    add the following solutions (autoclaved under a N2 atmosphere) to the medium:'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: METHANOGEN HIGH SALT MEDIUM
 original_name: METHANOGEN HIGH SALT MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -274,20 +274,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, except NaHCO3, and adjust pH to 7.0. Bring to a boil
-    for 5-10 sec, cool down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3 to
-    the medium. Dispense the medium into culture vessels under a stream of N2-CO2
-    (80:20, v/v), seal with butyl rubber stoppers and autoclave. After autoclaving,
-    stand the medium overnight. Prior to use, add per liter the following solutions
+  description: 'Mix components, except NaHCO3, and adjust pH to 7.0. Bring to a boil for 5-10 sec, cool
+    down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3 to the medium. Dispense the medium into
+    culture vessels under a stream of N2-CO2 (80:20, v/v), seal with butyl rubber stoppers and autoclave.
+    After autoclaving, stand the medium overnight. Prior to use, add per liter the following solutions
     (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: 'Comment: For strain JCM 30226, supplement with 20 mM (final) tetramethylammonium
-    as a substrate instead of methanol.'
+  description: 'Comment: For strain JCM 30226, supplement with 20 mM (final) tetramethylammonium as a
+    substrate instead of methanol.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

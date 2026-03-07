@@ -1,6 +1,6 @@
 name: ANAEROBIC CHOLESTEROL MEDIUM
 original_name: ANAEROBIC CHOLESTEROL MEDIUM
-category: imported
+category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -214,12 +214,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare solution A, distribute approbiate amounts of cholesterol (e.g.
-    5 mg for 10 ml medium) and solution A in anaerobic tubes, and autoclave anaerobically
-    under 80% N2 + 20% CO2. Solutions B and F are also autoclaved under these conditions.
-    Solution C, D and E may be prepared aerobically. After cooling, add to 9 ml solution
-    A: 500 µl sol. B, 500 µl sol. F, 25 µl (one drop) sol. C and E, each, and 50 µl
-    sol. D under anaerobic conditions. Adjust pH to 7.0±0.2.'
+  description: 'Prepare solution A, distribute approbiate amounts of cholesterol (e.g. 5 mg for 10 ml
+    medium) and solution A in anaerobic tubes, and autoclave anaerobically under 80% N2 + 20% CO2. Solutions
+    B and F are also autoclaved under these conditions. Solution C, D and E may be prepared aerobically.
+    After cooling, add to 9 ml solution A: 500 µl sol. B, 500 µl sol. F, 25 µl (one drop) sol. C and E,
+    each, and 50 µl sol. D under anaerobic conditions. Adjust pH to 7.0±0.2.'
 - step_number: 2
   action: MIX
   description: Trace elements SL-10 (see medium 320)
@@ -228,8 +227,8 @@ preparation_steps:
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

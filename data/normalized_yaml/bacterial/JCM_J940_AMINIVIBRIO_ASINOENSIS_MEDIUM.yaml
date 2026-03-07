@@ -1,6 +1,6 @@
 name: AMINIVIBRIO ASINOENSIS MEDIUM
 original_name: AMINIVIBRIO ASINOENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -199,13 +199,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. After cooling, add the following solutions from anaerobic stocks
-    (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
+    cooling, add the following solutions from anaerobic stocks (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: 'Distribute the medium into culture vessels under the same gas mixture.
-    Finally, add per liter the following solution from an anaerobic stock:'
+  description: 'Distribute the medium into culture vessels under the same gas mixture. Finally, add per
+    liter the following solution from an anaerobic stock:'
 applications:
 - Microbial cultivation
 curation_history:

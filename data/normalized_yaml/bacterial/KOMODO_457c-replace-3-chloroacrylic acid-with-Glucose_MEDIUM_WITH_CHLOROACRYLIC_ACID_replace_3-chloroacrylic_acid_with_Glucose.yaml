@@ -1,15 +1,15 @@
 name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
 original_name: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457c_replace_3-chloroacrylic acid_with_Glucose
   term:
     id: komodo.medium:457c_replace_3-chloroacrylic acid_with_Glucose
     label: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
-notes: 'Source: KOMODO ModelSEED | ID: 457c_replace_3-chloroacrylic acid_with_Glucose
-  | DSMZ Medium: 457c (mediadive.medium:457c) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457c_replace_3-chloroacrylic acid_with_Glucose | DSMZ Medium: 457c
+  (mediadive.medium:457c) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

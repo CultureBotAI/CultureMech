@@ -1,6 +1,6 @@
 name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
 original_name: SYMBIOBACTERIUM THERMOPHILUM MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-7.8
@@ -43,16 +43,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate) and adjust pH to 8.0, sparge
-    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add bicarbonate from a sterile anoxic 3.2% (w/v) stock solution
-    prepared under 80% N2 and 20% CO2 gas mixture (e.g., add 1 ml stock solution per
-    9 ml medium). Adjust pH of the complete medium to 7.5 - 7.8, if necessary.
+  description: Dissolve ingredients (except bicarbonate) and adjust pH to 8.0, sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add bicarbonate from a sterile anoxic
+    3.2% (w/v) stock solution prepared under 80% N2 and 20% CO2 gas mixture (e.g., add 1 ml stock solution
+    per 9 ml medium). Adjust pH of the complete medium to 7.5 - 7.8, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 100% H2 gas to an overpressure of 0.5
-    bar.
+  description: After inoculation add sterile 100% H2 gas to an overpressure of 0.5 bar.
 applications:
 - Microbial cultivation
 curation_history:

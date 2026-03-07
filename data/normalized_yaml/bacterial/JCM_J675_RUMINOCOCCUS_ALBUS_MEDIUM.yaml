@@ -1,6 +1,6 @@
 name: RUMINOCOCCUS ALBUS MEDIUM
 original_name: RUMINOCOCCUS ALBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -106,12 +106,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Boil and cool under CO2. Under a gentle stream of CO2, add 4.0 g Na2CO3,
-    1.0 ml fatty acid mixture (see below) and 500 mg L-cysteine x HCl x H2O.
+  description: Boil and cool under CO2. Under a gentle stream of CO2, add 4.0 g Na2CO3, 1.0 ml fatty acid
+    mixture (see below) and 500 mg L-cysteine x HCl x H2O.
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 7.0, distribute into appropriate vessels under N2 and
-    autoclave.
+  description: Adjust pH to 7.0, distribute into appropriate vessels under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

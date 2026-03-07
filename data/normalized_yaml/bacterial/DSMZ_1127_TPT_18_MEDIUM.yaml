@@ -1,8 +1,8 @@
 name: TPT 18 MEDIUM
 original_name: TPT 18 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: DSMZ Medium 1127

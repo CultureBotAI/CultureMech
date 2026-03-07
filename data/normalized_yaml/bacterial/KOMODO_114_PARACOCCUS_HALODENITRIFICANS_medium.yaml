@@ -1,15 +1,14 @@
 name: PARACOCCUS HALODENITRIFICANS medium
 original_name: PARACOCCUS HALODENITRIFICANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 114
   term:
     id: komodo.medium:114
     label: PARACOCCUS HALODENITRIFICANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 114 | DSMZ Medium: 114 (mediadive.medium:114)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 114 | DSMZ Medium: 114 (mediadive.medium:114) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

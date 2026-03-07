@@ -1,16 +1,15 @@
 name: SC medium
 original_name: SC medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.6
 media_term:
   preferred_term: KOMODO Medium 751
   term:
     id: komodo.medium:751
     label: SC medium
-notes: 'Source: KOMODO ModelSEED | ID: 751 | DSMZ Medium: 751 (mediadive.medium:751)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 751 | DSMZ Medium: 751 (mediadive.medium:751) | Aerobic: No'
 ingredients:
 - preferred_term: Corn meal agar
   term:

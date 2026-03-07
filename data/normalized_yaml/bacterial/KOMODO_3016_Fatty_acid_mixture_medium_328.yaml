@@ -1,6 +1,6 @@
 name: Fatty acid mixture (medium 328)
 original_name: Fatty acid mixture (medium 328)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3016
     label: Fatty acid mixture (medium 328)
-notes: 'Source: KOMODO ModelSEED | ID: 3016 | DSMZ Medium: 3016 (mediadive.medium:3016)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3016 | DSMZ Medium: 3016 (mediadive.medium:3016) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

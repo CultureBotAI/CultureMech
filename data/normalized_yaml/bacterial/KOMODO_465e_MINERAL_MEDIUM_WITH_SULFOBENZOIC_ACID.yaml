@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH SULFOBENZOIC ACID
 original_name: MINERAL MEDIUM WITH SULFOBENZOIC ACID
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465e
   term:
     id: komodo.medium:465e
     label: MINERAL MEDIUM WITH SULFOBENZOIC ACID
-notes: 'Source: KOMODO ModelSEED | ID: 465e | DSMZ Medium: 465e (mediadive.medium:465e)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465e | DSMZ Medium: 465e (mediadive.medium:465e) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

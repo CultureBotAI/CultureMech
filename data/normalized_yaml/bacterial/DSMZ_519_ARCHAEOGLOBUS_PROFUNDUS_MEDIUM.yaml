@@ -1,6 +1,6 @@
 name: ARCHAEOGLOBUS PROFUNDUS MEDIUM
 original_name: ARCHAEOGLOBUS PROFUNDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -211,21 +211,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate and sulfide, then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add bicarbonate,
-    adjust pH to 6.5 and dispense medium under 80% N2 and 20% CO2 gas atmosphere into
-    anoxic serum vials (e.g., 20 ml medium per 100 ml bottle), pressurize bottles
-    up to 2 bar overpressure, then autoclave. Before use, release excess pressure
-    and reduce the medium with sulfide from a sterile anoxic stock solution prepared
-    under 100% N2 gas.
+  description: Dissolve ingredients except bicarbonate and sulfide, then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add bicarbonate, adjust pH to 6.5 and dispense
+    medium under 80% N2 and 20% CO2 gas atmosphere into anoxic serum vials (e.g., 20 ml medium per 100
+    ml bottle), pressurize bottles up to 2 bar overpressure, then autoclave. Before use, release excess
+    pressure and reduce the medium with sulfide from a sterile anoxic stock solution prepared under 100%
+    N2 gas.
 - step_number: 2
   action: MIX
-  description: After inoculation, add 2 bar overpressure of sterile 80% H2 and 20%
-    CO2 gas mixture.
+  description: After inoculation, add 2 bar overpressure of sterile 80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

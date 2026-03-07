@@ -1,6 +1,6 @@
 name: ANAEROBIC BRAIN HEART INFUSION BROTH
 original_name: ANAEROBIC BRAIN HEART INFUSION BROTH
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -31,9 +31,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation,
-    add per liter the following solutions (autoclaved and stored under a N2 atmosphere)
-    aseptically and anaerobically:'
+  description: 'Prepare the medium anaerobically under a N2 atmosphere. Prior to inoculation, add per
+    liter the following solutions (autoclaved and stored under a N2 atmosphere) aseptically and anaerobically:'
 applications:
 - Microbial cultivation
 curation_history:

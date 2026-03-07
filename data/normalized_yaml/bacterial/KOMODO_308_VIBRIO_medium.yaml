@@ -1,6 +1,6 @@
 name: VIBRIO medium
 original_name: VIBRIO medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:308
     label: VIBRIO medium
-notes: 'Source: KOMODO ModelSEED | ID: 308 | DSMZ Medium: 308 (mediadive.medium:308)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 308 | DSMZ Medium: 308 (mediadive.medium:308) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

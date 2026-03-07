@@ -1,6 +1,6 @@
 name: BACTEROIDES CELLULOSOLVENS MEDIUM
 original_name: BACTEROIDES CELLULOSOLVENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -272,8 +272,8 @@ preparation_steps:
   description: Filter sterilize cellobiose separately.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:

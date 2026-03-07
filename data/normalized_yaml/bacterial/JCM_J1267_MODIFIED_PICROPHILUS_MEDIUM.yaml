@@ -1,6 +1,6 @@
 name: MODIFIED PICROPHILUS MEDIUM
 original_name: MODIFIED PICROPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.2
@@ -216,8 +216,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 2.0 - 2.5 with H2SO4 and autoclave.
-    After cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 2.0 - 2.5 with H2SO4 and autoclave. After cooling,
+    add the following solutions (filter-sterilized):'
 - step_number: 2
   action: DISSOLVE
   description: Stir for several hours to dissolve.

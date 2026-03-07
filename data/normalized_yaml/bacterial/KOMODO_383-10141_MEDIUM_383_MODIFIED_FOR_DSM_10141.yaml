@@ -1,6 +1,6 @@
 name: MEDIUM 383 MODIFIED FOR DSM 10141
 original_name: MEDIUM 383 MODIFIED FOR DSM 10141
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:383_10141
     label: MEDIUM 383 MODIFIED FOR DSM 10141
-notes: 'Source: KOMODO ModelSEED | ID: 383_10141 | DSMZ Medium: 383 (mediadive.medium:383)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 383_10141 | DSMZ Medium: 383 (mediadive.medium:383) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -243,5 +243,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:21.824738Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

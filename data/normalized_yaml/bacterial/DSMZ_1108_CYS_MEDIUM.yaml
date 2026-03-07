@@ -1,6 +1,6 @@
 name: CYS MEDIUM
 original_name: CYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -110,12 +110,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Add 100 µl each of Trace Metal solutions according to the following
-    order:'
+  description: 'Add 100 µl each of Trace Metal solutions according to the following order:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust to pH 7.5 at room temperature and add water to the final volume
-    of 1 liter. Sterilize with and autoclave at 121°C for 15 min.
+  description: Adjust to pH 7.5 at room temperature and add water to the final volume of 1 liter. Sterilize
+    with and autoclave at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MARINITOGA PIEZOPHILA MEDIUM
 original_name: MARINITOGA PIEZOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -110,17 +110,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur, cysteine and sulfide. Sparge medium
-    with 100% N2 gas for at least 30 - 45 min to make it anoxic and adjust pH to 6.0
-    with NaOH. Distribute the medium under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials which contain already the appropriate amount of sulfur. For
-    sterilization heat the cultivation vessels containing medium plus sulfur in boiling
-    water for 2 - 3 hours on each of 3 successive days! Prior to inoculation add cysteine
-    and sulfide and from sterile anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve ingredients except sulfur, cysteine and sulfide. Sparge medium with 100% N2 gas
+    for at least 30 - 45 min to make it anoxic and adjust pH to 6.0 with NaOH. Distribute the medium under
+    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials which contain already the appropriate
+    amount of sulfur. For sterilization heat the cultivation vessels containing medium plus sulfur in
+    boiling water for 2 - 3 hours on each of 3 successive days! Prior to inoculation add cysteine and
+    sulfide and from sterile anoxic stock solutions prepared under 100% N2 gas.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize tubes to 2 bar overpressure with sterile
-    100% N2 gas.
+  description: After inoculation pressurize tubes to 2 bar overpressure with sterile 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SSE/HD 1:10 medium
 original_name: SSE/HD 1:10 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1426
     label: SSE/HD 1:10 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1426 | DSMZ Medium: 1426 (mediadive.medium:1426)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1426 | DSMZ Medium: 1426 (mediadive.medium:1426) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

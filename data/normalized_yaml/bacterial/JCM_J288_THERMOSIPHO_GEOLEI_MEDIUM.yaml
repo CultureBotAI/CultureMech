@@ -1,6 +1,6 @@
 name: THERMOSIPHO GEOLEI MEDIUM
 original_name: THERMOSIPHO GEOLEI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -106,11 +106,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except maltose and Na2S x 9H2O, and adjust pH to 7.0.
-    Autoclave the medium under a N2 atmosphere. Filter-sterilize maltose as a 10%
-    solution under a N2 atmosphere, and add to the medium anaerobically. Neutralize
-    Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere. Prior to inoculation,
-    add the Na2S x 9H2O solution to the medium aseptically and anaerobically.
+  description: Mix ingredients, except maltose and Na2S x 9H2O, and adjust pH to 7.0. Autoclave the medium
+    under a N2 atmosphere. Filter-sterilize maltose as a 10% solution under a N2 atmosphere, and add to
+    the medium anaerobically. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under a N2 atmosphere.
+    Prior to inoculation, add the Na2S x 9H2O solution to the medium aseptically and anaerobically.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: RCM MEDIUM (with Casamino acids)
 original_name: RCM MEDIUM (with Casamino acids)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -29,12 +29,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or MERCK)
-    and Casamino acids (15.0 g/l) in distilled water and add 0.5 ml/l Na-resazurin
-    solution (0.1% w/v). Bring to a boil and cool to room temperature while sparging
-    with 100% N2 gas. Dispense the medium into anoxic Hungate-type tubes or serum
-    vials and autoclave for 15 min at 121°C. Adjust the pH of the complete medium
-    to 6.8.
+  description: Dissolve dehydrated RCM medium (available from BD BBL, OXOID, or MERCK) and Casamino acids
+    (15.0 g/l) in distilled water and add 0.5 ml/l Na-resazurin solution (0.1% w/v). Bring to a boil and
+    cool to room temperature while sparging with 100% N2 gas. Dispense the medium into anoxic Hungate-type
+    tubes or serum vials and autoclave for 15 min at 121°C. Adjust the pH of the complete medium to 6.8.
 applications:
 - Microbial cultivation
 curation_history:

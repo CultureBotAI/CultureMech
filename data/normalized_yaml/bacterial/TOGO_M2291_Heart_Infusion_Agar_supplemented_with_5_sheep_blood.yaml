@@ -1,8 +1,8 @@
 name: Heart Infusion Agar (supplemented with 5% sheep blood)
 original_name: Heart Infusion Agar (supplemented with 5% sheep blood)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: sheep blood
   concentration:
@@ -35,5 +35,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.086029'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration
-    for ingredient: Heart Infusion Agar (Difco)'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
+    Heart Infusion Agar (Difco)'

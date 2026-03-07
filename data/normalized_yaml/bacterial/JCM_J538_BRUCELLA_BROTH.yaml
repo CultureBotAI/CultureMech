@@ -1,6 +1,6 @@
 name: BRUCELLA BROTH
 original_name: BRUCELLA BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -50,8 +50,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is
-    also available.'
+  description: 'Comment: Commercial Brucella broth (Becton & Dickinson or Oxoid) is also available.'
 applications:
 - Microbial cultivation
 curation_history:

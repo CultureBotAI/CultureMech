@@ -1,6 +1,6 @@
 name: HALISCOMENOBACTER MEDIUM
 original_name: HALISCOMENOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -144,8 +144,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5. The vitamins are sterilized by filtration. The glucose
-    is dissolved in 5 ml of distilled water and sterilized separately by autoclaving.
+  description: Adjust pH to 7.5. The vitamins are sterilized by filtration. The glucose is dissolved in
+    5 ml of distilled water and sterilized separately by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PROPIONISPORA MEDIUM
 original_name: PROPIONISPORA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -144,9 +144,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas mixture. Aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. Aseptically
+    and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 - 7.2, if necessary.

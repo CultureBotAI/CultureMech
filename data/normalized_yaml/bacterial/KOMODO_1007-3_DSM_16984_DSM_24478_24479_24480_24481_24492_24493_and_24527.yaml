@@ -1,6 +1,6 @@
 name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
 original_name: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1007.3
     label: DSM 16984, DSM 24478, 24479, 24480, 24481, 24492, 24493 and 24527
-notes: 'Source: KOMODO ModelSEED | ID: 1007.3 | DSMZ Medium: 1007 (mediadive.medium:1007)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1007.3 | DSMZ Medium: 1007 (mediadive.medium:1007) | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:

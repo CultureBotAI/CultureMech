@@ -1,6 +1,6 @@
 name: CAMINICELLA MEDIUM
 original_name: CAMINICELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -55,13 +55,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfur, peptone, yeast extract, and sulfide),
-    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
-    Adjust pH to 7.2 - 7.4, then dispense medium under the same gas atmosphere into
-    anoxic Hungate-type tubes or serum vials containing already the appropriate amount
-    of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone, yeast extract
-    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The
-    pH of the complete medium should be 7.5.
+  description: Dissolve ingredients (except sulfur, peptone, yeast extract, and sulfide), sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 7.2 - 7.4, then
+    dispense medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials containing
+    already the appropriate amount of sulfur and autoclave at <b>110°C</b> for 20 min. Add peptone, yeast
+    extract and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. The pH of the
+    complete medium should be 7.5.
 applications:
 - Microbial cultivation
 curation_history:

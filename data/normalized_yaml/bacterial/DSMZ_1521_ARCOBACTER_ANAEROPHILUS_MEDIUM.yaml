@@ -1,6 +1,6 @@
 name: ARCOBACTER ANAEROPHILUS MEDIUM
 original_name: ARCOBACTER ANAEROPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -112,9 +112,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add distilled water to 1 liter, boil the medium and cool under N2,
-    distribute under N2 and autoclave. After autoclaving the following sterilized
-    solutions are added:'
+  description: 'Add distilled water to 1 liter, boil the medium and cool under N2, distribute under N2
+    and autoclave. After autoclaving the following sterilized solutions are added:'
 applications:
 - Microbial cultivation
 curation_history:

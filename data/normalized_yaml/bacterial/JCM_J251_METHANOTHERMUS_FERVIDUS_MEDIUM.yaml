@@ -1,6 +1,6 @@
 name: METHANOTHERMUS FERVIDUS MEDIUM
 original_name: METHANOTHERMUS FERVIDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -264,19 +264,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
-    and bring to a boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20),
-    and add NaHCO3 to the medium. Dispense the medium into culture vessels (e.g.,
-    20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (80:20)
-    gas mixture and seal with butyl rubber stoppers. After autoclaving, stand the
-    medium overnight and adjust pH to 6.5, if necessary. Separately autoclave L-cysteine
-    x HCl and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior
-    to inoculation, aseptically and anaerobically add the L-cysteine x HCl and Na2S
-    x 9H2O solutions. Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20).
+  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O, and bring to a
+    boil for 5-10 sec. Cool down under a stream of H2-CO2 (80:20), and add NaHCO3 to the medium. Dispense
+    the medium into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream
+    of H2-CO2 (80:20) gas mixture and seal with butyl rubber stoppers. After autoclaving, stand the medium
+    overnight and adjust pH to 6.5, if necessary. Separately autoclave L-cysteine x HCl and Na2S x 9H2O
+    as 5% solutions, respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically
+    add the L-cysteine x HCl and Na2S x 9H2O solutions. Pressurize the inoculated bottles to 200 kPa H2-CO2
+    (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

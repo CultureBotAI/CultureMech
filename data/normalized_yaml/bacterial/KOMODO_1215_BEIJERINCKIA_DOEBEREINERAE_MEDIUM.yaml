@@ -1,16 +1,15 @@
 name: BEIJERINCKIA DOEBEREINERAE MEDIUM
 original_name: BEIJERINCKIA DOEBEREINERAE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: KOMODO Medium 1215
   term:
     id: komodo.medium:1215
     label: BEIJERINCKIA DOEBEREINERAE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1215 | DSMZ Medium: 1215 (mediadive.medium:1215)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1215 | DSMZ Medium: 1215 (mediadive.medium:1215) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

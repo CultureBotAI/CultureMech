@@ -1,6 +1,6 @@
 name: DILUTE POTATO medium
 original_name: DILUTE POTATO medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:789
     label: DILUTE POTATO medium
-notes: 'Source: KOMODO ModelSEED | ID: 789 | DSMZ Medium: 789 (mediadive.medium:789)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 789 | DSMZ Medium: 789 (mediadive.medium:789) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

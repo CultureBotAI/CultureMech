@@ -1,6 +1,6 @@
 name: MODIFIED HNW MEDIUM
 original_name: MODIFIED HNW MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -181,24 +181,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: 'Use Medium No. 344. Prior to inoculation, add per liter the following
-    solution (freshly prepared and filter-sterilized):'
+  description: 'Use Medium No. 344. Prior to inoculation, add per liter the following solution (freshly
+    prepared and filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0 with NaOH and autoclave.
-    After cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.0 with NaOH and autoclave. After cooling, add
+    the following solutions (filter-sterilized):'
 - step_number: 4
   action: MIX
-  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml
-    in 120 ml serum bottles) under a H2-CO2 (4:1, v/v) gas mixture, and seal with
-    butyl rubber stoppers. Pressurize inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles)
+    under a H2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers. Pressurize inoculated
+    bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 5
   action: MIX
-  description: 'Comment: For JCM 34026, use 1.0 L of MJ(-N) synthetic seawater and
-    omit distilled water.'
+  description: 'Comment: For JCM 34026, use 1.0 L of MJ(-N) synthetic seawater and omit distilled water.'
 applications:
 - Microbial cultivation
 curation_history:

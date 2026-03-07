@@ -1,6 +1,6 @@
 name: THIOMICROSPIRA V2501 MEDIUM
 original_name: THIOMICROSPIRA V2501 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -172,8 +172,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following
-    solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 8.0 - 8.5 with sterile 0.1 N NaOH.

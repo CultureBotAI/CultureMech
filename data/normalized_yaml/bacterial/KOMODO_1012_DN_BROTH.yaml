@@ -1,11 +1,11 @@
 name: DN BROTH
 original_name: DN BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1012 | DSMZ Medium: 1012
-  (mediadive.medium:1012) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1012 | DSMZ Medium: 1012 (mediadive.medium:1012)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1012
   term:

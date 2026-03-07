@@ -1,6 +1,6 @@
 name: DETHIOSULFOVIBRIO BELB1 MEDIUM
 original_name: DETHIOSULFOVIBRIO BELB1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -196,19 +196,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas mixture. After cooling, add the following solutions from anaerobic stocks
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,
+    add the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a stream
-    of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
-    add per liter the following solution from an anaerobic stock (autoclave and store
-    under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under a stream of N2-CO2 (4:1,
+    v/v) and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solution
+    from an anaerobic stock (autoclave and store under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

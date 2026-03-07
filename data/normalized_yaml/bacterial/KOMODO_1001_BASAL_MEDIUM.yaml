@@ -1,6 +1,6 @@
 name: BASAL MEDIUM
 original_name: BASAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1001
     label: BASAL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1001 | DSMZ Medium: 1001 (mediadive.medium:1001) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaHCO3
   term:
@@ -240,6 +239,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.658024Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.9

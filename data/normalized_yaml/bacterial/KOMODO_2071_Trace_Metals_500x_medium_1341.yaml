@@ -1,6 +1,6 @@
 name: Trace Metals (500x) (medium 1341)
 original_name: Trace Metals (500x) (medium 1341)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2071
     label: Trace Metals (500x) (medium 1341)
-notes: 'Source: KOMODO ModelSEED | ID: 2071 | DSMZ Medium: 2071 (mediadive.medium:2071)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2071 | DSMZ Medium: 2071 (mediadive.medium:2071) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

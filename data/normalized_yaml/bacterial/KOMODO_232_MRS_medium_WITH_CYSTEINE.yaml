@@ -1,6 +1,6 @@
 name: MRS medium WITH CYSTEINE
 original_name: MRS medium WITH CYSTEINE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.2-6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:232
     label: MRS medium WITH CYSTEINE
-notes: 'Source: KOMODO ModelSEED | ID: 232 | DSMZ Medium: 232 (mediadive.medium:232)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 232 | DSMZ Medium: 232 (mediadive.medium:232) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

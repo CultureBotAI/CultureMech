@@ -1,6 +1,6 @@
 name: MODIFIED 9K MEDIUM FOR FERROPLASMA AEOLICUM
 original_name: MODIFIED 9K MEDIUM FOR FERROPLASMA AEOLICUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.6
@@ -116,8 +116,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 1.6 - 1.7 with 10 N H2SO4 and autoclave. After cooling,
-    add filter-sterilized K2S4O6 solution to give a final concentration of 5 mM.
+  description: Adjust pH to 1.6 - 1.7 with 10 N H2SO4 and autoclave. After cooling, add filter-sterilized
+    K2S4O6 solution to give a final concentration of 5 mM.
 applications:
 - Microbial cultivation
 curation_history:

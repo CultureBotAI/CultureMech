@@ -1,11 +1,11 @@
 name: THIOMICROSPIRA PSYCHROPHILA MEDIUM
 original_name: THIOMICROSPIRA PSYCHROPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
-notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 142a | DSMZ Medium: 142a
-  (mediadive.medium:142a) | Aerobic: No'
+notes: 'pH buffer: NaHCO3 | Source: KOMODO ModelSEED | ID: 142a | DSMZ Medium: 142a (mediadive.medium:142a)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 142a
   term:

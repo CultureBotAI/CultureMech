@@ -1,8 +1,8 @@
 name: METHYLOMONAS MEDIUM (ELBE)
 original_name: METHYLOMONAS MEDIUM (ELBE)
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1653
   term:

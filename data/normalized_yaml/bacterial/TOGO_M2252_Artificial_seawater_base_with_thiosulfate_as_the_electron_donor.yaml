@@ -1,6 +1,6 @@
 name: Artificial seawater base with thiosulfate as the electron donor
 original_name: Artificial seawater base with thiosulfate as the electron donor
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,14 +8,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
-    component, Solution'
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined component, Solution'
 - preferred_term: thiosulfate
   concentration:
     value: '10'
     unit: MILLIMOLAR
-  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Growth factor; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26977
     label: Thiosulfate

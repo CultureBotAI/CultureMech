@@ -1,6 +1,6 @@
 name: FLEXIBACTER CANADENSIS MEDIUM
 original_name: FLEXIBACTER CANADENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -140,8 +140,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

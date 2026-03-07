@@ -1,6 +1,6 @@
 name: HOWARDELLA medium
 original_name: HOWARDELLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1085
     label: HOWARDELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1085 | DSMZ Medium: 1085 (mediadive.medium:1085)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1085 | DSMZ Medium: 1085 (mediadive.medium:1085) | Aerobic: Yes'
 ingredients:
 - preferred_term: Casitone
   concentration:

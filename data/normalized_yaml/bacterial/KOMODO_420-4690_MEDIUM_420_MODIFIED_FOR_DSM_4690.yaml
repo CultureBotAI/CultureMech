@@ -1,15 +1,14 @@
 name: MEDIUM 420 MODIFIED FOR DSM 4690
 original_name: MEDIUM 420 MODIFIED FOR DSM 4690
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 420_4690
   term:
     id: komodo.medium:420_4690
     label: MEDIUM 420 MODIFIED FOR DSM 4690
-notes: 'Source: KOMODO ModelSEED | ID: 420_4690 | DSMZ Medium: 420 (mediadive.medium:420)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 420_4690 | DSMZ Medium: 420 (mediadive.medium:420) | Aerobic: No'
 ingredients:
 - preferred_term: Blood agar No 2
   concentration:

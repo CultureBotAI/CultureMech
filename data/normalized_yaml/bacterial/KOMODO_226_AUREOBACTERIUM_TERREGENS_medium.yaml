@@ -1,6 +1,6 @@
 name: AUREOBACTERIUM TERREGENS medium
 original_name: AUREOBACTERIUM TERREGENS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:226
     label: AUREOBACTERIUM TERREGENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 226 | DSMZ Medium: 226 (mediadive.medium:226)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 226 | DSMZ Medium: 226 (mediadive.medium:226) | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:

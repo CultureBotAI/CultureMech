@@ -1,6 +1,6 @@
 name: MEDIUM 119 MODIFIED FOR DSM 15163
 original_name: MEDIUM 119 MODIFIED FOR DSM 15163
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:119_15163
     label: MEDIUM 119 MODIFIED FOR DSM 15163
-notes: 'Source: KOMODO ModelSEED | ID: 119_15163 | DSMZ Medium: 119 (mediadive.medium:119)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 119_15163 | DSMZ Medium: 119 (mediadive.medium:119) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

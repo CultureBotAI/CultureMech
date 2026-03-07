@@ -1,15 +1,14 @@
 name: MEDIUM 1 MODIFIED FOR DSM 11175
 original_name: MEDIUM 1 MODIFIED FOR DSM 11175
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_11175
   term:
     id: komodo.medium:1_11175
     label: MEDIUM 1 MODIFIED FOR DSM 11175
-notes: 'Source: KOMODO ModelSEED | ID: 1_11175 | DSMZ Medium: 1 (mediadive.medium:1)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_11175 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

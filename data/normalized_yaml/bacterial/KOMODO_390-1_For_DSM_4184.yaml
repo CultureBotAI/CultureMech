@@ -1,6 +1,6 @@
 name: For DSM 4184
 original_name: For DSM 4184
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:390.1
     label: For DSM 4184
-notes: 'Source: KOMODO ModelSEED | ID: 390.1 | DSMZ Medium: 390 (mediadive.medium:390)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 390.1 | DSMZ Medium: 390 (mediadive.medium:390) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

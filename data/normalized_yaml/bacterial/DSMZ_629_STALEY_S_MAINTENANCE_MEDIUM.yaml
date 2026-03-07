@@ -1,8 +1,8 @@
 name: STALEY'S MAINTENANCE MEDIUM
 original_name: STALEY'S MAINTENANCE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 629
@@ -157,9 +157,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve peptone and yeast extract in the distilled water, adjust the
-    pH to 7.2 and sterilize. After the medium has cooled add the Hutner's salts and
-    Vitamin solution.
+  description: Dissolve peptone and yeast extract in the distilled water, adjust the pH to 7.2 and sterilize.
+    After the medium has cooled add the Hutner's salts and Vitamin solution.
 - step_number: 2
   action: MIX
   description: For solid medium use 15.0 g agar.
@@ -180,8 +179,8 @@ preparation_steps:
   description: Filter-sterilized.
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

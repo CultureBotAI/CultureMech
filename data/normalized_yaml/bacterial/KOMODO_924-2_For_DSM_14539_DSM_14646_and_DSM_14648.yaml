@@ -1,6 +1,6 @@
 name: For DSM 14539, DSM 14646 and DSM 14648
 original_name: For DSM 14539, DSM 14646 and DSM 14648
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:924.2
     label: For DSM 14539, DSM 14646 and DSM 14648
-notes: 'Source: KOMODO ModelSEED | ID: 924.2 | DSMZ Medium: 924 (mediadive.medium:924)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 924.2 | DSMZ Medium: 924 (mediadive.medium:924) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -287,6 +286,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.646674Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.2

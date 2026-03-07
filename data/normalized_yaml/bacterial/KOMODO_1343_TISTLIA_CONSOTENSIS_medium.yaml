@@ -1,16 +1,15 @@
 name: TISTLIA CONSOTENSIS medium
 original_name: TISTLIA CONSOTENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 1343
   term:
     id: komodo.medium:1343
     label: TISTLIA CONSOTENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1343 | DSMZ Medium: 1343 (mediadive.medium:1343)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1343 | DSMZ Medium: 1343 (mediadive.medium:1343) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

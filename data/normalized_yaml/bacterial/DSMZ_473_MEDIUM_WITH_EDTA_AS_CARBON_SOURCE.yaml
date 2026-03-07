@@ -1,8 +1,8 @@
 name: MEDIUM WITH EDTA AS CARBON SOURCE
 original_name: MEDIUM WITH EDTA AS CARBON SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-7.6
 media_term:
   preferred_term: DSMZ Medium 473
@@ -182,8 +182,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6. Add
-    5.0 ml sterile stock solution (see medium 462).
+  description: Autoclave phosphate buffer separately. pH should be 7.5 - 7.6. Add 5.0 ml sterile stock
+    solution (see medium 462).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SALTWATER IRON-OXIDIZING BACTERIA MEDIUM
 original_name: SALTWATER IRON-OXIDIZING BACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -69,8 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 628 with artificial saltwater (see below) instead of
-    Modified Wolfe's mineral solution.
+  description: Use Medium No. 628 with artificial saltwater (see below) instead of Modified Wolfe's mineral
+    solution.
 applications:
 - Microbial cultivation
 curation_history:

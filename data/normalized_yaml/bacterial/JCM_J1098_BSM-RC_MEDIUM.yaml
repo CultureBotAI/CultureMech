@@ -1,6 +1,6 @@
 name: BSM-RC MEDIUM
 original_name: BSM-RC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -217,12 +217,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. After
-    cooling, add the following solution (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2 atmosphere. After cooling, add the
+    following solution (filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Aseptically and anaerobically distribute the medium into culture vessels
-    under a N2 atmosphere and add H2 at 5% volume of the gas phase.
+  description: Aseptically and anaerobically distribute the medium into culture vessels under a N2 atmosphere
+    and add H2 at 5% volume of the gas phase.
 applications:
 - Microbial cultivation
 curation_history:

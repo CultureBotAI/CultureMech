@@ -1,6 +1,6 @@
 name: CARBOXYDOTHERMUS MEDIUM (HETEROTROPH)
 original_name: CARBOXYDOTHERMUS MEDIUM (HETEROTROPH)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -257,19 +257,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, vitamins
-    and sulfide, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -45
-    min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add pyruvate, yeast extract, vitamins and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere
-    and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
-    CO2 gas mixture. Stock solutions of pyruvate and vitamins are sterilized by filtration.
-    After completing the medium adjust pH to 6.8-7.0 with a sterile anoxic stock solution
-    of Na2CO3 (5% w/v), if necessary.
+  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, vitamins and sulfide, then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add pyruvate,
+    yeast extract, vitamins and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas
+    atmosphere and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
+    mixture. Stock solutions of pyruvate and vitamins are sterilized by filtration. After completing the
+    medium adjust pH to 6.8-7.0 with a sterile anoxic stock solution of Na2CO3 (5% w/v), if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -280,5 +278,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:35.908129Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

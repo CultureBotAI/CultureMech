@@ -1,6 +1,6 @@
 name: PSEUDOALTEROMONAS SPIRALIS MEDIUM
 original_name: PSEUDOALTEROMONAS SPIRALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -116,8 +116,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 5.9 before autoklaving, adjust with NaHCO3 to pH 7.8 after
-    autoklaving.
+  description: Adjust to pH 5.9 before autoklaving, adjust with NaHCO3 to pH 7.8 after autoklaving.
 applications:
 - Microbial cultivation
 curation_history:

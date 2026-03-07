@@ -1,6 +1,6 @@
 name: MB MEDIUM WITH FORMATE
 original_name: MB MEDIUM WITH FORMATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -20,8 +20,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 687, replacing Methanol solution with Sodium formate
-    solution (see below).
+  description: Use Medium No. 687, replacing Methanol solution with Sodium formate solution (see below).
 applications:
 - Microbial cultivation
 curation_history:

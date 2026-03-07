@@ -1,16 +1,16 @@
 name: MEDIUM 940 MODIFIED FOR DSM 44686
 original_name: MEDIUM 940 MODIFIED FOR DSM 44686
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 940_44686
   term:
     id: komodo.medium:940_44686
     label: MEDIUM 940 MODIFIED FOR DSM 44686
-notes: 'Source: KOMODO ModelSEED | ID: 940_44686 | DSMZ Medium: 940 (mediadive.medium:940)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 940_44686 | DSMZ Medium: 940 (mediadive.medium:940) | Aerobic:
+  No'
 ingredients:
 - preferred_term: D-Glucose
   term:

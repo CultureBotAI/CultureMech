@@ -1,8 +1,8 @@
 name: GUYPARKERIA MEDIUM
 original_name: GUYPARKERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.5
 media_term:
   preferred_term: DSMZ Medium 518
@@ -131,14 +131,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except thiosulfate and adjust pH of medium to
-    7.3 - 7.5. Add thiosulfate to the medium after autoclaving from a sterile stock
-    solution sterilized by filtration. For liquid medium also sterilize the phosphates
-    separately in 1/10 of medium volume.
+  description: Dissolve ingredients except thiosulfate and adjust pH of medium to 7.3 - 7.5. Add thiosulfate
+    to the medium after autoclaving from a sterile stock solution sterilized by filtration. For liquid
+    medium also sterilize the phosphates separately in 1/10 of medium volume.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH;
-    then add other compounds. Adjust pH of final solution to 6.0 with NaOH.
+  description: Dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other compounds.
+    Adjust pH of final solution to 6.0 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:

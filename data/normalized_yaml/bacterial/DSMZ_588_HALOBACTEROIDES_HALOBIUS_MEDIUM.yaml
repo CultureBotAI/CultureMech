@@ -1,6 +1,6 @@
 name: HALOBACTEROIDES HALOBIUS MEDIUM
 original_name: HALOBACTEROIDES HALOBIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -77,10 +77,9 @@ preparation_steps:
   description: pH 6.5
 - step_number: 2
   action: MIX
-  description: Prepare salts (in 850 ml distilled water, do not adjust the pH), glucose
-    (50 ml of a 10% solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100
-    ml), separately under nitrogen using normal anaerobic techniques. Add glucose
-    and PIPES using anaerobic techniques.
+  description: Prepare salts (in 850 ml distilled water, do not adjust the pH), glucose (50 ml of a 10%
+    solution), and PIPES (100 ml of 400 mM solution, 12.096 g/100 ml), separately under nitrogen using
+    normal anaerobic techniques. Add glucose and PIPES using anaerobic techniques.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 377 MODIFIED FOR DSM 13482
 original_name: MEDIUM 377 MODIFIED FOR DSM 13482
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-6.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:377_13482
     label: MEDIUM 377 MODIFIED FOR DSM 13482
-notes: 'Source: KOMODO ModelSEED | ID: 377_13482 | DSMZ Medium: 377 (mediadive.medium:377)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 377_13482 | DSMZ Medium: 377 (mediadive.medium:377) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

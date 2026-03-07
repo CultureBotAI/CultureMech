@@ -1,6 +1,6 @@
 name: MEDIUM 34 MODIFIED FOR DSM 513
 original_name: MEDIUM 34 MODIFIED FOR DSM 513
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:34_513
     label: MEDIUM 34 MODIFIED FOR DSM 513
-notes: 'Source: KOMODO ModelSEED | ID: 34_513 | DSMZ Medium: 34 (mediadive.medium:34)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 34_513 | DSMZ Medium: 34 (mediadive.medium:34) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

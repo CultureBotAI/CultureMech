@@ -1,6 +1,6 @@
 name: Artificial tap water (medium 1167)
 original_name: Artificial tap water (medium 1167)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3010
     label: Artificial tap water (medium 1167)
-notes: 'Source: KOMODO ModelSEED | ID: 3010 | DSMZ Medium: 3010 (mediadive.medium:3010)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3010 | DSMZ Medium: 3010 (mediadive.medium:3010) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

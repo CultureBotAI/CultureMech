@@ -1,6 +1,6 @@
 name: MST-MEDIUM, AUTOTROPHIC GROWTH
 original_name: MST-MEDIUM, AUTOTROPHIC GROWTH
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1416
     label: MST-MEDIUM, AUTOTROPHIC GROWTH
-notes: 'Source: KOMODO ModelSEED | ID: 1416 | DSMZ Medium: 1416 (mediadive.medium:1416)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1416 | DSMZ Medium: 1416 (mediadive.medium:1416) | Aerobic: No'
 ingredients:
 - preferred_term: Na2S2O3 x 5 H2O
   term:

@@ -1,15 +1,14 @@
 name: METHYLOSARCINA QUISQUILLARUM AND M. FIBRATA MEDIUM
 original_name: METHYLOSARCINA QUISQUILLARUM AND M. FIBRATA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 921
   term:
     id: komodo.medium:921
     label: METHYLOSARCINA QUISQUILLARUM AND M. FIBRATA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 921 | DSMZ Medium: 921 (mediadive.medium:921)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 921 | DSMZ Medium: 921 (mediadive.medium:921) | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:

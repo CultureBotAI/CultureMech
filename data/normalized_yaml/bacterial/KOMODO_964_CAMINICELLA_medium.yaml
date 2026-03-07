@@ -1,6 +1,6 @@
 name: CAMINICELLA medium
 original_name: CAMINICELLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:964
     label: CAMINICELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 964 | DSMZ Medium: 964 (mediadive.medium:964)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 964 | DSMZ Medium: 964 (mediadive.medium:964) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

@@ -1,6 +1,6 @@
 name: DETHIOSULFOVIBRIO PEPTIDOVORANS MEDIUM
 original_name: DETHIOSULFOVIBRIO PEPTIDOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -215,18 +215,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, thiosulfate, cysteine and sulfide.
-    Sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add thiosulfate, cysteine and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Stock solutions
-    of thiosulfate and vitamins should be sterilized by filtration. The pH of the
-    complete medium should be 7.2 - 7.4.
+  description: Dissolve ingredients except carbonate, thiosulfate, cysteine and sulfide. Sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Stock solutions of thiosulfate
+    and vitamins should be sterilized by filtration. The pH of the complete medium should be 7.2 - 7.4.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

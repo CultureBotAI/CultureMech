@@ -1,6 +1,6 @@
 name: STEROIDOBACTER MEDIUM
 original_name: STEROIDOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1116
     label: STEROIDOBACTER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1116 | DSMZ Medium: 1116 (mediadive.medium:1116)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1116 | DSMZ Medium: 1116 (mediadive.medium:1116) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

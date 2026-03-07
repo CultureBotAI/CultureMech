@@ -1,6 +1,6 @@
 name: PEAT MEDIUM 2 FOR METHANOBACTERIA
 original_name: PEAT MEDIUM 2 FOR METHANOBACTERIA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -237,18 +237,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly, bring to a boil for 5 min, then, cool down
-    under a stream of a N2-CO2 (80:20, v/v) gas mixture. Distribute the medium into
-    Balch-type culture tubes (5 ml each) under the same gas mixture, seal with thick
-    blue butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly, bring to a boil for 5 min, then, cool down under a stream of
+    a N2-CO2 (80:20, v/v) gas mixture. Distribute the medium into Balch-type culture tubes (5 ml each)
+    under the same gas mixture, seal with thick blue butyl rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, add the following solutions to each of culture
-    tubes (containing 5 ml medium) from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'To complete the medium, add the following solutions to each of culture tubes (containing
+    5 ml medium) from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: MIX
-  description: Pressurize the tubes to 70 kPa H2-CO2 (80:20, v/v) and allow to stand
-    for at least 7 hr. Check the final pH of the medium to be about 5.7.
+  description: Pressurize the tubes to 70 kPa H2-CO2 (80:20, v/v) and allow to stand for at least 7 hr.
+    Check the final pH of the medium to be about 5.7.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 7.0 with NaOH.
@@ -265,5 +264,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.884765Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

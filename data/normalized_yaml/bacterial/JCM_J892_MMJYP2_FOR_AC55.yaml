@@ -1,6 +1,6 @@
 name: MMJYP2 FOR AC55
 original_name: MMJYP2 FOR AC55
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -194,17 +194,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Distribute the medium into culture
-    vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
-    and autoclave. After cooling, aseptically and anaerobically add per liter the
-    following solutions from anaerobic stocks (*filter-sterilized or autoclaved):'
+  description: 'Mix components and adjust pH to 7.0. Distribute the medium into culture vessels under
+    a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
+    and anaerobically add per liter the following solutions from anaerobic stocks (*filter-sterilized
+    or autoclaved):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa with the same gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

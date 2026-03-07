@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM ALKALICELLUM medium
 original_name: CLOSTRIDIUM ALKALICELLUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 8.8-9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1036
     label: CLOSTRIDIUM ALKALICELLUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1036 | DSMZ Medium: 1036 (mediadive.medium:1036)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1036 | DSMZ Medium: 1036 (mediadive.medium:1036) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

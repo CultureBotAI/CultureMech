@@ -1,8 +1,8 @@
 name: NSC3-MEDIUM WITH ACETATE
 original_name: NSC3-MEDIUM WITH ACETATE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 8.5-9
 media_term:
   preferred_term: DSMZ Medium 1246

@@ -1,16 +1,15 @@
 name: THIOBACILLUS NEAPOLITANUS MEDIUM
 original_name: THIOBACILLUS NEAPOLITANUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.6-7.0
 media_term:
   preferred_term: KOMODO Medium 68
   term:
     id: komodo.medium:68
     label: THIOBACILLUS NEAPOLITANUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 68 | DSMZ Medium: 68 (mediadive.medium:68)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 68 | DSMZ Medium: 68 (mediadive.medium:68) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

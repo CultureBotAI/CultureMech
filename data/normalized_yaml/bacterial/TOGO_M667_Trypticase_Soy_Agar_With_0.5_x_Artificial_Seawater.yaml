@@ -1,8 +1,8 @@
 name: Trypticase Soy Agar With 0.5 x Artificial Seawater
 original_name: Trypticase Soy Agar With 0.5 x Artificial Seawater
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Trypticase soy agar (BD-BBL)
   concentration:

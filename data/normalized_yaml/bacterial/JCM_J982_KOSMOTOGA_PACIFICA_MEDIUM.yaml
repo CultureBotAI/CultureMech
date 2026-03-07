@@ -1,6 +1,6 @@
 name: KOSMOTOGA PACIFICA MEDIUM
 original_name: KOSMOTOGA PACIFICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 232 supplemented with 3.0 g/L yeast extract and 2.4
-    g/L L-cystine. Cultivate under a N2-CO2 (4:1, v/v) gas atmosphere.
+  description: Use Medium No. 232 supplemented with 3.0 g/L yeast extract and 2.4 g/L L-cystine. Cultivate
+    under a N2-CO2 (4:1, v/v) gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

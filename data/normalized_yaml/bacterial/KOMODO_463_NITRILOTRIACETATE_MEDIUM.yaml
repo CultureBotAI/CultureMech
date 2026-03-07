@@ -1,6 +1,6 @@
 name: NITRILOTRIACETATE MEDIUM
 original_name: NITRILOTRIACETATE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:463
     label: NITRILOTRIACETATE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 463 | DSMZ Medium: 463 (mediadive.medium:463)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 463 | DSMZ Medium: 463 (mediadive.medium:463) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

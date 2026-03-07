@@ -1,8 +1,8 @@
 name: BHI agar with 5% bovine blood
 original_name: BHI agar with 5% bovine blood
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bovine blood
   concentration:

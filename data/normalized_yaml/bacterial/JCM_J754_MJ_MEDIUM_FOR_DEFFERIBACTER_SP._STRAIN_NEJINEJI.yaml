@@ -1,6 +1,6 @@
 name: MJ MEDIUM FOR DEFFERIBACTER SP. STRAIN NEJINEJI
 original_name: MJ MEDIUM FOR DEFFERIBACTER SP. STRAIN NEJINEJI
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -206,20 +206,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur and autoclave under a N2-CO2 (4:1, v/v)
-    gas mixture. After cooling, add the following solutions from anaerobic stocks
-    (filter-sterilized):'
+  description: 'Mix components except sulfur and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After
+    cooling, add the following solutions from anaerobic stocks (filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Separately steam sulfur for 3 hr on each of 3 successive days.
 - step_number: 3
   action: MIX
-  description: To complete the medium, distribute the solution into sterile culture
-    vessels containing appropriate amount of sulfur (e.g., 5 ml solution and 0.05
-    g sulfur in Hungate tubes) under a H2-CO2 (4:1, v/v) gas mixture and seal with
-    butyl rubber stoppers. Then, add Na2S x 9H2O solution from an anaerobic stock
-    (final 0.1 g/L). After inoculation, pressurize the inoculated culture vessels
-    to 200 kPa H2-CO2 (4:1, v/v).
+  description: To complete the medium, distribute the solution into sterile culture vessels containing
+    appropriate amount of sulfur (e.g., 5 ml solution and 0.05 g sulfur in Hungate tubes) under a H2-CO2
+    (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Then, add Na2S x 9H2O solution from an
+    anaerobic stock (final 0.1 g/L). After inoculation, pressurize the inoculated culture vessels to 200
+    kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

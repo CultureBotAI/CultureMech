@@ -1,16 +1,15 @@
 name: PSEUDOMONAS INDIGOFERA medium
 original_name: PSEUDOMONAS INDIGOFERA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.0-7.2
 media_term:
   preferred_term: KOMODO Medium 365
   term:
     id: komodo.medium:365
     label: PSEUDOMONAS INDIGOFERA medium
-notes: 'Source: KOMODO ModelSEED | ID: 365 | DSMZ Medium: 365 (mediadive.medium:365)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 365 | DSMZ Medium: 365 (mediadive.medium:365) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

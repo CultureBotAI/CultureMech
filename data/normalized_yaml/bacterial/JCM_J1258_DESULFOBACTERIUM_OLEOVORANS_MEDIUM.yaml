@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM OLEOVORANS MEDIUM
 original_name: DESULFOBACTERIUM OLEOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -255,17 +255,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
-    (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g., 10 ml
-    in Balch tubes) under the same gas mixture, seal with butyl rubber stoppers and
-    autoclave. After cooling, aseptically and anaerobically add per liter the following
-    solutions (autoclaved or *filter-sterilized and stored under a N2 gas atmosphere;
-    **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
+    mixture. Distribute the medium into culture vessels (e.g., 10 ml in Balch tubes) under the same gas
+    mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter-sterilized and stored under a N2 gas
+    atmosphere; **filter-sterilized and stored under an 80% N2-20% CO2 gas mixture):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Heat the solution in a closed vial under a N2 atmosphere in a boiling
-    water bath. Shake until stearic acid is dissolved and autoclave. Add the solution
-    to the medium while stearic acid is dissolved. Re-melt if stearic acid is solidified.
+  description: Heat the solution in a closed vial under a N2 atmosphere in a boiling water bath. Shake
+    until stearic acid is dissolved and autoclave. Add the solution to the medium while stearic acid is
+    dissolved. Re-melt if stearic acid is solidified.
 applications:
 - Microbial cultivation
 curation_history:

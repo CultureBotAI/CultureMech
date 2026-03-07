@@ -1,6 +1,6 @@
 name: ANAEROMYXOBACTER-MEDIUM
 original_name: ANAEROMYXOBACTER-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1200
     label: ANAEROMYXOBACTER-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1200 | DSMZ Medium: 1200 (mediadive.medium:1200)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1200 | DSMZ Medium: 1200 (mediadive.medium:1200) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

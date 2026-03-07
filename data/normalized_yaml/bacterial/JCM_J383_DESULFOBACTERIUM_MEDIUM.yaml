@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM MEDIUM
 original_name: DESULFOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -234,11 +234,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except L-sodium lactate, NaHCO3 and Na2S x 9H2O, and
-    autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave L-sodium
-    lactate in 10 ml distilled water anaerobically and filter-sterilize 5% NaHCO3
-    gassed with N2-CO2 (4:1, v/v) for 20 min. Add the sterile L-sodium lactate and
-    NaHCO3 solutions to the medium. Prior to inoculation, add an anaerobically autoclaved
+  description: Mix ingredients, except L-sodium lactate, NaHCO3 and Na2S x 9H2O, and autoclave under a
+    N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave L-sodium lactate in 10 ml distilled water anaerobically
+    and filter-sterilize 5% NaHCO3 gassed with N2-CO2 (4:1, v/v) for 20 min. Add the sterile L-sodium
+    lactate and NaHCO3 solutions to the medium. Prior to inoculation, add an anaerobically autoclaved
     5% Na2S x 9H2O solution to the medium.
 applications:
 - Microbial cultivation

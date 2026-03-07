@@ -1,15 +1,14 @@
 name: Seawater Starch Agar (SWS)
 original_name: Seawater Starch Agar (SWS)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Seawater (2% Salinity)*
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined
-    component, Solution'
+  notes: 'Role: Solvating media, Mineral source; Properties: Complex component, Defined component, Solution'
 - preferred_term: Soluble starch
   concentration:
     value: '10'

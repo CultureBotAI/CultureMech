@@ -1,8 +1,8 @@
 name: NEVSKIA MEDIUM
 original_name: NEVSKIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 828
@@ -173,8 +173,8 @@ preparation_steps:
   description: Filter sterilize the vitamin solution and add to the autoclaved medium.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 6.0 .

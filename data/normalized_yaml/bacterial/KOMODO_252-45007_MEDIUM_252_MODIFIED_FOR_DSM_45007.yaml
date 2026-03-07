@@ -1,15 +1,15 @@
 name: MEDIUM 252 MODIFIED FOR DSM 45007
 original_name: MEDIUM 252 MODIFIED FOR DSM 45007
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 252_45007
   term:
     id: komodo.medium:252_45007
     label: MEDIUM 252 MODIFIED FOR DSM 45007
-notes: 'Source: KOMODO ModelSEED | ID: 252_45007 | DSMZ Medium: 252 (mediadive.medium:252)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 252_45007 | DSMZ Medium: 252 (mediadive.medium:252) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Starch
   term:

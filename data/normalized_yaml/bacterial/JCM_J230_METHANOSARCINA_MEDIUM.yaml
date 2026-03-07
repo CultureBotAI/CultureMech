@@ -1,6 +1,6 @@
 name: METHANOSARCINA MEDIUM
 original_name: METHANOSARCINA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -238,14 +238,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, methanol, cysteine x HCl and Na2S x
-    9H2O, and bring to a boil for 5-10 sec. Cool down under a stream of N2-CO2 (80:20),
-    and add NaHCO3 and methanol to the medium. Dispense the medium into suitable culture
-    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of
-    N2-CO2 (80:20) and seal with butyl rubber stoppers. After autoclaving, stand the
-    medium overnight. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions,
-    respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically
-    add the cysteine x HCl and Na2S x 9H2O solutions.
+  description: Mix ingredients, except NaHCO3, methanol, cysteine x HCl and Na2S x 9H2O, and bring to
+    a boil for 5-10 sec. Cool down under a stream of N2-CO2 (80:20), and add NaHCO3 and methanol to the
+    medium. Dispense the medium into suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum
+    bottles) under a stream of N2-CO2 (80:20) and seal with butyl rubber stoppers. After autoclaving,
+    stand the medium overnight. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions, respectively,
+    under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add the cysteine x HCl
+    and Na2S x 9H2O solutions.
 applications:
 - Microbial cultivation
 curation_history:

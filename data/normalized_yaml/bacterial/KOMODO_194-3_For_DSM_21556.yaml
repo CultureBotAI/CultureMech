@@ -1,6 +1,6 @@
 name: For DSM 21556
 original_name: For DSM 21556
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:194.3
     label: For DSM 21556
-notes: 'Source: KOMODO ModelSEED | ID: 194.3 | DSMZ Medium: 194 (mediadive.medium:194)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 194.3 | DSMZ Medium: 194 (mediadive.medium:194) | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:

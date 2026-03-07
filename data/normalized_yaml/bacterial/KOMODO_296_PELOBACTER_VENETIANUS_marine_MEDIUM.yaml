@@ -1,6 +1,6 @@
 name: PELOBACTER VENETIANUS (marine) MEDIUM
 original_name: PELOBACTER VENETIANUS (marine) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:296
     label: PELOBACTER VENETIANUS (marine) MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 296 | DSMZ Medium: 296 (mediadive.medium:296)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 296 | DSMZ Medium: 296 (mediadive.medium:296) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

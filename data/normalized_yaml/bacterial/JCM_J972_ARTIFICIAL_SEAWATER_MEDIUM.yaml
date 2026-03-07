@@ -1,6 +1,6 @@
 name: ARTIFICIAL SEAWATER MEDIUM
 original_name: ARTIFICIAL SEAWATER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L (final)
-    peptone.
+  description: Use Medium No. 701 with 3.0 g/L (final) yeast extract and 2.5 g/L (final) peptone.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.

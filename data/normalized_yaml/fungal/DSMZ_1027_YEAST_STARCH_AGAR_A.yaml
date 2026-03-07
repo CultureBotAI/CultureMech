@@ -1,8 +1,8 @@
 name: YEAST STARCH AGAR (A)
 original_name: YEAST STARCH AGAR (A)
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 1027

@@ -1,15 +1,14 @@
 name: Full media (GYM Streptomyces Medium)
 original_name: Full media (GYM Streptomyces Medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Inorganic
-    compound, Defined component'
+  notes: 'Role: Protective agent, Mineral source; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -31,8 +30,7 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

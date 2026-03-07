@@ -599,3 +599,112 @@ class TestEnrichmentPipelineIntegration:
         assert "curator" in entry
         assert "action" in entry
         assert "notes" in entry
+
+
+class TestATCCLiteratureVerification:
+    """Test ATCC cross-reference verification via literature."""
+
+    def setup_method(self):
+        """Set up test fixtures."""
+        self.temp_dir = Path(tempfile.mkdtemp())
+
+    @pytest.mark.skipif(
+        not Path("data/normalized_yaml").exists(),
+        reason="Requires normalized YAML files"
+    )
+    def test_atcc_builder_without_literature_verification(self):
+        """Test that ATCC builder works without literature verification."""
+        from culturemech.enrich.atcc_crossref_builder import ATCCCrossReferenceBuilder
+
+        # Create builder without literature verification
+        builder = ATCCCrossReferenceBuilder(enable_literature_verification=False)
+
+        assert builder.crossref_verifier is None
+
+        # Should still be able to find candidates
+        candidates = builder.find_candidates(min_similarity=0.9)
+        assert isinstance(candidates, list)
+
+    @pytest.mark.skipif(
+        not Path("data/normalized_yaml").exists(),
+        reason="Requires normalized YAML files"
+    )
+    def test_atcc_builder_with_literature_verification_enabled(self):
+        """Test that ATCC builder initializes with literature verification."""
+        from culturemech.enrich.atcc_crossref_builder import ATCCCrossReferenceBuilder
+
+        # Create builder with literature verification
+        builder = ATCCCrossReferenceBuilder(enable_literature_verification=True)
+
+        assert builder.crossref_verifier is not None
+        assert builder.lit_verifier is not None
+
+        # Verify Sci-Hub is disabled by default
+        assert builder.lit_verifier.use_fallback_pdf == False
+
+    def test_literature_verifier_integration(self):
+        """Test basic LiteratureVerifier integration."""
+        from culturemech.enrich.literature_verifier import LiteratureVerifier
+
+        # Create verifier without Sci-Hub
+        verifier = LiteratureVerifier(use_fallback_pdf=False)
+
+        # Verify initialization
+        assert verifier.use_fallback_pdf == False
+        assert verifier.cache_dir.exists()
+        assert verifier.pdf_cache_dir.exists()
+
+    def test_atcc_crossref_verifier_integration(self):
+        """Test basic ATCCCrossRefVerifier integration."""
+        from culturemech.enrich.literature_verifier import LiteratureVerifier
+        from culturemech.enrich.atcc_crossref_verifier import ATCCCrossRefVerifier
+
+        # Create verifier chain
+        lit_verifier = LiteratureVerifier(use_fallback_pdf=False)
+        crossref_verifier = ATCCCrossRefVerifier(lit_verifier)
+
+        # Verify initialization
+        assert crossref_verifier.verifier is not None
+
+    def test_scihub_environment_variable_integration(self):
+        """Test that ENABLE_SCIHUB_FALLBACK environment variable works."""
+        import os
+        from culturemech.enrich.literature_verifier import LiteratureVerifier
+
+        # Set environment variable
+        os.environ["ENABLE_SCIHUB_FALLBACK"] = "true"
+
+        # Create builder - should pick up environment variable
+        from culturemech.enrich.atcc_crossref_builder import ATCCCrossReferenceBuilder
+        builder = ATCCCrossReferenceBuilder(enable_literature_verification=True)
+
+        # Verify Sci-Hub is enabled
+        assert builder.lit_verifier.use_fallback_pdf == True
+
+        # Clean up
+        del os.environ["ENABLE_SCIHUB_FALLBACK"]
+
+    def test_candidate_report_structure_with_literature_fields(self):
+        """Test that candidate reports include literature verification fields."""
+        from culturemech.enrich.atcc_crossref_builder import ATCCCrossReferenceBuilder
+
+        # Create builder without literature verification
+        builder = ATCCCrossReferenceBuilder(enable_literature_verification=False)
+
+        # Generate candidates report
+        output_file = self.temp_dir / "candidates.json"
+        if Path("data/normalized_yaml").exists():
+            report = builder.generate_candidates_report(
+                output_file=output_file,
+                min_similarity=0.9,
+                verify_literature=False
+            )
+
+            # Verify report structure includes fields for literature verification
+            assert "candidates" in report
+            if len(report["candidates"]) > 0:
+                candidate = report["candidates"][0]
+                assert "verified" in candidate
+                assert "verification_notes" in candidate
+                assert "evidence_snippet" in candidate
+                assert "pdf_source" in candidate

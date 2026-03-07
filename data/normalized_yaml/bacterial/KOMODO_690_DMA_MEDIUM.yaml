@@ -1,6 +1,6 @@
 name: DMA MEDIUM
 original_name: DMA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:690
     label: DMA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 690 | DSMZ Medium: 690 (mediadive.medium:690)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 690 | DSMZ Medium: 690 (mediadive.medium:690) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -257,5 +256,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.361550Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

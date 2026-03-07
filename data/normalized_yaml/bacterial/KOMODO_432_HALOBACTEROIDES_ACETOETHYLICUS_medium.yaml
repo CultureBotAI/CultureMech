@@ -1,6 +1,6 @@
 name: HALOBACTEROIDES ACETOETHYLICUS medium
 original_name: HALOBACTEROIDES ACETOETHYLICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:432
     label: HALOBACTEROIDES ACETOETHYLICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 432 | DSMZ Medium: 432 (mediadive.medium:432)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 432 | DSMZ Medium: 432 (mediadive.medium:432) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -167,5 +166,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.930429Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

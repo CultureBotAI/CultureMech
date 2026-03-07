@@ -1,6 +1,6 @@
 name: THERMOCOCCUS MEDIUM
 original_name: THERMOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -250,23 +250,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0-7.2
-    and autoclave under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Neutralize Na2S x 9H2O as a 5% solution and autoclave under a N2 gas atmosphere.
-    Distribute the medium and sulfur into culture vessels under a N2 stream, and seal
-    with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O
-    solution, and readjust pH to 7.0-7.2, if necessary.
+  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 7.0-7.2 and autoclave under
+    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5%
+    solution and autoclave under a N2 gas atmosphere. Distribute the medium and sulfur into culture vessels
+    under a N2 stream, and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S
+    x 9H2O solution, and readjust pH to 7.0-7.2, if necessary.
 - step_number: 2
   action: MIX
   description: 'Comment:'
 - step_number: 3
   action: MIX
-  description: Most of <I>Thermococcus</I> strains will grow in this medium supplemented
-    with 5.0 g/L maltodextrin and omitted sulfur.
+  description: Most of <I>Thermococcus</I> strains will grow in this medium supplemented with 5.0 g/L
+    maltodextrin and omitted sulfur.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: HALF STRENGTH BACTO MARINE BROTH
 original_name: HALF STRENGTH BACTO MARINE BROTH
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
   preferred_term: DSMZ Medium 514a
@@ -128,20 +128,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 1/2 strength medium 514. If using Difco Bacto Marine Broth use 18.7
-    g/l.
+  description: 1/2 strength medium 514. If using Difco Bacto Marine Broth use 18.7 g/l.
 - step_number: 2
   action: MIX
   description: Final pH 7.6. The medium may be solidified by adding 15 g/l agar.
 - step_number: 3
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
-    from Difco add 37.40 g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
+    g to 1 litre water.
 - step_number: 4
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
-    brands (even if they refer to Difco2216) have not been tested and might not support
-    growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
+    they refer to Difco2216) have not been tested and might not support growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:

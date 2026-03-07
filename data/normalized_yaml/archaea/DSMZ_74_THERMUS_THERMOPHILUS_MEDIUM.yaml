@@ -1,6 +1,6 @@
 name: THERMUS THERMOPHILUS MEDIUM
 original_name: THERMUS THERMOPHILUS MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -32,8 +32,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: The original medium description specifies polypeptone, which appears
-    to be no longer available.
+  description: The original medium description specifies polypeptone, which appears to be no longer available.
 applications:
 - Microbial cultivation
 curation_history:

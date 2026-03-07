@@ -1,6 +1,6 @@
 name: Cyanobacteria Medium MCL
 original_name: Cyanobacteria Medium MCL
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -101,27 +101,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'After cooling add the following filter sterilized component under
-    sterile conditions:'
+  description: 'After cooling add the following filter sterilized component under sterile conditions:'
 - step_number: 4
   action: MIX
-  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with MilliQ water.
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='500'>500</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='500'>500</span> ml with MilliQ water.
 - step_number: 6
   action: MIX
-  description: Make up to <span class='amount' data-volume='100'>100</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='100'>100</span> ml with MilliQ water.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: YSG Medium
 original_name: YSG Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 3.7
 media_term:
   preferred_term: DSMZ Medium 1805
@@ -49,9 +49,9 @@ preparation_steps:
   description: Adjust pH to 3.7 with H2SO4.
 - step_number: 2
   action: AUTOCLAVE
-  description: For preparation of agar plates dissolve  agar in 500 ml distilled water
-    and autoclave separately. The basis medium should then be dissolved in 500 ml
-    distilled water only. Cool down after sterilization and mix.
+  description: For preparation of agar plates dissolve  agar in 500 ml distilled water and autoclave separately.
+    The basis medium should then be dissolved in 500 ml distilled water only. Cool down after sterilization
+    and mix.
 applications:
 - Microbial cultivation
 curation_history:

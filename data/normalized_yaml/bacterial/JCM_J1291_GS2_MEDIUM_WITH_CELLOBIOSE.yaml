@@ -1,6 +1,6 @@
 name: GS2 MEDIUM WITH CELLOBIOSE
 original_name: GS2 MEDIUM WITH CELLOBIOSE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -95,10 +95,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2 with NaOH. Bring to
-    a boil, then cool down and distribute into culture vessels under a N2 gas stream,
-    seal with butyl rubber stoppers, and autoclave. After cooling, aseptically and
-    anaerobically add the following solution (autoclaved):'
+  description: 'Mix components thoroughly and adjust pH to 7.2 with NaOH. Bring to a boil, then cool down
+    and distribute into culture vessels under a N2 gas stream, seal with butyl rubber stoppers, and autoclave.
+    After cooling, aseptically and anaerobically add the following solution (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

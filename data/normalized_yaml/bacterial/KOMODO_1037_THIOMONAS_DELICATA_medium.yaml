@@ -1,16 +1,15 @@
 name: THIOMONAS DELICATA medium
 original_name: THIOMONAS DELICATA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 media_term:
   preferred_term: KOMODO Medium 1037
   term:
     id: komodo.medium:1037
     label: THIOMONAS DELICATA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1037 | DSMZ Medium: 1037 (mediadive.medium:1037)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1037 | DSMZ Medium: 1037 (mediadive.medium:1037) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

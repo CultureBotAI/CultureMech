@@ -1,6 +1,6 @@
 name: Trace elements (medium 1147)
 original_name: Trace elements (medium 1147)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3089
     label: Trace elements (medium 1147)
-notes: 'Source: KOMODO ModelSEED | ID: 3089 | DSMZ Medium: 3089 (mediadive.medium:3089)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3089 | DSMZ Medium: 3089 (mediadive.medium:3089) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

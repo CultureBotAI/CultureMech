@@ -1,11 +1,11 @@
 name: HQG?1 medium
 original_name: HQG?1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 298a | DSMZ Medium:
-  298a (mediadive.medium:298a) | Aerobic: Yes'
+notes: 'pH buffer: bicarbonate | Source: KOMODO ModelSEED | ID: 298a | DSMZ Medium: 298a (mediadive.medium:298a)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 298a
   term:

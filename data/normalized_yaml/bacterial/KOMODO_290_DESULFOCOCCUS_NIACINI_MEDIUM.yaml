@@ -1,6 +1,6 @@
 name: DESULFOCOCCUS NIACINI MEDIUM
 original_name: DESULFOCOCCUS NIACINI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:290
     label: DESULFOCOCCUS NIACINI MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 290 | DSMZ Medium: 290 (mediadive.medium:290)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 290 | DSMZ Medium: 290 (mediadive.medium:290) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

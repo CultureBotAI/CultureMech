@@ -1,16 +1,15 @@
 name: CATENOCOCCUS MEDIUM
 original_name: CATENOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 644
   term:
     id: komodo.medium:644
     label: CATENOCOCCUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 644 | DSMZ Medium: 644 (mediadive.medium:644)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 644 | DSMZ Medium: 644 (mediadive.medium:644) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

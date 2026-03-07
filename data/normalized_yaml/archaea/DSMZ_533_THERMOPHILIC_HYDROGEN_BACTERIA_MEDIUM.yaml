@@ -1,6 +1,6 @@
 name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
 original_name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-category: imported
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -108,8 +108,7 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: MIX
-  description: Incubate (e.g., in a serum bottle) with a headspace of 5% (v/v) O2,
-    85% H2, 10% CO2.
+  description: Incubate (e.g., in a serum bottle) with a headspace of 5% (v/v) O2, 85% H2, 10% CO2.
 applications:
 - Microbial cultivation
 curation_history:

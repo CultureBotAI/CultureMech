@@ -1,6 +1,6 @@
 name: IRD F1F22 MEDIUM
 original_name: IRD F1F22 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -151,15 +151,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Bring to a boil and cool down
-    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After
-    cooling, aseptically and anaerobically add per liter the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.0. Bring to a boil and cool down under a N2-CO2 (4:1,
+    v/v) gas stream. Distribute the medium into culture vessels under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically add per liter the
+    following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to use, add per liter the following solution to reduce the medium
-    (autoclaved and stored under N2):'
+  description: 'Prior to use, add per liter the following solution to reduce the medium (autoclaved and
+    stored under N2):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: RHIZOBIUM MEDIUM
 original_name: RHIZOBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 98
@@ -46,8 +46,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear
-    supernatant allow to settle and centrifuge. Adjust pH to 7.2.
+  description: Autoclave soil suspension for one hour at 121°C. To obtain a clear supernatant allow to
+    settle and centrifuge. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:

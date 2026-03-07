@@ -1,6 +1,6 @@
 name: GS MEDIUM
 original_name: GS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 262, replacing sodium acetate with 1.8 g/L glucose.
-    Cultivate under a N2-CO2 (80:20, v/v) gas mixture.
+  description: Use Medium No. 262, replacing sodium acetate with 1.8 g/L glucose. Cultivate under a N2-CO2
+    (80:20, v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

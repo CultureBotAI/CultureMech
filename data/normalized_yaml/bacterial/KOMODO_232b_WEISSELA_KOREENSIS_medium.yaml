@@ -1,6 +1,6 @@
 name: WEISSELA KOREENSIS medium
 original_name: WEISSELA KOREENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:232b
     label: WEISSELA KOREENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 232b | DSMZ Medium: 232b (mediadive.medium:232b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 232b | DSMZ Medium: 232b (mediadive.medium:232b) | Aerobic: Yes'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

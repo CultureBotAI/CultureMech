@@ -1,6 +1,6 @@
 name: Phosphate buffer pH 7.2
 original_name: Phosphate buffer pH 7.2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3042
     label: Phosphate buffer pH 7.2
-notes: 'Source: KOMODO ModelSEED | ID: 3042 | DSMZ Medium: 3042 (mediadive.medium:3042)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3042 | DSMZ Medium: 3042 (mediadive.medium:3042) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

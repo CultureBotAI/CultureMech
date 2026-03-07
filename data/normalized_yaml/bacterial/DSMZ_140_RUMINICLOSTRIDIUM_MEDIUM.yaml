@@ -1,6 +1,6 @@
 name: RUMINICLOSTRIDIUM MEDIUM
 original_name: RUMINICLOSTRIDIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -96,28 +96,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, cellobiose and reducing agents),
-    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
-    Use either clarified rumen fluid  or sludge fluid as supplement. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add cellobiose, sulfide and cysteine from sterile anoxic stock solutions prepared
-    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. Cellobiose has to be sterilized by filtration.
-    Adjust pH of complete medium to 6.8, if necessary.
+  description: Dissolve ingredients (except carbonate, cellobiose and reducing agents), bring medium to
+    the boil, then cool to room temperature under 100% CO2 gas atmosphere. Use either clarified rumen
+    fluid  or sludge fluid as supplement. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add cellobiose, sulfide and cysteine from sterile anoxic stock
+    solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Cellobiose has to be sterilized by filtration. Adjust pH of complete
+    medium to 6.8, if necessary.
 - step_number: 2
   action: AUTOCLAVE
-  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after
-    gassing with nitrogen gas for a few minutes incubate it at 37°C for 24 hours.
-    Then centrifuge the sludge at 13000 g and autoclave the resulting, clear supernatant
-    in screw-capped vessels under nitrogen gas. The sludge fluid can be stored at
-    8-12°C in the dark.
+  description: Add 0.4% yeast extract to sludge from an anaerobic digester, and after gassing with nitrogen
+    gas for a few minutes incubate it at 37°C for 24 hours. Then centrifuge the sludge at 13000 g and
+    autoclave the resulting, clear supernatant in screw-capped vessels under nitrogen gas. The sludge
+    fluid can be stored at 8-12°C in the dark.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:

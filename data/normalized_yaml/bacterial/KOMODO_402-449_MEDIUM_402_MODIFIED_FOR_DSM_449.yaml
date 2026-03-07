@@ -1,16 +1,15 @@
 name: MEDIUM 402 MODIFIED FOR DSM 449
 original_name: MEDIUM 402 MODIFIED FOR DSM 449
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 3-4
 media_term:
   preferred_term: KOMODO Medium 402_449
   term:
     id: komodo.medium:402_449
     label: MEDIUM 402 MODIFIED FOR DSM 449
-notes: 'Source: KOMODO ModelSEED | ID: 402_449 | DSMZ Medium: 402 (mediadive.medium:402)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 402_449 | DSMZ Medium: 402 (mediadive.medium:402) | Aerobic: No'
 ingredients:
 - preferred_term: CaCl2 x 2 H2O
   term:

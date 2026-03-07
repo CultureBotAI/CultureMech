@@ -1,11 +1,11 @@
 name: SULFOLOBUS MT-4 medium
 original_name: SULFOLOBUS MT-4 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 182a | DSMZ Medium: 182a
-  (mediadive.medium:182a) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 182a | DSMZ Medium: 182a (mediadive.medium:182a)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 182a
   term:

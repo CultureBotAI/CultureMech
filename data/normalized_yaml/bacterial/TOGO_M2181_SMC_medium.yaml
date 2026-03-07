@@ -1,6 +1,6 @@
 name: SMC medium
 original_name: SMC medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '650'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:30911
     label: glucitol
@@ -51,8 +49,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: 50% Sucrose solution
   concentration:
     value: '20'

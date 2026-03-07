@@ -1,11 +1,11 @@
 name: Fe(III)NTA solution (medium 1001)
 original_name: Fe(III)NTA solution (medium 1001)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2005 | DSMZ Medium: 2005
-  (mediadive.medium:2005) | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 2005 | DSMZ Medium: 2005 (mediadive.medium:2005)
+  | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 2005
   term:

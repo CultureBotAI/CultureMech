@@ -1,6 +1,6 @@
 name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
 original_name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -282,20 +282,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Dissolve ingredients except carbonate, cellobiose, vitamins, cysteine\
-    \ and sulfide, then sparge medium with\r\n80% N2 and 20% CO2 gas mixture for 30\
-    \ – 45 min to make it anoxic. Dispense medium under the same gas atmosphere into\
-    \ anoxic Hungate-type tubes and autoclave. Add cellobiose, vitamins, cysteine\
-    \ and sulfide from sterile anoxic stock solutions prepared\r\nunder 100% N2 gas\
-    \ and carbonate from a sterile anoxic stock solution prepared under 80% N2 and\
-    \ 20% CO2 gas mixture. Cellobiose and vitamins have to be sterilized by filtration.\
-    \ Prior to use adjust pH of complete medium to 7.2 - 7.4. Cellulose (MN 300, Whatman\
-    \ CF II, Kleenex tissue paper, or HCl treated cotton) can be used as an alternative\
-    \ to cellobiose."
+  description: "Dissolve ingredients except carbonate, cellobiose, vitamins, cysteine and sulfide, then\
+    \ sparge medium with\r\n80% N2 and 20% CO2 gas mixture for 30 – 45 min to make it anoxic. Dispense\
+    \ medium under the same gas atmosphere into anoxic Hungate-type tubes and autoclave. Add cellobiose,\
+    \ vitamins, cysteine and sulfide from sterile anoxic stock solutions prepared\r\nunder 100% N2 gas\
+    \ and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.\
+    \ Cellobiose and vitamins have to be sterilized by filtration. Prior to use adjust pH of complete\
+    \ medium to 7.2 - 7.4. Cellulose (MN 300, Whatman CF II, Kleenex tissue paper, or HCl treated cotton)\
+    \ can be used as an alternative to cellobiose."
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: The ferrous sulfate solution is not stable and should be freshly prepared.
@@ -309,5 +307,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.188874Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

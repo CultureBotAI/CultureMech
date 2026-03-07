@@ -1,16 +1,15 @@
 name: For strains DSM 21373, DSM 21449, DSM 21450, DSM 21621, and DSM 21632
 original_name: For strains DSM 21373, DSM 21449, DSM 21450, DSM 21621, and DSM 21632
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: KOMODO Medium 514d.1
   term:
     id: komodo.medium:514d.1
     label: For strains DSM 21373, DSM 21449, DSM 21450, DSM 21621, and DSM 21632
-notes: 'Source: KOMODO ModelSEED | ID: 514d.1 | DSMZ Medium: 514d (mediadive.medium:514d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514d.1 | DSMZ Medium: 514d (mediadive.medium:514d) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

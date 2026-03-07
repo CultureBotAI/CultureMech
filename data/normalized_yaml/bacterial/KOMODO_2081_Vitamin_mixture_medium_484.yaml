@@ -1,6 +1,6 @@
 name: Vitamin mixture (medium 484)
 original_name: Vitamin mixture (medium 484)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2081
     label: Vitamin mixture (medium 484)
-notes: 'Source: KOMODO ModelSEED | ID: 2081 | DSMZ Medium: 2081 (mediadive.medium:2081)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2081 | DSMZ Medium: 2081 (mediadive.medium:2081) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

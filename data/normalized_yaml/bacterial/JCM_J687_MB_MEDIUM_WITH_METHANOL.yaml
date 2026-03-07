@@ -1,6 +1,6 @@
 name: MB MEDIUM WITH METHANOL
 original_name: MB MEDIUM WITH METHANOL
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -208,15 +208,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except NaHCO3, bring to a boil for several seconds
-    and cool down under a stream of N2-CO2 (80:20). Add NaHCO3, mix thoroughly and
-    distribute the medium into culture vessels under the same gas mixture. Seal with
-    butyl rubber stoppers and autoclave. Finally, add per liter the following sterile
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components except NaHCO3, bring to a boil for several seconds and cool down under
+    a stream of N2-CO2 (80:20). Add NaHCO3, mix thoroughly and distribute the medium into culture vessels
+    under the same gas mixture. Seal with butyl rubber stoppers and autoclave. Finally, add per liter
+    the following sterile solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

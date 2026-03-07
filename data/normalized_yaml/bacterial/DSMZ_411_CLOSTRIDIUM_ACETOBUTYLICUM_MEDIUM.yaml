@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM ACETOBUTYLICUM MEDIUM
 original_name: CLOSTRIDIUM ACETOBUTYLICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -51,18 +51,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix potatoes and CaCO3 then autoclave 30 min at 121°C. Filter through
-    cheese cloth, add glucose and cysteine, distribute under 100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 20 min.
-    Adjust pH of complete medium to 6.8.
+  description: Mix potatoes and CaCO3 then autoclave 30 min at 121°C. Filter through cheese cloth, add
+    glucose and cysteine, distribute under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave at 121°C for 20 min. Adjust pH of complete medium to 6.8.
 - step_number: 2
   action: STORE
-  description: 'Note: For the reactivation of freeze-dried strains it is recommended
-    to use the following simple milk medium:'
+  description: 'Note: For the reactivation of freeze-dried strains it is recommended to use the following
+    simple milk medium:'
 - step_number: 3
   action: AUTOCLAVE
-  description: Adjust pH to 7.1. Tube and autoclave under 100% N2 gas atmosphere for
-    12 min at 121°C.
+  description: Adjust pH to 7.1. Tube and autoclave under 100% N2 gas atmosphere for 12 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 412 MODIFIED FOR DSM 18806
 original_name: MEDIUM 412 MODIFIED FOR DSM 18806
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:412_18806
     label: MEDIUM 412 MODIFIED FOR DSM 18806
-notes: 'Source: KOMODO ModelSEED | ID: 412_18806 | DSMZ Medium: 412 (mediadive.medium:412)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 412_18806 | DSMZ Medium: 412 (mediadive.medium:412) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:
@@ -282,5 +282,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.477400Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

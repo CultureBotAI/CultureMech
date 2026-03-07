@@ -1,6 +1,6 @@
 name: Marine Broth 2216
 original_name: Marine Broth 2216
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Broth Medium Marine Broth 2216 (BD 279110)
   concentration:
     value: '37.4'

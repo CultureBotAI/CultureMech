@@ -1,6 +1,6 @@
 name: Halorutilales haloarchaeon medium
 original_name: Halorutilales haloarchaeon medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -214,8 +214,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with 0.5 M KH2PO4.
 - step_number: 2
   action: POUR_PLATES
-  description: Dispense into serum bottles (30 ml medium in 100 ml serum bottles,
-    OR 15 ml in 50 serum bottles).
+  description: Dispense into serum bottles (30 ml medium in 100 ml serum bottles, OR 15 ml in 50 serum
+    bottles).
 - step_number: 3
   action: MIX
   description: add 20% CO2 to gas phase (in serum bottles)
@@ -250,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.238885Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

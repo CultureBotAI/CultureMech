@@ -1,6 +1,6 @@
 name: PYROLOBUS FUMARII MEDIUM
 original_name: PYROLOBUS FUMARII MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:792
     label: PYROLOBUS FUMARII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 792 | DSMZ Medium: 792 (mediadive.medium:792)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 792 | DSMZ Medium: 792 (mediadive.medium:792) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

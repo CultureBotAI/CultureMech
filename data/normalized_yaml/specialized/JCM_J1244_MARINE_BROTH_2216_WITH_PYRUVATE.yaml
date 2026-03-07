@@ -1,6 +1,6 @@
 name: MARINE BROTH 2216 WITH PYRUVATE
 original_name: MARINE BROTH 2216 WITH PYRUVATE
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -25,12 +25,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add
-    the following solution (autoclaved):'
+  description: 'Mix components and adjust pH to 8.0. Autoclave. After cooling, add the following solution
+    (autoclaved):'
 - step_number: 2
   action: MIX
-  description: 'Comments: Remove precipitate yielded after autoclaving by filtration,
-    if necessary.'
+  description: 'Comments: Remove precipitate yielded after autoclaving by filtration, if necessary.'
 applications:
 - Microbial cultivation
 curation_history:

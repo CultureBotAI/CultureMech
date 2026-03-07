@@ -1,6 +1,6 @@
 name: HALOMONAS SUBGLACIESCOLA
 original_name: HALOMONAS SUBGLACIESCOLA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -204,8 +204,8 @@ preparation_steps:
   description: pH 8.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave and add, on cooling 20.0 ml sterile Hutner's salts (see medium
-    590), 1.0 ml vitamin solution, and 20.0 ml sterile phosphate supplement.
+  description: Autoclave and add, on cooling 20.0 ml sterile Hutner's salts (see medium 590), 1.0 ml vitamin
+    solution, and 20.0 ml sterile phosphate supplement.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter-sterilized.
@@ -223,8 +223,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

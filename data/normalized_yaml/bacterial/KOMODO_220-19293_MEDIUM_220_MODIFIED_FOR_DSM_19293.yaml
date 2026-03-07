@@ -1,15 +1,15 @@
 name: MEDIUM 220 MODIFIED FOR DSM 19293
 original_name: MEDIUM 220 MODIFIED FOR DSM 19293
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 220_19293
   term:
     id: komodo.medium:220_19293
     label: MEDIUM 220 MODIFIED FOR DSM 19293
-notes: 'Source: KOMODO ModelSEED | ID: 220_19293 | DSMZ Medium: 220 (mediadive.medium:220)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 220_19293 | DSMZ Medium: 220 (mediadive.medium:220) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

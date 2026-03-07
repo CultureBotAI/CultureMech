@@ -1,6 +1,6 @@
 name: ACIDIFFEROBACTER MURCIENSIS MEDIUM
 original_name: ACIDIFFEROBACTER MURCIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
@@ -98,8 +98,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 2.0 with 10 N H2SO4 and autoclave. After autoclaving,
-    add the following solution (separately autoclaved):'
+  description: 'Adjust pH to 2.0 with 10 N H2SO4 and autoclave. After autoclaving, add the following solution
+    (separately autoclaved):'
 - step_number: 2
   action: MIX
   description: '<I>Iron(II) sulfate solution: </I>'

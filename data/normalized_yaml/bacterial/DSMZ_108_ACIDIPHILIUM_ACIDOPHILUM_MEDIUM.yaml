@@ -1,8 +1,8 @@
 name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
 original_name: ACIDIPHILIUM ACIDOPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 4.5
 media_term:
   preferred_term: DSMZ Medium 108
@@ -71,9 +71,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: In liquid medium, the pH should be adjusted to 3.5 with H2SO4. In solid
-    medium, the pH should be adjusted to 4.5 with H2SO4 after autoclaving the medium.
-    Sterilize the glucose separately and add to the sterile medium.
+  description: In liquid medium, the pH should be adjusted to 3.5 with H2SO4. In solid medium, the pH
+    should be adjusted to 4.5 with H2SO4 after autoclaving the medium. Sterilize the glucose separately
+    and add to the sterile medium.
 applications:
 - Microbial cultivation
 curation_history:

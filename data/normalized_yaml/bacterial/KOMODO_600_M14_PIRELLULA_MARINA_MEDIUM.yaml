@@ -1,6 +1,6 @@
 name: M14 (PIRELLULA MARINA) MEDIUM
 original_name: M14 (PIRELLULA MARINA) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:600
     label: M14 (PIRELLULA MARINA) MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 600 | DSMZ Medium: 600 (mediadive.medium:600)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 600 | DSMZ Medium: 600 (mediadive.medium:600) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

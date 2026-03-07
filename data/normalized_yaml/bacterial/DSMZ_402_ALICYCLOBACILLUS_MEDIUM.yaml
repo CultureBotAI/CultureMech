@@ -1,8 +1,8 @@
 name: ALICYCLOBACILLUS MEDIUM
 original_name: ALICYCLOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 402
   term:
@@ -108,10 +108,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Sterilize separately. For liquid medium combine solution A (with 1000.0
-    ml distilled water) and solution B. For solid medium combine solution A (with
-    500 ml distilled water), solution B and solution C. For strains of A. cycloheptanicus
-    add 5 g/l of yeast extract instead of 2 g/l.
+  description: Sterilize separately. For liquid medium combine solution A (with 1000.0 ml distilled water)
+    and solution B. For solid medium combine solution A (with 500 ml distilled water), solution B and
+    solution C. For strains of A. cycloheptanicus add 5 g/l of yeast extract instead of 2 g/l.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 4.0

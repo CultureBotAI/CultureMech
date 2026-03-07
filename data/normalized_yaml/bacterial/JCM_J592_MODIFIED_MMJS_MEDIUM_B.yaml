@@ -1,6 +1,6 @@
 name: MODIFIED MMJS MEDIUM (B)
 original_name: MODIFIED MMJS MEDIUM (B)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -200,19 +200,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 6.8 with NaOH. Distribute the solution
-    into culture vessels (leaving more than 80% volume of gas phase in the vessel)
-    under a stream of a N2-CO2 (80:20, v/v) gas mixture, seal with butyl rubber stoppers
-    and autoclave. Then, add the following solutions (filter-sterilized) to the medium
-    (per liter):'
+  description: 'Mix ingredients and adjust pH to 6.8 with NaOH. Distribute the solution into culture vessels
+    (leaving more than 80% volume of gas phase in the vessel) under a stream of a N2-CO2 (80:20, v/v)
+    gas mixture, seal with butyl rubber stoppers and autoclave. Then, add the following solutions (filter-sterilized)
+    to the medium (per liter):'
 - step_number: 2
   action: MIX
-  description: Finally, replace the gas phase with a N2-CO2-O2 (79:20:1, by volume)
-    gas mixture and pressurize to 200 kPa with the same gas mixture.
+  description: Finally, replace the gas phase with a N2-CO2-O2 (79:20:1, by volume) gas mixture and pressurize
+    to 200 kPa with the same gas mixture.
 - step_number: 3
   action: MIX
-  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L (final)
-    Na2MoO4 x 2H2O.
+  description: Use Trace mineral solution of Medium No. 413 with 0.01 g/L (final) Na2MoO4 x 2H2O.
 applications:
 - Microbial cultivation
 curation_history:

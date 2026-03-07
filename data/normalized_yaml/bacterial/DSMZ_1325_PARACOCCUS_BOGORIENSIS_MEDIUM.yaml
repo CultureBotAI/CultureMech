@@ -1,8 +1,8 @@
 name: PARACOCCUS BOGORIENSIS MEDIUM
 original_name: PARACOCCUS BOGORIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.5
 media_term:
   preferred_term: DSMZ Medium 1325
@@ -124,9 +124,8 @@ preparation_steps:
   description: Final pH to 9.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the Na2CO3 solution separately and combine with the rest
-    of the medium after cooling both to about 50°C. Agar may be added at 15g/l to
-    solidify the medium
+  description: Autoclave the Na2CO3 solution separately and combine with the rest of the medium after
+    cooling both to about 50°C. Agar may be added at 15g/l to solidify the medium
 applications:
 - Microbial cultivation
 curation_history:

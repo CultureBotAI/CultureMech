@@ -1,16 +1,15 @@
 name: MEDIUM 457 MODIFIED FOR DSM 6756
 original_name: MEDIUM 457 MODIFIED FOR DSM 6756
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: KOMODO Medium 457_6756
   term:
     id: komodo.medium:457_6756
     label: MEDIUM 457 MODIFIED FOR DSM 6756
-notes: 'Source: KOMODO ModelSEED | ID: 457_6756 | DSMZ Medium: 457 (mediadive.medium:457)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457_6756 | DSMZ Medium: 457 (mediadive.medium:457) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

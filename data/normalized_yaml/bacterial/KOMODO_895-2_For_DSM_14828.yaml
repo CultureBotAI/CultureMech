@@ -1,6 +1,6 @@
 name: For DSM 14828
 original_name: For DSM 14828
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:895.2
     label: For DSM 14828
-notes: 'Source: KOMODO ModelSEED | ID: 895.2 | DSMZ Medium: 895 (mediadive.medium:895)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 895.2 | DSMZ Medium: 895 (mediadive.medium:895) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -287,5 +286,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.361507Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,8 +1,8 @@
 name: REACTIVATION WITH LIQUID MEDIUM 115
 original_name: REACTIVATION WITH LIQUID MEDIUM 115
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 115a
   term:
@@ -36,8 +36,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: STORE
-  description: Rehydrate and grow freeze-dried cells from ampoule in liquid broth
-    115. Subsequent subculturing may be carried out in liquid medium or on agar.
+  description: Rehydrate and grow freeze-dried cells from ampoule in liquid broth 115. Subsequent subculturing
+    may be carried out in liquid medium or on agar.
 applications:
 - Microbial cultivation
 curation_history:

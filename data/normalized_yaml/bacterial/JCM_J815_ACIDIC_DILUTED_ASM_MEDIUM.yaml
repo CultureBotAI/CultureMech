@@ -1,6 +1,6 @@
 name: ACIDIC DILUTED ASM MEDIUM
 original_name: ACIDIC DILUTED ASM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
@@ -116,14 +116,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. After cooling, add the following solution
-    (autoclaved) to the medium:'
+  description: 'Mix components and autoclave. After cooling, add the following solution (autoclaved) to
+    the medium:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: To complete medium, adjust pH to 3.0 with sterile 1 N HCl solution.
-    Then, distribute 20 ml-aliquots of the medium into sterile 120 ml-serum bottles
-    and seal with butyl rubber stoppers. Add 100 ml methane gas (filter-sterilized)
-    into the head space of the culture bottle through a syringe.
+  description: To complete medium, adjust pH to 3.0 with sterile 1 N HCl solution. Then, distribute 20
+    ml-aliquots of the medium into sterile 120 ml-serum bottles and seal with butyl rubber stoppers. Add
+    100 ml methane gas (filter-sterilized) into the head space of the culture bottle through a syringe.
 applications:
 - Microbial cultivation
 curation_history:

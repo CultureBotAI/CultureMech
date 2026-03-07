@@ -1,8 +1,8 @@
 name: JM
 original_name: JM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C40
   term:
@@ -110,9 +110,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with deionized water. For agar, add 15.0 g per\
-    \ litre of Bacteriological Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar\
-    \ No.1). Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with deionized water. For agar, add 15.0 g per litre of Bacteriological\
+    \ Agar\r\n(Thermo Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:

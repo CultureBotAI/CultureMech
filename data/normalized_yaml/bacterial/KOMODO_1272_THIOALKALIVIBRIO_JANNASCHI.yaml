@@ -1,6 +1,6 @@
 name: THIOALKALIVIBRIO JANNASCHI
 original_name: THIOALKALIVIBRIO JANNASCHI
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1272
     label: THIOALKALIVIBRIO JANNASCHI
-notes: 'Source: KOMODO ModelSEED | ID: 1272 | DSMZ Medium: 1272 (mediadive.medium:1272)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1272 | DSMZ Medium: 1272 (mediadive.medium:1272) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

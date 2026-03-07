@@ -1,6 +1,6 @@
 name: THERMOBACTER ROSEUM MEDIUM
 original_name: THERMOBACTER ROSEUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -213,8 +213,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2 gas atmosphere.
-    Aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2 gas atmosphere. Aseptically and anaerobically
+    add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Check pH to be 7.5 - 7.6.

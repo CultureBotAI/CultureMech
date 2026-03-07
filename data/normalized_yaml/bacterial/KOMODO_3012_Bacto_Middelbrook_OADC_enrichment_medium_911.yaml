@@ -1,6 +1,6 @@
 name: Bacto Middelbrook OADC enrichment (medium 911)
 original_name: Bacto Middelbrook OADC enrichment (medium 911)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3012
     label: Bacto Middelbrook OADC enrichment (medium 911)
-notes: 'Source: KOMODO ModelSEED | ID: 3012 | DSMZ Medium: 3012 (mediadive.medium:3012)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3012 | DSMZ Medium: 3012 (mediadive.medium:3012) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

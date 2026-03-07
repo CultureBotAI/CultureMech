@@ -1,8 +1,8 @@
 name: TRYPTICASE SOY YEAST EXTRACT MEDIUM
 original_name: TRYPTICASE SOY YEAST EXTRACT MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 92

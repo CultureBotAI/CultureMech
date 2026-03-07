@@ -1,6 +1,6 @@
 name: For strains DSM 12138, 12139, 12140 and 12143
 original_name: For strains DSM 12138, 12139, 12140 and 12143
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.1-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1315.1
     label: For strains DSM 12138, 12139, 12140 and 12143
-notes: 'Source: KOMODO ModelSEED | ID: 1315.1 | DSMZ Medium: 1315 (mediadive.medium:1315)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1315.1 | DSMZ Medium: 1315 (mediadive.medium:1315) | Aerobic: Yes'
 ingredients:
 - preferred_term: KNO3
   term:

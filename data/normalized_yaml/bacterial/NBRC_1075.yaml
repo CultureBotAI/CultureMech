@@ -1,13 +1,13 @@
 name: '1075'
 original_name: '1075'
-category: imported
+category: bacterial
 description: 1075. NBRC 1074.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4\xB7\
-    7H2O0.2g20% NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave\
-    \ NaCl and Na2CO3solutions separately and add the solutions to the medium aseptically."
+- preferred_term: Glucose10gBacto Peptone (Difco)5gBacto Yeast Extract (Difco)5gKH2PO41gMgSO4·7H2O0.2g20%
+    NaCl solution200ml10% Na2CO3solution100mlAgar15gDistilled water700mlAutoclave NaCl and Na2CO3solutions
+    separately and add the solutions to the medium aseptically.
 - preferred_term: ''
   concentration:
     value: Glucose
@@ -26,7 +26,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

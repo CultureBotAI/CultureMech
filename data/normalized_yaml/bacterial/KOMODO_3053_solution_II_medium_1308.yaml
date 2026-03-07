@@ -1,6 +1,6 @@
 name: solution II (medium 1308)
 original_name: solution II (medium 1308)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3053
     label: solution II (medium 1308)
-notes: 'Source: KOMODO ModelSEED | ID: 3053 | DSMZ Medium: 3053 (mediadive.medium:3053)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3053 | DSMZ Medium: 3053 (mediadive.medium:3053) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: THERMANAEROBACTER THERMOPHILA MEDIUM
 original_name: THERMANAEROBACTER THERMOPHILA MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -106,10 +106,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 with KOH, distribute the
-    medium into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl
-    rubber stoppers and autoclave. After cooling, add the following solutions (per
-    935 ml of the medium) from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 with KOH, distribute the medium into culture
+    vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After
+    cooling, add the following solutions (per 935 ml of the medium) from anaerobic stocks (autoclaved
+    or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

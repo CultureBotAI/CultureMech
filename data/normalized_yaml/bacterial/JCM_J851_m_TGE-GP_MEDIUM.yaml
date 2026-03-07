@@ -1,6 +1,6 @@
 name: m TGE-GP MEDIUM
 original_name: m TGE-GP MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 795 with 5.0 g/L (final) glycerol and 0.1 mM (final)
-    KH2PO4.
+  description: Use Medium No. 795 with 5.0 g/L (final) glycerol and 0.1 mM (final) KH2PO4.
 applications:
 - Microbial cultivation
 curation_history:

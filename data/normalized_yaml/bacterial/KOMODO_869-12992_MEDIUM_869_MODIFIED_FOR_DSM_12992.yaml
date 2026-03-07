@@ -1,6 +1,6 @@
 name: MEDIUM 869 MODIFIED FOR DSM 12992
 original_name: MEDIUM 869 MODIFIED FOR DSM 12992
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:869_12992
     label: MEDIUM 869 MODIFIED FOR DSM 12992
-notes: 'Source: KOMODO ModelSEED | ID: 869_12992 | DSMZ Medium: 869 (mediadive.medium:869)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 869_12992 | DSMZ Medium: 869 (mediadive.medium:869) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

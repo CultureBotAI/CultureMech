@@ -1,8 +1,8 @@
 name: BACTO MARINE BROTH WITH NA-ACETATE
 original_name: BACTO MARINE BROTH WITH NA-ACETATE
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-8.5
 media_term:
   preferred_term: DSMZ Medium 1354
@@ -135,9 +135,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Final pH should be 6.8 - 8.5. If using the commercially available medium
-    BD Difco Marine Broth 2216 add 10g/l Na acetate to the medium. The medium may
-    be solidified by adding 15.0 g/l agar.
+  description: Final pH should be 6.8 - 8.5. If using the commercially available medium BD Difco Marine
+    Broth 2216 add 10g/l Na acetate to the medium. The medium may be solidified by adding 15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

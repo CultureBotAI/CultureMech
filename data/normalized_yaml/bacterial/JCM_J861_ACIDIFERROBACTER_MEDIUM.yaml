@@ -1,6 +1,6 @@
 name: ACIDIFERROBACTER MEDIUM
 original_name: ACIDIFERROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -122,13 +122,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix thoroughly except sulfur, adjust pH 1.9 with H2SO4 and autoclave.
-    Steam sulfur for 3 hr on each of 3 successive days. After cooling, add sulfur
-    and the following solutions (filter-sterilized) to the medium:'
+  description: 'Mix thoroughly except sulfur, adjust pH 1.9 with H2SO4 and autoclave. Steam sulfur for
+    3 hr on each of 3 successive days. After cooling, add sulfur and the following solutions (filter-sterilized)
+    to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to
-    1.7.'
+  description: 'Comment: For cultivation of JCM 30830, adjust pH of the medium to 1.7.'
 applications:
 - Microbial cultivation
 curation_history:

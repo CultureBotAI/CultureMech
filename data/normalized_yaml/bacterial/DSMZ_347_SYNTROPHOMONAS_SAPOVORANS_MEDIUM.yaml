@@ -1,6 +1,6 @@
 name: SYNTROPHOMONAS SAPOVORANS MEDIUM
 original_name: SYNTROPHOMONAS SAPOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -211,26 +211,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, adjust pH to 7.0, then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave. Solution B is filter-sterilized and then equilibrated with 80% N2 and
-    20% CO2 gas mixture for at least 15 min. Solution C is prepared under 100% N2
-    gas and sterilized by filtration. Solutions D, E, F and G are autoclaved under
-    100% N2 gas. To complete the medium, appropriate amounts of the solutions B to
-    G are added to solution A in the sequence indicated. Adjust pH of complete medium
-    to 7.2, if necessary.
+  description: Dissolve ingredients of solution A, adjust pH to 7.0, then sparge medium with 80% N2 and
+    20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Solution B is filter-sterilized and then equilibrated
+    with 80% N2 and 20% CO2 gas mixture for at least 15 min. Solution C is prepared under 100% N2 gas
+    and sterilized by filtration. Solutions D, E, F and G are autoclaved under 100% N2 gas. To complete
+    the medium, appropriate amounts of the solutions B to G are added to solution A in the sequence indicated.
+    Adjust pH of complete medium to 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:

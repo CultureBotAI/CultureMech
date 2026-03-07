@@ -1,15 +1,15 @@
 name: MEDIUM 429 MODIFIED FOR DSM 19655
 original_name: MEDIUM 429 MODIFIED FOR DSM 19655
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429_19655
   term:
     id: komodo.medium:429_19655
     label: MEDIUM 429 MODIFIED FOR DSM 19655
-notes: 'Source: KOMODO ModelSEED | ID: 429_19655 | DSMZ Medium: 429 (mediadive.medium:429)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429_19655 | DSMZ Medium: 429 (mediadive.medium:429) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

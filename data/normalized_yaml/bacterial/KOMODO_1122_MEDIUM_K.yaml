@@ -1,16 +1,15 @@
 name: MEDIUM K
 original_name: MEDIUM K
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1122
   term:
     id: komodo.medium:1122
     label: MEDIUM K
-notes: 'Source: KOMODO ModelSEED | ID: 1122 | DSMZ Medium: 1122 (mediadive.medium:1122)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1122 | DSMZ Medium: 1122 (mediadive.medium:1122) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

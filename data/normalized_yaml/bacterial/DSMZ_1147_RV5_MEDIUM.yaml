@@ -1,6 +1,6 @@
 name: RV5 MEDIUM
 original_name: RV5 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.5
@@ -175,11 +175,10 @@ preparation_steps:
   description: 'Filter-sterilize and add after autoclaving:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: The pH of the medium was adjusted to 9.5 by addition of NaOH and then
-    sterilized by autoclaving. Before inoculating medium RV5, 0.1% (w/v) NaHCO3 was
-    added to tubes, bottles, or molten media from a 5% (w/v) filter-sterilized stock
-    solution. For routine culture, medium RV5 supplemented with 0.05% (w/v) Difco
-    yeast extract was used.
+  description: The pH of the medium was adjusted to 9.5 by addition of NaOH and then sterilized by autoclaving.
+    Before inoculating medium RV5, 0.1% (w/v) NaHCO3 was added to tubes, bottles, or molten media from
+    a 5% (w/v) filter-sterilized stock solution. For routine culture, medium RV5 supplemented with 0.05%
+    (w/v) Difco yeast extract was used.
 applications:
 - Microbial cultivation
 curation_history:

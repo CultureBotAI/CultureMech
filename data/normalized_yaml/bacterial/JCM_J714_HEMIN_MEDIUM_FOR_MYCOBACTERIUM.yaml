@@ -1,6 +1,6 @@
 name: HEMIN MEDIUM FOR MYCOBACTERIUM
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with
-    60 ï¿½mol/L of hemin. Hemin is solubilized with 1 N NaOH.
+  description: Middlebrook 7H10 agar with OADC enrichment (see Medium No. 386) with 60 ï¿½mol/L of hemin.
+    Hemin is solubilized with 1 N NaOH.
 applications:
 - Microbial cultivation
 curation_history:

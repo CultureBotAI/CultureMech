@@ -1,8 +1,8 @@
 name: PHOTOBACTERIUM MEDIUM
 original_name: PHOTOBACTERIUM MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.5
 media_term:
   preferred_term: DSMZ Medium 32

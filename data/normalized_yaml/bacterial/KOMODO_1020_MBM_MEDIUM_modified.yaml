@@ -1,6 +1,6 @@
 name: MBM MEDIUM (modified)
 original_name: MBM MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1020
     label: MBM MEDIUM (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 1020 | DSMZ Medium: 1020 (mediadive.medium:1020)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1020 | DSMZ Medium: 1020 (mediadive.medium:1020) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaNO3
   term:

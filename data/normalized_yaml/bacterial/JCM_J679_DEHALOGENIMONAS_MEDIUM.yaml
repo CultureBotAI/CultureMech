@@ -1,6 +1,6 @@
 name: DEHALOGENIMONAS MEDIUM
 original_name: DEHALOGENIMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -205,16 +205,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. After cooling,
-    anaerobically add the following sterile solutions (autoclaved or *filter-sterilized)
-    from anaerobic stocks:'
+  description: 'Mix components and autoclave under a N2 atmosphere. After cooling, anaerobically add the
+    following sterile solutions (autoclaved or *filter-sterilized) from anaerobic stocks:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'To complete the medium, adjust pH to 7.0 with sterile HCl solution,
-    dispense into culture vessels leaving 40 to 50% volume of gas phase (e.g., 30
-    ml of the medium in a 50 ml serum bottle) and seal with butyl rubber stoppers.
-    Replace the gas phase with a N2-CO2-H2 (8:1:1, v/v) gas mixture. Finally add the
-    following filter-sterilized chlorosolvent (per liter):'
+  description: 'To complete the medium, adjust pH to 7.0 with sterile HCl solution, dispense into culture
+    vessels leaving 40 to 50% volume of gas phase (e.g., 30 ml of the medium in a 50 ml serum bottle)
+    and seal with butyl rubber stoppers. Replace the gas phase with a N2-CO2-H2 (8:1:1, v/v) gas mixture.
+    Finally add the following filter-sterilized chlorosolvent (per liter):'
 applications:
 - Microbial cultivation
 curation_history:

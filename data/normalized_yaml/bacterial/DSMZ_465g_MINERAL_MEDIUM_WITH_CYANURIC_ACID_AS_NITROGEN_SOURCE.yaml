@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
 original_name: MINERAL MEDIUM WITH CYANURIC ACID AS NITROGEN SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -182,21 +182,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
-    for the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation,
-    cultivate on mineral medium with the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended for the specific
+    strain (e.g. medium 1, 220, 535 or 830). After this reactivation, cultivate on mineral medium with
+    the appropriate carbon source.
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare and autoclave medium. Add 5.5 g/l glycerol from a sterile solution.
-    Add 645 mg/l cyanuric acid from a neutralized and filter sterilized stock solution
-    and 10 ml vitamin solution (see medium 461) to the medium.
+  description: Prepare and autoclave medium. Add 5.5 g/l glycerol from a sterile solution. Add 645 mg/l
+    cyanuric acid from a neutralized and filter sterilized stock solution and 10 ml vitamin solution (see
+    medium 461) to the medium.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

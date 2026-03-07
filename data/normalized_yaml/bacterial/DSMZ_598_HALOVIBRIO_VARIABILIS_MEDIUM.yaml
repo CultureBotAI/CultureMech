@@ -1,6 +1,6 @@
 name: HALOVIBRIO VARIABILIS MEDIUM
 original_name: HALOVIBRIO VARIABILIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -179,8 +179,8 @@ preparation_steps:
   description: pH 7.5
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: FLEXIBACTER medium
 original_name: FLEXIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 668
   term:
     id: komodo.medium:668
     label: FLEXIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 668 | DSMZ Medium: 668 (mediadive.medium:668)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 668 | DSMZ Medium: 668 (mediadive.medium:668) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

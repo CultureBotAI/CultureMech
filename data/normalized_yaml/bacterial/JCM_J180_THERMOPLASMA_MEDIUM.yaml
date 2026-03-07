@@ -1,6 +1,6 @@
 name: THERMOPLASMA MEDIUM
 original_name: THERMOPLASMA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
@@ -53,8 +53,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.0 with 10 N H2SO4. Separately autoclave yeast extract
-    and glucose as 10% solutions, and add aseptically to the medium.
+  description: Adjust pH to 2.0 with 10 N H2SO4. Separately autoclave yeast extract and glucose as 10%
+    solutions, and add aseptically to the medium.
 applications:
 - Microbial cultivation
 curation_history:

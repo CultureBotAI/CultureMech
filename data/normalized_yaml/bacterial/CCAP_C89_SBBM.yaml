@@ -1,8 +1,8 @@
 name: SBBM
 original_name: SBBM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C89
   term:
@@ -221,17 +221,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Used for some filamentous green algae e.g. Trentepohlia, can give\
-    \ better growth\r\nthan 3N-BBM+V (Mail sol. C 14) or JM:SE (Mail sol. C 41). Make\
-    \ both media and sterilise, then mix aseptically in\r\nthe ratio of 97% 3N-BBM+V\
-    \ and 3% SE2."
+  description: "Used for some filamentous green algae e.g. Trentepohlia, can give better growth\r\nthan\
+    \ 3N-BBM+V (Mail sol. C 14) or JM:SE (Mail sol. C 41). Make both media and sterilise, then mix aseptically\
+    \ in\r\nthe ratio of 97% 3N-BBM+V and 3% SE2."
 - step_number: 2
   action: AUTOCLAVE
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 3
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre\
-    \ Bacterialogical Agar.\r\nAutoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with distilled water. For agar add 15 g per litre Bacterialogical Agar.\r\
+    \nAutoclave at 15 psi for 15 minutes."
 - step_number: 4
   action: FILTER_STERILIZE
   description: Filter sterile
@@ -246,55 +245,48 @@ preparation_steps:
   description: Take 1 ml of this solution and add 99 ml Deionised water. Filter sterile.
 - step_number: 8
   action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from \r\nundisturbed deciduous woodland is best.  Sites to avoid are\
-    \ those showing obvious \r\nsigns of man's activity and particular care should\
-    \ be taken to avoid areas where \r\nfertilizers, crop sprays or other toxic chemicals\
-    \ may have been used."
+  description: "Site selection for a good soil is very important and for most purposes a soil from \r\n\
+    undisturbed deciduous woodland is best.  Sites to avoid are those showing obvious \r\nsigns of man's\
+    \ activity and particular care should be taken to avoid areas where \r\nfertilizers, crop sprays or\
+    \ other toxic chemicals may have been used."
 - step_number: 9
   action: STORE
-  description: "A rich loam with good crumb structure should be sought.  Stones, roots\
-    \ and larger \r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh.  The sieved soil should be spread to air dry and hand picked for\
-    \ smaller \r\ninvertebrates and roots.  It should be turned periodically and picked\
-    \ over again.  When dry it may be sieved through a finer mesh (2­4 mm) or stored\
-    \ as it is prior to\r\nuse."
+  description: "A rich loam with good crumb structure should be sought.  Stones, roots and larger \r\n\
+    invertebrates should be removed during an initial sieving through a 1 cm mesh.  The sieved soil should\
+    \ be spread to air dry and hand picked for smaller \r\ninvertebrates and roots.  It should be turned\
+    \ periodically and picked over again.  When dry it may be sieved through a finer mesh (2­4 mm) or\
+    \ stored as it is prior to\r\nuse."
 - step_number: 10
   action: AUTOCLAVE
-  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660\
-    \ ml of deionized \r\nwater are placed in a 1 litre bottle and autoclaved once\
-    \ at 15 psi for 15 minutes, \r\nthen again after 24 hours.  The contents of the\
-    \ bottle are left to settle (usually for \r\nat least a week) and then the supernatant\
-    \ is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
+  description: "Soil is prepared as above.  105 g of air­dried sieved soil and 660 ml of deionized \r\n\
+    water are placed in a 1 litre bottle and autoclaved once at 15 psi for 15 minutes, \r\nthen again\
+    \ after 24 hours.  The contents of the bottle are left to settle (usually for \r\nat least a week)\
+    \ and then the supernatant is decanted and filtered.  The final pH\r\nshould be 7.0 - 8.0."
 - step_number: 11
   action: AUTOCLAVE
-  description: "This recipe is a 7:3 mixture of JM and SE2. Make up to 1 litre with\
-    \ deionized water. For agar,\r\nadd 15.0 g per litre of Bacteriological Agar (Thermo\
-    \ Scientific&trade; Oxoid&trade; Agar No.1). Autoclave at 15 psi for 15 minutes."
+  description: "This recipe is a 7:3 mixture of JM and SE2. Make up to 1 litre with deionized water. For\
+    \ agar,\r\nadd 15.0 g per litre of Bacteriological Agar (Thermo Scientific&trade; Oxoid&trade; Agar\
+    \ No.1). Autoclave at 15 psi for 15 minutes."
 - step_number: 12
   action: MIX
-  description: "Site selection for a good soil is very important and for most purposes\
-    \ a soil from undisturbed\r\ndeciduous woodland is best. Sites to avoid are those\
-    \ showing obvious signs of man's activity\r\nand particular care should be taken\
-    \ to avoid areas where fertilizers, crop sprays or other toxic\r\nchemicals may\
-    \ have been used."
+  description: "Site selection for a good soil is very important and for most purposes a soil from undisturbed\r\
+    \ndeciduous woodland is best. Sites to avoid are those showing obvious signs of man's activity\r\n\
+    and particular care should be taken to avoid areas where fertilizers, crop sprays or other toxic\r\
+    \nchemicals may have been used."
 - step_number: 13
   action: HEAT
-  description: "A rich loam with good crumb structure should be sought. Stones, roots\
-    \ and larger\r\ninvertebrates should be removed during an initial sieving through\
-    \ a 1 cm mesh. The sieved\r\nsoil should be spread to air dry and handpicked for\
-    \ smaller invertebrates and roots. It should\r\nbe turned periodically and picked\
-    \ over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an\
-    \ airtight container away from light and heat."
+  description: "A rich loam with good crumb structure should be sought. Stones, roots and larger\r\ninvertebrates\
+    \ should be removed during an initial sieving through a 1 cm mesh. The sieved\r\nsoil should be spread\
+    \ to air dry and handpicked for smaller invertebrates and roots. It should\r\nbe turned periodically\
+    \ and picked over again. When dry sieve through a finer mesh (2-4 mm)\r\nand store in an airtight\
+    \ container away from light and heat."
 - step_number: 14
   action: AUTOCLAVE
-  description: "Soil is prepared as above. Air-dried soil and twice its volume of\
-    \ supernatant distilled water\r\nare autoclaved together at 15 psi for 2 hours\
-    \ and left to cool. The supernatant is then\r\ndecanted and then distributed to\
-    \ containers in volumes suitable for making up batches of\r\nmedia. The aliquots\
-    \ and their containers are autoclaved for an appropriate length of time\r\n(e.g.\
-    \ 1 litre or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator)\
-    \ until\r\nrequired."
+  description: "Soil is prepared as above. Air-dried soil and twice its volume of supernatant distilled\
+    \ water\r\nare autoclaved together at 15 psi for 2 hours and left to cool. The supernatant is then\r\
+    \ndecanted and then distributed to containers in volumes suitable for making up batches of\r\nmedia.\
+    \ The aliquots and their containers are autoclaved for an appropriate length of time\r\n(e.g. 1 litre\
+    \ or less for 15 minutes) and are then kept in a cool place (e.g. a refrigerator) until\r\nrequired."
 applications:
 - Microbial cultivation
 curation_history:

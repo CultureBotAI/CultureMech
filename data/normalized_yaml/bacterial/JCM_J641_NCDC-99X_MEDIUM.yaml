@@ -1,6 +1,6 @@
 name: NCDC-99X MEDIUM
 original_name: NCDC-99X MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -99,11 +99,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve components except Na2CO3 and L-cysteine x HCl x H2O in distilled
-    water and bring volume to 1.0 L. Adjust pH to 7.0. Bring to a boil and cool down
-    under a stream of a N2-CO2 (4:1, v/v) gas mixture. Add Na2CO3 and L-cysteine x
-    HCl x H2O to the medium and dispense into culture vessels under the same gas mixture.
-    Seal with butyl rubber stoppers and autoclave.
+  description: Dissolve components except Na2CO3 and L-cysteine x HCl x H2O in distilled water and bring
+    volume to 1.0 L. Adjust pH to 7.0. Bring to a boil and cool down under a stream of a N2-CO2 (4:1,
+    v/v) gas mixture. Add Na2CO3 and L-cysteine x HCl x H2O to the medium and dispense into culture vessels
+    under the same gas mixture. Seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

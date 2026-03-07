@@ -1,6 +1,6 @@
 name: TEPIDIBACTER MESOPHILUS MEDIUM
 original_name: TEPIDIBACTER MESOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -224,16 +224,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and bring to a boil for 5-10 sec and cool down under
-    a N2-CO2 (80:20, v/v) gas stream. Dispense the medium into culture vessels (e.g.,
-    20 ml in 50 ml serum bottles) under the same gas mixture, seal with butyl rubber
-    stoppers and autoclave. After cooling, add per liter the following solutions from
-    sterile anaerobic stocks:'
+  description: 'Mix components and bring to a boil for 5-10 sec and cool down under a N2-CO2 (80:20, v/v)
+    gas stream. Dispense the medium into culture vessels (e.g., 20 ml in 50 ml serum bottles) under the
+    same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per liter the
+    following solutions from sterile anaerobic stocks:'
 - step_number: 2
   action: AUTOCLAVE
-  description: To prepare the stock solutions, autoclave 5% Na2S x 9H2O solution under
-    a N2 atmosphere, filter-sterilize and store 8% NaHCO3 solution under a N2-CO2
-    (80:20, v/v) gas mixture.
+  description: To prepare the stock solutions, autoclave 5% Na2S x 9H2O solution under a N2 atmosphere,
+    filter-sterilize and store 8% NaHCO3 solution under a N2-CO2 (80:20, v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

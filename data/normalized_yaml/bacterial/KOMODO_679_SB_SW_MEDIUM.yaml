@@ -1,6 +1,6 @@
 name: SB/SW MEDIUM
 original_name: SB/SW MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:679
     label: SB/SW MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 679 | DSMZ Medium: 679 (mediadive.medium:679)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 679 | DSMZ Medium: 679 (mediadive.medium:679) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: Vitamin solution (medium 908)
 original_name: Vitamin solution (medium 908)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2098
     label: Vitamin solution (medium 908)
-notes: 'Source: KOMODO ModelSEED | ID: 2098 | DSMZ Medium: 2098 (mediadive.medium:2098)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2098 | DSMZ Medium: 2098 (mediadive.medium:2098) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

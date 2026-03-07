@@ -1,6 +1,6 @@
 name: ACIDITHIOBACILLUS CALDUS MEDIUM
 original_name: ACIDITHIOBACILLUS CALDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -105,13 +105,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except trace elements and sulfur. Adjust pH with
-    6 N H2SO4 to 2.5, dispense into suitable cultivation vessels and autoclave. After
-    autoclaving add filter-sterilized trace elements solution (see below) and sterile
-    sulfur powder.  For sterilization place the sulfur in screw-capped tubes or bottles,
-    wet with a few drops of water and heat for 3 hours to 90 - 100°C in a water bath
-    on each of three successive days. Before use, aseptically layer the sulfur onto
-    the surface of the autoclaved liquid basal medium.
+  description: Dissolve ingredients except trace elements and sulfur. Adjust pH with 6 N H2SO4 to 2.5,
+    dispense into suitable cultivation vessels and autoclave. After autoclaving add filter-sterilized
+    trace elements solution (see below) and sterile sulfur powder.  For sterilization place the sulfur
+    in screw-capped tubes or bottles, wet with a few drops of water and heat for 3 hours to 90 - 100°C
+    in a water bath on each of three successive days. Before use, aseptically layer the sulfur onto the
+    surface of the autoclaved liquid basal medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: ALKALIPHILUS LACV MEDIUM
 original_name: ALKALIPHILUS LACV MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -165,10 +165,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 9.0 with NaOH and autoclave
-    under a N2 atmosphere. After cooling, replace the gas phase with a N2-CO2 (4:1,
-    v/v) gas mixture. Add the following solutions from sterile anaerobic stocks (autoclaved
-    and stored under a N2 atmosphere):'
+  description: 'Mix components thoroughly, adjust pH to 9.0 with NaOH and autoclave under a N2 atmosphere.
+    After cooling, replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Add the following solutions
+    from sterile anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
   description: Check final pH be around 8.5.

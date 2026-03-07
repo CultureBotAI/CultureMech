@@ -1,6 +1,6 @@
 name: Vero B4 Medium
 original_name: Vero B4 Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -28,25 +28,24 @@ preparation_steps:
   description: Cultivation of Vero B4 (ACC 33) cells
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at
-    room temperature to facilitate detection of contamination.
+  description: Filter-sterilize (0.2 µm) and keep no longer than 4 weeks. Store at room temperature to
+    facilitate detection of contamination.
 - step_number: 3
   action: HEAT
-  description: Prepare a 25 cm2 flask and seed cells according to standard protocols
-    (see DSMZ catalogue for ACC 33). Incubate at 37°C plus 5% CO2. When a confluent
-    layer has formed, infection can be carried out.
+  description: Prepare a 25 cm2 flask and seed cells according to standard protocols (see DSMZ catalogue
+    for ACC 33). Incubate at 37°C plus 5% CO2. When a confluent layer has formed, infection can be carried
+    out.
 - step_number: 4
   action: HEAT
-  description: Infect cells with 1 ml of Rickettsia stock solution (thawed quickly
-    to 37°C).
+  description: Infect cells with 1 ml of Rickettsia stock solution (thawed quickly to 37°C).
 - step_number: 5
   action: HEAT
   description: Centrifuge for 1 h onto the cell layer at 1600 rpm at 20°C.
 - step_number: 6
   action: HEAT
-  description: Incubate at 28°C. Up to 90% of Vero cells should be infected after
-    15 days. Specific PCRs can be performed to verify the presence of rickettsiae.
-    Ultimately, in situ-hybridization can be used to visualize them.
+  description: Incubate at 28°C. Up to 90% of Vero cells should be infected after 15 days. Specific PCRs
+    can be performed to verify the presence of rickettsiae. Ultimately, in situ-hybridization can be used
+    to visualize them.
 applications:
 - Microbial cultivation
 curation_history:

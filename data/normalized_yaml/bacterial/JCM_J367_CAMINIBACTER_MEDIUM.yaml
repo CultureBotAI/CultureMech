@@ -1,6 +1,6 @@
 name: CAMINIBACTER MEDIUM
 original_name: CAMINIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,10 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 365 supplemented with 0.2 g/L (final) yeast extract
-    and 1.0 g/L NaHCO3, and omitted sodium acetate. Filter-sterilize NaHCO3 as an
-    8% aqueous solution, and add to the medium. Fill the inoculated bottles with H2-CO2
-    (4:1), and pressurize to 100 kPa.
+  description: Use Medium No. 365 supplemented with 0.2 g/L (final) yeast extract and 1.0 g/L NaHCO3,
+    and omitted sodium acetate. Filter-sterilize NaHCO3 as an 8% aqueous solution, and add to the medium.
+    Fill the inoculated bottles with H2-CO2 (4:1), and pressurize to 100 kPa.
 applications:
 - Microbial cultivation
 curation_history:

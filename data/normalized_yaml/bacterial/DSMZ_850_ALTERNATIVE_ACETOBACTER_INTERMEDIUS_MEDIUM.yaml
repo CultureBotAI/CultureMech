@@ -1,8 +1,8 @@
 name: ALTERNATIVE ACETOBACTER INTERMEDIUS MEDIUM
 original_name: ALTERNATIVE ACETOBACTER INTERMEDIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 850
   term:

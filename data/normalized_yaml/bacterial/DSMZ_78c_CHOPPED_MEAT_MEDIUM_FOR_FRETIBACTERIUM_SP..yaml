@@ -1,6 +1,6 @@
 name: CHOPPED MEAT MEDIUM FOR FRETIBACTERIUM SP.
 original_name: CHOPPED MEAT MEDIUM FOR FRETIBACTERIUM SP.
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -199,36 +199,33 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use lean beef or horse meat. Remove fat and connective tissue before
-    grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
-    room temperature, skim fat off surface, and filter, retaining both meat particles
-    and filtrate. To the filtrate add Casitone, yeast extract, hydrogen phosphate
-    and resazurin, then add water to a final volume of 700 ml. Sparge medium with
-    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then add cysteine
-    and adjust pH to 7.0. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes containing meat particles (use ca. 7 ml liquid medium for 1 - 2 g meat particles),
-    then autoclave at 121°C for 20 min. After autoclaving add fumarate, formate, rumen
-    fluid, horse serum, fatty acids, vitamins, haemin, vitamin K1 and DTT rom sterile
-    anoxic stock solutions prepared under 100% N2 gas atmosphere and sterilized by
-    filtration.
+  description: Use lean beef or horse meat. Remove fat and connective tissue before grinding. Mix meat,
+    water and NaOH, then boil for 15 min with stirring. Cool to room temperature, skim fat off surface,
+    and filter, retaining both meat particles and filtrate. To the filtrate add Casitone, yeast extract,
+    hydrogen phosphate and resazurin, then add water to a final volume of 700 ml. Sparge medium with 80%
+    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then add cysteine and adjust pH to 7.0.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes containing meat particles
+    (use ca. 7 ml liquid medium for 1 - 2 g meat particles), then autoclave at 121°C for 20 min. After
+    autoclaving add fumarate, formate, rumen fluid, horse serum, fatty acids, vitamins, haemin, vitamin
+    K1 and DTT rom sterile anoxic stock solutions prepared under 100% N2 gas atmosphere and sterilized
+    by filtration.
 - step_number: 2
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
+    in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,5 +236,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.112354Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

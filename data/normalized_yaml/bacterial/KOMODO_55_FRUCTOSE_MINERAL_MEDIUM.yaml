@@ -1,15 +1,14 @@
 name: FRUCTOSE MINERAL MEDIUM
 original_name: FRUCTOSE MINERAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 55
   term:
     id: komodo.medium:55
     label: FRUCTOSE MINERAL MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 55 | DSMZ Medium: 55 (mediadive.medium:55)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 55 | DSMZ Medium: 55 (mediadive.medium:55) | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:

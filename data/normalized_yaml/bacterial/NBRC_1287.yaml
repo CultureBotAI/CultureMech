@@ -1,12 +1,12 @@
 name: '1287'
 original_name: '1287'
-category: imported
+category: bacterial
 description: 1287. NBRC 1286.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Bacto tryptone3.3gYeast extract1.6gNaCl3.3gDistilled water1LAgar15gpH
-    7.0Biphenyl crystal is supplied on a lid of petri dish as vapor phase.
+- preferred_term: Bacto tryptone3.3gYeast extract1.6gNaCl3.3gDistilled water1LAgar15gpH 7.0Biphenyl crystal
+    is supplied on a lid of petri dish as vapor phase.
 - preferred_term: ''
   concentration:
     value: Bacto tryptone

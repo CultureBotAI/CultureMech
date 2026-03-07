@@ -1,15 +1,14 @@
 name: CHOCOLATE AGAR
 original_name: CHOCOLATE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429b
   term:
     id: komodo.medium:429b
     label: CHOCOLATE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 429b | DSMZ Medium: 429b (mediadive.medium:429b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429b | DSMZ Medium: 429b (mediadive.medium:429b) | Aerobic: No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

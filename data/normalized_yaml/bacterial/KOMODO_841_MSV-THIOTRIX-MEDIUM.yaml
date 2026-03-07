@@ -1,16 +1,15 @@
 name: MSV-THIOTRIX-MEDIUM
 original_name: MSV-THIOTRIX-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: KOMODO Medium 841
   term:
     id: komodo.medium:841
     label: MSV-THIOTRIX-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 841 | DSMZ Medium: 841 (mediadive.medium:841)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 841 | DSMZ Medium: 841 (mediadive.medium:841) | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:

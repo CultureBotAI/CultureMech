@@ -1,16 +1,15 @@
 name: MEDIUM WITH EDTA AS CARBON SOURCE
 original_name: MEDIUM WITH EDTA AS CARBON SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-7.6
 media_term:
   preferred_term: KOMODO Medium 473
   term:
     id: komodo.medium:473
     label: MEDIUM WITH EDTA AS CARBON SOURCE
-notes: 'Source: KOMODO ModelSEED | ID: 473 | DSMZ Medium: 473 (mediadive.medium:473)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 473 | DSMZ Medium: 473 (mediadive.medium:473) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

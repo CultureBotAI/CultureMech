@@ -1,6 +1,6 @@
 name: M2 medium
 original_name: M2 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1310
     label: M2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1310 | DSMZ Medium: 1310 (mediadive.medium:1310)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1310 | DSMZ Medium: 1310 (mediadive.medium:1310) | Aerobic: Yes'
 ingredients:
 - preferred_term: Casitone
   concentration:

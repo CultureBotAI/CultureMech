@@ -1,6 +1,6 @@
 name: MEDIUM 503b MODIFIED FOR DSM 14692
 original_name: MEDIUM 503b MODIFIED FOR DSM 14692
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:503b_14692
     label: MEDIUM 503b MODIFIED FOR DSM 14692
-notes: 'Source: KOMODO ModelSEED | ID: 503b_14692 | DSMZ Medium: 503b (mediadive.medium:503b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 503b_14692 | DSMZ Medium: 503b (mediadive.medium:503b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

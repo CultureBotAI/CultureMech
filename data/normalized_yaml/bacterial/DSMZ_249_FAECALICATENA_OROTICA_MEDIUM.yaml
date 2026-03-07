@@ -1,6 +1,6 @@
 name: FAECALICATENA OROTICA MEDIUM
 original_name: FAECALICATENA OROTICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -64,9 +64,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients and adjust pH to 7.5. Sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Distribute medium under same gas atmosphere
-    in anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients and adjust pH to 7.5. Sparge medium with 100% N2 gas for 30 - 45 min
+    to make it anoxic. Distribute medium under same gas atmosphere in anoxic Hungate-type tubes or serum
+    vials and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

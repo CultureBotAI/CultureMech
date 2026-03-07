@@ -1,6 +1,6 @@
 name: OTTOW medium
 original_name: OTTOW medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:467
     label: OTTOW medium
-notes: 'Source: KOMODO ModelSEED | ID: 467 | DSMZ Medium: 467 (mediadive.medium:467)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 467 | DSMZ Medium: 467 (mediadive.medium:467) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

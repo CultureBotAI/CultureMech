@@ -1,8 +1,8 @@
 name: Yeast Extract-Malt Extract Agar (pH 6.0)
 original_name: Yeast Extract-Malt Extract Agar (pH 6.0)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (see Medium [M35])
   concentration:

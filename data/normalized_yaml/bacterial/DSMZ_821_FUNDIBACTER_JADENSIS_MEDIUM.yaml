@@ -1,6 +1,6 @@
 name: FUNDIBACTER JADENSIS MEDIUM
 original_name: FUNDIBACTER JADENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -63,9 +63,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize the medium without the 4 times concentrated sea water. Cool
-    the artificial sea water and the medium to 60°C - 70°C after autoclaving and mix.
-    Hexadecane may be replaced by 1 g/l sodium acetate.
+  description: Sterilize the medium without the 4 times concentrated sea water. Cool the artificial sea
+    water and the medium to 60°C - 70°C after autoclaving and mix. Hexadecane may be replaced by 1 g/l
+    sodium acetate.
 applications:
 - Microbial cultivation
 curation_history:

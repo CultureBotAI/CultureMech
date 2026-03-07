@@ -1,6 +1,6 @@
 name: ANAEROBIC ACETOIN medium
 original_name: ANAEROBIC ACETOIN medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:327
     label: ANAEROBIC ACETOIN medium
-notes: 'Source: KOMODO ModelSEED | ID: 327 | DSMZ Medium: 327 (mediadive.medium:327)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 327 | DSMZ Medium: 327 (mediadive.medium:327) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

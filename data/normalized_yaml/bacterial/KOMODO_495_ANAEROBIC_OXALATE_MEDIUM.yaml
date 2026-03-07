@@ -1,6 +1,6 @@
 name: ANAEROBIC OXALATE MEDIUM
 original_name: ANAEROBIC OXALATE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:495
     label: ANAEROBIC OXALATE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 495 | DSMZ Medium: 495 (mediadive.medium:495)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 495 | DSMZ Medium: 495 (mediadive.medium:495) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

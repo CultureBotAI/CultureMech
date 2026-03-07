@@ -1,8 +1,8 @@
 name: MIN E - METHYLOVERSATILIS MEDIUM
 original_name: MIN E - METHYLOVERSATILIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7
 media_term:
   preferred_term: DSMZ Medium 1341
@@ -134,14 +134,13 @@ preparation_steps:
   description: Add 100 ml of sterile phosphate buffer after autoclaving.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately
-    and combine after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter
-    sterilized vitamin B12 (250 mg/l). The medium may be solidified by adding 15 g/l
-    agar.
+  description: Autoclave the Mineral Salts Solution MIN E and phosphate buffer separately and combine
+    after cooling. Add 20 ml/l filter sterilized methanol and 1 ml/l filter sterilized vitamin B12 (250
+    mg/l). The medium may be solidified by adding 15 g/l agar.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and NaOH in 800ml of distilled water then add the
-    inorganic salts. Make up to 1000.0 ml with distilled water.
+  description: Dissolve the EDTA and NaOH in 800ml of distilled water then add the inorganic salts. Make
+    up to 1000.0 ml with distilled water.
 - step_number: 4
   action: MIX
   description: pH 6.8 - 7.0

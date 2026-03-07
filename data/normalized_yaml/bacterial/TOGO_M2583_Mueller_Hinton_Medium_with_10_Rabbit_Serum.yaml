@@ -1,6 +1,6 @@
 name: Mueller Hinton Medium with 10% Rabbit Serum
 original_name: Mueller Hinton Medium with 10% Rabbit Serum
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Mueller Hinton Broth (BD 211443)
   concentration:
     value: '22'

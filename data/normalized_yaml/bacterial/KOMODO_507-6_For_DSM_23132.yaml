@@ -1,11 +1,11 @@
 name: For DSM 23132
 original_name: For DSM 23132
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 507.6 | DSMZ Medium: 507
-  (mediadive.medium:507) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 507.6 | DSMZ Medium: 507 (mediadive.medium:507)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 507.6
   term:
@@ -206,5 +206,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.470992Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

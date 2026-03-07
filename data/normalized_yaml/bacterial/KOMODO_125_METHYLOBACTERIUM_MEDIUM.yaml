@@ -1,16 +1,15 @@
 name: METHYLOBACTERIUM MEDIUM
 original_name: METHYLOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: KOMODO Medium 125
   term:
     id: komodo.medium:125
     label: METHYLOBACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 125 | DSMZ Medium: 125 (mediadive.medium:125)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 125 | DSMZ Medium: 125 (mediadive.medium:125) | Aerobic: No'
 ingredients:
 - preferred_term: KNO3
   term:

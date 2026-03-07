@@ -1,6 +1,6 @@
 name: HLH MEDIUM
 original_name: HLH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -133,8 +133,7 @@ preparation_steps:
   description: Adjust pH to 8.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'After autoclaving, add per liter the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'After autoclaving, add per liter the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

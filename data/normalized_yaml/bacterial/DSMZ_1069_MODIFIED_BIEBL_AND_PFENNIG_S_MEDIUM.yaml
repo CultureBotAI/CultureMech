@@ -1,6 +1,6 @@
 name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
 original_name: MODIFIED BIEBL AND PFENNIG'S MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -116,8 +116,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
+    under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SPIROCHAETA AMERICANA MEDIUM
 original_name: SPIROCHAETA AMERICANA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.4
@@ -235,13 +235,11 @@ preparation_steps:
   description: Adjust to pH 9.4
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S, yeast extract, glucose, Na2CO3,
-    NaHCO3 and vitamins. Heat the medium in a boiling water bath and cool under a
-    stream of nitrogen. Add the Na2CO3, and NaHCO3 to the cooled medium and check
-    the pH. Dispense into appropriate vessels (Hungate tubes or serum bottles) and
-    autoclave. To the sterile medium add Na2S, yeast extract, and glucose from autoclaved
-    stock solutions. The vitamin solution is filter sterilised and added to the sterilised
-    medium.
+  description: Prepare the medium without the Na2S, yeast extract, glucose, Na2CO3, NaHCO3 and vitamins.
+    Heat the medium in a boiling water bath and cool under a stream of nitrogen. Add the Na2CO3, and NaHCO3
+    to the cooled medium and check the pH. Dispense into appropriate vessels (Hungate tubes or serum bottles)
+    and autoclave. To the sterile medium add Na2S, yeast extract, and glucose from autoclaved stock solutions.
+    The vitamin solution is filter sterilised and added to the sterilised medium.
 applications:
 - Microbial cultivation
 curation_history:

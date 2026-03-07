@@ -1,8 +1,8 @@
 name: RABBIT BLOOD AGAR
 original_name: RABBIT BLOOD AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 646
   term:
@@ -21,9 +21,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare Blood Agar Base from Difco 0045 according to directions on
-    the bottle (40.0 g/l). Sterilize and cool to 45°C. Aseptically add 5% sterile
-    defibrinated rabbit blood or sheep blood, mix well.
+  description: Prepare Blood Agar Base from Difco 0045 according to directions on the bottle (40.0 g/l).
+    Sterilize and cool to 45°C. Aseptically add 5% sterile defibrinated rabbit blood or sheep blood, mix
+    well.
 applications:
 - Microbial cultivation
 curation_history:

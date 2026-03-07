@@ -1,6 +1,6 @@
 name: PYG medium WITH VOLATILE FATTY ACIDS
 original_name: PYG medium WITH VOLATILE FATTY ACIDS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:328
     label: PYG medium WITH VOLATILE FATTY ACIDS
-notes: 'Source: KOMODO ModelSEED | ID: 328 | DSMZ Medium: 328 (mediadive.medium:328)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 328 | DSMZ Medium: 328 (mediadive.medium:328) | Aerobic: Yes'
 ingredients:
 - preferred_term: Beef extract
   concentration:

@@ -1,16 +1,15 @@
 name: BACILLUS MUCILAGINOSUS MEDIUM
 original_name: BACILLUS MUCILAGINOSUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
   preferred_term: KOMODO Medium 1307
   term:
     id: komodo.medium:1307
     label: BACILLUS MUCILAGINOSUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1307 | DSMZ Medium: 1307 (mediadive.medium:1307)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1307 | DSMZ Medium: 1307 (mediadive.medium:1307) | Aerobic: No'
 ingredients:
 - preferred_term: Sucrose
   term:

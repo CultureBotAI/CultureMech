@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM METHYLPENTOSUM MEDIUM
 original_name: CLOSTRIDIUM METHYLPENTOSUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -176,13 +176,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% N2 gas for at least 30 - 45 min to make
-    it anoxic, then dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Solution B is autoclaved under 80% N2 and
-    20% CO2 gas atmosphere. Solutions C and D are prepared under 100% N2 gas atmosphere
-    and sterilized by filtration. Solution E is autoclaved separately under 100% N2
-    gas. Solutions B to E are added to the sterile solution A in the sequence as indicated.
-    Final pH of the medium should be 6.8 - 7.0.
+  description: Sparge solution A with 100% N2 gas for at least 30 - 45 min to make it anoxic, then dispense
+    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Solution
+    B is autoclaved under 80% N2 and 20% CO2 gas atmosphere. Solutions C and D are prepared under 100%
+    N2 gas atmosphere and sterilized by filtration. Solution E is autoclaved separately under 100% N2
+    gas. Solutions B to E are added to the sterile solution A in the sequence as indicated. Final pH of
+    the medium should be 6.8 - 7.0.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.5 with KOH.
@@ -196,5 +195,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.635497Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

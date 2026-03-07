@@ -1,6 +1,6 @@
 name: TF(D) medium
 original_name: TF(D) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1232
     label: TF(D) medium
-notes: 'Source: KOMODO ModelSEED | ID: 1232 | DSMZ Medium: 1232 (mediadive.medium:1232)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1232 | DSMZ Medium: 1232 (mediadive.medium:1232) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -280,6 +279,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.432784Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.8

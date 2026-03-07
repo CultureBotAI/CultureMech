@@ -1,6 +1,6 @@
 name: 573C MEDIUM
 original_name: 573C MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.9
@@ -72,9 +72,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution,
-    CaCl2 x 2H2O solution and FeCl3 x 6H2O solution. Aseptically add all solutions
-    to the medium.
+  description: Adjust pH to 4.8 - 5.0. Separately autoclave MgSO4 x 7H2O solution, CaCl2 x 2H2O solution
+    and FeCl3 x 6H2O solution. Aseptically add all solutions to the medium.
 applications:
 - Microbial cultivation
 curation_history:

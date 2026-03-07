@@ -1,6 +1,6 @@
 name: MEDIUM 120 MODIFIED FOR DSM 7058
 original_name: MEDIUM 120 MODIFIED FOR DSM 7058
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:120_7058
     label: MEDIUM 120 MODIFIED FOR DSM 7058
-notes: 'Source: KOMODO ModelSEED | ID: 120_7058 | DSMZ Medium: 120 (mediadive.medium:120)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 120_7058 | DSMZ Medium: 120 (mediadive.medium:120) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -251,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.515796Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

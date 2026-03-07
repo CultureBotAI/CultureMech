@@ -1,6 +1,6 @@
 name: MEDIUM 640 MODIFIED FOR DSM 11426
 original_name: MEDIUM 640 MODIFIED FOR DSM 11426
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:640_11426
     label: MEDIUM 640 MODIFIED FOR DSM 11426
-notes: 'Source: KOMODO ModelSEED | ID: 640_11426 | DSMZ Medium: 640 (mediadive.medium:640)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 640_11426 | DSMZ Medium: 640 (mediadive.medium:640) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NH4Cl
   term:

@@ -1,6 +1,6 @@
 name: CDMM
 original_name: CDMM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -144,8 +144,7 @@ preparation_steps:
   description: autoclave
 - step_number: 4
   action: MIX
-  description: pH should be between 6-7, may depend on the casamino acid and cysteine
-    lot
+  description: pH should be between 6-7, may depend on the casamino acid and cysteine lot
 - step_number: 5
   action: HEAT
   description: steril filtration, store as batches at -20°C
@@ -177,5 +176,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.049943Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

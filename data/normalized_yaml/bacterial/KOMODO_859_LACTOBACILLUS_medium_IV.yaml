@@ -1,6 +1,6 @@
 name: LACTOBACILLUS medium IV
 original_name: LACTOBACILLUS medium IV
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:859
     label: LACTOBACILLUS medium IV
-notes: 'Source: KOMODO ModelSEED | ID: 859 | DSMZ Medium: 859 (mediadive.medium:859)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 859 | DSMZ Medium: 859 (mediadive.medium:859) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

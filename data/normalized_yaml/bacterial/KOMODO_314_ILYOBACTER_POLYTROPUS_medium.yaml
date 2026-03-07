@@ -1,6 +1,6 @@
 name: ILYOBACTER POLYTROPUS medium
 original_name: ILYOBACTER POLYTROPUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:314
     label: ILYOBACTER POLYTROPUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 314 | DSMZ Medium: 314 (mediadive.medium:314)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 314 | DSMZ Medium: 314 (mediadive.medium:314) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -255,5 +254,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.598053Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

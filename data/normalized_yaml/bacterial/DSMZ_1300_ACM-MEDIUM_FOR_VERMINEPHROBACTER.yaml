@@ -1,6 +1,6 @@
 name: ACM-MEDIUM FOR VERMINEPHROBACTER
 original_name: ACM-MEDIUM FOR VERMINEPHROBACTER
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.5
@@ -60,12 +60,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine after cooling. Adjust
-    pH to 7.2 -7.5.
+  description: Autoclave solutions A and B separately and combine after cooling. Adjust pH to 7.2 -7.5.
 - step_number: 2
   action: MIX
-  description: Add Phytagel instead of agar to solidify medium if necessary. Verminephrobacter
-    strains did not grow on plates in our hands.
+  description: Add Phytagel instead of agar to solidify medium if necessary. Verminephrobacter strains
+    did not grow on plates in our hands.
 applications:
 - Microbial cultivation
 curation_history:

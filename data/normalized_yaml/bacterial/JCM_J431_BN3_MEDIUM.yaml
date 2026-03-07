@@ -1,6 +1,6 @@
 name: BN3 MEDIUM
 original_name: BN3 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -260,14 +260,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Basal medium supplemented with Trace element solution, Selenite-tungstate
-    solution and resazurin under N2-CO2 (4:1, v/v). Separately autoclave glucose,
-    yeast extract and tryptone (10% each) and add to the medium. Filter-sterilize
-    Trace vitamins and NaHCO3 (8%) solution and add to the medium. Steam sulfur for
-    3 hr on each of 3 successive days. Distribute the medium into culture vessels
-    containing sulfur under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber
-    stoppers. Before inoculation, reduce the medium with 5% Na2S x 9H2O solution (autoclaved
-    under a N2 atmosphere). Readjust pH to 7.2, if necessary.
+  description: Autoclave Basal medium supplemented with Trace element solution, Selenite-tungstate solution
+    and resazurin under N2-CO2 (4:1, v/v). Separately autoclave glucose, yeast extract and tryptone (10%
+    each) and add to the medium. Filter-sterilize Trace vitamins and NaHCO3 (8%) solution and add to the
+    medium. Steam sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture vessels
+    containing sulfur under a N2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Before
+    inoculation, reduce the medium with 5% Na2S x 9H2O solution (autoclaved under a N2 atmosphere). Readjust
+    pH to 7.2, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

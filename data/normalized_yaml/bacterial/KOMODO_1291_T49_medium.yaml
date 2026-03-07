@@ -1,6 +1,6 @@
 name: T49 medium
 original_name: T49 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1291
     label: T49 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1291 | DSMZ Medium: 1291 (mediadive.medium:1291)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1291 | DSMZ Medium: 1291 (mediadive.medium:1291) | Aerobic: No'
 ingredients:
 - preferred_term: Gellan Gum
   term:

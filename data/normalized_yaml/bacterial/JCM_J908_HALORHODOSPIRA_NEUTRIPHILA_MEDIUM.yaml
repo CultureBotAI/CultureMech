@@ -1,6 +1,6 @@
 name: HALORHODOSPIRA NEUTRIPHILA MEDIUM
 original_name: HALORHODOSPIRA NEUTRIPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -200,13 +200,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0 with 1 M Na2CO3 or 1 M H2SO4. Mix ingredients, except
-    NaHCO3, Na2S x 9H2O, seven vitamins solution, acetate solution, succinate solution
-    and yeast extract solution, and autoclave under a N2-CO2 (80:20, v/v) atmosphere.
-    Separately autoclave acetate solution, succinate solution and yeast extract solution.
-    Filter-sterilize NaHCO3, Na2S x 9H2O. Aseptically and anaerobically add NaHCO3,
-    Na2S x 9H2O, seven vitamins solution, acetate solution, succinate solution and
-    yeast extract solution to the medium.
+  description: Adjust pH to 7.0 with 1 M Na2CO3 or 1 M H2SO4. Mix ingredients, except NaHCO3, Na2S x 9H2O,
+    seven vitamins solution, acetate solution, succinate solution and yeast extract solution, and autoclave
+    under a N2-CO2 (80:20, v/v) atmosphere. Separately autoclave acetate solution, succinate solution
+    and yeast extract solution. Filter-sterilize NaHCO3, Na2S x 9H2O. Aseptically and anaerobically add
+    NaHCO3, Na2S x 9H2O, seven vitamins solution, acetate solution, succinate solution and yeast extract
+    solution to the medium.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave separately.

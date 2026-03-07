@@ -1,8 +1,8 @@
 name: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
 original_name: NUTRIENT AGAR WITH 50% SOIL EXTRACT AND 5% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J407
@@ -39,9 +39,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave
-    at 121C for 1 hr. Use the clear supernatant after sedimentation for a few hours
-    and centrifugation.
+  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave at 121C for
+    1 hr. Use the clear supernatant after sedimentation for a few hours and centrifugation.
 applications:
 - Microbial cultivation
 curation_history:

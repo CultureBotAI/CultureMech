@@ -1,8 +1,8 @@
 name: MIDDLEBROCK 7H11 AGAR
 original_name: MIDDLEBROCK 7H11 AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.4-6.8
 media_term:
   preferred_term: DSMZ Medium 911
@@ -134,8 +134,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto Middelbrook
-    OADC enrichment Difco (see below) under aseptic conditions and mix thoroughly.
+  description: Sterilize for 10 min by 121°C cool to 50 - 55°C. Add 100 ml Bacto Middelbrook OADC enrichment
+    Difco (see below) under aseptic conditions and mix thoroughly.
 - step_number: 2
   action: HEAT
   description: Final pH at 25°C 6.6 ± 0.2.

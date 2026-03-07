@@ -1,16 +1,15 @@
 name: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
 original_name: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: KOMODO Medium 570
   term:
     id: komodo.medium:570
     label: medium FOR THERMOPHILIC ACTINOMYCETES (AGRE 1964)
-notes: 'Source: KOMODO ModelSEED | ID: 570 | DSMZ Medium: 570 (mediadive.medium:570)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 570 | DSMZ Medium: 570 (mediadive.medium:570) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

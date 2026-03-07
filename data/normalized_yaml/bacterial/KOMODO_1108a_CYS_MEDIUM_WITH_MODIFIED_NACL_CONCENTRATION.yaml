@@ -1,6 +1,6 @@
 name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
 original_name: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1108a
     label: CYS MEDIUM WITH MODIFIED NACL CONCENTRATION
-notes: 'Source: KOMODO ModelSEED | ID: 1108a | DSMZ Medium: 1108a (mediadive.medium:1108a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1108a | DSMZ Medium: 1108a (mediadive.medium:1108a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: N-Z-Case
   concentration:

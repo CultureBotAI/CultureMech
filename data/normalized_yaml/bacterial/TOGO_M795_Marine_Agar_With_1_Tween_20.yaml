@@ -1,15 +1,14 @@
 name: Marine Agar With 1% Tween 20
 original_name: Marine Agar With 1% Tween 20
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tween 20
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:9784
     label: ''

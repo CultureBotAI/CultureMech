@@ -1,6 +1,6 @@
 name: S6 MEDIUM
 original_name: S6 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -70,8 +70,8 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
-    sterile Na2S2O3 solution to the medium.
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add sterile Na2S2O3 solution
+    to the medium.
 - step_number: 3
   action: MIX
   description: For preparation of solid medium, add 15.0 g/L agar.

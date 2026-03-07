@@ -1,6 +1,6 @@
 name: METALLIBACTERIUM MEDIUM
 original_name: METALLIBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -225,8 +225,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, except Trace vitamins, adjust pH to 5.5 and autoclave.
-    After cooling, aseptically add filter-sterilized Trace vitamins solution.
+  description: Mix components, except Trace vitamins, adjust pH to 5.5 and autoclave. After cooling, aseptically
+    add filter-sterilized Trace vitamins solution.
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.

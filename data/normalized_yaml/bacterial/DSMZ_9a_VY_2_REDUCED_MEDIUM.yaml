@@ -1,8 +1,8 @@
 name: VY/2, REDUCED MEDIUM
 original_name: VY/2, REDUCED MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 9a
@@ -39,18 +39,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sterilize vitamin B12 separately by filtration. Prepare and store yeast
-    cells as autoclaved stock suspension (5 g baker's yeast/100 ml distilled water,
-    adjust pH to 6.5 and autoclave).
+  description: Sterilize vitamin B12 separately by filtration. Prepare and store yeast cells as autoclaved
+    stock suspension (5 g baker's yeast/100 ml distilled water, adjust pH to 6.5 and autoclave).
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH of medium to 7.2 with KOH before as well as after autoclaving
-    and cooling to 50°C (use pH-indicator paper).
+  description: Adjust pH of medium to 7.2 with KOH before as well as after autoclaving and cooling to
+    50°C (use pH-indicator paper).
 - step_number: 3
   action: STORE
-  description: 'For suspension of freeze-dried cells from ampoules add about 0.5 -
-    1.0 ml medium MD1 (per liter: casiton, 3.0 g; CaCl2 x 2 H2O,  0.7 g; MgSO4 x 7
-    H2O, 2.0 g) to the vial with freeze dried material.'
+  description: 'For suspension of freeze-dried cells from ampoules add about 0.5 - 1.0 ml medium MD1 (per
+    liter: casiton, 3.0 g; CaCl2 x 2 H2O,  0.7 g; MgSO4 x 7 H2O, 2.0 g) to the vial with freeze dried
+    material.'
 applications:
 - Microbial cultivation
 curation_history:

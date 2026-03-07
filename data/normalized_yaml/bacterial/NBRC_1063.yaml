@@ -1,12 +1,12 @@
 name: '1063'
 original_name: '1063'
-category: imported
+category: bacterial
 description: 1063. NBRC 1062.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Tryptone5gYeast extract3gNaCl10gUrea1gDistilled water1LAgar (if
-    needed)15gAdjust pH to 8.5 with 50 mM Tris-HCl buffer.
+- preferred_term: Tryptone5gYeast extract3gNaCl10gUrea1gDistilled water1LAgar (if needed)15gAdjust pH
+    to 8.5 with 50 mM Tris-HCl buffer.
 - preferred_term: ''
   concentration:
     value: Tryptone

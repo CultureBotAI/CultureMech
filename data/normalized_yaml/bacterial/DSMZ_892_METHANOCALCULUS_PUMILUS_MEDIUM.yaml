@@ -1,6 +1,6 @@
 name: METHANOCALCULUS PUMILUS MEDIUM
 original_name: METHANOCALCULUS PUMILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -240,22 +240,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide,
-    then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Add and dissolve carbonate, adjust pH to 7.2 then dispense medium under
-    80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    to 30% of their volume and autoclave. Add vitamins (sterilized by filtration),
-    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2
-    gas. Prior to use check pH of complete medium and adjust to 7.3 - 7.5, if necessary.
+  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide, then sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve carbonate,
+    adjust pH to 7.2 then dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add vitamins (sterilized by filtration),
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to use
+    check pH of complete medium and adjust to 7.3 - 7.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1.5
-    - 2 bar overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1.5 - 2 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
-    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
-    up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
+    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,5 +263,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.248115Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: ANAEROBIC TYECas MEDIUM
 original_name: ANAEROBIC TYECas MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 718, replacing sodium citrate with 2.0 g/L casamino
-    acids (BD-Difco).
+  description: Use Medium No. 718, replacing sodium citrate with 2.0 g/L casamino acids (BD-Difco).
 applications:
 - Microbial cultivation
 curation_history:

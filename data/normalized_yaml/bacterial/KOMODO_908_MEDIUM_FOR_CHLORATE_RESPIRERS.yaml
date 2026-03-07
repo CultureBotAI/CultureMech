@@ -1,6 +1,6 @@
 name: MEDIUM FOR CHLORATE RESPIRERS
 original_name: MEDIUM FOR CHLORATE RESPIRERS
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:908
     label: MEDIUM FOR CHLORATE RESPIRERS
-notes: 'Source: KOMODO ModelSEED | ID: 908 | DSMZ Medium: 908 (mediadive.medium:908)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 908 | DSMZ Medium: 908 (mediadive.medium:908) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

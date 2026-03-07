@@ -1,6 +1,6 @@
 name: Artificial seawater (medium 1231)
 original_name: Artificial seawater (medium 1231)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5.5-6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3008
     label: Artificial seawater (medium 1231)
-notes: 'Source: KOMODO ModelSEED | ID: 3008 | DSMZ Medium: 3008 (mediadive.medium:3008)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3008 | DSMZ Medium: 3008 (mediadive.medium:3008) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

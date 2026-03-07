@@ -1,6 +1,6 @@
 name: PSEUDOMONAS HALOPHILA MEDIUM
 original_name: PSEUDOMONAS HALOPHILA MEDIUM
-category: imported
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -175,12 +175,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave Solutions A and B separately and combine after cooling. Filter-sterilize
-    vitamin solution and add to the autoclaved medium.
+  description: Autoclave Solutions A and B separately and combine after cooling. Filter-sterilize vitamin
+    solution and add to the autoclaved medium.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.

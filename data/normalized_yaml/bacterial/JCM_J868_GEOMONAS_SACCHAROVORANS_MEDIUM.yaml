@@ -1,6 +1,6 @@
 name: GEOMONAS SACCHAROVORANS MEDIUM
 original_name: GEOMONAS SACCHAROVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -184,10 +184,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2. Distribute the medium
-    into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
-    stoppers and autoclave. After cooling, add the following solutions (per 950 ml
-    medium) from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.2. Distribute the medium into culture vessels
+    under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add the following solutions (per 950 ml medium) from anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: J - AGAR
 original_name: J - AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.5
 media_term:
   preferred_term: DSMZ Medium 262
@@ -43,8 +43,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water
-    and sterilize glucose separately. Aseptically add to the basis medium after sterilization.
+  description: Adjust pH to 7.3 - 7.5. Dissolve glucose in 10 ml of distilled water and sterilize glucose
+    separately. Aseptically add to the basis medium after sterilization.
 applications:
 - Microbial cultivation
 curation_history:

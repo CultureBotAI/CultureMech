@@ -1,6 +1,6 @@
 name: MS-MEDIUM (MODIFIED)
 original_name: MS-MEDIUM (MODIFIED)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -181,14 +181,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Each of the solutions (A, B, and C) is prepared with anaerobic double
-    distilled water.
+  description: Each of the solutions (A, B, and C) is prepared with anaerobic double distilled water.
 - step_number: 2
   action: POUR_PLATES
-  description: "The medium is prepared anaerobically under nitrogen gas and dispensed\
-    \ into Hungate tubes or serum bottle sealed with rubber septa. The medium to gas\
-    \ phase ratio should be about 1:10 (v:v). \r\nSterilise the medium by heating\
-    \ at 100° C for 3 hours on three consecutive days (e.g., in a water bath)."
+  description: "The medium is prepared anaerobically under nitrogen gas and dispensed into Hungate tubes\
+    \ or serum bottle sealed with rubber septa. The medium to gas phase ratio should be about 1:10 (v:v).\
+    \ \r\nSterilise the medium by heating at 100° C for 3 hours on three consecutive days (e.g., in a\
+    \ water bath)."
 - step_number: 3
   action: MIX
   description: Add  4% O2 for microaerophilic conditions.

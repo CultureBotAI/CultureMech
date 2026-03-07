@@ -1,6 +1,6 @@
 name: Nitrosotalea (AOA) Fresh Water Medium (FW)
 original_name: Nitrosotalea (AOA) Fresh Water Medium (FW)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.1
@@ -155,32 +155,32 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Crucial: prepare all solutions in either clean glassware (incubated
-    in 0.1 % HCl and washed with double distilled water) or GREINER PS container (201172).
-    Do not use container with rubber stoppers or septum.'
+  description: 'Crucial: prepare all solutions in either clean glassware (incubated in 0.1 % HCl and washed
+    with double distilled water) or GREINER PS container (201172). Do not use container with rubber stoppers
+    or septum.'
 - step_number: 2
   action: MIX
-  description: Add 100 mL of 10x FW basal salt solution to 800 mL sterile double distilled
-    water just before use.
+  description: Add 100 mL of 10x FW basal salt solution to 800 mL sterile double distilled water just
+    before use.
 - step_number: 3
   action: MIX
-  description: 'Add per litre of 1x FW basalt solution: 0.5 mL NH4Cl (1 M), 2 mL NaHCO3
-    (1 M), 1 mL FeNaEDTA (7.5 mM), 1 mL trace elements solution, 1.95 g MES Hydrat.'
+  description: 'Add per litre of 1x FW basalt solution: 0.5 mL NH4Cl (1 M), 2 mL NaHCO3 (1 M), 1 mL FeNaEDTA
+    (7.5 mM), 1 mL trace elements solution, 1.95 g MES Hydrat.'
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to the specific pH for each strain.
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    double distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with double distilled
+    water.
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Filtrate with 0.2 µm Nalgene® bottle-top sterile filter units (e.g.
-    ThermoFischer 597-4520) in a clean and sterile glass bottle.
+  description: Filtrate with 0.2 µm Nalgene® bottle-top sterile filter units (e.g. ThermoFischer 597-4520)
+    in a clean and sterile glass bottle.
 - step_number: 7
   action: HEAT
-  description: Aliquote medium in GREINER PS containers. Final medium can be stored
-    at 4 °C in the dark for weeks.
+  description: Aliquote medium in GREINER PS containers. Final medium can be stored at 4 °C in the dark
+    for weeks.
 - step_number: 8
   action: MIX
   description: Prepare FW basal salt solution (10x) in double distilled water.
@@ -201,14 +201,13 @@ preparation_steps:
   description: Filtrate (0.2 µm).
 - step_number: 14
   action: DISSOLVE
-  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small
-    beaker with stirring rod to dissolve) and sterilize by filtration (0.2 µm) in
-    the laminar flow hood. Store in a sterile 50 mL falcon tube at 4 °C. Avoid high
-    headspace to liquid ratios to ensure stable concentration.
+  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small beaker with stirring
+    rod to dissolve) and sterilize by filtration (0.2 µm) in the laminar flow hood. Store in a sterile
+    50 mL falcon tube at 4 °C. Avoid high headspace to liquid ratios to ensure stable concentration.
 - step_number: 15
   action: HEAT
-  description: This solution contains no iron! Sterilise by autoclaving or filtration
-    (0.2 µm) and store in the dark at 4 °C.
+  description: This solution contains no iron! Sterilise by autoclaving or filtration (0.2 µm) and store
+    in the dark at 4 °C.
 - step_number: 16
   action: HEAT
   description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.

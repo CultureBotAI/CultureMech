@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTER SULFUROPHILUS medium
 original_name: THERMOANAEROBACTER SULFUROPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:827
     label: THERMOANAEROBACTER SULFUROPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 827 | DSMZ Medium: 827 (mediadive.medium:827)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 827 | DSMZ Medium: 827 (mediadive.medium:827) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -227,5 +226,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.348605Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

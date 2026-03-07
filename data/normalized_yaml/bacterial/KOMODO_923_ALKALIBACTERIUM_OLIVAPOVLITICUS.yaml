@@ -1,15 +1,14 @@
 name: ALKALIBACTERIUM OLIVAPOVLITICUS
 original_name: ALKALIBACTERIUM OLIVAPOVLITICUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 923
   term:
     id: komodo.medium:923
     label: ALKALIBACTERIUM OLIVAPOVLITICUS
-notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 923 | DSMZ Medium: 923 (mediadive.medium:923) | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:

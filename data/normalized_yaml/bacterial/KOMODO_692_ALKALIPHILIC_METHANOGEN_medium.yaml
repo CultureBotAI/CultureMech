@@ -1,6 +1,6 @@
 name: ALKALIPHILIC METHANOGEN medium
 original_name: ALKALIPHILIC METHANOGEN medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.2-9.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:692
     label: ALKALIPHILIC METHANOGEN medium
-notes: 'Source: KOMODO ModelSEED | ID: 692 | DSMZ Medium: 692 (mediadive.medium:692)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 692 | DSMZ Medium: 692 (mediadive.medium:692) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

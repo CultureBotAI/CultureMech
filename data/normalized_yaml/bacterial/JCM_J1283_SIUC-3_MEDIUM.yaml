@@ -1,6 +1,6 @@
 name: SIUC-3 MEDIUM
 original_name: SIUC-3 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -197,14 +197,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 6.5. Distribute the medium
-    into culture vessels (e.g., 25 ml in 120 ml-serum bottles) under a stream of a
-    N2 gas, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
-    and anaerobically add per liter the following solution (autoclaved) :'
+  description: 'Mix components thoroughly and adjust pH to 6.5. Distribute the medium into culture vessels
+    (e.g., 25 ml in 120 ml-serum bottles) under a stream of a N2 gas, seal with butyl rubber stoppers
+    and autoclave. After cooling, aseptically and anaerobically add per liter the following solution (autoclaved)
+    :'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

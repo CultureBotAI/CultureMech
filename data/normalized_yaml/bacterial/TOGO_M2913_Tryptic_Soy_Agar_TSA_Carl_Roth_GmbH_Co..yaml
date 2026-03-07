@@ -1,8 +1,8 @@
 name: Tryptic Soy Agar [TSA] (Carl Roth GmbH & Co.)
 original_name: Tryptic Soy Agar [TSA] (Carl Roth GmbH & Co.)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Tryptic Soy Agar (Carl Roth GmbH & Co.)
   concentration:

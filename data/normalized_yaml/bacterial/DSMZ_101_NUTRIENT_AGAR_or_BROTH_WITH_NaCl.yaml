@@ -1,8 +1,8 @@
 name: NUTRIENT AGAR or BROTH WITH NaCl
 original_name: NUTRIENT AGAR or BROTH WITH NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 101
   term:

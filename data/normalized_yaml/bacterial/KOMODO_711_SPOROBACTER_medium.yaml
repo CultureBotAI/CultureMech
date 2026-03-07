@@ -1,6 +1,6 @@
 name: SPOROBACTER medium
 original_name: SPOROBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:711
     label: SPOROBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 711 | DSMZ Medium: 711 (mediadive.medium:711)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 711 | DSMZ Medium: 711 (mediadive.medium:711) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -244,6 +243,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.018580Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.0

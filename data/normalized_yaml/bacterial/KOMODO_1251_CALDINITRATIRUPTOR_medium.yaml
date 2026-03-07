@@ -1,6 +1,6 @@
 name: CALDINITRATIRUPTOR medium
 original_name: CALDINITRATIRUPTOR medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1251
     label: CALDINITRATIRUPTOR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1251 | DSMZ Medium: 1251 (mediadive.medium:1251)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1251 | DSMZ Medium: 1251 (mediadive.medium:1251) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

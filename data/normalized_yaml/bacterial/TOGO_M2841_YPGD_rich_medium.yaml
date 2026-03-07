@@ -1,6 +1,6 @@
 name: YPGD (rich medium)
 original_name: YPGD (rich medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '2'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose

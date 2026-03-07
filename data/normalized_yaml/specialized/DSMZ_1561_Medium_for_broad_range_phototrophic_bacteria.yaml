@@ -1,6 +1,6 @@
 name: Medium for broad range phototrophic bacteria
 original_name: Medium for broad range phototrophic bacteria
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -259,12 +259,12 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave at 121°C for 15 min. Before inoculation add 1.0 ml/ l 5%
-    sulfide solution pH 7.5 and 1.0 ml/l vitamin solution.
+  description: Autoclave at 121°C for 15 min. Before inoculation add 1.0 ml/ l 5% sulfide solution pH
+    7.5 and 1.0 ml/l vitamin solution.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:

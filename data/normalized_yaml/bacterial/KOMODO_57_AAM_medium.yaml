@@ -1,6 +1,6 @@
 name: AAM medium
 original_name: AAM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:57
     label: AAM medium
-notes: 'Source: KOMODO ModelSEED | ID: 57 | DSMZ Medium: 57 (mediadive.medium:57)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 57 | DSMZ Medium: 57 (mediadive.medium:57) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

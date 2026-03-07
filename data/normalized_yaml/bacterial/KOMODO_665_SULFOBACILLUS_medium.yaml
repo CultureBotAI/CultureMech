@@ -1,6 +1,6 @@
 name: SULFOBACILLUS medium
 original_name: SULFOBACILLUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.9-2.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:665
     label: SULFOBACILLUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 665 | DSMZ Medium: 665 (mediadive.medium:665)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 665 | DSMZ Medium: 665 (mediadive.medium:665) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -77,5 +76,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:31.407633Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

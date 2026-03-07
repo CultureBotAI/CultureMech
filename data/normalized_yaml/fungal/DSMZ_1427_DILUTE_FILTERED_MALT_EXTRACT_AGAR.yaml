@@ -1,8 +1,8 @@
 name: DILUTE FILTERED MALT EXTRACT AGAR
 original_name: DILUTE FILTERED MALT EXTRACT AGAR
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1427
   term:
@@ -24,8 +24,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave for 15 min. and filter the cooled liquid until clear; fill
-    up to 1 L.
+  description: Autoclave for 15 min. and filter the cooled liquid until clear; fill up to 1 L.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 min.

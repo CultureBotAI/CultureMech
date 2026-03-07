@@ -1,8 +1,8 @@
 name: MY10-12 MEDIUM
 original_name: MY10-12 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 982
   term:
@@ -42,8 +42,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize by steaming for 30 min. Overheating will cause softening.
-    Final aw is 0.88.
+  description: Sterilize by steaming for 30 min. Overheating will cause softening. Final aw is 0.88.
 applications:
 - Microbial cultivation
 curation_history:

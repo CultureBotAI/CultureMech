@@ -1,8 +1,8 @@
 name: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
 original_name: REINFORCED CLOSTRIDIAL MEDIUM WITH 4%  SEA SALT
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J482
   term:

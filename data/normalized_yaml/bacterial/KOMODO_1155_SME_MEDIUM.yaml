@@ -1,11 +1,11 @@
 name: SME MEDIUM
 original_name: SME MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1155 | DSMZ Medium: 1155
-  (mediadive.medium:1155) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1155 | DSMZ Medium: 1155 (mediadive.medium:1155)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1155
   term:

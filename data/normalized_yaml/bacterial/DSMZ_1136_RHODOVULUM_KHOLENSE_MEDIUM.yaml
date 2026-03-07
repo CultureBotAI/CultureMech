@@ -1,6 +1,6 @@
 name: RHODOVULUM KHOLENSE MEDIUM
 original_name: RHODOVULUM KHOLENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -126,8 +126,8 @@ preparation_steps:
   description: Adjust to pH 7.0
 - step_number: 2
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
+    under a stream of nitrogen gas.
 applications:
 - Microbial cultivation
 curation_history:

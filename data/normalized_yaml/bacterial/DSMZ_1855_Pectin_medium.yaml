@@ -1,6 +1,6 @@
 name: Pectin medium
 original_name: Pectin medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -49,8 +49,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add cysteine solution after the medium has been boiled and cooled under
-    CO2. Adjust pH to 6.5 using NaOH, Distribute under N2 and autoclave.
+  description: Add cysteine solution after the medium has been boiled and cooled under CO2. Adjust pH
+    to 6.5 using NaOH, Distribute under N2 and autoclave.
 - step_number: 2
   action: MIX
   description: When preparing the plate medium, add 15g/L agar

@@ -1,16 +1,15 @@
 name: ACIDOSOMA medium
 original_name: ACIDOSOMA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.0-5.5
 media_term:
   preferred_term: KOMODO Medium 1220
   term:
     id: komodo.medium:1220
     label: ACIDOSOMA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1220 | DSMZ Medium: 1220 (mediadive.medium:1220)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1220 | DSMZ Medium: 1220 (mediadive.medium:1220) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

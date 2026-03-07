@@ -1,6 +1,6 @@
 name: DEFLUVIITALEA MEDIUM
 original_name: DEFLUVIITALEA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -204,18 +204,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, carbonate, glucose and sulfide),
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Add cysteine and adjust pH to 6.5, then dispense medium under same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
-    sterilization add glucose and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4,
-    if necessary.
+  description: Dissolve ingredients (except cysteine, carbonate, glucose and sulfide), then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add cysteine and adjust pH
+    to 6.5, then dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. After sterilization add glucose and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20%
+    CO2 gas mixture. Adjust pH of complete medium to pH 7.2 -7.4, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

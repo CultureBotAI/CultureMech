@@ -1,16 +1,15 @@
 name: SMB medium
 original_name: SMB medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7.1
 media_term:
   preferred_term: KOMODO Medium 1185
   term:
     id: komodo.medium:1185
     label: SMB medium
-notes: 'Source: KOMODO ModelSEED | ID: 1185 | DSMZ Medium: 1185 (mediadive.medium:1185)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1185 | DSMZ Medium: 1185 (mediadive.medium:1185) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

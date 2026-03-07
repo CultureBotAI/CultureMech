@@ -1,6 +1,6 @@
 name: Corn meal Agar (Oxoid CM103)
 original_name: Corn meal Agar (Oxoid CM103)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.8-6.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5010
     label: Corn meal Agar (Oxoid CM103)
-notes: 'Source: KOMODO ModelSEED | ID: 5010 | DSMZ Medium: 5010 (mediadive.medium:5010)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5010 | DSMZ Medium: 5010 (mediadive.medium:5010) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

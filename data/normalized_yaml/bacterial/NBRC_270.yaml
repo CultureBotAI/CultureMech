@@ -1,14 +1,13 @@
 name: '270'
 original_name: '270'
-category: imported
+category: bacterial
 description: 270. NBRC 268.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Soluble starch10gK2HPO4(anhydrous base)1gMgSO4\xB77H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace\
-    \ salts solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should\
-    \ be 7.0 - 7.4*Trace salts solutionFeSO4\xB77H2O0.1gMnCl2\xB74H2O0.1gZnSO4\xB7\
-    7H2O0.1gDistilled water100ml"
+- preferred_term: Soluble starch10gK2HPO4(anhydrous base)1gMgSO4·7H2O1gNaCl1g(NH4)2SO42gCaCO32gTrace salts
+    solution*1mlBacto Agar (Difco)20gDistilled water1LThe unadjusted pH should be 7.0 - 7.4*Trace salts
+    solutionFeSO4·7H2O0.1gMnCl2·4H2O0.1gZnSO4·7H2O0.1gDistilled water100ml
 - preferred_term: ''
   concentration:
     value: Soluble starch
@@ -19,7 +18,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

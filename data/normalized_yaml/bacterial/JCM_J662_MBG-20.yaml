@@ -1,6 +1,6 @@
 name: MBG-20
 original_name: MBG-20
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -36,10 +36,9 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve Sea salts in distilled water and sterilize by filtration.
-    Separately, autoclave peptone, yeast extract and glucose solutions and add to
-    the sterile Sea salts solution. Make the liquid medium anaerobic by repeated cycles
-    (three times) of degassing and charging with argon.
+  description: Dissolve Sea salts in distilled water and sterilize by filtration. Separately, autoclave
+    peptone, yeast extract and glucose solutions and add to the sterile Sea salts solution. Make the liquid
+    medium anaerobic by repeated cycles (three times) of degassing and charging with argon.
 applications:
 - Microbial cultivation
 curation_history:

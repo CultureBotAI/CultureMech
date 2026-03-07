@@ -1,6 +1,6 @@
 name: Vitamin mixture (medium 1001)
 original_name: Vitamin mixture (medium 1001)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2080
     label: Vitamin mixture (medium 1001)
-notes: 'Source: KOMODO ModelSEED | ID: 2080 | DSMZ Medium: 2080 (mediadive.medium:2080)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2080 | DSMZ Medium: 2080 (mediadive.medium:2080) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: VULCANIBACILLUS MEDIUM
 original_name: VULCANIBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.0
@@ -229,15 +229,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except FeSO4 x 7H2O, NaHCO3, yeast extract and
-    vitamins, and adjust pH to 7.0. Bring to a boil for 3 min, then cool to room temperature
-    under a N2 gas stream. Dispense the medium under the same gas atmosphere into
-    culture vessels, seal with butyl rubber stoppers and autoclave. Add sterile anaerobic
-    stock solutions of FeSO4 x 7H2O (1%, in 0.1 N H2SO4), NaHCO3 (8%, under a N2 x
-    CO2 gas mixture), yeast extract (10%) and vitamins (filter-sterilized) to the
-    medium. Adjust final pH of the medium to 7.0 - 7.2. Add 10 - 20 mg sodium dithionite
-    per liter [e.g., from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized],
-    if the medium is not completely reduced after inoculation.
+  description: Dissolve ingredients except FeSO4 x 7H2O, NaHCO3, yeast extract and vitamins, and adjust
+    pH to 7.0. Bring to a boil for 3 min, then cool to room temperature under a N2 gas stream. Dispense
+    the medium under the same gas atmosphere into culture vessels, seal with butyl rubber stoppers and
+    autoclave. Add sterile anaerobic stock solutions of FeSO4 x 7H2O (1%, in 0.1 N H2SO4), NaHCO3 (8%,
+    under a N2 x CO2 gas mixture), yeast extract (10%) and vitamins (filter-sterilized) to the medium.
+    Adjust final pH of the medium to 7.0 - 7.2. Add 10 - 20 mg sodium dithionite per liter [e.g., from
+    5% (w/v) solution, freshly prepared under N2 and filter-sterilized], if the medium is not completely
+    reduced after inoculation.
 - step_number: 2
   action: ADJUST_PH
   description: First adjust pH to 1.0 with diluted H2SO4, then dissolve the salts.

@@ -1,11 +1,11 @@
 name: For autotrophic growth
 original_name: For autotrophic growth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 135.1 | DSMZ Medium: 135
-  (mediadive.medium:135) | Aerobic: Yes'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 135.1 | DSMZ Medium: 135 (mediadive.medium:135)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 135.1
   term:
@@ -272,5 +272,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.576618Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

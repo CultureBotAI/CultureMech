@@ -1,16 +1,15 @@
 name: RE-101/102 medium
 original_name: RE-101/102 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7.2
 media_term:
   preferred_term: KOMODO Medium 1130
   term:
     id: komodo.medium:1130
     label: RE-101/102 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1130 | DSMZ Medium: 1130 (mediadive.medium:1130)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1130 | DSMZ Medium: 1130 (mediadive.medium:1130) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,8 +1,8 @@
 name: L1
 original_name: L1
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: CCAP Medium C45
@@ -138,14 +138,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
-    \ Bacteriological Agar. Autoclave at 15 psi for\r\n15 minutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1\
+    \ M HCl\r\nprior to autoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave at 15\
+    \ psi for\r\n15 minutes."
 - step_number: 2
   action: DISSOLVE
-  description: "There are 11 chemicals. Prepare Primary stock solutions first.\r\n\
-    Add first two chemicals separately in 500ml/dH2O, allowing each to completely\r\
-    \ndissolve before adding the primary stocks in order:"
+  description: "There are 11 chemicals. Prepare Primary stock solutions first.\r\nAdd first two chemicals\
+    \ separately in 500ml/dH2O, allowing each to completely\r\ndissolve before adding the primary stocks\
+    \ in order:"
 - step_number: 3
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.

@@ -1,8 +1,8 @@
 name: LB agar
 original_name: LB agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: LB agar
   concentration:

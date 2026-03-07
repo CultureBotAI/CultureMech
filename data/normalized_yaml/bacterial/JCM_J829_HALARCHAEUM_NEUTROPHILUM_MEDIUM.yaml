@@ -1,6 +1,6 @@
 name: HALARCHAEUM NEUTROPHILUM MEDIUM
 original_name: HALARCHAEUM NEUTROPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -57,8 +57,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 5.5 with KOH.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 5.5 with KOH.
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 20.0 g/L agar.

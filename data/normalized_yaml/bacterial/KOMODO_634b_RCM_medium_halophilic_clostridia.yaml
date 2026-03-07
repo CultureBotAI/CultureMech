@@ -1,6 +1,6 @@
 name: RCM medium (halophilic clostridia)
 original_name: RCM medium (halophilic clostridia)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:634b
     label: RCM medium (halophilic clostridia)
-notes: 'Source: KOMODO ModelSEED | ID: 634b | DSMZ Medium: 634b (mediadive.medium:634b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 634b | DSMZ Medium: 634b (mediadive.medium:634b) | Aerobic: No'
 ingredients:
 - preferred_term: dehydrated RCM medium
   concentration:

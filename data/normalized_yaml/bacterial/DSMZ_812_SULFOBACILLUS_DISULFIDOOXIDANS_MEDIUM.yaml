@@ -1,6 +1,6 @@
 name: SULFOBACILLUS DISULFIDOOXIDANS MEDIUM
 original_name: SULFOBACILLUS DISULFIDOOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.3
@@ -60,8 +60,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 2.25 prior to autoclaving. Before use add per liter 10
-    ml of a filter sterilized 10% (w/v) glutathione solution.
+  description: Adjust pH to 2.25 prior to autoclaving. Before use add per liter 10 ml of a filter sterilized
+    10% (w/v) glutathione solution.
 applications:
 - Microbial cultivation
 curation_history:

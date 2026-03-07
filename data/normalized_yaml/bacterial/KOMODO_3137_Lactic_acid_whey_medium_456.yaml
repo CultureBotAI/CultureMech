@@ -1,11 +1,11 @@
 name: Lactic acid whey (medium 456)
 original_name: Lactic acid whey (medium 456)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
-notes: 'pH buffer: lactic acid | Source: KOMODO ModelSEED | ID: 3137 | DSMZ Medium:
-  3137 (mediadive.medium:3137) | Aerobic: No | SubMedium: Yes'
+notes: 'pH buffer: lactic acid | Source: KOMODO ModelSEED | ID: 3137 | DSMZ Medium: 3137 (mediadive.medium:3137)
+  | Aerobic: No | SubMedium: Yes'
 media_term:
   preferred_term: KOMODO Medium 3137
   term:

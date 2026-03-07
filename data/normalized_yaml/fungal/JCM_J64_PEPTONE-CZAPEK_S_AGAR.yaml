@@ -1,8 +1,8 @@
 name: PEPTONE-CZAPEK'S AGAR
 original_name: PEPTONE-CZAPEK'S AGAR
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J64
   term:

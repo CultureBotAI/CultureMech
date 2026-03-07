@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO MEXICANUS MEDIUM
 original_name: DESULFOVIBRIO MEXICANUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -172,10 +172,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Distribute the medium into tubes
-    or bottles under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers,
-    and autoclave. After cooling, add per liter (final) the following solutions from
-    sterile anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.0. Distribute the medium into tubes or bottles under
+    a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers, and autoclave. After cooling, add
+    per liter (final) the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 7.0, if necessary.

@@ -1,6 +1,6 @@
 name: Vitamin solution 7 (medium 842)
 original_name: Vitamin solution 7 (medium 842)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3128
     label: Vitamin solution 7 (medium 842)
-notes: 'Source: KOMODO ModelSEED | ID: 3128 | DSMZ Medium: 3128 (mediadive.medium:3128)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3128 | DSMZ Medium: 3128 (mediadive.medium:3128) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: YPS medium
 original_name: YPS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:990
     label: YPS medium
-notes: 'Source: KOMODO ModelSEED | ID: 990 | DSMZ Medium: 990 (mediadive.medium:990)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 990 | DSMZ Medium: 990 (mediadive.medium:990) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

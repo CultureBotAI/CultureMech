@@ -1,15 +1,14 @@
 name: MINERAL MEDIUM WITH ATRAZIN
 original_name: MINERAL MEDIUM WITH ATRAZIN
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465i
   term:
     id: komodo.medium:465i
     label: MINERAL MEDIUM WITH ATRAZIN
-notes: 'Source: KOMODO ModelSEED | ID: 465i | DSMZ Medium: 465i (mediadive.medium:465i)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465i | DSMZ Medium: 465i (mediadive.medium:465i) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

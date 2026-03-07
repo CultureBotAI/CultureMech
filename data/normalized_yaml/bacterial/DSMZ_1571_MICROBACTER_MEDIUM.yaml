@@ -1,6 +1,6 @@
 name: MICROBACTER MEDIUM
 original_name: MICROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -235,17 +235,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve in 1 liter, boil under N2, add 0.5 g of L-cysteine and adjust
-    pH to 6.4 (should be pH 5.5 after autoclaving). Disperse in tubes and bottles
-    (leave 50% of container volume as gas phase). Change to gas mixture N2/CO2; 80/20%)
-    and autoclave for 20 minutes at 121°C.
+  description: Dissolve in 1 liter, boil under N2, add 0.5 g of L-cysteine and adjust pH to 6.4 (should
+    be pH 5.5 after autoclaving). Disperse in tubes and bottles (leave 50% of container volume as gas
+    phase). Change to gas mixture N2/CO2; 80/20%) and autoclave for 20 minutes at 121°C.
 - step_number: 2
   action: MIX
   description: To 100 ml sterile medium add aseptically
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

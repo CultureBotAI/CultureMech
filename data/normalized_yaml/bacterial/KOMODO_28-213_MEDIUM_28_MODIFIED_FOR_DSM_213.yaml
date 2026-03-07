@@ -1,6 +1,6 @@
 name: MEDIUM 28 MODIFIED FOR DSM 213
 original_name: MEDIUM 28 MODIFIED FOR DSM 213
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:28_213
     label: MEDIUM 28 MODIFIED FOR DSM 213
-notes: 'Source: KOMODO ModelSEED | ID: 28_213 | DSMZ Medium: 28 (mediadive.medium:28)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 28_213 | DSMZ Medium: 28 (mediadive.medium:28) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

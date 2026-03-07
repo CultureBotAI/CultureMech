@@ -1,6 +1,6 @@
 name: PORPHYROBACTER MEDIUM
 original_name: PORPHYROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 8-8.5
@@ -172,8 +172,7 @@ preparation_steps:
   description: Adjust to pH 5.9 before autoclaving
 - step_number: 2
   action: MIX
-  description: 'Prepare the liquid medium. Before inoculation add from sterile stock
-    solutions:'
+  description: 'Prepare the liquid medium. Before inoculation add from sterile stock solutions:'
 - step_number: 3
   action: MIX
   description: Adjust to pH 8.0 - 8.5 with 0.5 N NaOH.

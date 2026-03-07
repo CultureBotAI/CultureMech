@@ -1,6 +1,6 @@
 name: MODIFIED SME MEDIUM
 original_name: MODIFIED SME MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.6
@@ -209,8 +209,8 @@ preparation_steps:
   description: Adjust pH to 6.5-6.8 with 1N H2SO4.
 - step_number: 3
   action: MIX
-  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2
-    atmosphere and tightly stopper.
+  description: Fill 10 ml of medium in serum bottles (100 ml) under a protective H2/CO2 atmosphere and
+    tightly stopper.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -219,12 +219,12 @@ preparation_steps:
   description: after autoclaving add the following filter-sterilized solutions.
 - step_number: 6
   action: MIX
-  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific\
-    \ conditions need to be applied)"
+  description: "apply xx bar H2/CO2 (80%/20%) + yy % O2 \r\n(Note: strain specific conditions need to\
+    \ be applied)"
 - step_number: 7
   action: MIX
-  description: For more details on the medium see the original description (Huber
-    et al. System. Appl. Microbiol. 15:340-351 (1992)).
+  description: For more details on the medium see the original description (Huber et al. System. Appl.
+    Microbiol. 15:340-351 (1992)).
 - step_number: 8
   action: MIX
   description: 'To 1000.0 ml trace element solution in medium 141 add:'
@@ -236,8 +236,8 @@ preparation_steps:
   description: Prepared under N2,autoclave 121°C, 15 min
 - step_number: 11
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

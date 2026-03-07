@@ -1,6 +1,6 @@
 name: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
 original_name: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:304_replace_Trimethylamine-HCl_with_Methanol
     label: METHANOSARCINA ACETIVORANS medium_replace_Trimethylamine-HCl_with_Methanol
-notes: 'Source: KOMODO ModelSEED | ID: 304_replace_Trimethylamine-HCl_with_Methanol
-  | DSMZ Medium: 304 (mediadive.medium:304) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 304_replace_Trimethylamine-HCl_with_Methanol | DSMZ Medium: 304
+  (mediadive.medium:304) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,11 +1,11 @@
 name: THERMUS medium
 original_name: THERMUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.2
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1033 | DSMZ Medium: 1033
-  (mediadive.medium:1033) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1033 | DSMZ Medium: 1033 (mediadive.medium:1033)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1033
   term:

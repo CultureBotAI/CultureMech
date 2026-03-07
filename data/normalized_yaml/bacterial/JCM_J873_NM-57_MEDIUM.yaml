@@ -1,6 +1,6 @@
 name: NM-57 MEDIUM
 original_name: NM-57 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,10 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 1.0 ml Trace vitamins solution
-    in solution A (per 900 ml), replacing sodium pyruvate with 0.18 g glucose in solution
-    B (per 100 ml). Otherwise, prepare the medium as described in the recipe of Medium
-    No. 284.
+  description: Use Medium No. 284 supplemented with final 1.0 ml Trace vitamins solution in solution A
+    (per 900 ml), replacing sodium pyruvate with 0.18 g glucose in solution B (per 100 ml). Otherwise,
+    prepare the medium as described in the recipe of Medium No. 284.
 applications:
 - Microbial cultivation
 curation_history:

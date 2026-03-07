@@ -1,6 +1,6 @@
 name: TREPONEMA SACCHAROPHILUM MEDIUM
 original_name: TREPONEMA SACCHAROPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -127,13 +127,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust
-    pH to 7.0 and sparge medium with 100% CO2 gas for 30-45 min to make it anoxic.
-    Add cysteine and carbonate, then equilibrate the medium with 100% CO2 gas to pH
-    7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock
-    solution prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust
-    pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except cysteine, carbonate and glucose), adjust pH to 7.0 and sparge
+    medium with 100% CO2 gas for 30-45 min to make it anoxic. Add cysteine and carbonate, then equilibrate
+    the medium with 100% CO2 gas to pH 7.0. Distribute medium under 100% CO2 gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from an anoxic stock solution
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH of complete medium to
+    7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

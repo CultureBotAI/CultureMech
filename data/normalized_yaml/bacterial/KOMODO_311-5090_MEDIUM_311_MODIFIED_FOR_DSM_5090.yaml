@@ -1,6 +1,6 @@
 name: MEDIUM 311 MODIFIED FOR DSM 5090
 original_name: MEDIUM 311 MODIFIED FOR DSM 5090
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:311_5090
     label: MEDIUM 311 MODIFIED FOR DSM 5090
-notes: 'Source: KOMODO ModelSEED | ID: 311_5090 | DSMZ Medium: 311 (mediadive.medium:311)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 311_5090 | DSMZ Medium: 311 (mediadive.medium:311) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -265,5 +264,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:52.572763Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

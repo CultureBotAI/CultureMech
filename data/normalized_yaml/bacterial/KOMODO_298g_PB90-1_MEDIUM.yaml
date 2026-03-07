@@ -1,6 +1,6 @@
 name: PB90-1 MEDIUM
 original_name: PB90-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:298g
     label: PB90-1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298g | DSMZ Medium: 298g (mediadive.medium:298g)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298g | DSMZ Medium: 298g (mediadive.medium:298g) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

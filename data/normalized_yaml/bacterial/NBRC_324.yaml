@@ -1,14 +1,13 @@
 name: '324'
 original_name: '324'
-category: imported
+category: bacterial
 description: 324. NBRC 323.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4\xB7\
-    7H2O0.5gCaCl2\xB72H2O0.25gKH2PO40.6gDistilled water500mlpH 3.0 - 4.0**Solution\
-    \ BGlucose1gAgar (if needed)20gDistilled water500mlSolutions A and B are separately\
-    \ sterilized by autoclaving and mixed."
+- preferred_term: Solution A*500mlSolution B**500ml*Solution AYeast extract1g(NH4)2SO40.2gMgSO4·7H2O0.5gCaCl2·2H2O0.25gKH2PO40.6gDistilled
+    water500mlpH 3.0 - 4.0**Solution BGlucose1gAgar (if needed)20gDistilled water500mlSolutions A and
+    B are separately sterilized by autoclaving and mixed.
 - preferred_term: ''
   concentration:
     value: Solution A*

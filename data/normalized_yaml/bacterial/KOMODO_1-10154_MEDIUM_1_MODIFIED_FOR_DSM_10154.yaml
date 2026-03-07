@@ -1,15 +1,14 @@
 name: MEDIUM 1 MODIFIED FOR DSM 10154
 original_name: MEDIUM 1 MODIFIED FOR DSM 10154
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_10154
   term:
     id: komodo.medium:1_10154
     label: MEDIUM 1 MODIFIED FOR DSM 10154
-notes: 'Source: KOMODO ModelSEED | ID: 1_10154 | DSMZ Medium: 1 (mediadive.medium:1)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_10154 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

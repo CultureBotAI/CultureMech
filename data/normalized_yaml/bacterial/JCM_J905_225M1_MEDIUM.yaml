@@ -1,6 +1,6 @@
 name: 225M1 MEDIUM
 original_name: 225M1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -67,9 +67,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L Adjust
-    pH to 6.8 with 25% KOH. For preparation of solid medium, add 23.0 g/L Bacto agar
-    (BD-Difco).
+  description: Add components to distilled water and bring volume to 1.0 L Adjust pH to 6.8 with 25% KOH.
+    For preparation of solid medium, add 23.0 g/L Bacto agar (BD-Difco).
 applications:
 - Microbial cultivation
 curation_history:

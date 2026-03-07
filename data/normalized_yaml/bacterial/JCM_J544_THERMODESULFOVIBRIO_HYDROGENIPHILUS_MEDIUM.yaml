@@ -1,6 +1,6 @@
 name: THERMODESULFOVIBRIO HYDROGENIPHILUS MEDIUM
 original_name: THERMODESULFOVIBRIO HYDROGENIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -172,13 +172,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O
-    and adjust pH to 7.2. Distribute the medium into tubes (e.g., 5 ml of the medium
-    in the Hungate tubes) under a H2-CO2 gas mixture (4:1, v/v), seal with butyl rubber
-    stoppers and autoclave. After cooling, add solutions of NaHCO3 [5%, filter-sterilized
-    and stored under a N2-CO2 (4:1, v/v) gas mixture], L-cysteine x HCl x H2O and
-    Na2S x 9H2O (5%, autoclaved and stored under N2) to the medium. Pressurize the
-    inoculated tubes to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O and adjust pH to
+    7.2. Distribute the medium into tubes (e.g., 5 ml of the medium in the Hungate tubes) under a H2-CO2
+    gas mixture (4:1, v/v), seal with butyl rubber stoppers and autoclave. After cooling, add solutions
+    of NaHCO3 [5%, filter-sterilized and stored under a N2-CO2 (4:1, v/v) gas mixture], L-cysteine x HCl
+    x H2O and Na2S x 9H2O (5%, autoclaved and stored under N2) to the medium. Pressurize the inoculated
+    tubes to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: For DSM 6898
 original_name: For DSM 6898
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:586.1
     label: For DSM 6898
-notes: 'Source: KOMODO ModelSEED | ID: 586.1 | DSMZ Medium: 586 (mediadive.medium:586)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 586.1 | DSMZ Medium: 586 (mediadive.medium:586) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

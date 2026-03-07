@@ -1,16 +1,15 @@
 name: MEDIUM 65 MODIFIED FOR DSM 41868
 original_name: MEDIUM 65 MODIFIED FOR DSM 41868
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.0
 media_term:
   preferred_term: KOMODO Medium 65_41868
   term:
     id: komodo.medium:65_41868
     label: MEDIUM 65 MODIFIED FOR DSM 41868
-notes: 'Source: KOMODO ModelSEED | ID: 65_41868 | DSMZ Medium: 65 (mediadive.medium:65)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 65_41868 | DSMZ Medium: 65 (mediadive.medium:65) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

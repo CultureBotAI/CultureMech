@@ -1,6 +1,6 @@
 name: THERMOPROTEUS UZONIENSIS MEDIUM
 original_name: THERMOPROTEUS UZONIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.7-6
@@ -219,31 +219,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use medium 480, but reduce the amount of Na acetate to 1.0 g/l and
-    add 3.0 g/l casitone. Prepare sulphide and vitamin stock solutions anaerobically.
-    Autoclave the sulphide solution but filter sterilise the vitamins. Prepare the
-    medium anaerobically under N2:CO2 80:20. Adjust the pH to 5.7 with HCl. Sterilise
-    the medium by heating for 3 hours on three successive days at 90-100°C. Add the
-    vitamins and sulphide to the sterilised medium before use. The final pH should
-    be 5.7-6.0. Dr. Bonch-Osmoloskaya supplied the information that the strain grows
-    better on a peptone originally available in Russia. This product is no longer
-    available, but it appears this product gave better growth than with highly purified
-    products from Oxoid or Difco.
+  description: Use medium 480, but reduce the amount of Na acetate to 1.0 g/l and add 3.0 g/l casitone.
+    Prepare sulphide and vitamin stock solutions anaerobically. Autoclave the sulphide solution but filter
+    sterilise the vitamins. Prepare the medium anaerobically under N2:CO2 80:20. Adjust the pH to 5.7
+    with HCl. Sterilise the medium by heating for 3 hours on three successive days at 90-100°C. Add the
+    vitamins and sulphide to the sterilised medium before use. The final pH should be 5.7-6.0. Dr. Bonch-Osmoloskaya
+    supplied the information that the strain grows better on a peptone originally available in Russia.
+    This product is no longer available, but it appears this product gave better growth than with highly
+    purified products from Oxoid or Difco.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve ingredients (except sulfur, acetate, bicarbonate, vitamins
-    and sulfide) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45
-    min to make it anoxic. Adjust pH to 5.9, dispense under 80% N2 and 20% CO2 gas
-    atmosphere into anoxic Hungate-type tubes or serum vials containing already the
-    appropriate amount of sulfur and sterilize by heating for 2-3 hours in a boiling
-    water bath on each of 3 successive days. Add acetate, vitamins (sterilized by
-    filtration)and sulfide from sterile anoxic stock solutions prepared under 100%
-    N2 gas and bicarbonate from a sterile anoxic stock solution prepared under 80%
-    N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium to 6.8 -
+  description: Dissolve ingredients (except sulfur, acetate, bicarbonate, vitamins and sulfide) and sparge
+    medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 5.9, dispense
+    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already
+    the appropriate amount of sulfur and sterilize by heating for 2-3 hours in a boiling water bath on
+    each of 3 successive days. Add acetate, vitamins (sterilized by filtration)and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium to 6.8 -
     7.0, if necessary.
 applications:
 - Microbial cultivation
@@ -255,5 +251,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.145611Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

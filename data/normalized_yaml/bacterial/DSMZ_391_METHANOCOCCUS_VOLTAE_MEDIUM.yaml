@@ -1,6 +1,6 @@
 name: METHANOCOCCUS VOLTAE MEDIUM
 original_name: METHANOCOCCUS VOLTAE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -239,13 +239,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except TYC solution, carbonate, cystein and sulfide.
-    Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Before use add TYC solution, cysteine and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH
-    of complete medium to 7.2, if necessary.
+  description: Dissolve ingredients except TYC solution, carbonate, cystein and sulfide. Sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before use add TYC solution,
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of complete
+    medium to 7.2, if necessary.
 - step_number: 2
   action: STORE
   description: May be stored frozen without sterilization.
@@ -254,8 +253,8 @@ preparation_steps:
   description: Prepare and autoclave under 100% N2 gas.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

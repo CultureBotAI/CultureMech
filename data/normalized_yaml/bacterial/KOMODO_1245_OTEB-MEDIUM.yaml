@@ -1,6 +1,6 @@
 name: OTEB-MEDIUM
 original_name: OTEB-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1245
     label: OTEB-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1245 | DSMZ Medium: 1245 (mediadive.medium:1245)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1245 | DSMZ Medium: 1245 (mediadive.medium:1245) | Aerobic: No'
 ingredients:
 - preferred_term: Proteose peptone no. 2
   concentration:

@@ -1,6 +1,6 @@
 name: NICOTINIC ACID MEDIUM
 original_name: NICOTINIC ACID MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
@@ -74,9 +74,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add nicotinic acid to the given amount of water, boil until dissolved
-    and cool to room temperature. Add the other substances, adjust pH to 8.2 and distribute
-    under 100% nitrogen atmosphere.
+  description: Add nicotinic acid to the given amount of water, boil until dissolved and cool to room
+    temperature. Add the other substances, adjust pH to 8.2 and distribute under 100% nitrogen atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

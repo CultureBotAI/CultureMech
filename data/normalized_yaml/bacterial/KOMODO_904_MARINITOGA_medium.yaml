@@ -1,6 +1,6 @@
 name: MARINITOGA medium
 original_name: MARINITOGA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:904
     label: MARINITOGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 904 | DSMZ Medium: 904 (mediadive.medium:904)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 904 | DSMZ Medium: 904 (mediadive.medium:904) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

@@ -1,6 +1,6 @@
 name: ALCALIGENES MEDIUM
 original_name: ALCALIGENES MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:660
     label: ALCALIGENES MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 660 | DSMZ Medium: 660 (mediadive.medium:660)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 660 | DSMZ Medium: 660 (mediadive.medium:660) | Aerobic: No'
 ingredients:
 - preferred_term: Tris
   term:

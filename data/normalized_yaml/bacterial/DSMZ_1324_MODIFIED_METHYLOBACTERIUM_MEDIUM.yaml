@@ -1,8 +1,8 @@
 name: MODIFIED METHYLOBACTERIUM MEDIUM
 original_name: MODIFIED METHYLOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 1324
@@ -120,8 +120,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.8. Add sterile methanol to a concentration of 0.5% to
-    the sterile medium. The medium may be solidified with 15 g/l agar
+  description: Adjust pH to 6.8. Add sterile methanol to a concentration of 0.5% to the sterile medium.
+    The medium may be solidified with 15 g/l agar
 applications:
 - Microbial cultivation
 curation_history:

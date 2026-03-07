@@ -1,8 +1,8 @@
 name: PIRELLULA MEDIUM (M30a)
 original_name: PIRELLULA MEDIUM (M30a)
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 1444
@@ -274,8 +274,8 @@ preparation_steps:
   description: Store in the dark and cold (5°C).
 - step_number: 9
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

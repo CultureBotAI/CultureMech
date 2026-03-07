@@ -1,6 +1,6 @@
 name: Thiocapsa Medium
 original_name: Thiocapsa Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -23,8 +23,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -32,8 +31,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Yeast extract
   concentration:
     value: '0.4'
@@ -43,8 +41,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -52,14 +49,12 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -67,8 +62,7 @@ ingredients:
   concentration:
     value: '0.64'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -76,8 +70,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -85,8 +78,7 @@ ingredients:
   concentration:
     value: '1'
     unit: MILLIMOLAR
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
-    component'
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined component'
 - preferred_term: Na2S2O3・5H2O(final conc.)
   concentration:
     value: '6'

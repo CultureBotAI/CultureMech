@@ -1,6 +1,6 @@
 name: TINDALLIA MEDIUM
 original_name: TINDALLIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -193,13 +193,12 @@ preparation_steps:
   description: pH 9.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium anaerobically without the vitamins. Boil the medium,
-    cool under N2 and dispense under N2 and autoclave the medium. Add the vitamin
-    solution to the cooled, autoclaved medium.
+  description: Prepare the medium anaerobically without the vitamins. Boil the medium, cool under N2 and
+    dispense under N2 and autoclave the medium. Add the vitamin solution to the cooled, autoclaved medium.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -210,5 +209,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.491226Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

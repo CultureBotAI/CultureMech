@@ -1,15 +1,15 @@
 name: MEDIUM 462 MODIFIED FOR DSM 24952
 original_name: MEDIUM 462 MODIFIED FOR DSM 24952
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 462_24952
   term:
     id: komodo.medium:462_24952
     label: MEDIUM 462 MODIFIED FOR DSM 24952
-notes: 'Source: KOMODO ModelSEED | ID: 462_24952 | DSMZ Medium: 462 (mediadive.medium:462)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 462_24952 | DSMZ Medium: 462 (mediadive.medium:462) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Fluoranthene
   concentration:

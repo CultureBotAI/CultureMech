@@ -1,15 +1,14 @@
 name: FRANCISELLA HALIOTICIDA medium
 original_name: FRANCISELLA HALIOTICIDA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429d
   term:
     id: komodo.medium:429d
     label: FRANCISELLA HALIOTICIDA medium
-notes: 'Source: KOMODO ModelSEED | ID: 429d | DSMZ Medium: 429d (mediadive.medium:429d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429d | DSMZ Medium: 429d (mediadive.medium:429d) | Aerobic: No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

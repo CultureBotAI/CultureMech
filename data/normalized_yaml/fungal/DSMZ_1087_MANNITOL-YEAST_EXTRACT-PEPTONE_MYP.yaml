@@ -1,8 +1,8 @@
 name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
 original_name: MANNITOL-YEAST EXTRACT-PEPTONE (MYP)
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1087
   term:

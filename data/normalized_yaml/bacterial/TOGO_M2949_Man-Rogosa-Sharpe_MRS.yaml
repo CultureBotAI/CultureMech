@@ -1,11 +1,10 @@
 name: Man-Rogosa-Sharpe (MRS)
 original_name: Man-Rogosa-Sharpe (MRS)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology Co., Ltd.
-    CM187)
+- preferred_term: Man-Rogosa-Sharpe (MRS) (Beijing Land Bridge Technology Co., Ltd. CM187)
   concentration:
     value: '1'
     unit: G_PER_L

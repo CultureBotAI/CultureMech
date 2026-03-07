@@ -1,6 +1,6 @@
 name: FERULATE medium
 original_name: FERULATE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:397
     label: FERULATE medium
-notes: 'Source: KOMODO ModelSEED | ID: 397 | DSMZ Medium: 397 (mediadive.medium:397)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 397 | DSMZ Medium: 397 (mediadive.medium:397) | Aerobic: No'
 ingredients:
 - preferred_term: Sodium ferulate
   concentration:

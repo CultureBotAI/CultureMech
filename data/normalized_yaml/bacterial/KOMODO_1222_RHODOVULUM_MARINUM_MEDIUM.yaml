@@ -1,6 +1,6 @@
 name: RHODOVULUM MARINUM MEDIUM
 original_name: RHODOVULUM MARINUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1222
     label: RHODOVULUM MARINUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1222 | DSMZ Medium: 1222 (mediadive.medium:1222)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1222 | DSMZ Medium: 1222 (mediadive.medium:1222) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

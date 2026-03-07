@@ -1,6 +1,6 @@
 name: FERROPLASMA ACIDIPHILUM MEDIUM
 original_name: FERROPLASMA ACIDIPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.7
@@ -53,8 +53,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except yeast extract, adjust pH to 1.6-1.8 with H2SO4,
-    and filter-sterilize. Prior to use, add yeast extract as an autoclaved 10% solution.
+  description: Mix ingredients except yeast extract, adjust pH to 1.6-1.8 with H2SO4, and filter-sterilize.
+    Prior to use, add yeast extract as an autoclaved 10% solution.
 applications:
 - Microbial cultivation
 curation_history:

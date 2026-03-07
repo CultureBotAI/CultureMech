@@ -1,6 +1,6 @@
 name: YCFA MEDIUM (modified)
 original_name: YCFA MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-6.8
@@ -197,20 +197,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Prepare the Medium (see Main sol. 1611). Distribute under N2 into
-    Hungate tubes (10 ml):'
+  description: 'Prepare the Medium (see Main sol. 1611). Distribute under N2 into Hungate tubes (10 ml):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Autoclave. Then filter sterilize vitamin solution and aseptically
-    add 100 µl per Hungate tube:'
+  description: 'Autoclave. Then filter sterilize vitamin solution and aseptically add 100 µl per Hungate
+    tube:'
 - step_number: 3
   action: DISSOLVE
-  description: 'Dissolve ingredients except NaHCO3, hemin, cysteine in water and boil
-    for 10 min, then add fatty acids:'
+  description: 'Dissolve ingredients except NaHCO3, hemin, cysteine in water and boil for 10 min, then
+    add fatty acids:'
 - step_number: 4
   action: COOL
-  description: Cool down to room temperature while gassing with 100% CO2. Add the
-    NaHCO3, hemin, cysteine.
+  description: Cool down to room temperature while gassing with 100% CO2. Add the NaHCO3, hemin, cysteine.
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 6.7-6.8.

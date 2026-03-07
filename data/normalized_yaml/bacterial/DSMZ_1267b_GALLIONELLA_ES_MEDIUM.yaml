@@ -1,8 +1,8 @@
 name: GALLIONELLA (ES) MEDIUM
 original_name: GALLIONELLA (ES) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.1-6.4
 media_term:
   preferred_term: DSMZ Medium 1267b
@@ -235,38 +235,33 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Preparation of the bottom layer: Mix 1 volume of solution A (except
-    NaHCO3 and agarose) with 1 volume of solution C and add 1% (w/v) agarose type
-    1, low EEO. After autoclaving, aseptically fill 1.2 ml of the suspension in sterile
-    screw capped tubes (10 ml total volume). The bottom layer solidifies in approx.
-    30 min.'
+  description: 'Preparation of the bottom layer: Mix 1 volume of solution A (except NaHCO3 and agarose)
+    with 1 volume of solution C and add 1% (w/v) agarose type 1, low EEO. After autoclaving, aseptically
+    fill 1.2 ml of the suspension in sterile screw capped tubes (10 ml total volume). The bottom layer
+    solidifies in approx. 30 min.'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Preparation of the top layer: Add bicarbonate and low melt agarose
-    to solution A and autoclave. Let the sterile solution cool to 40°C and add 10.00
-    ml/l of solution B. Sparge solution with sterile 100% CO2 gas until a pH of 6.1
-    - 6.4 is reached. Then, aseptically pipette aliquots of 6.0 ml over the bottom
-    layer of each tube and let medium equilibrate for at least three hours, but not
-    longer than 12 hours.'
+  description: 'Preparation of the top layer: Add bicarbonate and low melt agarose to solution A and autoclave.
+    Let the sterile solution cool to 40°C and add 10.00 ml/l of solution B. Sparge solution with sterile
+    100% CO2 gas until a pH of 6.1 - 6.4 is reached. Then, aseptically pipette aliquots of 6.0 ml over
+    the bottom layer of each tube and let medium equilibrate for at least three hours, but not longer
+    than 12 hours.'
 - step_number: 3
   action: POUR_PLATES
-  description: 'Inoculation: Inoculate the semisolid top layer with a pipette that
-    is inserted just above the FeS layer; the pipette tip is drawn upward as the inoculum
-    is dispensed.'
+  description: 'Inoculation: Inoculate the semisolid top layer with a pipette that is inserted just above
+    the FeS layer; the pipette tip is drawn upward as the inoculum is dispensed.'
 - step_number: 4
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 - step_number: 5
   action: HEAT
-  description: Heat distilled water to 50°C in a 250 ml beaker with a stir bar present.
-    While rapidly stirring the water, add the ferrous sulfate followed immediately
-    by the sodium sulfide. The formed black FeS sludge is decanted into a glass bottle
-    that can be stoppered. The FeS is allowed to settle for several hours and then
-    the overlying water is decanted and replaced. This procedure is repeated at least
-    five times to wash the FeS. After washing, the pH of the FeS solution should be
-    close to neutrality. The FeS suspension can be kept in closed bottles or tubes
-    under a nitrogen atmosphere for at least three months.
+  description: Heat distilled water to 50°C in a 250 ml beaker with a stir bar present. While rapidly
+    stirring the water, add the ferrous sulfate followed immediately by the sodium sulfide. The formed
+    black FeS sludge is decanted into a glass bottle that can be stoppered. The FeS is allowed to settle
+    for several hours and then the overlying water is decanted and replaced. This procedure is repeated
+    at least five times to wash the FeS. After washing, the pH of the FeS solution should be close to
+    neutrality. The FeS suspension can be kept in closed bottles or tubes under a nitrogen atmosphere
+    for at least three months.
 applications:
 - Microbial cultivation
 curation_history:
@@ -277,5 +272,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.027872Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

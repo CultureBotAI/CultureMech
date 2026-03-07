@@ -1,15 +1,14 @@
 name: BACILLUS LOCISALIS medium
 original_name: BACILLUS LOCISALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1309
   term:
     id: komodo.medium:1309
     label: BACILLUS LOCISALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1309 | DSMZ Medium: 1309 (mediadive.medium:1309)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1309 | DSMZ Medium: 1309 (mediadive.medium:1309) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

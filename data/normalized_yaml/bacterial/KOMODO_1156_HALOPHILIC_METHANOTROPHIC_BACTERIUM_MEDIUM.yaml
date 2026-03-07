@@ -1,6 +1,6 @@
 name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1156
     label: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1156 | DSMZ Medium: 1156 (mediadive.medium:1156)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1156 | DSMZ Medium: 1156 (mediadive.medium:1156) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

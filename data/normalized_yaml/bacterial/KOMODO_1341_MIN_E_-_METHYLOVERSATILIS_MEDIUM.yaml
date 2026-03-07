@@ -1,15 +1,14 @@
 name: MIN E - METHYLOVERSATILIS MEDIUM
 original_name: MIN E - METHYLOVERSATILIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1341
   term:
     id: komodo.medium:1341
     label: MIN E - METHYLOVERSATILIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1341 | DSMZ Medium: 1341 (mediadive.medium:1341)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1341 | DSMZ Medium: 1341 (mediadive.medium:1341) | Aerobic: No'
 ingredients:
 - preferred_term: Methanol
   term:

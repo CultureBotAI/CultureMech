@@ -1,16 +1,15 @@
 name: medium FOR H. DOMBROWSKII
 original_name: medium FOR H. DOMBROWSKII
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: KOMODO Medium 954
   term:
     id: komodo.medium:954
     label: medium FOR H. DOMBROWSKII
-notes: 'Source: KOMODO ModelSEED | ID: 954 | DSMZ Medium: 954 (mediadive.medium:954)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 954 | DSMZ Medium: 954 (mediadive.medium:954) | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:

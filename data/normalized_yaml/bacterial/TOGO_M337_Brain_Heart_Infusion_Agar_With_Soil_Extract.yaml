@@ -1,8 +1,8 @@
 name: Brain Heart Infusion Agar With Soil Extract
 original_name: Brain Heart Infusion Agar With Soil Extract
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Agar
   concentration:

@@ -1,6 +1,6 @@
 name: SULFURICURVUM (MBM) MEDIUM
 original_name: SULFURICURVUM (MBM) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -126,21 +126,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except sodium thiosulfate, then sparge solution
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust
-    pH to 7.0, then distribute medium under 80% N2 and 20% CO2 gas atmosphere into
-    anoxic Hungate-type tubes or serum vials (e.g., 20 ml medium in 100 ml bottles)
-    and autoclave. Prior to inoculation, add thiosulfate from an anoxic stock solution
-    prepared under 100% N2 gas and sterilized by filtration. Adjust pH of complete
-    medium to 7.0, if necessary.
+  description: Dissolve ingredients, except sodium thiosulfate, then sparge solution with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH to 7.0, then distribute medium under
+    80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g., 20 ml medium
+    in 100 ml bottles) and autoclave. Prior to inoculation, add thiosulfate from an anoxic stock solution
+    prepared under 100% N2 gas and sterilized by filtration. Adjust pH of complete medium to 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation, pressurize culture vessels to 0.5 bar overpressure
-    with sterile 100% H2 gas.
+  description: After inoculation, pressurize culture vessels to 0.5 bar overpressure with sterile 100%
+    H2 gas.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

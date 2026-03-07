@@ -1,6 +1,6 @@
 name: DEHALOSPIRILLUM MEDIUM
 original_name: DEHALOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -206,13 +206,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except L-cysteine x HCl x H2O and FeSO4 x 7H2O. Bring
-    to a boil for a few seconds and cool down under a N2 atmosphere. While gassing
-    with N2, add L-cysteine x HCl x H2O and FeSO4 x 7H2O to the solution, distribute
-    into culture vessels (e.g., 18 ml in 50 ml serum bottles) under a N2 atmosphere,
-    then, seal butyl rubber stoppers and autoclave. Aseptically and anaerobically
-    add per liter (final) the following sterile solutions (autoclaved or *filter-sterilized)
-    from anaerobic stocks:'
+  description: 'Mix components except L-cysteine x HCl x H2O and FeSO4 x 7H2O. Bring to a boil for a few
+    seconds and cool down under a N2 atmosphere. While gassing with N2, add L-cysteine x HCl x H2O and
+    FeSO4 x 7H2O to the solution, distribute into culture vessels (e.g., 18 ml in 50 ml serum bottles)
+    under a N2 atmosphere, then, seal butyl rubber stoppers and autoclave. Aseptically and anaerobically
+    add per liter (final) the following sterile solutions (autoclaved or *filter-sterilized) from anaerobic
+    stocks:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of the medium to 7.3 - 7.7, if necessary.

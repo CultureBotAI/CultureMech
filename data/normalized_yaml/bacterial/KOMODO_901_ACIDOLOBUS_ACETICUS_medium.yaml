@@ -1,6 +1,6 @@
 name: ACIDOLOBUS ACETICUS medium
 original_name: ACIDOLOBUS ACETICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 3.5-3.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:901
     label: ACIDOLOBUS ACETICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 901 | DSMZ Medium: 901 (mediadive.medium:901)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 901 | DSMZ Medium: 901 (mediadive.medium:901) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -213,5 +212,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:32.002824Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,16 +1,15 @@
 name: EKHO LAKE STRAINS medium
 original_name: EKHO LAKE STRAINS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: KOMODO Medium 621a
   term:
     id: komodo.medium:621a
     label: EKHO LAKE STRAINS medium
-notes: 'Source: KOMODO ModelSEED | ID: 621a | DSMZ Medium: 621a (mediadive.medium:621a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 621a | DSMZ Medium: 621a (mediadive.medium:621a) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

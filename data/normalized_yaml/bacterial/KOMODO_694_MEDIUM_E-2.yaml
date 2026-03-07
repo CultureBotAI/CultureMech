@@ -1,6 +1,6 @@
 name: MEDIUM E-2
 original_name: MEDIUM E-2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:694
     label: MEDIUM E-2
-notes: 'Source: KOMODO ModelSEED | ID: 694 | DSMZ Medium: 694 (mediadive.medium:694)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 694 | DSMZ Medium: 694 (mediadive.medium:694) | Aerobic: No'
 ingredients:
 - preferred_term: NaNH4HPO4 x 4 H2O
   concentration:

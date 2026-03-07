@@ -1,6 +1,6 @@
 name: KOSMOTOGA SHENGLIENSIS MEDIUM
 original_name: KOSMOTOGA SHENGLIENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -85,12 +85,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine, thiosulfate and glucose. Sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic, then add cysteine and
-    adjust pH to 6.8 - 7.2. Dispense medium under 100% N2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add thiosulfate and glucose from
-    anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration.
-    Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients except cysteine, thiosulfate and glucose. Sparge medium with 100%
+    N2 gas for 30 - 45 min to make it anoxic, then add cysteine and adjust pH to 6.8 - 7.2. Dispense medium
+    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add thiosulfate
+    and glucose from anoxic stock solutions prepared under 100% N2 gas and sterilized by filtration. Adjust
+    pH of complete medium to 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

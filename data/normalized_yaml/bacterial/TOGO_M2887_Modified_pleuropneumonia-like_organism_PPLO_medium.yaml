@@ -1,6 +1,6 @@
 name: Modified pleuropneumonia-like organism (PPLO) medium
 original_name: Modified pleuropneumonia-like organism (PPLO) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -25,8 +25,7 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 - preferred_term: Penicillin
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:17334
     label: Penicillin

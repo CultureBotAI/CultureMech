@@ -1,6 +1,6 @@
 name: PLANCTOMYCES MEDIUM
 original_name: PLANCTOMYCES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -105,8 +105,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to 1000.0 ml with Sea water or Artificial Sea water, see medium
-    607.
+  description: Make up to 1000.0 ml with Sea water or Artificial Sea water, see medium 607.
 applications:
 - Microbial cultivation
 curation_history:

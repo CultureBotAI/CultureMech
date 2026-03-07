@@ -1,6 +1,6 @@
 name: METHANOHALOBIUM medium
 original_name: METHANOHALOBIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:375
     label: METHANOHALOBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 375 | DSMZ Medium: 375 (mediadive.medium:375)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 375 | DSMZ Medium: 375 (mediadive.medium:375) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -238,5 +237,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.399955Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

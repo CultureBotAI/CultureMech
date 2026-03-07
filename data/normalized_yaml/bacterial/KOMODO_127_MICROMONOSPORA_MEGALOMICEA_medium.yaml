@@ -1,15 +1,14 @@
 name: MICROMONOSPORA MEGALOMICEA medium
 original_name: MICROMONOSPORA MEGALOMICEA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 127
   term:
     id: komodo.medium:127
     label: MICROMONOSPORA MEGALOMICEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 127 | DSMZ Medium: 127 (mediadive.medium:127)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 127 | DSMZ Medium: 127 (mediadive.medium:127) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

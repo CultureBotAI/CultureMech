@@ -1,6 +1,6 @@
 name: THIOHALOCAPSA MARINA MEDIUM
 original_name: THIOHALOCAPSA MARINA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -151,15 +151,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O
-    and vitamin B12, under a nitrogen atmosphere dispense into tubes or bottles fitted
-    with rubber stoppers so that they are half full. Autoclave and add the vitamin
-    B12 from a filter-sterilised stock solution and the NaHCO3, Na2S x 9 H2O, Na2S2O3
-    x 5 H2O from sterile stock solutions. The final pH of the medium should be 7.2.
+  description: Prepare the medium without the NaHCO3, Na2S x 9 H2O, Na2S2O3 x 5 H2O and vitamin B12, under
+    a nitrogen atmosphere dispense into tubes or bottles fitted with rubber stoppers so that they are
+    half full. Autoclave and add the vitamin B12 from a filter-sterilised stock solution and the NaHCO3,
+    Na2S x 9 H2O, Na2S2O3 x 5 H2O from sterile stock solutions. The final pH of the medium should be 7.2.
 - step_number: 2
   action: MIX
-  description: For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl
-    to 10.0 g/l and increase the amount of NH4Cl to 0.64 g/l.
+  description: For Allochromatium phaeobacterium DSM 19781 reduce the amount of NaCl to 10.0 g/l and increase
+    the amount of NH4Cl to 0.64 g/l.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.8.

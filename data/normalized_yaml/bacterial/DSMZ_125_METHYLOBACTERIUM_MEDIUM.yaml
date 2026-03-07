@@ -1,8 +1,8 @@
 name: METHYLOBACTERIUM MEDIUM
 original_name: METHYLOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 125
@@ -98,8 +98,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to
-    6.8.
+  description: Add 5 ml methanol or incubate under methane-air (4:1). Adjust pH to 6.8.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: THIOBACILLUS MEDIUM
 original_name: THIOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.6
 media_term:
   preferred_term: DSMZ Medium 36
@@ -78,9 +78,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6. Dispense
-    in suitable culivation vials and autoclave. Add thiosulfate to the autoclaved
-    medium from a sterile stock solution.
+  description: Dissolve ingredients except thiosulfate and adjust the pH to 6.6. Dispense in suitable
+    culivation vials and autoclave. Add thiosulfate to the autoclaved medium from a sterile stock solution.
 applications:
 - Microbial cultivation
 curation_history:

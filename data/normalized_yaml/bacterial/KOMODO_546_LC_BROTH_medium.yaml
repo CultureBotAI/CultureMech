@@ -1,6 +1,6 @@
 name: LC BROTH medium
 original_name: LC BROTH medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:546
     label: LC BROTH medium
-notes: 'Source: KOMODO ModelSEED | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 546 | DSMZ Medium: 546 (mediadive.medium:546) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

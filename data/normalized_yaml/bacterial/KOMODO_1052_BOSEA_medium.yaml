@@ -1,16 +1,15 @@
 name: BOSEA medium
 original_name: BOSEA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
   preferred_term: KOMODO Medium 1052
   term:
     id: komodo.medium:1052
     label: BOSEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1052 | DSMZ Medium: 1052 (mediadive.medium:1052)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1052 | DSMZ Medium: 1052 (mediadive.medium:1052) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

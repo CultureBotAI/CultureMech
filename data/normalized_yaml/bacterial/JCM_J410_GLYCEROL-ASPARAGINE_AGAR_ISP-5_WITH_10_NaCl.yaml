@@ -1,8 +1,8 @@
 name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
 original_name: GLYCEROL-ASPARAGINE AGAR (ISP-5) WITH 10% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J410
   term:

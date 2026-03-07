@@ -1,6 +1,6 @@
 name: THERMOCOCCUS LITORALIS medium
 original_name: THERMOCOCCUS LITORALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:623
     label: THERMOCOCCUS LITORALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 623 | DSMZ Medium: 623 (mediadive.medium:623)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 623 | DSMZ Medium: 623 (mediadive.medium:623) | Aerobic: Yes'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

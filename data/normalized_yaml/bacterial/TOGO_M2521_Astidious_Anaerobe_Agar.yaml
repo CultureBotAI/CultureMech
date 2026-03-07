@@ -1,15 +1,14 @@
 name: Astidious Anaerobe Agar
 original_name: Astidious Anaerobe Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: add deionized water to
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Fastidious Anaerobe Agar (acumedia)
   concentration:
     value: '45.7'

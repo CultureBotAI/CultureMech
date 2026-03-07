@@ -1,8 +1,8 @@
 name: ISP 2 MEDIUM WITH 10% NACL
 original_name: ISP 2 MEDIUM WITH 10% NACL
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.5
 media_term:
   preferred_term: DSMZ Medium 1261

@@ -1,6 +1,6 @@
 name: Trace element solution (medium 463)
 original_name: Trace element solution (medium 463)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2043
     label: Trace element solution (medium 463)
-notes: 'Source: KOMODO ModelSEED | ID: 2043 | DSMZ Medium: 2043 (mediadive.medium:2043)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2043 | DSMZ Medium: 2043 (mediadive.medium:2043) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

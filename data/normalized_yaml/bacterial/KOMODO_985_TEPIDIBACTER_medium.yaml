@@ -1,6 +1,6 @@
 name: TEPIDIBACTER medium
 original_name: TEPIDIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:985
     label: TEPIDIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 985 | DSMZ Medium: 985 (mediadive.medium:985)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 985 | DSMZ Medium: 985 (mediadive.medium:985) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -262,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.372363Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

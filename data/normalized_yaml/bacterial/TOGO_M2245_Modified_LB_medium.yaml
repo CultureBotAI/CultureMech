@@ -1,15 +1,14 @@
 name: Modified LB medium
 original_name: Modified LB medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -17,14 +16,12 @@ ingredients:
   concentration:
     value: '150'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Gentamicin
   concentration:
     value: '300'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
-    Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound, Defined component'
 - preferred_term: Agar (BD)
   concentration:
     value: '1.5'

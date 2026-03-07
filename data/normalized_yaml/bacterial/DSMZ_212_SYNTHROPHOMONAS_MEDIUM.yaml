@@ -1,6 +1,6 @@
 name: SYNTHROPHOMONAS MEDIUM
 original_name: SYNTHROPHOMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -225,33 +225,30 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add and dissolve ingredients of solution A and sparge medium with 80%
-    N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
-    under the same gas atmosphere into anoxic Hungate-type tubes and autoclave. Solution
-    B is prepared under 80% N2 and 20% CO2 gas atmosphere and autoclaved. Solutions
-    C, E and F are autoclaved under 100% N2 gas atmosphere. Solution D is prepared
-    under 100% N2 gas and sterilized by filtration. To complete the medium appropriate
-    amounts of solutions B to F are added to the sterile solution A in the sequence
-    as indicated. Adjust pH of complete medium to 7.2, if necessary.
+  description: Add and dissolve ingredients of solution A and sparge medium with 80% N2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into anoxic
+    Hungate-type tubes and autoclave. Solution B is prepared under 80% N2 and 20% CO2 gas atmosphere and
+    autoclaved. Solutions C, E and F are autoclaved under 100% N2 gas atmosphere. Solution D is prepared
+    under 100% N2 gas and sterilized by filtration. To complete the medium appropriate amounts of solutions
+    B to F are added to the sterile solution A in the sequence as indicated. Adjust pH of complete medium
+    to 7.2, if necessary.
 - step_number: 2
   action: MIX
-  description: 'Note: Some cultures are shipped in semi-solid medium which stimulates
-    growth at the beginning. For agar stabs 3.00 g/l agar are added to the complete
-    medium from a sterile anoxic stock solution (2% w/v). Upon receipt add anoxically
-    1 - 2 ml of the recommended freshly prepared liquid medium to the agar tube and
-    incubate for 3 - 5 days . After incubation transfer 0.5 ml of the resulting cell
+  description: 'Note: Some cultures are shipped in semi-solid medium which stimulates growth at the beginning.
+    For agar stabs 3.00 g/l agar are added to the complete medium from a sterile anoxic stock solution
+    (2% w/v). Upon receipt add anoxically 1 - 2 ml of the recommended freshly prepared liquid medium to
+    the agar tube and incubate for 3 - 5 days . After incubation transfer 0.5 ml of the resulting cell
     suspension in the liquid phase to tubes with liquid medium.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 4
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:

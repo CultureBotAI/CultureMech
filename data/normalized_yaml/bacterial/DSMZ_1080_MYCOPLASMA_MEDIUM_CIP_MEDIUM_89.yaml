@@ -1,6 +1,6 @@
 name: MYCOPLASMA MEDIUM (CIP MEDIUM 89)
 original_name: MYCOPLASMA MEDIUM (CIP MEDIUM 89)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.4
@@ -47,15 +47,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add all components except sterile supplement; adjust pH to 7.2 + 0.2.
-    Autoclave at 121°C for 15 minutes; add aseptically sterile supplement.
+  description: Add all components except sterile supplement; adjust pH to 7.2 + 0.2. Autoclave at 121°C
+    for 15 minutes; add aseptically sterile supplement.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 minutes.
 - step_number: 3
   action: MIX
-  description: 50 g L-Arginine hydrochloride plus distilled water to make up to 100
-    ml.
+  description: 50 g L-Arginine hydrochloride plus distilled water to make up to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

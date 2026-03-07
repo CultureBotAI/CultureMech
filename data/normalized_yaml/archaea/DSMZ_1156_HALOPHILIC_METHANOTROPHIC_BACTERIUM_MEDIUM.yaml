@@ -1,6 +1,6 @@
 name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
 original_name: HALOPHILIC METHANOTROPHIC BACTERIUM MEDIUM
-category: imported
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7.5
@@ -108,21 +108,19 @@ preparation_steps:
   description: pH-value 7.2 (Adjust to 7.6 with 10% NaOH before sterilization)
 - step_number: 2
   action: MIX
-  description: 'Culture bottles: 120-ml Serum bottles with 25 ml medium closed with
-    butyl rubber serum caps and aluminium crimps'
+  description: 'Culture bottles: 120-ml Serum bottles with 25 ml medium closed with butyl rubber serum
+    caps and aluminium crimps'
 - step_number: 3
   action: MIX
-  description: 'Gas supply: 2 vol.% CO2; 20 vol.% CH4; 78 vol.% air (Alternate cultivation
-    method: instead of a methane-containing headspace, add 0.5% (w/v) methanol to
-    the medium)'
+  description: 'Gas supply: 2 vol.% CO2; 20 vol.% CH4; 78 vol.% air (Alternate cultivation method: instead
+    of a methane-containing headspace, add 0.5% (w/v) methanol to the medium)'
 - step_number: 4
   action: HEAT
   description: 'Culture conditions: 30°C; shaking culture on rotary shaker (200 rpm)'
 - step_number: 5
   action: MIX
-  description: "Notes: pH is critical, final pH must be between 6.5-7.5; \r\nsome\
-    \ insoluble phosphates may precipitate during medium preparation (should not be\
-    \ more than OD 0.005)."
+  description: "Notes: pH is critical, final pH must be between 6.5-7.5; \r\nsome insoluble phosphates\
+    \ may precipitate during medium preparation (should not be more than OD 0.005)."
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: JCM MEDIUM No. 166
 original_name: JCM MEDIUM No. 166
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: JCM Medium J166
@@ -63,8 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.0. After autoclaving, readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0. After autoclaving,
+    readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,11 +1,11 @@
 name: MEDIUM 520 MODIFIED FOR DSM 7093
 original_name: MEDIUM 520 MODIFIED FOR DSM 7093
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 520_7093 | DSMZ Medium:
-  520 (mediadive.medium:520) | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 520_7093 | DSMZ Medium: 520 (mediadive.medium:520)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 520_7093
   term:

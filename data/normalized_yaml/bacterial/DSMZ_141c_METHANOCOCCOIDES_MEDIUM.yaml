@@ -1,6 +1,6 @@
 name: METHANOCOCCOIDES MEDIUM
 original_name: METHANOCOCCOIDES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.4
@@ -289,19 +289,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, trimethylammonium chloride,
-    vitamins, cysteine and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate and adjust pH
-    to 6.8, then dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials to 30% of their volume and autoclave. After
-    sterilization add trimethylammonium chloride, cysteine and sulfide from sterile
-    anoxic stock solutions autoclaved  under  100%  N2 gas atmosphere. Vitamins are
-    prepared under 100% N2 gas atmosphere and sterilized by filtration. Adjust pH
-    of complete medium to 7.0 - 7.4, if necessary.
+  description: Dissolve ingredients (except bicarbonate, trimethylammonium chloride, vitamins, cysteine
+    and sulfide), sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic.
+    Add and dissolve bicarbonate and adjust pH to 6.8, then dispense medium under 80% N2 and 20% CO2 gas
+    atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. After
+    sterilization add trimethylammonium chloride, cysteine and sulfide from sterile anoxic stock solutions
+    autoclaved  under  100%  N2 gas atmosphere. Vitamins are prepared under 100% N2 gas atmosphere and
+    sterilized by filtration. Adjust pH of complete medium to 7.0 - 7.4, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -316,5 +314,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.982471Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

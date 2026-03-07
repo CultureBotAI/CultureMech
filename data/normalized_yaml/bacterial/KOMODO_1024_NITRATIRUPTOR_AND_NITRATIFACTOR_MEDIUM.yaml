@@ -1,6 +1,6 @@
 name: NITRATIRUPTOR AND NITRATIFACTOR MEDIUM
 original_name: NITRATIRUPTOR AND NITRATIFACTOR MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1024
     label: NITRATIRUPTOR AND NITRATIFACTOR MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1024 | DSMZ Medium: 1024 (mediadive.medium:1024)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1024 | DSMZ Medium: 1024 (mediadive.medium:1024) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaNO3
   term:
@@ -289,5 +288,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.921099Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

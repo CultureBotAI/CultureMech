@@ -1,15 +1,14 @@
 name: MEDIUM 92 MODIFIED FOR DSM 10673
 original_name: MEDIUM 92 MODIFIED FOR DSM 10673
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 92_10673
   term:
     id: komodo.medium:92_10673
     label: MEDIUM 92 MODIFIED FOR DSM 10673
-notes: 'Source: KOMODO ModelSEED | ID: 92_10673 | DSMZ Medium: 92 (mediadive.medium:92)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 92_10673 | DSMZ Medium: 92 (mediadive.medium:92) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

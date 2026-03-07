@@ -1,8 +1,8 @@
 name: Blood Agar
 original_name: Blood Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Blood agar base (BD-Difco)
   concentration:
@@ -34,5 +34,4 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.788071'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sterile defibrinated rabbit
-    blood'
+  notes: 'Added default concentration for ingredient: sterile defibrinated rabbit blood'

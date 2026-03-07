@@ -1,6 +1,6 @@
 name: MEDIUM 340 MODIFIED FOR DSM 7271
 original_name: MEDIUM 340 MODIFIED FOR DSM 7271
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:340_7271
     label: MEDIUM 340 MODIFIED FOR DSM 7271
-notes: 'Source: KOMODO ModelSEED | ID: 340_7271 | DSMZ Medium: 340 (mediadive.medium:340)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 340_7271 | DSMZ Medium: 340 (mediadive.medium:340) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase
   concentration:

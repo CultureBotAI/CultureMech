@@ -1,6 +1,6 @@
 name: CHI 1776 MEDIUM
 original_name: CHI 1776 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -56,8 +56,8 @@ preparation_steps:
   description: 'Autoclave, cool, and then add:'
 - step_number: 2
   action: MIX
-  description: Magnesium chloride should be sterilized separately by autoclaving,
-    and the other ingredients should be sterilized separately by filtration.
+  description: Magnesium chloride should be sterilized separately by autoclaving, and the other ingredients
+    should be sterilized separately by filtration.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,5 +68,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.653297Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

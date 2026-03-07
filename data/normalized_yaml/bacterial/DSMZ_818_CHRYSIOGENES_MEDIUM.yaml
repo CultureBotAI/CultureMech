@@ -1,6 +1,6 @@
 name: CHRYSIOGENES MEDIUM
 original_name: CHRYSIOGENES MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.4-7.8
@@ -267,19 +267,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, nitrate, vitamins and acetate.
-    Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, adjust pH to
-    7.0 - 7.4, then dispense under same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. Add nitrate, vitamins and acetate from sterile anoxic
-    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should
-    be sterilized by filtration. The pH of the complete medium should be adjusted
-    to 7.4 - 7.8, if necessary.
+  description: Dissolve ingredients except bicarbonate, nitrate, vitamins and acetate. Sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic, adjust pH to 7.0 - 7.4, then dispense under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add nitrate, vitamins and
+    acetate from sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Vitamins should be sterilized
+    by filtration. The pH of the complete medium should be adjusted to 7.4 - 7.8, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -290,5 +288,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.088986Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

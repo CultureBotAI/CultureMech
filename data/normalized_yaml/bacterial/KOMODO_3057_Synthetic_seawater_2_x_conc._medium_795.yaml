@@ -1,6 +1,6 @@
 name: Synthetic seawater (2 x conc.) (medium 795)
 original_name: Synthetic seawater (2 x conc.) (medium 795)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3057
     label: Synthetic seawater (2 x conc.) (medium 795)
-notes: 'Source: KOMODO ModelSEED | ID: 3057 | DSMZ Medium: 3057 (mediadive.medium:3057)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3057 | DSMZ Medium: 3057 (mediadive.medium:3057) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

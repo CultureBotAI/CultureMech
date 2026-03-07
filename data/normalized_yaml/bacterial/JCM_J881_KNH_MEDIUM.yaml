@@ -1,6 +1,6 @@
 name: KNH MEDIUM
 original_name: KNH MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -251,18 +251,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix all ingredients except sodium thioglycolate and ascorbic acid,
-    and expel dissolving O2 from the solution with deoxygenated N2-CO2 (80:20, v/v).
-    Dispense the solution into vials where deoxygenated H2-CO2 (80:20, v/v) is sparged.
-    Cap with butyl rubber stoppers. Autoclave, then add reducing agent solution (sodium
-    thioglycolate and ascorbic acid, 1% solution each) sterilized with 0.2 ï¿½m-filter
-    (0.1 ml in 10 ml medium) and inoculate fully grown culture at 5-10% of final volume.
-    Fill with H2-CO2 (80:20, v/v) gas at 1.5 atm.
+  description: Mix all ingredients except sodium thioglycolate and ascorbic acid, and expel dissolving
+    O2 from the solution with deoxygenated N2-CO2 (80:20, v/v). Dispense the solution into vials where
+    deoxygenated H2-CO2 (80:20, v/v) is sparged. Cap with butyl rubber stoppers. Autoclave, then add reducing
+    agent solution (sodium thioglycolate and ascorbic acid, 1% solution each) sterilized with 0.2 ï¿½m-filter
+    (0.1 ml in 10 ml medium) and inoculate fully grown culture at 5-10% of final volume. Fill with H2-CO2
+    (80:20, v/v) gas at 1.5 atm.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
-    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
-    to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
+    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'

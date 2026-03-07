@@ -1,6 +1,6 @@
 name: MJYP2 MEDIUM
 original_name: MJYP2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -169,9 +169,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH to 7.0 and autoclave. Replace the gas phase
-    with N2-O2 (99:1, v/v) gas mixture, and pressurize to 200 kPa with the same gas
-    mixture.
+  description: Mix components, adjust pH to 7.0 and autoclave. Replace the gas phase with N2-O2 (99:1,
+    v/v) gas mixture, and pressurize to 200 kPa with the same gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

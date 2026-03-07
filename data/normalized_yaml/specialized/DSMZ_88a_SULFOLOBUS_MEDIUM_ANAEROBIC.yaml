@@ -1,6 +1,6 @@
 name: SULFOLOBUS MEDIUM (ANAEROBIC)
 original_name: SULFOLOBUS MEDIUM (ANAEROBIC)
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.0
@@ -113,14 +113,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except sulfur, yeast extract and sulfide), adjust
-    pH of the salt solution at room temperature to 4.0 using 1 N H2SO4 and sparge
-    medium with 100% N2 gas to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials that contain already the appropriate
-    amount of sulfur. Sterilize medium by heating cultivation vessels in a boiling
-    water bath for 1 - 2 hours on each of 3 successive days. Add yeast extract and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior
-    to inoculation check pH and adjust to 4.0, if necessary.
+  description: Dissolve ingredients (except sulfur, yeast extract and sulfide), adjust pH of the salt
+    solution at room temperature to 4.0 using 1 N H2SO4 and sparge medium with 100% N2 gas to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials that
+    contain already the appropriate amount of sulfur. Sterilize medium by heating cultivation vessels
+    in a boiling water bath for 1 - 2 hours on each of 3 successive days. Add yeast extract and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and
+    adjust to 4.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

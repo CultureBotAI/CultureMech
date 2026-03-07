@@ -1,8 +1,8 @@
 name: GLUCOSE-ASPARAGINE AGAR
 original_name: GLUCOSE-ASPARAGINE AGAR
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
   preferred_term: JCM Medium J40

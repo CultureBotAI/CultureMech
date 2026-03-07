@@ -1,15 +1,14 @@
 name: SL7 solid medium
 original_name: SL7 solid medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,20 +16,17 @@ ingredients:
   concentration:
     value: '0.14'
     unit: MILLIMOLAR
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: MgSO4 × 7 H2O
   concentration:
     value: '0.8'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: NH4Cl
   concentration:
     value: '18.7'
     unit: MILLIMOLAR
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -38,20 +34,17 @@ ingredients:
   concentration:
     value: '25'
     unit: MILLIMOLAR
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Fe(III)NH4-Citrate
   concentration:
     value: '4.6'
     unit: MICROMOLAR
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Chloramphenicol
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound,
-    Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Organic compound, Defined component'
 - preferred_term: Agar
   concentration:
     value: '15'

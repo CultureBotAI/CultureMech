@@ -1,16 +1,15 @@
 name: GRANULICELLA medium
 original_name: GRANULICELLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4.5-5.2
 media_term:
   preferred_term: KOMODO Medium 1284
   term:
     id: komodo.medium:1284
     label: GRANULICELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1284 | DSMZ Medium: 1284 (mediadive.medium:1284)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1284 | DSMZ Medium: 1284 (mediadive.medium:1284) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

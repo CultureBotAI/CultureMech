@@ -1,6 +1,6 @@
 name: BACILLUS THERMANTARCTICUS medium
 original_name: BACILLUS THERMANTARCTICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.6-5.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:675
     label: BACILLUS THERMANTARCTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 675 | DSMZ Medium: 675 (mediadive.medium:675)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 675 | DSMZ Medium: 675 (mediadive.medium:675) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

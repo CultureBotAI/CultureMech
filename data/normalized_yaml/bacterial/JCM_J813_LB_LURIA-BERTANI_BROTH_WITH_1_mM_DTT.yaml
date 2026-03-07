@@ -1,6 +1,6 @@
 name: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
 original_name: LB (LURIA-BERTANI) BROTH WITH 1 mM DTT
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -32,8 +32,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: After autoclaving, aseptically add 1 mM (final conc.) 1,4-dithiothreitol
-    (DTT).
+  description: After autoclaving, aseptically add 1 mM (final conc.) 1,4-dithiothreitol (DTT).
 applications:
 - Microbial cultivation
 curation_history:

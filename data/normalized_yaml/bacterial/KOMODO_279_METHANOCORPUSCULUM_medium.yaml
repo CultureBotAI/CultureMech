@@ -1,6 +1,6 @@
 name: METHANOCORPUSCULUM medium
 original_name: METHANOCORPUSCULUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:279
     label: METHANOCORPUSCULUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 279 | DSMZ Medium: 279 (mediadive.medium:279)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 279 | DSMZ Medium: 279 (mediadive.medium:279) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

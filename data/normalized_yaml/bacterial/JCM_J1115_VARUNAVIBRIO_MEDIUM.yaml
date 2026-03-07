@@ -1,6 +1,6 @@
 name: VARUNAVIBRIO MEDIUM
 original_name: VARUNAVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -189,17 +189,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum
-    bottles) under a stream of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers.
-    Pressurize the vessels to 200 kPa with the same gas mixture.
+  description: Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum bottles) under
+    a stream of N2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Pressurize the vessels to 200 kPa
+    with the same gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

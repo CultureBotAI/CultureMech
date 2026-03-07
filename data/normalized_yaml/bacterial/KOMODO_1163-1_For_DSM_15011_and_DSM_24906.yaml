@@ -1,6 +1,6 @@
 name: For DSM 15011 and DSM 24906
 original_name: For DSM 15011 and DSM 24906
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1163.1
     label: For DSM 15011 and DSM 24906
-notes: 'Source: KOMODO ModelSEED | ID: 1163.1 | DSMZ Medium: 1163 (mediadive.medium:1163)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1163.1 | DSMZ Medium: 1163 (mediadive.medium:1163) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -276,6 +275,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.334300Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.5

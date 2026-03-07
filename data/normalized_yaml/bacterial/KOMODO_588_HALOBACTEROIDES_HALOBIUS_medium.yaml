@@ -1,6 +1,6 @@
 name: HALOBACTEROIDES HALOBIUS medium
 original_name: HALOBACTEROIDES HALOBIUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:588
     label: HALOBACTEROIDES HALOBIUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 588 | DSMZ Medium: 588 (mediadive.medium:588)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 588 | DSMZ Medium: 588 (mediadive.medium:588) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

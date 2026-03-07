@@ -1,6 +1,6 @@
 name: ALCALIGENES MEDIUM
 original_name: ALCALIGENES MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -146,8 +146,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After autoclaving add 2.5 ml 1.0 M CuSO4 and 10 ml of a 40% Na-succinate
-    solution, both sterilized by filtration.
+  description: After autoclaving add 2.5 ml 1.0 M CuSO4 and 10 ml of a 40% Na-succinate solution, both
+    sterilized by filtration.
 applications:
 - Microbial cultivation
 curation_history:

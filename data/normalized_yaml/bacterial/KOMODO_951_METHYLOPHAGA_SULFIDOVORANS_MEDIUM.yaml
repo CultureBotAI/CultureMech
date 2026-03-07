@@ -1,8 +1,8 @@
 name: METHYLOPHAGA SULFIDOVORANS MEDIUM
 original_name: METHYLOPHAGA SULFIDOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.8
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 951 | DSMZ Medium: 951 (mediadive.medium:951)
   | Aerobic: No'

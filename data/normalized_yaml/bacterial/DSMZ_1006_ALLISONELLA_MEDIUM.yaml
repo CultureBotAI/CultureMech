@@ -1,6 +1,6 @@
 name: ALLISONELLA MEDIUM
 original_name: ALLISONELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -138,11 +138,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, fatty acid mixture and cysteine),
-    bring medium to the boil, then cool to room temperature under 100% CO2 gas atmosphere.
-    Add solid carbonate, fatty acid mixture and cysteine and adjust pH to 6.0. Dispense
-    medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Adjust pH of complete medium to 6.0, if necessary.
+  description: Dissolve ingredients (except carbonate, fatty acid mixture and cysteine), bring medium
+    to the boil, then cool to room temperature under 100% CO2 gas atmosphere. Add solid carbonate, fatty
+    acid mixture and cysteine and adjust pH to 6.0. Dispense medium under 100% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Adjust pH of complete medium to 6.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

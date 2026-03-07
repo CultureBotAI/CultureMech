@@ -1,6 +1,6 @@
 name: METHYLOCAPSA AUREA MEDIUM
 original_name: METHYLOCAPSA AUREA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5-5.8
@@ -115,8 +115,7 @@ preparation_steps:
   description: Final pH 5.0-5.8.
 - step_number: 2
   action: MIX
-  description: 20-30% methane is added to the gas phase. The strain should be grown
-    with shaking.
+  description: 20-30% methane is added to the gas phase. The strain should be grown with shaking.
 - step_number: 3
   action: MIX
   description: pH 5.8

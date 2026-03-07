@@ -1,6 +1,6 @@
 name: SYNTROPHOBACTER WOLINII medium
 original_name: SYNTROPHOBACTER WOLINII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:307
     label: SYNTROPHOBACTER WOLINII medium
-notes: 'Source: KOMODO ModelSEED | ID: 307 | DSMZ Medium: 307 (mediadive.medium:307)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 307 | DSMZ Medium: 307 (mediadive.medium:307) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

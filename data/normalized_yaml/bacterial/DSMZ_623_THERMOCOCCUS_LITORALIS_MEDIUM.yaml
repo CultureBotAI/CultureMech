@@ -1,6 +1,6 @@
 name: THERMOCOCCUS LITORALIS MEDIUM
 original_name: THERMOCOCCUS LITORALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -124,10 +124,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium,
-    containing sulphur, is sterilized by steaming on three consecutive days for 3
-    h. Reduce the medium with a sterile Na2S stock solution to give a final concentration
-    of 0.5 g/l.
+  description: Prepare the medium under 100% N2 and adjust final pH to 6.5. The medium, containing sulphur,
+    is sterilized by steaming on three consecutive days for 3 h. Reduce the medium with a sterile Na2S
+    stock solution to give a final concentration of 0.5 g/l.
 applications:
 - Microbial cultivation
 curation_history:

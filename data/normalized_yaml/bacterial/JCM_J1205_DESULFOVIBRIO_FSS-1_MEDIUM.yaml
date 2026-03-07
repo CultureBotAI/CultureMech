@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO FSS-1 MEDIUM
 original_name: DESULFOVIBRIO FSS-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -127,22 +127,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0 and autoclave under a
-    N2 gas atmosphere. After cooling, aseptically and anaerobically add the following
-    solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.0 and autoclave under a N2 gas atmosphere. After
+    cooling, aseptically and anaerobically add the following solutions from anaerobic stocks (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into culture vessels (e.g., 20 ml in Balch tubes)
-    and seal with butyl rubber stoppers.
+  description: Distribute the medium into culture vessels (e.g., 20 ml in Balch tubes) and seal with butyl
+    rubber stoppers.
 - step_number: 3
   action: MIX
-  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4
-    x 2H2O, 0.02 g/L CuSO4 x 5H2O and 0.01 g/L NiCl2 x 6H2O.
+  description: Use trace minerals (see Medium No. 151) with final 0.4 g/L Na2MoO4 x 2H2O, 0.02 g/L CuSO4
+    x 5H2O and 0.01 g/L NiCl2 x 6H2O.
 - step_number: 4
   action: MIX
-  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere.
-    In this case, prior to use, fill the head space with air and allow to stand until
-    the O2 gradient is formed.'
+  description: 'Comment: The medium tubes can be stocked under a N2 gas atmosphere. In this case, prior
+    to use, fill the head space with air and allow to stand until the O2 gradient is formed.'
 applications:
 - Microbial cultivation
 curation_history:

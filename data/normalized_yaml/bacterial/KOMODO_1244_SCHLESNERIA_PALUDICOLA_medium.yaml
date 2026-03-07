@@ -1,16 +1,15 @@
 name: SCHLESNERIA PALUDICOLA medium
 original_name: SCHLESNERIA PALUDICOLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.5-5.6
 media_term:
   preferred_term: KOMODO Medium 1244
   term:
     id: komodo.medium:1244
     label: SCHLESNERIA PALUDICOLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1244 | DSMZ Medium: 1244 (mediadive.medium:1244)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1244 | DSMZ Medium: 1244 (mediadive.medium:1244) | Aerobic: No'
 ingredients:
 - preferred_term: N-Acetylglucosamine
   term:

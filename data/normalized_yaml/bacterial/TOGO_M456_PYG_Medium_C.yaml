@@ -1,6 +1,6 @@
 name: PYG Medium (C)
 original_name: PYG Medium (C)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Surfactant; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:53426
     label: polysorbate 80

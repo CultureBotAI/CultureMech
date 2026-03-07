@@ -1,6 +1,6 @@
 name: VENENIVIBRIO STAGNISPUMANTIS MEDIUM
 original_name: VENENIVIBRIO STAGNISPUMANTIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1146
     label: VENENIVIBRIO STAGNISPUMANTIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1146 | DSMZ Medium: 1146 (mediadive.medium:1146)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1146 | DSMZ Medium: 1146 (mediadive.medium:1146) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:

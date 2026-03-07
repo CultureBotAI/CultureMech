@@ -1,6 +1,6 @@
 name: TOMATO JUICE medium
 original_name: TOMATO JUICE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:264
     label: TOMATO JUICE medium
-notes: 'Source: KOMODO ModelSEED | ID: 264 | DSMZ Medium: 264 (mediadive.medium:264)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 264 | DSMZ Medium: 264 (mediadive.medium:264) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

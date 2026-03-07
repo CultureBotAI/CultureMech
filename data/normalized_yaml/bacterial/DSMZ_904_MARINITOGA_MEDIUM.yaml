@@ -1,6 +1,6 @@
 name: MARINITOGA MEDIUM
 original_name: MARINITOGA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -58,11 +58,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust pH
-    to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (to 30% of volume) and autoclave. Add glucose, sulfide and cysteine from sterile
-    anoxic stock solutions prepared under 100% N2 gas.
+  description: Dissolve ingredients except glucose, sulfide and cysteine, adjust pH to 7.0 and sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials (to 30% of volume) and autoclave. Add glucose, sulfide
+    and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas.
 applications:
 - Microbial cultivation
 curation_history:

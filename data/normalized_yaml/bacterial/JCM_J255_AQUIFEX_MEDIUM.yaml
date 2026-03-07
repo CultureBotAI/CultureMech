@@ -1,6 +1,6 @@
 name: AQUIFEX MEDIUM
 original_name: AQUIFEX MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -249,15 +249,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.0. Sterilize by filtration. Aseptically dispense the
-    medium into culture vessels (e.g., 20 ml medium in 120 ml serum bottles) under
-    a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers.
-    Replace the gas phase with a H2-CO2-O2 (79:20:1, v/v) gas mixture and pressurize
-    to 200 kPa with the same gas mixture. Readjust pH to 5.5-6.0, if necessary.
+  description: Adjust pH to 6.0. Sterilize by filtration. Aseptically dispense the medium into culture
+    vessels (e.g., 20 ml medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture
+    and seal with butyl rubber stoppers. Replace the gas phase with a H2-CO2-O2 (79:20:1, v/v) gas mixture
+    and pressurize to 200 kPa with the same gas mixture. Readjust pH to 5.5-6.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

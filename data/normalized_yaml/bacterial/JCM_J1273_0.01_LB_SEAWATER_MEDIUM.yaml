@@ -1,6 +1,6 @@
 name: 0.01% LB SEAWATER MEDIUM
 original_name: 0.01% LB SEAWATER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -79,8 +79,8 @@ preparation_steps:
   description: Mix components thoroughly, adjust pH to 8.0 with HCl and autoclave.
 - step_number: 2
   action: MIX
-  description: 'Comment: Artificial sea water (such as artificial sea water in Medium
-    No. 1118) can be used instead of natural sea water.'
+  description: 'Comment: Artificial sea water (such as artificial sea water in Medium No. 1118) can be
+    used instead of natural sea water.'
 applications:
 - Microbial cultivation
 curation_history:

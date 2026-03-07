@@ -1,6 +1,6 @@
 name: METHANOLOBUS II medium
 original_name: METHANOLOBUS II medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:324
     label: METHANOLOBUS II medium
-notes: 'Source: KOMODO ModelSEED | ID: 324 | DSMZ Medium: 324 (mediadive.medium:324)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 324 | DSMZ Medium: 324 (mediadive.medium:324) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,15 +1,14 @@
 name: LB + Streptomycin, Rifampicin medium
 original_name: LB + Streptomycin, Rifampicin medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Rifampicin solution (50 mg/ml)*
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Solution'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Solution'
 - preferred_term: Streptomycin solution (50 mg/ml)*
   concentration:
     value: '10'
@@ -19,8 +18,7 @@ ingredients:
   concentration:
     value: '985'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -33,8 +31,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride

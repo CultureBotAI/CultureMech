@@ -1,6 +1,6 @@
 name: SALINIVIBRIO COSTICOLA SUBSP. VALLISMORTIS medium
 original_name: SALINIVIBRIO COSTICOLA SUBSP. VALLISMORTIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:597
     label: SALINIVIBRIO COSTICOLA SUBSP. VALLISMORTIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 597 | DSMZ Medium: 597 (mediadive.medium:597)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 597 | DSMZ Medium: 597 (mediadive.medium:597) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)Cl
   term:

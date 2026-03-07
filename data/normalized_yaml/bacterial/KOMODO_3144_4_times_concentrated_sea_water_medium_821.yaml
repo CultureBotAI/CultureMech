@@ -1,6 +1,6 @@
 name: 4 times concentrated sea water (medium 821)
 original_name: 4 times concentrated sea water (medium 821)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3144
     label: 4 times concentrated sea water (medium 821)
-notes: 'Source: KOMODO ModelSEED | ID: 3144 | DSMZ Medium: 3144 (mediadive.medium:3144)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3144 | DSMZ Medium: 3144 (mediadive.medium:3144) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

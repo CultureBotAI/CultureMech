@@ -1,6 +1,6 @@
 name: NAUTILIA ABYSSI MEDIUM
 original_name: NAUTILIA ABYSSI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -176,19 +176,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, adjust pH to 6.0 and autoclave under
-    a N2 atmosphere. Distribute the medium into culture vessels (e.g., 20 ml in 100
-    ml serum bottles) containing appropriate amount of sulfur under a H2-CO2 (4:1,
-    v/v) gas mixture and seal with butyl rubber stoppers. Aseptically and anaerobically
-    add the following solutions (autoclaved or *filter-sterilized) into the medium
-    (per liter):'
+  description: 'Mix components except sulfur, adjust pH to 6.0 and autoclave under a N2 atmosphere. Distribute
+    the medium into culture vessels (e.g., 20 ml in 100 ml serum bottles) containing appropriate amount
+    of sulfur under a H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Aseptically and
+    anaerobically add the following solutions (autoclaved or *filter-sterilized) into the medium (per
+    liter):'
 - step_number: 2
   action: MIX
   description: Pressurize the inoculated culture vessel to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

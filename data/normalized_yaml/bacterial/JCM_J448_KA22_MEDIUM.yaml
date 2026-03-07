@@ -1,6 +1,6 @@
 name: KA22 MEDIUM
 original_name: KA22 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -215,19 +215,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur, NaHCO3 and Na2S x 9H2O, adjust pH to
-    6.5 and autoclave. Filter-sterilize 8% NaHCO3 solution and add to the medium.
-    Steam sulfur for 3 hr on each of 3 successive days. Separately autoclave 5% Na2S
-    x 9H2O solution under a N2 atmosphere. Aseptically distribute the medium into
-    culture vessels containing appropriate amount of sulfur (e.g., 20 ml culture medium
-    in 120 ml serum bottle containing 0.24 g sulfur) under a H2-CO2 (4:1, v/v) gas
-    mixture and seal with butyl rubber stoppers. Prior to inoculation, add the sterile
-    Na2S x 9H2O solution and readjust pH to 6.5, if necessary. Pressurize the inoculated
-    bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except sulfur, NaHCO3 and Na2S x 9H2O, adjust pH to 6.5 and autoclave.
+    Filter-sterilize 8% NaHCO3 solution and add to the medium. Steam sulfur for 3 hr on each of 3 successive
+    days. Separately autoclave 5% Na2S x 9H2O solution under a N2 atmosphere. Aseptically distribute the
+    medium into culture vessels containing appropriate amount of sulfur (e.g., 20 ml culture medium in
+    120 ml serum bottle containing 0.24 g sulfur) under a H2-CO2 (4:1, v/v) gas mixture and seal with
+    butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O solution and readjust pH
+    to 6.5, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: TB2 MEDIUM
 original_name: TB2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,10 +18,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 371 supplemented with 30.0 g/L (final) NaCl. Prior to
-    inoculation, add an additional 3% Na2S x 9H2O solution (neutralized, autoclaved
-    and stored under a N2 atmosphere, 4 ml per liter of the medium) to the medium.
-    Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+  description: Use Medium No. 371 supplemented with 30.0 g/L (final) NaCl. Prior to inoculation, add an
+    additional 3% Na2S x 9H2O solution (neutralized, autoclaved and stored under a N2 atmosphere, 4 ml
+    per liter of the medium) to the medium. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1,
+    v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

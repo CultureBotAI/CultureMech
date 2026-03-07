@@ -1,6 +1,6 @@
 name: M13 VERRUCOMICROBIUM medium
 original_name: M13 VERRUCOMICROBIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:607
     label: M13 VERRUCOMICROBIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 607 | DSMZ Medium: 607 (mediadive.medium:607)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 607 | DSMZ Medium: 607 (mediadive.medium:607) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

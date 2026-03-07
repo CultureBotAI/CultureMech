@@ -1,16 +1,15 @@
 name: MINERAL MEDIUM PH 7.25
 original_name: MINERAL MEDIUM PH 7.25
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.25
 media_term:
   preferred_term: KOMODO Medium 465
   term:
     id: komodo.medium:465
     label: MINERAL MEDIUM PH 7.25
-notes: 'Source: KOMODO ModelSEED | ID: 465 | DSMZ Medium: 465 (mediadive.medium:465)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465 | DSMZ Medium: 465 (mediadive.medium:465) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

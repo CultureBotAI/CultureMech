@@ -1,6 +1,6 @@
 name: MEDIUM 142 MODIFIED FOR DSM 12351
 original_name: MEDIUM 142 MODIFIED FOR DSM 12351
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.6
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:142_12351
     label: MEDIUM 142 MODIFIED FOR DSM 12351
-notes: 'Source: KOMODO ModelSEED | ID: 142_12351 | DSMZ Medium: 142 (mediadive.medium:142)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 142_12351 | DSMZ Medium: 142 (mediadive.medium:142) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

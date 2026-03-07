@@ -1,16 +1,15 @@
 name: SABOURAUD GLUCOSE MEDIUM
 original_name: SABOURAUD GLUCOSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 3-4
 media_term:
   preferred_term: KOMODO Medium 1429
   term:
     id: komodo.medium:1429
     label: SABOURAUD GLUCOSE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1429 | DSMZ Medium: 1429 (mediadive.medium:1429)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1429 | DSMZ Medium: 1429 (mediadive.medium:1429) | Aerobic: No'
 ingredients:
 - preferred_term: SABOURAUD- Glucose-Bouillon
   concentration:

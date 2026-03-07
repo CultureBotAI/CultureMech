@@ -1,6 +1,6 @@
 name: ACIDIHALOBACTER PROSPERUS MEDIUM
 original_name: ACIDIHALOBACTER PROSPERUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -189,14 +189,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.5 with
-    4 N H2SO4. Sterilize medium by autoclaving for 15 min at 121°C. Prior to inoculation
-    add FeSO4 x 7 H2O from a 40% (w/v) stock solution prepared with 0.2 N H2SO4 and
-    filter-sterilized under 100% N2 gas atmosphere.
+  description: Dissolve ingredients except ferrous sulfate and adjust pH to 2.5 with 4 N H2SO4. Sterilize
+    medium by autoclaving for 15 min at 121°C. Prior to inoculation add FeSO4 x 7 H2O from a 40% (w/v)
+    stock solution prepared with 0.2 N H2SO4 and filter-sterilized under 100% N2 gas atmosphere.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

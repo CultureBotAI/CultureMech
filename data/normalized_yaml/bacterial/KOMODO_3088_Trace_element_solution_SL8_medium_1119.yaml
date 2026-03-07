@@ -1,6 +1,6 @@
 name: Trace element solution SL8 (medium 1119)
 original_name: Trace element solution SL8 (medium 1119)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3088
     label: Trace element solution SL8 (medium 1119)
-notes: 'Source: KOMODO ModelSEED | ID: 3088 | DSMZ Medium: 3088 (mediadive.medium:3088)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3088 | DSMZ Medium: 3088 (mediadive.medium:3088) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

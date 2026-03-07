@@ -1,6 +1,6 @@
 name: TH7C1 medium
 original_name: TH7C1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1292
     label: TH7C1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 1292 | DSMZ Medium: 1292 (mediadive.medium:1292)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1292 | DSMZ Medium: 1292 (mediadive.medium:1292) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

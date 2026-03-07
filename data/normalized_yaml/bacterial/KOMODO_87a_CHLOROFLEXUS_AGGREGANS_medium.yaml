@@ -1,6 +1,6 @@
 name: CHLOROFLEXUS AGGREGANS medium
 original_name: CHLOROFLEXUS AGGREGANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:87a
     label: CHLOROFLEXUS AGGREGANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 87a | DSMZ Medium: 87a (mediadive.medium:87a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 87a | DSMZ Medium: 87a (mediadive.medium:87a) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

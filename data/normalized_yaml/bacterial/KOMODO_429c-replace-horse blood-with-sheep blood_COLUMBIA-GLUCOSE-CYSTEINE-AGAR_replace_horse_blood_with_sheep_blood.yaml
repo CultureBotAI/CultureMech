@@ -1,15 +1,15 @@
 name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse blood_with_sheep blood
 original_name: COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse blood_with_sheep blood
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429c_replace_horse blood_with_sheep blood
   term:
     id: komodo.medium:429c_replace_horse blood_with_sheep blood
     label: COLUMBIA-GLUCOSE-CYSTEINE-AGAR_replace_horse blood_with_sheep blood
-notes: 'Source: KOMODO ModelSEED | ID: 429c_replace_horse blood_with_sheep blood |
-  DSMZ Medium: 429c (mediadive.medium:429c) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429c_replace_horse blood_with_sheep blood | DSMZ Medium: 429c (mediadive.medium:429c)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

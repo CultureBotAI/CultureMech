@@ -1,6 +1,6 @@
 name: RECTINEMA SUBTERRANEUM MEDIUM
 original_name: RECTINEMA SUBTERRANEUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -264,13 +264,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a
-    H2-CO2 (80:20, v/v) gas mixture. After cooling, aseptically and anaerobically
-    add the following solution (autoclaved and stored under N2):'
+  description: 'Mix components thoroughly, adjust pH to 7.2 and autoclave under a H2-CO2 (80:20, v/v)
+    gas mixture. After cooling, aseptically and anaerobically add the following solution (autoclaved and
+    stored under N2):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

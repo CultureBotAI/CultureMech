@@ -1,6 +1,6 @@
 name: BICARBONATE-BUFFERED MEDIUM WITH ACETHYLENE
 original_name: BICARBONATE-BUFFERED MEDIUM WITH ACETHYLENE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -147,15 +147,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.5. Distribute the medium
-    in culture vessels (e.g., 10 ml in Balch-type tubes), flush with N2 and seal with
-    butyl rubber stoppers. Autoclave. After cooling, add per liter the following solution
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.5. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch-type tubes), flush with N2 and seal with butyl rubber stoppers. Autoclave. After
+    cooling, add per liter the following solution (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: 'After inoculation, add sterile pure acetylene gas, made from calcium
-    carbide and water, to the gas phase (the first time, 0.5% volume of the gas phase:
-    the next day, 1.0% volume: increase each day until 2.5% volume is reached).'
+  description: 'After inoculation, add sterile pure acetylene gas, made from calcium carbide and water,
+    to the gas phase (the first time, 0.5% volume of the gas phase: the next day, 1.0% volume: increase
+    each day until 2.5% volume is reached).'
 applications:
 - Microbial cultivation
 curation_history:

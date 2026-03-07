@@ -1,16 +1,15 @@
 name: BMM - medium
 original_name: BMM - medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 242
   term:
     id: komodo.medium:242
     label: BMM - medium
-notes: 'Source: KOMODO ModelSEED | ID: 242 | DSMZ Medium: 242 (mediadive.medium:242)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 242 | DSMZ Medium: 242 (mediadive.medium:242) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

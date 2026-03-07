@@ -1,16 +1,15 @@
 name: MODIFIED CHOPPED MEAT medium
 original_name: MODIFIED CHOPPED MEAT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 797
   term:
     id: komodo.medium:797
     label: MODIFIED CHOPPED MEAT medium
-notes: 'Source: KOMODO ModelSEED | ID: 797 | DSMZ Medium: 797 (mediadive.medium:797)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 797 | DSMZ Medium: 797 (mediadive.medium:797) | Aerobic: Yes'
 ingredients:
 - preferred_term: Ground beef
   concentration:

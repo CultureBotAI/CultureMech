@@ -1,6 +1,6 @@
 name: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
 original_name: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1011a
     label: MJ MEDIUM FOR THIOBACTER SUBTERRANEUS
-notes: 'Source: KOMODO ModelSEED | ID: 1011a | DSMZ Medium: 1011a (mediadive.medium:1011a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1011a | DSMZ Medium: 1011a (mediadive.medium:1011a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -267,6 +267,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.049623Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.7

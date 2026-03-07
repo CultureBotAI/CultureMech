@@ -1,6 +1,6 @@
 name: For DSM 15698 and DSM 24425
 original_name: For DSM 15698 and DSM 24425
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:792.1
     label: For DSM 15698 and DSM 24425
-notes: 'Source: KOMODO ModelSEED | ID: 792.1 | DSMZ Medium: 792 (mediadive.medium:792)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 792.1 | DSMZ Medium: 792 (mediadive.medium:792) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

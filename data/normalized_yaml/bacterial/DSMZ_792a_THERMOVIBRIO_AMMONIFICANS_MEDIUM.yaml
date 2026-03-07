@@ -1,6 +1,6 @@
 name: THERMOVIBRIO AMMONIFICANS MEDIUM
 original_name: THERMOVIBRIO AMMONIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.8
@@ -200,24 +200,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, then dispense under same gas atmosphere into anoxic serum vials
-    (e.g., 20 ml medium in 100 ml bottles) and autoclave. Solution B is autoclaved
-    separately under 80% N2 and 20% CO2 gas mixture and solution C is autoclaved under
-    100% N2 gas. To complete the medium appropriate amounts of solutions B and C are
-    added to solution A. Adjust pH of the complete medium to 5.7.
+  description: Sparge solution A with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    then dispense under same gas atmosphere into anoxic serum vials (e.g., 20 ml medium in 100 ml bottles)
+    and autoclave. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture and solution
+    C is autoclaved under 100% N2 gas. To complete the medium appropriate amounts of solutions B and C
+    are added to solution A. Adjust pH of the complete medium to 5.7.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 2 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vials to 2 bar overpressure with sterile 80% H2 and 20% CO2
+    gas mixture.
 - step_number: 3
   action: STORE
-  description: 'Note: Solution A has to be prepared freshly. It cannot be stored for
-    a long period of time.'
+  description: 'Note: Solution A has to be prepared freshly. It cannot be stored for a long period of
+    time.'
 - step_number: 4
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:

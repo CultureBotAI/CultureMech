@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 197
 original_name: JCM MEDIUM No. 197
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -225,13 +225,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine
-    x HCl x H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize
-    NaHCO3 as an 8% solution and Trace vitamins while gassing with N2. Separately
-    autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under a N2 atmosphere.
-    Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under
-    a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O
-    and cysteine x HCl x H2O solutions, and adjust pH to 6.8.
+  description: Mix ingredients except NaHCO3, Trace vitamins, Na2S x 9H2O and cysteine x HCl x H2O, and
+    autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as an 8% solution and Trace vitamins
+    while gassing with N2. Separately autoclave Na2S x 9H2O and cysteine x HCl x H2O as 5% solutions under
+    a N2 atmosphere. Aseptically and anaerobically add NaHCO3 and Trace vitamins to the medium under a
+    N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O and cysteine x HCl x
+    H2O solutions, and adjust pH to 6.8.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 with 1 N KOH.

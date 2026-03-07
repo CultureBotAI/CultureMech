@@ -1,8 +1,8 @@
 name: CLOSTRIDIUM SP. MEDIUM
 original_name: CLOSTRIDIUM SP. MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 54b
   term:
@@ -39,10 +39,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (note that most of the carbonate remains suspended)
-    and sparge medium with 100% N2 gas for 30 -45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    vials while stirring to keep carbonate suspended and autoclave.
+  description: Dissolve ingredients (note that most of the carbonate remains suspended) and sparge medium
+    with 100% N2 gas for 30 -45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials vials while stirring to keep carbonate suspended and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

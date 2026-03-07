@@ -1,16 +1,15 @@
 name: DUBOS SALTS MEDIUM
 original_name: DUBOS SALTS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1161
   term:
     id: komodo.medium:1161
     label: DUBOS SALTS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1161 | DSMZ Medium: 1161 (mediadive.medium:1161)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1161 | DSMZ Medium: 1161 (mediadive.medium:1161) | Aerobic: No'
 ingredients:
 - preferred_term: NaNO3
   term:

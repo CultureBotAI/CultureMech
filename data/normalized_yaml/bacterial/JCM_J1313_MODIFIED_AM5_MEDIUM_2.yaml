@@ -1,6 +1,6 @@
 name: MODIFIED AM5 MEDIUM 2
 original_name: MODIFIED AM5 MEDIUM 2
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -240,9 +240,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (9:1, v/v)
-    gas mixture. After cooling, aseptically and anaerobically add the following solutions
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (9:1, v/v) gas mixture. After cooling,
+    aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.3, if necessary.
@@ -251,9 +250,8 @@ preparation_steps:
   description: 'Menadione solution:'
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave 100 mg menadione (vitamin K3) with 100 ml 5% NaHCO3 solution.
-    Remove insoluble residue by filtration. Store the solution under a N2-CO2 (8:2,
-    v/v) gas mixture.
+  description: Autoclave 100 mg menadione (vitamin K3) with 100 ml 5% NaHCO3 solution. Remove insoluble
+    residue by filtration. Store the solution under a N2-CO2 (8:2, v/v) gas mixture.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave and store under a N2 atmosphere.

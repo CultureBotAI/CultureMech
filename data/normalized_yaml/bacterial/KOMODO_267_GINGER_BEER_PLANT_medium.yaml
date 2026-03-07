@@ -1,6 +1,6 @@
 name: GINGER BEER PLANT medium
 original_name: GINGER BEER PLANT medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:267
     label: GINGER BEER PLANT medium
-notes: 'Source: KOMODO ModelSEED | ID: 267 | DSMZ Medium: 267 (mediadive.medium:267)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 267 | DSMZ Medium: 267 (mediadive.medium:267) | Aerobic: No'
 ingredients:
 - preferred_term: Sugar beet molasses
   concentration:

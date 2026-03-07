@@ -1,8 +1,8 @@
 name: THERMORUDIS MEDIUM (CFH2)
 original_name: THERMORUDIS MEDIUM (CFH2)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1692
@@ -71,8 +71,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Final pH 7.0; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar.
+  description: Final pH 7.0; adjust with crystalline K2HPO4 or KH2PO4 before adding agar.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave for 15 min at 121°C.

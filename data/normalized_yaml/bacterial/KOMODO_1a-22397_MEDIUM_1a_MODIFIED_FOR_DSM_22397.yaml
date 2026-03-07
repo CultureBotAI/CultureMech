@@ -1,15 +1,14 @@
 name: MEDIUM 1a MODIFIED FOR DSM 22397
 original_name: MEDIUM 1a MODIFIED FOR DSM 22397
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1a_22397
   term:
     id: komodo.medium:1a_22397
     label: MEDIUM 1a MODIFIED FOR DSM 22397
-notes: 'Source: KOMODO ModelSEED | ID: 1a_22397 | DSMZ Medium: 1a (mediadive.medium:1a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1a_22397 | DSMZ Medium: 1a (mediadive.medium:1a) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

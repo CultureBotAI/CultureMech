@@ -1,6 +1,6 @@
 name: For DSM 19966
 original_name: For DSM 19966
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1199.1
     label: For DSM 19966
-notes: 'Source: KOMODO ModelSEED | ID: 1199.1 | DSMZ Medium: 1199 (mediadive.medium:1199)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1199.1 | DSMZ Medium: 1199 (mediadive.medium:1199) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

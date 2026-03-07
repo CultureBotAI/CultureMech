@@ -1,6 +1,6 @@
 name: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
 original_name: SULFATE REDUCING BACTERIUM MEDIUM WITH PYRUVATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.7
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 552 supplemented with final 30.0 g/L NaCl, replacing
-    sodium lactate with 1.9 g/L sodium pyruvate. Adjust pH to 6.7.
+  description: Use Medium No. 552 supplemented with final 30.0 g/L NaCl, replacing sodium lactate with
+    1.9 g/L sodium pyruvate. Adjust pH to 6.7.
 applications:
 - Microbial cultivation
 curation_history:

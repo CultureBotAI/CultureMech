@@ -1,6 +1,6 @@
 name: tryptic soy broth
 original_name: tryptic soy broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -25,5 +25,4 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.038086'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: tryptic soy broth (TSB; Difco,
-    Detroit, MI, USA)'
+  notes: 'Added default concentration for ingredient: tryptic soy broth (TSB; Difco, Detroit, MI, USA)'

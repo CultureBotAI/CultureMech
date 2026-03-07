@@ -1,6 +1,6 @@
 name: Nitrososphaera gargensis medium
 original_name: Nitrososphaera gargensis medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.5
@@ -148,8 +148,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Add 50 mL of 20x Basal salt stock solution and 4 g CaCO3 to 950 mL
-    sterile double distilled water and mix all just before use.
+  description: Add 50 mL of 20x Basal salt stock solution and 4 g CaCO3 to 950 mL sterile double distilled
+    water and mix all just before use.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -158,9 +158,8 @@ preparation_steps:
   description: Cool down to room temperature.
 - step_number: 4
   action: MIX
-  description: 'Add aseptic per liter of 1x basalt salt solution: 1 mL FeNaEDTA (7.5
-    mM), 1 mL trace elements solution, 1 mL Selenite-tungstate solution, 0.5 mL NH4Cl
-    solution.'
+  description: 'Add aseptic per liter of 1x basalt salt solution: 1 mL FeNaEDTA (7.5 mM), 1 mL trace elements
+    solution, 1 mL Selenite-tungstate solution, 0.5 mL NH4Cl solution.'
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 8.5 with NaOH.
@@ -178,8 +177,8 @@ preparation_steps:
   description: Store in the dark at 4 °C.
 - step_number: 10
   action: HEAT
-  description: This solution contains no iron! Sterilise by autoclaving or filtration
-    (0.2 µm) and store in the dark at 4 °C.
+  description: This solution contains no iron! Sterilise by autoclaving or filtration (0.2 µm) and store
+    in the dark at 4 °C.
 - step_number: 11
   action: HEAT
   description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.

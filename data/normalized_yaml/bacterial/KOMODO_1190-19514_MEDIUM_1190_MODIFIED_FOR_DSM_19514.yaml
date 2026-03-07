@@ -1,6 +1,6 @@
 name: MEDIUM 1190 MODIFIED FOR DSM 19514
 original_name: MEDIUM 1190 MODIFIED FOR DSM 19514
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.8-2.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1190_19514
     label: MEDIUM 1190 MODIFIED FOR DSM 19514
-notes: 'Source: KOMODO ModelSEED | ID: 1190_19514 | DSMZ Medium: 1190 (mediadive.medium:1190)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1190_19514 | DSMZ Medium: 1190 (mediadive.medium:1190) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

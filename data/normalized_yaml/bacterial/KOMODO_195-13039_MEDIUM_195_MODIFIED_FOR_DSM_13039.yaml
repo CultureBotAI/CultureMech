@@ -1,6 +1,6 @@
 name: MEDIUM 195 MODIFIED FOR DSM 13039
 original_name: MEDIUM 195 MODIFIED FOR DSM 13039
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:195_13039
     label: MEDIUM 195 MODIFIED FOR DSM 13039
-notes: 'Source: KOMODO ModelSEED | ID: 195_13039 | DSMZ Medium: 195 (mediadive.medium:195)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 195_13039 | DSMZ Medium: 195 (mediadive.medium:195) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -250,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.856817Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: P-2 medium
 original_name: P-2 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:677
     label: P-2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 677 | DSMZ Medium: 677 (mediadive.medium:677)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 677 | DSMZ Medium: 677 (mediadive.medium:677) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

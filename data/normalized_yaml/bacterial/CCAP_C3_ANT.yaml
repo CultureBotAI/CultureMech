@@ -1,6 +1,6 @@
 name: ANT
 original_name: ANT
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.6-7.8
@@ -113,12 +113,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water and autoclave at 15 psi. Final\
-    \ pH should be \r\n7.6 -­ 7.8."
+  description: "Make up to 1 litre with distilled water and autoclave at 15 psi. Final pH should be \r\
+    \n7.6 -­ 7.8."
 - step_number: 2
   action: ADJUST_PH
-  description: "Make up to 1 litre with distilled water and adjust pH to 7.6 ­- 7.8\
-    \ with dilute HCl or \r\nNaOH.  Store frozen."
+  description: "Make up to 1 litre with distilled water and adjust pH to 7.6 ­- 7.8 with dilute HCl or\
+    \ \r\nNaOH.  Store frozen."
 applications:
 - Microbial cultivation
 curation_history:

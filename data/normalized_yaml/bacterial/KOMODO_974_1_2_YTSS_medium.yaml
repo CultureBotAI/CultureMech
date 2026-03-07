@@ -1,16 +1,15 @@
 name: 1/2 YTSS medium
 original_name: 1/2 YTSS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 974
   term:
     id: komodo.medium:974
     label: 1/2 YTSS medium
-notes: 'Source: KOMODO ModelSEED | ID: 974 | DSMZ Medium: 974 (mediadive.medium:974)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 974 | DSMZ Medium: 974 (mediadive.medium:974) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

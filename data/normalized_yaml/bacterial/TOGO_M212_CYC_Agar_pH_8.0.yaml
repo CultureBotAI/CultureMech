@@ -1,8 +1,8 @@
 name: CYC Agar (pH 8.0)
 original_name: CYC Agar (pH 8.0)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CYC agar (see Medium [M41])
   concentration:

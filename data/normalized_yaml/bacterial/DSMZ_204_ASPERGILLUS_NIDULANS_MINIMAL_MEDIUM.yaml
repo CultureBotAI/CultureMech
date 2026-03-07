@@ -1,8 +1,8 @@
 name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
 original_name: ASPERGILLUS NIDULANS MINIMAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.5
 media_term:
   preferred_term: DSMZ Medium 204
@@ -84,5 +84,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:21.468248'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default
-    concentration for ingredient: ZnSO4 x 7 H2O'
+  notes: 'Added default concentration for ingredient: FeSO4 x 7 H2O; Added default concentration for ingredient:
+    ZnSO4 x 7 H2O'

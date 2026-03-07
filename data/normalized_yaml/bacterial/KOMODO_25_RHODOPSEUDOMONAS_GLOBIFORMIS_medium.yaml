@@ -1,6 +1,6 @@
 name: RHODOPSEUDOMONAS GLOBIFORMIS medium
 original_name: RHODOPSEUDOMONAS GLOBIFORMIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 4.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:25
     label: RHODOPSEUDOMONAS GLOBIFORMIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 25 | DSMZ Medium: 25 (mediadive.medium:25)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 25 | DSMZ Medium: 25 (mediadive.medium:25) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

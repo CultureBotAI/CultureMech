@@ -1,6 +1,6 @@
 name: T-ASW MEDIUM
 original_name: T-ASW MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:574
     label: T-ASW MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 574 | DSMZ Medium: 574 (mediadive.medium:574)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 574 | DSMZ Medium: 574 (mediadive.medium:574) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

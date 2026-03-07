@@ -1,6 +1,6 @@
 name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
 original_name: THIOALKALIMICROBIUM MICROAEOPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -119,9 +119,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed vessels
-    (i.e. a serum tube or bottle) with a liquid to air ratio of about 1:10. Flush
-    the gas phase with nitrogen and add 2% oxygen. Sterilize at 120°C 20 min.
+  description: Adjust the pH to 9.0 - 9.5 with 2M KOH. Dispense into closed vessels (i.e. a serum tube
+    or bottle) with a liquid to air ratio of about 1:10. Flush the gas phase with nitrogen and add 2%
+    oxygen. Sterilize at 120°C 20 min.
 - step_number: 2
   action: MIX
   description: Incubate statically until growth occurs, then shake at 100 rpm.

@@ -1,6 +1,6 @@
 name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
 original_name: CY/H LIQUID MEDIUM FOR MYXOBACTERIA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -76,9 +76,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH of solution A to pH 7.4. Autoclave solutions A and B separately.
-    Filter sterilize vitamin solution. After cooling, add 1 ml solution B and 1 ml
-    solution C per liter solution A.
+  description: Adjust pH of solution A to pH 7.4. Autoclave solutions A and B separately. Filter sterilize
+    vitamin solution. After cooling, add 1 ml solution B and 1 ml solution C per liter solution A.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THIOHALOSPIRA ALKALIPHILA MEDIUM
 original_name: THIOHALOSPIRA ALKALIPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 8-8.5
@@ -126,9 +126,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Flush the gas phase with nitrogen and add 5% oxygen. Sterilize at 120°C
-    20 min in a closed vessel (i.e. a serum tube or bottle) with a liquid to air ratio
-    of about 1:10.
+  description: Flush the gas phase with nitrogen and add 5% oxygen. Sterilize at 120°C 20 min in a closed
+    vessel (i.e. a serum tube or bottle) with a liquid to air ratio of about 1:10.
 - step_number: 2
   action: MIX
   description: Final pH is 8.0 - 8.5.

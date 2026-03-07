@@ -1,6 +1,6 @@
 name: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
 original_name: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:829.2
     label: For DSM 15218, DSM 15521, DSM 15522, DSM 16304
-notes: 'Source: KOMODO ModelSEED | ID: 829.2 | DSMZ Medium: 829 (mediadive.medium:829)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 829.2 | DSMZ Medium: 829 (mediadive.medium:829) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

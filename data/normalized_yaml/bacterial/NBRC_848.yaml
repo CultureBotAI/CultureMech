@@ -1,20 +1,17 @@
 name: '848'
 original_name: '848'
-category: imported
+category: bacterial
 description: 848. NBRC 847.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "(NH4)2SO41.3gKH2PO40.28gMgSO4\xB77H2O0.25gCaCl2\xB72H2O0.07gFeCl3\xB7\
-    6H2O0.02gMnCl2\xB74H2O1.8mgNa2B4O7\xB710H2O4.5mgZnSO4\xB77H2O0.22mgCuCl2\xB72H2O0.05mgNa2MoO4\xB7\
-    2H2O0.03mgVOSO4\xB7nH2O0.03mgCoSO4\xB77H2O0.01mgBacto Yeast Extract (Difco)1gSulfur\
-    \ (powder)5gNa2S\xB79H2O0.5gResazurin1mgDistilled water1LMix ingredients except\
-    \ yeast extract, sulfur and Na2S\xB79H2O, and autoclave under a N2atmosphere.\
-    \ Separately autoclave yeast extract as a 10% solution and Na2S\xB79H2O as a 5%\
-    \ solution under a N2atmosphere.  Sulfur is autoclaved for 60 min at 105\u2103\
-    \ on each of 3 successive days. Aseptically and anaerobically add yeast extract\
-    \ and sulfur to the medium. Prior to inoculation, add sterile Na2S\xB79H2O solution,\
-    \ and adjust pH to 4.5-5.0 with sterile 1 N H2SO4."
+- preferred_term: (NH4)2SO41.3gKH2PO40.28gMgSO4·7H2O0.25gCaCl2·2H2O0.07gFeCl3·6H2O0.02gMnCl2·4H2O1.8mgNa2B4O7·10H2O4.5mgZnSO4·7H2O0.22mgCuCl2·2H2O0.05mgNa2MoO4·2H2O0.03mgVOSO4·nH2O0.03mgCoSO4·7H2O0.01mgBacto
+    Yeast Extract (Difco)1gSulfur (powder)5gNa2S·9H2O0.5gResazurin1mgDistilled water1LMix ingredients
+    except yeast extract, sulfur and Na2S·9H2O, and autoclave under a N2atmosphere. Separately autoclave
+    yeast extract as a 10% solution and Na2S·9H2O as a 5% solution under a N2atmosphere.  Sulfur is autoclaved
+    for 60 min at 105℃ on each of 3 successive days. Aseptically and anaerobically add yeast extract and
+    sulfur to the medium. Prior to inoculation, add sterile Na2S·9H2O solution, and adjust pH to 4.5-5.0
+    with sterile 1 N H2SO4.
 - preferred_term: ''
   concentration:
     value: (NH4)2SO4
@@ -25,43 +22,43 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "FeCl3\xB76H2O"
+    value: FeCl3·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MnCl2\xB74H2O"
+    value: MnCl2·4H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2B4O7\xB710H2O"
+    value: Na2B4O7·10H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "ZnSO4\xB77H2O"
+    value: ZnSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CuCl2\xB72H2O"
+    value: CuCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2MoO4\xB72H2O"
+    value: Na2MoO4·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "VOSO4\xB7nH2O"
+    value: VOSO4·nH2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CoSO4\xB77H2O"
+    value: CoSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -73,7 +70,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -90,43 +87,43 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "FeCl3\xB76H2O"
+    value: FeCl3·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MnCl2\xB74H2O"
+    value: MnCl2·4H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2B4O7\xB710H2O"
+    value: Na2B4O7·10H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "ZnSO4\xB77H2O"
+    value: ZnSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CuCl2\xB72H2O"
+    value: CuCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2MoO4\xB72H2O"
+    value: Na2MoO4·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "VOSO4\xB7nH2O"
+    value: VOSO4·nH2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CoSO4\xB77H2O"
+    value: CoSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -138,7 +135,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

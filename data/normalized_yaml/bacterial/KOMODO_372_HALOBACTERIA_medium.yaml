@@ -1,16 +1,15 @@
 name: HALOBACTERIA medium
 original_name: HALOBACTERIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.0-7.2
 media_term:
   preferred_term: KOMODO Medium 372
   term:
     id: komodo.medium:372
     label: HALOBACTERIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 372 | DSMZ Medium: 372 (mediadive.medium:372)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 372 | DSMZ Medium: 372 (mediadive.medium:372) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

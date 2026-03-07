@@ -1,6 +1,6 @@
 name: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101
 original_name: RAVOT MODIFIED MEDIUM FOR THERMOANAEROVIBRIO SP. R101
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -96,18 +96,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, adjust pH to 6.5 and autoclave under
-    a N2 atmosphere. After cooling, add per liter the following solutions (autoclaved
-    and store anaerobically):'
+  description: 'Mix components except sulfur, adjust pH to 6.5 and autoclave under a N2 atmosphere. After
+    cooling, add per liter the following solutions (autoclaved and store anaerobically):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 6.5.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Steam sulfur for 3 hr on each of 3 successive days. Distribute the
-    medium into culture vessels containing sulfur under a N2 atmosphere and seal with
-    butyl rubber stoppers. Then, add the following solution (autoclaved and stored
-    under a N2 atmosphere) to the medium:'
+  description: 'Steam sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture
+    vessels containing sulfur under a N2 atmosphere and seal with butyl rubber stoppers. Then, add the
+    following solution (autoclaved and stored under a N2 atmosphere) to the medium:'
 applications:
 - Microbial cultivation
 curation_history:

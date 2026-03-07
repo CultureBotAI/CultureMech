@@ -1,6 +1,6 @@
 name: METHYLOROSULA MEDIUM V-022
 original_name: METHYLOROSULA MEDIUM V-022
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1403
     label: METHYLOROSULA MEDIUM V-022
-notes: 'Source: KOMODO ModelSEED | ID: 1403 | DSMZ Medium: 1403 (mediadive.medium:1403)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1403 | DSMZ Medium: 1403 (mediadive.medium:1403) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

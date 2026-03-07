@@ -1,6 +1,6 @@
 name: for DSM 14994
 original_name: for DSM 14994
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1264.1
     label: for DSM 14994
-notes: 'Source: KOMODO ModelSEED | ID: 1264.1 | DSMZ Medium: 1264 (mediadive.medium:1264)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1264.1 | DSMZ Medium: 1264 (mediadive.medium:1264) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

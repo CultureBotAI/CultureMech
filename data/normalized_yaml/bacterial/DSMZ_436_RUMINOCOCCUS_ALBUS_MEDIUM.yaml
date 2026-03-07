@@ -1,6 +1,6 @@
 name: RUMINOCOCCUS ALBUS MEDIUM
 original_name: RUMINOCOCCUS ALBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -123,8 +123,7 @@ preparation_steps:
   description: 'Boil and cool under CO2. Under a gentle stream of CO2 add:'
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and
-    sterilize.
+  description: Adjust pH to 7.0, distribute under N2 into appropriate vessels and sterilize.
 - step_number: 3
   action: HEAT
   description: Inoculate under CO2 and incubate at 37°C.

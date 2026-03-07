@@ -1,15 +1,14 @@
 name: For DSM 7526
 original_name: For DSM 7526
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457b.1
   term:
     id: komodo.medium:457b.1
     label: For DSM 7526
-notes: 'Source: KOMODO ModelSEED | ID: 457b.1 | DSMZ Medium: 457b (mediadive.medium:457b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457b.1 | DSMZ Medium: 457b (mediadive.medium:457b) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

@@ -1,6 +1,6 @@
 name: MH1 MEDIUM FOR HALARCHAEUM
 original_name: MH1 MEDIUM FOR HALARCHAEUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 776 with 40.0 g/L (final) MgCl2 x 6H2O and adjust pH
-    to 5.5 with KOH.
+  description: Use Medium No. 776 with 40.0 g/L (final) MgCl2 x 6H2O and adjust pH to 5.5 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

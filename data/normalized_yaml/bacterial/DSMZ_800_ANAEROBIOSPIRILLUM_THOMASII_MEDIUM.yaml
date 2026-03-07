@@ -1,6 +1,6 @@
 name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
 original_name: ANAEROBIOSPIRILLUM THOMASII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -43,14 +43,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it
-    anaerobically under 80% N2 + 20% CO2 gas. After autoclaving and cooling to room
-    temperature add per 10 ml the following sterile, anaerobic solutions:'
+  description: 'Use Wilkins Chalgrene Anaerobe Broth (Oxoid CM 643) and prepare it anaerobically under
+    80% N2 + 20% CO2 gas. After autoclaving and cooling to room temperature add per 10 ml the following
+    sterile, anaerobic solutions:'
 - step_number: 2
   action: MIX
-  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar
-    plates, Columbia sheep blood agar plates (BBL) may be used and incubated under
-    an anaerobic atmosphere containig 5 - 10% CO2.
+  description: The pH of the completed medium should be 6.8 - 7.0. For growth an agar plates, Columbia
+    sheep blood agar plates (BBL) may be used and incubated under an anaerobic atmosphere containig 5
+    - 10% CO2.
 applications:
 - Microbial cultivation
 curation_history:

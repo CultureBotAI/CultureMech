@@ -1,6 +1,6 @@
 name: LIND 8A MEDIUM
 original_name: LIND 8A MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 786, replacing glucose with sodium pyruvate (final 20
-    mM).
+  description: Use Medium No. 786, replacing glucose with sodium pyruvate (final 20 mM).
 applications:
 - Microbial cultivation
 curation_history:

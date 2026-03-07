@@ -1,6 +1,6 @@
 name: MMFC1 MEDIUM
 original_name: MMFC1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -246,8 +246,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare medium under a N2 gas atmosphere. After autoclaving, aseptically
-    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Prepare medium under a N2 gas atmosphere. After autoclaving, aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Adjust final pH of the medium to 6.5, if necessary.

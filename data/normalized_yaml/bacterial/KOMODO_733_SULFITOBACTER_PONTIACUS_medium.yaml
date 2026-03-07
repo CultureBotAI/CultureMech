@@ -1,6 +1,6 @@
 name: SULFITOBACTER PONTIACUS medium
 original_name: SULFITOBACTER PONTIACUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:733
     label: SULFITOBACTER PONTIACUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 733 | DSMZ Medium: 733 (mediadive.medium:733)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 733 | DSMZ Medium: 733 (mediadive.medium:733) | Aerobic: No'
 ingredients:
 - preferred_term: Na-acetate
   term:

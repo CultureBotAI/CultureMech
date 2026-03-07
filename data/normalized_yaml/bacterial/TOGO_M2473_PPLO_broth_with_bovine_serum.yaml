@@ -1,6 +1,6 @@
 name: PPLO broth with bovine serum
 original_name: PPLO broth with bovine serum
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '865'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: PPLO Broth Base w/o CV (Mycoplasma Broth Base) (BD 211458)
   concentration:
     value: '21'

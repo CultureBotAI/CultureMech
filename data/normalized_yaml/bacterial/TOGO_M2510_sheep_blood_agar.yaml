@@ -1,8 +1,8 @@
 name: sheep blood agar
 original_name: sheep blood agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CO2
   concentration:

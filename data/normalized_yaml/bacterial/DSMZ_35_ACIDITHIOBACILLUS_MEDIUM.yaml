@@ -1,6 +1,6 @@
 name: ACIDITHIOBACILLUS MEDIUM
 original_name: ACIDITHIOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 4.2
@@ -49,11 +49,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients, except the sulfur and adjust the pH to 4.2,
-    then autoclave. For sterilization place the sulfur in screw-capped tubes or bottles,
-    wet with a few drops of water and heat for 3 hours to 90 - 100°C in a water bath
-    on each of three successive days. Before use, aseptically layer the sulfur onto
-    the surface of autoclaved liquid basal medium.
+  description: Dissolve all ingredients, except the sulfur and adjust the pH to 4.2, then autoclave. For
+    sterilization place the sulfur in screw-capped tubes or bottles, wet with a few drops of water and
+    heat for 3 hours to 90 - 100°C in a water bath on each of three successive days. Before use, aseptically
+    layer the sulfur onto the surface of autoclaved liquid basal medium.
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'

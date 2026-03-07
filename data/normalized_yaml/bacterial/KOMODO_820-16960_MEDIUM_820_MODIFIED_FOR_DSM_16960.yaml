@@ -1,6 +1,6 @@
 name: MEDIUM 820 MODIFIED FOR DSM 16960
 original_name: MEDIUM 820 MODIFIED FOR DSM 16960
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:820_16960
     label: MEDIUM 820 MODIFIED FOR DSM 16960
-notes: 'Source: KOMODO ModelSEED | ID: 820_16960 | DSMZ Medium: 820 (mediadive.medium:820)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 820_16960 | DSMZ Medium: 820 (mediadive.medium:820) | Aerobic:
+  No'
 ingredients: []
 applications:
 - Microbial cultivation

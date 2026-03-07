@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M1447
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Complex component, Inorganic
-    compound, Solution'
+  notes: 'Role: Buffer; Properties: Defined component, Complex component, Inorganic compound, Solution'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -33,7 +31,7 @@ media_term:
   preferred_term: TOGO Medium M1447
   term:
     id: TOGO:M1447
-    label: (Unnamed medium)
+    label: TOGO Medium M1447
 notes: 'Source: https://togomedium.org/medium/M1447
 
   Original source: NBRC - NBRC_M219

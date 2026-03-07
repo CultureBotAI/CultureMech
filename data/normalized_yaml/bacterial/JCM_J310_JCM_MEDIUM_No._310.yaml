@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 310
 original_name: JCM MEDIUM No. 310
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -118,9 +118,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter-sterilize KSCN solution and separately autoclave Trace elements
-    solution and MgCl2 x 6H2O solution. Aseptically add KSCN solution, Trace elements
-    solution and MgCl2 x 6H2O solution to the medium.
+  description: Filter-sterilize KSCN solution and separately autoclave Trace elements solution and MgCl2
+    x 6H2O solution. Aseptically add KSCN solution, Trace elements solution and MgCl2 x 6H2O solution
+    to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3 with HCl.

@@ -1,15 +1,14 @@
 name: BN agar
 original_name: BN agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component,
-    Organic compound'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'

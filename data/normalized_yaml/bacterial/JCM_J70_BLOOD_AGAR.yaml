@@ -1,6 +1,6 @@
 name: BLOOD AGAR
 original_name: BLOOD AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare Blood agar base (BD-Difco) according to the direction, sterilize
-    and cool to about 45C. Aseptically add final 5% sterile defibrinated rabbit blood.
-    Mix and quickly dispense into sterile test tubes.
+  description: Prepare Blood agar base (BD-Difco) according to the direction, sterilize and cool to about
+    45C. Aseptically add final 5% sterile defibrinated rabbit blood. Mix and quickly dispense into sterile
+    test tubes.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: CHTHONOMONAS MEDIUM
 original_name: CHTHONOMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5-5.3
@@ -165,20 +165,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Add gellan gum and boil to dissolve. Then add the remaining ingredients
-    (except magnesium chloride, yeast extract and vitamins), adjust the pH value to
-    5.0 to 5.3 and fill the medium under an air atmosphere into tubes of the Hungate
-    type or similar vials up to 30% their volume. After autoclaving add magnesium
-    chloride, yeast extract and vitamins from steril stock solutions. Vitamins should
-    be sterilized by filtration.
+  description: Add gellan gum and boil to dissolve. Then add the remaining ingredients (except magnesium
+    chloride, yeast extract and vitamins), adjust the pH value to 5.0 to 5.3 and fill the medium under
+    an air atmosphere into tubes of the Hungate type or similar vials up to 30% their volume. After autoclaving
+    add magnesium chloride, yeast extract and vitamins from steril stock solutions. Vitamins should be
+    sterilized by filtration.
 - step_number: 2
   action: MIX
   description: 'Note: Incubation with shaking may improve cell yield.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

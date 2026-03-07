@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM CATECHOLICUM MEDIUM
 original_name: DESULFOBACTERIUM CATECHOLICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.9-7.1
@@ -265,5 +265,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.596620Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

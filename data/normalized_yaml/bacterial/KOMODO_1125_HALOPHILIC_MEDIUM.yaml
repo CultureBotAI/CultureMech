@@ -1,6 +1,6 @@
 name: HALOPHILIC MEDIUM
 original_name: HALOPHILIC MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1125
     label: HALOPHILIC MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1125 | DSMZ Medium: 1125 (mediadive.medium:1125)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1125 | DSMZ Medium: 1125 (mediadive.medium:1125) | Aerobic: No'
 ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:

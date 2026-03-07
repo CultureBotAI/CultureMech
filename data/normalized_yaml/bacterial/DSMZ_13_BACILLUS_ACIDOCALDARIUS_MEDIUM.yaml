@@ -1,8 +1,8 @@
 name: BACILLUS ACIDOCALDARIUS MEDIUM
 original_name: BACILLUS ACIDOCALDARIUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 13
   term:
@@ -59,8 +59,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize solution A and B separately at 121°C for 15 min. Cool to
-    50°C and then combine.
+  description: Sterilize solution A and B separately at 121°C for 15 min. Cool to 50°C and then combine.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.0 - 4.0.

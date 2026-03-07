@@ -1,8 +1,8 @@
 name: MYCOBACTERIUM INTRACELLULARE MEDIUM
 original_name: MYCOBACTERIUM INTRACELLULARE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 126
   term:
@@ -36,8 +36,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4
-    x H2O is recommended for sporulation.
+  description: Adjust pH to 7.0. For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
+    for sporulation.
 applications:
 - Microbial cultivation
 curation_history:

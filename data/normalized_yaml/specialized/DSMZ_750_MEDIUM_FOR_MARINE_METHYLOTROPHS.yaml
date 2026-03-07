@@ -1,8 +1,8 @@
 name: MEDIUM FOR MARINE METHYLOTROPHS
 original_name: MEDIUM FOR MARINE METHYLOTROPHS
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 750

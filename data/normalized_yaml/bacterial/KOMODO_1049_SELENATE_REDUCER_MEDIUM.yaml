@@ -1,15 +1,14 @@
 name: SELENATE REDUCER MEDIUM
 original_name: SELENATE REDUCER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1049
   term:
     id: komodo.medium:1049
     label: SELENATE REDUCER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1049 | DSMZ Medium: 1049 (mediadive.medium:1049)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1049 | DSMZ Medium: 1049 (mediadive.medium:1049) | Aerobic: Yes'
 ingredients:
 - preferred_term: DL-Na-lactate
   term:

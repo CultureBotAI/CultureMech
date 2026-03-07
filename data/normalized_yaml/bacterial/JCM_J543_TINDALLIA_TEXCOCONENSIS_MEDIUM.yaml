@@ -1,6 +1,6 @@
 name: TINDALLIA TEXCOCONENSIS MEDIUM
 original_name: TINDALLIA TEXCOCONENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -166,20 +166,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and adjust pH to 9.0 with 10 N KOH. Autoclave the solution
-    anaerobically under a N2 atmosphere.
+  description: Mix components and adjust pH to 9.0 with 10 N KOH. Autoclave the solution anaerobically
+    under a N2 atmosphere.
 - step_number: 2
   action: MIX
   description: Prepare the medium anaerobically under a N2 atmosphere.
 - step_number: 3
   action: MIX
-  description: To complete the medium, combine Solutions A and B under a N2 atmosphere.
-    Prior to inoculation, add 0.5 g/L (final) L-cysteine x HCl x H2O and 0.4 g/L (final)
-    Na2S x 9H2O from anaerobic and sterile stock solutions (5.0%).
+  description: To complete the medium, combine Solutions A and B under a N2 atmosphere. Prior to inoculation,
+    add 0.5 g/L (final) L-cysteine x HCl x H2O and 0.4 g/L (final) Na2S x 9H2O from anaerobic and sterile
+    stock solutions (5.0%).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

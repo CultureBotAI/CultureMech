@@ -1,6 +1,6 @@
 name: MARISPIROCHAETA MEDIUM
 original_name: MARISPIROCHAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -142,17 +142,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve compounds except carbonate and cellobiose, then sparge medium
-    for 30 - 45 min with 80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. After autoclaving add carbonate from an anoxic sterile stock solution
-    prepared under 80% N2 and 20% CO2 gas mixture and cellobiose from an anoxic stock
-    solution prepared under 100% N2 and sterilized by filtration. Check pH of complete
-    medium and adjust to 7.0, if necessary.
+  description: Dissolve compounds except carbonate and cellobiose, then sparge medium for 30 - 45 min
+    with 80% N2 and 20% CO2 gas mixture to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add carbonate from an anoxic
+    sterile stock solution prepared under 80% N2 and 20% CO2 gas mixture and cellobiose from an anoxic
+    stock solution prepared under 100% N2 and sterilized by filtration. Check pH of complete medium and
+    adjust to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:

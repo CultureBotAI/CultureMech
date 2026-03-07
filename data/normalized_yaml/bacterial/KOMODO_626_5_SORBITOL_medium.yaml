@@ -1,8 +1,8 @@
 name: 5% SORBITOL medium
 original_name: 5% SORBITOL medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.0
 notes: 'pH buffer: HCl | Source: KOMODO ModelSEED | ID: 626 | DSMZ Medium: 626 (mediadive.medium:626)
   | Aerobic: No'

@@ -1,6 +1,6 @@
 name: ANAEROBIC SULFOLOBALES MEDIUM
 original_name: ANAEROBIC SULFOLOBALES MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.0
@@ -113,15 +113,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave Salt base solution under a H2-CO2 (4:1, v/v) gas mixture.
-    Separately autoclave yeast extract (as a 10% solution) under a N2 atmosphere and
-    add to the Salt base solution. Steam sulfur for 3 hr on each of 3 successive days.
-    Distribute the medium into culture vessels containing an appropriate amount of
-    sulfur (e.g., 20 ml medium and 0.02 g sulfur in 120 ml serum bottle) under a stream
-    of H2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Add Na2S x 9H2O from
-    anaerobic, sterile stock solution (5%, autoclaved under a N2 atmosphere) and readjust
-    pH to 3.0. Pressurize the inoculated culture vessels to 100 kPa with the same
-    gas mixture.
+  description: Autoclave Salt base solution under a H2-CO2 (4:1, v/v) gas mixture. Separately autoclave
+    yeast extract (as a 10% solution) under a N2 atmosphere and add to the Salt base solution. Steam sulfur
+    for 3 hr on each of 3 successive days. Distribute the medium into culture vessels containing an appropriate
+    amount of sulfur (e.g., 20 ml medium and 0.02 g sulfur in 120 ml serum bottle) under a stream of H2-CO2
+    (4:1, v/v) and seal with butyl rubber stoppers. Add Na2S x 9H2O from anaerobic, sterile stock solution
+    (5%, autoclaved under a N2 atmosphere) and readjust pH to 3.0. Pressurize the inoculated culture vessels
+    to 100 kPa with the same gas mixture.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.5 with 10 N H2SO4.

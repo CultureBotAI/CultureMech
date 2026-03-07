@@ -1,6 +1,6 @@
 name: NAPHTHALENE SULFONIC ACID MEDIUM
 original_name: NAPHTHALENE SULFONIC ACID MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:528
     label: NAPHTHALENE SULFONIC ACID MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 528 | DSMZ Medium: 528 (mediadive.medium:528)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 528 | DSMZ Medium: 528 (mediadive.medium:528) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

@@ -1,6 +1,6 @@
 name: MYS MEDIUM
 original_name: MYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use MMYS-I medium (see Medium No. 193) with 0.2 g/L (final) NaCl and
-    omit Na2S2O3 x 5H2O.
+  description: Use MMYS-I medium (see Medium No. 193) with 0.2 g/L (final) NaCl and omit Na2S2O3 x 5H2O.
 applications:
 - Microbial cultivation
 curation_history:

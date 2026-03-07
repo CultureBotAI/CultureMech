@@ -1,16 +1,15 @@
 name: MACROMONAS medium
 original_name: MACROMONAS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: KOMODO Medium 847
   term:
     id: komodo.medium:847
     label: MACROMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 847 | DSMZ Medium: 847 (mediadive.medium:847)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 847 | DSMZ Medium: 847 (mediadive.medium:847) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

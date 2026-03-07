@@ -1,6 +1,6 @@
 name: MEDIUM FOR MARINE SPIROCHAETES
 original_name: MEDIUM FOR MARINE SPIROCHAETES
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -235,10 +235,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down
-    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave. Add
-    per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down under a N2-CO2 (4:1,
+    v/v) gas stream. Distribute the medium into culture vessels under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. Add per liter the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

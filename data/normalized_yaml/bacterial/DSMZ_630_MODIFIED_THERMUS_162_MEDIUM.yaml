@@ -1,8 +1,8 @@
 name: MODIFIED THERMUS 162 MEDIUM
 original_name: MODIFIED THERMUS 162 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 630
@@ -127,16 +127,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave
-    the phosphate buffer separately and then add to the medium.
+  description: Adjust pH to 7.2 with NaOH. Autoclave at 121°C for 15 min. Autoclave the phosphate buffer
+    separately and then add to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
-    8 - 9 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
-    NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 8 - 9 g). Dissolve
+    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
 applications:
 - Microbial cultivation
 curation_history:

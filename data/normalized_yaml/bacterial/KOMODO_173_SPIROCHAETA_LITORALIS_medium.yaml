@@ -1,6 +1,6 @@
 name: SPIROCHAETA LITORALIS medium
 original_name: SPIROCHAETA LITORALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:173
     label: SPIROCHAETA LITORALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 173 | DSMZ Medium: 173 (mediadive.medium:173)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 173 | DSMZ Medium: 173 (mediadive.medium:173) | Aerobic: Yes'
 ingredients:
 - preferred_term: D-Glucose
   term:

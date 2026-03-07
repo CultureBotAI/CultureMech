@@ -1,6 +1,6 @@
 name: RHODOVULUM VISAKHUM MEDIUM
 original_name: RHODOVULUM VISAKHUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -133,8 +133,8 @@ preparation_steps:
   description: Adjust to pH 6.8
 - step_number: 2
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
+    under a stream of nitrogen gas.
 - step_number: 3
   action: MIX
   description: 'Add the following component after autoclaving from sterile stock solutions:'

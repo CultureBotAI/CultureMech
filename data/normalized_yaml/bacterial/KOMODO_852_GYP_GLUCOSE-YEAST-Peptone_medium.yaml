@@ -1,15 +1,14 @@
 name: GYP GLUCOSE-YEAST-Peptone medium
 original_name: GYP GLUCOSE-YEAST-Peptone medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 852
   term:
     id: komodo.medium:852
     label: GYP GLUCOSE-YEAST-Peptone medium
-notes: 'Source: KOMODO ModelSEED | ID: 852 | DSMZ Medium: 852 (mediadive.medium:852)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 852 | DSMZ Medium: 852 (mediadive.medium:852) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

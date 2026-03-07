@@ -1,6 +1,6 @@
 name: METHANOLACINIA MEDIUM
 original_name: METHANOLACINIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -278,23 +278,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except MOPS, vitamins, cysteine and sulfide in
-    a total volume of 890 ml. The MOPS buffer is dissolved separately in 90 ml of
-    distilled water, the pH is adjusted to 7.0 with 2 M KOH, then add the buffer to
-    the salt solution. Sparge medium with 80% H2 and 20% CO2 gas mixture for 30 -
-    45 min to make it anoxic, then dispense medium in anoxic Hungate-type tubes under
-    the same gas atmosphere to 30% of their volume and autoclave. Add vitamins (sterilized
-    by filtration), cysteine and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Prior to use check pH of complete medium and adjust to 7.0,
-    if necessary.
+  description: Dissolve ingredients except MOPS, vitamins, cysteine and sulfide in a total volume of 890
+    ml. The MOPS buffer is dissolved separately in 90 ml of distilled water, the pH is adjusted to 7.0
+    with 2 M KOH, then add the buffer to the salt solution. Sparge medium with 80% H2 and 20% CO2 gas
+    mixture for 30 - 45 min to make it anoxic, then dispense medium in anoxic Hungate-type tubes under
+    the same gas atmosphere to 30% of their volume and autoclave. Add vitamins (sterilized by filtration),
+    cysteine and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to use
+    check pH of complete medium and adjust to 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar
-    overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -309,5 +306,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.908291Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
 original_name: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:925
     label: ALKALIPHILIC SULPHUR RESPIRING STRAINS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 925 | DSMZ Medium: 925 (mediadive.medium:925)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

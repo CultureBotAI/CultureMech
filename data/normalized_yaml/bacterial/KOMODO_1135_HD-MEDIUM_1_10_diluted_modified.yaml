@@ -1,11 +1,11 @@
 name: HD-MEDIUM, 1:10 diluted, modified
 original_name: HD-MEDIUM, 1:10 diluted, modified
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1135 | DSMZ Medium: 1135
-  (mediadive.medium:1135) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1135 | DSMZ Medium: 1135 (mediadive.medium:1135)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1135
   term:

@@ -1,15 +1,14 @@
 name: PLATES WITH FLUORANTHENE
 original_name: PLATES WITH FLUORANTHENE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 462a
   term:
     id: komodo.medium:462a
     label: PLATES WITH FLUORANTHENE
-notes: 'Source: KOMODO ModelSEED | ID: 462a | DSMZ Medium: 462a (mediadive.medium:462a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 462a | DSMZ Medium: 462a (mediadive.medium:462a) | Aerobic: No'
 ingredients:
 - preferred_term: Fluoranthene
   concentration:

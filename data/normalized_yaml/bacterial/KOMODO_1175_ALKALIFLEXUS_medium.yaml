@@ -1,6 +1,6 @@
 name: ALKALIFLEXUS medium
 original_name: ALKALIFLEXUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1175
     label: ALKALIFLEXUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1175 | DSMZ Medium: 1175 (mediadive.medium:1175)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1175 | DSMZ Medium: 1175 (mediadive.medium:1175) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

@@ -1,6 +1,6 @@
 name: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
 original_name: VERRUCOMICROBIUM CANDIDATUS MEDIUM (KAM1)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.5
@@ -116,33 +116,31 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Dilute 100 ml NMS salt solution to 1 litre with distilled water and\
-    \ then add 1 ml of\r\n FeNaEDTA solution and 1 ml of the trace elements and autoclave.\
-    \ Also autoclave the\r\n phosphate buffer stock solution."
+  description: "Dilute 100 ml NMS salt solution to 1 litre with distilled water and then add 1 ml of\r\
+    \n FeNaEDTA solution and 1 ml of the trace elements and autoclave. Also autoclave the\r\n phosphate\
+    \ buffer stock solution."
 - step_number: 2
   action: AUTOCLAVE
-  description: "After cooling of the autoclaved solutions, add 20ml phosphate buffer\
-    \ stock solution to\r\n the mineral solution."
+  description: "After cooling of the autoclaved solutions, add 20ml phosphate buffer stock solution to\r\
+    \n the mineral solution."
 - step_number: 3
   action: AUTOCLAVE
-  description: "Dispense 9ml distilled water into the growth vessels. Use sealed vessels\
-    \ it is\r\n appropriate to add 10% methane and 1% CO2 gas to the gas phase and\
-    \ autoclave."
+  description: "Dispense 9ml distilled water into the growth vessels. Use sealed vessels it is\r\n appropriate\
+    \ to add 10% methane and 1% CO2 gas to the gas phase and autoclave."
 - step_number: 4
   action: COOL
-  description: "When the growth vessels is cool, 1.0 ml of the mineral medium and\
-    \ 0.1 ml\r\n 0.03 M Cerium-(III)-chlorid are added."
+  description: "When the growth vessels is cool, 1.0 ml of the mineral medium and 0.1 ml\r\n 0.03 M Cerium-(III)-chlorid\
+    \ are added."
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 3.5 with 1M HCL to obtain the final mineral medium before
-    inoculate.
+  description: Adjust pH to 3.5 with 1M HCL to obtain the final mineral medium before inoculate.
 - step_number: 6
   action: MIX
   description: The cultures should be grown with shaking.
 - step_number: 7
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700
-    ml of distilled water, and then make up to 1 litre
+  description: Dissolve the ingredients listed above (in that order) in about 700 ml of distilled water,
+    and then make up to 1 litre
 - step_number: 8
   action: HEAT
   description: May be stored at 4°C in the dark

@@ -1,8 +1,8 @@
 name: MINERAL MEDIUM (BRUNNER) WITH VITAMINS
 original_name: MINERAL MEDIUM (BRUNNER) WITH VITAMINS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
   preferred_term: DSMZ Medium 462
@@ -213,20 +213,18 @@ preparation_steps:
   description: Adjust pH to 6.9.
 - step_number: 2
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
-    for the specific strain (e.g. medium 1, 220 or 535). After this reactivation,
-    cultivate in mineral medium 462 with the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended for the specific
+    strain (e.g. medium 1, 220 or 535). After this reactivation, cultivate in mineral medium 462 with
+    the appropriate carbon source.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 4
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
 - step_number: 6
   action: MIX
   description: pH 7.3

@@ -1,15 +1,15 @@
 name: MEDIUM 1 MODIFIED FOR DSM 15506_replace_K-oxalate_with_Na-oxalate
 original_name: MEDIUM 1 MODIFIED FOR DSM 15506_replace_K-oxalate_with_Na-oxalate
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_15506_replace_K-oxalate_with_Na-oxalate
   term:
     id: komodo.medium:1_15506_replace_K-oxalate_with_Na-oxalate
     label: MEDIUM 1 MODIFIED FOR DSM 15506_replace_K-oxalate_with_Na-oxalate
-notes: 'Source: KOMODO ModelSEED | ID: 1_15506_replace_K-oxalate_with_Na-oxalate |
-  DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_15506_replace_K-oxalate_with_Na-oxalate | DSMZ Medium: 1 (mediadive.medium:1)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

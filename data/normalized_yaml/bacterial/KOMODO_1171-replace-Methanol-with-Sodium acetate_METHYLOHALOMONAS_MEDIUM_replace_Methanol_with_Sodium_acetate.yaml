@@ -1,6 +1,6 @@
 name: METHYLOHALOMONAS MEDIUM_replace_Methanol_with_Sodium acetate
 original_name: METHYLOHALOMONAS MEDIUM_replace_Methanol_with_Sodium acetate
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:1171_replace_Methanol_with_Sodium acetate
     label: METHYLOHALOMONAS MEDIUM_replace_Methanol_with_Sodium acetate
-notes: 'Source: KOMODO ModelSEED | ID: 1171_replace_Methanol_with_Sodium acetate |
-  DSMZ Medium: 1171 (mediadive.medium:1171) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1171_replace_Methanol_with_Sodium acetate | DSMZ Medium: 1171 (mediadive.medium:1171)
+  | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

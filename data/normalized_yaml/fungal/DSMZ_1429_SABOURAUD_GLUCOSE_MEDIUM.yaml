@@ -1,8 +1,8 @@
 name: SABOURAUD GLUCOSE MEDIUM
 original_name: SABOURAUD GLUCOSE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1429
   term:

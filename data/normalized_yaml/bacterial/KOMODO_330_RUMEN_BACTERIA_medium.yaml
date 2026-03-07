@@ -1,6 +1,6 @@
 name: RUMEN BACTERIA medium
 original_name: RUMEN BACTERIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:330
     label: RUMEN BACTERIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 330 | DSMZ Medium: 330 (mediadive.medium:330)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 330 | DSMZ Medium: 330 (mediadive.medium:330) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

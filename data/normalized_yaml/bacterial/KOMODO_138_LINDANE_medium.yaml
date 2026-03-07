@@ -1,6 +1,6 @@
 name: LINDANE medium
 original_name: LINDANE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:138
     label: LINDANE medium
-notes: 'Source: KOMODO ModelSEED | ID: 138 | DSMZ Medium: 138 (mediadive.medium:138)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 138 | DSMZ Medium: 138 (mediadive.medium:138) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

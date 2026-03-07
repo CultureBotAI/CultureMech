@@ -1,6 +1,6 @@
 name: ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM
 original_name: ANAEROBIC DOUBLE-STRENGTH R2A MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -71,9 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly, adjust pH to 7.2, distribute the medium
-    into culture vessels under a N2 atmosphere, seal with butyl rubber stoppers and
-    autoclave.
+  description: Mix components thoroughly, adjust pH to 7.2, distribute the medium into culture vessels
+    under a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

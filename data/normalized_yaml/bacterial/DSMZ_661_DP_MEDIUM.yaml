@@ -1,8 +1,8 @@
 name: DP MEDIUM
 original_name: DP MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 661
   term:

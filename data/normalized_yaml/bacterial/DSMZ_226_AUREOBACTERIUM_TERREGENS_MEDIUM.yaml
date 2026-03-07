@@ -1,6 +1,6 @@
 name: AUREOBACTERIUM TERREGENS MEDIUM
 original_name: AUREOBACTERIUM TERREGENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -63,8 +63,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: MIX
-  description: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone
-    in ethanol.
+  description: After sterilization, aseptically add 1 ml/l of a 10% solution of acetylacetone in ethanol.
 applications:
 - Microbial cultivation
 curation_history:

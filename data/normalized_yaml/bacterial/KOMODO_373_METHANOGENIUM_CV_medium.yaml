@@ -1,6 +1,6 @@
 name: METHANOGENIUM CV medium
 original_name: METHANOGENIUM CV medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:373
     label: METHANOGENIUM CV medium
-notes: 'Source: KOMODO ModelSEED | ID: 373 | DSMZ Medium: 373 (mediadive.medium:373)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 373 | DSMZ Medium: 373 (mediadive.medium:373) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -294,5 +293,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.055791Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: Vitamins V7 solution (medium 998)
 original_name: Vitamins V7 solution (medium 998)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3130
     label: Vitamins V7 solution (medium 998)
-notes: 'Source: KOMODO ModelSEED | ID: 3130 | DSMZ Medium: 3130 (mediadive.medium:3130)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3130 | DSMZ Medium: 3130 (mediadive.medium:3130) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: MG-MEDIUM
 original_name: MG-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.9-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:525
     label: MG-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 525 | DSMZ Medium: 525 (mediadive.medium:525)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 525 | DSMZ Medium: 525 (mediadive.medium:525) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -293,5 +292,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.074057Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

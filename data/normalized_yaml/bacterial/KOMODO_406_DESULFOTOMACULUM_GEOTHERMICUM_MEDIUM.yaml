@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM GEOTHERMICUM MEDIUM
 original_name: DESULFOTOMACULUM GEOTHERMICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:406
     label: DESULFOTOMACULUM GEOTHERMICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 406 | DSMZ Medium: 406 (mediadive.medium:406)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 406 | DSMZ Medium: 406 (mediadive.medium:406) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

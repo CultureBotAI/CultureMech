@@ -1,6 +1,6 @@
 name: ANAEROBIC TRYPTIC SOY BROTH MEDIUM
 original_name: ANAEROBIC TRYPTIC SOY BROTH MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -32,10 +32,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve dehydrated TSB medium and resazurin, bring to the boil and
-    cool to room temperature while sparging with 100% N2 gas. Adjust pH to 5.5, dispense
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add glucose from a separately sterilized anoxic stock solution.
+  description: Dissolve dehydrated TSB medium and resazurin, bring to the boil and cool to room temperature
+    while sparging with 100% N2 gas. Adjust pH to 5.5, dispense under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. Add glucose from a separately sterilized anoxic stock
+    solution.
 applications:
 - Microbial cultivation
 curation_history:

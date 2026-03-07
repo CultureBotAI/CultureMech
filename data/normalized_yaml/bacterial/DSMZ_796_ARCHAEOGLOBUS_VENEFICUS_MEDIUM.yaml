@@ -1,6 +1,6 @@
 name: ARCHAEOGLOBUS VENEFICUS MEDIUM
 original_name: ARCHAEOGLOBUS VENEFICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -186,19 +186,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, sulfite, acetate and sulfide),
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Thereafter, add and dissolve bicarbonate and equilibrate the medium
-    with the 80% N2 and 20% CO2 gas mixture to achieve a medium pH of 7.0. Dispense
-    medium under same gas atmosphere into serum vials (e.g., 25 ml per 100 ml bottle)
-    and autoclave. After sterilization add sulfite, acetate and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas. The stock solution of sulfite
-    should be freshly prepared and sterilized by filtration. Prior to inoculation
-    check pH of complete medium and adjust to 7.0, if necessary.
+  description: Dissolve ingredients (except bicarbonate, sulfite, acetate and sulfide), then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Thereafter, add and dissolve
+    bicarbonate and equilibrate the medium with the 80% N2 and 20% CO2 gas mixture to achieve a medium
+    pH of 7.0. Dispense medium under same gas atmosphere into serum vials (e.g., 25 ml per 100 ml bottle)
+    and autoclave. After sterilization add sulfite, acetate and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas. The stock solution of sulfite should be freshly prepared and sterilized
+    by filtration. Prior to inoculation check pH of complete medium and adjust to 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation, pressurize bottles to 1 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation, pressurize bottles to 1 bar overpressure with sterile 80% H2 and 20%
+    CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 1.0 with HCl.

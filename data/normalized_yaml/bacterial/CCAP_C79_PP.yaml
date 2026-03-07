@@ -1,8 +1,8 @@
 name: PP
 original_name: PP
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C79
   term:
@@ -46,9 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "The stock solutions are those for SES. Make up to 1 litre with distilled\
-    \ water. For agar add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "The stock solutions are those for SES. Make up to 1 litre with distilled water. For agar\
+    \ add 15g\r\nper litre Bacterial Agar. Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:

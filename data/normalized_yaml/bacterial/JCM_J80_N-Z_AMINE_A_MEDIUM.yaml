@@ -1,8 +1,8 @@
 name: N-Z AMINE A MEDIUM
 original_name: N-Z AMINE A MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J80
   term:

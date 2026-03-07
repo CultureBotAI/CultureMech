@@ -1,6 +1,6 @@
 name: DSM 4156 B and DSM 4156
 original_name: DSM 4156 B and DSM 4156
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:409.1
     label: DSM 4156 B and DSM 4156
-notes: 'Source: KOMODO ModelSEED | ID: 409.1 | DSMZ Medium: 409 (mediadive.medium:409)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 409.1 | DSMZ Medium: 409 (mediadive.medium:409) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

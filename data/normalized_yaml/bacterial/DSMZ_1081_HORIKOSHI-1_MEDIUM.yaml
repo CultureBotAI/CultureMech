@@ -1,8 +1,8 @@
 name: HORIKOSHI-1 MEDIUM
 original_name: HORIKOSHI-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: DSMZ Medium 1081
@@ -57,8 +57,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution
-    to the medium. Check final pH to be about 10.0.
+  description: After autoclaving, aseptically add 100 ml of a 10% Na2CO3 solution to the medium. Check
+    final pH to be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:

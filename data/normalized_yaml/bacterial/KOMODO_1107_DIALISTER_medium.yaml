@@ -1,6 +1,6 @@
 name: DIALISTER medium
 original_name: DIALISTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1107
     label: DIALISTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1107 | DSMZ Medium: 1107 (mediadive.medium:1107)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1107 | DSMZ Medium: 1107 (mediadive.medium:1107) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na-L-lactate
   concentration:

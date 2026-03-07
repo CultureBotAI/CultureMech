@@ -1,6 +1,6 @@
 name: THIORHODOVIBRIO MEDIUM
 original_name: THIORHODOVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -242,18 +242,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
-    (9:1, v/v) gas stream and autoclave under the same gas mixture. After cooling,
-    aseptically and anaerobically add per liter the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (9:1, v/v) gas
+    stream and autoclave under the same gas mixture. After cooling, aseptically and anaerobically add
+    per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2.
 - step_number: 3
   action: AUTOCLAVE
-  description: Solution (see below) is autoclaved under CO2 atmosphere in a 500 ml
-    bottle. Sterile solution is saturated with CO2 (~0.8 bar) until pH is approx.7.3.
-    1 ml is added to 100 ml of culture every 3 days or when the sulfide is consumed.
+  description: Solution (see below) is autoclaved under CO2 atmosphere in a 500 ml bottle. Sterile solution
+    is saturated with CO2 (~0.8 bar) until pH is approx.7.3. 1 ml is added to 100 ml of culture every
+    3 days or when the sulfide is consumed.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave separately.

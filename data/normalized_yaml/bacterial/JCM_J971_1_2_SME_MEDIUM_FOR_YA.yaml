@@ -1,6 +1,6 @@
 name: 1/2 SME MEDIUM FOR YA
 original_name: 1/2 SME MEDIUM FOR YA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.0
@@ -292,13 +292,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components thoroughly, boil for a few seconds and cool down under
-    a stream of a N2-CO2(4:1, v/v) gas mixture. After cooling, add the following components
-    and adjust pH to 7.0:'
+  description: 'Mix components thoroughly, boil for a few seconds and cool down under a stream of a N2-CO2(4:1,
+    v/v) gas mixture. After cooling, add the following components and adjust pH to 7.0:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into culture vessels anaerobically under the same
-    gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Dispense the medium into culture vessels anaerobically under the same gas mixture, seal
+    with butyl rubber stoppers and autoclave.
 - step_number: 3
   action: MIX
   description: '<I>Modified Wolfe''s minerals (10 x): </I>'

@@ -1,6 +1,6 @@
 name: MMJHSY MEDIUM (modified)
 original_name: MMJHSY MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -278,14 +278,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium under N2/CO2 (80%N2, 20%CO2) and fill in , the pH
-    of the medium is adjusted with NaOH to 6.8. After autoclaving, the separately
-    autoclaved, concentrated solutions including each of follows are added to the
-    medium. Then a mix gas (80%H2, 20%CO2) is purged for 5 min.
+  description: Prepare the medium under N2/CO2 (80%N2, 20%CO2) and fill in , the pH of the medium is adjusted
+    with NaOH to 6.8. After autoclaving, the separately autoclaved, concentrated solutions including each
+    of follows are added to the medium. Then a mix gas (80%H2, 20%CO2) is purged for 5 min.
 - step_number: 2
   action: MIX
-  description: Finally, the mix gas (77%H2, 20%CO2, 3%O2) is compressed into gas phase
-    (>80% volume of the tube or bottle) at 2 atm.
+  description: Finally, the mix gas (77%H2, 20%CO2, 3%O2) is compressed into gas phase (>80% volume of
+    the tube or bottle) at 2 atm.
 applications:
 - Microbial cultivation
 curation_history:
@@ -296,5 +295,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.380964Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

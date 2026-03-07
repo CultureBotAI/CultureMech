@@ -1,6 +1,6 @@
 name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
 original_name: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1000
     label: MJANHOX-NO3 MEDIUM WITH SUPPLEMENT
-notes: 'Source: KOMODO ModelSEED | ID: 1000 | DSMZ Medium: 1000 (mediadive.medium:1000)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1000 | DSMZ Medium: 1000 (mediadive.medium:1000) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

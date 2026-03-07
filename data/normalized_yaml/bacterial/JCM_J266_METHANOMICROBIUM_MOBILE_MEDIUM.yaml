@@ -1,6 +1,6 @@
 name: METHANOMICROBIUM MOBILE MEDIUM
 original_name: METHANOMICROBIUM MOBILE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -283,26 +283,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
-    and adjust pH to 6.5. Bring to a boil for 5-10 sec, then, cool down under a stream
-    of H2-CO2 (80:20, v/v) and add NaHCO3 to the medium. Dispense the medium into
-    suitable culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under
-    a stream of H2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. After autoclaving,
-    stand the medium overnight. Separately autoclave cysteine x HCl and Na2S x 9H2O
-    as 5% solutions, respectively, under a N2 atmosphere. Prior to inoculation, aseptically
-    and anaerobically add the L-cysteine x HCl x H2O and Na2S x 9H2O solutions. Pressurize
-    the inoculated bottles to 200 kPa H2-CO2 (80:20, v/v).
+  description: Mix ingredients, except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O, and adjust pH to
+    6.5. Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3
+    to the medium. Dispense the medium into suitable culture vessels (e.g., 20 ml of the medium in 120
+    ml serum bottles) under a stream of H2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. After
+    autoclaving, stand the medium overnight. Separately autoclave cysteine x HCl and Na2S x 9H2O as 5%
+    solutions, respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically
+    add the L-cysteine x HCl x H2O and Na2S x 9H2O solutions. Pressurize the inoculated bottles to 200
+    kPa H2-CO2 (80:20, v/v).
 - step_number: 2
   action: HEAT
-  description: To prepare the clarified rumen fluid, preheat rumen content at 120C
-    for 15 min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
+  description: To prepare the clarified rumen fluid, preheat rumen content at 120C for 15 min. Use the
+    supernatant after centrifuging at 25,000 x g for 15 min.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.5 with concentrated NaOH solution.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

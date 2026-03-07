@@ -1,6 +1,6 @@
 name: YM medium
 original_name: YM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1070
     label: YM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1070 | DSMZ Medium: 1070 (mediadive.medium:1070)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1070 | DSMZ Medium: 1070 (mediadive.medium:1070) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

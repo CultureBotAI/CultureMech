@@ -1,16 +1,15 @@
 name: OM-2 MEDIUM
 original_name: OM-2 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 8.5-9.0
 media_term:
   preferred_term: KOMODO Medium 782
   term:
     id: komodo.medium:782
     label: OM-2 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 782 | DSMZ Medium: 782 (mediadive.medium:782)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 782 | DSMZ Medium: 782 (mediadive.medium:782) | Aerobic: No'
 ingredients:
 - preferred_term: NH4-oxalate
   term:

@@ -1,6 +1,6 @@
 name: KORTHOF'S MEDIUM
 original_name: KORTHOF'S MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -63,14 +63,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave distilled water. After autoclaving, allow to cool, aseptically
-    add 10 x Korthof's basal medium and heat-inactivated rabbit serum that has been
-    filter-sterilized ahead of time.
+  description: Autoclave distilled water. After autoclaving, allow to cool, aseptically add 10 x Korthof's
+    basal medium and heat-inactivated rabbit serum that has been filter-sterilized ahead of time.
 - step_number: 2
   action: AUTOCLAVE
-  description: Mix ingredients except CaCl2 and autoclave. Dissolve CaCl2 in 50 ml
-    distilled water and filter-sterilize. After autoclaving, allow to cool, add sterile
-    CaCl2 solution to the medium.
+  description: Mix ingredients except CaCl2 and autoclave. Dissolve CaCl2 in 50 ml distilled water and
+    filter-sterilize. After autoclaving, allow to cool, add sterile CaCl2 solution to the medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MARICHROMATIUM IMHOFFII MEDIUM
 original_name: MARICHROMATIUM IMHOFFII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Rhodobium gokurnum medium (see Medium No. 516) with 0.5 to 1.0
-    mM Na2S.
+  description: Use Rhodobium gokurnum medium (see Medium No. 516) with 0.5 to 1.0 mM Na2S.
 applications:
 - Microbial cultivation
 curation_history:

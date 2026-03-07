@@ -1,6 +1,6 @@
 name: METHYLOCYSTIS MEDIUM
 original_name: METHYLOCYSTIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5.8-6.2
@@ -98,9 +98,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium into
-    serum bottles with a medium to headspace ratio of about 1:4. Add 20% methane to
-    the gas phase. Sterilize by autoclaving. Incubate the cultures with shaking.
+  description: Prepare the liquid medium. Final pH 5.8-6.2. Dispense the medium into serum bottles with
+    a medium to headspace ratio of about 1:4. Add 20% methane to the gas phase. Sterilize by autoclaving.
+    Incubate the cultures with shaking.
 applications:
 - Microbial cultivation
 curation_history:

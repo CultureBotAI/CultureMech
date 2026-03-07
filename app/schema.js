@@ -131,20 +131,29 @@ window.searchSchema = {
     "bacterial": "#3b82f6",
     "fungal": "#8b5cf6",
     "archaea": "#f59e0b",
-    "specialized": "#10b981",
-    "DEFINED": "#059669",
-    "COMPLEX": "#dc2626",
-    "MINIMAL": "#2563eb",
-    "SELECTIVE": "#7c3aed",
-    "LIQUID": "#06b6d4",
-    "SOLID_AGAR": "#84cc16"
+    "algae": "#10b981",
+    "specialized": "#6366f1",
+    "defined": "#059669",
+    "complex": "#dc2626",
+    "minimal": "#2563eb",
+    "selective": "#7c3aed",
+    "enrichment": "#f97316",
+    "differential": "#ec4899",
+    "liquid": "#06b6d4",
+    "solid_agar": "#84cc16",
+    "semisolid": "#a3e635",
+    "biphasic": "#c084fc"
   },
 
   // Resolver functions for external links
   "linkResolvers": {
     "DSMZ": (id) => `https://mediadive.dsmz.de/medium/${id.split(':')[1]}`,
-    "TOGO": (id) => `http://togodb.org/db/medium/${id.split(':')[1]}`,
+    "TOGO": (id) => `https://togomedium.org/medium/${id.split(':')[1]}`,
     "ATCC": (id) => `https://www.atcc.org/products/${id.split(':')[1]}`,
+    "JCM": (id) => `https://www.jcm.riken.jp/cgi-bin/jcm/jcm_grmd?GRMD=${id.split(':')[1]}`,
+    "NBRC": (id) => `https://www.nite.go.jp/nbrc/catalogue/NBRCMediumDetailServlet?NO=${id.split(':')[1]}`,
+    "KOMODO": (id) => `https://komodo.modelseed.org/detail?id=${id.split(':')[1]}`,
+    "komodo.medium": (id) => `https://komodo.modelseed.org/detail?id=${id.split(':')[1]}`,
     "NCIT": (id) => `https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&code=${id.split(':')[1]}`
   }
 };

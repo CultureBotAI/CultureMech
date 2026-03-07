@@ -1,15 +1,15 @@
 name: MEDIUM 797 MODIFIED FOR DSM 11619
 original_name: MEDIUM 797 MODIFIED FOR DSM 11619
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 797_11619
   term:
     id: komodo.medium:797_11619
     label: MEDIUM 797 MODIFIED FOR DSM 11619
-notes: 'Source: KOMODO ModelSEED | ID: 797_11619 | DSMZ Medium: 797 (mediadive.medium:797)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 797_11619 | DSMZ Medium: 797 (mediadive.medium:797) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Ground beef
   concentration:

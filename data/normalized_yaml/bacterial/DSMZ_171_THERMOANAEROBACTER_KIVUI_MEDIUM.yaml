@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTER KIVUI MEDIUM
 original_name: THERMOANAEROBACTER KIVUI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -214,19 +214,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except cysteine and sulfide, sparge medium with
-    80% H2 and  20%  CO2 gas mixture for 30 - 45 min to make it anoxic, then distribute
-    under same gas atmosphere into Hungate-type tubes or serum vials to 30% of their
-    volume and autoclave. Add cysteine and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.5.
+  description: Dissolve ingredients except cysteine and sulfide, sparge medium with 80% H2 and  20%  CO2
+    gas mixture for 30 - 45 min to make it anoxic, then distribute under same gas atmosphere into Hungate-type
+    tubes or serum vials to 30% of their volume and autoclave. Add cysteine and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.5.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize cultivation vessels to one bar overpressure
-    with sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize cultivation vessels to one bar overpressure with sterile 80%
+    H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: MIX
   description: The ferrous sulfate solution is not stable and should be freshly prepared.

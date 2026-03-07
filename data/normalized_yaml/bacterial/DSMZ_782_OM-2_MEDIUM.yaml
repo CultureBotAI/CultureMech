@@ -1,8 +1,8 @@
 name: OM-2 MEDIUM
 original_name: OM-2 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 8.5-9
 media_term:
   preferred_term: DSMZ Medium 782
@@ -81,9 +81,9 @@ preparation_steps:
   description: pH 6.8-7.0
 - step_number: 2
   action: DISSOLVE
-  description: The first three salts must be dissolved in the indicated sequence.
-    After autoclaving for 20 min at 121°C the pH of the medium shifted to 8.5-9.0.
-    Solid medium contained 1.5 to 2.0% (w/v) of Bacto-Agar (Difco).
+  description: The first three salts must be dissolved in the indicated sequence. After autoclaving for
+    20 min at 121°C the pH of the medium shifted to 8.5-9.0. Solid medium contained 1.5 to 2.0% (w/v)
+    of Bacto-Agar (Difco).
 applications:
 - Microbial cultivation
 curation_history:

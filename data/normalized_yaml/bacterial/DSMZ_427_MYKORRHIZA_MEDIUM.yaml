@@ -1,8 +1,8 @@
 name: MYKORRHIZA MEDIUM
 original_name: MYKORRHIZA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 427
   term:

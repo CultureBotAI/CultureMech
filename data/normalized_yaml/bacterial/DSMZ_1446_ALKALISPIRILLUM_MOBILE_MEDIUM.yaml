@@ -1,8 +1,8 @@
 name: ALKALISPIRILLUM MOBILE MEDIUM
 original_name: ALKALISPIRILLUM MOBILE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: DSMZ Medium 1446
@@ -152,13 +152,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: We recommend that liquid and solid media be made by autoclaving the
-    Na2CO3 separately, otherwise the high pH will cause ammonia to be lost. When making
-    media solidified with agar (20 g/l) the agar should also not be autoclaved with
-    the Na2CO3 otherwise the agar will be hydrolysed. When mixing the ingredients
-    for media cool all components to about 55°C otherwise hydrolysis of the agar may
-    occur. Adjust pH after autoclaving by adding the NaHCO3 (8 %) to pH 9.0. Please
-    note that the NaHCO3 solution should be filter sterilized.
+  description: We recommend that liquid and solid media be made by autoclaving the Na2CO3 separately,
+    otherwise the high pH will cause ammonia to be lost. When making media solidified with agar (20 g/l)
+    the agar should also not be autoclaved with the Na2CO3 otherwise the agar will be hydrolysed. When
+    mixing the ingredients for media cool all components to about 55°C otherwise hydrolysis of the agar
+    may occur. Adjust pH after autoclaving by adding the NaHCO3 (8 %) to pH 9.0. Please note that the
+    NaHCO3 solution should be filter sterilized.
 - step_number: 2
   action: ADJUST_PH
   description: For dissolving adjust pH to about 3 with 1 N HCl.

@@ -1,15 +1,15 @@
 name: MEDIUM 645 MODIFIED FOR DSM 44680
 original_name: MEDIUM 645 MODIFIED FOR DSM 44680
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 645_44680
   term:
     id: komodo.medium:645_44680
     label: MEDIUM 645 MODIFIED FOR DSM 44680
-notes: 'Source: KOMODO ModelSEED | ID: 645_44680 | DSMZ Medium: 645 (mediadive.medium:645)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 645_44680 | DSMZ Medium: 645 (mediadive.medium:645) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Bacto Middlebrook 7H10 agar
   term:

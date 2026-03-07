@@ -1,8 +1,8 @@
 name: CM + YE medium
 original_name: CM + YE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 549 | DSMZ Medium: 549 (mediadive.medium:549)
   | Aerobic: No'

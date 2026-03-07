@@ -1,8 +1,8 @@
 name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) WITH 2% NaCl
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1152
   term:

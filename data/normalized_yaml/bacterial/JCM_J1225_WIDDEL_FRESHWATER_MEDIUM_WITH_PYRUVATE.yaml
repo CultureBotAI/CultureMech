@@ -1,6 +1,6 @@
 name: WIDDEL FRESHWATER MEDIUM WITH PYRUVATE
 original_name: WIDDEL FRESHWATER MEDIUM WITH PYRUVATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.5
@@ -19,9 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use JCM Medium No. 1223. Add separately autoclaved 1.0 M sodium pyruvate
-    solution to the medium (7.0 ml per liter) instead of 1.0 M sodium lactate solution.
-    Adjust pH to 3.5.
+  description: Use JCM Medium No. 1223. Add separately autoclaved 1.0 M sodium pyruvate solution to the
+    medium (7.0 ml per liter) instead of 1.0 M sodium lactate solution. Adjust pH to 3.5.
 applications:
 - Microbial cultivation
 curation_history:

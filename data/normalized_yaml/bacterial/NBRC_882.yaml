@@ -1,16 +1,15 @@
 name: '882'
 original_name: '882'
-category: imported
+category: bacterial
 description: 882. NBRC 881.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween\
-    \ 80 solution**10mlSalts solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and\
-    \ 15 g/L agar after the pH is adjusted for the solid medium.*Wako Pure Chemical\
-    \ Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled water1L***Salts\
-    \ solutionMgSO4\xB77H2O40gMnSO4\xB74H2O2gFeSO4\xB77H2O2gNaCl2gDistilled water1LAdd\
-    \ a drop of 12 N HCl to 500 ml of the salts solution."
+- preferred_term: Glucose10gBacto Yeast Extract (Difco)10gHipolypepton*5gSodium acetate2gTween 80 solution**10mlSalts
+    solution***5mlDistilled water1LpH 6.0Add 5 g/L CaCO3and 15 g/L agar after the pH is adjusted for the
+    solid medium.*Wako Pure Chemical Ind., Ltd., Osaka, Japan.**Tween 80 solutionTween 8050gDistilled
+    water1L***Salts solutionMgSO4·7H2O40gMnSO4·4H2O2gFeSO4·7H2O2gNaCl2gDistilled water1LAdd a drop of
+    12 N HCl to 500 ml of the salts solution.
 - preferred_term: ''
   concentration:
     value: Glucose

@@ -1,6 +1,6 @@
 name: BOSEA THIOOXIDANS medium
 original_name: BOSEA THIOOXIDANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:763
     label: BOSEA THIOOXIDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 763 | DSMZ Medium: 763 (mediadive.medium:763)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 763 | DSMZ Medium: 763 (mediadive.medium:763) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

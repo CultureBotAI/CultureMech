@@ -1,6 +1,6 @@
 name: MST-MEDIUM, AUTOTROPHIC GROWTH
 original_name: MST-MEDIUM, AUTOTROPHIC GROWTH
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-8
@@ -112,13 +112,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare separate solutions of sodium thiosulfate and magnesium sulfate.
-    Adjust solutions to pH 7.5 -8.0 and sterilize by autoclaving. Add sterile trace
-    element solution after autoclving and combining the solutions.
+  description: Prepare separate solutions of sodium thiosulfate and magnesium sulfate. Adjust solutions
+    to pH 7.5 -8.0 and sterilize by autoclaving. Add sterile trace element solution after autoclving and
+    combining the solutions.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

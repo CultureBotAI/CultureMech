@@ -1,6 +1,6 @@
 name: SULFITOBACTER PONTIACUS MEDIUM
 original_name: SULFITOBACTER PONTIACUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.5-7.8
@@ -183,13 +183,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt solution,
-    adjusting the pH to 7.5-7.8 with NaOH before sterilisation. All other components
-    are added from sterile stock solutions.
+  description: Prepare the HEPES, NaCl, K2HPO4 and NH4Cl as a basal salt solution, adjusting the pH to
+    7.5-7.8 with NaOH before sterilisation. All other components are added from sterile stock solutions.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

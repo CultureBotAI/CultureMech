@@ -1,15 +1,15 @@
 name: MEDIUM 426 MODIFIED FOR DSM 46628
 original_name: MEDIUM 426 MODIFIED FOR DSM 46628
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 426_46628
   term:
     id: komodo.medium:426_46628
     label: MEDIUM 426 MODIFIED FOR DSM 46628
-notes: 'Source: KOMODO ModelSEED | ID: 426_46628 | DSMZ Medium: 426 (mediadive.medium:426)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 426_46628 | DSMZ Medium: 426 (mediadive.medium:426) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Dextrose
   term:

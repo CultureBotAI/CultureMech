@@ -1,6 +1,6 @@
 name: Modified MJ synthetic sea water (medium 1131)
 original_name: Modified MJ synthetic sea water (medium 1131)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2017
     label: Modified MJ synthetic sea water (medium 1131)
-notes: 'Source: KOMODO ModelSEED | ID: 2017 | DSMZ Medium: 2017 (mediadive.medium:2017)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2017 | DSMZ Medium: 2017 (mediadive.medium:2017) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

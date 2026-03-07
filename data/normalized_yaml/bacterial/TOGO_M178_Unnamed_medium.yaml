@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M178
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:14258
     label: ''
@@ -23,8 +22,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -40,7 +38,7 @@ media_term:
   preferred_term: TOGO Medium M178
   term:
     id: TOGO:M178
-    label: (Unnamed medium)
+    label: TOGO Medium M178
 notes: 'Source: https://togomedium.org/medium/M178
 
   Original source: JCM - JCM_M185
@@ -60,5 +58,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:49.788894'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: CO2'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient:
+    CO2'

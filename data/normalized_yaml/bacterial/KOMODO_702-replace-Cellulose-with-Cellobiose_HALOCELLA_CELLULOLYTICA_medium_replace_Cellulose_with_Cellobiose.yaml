@@ -1,6 +1,6 @@
 name: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
 original_name: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:702_replace_Cellulose_with_Cellobiose
     label: HALOCELLA CELLULOLYTICA medium_replace_Cellulose_with_Cellobiose
-notes: 'Source: KOMODO ModelSEED | ID: 702_replace_Cellulose_with_Cellobiose | DSMZ
-  Medium: 702 (mediadive.medium:702) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 702_replace_Cellulose_with_Cellobiose | DSMZ Medium: 702 (mediadive.medium:702)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -253,5 +253,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:39.146727Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

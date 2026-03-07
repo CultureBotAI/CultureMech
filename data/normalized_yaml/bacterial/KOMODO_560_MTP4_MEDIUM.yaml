@@ -1,6 +1,6 @@
 name: MTP4 MEDIUM
 original_name: MTP4 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:560
     label: MTP4 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 560 | DSMZ Medium: 560 (mediadive.medium:560)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 560 | DSMZ Medium: 560 (mediadive.medium:560) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

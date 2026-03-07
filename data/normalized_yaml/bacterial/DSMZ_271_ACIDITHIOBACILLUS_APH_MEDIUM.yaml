@@ -1,6 +1,6 @@
 name: ACIDITHIOBACILLUS (APH) MEDIUM
 original_name: ACIDITHIOBACILLUS (APH) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.0
@@ -56,10 +56,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4. Sterilize
-    the medium by filtration. Alternatively, autoclave separately the basal medium
-    (pH adjusted to 2.0) and the ferrous sulfate (8.00 g FeSO4 x 7 H2O in 50 ml 0.1
-    N H2SO4, pH not adjusted, in a sealed vessel under nitrogen gas atmosphere).
+  description: Dissolve ingredients and adjust pH to 2.0 with 10 N H2SO4. Sterilize the medium by filtration.
+    Alternatively, autoclave separately the basal medium (pH adjusted to 2.0) and the ferrous sulfate
+    (8.00 g FeSO4 x 7 H2O in 50 ml 0.1 N H2SO4, pH not adjusted, in a sealed vessel under nitrogen gas
+    atmosphere).
 - step_number: 2
   action: MIX
   description: 'Note: Incubate statically without shaking.'

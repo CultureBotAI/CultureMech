@@ -1,6 +1,6 @@
 name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
 original_name: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:460
     label: NITROGEN-FREE medium FOR PSEUDOMONAS STUTZERI
-notes: 'Source: KOMODO ModelSEED | ID: 460 | DSMZ Medium: 460 (mediadive.medium:460)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 460 | DSMZ Medium: 460 (mediadive.medium:460) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

@@ -1,8 +1,8 @@
 name: ALKALINE LACTOSE AGAR
 original_name: ALKALINE LACTOSE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: JCM Medium J98
@@ -57,8 +57,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Separately sterilize Na2CO3 solution by filtration, and aseptically
-    add to the medium. Check final pH to be about 10.0.
+  description: Separately sterilize Na2CO3 solution by filtration, and aseptically add to the medium.
+    Check final pH to be about 10.0.
 applications:
 - Microbial cultivation
 curation_history:

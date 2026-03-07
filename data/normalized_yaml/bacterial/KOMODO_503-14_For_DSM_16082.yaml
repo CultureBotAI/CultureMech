@@ -1,11 +1,11 @@
 name: For DSM 16082
 original_name: For DSM 16082
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 503.14 | DSMZ Medium: 503
-  (mediadive.medium:503) | Aerobic: Yes'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 503.14 | DSMZ Medium: 503 (mediadive.medium:503)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 503.14
   term:

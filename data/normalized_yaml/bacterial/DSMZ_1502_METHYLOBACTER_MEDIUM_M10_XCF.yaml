@@ -1,6 +1,6 @@
 name: METHYLOBACTER MEDIUM M10 XCF
 original_name: METHYLOBACTER MEDIUM M10 XCF
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 8-8.4
@@ -112,19 +112,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust the pH with 1M NaOH or H2SO4 to 8.0-8.4 (after autoclaving and
-    mixing all solutions the pH should be 8.0-8.4)
+  description: Adjust the pH with 1M NaOH or H2SO4 to 8.0-8.4 (after autoclaving and mixing all solutions
+    the pH should be 8.0-8.4)
 - step_number: 2
   action: AUTOCLAVE
-  description: "Dispense the medium into the culture vessels. For small volumes serum\
-    \ bottles or\r\nHungate tubes may be used. The gas phase to liquid ratio should\
-    \ be about 1:10. Use a\r\ngas phase containing air, 10-20% methane and 5-10% CO2\
-    \ and autoclave at 121C for\r\n15 minutes. When the growth medium is cool the\
-    \ NaHCO3 is added.\r\nLiquid cultures should be grown with shaking."
+  description: "Dispense the medium into the culture vessels. For small volumes serum bottles or\r\nHungate\
+    \ tubes may be used. The gas phase to liquid ratio should be about 1:10. Use a\r\ngas phase containing\
+    \ air, 10-20% methane and 5-10% CO2 and autoclave at 121C for\r\n15 minutes. When the growth medium\
+    \ is cool the NaHCO3 is added.\r\nLiquid cultures should be grown with shaking."
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Add to the sterile medium per liter from a 8% filter sterilised stock
-    solution:'
+  description: 'Add to the sterile medium per liter from a 8% filter sterilised stock solution:'
 applications:
 - Microbial cultivation
 curation_history:

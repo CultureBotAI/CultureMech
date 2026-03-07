@@ -1,6 +1,6 @@
 name: SYNTROPHUS BUSWELLII II MEDIUM
 original_name: SYNTROPHUS BUSWELLII II MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:409
     label: SYNTROPHUS BUSWELLII II MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 409 | DSMZ Medium: 409 (mediadive.medium:409)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 409 | DSMZ Medium: 409 (mediadive.medium:409) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

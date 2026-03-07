@@ -1,6 +1,6 @@
 name: MEDIUM 755 MODIFIED FOR DSM 18525
 original_name: MEDIUM 755 MODIFIED FOR DSM 18525
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:755_18525
     label: MEDIUM 755 MODIFIED FOR DSM 18525
-notes: 'Source: KOMODO ModelSEED | ID: 755_18525 | DSMZ Medium: 755 (mediadive.medium:755)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 755_18525 | DSMZ Medium: 755 (mediadive.medium:755) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

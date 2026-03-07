@@ -1,6 +1,6 @@
 name: DESULFOHALOBIUM UTAHENSE MEDIUM
 original_name: DESULFOHALOBIUM UTAHENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -220,9 +220,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas mixture. Aseptically and anaerobically, add the following solutions (autoclaved
-    or *filter-sterilized) to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas mixture. Aseptically
+    and anaerobically, add the following solutions (autoclaved or *filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
   description: 'Finally, add per liter the following solution from an anaerobic stock:'

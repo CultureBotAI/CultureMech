@@ -1,12 +1,12 @@
 name: '245'
 original_name: '245'
-category: imported
+category: bacterial
 description: 245. NBRC 244.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar
-    (if needed)20gpH 7.6
+- preferred_term: Yeast extract4gMalt extract10gGlucose4gSeawater750mlDistilled water250mlAgar (if needed)20gpH
+    7.6
 - preferred_term: ''
   concentration:
     value: Yeast extract

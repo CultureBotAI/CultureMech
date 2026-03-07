@@ -1,16 +1,15 @@
 name: MARINE MEDIUM WITH PYRUVATE
 original_name: MARINE MEDIUM WITH PYRUVATE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: KOMODO Medium 1303
   term:
     id: komodo.medium:1303
     label: MARINE MEDIUM WITH PYRUVATE
-notes: 'Source: KOMODO ModelSEED | ID: 1303 | DSMZ Medium: 1303 (mediadive.medium:1303)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1303 | DSMZ Medium: 1303 (mediadive.medium:1303) | Aerobic: No'
 ingredients:
 - preferred_term: Marine Broth
   concentration:

@@ -1,6 +1,6 @@
 name: DESULFOGLAEBA MEDIUM
 original_name: DESULFOGLAEBA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -247,23 +247,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, yeast extract, pyruvate, vitamins,
-    n-decane and reducing agents) and sparge medium with 80% N2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
-    anoxic serum vials (e.g., Balch-type tubes or serum bottles) and autoclave. Add
-    yeast extract, pyruvate, vitamins, n-decane and reducing agents from sterile anoxic
-    stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Solutions of vitamins
-    and pyruvate should be sterilized by filtration. Adjust pH of complete medium
-    to 7.2 - 7.4.
+  description: Dissolve ingredients (except carbonate, yeast extract, pyruvate, vitamins, n-decane and
+    reducing agents) and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it
+    anoxic. Dispense medium under same gas atmosphere into anoxic serum vials (e.g., Balch-type tubes
+    or serum bottles) and autoclave. Add yeast extract, pyruvate, vitamins, n-decane and reducing agents
+    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Solutions of vitamins and pyruvate should
+    be sterilized by filtration. Adjust pH of complete medium to 7.2 - 7.4.
 - step_number: 2
   action: MIX
-  description: 'Note: Use 20% (v/v) as inoculum and incubate vials in an inverted
-    position.'
+  description: 'Note: Use 20% (v/v) as inoculum and incubate vials in an inverted position.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -274,5 +270,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:30.908939Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

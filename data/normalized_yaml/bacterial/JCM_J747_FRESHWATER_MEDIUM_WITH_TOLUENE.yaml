@@ -1,6 +1,6 @@
 name: FRESHWATER MEDIUM WITH TOLUENE
 original_name: FRESHWATER MEDIUM WITH TOLUENE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -191,15 +191,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'First dissolve iron(III) citrate in 800 ml distilled water and adjust
-    pH to 7.0 with 10 N NaOH. Then, add the remaining minerals, bring volume to 970
-    ml and autoclave under a N2 atmosphere. Add aseptically and anaerobically the
-    following filter-sterilized solutions:'
+  description: 'First dissolve iron(III) citrate in 800 ml distilled water and adjust pH to 7.0 with 10
+    N NaOH. Then, add the remaining minerals, bring volume to 970 ml and autoclave under a N2 atmosphere.
+    Add aseptically and anaerobically the following filter-sterilized solutions:'
 - step_number: 2
   action: MIX
-  description: 'Distribute the medium into sterile culture vessels (e.g., 50 ml per
-    120 ml bottle) under a N2-CO2 (4:1, v/v) gas mixture, and seal with sterile butyl
-    rubber stoppers. Then add per 50 ml the following solutions from anaerobic stocks:'
+  description: 'Distribute the medium into sterile culture vessels (e.g., 50 ml per 120 ml bottle) under
+    a N2-CO2 (4:1, v/v) gas mixture, and seal with sterile butyl rubber stoppers. Then add per 50 ml the
+    following solutions from anaerobic stocks:'
 - step_number: 3
   action: MIX
   description: Check the final pH of the medium to be around 7.0.

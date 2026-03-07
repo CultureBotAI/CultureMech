@@ -1,11 +1,11 @@
 name: GRANULICELLA PALUDICOLA medium
 original_name: GRANULICELLA PALUDICOLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4.0-5.0
-notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium:
-  1285 (mediadive.medium:1285) | Aerobic: No'
+notes: 'pH buffer: alginic acid | Source: KOMODO ModelSEED | ID: 1285 | DSMZ Medium: 1285 (mediadive.medium:1285)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1285
   term:

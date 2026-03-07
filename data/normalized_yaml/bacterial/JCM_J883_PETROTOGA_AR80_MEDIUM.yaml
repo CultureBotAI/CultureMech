@@ -1,6 +1,6 @@
 name: PETROTOGA AR80 MEDIUM
 original_name: PETROTOGA AR80 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -221,9 +221,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.5 - 8.0. Bring to a boil
-    and cool down under a N2 atmosphere. Distribute the medium into culture vessels
-    under a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
+  description: Mix components thoroughly and adjust pH to 7.5 - 8.0. Bring to a boil and cool down under
+    a N2 atmosphere. Distribute the medium into culture vessels under a N2 atmosphere, seal with butyl
+    rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MEDIUM 255 MODIFIED FOR DSM 14427
 original_name: MEDIUM 255 MODIFIED FOR DSM 14427
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:255_14427
     label: MEDIUM 255 MODIFIED FOR DSM 14427
-notes: 'Source: KOMODO ModelSEED | ID: 255_14427 | DSMZ Medium: 255 (mediadive.medium:255)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 255_14427 | DSMZ Medium: 255 (mediadive.medium:255) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

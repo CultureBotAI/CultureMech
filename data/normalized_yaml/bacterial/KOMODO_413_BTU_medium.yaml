@@ -1,15 +1,14 @@
 name: BTU medium
 original_name: BTU medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 413
   term:
     id: komodo.medium:413
     label: BTU medium
-notes: 'Source: KOMODO ModelSEED | ID: 413 | DSMZ Medium: 413 (mediadive.medium:413)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 413 | DSMZ Medium: 413 (mediadive.medium:413) | Aerobic: No'
 ingredients:
 - preferred_term: Na-formiate
   term:

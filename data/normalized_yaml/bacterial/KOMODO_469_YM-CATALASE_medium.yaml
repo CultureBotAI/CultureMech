@@ -1,6 +1,6 @@
 name: YM-CATALASE medium
 original_name: YM-CATALASE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:469
     label: YM-CATALASE medium
-notes: 'Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 469 | DSMZ Medium: 469 (mediadive.medium:469) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

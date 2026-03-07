@@ -1,6 +1,6 @@
 name: ETHANOLOGENBACTERIUM MEDIUM
 original_name: ETHANOLOGENBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -177,8 +177,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Mix components except vitamin solution, and adjust pH to 4.5 - 6.5.
-    After autoclaving, aseptically add filter-sterilized vitamin solution.
+  description: Mix components except vitamin solution, and adjust pH to 4.5 - 6.5. After autoclaving,
+    aseptically add filter-sterilized vitamin solution.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SPOROMUSA MEDIUM
 original_name: SPOROMUSA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -255,9 +255,8 @@ preparation_steps:
   description: Filter-sterilize and store under a N2-CO2 (4:1, v/v) atmosphere.
 - step_number: 4
   action: MIX
-  description: 'To complete the medium, combine Solutions A, B and C, and replace
-    the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Finally, add the following
-    solutions from anaerobic stocks:'
+  description: 'To complete the medium, combine Solutions A, B and C, and replace the gas phase with a
+    N2-CO2 (4:1, v/v) gas mixture. Finally, add the following solutions from anaerobic stocks:'
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH of the medium to 7.0, if necessary.

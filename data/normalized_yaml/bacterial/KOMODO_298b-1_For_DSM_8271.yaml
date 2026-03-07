@@ -1,6 +1,6 @@
 name: For DSM 8271
 original_name: For DSM 8271
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:298b.1
     label: For DSM 8271
-notes: 'Source: KOMODO ModelSEED | ID: 298b.1 | DSMZ Medium: 298b (mediadive.medium:298b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 298b.1 | DSMZ Medium: 298b (mediadive.medium:298b) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

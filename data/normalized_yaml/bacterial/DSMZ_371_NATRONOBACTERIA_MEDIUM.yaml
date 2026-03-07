@@ -1,8 +1,8 @@
 name: NATRONOBACTERIA MEDIUM
 original_name: NATRONOBACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 9-9.5
 media_term:
   preferred_term: DSMZ Medium 371
@@ -158,16 +158,14 @@ preparation_steps:
   description: Adjust pH to 6.5 before autoclaving!
 - step_number: 3
   action: ADJUST_PH
-  description: Sterilize Na2CO3 separate from medium, add after cooling. Check final
-    pH to be 9.0 - 9.5.
+  description: Sterilize Na2CO3 separate from medium, add after cooling. Check final pH to be 9.0 - 9.5.
 - step_number: 4
   action: DISSOLVE
-  description: If agar medium is prepared, heat and dissolve agar before adding sodium
-    chloride.
+  description: If agar medium is prepared, heat and dissolve agar before adding sodium chloride.
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

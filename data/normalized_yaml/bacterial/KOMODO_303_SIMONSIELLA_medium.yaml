@@ -1,15 +1,14 @@
 name: SIMONSIELLA medium
 original_name: SIMONSIELLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 303
   term:
     id: komodo.medium:303
     label: SIMONSIELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 303 | DSMZ Medium: 303 (mediadive.medium:303)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 303 | DSMZ Medium: 303 (mediadive.medium:303) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase
   concentration:

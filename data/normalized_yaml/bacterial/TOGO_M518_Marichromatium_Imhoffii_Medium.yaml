@@ -1,6 +1,6 @@
 name: Marichromatium Imhoffii Medium
 original_name: Marichromatium Imhoffii Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -9,8 +9,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: Na2S
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:76208
     label: sodium sulfide (anhydrous)

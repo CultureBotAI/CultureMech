@@ -1,15 +1,15 @@
 name: MEDIUM 514a MODIFIED FOR DSM 15882
 original_name: MEDIUM 514a MODIFIED FOR DSM 15882
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514a_15882
   term:
     id: komodo.medium:514a_15882
     label: MEDIUM 514a MODIFIED FOR DSM 15882
-notes: 'Source: KOMODO ModelSEED | ID: 514a_15882 | DSMZ Medium: 514a (mediadive.medium:514a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514a_15882 | DSMZ Medium: 514a (mediadive.medium:514a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

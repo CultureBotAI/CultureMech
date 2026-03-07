@@ -1,6 +1,6 @@
 name: YPS MEDIUM
 original_name: YPS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -89,13 +89,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium without the yeast extract, peptone and sodium sulphide.
-    Boil the medium and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate
-    tubes or serum bottles under a nitrogen atmosphere. Sterilise the medium at 100°C
-    for 3 hours on 3 consecutive days. Add the peptone and yeast extract from sterile
-    (10% w/v) stock solutions. The medium is reduced by adding a sterile, neutralised
-    5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should
-    be 6.8
+  description: Prepare the medium without the yeast extract, peptone and sodium sulphide. Boil the medium
+    and cool under nitrogen. Adjust the pH to 6.8. Dispense into hungate tubes or serum bottles under
+    a nitrogen atmosphere. Sterilise the medium at 100°C for 3 hours on 3 consecutive days. Add the peptone
+    and yeast extract from sterile (10% w/v) stock solutions. The medium is reduced by adding a sterile,
+    neutralised 5% w/v sodium sulphide solution to an end concentration of 0.025%. Final pH should be
+    6.8
 applications:
 - Microbial cultivation
 curation_history:

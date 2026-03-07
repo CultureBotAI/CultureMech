@@ -1,6 +1,6 @@
 name: METHANOSPHAERA MEDIUM
 original_name: METHANOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-6.9
@@ -310,29 +310,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, methanol, and dithiothreitol
-    (DTT), then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic. Add and dissolve bicarbonate, adjust pH of medium to 6.8 -
-    7.0, then dispense medium under 80% H2 and 20% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add methanol
-    (50% v/v solution), vitamins, and DTT from sterile anoxic stock solutions prepared
-    under 100% N2 gas. Vitamins and DTT should be sterilized by filtration. Prior
-    to use check pH of complete medium and adjust to 6.7 - 6.9, if necessary.
+  description: Dissolve ingredients except bicarbonate, methanol, and dithiothreitol (DTT), then sparge
+    medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve bicarbonate,
+    adjust pH of medium to 6.8 - 7.0, then dispense medium under 80% H2 and 20% CO2 gas atmosphere into
+    anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave. Add methanol (50% v/v
+    solution), vitamins, and DTT from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins
+    and DTT should be sterilized by filtration. Prior to use check pH of complete medium and adjust to
+    6.7 - 6.9, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar
-    overpressure.
+  description: After inoculation add sterile 80% H2 and 20% CO2 gas mixture to 1 bar overpressure.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 5
   action: MIX
   description: The ferrous sulfate solution is not stable and should be freshly prepared.
@@ -346,5 +343,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.086127Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

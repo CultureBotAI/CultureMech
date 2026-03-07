@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTER KREATINOPHILUS MEDIUM
 original_name: THERMOANAEROBACTER KREATINOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -201,16 +201,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine and thiosulfate), bring medium
-    to the boil then cool to room temperature under 100% N2 gas atmosphere. Add cysteine
-    and adjust pH to 7.5, then dispense medium under 100% N2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Before inoculation, add thiosulfate
-    from a sterile anoxic stock solution prepared under 100% N2 gas and sterilized
+  description: Dissolve ingredients (except cysteine and thiosulfate), bring medium to the boil then cool
+    to room temperature under 100% N2 gas atmosphere. Add cysteine and adjust pH to 7.5, then dispense
+    medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Before
+    inoculation, add thiosulfate from a sterile anoxic stock solution prepared under 100% N2 gas and sterilized
     by filtration. Adjust pH of complete medium to 7.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

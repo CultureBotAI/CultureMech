@@ -1,6 +1,6 @@
 name: THERMOCRINIS ALBUS MEDIUM
 original_name: THERMOCRINIS ALBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -190,15 +190,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S2O3 x 5H2O, distribute the medium to culture
-    vessels under a N2 gas atmosphere, and seal with butyl rubber stoppers. Autoclave
-    and stand the culture vessels overnight. Add filter-sterilized 10% Na2S2O3 x 5H2O
-    solution and adjust pH to 7.0 with 1 N H2SO4. Replace the gas phase with a N2-O2-H2
-    (96:1:3, v/v) gas mixture, and pressurized the inoculated bottles to 300 kPa.
+  description: Mix ingredients except Na2S2O3 x 5H2O, distribute the medium to culture vessels under a
+    N2 gas atmosphere, and seal with butyl rubber stoppers. Autoclave and stand the culture vessels overnight.
+    Add filter-sterilized 10% Na2S2O3 x 5H2O solution and adjust pH to 7.0 with 1 N H2SO4. Replace the
+    gas phase with a N2-O2-H2 (96:1:3, v/v) gas mixture, and pressurized the inoculated bottles to 300
+    kPa.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MICROCELLA ALKALIPHILA MEDIUM
 original_name: MICROCELLA ALKALIPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -183,12 +183,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: After sterilization add sterile 1M Na-sesquicarbonate solution to achieve
-    the pH of 9.5 (see medium 31).
+  description: After sterilization add sterile 1M Na-sesquicarbonate solution to achieve the pH of 9.5
+    (see medium 31).
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

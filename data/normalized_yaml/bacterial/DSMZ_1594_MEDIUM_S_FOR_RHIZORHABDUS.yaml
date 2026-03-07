@@ -1,8 +1,8 @@
 name: MEDIUM S FOR RHIZORHABDUS
 original_name: MEDIUM S FOR RHIZORHABDUS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1594
@@ -54,8 +54,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave phosphate component separately and add after cooling. Adjust
-    pH to 7.2.
+  description: Autoclave phosphate component separately and add after cooling. Adjust pH to 7.2.
 applications:
 - Microbial cultivation
 curation_history:

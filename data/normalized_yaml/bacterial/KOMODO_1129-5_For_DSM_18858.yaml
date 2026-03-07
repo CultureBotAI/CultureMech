@@ -1,6 +1,6 @@
 name: For DSM 18858
 original_name: For DSM 18858
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1129.5
     label: For DSM 18858
-notes: 'Source: KOMODO ModelSEED | ID: 1129.5 | DSMZ Medium: 1129 (mediadive.medium:1129)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1129.5 | DSMZ Medium: 1129 (mediadive.medium:1129) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

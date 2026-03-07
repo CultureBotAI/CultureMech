@@ -1,6 +1,6 @@
 name: DB CHARACTERIZATION MEDIUM NO. 2
 original_name: DB CHARACTERIZATION MEDIUM NO. 2
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -218,26 +218,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components and bring volume to 980 ml with distilled water. For
-    preparation of solid medium, add 20 g/L agar (if necessary, use washed agar as
-    described below). Autoclave, and after cooling, add the following solutions (filter-sterilized
-    or *autoclaved) to the medium:'
+  description: 'Add components and bring volume to 980 ml with distilled water. For preparation of solid
+    medium, add 20 g/L agar (if necessary, use washed agar as described below). Autoclave, and after cooling,
+    add the following solutions (filter-sterilized or *autoclaved) to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Readjust pH to 7.0 - 7.5 with a sterilized 10% Na2CO3 solution, if
-    necessary.
+  description: Readjust pH to 7.0 - 7.5 with a sterilized 10% Na2CO3 solution, if necessary.
 - step_number: 3
   action: COOL
-  description: Stir agar in distilled water and stand still for 30 min. Then, remove
-    supernatant by decantation. Repeat the washing at least twice.
+  description: Stir agar in distilled water and stand still for 30 min. Then, remove supernatant by decantation.
+    Repeat the washing at least twice.
 - step_number: 4
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.5 with 1 M Tris base.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.5 with 1 M
+    Tris base.
 - step_number: 5
   action: MIX
-  description: Combine the two solutions and check that pH is close to 7.5. Add an
-    equal volume of distilled water.
+  description: Combine the two solutions and check that pH is close to 7.5. Add an equal volume of distilled
+    water.
 applications:
 - Microbial cultivation
 curation_history:

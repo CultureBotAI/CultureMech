@@ -1,15 +1,14 @@
 name: MEDIUM 531 MODIFIED FOR DSM 4334
 original_name: MEDIUM 531 MODIFIED FOR DSM 4334
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 531_4334
   term:
     id: komodo.medium:531_4334
     label: MEDIUM 531 MODIFIED FOR DSM 4334
-notes: 'Source: KOMODO ModelSEED | ID: 531_4334 | DSMZ Medium: 531 (mediadive.medium:531)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 531_4334 | DSMZ Medium: 531 (mediadive.medium:531) | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:

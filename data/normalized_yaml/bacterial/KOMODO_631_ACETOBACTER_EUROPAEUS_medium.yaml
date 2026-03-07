@@ -1,6 +1,6 @@
 name: ACETOBACTER EUROPAEUS medium
 original_name: ACETOBACTER EUROPAEUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:631
     label: ACETOBACTER EUROPAEUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 631 | DSMZ Medium: 631 (mediadive.medium:631) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

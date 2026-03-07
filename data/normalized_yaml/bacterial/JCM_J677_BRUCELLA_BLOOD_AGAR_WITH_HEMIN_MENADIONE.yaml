@@ -1,8 +1,8 @@
 name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
 original_name: BRUCELLA BLOOD AGAR WITH HEMIN MENADIONE
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J677
   term:
@@ -24,8 +24,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: METHANOSARCINA ACETIVORANS MEDIUM
 original_name: METHANOSARCINA ACETIVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -176,17 +176,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, except methanol, and bring to a boil for 5-10 seconds.
-    Cool down under a stream of N2-CO2 (80:20, v/v), add methanol to the medium and
-    adjust pH to 7.0 with HCl. Dispense the medium into suitable culture vessels (e.
-    g. 20 ml of the medium in 120 ml serum bottles) under the same gas mixture, seal
-    with butyl rubber stoppers and autoclave. Aseptically and anaerobically add per
-    liter the following solutions (autoclaved or *filter-sterilized and stored under
-    an anaerobic gas atmosphere):'
+  description: 'Mix components, except methanol, and bring to a boil for 5-10 seconds. Cool down under
+    a stream of N2-CO2 (80:20, v/v), add methanol to the medium and adjust pH to 7.0 with HCl. Dispense
+    the medium into suitable culture vessels (e. g. 20 ml of the medium in 120 ml serum bottles) under
+    the same gas mixture, seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically
+    add per liter the following solutions (autoclaved or *filter-sterilized and stored under an anaerobic
+    gas atmosphere):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

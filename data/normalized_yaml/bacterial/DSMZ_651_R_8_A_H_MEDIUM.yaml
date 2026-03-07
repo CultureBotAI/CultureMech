@@ -1,6 +1,6 @@
 name: R 8 A H MEDIUM
 original_name: R 8 A H MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -155,8 +155,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Neutralize malic acid with NaOH and adjust the pH of the completed
-    medium for a final pH to 6.9.
+  description: Neutralize malic acid with NaOH and adjust the pH of the completed medium for a final pH
+    to 6.9.
 applications:
 - Microbial cultivation
 curation_history:

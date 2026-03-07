@@ -1,6 +1,6 @@
 name: MEDIUM for SM250
 original_name: MEDIUM for SM250
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -218,12 +218,11 @@ preparation_steps:
   description: Flush each Hungate tube with molecular hydrogen for 10 seconds.
 - step_number: 5
   action: AUTOCLAVE
-  description: Autoclave at 121° for 15 min. After autoclaving add 0.01 ml of filter-sterilized
-    vitamin solution per 10 ml media.
+  description: Autoclave at 121° for 15 min. After autoclaving add 0.01 ml of filter-sterilized vitamin
+    solution per 10 ml media.
 - step_number: 6
   action: MIX
-  description: Inject 3 ml of sterile air with sterile syringe into each Hungate tube
-    before inoculation.
+  description: Inject 3 ml of sterile air with sterile syringe into each Hungate tube before inoculation.
 applications:
 - Microbial cultivation
 curation_history:

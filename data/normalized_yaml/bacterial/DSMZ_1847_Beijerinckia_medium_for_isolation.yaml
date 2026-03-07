@@ -1,8 +1,8 @@
 name: Beijerinckia medium for isolation
 original_name: Beijerinckia medium for isolation
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.3-6.7
 media_term:
   preferred_term: DSMZ Medium 1847
@@ -60,8 +60,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
 - step_number: 2
   action: DISSOLVE
   description: Heat to boiling to dissolve the medium completely

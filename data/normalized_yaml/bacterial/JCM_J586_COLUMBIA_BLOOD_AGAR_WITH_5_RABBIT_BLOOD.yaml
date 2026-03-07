@@ -1,6 +1,6 @@
 name: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
 original_name: COLUMBIA BLOOD AGAR WITH 5% RABBIT BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction,
-    sterilize and cool to about 45C. Aseptically add 5% (final) sterile defibrinated
-    rabbit blood. Mix and quickly dispense into the sterile test tubes or petri dishes.
+  description: Prepare Columbia blood agar base (Oxoid CM331) according to the direction, sterilize and
+    cool to about 45C. Aseptically add 5% (final) sterile defibrinated rabbit blood. Mix and quickly dispense
+    into the sterile test tubes or petri dishes.
 applications:
 - Microbial cultivation
 curation_history:

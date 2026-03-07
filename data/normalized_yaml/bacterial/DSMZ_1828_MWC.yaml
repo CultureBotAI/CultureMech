@@ -1,6 +1,6 @@
 name: MWC
 original_name: MWC
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-8
@@ -137,26 +137,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'After cooling add the following filter sterilized component under
-    sterile conditions:'
+  description: 'After cooling add the following filter sterilized component under sterile conditions:'
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 4.0-4.5.
 - step_number: 5
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    distilled water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with distilled water.
 - step_number: 6
   action: MIX
-  description: Make up to <span class='amount' data-volume='100'>100</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='100'>100</span> ml with MilliQ water.
 - step_number: 7
   action: FILTER_STERILIZE
   description: Filter sterilise, aliquot and store frozen.

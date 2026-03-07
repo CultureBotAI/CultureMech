@@ -1,8 +1,8 @@
 name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
 original_name: HEART INFUSION AGAR WITH 5% HORSE BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1099
   term:
@@ -28,9 +28,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except horse blood, autoclave and cool to about 50C.
-    Aseptically add 5% (final) sterile defibrinated horse blood. Mix and quickly dispense
-    into sterile petri dishes.
+  description: Mix ingredients except horse blood, autoclave and cool to about 50C. Aseptically add 5%
+    (final) sterile defibrinated horse blood. Mix and quickly dispense into sterile petri dishes.
 applications:
 - Microbial cultivation
 curation_history:

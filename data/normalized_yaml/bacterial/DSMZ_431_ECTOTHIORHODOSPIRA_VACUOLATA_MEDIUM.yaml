@@ -1,6 +1,6 @@
 name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
 original_name: ECTOTHIORHODOSPIRA VACUOLATA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.7
@@ -189,8 +189,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 8.7, filter sterilize and add appropriate amount of Na2S
-    solution.
+  description: Adjust pH to 8.7, filter sterilize and add appropriate amount of Na2S solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 2.0 - 3.0.

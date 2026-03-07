@@ -1,16 +1,16 @@
 name: MEDIUM 548 MODIFIED FOR DSM 41755
 original_name: MEDIUM 548 MODIFIED FOR DSM 41755
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4.5-5.5
 media_term:
   preferred_term: KOMODO Medium 548_41755
   term:
     id: komodo.medium:548_41755
     label: MEDIUM 548 MODIFIED FOR DSM 41755
-notes: 'Source: KOMODO ModelSEED | ID: 548_41755 | DSMZ Medium: 548 (mediadive.medium:548)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 548_41755 | DSMZ Medium: 548 (mediadive.medium:548) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Beef extract
   concentration:

@@ -1,6 +1,6 @@
 name: METHANOSPHAERA MEDIUM
 original_name: METHANOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -290,21 +290,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except methanol, L-cysteine x HCl x H2O and Na2S x
-    9H2O, and adjust pH to 7.0. Bring to a boil for 5-10 sec, then, cool down under
-    a stream of N2 and add methanol to the medium. Dispense the medium into suitable
-    culture vessels (e.g., 20 ml of the medium in a 100-ml serum bottle) under a stream
-    of N2 and seal. After autoclaving, stand the medium overnight. Separately autoclave
-    L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a
-    N2 atmosphere. Prior to inoculation, replace the gas phase with H2-CO2 (80:20,
-    v/v), and add the L-cysteine x HCl x H2O and Na2S x 9H2O solutions aseptically
-    and anaerobically. Pressurize the inoculated bottles to 200 kPa H2-CO2 (80:20,
-    v/v). To prepare the clarified rumen fluid, preheat rumen content at 120C for
-    15 min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
+  description: Mix ingredients, except methanol, L-cysteine x HCl x H2O and Na2S x 9H2O, and adjust pH
+    to 7.0. Bring to a boil for 5-10 sec, then, cool down under a stream of N2 and add methanol to the
+    medium. Dispense the medium into suitable culture vessels (e.g., 20 ml of the medium in a 100-ml serum
+    bottle) under a stream of N2 and seal. After autoclaving, stand the medium overnight. Separately autoclave
+    L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior
+    to inoculation, replace the gas phase with H2-CO2 (80:20, v/v), and add the L-cysteine x HCl x H2O
+    and Na2S x 9H2O solutions aseptically and anaerobically. Pressurize the inoculated bottles to 200
+    kPa H2-CO2 (80:20, v/v). To prepare the clarified rumen fluid, preheat rumen content at 120C for 15
+    min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: MEDIUM 1 MODIFIED FOR DSM 16823
 original_name: MEDIUM 1 MODIFIED FOR DSM 16823
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1_16823
   term:
     id: komodo.medium:1_16823
     label: MEDIUM 1 MODIFIED FOR DSM 16823
-notes: 'Source: KOMODO ModelSEED | ID: 1_16823 | DSMZ Medium: 1 (mediadive.medium:1)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1_16823 | DSMZ Medium: 1 (mediadive.medium:1) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

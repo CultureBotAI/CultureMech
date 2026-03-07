@@ -1,6 +1,6 @@
 name: ECTOTHIORHODOSYNUS medium
 original_name: ECTOTHIORHODOSYNUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1002
     label: ECTOTHIORHODOSYNUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1002 | DSMZ Medium: 1002 (mediadive.medium:1002)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1002 | DSMZ Medium: 1002 (mediadive.medium:1002) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

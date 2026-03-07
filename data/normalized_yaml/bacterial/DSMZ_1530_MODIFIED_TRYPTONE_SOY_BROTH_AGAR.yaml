@@ -1,8 +1,8 @@
 name: MODIFIED TRYPTONE SOY BROTH/AGAR
 original_name: MODIFIED TRYPTONE SOY BROTH/AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.5
 media_term:
   preferred_term: DSMZ Medium 1530
@@ -61,8 +61,8 @@ preparation_steps:
   description: Adjust pH to 10.5
 - step_number: 2
   action: MIX
-  description: The basic medium is the same as Caso Bouillon (Merck or Oxoid). The
-    medium may be solidified by adding 20.0 g/l agar.
+  description: The basic medium is the same as Caso Bouillon (Merck or Oxoid). The medium may be solidified
+    by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

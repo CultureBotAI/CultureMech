@@ -1,6 +1,6 @@
 name: MEDIUM 461 MODIFIED FOR DSM 6384
 original_name: MEDIUM 461 MODIFIED FOR DSM 6384
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:461_6384
     label: MEDIUM 461 MODIFIED FOR DSM 6384
-notes: 'Source: KOMODO ModelSEED | ID: 461_6384 | DSMZ Medium: 461 (mediadive.medium:461)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 461_6384 | DSMZ Medium: 461 (mediadive.medium:461) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

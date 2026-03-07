@@ -1,6 +1,6 @@
 name: BUTYRIVIBRIO SP. medium
 original_name: BUTYRIVIBRIO SP. medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:704
     label: BUTYRIVIBRIO SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 704 | DSMZ Medium: 704 (mediadive.medium:704)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 704 | DSMZ Medium: 704 (mediadive.medium:704) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

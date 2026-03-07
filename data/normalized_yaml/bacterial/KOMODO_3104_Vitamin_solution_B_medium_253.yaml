@@ -1,6 +1,6 @@
 name: Vitamin solution (B) (medium 253)
 original_name: Vitamin solution (B) (medium 253)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3104
     label: Vitamin solution (B) (medium 253)
-notes: 'Source: KOMODO ModelSEED | ID: 3104 | DSMZ Medium: 3104 (mediadive.medium:3104)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3104 | DSMZ Medium: 3104 (mediadive.medium:3104) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

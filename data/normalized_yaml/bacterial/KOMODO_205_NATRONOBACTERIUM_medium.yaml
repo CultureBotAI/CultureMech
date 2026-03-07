@@ -1,11 +1,11 @@
 name: NATRONOBACTERIUM medium
 original_name: NATRONOBACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.5
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 205 | DSMZ Medium: 205
-  (mediadive.medium:205) | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 205 | DSMZ Medium: 205 (mediadive.medium:205)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 205
   term:

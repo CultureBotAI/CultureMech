@@ -1,15 +1,14 @@
 name: BHIS
 original_name: BHIS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Hemin
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:28869
     label: Menadione

@@ -1,8 +1,8 @@
 name: ZUELZERA MEDIUM
 original_name: ZUELZERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
   preferred_term: DSMZ Medium 174
@@ -48,9 +48,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, adjust pH to 7.6 with KOH and sparge medium with
-    100% N2 gas for 30 - 45 min to make it anoxic. Distribute medium under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients, adjust pH to 7.6 with KOH and sparge medium with 100% N2 gas for
+    30 - 45 min to make it anoxic. Distribute medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave.
 - step_number: 2
   action: MIX
   description: For stabs add 10.0 g/l agar.

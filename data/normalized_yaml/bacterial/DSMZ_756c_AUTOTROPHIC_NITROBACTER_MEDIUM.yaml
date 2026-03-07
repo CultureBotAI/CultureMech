@@ -1,6 +1,6 @@
 name: AUTOTROPHIC NITROBACTER MEDIUM
 original_name: AUTOTROPHIC NITROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.4-7.6
@@ -88,8 +88,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium\
-    \ to stand for 2 - 3\r\ndays so that pH can adjust itself to pH 7.4 - 7.6."
+  description: "Adjust pH to 8.6 with NaOH or KOH. Autoclave and leave the medium to stand for 2 - 3\r\
+    \ndays so that pH can adjust itself to pH 7.4 - 7.6."
 applications:
 - Microbial cultivation
 curation_history:

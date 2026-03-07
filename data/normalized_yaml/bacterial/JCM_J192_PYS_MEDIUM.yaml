@@ -1,6 +1,6 @@
 name: PYS MEDIUM
 original_name: PYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -126,8 +126,7 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: MIX
-  description: Separately sterilize sodium pyruvate by filtration, and aseptically
-    add to the medium.
+  description: Separately sterilize sodium pyruvate by filtration, and aseptically add to the medium.
 applications:
 - Microbial cultivation
 curation_history:

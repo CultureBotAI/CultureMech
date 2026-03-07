@@ -1,6 +1,6 @@
 name: THERMOVENABULUM medium
 original_name: THERMOVENABULUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1255
     label: THERMOVENABULUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1255 | DSMZ Medium: 1255 (mediadive.medium:1255)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1255 | DSMZ Medium: 1255 (mediadive.medium:1255) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -238,5 +237,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.633859Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,15 +1,15 @@
 name: MEDIUM 987 MODIFIED FOR DSM 45783
 original_name: MEDIUM 987 MODIFIED FOR DSM 45783
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 987_45783
   term:
     id: komodo.medium:987_45783
     label: MEDIUM 987 MODIFIED FOR DSM 45783
-notes: 'Source: KOMODO ModelSEED | ID: 987_45783 | DSMZ Medium: 987 (mediadive.medium:987)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 987_45783 | DSMZ Medium: 987 (mediadive.medium:987) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

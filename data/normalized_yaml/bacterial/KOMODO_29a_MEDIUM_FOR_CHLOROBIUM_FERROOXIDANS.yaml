@@ -1,6 +1,6 @@
 name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
 original_name: MEDIUM FOR CHLOROBIUM FERROOXIDANS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:29a
     label: MEDIUM FOR CHLOROBIUM FERROOXIDANS
-notes: 'Source: KOMODO ModelSEED | ID: 29a | DSMZ Medium: 29a (mediadive.medium:29a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 29a | DSMZ Medium: 29a (mediadive.medium:29a) | Aerobic: No'
 ingredients:
 - preferred_term: Bicarbonate
   concentration:

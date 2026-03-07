@@ -1,12 +1,11 @@
 name: '280'
 original_name: '280'
-category: imported
+category: bacterial
 description: 280. NBRC 279.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Bacto Tryptone (Difco)3gYeast extract5gGlucose5gDistilled water1LAgar20gpH
-    7.0
+- preferred_term: Bacto Tryptone (Difco)3gYeast extract5gGlucose5gDistilled water1LAgar20gpH 7.0
 - preferred_term: ''
   concentration:
     value: Bacto Tryptone (Difco)

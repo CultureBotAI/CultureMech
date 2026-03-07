@@ -1,8 +1,8 @@
 name: PYG medium
 original_name: PYG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '1.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '1.25'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Agar
   concentration:
     value: '15'

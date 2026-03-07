@@ -1,8 +1,8 @@
 name: INORGANIC SALTS-STARCH AGAR (ISP-4)
 original_name: INORGANIC SALTS-STARCH AGAR (ISP-4)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J58
   term:
@@ -86,8 +86,7 @@ preparation_steps:
   description: Unadjusted pH will be 7.0-7.4.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder is available from Becton Dickinson &
-    Co. as ISP Medium 4.'
+  description: 'Comment: The premixed powder is available from Becton Dickinson & Co. as ISP Medium 4.'
 applications:
 - Microbial cultivation
 curation_history:

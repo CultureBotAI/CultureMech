@@ -1,15 +1,14 @@
 name: BACTO MARINE AGAR
 original_name: BACTO MARINE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 604
   term:
     id: komodo.medium:604
     label: BACTO MARINE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 604 | DSMZ Medium: 604 (mediadive.medium:604)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 604 | DSMZ Medium: 604 (mediadive.medium:604) | Aerobic: No'
 ingredients:
 - preferred_term: Marine agar 2216
   term:

@@ -1,6 +1,6 @@
 name: SPIROCHAETA AMERICANA medium
 original_name: SPIROCHAETA AMERICANA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1165
     label: SPIROCHAETA AMERICANA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1165 | DSMZ Medium: 1165 (mediadive.medium:1165)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1165 | DSMZ Medium: 1165 (mediadive.medium:1165) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

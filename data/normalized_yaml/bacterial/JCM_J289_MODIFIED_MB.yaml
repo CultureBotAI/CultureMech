@@ -1,6 +1,6 @@
 name: MODIFIED MB
 original_name: MODIFIED MB
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -169,9 +169,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: After boiling, cool down under a stream of oxygen-free N2 gas, dispense
-    into glass tube anaerobically and autoclave. Before inoculation, add the sterile
-    stock solution of 20 mM Na2S2O3.
+  description: After boiling, cool down under a stream of oxygen-free N2 gas, dispense into glass tube
+    anaerobically and autoclave. Before inoculation, add the sterile stock solution of 20 mM Na2S2O3.
 applications:
 - Microbial cultivation
 curation_history:

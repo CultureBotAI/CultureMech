@@ -1,6 +1,6 @@
 name: MEDIUM 830 MODIFIED FOR DSM 18135
 original_name: MEDIUM 830 MODIFIED FOR DSM 18135
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:830_18135
     label: MEDIUM 830 MODIFIED FOR DSM 18135
-notes: 'Source: KOMODO ModelSEED | ID: 830_18135 | DSMZ Medium: 830 (mediadive.medium:830)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830_18135 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

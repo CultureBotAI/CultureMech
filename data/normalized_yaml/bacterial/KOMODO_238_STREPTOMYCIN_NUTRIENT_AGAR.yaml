@@ -1,15 +1,14 @@
 name: STREPTOMYCIN NUTRIENT AGAR
 original_name: STREPTOMYCIN NUTRIENT AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 238
   term:
     id: komodo.medium:238
     label: STREPTOMYCIN NUTRIENT AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 238 | DSMZ Medium: 238 (mediadive.medium:238)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 238 | DSMZ Medium: 238 (mediadive.medium:238) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

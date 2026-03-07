@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO GIGANTEUS MEDIUM
 original_name: DESULFOVIBRIO GIGANTEUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:400
     label: DESULFOVIBRIO GIGANTEUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 400 | DSMZ Medium: 400 (mediadive.medium:400)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 400 | DSMZ Medium: 400 (mediadive.medium:400) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

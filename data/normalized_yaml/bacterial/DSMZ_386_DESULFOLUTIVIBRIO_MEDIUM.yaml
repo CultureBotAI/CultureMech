@@ -1,6 +1,6 @@
 name: DESULFOLUTIVIBRIO MEDIUM
 original_name: DESULFOLUTIVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.1-7.4
@@ -218,25 +218,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Solution A is sparged 80% N2 and 20% CO2 gas mixture for 30 – 45 min\
-    \ to make it anoxic, then distributed under the same gas atmosphere into anoxic\
-    \ Hungate-type tubes or serum vials and autoclaved. Solution B is autoclaved separately\
-    \ under 80% N2 and 20% CO2 gas mixture. Solutions C and F are autoclaved under\
-    \ 100% N2 gas. \r\nSolutions D and E are prepared under 100% N2 gas atmosphere\
-    \ and sterilized by filtration. To complete the medium appropriate amounts of\
-    \ the solutions B to F are added to the sterile solution A in the sequence as\
-    \ indicated. Final pH of the medium should be at 7.1 - 7.4."
+  description: "Solution A is sparged 80% N2 and 20% CO2 gas mixture for 30 – 45 min to make it anoxic,\
+    \ then distributed under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and\
+    \ autoclaved. Solution B is autoclaved separately under 80% N2 and 20% CO2 gas mixture. Solutions\
+    \ C and F are autoclaved under 100% N2 gas. \r\nSolutions D and E are prepared under 100% N2 gas atmosphere\
+    \ and sterilized by filtration. To complete the medium appropriate amounts of the solutions B to F\
+    \ are added to the sterile solution A in the sequence as indicated. Final pH of the medium should\
+    \ be at 7.1 - 7.4."
 - step_number: 2
   action: MIX
-  description: 'Note: When growth has started feed culture again with same amount
-    of pyrosulfite. After a further two days repeat feeding once more.'
+  description: 'Note: When growth has started feed culture again with same amount of pyrosulfite. After
+    a further two days repeat feeding once more.'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.5-8.0 with NaOH.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

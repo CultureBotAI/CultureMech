@@ -1,6 +1,6 @@
 name: GEOBACTER MEDIUM
 original_name: GEOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -242,29 +242,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas mixture. After cooling, add aseptically and anaerobically the following solutions
-    to the medium:'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas mixture. After
+    cooling, add aseptically and anaerobically the following solutions to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 - 7.2, if necessary.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add NTA and
-    FeCl3 x 6H2O to the solution and bring volume to 100 ml with distilled water.
-    Adjust pH to 7.0 with NaOH. Filter-sterilize and store under a N2 atmosphere.
+  description: Firstly, dissolve NaHCO3 in 80 ml distilled water. Then, add NTA and FeCl3 x 6H2O to the
+    solution and bring volume to 100 ml with distilled water. Adjust pH to 7.0 with NaOH. Filter-sterilize
+    and store under a N2 atmosphere.
 - step_number: 4
   action: MIX
   description: 'Comment:'
 - step_number: 5
   action: AUTOCLAVE
-  description: 100 mM Fe NTA solution can be replaced with Iron(III)citrate solution
-    (see Medium No. 1014, autoclaved and stored under N2).
+  description: 100 mM Fe NTA solution can be replaced with Iron(III)citrate solution (see Medium No. 1014,
+    autoclaved and stored under N2).
 - step_number: 6
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
-    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
-    to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
+    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 7
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'

@@ -1,6 +1,6 @@
 name: Marine trace elements (medium 511)
 original_name: Marine trace elements (medium 511)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2008
     label: Marine trace elements (medium 511)
-notes: 'Source: KOMODO ModelSEED | ID: 2008 | DSMZ Medium: 2008 (mediadive.medium:2008)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2008 | DSMZ Medium: 2008 (mediadive.medium:2008) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

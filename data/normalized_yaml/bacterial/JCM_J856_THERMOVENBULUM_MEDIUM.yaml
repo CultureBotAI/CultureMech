@@ -1,6 +1,6 @@
 name: THERMOVENBULUM MEDIUM
 original_name: THERMOVENBULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 786 supplemented with 1.0 g/L NaCl (final), 1.0 g/L
-    yeast extract (final) and 4.96 g/L Na2S2O3 x 5H2O. Adjust pH to 7.4, if necessary.
+  description: Use Medium No. 786 supplemented with 1.0 g/L NaCl (final), 1.0 g/L yeast extract (final)
+    and 4.96 g/L Na2S2O3 x 5H2O. Adjust pH to 7.4, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

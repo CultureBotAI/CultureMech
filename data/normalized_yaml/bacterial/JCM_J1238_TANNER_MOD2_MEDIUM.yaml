@@ -1,6 +1,6 @@
 name: TANNER MOD2 MEDIUM
 original_name: TANNER MOD2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -239,14 +239,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH 7.0. Dispense the medium into
-    culture vessels under a N2 gas atmosphere, seal with butyl rubber stoppers and
-    autoclave. After cooling, add per liter the following solutions from sterile anaerobic
-    stocks (filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH 7.0. Dispense the medium into culture vessels
+    under a N2 gas atmosphere, seal with butyl rubber stoppers and autoclave. After cooling, add per liter
+    the following solutions from sterile anaerobic stocks (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

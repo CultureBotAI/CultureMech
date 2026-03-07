@@ -1,6 +1,6 @@
 name: Mineral Mix (medium 1001)
 original_name: Mineral Mix (medium 1001)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2010
     label: Mineral Mix (medium 1001)
-notes: 'Source: KOMODO ModelSEED | ID: 2010 | DSMZ Medium: 2010 (mediadive.medium:2010)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2010 | DSMZ Medium: 2010 (mediadive.medium:2010) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

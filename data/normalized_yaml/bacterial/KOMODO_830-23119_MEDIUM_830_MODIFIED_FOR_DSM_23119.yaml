@@ -1,6 +1,6 @@
 name: MEDIUM 830 MODIFIED FOR DSM 23119
 original_name: MEDIUM 830 MODIFIED FOR DSM 23119
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:830_23119
     label: MEDIUM 830 MODIFIED FOR DSM 23119
-notes: 'Source: KOMODO ModelSEED | ID: 830_23119 | DSMZ Medium: 830 (mediadive.medium:830)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830_23119 | DSMZ Medium: 830 (mediadive.medium:830) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM CARBINOLICUM medium
 original_name: ACETOBACTERIUM CARBINOLICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:313
     label: ACETOBACTERIUM CARBINOLICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 313 | DSMZ Medium: 313 (mediadive.medium:313)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 313 | DSMZ Medium: 313 (mediadive.medium:313) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

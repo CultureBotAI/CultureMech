@@ -1,6 +1,6 @@
 name: TRYPTICASE PHYTONE medium
 original_name: TRYPTICASE PHYTONE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:75
     label: TRYPTICASE PHYTONE medium
-notes: 'Source: KOMODO ModelSEED | ID: 75 | DSMZ Medium: 75 (mediadive.medium:75)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 75 | DSMZ Medium: 75 (mediadive.medium:75) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

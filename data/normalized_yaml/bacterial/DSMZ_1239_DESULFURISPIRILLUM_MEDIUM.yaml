@@ -1,6 +1,6 @@
 name: DESULFURISPIRILLUM MEDIUM
 original_name: DESULFURISPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -133,11 +133,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Flush the medium with N2 and dispense 20 ml into 100ml serum bottles
-    under an N2 atmosphere, seal with butyl rubber stoppers and autoclave. To the
-    cooled. sterile medium add, from anaerobic, sterile stock solutions, MgSO4 (1
-    mM), yeast extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM) and Na2S (0.1
-    mM).
+  description: Flush the medium with N2 and dispense 20 ml into 100ml serum bottles under an N2 atmosphere,
+    seal with butyl rubber stoppers and autoclave. To the cooled. sterile medium add, from anaerobic,
+    sterile stock solutions, MgSO4 (1 mM), yeast extract (50 mg/l), sodium acetate (20 mM), KNO3 (20 mM)
+    and Na2S (0.1 mM).
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0.

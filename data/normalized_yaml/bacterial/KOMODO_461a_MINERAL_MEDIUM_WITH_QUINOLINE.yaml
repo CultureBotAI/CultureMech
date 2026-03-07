@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH QUINOLINE
 original_name: MINERAL MEDIUM WITH QUINOLINE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:461a
     label: MINERAL MEDIUM WITH QUINOLINE
-notes: 'Source: KOMODO ModelSEED | ID: 461a | DSMZ Medium: 461a (mediadive.medium:461a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 461a | DSMZ Medium: 461a (mediadive.medium:461a) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

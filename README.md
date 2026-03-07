@@ -101,6 +101,7 @@ Complex media contain undefined components (e.g., yeast extract, peptone), while
 ✅ **Full provenance tracking** - Complete source attribution and curation history
 ✅ **Automated pipelines** - Fetchers, converters, and importers for all sources
 ✅ **Browser interface** - Faceted search and filtering
+✅ **UMAP visualization** - Interactive 2D embeddings visualization for exploring media similarity
 ✅ **Knowledge graph export** - Biolink-compliant KGX format
 ✅ **Literature verification** - 6-tier cascading PDF retrieval for cross-reference validation
 ✅ **ATCC cross-references** - Automated equivalency detection with DSMZ media
@@ -133,6 +134,18 @@ just gen-browser-data
 just serve-browser
 
 # Open http://localhost:8000/app/
+```
+
+### Generate UMAP Visualization
+
+```bash
+# Generate interactive UMAP visualization (requires KG-Microbe embeddings)
+just gen-media-umap /path/to/embeddings.tsv.gz
+
+# View locally
+open docs/media_umap.html
+
+# See docs/MEDIA_UMAP_GUIDE.md for detailed instructions
 ```
 
 ### Count Recipes

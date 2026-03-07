@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M1445
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,26 +8,22 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: Na2MoO4 (0.01 M)
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
 - preferred_term: FeSO4 (0.02 M)
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined
-    component'
+  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined component'
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -40,8 +36,7 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -49,8 +44,7 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -66,14 +60,12 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Potassium phosphate buffer (0.02 M, pH 7.0)
   concentration:
     value: '980'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
-    Complex component'
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound, Complex component'
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.5'
@@ -91,7 +83,7 @@ media_term:
   preferred_term: TOGO Medium M1445
   term:
     id: TOGO:M1445
-    label: (Unnamed medium)
+    label: TOGO Medium M1445
 notes: 'Source: https://togomedium.org/medium/M1445
 
   Original source: NBRC - NBRC_M213

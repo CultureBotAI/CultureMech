@@ -1,6 +1,6 @@
 name: MARINITOGA LITORALIS MEDIUM
 original_name: MARINITOGA LITORALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -100,12 +100,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except maltose and sulfide, adjust pH to 5.8 -
-    6.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. After autoclaving add maltose and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas atmosphere. The pH of the complete medium
-    should be 6.0.
+  description: Dissolve ingredients except maltose and sulfide, adjust pH to 5.8 - 6.0 and sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving add maltose and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas atmosphere. The pH of the complete
+    medium should be 6.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: OTEB-MEDIUM
 original_name: OTEB-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -196,21 +196,19 @@ preparation_steps:
   description: OTEB-medium is available from Anaerobe Systems (http://www.anaerobesystems.com)
 - step_number: 2
   action: MIX
-  description: "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME\
-    \ ENRICHMENT BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment\
-    \ Broth (OTEB) 10 tubes / pkg"
+  description: "The following text was taken from the above page: \r\n\r\n- ORAL TREPONEME ENRICHMENT\
+    \ BROTH (OTEB)\r\n\r\n- Products: AS-603 Oral Treponeme Enrichment Broth (OTEB) 10 tubes / pkg"
 - step_number: 3
   action: MIX
-  description: 'Intended Use: OTEB is an enriched medium for the isolation, cultivation
-    and maintenance of Treponemes found as part of the oral flora.'
+  description: 'Intended Use: OTEB is an enriched medium for the isolation, cultivation and maintenance
+    of Treponemes found as part of the oral flora.'
 - step_number: 4
   action: POUR_PLATES
-  description: OTEB is a complex peptone-yeast extract medium containing volatile
-    fatty acids and serum for a source of long chain fatty acids. Volatile fatty acids
-    and serum are necessary nutrients for recovery of Treponemes from the oral flora.
-    Inoculation of the medium can be done using a gassing cannula or inside an anaerobic
-    chamber. This medium is prepared, stored and dispensed under oxygen-free conditions
-    to prevent the formation of oxidized products prior to use.
+  description: OTEB is a complex peptone-yeast extract medium containing volatile fatty acids and serum
+    for a source of long chain fatty acids. Volatile fatty acids and serum are necessary nutrients for
+    recovery of Treponemes from the oral flora. Inoculation of the medium can be done using a gassing
+    cannula or inside an anaerobic chamber. This medium is prepared, stored and dispensed under oxygen-free
+    conditions to prevent the formation of oxidized products prior to use.
 - step_number: 5
   action: HEAT
   description: Final pH 7.0 +/- 0.2 at 25 degrees C.

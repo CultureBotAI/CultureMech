@@ -1,6 +1,6 @@
 name: CAMPYLOBACTER RECTUS medium
 original_name: CAMPYLOBACTER RECTUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:338
     label: CAMPYLOBACTER RECTUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 338 | DSMZ Medium: 338 (mediadive.medium:338)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 338 | DSMZ Medium: 338 (mediadive.medium:338) | Aerobic: Yes'
 ingredients:
 - preferred_term: Beef extract
   concentration:

@@ -1,6 +1,6 @@
 name: THERMOTOGA PETROPHILA MEDIUM
 original_name: THERMOTOGA PETROPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -292,16 +292,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except vitamins and sulfide, adjust pH to 7.0,
-    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    (to 30% of volume) and autoclave. Add vitamins and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
+  description: Dissolve ingredients except vitamins and sulfide, adjust pH to 7.0, then sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials (to 30% of volume) and autoclave. Add vitamins and sulfide
+    from sterile anoxic stock solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
     Adjust pH of the complete medium to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -312,5 +311,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.779396Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,15 +1,15 @@
 name: MEDIUM 381 MODIFIED FOR DSM 23293
 original_name: MEDIUM 381 MODIFIED FOR DSM 23293
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 381_23293
   term:
     id: komodo.medium:381_23293
     label: MEDIUM 381 MODIFIED FOR DSM 23293
-notes: 'Source: KOMODO ModelSEED | ID: 381_23293 | DSMZ Medium: 381 (mediadive.medium:381)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 381_23293 | DSMZ Medium: 381 (mediadive.medium:381) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Peptone
   concentration:

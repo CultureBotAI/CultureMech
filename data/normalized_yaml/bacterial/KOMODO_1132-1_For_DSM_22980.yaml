@@ -1,6 +1,6 @@
 name: For DSM 22980
 original_name: For DSM 22980
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1132.1
     label: For DSM 22980
-notes: 'Source: KOMODO ModelSEED | ID: 1132.1 | DSMZ Medium: 1132 (mediadive.medium:1132)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1132.1 | DSMZ Medium: 1132 (mediadive.medium:1132) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

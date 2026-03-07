@@ -1,8 +1,8 @@
 name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
 original_name: brain heart infusion agar (containing 7% horse blood and 0.4% isovitalex)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: horse blood
   concentration:
@@ -43,5 +43,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.698519'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration
-    for ingredient: O2'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
+    O2'

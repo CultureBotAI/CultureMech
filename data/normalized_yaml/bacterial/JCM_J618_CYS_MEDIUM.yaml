@@ -1,6 +1,6 @@
 name: CYS MEDIUM
 original_name: CYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -106,15 +106,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Add components to distilled water and mix thoroughly. Then, add the
-    following solutions in order listed:'
+  description: 'Add components to distilled water and mix thoroughly. Then, add the following solutions
+    in order listed:'
 - step_number: 2
   action: AUTOCLAVE
   description: Adjust pH to 7.5, bring volume to 1.0 L with distilled water and autoclave.
 - step_number: 3
   action: HEAT
-  description: 'Comment: Inoculate into the medium prewarmed to the optimal growth
-    temperature.'
+  description: 'Comment: Inoculate into the medium prewarmed to the optimal growth temperature.'
 applications:
 - Microbial cultivation
 curation_history:

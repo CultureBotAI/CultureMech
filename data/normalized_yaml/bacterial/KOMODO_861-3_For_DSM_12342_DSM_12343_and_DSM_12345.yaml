@@ -1,6 +1,6 @@
 name: For DSM 12342, DSM 12343 and DSM 12345
 original_name: For DSM 12342, DSM 12343 and DSM 12345
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:861.3
     label: For DSM 12342, DSM 12343 and DSM 12345
-notes: 'Source: KOMODO ModelSEED | ID: 861.3 | DSMZ Medium: 861 (mediadive.medium:861)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 861.3 | DSMZ Medium: 861 (mediadive.medium:861) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -271,5 +270,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.243480Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

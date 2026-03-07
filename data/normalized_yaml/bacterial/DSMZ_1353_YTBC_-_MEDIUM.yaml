@@ -1,6 +1,6 @@
 name: YTBC - MEDIUM
 original_name: YTBC - MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -170,11 +170,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium without Na2S and cysteine-HCl. Boil the medium
-    in a water bath and cool under N2:CO2 (80:20 v/v) to room temperature. Adjust
-    to pH 7.0 with 10 M NaOH solution. Dispense the medium into Hungate tubes or serum
-    bottles. Sterilize by autoclaving. Before inoculatiing add Na2S and cysteine-HCl
-    from sterile stock solutions.
+  description: Prepare the liquid medium without Na2S and cysteine-HCl. Boil the medium in a water bath
+    and cool under N2:CO2 (80:20 v/v) to room temperature. Adjust to pH 7.0 with 10 M NaOH solution. Dispense
+    the medium into Hungate tubes or serum bottles. Sterilize by autoclaving. Before inoculatiing add
+    Na2S and cysteine-HCl from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:

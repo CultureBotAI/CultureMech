@@ -1,6 +1,6 @@
 name: MINERAL SALTS MEDIUM WITH TCE
 original_name: MINERAL SALTS MEDIUM WITH TCE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.1
@@ -259,23 +259,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
-    (4:1, v/v) gas mixture. Add the following solutions:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
+    mixture. Add the following solutions:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Adjust pH of the medium to 7.0-7.2, if necessary. Dispense the medium
-    into culture vessels (e.g., 100 ml in 120 ml-serum bottles) under the same gas
-    mixture and seal with butyl rubber stoppers or Teflon-lined stoppers. Then, anaerobically
-    add per liter the following solution:'
+  description: 'Adjust pH of the medium to 7.0-7.2, if necessary. Dispense the medium into culture vessels
+    (e.g., 100 ml in 120 ml-serum bottles) under the same gas mixture and seal with butyl rubber stoppers
+    or Teflon-lined stoppers. Then, anaerobically add per liter the following solution:'
 - step_number: 3
   action: AUTOCLAVE
-  description: Dissolve tetrachloroethene with ultrasound. Autoclave in a closed basket.
-    Do not remove the culture vessels from autoclave before temperature of the media
-    has reached below 70C.
+  description: Dissolve tetrachloroethene with ultrasound. Autoclave in a closed basket. Do not remove
+    the culture vessels from autoclave before temperature of the media has reached below 70C.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: 'Finally, add per liter the following solution from an anaerobic stock
-    (filter-sterilized):'
+  description: 'Finally, add per liter the following solution from an anaerobic stock (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

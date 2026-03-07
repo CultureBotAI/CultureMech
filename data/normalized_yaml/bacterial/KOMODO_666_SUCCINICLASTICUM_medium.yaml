@@ -1,6 +1,6 @@
 name: SUCCINICLASTICUM medium
 original_name: SUCCINICLASTICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.6-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:666
     label: SUCCINICLASTICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 666 | DSMZ Medium: 666 (mediadive.medium:666)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 666 | DSMZ Medium: 666 (mediadive.medium:666) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

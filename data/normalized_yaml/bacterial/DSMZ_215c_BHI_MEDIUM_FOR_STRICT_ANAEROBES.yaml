@@ -1,6 +1,6 @@
 name: BHI MEDIUM FOR STRICT ANAEROBES
 original_name: BHI MEDIUM FOR STRICT ANAEROBES
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.6
@@ -32,8 +32,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare medium anoxically under 100% N2 gas atmosphere. Reducing agents
-    are added after autoclaving from sterile anoxic solutions prepared under N2.
+  description: Prepare medium anoxically under 100% N2 gas atmosphere. Reducing agents are added after
+    autoclaving from sterile anoxic solutions prepared under N2.
 applications:
 - Microbial cultivation
 curation_history:

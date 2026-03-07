@@ -1,6 +1,6 @@
 name: FERVIDOBACTERIUM ISLANDICUM MEDIUM
 original_name: FERVIDOBACTERIUM ISLANDICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -117,12 +117,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose and sulfide), adjust pH at room
-    temperature to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add glucose and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and
-    adjust to 7.0, if necessary.
+  description: Dissolve ingredients (except glucose and sulfide), adjust pH at room temperature to 7.0
+    and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas
+    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Prior to inoculation check pH and adjust
+    to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

@@ -1,6 +1,6 @@
 name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
 original_name: DESULFUROBACTERIUM ATLANTICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -81,24 +81,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except thiosulfate and sodium sulfide), adjust
-    pH to 6.0, boil medium for 1 min, then cool to room temperature under 80% H2 and
-    20% CO2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume and autoclave. Add sodium thiosulfate
-    from an anoxic stock solution prepared under 100% N2 gas and sterilized by filtration.
-    Reduce medium with a sterile, neutralized solution of sodium sulfide prepared
-    under 100% N2 gas . Adjust pH of complete medium to 6.0, if necessary.
+  description: Dissolve ingredients (except thiosulfate and sodium sulfide), adjust pH to 6.0, boil medium
+    for 1 min, then cool to room temperature under 80% H2 and 20% CO2 gas atmosphere. Dispense under same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume and autoclave.
+    Add sodium thiosulfate from an anoxic stock solution prepared under 100% N2 gas and sterilized by
+    filtration. Reduce medium with a sterile, neutralized solution of sodium sulfide prepared under 100%
+    N2 gas . Adjust pH of complete medium to 6.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize cultivation vessels to   2 bar overpressure
-    using sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize cultivation vessels to   2 bar overpressure using sterile
+    80% H2 and 20% CO2 gas mixture.
 - step_number: 3
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:

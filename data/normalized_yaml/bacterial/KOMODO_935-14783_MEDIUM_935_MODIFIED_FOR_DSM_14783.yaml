@@ -1,6 +1,6 @@
 name: MEDIUM 935 MODIFIED FOR DSM 14783
 original_name: MEDIUM 935 MODIFIED FOR DSM 14783
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:935_14783
     label: MEDIUM 935 MODIFIED FOR DSM 14783
-notes: 'Source: KOMODO ModelSEED | ID: 935_14783 | DSMZ Medium: 935 (mediadive.medium:935)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 935_14783 | DSMZ Medium: 935 (mediadive.medium:935) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -271,6 +271,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.853244Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.5

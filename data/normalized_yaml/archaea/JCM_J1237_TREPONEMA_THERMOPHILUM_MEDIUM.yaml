@@ -1,6 +1,6 @@
 name: TREPONEMA THERMOPHILUM MEDIUM
 original_name: TREPONEMA THERMOPHILUM MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -226,15 +226,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine), boil medium for 1 min, then
-    cool to room temperature under 100% N2 gas atmosphere. Dispense medium under the
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Before inoculation, add cysteine and xylan from a sterile anoxic stock solution
-    prepared under 100% N2 gas and adjust pH of complete medium to 7.0.
+  description: Dissolve ingredients (except cysteine), boil medium for 1 min, then cool to room temperature
+    under 100% N2 gas atmosphere. Dispense medium under the same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Before inoculation, add cysteine and xylan from a sterile anoxic
+    stock solution prepared under 100% N2 gas and adjust pH of complete medium to 7.0.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

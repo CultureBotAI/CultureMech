@@ -1,16 +1,15 @@
 name: HALOMONAS MAGADIENSIS medium
 original_name: HALOMONAS MAGADIENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: KOMODO Medium 971
   term:
     id: komodo.medium:971
     label: HALOMONAS MAGADIENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 971 | DSMZ Medium: 971 (mediadive.medium:971)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 971 | DSMZ Medium: 971 (mediadive.medium:971) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

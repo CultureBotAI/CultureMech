@@ -1,6 +1,6 @@
 name: MARINOCOCCUS ALBUS - medium
 original_name: MARINOCOCCUS ALBUS - medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:434
     label: MARINOCOCCUS ALBUS - medium
-notes: 'Source: KOMODO ModelSEED | ID: 434 | DSMZ Medium: 434 (mediadive.medium:434)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 434 | DSMZ Medium: 434 (mediadive.medium:434) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

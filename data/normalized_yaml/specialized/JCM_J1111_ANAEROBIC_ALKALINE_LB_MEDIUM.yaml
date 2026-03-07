@@ -1,6 +1,6 @@
 name: ANAEROBIC ALKALINE LB MEDIUM
 original_name: ANAEROBIC ALKALINE LB MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -39,9 +39,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave
-    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically
-    the following solutions (autoclaved and stored under N2):'
+  description: 'Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1,
+    v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved
+    and stored under N2):'
 applications:
 - Microbial cultivation
 curation_history:

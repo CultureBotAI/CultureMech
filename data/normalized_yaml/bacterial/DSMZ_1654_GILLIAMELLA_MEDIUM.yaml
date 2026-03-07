@@ -1,8 +1,8 @@
 name: GILLIAMELLA MEDIUM
 original_name: GILLIAMELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1654
@@ -66,8 +66,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Add ascorbate solution ( 20 g per litre) after autoclaving and cooling.
-    Final pH of the medium is 7.2. Charcoal should be omitted in liquid medium.
+  description: Add ascorbate solution ( 20 g per litre) after autoclaving and cooling. Final pH of the
+    medium is 7.2. Charcoal should be omitted in liquid medium.
 applications:
 - Microbial cultivation
 curation_history:

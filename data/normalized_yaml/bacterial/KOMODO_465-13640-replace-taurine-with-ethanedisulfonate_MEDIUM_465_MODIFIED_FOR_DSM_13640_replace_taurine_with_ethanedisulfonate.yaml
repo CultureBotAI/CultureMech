@@ -1,15 +1,15 @@
 name: MEDIUM 465 MODIFIED FOR DSM 13640_replace_taurine_with_ethanedisulfonate
 original_name: MEDIUM 465 MODIFIED FOR DSM 13640_replace_taurine_with_ethanedisulfonate
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 465_13640_replace_taurine_with_ethanedisulfonate
   term:
     id: komodo.medium:465_13640_replace_taurine_with_ethanedisulfonate
     label: MEDIUM 465 MODIFIED FOR DSM 13640_replace_taurine_with_ethanedisulfonate
-notes: 'Source: KOMODO ModelSEED | ID: 465_13640_replace_taurine_with_ethanedisulfonate
-  | DSMZ Medium: 465 (mediadive.medium:465) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 465_13640_replace_taurine_with_ethanedisulfonate | DSMZ Medium:
+  465 (mediadive.medium:465) | Aerobic: No'
 ingredients:
 - preferred_term: '[1,1′-Biphenyl]-2-ol'
   concentration:

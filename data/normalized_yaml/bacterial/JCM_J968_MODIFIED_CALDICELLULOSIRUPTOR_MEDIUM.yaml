@@ -1,6 +1,6 @@
 name: MODIFIED CALDICELLULOSIRUPTOR MEDIUM
 original_name: MODIFIED CALDICELLULOSIRUPTOR MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -148,14 +148,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, except xylose, thoroughly and adjust pH to 7.2. Distribute
-    the medium into culture vessels under 100% N2, seal with butyl rubber stoppers
-    and autoclave. Add xylose after autoclaving from an anoxic stock solution prepared
-    under a N2 gas atmosphere and sterilized by filtration.
+  description: Mix components, except xylose, thoroughly and adjust pH to 7.2. Distribute the medium into
+    culture vessels under 100% N2, seal with butyl rubber stoppers and autoclave. Add xylose after autoclaving
+    from an anoxic stock solution prepared under a N2 gas atmosphere and sterilized by filtration.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

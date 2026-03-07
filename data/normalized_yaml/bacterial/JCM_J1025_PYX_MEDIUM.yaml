@@ -1,6 +1,6 @@
 name: PYX MEDIUM
 original_name: PYX MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -89,11 +89,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except glucose and cysteine), boil medium for
-    1 min, then cool to room temperature under a N2 gas atmosphere. Add cysteine and
-    adjust pH to 7.0. Thereafter, dispense into culture vessels under a N2 gas atmosphere
-    and autoclave. After autoclaving, add glucose from a sterile, anoxic stock solution
-    prepared under a N2 gas atmosphere.
+  description: Dissolve ingredients (except glucose and cysteine), boil medium for 1 min, then cool to
+    room temperature under a N2 gas atmosphere. Add cysteine and adjust pH to 7.0. Thereafter, dispense
+    into culture vessels under a N2 gas atmosphere and autoclave. After autoclaving, add glucose from
+    a sterile, anoxic stock solution prepared under a N2 gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

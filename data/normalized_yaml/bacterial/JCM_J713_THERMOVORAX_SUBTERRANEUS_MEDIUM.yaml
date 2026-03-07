@@ -1,6 +1,6 @@
 name: THERMOVORAX SUBTERRANEUS MEDIUM
 original_name: THERMOVORAX SUBTERRANEUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -259,30 +259,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly. Distribute into culture vessels under a
-    N2 gas atmosphere (e.g., 45 ml in 100 ml serum bottle), seal with butyl rubber
-    stoppers and autoclave.
+  description: Mix components thoroughly. Distribute into culture vessels under a N2 gas atmosphere (e.g.,
+    45 ml in 100 ml serum bottle), seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Mix components thoroughly. Filter-sterilize and store under a N2 gas
-    atmosphere.
+  description: Mix components thoroughly. Filter-sterilize and store under a N2 gas atmosphere.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Mix components thoroughly. Filter-sterilize and store under a N2 gas
-    atmosphere. Then add the following solution (filter-sterilized) aseptically and
-    anaerobically:'
+  description: 'Mix components thoroughly. Filter-sterilize and store under a N2 gas atmosphere. Then
+    add the following solution (filter-sterilized) aseptically and anaerobically:'
 - step_number: 4
   action: MIX
-  description: To complete medium, add 2.5 ml Solution B and 2.5 ml Solution C to
-    the culture vessels containing 45.0 ml of the medium (Solution A).
+  description: To complete medium, add 2.5 ml Solution B and 2.5 ml Solution C to the culture vessels
+    containing 45.0 ml of the medium (Solution A).
 - step_number: 5
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O in HCl solution at first. Then add 300 ml distilled
-    water and dissolve the remaining components. Fill up to 1.0 L.
+  description: Dissolve FeCl2 x 4H2O in HCl solution at first. Then add 300 ml distilled water and dissolve
+    the remaining components. Fill up to 1.0 L.
 - step_number: 6
   action: DISSOLVE
-  description: Dissolve Na2WO4 x 2H2O and Na2SeO3 x 5H2O in 10 mM NaOH solution at
-    first. Then dilute with distilled water.
+  description: Dissolve Na2WO4 x 2H2O and Na2SeO3 x 5H2O in 10 mM NaOH solution at first. Then dilute
+    with distilled water.
 applications:
 - Microbial cultivation
 curation_history:

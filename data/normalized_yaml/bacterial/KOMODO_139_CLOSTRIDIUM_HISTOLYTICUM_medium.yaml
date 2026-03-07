@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM HISTOLYTICUM medium
 original_name: CLOSTRIDIUM HISTOLYTICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:139
     label: CLOSTRIDIUM HISTOLYTICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 139 | DSMZ Medium: 139 (mediadive.medium:139)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 139 | DSMZ Medium: 139 (mediadive.medium:139) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

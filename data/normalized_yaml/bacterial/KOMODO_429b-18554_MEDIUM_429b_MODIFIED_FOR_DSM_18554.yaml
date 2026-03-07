@@ -1,15 +1,15 @@
 name: MEDIUM 429b MODIFIED FOR DSM 18554
 original_name: MEDIUM 429b MODIFIED FOR DSM 18554
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 429b_18554
   term:
     id: komodo.medium:429b_18554
     label: MEDIUM 429b MODIFIED FOR DSM 18554
-notes: 'Source: KOMODO ModelSEED | ID: 429b_18554 | DSMZ Medium: 429b (mediadive.medium:429b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429b_18554 | DSMZ Medium: 429b (mediadive.medium:429b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:

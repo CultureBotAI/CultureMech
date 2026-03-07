@@ -1,6 +1,6 @@
 name: DETHIOSULFOVIBRIO II MEDIUM
 original_name: DETHIOSULFOVIBRIO II MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -138,9 +138,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. After cooling,
-    add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized
-    and stored under a N2 atmosphere):'
+  description: 'Mix components and autoclave under a N2 atmosphere. After cooling, add the following solutions
+    from sterile anaerobic stocks (autoclaved or *filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of the medium to 6.7 - 6.8, if necessary.

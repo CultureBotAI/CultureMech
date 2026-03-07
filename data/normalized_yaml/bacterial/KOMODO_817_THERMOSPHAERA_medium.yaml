@@ -1,6 +1,6 @@
 name: THERMOSPHAERA medium
 original_name: THERMOSPHAERA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:817
     label: THERMOSPHAERA medium
-notes: 'Source: KOMODO ModelSEED | ID: 817 | DSMZ Medium: 817 (mediadive.medium:817)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 817 | DSMZ Medium: 817 (mediadive.medium:817) | Aerobic: Yes'
 ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -168,5 +167,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:50.234418Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

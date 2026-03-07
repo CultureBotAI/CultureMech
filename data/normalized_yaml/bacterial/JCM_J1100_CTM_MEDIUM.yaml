@@ -1,6 +1,6 @@
 name: CTM MEDIUM
 original_name: CTM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -375,11 +375,10 @@ preparation_steps:
   description: 'CTM medium basis:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Mix all ingredients in 1.0 L medium bottle. Add distilled water close
-    to 1.0 L. Adjust pH to 7.0 with 2 M KOH and fill up to 1.0 L. Autoclave at 121C
-    for 40 min. After autoclaving, seal medium bottle immediately in order to avoid
-    oxygenation. Cool down to around 70C. Add 30 ml filter-sterilized Mixed solution
-    (see below) to the autoclaved CTM medium basis for completing the CTM medium.
+  description: Mix all ingredients in 1.0 L medium bottle. Add distilled water close to 1.0 L. Adjust
+    pH to 7.0 with 2 M KOH and fill up to 1.0 L. Autoclave at 121C for 40 min. After autoclaving, seal
+    medium bottle immediately in order to avoid oxygenation. Cool down to around 70C. Add 30 ml filter-sterilized
+    Mixed solution (see below) to the autoclaved CTM medium basis for completing the CTM medium.
 - step_number: 3
   action: MIX
   description: Add distilled water to bring final volume to 30 ml.

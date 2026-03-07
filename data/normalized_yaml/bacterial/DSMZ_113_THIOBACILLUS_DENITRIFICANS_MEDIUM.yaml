@@ -1,6 +1,6 @@
 name: THIOBACILLUS DENITRIFICANS MEDIUM
 original_name: THIOBACILLUS DENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -133,16 +133,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Solution A is sterilized by autoclaving at 121°C for 15 min under a
-    100% N2 gas atmosphere. Solutions B and D are sterilized by filtration under a
-    100% N2 gas atmosphere. Solution C is sterilized by autoclaving under an atmosphere
-    of 80% N2 and 20% CO2 gas mixture. Appropriate amounts of solutions B to D are
-    added to the sterile solution A in the sequence as indicated. Check the pH of
-    the complete medium and adjust it to 7.0 - 7.2, if necessary.
+  description: Solution A is sterilized by autoclaving at 121°C for 15 min under a 100% N2 gas atmosphere.
+    Solutions B and D are sterilized by filtration under a 100% N2 gas atmosphere. Solution C is sterilized
+    by autoclaving under an atmosphere of 80% N2 and 20% CO2 gas mixture. Appropriate amounts of solutions
+    B to D are added to the sterile solution A in the sequence as indicated. Check the pH of the complete
+    medium and adjust it to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: SARCINA medium
 original_name: SARCINA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:21
     label: SARCINA medium
-notes: 'Source: KOMODO ModelSEED | ID: 21 | DSMZ Medium: 21 (mediadive.medium:21)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 21 | DSMZ Medium: 21 (mediadive.medium:21) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

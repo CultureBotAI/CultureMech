@@ -1,6 +1,6 @@
 name: HALOANAEROBIUM CONGOLENSE medium
 original_name: HALOANAEROBIUM CONGOLENSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:933
     label: HALOANAEROBIUM CONGOLENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 933 | DSMZ Medium: 933 (mediadive.medium:933)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 933 | DSMZ Medium: 933 (mediadive.medium:933) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

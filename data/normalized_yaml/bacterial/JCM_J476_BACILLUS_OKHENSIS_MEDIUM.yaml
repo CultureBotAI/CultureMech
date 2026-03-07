@@ -1,6 +1,6 @@
 name: BACILLUS OKHENSIS MEDIUM
 original_name: BACILLUS OKHENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -43,8 +43,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components and autoclave. After cooling down to room temperature,
-    adjust pH to 9.0 with 20% (w/v) Na2CO3 (sterilized by autoclaving).
+  description: Mix components and autoclave. After cooling down to room temperature, adjust pH to 9.0
+    with 20% (w/v) Na2CO3 (sterilized by autoclaving).
 applications:
 - Microbial cultivation
 curation_history:

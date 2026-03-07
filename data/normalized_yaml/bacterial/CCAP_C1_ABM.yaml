@@ -1,6 +1,6 @@
 name: ABM
 original_name: ABM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 3.0
@@ -119,9 +119,8 @@ preparation_steps:
   description: Once elements are dissolved autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: AUTOCLAVE
-  description: "The stock solutions are those for 3N-BBM+V. Make up to 1 litre with\
-    \ distilled water and adjust\r\nthe pH to 3.0 with 1M NaOH or 1M HCl. Autoclave\
-    \ at 15 psi for 15 minutes."
+  description: "The stock solutions are those for 3N-BBM+V. Make up to 1 litre with distilled water and\
+    \ adjust\r\nthe pH to 3.0 with 1M NaOH or 1M HCl. Autoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: MIX
   description: 'Ensure elements are added in the following sequence:'

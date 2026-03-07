@@ -1,8 +1,8 @@
 name: PROPIONIBACTERIUM AGAR
 original_name: PROPIONIBACTERIUM AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 91
@@ -36,9 +36,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0 - 7.2. For anaerobic handling of the liquid medium
-    (without agar), prepare and distribute into Hungate tubes by use of the Hungate
-    technique.
+  description: Adjust pH to 7.0 - 7.2. For anaerobic handling of the liquid medium (without agar), prepare
+    and distribute into Hungate tubes by use of the Hungate technique.
 applications:
 - Microbial cultivation
 curation_history:

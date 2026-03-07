@@ -1,15 +1,14 @@
 name: NUTRIENT AGAR or BROTH WITH NaCl
 original_name: NUTRIENT AGAR or BROTH WITH NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 101
   term:
     id: komodo.medium:101
     label: NUTRIENT AGAR or BROTH WITH NaCl
-notes: 'Source: KOMODO ModelSEED | ID: 101 | DSMZ Medium: 101 (mediadive.medium:101)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 101 | DSMZ Medium: 101 (mediadive.medium:101) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

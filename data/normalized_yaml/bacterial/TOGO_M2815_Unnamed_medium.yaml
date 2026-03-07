@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M2815
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -36,8 +35,7 @@ ingredients:
     value: '1'
     unit: PERCENT_W_V
 - preferred_term: Distilled water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -48,7 +46,7 @@ media_term:
   preferred_term: TOGO Medium M2815
   term:
     id: TOGO:M2815
-    label: (Unnamed medium)
+    label: TOGO Medium M2815
 notes: 'Source: https://togomedium.org/medium/M2815'
 applications:
 - Microbial cultivation

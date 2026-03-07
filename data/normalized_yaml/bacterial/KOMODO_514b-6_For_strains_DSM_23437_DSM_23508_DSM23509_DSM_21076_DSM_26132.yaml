@@ -1,16 +1,15 @@
 name: For strains DSM 23437, DSM 23508, DSM23509, DSM 21076, DSM 26132
 original_name: For strains DSM 23437, DSM 23508, DSM23509, DSM 21076, DSM 26132
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
   preferred_term: KOMODO Medium 514b.6
   term:
     id: komodo.medium:514b.6
     label: For strains DSM 23437, DSM 23508, DSM23509, DSM 21076, DSM 26132
-notes: 'Source: KOMODO ModelSEED | ID: 514b.6 | DSMZ Medium: 514b (mediadive.medium:514b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514b.6 | DSMZ Medium: 514b (mediadive.medium:514b) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

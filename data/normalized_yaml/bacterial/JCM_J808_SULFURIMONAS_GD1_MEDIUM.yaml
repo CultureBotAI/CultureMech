@@ -1,6 +1,6 @@
 name: SULFURIMONAS GD1 MEDIUM
 original_name: SULFURIMONAS GD1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -273,9 +273,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.3. Fill the medium in a glass bottle,
-    bubble with N2 for 30 min, then, seal with butyl rubber stoppers and autoclave.
-    After cooling, add the following solutions from anaerobic stocks (filter-sterilized):'
+  description: 'Mix ingredients and adjust pH to 7.3. Fill the medium in a glass bottle, bubble with N2
+    for 30 min, then, seal with butyl rubber stoppers and autoclave. After cooling, add the following
+    solutions from anaerobic stocks (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

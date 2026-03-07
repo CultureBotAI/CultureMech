@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM CK medium
 original_name: CLOSTRIDIUM CK medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:869
     label: CLOSTRIDIUM CK medium
-notes: 'Source: KOMODO ModelSEED | ID: 869 | DSMZ Medium: 869 (mediadive.medium:869)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 869 | DSMZ Medium: 869 (mediadive.medium:869) | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

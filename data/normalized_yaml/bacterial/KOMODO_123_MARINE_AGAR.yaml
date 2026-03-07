@@ -1,15 +1,14 @@
 name: MARINE AGAR
 original_name: MARINE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 123
   term:
     id: komodo.medium:123
     label: MARINE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 123 | DSMZ Medium: 123 (mediadive.medium:123)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 123 | DSMZ Medium: 123 (mediadive.medium:123) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

@@ -1,31 +1,28 @@
 name: '1107'
 original_name: '1107'
-category: imported
+category: bacterial
 description: 1107. NBRC 1106.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "NaNO31gMgSO4\xB77H2O0.1gNa2HPO4\xB72H2O0.5gKH2PO40.22gCaCl2\xB7\
-    6H2O0.03gFeSO4\xB77H2O2mgTrace metal solution*1mlDistilled water1LpH 7Dispense\
-    \ the medium into suitable culture vessels, seal with butyl rubber stoppers, and\
-    \ autoclave at 121\xB0C for 15 min. After cooling to room temperature, the pH\
-    \ is adjusted to pH 7 by adding of sterile pH-adjusting agent with a syringe without\
-    \ opening the vessel. Prior to inoculation, aseptically add the filter-sterilized\
-    \ methane gas to the vessel. The methane and air ratio in the headspace is about\
-    \ 1:4. Methane should be of high purity.*Trace metal solutionZnSO4\xB77H2O0.44gCuSO4\xB7\
-    5H2O0.2gMnSO4\xB72H2O0.17gNa2MoO4\xB72H2O0.06gH3BO30.1gCoCl2\xB76H2O0.08gDistilled\
-    \ water1L"
+- preferred_term: NaNO31gMgSO4·7H2O0.1gNa2HPO4·2H2O0.5gKH2PO40.22gCaCl2·6H2O0.03gFeSO4·7H2O2mgTrace metal
+    solution*1mlDistilled water1LpH 7Dispense the medium into suitable culture vessels, seal with butyl
+    rubber stoppers, and autoclave at 121°C for 15 min. After cooling to room temperature, the pH is adjusted
+    to pH 7 by adding of sterile pH-adjusting agent with a syringe without opening the vessel. Prior to
+    inoculation, aseptically add the filter-sterilized methane gas to the vessel. The methane and air
+    ratio in the headspace is about 1:4. Methane should be of high purity.*Trace metal solutionZnSO4·7H2O0.44gCuSO4·5H2O0.2gMnSO4·2H2O0.17gNa2MoO4·2H2O0.06gH3BO30.1gCoCl2·6H2O0.08gDistilled
+    water1L
 - preferred_term: ''
   concentration:
     value: NaNO3
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2HPO4\xB72H2O"
+    value: Na2HPO4·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -33,11 +30,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB76H2O"
+    value: CaCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "FeSO4\xB77H2O"
+    value: FeSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

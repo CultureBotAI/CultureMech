@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM PROPIONICUM medium
 original_name: CLOSTRIDIUM PROPIONICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:156
     label: CLOSTRIDIUM PROPIONICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 156 | DSMZ Medium: 156 (mediadive.medium:156)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 156 | DSMZ Medium: 156 (mediadive.medium:156) | Aerobic: Yes'
 ingredients:
 - preferred_term: L-Alanine
   term:

@@ -1,6 +1,6 @@
 name: HALORHABDUS UTAHENSIS MEDIUM
 original_name: HALORHABDUS UTAHENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.6
@@ -158,10 +158,9 @@ preparation_steps:
   description: Prepare the medium, and adjust the pH to 7.6 with 5M NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave and when the medium has cooled add 2.5 ml of the phosphate
-    solution, 0.5 ml of the calcium chloride solution, and 0.25 ml of the Fe/Mn solution.
-    This strain will not grow in normal media for halobacteria, such as DSM medium
-    372!
+  description: Autoclave and when the medium has cooled add 2.5 ml of the phosphate solution, 0.5 ml of
+    the calcium chloride solution, and 0.25 ml of the Fe/Mn solution. This strain will not grow in normal
+    media for halobacteria, such as DSM medium 372!
 - step_number: 3
   action: MIX
   description: Prepare and sterilise separately
@@ -181,5 +180,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.239313Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

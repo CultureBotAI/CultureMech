@@ -1,6 +1,6 @@
 name: ACETOBACTERIUM DEHALOGENANS MEDIUM
 original_name: ACETOBACTERIUM DEHALOGENANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -247,28 +247,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except for carbonate, Na-syringate solution, vitamins,
-    and cysteine, bring to the boil and cool to room temperature under 80% N2 and
-    20% CO2 gas atmosphere. Thereafter, dispense under the same gas atmosphere in
-    anoxic Hungate-type tubes or serum vials and autoclave. Add Na-syringate solution,
-    vitamins, and cysteine from sterile anoxic stock solutions prepared under 100%
-    N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
-    and 20% CO2 gas atmosphere. Vitamins should be sterilized by filtration. The pH
-    of the completed medium should be at 7.4.
+  description: Dissolve ingredients except for carbonate, Na-syringate solution, vitamins, and cysteine,
+    bring to the boil and cool to room temperature under 80% N2 and 20% CO2 gas atmosphere. Thereafter,
+    dispense under the same gas atmosphere in anoxic Hungate-type tubes or serum vials and autoclave.
+    Add Na-syringate solution, vitamins, and cysteine from sterile anoxic stock solutions prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
+    atmosphere. Vitamins should be sterilized by filtration. The pH of the completed medium should be
+    at 7.4.
 - step_number: 2
   action: MIX
-  description: 'Note: After growth has been started add an additional amount of Na-syringate
-    to reach a final concentration of 2.00 g/l.'
+  description: 'Note: After growth has been started add an additional amount of Na-syringate to reach
+    a final concentration of 2.00 g/l.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: AUTOCLAVE
-  description: Add syringic acid to 700 ml distilled water, add about 50 ml of 5 N
-    NaOH and adjust the pH to about 7.5 to dissolve it. Then make up to a volume of
-    1000 ml with water. Make the solution anoxic by sparging with 100% N2 gas, distribute
-    in anoxic serum vials and autoclave at 121°C.
+  description: Add syringic acid to 700 ml distilled water, add about 50 ml of 5 N NaOH and adjust the
+    pH to about 7.5 to dissolve it. Then make up to a volume of 1000 ml with water. Make the solution
+    anoxic by sparging with 100% N2 gas, distribute in anoxic serum vials and autoclave at 121°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -279,5 +277,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.746247Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

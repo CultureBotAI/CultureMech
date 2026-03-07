@@ -1,6 +1,6 @@
 name: For DSM 13752 and DSM 21041
 original_name: For DSM 13752 and DSM 21041
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:960.1
     label: For DSM 13752 and DSM 21041
-notes: 'Source: KOMODO ModelSEED | ID: 960.1 | DSMZ Medium: 960 (mediadive.medium:960)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 960.1 | DSMZ Medium: 960 (mediadive.medium:960) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -248,5 +247,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.048428Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

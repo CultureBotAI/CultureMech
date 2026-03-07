@@ -1,8 +1,8 @@
 name: ANACKER-ORDAL AGAR
 original_name: ANACKER-ORDAL AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1039
@@ -50,8 +50,7 @@ preparation_steps:
   description: Adjust to pH 7.2 prior to autoclaving with KOH.
 - step_number: 2
   action: MIX
-  description: It is important to use indicator paper for pH adjustment and not a
-    pH electrode!
+  description: It is important to use indicator paper for pH adjustment and not a pH electrode!
 applications:
 - Microbial cultivation
 curation_history:

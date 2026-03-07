@@ -1,16 +1,15 @@
 name: AG medium
 original_name: AG medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: KOMODO Medium 955
   term:
     id: komodo.medium:955
     label: AG medium
-notes: 'Source: KOMODO ModelSEED | ID: 955 | DSMZ Medium: 955 (mediadive.medium:955)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 955 | DSMZ Medium: 955 (mediadive.medium:955) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

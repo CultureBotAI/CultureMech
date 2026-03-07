@@ -1,16 +1,15 @@
 name: KUSHNERIA AURANTIA medium
 original_name: KUSHNERIA AURANTIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: KOMODO Medium 1195
   term:
     id: komodo.medium:1195
     label: KUSHNERIA AURANTIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1195 | DSMZ Medium: 1195 (mediadive.medium:1195)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1195 | DSMZ Medium: 1195 (mediadive.medium:1195) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

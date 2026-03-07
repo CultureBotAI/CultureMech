@@ -1,6 +1,6 @@
 name: METHANOHALOPHILUS medium
 original_name: METHANOHALOPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:479
     label: METHANOHALOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 479 | DSMZ Medium: 479 (mediadive.medium:479)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 479 | DSMZ Medium: 479 (mediadive.medium:479) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

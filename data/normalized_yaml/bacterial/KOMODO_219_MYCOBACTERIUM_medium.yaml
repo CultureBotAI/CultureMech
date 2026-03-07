@@ -1,16 +1,15 @@
 name: MYCOBACTERIUM medium
 original_name: MYCOBACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 219
   term:
     id: komodo.medium:219
     label: MYCOBACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 219 | DSMZ Medium: 219 (mediadive.medium:219)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 219 | DSMZ Medium: 219 (mediadive.medium:219) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,6 +1,6 @@
 name: ARCHAEOGLOBUS PROFUNDUS medium
 original_name: ARCHAEOGLOBUS PROFUNDUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:519
     label: ARCHAEOGLOBUS PROFUNDUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 519 | DSMZ Medium: 519 (mediadive.medium:519)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 519 | DSMZ Medium: 519 (mediadive.medium:519) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:

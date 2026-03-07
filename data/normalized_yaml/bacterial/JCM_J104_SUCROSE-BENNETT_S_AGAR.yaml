@@ -1,8 +1,8 @@
 name: SUCROSE-BENNETT'S AGAR
 original_name: SUCROSE-BENNETT'S AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: JCM Medium J104

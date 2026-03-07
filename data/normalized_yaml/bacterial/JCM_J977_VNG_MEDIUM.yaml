@@ -1,6 +1,6 @@
 name: VNG MEDIUM
 original_name: VNG MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.1
@@ -207,10 +207,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl. Distribute
-    the medium into culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch tubes),
-    seal with butyl rubber stoppers and autoclave. After cooling, add the following
-    solution (per 900 ml, autoclaved):'
+  description: 'Mix components thoroughly, adjust pH to 8.1 with NaOH or HCl. Distribute the medium into
+    culture vessels (e.g., 9 ml in 25 ml serum bottles/Balch tubes), seal with butyl rubber stoppers and
+    autoclave. After cooling, add the following solution (per 900 ml, autoclaved):'
 - step_number: 2
   action: MIX
   description: Do not use if exceeds 90 days shelf life.

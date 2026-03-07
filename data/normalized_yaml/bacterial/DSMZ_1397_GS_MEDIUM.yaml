@@ -1,6 +1,6 @@
 name: GS MEDIUM
 original_name: GS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -284,14 +284,13 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare medium except vitamin solution, NaHCO3 und Na2S-cysteine solution
-    under N2/CO2 gas. Add vitamin solution (filter sterilized), NaHCO3 (filter sterilized)
-    and Na2S-cysteine solution(autoclaved) as sterile stock solutions to sterile medium
-    after autoclaving. Adjust pH to 7.0.
+  description: Prepare medium except vitamin solution, NaHCO3 und Na2S-cysteine solution under N2/CO2
+    gas. Add vitamin solution (filter sterilized), NaHCO3 (filter sterilized) and Na2S-cysteine solution(autoclaved)
+    as sterile stock solutions to sterile medium after autoclaving. Adjust pH to 7.0.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 - step_number: 4
   action: MIX
   description: Prepare under N2 gas.

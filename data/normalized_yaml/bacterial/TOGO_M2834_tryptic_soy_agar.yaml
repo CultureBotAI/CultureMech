@@ -1,8 +1,8 @@
 name: tryptic soy agar
 original_name: tryptic soy agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: tryptic soy agar  (Oxoid)
   concentration:

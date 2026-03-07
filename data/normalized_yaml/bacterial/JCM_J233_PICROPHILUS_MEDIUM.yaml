@@ -1,6 +1,6 @@
 name: PICROPHILUS MEDIUM
 original_name: PICROPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.0
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 180 with 2.0 g/L (final) yeast extract, adjust pH to
-    1.0.
+  description: Use Medium No. 180 with 2.0 g/L (final) yeast extract, adjust pH to 1.0.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: CALDICELLULOSIRUPTOR OWENSIS MEDIUM
 original_name: CALDICELLULOSIRUPTOR OWENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -233,17 +233,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, vitamins, glucose and sulfide),
-    sparge medium with 80% N2 and 20% CO2 gas for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Add glucose, vitamins (sterilized by filtration) and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a
-    sterile anoxic stock solution prepared under 80% N2 and 20% CO2. Adjust pH of
-    complete medium to 7.2 - 7.4.
+  description: Dissolve ingredients (except carbonate, vitamins, glucose and sulfide), sparge medium with
+    80% N2 and 20% CO2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by
+    filtration) and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2. Adjust pH of complete medium
+    to 7.2 - 7.4.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N
-    NaOH, then dissolve remaining compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7 using 2 N NaOH, then dissolve
+    remaining compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -254,5 +253,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.105683Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

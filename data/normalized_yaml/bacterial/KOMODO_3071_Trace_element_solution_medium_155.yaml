@@ -1,6 +1,6 @@
 name: Trace element solution (medium 155)
 original_name: Trace element solution (medium 155)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3071
     label: Trace element solution (medium 155)
-notes: 'Source: KOMODO ModelSEED | ID: 3071 | DSMZ Medium: 3071 (mediadive.medium:3071)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3071 | DSMZ Medium: 3071 (mediadive.medium:3071) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

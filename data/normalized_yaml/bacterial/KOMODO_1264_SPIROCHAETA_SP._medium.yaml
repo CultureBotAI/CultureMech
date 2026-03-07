@@ -1,6 +1,6 @@
 name: SPIROCHAETA SP. medium
 original_name: SPIROCHAETA SP. medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1264
     label: SPIROCHAETA SP. medium
-notes: 'Source: KOMODO ModelSEED | ID: 1264 | DSMZ Medium: 1264 (mediadive.medium:1264)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1264 | DSMZ Medium: 1264 (mediadive.medium:1264) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

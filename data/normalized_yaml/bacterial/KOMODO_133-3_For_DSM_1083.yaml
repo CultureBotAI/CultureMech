@@ -1,16 +1,15 @@
 name: For DSM 1083
 original_name: For DSM 1083
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 133.3
   term:
     id: komodo.medium:133.3
     label: For DSM 1083
-notes: 'Source: KOMODO ModelSEED | ID: 133.3 | DSMZ Medium: 133 (mediadive.medium:133)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 133.3 | DSMZ Medium: 133 (mediadive.medium:133) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 12 H2O
   term:

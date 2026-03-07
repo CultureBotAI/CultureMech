@@ -1,6 +1,6 @@
 name: NMS MEDIUM FOR METHYLOCYSTIS SP.
 original_name: NMS MEDIUM FOR METHYLOCYSTIS SP.
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -122,9 +122,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: Dispense the medium into the growth vessels. If using sealed vessels
-    it is appropriate to add 50% methane to the gas phase Autoclave at 121°C for 15
-    min.
+  description: Dispense the medium into the growth vessels. If using sealed vessels it is appropriate
+    to add 50% methane to the gas phase Autoclave at 121°C for 15 min.
 applications:
 - Microbial cultivation
 curation_history:

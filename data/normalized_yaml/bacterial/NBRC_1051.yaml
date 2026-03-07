@@ -1,22 +1,18 @@
 name: '1051'
 original_name: '1051'
-category: imported
+category: bacterial
 description: 1051. NBRC 1050.
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
-- preferred_term: "NaCl20gBacto Yeast Extract (Difco)2gMgCl2\xB76H2O3gMgSO4\xB77H2O6g(NH4)2SO41gCaCl2\xB7\
-    2H2O0.3gKH2PO40.2gKCl0.5gNaBr0.05gH3BO30.025gSrCl2\xB76H2O0.02gFe(III) ammonium\
-    \ citrate0.01gBis Tris Propane2.25gTrace elements solution*10mlVitamin solution**10mlResazurin1mgNa2S\xB7\
-    9H2O0.3gDistilled water1LMix ingredients except for vitamin and Na2S\xB79H2O,\
-    \ adjust pH to 7 with H2SO4, and autoclave under a N2atmosphere. Separately autoclave\
-    \ Na2S\xB79H2O as 5% solution under a N2atmosphere. Anaerobically add filter-sterile\
-    \ vitamin and Na2S\xB79H2O.*Trace elements solutionNitrilotriacetic acid (NTA)4.1gFeCl3\xB7\
-    6H2O0.36gMnCl2\xB74H2O0.09gCoCl2\xB76H2O0.15gCaCl2\xB72H2O0.018gZnCl20.09gH3BO30.017gNa2MoO4\xB7\
-    2H2O0.009gNiCl2\xB76H2O0.018gNa2SeO31.6mgNa2WO41.6mgAlK(SO4)25mgDistilled water1LFirst\
-    \ dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add\
-    \ other minerals. Final pH 7.0.**Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic\
-    \ acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L"
+- preferred_term: NaCl20gBacto Yeast Extract (Difco)2gMgCl2·6H2O3gMgSO4·7H2O6g(NH4)2SO41gCaCl2·2H2O0.3gKH2PO40.2gKCl0.5gNaBr0.05gH3BO30.025gSrCl2·6H2O0.02gFe(III)
+    ammonium citrate0.01gBis Tris Propane2.25gTrace elements solution*10mlVitamin solution**10mlResazurin1mgNa2S·9H2O0.3gDistilled
+    water1LMix ingredients except for vitamin and Na2S·9H2O, adjust pH to 7 with H2SO4, and autoclave
+    under a N2atmosphere. Separately autoclave Na2S·9H2O as 5% solution under a N2atmosphere. Anaerobically
+    add filter-sterile vitamin and Na2S·9H2O.*Trace elements solutionNitrilotriacetic acid (NTA)4.1gFeCl3·6H2O0.36gMnCl2·4H2O0.09gCoCl2·6H2O0.15gCaCl2·2H2O0.018gZnCl20.09gH3BO30.017gNa2MoO4·2H2O0.009gNiCl2·6H2O0.018gNa2SeO31.6mgNa2WO41.6mgAlK(SO4)25mgDistilled
+    water1LFirst dissolve nitrilotriacetic acid and adjust pH to 6.5 with NaOH, and then add other minerals.
+    Final pH 7.0.**Vitamin solutionBiotin2mgFolic acid2mgPyridoxine-HCl10mgThiamine-HCl5mgRiboflavin5mgNicotinic
+    acid5mgCa-pantothenate5mgp-Aminobenzoic acid1mgVitamin B120.01mgDistilled water1L
 - preferred_term: ''
   concentration:
     value: NaCl
@@ -27,11 +23,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -39,7 +35,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -59,7 +55,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "SrCl2\xB76H2O"
+    value: SrCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -83,7 +79,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -124,11 +120,11 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgCl2\xB76H2O"
+    value: MgCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -136,7 +132,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "CaCl2\xB72H2O"
+    value: CaCl2·2H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -156,7 +152,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "SrCl2\xB76H2O"
+    value: SrCl2·6H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -180,7 +176,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "Na2S\xB79H2O"
+    value: Na2S·9H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:

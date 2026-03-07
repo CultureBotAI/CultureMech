@@ -51,6 +51,9 @@ dashboard/
 .oak_cache/
 references_cache/
 
+# UMAP embedding cache (large pickle files - DO NOT commit)
+.umap_cache/
+
 # Jupyter
 .ipynb_checkpoints/
 *.ipynb
@@ -102,3 +105,4 @@ data/normalized_yaml/**/.DS_Store
 # Processed data (regenerable)
 data/processed/
 dismech/
+data/embeddings/*.tsv.gz

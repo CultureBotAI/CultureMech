@@ -1,6 +1,6 @@
 name: 1% OGAWA MEDIUM
 original_name: 1% OGAWA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -45,8 +45,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Homogenize Solution II by stirring and filter through gauze. Mix solutions
-    I and II, and sterilize at 90C for 60 min.
+  description: Homogenize Solution II by stirring and filter through gauze. Mix solutions I and II, and
+    sterilize at 90C for 60 min.
 - step_number: 2
   action: MIX
   description: 'Comment: Commercial 1% Ogawa medium (Eiken or Nissui) is also available.'

@@ -1,6 +1,6 @@
 name: RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM
 original_name: RHODOPSEUDOMONAS SULFOVIRIDIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -164,11 +164,10 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 3
   action: ADJUST_PH
-  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate (). Adjust
-    pH to 6.8 and sterilize at 121°C for 15 min. The liquid medium is sterilized in
-    rubber stoppered or screw-capped bottles under anaerobic conditions (Ref. 3365).
-    After sterilization neutralized sterile sodium sulfide solution is added to a
-    final concentration of 0.03% (see medium 27).
+  description: To medium add 0.1% sodium malate and 0.05% sodium thiosulfate (). Adjust pH to 6.8 and
+    sterilize at 121°C for 15 min. The liquid medium is sterilized in rubber stoppered or screw-capped
+    bottles under anaerobic conditions (Ref. 3365). After sterilization neutralized sterile sodium sulfide
+    solution is added to a final concentration of 0.03% (see medium 27).
 applications:
 - Microbial cultivation
 curation_history:

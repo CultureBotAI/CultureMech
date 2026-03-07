@@ -1,6 +1,6 @@
 name: HYPERTHERMUS BUTYLICUS MEDIUM
 original_name: HYPERTHERMUS BUTYLICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-7
@@ -239,22 +239,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur and sulfide and adjust pH to 6.0
-    with sulfuric acid. Sparge medium with 100% N2 gas for 30 - 45 min to make it
-    anoxic, dispense under the same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials containing the appropriate amount of sulfur, only to 30% of their
-    volume to allow for a large headspace. Sterilize medium by heating for 2 - 3 hours
-    in a boiling water bath on each of 3 successive days. Before use reduce the medium
-    by adding sulfide from a sterile anoxic stock solution prepared under 100% N2
-    gas atmosphere. Check pH and adjust to pH 6.5 - 7.0, if necessary.
+  description: Dissolve ingredients except sulfur and sulfide and adjust pH to 6.0 with sulfuric acid.
+    Sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic, dispense under the same gas atmosphere
+    into anoxic Hungate-type tubes or serum vials containing the appropriate amount of sulfur, only to
+    30% of their volume to allow for a large headspace. Sterilize medium by heating for 2 - 3 hours in
+    a boiling water bath on each of 3 successive days. Before use reduce the medium by adding sulfide
+    from a sterile anoxic stock solution prepared under 100% N2 gas atmosphere. Check pH and adjust to
+    pH 6.5 - 7.0, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize culture vessels to 1 bar overpressure
-    with a sterile 80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize culture vessels to 1 bar overpressure with a sterile 80% H2
+    and 20% CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

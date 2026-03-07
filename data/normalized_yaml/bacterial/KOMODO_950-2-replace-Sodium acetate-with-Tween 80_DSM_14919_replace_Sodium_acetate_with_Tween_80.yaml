@@ -1,11 +1,11 @@
 name: DSM 14919_replace_Sodium acetate_with_Tween 80
 original_name: DSM 14919_replace_Sodium acetate_with_Tween 80
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950.2_replace_Sodium acetate_with_Tween
-  80 | DSMZ Medium: 950 (mediadive.medium:950) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 950.2_replace_Sodium acetate_with_Tween 80 |
+  DSMZ Medium: 950 (mediadive.medium:950) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 950.2_replace_Sodium acetate_with_Tween 80
   term:

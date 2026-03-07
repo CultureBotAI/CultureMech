@@ -1,6 +1,6 @@
 name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
 original_name: MODIFIED BALCH'S METHANOGEN MEDIUM 1/B
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -259,21 +259,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients, except NaHCO3, and bring to a boil for 5-10 sec.
-    Cool down under a stream of H2-CO2 (80:20, v/v), and add NaHCO3 to the medium.
-    Dispense the medium into suitable culture vessels (e.g., serum bottles, Hungate
-    tubes) under the same gas mixture, seal with butyl rubber stoppers and autoclave.
-    Allow to stand the autoclaved medium overnight. Prior to inoculation, add per
-    liter the following solutions aseptically and anaerobically (autoclaved and stored
-    under a N2 atmosphere):'
+  description: 'Mix ingredients, except NaHCO3, and bring to a boil for 5-10 sec. Cool down under a stream
+    of H2-CO2 (80:20, v/v), and add NaHCO3 to the medium. Dispense the medium into suitable culture vessels
+    (e.g., serum bottles, Hungate tubes) under the same gas mixture, seal with butyl rubber stoppers and
+    autoclave. Allow to stand the autoclaved medium overnight. Prior to inoculation, add per liter the
+    following solutions aseptically and anaerobically (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20,
-    v/v).
+  description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

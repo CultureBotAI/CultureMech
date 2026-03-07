@@ -1,6 +1,6 @@
 name: HALOPLASMA CONTRACTILE MEDIUM
 original_name: HALOPLASMA CONTRACTILE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-7
@@ -127,11 +127,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S x 9 H2O by boiling and cooling
-    under a nitrogen atmosphere. Adjust the pH to 6.5 - 7.0. Dispense into Hungate
-    tubes or serum bottles fitted with butyl rubber stoppers. Autoclave and reduce
-    the medium before use by adding the appropriate amount of Na2S x 9 H2O from a
-    neutralised, sterile stock solution.
+  description: Prepare the medium without the Na2S x 9 H2O by boiling and cooling under a nitrogen atmosphere.
+    Adjust the pH to 6.5 - 7.0. Dispense into Hungate tubes or serum bottles fitted with butyl rubber
+    stoppers. Autoclave and reduce the medium before use by adding the appropriate amount of Na2S x 9
+    H2O from a neutralised, sterile stock solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 5.5 - 6.0.

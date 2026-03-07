@@ -1,15 +1,14 @@
 name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
 original_name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 474
   term:
     id: komodo.medium:474
     label: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
-notes: 'Source: KOMODO ModelSEED | ID: 474 | DSMZ Medium: 474 (mediadive.medium:474)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 474 | DSMZ Medium: 474 (mediadive.medium:474) | Aerobic: No'
 ingredients:
 - preferred_term: Agar
   term:

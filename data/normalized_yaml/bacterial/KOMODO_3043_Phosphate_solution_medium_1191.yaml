@@ -1,6 +1,6 @@
 name: Phosphate solution (medium 1191)
 original_name: Phosphate solution (medium 1191)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3043
     label: Phosphate solution (medium 1191)
-notes: 'Source: KOMODO ModelSEED | ID: 3043 | DSMZ Medium: 3043 (mediadive.medium:3043)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3043 | DSMZ Medium: 3043 (mediadive.medium:3043) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

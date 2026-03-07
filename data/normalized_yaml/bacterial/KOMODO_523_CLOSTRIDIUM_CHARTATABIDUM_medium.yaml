@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM CHARTATABIDUM medium
 original_name: CLOSTRIDIUM CHARTATABIDUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:523
     label: CLOSTRIDIUM CHARTATABIDUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 523 | DSMZ Medium: 523 (mediadive.medium:523)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 523 | DSMZ Medium: 523 (mediadive.medium:523) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

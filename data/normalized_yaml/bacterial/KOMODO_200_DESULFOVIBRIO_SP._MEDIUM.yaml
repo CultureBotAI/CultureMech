@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO SP. MEDIUM
 original_name: DESULFOVIBRIO SP. MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:200
     label: DESULFOVIBRIO SP. MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 200 | DSMZ Medium: 200 (mediadive.medium:200)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 200 | DSMZ Medium: 200 (mediadive.medium:200) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

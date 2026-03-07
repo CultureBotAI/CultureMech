@@ -1,6 +1,6 @@
 name: PROLIXIBACTER MEDIUM GYSW
 original_name: PROLIXIBACTER MEDIUM GYSW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -239,15 +239,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium without Vitamin solution, Cysteine-HCl x
-    H2O and Na2S x 9 H2O. Adjust to pH 7.0 with 1 M NaOH. Dispense the medium into
-    Hungate tubes or serum bottles under gassing with N2:CO2 (80:20 v/v). Sterilize
-    by autoclaving. Before inoculation add from sterile stock solutions Cysteine-HCl
-    x H2O, Vitamin solution (filter sterilized) and Na2S x 9 H2O.
+  description: Prepare the liquid medium without Vitamin solution, Cysteine-HCl x H2O and Na2S x 9 H2O.
+    Adjust to pH 7.0 with 1 M NaOH. Dispense the medium into Hungate tubes or serum bottles under gassing
+    with N2:CO2 (80:20 v/v). Sterilize by autoclaving. Before inoculation add from sterile stock solutions
+    Cysteine-HCl x H2O, Vitamin solution (filter sterilized) and Na2S x 9 H2O.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:
@@ -258,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.426600Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

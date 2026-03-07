@@ -1,6 +1,6 @@
 name: RYE-BRAN MRS
 original_name: RYE-BRAN MRS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -29,8 +29,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Mix components and incubate at 50C for 24 hr. Clarify the resulting
-    turbid liquid by centrifugation (500 x g, 15 min) followed by paper-filtration.
+  description: Mix components and incubate at 50C for 24 hr. Clarify the resulting turbid liquid by centrifugation
+    (500 x g, 15 min) followed by paper-filtration.
 applications:
 - Microbial cultivation
 curation_history:

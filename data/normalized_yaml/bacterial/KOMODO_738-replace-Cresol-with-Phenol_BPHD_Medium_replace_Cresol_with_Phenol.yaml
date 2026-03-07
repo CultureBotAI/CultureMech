@@ -1,6 +1,6 @@
 name: BPHD Medium_replace_Cresol_with_Phenol
 original_name: BPHD Medium_replace_Cresol_with_Phenol
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:738_replace_Cresol_with_Phenol
     label: BPHD Medium_replace_Cresol_with_Phenol
-notes: 'Source: KOMODO ModelSEED | ID: 738_replace_Cresol_with_Phenol | DSMZ Medium:
-  738 (mediadive.medium:738) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 738_replace_Cresol_with_Phenol | DSMZ Medium: 738 (mediadive.medium:738)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -251,5 +251,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.606633Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

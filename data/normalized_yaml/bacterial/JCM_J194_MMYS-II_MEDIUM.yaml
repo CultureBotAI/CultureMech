@@ -1,6 +1,6 @@
 name: MMYS-II MEDIUM
 original_name: MMYS-II MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -127,8 +127,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Separately autoclave Solutions I and II. Mix aseptically and adjust
-    final pH to 7.7-7.8.
+  description: Separately autoclave Solutions I and II. Mix aseptically and adjust final pH to 7.7-7.8.
 applications:
 - Microbial cultivation
 curation_history:

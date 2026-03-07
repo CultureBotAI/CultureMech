@@ -1,6 +1,6 @@
 name: CAPROICIPRODUCENS MEDIUM
 original_name: CAPROICIPRODUCENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -103,9 +103,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 6.5. Autoclave under a
-    N2 atmosphere. After cooling, aseptically and anaerobically add the following
-    solutions (autoclaved):'
+  description: 'Mix components thoroughly and adjust pH to 6.5. Autoclave under a N2 atmosphere. After
+    cooling, aseptically and anaerobically add the following solutions (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: Mineral solution (medium 335)
 original_name: Mineral solution (medium 335)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3033
     label: Mineral solution (medium 335)
-notes: 'Source: KOMODO ModelSEED | ID: 3033 | DSMZ Medium: 3033 (mediadive.medium:3033)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3033 | DSMZ Medium: 3033 (mediadive.medium:3033) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

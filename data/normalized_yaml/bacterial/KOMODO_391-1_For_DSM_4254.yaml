@@ -1,6 +1,6 @@
 name: For DSM 4254
 original_name: For DSM 4254
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:391.1
     label: For DSM 4254
-notes: 'Source: KOMODO ModelSEED | ID: 391.1 | DSMZ Medium: 391 (mediadive.medium:391)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 391.1 | DSMZ Medium: 391 (mediadive.medium:391) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na-acetate
   term:

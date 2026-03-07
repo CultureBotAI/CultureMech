@@ -1,8 +1,8 @@
 name: OATMEAL AGAR
 original_name: OATMEAL AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J148
   term:
@@ -24,9 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath,
-    stirring occasionally, for 1 hr. Filter through cloth, make up to 1.0 L, add agar
-    and boil till dissolved.
+  description: Boil 30.0 g of oatmeal with 1.0 L of distilled water over water bath, stirring occasionally,
+    for 1 hr. Filter through cloth, make up to 1.0 L, add agar and boil till dissolved.
 applications:
 - Microbial cultivation
 curation_history:

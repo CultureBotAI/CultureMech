@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM GROLL medium
 original_name: DESULFOTOMACULUM GROLL medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:124a
     label: DESULFOTOMACULUM GROLL medium
-notes: 'Source: KOMODO ModelSEED | ID: 124a | DSMZ Medium: 124a (mediadive.medium:124a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 124a | DSMZ Medium: 124a (mediadive.medium:124a) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -261,5 +260,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.272999Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

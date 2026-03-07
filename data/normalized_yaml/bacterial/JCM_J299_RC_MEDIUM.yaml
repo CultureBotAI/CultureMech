@@ -1,6 +1,6 @@
 name: RC+ MEDIUM
 original_name: RC+ MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -110,11 +110,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2S x 9H2O and L-cystine, and adjust pH to
-    6.0 with H2SO4. Fill the gas phase with N2, seal with butyl rubber stopper, and
-    autoclave. Separately autoclave Na2S x 9H2O and L-cystine as 5% and 12% solutions,
-    respectively, under a N2 atmosphere. Prior to inoculation, add the sterile Na2S
-    x 9H2O and cystine solutions, and readjust pH to 6.0, if necessary. Pressurize
+  description: Mix ingredients, except Na2S x 9H2O and L-cystine, and adjust pH to 6.0 with H2SO4. Fill
+    the gas phase with N2, seal with butyl rubber stopper, and autoclave. Separately autoclave Na2S x
+    9H2O and L-cystine as 5% and 12% solutions, respectively, under a N2 atmosphere. Prior to inoculation,
+    add the sterile Na2S x 9H2O and cystine solutions, and readjust pH to 6.0, if necessary. Pressurize
     the inoculated bottles to 300 kPa N2.
 applications:
 - Microbial cultivation

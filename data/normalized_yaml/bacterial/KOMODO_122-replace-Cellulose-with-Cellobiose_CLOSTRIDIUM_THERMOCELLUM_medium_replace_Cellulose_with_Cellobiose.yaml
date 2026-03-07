@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
 original_name: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:122_replace_Cellulose_with_Cellobiose
     label: CLOSTRIDIUM THERMOCELLUM medium_replace_Cellulose_with_Cellobiose
-notes: 'Source: KOMODO ModelSEED | ID: 122_replace_Cellulose_with_Cellobiose | DSMZ
-  Medium: 122 (mediadive.medium:122) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 122_replace_Cellulose_with_Cellobiose | DSMZ Medium: 122 (mediadive.medium:122)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

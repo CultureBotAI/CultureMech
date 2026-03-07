@@ -1,6 +1,6 @@
 name: MEDIUM 767 MODIFIED FOR DSM 8509
 original_name: MEDIUM 767 MODIFIED FOR DSM 8509
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:767_8509
     label: MEDIUM 767 MODIFIED FOR DSM 8509
-notes: 'Source: KOMODO ModelSEED | ID: 767_8509 | DSMZ Medium: 767 (mediadive.medium:767)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 767_8509 | DSMZ Medium: 767 (mediadive.medium:767) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

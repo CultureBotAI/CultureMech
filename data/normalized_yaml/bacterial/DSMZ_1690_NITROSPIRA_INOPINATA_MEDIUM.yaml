@@ -1,6 +1,6 @@
 name: NITROSPIRA INOPINATA MEDIUM
 original_name: NITROSPIRA INOPINATA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.6-8
@@ -154,8 +154,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Dilute stock solution with MilliQ water (1+19 v/v), add 4 g CaCO3 per
-    litre.
+  description: Dilute stock solution with MilliQ water (1+19 v/v), add 4 g CaCO3 per litre.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 120 °C for 21 min.
@@ -173,22 +172,19 @@ preparation_steps:
   description: Complete medium can be stored at 4°C.
 - step_number: 7
   action: HEAT
-  description: Incubate at 42°C without shaking. Activity and growth can be followed
-    by measuring the depletion of ammonium or the production of nitrite and/or nitrate.
-    Higher ammonium concentrations are inhibitive. For that reason our recommendation
-    is follow nitrite content. As soon as nitrite has been produced and is depleting
-    again (to form nitrate) another dose of ammonium can be added. Incubation time
-    may be up to several weeks. We checked the nitrite content (absence/presence)
-    every 5-7 days and added ammonium chloride about every 2-3 weeks. Don't expose
-    cultures to intense light.
+  description: Incubate at 42°C without shaking. Activity and growth can be followed by measuring the
+    depletion of ammonium or the production of nitrite and/or nitrate. Higher ammonium concentrations
+    are inhibitive. For that reason our recommendation is follow nitrite content. As soon as nitrite has
+    been produced and is depleting again (to form nitrate) another dose of ammonium can be added. Incubation
+    time may be up to several weeks. We checked the nitrite content (absence/presence) every 5-7 days
+    and added ammonium chloride about every 2-3 weeks. Don't expose cultures to intense light.
 - step_number: 8
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 9
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MQ water.
 - step_number: 10
   action: AUTOCLAVE
   description: Autoclave at 120 °C for 21 min.

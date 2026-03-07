@@ -1,16 +1,15 @@
 name: For strain DSM 21449 und DSM 21450
 original_name: For strain DSM 21449 und DSM 21450
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: KOMODO Medium 220.1
   term:
     id: komodo.medium:220.1
     label: For strain DSM 21449 und DSM 21450
-notes: 'Source: KOMODO ModelSEED | ID: 220.1 | DSMZ Medium: 220 (mediadive.medium:220)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 220.1 | DSMZ Medium: 220 (mediadive.medium:220) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

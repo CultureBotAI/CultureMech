@@ -1,16 +1,15 @@
 name: M1-NOCARDIOPSIS ARABIA medium
 original_name: M1-NOCARDIOPSIS ARABIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 1065
   term:
     id: komodo.medium:1065
     label: M1-NOCARDIOPSIS ARABIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1065 | DSMZ Medium: 1065 (mediadive.medium:1065)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1065 | DSMZ Medium: 1065 (mediadive.medium:1065) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

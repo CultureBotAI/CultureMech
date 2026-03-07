@@ -1,16 +1,15 @@
 name: LB (Luria-Bertani) medium
 original_name: LB (Luria-Bertani) medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 381
   term:
     id: komodo.medium:381
     label: LB (Luria-Bertani) medium
-notes: 'Source: KOMODO ModelSEED | ID: 381 | DSMZ Medium: 381 (mediadive.medium:381)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 381 | DSMZ Medium: 381 (mediadive.medium:381) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

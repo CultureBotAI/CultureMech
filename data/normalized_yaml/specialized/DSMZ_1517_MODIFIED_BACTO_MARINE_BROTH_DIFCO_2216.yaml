@@ -1,6 +1,6 @@
 name: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
 original_name: MODIFIED BACTO MARINE BROTH (DIFCO 2216)
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.4-7.8
@@ -123,8 +123,8 @@ preparation_steps:
   description: Final pH should be 7.6 ± 0.2 at 25°C.
 - step_number: 2
   action: MIX
-  description: It is strongly suggested that Bacto peptone (BD 212750) and Bacto yeast
-    extract (BD 211921) should be used for the incubation
+  description: It is strongly suggested that Bacto peptone (BD 212750) and Bacto yeast extract (BD 211921)
+    should be used for the incubation
 applications:
 - Microbial cultivation
 curation_history:

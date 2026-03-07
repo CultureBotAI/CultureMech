@@ -1,6 +1,6 @@
 name: BACILLUS FILIFORMIS medium
 original_name: BACILLUS FILIFORMIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:992
     label: BACILLUS FILIFORMIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 992 | DSMZ Medium: 992 (mediadive.medium:992)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 992 | DSMZ Medium: 992 (mediadive.medium:992) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

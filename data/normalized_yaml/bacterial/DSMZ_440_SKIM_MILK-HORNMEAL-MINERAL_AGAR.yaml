@@ -1,8 +1,8 @@
 name: SKIM MILK-HORNMEAL-MINERAL AGAR
 original_name: SKIM MILK-HORNMEAL-MINERAL AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 440
   term:
@@ -63,8 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave the skim milk powder separately in 100 ml H2O and add it
-    to the cooled (60°C) agar-medium.
+  description: Autoclave the skim milk powder separately in 100 ml H2O and add it to the cooled (60°C)
+    agar-medium.
 applications:
 - Microbial cultivation
 curation_history:

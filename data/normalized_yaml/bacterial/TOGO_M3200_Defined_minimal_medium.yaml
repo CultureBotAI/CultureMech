@@ -1,6 +1,6 @@
 name: Defined minimal medium
 original_name: Defined minimal medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,14 +8,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: KH2PO4
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -23,8 +21,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: NH4Cl
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -32,8 +29,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: NaNO3
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63005
     label: ''
@@ -41,8 +37,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: Na2HPO4
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -50,8 +45,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: Sodium Succinate
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -59,8 +53,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: MgSO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -68,8 +61,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: NaNO2
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:78870
     label: sodium nitrite
@@ -84,14 +76,12 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
 - preferred_term: CaCl2
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -99,8 +89,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: CoCl2
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:35696
     label: cobalt dichloride
@@ -108,8 +97,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: FeSO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Solution'
   term:
     id: CHEBI:75832
     label: iron(2+) sulfate (anhydrous)
@@ -117,14 +105,12 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: MnCl2
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   concentration:
     value: variable
     unit: VARIABLE
 - preferred_term: ZnSO4
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:35176
     label: zinc sulfate
@@ -132,8 +118,7 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: (NH4)6Mo7O24
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -165,18 +150,16 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.887604'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration
-    for ingredient: NH4Cl; Added default concentration for ingredient: NaNO3; Added
-    default concentration for ingredient: Na2HPO4; Added default concentration for
-    ingredient: Sodium Succinate; Added default concentration for ingredient: MgSO4;
-    Added default concentration for ingredient: NaNO2; Added default concentration
-    for ingredient: Vishniac and Santer trace elements solution; Added default concentration
-    for ingredient: CaCl2; Added default concentration for ingredient: CoCl2; Added
-    default concentration for ingredient: FeSO4; Added default concentration for ingredient:
-    MnCl2; Added default concentration for ingredient: ZnSO4; Added default concentration
-    for ingredient: (NH4)6Mo7O24; Added default concentration for ingredient: EDTA'
+  notes: 'Added default concentration for ingredient: KH2PO4; Added default concentration for ingredient:
+    NH4Cl; Added default concentration for ingredient: NaNO3; Added default concentration for ingredient:
+    Na2HPO4; Added default concentration for ingredient: Sodium Succinate; Added default concentration
+    for ingredient: MgSO4; Added default concentration for ingredient: NaNO2; Added default concentration
+    for ingredient: Vishniac and Santer trace elements solution; Added default concentration for ingredient:
+    CaCl2; Added default concentration for ingredient: CoCl2; Added default concentration for ingredient:
+    FeSO4; Added default concentration for ingredient: MnCl2; Added default concentration for ingredient:
+    ZnSO4; Added default concentration for ingredient: (NH4)6Mo7O24; Added default concentration for ingredient:
+    EDTA'
 - timestamp: '2026-02-06T05:10:43.435743Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

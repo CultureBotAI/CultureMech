@@ -1,11 +1,11 @@
 name: PARACOCCUS ALCALIPHILUS MEDIUM
 original_name: PARACOCCUS ALCALIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 772 | DSMZ Medium: 772
-  (mediadive.medium:772) | Aerobic: No'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 772 | DSMZ Medium: 772 (mediadive.medium:772)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 772
   term:

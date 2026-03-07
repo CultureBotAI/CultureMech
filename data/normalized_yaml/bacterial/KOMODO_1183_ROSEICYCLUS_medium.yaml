@@ -1,6 +1,6 @@
 name: ROSEICYCLUS medium
 original_name: ROSEICYCLUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 8.0-8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1183
     label: ROSEICYCLUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1183 | DSMZ Medium: 1183 (mediadive.medium:1183)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1183 | DSMZ Medium: 1183 (mediadive.medium:1183) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:

@@ -1,6 +1,6 @@
 name: SPIROCHAETEA NS MEDIUM
 original_name: SPIROCHAETEA NS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -168,12 +168,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 8.0, bring to a boil for a
-    few seconds and cool down under a stream of N2. Distribute the medium into culture
-    vessels (e.g., 10 ml in Hungate tubes) under a N2 gas stream, seal with butyl
-    rubber stoppers and autoclave. After cooling, aseptically and anaerobically add
-    per liter the following solutions from sterile anaerobic stocks (autoclaved or
-    *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 8.0, bring to a boil for a few seconds and cool
+    down under a stream of N2. Distribute the medium into culture vessels (e.g., 10 ml in Hungate tubes)
+    under a N2 gas stream, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
+    anaerobically add per liter the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

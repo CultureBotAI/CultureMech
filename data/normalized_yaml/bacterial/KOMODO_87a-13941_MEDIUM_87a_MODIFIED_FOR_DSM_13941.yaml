@@ -1,6 +1,6 @@
 name: MEDIUM 87a MODIFIED FOR DSM 13941
 original_name: MEDIUM 87a MODIFIED FOR DSM 13941
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:87a_13941
     label: MEDIUM 87a MODIFIED FOR DSM 13941
-notes: 'Source: KOMODO ModelSEED | ID: 87a_13941 | DSMZ Medium: 87a (mediadive.medium:87a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 87a_13941 | DSMZ Medium: 87a (mediadive.medium:87a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

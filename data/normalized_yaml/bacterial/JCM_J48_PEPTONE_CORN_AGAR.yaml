@@ -1,8 +1,8 @@
 name: PEPTONE CORN AGAR
 original_name: PEPTONE CORN AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: JCM Medium J48
@@ -53,8 +53,7 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: Corn steep liquor, powder (Wako Pure Chemicals) may be substituted
-    for corn steep liquor.
+  description: Corn steep liquor, powder (Wako Pure Chemicals) may be substituted for corn steep liquor.
 applications:
 - Microbial cultivation
 curation_history:

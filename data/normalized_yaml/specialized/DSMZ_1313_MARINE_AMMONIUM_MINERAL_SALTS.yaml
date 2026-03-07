@@ -1,6 +1,6 @@
 name: MARINE AMMONIUM MINERAL SALTS
 original_name: MARINE AMMONIUM MINERAL SALTS
-category: imported
+category: specialized
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -209,8 +209,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solution A and B separately and combine after cooling. Add
-    1ml/litre of filter sterilized vitamin solution V10
+  description: Autoclave solution A and B separately and combine after cooling. Add 1ml/litre of filter
+    sterilized vitamin solution V10
 - step_number: 2
   action: ADJUST_PH
   description: Adjust the pH to 7.2 if needed with NaOH/HCl

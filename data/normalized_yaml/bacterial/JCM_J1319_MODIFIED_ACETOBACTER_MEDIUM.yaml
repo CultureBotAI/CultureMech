@@ -1,6 +1,6 @@
 name: MODIFIED ACETOBACTER MEDIUM
 original_name: MODIFIED ACETOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -238,18 +238,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. Aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized and):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. Aseptically
+    and anaerobically add the following solutions (autoclaved or *filter-sterilized and):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Hungate
-    tubes) under the same gas mixture and seal with butyl rubber stoppers. Add per
-    liter the following solutions (autoclaved and stored under N2):'
+  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Hungate tubes) under the same
+    gas mixture and seal with butyl rubber stoppers. Add per liter the following solutions (autoclaved
+    and stored under N2):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

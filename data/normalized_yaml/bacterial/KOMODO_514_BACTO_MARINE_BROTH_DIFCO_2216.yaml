@@ -1,16 +1,15 @@
 name: BACTO MARINE BROTH (DIFCO 2216)
 original_name: BACTO MARINE BROTH (DIFCO 2216)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.4-7.8
 media_term:
   preferred_term: KOMODO Medium 514
   term:
     id: komodo.medium:514
     label: BACTO MARINE BROTH (DIFCO 2216)
-notes: 'Source: KOMODO ModelSEED | ID: 514 | DSMZ Medium: 514 (mediadive.medium:514)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514 | DSMZ Medium: 514 (mediadive.medium:514) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

@@ -1,6 +1,6 @@
 name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
 original_name: TRYPTONE-YEAST EXTRACT BROTH (ISP-1) WITH 0.2% MgSO<sub>4</sub>&#183;7H<sub>2</sub>O
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -32,9 +32,8 @@ preparation_steps:
   description: Adjust pH to 7.0 - 7.2.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available
-    from Becton Dickinson & Co. as ISP Medium 1. Add MgSO4 x 7H2O to the medium before
-    autoclaving.'
+  description: 'Comment: The premixed powder of Tryptone-yeast extract broth is available from Becton
+    Dickinson & Co. as ISP Medium 1. Add MgSO4 x 7H2O to the medium before autoclaving.'
 applications:
 - Microbial cultivation
 curation_history:

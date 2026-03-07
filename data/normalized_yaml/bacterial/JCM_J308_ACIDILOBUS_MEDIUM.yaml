@@ -1,6 +1,6 @@
 name: ACIDILOBUS MEDIUM
 original_name: ACIDILOBUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.6
@@ -207,15 +207,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x
-    9H2O, and autoclave under a N2-CO2 (80:20) gas atmosphere. Separately autoclave
-    10% (w/v) yeast extract solution and 5% (w/v) Na2S x 9H2O solution under a N2
-    atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize
-    Trace vitamins solution while gassing with N2. Aseptically and anaerobically add
-    the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2
-    (80:20) gas atmosphere. Prior to inoculation, add sterile Na2S x 9H2O solution,
-    and adjust pH to 3.5 - 3.8 with sterile 1 N H2SO4. Pressurize the inoculated bottle
-    to 100 kPa N2-CO2 (80:20).
+  description: Mix ingredients, except yeast extract, vitamins, sulfur and Na2S x 9H2O, and autoclave
+    under a N2-CO2 (80:20) gas atmosphere. Separately autoclave 10% (w/v) yeast extract solution and 5%
+    (w/v) Na2S x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days.
+    Filter-sterilize Trace vitamins solution while gassing with N2. Aseptically and anaerobically add
+    the yeast extract and vitamin solutions, and sulfur to the medium under a N2-CO2 (80:20) gas atmosphere.
+    Prior to inoculation, add sterile Na2S x 9H2O solution, and adjust pH to 3.5 - 3.8 with sterile 1
+    N H2SO4. Pressurize the inoculated bottle to 100 kPa N2-CO2 (80:20).
 applications:
 - Microbial cultivation
 curation_history:

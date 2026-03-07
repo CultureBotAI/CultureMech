@@ -1,8 +1,8 @@
 name: Brain Heart Agar (BHI) (Luqiao, Beijing)
 original_name: Brain Heart Agar (BHI) (Luqiao, Beijing)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: BHI agar (Luqiao)
   concentration:

@@ -1,6 +1,6 @@
 name: 15% MH MEDIUM
 original_name: 15% MH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -81,8 +81,8 @@ preparation_steps:
   description: Final pH 7.5
 - step_number: 2
   action: COOL
-  description: NaHCO3 is added from a sterilized stock solution when the medium has
-    cooled. Agar is added at a concentration of 20 g/l for solid media.
+  description: NaHCO3 is added from a sterilized stock solution when the medium has cooled. Agar is added
+    at a concentration of 20 g/l for solid media.
 applications:
 - Microbial cultivation
 curation_history:

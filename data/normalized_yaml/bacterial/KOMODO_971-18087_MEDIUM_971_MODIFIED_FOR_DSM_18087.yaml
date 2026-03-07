@@ -1,15 +1,15 @@
 name: MEDIUM 971 MODIFIED FOR DSM 18087
 original_name: MEDIUM 971 MODIFIED FOR DSM 18087
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 971_18087
   term:
     id: komodo.medium:971_18087
     label: MEDIUM 971 MODIFIED FOR DSM 18087
-notes: 'Source: KOMODO ModelSEED | ID: 971_18087 | DSMZ Medium: 971 (mediadive.medium:971)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 971_18087 | DSMZ Medium: 971 (mediadive.medium:971) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Glucose
   term:

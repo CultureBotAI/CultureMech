@@ -1,8 +1,8 @@
 name: STARKEYA NOVELLA MEDIUM
 original_name: STARKEYA NOVELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.5
 media_term:
   preferred_term: DSMZ Medium 69
@@ -121,13 +121,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Solutions A, B, C and D are sterilized separately by autoclaving and
-    mixed when cooled to room temperature. Adjust pH of complete medium to 8.5 with
-    sterile 0.5 N NaOH.
+  description: Solutions A, B, C and D are sterilized separately by autoclaving and mixed when cooled
+    to room temperature. Adjust pH of complete medium to 8.5 with sterile 0.5 N NaOH.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
+    Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

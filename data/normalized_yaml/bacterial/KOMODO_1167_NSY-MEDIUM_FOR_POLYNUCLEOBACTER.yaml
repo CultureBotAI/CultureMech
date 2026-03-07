@@ -1,6 +1,6 @@
 name: NSY-MEDIUM FOR POLYNUCLEOBACTER
 original_name: NSY-MEDIUM FOR POLYNUCLEOBACTER
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1167
     label: NSY-MEDIUM FOR POLYNUCLEOBACTER
-notes: 'Source: KOMODO ModelSEED | ID: 1167 | DSMZ Medium: 1167 (mediadive.medium:1167)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1167 | DSMZ Medium: 1167 (mediadive.medium:1167) | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:

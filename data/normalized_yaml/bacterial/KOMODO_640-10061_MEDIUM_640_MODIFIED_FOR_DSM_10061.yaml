@@ -1,6 +1,6 @@
 name: MEDIUM 640 MODIFIED FOR DSM 10061
 original_name: MEDIUM 640 MODIFIED FOR DSM 10061
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:640_10061
     label: MEDIUM 640 MODIFIED FOR DSM 10061
-notes: 'Source: KOMODO ModelSEED | ID: 640_10061 | DSMZ Medium: 640 (mediadive.medium:640)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 640_10061 | DSMZ Medium: 640 (mediadive.medium:640) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NH4Cl
   term:

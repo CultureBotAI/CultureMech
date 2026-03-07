@@ -1,6 +1,6 @@
 name: MWC
 original_name: MWC
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -133,8 +133,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.

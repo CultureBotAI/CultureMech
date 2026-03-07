@@ -1,6 +1,6 @@
 name: SPIROCHAETA ISOVALERICA medium
 original_name: SPIROCHAETA ISOVALERICA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:273
     label: SPIROCHAETA ISOVALERICA medium
-notes: 'Source: KOMODO ModelSEED | ID: 273 | DSMZ Medium: 273 (mediadive.medium:273)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 273 | DSMZ Medium: 273 (mediadive.medium:273) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: ANOXYNATRONUM MEDIUM
 original_name: ANOXYNATRONUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -32,8 +32,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into
-    serum bottles under gassing with N2. Sterilize by autoclaving
+  description: Prepare the liquid medium. Adjust to pH 10.0. Dispense the medium into serum bottles under
+    gassing with N2. Sterilize by autoclaving
 applications:
 - Microbial cultivation
 curation_history:

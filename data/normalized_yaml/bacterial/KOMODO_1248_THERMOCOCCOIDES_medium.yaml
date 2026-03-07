@@ -1,6 +1,6 @@
 name: THERMOCOCCOIDES medium
 original_name: THERMOCOCCOIDES medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1248
     label: THERMOCOCCOIDES medium
-notes: 'Source: KOMODO ModelSEED | ID: 1248 | DSMZ Medium: 1248 (mediadive.medium:1248)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1248 | DSMZ Medium: 1248 (mediadive.medium:1248) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,6 +1,6 @@
 name: MS MEDIUM
 original_name: MS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 165 with 1.0 g Na2S2O3 x 5H2O, and adjust pH to 7.0-7.5
-    with NaOH.
+  description: Use Medium No. 165 with 1.0 g Na2S2O3 x 5H2O, and adjust pH to 7.0-7.5 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:

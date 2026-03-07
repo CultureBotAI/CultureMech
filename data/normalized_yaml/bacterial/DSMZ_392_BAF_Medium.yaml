@@ -1,8 +1,8 @@
 name: BAF Medium
 original_name: BAF Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.8-6.3
 media_term:
   preferred_term: DSMZ Medium 392

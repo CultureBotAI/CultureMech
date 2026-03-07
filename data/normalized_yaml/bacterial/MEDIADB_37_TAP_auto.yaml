@@ -1,6 +1,6 @@
 name: '''TAP (auto'
 original_name: '''TAP (auto'
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -101,15 +101,14 @@ curation_history:
 - timestamp: '2026-01-27T07:21:42.849603Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 37, Reference:
-    Mazumdar et al. (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 37, Reference: Mazumdar et al. (2014)
+    PLOS One'
 media_term:
   preferred_term: MediaDB Medium 37
   term:
     id: MEDIADB:37
     label: '''TAP (auto'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

@@ -1,8 +1,8 @@
 name: tryptic soy agar (supplemented with 5% sheep blood)
 original_name: tryptic soy agar (supplemented with 5% sheep blood)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: sheep blood
   concentration:

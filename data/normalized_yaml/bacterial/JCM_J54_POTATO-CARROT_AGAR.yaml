@@ -1,8 +1,8 @@
 name: POTATO-CARROT AGAR
 original_name: POTATO-CARROT AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J54
   term:
@@ -30,8 +30,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Boil potatoes and carrots until cooked, filter through cheesecloth,
-    make up volume to 1.0 L and add agar.
+  description: Boil potatoes and carrots until cooked, filter through cheesecloth, make up volume to 1.0
+    L and add agar.
 - step_number: 2
   action: MIX
   description: pH unadjusted.

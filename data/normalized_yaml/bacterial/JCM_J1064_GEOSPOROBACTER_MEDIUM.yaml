@@ -1,6 +1,6 @@
 name: GEOSPOROBACTER MEDIUM
 original_name: GEOSPOROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -246,16 +246,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, Trace vitamins and Na2S x 9H2O, and
-    autoclave under a N2-CO2 (90:10) atmosphere. Filter-sterilize NaHCO3 as an 8.4%
-    solution and Trace vitamins while gassing with N2. Separately autoclave Na2S x
-    9H2O as 5% solution under a N2 atmosphere. Aseptically and anaerobically add NaHCO3
-    and Trace vitamins to the medium under a N2-CO2 (90:10) atmosphere. Prior to inoculation,
+  description: Mix ingredients except NaHCO3, Trace vitamins and Na2S x 9H2O, and autoclave under a N2-CO2
+    (90:10) atmosphere. Filter-sterilize NaHCO3 as an 8.4% solution and Trace vitamins while gassing with
+    N2. Separately autoclave Na2S x 9H2O as 5% solution under a N2 atmosphere. Aseptically and anaerobically
+    add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (90:10) atmosphere. Prior to inoculation,
     add the sterile Na2S x 9H2O solution, and adjust pH to 7.5 - 8.0.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve EDTA x 2Na first in 500 ml of distilled water. Then add the
-    remaining salts and adjust volume to 1000 ml.
+  description: Dissolve EDTA x 2Na first in 500 ml of distilled water. Then add the remaining salts and
+    adjust volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

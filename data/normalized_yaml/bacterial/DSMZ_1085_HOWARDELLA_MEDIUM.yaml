@@ -1,6 +1,6 @@
 name: HOWARDELLA MEDIUM
 original_name: HOWARDELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -54,12 +54,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except urea and thioglycolate), boil medium for
-    1 min, then cool to room temperature under 80% N2 and 20% CO2 gas mixture. Add
-    thioglycolate, dispense medium under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. After autoclaving add urea from a 10% (w/v)
-    stock solution sterilized by filtration and stored under 100% N2 gas. Adjust pH
-    of complete medium to 7.4.
+  description: Dissolve ingredients (except urea and thioglycolate), boil medium for 1 min, then cool
+    to room temperature under 80% N2 and 20% CO2 gas mixture. Add thioglycolate, dispense medium under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
+    add urea from a 10% (w/v) stock solution sterilized by filtration and stored under 100% N2 gas. Adjust
+    pH of complete medium to 7.4.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: DESULFACINUM HYDROTHERMALE MEDIUM
 original_name: DESULFACINUM HYDROTHERMALE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.0-7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:875
     label: DESULFACINUM HYDROTHERMALE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 875 | DSMZ Medium: 875 (mediadive.medium:875)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 875 | DSMZ Medium: 875 (mediadive.medium:875) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

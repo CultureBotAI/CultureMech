@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTER (KoKo) MEDIUM
 original_name: THERMOANAEROBACTER (KoKo) MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -223,25 +223,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except calcium chloride, bicarbonate, glucose,
-    vitamins, cysteine and sulfide), adjust pH to 7.0 and sparge medium with 100%
-    N2 gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. After sterilization
-    add calcium chloride, glucose, cysteine and sulfide from sterile anoxic stock
-    solutions autoclaved under 100% N2 gas atmosphere. Add bicarbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins
-    are prepared under 100% N2 gas and sterilized by filtration. The pH of the complete
-    medium should be at 7.0.
+  description: Dissolve ingredients (except calcium chloride, bicarbonate, glucose, vitamins, cysteine
+    and sulfide), adjust pH to 7.0 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
+    Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add calcium chloride, glucose, cysteine and sulfide from sterile anoxic stock
+    solutions autoclaved under 100% N2 gas atmosphere. Add bicarbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Vitamins are prepared under 100% N2 gas and sterilized
+    by filtration. The pH of the complete medium should be at 7.0.
 - step_number: 2
   action: MIX
-  description: 'Note: Supplementation of medium with 10.00 g/l MOPS buffer (pH 6.9
-    - 7.0; 10% (w/v) anoxic stock solution) may enhance the buffer capacity of the
-    medium.'
+  description: 'Note: Supplementation of medium with 10.00 g/l MOPS buffer (pH 6.9 - 7.0; 10% (w/v) anoxic
+    stock solution) may enhance the buffer capacity of the medium.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,5 +249,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.949374Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

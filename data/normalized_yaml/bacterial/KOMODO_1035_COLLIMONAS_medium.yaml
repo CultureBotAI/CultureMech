@@ -1,6 +1,6 @@
 name: COLLIMONAS medium
 original_name: COLLIMONAS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1035
     label: COLLIMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1035 | DSMZ Medium: 1035 (mediadive.medium:1035)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1035 | DSMZ Medium: 1035 (mediadive.medium:1035) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

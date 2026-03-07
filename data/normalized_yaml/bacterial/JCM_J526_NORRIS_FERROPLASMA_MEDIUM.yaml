@@ -1,6 +1,6 @@
 name: NORRIS FERROPLASMA MEDIUM
 original_name: NORRIS FERROPLASMA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.2
@@ -53,8 +53,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except FeSO4 x 7H2O, adjust pH to 1.2 with H2SO4 and
-    autoclave. Add filter-sterilized FeSO4 x 7H2O to the medium.
+  description: Mix ingredients except FeSO4 x 7H2O, adjust pH to 1.2 with H2SO4 and autoclave. Add filter-sterilized
+    FeSO4 x 7H2O to the medium.
 applications:
 - Microbial cultivation
 curation_history:

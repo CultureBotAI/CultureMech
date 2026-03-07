@@ -1,8 +1,8 @@
 name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
 original_name: MIDDLEBROOK 7H10 AGAR WITH OADC ENRICHMENT
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J386
   term:
@@ -27,8 +27,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically add
-    100 ml of Middlebrook OADC Enrichment (BD-BBL) and mix thoroughly.
+  description: Sterilize at 121C for 10 min and cool to 50 - 55C. Aseptically add 100 ml of Middlebrook
+    OADC Enrichment (BD-BBL) and mix thoroughly.
 applications:
 - Microbial cultivation
 curation_history:

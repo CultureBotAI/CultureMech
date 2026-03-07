@@ -1,8 +1,8 @@
 name: YPGA
 original_name: YPGA
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 1015

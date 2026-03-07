@@ -1,6 +1,6 @@
 name: HALOANAEROBIUM ALCALIPHILUM MEDIUM
 original_name: HALOANAEROBIUM ALCALIPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -196,15 +196,14 @@ preparation_steps:
   description: pH 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine
-    hydrochloride and Na2S x 9 H2O. Boil and then cool under a gas atmosphere of N2:CO2
-    (80:20 v/v) and add the NaHCO3 and cysteine hydrochloride. Autoclave the medium
-    and add from sterile stock solutions yeast extract, trypticase, glucose, and Na2S
-    x 9 H2O. The final pH should be 7.0.
+  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine hydrochloride and Na2S
+    x 9 H2O. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v) and add the NaHCO3 and cysteine
+    hydrochloride. Autoclave the medium and add from sterile stock solutions yeast extract, trypticase,
+    glucose, and Na2S x 9 H2O. The final pH should be 7.0.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

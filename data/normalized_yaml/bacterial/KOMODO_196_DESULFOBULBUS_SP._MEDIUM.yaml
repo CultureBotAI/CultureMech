@@ -1,6 +1,6 @@
 name: DESULFOBULBUS SP. MEDIUM
 original_name: DESULFOBULBUS SP. MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:196
     label: DESULFOBULBUS SP. MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 196 | DSMZ Medium: 196 (mediadive.medium:196)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 196 | DSMZ Medium: 196 (mediadive.medium:196) | Aerobic: No'
 ingredients:
 - preferred_term: FeCl3 x 6 H2O
   term:

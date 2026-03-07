@@ -1,6 +1,6 @@
 name: SULFOPHOBOCOCCUS ZILLIGII medium
 original_name: SULFOPHOBOCOCCUS ZILLIGII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:770
     label: SULFOPHOBOCOCCUS ZILLIGII medium
-notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 770 | DSMZ Medium: 770 (mediadive.medium:770) | Aerobic: Yes'
 ingredients:
 - preferred_term: Na2-EDTA
   term:

@@ -1,6 +1,6 @@
 name: IGNISPHAERA medium
 original_name: IGNISPHAERA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1043
     label: IGNISPHAERA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1043 | DSMZ Medium: 1043 (mediadive.medium:1043)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1043 | DSMZ Medium: 1043 (mediadive.medium:1043) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

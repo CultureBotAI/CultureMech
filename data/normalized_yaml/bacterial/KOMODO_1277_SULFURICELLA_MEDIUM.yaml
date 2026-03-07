@@ -1,6 +1,6 @@
 name: SULFURICELLA MEDIUM
 original_name: SULFURICELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1277
     label: SULFURICELLA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1277 | DSMZ Medium: 1277 (mediadive.medium:1277)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1277 | DSMZ Medium: 1277 (mediadive.medium:1277) | Aerobic: No'
 ingredients:
 - preferred_term: MgCl2 x 6 H2O
   term:
@@ -226,5 +225,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.919949Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

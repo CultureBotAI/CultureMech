@@ -1,6 +1,6 @@
 name: ALLISONELLA medium
 original_name: ALLISONELLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1006
     label: ALLISONELLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1006 | DSMZ Medium: 1006 (mediadive.medium:1006)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1006 | DSMZ Medium: 1006 (mediadive.medium:1006) | Aerobic: Yes'
 ingredients:
 - preferred_term: DL-Histidine
   term:

@@ -1,8 +1,8 @@
 name: f/2 Quad
 original_name: f/2 Quad
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: CCAP Medium C35
@@ -107,13 +107,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
-    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
-    \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1\
+    \ M HCl\r\nprior to autoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave at 15\
+    \ psi for 15\r\nminutes."
 - step_number: 2
   action: MIX
-  description: "This medium will provide nutrients for long lasting, dense cultures\
-    \ and can be used in liquid\r\nand agar forms."
+  description: "This medium will provide nutrients for long lasting, dense cultures and can be used in\
+    \ liquid\r\nand agar forms."
 - step_number: 3
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.

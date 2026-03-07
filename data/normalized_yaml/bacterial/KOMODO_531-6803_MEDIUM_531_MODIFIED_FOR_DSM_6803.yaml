@@ -1,15 +1,14 @@
 name: MEDIUM 531 MODIFIED FOR DSM 6803
 original_name: MEDIUM 531 MODIFIED FOR DSM 6803
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 531_6803
   term:
     id: komodo.medium:531_6803
     label: MEDIUM 531 MODIFIED FOR DSM 6803
-notes: 'Source: KOMODO ModelSEED | ID: 531_6803 | DSMZ Medium: 531 (mediadive.medium:531)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 531_6803 | DSMZ Medium: 531 (mediadive.medium:531) | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:

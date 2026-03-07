@@ -1,8 +1,8 @@
 name: BCYE agar
 original_name: BCYE agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: BCYE agar
   concentration:

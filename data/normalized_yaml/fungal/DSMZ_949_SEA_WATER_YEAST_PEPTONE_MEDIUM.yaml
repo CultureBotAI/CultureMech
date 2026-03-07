@@ -1,8 +1,8 @@
 name: SEA WATER YEAST PEPTONE MEDIUM
 original_name: SEA WATER YEAST PEPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 949
@@ -94,18 +94,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Prepare in similar manner to sea water agar (medium
-    246).
+  description: Adjust pH to 7.3. Prepare in similar manner to sea water agar (medium 246).
 - step_number: 2
   action: AUTOCLAVE
-  description: Dissolve beef extract and peptone by heating in tap water, adjust pH
-    to 7.8 and boil for 10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C
-    for 20 min. Directly after autoclaving, add warm (55°C) sterile sea water. Liquid
-    medium without agar should be combined when cooled to room temperature.
+  description: Dissolve beef extract and peptone by heating in tap water, adjust pH to 7.8 and boil for
+    10 min. Readjust pH to 7.3. Add agar and autoclave at 121°C for 20 min. Directly after autoclaving,
+    add warm (55°C) sterile sea water. Liquid medium without agar should be combined when cooled to room
+    temperature.
 - step_number: 3
   action: STORE
-  description: Natural sea water is stored in the dark for at least three weeks to
-    "age". If natural sea water is not available use artificial sea water.
+  description: Natural sea water is stored in the dark for at least three weeks to "age". If natural sea
+    water is not available use artificial sea water.
 applications:
 - Microbial cultivation
 curation_history:

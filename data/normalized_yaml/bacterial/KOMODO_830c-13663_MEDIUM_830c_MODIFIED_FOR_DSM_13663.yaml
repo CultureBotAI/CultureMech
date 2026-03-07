@@ -1,6 +1,6 @@
 name: MEDIUM 830c MODIFIED FOR DSM 13663
 original_name: MEDIUM 830c MODIFIED FOR DSM 13663
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:830c_13663
     label: MEDIUM 830c MODIFIED FOR DSM 13663
-notes: 'Source: KOMODO ModelSEED | ID: 830c_13663 | DSMZ Medium: 830c (mediadive.medium:830c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 830c_13663 | DSMZ Medium: 830c (mediadive.medium:830c) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

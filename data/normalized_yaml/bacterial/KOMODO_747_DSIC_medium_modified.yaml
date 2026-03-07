@@ -1,6 +1,6 @@
 name: DSIC medium (modified)
 original_name: DSIC medium (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.1
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:747
     label: DSIC medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 747 | DSMZ Medium: 747 (mediadive.medium:747)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 747 | DSMZ Medium: 747 (mediadive.medium:747) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

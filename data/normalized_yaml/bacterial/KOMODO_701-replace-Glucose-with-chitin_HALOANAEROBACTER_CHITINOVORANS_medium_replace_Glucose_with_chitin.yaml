@@ -1,6 +1,6 @@
 name: HALOANAEROBACTER CHITINOVORANS medium_replace_Glucose_with_chitin
 original_name: HALOANAEROBACTER CHITINOVORANS medium_replace_Glucose_with_chitin
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:701_replace_Glucose_with_chitin
     label: HALOANAEROBACTER CHITINOVORANS medium_replace_Glucose_with_chitin
-notes: 'Source: KOMODO ModelSEED | ID: 701_replace_Glucose_with_chitin | DSMZ Medium:
-  701 (mediadive.medium:701) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 701_replace_Glucose_with_chitin | DSMZ Medium: 701 (mediadive.medium:701)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

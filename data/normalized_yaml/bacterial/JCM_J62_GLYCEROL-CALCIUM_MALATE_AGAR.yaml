@@ -1,8 +1,8 @@
 name: GLYCEROL-CALCIUM MALATE AGAR
 original_name: GLYCEROL-CALCIUM MALATE AGAR
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J62
   term:

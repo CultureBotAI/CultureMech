@@ -1,8 +1,8 @@
 name: SOIL EXTRACT MEDIUM
 original_name: SOIL EXTRACT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7
 media_term:
   preferred_term: DSMZ Medium 12
@@ -32,11 +32,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic
-    matter) in 1000 ml tap water for one hour at 121°C. Allow it to sediment for a
-    few hours at room temperature. Centrifuge the supernatant. Add 15.0 g agar per
-    1000 ml to the clear supernatant solution thus obtained. Adjust pH to 6.8 - 7.0
-    and sterilize.
+  description: Sterilize 400.0 g of air-dried garden soil (with high content of organic matter) in 1000
+    ml tap water for one hour at 121°C. Allow it to sediment for a few hours at room temperature. Centrifuge
+    the supernatant. Add 15.0 g agar per 1000 ml to the clear supernatant solution thus obtained. Adjust
+    pH to 6.8 - 7.0 and sterilize.
 applications:
 - Microbial cultivation
 curation_history:

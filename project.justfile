@@ -1812,3 +1812,60 @@ build-all: validate-all gen-browser-data gen-pages
 [group('Help')]
 help:
     @just --list --unsorted
+
+# ================================================================
+# UMAP VISUALIZATION
+# ================================================================
+
+# Default path to KG-Microbe embeddings
+kg_microbe_embeddings := "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/CommunityMech/CommunityMech/data/embeddings/DeepWalkSkipGramEnsmallen_degreenorm_embedding_512_2026-02-01_05_54_01.tsv.gz"
+
+[group('Visualization')]
+gen-media-umap embeddings_path=kg_microbe_embeddings:
+    #!/usr/bin/env bash
+    echo "Generating UMAP visualization of media embeddings..."
+    echo ""
+    uv run culturemech umap generate \
+        --embeddings-path {{embeddings_path}} \
+        --media-dir {{normalized_yaml_dir}} \
+        --output docs/media_umap.html \
+        --cache-dir .umap_cache
+    echo ""
+    echo "✓ UMAP visualization generated!"
+    echo "  Output: docs/media_umap.html"
+    echo ""
+    echo "To view locally: just serve-browser"
+    echo "Or open: open docs/media_umap.html"
+
+[group('Visualization')]
+gen-media-umap-custom embeddings_path n_neighbors="15" min_dist="0.1" min_coverage="0.5":
+    #!/usr/bin/env bash
+    echo "Generating UMAP with custom parameters..."
+    echo "  n_neighbors: {{n_neighbors}}"
+    echo "  min_dist: {{min_dist}}"
+    echo "  min_coverage: {{min_coverage}}"
+    echo ""
+    uv run culturemech umap generate \
+        --embeddings-path {{embeddings_path}} \
+        --media-dir {{normalized_yaml_dir}} \
+        --output docs/media_umap.html \
+        --cache-dir .umap_cache \
+        --n-neighbors {{n_neighbors}} \
+        --min-dist {{min_dist}} \
+        --min-coverage {{min_coverage}}
+    echo ""
+    echo "✓ UMAP visualization generated with custom parameters!"
+
+[group('Visualization')]
+gen-media-umap-force-reload embeddings_path=kg_microbe_embeddings:
+    #!/usr/bin/env bash
+    echo "Generating UMAP (forcing cache reload)..."
+    echo ""
+    uv run culturemech umap generate \
+        --embeddings-path {{embeddings_path}} \
+        --media-dir {{normalized_yaml_dir}} \
+        --output docs/media_umap.html \
+        --cache-dir .umap_cache \
+        --force-reload
+    echo ""
+    echo "✓ UMAP visualization regenerated!"

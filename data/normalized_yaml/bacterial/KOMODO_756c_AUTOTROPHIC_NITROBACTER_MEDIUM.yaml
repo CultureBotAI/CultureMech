@@ -1,11 +1,11 @@
 name: AUTOTROPHIC NITROBACTER MEDIUM
 original_name: AUTOTROPHIC NITROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.4-7.6
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756c | DSMZ Medium: 756c
-  (mediadive.medium:756c) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 756c | DSMZ Medium: 756c (mediadive.medium:756c)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 756c
   term:

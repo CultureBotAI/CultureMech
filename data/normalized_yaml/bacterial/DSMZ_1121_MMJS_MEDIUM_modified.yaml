@@ -1,6 +1,6 @@
 name: MMJS MEDIUM (modified)
 original_name: MMJS MEDIUM (modified)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -277,14 +277,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The pH of the medium is adjusted with NaOH to 6.8. Steam medium for
-    3 hours on each of 3 successive days. The separately autoclaved, concentrated
-    solutions including each of follows are added to the medium. Then a mix gas (80%N2,
-    20%CO2) is purged for 5 min.
+  description: The pH of the medium is adjusted with NaOH to 6.8. Steam medium for 3 hours on each of
+    3 successive days. The separately autoclaved, concentrated solutions including each of follows are
+    added to the medium. Then a mix gas (80%N2, 20%CO2) is purged for 5 min.
 - step_number: 2
   action: MIX
-  description: Finally, the mix gas (79%N2, 20%CO2, 1%O2) is compressed into gas phase
-    (>80% volume of the tube or bottle) at 2 atm.
+  description: Finally, the mix gas (79%N2, 20%CO2, 1%O2) is compressed into gas phase (>80% volume of
+    the tube or bottle) at 2 atm.
 applications:
 - Microbial cultivation
 curation_history:

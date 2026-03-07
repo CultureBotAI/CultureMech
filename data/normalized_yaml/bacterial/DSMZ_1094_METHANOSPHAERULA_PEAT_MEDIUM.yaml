@@ -1,6 +1,6 @@
 name: METHANOSPHAERULA (PEAT) MEDIUM
 original_name: METHANOSPHAERULA (PEAT) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.7
@@ -233,29 +233,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make anoxic. Dispense under same gas atmosphere into anoxic Hungate-type tubes
-    or serum vials to 30% of their volume and autoclave. Solutions B, C, D and G are
-    prepared under 100% N2 gas atmosphere and sterilized by filtration. Solutions
-    E and F are prepared under 100% N2 gas atmosphere and autoclaved. To complete
-    the medium add appropriate amounts of solutions B to G to the sterile solution
-    A in the sequence indicated and let medium equilibrate overnight. Adjust pH of
-    complete medium to 5.7, if necessary.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make anoxic. Dispense
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of their volume and
+    autoclave. Solutions B, C, D and G are prepared under 100% N2 gas atmosphere and sterilized by filtration.
+    Solutions E and F are prepared under 100% N2 gas atmosphere and autoclaved. To complete the medium
+    add appropriate amounts of solutions B to G to the sterile solution A in the sequence indicated and
+    let medium equilibrate overnight. Adjust pH of complete medium to 5.7, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vials to 1 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vials to 1 bar overpressure with sterile 80% H2 and 20% CO2
+    gas mixture.
 - step_number: 3
   action: STORE
-  description: 'Note: The complete medium is not stable and can be stored only for
-    a short time.'
+  description: 'Note: The complete medium is not stable and can be stored only for a short time.'
 - step_number: 4
   action: MIX
   description: Adjust to pH 7.5 with NaOH.
 - step_number: 5
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH and
-    add ferrous chloride. After ferrous chloride has dissolved add other compounds.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N NaOH and add ferrous chloride.
+    After ferrous chloride has dissolved add other compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -266,5 +263,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.465523Z'
   curator: invalid-chebi-removal
   action: Removed 2 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: THERMINCOLA FERRIACETICA MEDIUM
 original_name: THERMINCOLA FERRIACETICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -243,17 +243,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, acetate and vitamins), boil
-    medium to dissolve AQDS, then cool to room temperature under 80% N2 and 20% CO2
-    gas atmosphere. Add solid bicarbonate and adjust pH to 6.8 - 7.0. Dispense medium
-    under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Add acetate and vitamins from sterile anoxic stock solutions
-    prepared under 100% N2 gas. Vitamins should be sterilized by filtration. Adjust
-    pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except bicarbonate, acetate and vitamins), boil medium to dissolve
+    AQDS, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere. Add solid bicarbonate
+    and adjust pH to 6.8 - 7.0. Dispense medium under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add acetate and vitamins from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Vitamins should be sterilized by filtration. Adjust pH of complete medium to 7.0,
+    if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -264,5 +263,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:42.501020Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

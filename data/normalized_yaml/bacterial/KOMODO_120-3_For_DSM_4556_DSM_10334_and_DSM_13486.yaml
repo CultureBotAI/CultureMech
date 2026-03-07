@@ -1,6 +1,6 @@
 name: For DSM 4556, DSM 10334 and DSM 13486
 original_name: For DSM 4556, DSM 10334 and DSM 13486
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:120.3
     label: For DSM 4556, DSM 10334 and DSM 13486
-notes: 'Source: KOMODO ModelSEED | ID: 120.3 | DSMZ Medium: 120 (mediadive.medium:120)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 120.3 | DSMZ Medium: 120 (mediadive.medium:120) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -252,5 +251,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.579308Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,8 +1,8 @@
 name: XYLOPHILUS MEDIUM
 original_name: XYLOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 587
   term:
@@ -45,8 +45,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add 0.25 g/l ferric ammonium citrate from a separately autoclaved stock
-    solution.
+  description: Add 0.25 g/l ferric ammonium citrate from a separately autoclaved stock solution.
 applications:
 - Microbial cultivation
 curation_history:

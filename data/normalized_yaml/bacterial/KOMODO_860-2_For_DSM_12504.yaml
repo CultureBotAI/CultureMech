@@ -1,6 +1,6 @@
 name: For DSM 12504
 original_name: For DSM 12504
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:860.2
     label: For DSM 12504
-notes: 'Source: KOMODO ModelSEED | ID: 860.2 | DSMZ Medium: 860 (mediadive.medium:860)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 860.2 | DSMZ Medium: 860 (mediadive.medium:860) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

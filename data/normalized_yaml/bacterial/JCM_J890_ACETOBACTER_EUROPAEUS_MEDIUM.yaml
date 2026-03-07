@@ -1,8 +1,8 @@
 name: ACETOBACTER EUROPAEUS MEDIUM
 original_name: ACETOBACTER EUROPAEUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J890
   term:
@@ -49,8 +49,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Separately filter-sterilize acetic acid and ethanol (use filter resistant
-    to these solvents), and aseptically add to the sterile medium.
+  description: Separately filter-sterilize acetic acid and ethanol (use filter resistant to these solvents),
+    and aseptically add to the sterile medium.
 applications:
 - Microbial cultivation
 curation_history:

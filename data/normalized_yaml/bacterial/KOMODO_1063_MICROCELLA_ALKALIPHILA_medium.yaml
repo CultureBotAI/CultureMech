@@ -1,11 +1,11 @@
 name: MICROCELLA ALKALIPHILA medium
 original_name: MICROCELLA ALKALIPHILA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
-notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 1063 | DSMZ
-  Medium: 1063 (mediadive.medium:1063) | Aerobic: No'
+notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 1063 | DSMZ Medium: 1063 (mediadive.medium:1063)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1063
   term:

@@ -1,12 +1,12 @@
 name: '1038'
 original_name: '1038'
-category: imported
+category: bacterial
 description: 1038. NBRC 1035.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Bacto Tryptic Soy Broth w/o Dextrose (Difco)2.75gNaCl5gK2HPO42.5gAgar
-    (if needed)15gDistilled water1LpH 5.0
+- preferred_term: Bacto Tryptic Soy Broth w/o Dextrose (Difco)2.75gNaCl5gK2HPO42.5gAgar (if needed)15gDistilled
+    water1LpH 5.0
 - preferred_term: ''
   concentration:
     value: Bacto Tryptic Soy Broth w/o Dextrose (Difco)

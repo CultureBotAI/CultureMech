@@ -1,6 +1,6 @@
 name: SULFURIMONAS HONGKONGENSIS MEDIUM
 original_name: SULFURIMONAS HONGKONGENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -140,9 +140,8 @@ preparation_steps:
   description: Adjust pH to 7.0 with NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Solutions A, B, C and E under a N2 atmosphere.
-    Filter-sterilize Solution D. After sterilization, combine all solutions and store
-    under a N2 atmosphere.
+  description: Separately autoclave Solutions A, B, C and E under a N2 atmosphere. Filter-sterilize Solution
+    D. After sterilization, combine all solutions and store under a N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

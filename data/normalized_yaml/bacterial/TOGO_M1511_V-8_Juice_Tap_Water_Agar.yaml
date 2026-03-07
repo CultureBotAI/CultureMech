@@ -1,15 +1,15 @@
 name: V-8 Juice Tap Water Agar
 original_name: V-8 Juice Tap Water Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: CaCO3*
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
-    compound, Simple component'
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic compound, Simple
+    component'
 - preferred_term: Tap water
   concentration:
     value: '800'

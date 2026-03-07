@@ -37,12 +37,18 @@ class BrowserExporter:
         browser_data = []
 
         for recipe in self.recipes:
+            # Extract category, skipping "imported" (not a real category)
+            category = recipe.get("category", recipe.get("_category", "unknown"))
+            if category == "imported":
+                # Infer from directory if still "imported"
+                category = recipe.get("_category", "unknown")
+
             item = {
                 "name": recipe.get("name", "Unknown"),
-                "category": recipe.get("category", recipe.get("_category", "unknown")),
+                "category": category.lower() if category else "unknown",
                 "description": recipe.get("description", "").strip(),
-                "medium_type": recipe.get("medium_type", ""),
-                "physical_state": recipe.get("physical_state", ""),
+                "medium_type": (recipe.get("medium_type", "") or "").lower(),
+                "physical_state": (recipe.get("physical_state", "") or "").lower(),
 
                 # Organisms (extract names for faceting)
                 "target_organism_names": self._extract_organism_names(recipe),

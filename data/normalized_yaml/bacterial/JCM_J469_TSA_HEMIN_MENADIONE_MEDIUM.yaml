@@ -1,6 +1,6 @@
 name: TSA HEMIN MENADIONE MEDIUM
 original_name: TSA HEMIN MENADIONE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,12 +18,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 156 with 10.0 ml/L (final) hemin solution and 10.0 ml/L
-    (final) menadione solution.
+  description: Use Medium No. 156 with 10.0 ml/L (final) hemin solution and 10.0 ml/L (final) menadione
+    solution.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: Basic mineral medium
 original_name: Basic mineral medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -193,8 +193,8 @@ preparation_steps:
   description: 'After sterilization add from sterile stock solutions:'
 - step_number: 3
   action: DISSOLVE
-  description: "might result in colloid formation, especially when added into\r\n\
-    hot medium, but dissolves after vigorous shaking"
+  description: "might result in colloid formation, especially when added into\r\nhot medium, but dissolves\
+    \ after vigorous shaking"
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 3.0-4.0 with HCl.
@@ -223,5 +223,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.256938Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: MEDIUM 63 MODIFIED FOR DSM 12838
 original_name: MEDIUM 63 MODIFIED FOR DSM 12838
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:63_12838
     label: MEDIUM 63 MODIFIED FOR DSM 12838
-notes: 'Source: KOMODO ModelSEED | ID: 63_12838 | DSMZ Medium: 63 (mediadive.medium:63)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 63_12838 | DSMZ Medium: 63 (mediadive.medium:63) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

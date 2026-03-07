@@ -1,16 +1,15 @@
 name: ISP medium 2 WITH 5% NaCl
 original_name: ISP medium 2 WITH 5% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.5
 media_term:
   preferred_term: KOMODO Medium 636
   term:
     id: komodo.medium:636
     label: ISP medium 2 WITH 5% NaCl
-notes: 'Source: KOMODO ModelSEED | ID: 636 | DSMZ Medium: 636 (mediadive.medium:636)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 636 | DSMZ Medium: 636 (mediadive.medium:636) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

@@ -1,8 +1,8 @@
 name: ST21 AGAR FOR CELLULOSE DEGRADERS
 original_name: ST21 AGAR FOR CELLULOSE DEGRADERS
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 938 | DSMZ Medium: 938 (mediadive.medium:938)
   | Aerobic: No'

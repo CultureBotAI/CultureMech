@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M253
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
-    compound, Simple component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -17,8 +17,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Simple component, Defined component'
 - preferred_term: Yeast extract (BD-Difco)
   concentration:
     value: '2'
@@ -51,8 +50,7 @@ ingredients:
     value: '10'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -68,7 +66,7 @@ media_term:
   preferred_term: TOGO Medium M253
   term:
     id: TOGO:M253
-    label: (Unnamed medium)
+    label: TOGO Medium M253
 notes: 'Source: https://togomedium.org/medium/M253
 
   Original source: JCM - JCM_M261
@@ -88,5 +86,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.232672'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration
-    for ingredient: N2'
+  notes: 'Added default concentration for ingredient: H2SO4; Added default concentration for ingredient:
+    N2'

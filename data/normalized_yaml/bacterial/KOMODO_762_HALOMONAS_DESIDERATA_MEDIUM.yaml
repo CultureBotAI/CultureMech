@@ -1,6 +1,6 @@
 name: HALOMONAS DESIDERATA MEDIUM
 original_name: HALOMONAS DESIDERATA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 9.5-10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:762
     label: HALOMONAS DESIDERATA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 762 | DSMZ Medium: 762 (mediadive.medium:762)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 762 | DSMZ Medium: 762 (mediadive.medium:762) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

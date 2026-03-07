@@ -1,6 +1,6 @@
 name: HALOANAEROBIUM MEDIUM
 original_name: HALOANAEROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -225,8 +225,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Prepare the medium anaerobically under 100% N2. After autoclaving
-    add from sterile solutions:'
+  description: 'Prepare the medium anaerobically under 100% N2. After autoclaving add from sterile solutions:'
 - step_number: 2
   action: MIX
   description: 'Final pH: 9.0.'
@@ -235,9 +234,8 @@ preparation_steps:
   description: Filter sterilize.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
-    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
-    up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
+    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -252,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.085525Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,8 +1,8 @@
 name: R2A AGAR
 original_name: R2A AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: JCM Medium J346
@@ -74,8 +74,7 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder is available from Becton Dickinson &
-    Co. as Difco R2A Agar.'
+  description: 'Comment: The premixed powder is available from Becton Dickinson & Co. as Difco R2A Agar.'
 applications:
 - Microbial cultivation
 curation_history:

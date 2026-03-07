@@ -1,6 +1,6 @@
 name: EXIGUOBACTERIUM MEDIUM
 original_name: EXIGUOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:468
     label: EXIGUOBACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 468 | DSMZ Medium: 468 (mediadive.medium:468)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 468 | DSMZ Medium: 468 (mediadive.medium:468) | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth No. 2
   concentration:

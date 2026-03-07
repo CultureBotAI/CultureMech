@@ -1,6 +1,6 @@
 name: DESULFOSPOROSINUS ACIDOPHILUS MEDIUM
 original_name: DESULFOSPOROSINUS ACIDOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.8
@@ -169,10 +169,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, distribute the medium into culture vessels
-    (e.g., 4.5 ml of the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas
-    mixture, seal with butyl rubber stoppers and autoclave. After cooling, add the
-    following solutions (per 900 ml medium) from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, distribute the medium into culture vessels (e.g., 4.5 ml of
+    the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave. After cooling, add the following solutions (per 900 ml medium) from anaerobic stocks
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
   description: Check final pH of the medium to be around 5.8.

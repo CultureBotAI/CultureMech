@@ -1,6 +1,6 @@
 name: OS MEDIUM
 original_name: OS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -195,8 +195,8 @@ preparation_steps:
   description: Adjust pH to 7.0 with H2SO4.
 - step_number: 3
   action: MIX
-  description: Fill 10 ml medium into 100 ml Serum bottles under a stream of H2/CO2
-    gas and seal with a rubber stopper.
+  description: Fill 10 ml medium into 100 ml Serum bottles under a stream of H2/CO2 gas and seal with
+    a rubber stopper.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -208,8 +208,8 @@ preparation_steps:
   description: Adjust the gas atmosphere strain specifically.
 - step_number: 7
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

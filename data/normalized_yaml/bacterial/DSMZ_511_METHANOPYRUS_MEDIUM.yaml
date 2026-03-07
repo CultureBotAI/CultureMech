@@ -1,6 +1,6 @@
 name: METHANOPYRUS MEDIUM
 original_name: METHANOPYRUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -344,21 +344,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingregients except bicarbonate, vitamins and sulfide, then
-    sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
-    then dispense under same gas atmosphere into serum vials to 30% of their volume
-    and autoclave. Add vitamins and sulfide from sterile anoxic stock solutions prepared
-    under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration.
-    Adjust pH of the complete medium to 6.5, if necessary.
+  description: Dissolve ingregients except bicarbonate, vitamins and sulfide, then sparge medium with
+    80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic, then dispense under same gas atmosphere
+    into serum vials to 30% of their volume and autoclave. Add vitamins and sulfide from sterile anoxic
+    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Vitamins should be sterilized by filtration. Adjust pH of the
+    complete medium to 6.5, if necessary.
 - step_number: 2
   action: MIX
-  description: After inoculation pressurize vessels to 2 bar overpressure with sterile
-    80% H2 and 20% CO2 gas mixture.
+  description: After inoculation pressurize vessels to 2 bar overpressure with sterile 80% H2 and 20%
+    CO2 gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -373,5 +372,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.388621Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

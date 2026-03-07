@@ -1,6 +1,6 @@
 name: MDM (modified dehority medium)
 original_name: MDM (modified dehority medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -246,24 +246,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: To make medium anoxic boil it, cool under N2CO2 gas atmosphere, add
-    1 g/l L-cysteine hydrochloride and adjust pH to 6.8. Finally gas over with N2
-    . Dispense under N2CO2 into suitable vessels for anaerobic growth (serum bottles
-    or Hungate tubes sealed with rubber stoppers) and sterilize by autoclaving.
+  description: To make medium anoxic boil it, cool under N2CO2 gas atmosphere, add 1 g/l L-cysteine hydrochloride
+    and adjust pH to 6.8. Finally gas over with N2 . Dispense under N2CO2 into suitable vessels for anaerobic
+    growth (serum bottles or Hungate tubes sealed with rubber stoppers) and sterilize by autoclaving.
 - step_number: 2
   action: FILTER_STERILIZE
   description: Filter sterilize and make anoxic with N2.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Mix 10 g cellobiose with 100 ml distilled water and filter sterilize,
-    make anoxic with N2.
+  description: Mix 10 g cellobiose with 100 ml distilled water and filter sterilize, make anoxic with
+    N2.
 - step_number: 4
   action: MIX
   description: Make anoxic with N2.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Make anoxic with N2. Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Make anoxic with
+    N2. Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:

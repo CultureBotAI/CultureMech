@@ -1,6 +1,6 @@
 name: PYROCOCCUS MEDIUM
 original_name: PYROCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -236,24 +236,22 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except for sulfur, peptone, yeast extract, and
-    sulfide, adjust the pH to 6.5 and sparge medium with 100% N2 gas for 30 - 45 min
-    to make it anoxic. Distribute medium under the same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials that already contain the appropriate amount
-    of sulfur. Sterilize the medium by autoclaving at <b>110°C</b> for 20 min. After
-    sterilization, add peptone and yeast extract from sterile stock solutions prepared
-    under 100% N2 gas atmosphere and sulfide from a neutralized stock solution.
+  description: Dissolve ingredients except for sulfur, peptone, yeast extract, and sulfide, adjust the
+    pH to 6.5 and sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Distribute medium
+    under the same gas atmosphere into anoxic Hungate-type tubes or serum vials that already contain the
+    appropriate amount of sulfur. Sterilize the medium by autoclaving at <b>110°C</b> for 20 min. After
+    sterilization, add peptone and yeast extract from sterile stock solutions prepared under 100% N2 gas
+    atmosphere and sulfide from a neutralized stock solution.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:

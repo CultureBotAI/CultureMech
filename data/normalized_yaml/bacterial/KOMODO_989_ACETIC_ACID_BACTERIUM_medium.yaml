@@ -1,16 +1,15 @@
 name: ACETIC ACID BACTERIUM medium
 original_name: ACETIC ACID BACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.6-7.0
 media_term:
   preferred_term: KOMODO Medium 989
   term:
     id: komodo.medium:989
     label: ACETIC ACID BACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 989 | DSMZ Medium: 989 (mediadive.medium:989)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 989 | DSMZ Medium: 989 (mediadive.medium:989) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

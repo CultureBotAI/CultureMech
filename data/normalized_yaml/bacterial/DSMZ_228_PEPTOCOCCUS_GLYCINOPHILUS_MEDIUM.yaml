@@ -1,6 +1,6 @@
 name: PEPTOCOCCUS GLYCINOPHILUS MEDIUM
 original_name: PEPTOCOCCUS GLYCINOPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -134,17 +134,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The vitamin K1, haemin solution and the cysteine are added after the
-    medium has been boiled and cooled under CO2. Adjust pH to 7.2 using 8 N NaOH.
-    Distribute under N2 and autoclave.
+  description: The vitamin K1, haemin solution and the cysteine are added after the medium has been boiled
+    and cooled under CO2. Adjust pH to 7.2 using 8 N NaOH. Distribute under N2 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
+    in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:

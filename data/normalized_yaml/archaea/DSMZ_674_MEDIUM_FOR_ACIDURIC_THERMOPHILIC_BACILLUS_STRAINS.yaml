@@ -1,8 +1,8 @@
 name: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
 original_name: MEDIUM FOR ACIDURIC, THERMOPHILIC BACILLUS STRAINS
-category: imported
+category: archaea
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 674
   term:
@@ -70,8 +70,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Solutions A and B are sterilized separately. After cooling to approximately
-    45°C solution A is poured into solution B. Mix thoroughly.
+  description: Solutions A and B are sterilized separately. After cooling to approximately 45°C solution
+    A is poured into solution B. Mix thoroughly.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 4.3.

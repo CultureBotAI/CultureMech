@@ -1,7 +1,6 @@
 name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
-original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and
-  DSM17508
-category: imported
+original_name: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -10,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:141.2
     label: For DSM 1497, DSM 1537, DSM 2067, DSM 2279, DSM 2373, DSM 17251 and DSM17508
-notes: 'Source: KOMODO ModelSEED | ID: 141.2 | DSMZ Medium: 141 (mediadive.medium:141)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 141.2 | DSMZ Medium: 141 (mediadive.medium:141) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -295,5 +293,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:46.610501Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

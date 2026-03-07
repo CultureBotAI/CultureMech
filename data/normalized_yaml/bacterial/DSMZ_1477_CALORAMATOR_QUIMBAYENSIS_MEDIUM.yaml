@@ -1,6 +1,6 @@
 name: CALORAMATOR QUIMBAYENSIS MEDIUM
 original_name: CALORAMATOR QUIMBAYENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -243,18 +243,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except bicarbonate, glucose and vitamins, then
-    sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium
-    under the same gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave. Add glucose and vitamins (sterilized by filtration) from sterile anoxic
-    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
-    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust
-    pH of complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients except bicarbonate, glucose and vitamins, then sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Add glucose and vitamins (sterilized by filtration)
+    from sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete medium
+    to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5
-    with KOH, then dissolve mineral salts. Finally adjust pH to 6.5 with KOH and make
-    up to 1000.00 ml.
+  description: First dissolve NTA in 200 ml of distilled water and adjust pH to 6.5 with KOH, then dissolve
+    mineral salts. Finally adjust pH to 6.5 with KOH and make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -265,5 +263,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:25.739301Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,11 +1,11 @@
 name: ACIDITHIOBACILLUS FERRIVORANS MEDIUM
 original_name: ACIDITHIOBACILLUS FERRIVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1234 | DSMZ Medium: 1234
-  (mediadive.medium:1234) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1234 | DSMZ Medium: 1234 (mediadive.medium:1234)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1234
   term:

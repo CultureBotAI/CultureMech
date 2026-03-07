@@ -1,6 +1,6 @@
 name: 2% MH MEDIUM
 original_name: 2% MH MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:620
     label: 2% MH MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 620 | DSMZ Medium: 620 (mediadive.medium:620)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 620 | DSMZ Medium: 620 (mediadive.medium:620) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

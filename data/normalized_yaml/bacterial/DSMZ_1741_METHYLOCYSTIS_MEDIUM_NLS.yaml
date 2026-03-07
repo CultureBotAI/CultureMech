@@ -1,6 +1,6 @@
 name: METHYLOCYSTIS MEDIUM (NLS)
 original_name: METHYLOCYSTIS MEDIUM (NLS)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -214,30 +214,29 @@ preparation_steps:
   description: Bring up to 1 liter
 - step_number: 3
   action: POUR_PLATES
-  description: Combine the distilled water and Solutions A-D in an Erlenmeyer flask
-    and dispense into glass serum bottles.
+  description: Combine the distilled water and Solutions A-D in an Erlenmeyer flask and dispense into
+    glass serum bottles.
 - step_number: 4
   action: MIX
-  description: Seal the serum bottles with butyl rubber stoppers and crimp seals.
-    Using a syringe and needle, inject pure 10% methane.
+  description: Seal the serum bottles with butyl rubber stoppers and crimp seals. Using a syringe and
+    needle, inject pure 10% methane.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave the serum bottles for 20 minutes at 121 °C.
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Upon cooling to room temperature, add solution E from a filter-sterilized
-    stock solution.
+  description: Upon cooling to room temperature, add solution E from a filter-sterilized stock solution.
 - step_number: 7
   action: MIX
   description: The final pH of the medium should be 7.0
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700
-    ml of distilled water, and then make up to 1 litre
+  description: Dissolve the ingredients listed above (in that order) in about 700 ml of distilled water,
+    and then make up to 1 litre
 - step_number: 9
   action: DISSOLVE
-  description: Dissolve the ingredients listed above (in that order) in about 700
-    ml of distilled water, and then make up to 1 litre
+  description: Dissolve the ingredients listed above (in that order) in about 700 ml of distilled water,
+    and then make up to 1 litre
 - step_number: 10
   action: MIX
   description: "Contains the following components per liter\r\nof distilled water:"

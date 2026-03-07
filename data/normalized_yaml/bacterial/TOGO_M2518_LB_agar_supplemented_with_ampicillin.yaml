@@ -1,15 +1,14 @@
 name: LB agar (supplemented with ampicillin)
 original_name: LB agar (supplemented with ampicillin)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: ampicillin
   concentration:
     value: '150'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:28971
     label: Ampicillin

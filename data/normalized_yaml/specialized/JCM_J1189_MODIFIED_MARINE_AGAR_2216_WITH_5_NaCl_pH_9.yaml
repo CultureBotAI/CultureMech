@@ -1,8 +1,8 @@
 name: MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)
 original_name: MODIFIED MARINE AGAR 2216 WITH 5% NaCl (pH 9)
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: JCM Medium J1189

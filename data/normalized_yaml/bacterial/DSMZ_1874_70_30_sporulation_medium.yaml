@@ -1,8 +1,8 @@
 name: 70:30 sporulation medium
 original_name: 70:30 sporulation medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1874
   term:

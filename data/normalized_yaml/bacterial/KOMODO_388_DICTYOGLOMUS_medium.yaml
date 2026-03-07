@@ -1,6 +1,6 @@
 name: DICTYOGLOMUS medium
 original_name: DICTYOGLOMUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:388
     label: DICTYOGLOMUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 388 | DSMZ Medium: 388 (mediadive.medium:388)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 388 | DSMZ Medium: 388 (mediadive.medium:388) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -203,5 +202,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:12.681970Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

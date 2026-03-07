@@ -1,15 +1,14 @@
 name: MEDIUM 246 MODIFIED FOR DSM 2165
 original_name: MEDIUM 246 MODIFIED FOR DSM 2165
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 246_2165
   term:
     id: komodo.medium:246_2165
     label: MEDIUM 246 MODIFIED FOR DSM 2165
-notes: 'Source: KOMODO ModelSEED | ID: 246_2165 | DSMZ Medium: 246 (mediadive.medium:246)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 246_2165 | DSMZ Medium: 246 (mediadive.medium:246) | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:

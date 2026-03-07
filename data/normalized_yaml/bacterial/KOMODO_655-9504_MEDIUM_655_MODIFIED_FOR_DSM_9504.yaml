@@ -1,6 +1,6 @@
 name: MEDIUM 655 MODIFIED FOR DSM 9504
 original_name: MEDIUM 655 MODIFIED FOR DSM 9504
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:655_9504
     label: MEDIUM 655 MODIFIED FOR DSM 9504
-notes: 'Source: KOMODO ModelSEED | ID: 655_9504 | DSMZ Medium: 655 (mediadive.medium:655)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 655_9504 | DSMZ Medium: 655 (mediadive.medium:655) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

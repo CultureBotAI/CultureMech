@@ -1,6 +1,6 @@
 name: MODIFIED MEDIUM 10
 original_name: MODIFIED MEDIUM 10
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium 10 (see Medium No. 133) with 1.0 ml/L (final) of 1% hemin
-    solution and omit Toray silicone solution.
+  description: Use Medium 10 (see Medium No. 133) with 1.0 ml/L (final) of 1% hemin solution and omit
+    Toray silicone solution.
 applications:
 - Microbial cultivation
 curation_history:

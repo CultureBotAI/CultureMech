@@ -1,9 +1,9 @@
 name: MHY
-category: ALGAE
-medium_type: complex
-physical_state: liquid
-description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater
-  algae cultivation. Recipe available in PDF format.
+category: algae
+medium_type: COMPLEX
+physical_state: LIQUID
+description: Algae culture medium from CCAP Culture Collection. Suitable for freshwater algae cultivation.
+  Recipe available in PDF format.
 notes: Full recipe available at https://www.ccap.ac.uk/wp-content/uploads/MR_MHY.pdf
 light_intensity: Varies by species; typically 50-100 µmol photons m⁻² s⁻¹
 light_cycle: Varies by species; commonly 12:12 or 16:8 light:dark

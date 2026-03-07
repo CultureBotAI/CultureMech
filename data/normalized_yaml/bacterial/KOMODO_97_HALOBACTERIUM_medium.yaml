@@ -1,16 +1,15 @@
 name: HALOBACTERIUM medium
 original_name: HALOBACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: KOMODO Medium 97
   term:
     id: komodo.medium:97
     label: HALOBACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 97 | DSMZ Medium: 97 (mediadive.medium:97)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 97 | DSMZ Medium: 97 (mediadive.medium:97) | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:

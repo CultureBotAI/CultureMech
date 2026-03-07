@@ -1,6 +1,6 @@
 name: PHC medium
 original_name: PHC medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:885
     label: PHC medium
-notes: 'Source: KOMODO ModelSEED | ID: 885 | DSMZ Medium: 885 (mediadive.medium:885)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 885 | DSMZ Medium: 885 (mediadive.medium:885) | Aerobic: No'
 ingredients:
 - preferred_term: Poly hexamethylene carbonate
   concentration:

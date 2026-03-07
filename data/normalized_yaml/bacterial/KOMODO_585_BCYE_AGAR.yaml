@@ -1,8 +1,8 @@
 name: BCYE AGAR
 original_name: BCYE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.4-7.4
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 585 | DSMZ Medium: 585 (mediadive.medium:585)
   | Aerobic: No'

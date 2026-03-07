@@ -1,6 +1,6 @@
 name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
 original_name: ACETIVIBRIO CELLULOLYTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:165
     label: ACETIVIBRIO CELLULOLYTICUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 165 | DSMZ Medium: 165 (mediadive.medium:165)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 165 | DSMZ Medium: 165 (mediadive.medium:165) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sodium resazurin
   concentration:
@@ -294,5 +293,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:54.113555Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

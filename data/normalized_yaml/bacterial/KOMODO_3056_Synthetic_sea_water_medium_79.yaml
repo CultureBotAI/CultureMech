@@ -1,6 +1,6 @@
 name: Synthetic sea water (medium 79)
 original_name: Synthetic sea water (medium 79)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3056
     label: Synthetic sea water (medium 79)
-notes: 'Source: KOMODO ModelSEED | ID: 3056 | DSMZ Medium: 3056 (mediadive.medium:3056)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3056 | DSMZ Medium: 3056 (mediadive.medium:3056) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

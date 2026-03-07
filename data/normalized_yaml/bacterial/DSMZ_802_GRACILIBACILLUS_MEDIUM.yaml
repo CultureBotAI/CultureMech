@@ -1,6 +1,6 @@
 name: GRACILIBACILLUS MEDIUM
 original_name: GRACILIBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -166,14 +166,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.8 (with NaOH) before autoclaving. To the sterile medium,
-    from sterile stock solutions, add 10 ml KH2PO4 (50 g/l), 5 ml CaCl2 (100 g/l),
-    2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l and MnCl2 x 4 H2O, 20 g/l), and glucose
-    to a final concentration of 2 g/l.
+  description: Adjust pH to 7.8 (with NaOH) before autoclaving. To the sterile medium, from sterile stock
+    solutions, add 10 ml KH2PO4 (50 g/l), 5 ml CaCl2 (100 g/l), 2 ml FeCl2/MnCl2 (FeCl2 x 4 H2O, 20 g/l
+    and MnCl2 x 4 H2O, 20 g/l), and glucose to a final concentration of 2 g/l.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve salts in the HCl in the oder given above, then make up the
-    solution to 1 litre with distilled water.
+  description: Dissolve salts in the HCl in the oder given above, then make up the solution to 1 litre
+    with distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -184,5 +183,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.160652Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

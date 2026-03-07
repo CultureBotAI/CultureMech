@@ -1,6 +1,6 @@
 name: HALOBACTEROIDES ACETOETHYLICUS MEDIUM
 original_name: HALOBACTEROIDES ACETOETHYLICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -158,16 +158,14 @@ preparation_steps:
   description: Use medium no. 144 supplemented with 100 g/l of NaCl.
 - step_number: 2
   action: AUTOCLAVE
-  description: Sterilize glucose, yeast extract and sodium sulfide separately (autoclave
-    under nitrogen atmosphere).
+  description: Sterilize glucose, yeast extract and sodium sulfide separately (autoclave under nitrogen
+    atmosphere).
 - step_number: 3
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Dispense medium under
-    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    Add glucose, vitamins (sterilized by filtration) and sulfide from sterile anoxic
-    stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2
-    - 7.4.
+  description: Dissolve ingredients (except vitamins, glucose and sulfide), sparge medium with 100% N2
+    gas for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type
+    tubes or serum vials and autoclave. Add glucose, vitamins (sterilized by filtration) and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 7.2 - 7.4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -178,5 +176,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:33.308041Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: MEDIUM FOR DSM 14457 AND 14458
 original_name: MEDIUM FOR DSM 14457 AND 14458
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:956
     label: MEDIUM FOR DSM 14457 AND 14458
-notes: 'Source: KOMODO ModelSEED | ID: 956 | DSMZ Medium: 956 (mediadive.medium:956)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 956 | DSMZ Medium: 956 (mediadive.medium:956) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

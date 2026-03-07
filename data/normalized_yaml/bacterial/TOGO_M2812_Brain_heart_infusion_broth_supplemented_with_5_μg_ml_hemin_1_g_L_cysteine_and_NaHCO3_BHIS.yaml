@@ -1,8 +1,7 @@
-name: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine,
-  and NaHCO3 (BHIS)
-original_name: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine,
-  and NaHCO3 (BHIS)
-category: imported
+name: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine, and NaHCO3 (BHIS)
+original_name: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine, and NaHCO3
+  (BHIS)
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -10,8 +9,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -19,8 +17,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -28,8 +25,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined component'
   term:
     id: CHEBI:15356
     label: Cysteine
@@ -42,8 +38,7 @@ media_term:
   preferred_term: TOGO Medium M2812
   term:
     id: TOGO:M2812
-    label: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine,
-      and NaHCO3 (BHIS)
+    label: Brain heart infusion broth supplemented with 5 μg/ml hemin, 1 g/L‐cysteine, and NaHCO3 (BHIS)
 notes: 'Source: https://togomedium.org/medium/M2812'
 applications:
 - Microbial cultivation

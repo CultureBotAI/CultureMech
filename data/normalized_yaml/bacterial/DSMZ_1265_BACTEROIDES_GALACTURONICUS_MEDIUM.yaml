@@ -1,6 +1,6 @@
 name: BACTEROIDES GALACTURONICUS MEDIUM
 original_name: BACTEROIDES GALACTURONICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -81,8 +81,8 @@ preparation_steps:
   description: Adjust pH to 7.1 and prepare medium in a gas atmosphere of 100% N2.
 - step_number: 2
   action: AUTOCLAVE
-  description: NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added
-    to the autoclaved medium.
+  description: NaHCO3 is prepared as 5% (w/v) solution, filter sterilized and added to the autoclaved
+    medium.
 applications:
 - Microbial cultivation
 curation_history:

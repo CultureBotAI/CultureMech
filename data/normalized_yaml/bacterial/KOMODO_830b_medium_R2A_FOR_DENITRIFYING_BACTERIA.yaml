@@ -1,6 +1,6 @@
 name: medium R2A FOR DENITRIFYING BACTERIA
 original_name: medium R2A FOR DENITRIFYING BACTERIA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:830b
     label: medium R2A FOR DENITRIFYING BACTERIA
-notes: 'Source: KOMODO ModelSEED | ID: 830b | DSMZ Medium: 830b (mediadive.medium:830b)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 830b | DSMZ Medium: 830b (mediadive.medium:830b) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

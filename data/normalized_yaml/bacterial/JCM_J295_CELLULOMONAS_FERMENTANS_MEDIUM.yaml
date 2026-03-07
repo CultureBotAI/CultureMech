@@ -1,6 +1,6 @@
 name: CELLULOMONAS FERMENTANS MEDIUM
 original_name: CELLULOMONAS FERMENTANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -67,8 +67,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution,
-    and add to the medium aseptically.
+  description: Adjust pH to 7.4. Separately sterilize 50 ml of 10% cellobiose solution, and add to the
+    medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:

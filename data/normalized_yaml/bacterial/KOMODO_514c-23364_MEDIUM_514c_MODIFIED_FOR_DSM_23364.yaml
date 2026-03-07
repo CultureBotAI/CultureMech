@@ -1,15 +1,15 @@
 name: MEDIUM 514c MODIFIED FOR DSM 23364
 original_name: MEDIUM 514c MODIFIED FOR DSM 23364
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 514c_23364
   term:
     id: komodo.medium:514c_23364
     label: MEDIUM 514c MODIFIED FOR DSM 23364
-notes: 'Source: KOMODO ModelSEED | ID: 514c_23364 | DSMZ Medium: 514c (mediadive.medium:514c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 514c_23364 | DSMZ Medium: 514c (mediadive.medium:514c) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

@@ -1,8 +1,8 @@
 name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM
 original_name: GLUCONACETOBACTER JOHANNAE AND G. AZOTOCAPTANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.7
 media_term:
   preferred_term: DSMZ Medium 920
@@ -58,8 +58,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final pH
-    6.7.
+  description: Agar may be added (15.0-18.0 g/l) to prepare solid media. Final pH 6.7.
 applications:
 - Microbial cultivation
 curation_history:

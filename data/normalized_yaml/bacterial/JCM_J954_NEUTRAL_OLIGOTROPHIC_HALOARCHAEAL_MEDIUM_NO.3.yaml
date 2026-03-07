@@ -1,6 +1,6 @@
 name: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3
 original_name: NEUTRAL OLIGOTROPHIC HALOARCHAEAL MEDIUM NO.3
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -106,18 +106,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0. For preparation of
-    solid medium, add 20.0 g/L agar. (if necessary, use washed agar as described in
-    the recipe of Medium No. 574). Autoclave and, after cooling, add the following
-    solutions (*filter-sterilized or autoclaved) to the medium.
+  description: Mix components thoroughly and adjust pH to 7.0. For preparation of solid medium, add 20.0
+    g/L agar. (if necessary, use washed agar as described in the recipe of Medium No. 574). Autoclave
+    and, after cooling, add the following solutions (*filter-sterilized or autoclaved) to the medium.
 - step_number: 2
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.5 with 1 M Tris base.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.5 with 1 M
+    Tris base.
 - step_number: 3
   action: MIX
-  description: Combine the two solutions and check that pH is close to 7.5. Add an
-    equal volume of distilled water.
+  description: Combine the two solutions and check that pH is close to 7.5. Add an equal volume of distilled
+    water.
 applications:
 - Microbial cultivation
 curation_history:

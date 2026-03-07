@@ -1,6 +1,6 @@
 name: ROSEOSPIRA MEDIUM
 original_name: ROSEOSPIRA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -126,8 +126,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: MIX
-  description: After autoclaving, add 1.0 ml of vitamin B12 solution (2 mg/ml), 0.1%
-    (final) of NaHCO3 and 2.0 mM (final) of Na2S2O3.
+  description: After autoclaving, add 1.0 ml of vitamin B12 solution (2 mg/ml), 0.1% (final) of NaHCO3
+    and 2.0 mM (final) of Na2S2O3.
 applications:
 - Microbial cultivation
 curation_history:

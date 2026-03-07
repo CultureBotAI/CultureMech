@@ -1,8 +1,8 @@
 name: OATMEAL AGAR (ISP-3)
 original_name: OATMEAL AGAR (ISP-3)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: JCM Medium J50
@@ -46,9 +46,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water for 20
-    min. Filter through cheesecloth. Bring volume back up to 1.0 L and add 1.0 ml
-    of Trace salt solution.
+  description: Cook or steam 20.0 g of oatmeal in 1.0 L of distilled water for 20 min. Filter through
+    cheesecloth. Bring volume back up to 1.0 L and add 1.0 ml of Trace salt solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2.

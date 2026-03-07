@@ -1,8 +1,8 @@
 name: Columbia agar (with sheep blood)
 original_name: Columbia agar (with sheep blood)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: sheep blood
   notes: 'Role: Nutrient source; Properties: Undefined component'
@@ -29,5 +29,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.021555'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: sheep blood; Added default concentration
-    for ingredient: Columbia agar'
+  notes: 'Added default concentration for ingredient: sheep blood; Added default concentration for ingredient:
+    Columbia agar'

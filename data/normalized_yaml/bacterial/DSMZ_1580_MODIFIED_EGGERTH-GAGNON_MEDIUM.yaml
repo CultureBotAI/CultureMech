@@ -1,8 +1,8 @@
 name: MODIFIED EGGERTH-GAGNON MEDIUM
 original_name: MODIFIED EGGERTH-GAGNON MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1580
   term:
@@ -39,8 +39,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50 ml
-    sheep blood.
+  description: Autoclave at 121°C, let agar cool to 50°C and aseptically add 50 ml sheep blood.
 applications:
 - Microbial cultivation
 curation_history:

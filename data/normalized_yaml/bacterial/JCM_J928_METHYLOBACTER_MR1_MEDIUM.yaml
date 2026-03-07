@@ -1,6 +1,6 @@
 name: METHYLOBACTER MR1 MEDIUM
 original_name: METHYLOBACTER MR1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -242,18 +242,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, adjust pH to 6.6 - 6.8 and autoclave. After cooling,
-    add the following solutions (filter-sterilized) to the medium:'
+  description: 'Mix components, adjust pH to 6.6 - 6.8 and autoclave. After cooling, add the following
+    solutions (filter-sterilized) to the medium:'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into culture vessels (leave >80% volume gas phase),
-    purge air in the gas phase with N2 for 1 min and seal with butyl rubber stoppers.
-    Inject O2 gas into the gas phase (1.5% volume of the gas phase). Then, overpressure
-    the culture vessels with methane gas (50% volume of the gas phase).
+  description: Distribute the medium into culture vessels (leave >80% volume gas phase), purge air in
+    the gas phase with N2 for 1 min and seal with butyl rubber stoppers. Inject O2 gas into the gas phase
+    (1.5% volume of the gas phase). Then, overpressure the culture vessels with methane gas (50% volume
+    of the gas phase).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then,
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then, proceed to add minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

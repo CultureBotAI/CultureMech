@@ -1,6 +1,6 @@
 name: PELOBACTER PROPIONICUS MEDIUM
 original_name: PELOBACTER PROPIONICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:298
     label: PELOBACTER PROPIONICUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298 | DSMZ Medium: 298 (mediadive.medium:298)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 298 | DSMZ Medium: 298 (mediadive.medium:298) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

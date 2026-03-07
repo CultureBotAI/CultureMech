@@ -1,6 +1,6 @@
 name: PY4SR AGAR
 original_name: PY4SR AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract.
-    To prepare the plant residue extract, autoclave rice straw in water (1:5) at 120C
-    for 20 min, and use the supernatant after centrifugation.
+  description: Use Medium No. 363 supplemented with 50 ml/L plant residue extract. To prepare the plant
+    residue extract, autoclave rice straw in water (1:5) at 120C for 20 min, and use the supernatant after
+    centrifugation.
 applications:
 - Microbial cultivation
 curation_history:

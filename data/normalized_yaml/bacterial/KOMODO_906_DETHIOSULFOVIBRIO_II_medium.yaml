@@ -1,6 +1,6 @@
 name: DETHIOSULFOVIBRIO II medium
 original_name: DETHIOSULFOVIBRIO II medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:906
     label: DETHIOSULFOVIBRIO II medium
-notes: 'Source: KOMODO ModelSEED | ID: 906 | DSMZ Medium: 906 (mediadive.medium:906)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 906 | DSMZ Medium: 906 (mediadive.medium:906) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

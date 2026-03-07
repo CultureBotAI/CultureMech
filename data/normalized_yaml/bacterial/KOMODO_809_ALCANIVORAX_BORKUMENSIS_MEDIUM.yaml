@@ -1,6 +1,6 @@
 name: ALCANIVORAX BORKUMENSIS MEDIUM
 original_name: ALCANIVORAX BORKUMENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.0-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:809
     label: ALCANIVORAX BORKUMENSIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 809 | DSMZ Medium: 809 (mediadive.medium:809)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 809 | DSMZ Medium: 809 (mediadive.medium:809) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

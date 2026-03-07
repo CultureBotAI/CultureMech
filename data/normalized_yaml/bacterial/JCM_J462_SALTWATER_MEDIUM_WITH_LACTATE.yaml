@@ -1,6 +1,6 @@
 name: SALTWATER MEDIUM WITH LACTATE
 original_name: SALTWATER MEDIUM WITH LACTATE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -246,16 +246,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve components except NaHCO3, Vitamin solution, Thiamine solution,
-    Vitamin B12 solution, sodium lactate and Na2S x 9H2O in 900 ml distilled water
-    and adjust pH to 7.0. Bring to a boil and cool down under a N2-CO2 (4:1, v/v)
-    gas stream. Distribute the medium into culture vessels (e.g., 9 ml of the medium
-    in Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
-    stoppers and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere.
-    After cooling, add 1/9 volume of the sodium lactate solution, and filter-sterilized
-    8% NaHCO3 solution, Vitamin solution, Thiamine solution and Vitamin B12 solution
-    to the medium. Readjust pH to 7.0, if necessary. Prior to use, reduce the medium
-    with Na2S x 9H2O (3% solution, autoclaved and stocked under N2).
+  description: Dissolve components except NaHCO3, Vitamin solution, Thiamine solution, Vitamin B12 solution,
+    sodium lactate and Na2S x 9H2O in 900 ml distilled water and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels (e.g.,
+    9 ml of the medium in Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
+    stoppers and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere. After cooling,
+    add 1/9 volume of the sodium lactate solution, and filter-sterilized 8% NaHCO3 solution, Vitamin solution,
+    Thiamine solution and Vitamin B12 solution to the medium. Readjust pH to 7.0, if necessary. Prior
+    to use, reduce the medium with Na2S x 9H2O (3% solution, autoclaved and stocked under N2).
 applications:
 - Microbial cultivation
 curation_history:

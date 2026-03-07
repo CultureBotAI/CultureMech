@@ -1,6 +1,6 @@
 name: FERROUS SULFATE/YEAST EXTRACT MEDIUM
 original_name: FERROUS SULFATE/YEAST EXTRACT MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
@@ -67,10 +67,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve yeast extract in distilled water and add basal salts solution.
-    Adjust to desired pH with H2SO4. Dispense in suitable cultivation vessels and
-    autoclave at 121°C for 20 min. When cool, add filter sterilized ferrous sulfate
-    solution.
+  description: Dissolve yeast extract in distilled water and add basal salts solution. Adjust to desired
+    pH with H2SO4. Dispense in suitable cultivation vessels and autoclave at 121°C for 20 min. When cool,
+    add filter sterilized ferrous sulfate solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 1.8 with H2SO4; sterilize by filtration.

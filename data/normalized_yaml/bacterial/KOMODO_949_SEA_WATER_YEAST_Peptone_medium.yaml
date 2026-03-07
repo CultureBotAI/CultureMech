@@ -1,16 +1,15 @@
 name: SEA WATER YEAST Peptone medium
 original_name: SEA WATER YEAST Peptone medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: KOMODO Medium 949
   term:
     id: komodo.medium:949
     label: SEA WATER YEAST Peptone medium
-notes: 'Source: KOMODO ModelSEED | ID: 949 | DSMZ Medium: 949 (mediadive.medium:949)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 949 | DSMZ Medium: 949 (mediadive.medium:949) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

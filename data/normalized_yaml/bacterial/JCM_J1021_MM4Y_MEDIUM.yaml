@@ -1,8 +1,8 @@
 name: MM4Y MEDIUM
 original_name: MM4Y MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1021
   term:
@@ -122,8 +122,8 @@ preparation_steps:
   description: Add components to distilled water and bring volume to 1.0 L.
 - step_number: 2
   action: STORE
-  description: Add components to distilled water and bring volume to 1.0 L. Sterilize
-    by autoclaving for storage.
+  description: Add components to distilled water and bring volume to 1.0 L. Sterilize by autoclaving for
+    storage.
 - step_number: 3
   action: STORE
   description: Sterilize by filtration for storage.

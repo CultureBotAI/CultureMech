@@ -1,6 +1,6 @@
 name: FERVIDOBACTERIUM TIANCHISUM MEDIUM
 original_name: FERVIDOBACTERIUM TIANCHISUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -106,12 +106,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except glucose, sulfur and Na2S x 9H2O, and autoclave
-    under a N2 atmosphere. Separately autoclave glucose as a 20% solution and Na2S
-    x 9H2O as a 5% solution under a N2 atmosphere. Steam sulfur for 3 hr on each of
-    3 successive days. Aseptically and anaerobically add glucose and sulfur to the
-    medium. Prior to inoculation, add sterile Na2S x 9H2O solution and adjust pH to
-    7.5 with sterile 1 N H2SO4.
+  description: Mix ingredients except glucose, sulfur and Na2S x 9H2O, and autoclave under a N2 atmosphere.
+    Separately autoclave glucose as a 20% solution and Na2S x 9H2O as a 5% solution under a N2 atmosphere.
+    Steam sulfur for 3 hr on each of 3 successive days. Aseptically and anaerobically add glucose and
+    sulfur to the medium. Prior to inoculation, add sterile Na2S x 9H2O solution and adjust pH to 7.5
+    with sterile 1 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:

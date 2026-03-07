@@ -1,6 +1,6 @@
 name: MMJ-MH MEDIUM
 original_name: MMJ-MH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.0
@@ -113,13 +113,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 5.0 and
-    autoclave under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Distribute the medium into culture vessels (e.g., 20 ml in 120 ml serum
-    bottles) containing sulfur under a stream of a H2-CO2 (4:1, v/v) gas mixture and
-    seal with butyl rubber stoppers. Prior to inoculation, add 5% Na2S x 9H2O (autoclaved
-    and stocked under a N2 atmosphere) to the medium. Readjust pH to 5.0 - 5.3. Pressurize
-    the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients except sulfur and Na2S x 9H2O, adjust pH to 5.0 and autoclave under a N2
+    atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture
+    vessels (e.g., 20 ml in 120 ml serum bottles) containing sulfur under a stream of a H2-CO2 (4:1, v/v)
+    gas mixture and seal with butyl rubber stoppers. Prior to inoculation, add 5% Na2S x 9H2O (autoclaved
+    and stocked under a N2 atmosphere) to the medium. Readjust pH to 5.0 - 5.3. Pressurize the inoculated
+    bottles to 200 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

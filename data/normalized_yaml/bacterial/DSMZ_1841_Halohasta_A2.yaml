@@ -1,8 +1,8 @@
 name: Halohasta (A2)
 original_name: Halohasta (A2)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-8
 media_term:
   preferred_term: DSMZ Medium 1841
@@ -253,8 +253,8 @@ preparation_steps:
   description: after autoklaving add the following filter sterilied solutions.
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 4
   action: FILTER_STERILIZE
   description: Filter sterilise.

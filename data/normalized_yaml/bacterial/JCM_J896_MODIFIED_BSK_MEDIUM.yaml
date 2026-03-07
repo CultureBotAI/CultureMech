@@ -1,6 +1,6 @@
 name: MODIFIED BSK MEDIUM
 original_name: MODIFIED BSK MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -76,8 +76,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water
-    and filter-sterilize with 0.22 ï¿½m PES filter.
+  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water and filter-sterilize
+    with 0.22 ï¿½m PES filter.
 applications:
 - Microbial cultivation
 curation_history:

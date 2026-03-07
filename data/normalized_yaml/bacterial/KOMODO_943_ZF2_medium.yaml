@@ -1,6 +1,6 @@
 name: ZF2 medium
 original_name: ZF2 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:943
     label: ZF2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 943 | DSMZ Medium: 943 (mediadive.medium:943)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 943 | DSMZ Medium: 943 (mediadive.medium:943) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)HCO3
   concentration:

@@ -1,6 +1,6 @@
 name: R2A BROTH
 original_name: R2A BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -67,8 +67,7 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: MIX
-  description: 'Comment: The premixed powder is available from Nihon Pharm. Co. as
-    R2A broth ''DAIGO''.'
+  description: 'Comment: The premixed powder is available from Nihon Pharm. Co. as R2A broth ''DAIGO''.'
 applications:
 - Microbial cultivation
 curation_history:

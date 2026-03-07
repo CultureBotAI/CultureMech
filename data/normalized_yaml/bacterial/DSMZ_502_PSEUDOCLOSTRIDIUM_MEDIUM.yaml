@@ -1,6 +1,6 @@
 name: PSEUDOCLOSTRIDIUM MEDIUM
 original_name: PSEUDOCLOSTRIDIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -236,19 +236,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except yeast extract, Casamino acids, vitamins,
-    carbonate, hydrogenphosphate and sulfide), bring medium to the boil, then cool
-    to room temperature under 80% N2 and 20% CO2 gas mixture. Dispense under same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. After
-    sterilization add yeast extract, Casamino acids, hydrogenphosphate and sulfide
-    from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from
-    a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Vitamins are prepared under 100% N2 gas atmosphere and strerilized by filtration.
-    Adjust pH of complete medium to 7.0, if necessay.
+  description: Dissolve ingredients (except yeast extract, Casamino acids, vitamins, carbonate, hydrogenphosphate
+    and sulfide), bring medium to the boil, then cool to room temperature under 80% N2 and 20% CO2 gas
+    mixture. Dispense under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After sterilization add yeast extract, Casamino acids, hydrogenphosphate and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Vitamins are prepared under 100% N2 gas atmosphere
+    and strerilized by filtration. Adjust pH of complete medium to 7.0, if necessay.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -263,5 +261,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.988079Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

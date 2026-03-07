@@ -1,16 +1,15 @@
 name: COLBY AND ZATHMAN MEDIUM
 original_name: COLBY AND ZATHMAN MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 606
   term:
     id: komodo.medium:606
     label: COLBY AND ZATHMAN MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 606 | DSMZ Medium: 606 (mediadive.medium:606)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 606 | DSMZ Medium: 606 (mediadive.medium:606) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

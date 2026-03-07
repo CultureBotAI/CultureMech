@@ -1,6 +1,6 @@
 name: MAGNETOSPIRILLUM MEDIUM
 original_name: MAGNETOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.75
@@ -262,5 +262,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.831343Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

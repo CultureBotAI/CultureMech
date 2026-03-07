@@ -1,6 +1,6 @@
 name: YPD medium
 original_name: YPD medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:393
     label: YPD medium
-notes: 'Source: KOMODO ModelSEED | ID: 393 | DSMZ Medium: 393 (mediadive.medium:393)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 393 | DSMZ Medium: 393 (mediadive.medium:393) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

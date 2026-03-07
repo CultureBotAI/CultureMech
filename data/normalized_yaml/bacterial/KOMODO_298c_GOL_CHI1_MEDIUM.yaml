@@ -1,6 +1,6 @@
 name: GOL CHI1 MEDIUM
 original_name: GOL CHI1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:298c
     label: GOL CHI1 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298c | DSMZ Medium: 298c (mediadive.medium:298c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298c | DSMZ Medium: 298c (mediadive.medium:298c) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

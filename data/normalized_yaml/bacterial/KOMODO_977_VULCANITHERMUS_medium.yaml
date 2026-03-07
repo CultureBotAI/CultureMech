@@ -1,6 +1,6 @@
 name: VULCANITHERMUS medium
 original_name: VULCANITHERMUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:977
     label: VULCANITHERMUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 977 | DSMZ Medium: 977 (mediadive.medium:977)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 977 | DSMZ Medium: 977 (mediadive.medium:977) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -346,5 +345,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.734874Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

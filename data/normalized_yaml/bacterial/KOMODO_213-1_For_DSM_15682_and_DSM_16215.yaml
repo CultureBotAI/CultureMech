@@ -1,6 +1,6 @@
 name: For DSM 15682 and DSM 16215
 original_name: For DSM 15682 and DSM 16215
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:213.1
     label: For DSM 15682 and DSM 16215
-notes: 'Source: KOMODO ModelSEED | ID: 213.1 | DSMZ Medium: 213 (mediadive.medium:213)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 213.1 | DSMZ Medium: 213 (mediadive.medium:213) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

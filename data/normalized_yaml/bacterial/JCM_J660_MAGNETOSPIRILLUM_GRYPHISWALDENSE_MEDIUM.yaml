@@ -1,6 +1,6 @@
 name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
 original_name: MAGNETOSPIRILLUM GRYPHISWALDENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -63,8 +63,8 @@ preparation_steps:
   description: Adjust pH to 6.8.
 - step_number: 2
   action: MIX
-  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid
-    medium (1.0 g/L agar).'
+  description: 'Comment: For strain JCM 21280, good growth can be obtained in semisolid medium (1.0 g/L
+    agar).'
 applications:
 - Microbial cultivation
 curation_history:

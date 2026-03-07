@@ -1,6 +1,6 @@
 name: ACIDIC HB-1 MEDIUM
 original_name: ACIDIC HB-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -155,22 +155,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Use Medium No. 744. Before autoclaving, adjust pH of the medium to
-    5.5. After autoclaving, add per liter the following solutions aseptically and
-    anaerobically from anaerobic stocks:'
+  description: 'Use Medium No. 744. Before autoclaving, adjust pH of the medium to 5.5. After autoclaving,
+    add per liter the following solutions aseptically and anaerobically from anaerobic stocks:'
 - step_number: 2
   action: MIX
-  description: Otherwise, prepare the medium as described in the recipe of Medium
-    No. 744.
+  description: Otherwise, prepare the medium as described in the recipe of Medium No. 744.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v)
-    gas mixture. Slowly add 10 ml 5% Na2S x 9H2O solution to the medium, wait for
-    the medium to become colorless, then adjust pH to 7.0 with NaOH. Distribute medium
-    into culture vessels under the same gas mixture, seal with butyl rubber stoppers
-    and autoclave. Before inoculation, aseptically and anaerobically add per liter
-    the following solutions from anaerobic stocks (autoclaved and stored under a N2
-    atmosphere):'
+  description: 'Mix ingredients, bring to a boil and cool under a H2-CO2 (4:1, v/v) gas mixture. Slowly
+    add 10 ml 5% Na2S x 9H2O solution to the medium, wait for the medium to become colorless, then adjust
+    pH to 7.0 with NaOH. Distribute medium into culture vessels under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. Before inoculation, aseptically and anaerobically add per liter
+    the following solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
 - step_number: 4
   action: MIX
   description: Pressurize the inoculated culture vessels to 200 kPa H2-CO2 (4:1, v/v).

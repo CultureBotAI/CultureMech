@@ -1,16 +1,15 @@
 name: BACILLUS PASTEURII medium
 original_name: BACILLUS PASTEURII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.0
 media_term:
   preferred_term: KOMODO Medium 2
   term:
     id: komodo.medium:2
     label: BACILLUS PASTEURII medium
-notes: 'Source: KOMODO ModelSEED | ID: 2 | DSMZ Medium: 2 (mediadive.medium:2) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 2 | DSMZ Medium: 2 (mediadive.medium:2) | Aerobic: No'
 ingredients:
 - preferred_term: Urea
   term:

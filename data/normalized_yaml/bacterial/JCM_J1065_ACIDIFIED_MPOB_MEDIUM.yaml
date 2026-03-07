@@ -1,6 +1,6 @@
 name: ACIDIFIED MPOB MEDIUM
 original_name: ACIDIFIED MPOB MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -213,10 +213,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bubble with a N2-CO2 (80:20, v/v) gas mixture,
-    seal with a butyl rubber stopper and autoclave under the same gas mixture. After
-    cooling, aseptically and anaerobically add per liter the following solutions (separately
-    autoclaved under a N2 atmosphere):'
+  description: 'Mix components thoroughly, bubble with a N2-CO2 (80:20, v/v) gas mixture, seal with a
+    butyl rubber stopper and autoclave under the same gas mixture. After cooling, aseptically and anaerobically
+    add per liter the following solutions (separately autoclaved under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

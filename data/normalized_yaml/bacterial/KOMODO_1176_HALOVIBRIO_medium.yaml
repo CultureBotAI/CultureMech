@@ -1,6 +1,6 @@
 name: HALOVIBRIO medium
 original_name: HALOVIBRIO medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1176
     label: HALOVIBRIO medium
-notes: 'Source: KOMODO ModelSEED | ID: 1176 | DSMZ Medium: 1176 (mediadive.medium:1176)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1176 | DSMZ Medium: 1176 (mediadive.medium:1176) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 317
 original_name: JCM MEDIUM No. 317
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -234,9 +234,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and
-    adjust pH to 6.5 with KOH. Then add the remaining salts and bring volume to 1.0
-    L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and adjust pH to 6.5
+    with KOH. Then add the remaining salts and bring volume to 1.0 L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

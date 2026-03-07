@@ -1,6 +1,6 @@
 name: MEDIUM 86 MODIFIED FOR DSM 11377
 original_name: MEDIUM 86 MODIFIED FOR DSM 11377
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:86_11377
     label: MEDIUM 86 MODIFIED FOR DSM 11377
-notes: 'Source: KOMODO ModelSEED | ID: 86_11377 | DSMZ Medium: 86 (mediadive.medium:86)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 86_11377 | DSMZ Medium: 86 (mediadive.medium:86) | Aerobic: No'
 ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:

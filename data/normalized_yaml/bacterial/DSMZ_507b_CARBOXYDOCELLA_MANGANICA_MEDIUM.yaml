@@ -1,6 +1,6 @@
 name: CARBOXYDOCELLA MANGANICA MEDIUM
 original_name: CARBOXYDOCELLA MANGANICA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -197,18 +197,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, and
-    vitamins, then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
-    Add carbonate and adjust pH to 6.0 - 6.5, then dispense medium under 100% CO2
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
-    pyruvate, yeast extract and vitamins from sterile anoxic stock solutions prepared
-    under 100% N2 gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized
-    by filtration. After completing the medium adjust pH to 6.5 with a sterile anoxic
-    stock solution of 1 N NaOH.
+  description: Dissolve ingredients except carbonate, pyruvate, yeast extract, and vitamins, then sparge
+    medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add carbonate and adjust pH to 6.0 - 6.5,
+    then dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave. Add pyruvate, yeast extract and vitamins from sterile anoxic stock solutions prepared under
+    100% N2 gas atmosphere. Stock solutions of pyruvate and vitamins are sterilized by filtration. After
+    completing the medium adjust pH to 6.5 with a sterile anoxic stock solution of 1 N NaOH.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:
@@ -219,5 +217,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.869412Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

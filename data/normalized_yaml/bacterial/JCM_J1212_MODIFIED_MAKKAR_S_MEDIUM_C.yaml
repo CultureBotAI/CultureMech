@@ -1,6 +1,6 @@
 name: MODIFIED MAKKAR'S MEDIUM C
 original_name: MODIFIED MAKKAR'S MEDIUM C
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -96,12 +96,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components, except L-cysteine x HCl x H2O, and heat the medium
-    to 60C with stirring. Bubble the medium with O2-free CO2 vigorously, then add
-    L-cysteine x HCl x H2O to reduce the medium. Dispense the medium into culture
-    vessels (e.g., 10 ml in Balch type tubes) under a stream of CO2, seal with butyl
-    rubber stoppers and autoclave. Aseptically and anaerobically add per liter the
-    following solution (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components, except L-cysteine x HCl x H2O, and heat the medium to 60C with stirring.
+    Bubble the medium with O2-free CO2 vigorously, then add L-cysteine x HCl x H2O to reduce the medium.
+    Dispense the medium into culture vessels (e.g., 10 ml in Balch type tubes) under a stream of CO2,
+    seal with butyl rubber stoppers and autoclave. Aseptically and anaerobically add per liter the following
+    solution (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

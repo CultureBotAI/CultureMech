@@ -1,6 +1,6 @@
 name: THERMOANAEROBIUM MEDIUM
 original_name: THERMOANAEROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -239,18 +239,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix ingredients and adjust pH to 7.0. Distribute the medium into culture
-    vessels under a N2 atmosphere, seal with butyl rubber stoppers and autoclave.
-    Separately autoclave the following solutions under a N2 atmosphere and add to
-    the medium (per 950 ml):'
+  description: 'Mix ingredients and adjust pH to 7.0. Distribute the medium into culture vessels under
+    a N2 atmosphere, seal with butyl rubber stoppers and autoclave. Separately autoclave the following
+    solutions under a N2 atmosphere and add to the medium (per 950 ml):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH of the medium to 7.2 - 7.4 with sterile NaOH, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
-    and adjust pH 6.5 with KOH. Then add the remaining salts and adjust volume to
-    1000 ml.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH 6.5 with
+    KOH. Then add the remaining salts and adjust volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

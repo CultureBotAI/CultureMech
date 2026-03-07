@@ -1,15 +1,15 @@
 name: MEDIUM 276 MODIFIED FOR DSM 11845
 original_name: MEDIUM 276 MODIFIED FOR DSM 11845
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 276_11845
   term:
     id: komodo.medium:276_11845
     label: MEDIUM 276 MODIFIED FOR DSM 11845
-notes: 'Source: KOMODO ModelSEED | ID: 276_11845 | DSMZ Medium: 276 (mediadive.medium:276)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 276_11845 | DSMZ Medium: 276 (mediadive.medium:276) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

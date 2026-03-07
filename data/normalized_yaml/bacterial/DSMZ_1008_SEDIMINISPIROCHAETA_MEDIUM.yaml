@@ -1,6 +1,6 @@
 name: SEDIMINISPIROCHAETA MEDIUM
 original_name: SEDIMINISPIROCHAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -44,16 +44,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except thioglycolate and cellobiose, then sparge
-    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add thioglycolate and
-    adjust pH of medium to 7.5 with 10 N KOH. Dispense medium under 100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave at 121°C for 15 min.
-    Add cellobiose from a sterile anoxic stock solution prepared under 100% N2 gas
-    atmosphere and sterilized by filtration.
+  description: Dissolve ingredients except thioglycolate and cellobiose, then sparge medium with 100%
+    N2 gas for 30 - 45 min to make it anoxic. Add thioglycolate and adjust pH of medium to 7.5 with 10
+    N KOH. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave at 121°C for 15 min. Add cellobiose from a sterile anoxic stock solution prepared under
+    100% N2 gas atmosphere and sterilized by filtration.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Bottled seawater from Biomaris GmbH can be used instead of filtered
-    seawater.'
+  description: 'Note: Bottled seawater from Biomaris GmbH can be used instead of filtered seawater.'
 applications:
 - Microbial cultivation
 curation_history:

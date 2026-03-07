@@ -1,6 +1,6 @@
 name: Trace element solution SL-10 B
 original_name: Trace element solution SL-10 B
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2063
     label: Trace element solution SL-10 B
-notes: 'Source: KOMODO ModelSEED | ID: 2063 | DSMZ Medium: 2063 (mediadive.medium:2063)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2063 | DSMZ Medium: 2063 (mediadive.medium:2063) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

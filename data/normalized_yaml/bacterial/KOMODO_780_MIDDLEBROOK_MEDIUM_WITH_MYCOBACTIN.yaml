@@ -1,15 +1,14 @@
 name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
 original_name: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 780
   term:
     id: komodo.medium:780
     label: MIDDLEBROOK MEDIUM WITH MYCOBACTIN
-notes: 'Source: KOMODO ModelSEED | ID: 780 | DSMZ Medium: 780 (mediadive.medium:780)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 780 | DSMZ Medium: 780 (mediadive.medium:780) | Aerobic: No'
 ingredients:
 - preferred_term: Mycobactine J
   concentration:

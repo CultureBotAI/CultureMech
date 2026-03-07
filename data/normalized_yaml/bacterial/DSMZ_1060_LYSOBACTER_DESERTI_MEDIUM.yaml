@@ -1,8 +1,8 @@
 name: LYSOBACTER DESERTI MEDIUM
 original_name: LYSOBACTER DESERTI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 8.1
 media_term:
   preferred_term: DSMZ Medium 1060
@@ -64,8 +64,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine after cooling. Adjust
-    pH to 8.1.
+  description: Autoclave solutions A and B separately and combine after cooling. Adjust pH to 8.1.
 applications:
 - Microbial cultivation
 curation_history:

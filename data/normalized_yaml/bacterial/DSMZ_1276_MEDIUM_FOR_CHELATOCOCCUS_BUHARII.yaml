@@ -1,8 +1,8 @@
 name: MEDIUM FOR CHELATOCOCCUS BUHARII
 original_name: MEDIUM FOR CHELATOCOCCUS BUHARII
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 1276
@@ -120,8 +120,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Before adding agar, heat to boiling. After cooling adjust pH to pH
-    7.5. (pH drops strongly during heating).
+  description: Before adding agar, heat to boiling. After cooling adjust pH to pH 7.5. (pH drops strongly
+    during heating).
 applications:
 - Microbial cultivation
 curation_history:

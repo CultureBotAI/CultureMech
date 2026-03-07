@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM M9 for E. coli JM strains
 original_name: MINERAL MEDIUM M9 for E. coli JM strains
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
@@ -70,8 +70,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: The above solutions should be sterilized separately by filtration (thiamine,
-    glucose) or autoclaving.
+  description: The above solutions should be sterilized separately by filtration (thiamine, glucose) or
+    autoclaving.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.4.

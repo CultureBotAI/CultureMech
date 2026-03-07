@@ -1,6 +1,6 @@
 name: MIXOTROPHIC NITROBACTER medium
 original_name: MIXOTROPHIC NITROBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:756a
     label: MIXOTROPHIC NITROBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 756a | DSMZ Medium: 756a (mediadive.medium:756a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 756a | DSMZ Medium: 756a (mediadive.medium:756a) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

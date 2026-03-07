@@ -1,6 +1,6 @@
 name: MODIFIED NITRATE  MINERAL SALTS MEDIUM-2
 original_name: MODIFIED NITRATE  MINERAL SALTS MEDIUM-2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -217,22 +217,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, add the following
-    solutions (autoclaved) to the medium:'
+  description: 'Mix components thoroughly and autoclave. After cooling, add the following solutions (autoclaved)
+    to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: 'Adjust pH to 6.8, if necessary. Cultivate with methane or methanol
-    as a substrate as described below:'
+  description: 'Adjust pH to 6.8, if necessary. Cultivate with methane or methanol as a substrate as described
+    below:'
 - step_number: 3
   action: MIX
-  description: 'Methane: Aseptically distribute the medium into sterile serum bottles
-    (leave &; 80% gas phase by volume) and seal with rubber stoppers. Replace the
-    gas phase with an air-methane gas mixture (75:25, v/v). Cultivate with shaking.'
+  description: 'Methane: Aseptically distribute the medium into sterile serum bottles (leave &; 80% gas
+    phase by volume) and seal with rubber stoppers. Replace the gas phase with an air-methane gas mixture
+    (75:25, v/v). Cultivate with shaking.'
 - step_number: 4
   action: FILTER_STERILIZE
-  description: 'Methanol: Aseptically distribute the medium into culture vessels (e.g.,
-    20 ml in 60 ml serum bottles), supplement with 4.0 ml per liter filter-sterilized
-    methanol and seal with rubber stoppers.'
+  description: 'Methanol: Aseptically distribute the medium into culture vessels (e.g., 20 ml in 60 ml
+    serum bottles), supplement with 4.0 ml per liter filter-sterilized methanol and seal with rubber stoppers.'
 applications:
 - Microbial cultivation
 curation_history:

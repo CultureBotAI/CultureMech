@@ -1,16 +1,15 @@
 name: CY S2 medium
 original_name: CY S2 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: KOMODO Medium 172a
   term:
     id: komodo.medium:172a
     label: CY S2 medium
-notes: 'Source: KOMODO ModelSEED | ID: 172a | DSMZ Medium: 172a (mediadive.medium:172a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 172a | DSMZ Medium: 172a (mediadive.medium:172a) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

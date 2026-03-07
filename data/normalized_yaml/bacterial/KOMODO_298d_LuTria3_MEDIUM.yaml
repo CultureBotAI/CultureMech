@@ -1,6 +1,6 @@
 name: LuTria3 MEDIUM
 original_name: LuTria3 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:298d
     label: LuTria3 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298d | DSMZ Medium: 298d (mediadive.medium:298d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298d | DSMZ Medium: 298d (mediadive.medium:298d) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

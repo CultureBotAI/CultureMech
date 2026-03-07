@@ -1,6 +1,6 @@
 name: THERMOCOCCUS WAIOTAPUENSE medium
 original_name: THERMOCOCCUS WAIOTAPUENSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:934
     label: THERMOCOCCUS WAIOTAPUENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 934 | DSMZ Medium: 934 (mediadive.medium:934)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 934 | DSMZ Medium: 934 (mediadive.medium:934) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

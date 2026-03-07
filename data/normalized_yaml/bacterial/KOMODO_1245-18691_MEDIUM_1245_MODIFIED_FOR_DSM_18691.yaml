@@ -1,6 +1,6 @@
 name: MEDIUM 1245 MODIFIED FOR DSM 18691
 original_name: MEDIUM 1245 MODIFIED FOR DSM 18691
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1245_18691
     label: MEDIUM 1245 MODIFIED FOR DSM 18691
-notes: 'Source: KOMODO ModelSEED | ID: 1245_18691 | DSMZ Medium: 1245 (mediadive.medium:1245)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1245_18691 | DSMZ Medium: 1245 (mediadive.medium:1245) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Proteose peptone no. 2
   concentration:

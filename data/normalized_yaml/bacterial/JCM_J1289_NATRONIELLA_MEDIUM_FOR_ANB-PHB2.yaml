@@ -1,6 +1,6 @@
 name: NATRONIELLA MEDIUM FOR ANB-PHB2
 original_name: NATRONIELLA MEDIUM FOR ANB-PHB2
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.6
@@ -232,14 +232,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 9.6 with 6N HCl. Autoclave. After cooling, aseptically add the following
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust pH to 9.6 with 6N
+    HCl. Autoclave. After cooling, aseptically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, aseptically and anaerobically distribute the
-    medium into culture vessels under an argon gas stream, and seal with butyl rubber
-    stoppers. Then, add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'To complete the medium, aseptically and anaerobically distribute the medium into culture
+    vessels under an argon gas stream, and seal with butyl rubber stoppers. Then, add per liter the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 3.6.

@@ -1,6 +1,6 @@
 name: ACB90-MEDIUM
 original_name: ACB90-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:298h
     label: ACB90-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 298h | DSMZ Medium: 298h (mediadive.medium:298h)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 298h | DSMZ Medium: 298h (mediadive.medium:298h) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

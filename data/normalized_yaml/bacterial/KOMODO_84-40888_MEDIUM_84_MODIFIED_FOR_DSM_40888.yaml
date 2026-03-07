@@ -1,16 +1,15 @@
 name: MEDIUM 84 MODIFIED FOR DSM 40888
 original_name: MEDIUM 84 MODIFIED FOR DSM 40888
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.0
 media_term:
   preferred_term: KOMODO Medium 84_40888
   term:
     id: komodo.medium:84_40888
     label: MEDIUM 84 MODIFIED FOR DSM 40888
-notes: 'Source: KOMODO ModelSEED | ID: 84_40888 | DSMZ Medium: 84 (mediadive.medium:84)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 84_40888 | DSMZ Medium: 84 (mediadive.medium:84) | Aerobic: No'
 ingredients:
 - preferred_term: Rolled oats
   concentration:

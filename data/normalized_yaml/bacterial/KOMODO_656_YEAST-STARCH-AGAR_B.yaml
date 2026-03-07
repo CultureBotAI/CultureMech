@@ -1,16 +1,15 @@
 name: YEAST-STARCH-AGAR(B)
 original_name: YEAST-STARCH-AGAR(B)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: KOMODO Medium 656
   term:
     id: komodo.medium:656
     label: YEAST-STARCH-AGAR(B)
-notes: 'Source: KOMODO ModelSEED | ID: 656 | DSMZ Medium: 656 (mediadive.medium:656)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 656 | DSMZ Medium: 656 (mediadive.medium:656) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

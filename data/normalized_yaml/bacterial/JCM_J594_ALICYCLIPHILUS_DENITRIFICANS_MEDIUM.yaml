@@ -1,6 +1,6 @@
 name: ALICYCLIPHILUS DENITRIFICANS MEDIUM
 original_name: ALICYCLIPHILUS DENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -222,23 +222,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling,
-    combine the solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture.
-    Then, aseptically and anaerobically add the following autoclaved or *filter-sterilized
-    solutions to the medium:'
+  description: 'Prepare all solutions and autoclave under a N2 atmosphere. After cooling, combine the
+    solutions and replace the gas phase with a N2-CO2 (4:1, v/v) gas mixture. Then, aseptically and anaerobically
+    add the following autoclaved or *filter-sterilized solutions to the medium:'
 - step_number: 2
   action: MIX
   description: Check the final pH of the medium to be around 7.3.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Comment: JCM 14587 grows also in a modified medium with benzene and
-    chlorate. For preparation of the modified medium, replace NaNO3 with 1.06 g NaClO3(in
-    900 ml solution A). After combining all solutions (A, B and C), add 1.0 ml/L of
-    1.0 M sodium acetate solution (autoclaved), 25 ml/L of 20 mM benzene (water-saturated,
-    autoclaved), and 1 ml/L of each of vitamin solution (see Medium No. 403, filter-sterilized),
-    thiamine solution (see Medium No. 403, filter-sterilized) and vitamin B12 solution
-    (see Medium No. 403, filter-sterilized) to the medium. Otherwise, prepare the
-    modified medium as described above.'
+  description: 'Comment: JCM 14587 grows also in a modified medium with benzene and chlorate. For preparation
+    of the modified medium, replace NaNO3 with 1.06 g NaClO3(in 900 ml solution A). After combining all
+    solutions (A, B and C), add 1.0 ml/L of 1.0 M sodium acetate solution (autoclaved), 25 ml/L of 20
+    mM benzene (water-saturated, autoclaved), and 1 ml/L of each of vitamin solution (see Medium No. 403,
+    filter-sterilized), thiamine solution (see Medium No. 403, filter-sterilized) and vitamin B12 solution
+    (see Medium No. 403, filter-sterilized) to the medium. Otherwise, prepare the modified medium as described
+    above.'
 applications:
 - Microbial cultivation
 curation_history:

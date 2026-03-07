@@ -1,8 +1,8 @@
 name: MAGNETOSPIRILLUM MEDIUM
 original_name: MAGNETOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.7
 media_term:
   preferred_term: DSMZ Medium 380
@@ -237,40 +237,34 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except thioglycolate and vitamins) in the order
-    given and adjust pH to 6.75 with NaOH.
+  description: Dissolve ingredients (except thioglycolate and vitamins) in the order given and adjust
+    pH to 6.75 with NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Preparation of liquid medium: Sparge medium with 100% N2 gas for 30
-    -45 min and dispense under the same gas atmosphere into anoxic Hungate-type tubes
-    to 50% of their volume. Seal vials with screw caps and gas tight butyl rubber
-    closures. Autoclave at 121°C for 15 min. Before inoculation add thioglycolate
-    and vitamins from stock solutions prepared under 100% N2 gas and filter-sterilized.
-    Then add sterile air (with hypodermic syringe through the rubber closure) to a
-    concentration of ca. 1% (v/v) O2 in the vial (e.g., add 1 ml air to a Hungate-type
-    tube of 16 ml total volume).'
+  description: 'Preparation of liquid medium: Sparge medium with 100% N2 gas for 30 -45 min and dispense
+    under the same gas atmosphere into anoxic Hungate-type tubes to 50% of their volume. Seal vials with
+    screw caps and gas tight butyl rubber closures. Autoclave at 121°C for 15 min. Before inoculation
+    add thioglycolate and vitamins from stock solutions prepared under 100% N2 gas and filter-sterilized.
+    Then add sterile air (with hypodermic syringe through the rubber closure) to a concentration of ca.
+    1% (v/v) O2 in the vial (e.g., add 1 ml air to a Hungate-type tube of 16 ml total volume).'
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Preparation of semi solid medium: Supplement medium with agar, bring
-    medium to the boil and cool under 100% N2 gas atmosphere. Dispense under same
-    gas atmosphere aliquots of 10 ml semi-solid medium into Hungate-type tubes. Prior
-    to inoculation add thioglycolate from a 0.5% (w/v) stock solution, freshly prepared
-    under 100% N2 gas and filter-sterilized. Then add sterile air (with hypodermic
-    syringe through the rubber closure) to a concentration of ca. 1% (v/v) in the
-    vial.'
+  description: 'Preparation of semi solid medium: Supplement medium with agar, bring medium to the boil
+    and cool under 100% N2 gas atmosphere. Dispense under same gas atmosphere aliquots of 10 ml semi-solid
+    medium into Hungate-type tubes. Prior to inoculation add thioglycolate from a 0.5% (w/v) stock solution,
+    freshly prepared under 100% N2 gas and filter-sterilized. Then add sterile air (with hypodermic syringe
+    through the rubber closure) to a concentration of ca. 1% (v/v) in the vial.'
 - step_number: 4
   action: STORE
-  description: 'Note: Prior to inoculation media should be slightly pink in color.
-    Strongly reduced conditions will not support growth of microaerophilic Magnetospirillum
-    species. Use as inoculum 10% (v/v). Incubate tubes with medium without agitation
-    in an inclined position. During growth O2 will be consumed and the pH will increase.
-    For cultivation of magnetic cells we recommend preparation of liquid medium, while
-    semi-solid medium is more suitable for demonstration of microaerophilic band formation
-    and storage.'
+  description: 'Note: Prior to inoculation media should be slightly pink in color. Strongly reduced conditions
+    will not support growth of microaerophilic Magnetospirillum species. Use as inoculum 10% (v/v). Incubate
+    tubes with medium without agitation in an inclined position. During growth O2 will be consumed and
+    the pH will increase. For cultivation of magnetic cells we recommend preparation of liquid medium,
+    while semi-solid medium is more suitable for demonstration of microaerophilic band formation and storage.'
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 6
   action: MIX
   description: Sterilize by filtration under 100% N2 gas atmosphere.

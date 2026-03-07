@@ -1,6 +1,6 @@
 name: GBS salts modified for Thermocrinis jamiesonii
 original_name: GBS salts modified for Thermocrinis jamiesonii
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.3
@@ -143,19 +143,18 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: POUR_PLATES
-  description: Prepare the medium under a nitrogen atmosphere. Dispense 5 ml into
-    25 ml tubes fitted with rubber stoppers.
+  description: Prepare the medium under a nitrogen atmosphere. Dispense 5 ml into 25 ml tubes fitted with
+    rubber stoppers.
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 4
   action: AUTOCLAVE
-  description: after autoklaving, add the following from anaerobic, sterile (autoclaved)
-    stock solutions (e.g., 100x)
+  description: after autoklaving, add the following from anaerobic, sterile (autoclaved) stock solutions
+    (e.g., 100x)
 - step_number: 5
   action: MIX
-  description: Before inoculation 2% sterile O2 or 10% sterile air is added to the
-    headspace.
+  description: Before inoculation 2% sterile O2 or 10% sterile air is added to the headspace.
 - step_number: 6
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH

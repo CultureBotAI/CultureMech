@@ -1,6 +1,6 @@
 name: Artificial sea water, 3 times concentrated (medium 1137)
 original_name: Artificial sea water, 3 times concentrated (medium 1137)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3007
     label: Artificial sea water, 3 times concentrated (medium 1137)
-notes: 'Source: KOMODO ModelSEED | ID: 3007 | DSMZ Medium: 3007 (mediadive.medium:3007)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3007 | DSMZ Medium: 3007 (mediadive.medium:3007) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

@@ -1,6 +1,6 @@
 name: THIOBACILLUS PROSPERUS MEDIUM
 original_name: THIOBACILLUS PROSPERUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 2.5
@@ -179,16 +179,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 2.5 and autoclave. After cooling, aseptically add the
-    following solution (filter-sterilized):'
+  description: 'Adjust pH to 2.5 and autoclave. After cooling, aseptically add the following solution
+    (filter-sterilized):'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Dissolve 40.0 g FeSO4 x 7H2O in 0.1 N H2SO4 solution and fill up to
-    100.0 ml. Filter-sterilize and store under a N2 atmosphere.
+  description: Dissolve 40.0 g FeSO4 x 7H2O in 0.1 N H2SO4 solution and fill up to 100.0 ml. Filter-sterilize
+    and store under a N2 atmosphere.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

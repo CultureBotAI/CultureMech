@@ -1,6 +1,6 @@
 name: PYRODICTIUM DELANEYI MEDIUM
 original_name: PYRODICTIUM DELANEYI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -251,29 +251,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, hydrogenphosphate, ferrous chloride,
-    yeast extract, vitamins, cysteine and ferric iron hydroxide sludge. Suspend pellet
-    of ferric iron hydroxide in medium and sparge with 80% H2 and 20% CO2 gas mixture
-    for 30 - 45 min to make it anoxic. Thereafter, dispense suspension under 80% H2
-    and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave
-    for 30 min. Add hydrogenphosphate, ferrous chloride (dissolved in 0.1 N HCl),
-    yeast extract, cysteine and vitamins from sterile anoxic stock solutions prepared
-    under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared
-    under 80% N2 and 20% CO2 gas mixture. Vitamins and ferrous chloride should be
-    sterilized by filtration. The pH of the complete medium should be at 5.5.
+  description: Dissolve ingredients except carbonate, hydrogenphosphate, ferrous chloride, yeast extract,
+    vitamins, cysteine and ferric iron hydroxide sludge. Suspend pellet of ferric iron hydroxide in medium
+    and sparge with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Thereafter, dispense
+    suspension under 80% H2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
+    autoclave for 30 min. Add hydrogenphosphate, ferrous chloride (dissolved in 0.1 N HCl), yeast extract,
+    cysteine and vitamins from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate
+    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Vitamins and ferrous
+    chloride should be sterilized by filtration. The pH of the complete medium should be at 5.5.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l)
-    with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total
-    amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored
-    at room temperature overnight with surface covered with water. Thereafter, centrifuge
-    at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled
-    water. Resuspend the pellet in medium as described above. For storage autoclave
-    under 100% N2 atmosphere.
+  description: Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH
+    to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80 - 100
+    ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with surface covered with
+    water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the supernatant. Wash several times
+    with distilled water. Resuspend the pellet in medium as described above. For storage autoclave under
+    100% N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -284,5 +281,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.933947Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

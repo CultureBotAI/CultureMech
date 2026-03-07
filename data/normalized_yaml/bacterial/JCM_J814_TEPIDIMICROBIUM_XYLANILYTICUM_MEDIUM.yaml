@@ -1,6 +1,6 @@
 name: TEPIDIMICROBIUM XYLANILYTICUM MEDIUM
 original_name: TEPIDIMICROBIUM XYLANILYTICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -235,14 +235,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Autoclave solutions A and B under a N2 atmosphere. After cooling,
-    combine Solutions A and B together with the following solutions (filter-sterilized)
-    under a N2-CO2 (4:1, v/v) gas mixture:'
+  description: 'Autoclave solutions A and B under a N2 atmosphere. After cooling, combine Solutions A
+    and B together with the following solutions (filter-sterilized) under a N2-CO2 (4:1, v/v) gas mixture:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels under the same gas mixture
-    and seal with butyl rubber stoppers. Finally, add per liter the following solution
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels under the same gas mixture and seal with butyl
+    rubber stoppers. Finally, add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

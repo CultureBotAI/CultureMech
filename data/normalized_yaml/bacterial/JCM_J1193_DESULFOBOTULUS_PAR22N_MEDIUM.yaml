@@ -1,6 +1,6 @@
 name: DESULFOBOTULUS PAR22N MEDIUM
 original_name: DESULFOBOTULUS PAR22N MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -176,12 +176,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 9.0. Bring to a boil and
-    cool under a N2 gas stream. Distribute the medium into culture vessels (e.g.,
-    10 ml of the medium in the Hungate tubes) under a N2 atmosphere, seal with butyl
-    rubber stoppers and autoclave. After cooling, aseptically and anaerobically add
-    per liter the following solutions (autoclaved or *filter-sterilized and stored
-    under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 9.0. Bring to a boil and cool under a N2 gas
+    stream. Distribute the medium into culture vessels (e.g., 10 ml of the medium in the Hungate tubes)
+    under a N2 atmosphere, seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
+    anaerobically add per liter the following solutions (autoclaved or *filter-sterilized and stored under
+    a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

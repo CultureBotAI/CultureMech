@@ -1,6 +1,6 @@
 name: Methanol-Utilizing Bacteria Medium E
 original_name: Methanol-Utilizing Bacteria Medium E
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Vitamin; Properties: Defined component, Simple component, Organic compound'
   term:
     id: CHEBI:176843
     label: vitamin B12

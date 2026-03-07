@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM CAMINITHERMALIS medium
 original_name: CLOSTRIDIUM CAMINITHERMALIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:986
     label: CLOSTRIDIUM CAMINITHERMALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 986 | DSMZ Medium: 986 (mediadive.medium:986)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 986 | DSMZ Medium: 986 (mediadive.medium:986) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:
@@ -158,5 +157,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.114698Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

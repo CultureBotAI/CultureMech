@@ -1,6 +1,6 @@
 name: THERMODESULFOBACTERIUM AUXILIATOTRIS MEDIUM
 original_name: THERMODESULFOBACTERIUM AUXILIATOTRIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -151,11 +151,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute
-    the medium into culture vessels (e.g., 10.0 ml in 25 ml serum bottles) under a
-    stream of N2, seal with butyl rubber stoppers and autoclave. After cooling, add
-    80% headspace volume of filter-sterilized H2 gas into the culture vessels. Aseptically
-    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized
+  description: 'Mix components thoroughly and adjust pH to 7.0 with NaOH. Distribute the medium into culture
+    vessels (e.g., 10.0 ml in 25 ml serum bottles) under a stream of N2, seal with butyl rubber stoppers
+    and autoclave. After cooling, add 80% headspace volume of filter-sterilized H2 gas into the culture
+    vessels. Aseptically and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized
     and stored anaerobically):'
 - step_number: 2
   action: MIX
@@ -165,9 +164,8 @@ preparation_steps:
   description: Adjust pH to 6.0 with KOH.
 - step_number: 4
   action: HEAT
-  description: 'Comment: Consistent growth in serum tubes requires pretreatment of
-    butyl rubber stoppers by boiling in 1% sodium sulfide solution (1 hr) followed
-    by boiling in distilled H2O (1 hr, twice).'
+  description: 'Comment: Consistent growth in serum tubes requires pretreatment of butyl rubber stoppers
+    by boiling in 1% sodium sulfide solution (1 hr) followed by boiling in distilled H2O (1 hr, twice).'
 applications:
 - Microbial cultivation
 curation_history:

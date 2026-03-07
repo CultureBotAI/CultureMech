@@ -1,6 +1,6 @@
 name: VEN CHI2 MEDIUM
 original_name: VEN CHI2 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:293a
     label: VEN CHI2 MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 293a | DSMZ Medium: 293a (mediadive.medium:293a)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 293a | DSMZ Medium: 293a (mediadive.medium:293a) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

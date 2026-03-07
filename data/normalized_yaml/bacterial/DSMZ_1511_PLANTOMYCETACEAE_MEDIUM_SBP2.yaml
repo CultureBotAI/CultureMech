@@ -1,6 +1,6 @@
 name: PLANTOMYCETACEAE MEDIUM SBP2
 original_name: PLANTOMYCETACEAE MEDIUM SBP2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.6-8
@@ -207,13 +207,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Dispense the medium into culture vessels.
-    Sterilize by autoclaving. Before inoculation add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Dispense the medium into culture vessels. Sterilize by autoclaving.
+    Before inoculation add from sterile stock solutions:'
 - step_number: 2
   action: AUTOCLAVE
-  description: The 8% NaHCO3 solution may be either filter sterilized or autoclaved.
-    When the solution is autoclaved use tightly closed vessels that are filled to
-    a maximum of 50% of the total volume.
+  description: The 8% NaHCO3 solution may be either filter sterilized or autoclaved. When the solution
+    is autoclaved use tightly closed vessels that are filled to a maximum of 50% of the total volume.
 - step_number: 3
   action: MIX
   description: The final pH of the medium should be adjusted to pH 7.6-8.0.
@@ -231,5 +230,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:23.911738Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

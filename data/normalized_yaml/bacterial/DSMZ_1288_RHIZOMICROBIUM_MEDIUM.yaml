@@ -1,6 +1,6 @@
 name: RHIZOMICROBIUM MEDIUM
 original_name: RHIZOMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -116,12 +116,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium without glucose, cellobiose, maltose, and soluble
-    starch. Boil the medium and cool under an atmosphere of N2:CO2 (80:20) and adjust
-    the pH to 6.8. Dispense into Hungate tubes or serum bottles under the same gas
-    atmosphere and seal with rubber stoppers. Add the glucose, cellobiose, maltose,
-    and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH
-    6.8).
+  description: Prepare the medium without glucose, cellobiose, maltose, and soluble starch. Boil the medium
+    and cool under an atmosphere of N2:CO2 (80:20) and adjust the pH to 6.8. Dispense into Hungate tubes
+    or serum bottles under the same gas atmosphere and seal with rubber stoppers. Add the glucose, cellobiose,
+    maltose, and soluble starch from N2/CO2 gassed and sterile-filtered stock solutions (pH 6.8).
 applications:
 - Microbial cultivation
 curation_history:

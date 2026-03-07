@@ -1,6 +1,6 @@
 name: AMB medium
 original_name: AMB medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:455
     label: AMB medium
-notes: 'Source: KOMODO ModelSEED | ID: 455 | DSMZ Medium: 455 (mediadive.medium:455)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 455 | DSMZ Medium: 455 (mediadive.medium:455) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

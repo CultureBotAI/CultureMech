@@ -1,6 +1,6 @@
 name: SALINIVIBRIO SHARMENSIS MEDIUM
 original_name: SALINIVIBRIO SHARMENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -67,9 +67,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 970 ml. For
-    preparation of solid medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C
-    for agar medium). Then, add the following solution (separately autoclaved):'
+  description: 'Add components to distilled water and bring volume to 970 ml. For preparation of solid
+    medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C for agar medium). Then, add the following
+    solution (separately autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Check the final pH to be around 9.0.

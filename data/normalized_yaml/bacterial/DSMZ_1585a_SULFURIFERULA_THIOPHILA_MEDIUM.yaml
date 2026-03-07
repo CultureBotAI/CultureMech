@@ -1,6 +1,6 @@
 name: SULFURIFERULA THIOPHILA MEDIUM
 original_name: SULFURIFERULA THIOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -154,15 +154,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except thiosulfate and bicarbonate, then adjust
-    pH of medium to 6.5. Dispense medium under air atmosphere into serum vials suitable
-    for anaerobic cultivation (e.g., 20 ml medium in 100 ml bottles) and close with
-    butyl rubber septa. After autoclaving complete medium with thiosulfate and bicarbonate
-    added from stock solutions sterilized by filtration.
+  description: Dissolve ingredients except thiosulfate and bicarbonate, then adjust pH of medium to 6.5.
+    Dispense medium under air atmosphere into serum vials suitable for anaerobic cultivation (e.g., 20
+    ml medium in 100 ml bottles) and close with butyl rubber septa. After autoclaving complete medium
+    with thiosulfate and bicarbonate added from stock solutions sterilized by filtration.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

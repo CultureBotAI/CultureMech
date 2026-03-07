@@ -1,6 +1,6 @@
 name: Seven vitamins solution (medium 503)
 original_name: Seven vitamins solution (medium 503)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2023
     label: Seven vitamins solution (medium 503)
-notes: 'Source: KOMODO ModelSEED | ID: 2023 | DSMZ Medium: 2023 (mediadive.medium:2023)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2023 | DSMZ Medium: 2023 (mediadive.medium:2023) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

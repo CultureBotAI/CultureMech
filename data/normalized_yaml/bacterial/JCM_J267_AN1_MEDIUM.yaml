@@ -1,6 +1,6 @@
 name: AN1 MEDIUM
 original_name: AN1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -53,11 +53,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust
-    pH to 7.3. Autoclave the medium under a N2 atmosphere. Separately autoclave sodium
-    thioglycolate as 10% solution under a N2 atmosphere. Steam sulfur for 3 hr on
-    each of 3 successive days. Under a N2 stream, mix the medium and sulfur in culture
-    vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
+  description: Mix ingredients, except sodium thioglycolate and sulfur, and adjust pH to 7.3. Autoclave
+    the medium under a N2 atmosphere. Separately autoclave sodium thioglycolate as 10% solution under
+    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Under a N2 stream, mix the medium
+    and sulfur in culture vessels and seal with butyl rubber stoppers. Prior to inoculation, add the thioglycolate
     solution to the medium anaerobically.
 applications:
 - Microbial cultivation

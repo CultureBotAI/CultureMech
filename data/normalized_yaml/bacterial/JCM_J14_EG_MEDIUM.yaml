@@ -1,8 +1,8 @@
 name: EG MEDIUM
 original_name: EG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.7
 media_term:
   preferred_term: JCM Medium J14
@@ -72,10 +72,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add L-cystine to 50 ml of 1 N HCl and mix thoroughly. Add the remaining
-    components and bring volume to 950 ml. Adjust pH to 7.6-7.8. After autoclaving
-    and then cooling to 50C, aseptically add 50.0 ml of horse blood. Mix thoroughly
-    and pour into sterile petri dishes or distribute into sterile tubes.
+  description: Add L-cystine to 50 ml of 1 N HCl and mix thoroughly. Add the remaining components and
+    bring volume to 950 ml. Adjust pH to 7.6-7.8. After autoclaving and then cooling to 50C, aseptically
+    add 50.0 ml of horse blood. Mix thoroughly and pour into sterile petri dishes or distribute into sterile
+    tubes.
 applications:
 - Microbial cultivation
 curation_history:

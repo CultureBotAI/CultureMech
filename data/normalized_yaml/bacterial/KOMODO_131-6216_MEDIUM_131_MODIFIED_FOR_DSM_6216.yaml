@@ -1,6 +1,6 @@
 name: MEDIUM 131 MODIFIED FOR DSM 6216
 original_name: MEDIUM 131 MODIFIED FOR DSM 6216
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:131_6216
     label: MEDIUM 131 MODIFIED FOR DSM 6216
-notes: 'Source: KOMODO ModelSEED | ID: 131_6216 | DSMZ Medium: 131 (mediadive.medium:131)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 131_6216 | DSMZ Medium: 131 (mediadive.medium:131) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

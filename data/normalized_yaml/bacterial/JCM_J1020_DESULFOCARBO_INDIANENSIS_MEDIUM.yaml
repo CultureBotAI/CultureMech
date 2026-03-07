@@ -1,6 +1,6 @@
 name: DESULFOCARBO INDIANENSIS MEDIUM
 original_name: DESULFOCARBO INDIANENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -237,10 +237,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and distribute the medium into culture vessels
-    (e.g., 10 ml medium in Balch-type tubes) under a N2-CO2 (4:1, v/v) gas mixture,
-    seal with butyl rubber stoppers and autoclave. After cooling, aseptically and
-    anaerobically add per liter the following solutions:'
+  description: 'Mix components thoroughly and distribute the medium into culture vessels (e.g., 10 ml
+    medium in Balch-type tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers
+    and autoclave. After cooling, aseptically and anaerobically add per liter the following solutions:'
 applications:
 - Microbial cultivation
 curation_history:

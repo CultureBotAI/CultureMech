@@ -1,6 +1,6 @@
 name: METHANOLOBUS-I-MEDIUM
 original_name: METHANOLOBUS-I-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:233
     label: METHANOLOBUS-I-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 233 | DSMZ Medium: 233 (mediadive.medium:233)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 233 | DSMZ Medium: 233 (mediadive.medium:233) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -286,5 +285,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:51.824039Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

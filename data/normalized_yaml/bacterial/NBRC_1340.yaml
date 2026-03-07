@@ -1,19 +1,17 @@
 name: '1340'
 original_name: '1340'
-category: imported
+category: bacterial
 description: 1340. NBRC 1339.
 medium_type: DEFINED
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution\
-    \ (0.1 M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter\
-    \ autoclaving of agar solution, aseptically mix 10xM9, MgSO4and CaCl2solutions.\
-    \ After cooling to 65\xB0C, aseptically add phenanthrene solution, mix by sonication\
-    \ for approximately 30 seconds and pour into the plates.*Agar solutionDissolve\
-    \ 15 g of agar in 900 ml of distilled water and sterilize by autoclaving.**10xM9\
-    \ solutionKH2PO430gNa2HPO460gNH4Cl10gNaCl5gDistilled water1LSterilize separately\
-    \ by autoclaving.***Dissolve in distilled water and sterilize by autoclaving.****Sterilized\
-    \ by filtration. The use of DMSO-safe filters is recommended."
+- preferred_term: Agar solution*900ml10xM9 solution**100mlMgSO4solution (1 M)***2.1mlCaCl2solution (0.1
+    M)***1mlPhenanthrene solution (250 mM) in dimethyl sulfoxide (DMSO)****10mlAfter autoclaving of agar
+    solution, aseptically mix 10xM9, MgSO4and CaCl2solutions. After cooling to 65°C, aseptically add phenanthrene
+    solution, mix by sonication for approximately 30 seconds and pour into the plates.*Agar solutionDissolve
+    15 g of agar in 900 ml of distilled water and sterilize by autoclaving.**10xM9 solutionKH2PO430gNa2HPO460gNH4Cl10gNaCl5gDistilled
+    water1LSterilize separately by autoclaving.***Dissolve in distilled water and sterilize by autoclaving.****Sterilized
+    by filtration. The use of DMSO-safe filters is recommended.
 - preferred_term: ''
   concentration:
     value: Agar solution*

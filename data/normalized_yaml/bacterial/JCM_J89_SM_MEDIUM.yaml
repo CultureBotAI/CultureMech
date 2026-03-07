@@ -1,6 +1,6 @@
 name: SM MEDIUM
 original_name: SM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -105,8 +105,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: MIX
-  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add
-    sterile Na2S2O3 solution to the medium.
+  description: Separately sterilize Na2S2O3 solution by filtration. Aseptically add sterile Na2S2O3 solution
+    to the medium.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH.

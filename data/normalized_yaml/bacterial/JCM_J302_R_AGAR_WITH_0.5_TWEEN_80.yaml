@@ -1,8 +1,8 @@
 name: R AGAR WITH 0.5% TWEEN 80
 original_name: R AGAR WITH 0.5% TWEEN 80
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J302
   term:

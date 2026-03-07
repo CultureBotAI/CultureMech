@@ -1,15 +1,14 @@
 name: TRYPTICASE STARCH AGAR
 original_name: TRYPTICASE STARCH AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 56
   term:
     id: komodo.medium:56
     label: TRYPTICASE STARCH AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 56 | DSMZ Medium: 56 (mediadive.medium:56)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 56 | DSMZ Medium: 56 (mediadive.medium:56) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

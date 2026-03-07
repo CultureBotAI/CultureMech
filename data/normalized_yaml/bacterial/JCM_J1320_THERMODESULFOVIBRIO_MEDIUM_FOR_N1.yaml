@@ -1,6 +1,6 @@
 name: THERMODESULFOVIBRIO MEDIUM FOR N1
 original_name: THERMODESULFOVIBRIO MEDIUM FOR N1
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -281,23 +281,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, except iron metal, and autoclave under
-    a N2 gas atmosphere. After cooling, add the following solutions from sterile anaerobic
-    stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, except iron metal, and autoclave under a N2 gas atmosphere.
+    After cooling, add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Separately autoclave and dry iron metal (powder). Aseptically distribute
-    the medium and iron metal into culture vessels (e.g., 10 ml medium and 100 mg
-    iron in Hungate tubes) under a N2 gas stream and seal with butyl rubber stoppers.
-    Prior to use, aseptically and anaerobically add per liter the following solution
-    (filter-sterilized):'
+  description: 'Separately autoclave and dry iron metal (powder). Aseptically distribute the medium and
+    iron metal into culture vessels (e.g., 10 ml medium and 100 mg iron in Hungate tubes) under a N2 gas
+    stream and seal with butyl rubber stoppers. Prior to use, aseptically and anaerobically add per liter
+    the following solution (filter-sterilized):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 8.0, if necessary.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

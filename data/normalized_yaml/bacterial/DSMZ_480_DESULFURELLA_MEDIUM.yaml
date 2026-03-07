@@ -1,6 +1,6 @@
 name: DESULFURELLA MEDIUM
 original_name: DESULFURELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
@@ -215,20 +215,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients (except sulfur, acetate, bicarbonate, vitamins,
-    and dithiothreitol) and sparge medium with 80% N2 and 20% CO2 gas mixture for
-    30 - 45 min to make it anoxic. Adjust pH to 5.9, dispense under 80% N2 and 20%
-    CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials containing already
-    the appropriate amount of sulfur and sterilize by heating for 2-3 hours in a boiling
-    water bath on each of 3 successive days. Add acetate, vitamins, and dithiothreitol
-    from sterile anoxic stock solutions prepared under 100% N2 gas and bicarbonate
-    from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture.
-    Solutions of vitamins and dithiothreitol are sterilized by filtration. Prior to
-    using adjust the pH of the complete medium to 6.8 - 7.0, if necessary.
+  description: Dissolve ingredients (except sulfur, acetate, bicarbonate, vitamins, and dithiothreitol)
+    and sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Adjust pH
+    to 5.9, dispense under 80% N2 and 20% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    containing already the appropriate amount of sulfur and sterilize by heating for 2-3 hours in a boiling
+    water bath on each of 3 successive days. Add acetate, vitamins, and dithiothreitol from sterile anoxic
+    stock solutions prepared under 100% N2 gas and bicarbonate from a sterile anoxic stock solution prepared
+    under 80% N2 and 20% CO2 gas mixture. Solutions of vitamins and dithiothreitol are sterilized by filtration.
+    Prior to using adjust the pH of the complete medium to 6.8 - 7.0, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -239,5 +237,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.659787Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

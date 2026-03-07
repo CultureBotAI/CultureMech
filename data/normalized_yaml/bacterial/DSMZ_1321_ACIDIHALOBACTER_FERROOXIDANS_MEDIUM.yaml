@@ -1,6 +1,6 @@
 name: ACIDIHALOBACTER FERROOXIDANS MEDIUM
 original_name: ACIDIHALOBACTER FERROOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -59,8 +59,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: Combine solution A and solution B after cooling and add solutions C
-    and D to complete the medium.
+  description: Combine solution A and solution B after cooling and add solutions C and D to complete the
+    medium.
 - step_number: 2
   action: MIX
   description: 'Note: Use 10% (v/v) as inoculum.'
@@ -69,8 +69,7 @@ preparation_steps:
   description: Adjust the pH to 1.7 with H2SO4 and autoclave at 121°C for 20 min.
 - step_number: 4
   action: AUTOCLAVE
-  description: Adjust the pH to 1.25 and autoclave solution at 115°C for 10 min or
-    sterilize by filtration.
+  description: Adjust the pH to 1.25 and autoclave solution at 115°C for 10 min or sterilize by filtration.
 - step_number: 5
   action: MIX
   description: Sterilize by filtration.

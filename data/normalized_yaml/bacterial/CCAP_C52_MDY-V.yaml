@@ -1,8 +1,8 @@
 name: MDY-V
 original_name: MDY-V
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: CCAP Medium C52
@@ -128,13 +128,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with distilled water.  Adjust pH to 6.8 with NaOH,\
-    \ then autoclave \r\nat 15 psi for 15 minutes.  For agar add 15 g per litre Bacterial\
-    \ Agar."
+  description: "Make up to 1 litre with distilled water.  Adjust pH to 6.8 with NaOH, then autoclave \r\
+    \nat 15 psi for 15 minutes.  For agar add 15 g per litre Bacterial Agar."
 - step_number: 2
   action: MIX
-  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals\
-    \ in exactly the \r\nfollowing sequence:"
+  description: "Add to 1000 ml of distilled water 0.75 g Na2EDTA and the minerals in exactly the \r\n\
+    following sequence:"
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterile

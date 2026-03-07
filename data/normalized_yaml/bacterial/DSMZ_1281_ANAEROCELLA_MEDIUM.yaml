@@ -1,8 +1,8 @@
 name: ANAEROCELLA MEDIUM
 original_name: ANAEROCELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 1281
@@ -173,10 +173,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Boil 10 minutes under N2 stream, cool to room temperature. Adjust
-    pH to 7.3 and autoclave for 20 minutes at 121°C. After autoclaving add sterile,
-    anoxic solutions marked with #. For preparation of solid medium add 15.0 g agar
-    per liter.'
+  description: 'Boil 10 minutes under N2 stream, cool to room temperature. Adjust pH to 7.3 and autoclave
+    for 20 minutes at 121°C. After autoclaving add sterile, anoxic solutions marked with #. For preparation
+    of solid medium add 15.0 g agar per liter.'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: DSM 13533 = ALRh
 original_name: DSM 13533 = ALRh
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:925.4
     label: DSM 13533 = ALRh
-notes: 'Source: KOMODO ModelSEED | ID: 925.4 | DSMZ Medium: 925 (mediadive.medium:925)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 925.4 | DSMZ Medium: 925 (mediadive.medium:925) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

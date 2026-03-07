@@ -1,6 +1,6 @@
 name: Sulfolobus Medium With Tryptone
 original_name: Sulfolobus Medium With Tryptone
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -14,8 +14,7 @@ ingredients:
     value: '1'
     unit: G_PER_L
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid

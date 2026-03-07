@@ -1,8 +1,8 @@
 name: SS1-MEDIUM
 original_name: SS1-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 808
@@ -134,20 +134,18 @@ preparation_steps:
   description: pH 6.8
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the mineral salts solution and add 10 ml/l filter sterilised
-    methanol to the cooled medium. Add 15 g/l agar for solid media.
+  description: Autoclave the mineral salts solution and add 10 ml/l filter sterilised methanol to the
+    cooled medium. Add 15 g/l agar for solid media.
 - step_number: 3
   action: DISSOLVE
-  description: 1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled
-    water.
+  description: 1) Dissolve 17.9 g sodium EDTA and 3.28 g NaOH in 186 ml of distilled water.
 - step_number: 4
   action: DISSOLVE
-  description: 2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling
-    with air overnight, and store in a brown glass bottle.
+  description: 2) Dissolve 13.7 g FeSO4 x 7 H2O in 364 ml of distilled ater, bubbling with air overnight,
+    and store in a brown glass bottle.
 - step_number: 5
   action: MIX
-  description: 3) Combine the two solutions and make up to 1 litre with distilled
-    water.
+  description: 3) Combine the two solutions and make up to 1 litre with distilled water.
 applications:
 - Microbial cultivation
 curation_history:

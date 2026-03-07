@@ -1,6 +1,6 @@
 name: MEDIUM 545 MODIFIED FOR DSM 17566
 original_name: MEDIUM 545 MODIFIED FOR DSM 17566
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:545_17566
     label: MEDIUM 545 MODIFIED FOR DSM 17566
-notes: 'Source: KOMODO ModelSEED | ID: 545_17566 | DSMZ Medium: 545 (mediadive.medium:545)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 545_17566 | DSMZ Medium: 545 (mediadive.medium:545) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

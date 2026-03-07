@@ -1,6 +1,6 @@
 name: ALCALIPHILIC AMPHIBACILLUS STRAINS MEDIUM
 original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.5-10
@@ -189,17 +189,16 @@ preparation_steps:
   description: Final pH 9.5-10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without adding the vitamins, sucrose, yeast extract,
-    NH4Cl, Na2CO3, and NaHCO3 using anaerobic conditions, under nitrogen. If the medium
-    has been boiled to remove oxygen add the NH4Cl, Na2CO3, and NaHCO3 after the medium
-    had cooled. Dispense into tubes stopper with rubber stoppers (serum tubes or bottles,
-    or screw capped tubes). Autoclave, and to the cooled medium add the vitamins (filter
-    sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic,
+  description: Prepare the medium without adding the vitamins, sucrose, yeast extract, NH4Cl, Na2CO3,
+    and NaHCO3 using anaerobic conditions, under nitrogen. If the medium has been boiled to remove oxygen
+    add the NH4Cl, Na2CO3, and NaHCO3 after the medium had cooled. Dispense into tubes stopper with rubber
+    stoppers (serum tubes or bottles, or screw capped tubes). Autoclave, and to the cooled medium add
+    the vitamins (filter sterilised under N2), sucrose, yeast extract, and Na2S x 9 H2O from anaerobic,
     sterile stock solutions.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

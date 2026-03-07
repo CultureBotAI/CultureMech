@@ -1,6 +1,6 @@
 name: METHANOLOBUS OREGONENSIS MEDIUM
 original_name: METHANOLOBUS OREGONENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -194,17 +194,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, trimethylamine and sulfide,
-    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Distribute
-    medium under the same gas atmosphere into anoxic Hungate-type tubes or serum vials
-    and autoclave. Before use add trimethylamine and sulfide from sterile anoxic stock
-    solutions autoclaved under 100% N2 gas and carbonate from a sterile anoxic stock
-    solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of the complete
-    medium to 8.5 with a sterile anoxic stock solution of Na2CO3 (5% w/v).
+  description: Dissolve ingredients except carbonate, trimethylamine and sulfide, then sparge medium with
+    100% N2 gas for 30 - 45 min to make it anoxic. Distribute medium under the same gas atmosphere into
+    anoxic Hungate-type tubes or serum vials and autoclave. Before use add trimethylamine and sulfide
+    from sterile anoxic stock solutions autoclaved under 100% N2 gas and carbonate from a sterile anoxic
+    stock solution prepared under 80% N2 and 20% CO2 gas mixture. Adjust pH of the complete medium to
+    8.5 with a sterile anoxic stock solution of Na2CO3 (5% w/v).
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

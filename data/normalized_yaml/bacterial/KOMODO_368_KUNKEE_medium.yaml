@@ -1,6 +1,6 @@
 name: KUNKEE medium
 original_name: KUNKEE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:368
     label: KUNKEE medium
-notes: 'Source: KOMODO ModelSEED | ID: 368 | DSMZ Medium: 368 (mediadive.medium:368)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 368 | DSMZ Medium: 368 (mediadive.medium:368) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

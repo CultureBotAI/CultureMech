@@ -1,6 +1,6 @@
 name: IGNISPHAERA MEDIUM
 original_name: IGNISPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -187,17 +187,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except ferric chloride, cysteine, starch and
-    sulfide), sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add
-    ferric chloride and solid cysteine, then adjust pH to 6.3. Dispense medium under
-    100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g., 20
-    ml medium in 50 ml bottles) and autoclave. Prior to inoculation add starch and
-    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Adjust
-    pH of complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except ferric chloride, cysteine, starch and sulfide), sparge medium
+    with 100% N2 gas for 30 - 45 min to make it anoxic. Add ferric chloride and solid cysteine, then adjust
+    pH to 6.3. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials
+    (e.g., 20 ml medium in 50 ml bottles) and autoclave. Prior to inoculation add starch and sulfide from
+    sterile anoxic stock solutions prepared under 100% N2 gas. Adjust pH of complete medium to 6.5, if
+    necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

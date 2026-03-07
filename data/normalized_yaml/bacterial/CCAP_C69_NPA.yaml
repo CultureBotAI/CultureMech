@@ -1,6 +1,6 @@
 name: NPA
 original_name: NPA
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -45,14 +45,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue\
-    \ to boil for 5 minutes.  Allow to\r\ncool then restore volume to 1 litre with\
-    \ deionized water.  Filter through GF/C paper \r\nand autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "Bring PJ (Mail sol. C 76) to the boil then add cereal leaves.  Continue to boil for 5\
+    \ minutes.  Allow to\r\ncool then restore volume to 1 litre with deionized water.  Filter through\
+    \ GF/C paper \r\nand autoclave at 15 psi for 15 minutes."
 - step_number: 2
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

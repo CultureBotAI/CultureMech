@@ -1,6 +1,6 @@
 name: RAE medium
 original_name: RAE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:848
     label: RAE medium
-notes: 'Source: KOMODO ModelSEED | ID: 848 | DSMZ Medium: 848 (mediadive.medium:848)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 848 | DSMZ Medium: 848 (mediadive.medium:848) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

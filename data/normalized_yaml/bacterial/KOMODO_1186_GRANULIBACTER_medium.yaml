@@ -1,15 +1,14 @@
 name: GRANULIBACTER medium
 original_name: GRANULIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1186
   term:
     id: komodo.medium:1186
     label: GRANULIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1186 | DSMZ Medium: 1186 (mediadive.medium:1186)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1186 | DSMZ Medium: 1186 (mediadive.medium:1186) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

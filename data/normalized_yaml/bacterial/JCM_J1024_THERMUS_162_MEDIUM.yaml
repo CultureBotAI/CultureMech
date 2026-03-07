@@ -1,6 +1,6 @@
 name: THERMUS 162 MEDIUM
 original_name: THERMUS 162 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -110,8 +110,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Adjust pH to 7.2 with NaOH. For preparation of solid medium, add 28.0
-    g/L agar. After autoclaving, add the following solution to the medium:'
+  description: 'Adjust pH to 7.2 with NaOH. For preparation of solid medium, add 28.0 g/L agar. After
+    autoclaving, add the following solution to the medium:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.2

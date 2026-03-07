@@ -1,15 +1,14 @@
 name: MEDIUM 878 MODIFIED FOR DSM 9941
 original_name: MEDIUM 878 MODIFIED FOR DSM 9941
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 878_9941
   term:
     id: komodo.medium:878_9941
     label: MEDIUM 878 MODIFIED FOR DSM 9941
-notes: 'Source: KOMODO ModelSEED | ID: 878_9941 | DSMZ Medium: 878 (mediadive.medium:878)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 878_9941 | DSMZ Medium: 878 (mediadive.medium:878) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

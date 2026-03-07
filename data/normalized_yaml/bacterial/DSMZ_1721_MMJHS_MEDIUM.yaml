@@ -1,6 +1,6 @@
 name: MMJHS MEDIUM
 original_name: MMJHS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -193,11 +193,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium under an atmosphere of H2/CO2 (80:20) without adding
-    NaNO3, Na2S2O3 x 5 H20 and NaHCO3 in serum bottles and seal the serum tubes with
-    butyl rubber stoppers. Steam medium for 3 hours on each of 3 successive days.
-    To the sterile medium add, from filter sterilised stock solutions, NaNO3, Na2S2O3
-    x 5 H20 and NaHCO3.
+  description: Prepare the medium under an atmosphere of H2/CO2 (80:20) without adding NaNO3, Na2S2O3
+    x 5 H20 and NaHCO3 in serum bottles and seal the serum tubes with butyl rubber stoppers. Steam medium
+    for 3 hours on each of 3 successive days. To the sterile medium add, from filter sterilised stock
+    solutions, NaNO3, Na2S2O3 x 5 H20 and NaHCO3.
 - step_number: 2
   action: MIX
   description: Increase the 80% H2 + 20% CO2 gas phase pressure to 0.3 MPa.
@@ -206,8 +205,8 @@ preparation_steps:
   description: Adjust pH strain-specifically.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Final pH 7.0 (with KOH).
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Final pH 7.0 (with KOH).
 applications:
 - Microbial cultivation
 curation_history:

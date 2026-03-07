@@ -1,6 +1,6 @@
 name: Soil extract (medium 98)
 original_name: Soil extract (medium 98)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3142
     label: Soil extract (medium 98)
-notes: 'Source: KOMODO ModelSEED | ID: 3142 | DSMZ Medium: 3142 (mediadive.medium:3142)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3142 | DSMZ Medium: 3142 (mediadive.medium:3142) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

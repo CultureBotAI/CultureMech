@@ -1,8 +1,8 @@
 name: SALINISPHAERA HYDROTHERMALIS MEDIUM
 original_name: SALINISPHAERA HYDROTHERMALIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1216
   term:
@@ -50,8 +50,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add the vitamin B12 solution from a filter sterilised stock solution
-    to the autoclaved, cooled medium. Add 15.0 g/l agar for solid media.
+  description: Add the vitamin B12 solution from a filter sterilised stock solution to the autoclaved,
+    cooled medium. Add 15.0 g/l agar for solid media.
 applications:
 - Microbial cultivation
 curation_history:

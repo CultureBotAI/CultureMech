@@ -1,6 +1,6 @@
 name: TELMATOSPIRILLUM MEDIUM
 original_name: TELMATOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5.5-6.5
@@ -126,9 +126,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5 -
-    6.5 with 1M H3PO4. Dispense into serum bottles or Hungate tubes (under a nitrogen
-    atmosphere) that can be sealed with rubber stoppers.
+  description: Prepare the medium anaerobically under nitrogen. Adjust to pH 5.5 - 6.5 with 1M H3PO4.
+    Dispense into serum bottles or Hungate tubes (under a nitrogen atmosphere) that can be sealed with
+    rubber stoppers.
 applications:
 - Microbial cultivation
 curation_history:

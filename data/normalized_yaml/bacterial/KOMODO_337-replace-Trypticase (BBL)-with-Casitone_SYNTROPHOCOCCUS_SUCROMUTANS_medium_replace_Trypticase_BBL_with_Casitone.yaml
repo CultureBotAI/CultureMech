@@ -1,6 +1,6 @@
 name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
 original_name: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.4-6.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:337_replace_Trypticase (BBL)_with_Casitone
     label: SYNTROPHOCOCCUS SUCROMUTANS medium_replace_Trypticase (BBL)_with_Casitone
-notes: 'Source: KOMODO ModelSEED | ID: 337_replace_Trypticase (BBL)_with_Casitone
-  | DSMZ Medium: 337 (mediadive.medium:337) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 337_replace_Trypticase (BBL)_with_Casitone | DSMZ Medium: 337 (mediadive.medium:337)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

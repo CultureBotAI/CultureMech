@@ -1,6 +1,6 @@
 name: NICOTINIC ACID medium
 original_name: NICOTINIC ACID medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:152
     label: NICOTINIC ACID medium
-notes: 'Source: KOMODO ModelSEED | ID: 152 | DSMZ Medium: 152 (mediadive.medium:152)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 152 | DSMZ Medium: 152 (mediadive.medium:152) | Aerobic: Yes'
 ingredients:
 - preferred_term: Nicotinic acid
   term:

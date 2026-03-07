@@ -1,8 +1,8 @@
 name: PALUDISPHAERA BOREALIS MEDIUM (PX4)
 original_name: PALUDISPHAERA BOREALIS MEDIUM (PX4)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 5.8-6.5
 media_term:
   preferred_term: DSMZ Medium 1557
@@ -152,13 +152,12 @@ preparation_steps:
   description: Adjust pH to 5.8 - 6.5.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
-    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
-    NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 7.3 g). Dissolve
+    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

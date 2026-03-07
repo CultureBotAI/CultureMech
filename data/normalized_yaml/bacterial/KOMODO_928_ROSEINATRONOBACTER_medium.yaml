@@ -1,16 +1,15 @@
 name: ROSEINATRONOBACTER medium
 original_name: ROSEINATRONOBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: KOMODO Medium 928
   term:
     id: komodo.medium:928
     label: ROSEINATRONOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 928 | DSMZ Medium: 928 (mediadive.medium:928)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 928 | DSMZ Medium: 928 (mediadive.medium:928) | Aerobic: No'
 ingredients:
 - preferred_term: Na2CO3
   term:

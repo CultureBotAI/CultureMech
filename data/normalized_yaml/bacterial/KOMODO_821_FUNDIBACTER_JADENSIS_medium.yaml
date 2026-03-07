@@ -1,6 +1,6 @@
 name: FUNDIBACTER JADENSIS medium
 original_name: FUNDIBACTER JADENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:821
     label: FUNDIBACTER JADENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 821 | DSMZ Medium: 821 (mediadive.medium:821)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 821 | DSMZ Medium: 821 (mediadive.medium:821) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

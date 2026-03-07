@@ -1,6 +1,6 @@
 name: MEDIUM 650 MODIFIED FOR DSM 8319
 original_name: MEDIUM 650 MODIFIED FOR DSM 8319
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:650_8319
     label: MEDIUM 650 MODIFIED FOR DSM 8319
-notes: 'Source: KOMODO ModelSEED | ID: 650_8319 | DSMZ Medium: 650 (mediadive.medium:650)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 650_8319 | DSMZ Medium: 650 (mediadive.medium:650) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

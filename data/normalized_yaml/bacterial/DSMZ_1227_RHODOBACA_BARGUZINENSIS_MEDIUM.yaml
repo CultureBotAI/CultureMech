@@ -1,6 +1,6 @@
 name: RHODOBACA BARGUZINENSIS MEDIUM
 original_name: RHODOBACA BARGUZINENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -154,11 +154,10 @@ preparation_steps:
   description: Adjust pH to 9.0-9.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare and boil the medium in the absence of Na2S2O3 x 5 H2O, NaHCO3,
-    Vitamin B12, MgCl2 x 6 H2O. Cool under a stream of nitrogen and add the remaining
-    components, except vitamin B12 and Na2S2O3 x 5 H2O. Dispense into tubes or bottle
-    fitted with rubber stoppers and autoclave. Add the vitamin B12 (filter sterilized)
-    and Na2S2O3 x 5 H2O from sterile stock solutions.
+  description: Prepare and boil the medium in the absence of Na2S2O3 x 5 H2O, NaHCO3, Vitamin B12, MgCl2
+    x 6 H2O. Cool under a stream of nitrogen and add the remaining components, except vitamin B12 and
+    Na2S2O3 x 5 H2O. Dispense into tubes or bottle fitted with rubber stoppers and autoclave. Add the
+    vitamin B12 (filter sterilized) and Na2S2O3 x 5 H2O from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:

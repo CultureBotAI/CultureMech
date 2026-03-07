@@ -1,6 +1,6 @@
 name: RHODOBACA BARGUZINENSIS medium
 original_name: RHODOBACA BARGUZINENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1227
     label: RHODOBACA BARGUZINENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1227 | DSMZ Medium: 1227 (mediadive.medium:1227)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1227 | DSMZ Medium: 1227 (mediadive.medium:1227) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

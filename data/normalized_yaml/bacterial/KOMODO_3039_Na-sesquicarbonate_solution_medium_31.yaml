@@ -1,6 +1,6 @@
 name: Na-sesquicarbonate solution (medium 31)
 original_name: Na-sesquicarbonate solution (medium 31)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3039
     label: Na-sesquicarbonate solution (medium 31)
-notes: 'Source: KOMODO ModelSEED | ID: 3039 | DSMZ Medium: 3039 (mediadive.medium:3039)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3039 | DSMZ Medium: 3039 (mediadive.medium:3039) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

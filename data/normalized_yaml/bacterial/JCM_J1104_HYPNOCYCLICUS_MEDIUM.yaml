@@ -1,6 +1,6 @@
 name: HYPNOCYCLICUS MEDIUM
 original_name: HYPNOCYCLICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -207,9 +207,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    atmosphere. Aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) atmosphere. Aseptically
+    and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 6.8 - 7.2, if necessary.

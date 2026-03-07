@@ -1,6 +1,6 @@
 name: MEDIUM 104 MODIFIED FOR DSM 15923
 original_name: MEDIUM 104 MODIFIED FOR DSM 15923
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:104_15923
     label: MEDIUM 104 MODIFIED FOR DSM 15923
-notes: 'Source: KOMODO ModelSEED | ID: 104_15923 | DSMZ Medium: 104 (mediadive.medium:104)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 104_15923 | DSMZ Medium: 104 (mediadive.medium:104) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

@@ -1,8 +1,8 @@
 name: POLYANGIUM MEDIUM
 original_name: POLYANGIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 223
@@ -66,9 +66,9 @@ preparation_steps:
   description: Adjust pH to 7.2 (use pH indicator-paper).
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Aseptically add one or more sterile strips of filter paper to slants
-    or plates. Inoculate the filter papers with a small (5 mm x 5mm) agar cube or
-    a piece of filter paper overgrown with the strain.
+  description: Aseptically add one or more sterile strips of filter paper to slants or plates. Inoculate
+    the filter papers with a small (5 mm x 5mm) agar cube or a piece of filter paper overgrown with the
+    strain.
 applications:
 - Microbial cultivation
 curation_history:

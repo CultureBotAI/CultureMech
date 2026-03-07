@@ -1,6 +1,6 @@
 name: ALKALIPHILUS CROTONATOXIDANS MEDIUM
 original_name: ALKALIPHILUS CROTONATOXIDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -229,16 +229,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except crotonic acid, NaHCO3, L-cysteine x HCl
-    x H2O and Na2S x 9H2O, in 900 ml of distilled water and adjust pH to 7.0-7.5.
-    Bring to a boil for 5-10 sec, then, cool down under a stream of N2-CO2 (80:20,
-    v/v) and add NaHCO3 to the medium. Dispense 0.9 volume of the medium into suitable
-    culture vessels under a stream of N2-CO2 (80:20, v/v) and seal with butyl rubber
-    stoppers. After autoclaving, stand the medium overnight. Add 0.1 volume of a filter-sterilized
-    crotonic acid solution (0.86 g/100 ml, pH 7.0) to the medium. Autoclave cysteine
-    x HCl and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere. Prior
-    to inoculation, aseptically and anaerobically add the solutions of crotonic acid,
-    L-cysteine x HCl x H2O and Na2S x 9H2O to the medium.
+  description: Dissolve ingredients, except crotonic acid, NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
+    in 900 ml of distilled water and adjust pH to 7.0-7.5. Bring to a boil for 5-10 sec, then, cool down
+    under a stream of N2-CO2 (80:20, v/v) and add NaHCO3 to the medium. Dispense 0.9 volume of the medium
+    into suitable culture vessels under a stream of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers.
+    After autoclaving, stand the medium overnight. Add 0.1 volume of a filter-sterilized crotonic acid
+    solution (0.86 g/100 ml, pH 7.0) to the medium. Autoclave cysteine x HCl and Na2S x 9H2O as 5% solutions,
+    respectively, under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add the solutions
+    of crotonic acid, L-cysteine x HCl x H2O and Na2S x 9H2O to the medium.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.0 with KOH.

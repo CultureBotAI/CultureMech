@@ -1,6 +1,6 @@
 name: MH medium
 original_name: MH medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:624
     label: MH medium
-notes: 'Source: KOMODO ModelSEED | ID: 624 | DSMZ Medium: 624 (mediadive.medium:624)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 624 | DSMZ Medium: 624 (mediadive.medium:624) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

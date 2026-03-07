@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO SAX medium
 original_name: DESULFOVIBRIO SAX medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:383a
     label: DESULFOVIBRIO SAX medium
-notes: 'Source: KOMODO ModelSEED | ID: 383a | DSMZ Medium: 383a (mediadive.medium:383a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 383a | DSMZ Medium: 383a (mediadive.medium:383a) | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -244,5 +243,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.056660Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

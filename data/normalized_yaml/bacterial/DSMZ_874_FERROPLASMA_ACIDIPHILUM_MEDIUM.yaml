@@ -1,6 +1,6 @@
 name: FERROPLASMA ACIDIPHILUM MEDIUM
 original_name: FERROPLASMA ACIDIPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.6-1.8
@@ -113,10 +113,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add solutions B and C to solution A, adjust pH of the combined solution
-    to 1.6 - 1.8 with H2SO4, then sterilize using membrane filter and dispense in
-    sterile culture vessels. Prior to use, add the appropriate volume of solution
-    D sterilized by autoclaving.
+  description: Add solutions B and C to solution A, adjust pH of the combined solution to 1.6 - 1.8 with
+    H2SO4, then sterilize using membrane filter and dispense in sterile culture vessels. Prior to use,
+    add the appropriate volume of solution D sterilized by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

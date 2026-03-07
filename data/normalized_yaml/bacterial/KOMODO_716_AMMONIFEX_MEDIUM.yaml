@@ -1,6 +1,6 @@
 name: AMMONIFEX MEDIUM
 original_name: AMMONIFEX MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:716
     label: AMMONIFEX MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 716 | DSMZ Medium: 716 (mediadive.medium:716)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 716 | DSMZ Medium: 716 (mediadive.medium:716) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4 x 3 H2O
   term:

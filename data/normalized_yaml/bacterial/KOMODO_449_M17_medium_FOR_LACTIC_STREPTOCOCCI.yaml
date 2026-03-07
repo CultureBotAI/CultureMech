@@ -1,6 +1,6 @@
 name: M17 medium FOR LACTIC STREPTOCOCCI
 original_name: M17 medium FOR LACTIC STREPTOCOCCI
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-7.1
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:449
     label: M17 medium FOR LACTIC STREPTOCOCCI
-notes: 'Source: KOMODO ModelSEED | ID: 449 | DSMZ Medium: 449 (mediadive.medium:449)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 449 | DSMZ Medium: 449 (mediadive.medium:449) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

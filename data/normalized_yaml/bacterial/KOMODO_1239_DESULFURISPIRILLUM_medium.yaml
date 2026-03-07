@@ -1,6 +1,6 @@
 name: DESULFURISPIRILLUM medium
 original_name: DESULFURISPIRILLUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1239
     label: DESULFURISPIRILLUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 1239 | DSMZ Medium: 1239 (mediadive.medium:1239)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1239 | DSMZ Medium: 1239 (mediadive.medium:1239) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaHCO3
   term:

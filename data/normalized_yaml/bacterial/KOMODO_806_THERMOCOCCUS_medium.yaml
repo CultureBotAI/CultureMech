@@ -1,6 +1,6 @@
 name: THERMOCOCCUS medium
 original_name: THERMOCOCCUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:806
     label: THERMOCOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 806 | DSMZ Medium: 806 (mediadive.medium:806)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 806 | DSMZ Medium: 806 (mediadive.medium:806) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -300,5 +299,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.686045Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

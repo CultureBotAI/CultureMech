@@ -1,6 +1,6 @@
 name: HYPHOMICROBIUM MEDIUM SAF
 original_name: HYPHOMICROBIUM MEDIUM SAF
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6-6.5
@@ -183,9 +183,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: "Prepare the liquid medium. Adjust to pH 6.0 – 6.5. Dispense the medium\
-    \ into Hungate\r\ntubes. Sterilize by autoclaving. Before inoculation add from\
-    \ sterile stock solutions:"
+  description: "Prepare the liquid medium. Adjust to pH 6.0 – 6.5. Dispense the medium into Hungate\r\n\
+    tubes. Sterilize by autoclaving. Before inoculation add from sterile stock solutions:"
 - step_number: 2
   action: MIX
   description: pH 6.8
@@ -199,5 +198,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.640281Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

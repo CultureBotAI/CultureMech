@@ -1,6 +1,6 @@
 name: MICROVIRGULA medium
 original_name: MICROVIRGULA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:957
     label: MICROVIRGULA medium
-notes: 'Source: KOMODO ModelSEED | ID: 957 | DSMZ Medium: 957 (mediadive.medium:957)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 957 | DSMZ Medium: 957 (mediadive.medium:957) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

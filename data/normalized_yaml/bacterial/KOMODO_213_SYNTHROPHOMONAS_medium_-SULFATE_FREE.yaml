@@ -1,6 +1,6 @@
 name: SYNTHROPHOMONAS medium -SULFATE FREE
 original_name: SYNTHROPHOMONAS medium -SULFATE FREE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:213
     label: SYNTHROPHOMONAS medium -SULFATE FREE
-notes: 'Source: KOMODO ModelSEED | ID: 213 | DSMZ Medium: 213 (mediadive.medium:213)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 213 | DSMZ Medium: 213 (mediadive.medium:213) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

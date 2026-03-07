@@ -1,8 +1,8 @@
 name: K35
 original_name: K35
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 8.1-8.4
 media_term:
   preferred_term: CCAP Medium C44
@@ -131,18 +131,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top\
-    \ up to 100ml with DIW ensuring\r\nto check pH remains at 7.2."
+  description: "Note for Tris base: First add to 50ml of DIW and pH. Then slowly top up to 100ml with\
+    \ DIW ensuring\r\nto check pH remains at 7.2."
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with deionised water. Adjust pH to 8.1-8.4 with\
-    \ 1M NaOH or 1M HCl prior to\r\nautoclaving. For agar add 15g per litre Bacteriological\
-    \ Agar. Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with deionised water. Adjust pH to 8.1-8.4 with 1M NaOH or 1M HCl prior\
+    \ to\r\nautoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave at 15 psi for 15 minutes."
 - step_number: 3
   action: DISSOLVE
-  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add\
-    \ first three\r\nchemicals separately in 100ml/dH2O, allowing each to completely\
-    \ dissolve\r\nbefore adding the primary stocks in order:"
+  description: "There are 7 chemicals. Prepare Primary stock solutions first. Add first three\r\nchemicals\
+    \ separately in 100ml/dH2O, allowing each to completely dissolve\r\nbefore adding the primary stocks\
+    \ in order:"
 - step_number: 4
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.

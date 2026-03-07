@@ -1,6 +1,6 @@
 name: PY4S
 original_name: PY4S
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -117,8 +117,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium has
-    been boiled and cooled under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
+  description: The cysteine, Na2CO3, and vitamin B12 are added after the medium has been boiled and cooled
+    under CO2. Adjust pH to 7.3 Distribute under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

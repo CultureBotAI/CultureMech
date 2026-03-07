@@ -1,6 +1,6 @@
 name: MEDIUM 1076b MODIFIED FOR DSM 23536
 original_name: MEDIUM 1076b MODIFIED FOR DSM 23536
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:1076b_23536
     label: MEDIUM 1076b MODIFIED FOR DSM 23536
-notes: 'Source: KOMODO ModelSEED | ID: 1076b_23536 | DSMZ Medium: 1076b (mediadive.medium:1076b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1076b_23536 | DSMZ Medium: 1076b (mediadive.medium:1076b) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

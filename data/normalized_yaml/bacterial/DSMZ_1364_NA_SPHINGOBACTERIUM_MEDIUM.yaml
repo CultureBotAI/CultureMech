@@ -1,8 +1,8 @@
 name: NA SPHINGOBACTERIUM MEDIUM
 original_name: NA SPHINGOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-8
 media_term:
   preferred_term: DSMZ Medium 1364
@@ -40,8 +40,8 @@ preparation_steps:
   description: This medium is a modified version of Medium 1, Nutrient Agar.
 - step_number: 2
   action: MIX
-  description: Adjust to pH 7.0 - 8.0 and sterilize by autoclaving. The medium may
-    be solidified by adding 15.0 g/l agar.
+  description: Adjust to pH 7.0 - 8.0 and sterilize by autoclaving. The medium may be solidified by adding
+    15.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:

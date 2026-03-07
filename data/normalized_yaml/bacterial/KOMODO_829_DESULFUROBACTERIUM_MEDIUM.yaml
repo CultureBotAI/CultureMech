@@ -1,6 +1,6 @@
 name: DESULFUROBACTERIUM MEDIUM
 original_name: DESULFUROBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:829
     label: DESULFUROBACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 829 | DSMZ Medium: 829 (mediadive.medium:829)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 829 | DSMZ Medium: 829 (mediadive.medium:829) | Aerobic: Yes'
 ingredients:
 - preferred_term: Sea Salt
   concentration:

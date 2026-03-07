@@ -1,8 +1,8 @@
 name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
 original_name: HALF STRENGTH BACTO MARINE BROTH with 50% Seawater
-category: imported
+category: specialized
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.6
 media_term:
   preferred_term: DSMZ Medium 514g
@@ -132,8 +132,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using Difco Bacto Marine Broth
-    use 18.7 g/l to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using Difco Bacto Marine Broth use 18.7 g/l to
+    1 litre water.
 - step_number: 2
   action: MIX
   description: The medium may be solidified by adding 15 g/l agar.

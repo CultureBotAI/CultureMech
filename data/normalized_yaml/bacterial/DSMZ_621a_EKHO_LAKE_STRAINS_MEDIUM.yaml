@@ -1,8 +1,8 @@
 name: EKHO LAKE STRAINS MEDIUM
 original_name: EKHO LAKE STRAINS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: DSMZ Medium 621a
@@ -211,14 +211,13 @@ preparation_steps:
   description: 'Sterilize 20 min./121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: MIX
-  description: The percentage Artificial Sea Water (ASW) indicates the percentage
-    ratio of distilled water to artifical sea water (i.e. "medium 621a + 25ASW" =
-    medium 621 made with 750 ml distilled water + 250 ml ASW). The pH is 7.2 - 7.4.
+  description: The percentage Artificial Sea Water (ASW) indicates the percentage ratio of distilled water
+    to artifical sea water (i.e. "medium 621a + 25ASW" = medium 621 made with 750 ml distilled water +
+    250 ml ASW). The pH is 7.2 - 7.4.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
-    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
-    water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts. Adjust pH to 7.2 with
+    KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
 - step_number: 4
   action: HEAT
   description: Store in the dark and cold (5°C).

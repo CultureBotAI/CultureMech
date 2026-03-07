@@ -1,6 +1,6 @@
 name: For DSM 11379, DSM 11380, DSM 11381 and DSM 11382
 original_name: For DSM 11379, DSM 11380, DSM 11381 and DSM 11382
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:311a.1
     label: For DSM 11379, DSM 11380, DSM 11381 and DSM 11382
-notes: 'Source: KOMODO ModelSEED | ID: 311a.1 | DSMZ Medium: 311a (mediadive.medium:311a)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 311a.1 | DSMZ Medium: 311a (mediadive.medium:311a) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -265,5 +264,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.968639Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

@@ -1,6 +1,6 @@
 name: yeast extract broth (containing 2.5% NaCl)
 original_name: yeast extract broth (containing 2.5% NaCl)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -21,8 +21,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -30,8 +29,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined
-    component'
+  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate

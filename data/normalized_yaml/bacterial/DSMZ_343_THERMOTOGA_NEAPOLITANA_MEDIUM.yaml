@@ -1,6 +1,6 @@
 name: THERMOTOGA NEAPOLITANA MEDIUM
 original_name: THERMOTOGA NEAPOLITANA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -292,16 +292,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except vitamins, sulfide, and cysteine) and adjust
-    pH to 6.5. Boil medium for 1 min, then cool to room temperature under 100% N2
-    gas atmosphere. Dispense under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials to 30% of volume and autoclave. Add vitamins, sulfide, and
-    cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Sterilize
-    vitamins by filtration. Adjust the pH of the complete medium to 6.5, if necessary.
+  description: Dissolve ingredients (except vitamins, sulfide, and cysteine) and adjust pH to 6.5. Boil
+    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense under the same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials to 30% of volume and autoclave. Add vitamins,
+    sulfide, and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas. Sterilize vitamins
+    by filtration. Adjust the pH of the complete medium to 6.5, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -312,5 +311,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.320880Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

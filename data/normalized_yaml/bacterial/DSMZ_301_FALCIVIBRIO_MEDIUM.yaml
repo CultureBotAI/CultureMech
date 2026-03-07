@@ -1,6 +1,6 @@
 name: FALCIVIBRIO MEDIUM
 original_name: FALCIVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -35,9 +35,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3 g/l
-    of L-cysteine and 1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen
-    gas. To the autoclaved medium add 50 ml/l of sterile serum (horse, bovine or lamb).
+  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3 g/l of L-cysteine and
+    1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen gas. To the autoclaved medium add 50
+    ml/l of sterile serum (horse, bovine or lamb).
 applications:
 - Microbial cultivation
 curation_history:

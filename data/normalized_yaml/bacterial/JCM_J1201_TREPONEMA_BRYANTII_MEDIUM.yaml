@@ -1,6 +1,6 @@
 name: TREPONEMA BRYANTII MEDIUM
 original_name: TREPONEMA BRYANTII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -89,15 +89,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, carbonate and glucose) and sparge
-    medium with 100% CO2 gas for 30- 45 min to make it anoxic. Add cysteine and adjust
-    pH with KOH to 6.5. Distribute medium under 100% CO2 gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Thereafter, add glucose from
-    an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized
-    by filtration and carbonate from a sterile anoxic stock solution prepared under
-    80% N2 and 20% CO2 gas atmosphere. Final pH of the medium should be 6.7 - 7.0.
-    To prepare the clarified rumen fluid, preheat rumen content at 120C for 15 min.
-    Use the supernatant after centrifuging at 25,000 x g for 15 min.
+  description: Dissolve ingredients (except cysteine, carbonate and glucose) and sparge medium with 100%
+    CO2 gas for 30- 45 min to make it anoxic. Add cysteine and adjust pH with KOH to 6.5. Distribute medium
+    under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Thereafter,
+    add glucose from an anoxic stock solution prepared under 100% N2 gas atmosphere and sterilized by
+    filtration and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
+    atmosphere. Final pH of the medium should be 6.7 - 7.0. To prepare the clarified rumen fluid, preheat
+    rumen content at 120C for 15 min. Use the supernatant after centrifuging at 25,000 x g for 15 min.
 applications:
 - Microbial cultivation
 curation_history:

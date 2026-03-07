@@ -1,15 +1,14 @@
 name: MEDIUM 464 MODIFIED FOR DSM 2114
 original_name: MEDIUM 464 MODIFIED FOR DSM 2114
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 464_2114
   term:
     id: komodo.medium:464_2114
     label: MEDIUM 464 MODIFIED FOR DSM 2114
-notes: 'Source: KOMODO ModelSEED | ID: 464_2114 | DSMZ Medium: 464 (mediadive.medium:464)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 464_2114 | DSMZ Medium: 464 (mediadive.medium:464) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

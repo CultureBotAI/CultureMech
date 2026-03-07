@@ -1,6 +1,6 @@
 name: For strains DSM 15114 and AT2115
 original_name: For strains DSM 15114 and AT2115
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:998.1
     label: For strains DSM 15114 and AT2115
-notes: 'Source: KOMODO ModelSEED | ID: 998.1 | DSMZ Medium: 998 (mediadive.medium:998)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 998.1 | DSMZ Medium: 998 (mediadive.medium:998) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -175,6 +174,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.304615Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 6.9

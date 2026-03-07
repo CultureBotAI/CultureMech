@@ -1,6 +1,6 @@
 name: TELMATOCOLA MEDIUM
 original_name: TELMATOCOLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 4.8-5.5
@@ -194,11 +194,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the liquid medium without Staley´s vitamin solution and glucose.
-    Adjust to pH 4.8 - 5.5. Dispense the medium into serum bottles. The gas phase
-    is air:CO2 (95:5) and the liquid:gas phase should be 1:9. Sterilize by autoclaving.
-    After autoclaving add the Staley´s vitamin solution (filter sterilised) and glucose
-    (autoclaved) from sterile stock solutions.
+  description: Prepare the liquid medium without Staley´s vitamin solution and glucose. Adjust to pH 4.8
+    - 5.5. Dispense the medium into serum bottles. The gas phase is air:CO2 (95:5) and the liquid:gas
+    phase should be 1:9. Sterilize by autoclaving. After autoclaving add the Staley´s vitamin solution
+    (filter sterilised) and glucose (autoclaved) from sterile stock solutions.
 - step_number: 2
   action: DISSOLVE
   description: Dissolve the nitrilotriacetic acid.
@@ -213,8 +212,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 6
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 - step_number: 7
   action: FILTER_STERILIZE
   description: Filter-sterilized.

@@ -1,6 +1,6 @@
 name: DESULFONATRONUM THIODISMUTANS MEDIUM
 original_name: DESULFONATRONUM THIODISMUTANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -222,16 +222,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve the ingredients (except carbonates, sulfide, formate, and
-    vitamins) and sparge medium with 100% N2 gas for 30 - 45 min. to make it anoxic.
-    Add and dissolve carbonates and sulfide, then adjust pH to 9.0 - 9.5, dispense
-    under 100% N2 gas atmosphere into Hungate-type tubes or serum vials and autoclave.
-    Before use add formate and vitamins (sterilized by filtration) from sterile anoxic
+  description: Dissolve the ingredients (except carbonates, sulfide, formate, and vitamins) and sparge
+    medium with 100% N2 gas for 30 - 45 min. to make it anoxic. Add and dissolve carbonates and sulfide,
+    then adjust pH to 9.0 - 9.5, dispense under 100% N2 gas atmosphere into Hungate-type tubes or serum
+    vials and autoclave. Before use add formate and vitamins (sterilized by filtration) from sterile anoxic
     stock solutions prepared under 100% N2 gas.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -242,5 +241,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:16.499600Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

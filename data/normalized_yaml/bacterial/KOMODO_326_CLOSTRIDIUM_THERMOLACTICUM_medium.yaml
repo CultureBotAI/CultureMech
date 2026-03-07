@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM THERMOLACTICUM medium
 original_name: CLOSTRIDIUM THERMOLACTICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:326
     label: CLOSTRIDIUM THERMOLACTICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 326 | DSMZ Medium: 326 (mediadive.medium:326)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 326 | DSMZ Medium: 326 (mediadive.medium:326) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -217,5 +216,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:26.532418Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

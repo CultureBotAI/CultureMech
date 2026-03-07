@@ -1,8 +1,8 @@
 name: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
 original_name: Inorganic Salts-Starch Agar (ISP-4) With 0.05% Yeast Extract
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract
   concentration:

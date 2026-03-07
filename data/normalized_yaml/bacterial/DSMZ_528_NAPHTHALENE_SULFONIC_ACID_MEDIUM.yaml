@@ -1,6 +1,6 @@
 name: NAPHTHALENE SULFONIC ACID MEDIUM
 original_name: NAPHTHALENE SULFONIC ACID MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -139,8 +139,8 @@ preparation_steps:
   description: pH 7.0.
 - step_number: 2
   action: MIX
-  description: After autoclaving add 1 ml sterile trace element solution SL-4 (medium
-    14), 100 ml solution A and 3 ml solution B per liter.
+  description: After autoclaving add 1 ml sterile trace element solution SL-4 (medium 14), 100 ml solution
+    A and 3 ml solution B per liter.
 - step_number: 3
   action: MIX
   description: Sterilize by filtration.
@@ -149,8 +149,8 @@ preparation_steps:
   description: Sterilize by filtration.
 - step_number: 5
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MW MEDIUM FOR METHANOSARCINA
 original_name: MW MEDIUM FOR METHANOSARCINA
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -231,22 +231,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. After cooling, aseptically and anaerobically add the following
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
+    cooling, aseptically and anaerobically add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a H2-CO2
-    (80:20, v/v) gas mixture and seal with butyl rubber stoppers (leave >80% gas phase
-    by volume). Finally, add per liter the following solutions from anaerobic stocks
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically distribute the medium into culture vessels under a H2-CO2 (80:20, v/v) gas
+    mixture and seal with butyl rubber stoppers (leave >80% gas phase by volume). Finally, add per liter
+    the following solutions from anaerobic stocks (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculated vessels to 200 kPa H2-CO2 (80:20, v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

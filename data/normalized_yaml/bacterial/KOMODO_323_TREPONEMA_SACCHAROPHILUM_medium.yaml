@@ -1,8 +1,8 @@
 name: TREPONEMA SACCHAROPHILUM medium
 original_name: TREPONEMA SACCHAROPHILUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.7-7.0
 notes: 'pH buffer: KOH | Source: KOMODO ModelSEED | ID: 323 | DSMZ Medium: 323 (mediadive.medium:323)
   | Aerobic: Yes'

@@ -1,6 +1,6 @@
 name: Alicyclobacillus cellulosilyticus Medium
 original_name: Alicyclobacillus cellulosilyticus Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -71,9 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium.
-    Autoclave MgSO4 x 7 H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution
-    separately.
+  description: Adjust to pH 4.8-5.0 (liquid medium) and pH 5.5 - 6.0 agar medium. Autoclave MgSO4 x 7
+    H2O solution, CaCl2 x 2 H2O solution and FeCl3 x 6 H2O solution separately.
 - step_number: 2
   action: MIX
   description: Aseptically add all solutions to the basal medium.

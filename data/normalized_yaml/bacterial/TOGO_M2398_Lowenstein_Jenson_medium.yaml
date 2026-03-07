@@ -1,6 +1,6 @@
 name: Lowenstein Jenson medium
 original_name: Lowenstein Jenson medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:63036
     label: potassium dihydrogen phosphate
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '0.24'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -48,8 +45,7 @@ ingredients:
   concentration:
     value: '3.6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:17196
     label: L-asparagine
@@ -57,8 +53,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Selective agent, pH indicator; Properties: Simple component, Defined
-    component, Organic compound'
+  notes: 'Role: Selective agent, pH indicator; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:72449
     label: Malachite green

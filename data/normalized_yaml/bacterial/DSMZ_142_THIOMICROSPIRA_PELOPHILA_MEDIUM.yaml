@@ -1,6 +1,6 @@
 name: THIOMICROSPIRA PELOPHILA MEDIUM
 original_name: THIOMICROSPIRA PELOPHILA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.2
@@ -165,22 +165,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except hydrogenphosphate, thiosulfate and vitamins),
-    adjust pH to 7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved separately each
-    in 10% of the final volume. Filter sterilize the vitamins solution. Adjust pH
-    of the complete medium to 7.2 with sterile 0.4% (w/v) Na2CO3 solution.  Acidification
-    of the medium during growth causes the pH indicator bromothymol blue to turn from
-    blue to yellow.
+  description: Dissolve ingredients (except hydrogenphosphate, thiosulfate and vitamins), adjust pH to
+    7.2 and autoclave. K2HPO4 and Na2S2O3 are autoclaved separately each in 10% of the final volume. Filter
+    sterilize the vitamins solution. Adjust pH of the complete medium to 7.2 with sterile 0.4% (w/v) Na2CO3
+    solution.  Acidification of the medium during growth causes the pH indicator bromothymol blue to turn
+    from blue to yellow.
 - step_number: 2
   action: MIX
-  description: 'Note: Growth of most Thiomicrospira strains is more reliable if the
-    medium is prepared under a 80% N2 and 20% CO2 gas atmosphere to make it anoxic
-    and then filled under air atmosphere into Hungate-type tubes (5 ml per vial).
-    The pH is adjusted with a sterile stock solution of Na2CO3 (5% w/v) after autoclaving.'
+  description: 'Note: Growth of most Thiomicrospira strains is more reliable if the medium is prepared
+    under a 80% N2 and 20% CO2 gas atmosphere to make it anoxic and then filled under air atmosphere into
+    Hungate-type tubes (5 ml per vial). The pH is adjusted with a sterile stock solution of Na2CO3 (5%
+    w/v) after autoclaving.'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then
-    add remaining compounds. Adjust pH of final solution to 6.0 with KOH.
+  description: Dissolve EDTA in distilled water, adjust pH to 7 using 2 N KOH, then add remaining compounds.
+    Adjust pH of final solution to 6.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

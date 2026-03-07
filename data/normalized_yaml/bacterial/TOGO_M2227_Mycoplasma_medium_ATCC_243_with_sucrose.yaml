@@ -1,8 +1,8 @@
 name: Mycoplasma medium (ATCC 243) with sucrose
 original_name: Mycoplasma medium (ATCC 243) with sucrose
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Yeast extract solution (15%)
   concentration:
@@ -13,14 +13,12 @@ ingredients:
   concentration:
     value: '650'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Sucrose
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:17992
     label: sucrose

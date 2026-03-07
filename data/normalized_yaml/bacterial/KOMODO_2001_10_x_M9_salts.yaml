@@ -1,6 +1,6 @@
 name: 10 x M9 salts
 original_name: 10 x M9 salts
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.4
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2001
     label: 10 x M9 salts
-notes: 'Source: KOMODO ModelSEED | ID: 2001 | DSMZ Medium: 2001 (mediadive.medium:2001)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2001 | DSMZ Medium: 2001 (mediadive.medium:2001) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

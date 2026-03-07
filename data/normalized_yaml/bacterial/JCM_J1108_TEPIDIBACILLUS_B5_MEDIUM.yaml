@@ -1,6 +1,6 @@
 name: TEPIDIBACILLUS B5 MEDIUM
 original_name: TEPIDIBACILLUS B5 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -197,16 +197,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v)
-    gas atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (80:20, v/v) gas atmosphere. After
+    cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0, if necessary.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 applications:
 - Microbial cultivation
 curation_history:

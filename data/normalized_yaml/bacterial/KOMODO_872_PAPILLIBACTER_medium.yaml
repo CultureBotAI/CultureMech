@@ -1,6 +1,6 @@
 name: PAPILLIBACTER medium
 original_name: PAPILLIBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.0-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:872
     label: PAPILLIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 872 | DSMZ Medium: 872 (mediadive.medium:872)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 872 | DSMZ Medium: 872 (mediadive.medium:872) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

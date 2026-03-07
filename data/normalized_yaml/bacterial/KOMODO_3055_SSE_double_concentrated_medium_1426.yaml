@@ -1,6 +1,6 @@
 name: SSE (double concentrated) (medium 1426)
 original_name: SSE (double concentrated) (medium 1426)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3055
     label: SSE (double concentrated) (medium 1426)
-notes: 'Source: KOMODO ModelSEED | ID: 3055 | DSMZ Medium: 3055 (mediadive.medium:3055)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3055 | DSMZ Medium: 3055 (mediadive.medium:3055) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

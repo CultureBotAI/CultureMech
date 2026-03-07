@@ -1,6 +1,6 @@
 name: MARINIFILUM MEDIUM (IRD MEDIUM)
 original_name: MARINIFILUM MEDIUM (IRD MEDIUM)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -168,13 +168,11 @@ preparation_steps:
   description: Add after autoclave
 - step_number: 3
   action: AUTOCLAVE
-  description: Prepare the medium without NaHCO3, Na2S x 9 H2O, MgCl2 x 6 H2O and
-    glucose. Boil the medium in a water bath and cool under a stream of N2/CO2 (80/20).
-    Add the NaHCO3 to the cooled medium (the pH should be 7.0) and dispense the medium
-    into Hungate tubes or serum bottles under a stream of N2/CO2 (80/20). Seal the
-    tubes under N2/CO2 (80/20) and autoclave. To the cooled medium at the appropriate
-    amounts of Na2S x 9 H2O, MgCl2 x 6 H2O and glucose from sterile, anaerobic stock
-    solutions.
+  description: Prepare the medium without NaHCO3, Na2S x 9 H2O, MgCl2 x 6 H2O and glucose. Boil the medium
+    in a water bath and cool under a stream of N2/CO2 (80/20). Add the NaHCO3 to the cooled medium (the
+    pH should be 7.0) and dispense the medium into Hungate tubes or serum bottles under a stream of N2/CO2
+    (80/20). Seal the tubes under N2/CO2 (80/20) and autoclave. To the cooled medium at the appropriate
+    amounts of Na2S x 9 H2O, MgCl2 x 6 H2O and glucose from sterile, anaerobic stock solutions.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PROPIONIGENIUM MARIS medium
 original_name: PROPIONIGENIUM MARIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:686
     label: PROPIONIGENIUM MARIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 686 | DSMZ Medium: 686 (mediadive.medium:686)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 686 | DSMZ Medium: 686 (mediadive.medium:686) | Aerobic: No'
 ingredients: []
 applications:
 - Microbial cultivation

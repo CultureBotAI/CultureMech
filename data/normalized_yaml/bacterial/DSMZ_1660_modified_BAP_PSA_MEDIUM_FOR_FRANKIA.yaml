@@ -1,6 +1,6 @@
 name: modified BAP+ (PSA) MEDIUM FOR FRANKIA
 original_name: modified BAP+ (PSA) MEDIUM FOR FRANKIA
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.3
@@ -157,8 +157,8 @@ preparation_steps:
   description: The pH of the final solution is adjusted to 6.3
 - step_number: 2
   action: AUTOCLAVE
-  description: "Note: Please autoclave the chelated iron solution before you add to\
-    \ the medium, so that\r\nsolves everything!!!!"
+  description: "Note: Please autoclave the chelated iron solution before you add to the medium, so that\r\
+    \nsolves everything!!!!"
 applications:
 - Microbial cultivation
 curation_history:

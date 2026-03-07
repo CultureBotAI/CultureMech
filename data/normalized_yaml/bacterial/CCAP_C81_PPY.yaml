@@ -1,6 +1,6 @@
 name: PPY
 original_name: PPY
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -21,8 +21,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15
-    minutes.
+  description: Make up to 1 litre with deionized water. Autoclave at 15 psi for 15 minutes.
 - step_number: 2
   action: MIX
   description: Note. For test tubes, only use paper or pink silicone bungs.

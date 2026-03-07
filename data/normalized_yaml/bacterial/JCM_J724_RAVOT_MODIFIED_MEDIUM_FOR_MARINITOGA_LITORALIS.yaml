@@ -1,6 +1,6 @@
 name: RAVOT MODIFIED MEDIUM FOR MARINITOGA LITORALIS
 original_name: RAVOT MODIFIED MEDIUM FOR MARINITOGA LITORALIS
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -117,15 +117,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except sulfur, adjust pH to 6.0 and autoclave under
-    a N2 atmosphere. After cooling, add per liter the following solutions (autoclaved
-    and stored anaerobically):'
+  description: 'Mix components except sulfur, adjust pH to 6.0 and autoclave under a N2 atmosphere. After
+    cooling, add per liter the following solutions (autoclaved and stored anaerobically):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Steam sulfur for 3 hr on each of 3 successive days. Distribute the
-    medium into culture vessels containing sulfur under a N2 atmosphere, and seal
-    with butyl rubber stoppers. Then, add the following solution (autoclaved and stored
-    under a N2 atmosphere) to the medium:'
+  description: 'Steam sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture
+    vessels containing sulfur under a N2 atmosphere, and seal with butyl rubber stoppers. Then, add the
+    following solution (autoclaved and stored under a N2 atmosphere) to the medium:'
 applications:
 - Microbial cultivation
 curation_history:

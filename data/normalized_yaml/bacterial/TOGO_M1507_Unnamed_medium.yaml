@@ -1,15 +1,14 @@
-name: (Unnamed medium)
+name: TOGO Medium M1507
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
-    Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
-    Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -26,8 +24,7 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -35,8 +32,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
-    component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -52,8 +48,7 @@ ingredients:
   concentration:
     value: '0.006'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: agar
   concentration:
     value: '1'
@@ -79,7 +74,7 @@ media_term:
   preferred_term: TOGO Medium M1507
   term:
     id: TOGO:M1507
-    label: (Unnamed medium)
+    label: TOGO Medium M1507
 notes: 'Source: https://togomedium.org/medium/M1507
 
   Original source: NBRC - NBRC_M288-2

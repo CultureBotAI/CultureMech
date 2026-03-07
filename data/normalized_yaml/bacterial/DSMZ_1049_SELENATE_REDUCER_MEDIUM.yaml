@@ -1,8 +1,8 @@
 name: SELENATE REDUCER MEDIUM
 original_name: SELENATE REDUCER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1049
@@ -263,29 +263,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: 'After cooling of medium A, add per 100 ml: 1.0 ml solution B, 2.5
-    ml solution C, 1.0 ml solution D, 0.1 ml solution E, 0.5 ml solution F, 1.0 ml
-    solution G and 1.0 ml solution H.'
+  description: 'After cooling of medium A, add per 100 ml: 1.0 ml solution B, 2.5 ml solution C, 1.0 ml
+    solution D, 0.1 ml solution E, 0.5 ml solution F, 1.0 ml solution G and 1.0 ml solution H.'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 3
   action: MIX
-  description: It is recommended to cultivate strain DSM 17993 on agar plates which
-    may be prepared under aerobic conditions. Plates are then preincubated under anaerobic
-    conditions prior to inoculation. They will stay pink coloured.
+  description: It is recommended to cultivate strain DSM 17993 on agar plates which may be prepared under
+    aerobic conditions. Plates are then preincubated under anaerobic conditions prior to inoculation.
+    They will stay pink coloured.
 - step_number: 4
   action: AUTOCLAVE
-  description: 'For liquid medium, prepare solution A, distribute to anaerobic cultivation
-    vessels, heat to the boil and cool to room temperature while gassing with N2 :
-    CO2 (80:20). Close vessels and autoclave. Prepare solutions B, C, D, E and H under
-    anaerobic conditions and autoclave. Solutions F and H are filter sterilized and
-    flushed with N2. Selenate (solution B) might be replaced by nitrate (solution:
+  description: 'For liquid medium, prepare solution A, distribute to anaerobic cultivation vessels, heat
+    to the boil and cool to room temperature while gassing with N2 : CO2 (80:20). Close vessels and autoclave.
+    Prepare solutions B, C, D, E and H under anaerobic conditions and autoclave. Solutions F and H are
+    filter sterilized and flushed with N2. Selenate (solution B) might be replaced by nitrate (solution:
     1.00 g KNO3 in 10 ml).'
 - step_number: 5
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 6
   action: FILTER_STERILIZE
   description: Stir for some hours, filter sterilize the solution.

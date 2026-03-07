@@ -1,6 +1,6 @@
 name: HALOMONAS SUBGLACIESCOLA MEDIUM
 original_name: HALOMONAS SUBGLACIESCOLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -233,13 +233,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 7.0. For preparation of solid medium, add 15.0 g/L agar.
-    Autoclave. After cooling to 50C, add the following solutions to the medium (autoclaved
-    or *filter-sterilized):'
+  description: 'Adjust pH to 7.0. For preparation of solid medium, add 15.0 g/L agar. Autoclave. After
+    cooling to 50C, add the following solutions to the medium (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
-    proceed to add the minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add the minerals.
+    Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

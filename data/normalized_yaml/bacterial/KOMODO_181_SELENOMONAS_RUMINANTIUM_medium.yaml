@@ -1,6 +1,6 @@
 name: SELENOMONAS RUMINANTIUM medium
 original_name: SELENOMONAS RUMINANTIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:181
     label: SELENOMONAS RUMINANTIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 181 | DSMZ Medium: 181 (mediadive.medium:181)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 181 | DSMZ Medium: 181 (mediadive.medium:181) | Aerobic: Yes'
 ingredients:
 - preferred_term: Glucose
   term:

@@ -1,6 +1,6 @@
 name: MARINE CHLOROFLEXI MEDIUM
 original_name: MARINE CHLOROFLEXI MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 1187 supplemented with 10 mM sodium pyruvate (final,
-    filter-sterilized).
+  description: Use Medium No. 1187 supplemented with 10 mM sodium pyruvate (final, filter-sterilized).
 applications:
 - Microbial cultivation
 curation_history:

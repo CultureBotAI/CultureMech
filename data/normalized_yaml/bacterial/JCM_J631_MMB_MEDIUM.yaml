@@ -1,6 +1,6 @@
 name: MMB MEDIUM
 original_name: MMB MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -208,9 +208,9 @@ preparation_steps:
   description: For preparation of solid medium, add 15.0 g/L agar.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled
-    water with the addition of KOH. Add the remaining chemicals in order listed. Adjust
-    pH to 6.8 and bring volume to 1.0 L with distilled water.
+  description: Dissolve and neutralized nitrilotriacetic acid in 500.0 ml distilled water with the addition
+    of KOH. Add the remaining chemicals in order listed. Adjust pH to 6.8 and bring volume to 1.0 L with
+    distilled water.
 applications:
 - Microbial cultivation
 curation_history:

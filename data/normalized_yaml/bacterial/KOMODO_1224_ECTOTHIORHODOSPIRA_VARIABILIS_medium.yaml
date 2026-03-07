@@ -1,6 +1,6 @@
 name: ECTOTHIORHODOSPIRA VARIABILIS medium
 original_name: ECTOTHIORHODOSPIRA VARIABILIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.0-9.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1224
     label: ECTOTHIORHODOSPIRA VARIABILIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1224 | DSMZ Medium: 1224 (mediadive.medium:1224)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1224 | DSMZ Medium: 1224 (mediadive.medium:1224) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

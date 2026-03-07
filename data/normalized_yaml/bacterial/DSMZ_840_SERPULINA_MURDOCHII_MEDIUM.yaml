@@ -1,6 +1,6 @@
 name: SERPULINA MURDOCHII MEDIUM
 original_name: SERPULINA MURDOCHII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -68,15 +68,15 @@ preparation_steps:
   description: Incubate inoculated tubes in slanted position.
 - step_number: 2
   action: MIX
-  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
-    mixture in Hungate tubes (5 ml per tube).
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas mixture in Hungate
+    tubes (5 ml per tube).
 - step_number: 3
   action: COOL
   description: 'After autoclaving and cooling add (per tube):'
 - step_number: 4
   action: MIX
-  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas
-    mixture in 100 ml serum bottles (10 ml per bottle).
+  description: Prepare Trypticase Soy Broth (BBL 11774) under 80% N2 + 20% CO2 gas mixture in 100 ml serum
+    bottles (10 ml per bottle).
 - step_number: 5
   action: COOL
   description: 'After autoclaving and cooling add per bottle:'

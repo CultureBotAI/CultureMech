@@ -1,6 +1,6 @@
 name: PYG MEDIUM (J), MODIFIED
 original_name: PYG MEDIUM (J), MODIFIED
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -126,20 +126,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
-    of O2-free CO2. While gassing, add the following solutions and adjust pH to 7.2:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream of O2-free CO2.
+    While gassing, add the following solutions and adjust pH to 7.2:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Distribute the medium into culture vessels (e.g., 10 ml in Balch type
-    tubes) under N2, seal with butyl rubber stoppers and autoclave.
+  description: Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2,
+    seal with butyl rubber stoppers and autoclave.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
+    in a brown bottle.
 - step_number: 4
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

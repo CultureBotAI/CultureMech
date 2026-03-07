@@ -1,6 +1,6 @@
 name: SMITHELLA MEDIUM
 original_name: SMITHELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -254,27 +254,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, crotonate, coenzyme M, vitamins
-    and sulfide), then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
-    45 min to make it anoxic. Dispense medium under same gas atmosphere into Hungate-type
-    tubes or serum vials (e.g., 5 ml medium in Balch-type tubes) and autoclave. Add
-    crotonate, coenzyme M, vitamins and sulfide from sterile anoxic stock solutions
-    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
-    prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of crotonate, coenzyme
-    M and vitamins should be sterilized by filtration. Adjust pH of the complete medium
-    to 7.0 - 7.2.
+  description: Dissolve ingredients (except carbonate, crotonate, coenzyme M, vitamins and sulfide), then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into Hungate-type tubes or serum vials (e.g., 5 ml medium in Balch-type
+    tubes) and autoclave. Add crotonate, coenzyme M, vitamins and sulfide from sterile anoxic stock solutions
+    prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2
+    and 20% CO2 gas mixture. Stock solutions of crotonate, coenzyme M and vitamins should be sterilized
+    by filtration. Adjust pH of the complete medium to 7.0 - 7.2.
 - step_number: 2
   action: MIX
   description: 'Note: Use 10% (v/v) as inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml
-    of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000
-    ml. Sterilize by filtration under 100% N2 gas atmosphere.
+  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust
+    pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2
+    gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -285,5 +282,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.769592Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

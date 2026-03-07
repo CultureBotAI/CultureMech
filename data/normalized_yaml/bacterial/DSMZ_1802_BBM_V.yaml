@@ -1,6 +1,6 @@
 name: BBM + V
 original_name: BBM + V
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.4
@@ -116,8 +116,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -135,15 +134,13 @@ preparation_steps:
   description: Adjust pH to 6.4.
 - step_number: 7
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
 - step_number: 8
   action: FILTER_STERILIZE
   description: Filtrate sterile (pore size 0.22 µm) and aliquot.
 - step_number: 9
   action: MIX
-  description: Make up to <span class='amount' data-volume='30'>30</span> ml with
-    Milli Q water.
+  description: Make up to <span class='amount' data-volume='30'>30</span> ml with Milli Q water.
 - step_number: 10
   action: FILTER_STERILIZE
   description: Filtrate sterile (pore size 0.22 µm) and aliquot.

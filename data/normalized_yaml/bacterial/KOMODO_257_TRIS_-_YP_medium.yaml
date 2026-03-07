@@ -1,6 +1,6 @@
 name: TRIS - YP medium
 original_name: TRIS - YP medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:257
     label: TRIS - YP medium
-notes: 'Source: KOMODO ModelSEED | ID: 257 | DSMZ Medium: 257 (mediadive.medium:257)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 257 | DSMZ Medium: 257 (mediadive.medium:257) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

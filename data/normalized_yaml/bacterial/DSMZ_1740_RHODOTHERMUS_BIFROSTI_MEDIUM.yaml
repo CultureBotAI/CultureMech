@@ -1,6 +1,6 @@
 name: RHODOTHERMUS BIFROSTI MEDIUM
 original_name: RHODOTHERMUS BIFROSTI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -194,8 +194,7 @@ preparation_steps:
   description: Adjust to pH 7.0. Autoclave at 121°C for 20 min.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
 - step_number: 3
   action: MIX
   description: Adjust to pH 7.0 with KOH

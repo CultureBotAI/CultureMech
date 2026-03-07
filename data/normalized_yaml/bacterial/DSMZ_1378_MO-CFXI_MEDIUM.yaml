@@ -1,6 +1,6 @@
 name: MO-CFXI MEDIUM
 original_name: MO-CFXI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -259,8 +259,7 @@ preparation_steps:
   description: Prepare under N2/CO2 (80/20) gas.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Autoclave and add the following components after autoclaving from
-    stock solutions:'
+  description: 'Autoclave and add the following components after autoclaving from stock solutions:'
 - step_number: 4
   action: MIX
   description: sterile Na2S solution end concentration 0.03%

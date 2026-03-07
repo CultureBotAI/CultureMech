@@ -1,6 +1,6 @@
 name: HALARSENATIBACTER MEDIUM
 original_name: HALARSENATIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -258,11 +258,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: "Prepare the liquid medium without the following. NaHCO3, yeast extract,\
-    \ Na-lactate,\r\narsenate. Adjust to pH 9.5. Boil the medium in a water bath and\
-    \ cool under N2. to room\r\ntemperature. Dispense the medium into Hungate tubes\
-    \ or serum bottles under gassing\r\nwith N2. Sterilize by autoclaving. Before\
-    \ inoculation add from sterile stock solutions:"
+  description: "Prepare the liquid medium without the following. NaHCO3, yeast extract, Na-lactate,\r\n\
+    arsenate. Adjust to pH 9.5. Boil the medium in a water bath and cool under N2. to room\r\ntemperature.\
+    \ Dispense the medium into Hungate tubes or serum bottles under gassing\r\nwith N2. Sterilize by autoclaving.\
+    \ Before inoculation add from sterile stock solutions:"
 applications:
 - Microbial cultivation
 curation_history:

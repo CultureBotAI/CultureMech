@@ -1,6 +1,6 @@
 name: DEHALOSPIRILLUM MEDIUM
 original_name: DEHALOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.6
@@ -317,24 +317,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% N2 gas for 30 - 45 min to make it anoxic,
-    then distribute under same gas atmosphere into anoxic Hungate-type tubes or serum
-    vials and autoclave. Solutions B and H are autoclaved separately under 100% N2
-    gas. Solutions C, E, F and G are prepared under 100% N2 gas and sterilized by
-    filtration. Solution D is autoclaved under 80% N2 and 20% CO2 gas atmosphere.
-    To complete the medium appropriate amounts of solutions B to H are added to the
-    sterile solution A in the sequence as indicated. Adjust pH of complete medium
-    to 7.3 - 7.6, if necessary.
+  description: Sparge solution A with 100% N2 gas for 30 - 45 min to make it anoxic, then distribute under
+    same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Solutions B and H
+    are autoclaved separately under 100% N2 gas. Solutions C, E, F and G are prepared under 100% N2 gas
+    and sterilized by filtration. Solution D is autoclaved under 80% N2 and 20% CO2 gas atmosphere. To
+    complete the medium appropriate amounts of solutions B to H are added to the sterile solution A in
+    the sequence as indicated. Adjust pH of complete medium to 7.3 - 7.6, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Before inoculation, the medium must be completely reduced, i.e.
-    resazurin must be colorless. The addition of 10 - 20 mg sodium dithionite per
-    liter (e.g. from 5% (w/v) solution, freshly prepared under N2 and filter-sterilized,
-    see medium 829) can help to reduce the medium.'
+  description: 'Note: Before inoculation, the medium must be completely reduced, i.e. resazurin must be
+    colorless. The addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution, freshly
+    prepared under N2 and filter-sterilized, see medium 829) can help to reduce the medium.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -345,5 +342,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.528101Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

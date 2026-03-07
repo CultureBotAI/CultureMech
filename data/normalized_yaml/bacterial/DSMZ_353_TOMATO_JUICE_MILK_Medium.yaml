@@ -1,6 +1,6 @@
 name: TOMATO JUICE MILK Medium
 original_name: TOMATO JUICE MILK Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -26,8 +26,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Filter canned tomatoes through paper. Leave over night at 10°C. Dissolve
-    remaining components and bring to 1L.
+  description: Filter canned tomatoes through paper. Leave over night at 10°C. Dissolve remaining components
+    and bring to 1L.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.

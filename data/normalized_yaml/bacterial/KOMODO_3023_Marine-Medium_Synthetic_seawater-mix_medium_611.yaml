@@ -1,6 +1,6 @@
 name: Marine-Medium/Synthetic seawater-mix (medium 611)
 original_name: Marine-Medium/Synthetic seawater-mix (medium 611)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3023
     label: Marine-Medium/Synthetic seawater-mix (medium 611)
-notes: 'Source: KOMODO ModelSEED | ID: 3023 | DSMZ Medium: 3023 (mediadive.medium:3023)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3023 | DSMZ Medium: 3023 (mediadive.medium:3023) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

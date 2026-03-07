@@ -1,6 +1,6 @@
 name: KOKO MEDIUM
 original_name: KOKO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -229,9 +229,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave the medium
-    under a N2 atmosphere. Add the following solutions from sterile anaerobic stocks
-    (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave the medium under a N2 atmosphere.
+    Add the following solutions from sterile anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

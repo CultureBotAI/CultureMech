@@ -1,6 +1,6 @@
 name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
 original_name: ALICYCLOBACILLUS FERROOXYDANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -66,8 +66,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solution A, cool down to 50°C and combine solution A with
-    70 ml of solution B.
+  description: Autoclave solution A, cool down to 50°C and combine solution A with 70 ml of solution B.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 1.8 - 2.5 with H2SO4.

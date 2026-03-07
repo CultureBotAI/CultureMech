@@ -1,15 +1,14 @@
 name: MEDIUM 81 MODIFIED FOR DSM 21442
 original_name: MEDIUM 81 MODIFIED FOR DSM 21442
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 81_21442
   term:
     id: komodo.medium:81_21442
     label: MEDIUM 81 MODIFIED FOR DSM 21442
-notes: 'Source: KOMODO ModelSEED | ID: 81_21442 | DSMZ Medium: 81 (mediadive.medium:81)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 81_21442 | DSMZ Medium: 81 (mediadive.medium:81) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

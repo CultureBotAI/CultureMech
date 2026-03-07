@@ -1,6 +1,6 @@
 name: THERMOCOCCUS FUMICOLANS MEDIUM
 original_name: THERMOCOCCUS FUMICOLANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 160 with 0.5 g/L (final) yeast extract and 2.0 g/L (final)
-    peptone and adjust pH to 7.5.
+  description: Use Medium No. 160 with 0.5 g/L (final) yeast extract and 2.0 g/L (final) peptone and adjust
+    pH to 7.5.
 applications:
 - Microbial cultivation
 curation_history:

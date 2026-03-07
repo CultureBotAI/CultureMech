@@ -1,8 +1,8 @@
 name: HALOBACTERIUM MEDIUM
 original_name: HALOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: DSMZ Medium 97
@@ -74,8 +74,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in
-    the water and adjustment of pH.
+  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in the water and adjustment
+    of pH.
 applications:
 - Microbial cultivation
 curation_history:

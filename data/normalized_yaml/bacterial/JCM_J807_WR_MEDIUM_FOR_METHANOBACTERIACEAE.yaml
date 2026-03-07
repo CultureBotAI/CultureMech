@@ -1,6 +1,6 @@
 name: WR MEDIUM FOR METHANOBACTERIACEAE
 original_name: WR MEDIUM FOR METHANOBACTERIACEAE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -242,20 +242,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O,
-    and adjust pH to 7.0. Bring to a boil for 5-10 sec, then, cool down under a stream
-    of H2-CO2 (80:20, v/v) and add NaHCO3. Dispense the medium into suitable culture
-    vessels (e.g., 5 ml in Hungate tubes) under the same gas mixture and seal with
-    butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately
-    autoclave L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively,
-    under a N2 atmosphere. Prior to inoculation, aseptically and anaerobically add
-    L-cysteine x HCl x H2O and Na2S x 9H2O solutions. Readjust pH to 6.7, if necessary.
-    Pressurize the inoculated bottles to 150 kPa H2-CO2 (80:20, v/v).
+  description: Mix ingredients except NaHCO3, L-cysteine x HCl x H2O and Na2S x 9H2O, and adjust pH to
+    7.0. Bring to a boil for 5-10 sec, then, cool down under a stream of H2-CO2 (80:20, v/v) and add NaHCO3.
+    Dispense the medium into suitable culture vessels (e.g., 5 ml in Hungate tubes) under the same gas
+    mixture and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight. Separately
+    autoclave L-cysteine x HCl x H2O and Na2S x 9H2O as 5% solutions, respectively, under a N2 atmosphere.
+    Prior to inoculation, aseptically and anaerobically add L-cysteine x HCl x H2O and Na2S x 9H2O solutions.
+    Readjust pH to 6.7, if necessary. Pressurize the inoculated bottles to 150 kPa H2-CO2 (80:20, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
-    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
-    to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
+    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'

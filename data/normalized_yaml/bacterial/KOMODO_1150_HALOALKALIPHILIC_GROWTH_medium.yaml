@@ -1,11 +1,11 @@
 name: HALOALKALIPHILIC GROWTH medium
 original_name: HALOALKALIPHILIC GROWTH medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1150 | DSMZ Medium: 1150
-  (mediadive.medium:1150) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1150 | DSMZ Medium: 1150 (mediadive.medium:1150)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1150
   term:

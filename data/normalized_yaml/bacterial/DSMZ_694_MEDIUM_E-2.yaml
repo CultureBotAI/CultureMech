@@ -1,6 +1,6 @@
 name: MEDIUM E-2
 original_name: MEDIUM E-2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -53,8 +53,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole source
-    of carbon.
+  description: Adjust pH to 7.0. n-Octane is evaporated in a desiccator as sole source of carbon.
 applications:
 - Microbial cultivation
 curation_history:

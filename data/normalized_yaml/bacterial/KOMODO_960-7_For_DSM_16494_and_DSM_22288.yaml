@@ -1,6 +1,6 @@
 name: For DSM 16494 and DSM 22288
 original_name: For DSM 16494 and DSM 22288
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:960.7
     label: For DSM 16494 and DSM 22288
-notes: 'Source: KOMODO ModelSEED | ID: 960.7 | DSMZ Medium: 960 (mediadive.medium:960)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 960.7 | DSMZ Medium: 960 (mediadive.medium:960) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -248,5 +247,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.328285Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

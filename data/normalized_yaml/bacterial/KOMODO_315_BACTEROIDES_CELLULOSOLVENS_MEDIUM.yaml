@@ -1,6 +1,6 @@
 name: BACTEROIDES CELLULOSOLVENS MEDIUM
 original_name: BACTEROIDES CELLULOSOLVENS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:315
     label: BACTEROIDES CELLULOSOLVENS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 315 | DSMZ Medium: 315 (mediadive.medium:315)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 315 | DSMZ Medium: 315 (mediadive.medium:315) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

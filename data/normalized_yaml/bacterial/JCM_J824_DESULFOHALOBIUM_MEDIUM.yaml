@@ -1,6 +1,6 @@
 name: DESULFOHALOBIUM MEDIUM
 original_name: DESULFOHALOBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -176,15 +176,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0. Autoclave under a N2
-    atmosphere.
+  description: Mix components thoroughly and adjust pH to 7.0. Autoclave under a N2 atmosphere.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave under a N2 atmosphere.
 - step_number: 3
   action: MIX
-  description: 'To complete the medium, combine Solutions A and B under a N2 atmosphere.
-    Then, add per liter the following solution from an anaerobic stock:'
+  description: 'To complete the medium, combine Solutions A and B under a N2 atmosphere. Then, add per
+    liter the following solution from an anaerobic stock:'
 applications:
 - Microbial cultivation
 curation_history:

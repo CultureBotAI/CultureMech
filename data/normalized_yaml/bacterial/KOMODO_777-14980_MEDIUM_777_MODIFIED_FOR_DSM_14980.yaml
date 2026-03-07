@@ -1,6 +1,6 @@
 name: MEDIUM 777 MODIFIED FOR DSM 14980
 original_name: MEDIUM 777 MODIFIED FOR DSM 14980
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:777_14980
     label: MEDIUM 777 MODIFIED FOR DSM 14980
-notes: 'Source: KOMODO ModelSEED | ID: 777_14980 | DSMZ Medium: 777 (mediadive.medium:777)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 777_14980 | DSMZ Medium: 777 (mediadive.medium:777) | Aerobic:
+  No'
 ingredients: []
 applications:
 - Microbial cultivation

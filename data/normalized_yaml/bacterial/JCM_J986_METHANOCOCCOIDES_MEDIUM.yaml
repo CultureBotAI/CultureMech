@@ -1,6 +1,6 @@
 name: METHANOCOCCOIDES MEDIUM
 original_name: METHANOCOCCOIDES MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -19,9 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and
-    adjust pH to 7.0 - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20,
-    v/v) gas mixture.
+  description: Use Medium No. 265 supplemented with 3.0 g/L trimethylamine x HCl and adjust pH to 7.0
+    - 7.2. Prepare the medium and cultivate under a N2-CO2 (80:20, v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

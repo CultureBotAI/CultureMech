@@ -1,6 +1,6 @@
 name: MALEDIVIBACTER MEDIUM
 original_name: MALEDIVIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -100,12 +100,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except betaine and cysteine), boil medium for
-    1 min, then cool to room temperature under 100% N2 gas atmosphere. Adjust the
-    pH to 7.2. Thereafter, dispense under 100% N2 gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add betaine and cysteine from sterile, anoxic
-    stock solutions prepared under 100% N2. Adjust the pH of the complete medium to
-    7.3 - 7.5.
+  description: Dissolve ingredients (except betaine and cysteine), boil medium for 1 min, then cool to
+    room temperature under 100% N2 gas atmosphere. Adjust the pH to 7.2. Thereafter, dispense under 100%
+    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add betaine and cysteine
+    from sterile, anoxic stock solutions prepared under 100% N2. Adjust the pH of the complete medium
+    to 7.3 - 7.5.
 applications:
 - Microbial cultivation
 curation_history:

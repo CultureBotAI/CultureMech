@@ -1,8 +1,8 @@
 name: GRANULICELLA MEDIUM
 original_name: GRANULICELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 4.5-5.2
 media_term:
   preferred_term: DSMZ Medium 1284

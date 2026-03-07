@@ -1,8 +1,8 @@
 name: Bordet Gengou agar (supplemented with 15% defibrinated horse blood)
 original_name: Bordet Gengou agar (supplemented with 15% defibrinated horse blood)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: Bordet Gengou agar (Difco)
   concentration:
@@ -29,5 +29,4 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.689505'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: defibrinated horse blood (TCS
-    Biologicals)'
+  notes: 'Added default concentration for ingredient: defibrinated horse blood (TCS Biologicals)'

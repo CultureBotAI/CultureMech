@@ -1,6 +1,6 @@
 name: ANAEROBACULUM MEDIUM
 original_name: ANAEROBACULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -100,12 +100,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except cysteine, glucose and thiosulfate), boil
-    medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
-    Add cysteine and adjust pH to 7.0. Thereafter, dispense under100% N2 gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. After autoclaving
-    add glucose and thiosulfate from sterile anoxic stock solutions prepared under
-    100% N2 gas. Adjust pH of complete medium to 7.0, if necessary.
+  description: Dissolve ingredients (except cysteine, glucose and thiosulfate), boil medium for 1 min,
+    then cool to room temperature under 100% N2 gas atmosphere. Add cysteine and adjust pH to 7.0. Thereafter,
+    dispense under100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After autoclaving add glucose and thiosulfate from sterile anoxic stock solutions prepared under 100%
+    N2 gas. Adjust pH of complete medium to 7.0, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

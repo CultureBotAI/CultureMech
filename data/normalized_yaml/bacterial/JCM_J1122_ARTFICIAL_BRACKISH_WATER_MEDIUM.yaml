@@ -1,6 +1,6 @@
 name: ARTFICIAL BRACKISH WATER MEDIUM
 original_name: ARTFICIAL BRACKISH WATER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -186,14 +186,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas atmosphere. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After
+    cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically, distribute the medium into culture
-    vessels under the same gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal
-    with butyl rubber stoppers. Prior to use, add per liter the following solution
-    to reduce the medium (autoclaved and stored under N2):'
+  description: 'Aseptically and anaerobically, distribute the medium into culture vessels under the same
+    gas mixture (e.g., 20 ml in 60 ml-serum bottles) and seal with butyl rubber stoppers. Prior to use,
+    add per liter the following solution to reduce the medium (autoclaved and stored under N2):'
 applications:
 - Microbial cultivation
 curation_history:

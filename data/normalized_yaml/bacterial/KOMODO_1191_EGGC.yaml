@@ -1,15 +1,14 @@
 name: EGGC
 original_name: EGGC
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1191
   term:
     id: komodo.medium:1191
     label: EGGC
-notes: 'Source: KOMODO ModelSEED | ID: 1191 | DSMZ Medium: 1191 (mediadive.medium:1191)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1191 | DSMZ Medium: 1191 (mediadive.medium:1191) | Aerobic: No'
 ingredients:
 - preferred_term: Na-acetate
   term:

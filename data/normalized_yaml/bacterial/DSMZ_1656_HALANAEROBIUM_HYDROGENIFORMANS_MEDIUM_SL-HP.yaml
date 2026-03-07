@@ -1,6 +1,6 @@
 name: HALANAEROBIUM HYDROGENIFORMANS MEDIUM (SL-HP)
 original_name: HALANAEROBIUM HYDROGENIFORMANS MEDIUM (SL-HP)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 11.0
@@ -204,10 +204,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without cysteine hydrochloride, Na2S x 9 H2O and
-    Na2CO3. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v) and add
-    the Na2CO3. Autoclave the medium and add from sterile stock solutions cysteine
-    hydrochloride and Na2S x 9 H2O. The final pH should be 11.0.
+  description: Prepare the medium without cysteine hydrochloride, Na2S x 9 H2O and Na2CO3. Boil and then
+    cool under a gas atmosphere of N2:CO2 (80:20 v/v) and add the Na2CO3. Autoclave the medium and add
+    from sterile stock solutions cysteine hydrochloride and Na2S x 9 H2O. The final pH should be 11.0.
 applications:
 - Microbial cultivation
 curation_history:

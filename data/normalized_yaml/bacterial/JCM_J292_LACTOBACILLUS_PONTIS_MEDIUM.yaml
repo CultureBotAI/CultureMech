@@ -1,6 +1,6 @@
 name: LACTOBACILLUS PONTIS MEDIUM
 original_name: LACTOBACILLUS PONTIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -49,8 +49,7 @@ preparation_steps:
   description: Adjust pH to 6.5.
 - step_number: 2
   action: COOL
-  description: After autoclaving, cool to 50C and add aseptically 18 ml Maltose-hemin
-    solution.
+  description: After autoclaving, cool to 50C and add aseptically 18 ml Maltose-hemin solution.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter-sterilize.

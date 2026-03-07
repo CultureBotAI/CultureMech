@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO As36 MEDIUM
 original_name: DESULFOVIBRIO As36 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -165,15 +165,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients and adjust pH to 7.2. Distribute 0.9 volume of the
-    medium into tubes (e.g., 4.5 ml of the medium in the Hungate tubes) under a N2-CO2
-    (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: Mix ingredients and adjust pH to 7.2. Distribute 0.9 volume of the medium into tubes (e.g.,
+    4.5 ml of the medium in the Hungate tubes) under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl
+    rubber stoppers and autoclave.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, add the following stock solutions [Filter-sterilize
-    NaHCO3 solution and store under a N2-CO2 (4:1, v/v) gas mixture. The other solutions
-    are autoclaved and stored anaerobically under a N2 atmosphere] to the medium (per
-    4.5 ml):'
+  description: 'To complete the medium, add the following stock solutions [Filter-sterilize NaHCO3 solution
+    and store under a N2-CO2 (4:1, v/v) gas mixture. The other solutions are autoclaved and stored anaerobically
+    under a N2 atmosphere] to the medium (per 4.5 ml):'
 applications:
 - Microbial cultivation
 curation_history:

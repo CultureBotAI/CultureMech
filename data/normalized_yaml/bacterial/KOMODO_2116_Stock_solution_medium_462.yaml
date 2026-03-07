@@ -1,6 +1,6 @@
 name: Stock solution (medium 462)
 original_name: Stock solution (medium 462)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:2116
     label: Stock solution (medium 462)
-notes: 'Source: KOMODO ModelSEED | ID: 2116 | DSMZ Medium: 2116 (mediadive.medium:2116)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2116 | DSMZ Medium: 2116 (mediadive.medium:2116) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

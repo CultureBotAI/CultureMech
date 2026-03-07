@@ -1,6 +1,6 @@
 name: MODIFIED medium 514
 original_name: MODIFIED medium 514
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:1173
     label: MODIFIED medium 514
-notes: 'Source: KOMODO ModelSEED | ID: 1173 | DSMZ Medium: 1173 (mediadive.medium:1173)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1173 | DSMZ Medium: 1173 (mediadive.medium:1173) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

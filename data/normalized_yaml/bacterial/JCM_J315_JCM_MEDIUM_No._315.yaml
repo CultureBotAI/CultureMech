@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 315
 original_name: JCM MEDIUM No. 315
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -234,12 +234,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except cysteine x HCl x H2O, NaHCO3 and Trace vitamins,
-    and autoclave under a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as a
-    10% solution and Trace vitamins while gassing with CO2. Separately autoclave L-cysteine
-    x HCl x H2O as a 5% solution under a CO2 atmosphere. Aseptically and anaerobically
-    add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere.
-    Prior to inoculation, add the sterile L-cysteine x HCl x H2O solution.
+  description: Mix ingredients except cysteine x HCl x H2O, NaHCO3 and Trace vitamins, and autoclave under
+    a N2-CO2 (80:20) atmosphere. Filter-sterilize NaHCO3 as a 10% solution and Trace vitamins while gassing
+    with CO2. Separately autoclave L-cysteine x HCl x H2O as a 5% solution under a CO2 atmosphere. Aseptically
+    and anaerobically add NaHCO3 and Trace vitamins to the medium under a N2-CO2 (80:20) atmosphere. Prior
+    to inoculation, add the sterile L-cysteine x HCl x H2O solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 with 1 N KOH.

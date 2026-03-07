@@ -1,6 +1,6 @@
 name: ROSEINATRONOBACTER MONICUS MEDIUM
 original_name: ROSEINATRONOBACTER MONICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9-9.5
@@ -176,9 +176,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium.\
-    \ Add the vitamin\r\nB12 solution from a filter sterilised stock solution to the\
-    \ autoclaved, cooled medium. Final\r\nis pH 9.0 - 9.5"
+  description: "Autoclave the NaHCO3 and Na2CO3 separately and add to the medium. Add the vitamin\r\n\
+    B12 solution from a filter sterilised stock solution to the autoclaved, cooled medium. Final\r\nis\
+    \ pH 9.0 - 9.5"
 applications:
 - Microbial cultivation
 curation_history:

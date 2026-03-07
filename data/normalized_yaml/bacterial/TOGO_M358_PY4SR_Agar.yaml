@@ -1,8 +1,8 @@
 name: PY4SR Agar
 original_name: PY4SR Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: PY4S AGAR (see Medium [M357])
   concentration:
@@ -13,8 +13,7 @@ ingredients:
     value: '50'
     unit: G_PER_L
 - preferred_term: water
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Water
@@ -50,5 +49,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:58.312468'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: water; Added default concentration
-    for ingredient: rice straw'
+  notes: 'Added default concentration for ingredient: water; Added default concentration for ingredient:
+    rice straw'

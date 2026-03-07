@@ -1,11 +1,11 @@
 name: KTM medium
 original_name: KTM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1163 | DSMZ Medium: 1163
-  (mediadive.medium:1163) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1163 | DSMZ Medium: 1163 (mediadive.medium:1163)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 1163
   term:
@@ -276,5 +276,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:38.812626Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

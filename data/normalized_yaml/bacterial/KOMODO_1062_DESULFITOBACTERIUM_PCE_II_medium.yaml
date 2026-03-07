@@ -1,6 +1,6 @@
 name: DESULFITOBACTERIUM PCE II medium
 original_name: DESULFITOBACTERIUM PCE II medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1062
     label: DESULFITOBACTERIUM PCE II medium
-notes: 'Source: KOMODO ModelSEED | ID: 1062 | DSMZ Medium: 1062 (mediadive.medium:1062)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1062 | DSMZ Medium: 1062 (mediadive.medium:1062) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

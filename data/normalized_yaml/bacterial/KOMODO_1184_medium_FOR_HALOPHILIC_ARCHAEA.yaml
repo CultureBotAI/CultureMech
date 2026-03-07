@@ -1,16 +1,15 @@
 name: medium FOR HALOPHILIC ARCHAEA
 original_name: medium FOR HALOPHILIC ARCHAEA
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.5-7.0
 media_term:
   preferred_term: KOMODO Medium 1184
   term:
     id: komodo.medium:1184
     label: medium FOR HALOPHILIC ARCHAEA
-notes: 'Source: KOMODO ModelSEED | ID: 1184 | DSMZ Medium: 1184 (mediadive.medium:1184)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1184 | DSMZ Medium: 1184 (mediadive.medium:1184) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

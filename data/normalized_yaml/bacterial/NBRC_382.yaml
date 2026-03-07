@@ -1,12 +1,11 @@
 name: '382'
 original_name: '382'
-category: imported
+category: bacterial
 description: 382. NBRC 380.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled
-    water1LpH 7.0
+- preferred_term: Pepton5gBeef extract3gYeast extract5gNaCl3gAgar (if needed)15gDistilled water1LpH 7.0
 - preferred_term: ''
   concentration:
     value: Pepton

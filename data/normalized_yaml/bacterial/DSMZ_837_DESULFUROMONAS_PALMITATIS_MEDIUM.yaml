@@ -1,6 +1,6 @@
 name: DESULFUROMONAS PALMITATIS MEDIUM
 original_name: DESULFUROMONAS PALMITATIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.9
@@ -278,28 +278,26 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
-    to make it anoxic, distribute under same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Solution B is autoclaved separately under
-    100% N2 gas atmosphere. Solutions C and F are prepared under 80% N2 and 20% CO2
-    gas atmosphere. Solutions D and E are prepared under 100% N2 gas atmosphere. Solution
-    C is autoclaved and solutions D, E and F are sterilized by filtration. To complete
-    the medium appropriate amounts of solutions B to F are added to the sterile solution
-    A in the sequence as indicated. Adjust pH of complete medium to 6.9, if necessary.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic,
+    distribute under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    Solution B is autoclaved separately under 100% N2 gas atmosphere. Solutions C and F are prepared under
+    80% N2 and 20% CO2 gas atmosphere. Solutions D and E are prepared under 100% N2 gas atmosphere. Solution
+    C is autoclaved and solutions D, E and F are sterilized by filtration. To complete the medium appropriate
+    amounts of solutions B to F are added to the sterile solution A in the sequence as indicated. Adjust
+    pH of complete medium to 6.9, if necessary.
 - step_number: 2
   action: MIX
   description: 'Note: For transfers use 5 - 10% (v/v) inoculum.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging
-    with 100% N2 gas. Then dissolve the Na-dithionite and filter-sterilize the solution
-    into anoxic Hungate tubes. The final pH of the solution should be between 9 and
-    10. Store the prepared solution in a dark and cool place. Prepare only small amounts
-    of stock solution, as Na-dithionite decomposes rapidly.
+  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging with 100% N2 gas.
+    Then dissolve the Na-dithionite and filter-sterilize the solution into anoxic Hungate tubes. The final
+    pH of the solution should be between 9 and 10. Store the prepared solution in a dark and cool place.
+    Prepare only small amounts of stock solution, as Na-dithionite decomposes rapidly.
 applications:
 - Microbial cultivation
 curation_history:
@@ -310,5 +308,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:18.402995Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

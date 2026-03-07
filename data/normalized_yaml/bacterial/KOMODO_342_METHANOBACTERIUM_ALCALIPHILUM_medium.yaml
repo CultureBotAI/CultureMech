@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM ALCALIPHILUM medium
 original_name: METHANOBACTERIUM ALCALIPHILUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 8.3-8.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:342
     label: METHANOBACTERIUM ALCALIPHILUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 342 | DSMZ Medium: 342 (mediadive.medium:342)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 342 | DSMZ Medium: 342 (mediadive.medium:342) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

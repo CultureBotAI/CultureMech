@@ -1,6 +1,6 @@
 name: ALKALIPHILUS MEDIUM
 original_name: ALKALIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -236,17 +236,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients of solution A, adjust pH to 8.0 with 1 N NaOH
-    and boil medium for 1 min, then cool to room temperature under 100% N2 gas atmosphere.
-    Dispense solution A under same gas atmosphere in anoxic culture vessels (e.g.,
-    Hungate-type tubes) and autoclave. Prior to inoculation complete the medium by
-    adding appropriate amounts of solutions B, C and D prepared under 100% N2 gas
-    and sterilized by filtration. Adjust pH of the completed medium to 8.0 with a
-    sterile anoxic solution of 0.1 N HCl or 0.1 N NaOH, if necessary.
+  description: Dissolve ingredients of solution A, adjust pH to 8.0 with 1 N NaOH and boil medium for
+    1 min, then cool to room temperature under 100% N2 gas atmosphere. Dispense solution A under same
+    gas atmosphere in anoxic culture vessels (e.g., Hungate-type tubes) and autoclave. Prior to inoculation
+    complete the medium by adding appropriate amounts of solutions B, C and D prepared under 100% N2 gas
+    and sterilized by filtration. Adjust pH of the completed medium to 8.0 with a sterile anoxic solution
+    of 0.1 N HCl or 0.1 N NaOH, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -257,5 +256,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.390116Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

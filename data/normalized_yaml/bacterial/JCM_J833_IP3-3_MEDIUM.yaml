@@ -1,6 +1,6 @@
 name: IP3-3 MEDIUM
 original_name: IP3-3 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -202,23 +202,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave under a N2 atmosphere. After cooling,
-    anaerobically add the following sterile solutions (autoclaved or *filter-sterilized)
-    from anaerobic stocks:'
+  description: 'Mix components and autoclave under a N2 atmosphere. After cooling, anaerobically add the
+    following sterile solutions (autoclaved or *filter-sterilized) from anaerobic stocks:'
 - step_number: 2
   action: POUR_PLATES
-  description: 'To complete the medium, dispense the medium into culture vessels leaving
-    40 to 50% volume of gas phase (e.g., 30 ml of the medium in a 50 ml serum bottle)
-    and seal with butyl rubber stoppers. Replace the gas phase with a N2-CO2-H2 (8:1:1,
-    v/v) gas mixture. Finally, add the following reducing solution and chlorosolvent
-    (per liter):'
+  description: 'To complete the medium, dispense the medium into culture vessels leaving 40 to 50% volume
+    of gas phase (e.g., 30 ml of the medium in a 50 ml serum bottle) and seal with butyl rubber stoppers.
+    Replace the gas phase with a N2-CO2-H2 (8:1:1, v/v) gas mixture. Finally, add the following reducing
+    solution and chlorosolvent (per liter):'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0, if necessary.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Mix components and centrifuge at 8,000 x g for 10 min. Filter-sterilize
-    the supernatant and store under a N2 atmosphere.
+  description: Mix components and centrifuge at 8,000 x g for 10 min. Filter-sterilize the supernatant
+    and store under a N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

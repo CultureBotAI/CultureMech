@@ -1,11 +1,11 @@
 name: MANNING medium
 original_name: MANNING medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 2.5-2.7
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1023 | DSMZ Medium: 1023
-  (mediadive.medium:1023) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1023 | DSMZ Medium: 1023 (mediadive.medium:1023)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1023
   term:
@@ -69,5 +69,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:49.437512Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

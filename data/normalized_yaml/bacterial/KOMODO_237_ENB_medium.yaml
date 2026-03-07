@@ -1,16 +1,15 @@
 name: ENB medium
 original_name: ENB medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.8-7.0
 media_term:
   preferred_term: KOMODO Medium 237
   term:
     id: komodo.medium:237
     label: ENB medium
-notes: 'Source: KOMODO ModelSEED | ID: 237 | DSMZ Medium: 237 (mediadive.medium:237)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 237 | DSMZ Medium: 237 (mediadive.medium:237) | Aerobic: No'
 ingredients:
 - preferred_term: Nutrient broth
   concentration:

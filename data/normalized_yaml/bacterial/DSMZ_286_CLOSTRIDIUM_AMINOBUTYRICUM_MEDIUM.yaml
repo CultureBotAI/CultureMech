@@ -1,8 +1,8 @@
 name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
 original_name: CLOSTRIDIUM AMINOBUTYRICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 286
@@ -85,11 +85,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except sulfide), adjust pH to 7.2, bring medium
-    to the boil, then cool to room temperature under 100% N2 gas. Dispense medium
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
-    After sterilization add sulfide from a sterile anoxic stock solution prepared
-    under 100% N2 gas atmosphere.
+  description: Dissolve ingredients (except sulfide), adjust pH to 7.2, bring medium to the boil, then
+    cool to room temperature under 100% N2 gas. Dispense medium under same gas atmosphere into anoxic
+    Hungate-type tubes or serum vials and autoclave. After sterilization add sulfide from a sterile anoxic
+    stock solution prepared under 100% N2 gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

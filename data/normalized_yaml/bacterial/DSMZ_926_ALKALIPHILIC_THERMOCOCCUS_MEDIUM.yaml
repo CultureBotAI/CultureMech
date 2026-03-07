@@ -1,6 +1,6 @@
 name: ALKALIPHILIC THERMOCOCCUS MEDIUM
 original_name: ALKALIPHILIC THERMOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -181,18 +181,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Prepare the medium anaerobically under nitrogen. Do not adjust the
-    pH.
+  description: Prepare the medium anaerobically under nitrogen. Do not adjust the pH.
 - step_number: 2
   action: MIX
-  description: Prepare separate anaerobic stock solutions of, Casamino acids(10%),
-    Yeast extract (10%), and glycine (2M = 150 g/l). A 0.5M polysulphide solution
-    is prepared by dissolving 12.0 g Na2S x 9 H2O in oxygen free water, followed by
-    adding 1.6 g sulphur - the solution will be dark yellow.
+  description: Prepare separate anaerobic stock solutions of, Casamino acids(10%), Yeast extract (10%),
+    and glycine (2M = 150 g/l). A 0.5M polysulphide solution is prepared by dissolving 12.0 g Na2S x 9
+    H2O in oxygen free water, followed by adding 1.6 g sulphur - the solution will be dark yellow.
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

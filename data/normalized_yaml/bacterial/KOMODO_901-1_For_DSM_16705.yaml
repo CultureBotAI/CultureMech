@@ -1,6 +1,6 @@
 name: For DSM 16705
 original_name: For DSM 16705
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 3.5-3.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:901.1
     label: For DSM 16705
-notes: 'Source: KOMODO ModelSEED | ID: 901.1 | DSMZ Medium: 901 (mediadive.medium:901)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 901.1 | DSMZ Medium: 901 (mediadive.medium:901) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -213,5 +212,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.262536Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

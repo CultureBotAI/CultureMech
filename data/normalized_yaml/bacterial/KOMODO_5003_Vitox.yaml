@@ -1,6 +1,6 @@
 name: Vitox
 original_name: Vitox
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:5003
     label: Vitox
-notes: 'Source: KOMODO ModelSEED | ID: 5003 | DSMZ Medium: 5003 (mediadive.medium:5003)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5003 | DSMZ Medium: 5003 (mediadive.medium:5003) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

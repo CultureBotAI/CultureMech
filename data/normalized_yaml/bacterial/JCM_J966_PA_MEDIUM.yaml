@@ -1,6 +1,6 @@
 name: PA MEDIUM
 original_name: PA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -176,14 +176,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0. Distribute the medium
-    into culture vessels under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber
-    stoppers and autoclave. After cooling, add the following solution (per 960 ml)
-    from anaerobic stock (filter-sterilized)
+  description: Mix components thoroughly and adjust pH to 7.0. Distribute the medium into culture vessels
+    under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After cooling,
+    add the following solution (per 960 ml) from anaerobic stock (filter-sterilized)
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

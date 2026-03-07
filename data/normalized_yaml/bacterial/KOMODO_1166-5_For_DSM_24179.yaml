@@ -1,6 +1,6 @@
 name: For DSM 24179
 original_name: For DSM 24179
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1166.5
     label: For DSM 24179
-notes: 'Source: KOMODO ModelSEED | ID: 1166.5 | DSMZ Medium: 1166 (mediadive.medium:1166)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1166.5 | DSMZ Medium: 1166 (mediadive.medium:1166) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -251,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.460622Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

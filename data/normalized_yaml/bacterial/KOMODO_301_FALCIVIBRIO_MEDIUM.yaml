@@ -1,6 +1,6 @@
 name: FALCIVIBRIO MEDIUM
 original_name: FALCIVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:301
     label: FALCIVIBRIO MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 301 | DSMZ Medium: 301 (mediadive.medium:301)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 301 | DSMZ Medium: 301 (mediadive.medium:301) | Aerobic: Yes'
 ingredients:
 - preferred_term: Wilkins-Chalgren-Anaerobe-Broth
   concentration:

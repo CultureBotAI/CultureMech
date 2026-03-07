@@ -1,6 +1,6 @@
 name: Mineral solution (medium 212)
 original_name: Mineral solution (medium 212)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:4005
     label: Mineral solution (medium 212)
-notes: 'Source: KOMODO ModelSEED | ID: 4005 | DSMZ Medium: 4005 (mediadive.medium:4005)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 4005 | DSMZ Medium: 4005 (mediadive.medium:4005) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

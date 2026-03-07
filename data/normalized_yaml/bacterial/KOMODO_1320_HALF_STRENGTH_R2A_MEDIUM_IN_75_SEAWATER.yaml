@@ -1,15 +1,14 @@
 name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
 original_name: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1320
   term:
     id: komodo.medium:1320
     label: HALF STRENGTH R2A MEDIUM IN 75% SEAWATER
-notes: 'Source: KOMODO ModelSEED | ID: 1320 | DSMZ Medium: 1320 (mediadive.medium:1320)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1320 | DSMZ Medium: 1320 (mediadive.medium:1320) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

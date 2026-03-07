@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH DICHLOROMETHANE
 original_name: MINERAL MEDIUM WITH DICHLOROMETHANE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -111,24 +111,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare medium 465 (addition of 50 mg/l bromothymol blue as pH-indicator
-    is recommended) and autoclave. Grow the cells in medium 465 with methanol supplied
-    via incubation atmosphere (up to 10 ml methanol per liter medium). Incubate these
-    adapted cells in medium 465 and consecutively feed small amounts of dichloromethane
-    (toxic! 2 mmol per liter or less) via incubation atmosphere. Readjust pH of the
-    culture with sterile 1 M NaOH if necessary.
+  description: Prepare medium 465 (addition of 50 mg/l bromothymol blue as pH-indicator is recommended)
+    and autoclave. Grow the cells in medium 465 with methanol supplied via incubation atmosphere (up to
+    10 ml methanol per liter medium). Incubate these adapted cells in medium 465 and consecutively feed
+    small amounts of dichloromethane (toxic! 2 mmol per liter or less) via incubation atmosphere. Readjust
+    pH of the culture with sterile 1 M NaOH if necessary.
 - step_number: 2
   action: MIX
   description: pH 7.25
 - step_number: 3
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended
-    for the specific strain (e.g. medium 1, 220, 535 or 830). After this reactivation,
-    cultivate on mineral medium with the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in the complex medium recommended for the specific
+    strain (e.g. medium 1, 220, 535 or 830). After this reactivation, cultivate on mineral medium with
+    the appropriate carbon source.
 - step_number: 4
   action: ADJUST_PH
-  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2
-    N NaOH; then add other compounds.
+  description: First dissolve EDTA in distilled water and adjust pH to 7.0 using 2 N NaOH; then add other
+    compounds.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,11 +1,11 @@
 name: ACETOHALOBIUM medium
 original_name: ACETOHALOBIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.6-8.0
-notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 494 | DSMZ Medium: 494
-  (mediadive.medium:494) | Aerobic: Yes'
+notes: 'pH buffer: Na2CO3 | Source: KOMODO ModelSEED | ID: 494 | DSMZ Medium: 494 (mediadive.medium:494)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 494
   term:
@@ -269,5 +269,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.876364Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

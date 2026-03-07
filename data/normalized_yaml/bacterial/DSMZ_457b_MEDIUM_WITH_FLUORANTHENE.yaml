@@ -1,6 +1,6 @@
 name: MEDIUM WITH FLUORANTHENE
 original_name: MEDIUM WITH FLUORANTHENE
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -118,23 +118,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: "For DSM 7526, prepare medium 457 with 200 mg/l Tween 80. Prepare a\
-    \ solution of 2 g/l\r\nfluoranthene in acetone and filter sterilize using a cellulose\
-    \ filter membrane. Add 1 ml of\r\nthis stock solution to the sterilized culture\
-    \ flask. Let acetone evaporate. Add 20 ml\r\nmedium to the flask. Alternatively,\
-    \ the direct addition of about 1-2 mg fluoranthene to\r\nthe medium is possible."
+  description: "For DSM 7526, prepare medium 457 with 200 mg/l Tween 80. Prepare a solution of 2 g/l\r\
+    \nfluoranthene in acetone and filter sterilize using a cellulose filter membrane. Add 1 ml of\r\n\
+    this stock solution to the sterilized culture flask. Let acetone evaporate. Add 20 ml\r\nmedium to\
+    \ the flask. Alternatively, the direct addition of about 1-2 mg fluoranthene to\r\nthe medium is possible."
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.9.
 - step_number: 3
   action: AUTOCLAVE
-  description: Prepare a separate solution of the phosphates and autoclave separately.
-    Combine the two solutions after cooling.
+  description: Prepare a separate solution of the phosphates and autoclave separately. Combine the two
+    solutions after cooling.
 - step_number: 4
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium
-    1, 220 or 535). After this reactivation, cultivate in mineral medium 457 with
-    the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium 1, 220 or 535).
+    After this reactivation, cultivate in mineral medium 457 with the appropriate carbon source.
 applications:
 - Microbial cultivation
 curation_history:

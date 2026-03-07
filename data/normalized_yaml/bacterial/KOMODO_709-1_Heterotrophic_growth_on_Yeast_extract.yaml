@@ -1,11 +1,11 @@
 name: Heterotrophic growth on Yeast extract
 original_name: Heterotrophic growth on Yeast extract
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 709.1 | DSMZ Medium: 709
-  (mediadive.medium:709) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 709.1 | DSMZ Medium: 709 (mediadive.medium:709)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 709.1
   term:

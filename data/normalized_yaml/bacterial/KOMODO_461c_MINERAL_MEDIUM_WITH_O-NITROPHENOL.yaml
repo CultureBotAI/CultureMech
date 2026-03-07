@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH O-NITROPHENOL
 original_name: MINERAL MEDIUM WITH O-NITROPHENOL
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:461c
     label: MINERAL MEDIUM WITH O-NITROPHENOL
-notes: 'Source: KOMODO ModelSEED | ID: 461c | DSMZ Medium: 461c (mediadive.medium:461c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 461c | DSMZ Medium: 461c (mediadive.medium:461c) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

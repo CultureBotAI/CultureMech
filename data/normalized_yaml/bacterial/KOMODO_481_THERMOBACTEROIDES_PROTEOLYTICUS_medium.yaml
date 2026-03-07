@@ -1,6 +1,6 @@
 name: THERMOBACTEROIDES PROTEOLYTICUS medium
 original_name: THERMOBACTEROIDES PROTEOLYTICUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:481
     label: THERMOBACTEROIDES PROTEOLYTICUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 481 | DSMZ Medium: 481 (mediadive.medium:481)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 481 | DSMZ Medium: 481 (mediadive.medium:481) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:

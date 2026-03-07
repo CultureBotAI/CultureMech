@@ -1,6 +1,6 @@
 name: blood agar No 2 (Oxoid)
 original_name: blood agar No 2 (Oxoid)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.2-7.6
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:6004
     label: blood agar No 2 (Oxoid)
-notes: 'Source: KOMODO ModelSEED | ID: 6004 | DSMZ Medium: 6004 (mediadive.medium:6004)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 6004 | DSMZ Medium: 6004 (mediadive.medium:6004) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

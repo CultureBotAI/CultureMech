@@ -1,6 +1,6 @@
 name: SULFOBACILLUS DISULFIDOOXIDANS medium
 original_name: SULFOBACILLUS DISULFIDOOXIDANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.25
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:812
     label: SULFOBACILLUS DISULFIDOOXIDANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 812 | DSMZ Medium: 812 (mediadive.medium:812)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 812 | DSMZ Medium: 812 (mediadive.medium:812) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

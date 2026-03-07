@@ -1,15 +1,15 @@
 name: MEDIUM 125 MODIFIED FOR DSM 23675
 original_name: MEDIUM 125 MODIFIED FOR DSM 23675
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 125_23675
   term:
     id: komodo.medium:125_23675
     label: MEDIUM 125 MODIFIED FOR DSM 23675
-notes: 'Source: KOMODO ModelSEED | ID: 125_23675 | DSMZ Medium: 125 (mediadive.medium:125)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 125_23675 | DSMZ Medium: 125 (mediadive.medium:125) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KNO3
   term:

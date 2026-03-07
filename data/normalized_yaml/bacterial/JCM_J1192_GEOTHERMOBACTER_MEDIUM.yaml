@@ -1,6 +1,6 @@
 name: GEOTHERMOBACTER MEDIUM
 original_name: GEOTHERMOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -216,15 +216,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, distribute the medium in a culture bottle
-    under a H2-CO2 (4:1, v/v) gas stream, seal with a butyl rubber stopper and autoclave.
-    After cooling, aseptically and anaerobically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly, distribute the medium in a culture bottle under a H2-CO2 (4:1,
+    v/v) gas stream, seal with a butyl rubber stopper and autoclave. After cooling, aseptically and anaerobically
+    add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
-  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until
-    dissolved. Cool to an ambient temperature and adjust pH to 6.0 with 10 N NaOH
-    solution. Fill up to 100 ml with distilled water.
+  description: Mix 2.4 g iron(III) citrate and 90 ml distilled water, and boil until dissolved. Cool to
+    an ambient temperature and adjust pH to 6.0 with 10 N NaOH solution. Fill up to 100 ml with distilled
+    water.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THERMOCOCCUS PROFUNDUS medium
 original_name: THERMOCOCCUS PROFUNDUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:673
     label: THERMOCOCCUS PROFUNDUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 673 | DSMZ Medium: 673 (mediadive.medium:673)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 673 | DSMZ Medium: 673 (mediadive.medium:673) | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

@@ -1,6 +1,6 @@
 name: MEDIUM 944a MODIFIED FOR DSM 18852
 original_name: MEDIUM 944a MODIFIED FOR DSM 18852
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:944a_18852
     label: MEDIUM 944a MODIFIED FOR DSM 18852
-notes: 'Source: KOMODO ModelSEED | ID: 944a_18852 | DSMZ Medium: 944a (mediadive.medium:944a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 944a_18852 | DSMZ Medium: 944a (mediadive.medium:944a) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,6 +1,6 @@
 name: Modified Thermus SV Medium
 original_name: Modified Thermus SV Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: MODIFIED THERMUS MEDIUM WITH 3% NaCl (see Medium [M634])
   concentration:
     value: '1'

@@ -1,6 +1,6 @@
 name: METHANOCALCULUS ALKALIPHILUS MEDIUM
 original_name: METHANOCALCULUS ALKALIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -232,19 +232,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride and hydrogenphosphate, then sparge solution
-    with 100% N2 gas for at least 30 - 45 min to make it anoxic. Add and dissolve
-    hydrogencarbonate and carbonate while gassing the head space only, then dispense
-    under 100% N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and
-    autoclave. After autoclaving add ammonium chloride, magnesium sulfate, trace elements,
-    formate, acetate, yeast extract, vitamins and sulfide from sterile anoxic stock
-    solutions prepared under 100% N2 gas. Vitamins should be sterilized by filtration.
-    The pH of the complete medium should be 9.5.
+  description: Dissolve sodium chloride and hydrogenphosphate, then sparge solution with 100% N2 gas for
+    at least 30 - 45 min to make it anoxic. Add and dissolve hydrogencarbonate and carbonate while gassing
+    the head space only, then dispense under 100% N2 gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. After autoclaving add ammonium chloride, magnesium sulfate, trace elements,
+    formate, acetate, yeast extract, vitamins and sulfide from sterile anoxic stock solutions prepared
+    under 100% N2 gas. Vitamins should be sterilized by filtration. The pH of the complete medium should
+    be 9.5.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth at the beginning. For transfers use 5 - 10% inoculum.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
+    freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers
+    use 5 - 10% inoculum.'
 - step_number: 3
   action: MIX
   description: pH 3.0-4.0
@@ -258,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.897590Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

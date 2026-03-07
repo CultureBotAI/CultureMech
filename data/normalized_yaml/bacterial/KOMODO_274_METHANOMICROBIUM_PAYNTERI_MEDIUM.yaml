@@ -1,6 +1,6 @@
 name: METHANOMICROBIUM PAYNTERI MEDIUM
 original_name: METHANOMICROBIUM PAYNTERI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:274
     label: METHANOMICROBIUM PAYNTERI MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 274 | DSMZ Medium: 274 (mediadive.medium:274)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 274 | DSMZ Medium: 274 (mediadive.medium:274) | Aerobic: Yes'
 ingredients:
 - preferred_term: KCl
   term:
@@ -290,5 +289,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:24.357330Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

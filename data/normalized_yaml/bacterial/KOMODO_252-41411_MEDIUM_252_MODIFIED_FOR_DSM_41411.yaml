@@ -1,16 +1,16 @@
 name: MEDIUM 252 MODIFIED FOR DSM 41411
 original_name: MEDIUM 252 MODIFIED FOR DSM 41411
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 4.5
 media_term:
   preferred_term: KOMODO Medium 252_41411
   term:
     id: komodo.medium:252_41411
     label: MEDIUM 252 MODIFIED FOR DSM 41411
-notes: 'Source: KOMODO ModelSEED | ID: 252_41411 | DSMZ Medium: 252 (mediadive.medium:252)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 252_41411 | DSMZ Medium: 252 (mediadive.medium:252) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Starch
   term:

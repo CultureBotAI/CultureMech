@@ -1,6 +1,6 @@
 name: VULCANO LOW SALT MEDIUM
 original_name: VULCANO LOW SALT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.9
@@ -204,9 +204,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    gas atmosphere. After cooling, add the following solutions from anaerobic stocks
-    (autoclaved):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas atmosphere. After
+    cooling, add the following solutions from anaerobic stocks (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.8-4.0 with HCl.

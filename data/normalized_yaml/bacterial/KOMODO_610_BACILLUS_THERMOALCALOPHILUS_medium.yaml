@@ -1,6 +1,6 @@
 name: BACILLUS THERMOALCALOPHILUS medium
 original_name: BACILLUS THERMOALCALOPHILUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:610
     label: BACILLUS THERMOALCALOPHILUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 610 | DSMZ Medium: 610 (mediadive.medium:610)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 610 | DSMZ Medium: 610 (mediadive.medium:610) | Aerobic: No'
 ingredients:
 - preferred_term: Na-acetate
   term:

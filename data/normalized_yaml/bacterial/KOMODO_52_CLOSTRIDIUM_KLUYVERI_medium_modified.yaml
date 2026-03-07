@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM KLUYVERI medium (modified)
 original_name: CLOSTRIDIUM KLUYVERI medium (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:52
     label: CLOSTRIDIUM KLUYVERI medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 52 | DSMZ Medium: 52 (mediadive.medium:52)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 52 | DSMZ Medium: 52 (mediadive.medium:52) | Aerobic: Yes'
 ingredients:
 - preferred_term: K-acetate
   term:

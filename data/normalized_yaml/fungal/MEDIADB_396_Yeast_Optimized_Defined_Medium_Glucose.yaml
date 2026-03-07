@@ -1,6 +1,6 @@
 name: '''Yeast Optimized Defined Medium (Glucose'
 original_name: '''Yeast Optimized Defined Medium (Glucose'
-category: imported
+category: fungal
 medium_type: DEFINED
 physical_state: LIQUID
 ingredients:
@@ -184,8 +184,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:46.213499Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 396, Reference:
-    Mazumdar et al. (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 396, Reference: Mazumdar et al.
+    (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:44.237533Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -193,15 +193,13 @@ curation_history:
 - timestamp: '2026-02-06T05:10:56.923996Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 media_term:
   preferred_term: MediaDB Medium 396
   term:
     id: MEDIADB:396
     label: '''Yeast Optimized Defined Medium (Glucose'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
-  Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling

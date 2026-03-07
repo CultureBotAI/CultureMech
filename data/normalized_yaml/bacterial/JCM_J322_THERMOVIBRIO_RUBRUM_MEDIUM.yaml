@@ -1,6 +1,6 @@
 name: THERMOVIBRIO RUBRUM MEDIUM
 original_name: THERMOVIBRIO RUBRUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -119,14 +119,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except KNO3 and Na2S x 9H2O, adjust pH to 6.5 - 7.0
-    with H2SO4, and autoclave under a N2 atmosphere. Separately autoclave 10% KNO3
-    solution under a N2 atmosphere. Neutralize 5% Na2S x 9H2O solution, and autoclave
-    under a N2 atmosphere. Distribute the medium into culture vessels (e.g., 20 ml
-    of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas
-    mixture and seal with butyl rubber stoppers. Prior to inoculation, add the sterile
-    KNO3 and Na2S x 9H2O solutions, and readjust pH, if necessary. Pressurize the
-    inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
+  description: Mix ingredients, except KNO3 and Na2S x 9H2O, adjust pH to 6.5 - 7.0 with H2SO4, and autoclave
+    under a N2 atmosphere. Separately autoclave 10% KNO3 solution under a N2 atmosphere. Neutralize 5%
+    Na2S x 9H2O solution, and autoclave under a N2 atmosphere. Distribute the medium into culture vessels
+    (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture
+    and seal with butyl rubber stoppers. Prior to inoculation, add the sterile KNO3 and Na2S x 9H2O solutions,
+    and readjust pH, if necessary. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas
+    mixture.
 applications:
 - Microbial cultivation
 curation_history:

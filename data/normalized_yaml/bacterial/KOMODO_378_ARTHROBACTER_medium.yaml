@@ -1,6 +1,6 @@
 name: ARTHROBACTER medium
 original_name: ARTHROBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:378
     label: ARTHROBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 378 | DSMZ Medium: 378 (mediadive.medium:378)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 378 | DSMZ Medium: 378 (mediadive.medium:378) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

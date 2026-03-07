@@ -1,6 +1,6 @@
 name: STETTERIA MEDIUM
 original_name: STETTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -237,18 +237,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve ingredients except sulfur and sulfide, then sparge medium
-    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense
-    medium under same gas atmosphere into serum vials (e.g., 20 ml medium per 100
-    ml bottle) that contain already the appropriate amount of sulfur. After closing
-    pressurize bottles to 2 bar overpressure using 80% H2 and 20% CO2 gas mixture,
-    than heat at 100°C for 1.5 hours on each of 3 successive days. Before use add
-    sulfide from a sterile anoxic stock solution prepared under 100% N2 gas atmosphere.
-    Adjust pH of complete medium to 6.0, if necessary. Incubate without shaking.
+  description: Dissolve ingredients except sulfur and sulfide, then sparge medium with 80% N2 and 20%
+    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere into
+    serum vials (e.g., 20 ml medium per 100 ml bottle) that contain already the appropriate amount of
+    sulfur. After closing pressurize bottles to 2 bar overpressure using 80% H2 and 20% CO2 gas mixture,
+    than heat at 100°C for 1.5 hours on each of 3 successive days. Before use add sulfide from a sterile
+    anoxic stock solution prepared under 100% N2 gas atmosphere. Adjust pH of complete medium to 6.0,
+    if necessary. Incubate without shaking.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: PYG MEDIUM (G)
 original_name: PYG MEDIUM (G)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -110,8 +110,7 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume
-    to 100 ml.
+  description: Dissolve 50 mg hemin first in 1 ml of 1 N NaOH. Then adjust volume to 100 ml.
 applications:
 - Microbial cultivation
 curation_history:

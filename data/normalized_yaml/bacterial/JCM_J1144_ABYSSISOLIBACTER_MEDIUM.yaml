@@ -1,6 +1,6 @@
 name: ABYSSISOLIBACTER MEDIUM
 original_name: ABYSSISOLIBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -264,19 +264,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave under a
-    N2-CO2 (80:20, v/v) gas mixture. After cooling, add the following solutions (autoclaved
-    or *filter sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Autoclave under a N2-CO2 (80:20, v/v)
+    gas mixture. After cooling, add the following solutions (autoclaved or *filter sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically distribute the medium into culture vessels
-    (e.g., 20 ml in 60 ml serum bottles) under the same gas mixture and seal with
-    butyl rubber stoppers. Prior to use, reduce the medium by the addition of the
-    following solutions (per liter, autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically distribute the medium into culture vessels (e.g., 20 ml
+    in 60 ml serum bottles) under the same gas mixture and seal with butyl rubber stoppers. Prior to use,
+    reduce the medium by the addition of the following solutions (per liter, autoclaved and stored under
+    a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

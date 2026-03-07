@@ -1,6 +1,6 @@
 name: CALDIMICROBIUM THIODISMUTANS MEDIUM
 original_name: CALDIMICROBIUM THIODISMUTANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-8
@@ -211,28 +211,25 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonate, pyrosulfite and vitamins),
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under same gas atmosphere into Hungate-type tubes or
-    serum vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution adjusted
-    to pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration.
-    Vitamins are added from a stock solution prepared under 100% N2 gas atmosphere
-    and sterilized by filtration and carbonate is added from a sterile stock solution
-    prepared under 80% N2 and 20% CO2 gas atmosphere. Adjust pH of complete medium
-    to 7.5 - 8.0. Incubate without shaking.
+  description: Dissolve ingredients (except carbonate, pyrosulfite and vitamins), then sparge medium with
+    80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same gas atmosphere
+    into Hungate-type tubes or serum vials and autoclave. Add pyrosulfite from a 10% (w/v) stock solution
+    adjusted to pH 7.5-8.0 with NaOH, made anoxic with 100% N2 gas and sterilized by filtration. Vitamins
+    are added from a stock solution prepared under 100% N2 gas atmosphere and sterilized by filtration
+    and carbonate is added from a sterile stock solution prepared under 80% N2 and 20% CO2 gas atmosphere.
+    Adjust pH of complete medium to 7.5 - 8.0. Incubate without shaking.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l)
-    with 10% (w/v) NaOH to pH 8.0-8.5 under agitation (use magnetic stirrer). Total
-    amount of added NaOH approx. 80 - 100 ml. The precipitated Fe(OH)3 should be stored
-    at room temperature overnight with surface covered with water. Thereafter, centrifuge
-    at 2000 rpm for 5 min and discard the supernatant. Wash several times with distilled
-    water. Resuspend the pellet in medium as described above. For storage autoclave
-    under 100% N2 atmosphere.
+  description: Slowly titrate 320 ml of a FeCl3 x 6 H2O stock solution (60.00 g/l) with 10% (w/v) NaOH
+    to pH 8.0-8.5 under agitation (use magnetic stirrer). Total amount of added NaOH approx. 80 - 100
+    ml. The precipitated Fe(OH)3 should be stored at room temperature overnight with surface covered with
+    water. Thereafter, centrifuge at 2000 rpm for 5 min and discard the supernatant. Wash several times
+    with distilled water. Resuspend the pellet in medium as described above. For storage autoclave under
+    100% N2 atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

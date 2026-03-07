@@ -1,6 +1,6 @@
 name: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
 original_name: CHOPPED MEAT MEDIUM WITH CARBOHYDRATES
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 461 with 0.4% glucose, 0.1% cellobiose, 0.1% maltose
-    and 0.1% soluble starch.
+  description: Use Medium No. 461 with 0.4% glucose, 0.1% cellobiose, 0.1% maltose and 0.1% soluble starch.
 applications:
 - Microbial cultivation
 curation_history:

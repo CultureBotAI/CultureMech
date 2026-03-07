@@ -1,6 +1,6 @@
 name: Brain–heart infusion (BHI) broth supplemented with haemin and NAD
 original_name: Brain–heart infusion (BHI) broth supplemented with haemin and NAD
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: Growth factor; Properties: Defined component, Simple component, Organic compound'
 - preferred_term: Brain–heart infusion (BHI) broth
   concentration:
     value: '1'

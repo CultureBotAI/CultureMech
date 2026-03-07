@@ -1,6 +1,6 @@
 name: ANAEROBACULUM THERMOTERRENUM medium
 original_name: ANAEROBACULUM THERMOTERRENUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:104a
     label: ANAEROBACULUM THERMOTERRENUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 104a | DSMZ Medium: 104a (mediadive.medium:104a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 104a | DSMZ Medium: 104a (mediadive.medium:104a) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase peptone
   concentration:

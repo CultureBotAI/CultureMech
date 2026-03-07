@@ -1,6 +1,6 @@
 name: DESULFOSPOROSINUS ACIDODURANS MEDIUM
 original_name: DESULFOSPOROSINUS ACIDODURANS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -221,16 +221,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil for a few seconds and cool
-    down under a N2-CO2 (4:1, v/v) gas mixture. Distribute the medium into culture
-    vessels (e.g., 5.0 ml in Hungate tubes) under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. After cooling, add per liter the following
-    solutions from anaerobic stocks (autoclaved or *filter-sterilized and stored under
+  description: 'Mix components thoroughly, bring to a boil for a few seconds and cool down under a N2-CO2
+    (4:1, v/v) gas mixture. Distribute the medium into culture vessels (e.g., 5.0 ml in Hungate tubes)
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, add per
+    liter the following solutions from anaerobic stocks (autoclaved or *filter-sterilized and stored under
     a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: 'Comment: For JCM 32882 and JCM 32883, add per liter 10.0 g iron powder
-    in the medium. Then, adjust final pH of the medium to 2.5.'
+  description: 'Comment: For JCM 32882 and JCM 32883, add per liter 10.0 g iron powder in the medium.
+    Then, adjust final pH of the medium to 2.5.'
 applications:
 - Microbial cultivation
 curation_history:

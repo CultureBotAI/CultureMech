@@ -1,6 +1,6 @@
 name: PFENNIG'S MEDIUM III
 original_name: PFENNIG'S MEDIUM III
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -161,17 +161,16 @@ preparation_steps:
   description: Adjust pH to 6.0.
 - step_number: 2
   action: COOL
-  description: Mix solution D, C and E in the cotton-stoppered Erlenmeyer flask. Bubble
-    with CO2 in an ice bath under sterile conditions (5-10 min).
+  description: Mix solution D, C and E in the cotton-stoppered Erlenmeyer flask. Bubble with CO2 in an
+    ice bath under sterile conditions (5-10 min).
 - step_number: 3
   action: MIX
-  description: Fill 50 ml of the mixed solution (C,D,E) into each 100 ml bottle of
-    solution A (for a total volume of approx. 96 ml).
+  description: Fill 50 ml of the mixed solution (C,D,E) into each 100 ml bottle of solution A (for a total
+    volume of approx. 96 ml).
 - step_number: 4
   action: MIX
-  description: Before using, add 2,6 ml solution B (Na2S x 9 H2O), 0.1 ml solution
-    F (Vitamin B12) and 1 ml of solution G (2,5% Ammonium-acetate and Magnesium-acetate)
-    to each 100ml bottle.
+  description: Before using, add 2,6 ml solution B (Na2S x 9 H2O), 0.1 ml solution F (Vitamin B12) and
+    1 ml of solution G (2,5% Ammonium-acetate and Magnesium-acetate) to each 100ml bottle.
 - step_number: 5
   action: FILTER_STERILIZE
   description: Adjust the pH with filter-sterilised 1M Na2CO3 to 7.1-7.3.
@@ -180,27 +179,24 @@ preparation_steps:
   description: Fill in sterile, N2 gassed screw-cap tubes under N2 gas.
 - step_number: 7
   action: MIX
-  description: For the growth of DSM 11081 feed the culture with neutralized sulfide
-    feeding solution regularly (approx. every 3 days). 0,5-1 ml/ 100 mL
+  description: For the growth of DSM 11081 feed the culture with neutralized sulfide feeding solution
+    regularly (approx. every 3 days). 0,5-1 ml/ 100 mL
 - step_number: 8
   action: AUTOCLAVE
-  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave
-    at 121°C for 15 min.
+  description: Fill 10x 46ml in 100 ml screw-cap bottles. Bubble with N2/CO2 and autoclave at 121°C for
+    15 min.
 - step_number: 9
   action: AUTOCLAVE
-  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close
-    tightly and autoclave.
+  description: Prepare in a screw-cap bottle, bubble with N2 to replace air, close tightly and autoclave.
 - step_number: 10
   action: FILTER_STERILIZE
-  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml
-    screw-cap bottle.
+  description: Bubble with CO2 and filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
 - step_number: 11
   action: AUTOCLAVE
-  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube
-    for medium, connected to a glass outlet at the bottom of the vessel and has, at
-    the other end, a silicon rubber tube with a pinch cock and a bell for aseptic
-    dispensing of the medium into bottles. Cool to room temperature under an atmosphere
-    of N2/CO2 in an ice bath (10-15 min).
+  description: Autoclave in a cotton-stoppered Erlenmeyer flask with an outlet tube for medium, connected
+    to a glass outlet at the bottom of the vessel and has, at the other end, a silicon rubber tube with
+    a pinch cock and a bell for aseptic dispensing of the medium into bottles. Cool to room temperature
+    under an atmosphere of N2/CO2 in an ice bath (10-15 min).
 - step_number: 12
   action: FILTER_STERILIZE
   description: Filter sterilize into sterile, gas-tight, 100 ml screw-cap bottle.
@@ -212,11 +208,10 @@ preparation_steps:
   description: Autoclave at 121°C for 15 min.
 - step_number: 15
   action: AUTOCLAVE
-  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with
-    a butyl rubber septum and a magnetic stirrer. The solution is bubbled with nitrogen
-    gas, closed and autoclaved for 15 min. at 121°C. After cooling to room temperature
-    the pH is adjusted to about 7.0 by adding of sterile 2 M H2SO4 drop-wise with
-    a syringe without opening the bottle.
+  description: The sulfide solution is prepared in a 250 ml screw-capped bottle with a butyl rubber septum
+    and a magnetic stirrer. The solution is bubbled with nitrogen gas, closed and autoclaved for 15 min.
+    at 121°C. After cooling to room temperature the pH is adjusted to about 7.0 by adding of sterile 2
+    M H2SO4 drop-wise with a syringe without opening the bottle.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: AE BROTH
 original_name: AE BROTH
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -42,8 +42,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except acetic acid and ethanol, and autoclave. Aseptically
-    add acetic acid and ethanol to the medium. Unadjusted pH will be about 2.9.
+  description: Mix ingredients, except acetic acid and ethanol, and autoclave. Aseptically add acetic
+    acid and ethanol to the medium. Unadjusted pH will be about 2.9.
 applications:
 - Microbial cultivation
 curation_history:

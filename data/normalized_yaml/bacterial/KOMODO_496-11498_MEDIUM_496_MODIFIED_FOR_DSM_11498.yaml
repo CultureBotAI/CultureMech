@@ -1,6 +1,6 @@
 name: MEDIUM 496 MODIFIED FOR DSM 11498
 original_name: MEDIUM 496 MODIFIED FOR DSM 11498
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:496_11498
     label: MEDIUM 496 MODIFIED FOR DSM 11498
-notes: 'Source: KOMODO ModelSEED | ID: 496_11498 | DSMZ Medium: 496 (mediadive.medium:496)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 496_11498 | DSMZ Medium: 496 (mediadive.medium:496) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -250,5 +250,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:41.602727Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

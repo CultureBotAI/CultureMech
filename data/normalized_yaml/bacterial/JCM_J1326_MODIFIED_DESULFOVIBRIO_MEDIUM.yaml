@@ -1,6 +1,6 @@
 name: MODIFIED DESULFOVIBRIO MEDIUM
 original_name: MODIFIED DESULFOVIBRIO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -237,11 +237,10 @@ preparation_steps:
   description: 'SolutionC:'
 - step_number: 4
   action: AUTOCLAVE
-  description: Dissolve ingredients of each solution in the appropriate amount of
-    distilled water. Bring solution A to a boil and cool down to room temperature
-    under a N2 gas stream. Add solutions Band C to the medium, then, adjust pH to
-    7.3 with NaOH. While swirling the medium, dispense into culture vessels under
-    a N2 gas stream, seal with butyl rubber stoppers and autoclave.
+  description: Dissolve ingredients of each solution in the appropriate amount of distilled water. Bring
+    solution A to a boil and cool down to room temperature under a N2 gas stream. Add solutions Band C
+    to the medium, then, adjust pH to 7.3 with NaOH. While swirling the medium, dispense into culture
+    vessels under a N2 gas stream, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

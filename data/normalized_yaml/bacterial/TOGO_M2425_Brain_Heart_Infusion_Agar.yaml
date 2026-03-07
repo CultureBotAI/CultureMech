@@ -1,15 +1,14 @@
 name: Brain Heart Infusion Agar
 original_name: Brain Heart Infusion Agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: DI Water
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Heart Infusion Agar (BD 211065)
   concentration:
     value: '52'

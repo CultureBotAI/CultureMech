@@ -1,8 +1,8 @@
 name: MSV-THIOTRIX-MEDIUM
 original_name: MSV-THIOTRIX-MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: DSMZ Medium 841
@@ -163,8 +163,8 @@ preparation_steps:
   description: NaHCO3 2.625 g per 50 ml distilled water
 - step_number: 4
   action: AUTOCLAVE
-  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II shortly,
-    before inoculation of bacterial culture.
+  description: Autoclave for 20 min. at 121°C and add 8 ml/l sterile solution II shortly, before inoculation
+    of bacterial culture.
 - step_number: 5
   action: MIX
   description: H3P-vitamine solution (see medium 428)

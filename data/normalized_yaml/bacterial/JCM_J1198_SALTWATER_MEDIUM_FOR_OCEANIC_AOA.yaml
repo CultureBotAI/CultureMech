@@ -1,6 +1,6 @@
 name: SALTWATER MEDIUM FOR OCEANIC AOA
 original_name: SALTWATER MEDIUM FOR OCEANIC AOA
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -143,24 +143,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. After cooling, aseptically
-    add the following solutions (autoclaved or *filter-sterilized) in the given order:'
+  description: 'Mix components thoroughly and autoclave. After cooling, aseptically add the following
+    solutions (autoclaved or *filter-sterilized) in the given order:'
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Check pH of the medium to be 7.2. Prior to use, add per liter 1.0 ml
-    catalase solution (5-10 units/ml, filter-sterilized, freshly prepared) to the
-    medium.
+  description: Check pH of the medium to be 7.2. Prior to use, add per liter 1.0 ml catalase solution
+    (5-10 units/ml, filter-sterilized, freshly prepared) to the medium.
 - step_number: 3
   action: MIX
-  description: Use glass or polystyrene containers for cultivation. Cultivate in the
-    dark without shaking.
+  description: Use glass or polystyrene containers for cultivation. Cultivate in the dark without shaking.
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve NaOH in 300 ml distilled water. While stirring vigorously,
-    slowly add HEPES until completely dissolved. Fill up to 450 ml with distilled
-    water. If 1 ml of this solution is added to 100ml of the medium (containing all
-    additive but HEPES), pH should be around 7.6 at 30C. Otherwise, adjust pH of the
-    HEPES solution with 10 N NaOH or conc. HCl. Finally fill up to 500 ml with distilled
+  description: Dissolve NaOH in 300 ml distilled water. While stirring vigorously, slowly add HEPES until
+    completely dissolved. Fill up to 450 ml with distilled water. If 1 ml of this solution is added to
+    100ml of the medium (containing all additive but HEPES), pH should be around 7.6 at 30C. Otherwise,
+    adjust pH of the HEPES solution with 10 N NaOH or conc. HCl. Finally fill up to 500 ml with distilled
     water.
 applications:
 - Microbial cultivation

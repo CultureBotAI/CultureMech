@@ -1,15 +1,14 @@
 name: CASMAN-MEDIUM
 original_name: CASMAN-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 439
   term:
     id: komodo.medium:439
     label: CASMAN-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 439 | DSMZ Medium: 439 (mediadive.medium:439)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 439 | DSMZ Medium: 439 (mediadive.medium:439) | Aerobic: No'
 ingredients:
 - preferred_term: Casman-Agar-Base
   concentration:

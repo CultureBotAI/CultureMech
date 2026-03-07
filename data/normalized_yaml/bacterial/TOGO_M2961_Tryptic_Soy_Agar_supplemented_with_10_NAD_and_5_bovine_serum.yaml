@@ -1,15 +1,14 @@
 name: Tryptic Soy Agar (supplemented with 10 % NAD and 5% bovine serum)
 original_name: Tryptic Soy Agar (supplemented with 10 % NAD and 5% bovine serum)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: nicotinamide adenine dinucleotide (NAD)
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: Growth factor; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: bovine serum
   concentration:
     value: '5'

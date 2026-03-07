@@ -1,8 +1,8 @@
 name: HALOBACTERIA MEDIUM
 original_name: HALOBACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 372

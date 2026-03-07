@@ -1,6 +1,6 @@
 name: MEDIUM 135 MODIFIED FOR DSM 7417
 original_name: MEDIUM 135 MODIFIED FOR DSM 7417
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:135_7417
     label: MEDIUM 135 MODIFIED FOR DSM 7417
-notes: 'Source: KOMODO ModelSEED | ID: 135_7417 | DSMZ Medium: 135 (mediadive.medium:135)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 135_7417 | DSMZ Medium: 135 (mediadive.medium:135) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -272,5 +271,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:47.090209Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

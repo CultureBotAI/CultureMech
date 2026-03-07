@@ -1,16 +1,15 @@
 name: SPORULATION-AGAR (SA)
 original_name: SPORULATION-AGAR (SA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 555
   term:
     id: komodo.medium:555
     label: SPORULATION-AGAR (SA)
-notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 555 | DSMZ Medium: 555 (mediadive.medium:555) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

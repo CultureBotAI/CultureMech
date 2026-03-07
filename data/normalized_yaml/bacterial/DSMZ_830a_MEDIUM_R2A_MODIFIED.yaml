@@ -1,8 +1,8 @@
 name: MEDIUM R2A MODIFIED
 original_name: MEDIUM R2A MODIFIED
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 830a
@@ -71,9 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding
-    agar. Add agar, heat medium to boiling to dissolve agar, and autoclave for 15
-    min at 121°C.
+  description: Final pH 7.2; adjust with crystalline K2HPO4 or KH2PO4 before adding agar. Add agar, heat
+    medium to boiling to dissolve agar, and autoclave for 15 min at 121°C.
 applications:
 - Microbial cultivation
 curation_history:

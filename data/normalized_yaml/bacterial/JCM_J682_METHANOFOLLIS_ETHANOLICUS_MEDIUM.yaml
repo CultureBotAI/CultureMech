@@ -1,6 +1,6 @@
 name: METHANOFOLLIS ETHANOLICUS MEDIUM
 original_name: METHANOFOLLIS ETHANOLICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -217,25 +217,22 @@ preparation_steps:
   description: 'Solution A:'
 - step_number: 2
   action: ADJUST_PH
-  description: Mix components, except NaHCO3, and adjust pH to 6.5. Bring to a boil
-    for 5-10 sec., then, cool down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3
-    to the solution. Dispense 0.9 volume of the medium into culture vessels (e.g.,
-    18 ml of the medium in 50 ml serum bottle) under a stream of N2-CO2 (80:20, v/v)
-    and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight.
+  description: Mix components, except NaHCO3, and adjust pH to 6.5. Bring to a boil for 5-10 sec., then,
+    cool down under a stream of N2-CO2 (80:20, v/v) and add NaHCO3 to the solution. Dispense 0.9 volume
+    of the medium into culture vessels (e.g., 18 ml of the medium in 50 ml serum bottle) under a stream
+    of N2-CO2 (80:20, v/v) and seal with butyl rubber stoppers. After autoclaving, stand the medium overnight.
 - step_number: 3
   action: MIX
   description: 'Solution B:'
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.0 and filter-sterilize. Keep the solution under a N2
-    atmosphere.
+  description: Adjust pH to 7.0 and filter-sterilize. Keep the solution under a N2 atmosphere.
 - step_number: 5
   action: AUTOCLAVE
-  description: To complete the medium, add 0.1 volume of solution B to the culture
-    vessels containing solution A. Prior to inoculation, aseptically and anaerobically
-    add 0.01 volume of L-cysteine x HCl x H2O and Na2S x 9H2O solutions to the medium
-    (3% solutions, autoclaved and stored under a N2 atmosphere). Incubate with a 10%
-    inoculum.
+  description: To complete the medium, add 0.1 volume of solution B to the culture vessels containing
+    solution A. Prior to inoculation, aseptically and anaerobically add 0.01 volume of L-cysteine x HCl
+    x H2O and Na2S x 9H2O solutions to the medium (3% solutions, autoclaved and stored under a N2 atmosphere).
+    Incubate with a 10% inoculum.
 applications:
 - Microbial cultivation
 curation_history:

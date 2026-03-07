@@ -1,6 +1,6 @@
 name: R3 medium
 original_name: R3 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:966
     label: R3 medium
-notes: 'Source: KOMODO ModelSEED | ID: 966 | DSMZ Medium: 966 (mediadive.medium:966)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 966 | DSMZ Medium: 966 (mediadive.medium:966) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

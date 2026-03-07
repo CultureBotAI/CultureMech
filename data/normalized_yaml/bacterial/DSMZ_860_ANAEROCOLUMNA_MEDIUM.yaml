@@ -1,6 +1,6 @@
 name: ANAEROCOLUMNA MEDIUM
 original_name: ANAEROCOLUMNA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7-7.2
@@ -162,17 +162,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, fructose, cysteine and sulfide,
-    then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Dispense medium under the same gas atmosphere into anoxic Hungate-type
-    tubes or serum vials and autoclave. Add fructose, cysteine and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to
-    use adjust pH of complete medium to 7.0 - 7.2, if necessary.
+  description: Dissolve ingredients except carbonate, fructose, cysteine and sulfide, then sparge medium
+    with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under the same
+    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add fructose, cysteine
+    and sulfide from sterile anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
+    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Prior to use adjust pH of complete
+    medium to 7.0 - 7.2, if necessary.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:

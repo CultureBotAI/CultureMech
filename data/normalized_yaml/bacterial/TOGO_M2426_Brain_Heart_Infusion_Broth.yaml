@@ -1,6 +1,6 @@
 name: Brain Heart Infusion Broth
 original_name: Brain Heart Infusion Broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
 - preferred_term: Brain Heart Infusion Broth (BD 237500)
   concentration:
     value: '37'

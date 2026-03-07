@@ -1,6 +1,6 @@
 name: MEDIUM 461 MODIFIED FOR DSM 11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
 original_name: MEDIUM 461 MODIFIED FOR DSM 11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:461_11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
     label: MEDIUM 461 MODIFIED FOR DSM 11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
-notes: 'Source: KOMODO ModelSEED | ID: 461_11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol
-  | DSMZ Medium: 461 (mediadive.medium:461) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 461_11853_replace_2,4-dichlorophenol_with_2,6-dichlorophenol |
+  DSMZ Medium: 461 (mediadive.medium:461) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

@@ -1,6 +1,6 @@
 name: IGNISPHAERA MEDIUM
 original_name: IGNISPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -124,13 +124,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 6.5 and autoclave under a
-    N2 atmosphere. After cooling, add per liter the following solution (autoclaved
-    and stored under a N2 atmosphere):'
+  description: 'Mix components thoroughly, adjust pH to 6.5 and autoclave under a N2 atmosphere. After
+    cooling, add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: DISSOLVE
-  description: Dissolve at 1,000-fold concentration in acidified water (0.5 ml concentrated
-    H2SO4 per liter), then dilute.
+  description: Dissolve at 1,000-fold concentration in acidified water (0.5 ml concentrated H2SO4 per
+    liter), then dilute.
 applications:
 - Microbial cultivation
 curation_history:

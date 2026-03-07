@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM ACETOBUTYLICUM medium
 original_name: CLOSTRIDIUM ACETOBUTYLICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:411
     label: CLOSTRIDIUM ACETOBUTYLICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 411 | DSMZ Medium: 411 (mediadive.medium:411)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 411 | DSMZ Medium: 411 (mediadive.medium:411) | Aerobic: Yes'
 ingredients:
 - preferred_term: Potato
   concentration:

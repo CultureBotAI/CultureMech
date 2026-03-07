@@ -1,6 +1,6 @@
 name: MOLLICUTES MZ-XQ MEDIUM
 original_name: MOLLICUTES MZ-XQ MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -225,11 +225,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down
-    under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels
-    (e.g., 20 ml medium in 60 ml serum bottles) under the same gas mixture, seal with
-    butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically
-    add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components and adjust pH to 7.5. Bring to a boil and cool down under a N2-CO2 (4:1,
+    v/v) gas stream. Distribute the medium into culture vessels (e.g., 20 ml medium in 60 ml serum bottles)
+    under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, aseptically
+    and anaerobically add per liter the following solutions (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: nutrient-rich A medium
 original_name: nutrient-rich A medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -17,8 +16,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: yeast extract
   concentration:
     value: '2'
@@ -28,8 +26,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -37,8 +34,7 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -46,8 +42,7 @@ ingredients:
   concentration:
     value: '6'
     unit: MG_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: biotin
   concentration:
     value: '0.2'
@@ -60,8 +55,7 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -69,8 +63,7 @@ ingredients:
   concentration:
     value: '4.2'
     unit: MG_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
-    Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
 - preferred_term: thiamine
   concentration:
     value: '0.2'
@@ -83,20 +76,17 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component, Simple component'
 - preferred_term: kanamycin (if needed)
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component, Simple component'
 - preferred_term: glucose
   concentration:
     value: '4'
     unit: PERCENT_W_V
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -104,8 +94,7 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Organic compound, Defined component, Simple component'
 - preferred_term: casamino acid
   concentration:
     value: '7'

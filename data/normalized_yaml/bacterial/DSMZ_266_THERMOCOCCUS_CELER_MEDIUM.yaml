@@ -1,6 +1,6 @@
 name: THERMOCOCCUS CELER MEDIUM
 original_name: THERMOCOCCUS CELER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.8
@@ -123,10 +123,9 @@ preparation_steps:
   description: Adjust final pH to 5.8.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under 100% nitrogen. The following
-    constituents are prepared separately and added to the autoclaved mineral salt
-    solution: Yeast extract (20 ml of 10% w/v solution)-boiled for a few minutes not
-    autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
+  description: 'Prepare the medium anaerobically under 100% nitrogen. The following constituents are prepared
+    separately and added to the autoclaved mineral salt solution: Yeast extract (20 ml of 10% w/v solution)-boiled
+    for a few minutes not autoclaved; sulfur (10 g)-sterilized by steaming for 3 h on each of three successive
     days; Na2S x 9 H2O (10 ml of 3% w/v solution)-autoclaved under nitrogen atmosphere.'
 applications:
 - Microbial cultivation

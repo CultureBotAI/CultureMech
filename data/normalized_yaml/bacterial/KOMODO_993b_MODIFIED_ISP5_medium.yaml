@@ -1,16 +1,15 @@
 name: MODIFIED ISP5 medium
 original_name: MODIFIED ISP5 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 993b
   term:
     id: komodo.medium:993b
     label: MODIFIED ISP5 medium
-notes: 'Source: KOMODO ModelSEED | ID: 993b | DSMZ Medium: 993b (mediadive.medium:993b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 993b | DSMZ Medium: 993b (mediadive.medium:993b) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

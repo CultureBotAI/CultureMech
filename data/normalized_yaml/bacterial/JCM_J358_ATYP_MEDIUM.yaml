@@ -1,6 +1,6 @@
 name: ATYP MEDIUM
 original_name: ATYP MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -186,8 +186,7 @@ preparation_steps:
   description: Adjust pH to 6.9.
 - step_number: 2
   action: MIX
-  description: Separately sterilize vitamin solution VA by filtration, and aseptically
-    add to the medium.
+  description: Separately sterilize vitamin solution VA by filtration, and aseptically add to the medium.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 2 - 3 with HCl.

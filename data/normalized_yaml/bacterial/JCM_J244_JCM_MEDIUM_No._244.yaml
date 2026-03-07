@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 244
 original_name: JCM MEDIUM No. 244
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -243,18 +243,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.0
-    with H2SO4. Sterilize the medium by filtration. Steam sulfur for 3 hr on each
-    of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution, and autoclave under
-    a N2 atmosphere. Distribute the medium and sulfur into culture vessels (e.g.,
-    20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v)
-    gas mixture and seal with butyl rubber stoppers. Prior to inoculation, add the
-    sterile Na2S x 9H2O solution, and readjust pH to 6.0 with sterile 1 N H2SO4. Pressurize
-    the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
+  description: Mix ingredients, except sulfur and Na2S x 9H2O, and adjust pH to 6.0 with H2SO4. Sterilize
+    the medium by filtration. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O
+    as a 5% solution, and autoclave under a N2 atmosphere. Distribute the medium and sulfur into culture
+    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2 (4:1, v/v) gas
+    mixture and seal with butyl rubber stoppers. Prior to inoculation, add the sterile Na2S x 9H2O solution,
+    and readjust pH to 6.0 with sterile 1 N H2SO4. Pressurize the inoculated bottles to 200 kPa H2-CO2
+    (4:1, v/v).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

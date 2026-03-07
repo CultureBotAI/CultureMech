@@ -1,6 +1,6 @@
 name: 480G MEDIUM
 original_name: 480G MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -119,8 +119,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Autoclave under a N2 gas atmosphere. After cooling, add per liter
-    the following solution (autoclaved and stored under a N2 gas atmosphere):'
+  description: 'Autoclave under a N2 gas atmosphere. After cooling, add per liter the following solution
+    (autoclaved and stored under a N2 gas atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: JCM MEDIUM No. 623
 original_name: JCM MEDIUM No. 623
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: JCM Medium J623
@@ -60,8 +60,7 @@ preparation_steps:
   description: Adjust pH to 7.4.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Solutions A and B and mix them aseptically. Adjust
-    pH to 7.4, if necessary.
+  description: Separately autoclave Solutions A and B and mix them aseptically. Adjust pH to 7.4, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

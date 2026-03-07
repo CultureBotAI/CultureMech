@@ -1,6 +1,6 @@
 name: GYE - medium
 original_name: GYE - medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:572
     label: GYE - medium
-notes: 'Source: KOMODO ModelSEED | ID: 572 | DSMZ Medium: 572 (mediadive.medium:572)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 572 | DSMZ Medium: 572 (mediadive.medium:572) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

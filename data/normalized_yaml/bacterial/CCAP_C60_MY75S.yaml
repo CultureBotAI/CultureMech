@@ -1,8 +1,8 @@
 name: MY75S
 original_name: MY75S
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: CCAP Medium C60
   term:
@@ -32,10 +32,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and\
-    \ dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
-    \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for\
-    \ 15 minutes."
+  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and dissolve the malt\
+    \ extract\r\nand yeast extract using a magnetic stirrer. Cool slightly then add the agar and shake\
+    \ to\r\ndisperse. Autoclave at 15 psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:

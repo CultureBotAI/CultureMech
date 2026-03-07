@@ -1,6 +1,6 @@
 name: MRS supplemented with 0.05% cysteine
 original_name: MRS supplemented with 0.05% cysteine
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '0.05'
     unit: PERCENT_W_V
-  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Organic compound, Simple component'
   term:
     id: CHEBI:15356
     label: Cysteine

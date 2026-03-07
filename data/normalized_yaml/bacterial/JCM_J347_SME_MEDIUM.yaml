@@ -1,6 +1,6 @@
 name: SME MEDIUM
 original_name: SME MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.5
@@ -123,15 +123,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O, and
-    autoclave. Separately autoclave 10% (w/v) yeast extract solution, and 5% Na2S
-    x 9H2O solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
-    days. Distribute the medium into culture vessels (e.g., 20 ml of the medium in
-    120 ml serum bottles) containing sulfur under a stream of H2-CO2 (4:1, v/v) gas
-    mixture, add the yeast extract solution, and seal with butyl rubber stoppers.
-    Prior to inoculation, add the sterile Na2S x 9H2O solution, and adjust pH to 5.5
-    with sterile 1 N H2SO4. Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1,
-    v/v) gas mixture.
+  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O, and autoclave. Separately
+    autoclave 10% (w/v) yeast extract solution, and 5% Na2S x 9H2O solution under a N2 atmosphere. Steam
+    sulfur for 3 hr on each of 3 successive days. Distribute the medium into culture vessels (e.g., 20
+    ml of the medium in 120 ml serum bottles) containing sulfur under a stream of H2-CO2 (4:1, v/v) gas
+    mixture, add the yeast extract solution, and seal with butyl rubber stoppers. Prior to inoculation,
+    add the sterile Na2S x 9H2O solution, and adjust pH to 5.5 with sterile 1 N H2SO4. Pressurize the
+    inoculated bottles to 200 kPa H2-CO2 (4:1, v/v) gas mixture.
 applications:
 - Microbial cultivation
 curation_history:

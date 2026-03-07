@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M1623
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,7 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Simple component, Defined component, Organic
-    compound'
+  notes: 'Role: pH indicator; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:31991
     label: Phenol red
@@ -31,8 +29,7 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:16467
     label: L-arginine
@@ -50,7 +47,7 @@ media_term:
   preferred_term: TOGO Medium M1623
   term:
     id: TOGO:M1623
-    label: (Unnamed medium)
+    label: TOGO Medium M1623
 notes: 'Source: https://togomedium.org/medium/M1623
 
   Original source: NBRC - NBRC_M823

@@ -1,6 +1,6 @@
 name: MQ116 MEDIUM
 original_name: MQ116 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -167,16 +167,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 7.0. Distribute the medium
-    into culture vessels (e.g., 20 ml medium in 60 ml serum bottle) under a N2 gas
-    atmosphere, seal with butyl rubber stoppers and autoclave.After cooling, aseptically
-    and anaerobically add per liter the following solutions (autoclaved and stored
-    under N2)
+  description: Mix components thoroughly and adjust pH to 7.0. Distribute the medium into culture vessels
+    (e.g., 20 ml medium in 60 ml serum bottle) under a N2 gas atmosphere, seal with butyl rubber stoppers
+    and autoclave.After cooling, aseptically and anaerobically add per liter the following solutions (autoclaved
+    and stored under N2)
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and
-    adjust pH to 6.5 with KOH. Then add the remaining salts and bring volume to 1.0
-    L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water and adjust pH to 6.5
+    with KOH. Then add the remaining salts and bring volume to 1.0 L. Readjust pH to 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

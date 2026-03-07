@@ -1,8 +1,8 @@
 name: DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM
 original_name: DICHOTOMICROBIUM THERMOHALOPHILUM MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.2
 media_term:
   preferred_term: DSMZ Medium 590
@@ -180,13 +180,12 @@ preparation_steps:
   description: Agar at a concentration of 18 g/l is added for solid media.
 - step_number: 3
   action: AUTOCLAVE
-  description: "Prepare an 8% solution of NaHCO3 in half full 100ml serum bottles\
-    \ closed with a rubber\r\nseptum and autoclave. Add 28.4 ml of the sterile 8%\
-    \ solution of NaHCO3 (2.822g/l) per\r\nlitre of the sterile, cooled medium."
+  description: "Prepare an 8% solution of NaHCO3 in half full 100ml serum bottles closed with a rubber\r\
+    \nseptum and autoclave. Add 28.4 ml of the sterile 8% solution of NaHCO3 (2.822g/l) per\r\nlitre of\
+    \ the sterile, cooled medium."
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add NaHCO3 from a filter-sterilized stock solution when the medium
-    has cooled.
+  description: Add NaHCO3 from a filter-sterilized stock solution when the medium has cooled.
 - step_number: 5
   action: DISSOLVE
   description: Dissolve the nitrilotriacetic acid.
@@ -201,8 +200,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 9
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

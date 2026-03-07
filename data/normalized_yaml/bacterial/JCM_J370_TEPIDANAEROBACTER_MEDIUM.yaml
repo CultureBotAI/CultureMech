@@ -1,6 +1,6 @@
 name: TEPIDANAEROBACTER MEDIUM
 original_name: TEPIDANAEROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,13 +18,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 284 supplemented with final 2.3 g yeast extract in Solution
-    A (per 900 ml), and with 2.2 g sucrose in Solution B (per 100 ml) instead of sodium
-    pyruvate.
+  description: Use Medium No. 284 supplemented with final 2.3 g yeast extract in Solution A (per 900 ml),
+    and with 2.2 g sucrose in Solution B (per 100 ml) instead of sodium pyruvate.
 - step_number: 2
   action: MIX
-  description: 'Comment: For strains JCM 12098, 12099 and 12100, incubate with a 10%
-    inoculum.'
+  description: 'Comment: For strains JCM 12098, 12099 and 12100, incubate with a 10% inoculum.'
 applications:
 - Microbial cultivation
 curation_history:

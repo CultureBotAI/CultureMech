@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM SWELLFUNIANUM MEDIUM
 original_name: CLOSTRIDIUM SWELLFUNIANUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -228,15 +228,14 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prepare the medium anaerobically under a N2-CO2 (4:1, v/v) gas mixture.
-    Distribute the medium into culture vessels (e.g., 5.0 ml in Hungate tubes) under
-    the same gas mixture, seal with butyl rubber stoppers and autoclave. After autoclaving,
-    add per 5.0 ml the following solutions from anaerobic stocks (autoclaved or *filter-sterilized
-    and stored under a N2 atmosphere):'
+  description: 'Prepare the medium anaerobically under a N2-CO2 (4:1, v/v) gas mixture. Distribute the
+    medium into culture vessels (e.g., 5.0 ml in Hungate tubes) under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. After autoclaving, add per 5.0 ml the following solutions from
+    anaerobic stocks (autoclaved or *filter-sterilized and stored under a N2 atmosphere):'
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: MEDIUM WITH BIPHENYL
 original_name: MEDIUM WITH BIPHENYL
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457d
   term:
     id: komodo.medium:457d
     label: MEDIUM WITH BIPHENYL
-notes: 'Source: KOMODO ModelSEED | ID: 457d | DSMZ Medium: 457d (mediadive.medium:457d)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457d | DSMZ Medium: 457d (mediadive.medium:457d) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

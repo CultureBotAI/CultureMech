@@ -1,6 +1,6 @@
-name: (Unnamed medium)
+name: TOGO Medium M1537
 original_name: (Unnamed medium)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -22,8 +21,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
-    compound, Simple component'
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -31,8 +30,7 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -40,8 +38,7 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Simple component, Defined component'
 - preferred_term: Soil extract*
   concentration:
     value: '100'
@@ -51,7 +48,7 @@ media_term:
   preferred_term: TOGO Medium M1537
   term:
     id: TOGO:M1537
-    label: (Unnamed medium)
+    label: TOGO Medium M1537
 notes: 'Source: https://togomedium.org/medium/M1537
 
   Original source: NBRC - NBRC_M328

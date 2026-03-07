@@ -1,6 +1,6 @@
 name: THERMOTOGA ELFII medium
 original_name: THERMOTOGA ELFII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:664
     label: THERMOTOGA ELFII medium
-notes: 'Source: KOMODO ModelSEED | ID: 664 | DSMZ Medium: 664 (mediadive.medium:664)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 664 | DSMZ Medium: 664 (mediadive.medium:664) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

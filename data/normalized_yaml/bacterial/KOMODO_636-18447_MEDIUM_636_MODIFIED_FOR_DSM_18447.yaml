@@ -1,15 +1,15 @@
 name: MEDIUM 636 MODIFIED FOR DSM 18447
 original_name: MEDIUM 636 MODIFIED FOR DSM 18447
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 636_18447
   term:
     id: komodo.medium:636_18447
     label: MEDIUM 636 MODIFIED FOR DSM 18447
-notes: 'Source: KOMODO ModelSEED | ID: 636_18447 | DSMZ Medium: 636 (mediadive.medium:636)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 636_18447 | DSMZ Medium: 636 (mediadive.medium:636) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

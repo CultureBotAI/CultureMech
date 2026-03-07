@@ -1,8 +1,8 @@
 name: DG18 Dichloran 18 % Glycerol agar
 original_name: DG18 Dichloran 18 % Glycerol agar
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.6
 media_term:
   preferred_term: DSMZ Medium 1775
@@ -40,8 +40,8 @@ preparation_steps:
 applications:
 - Microbial cultivation
 references:
-- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen,
-    B. (2019). Food and indoor fungi. Westerdijk Fungal Biodiversity Institute.
+- reference: Samson, R. A., Houbraken, J., Thrane, U., Frisvad, J. C., & Andersen, B. (2019). Food and
+    indoor fungi. Westerdijk Fungal Biodiversity Institute.
 curation_history:
 - timestamp: '2026-01-26T17:53:15.450393Z'
   curator: mediadive-import

@@ -1,8 +1,8 @@
 name: SH SEAWATER MEDIUM
 original_name: SH SEAWATER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.5-8.5
 media_term:
   preferred_term: DSMZ Medium 1282
@@ -279,9 +279,8 @@ preparation_steps:
   description: pH 7.5 - 8.5
 - step_number: 2
   action: AUTOCLAVE
-  description: To solid media add 15.0 g/l agar. Add the vitamin solution (filter
-    sterilized) and the NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved,
-    cooled medium.
+  description: To solid media add 15.0 g/l agar. Add the vitamin solution (filter sterilized) and the
+    NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved, cooled medium.
 applications:
 - Microbial cultivation
 curation_history:

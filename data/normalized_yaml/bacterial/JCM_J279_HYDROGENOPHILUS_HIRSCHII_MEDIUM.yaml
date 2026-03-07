@@ -1,6 +1,6 @@
 name: HYDROGENOPHILUS HIRSCHII MEDIUM
 original_name: HYDROGENOPHILUS HIRSCHII MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -172,14 +172,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.0 with H2SO4. Distribute 20 ml of medium into 120 ml
-    serum bottles under a stream of a H2-CO2 (4:1, v/v) gas mixture and seal with
-    butyl rubber stoppers. Autoclave and stand the bottles overnight. Add 15 ml filter-sterilized
-    air and pressurize the gas phase to 200 kPa with a H2-CO2 (4:1, v/v) gas mixture.
+  description: Adjust pH to 7.0 with H2SO4. Distribute 20 ml of medium into 120 ml serum bottles under
+    a stream of a H2-CO2 (4:1, v/v) gas mixture and seal with butyl rubber stoppers. Autoclave and stand
+    the bottles overnight. Add 15 ml filter-sterilized air and pressurize the gas phase to 200 kPa with
+    a H2-CO2 (4:1, v/v) gas mixture.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

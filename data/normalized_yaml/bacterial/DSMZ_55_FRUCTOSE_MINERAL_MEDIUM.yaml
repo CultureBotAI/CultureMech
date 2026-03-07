@@ -1,8 +1,8 @@
 name: FRUCTOSE MINERAL MEDIUM
 original_name: FRUCTOSE MINERAL MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 55
   term:
@@ -119,8 +119,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately, filter sterilize solution C.
-    Add 1.5% agar if necessary.
+  description: Autoclave solutions A and B separately, filter sterilize solution C. Add 1.5% agar if necessary.
 applications:
 - Microbial cultivation
 curation_history:

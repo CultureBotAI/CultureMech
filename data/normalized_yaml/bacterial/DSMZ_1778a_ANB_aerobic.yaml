@@ -1,6 +1,6 @@
 name: ANB aerobic
 original_name: ANB aerobic
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -205,8 +205,8 @@ preparation_steps:
   description: 'After autoclaving, add the following sterile solutions:'
 - step_number: 6
   action: ALIQUOT
-  description: Mix well and aliquot into the desired volumes and flasks or tubes (e.g.,
-    20 ml in 100 ml flasks).
+  description: Mix well and aliquot into the desired volumes and flasks or tubes (e.g., 20 ml in 100 ml
+    flasks).
 - step_number: 7
   action: ADJUST_PH
   description: Adjust pH to 3.0-4.0 with HCl.
@@ -232,5 +232,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.277921Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

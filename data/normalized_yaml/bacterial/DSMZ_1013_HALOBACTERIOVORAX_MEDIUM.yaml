@@ -1,6 +1,6 @@
 name: HALOBACTERIOVORAX MEDIUM
 original_name: HALOBACTERIOVORAX MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.5-8
@@ -295,26 +295,24 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix ingredients and adjust pH of the final solution to 7.5 - 8.0. Sterilize
-    by autoclaving at 121°C for 20 min. Grow prey bacterium (DSM 15416) on agar plates
-    using medium 514. For 50 ml prey medium suspension use one agar plate incubated
-    for 24 hours and wash off grown cells in 3 - 5 ml medium. The prey medium suspension
-    should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells. Inoculate the complete
-    medium immediately after preparation and incubate the suspension with shaking
-    until a decrease in turbidity is visible.
+  description: Mix ingredients and adjust pH of the final solution to 7.5 - 8.0. Sterilize by autoclaving
+    at 121°C for 20 min. Grow prey bacterium (DSM 15416) on agar plates using medium 514. For 50 ml prey
+    medium suspension use one agar plate incubated for 24 hours and wash off grown cells in 3 - 5 ml medium.
+    The prey medium suspension should contain approx. 10<sup>7</sup> to 10<sup>9</sup> cells. Inoculate
+    the complete medium immediately after preparation and incubate the suspension with shaking until a
+    decrease in turbidity is visible.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: HEAT
-  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium
-    from Difco add 37.40 g to 1 litre water.
+  description: Final pH should be 7.6 ± 0.2 at 25°C. If using the complete medium from Difco add 37.40
+    g to 1 litre water.
 - step_number: 4
   action: MIX
-  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other
-    brands (even if they refer to Difco2216) have not been tested and might not support
-    growth for some strains.'
+  description: 'Note: M.514 refers to Bacto Marine Broth Difco 2216 (BD 279110). Other brands (even if
+    they refer to Difco2216) have not been tested and might not support growth for some strains.'
 applications:
 - Microbial cultivation
 curation_history:

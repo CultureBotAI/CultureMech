@@ -1,6 +1,6 @@
 name: CALDICELLULOSIRUPTOR MEDIUM WITH 2.5% NaCl
 original_name: CALDICELLULOSIRUPTOR MEDIUM WITH 2.5% NaCl
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -158,13 +158,12 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: MIX
-  description: Prepare medium anaerobically under 100% N2. Add cellobiose after autoclaving
-    from an anoxic stock solution prepared under N2 gas atmosphere and sterilized
-    by filtration.
+  description: Prepare medium anaerobically under 100% N2. Add cellobiose after autoclaving from an anoxic
+    stock solution prepared under N2 gas atmosphere and sterilized by filtration.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water
-    and add the remaining salts.
+  description: Dissolve FeCl2 x 4H2O first in HCl. Then dilute in distilled water and add the remaining
+    salts.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THIOPHAEOCOCCUS MEDIUM
 original_name: THIOPHAEOCOCCUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -154,8 +154,8 @@ preparation_steps:
   description: Adjust pH to 7.5.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized vitamin B12, NaHCO3, Na2S
-    x 9H2O and Na2S2O3 x 5H2O solutions to the medium.
+  description: After autoclaving, add filter-sterilized vitamin B12, NaHCO3, Na2S x 9H2O and Na2S2O3 x
+    5H2O solutions to the medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: METHANOGENIUM BOURGENSE medium
 original_name: METHANOGENIUM BOURGENSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.7-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:332
     label: METHANOGENIUM BOURGENSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 332 | DSMZ Medium: 332 (mediadive.medium:332)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 332 | DSMZ Medium: 332 (mediadive.medium:332) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

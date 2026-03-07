@@ -1,6 +1,6 @@
 name: MODIFIED BALCH'S METHANOGENS MEDIUM
 original_name: MODIFIED BALCH'S METHANOGENS MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,9 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 242 supplemented with 20 ml/L Fatty acid mixture (see
-    Medium No. 266) and 1 ml/L coenzyme M solution (0.01% 2-mercaptoethanesulfonic
-    acid, filter-sterilized).
+  description: Use Medium No. 242 supplemented with 20 ml/L Fatty acid mixture (see Medium No. 266) and
+    1 ml/L coenzyme M solution (0.01% 2-mercaptoethanesulfonic acid, filter-sterilized).
 applications:
 - Microbial cultivation
 curation_history:

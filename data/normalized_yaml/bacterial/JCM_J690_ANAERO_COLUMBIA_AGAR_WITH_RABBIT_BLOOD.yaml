@@ -1,6 +1,6 @@
 name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
 original_name: ANAERO COLUMBIA AGAR WITH RABBIT BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use commercially available product [Anaero Columbia agar with rabbit
-    blood (BD-BBL)].
+  description: Use commercially available product [Anaero Columbia agar with rabbit blood (BD-BBL)].
 applications:
 - Microbial cultivation
 curation_history:

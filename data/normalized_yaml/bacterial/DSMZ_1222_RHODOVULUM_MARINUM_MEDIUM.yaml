@@ -1,6 +1,6 @@
 name: RHODOVULUM MARINUM MEDIUM
 original_name: RHODOVULUM MARINUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -123,10 +123,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium under a nitrogen atmosphere, dispense into tubes
-    or bottles fitted with rubber stoppers so that they are half full. Add the vitamin
-    B12 from a filter-sterilised stock solution. Either sorbitol or sodium pyruvate
-    may serve as the carbon source. The final pH of the medium should be 6.8.
+  description: Prepare the medium under a nitrogen atmosphere, dispense into tubes or bottles fitted with
+    rubber stoppers so that they are half full. Add the vitamin B12 from a filter-sterilised stock solution.
+    Either sorbitol or sodium pyruvate may serve as the carbon source. The final pH of the medium should
+    be 6.8.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 6.8.

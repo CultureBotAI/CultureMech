@@ -1,11 +1,11 @@
 name: Autotrophic growth on ferrous sulfate
 original_name: Autotrophic growth on ferrous sulfate
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.7
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 709.2 | DSMZ Medium: 709
-  (mediadive.medium:709) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 709.2 | DSMZ Medium: 709 (mediadive.medium:709)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 709.2
   term:

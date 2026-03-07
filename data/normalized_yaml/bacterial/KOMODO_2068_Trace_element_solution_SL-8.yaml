@@ -1,6 +1,6 @@
 name: Trace element solution SL-8
 original_name: Trace element solution SL-8
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2068
     label: Trace element solution SL-8
-notes: 'Source: KOMODO ModelSEED | ID: 2068 | DSMZ Medium: 2068 (mediadive.medium:2068)
-  | Aerobic: Yes | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2068 | DSMZ Medium: 2068 (mediadive.medium:2068) | Aerobic: Yes
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

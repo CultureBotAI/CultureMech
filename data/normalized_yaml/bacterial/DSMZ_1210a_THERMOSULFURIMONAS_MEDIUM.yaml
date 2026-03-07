@@ -1,6 +1,6 @@
 name: THERMOSULFURIMONAS MEDIUM
 original_name: THERMOSULFURIMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.5-6.8
@@ -236,19 +236,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, hydrogenphosphate, vitamins,
-    acetate, thiosulfate and yeast extract, then sparge medium with 80% H2 and 20%
-    CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium under same
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
-    hydrogenphosphate, vitamins, acetate, thiosulfate and yeast extract from sterile
-    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile
-    anoxic stock solution prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions
-    of thiosulfate and vitamins should be sterilized by filtration. The pH of the
-    complete medium should be at 6.5 - 6.8.
+  description: Dissolve ingredients except carbonate, hydrogenphosphate, vitamins, acetate, thiosulfate
+    and yeast extract, then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
+    it anoxic. Dispense medium under same gas atmosphere into anoxic Hungate-type tubes or serum vials
+    and autoclave. Add hydrogenphosphate, vitamins, acetate, thiosulfate and yeast extract from sterile
+    anoxic stock solutions prepared under 100% N2 gas and carbonate from a sterile anoxic stock solution
+    prepared under 80% N2 and 20% CO2 gas mixture. Stock solutions of thiosulfate and vitamins should
+    be sterilized by filtration. The pH of the complete medium should be at 6.5 - 6.8.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -259,5 +257,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:19.600149Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

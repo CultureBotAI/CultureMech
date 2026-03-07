@@ -1,6 +1,6 @@
 name: ALKALINE CLOSTRIDIAL NUTRIENT MEDIUM
 original_name: ALKALINE CLOSTRIDIAL NUTRIENT MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -84,11 +84,10 @@ preparation_steps:
   description: 'Solution B:'
 - step_number: 4
   action: AUTOCLAVE
-  description: Separately autoclave Solutions A and B, and combine after cooling.
-    Cultivate under a static culture condition or a N2 atmosphere. For preparation
-    of solid medium, add 10.0 g gellan gum in Solution A (900 ml). After autoclaving,
-    mix the two solutions while being hot (60 to 70 C) and pour into test tubes or
-    petri dishes.
+  description: Separately autoclave Solutions A and B, and combine after cooling. Cultivate under a static
+    culture condition or a N2 atmosphere. For preparation of solid medium, add 10.0 g gellan gum in Solution
+    A (900 ml). After autoclaving, mix the two solutions while being hot (60 to 70 C) and pour into test
+    tubes or petri dishes.
 applications:
 - Microbial cultivation
 curation_history:

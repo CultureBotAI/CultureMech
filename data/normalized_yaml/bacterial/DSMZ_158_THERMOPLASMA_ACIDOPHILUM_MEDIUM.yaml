@@ -1,6 +1,6 @@
 name: THERMOPLASMA ACIDOPHILUM MEDIUM
 original_name: THERMOPLASMA ACIDOPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 1.0
@@ -106,9 +106,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 1.0 with 1 N H2SO4. Stock solutions of yeast extract (10%
-    w/v) and glucose (50% w/v) in water are sterilized separately by autoclaving and
-    thereafter added to the sterile mineral salt medium.
+  description: Adjust pH to 1.0 with 1 N H2SO4. Stock solutions of yeast extract (10% w/v) and glucose
+    (50% w/v) in water are sterilized separately by autoclaving and thereafter added to the sterile mineral
+    salt medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: MARINOMONAS VAGA medium
 original_name: MARINOMONAS VAGA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 617
   term:
     id: komodo.medium:617
     label: MARINOMONAS VAGA medium
-notes: 'Source: KOMODO ModelSEED | ID: 617 | DSMZ Medium: 617 (mediadive.medium:617)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 617 | DSMZ Medium: 617 (mediadive.medium:617) | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:

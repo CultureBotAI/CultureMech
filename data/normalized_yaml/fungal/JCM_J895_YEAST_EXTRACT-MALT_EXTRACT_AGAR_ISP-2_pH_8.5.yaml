@@ -1,6 +1,6 @@
 name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)
 original_name: YEAST EXTRACT-MALT EXTRACT AGAR (ISP-2) (pH 8.5)
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43).
-    After autoclaving, adjust pH to 8.5 with sterilized 10% Na2CO3 solution.
+  description: Prepare Yeast extract-malt extract agar (ISP-2) (see Medium No. 43). After autoclaving,
+    adjust pH to 8.5 with sterilized 10% Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:

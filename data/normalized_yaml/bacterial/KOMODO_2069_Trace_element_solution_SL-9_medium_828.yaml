@@ -1,6 +1,6 @@
 name: Trace element solution SL-9 (medium 828)
 original_name: Trace element solution SL-9 (medium 828)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2069
     label: Trace element solution SL-9 (medium 828)
-notes: 'Source: KOMODO ModelSEED | ID: 2069 | DSMZ Medium: 2069 (mediadive.medium:2069)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2069 | DSMZ Medium: 2069 (mediadive.medium:2069) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

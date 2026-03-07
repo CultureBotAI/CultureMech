@@ -1,12 +1,12 @@
 name: '404'
 original_name: '404'
-category: imported
+category: bacterial
 description: 404. NBRC 403.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: "K2HPO40.5gKH2PO40.6gMgSO4\xB77H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium\
-    \ glutamate6gAgar (if needed)15gDistilled water1LpH 6.7\xB10.2"
+- preferred_term: K2HPO40.5gKH2PO40.6gMgSO4·7H2O0.2gNaCl0.1gCaCO33gYeast extract0.6gArabinose4gSodium
+    glutamate6gAgar (if needed)15gDistilled water1LpH 6.7±0.2
 - preferred_term: ''
   concentration:
     value: K2HPO4
@@ -17,7 +17,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "MgSO4\xB77H2O"
+    value: MgSO4·7H2O
     unit: G_PER_L
 - preferred_term: ''
   concentration:
@@ -49,7 +49,7 @@ ingredients:
     unit: G_PER_L
 - preferred_term: ''
   concentration:
-    value: "pH 6.7\xB10.2"
+    value: pH 6.7±0.2
     unit: G_PER_L
 preparation_steps:
 - step_number: 1

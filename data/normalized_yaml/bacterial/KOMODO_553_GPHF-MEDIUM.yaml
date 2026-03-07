@@ -1,16 +1,15 @@
 name: GPHF-MEDIUM
 original_name: GPHF-MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: KOMODO Medium 553
   term:
     id: komodo.medium:553
     label: GPHF-MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 553 | DSMZ Medium: 553 (mediadive.medium:553)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 553 | DSMZ Medium: 553 (mediadive.medium:553) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

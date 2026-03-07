@@ -1,8 +1,8 @@
 name: MIURA MEDIUM (LCA)
 original_name: MIURA MEDIUM (LCA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J343
   term:

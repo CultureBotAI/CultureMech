@@ -1,6 +1,6 @@
 name: NATRONINCOLA HISTIDINOVORANS medium
 original_name: NATRONINCOLA HISTIDINOVORANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:930
     label: NATRONINCOLA HISTIDINOVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 930 | DSMZ Medium: 930 (mediadive.medium:930)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 930 | DSMZ Medium: 930 (mediadive.medium:930) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -265,5 +264,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:40.895906Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

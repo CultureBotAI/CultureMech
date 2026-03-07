@@ -1,8 +1,8 @@
 name: BL WITH 0.5% MALTOSE
 original_name: BL WITH 0.5% MALTOSE
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J418
   term:

@@ -1,8 +1,8 @@
 name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
 original_name: COLUMBIA AGAR WITH 5% SHEEP BLOOD
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 1331
@@ -66,8 +66,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: DISSOLVE
-  description: 1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat
-    to boiling to dissolve completely.
+  description: 1. Suspend 44 g Columbia Blood Agar Base in 1l deionized water. Heat to boiling to dissolve
+    completely.
 - step_number: 2
   action: HEAT
   description: 2. Sterilize by autoclaving for 15 min at 121°C.
@@ -76,12 +76,10 @@ preparation_steps:
   description: 3. Cool to 45°C. Add 5% sterile defibrinated sheep blood and mix well.
 - step_number: 4
   action: STORE
-  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see
-    below).
+  description: Rehydrate pellets of freeze-dried ampoules in liquid medium 220 (see below).
 - step_number: 5
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    Cm131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid Cm131).
 applications:
 - Microbial cultivation
 curation_history:

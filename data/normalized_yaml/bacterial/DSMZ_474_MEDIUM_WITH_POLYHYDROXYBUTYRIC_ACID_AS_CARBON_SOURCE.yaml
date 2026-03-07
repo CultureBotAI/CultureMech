@@ -1,8 +1,8 @@
 name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
 original_name: MEDIUM WITH POLYHYDROXYBUTYRIC ACID AS CARBON SOURCE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 474
   term:
@@ -171,37 +171,33 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Prepare a suspension of 3.0 g poly-ß-hydroxybutyric acid (PHB) in
-    100 ml distilled water, stir over night and sonicate until a white homogenous
-    suspension is obtained. Autoclave for 5 minutes at 121°C. Prepare double layer
-    agar plates. First layer: medium 457 with 16.0 g agar per l.'
+  description: 'Prepare a suspension of 3.0 g poly-ß-hydroxybutyric acid (PHB) in 100 ml distilled water,
+    stir over night and sonicate until a white homogenous suspension is obtained. Autoclave for 5 minutes
+    at 121°C. Prepare double layer agar plates. First layer: medium 457 with 16.0 g agar per l.'
 - step_number: 2
   action: MIX
-  description: 'Second layer: medium 457 with agar, supplemented with 6.6 ml sterile
-    PHB-suspension per 100 ml.'
+  description: 'Second layer: medium 457 with agar, supplemented with 6.6 ml sterile PHB-suspension per
+    100 ml.'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 6.9.
 - step_number: 4
   action: AUTOCLAVE
-  description: Prepare a separate solution of the phosphates and autoclave separately.
-    Combine the two solutions after cooling.
+  description: Prepare a separate solution of the phosphates and autoclave separately. Combine the two
+    solutions after cooling.
 - step_number: 5
   action: MIX
-  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium
-    1, 220 or 535). After this reactivation, cultivate in mineral medium 457 with
-    the appropriate carbon source.
+  description: Rehydrate and cultivate lyophilized cells in complex medium (e.g. medium 1, 220 or 535).
+    After this reactivation, cultivate in mineral medium 457 with the appropriate carbon source.
 - step_number: 6
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 7
   action: MIX
-  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended
-    for sporulation.
+  description: For Bacillus strains the addition of 10.0 mg MnSO4 x H2O is recommended for sporulation.
 - step_number: 8
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
-    CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
 - step_number: 9
   action: MIX
   description: pH 7.3

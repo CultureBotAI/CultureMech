@@ -1,6 +1,6 @@
 name: NATRONOLIMNOBIUS AHT32 MEDIUM (B)
 original_name: NATRONOLIMNOBIUS AHT32 MEDIUM (B)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -87,13 +87,13 @@ preparation_steps:
   description: 'Aseptically add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: MIX
-  description: Distribute the medium into culture vessels, replace the gas phase with
-    N2 containing 5% O2 (by vol.), and seal with butyl rubber stoppers.
+  description: Distribute the medium into culture vessels, replace the gas phase with N2 containing 5%
+    O2 (by vol.), and seal with butyl rubber stoppers.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Autoclave
-    and let it stand for three days. Decant the clear solution into another empty
-    sterile bottle. Aseptically add per liter the following solutions (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Autoclave and let it stand
+    for three days. Decant the clear solution into another empty sterile bottle. Aseptically add per liter
+    the following solutions (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:

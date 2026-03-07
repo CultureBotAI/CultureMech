@@ -1,8 +1,8 @@
 name: TAP WATER YEAST EXTRACT MEDIUM (TWYE)
 original_name: TAP WATER YEAST EXTRACT MEDIUM (TWYE)
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 1625
   term:

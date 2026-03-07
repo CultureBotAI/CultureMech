@@ -1,8 +1,8 @@
 name: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
 original_name: BRAIN HEART INFUSION AGAR WITH SOIL EXTRACT
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J342
   term:
@@ -24,9 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave
-    at 121C for 1 hr. Use the clear supernatant after sedimentation for a few hours
-    and centrifugation.
+  description: Suspend 400 g of air-dried garden soil in 1.0 L of tap water and autoclave at 121C for
+    1 hr. Use the clear supernatant after sedimentation for a few hours and centrifugation.
 applications:
 - Microbial cultivation
 curation_history:

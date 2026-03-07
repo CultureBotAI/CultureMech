@@ -1,6 +1,6 @@
 name: JCM MEDIUM No. 335
 original_name: JCM MEDIUM No. 335
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.5
@@ -241,9 +241,8 @@ preparation_steps:
   description: Adjust pH to 5.5. Fill the gas phase with H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water,
-    and adjust pH to 6.5 with KOH. Then add the remaining salts and adjust volume
-    to 1.0 L. Readjust pH to 7.0 with KOH.
+  description: Dissolve nitrilotriacetic acid first in 200 ml of distilled water, and adjust pH to 6.5
+    with KOH. Then add the remaining salts and adjust volume to 1.0 L. Readjust pH to 7.0 with KOH.
 - step_number: 3
   action: MIX
   description: 'Comment: For strain JCM 10134, incubate with a 10-20% inoculum.'

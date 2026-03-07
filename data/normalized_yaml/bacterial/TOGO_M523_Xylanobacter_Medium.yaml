@@ -1,8 +1,8 @@
 name: Xylanobacter Medium
 original_name: Xylanobacter Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: PY4S agar (see Medium [M357])
   concentration:

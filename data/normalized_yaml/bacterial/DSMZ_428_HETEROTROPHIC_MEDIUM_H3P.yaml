@@ -1,8 +1,8 @@
 name: HETEROTROPHIC MEDIUM H3P
 original_name: HETEROTROPHIC MEDIUM H3P
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 428
@@ -236,14 +236,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: H3P is a heterotrophic medium for growth, purity checking and isolation
-    of a broad spectrum of aerobic bacteria (Ref. 3367).
+  description: H3P is a heterotrophic medium for growth, purity checking and isolation of a broad spectrum
+    of aerobic bacteria (Ref. 3367).
 - step_number: 2
   action: AUTOCLAVE
-  description: Solutions A, B, C and D are autoclaved separately for 15 min at 121°C,
-    cooled down to 50°C and then mixed aseptically with filter-sterilized solution
-    E (at 50°C) and 5.0 ml of standard vitamin solution. The final pH of this medium
-    should be 6.8 without adjustment.
+  description: Solutions A, B, C and D are autoclaved separately for 15 min at 121°C, cooled down to 50°C
+    and then mixed aseptically with filter-sterilized solution E (at 50°C) and 5.0 ml of standard vitamin
+    solution. The final pH of this medium should be 6.8 without adjustment.
 - step_number: 3
   action: MIX
   description: pH 7.0

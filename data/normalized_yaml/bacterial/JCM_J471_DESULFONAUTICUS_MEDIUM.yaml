@@ -1,6 +1,6 @@
 name: DESULFONAUTICUS MEDIUM
 original_name: DESULFONAUTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,11 +18,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Use Medium No. 383, replacing sodium lactate with 0.7 g/L sodium acetate
-    and 2.0 g/L yeast extract. Prepare the medium under a H2-CO2 (4:1, v/v) gas atmosphere
-    and reduce the medium with final 0.1 g/L Na2S x 9H2O and 0.03 g/L sodium dithionite
-    (filter-sterilized, prepare the solution just before use). Pressurize the inoculated
-    culture vessels to 100 kPa H2-CO2 (4:1, v/v).
+  description: Use Medium No. 383, replacing sodium lactate with 0.7 g/L sodium acetate and 2.0 g/L yeast
+    extract. Prepare the medium under a H2-CO2 (4:1, v/v) gas atmosphere and reduce the medium with final
+    0.1 g/L Na2S x 9H2O and 0.03 g/L sodium dithionite (filter-sterilized, prepare the solution just before
+    use). Pressurize the inoculated culture vessels to 100 kPa H2-CO2 (4:1, v/v).
 applications:
 - Microbial cultivation
 curation_history:

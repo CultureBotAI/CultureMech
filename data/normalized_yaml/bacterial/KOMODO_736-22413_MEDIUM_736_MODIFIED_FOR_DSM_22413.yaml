@@ -1,15 +1,15 @@
 name: MEDIUM 736 MODIFIED FOR DSM 22413
 original_name: MEDIUM 736 MODIFIED FOR DSM 22413
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 736_22413
   term:
     id: komodo.medium:736_22413
     label: MEDIUM 736 MODIFIED FOR DSM 22413
-notes: 'Source: KOMODO ModelSEED | ID: 736_22413 | DSMZ Medium: 736 (mediadive.medium:736)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 736_22413 | DSMZ Medium: 736 (mediadive.medium:736) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

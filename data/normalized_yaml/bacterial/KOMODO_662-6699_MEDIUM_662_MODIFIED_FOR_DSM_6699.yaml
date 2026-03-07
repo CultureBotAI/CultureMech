@@ -1,6 +1,6 @@
 name: MEDIUM 662 MODIFIED FOR DSM 6699
 original_name: MEDIUM 662 MODIFIED FOR DSM 6699
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:662_6699
     label: MEDIUM 662 MODIFIED FOR DSM 6699
-notes: 'Source: KOMODO ModelSEED | ID: 662_6699 | DSMZ Medium: 662 (mediadive.medium:662)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 662_6699 | DSMZ Medium: 662 (mediadive.medium:662) | Aerobic: No'
 ingredients:
 - preferred_term: Glucose
   term:

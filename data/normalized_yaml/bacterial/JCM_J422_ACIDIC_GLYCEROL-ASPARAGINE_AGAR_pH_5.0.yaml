@@ -1,6 +1,6 @@
 name: ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)
 original_name: ACIDIC GLYCEROL-ASPARAGINE AGAR (pH 5.0)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.0
@@ -19,8 +19,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare Glycerol-asparagine agar (ISP-5) (see Medium No. 60) and adjust
-    pH to 5.0.
+  description: Prepare Glycerol-asparagine agar (ISP-5) (see Medium No. 60) and adjust pH to 5.0.
 applications:
 - Microbial cultivation
 curation_history:

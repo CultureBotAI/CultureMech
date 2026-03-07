@@ -1,11 +1,11 @@
 name: THERMOGYMNOMONAS medium
 original_name: THERMOGYMNOMONAS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.0
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1141 | DSMZ Medium: 1141
-  (mediadive.medium:1141) | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 1141 | DSMZ Medium: 1141 (mediadive.medium:1141)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1141
   term:

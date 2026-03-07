@@ -1,8 +1,8 @@
 name: CZAPEK'S SOLUTION AGAR WITH 200 g SUCROSE
 original_name: CZAPEK'S SOLUTION AGAR WITH 200 g SUCROSE
-category: imported
+category: fungal
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J39
   term:

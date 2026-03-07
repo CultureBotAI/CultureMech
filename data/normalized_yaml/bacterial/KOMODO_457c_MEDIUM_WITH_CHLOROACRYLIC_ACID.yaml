@@ -1,15 +1,14 @@
 name: MEDIUM WITH CHLOROACRYLIC ACID
 original_name: MEDIUM WITH CHLOROACRYLIC ACID
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457c
   term:
     id: komodo.medium:457c
     label: MEDIUM WITH CHLOROACRYLIC ACID
-notes: 'Source: KOMODO ModelSEED | ID: 457c | DSMZ Medium: 457c (mediadive.medium:457c)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457c | DSMZ Medium: 457c (mediadive.medium:457c) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

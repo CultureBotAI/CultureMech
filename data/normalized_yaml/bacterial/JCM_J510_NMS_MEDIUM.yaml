@@ -1,6 +1,6 @@
 name: NMS MEDIUM
 original_name: NMS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -119,8 +119,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 6.8. Separately autoclave 20 x Phosphate solution and
-    add aseptically to the medium. Cultivate under a methane-air (50:50) atmosphere.
+  description: Adjust pH to 6.8. Separately autoclave 20 x Phosphate solution and add aseptically to the
+    medium. Cultivate under a methane-air (50:50) atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

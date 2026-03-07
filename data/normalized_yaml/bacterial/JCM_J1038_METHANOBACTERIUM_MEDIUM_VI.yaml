@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM MEDIUM (VI)
 original_name: METHANOBACTERIUM MEDIUM (VI)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -22,10 +22,10 @@ preparation_steps:
   description: Use Medium No. 872 with final 0.4 g/L NaCl.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Comment: Sludge fluid can be replaced with a human fecal extract.
-    The extract is prepared as follows: autoclave equal quantities of human feces
-    and water at 121C for 30 min. Remove the sludge by centrifugation. Adjust pH of
-    the supernatant to 7.0-7.2 and sterilize at 121C for 15 min under a N2 atmosphere.'
+  description: 'Comment: Sludge fluid can be replaced with a human fecal extract. The extract is prepared
+    as follows: autoclave equal quantities of human feces and water at 121C for 30 min. Remove the sludge
+    by centrifugation. Adjust pH of the supernatant to 7.0-7.2 and sterilize at 121C for 15 min under
+    a N2 atmosphere.'
 applications:
 - Microbial cultivation
 curation_history:

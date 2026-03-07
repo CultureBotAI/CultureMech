@@ -1,16 +1,15 @@
 name: LARKINELLA ARBORICOLA medium
 original_name: LARKINELLA ARBORICOLA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 6.0-6.5
 media_term:
   preferred_term: KOMODO Medium 1327
   term:
     id: komodo.medium:1327
     label: LARKINELLA ARBORICOLA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1327 | DSMZ Medium: 1327 (mediadive.medium:1327)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1327 | DSMZ Medium: 1327 (mediadive.medium:1327) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

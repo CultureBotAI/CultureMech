@@ -1,6 +1,6 @@
 name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM
 original_name: MODIFIED BROCK'S BASAL SALTS-YEAST EXTRACT-TRYPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 542 with 3.0 g/L (final) yeast extract (BD-Difco) and
-    3.0 g/L tryptone (BD-Difco). Adjust pH to 7.0.
+  description: Use Medium No. 542 with 3.0 g/L (final) yeast extract (BD-Difco) and 3.0 g/L tryptone (BD-Difco).
+    Adjust pH to 7.0.
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 15.0 g/L agar.

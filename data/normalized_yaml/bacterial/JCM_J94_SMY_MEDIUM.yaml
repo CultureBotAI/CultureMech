@@ -1,6 +1,6 @@
 name: SMY MEDIUM
 original_name: SMY MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use SM medium (see Medium No. 89) with 50.0 ml/L (final) of 10% Na2S2O3
-    solution and 1.0 g/L yeast extract.
+  description: Use SM medium (see Medium No. 89) with 50.0 ml/L (final) of 10% Na2S2O3 solution and 1.0
+    g/L yeast extract.
 applications:
 - Microbial cultivation
 curation_history:

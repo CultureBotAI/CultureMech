@@ -1,6 +1,6 @@
 name: SALINISPIRA L21 MEDIUM
 original_name: SALINISPIRA L21 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -197,15 +197,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2
-    (4:1, v/v) gas stream and autoclave under the same gas mixture. After cooling,
-    add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a N2-CO2 (4:1, v/v) gas
+    stream and autoclave under the same gas mixture. After cooling, add per liter the following solutions
+    (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically and anaerobically, dispense the medium into culture vessels
-    (e.g., 10 ml in Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream and seal with
-    butyl rubber stoppers. Prior to inoculation, add per liter the following solutions
-    (autoclaved and stored under a N2 atmosphere):'
+  description: 'Aseptically and anaerobically, dispense the medium into culture vessels (e.g., 10 ml in
+    Hungate tubes) under a N2-CO2 (4:1, v/v) gas stream and seal with butyl rubber stoppers. Prior to
+    inoculation, add per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
 - step_number: 3
   action: ADJUST_PH
   description: Readjust pH to 7.3-7.5, if necessary.

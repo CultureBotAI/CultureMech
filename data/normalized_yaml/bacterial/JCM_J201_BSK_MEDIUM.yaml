@@ -1,6 +1,6 @@
 name: BSK MEDIUM
 original_name: BSK MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.6
@@ -69,9 +69,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6.
-    Add 200 ml of 7% gelatin. Filter-sterilize entire medium. Add sterile rabbit serum
-    to final concentration of 6%.
+  description: Mix all ingredients in a beaker with a stir bar. Adjust pH to 7.6. Add 200 ml of 7% gelatin.
+    Filter-sterilize entire medium. Add sterile rabbit serum to final concentration of 6%.
 applications:
 - Microbial cultivation
 curation_history:

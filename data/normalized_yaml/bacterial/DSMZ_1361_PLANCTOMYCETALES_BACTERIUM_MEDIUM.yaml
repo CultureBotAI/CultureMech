@@ -1,6 +1,6 @@
 name: PLANCTOMYCETALES BACTERIUM MEDIUM
 original_name: PLANCTOMYCETALES BACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -225,13 +225,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine
-    hydrochloride, vitamin solution and Na2S x 9 H2O. Boil and then cool under a gas
-    atmosphere of N2:CO2 (80:20 v/v). Dispense the medium into Hungate tubes or serum
-    bottles under gassing with N2:CO2 (80:20 v/v) and add the NaHCO3. The final pH
-    should be 7.0. Autoclave the medium and add from sterile stock solutions yeast
-    extract, glucose, cysteine hydrochloride, vitamin solution and Na2S x 9 H2O.The
-    final pH should be 7.0.
+  description: Prepare the medium without yeast extract, glucose, NaHCO3, cysteine hydrochloride, vitamin
+    solution and Na2S x 9 H2O. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v). Dispense
+    the medium into Hungate tubes or serum bottles under gassing with N2:CO2 (80:20 v/v) and add the NaHCO3.
+    The final pH should be 7.0. Autoclave the medium and add from sterile stock solutions yeast extract,
+    glucose, cysteine hydrochloride, vitamin solution and Na2S x 9 H2O.The final pH should be 7.0.
 applications:
 - Microbial cultivation
 curation_history:

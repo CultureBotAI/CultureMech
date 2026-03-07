@@ -1,6 +1,6 @@
 name: For DSM 13327
 original_name: For DSM 13327
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:503d.2
     label: For DSM 13327
-notes: 'Source: KOMODO ModelSEED | ID: 503d.2 | DSMZ Medium: 503d (mediadive.medium:503d)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503d.2 | DSMZ Medium: 503d (mediadive.medium:503d) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

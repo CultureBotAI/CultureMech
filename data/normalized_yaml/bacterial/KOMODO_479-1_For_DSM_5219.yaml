@@ -1,11 +1,11 @@
 name: For DSM 5219
 original_name: For DSM 5219
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.4-7.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 479.1 | DSMZ Medium: 479
-  (mediadive.medium:479) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 479.1 | DSMZ Medium: 479 (mediadive.medium:479)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 479.1
   term:

@@ -1,8 +1,8 @@
 name: 0.3 x HYPHOMICROBIUM MEDIUM
 original_name: 0.3 x HYPHOMICROBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: JCM Medium J1088
   term:
@@ -157,8 +157,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: After autoclaving, aseptically add filter-sterilized trace vitamins
-    solution and methanol.
+  description: After autoclaving, aseptically add filter-sterilized trace vitamins solution and methanol.
 applications:
 - Microbial cultivation
 curation_history:

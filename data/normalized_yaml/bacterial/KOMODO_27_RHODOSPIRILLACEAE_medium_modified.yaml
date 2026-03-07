@@ -1,6 +1,6 @@
 name: RHODOSPIRILLACEAE medium (modified)
 original_name: RHODOSPIRILLACEAE medium (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:27
     label: RHODOSPIRILLACEAE medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 27 | DSMZ Medium: 27 (mediadive.medium:27)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 27 | DSMZ Medium: 27 (mediadive.medium:27) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

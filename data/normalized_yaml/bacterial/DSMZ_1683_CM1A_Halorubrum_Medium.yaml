@@ -1,6 +1,6 @@
 name: CM1A Halorubrum Medium
 original_name: CM1A Halorubrum Medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -220,15 +220,15 @@ preparation_steps:
   description: Adjust pH to 7.5 with Tris-HCl at pH=7.5
 - step_number: 6
   action: MIX
-  description: Don't use Difco Bacto-peptone, it was reported in 1988 to contain bile
-    salts that lyse halobacteria, this was still the case in 2001
+  description: Don't use Difco Bacto-peptone, it was reported in 1988 to contain bile salts that lyse
+    halobacteria, this was still the case in 2001
 - step_number: 7
   action: ADJUST_PH
   description: Adjust pH to 7.5
 - step_number: 8
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
-    the other salts. Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
+    Finally make up to 1000.00 ml.
 - step_number: 9
   action: FILTER_STERILIZE
   description: filter sterilized
@@ -248,5 +248,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.982471Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

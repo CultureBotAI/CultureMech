@@ -1,15 +1,14 @@
 name: MEDIUM 1a MODIFIED FOR DSM 23513
 original_name: MEDIUM 1a MODIFIED FOR DSM 23513
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1a_23513
   term:
     id: komodo.medium:1a_23513
     label: MEDIUM 1a MODIFIED FOR DSM 23513
-notes: 'Source: KOMODO ModelSEED | ID: 1a_23513 | DSMZ Medium: 1a (mediadive.medium:1a)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1a_23513 | DSMZ Medium: 1a (mediadive.medium:1a) | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:

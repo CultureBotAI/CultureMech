@@ -1,6 +1,6 @@
 name: Pennassay Broth
 original_name: Pennassay Broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:5012
     label: Pennassay Broth
-notes: 'Source: KOMODO ModelSEED | ID: 5012 | DSMZ Medium: 5012 (mediadive.medium:5012)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5012 | DSMZ Medium: 5012 (mediadive.medium:5012) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

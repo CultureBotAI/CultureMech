@@ -1,8 +1,8 @@
 name: SALINIVIBRIO SHARMENSIS MEDIUM
 original_name: SALINIVIBRIO SHARMENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 9.0
 media_term:
   preferred_term: DSMZ Medium 1461
@@ -78,10 +78,9 @@ preparation_steps:
   description: Final pH 9.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Add all the components together, except Na2CO3 which is added from
-    a sterilized stock solution when the autoclaved medium has cooled. Agar is added
-    at a concentration of 20 g/l for solid media and should be cooled to about 55°C
-    before the Na2CO3.is added.
+  description: Add all the components together, except Na2CO3 which is added from a sterilized stock solution
+    when the autoclaved medium has cooled. Agar is added at a concentration of 20 g/l for solid media
+    and should be cooled to about 55°C before the Na2CO3.is added.
 applications:
 - Microbial cultivation
 curation_history:

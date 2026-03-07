@@ -1,6 +1,6 @@
 name: PFENNIG'S MEDIUM II WITH SALT
 original_name: PFENNIG'S MEDIUM II WITH SALT
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:40
     label: PFENNIG'S MEDIUM II WITH SALT
-notes: 'Source: KOMODO ModelSEED | ID: 40 | DSMZ Medium: 40 (mediadive.medium:40)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 40 | DSMZ Medium: 40 (mediadive.medium:40) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

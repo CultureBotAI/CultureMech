@@ -1,6 +1,6 @@
 name: ANAEROBRANCA medium
 original_name: ANAEROBRANCA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:685
     label: ANAEROBRANCA medium
-notes: 'Source: KOMODO ModelSEED | ID: 685 | DSMZ Medium: 685 (mediadive.medium:685)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 685 | DSMZ Medium: 685 (mediadive.medium:685) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -244,5 +243,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.884675Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

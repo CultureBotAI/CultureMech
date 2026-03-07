@@ -1,6 +1,6 @@
 name: salt solution (medium 852)
 original_name: salt solution (medium 852)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:3049
     label: salt solution (medium 852)
-notes: 'Source: KOMODO ModelSEED | ID: 3049 | DSMZ Medium: 3049 (mediadive.medium:3049)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3049 | DSMZ Medium: 3049 (mediadive.medium:3049) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

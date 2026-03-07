@@ -1,8 +1,8 @@
 name: DIAZOTROPHIC MEDIUM (RBA)
 original_name: DIAZOTROPHIC MEDIUM (RBA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 441
   term:
@@ -228,16 +228,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Sterilize solution A separately at 121°C for 15 min., cool to 50°C
-    and then mix aseptically with filter-sterilized solution B and 5.0 ml of filter-sterilized
-    standard vitamin solution (see medium 428).
+  description: Sterilize solution A separately at 121°C for 15 min., cool to 50°C and then mix aseptically
+    with filter-sterilized solution B and 5.0 ml of filter-sterilized standard vitamin solution (see medium
+    428).
 - step_number: 2
   action: MIX
-  description: RBA is an ammonium-free medium which has successfully been used for
-    the isolation, growth and purity check of a broad spectrum of nitrogen fixing
-    bacteria (Ref. 3363). For microaerophilic nitrogen-fixing bacteria use semisolid
-    medium with 0.3% end concentration of agar and incubate the liquid cultures under
-    10% (v/v) air and 90% (v/v) N2.
+  description: RBA is an ammonium-free medium which has successfully been used for the isolation, growth
+    and purity check of a broad spectrum of nitrogen fixing bacteria (Ref. 3363). For microaerophilic
+    nitrogen-fixing bacteria use semisolid medium with 0.3% end concentration of agar and incubate the
+    liquid cultures under 10% (v/v) air and 90% (v/v) N2.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.3.

@@ -1,6 +1,6 @@
 name: ZESTOSPHAERA MEDIUM
 original_name: ZESTOSPHAERA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -219,14 +219,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Heat the medium to boiling while bubbling with a N2-CO2 (4:1, v/v)
-    gas mixture. After boiling, cool the medium in a water bath. Continue bubbling
-    with the same gas mixture. While the medium is still warm, add the following:'
+  description: 'Heat the medium to boiling while bubbling with a N2-CO2 (4:1, v/v) gas mixture. After
+    boiling, cool the medium in a water bath. Continue bubbling with the same gas mixture. While the medium
+    is still warm, add the following:'
 - step_number: 2
   action: AUTOCLAVE
-  description: After the medium is cooled to room temperature, adjust pH to 6.0 -
-    6.1. Dispense the medium into culture vessels (e.g., 10 ml in Balch type tubes)
-    under the same gas mixture, seal with butyl rubber stoppers and autoclave.
+  description: After the medium is cooled to room temperature, adjust pH to 6.0 - 6.1. Dispense the medium
+    into culture vessels (e.g., 10 ml in Balch type tubes) under the same gas mixture, seal with butyl
+    rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

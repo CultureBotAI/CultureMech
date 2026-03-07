@@ -1,6 +1,6 @@
 name: METHANOSARCINA FRISIA medium
 original_name: METHANOSARCINA FRISIA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:355
     label: METHANOSARCINA FRISIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 355 | DSMZ Medium: 355 (mediadive.medium:355)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 355 | DSMZ Medium: 355 (mediadive.medium:355) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

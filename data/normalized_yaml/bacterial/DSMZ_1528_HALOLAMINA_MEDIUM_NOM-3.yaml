@@ -1,8 +1,8 @@
 name: HALOLAMINA MEDIUM (NOM-3)
 original_name: HALOLAMINA MEDIUM (NOM-3)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1528

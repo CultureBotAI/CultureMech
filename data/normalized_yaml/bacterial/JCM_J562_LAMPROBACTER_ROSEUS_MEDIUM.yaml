@@ -1,6 +1,6 @@
 name: LAMPROBACTER ROSEUS MEDIUM
 original_name: LAMPROBACTER ROSEUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -18,8 +18,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Use Medium No. 561 supplemented with 1.0 ml/L vitamin B12 solution
-    (2 mg/100 ml).
+  description: Use Medium No. 561 supplemented with 1.0 ml/L vitamin B12 solution (2 mg/100 ml).
 applications:
 - Microbial cultivation
 curation_history:

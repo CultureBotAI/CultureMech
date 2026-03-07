@@ -1,6 +1,6 @@
 name: PYRODICTIUM ABYSSI medium
 original_name: PYRODICTIUM ABYSSI medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 5.5-6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:508
     label: PYRODICTIUM ABYSSI medium
-notes: 'Source: KOMODO ModelSEED | ID: 508 | DSMZ Medium: 508 (mediadive.medium:508)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 508 | DSMZ Medium: 508 (mediadive.medium:508) | Aerobic: No'
 ingredients:
 - preferred_term: KCl
   term:
@@ -269,5 +268,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.193075Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

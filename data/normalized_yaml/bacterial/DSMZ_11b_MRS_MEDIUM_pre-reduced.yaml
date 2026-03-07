@@ -1,6 +1,6 @@
 name: MRS MEDIUM (pre-reduced)
 original_name: MRS MEDIUM (pre-reduced)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.2-6.5
@@ -89,8 +89,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Cysteine is added after the medium has been boiled and cooled under
-    CO2. Adjust pH to 6.2 - 6.5, distribute under N2 and autoclave.
+  description: Cysteine is added after the medium has been boiled and cooled under CO2. Adjust pH to 6.2
+    - 6.5, distribute under N2 and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

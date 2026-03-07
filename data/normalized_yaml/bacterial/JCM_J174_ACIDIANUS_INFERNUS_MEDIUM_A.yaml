@@ -1,6 +1,6 @@
 name: ACIDIANUS INFERNUS MEDIUM (A)
 original_name: ACIDIANUS INFERNUS MEDIUM (A)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 2.5
@@ -106,9 +106,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately
-    and steam sulfur for 3 hr on each of 3 successive days. Cultivate under air enriched
-    with 1-10% CO2.
+  description: Adjust pH to 2.5 with 10 N H2SO4. Autoclave yeast extract separately and steam sulfur for
+    3 hr on each of 3 successive days. Cultivate under air enriched with 1-10% CO2.
 applications:
 - Microbial cultivation
 curation_history:

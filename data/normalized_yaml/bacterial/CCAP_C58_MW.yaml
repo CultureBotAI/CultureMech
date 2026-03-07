@@ -1,6 +1,6 @@
 name: MW
 original_name: MW
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -17,9 +17,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: There are many proprietary brands of bottled mineral water. At present
-    the CCAP uses "Volvic". Dispense into suitable vessels and autoclave at 15 psi
-    for 15 minutes.
+  description: There are many proprietary brands of bottled mineral water. At present the CCAP uses "Volvic".
+    Dispense into suitable vessels and autoclave at 15 psi for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:

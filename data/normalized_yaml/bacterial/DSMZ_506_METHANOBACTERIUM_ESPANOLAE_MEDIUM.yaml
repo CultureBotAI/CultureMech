@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM ESPANOLAE MEDIUM
 original_name: METHANOBACTERIUM ESPANOLAE MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5.8-6
@@ -257,21 +257,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide,
-    then sparge medium with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make
-    it anoxic. Add and dissolve carbonate, then dispense medium into anoxic Hungate-type
-    tubes or serum vials to 30% of their volume under 80% H2 and 20% CO2 gas atmosphere
-    and autoclave. Add vitamins (sterilized by filtration), cysteine and sulfide from
-    sterile anoxic stock solutions prepared under 100% N2 gas. Prior to use check
-    pH of complete medium and adjust to 5.8 - 6.0, if necessary.
+  description: Dissolve ingredients except carbonate, vitamins, cysteine and sulfide, then sparge medium
+    with 80% H2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Add and dissolve carbonate,
+    then dispense medium into anoxic Hungate-type tubes or serum vials to 30% of their volume under 80%
+    H2 and 20% CO2 gas atmosphere and autoclave. Add vitamins (sterilized by filtration), cysteine and
+    sulfide from sterile anoxic stock solutions prepared under 100% N2 gas. Prior to use check pH of complete
+    medium and adjust to 5.8 - 6.0, if necessary.
 - step_number: 2
   action: MIX
-  description: 'Note: After growth has started and the culture is becoming turbid
-    add sterile 80% H2 and 20% CO2 gas mixture to 0.5 - 1 bar overpressure.'
+  description: 'Note: After growth has started and the culture is becoming turbid add sterile 80% H2 and
+    20% CO2 gas mixture to 0.5 - 1 bar overpressure.'
 - step_number: 3
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -282,5 +281,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:31.040352Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

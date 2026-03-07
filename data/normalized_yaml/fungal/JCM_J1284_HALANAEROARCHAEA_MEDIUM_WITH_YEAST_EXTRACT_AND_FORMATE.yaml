@@ -1,6 +1,6 @@
 name: HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE
 original_name: HALANAEROARCHAEA MEDIUM WITH YEAST EXTRACT AND FORMATE
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -220,22 +220,19 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Autoclave. After cooling, add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Autoclave. After cooling, add the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'To complete the medium, aseptically and anaerobically distribute the
-    medium into culture vessels containing steam-sterilized sulfur (see below, approximately
-    5.0 g/L) under an argon gas stream, and seal with butyl rubber stoppers. Then,
-    add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'To complete the medium, aseptically and anaerobically distribute the medium into culture
+    vessels containing steam-sterilized sulfur (see below, approximately 5.0 g/L) under an argon gas stream,
+    and seal with butyl rubber stoppers. Then, add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 3
   action: AUTOCLAVE
-  description: Steam sulfur for 3 hr, or autoclave at 105C for 1 hr, on each of 3
-    successive days.
+  description: Steam sulfur for 3 hr, or autoclave at 105C for 1 hr, on each of 3 successive days.
 - step_number: 4
   action: AUTOCLAVE
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust
-    pH to 7.0 with 0.5 M K2HPO4 and autoclave.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with 0.5
+    M K2HPO4 and autoclave.
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 3.6.

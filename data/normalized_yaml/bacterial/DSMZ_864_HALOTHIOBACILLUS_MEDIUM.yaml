@@ -1,6 +1,6 @@
 name: HALOTHIOBACILLUS MEDIUM
 original_name: HALOTHIOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 6.5-7
@@ -133,15 +133,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except hydrogenphosphate and thiosulfate, adjust
-    pH to 6.5, then dispense medium into culture vessels and autoclave. Add hydrogenphosphate
-    and thiosulfate from sterile stock solutions. Adjust pH of complete medium to
-    6.5 - 7.0.
+  description: Dissolve ingredients except hydrogenphosphate and thiosulfate, adjust pH to 6.5, then dispense
+    medium into culture vessels and autoclave. Add hydrogenphosphate and thiosulfate from sterile stock
+    solutions. Adjust pH of complete medium to 6.5 - 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH
-    and add ferrous chloride. After ferrous chloride has dissolved add other compounds.
-    Finally adjust pH to 6.0 and bring volume to 1000 ml.
+  description: Dissolve EDTA in 800 ml distilled water, adjust pH to 7 using 2 N NaOH and add ferrous
+    chloride. After ferrous chloride has dissolved add other compounds. Finally adjust pH to 6.0 and bring
+    volume to 1000 ml.
 applications:
 - Microbial cultivation
 curation_history:

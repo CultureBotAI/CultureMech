@@ -1,8 +1,8 @@
 name: MODIFIED MEDIUM 92
 original_name: MODIFIED MEDIUM 92
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 92a
   term:
@@ -92,8 +92,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare medium 92 and subsequently add vitamins. Adjust pH to 7.0 -
-    7.2
+  description: Prepare medium 92 and subsequently add vitamins. Adjust pH to 7.0 - 7.2
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0 - 7.2.

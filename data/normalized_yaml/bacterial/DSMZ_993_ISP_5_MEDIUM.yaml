@@ -1,8 +1,8 @@
 name: ISP 5 MEDIUM
 original_name: ISP 5 MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7-7.4
 media_term:
   preferred_term: DSMZ Medium 993
@@ -63,12 +63,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it
-    is within this range. Liquefy agar by steaming at 100°C for 15-20 minutes.
+  description: The pH of trace salts solution is about 7.0-7.4. Do not adjust if it is within this range.
+    Liquefy agar by steaming at 100°C for 15-20 minutes.
 - step_number: 2
   action: POUR_PLATES
-  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90
-    mm dishes containing 25 ml per dish.
+  description: Sterilize in flasks for pouring into Petri dishes. Seven standard 90 mm dishes containing
+    25 ml per dish.
 applications:
 - Microbial cultivation
 curation_history:

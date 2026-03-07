@@ -1,15 +1,14 @@
 name: RUBITELEA medium
 original_name: RUBITELEA medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1177
   term:
     id: komodo.medium:1177
     label: RUBITELEA medium
-notes: 'Source: KOMODO ModelSEED | ID: 1177 | DSMZ Medium: 1177 (mediadive.medium:1177)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1177 | DSMZ Medium: 1177 (mediadive.medium:1177) | Aerobic: No'
 ingredients:
 - preferred_term: Starch
   term:

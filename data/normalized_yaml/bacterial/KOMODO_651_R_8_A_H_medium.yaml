@@ -1,6 +1,6 @@
 name: R 8 A H medium
 original_name: R 8 A H medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:651
     label: R 8 A H medium
-notes: 'Source: KOMODO ModelSEED | ID: 651 | DSMZ Medium: 651 (mediadive.medium:651)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 651 | DSMZ Medium: 651 (mediadive.medium:651) | Aerobic: No'
 ingredients:
 - preferred_term: Malic acid
   term:

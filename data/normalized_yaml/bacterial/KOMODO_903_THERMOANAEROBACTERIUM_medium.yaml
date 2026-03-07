@@ -1,6 +1,6 @@
 name: THERMOANAEROBACTERIUM medium
 original_name: THERMOANAEROBACTERIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:903
     label: THERMOANAEROBACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 903 | DSMZ Medium: 903 (mediadive.medium:903)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 903 | DSMZ Medium: 903 (mediadive.medium:903) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

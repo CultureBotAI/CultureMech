@@ -1,6 +1,6 @@
 name: METHYLOROSULA MEDIUM V-022
 original_name: METHYLOROSULA MEDIUM V-022
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.0
@@ -105,9 +105,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium in
-    tubes or flasks fitted with screw caps. Sterilize by autoclaving. Before inoculation
-    add filter sterilized CH3OH to a final concentration of 0.5% v/v.
+  description: Prepare the liquid medium. Adjust to pH 6.0. Dispense the medium in tubes or flasks fitted
+    with screw caps. Sterilize by autoclaving. Before inoculation add filter sterilized CH3OH to a final
+    concentration of 0.5% v/v.
 applications:
 - Microbial cultivation
 curation_history:

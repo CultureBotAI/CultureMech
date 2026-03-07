@@ -1,16 +1,15 @@
 name: MODIFIED METHYLOBACTERIUM MEDIUM
 original_name: MODIFIED METHYLOBACTERIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: KOMODO Medium 1324
   term:
     id: komodo.medium:1324
     label: MODIFIED METHYLOBACTERIUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1324 | DSMZ Medium: 1324 (mediadive.medium:1324)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1324 | DSMZ Medium: 1324 (mediadive.medium:1324) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

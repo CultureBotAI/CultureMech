@@ -1,6 +1,6 @@
 name: For DSM 19918
 original_name: For DSM 19918
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:377.1
     label: For DSM 19918
-notes: 'Source: KOMODO ModelSEED | ID: 377.1 | DSMZ Medium: 377 (mediadive.medium:377)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 377.1 | DSMZ Medium: 377 (mediadive.medium:377) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

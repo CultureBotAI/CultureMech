@@ -1,8 +1,8 @@
 name: COW MANURE AGAR
 original_name: COW MANURE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 657
   term:
@@ -31,9 +31,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for
-    one hour. Filter, first through cheesecloth and then paper. Make up volume to
-    one liter. Add 20 g agar.
+  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first
+    through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.
 applications:
 - Microbial cultivation
 curation_history:

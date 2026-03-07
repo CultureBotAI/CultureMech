@@ -1,6 +1,6 @@
 name: NATRANAEROBIUS medium
 original_name: NATRANAEROBIUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1095
     label: NATRANAEROBIUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1095 | DSMZ Medium: 1095 (mediadive.medium:1095)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1095 | DSMZ Medium: 1095 (mediadive.medium:1095) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -220,5 +219,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:13.876210Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

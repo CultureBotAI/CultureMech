@@ -1,6 +1,6 @@
 name: DIALISTER MEDIUM
 original_name: DIALISTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -122,8 +122,8 @@ preparation_steps:
   description: Incubate in oxygen-free, 5 - 10% CO2 containing atmosphere.
 - step_number: 5
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
-    Store refrigerated in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
+    in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:

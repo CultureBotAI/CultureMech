@@ -1,6 +1,6 @@
 name: For DSM 8686 and DSM 8690
 original_name: For DSM 8686 and DSM 8690
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:61.1
     label: For DSM 8686 and DSM 8690
-notes: 'Source: KOMODO ModelSEED | ID: 61.1 | DSMZ Medium: 61 (mediadive.medium:61)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 61.1 | DSMZ Medium: 61 (mediadive.medium:61) | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:

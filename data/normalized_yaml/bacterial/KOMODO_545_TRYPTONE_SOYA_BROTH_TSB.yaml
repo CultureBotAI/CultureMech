@@ -1,6 +1,6 @@
 name: TRYPTONE SOYA BROTH (TSB)
 original_name: TRYPTONE SOYA BROTH (TSB)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:545
     label: TRYPTONE SOYA BROTH (TSB)
-notes: 'Source: KOMODO ModelSEED | ID: 545 | DSMZ Medium: 545 (mediadive.medium:545)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 545 | DSMZ Medium: 545 (mediadive.medium:545) | Aerobic: No'
 ingredients:
 - preferred_term: Casein peptone
   concentration:

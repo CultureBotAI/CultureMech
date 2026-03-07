@@ -1,8 +1,8 @@
 name: SKIM MILK/GLUCOSE AGAR
 original_name: SKIM MILK/GLUCOSE AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 810

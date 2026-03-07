@@ -1,6 +1,6 @@
 name: Columbia agar base
 original_name: Columbia agar base
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.1-7.5
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5009
     label: Columbia agar base
-notes: 'Source: KOMODO ModelSEED | ID: 5009 | DSMZ Medium: 5009 (mediadive.medium:5009)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5009 | DSMZ Medium: 5009 (mediadive.medium:5009) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

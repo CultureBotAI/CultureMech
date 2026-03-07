@@ -1,6 +1,6 @@
 name: SACCHAROLOBUS SOLFATARICUS MEDIUM
 original_name: SACCHAROLOBUS SOLFATARICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 4-4.2
@@ -99,9 +99,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all compounds except yeast extract and Casamino acids, adjust
-    pH to 4.0 - 4.2 with 10 N H2SO4 at room temperature and autoclave. Prior to inoculation
-    add yeast extract and Casamino acids from stock solutions sterilized by filtration.
+  description: Dissolve all compounds except yeast extract and Casamino acids, adjust pH to 4.0 - 4.2
+    with 10 N H2SO4 at room temperature and autoclave. Prior to inoculation add yeast extract and Casamino
+    acids from stock solutions sterilized by filtration.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of final solution to 2 with 1 N HCl.

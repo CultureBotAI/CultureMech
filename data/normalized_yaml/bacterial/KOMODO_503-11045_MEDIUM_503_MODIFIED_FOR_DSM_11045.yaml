@@ -1,6 +1,6 @@
 name: MEDIUM 503 MODIFIED FOR DSM 11045
 original_name: MEDIUM 503 MODIFIED FOR DSM 11045
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:503_11045
     label: MEDIUM 503 MODIFIED FOR DSM 11045
-notes: 'Source: KOMODO ModelSEED | ID: 503_11045 | DSMZ Medium: 503 (mediadive.medium:503)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 503_11045 | DSMZ Medium: 503 (mediadive.medium:503) | Aerobic:
+  No'
 ingredients:
 - preferred_term: KH2PO4
   term:

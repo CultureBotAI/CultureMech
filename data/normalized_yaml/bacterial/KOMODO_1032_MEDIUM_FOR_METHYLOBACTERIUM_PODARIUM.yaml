@@ -1,16 +1,15 @@
 name: MEDIUM FOR METHYLOBACTERIUM PODARIUM
 original_name: MEDIUM FOR METHYLOBACTERIUM PODARIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.3-7.4
 media_term:
   preferred_term: KOMODO Medium 1032
   term:
     id: komodo.medium:1032
     label: MEDIUM FOR METHYLOBACTERIUM PODARIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1032 | DSMZ Medium: 1032 (mediadive.medium:1032)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1032 | DSMZ Medium: 1032 (mediadive.medium:1032) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4 x 2 H2O
   term:

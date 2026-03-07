@@ -1,6 +1,6 @@
 name: OROTIC ACID medium
 original_name: OROTIC ACID medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:249
     label: OROTIC ACID medium
-notes: 'Source: KOMODO ModelSEED | ID: 249 | DSMZ Medium: 249 (mediadive.medium:249)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 249 | DSMZ Medium: 249 (mediadive.medium:249) | Aerobic: Yes'
 ingredients:
 - preferred_term: Tryptone
   concentration:

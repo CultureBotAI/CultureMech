@@ -1,6 +1,6 @@
 name: METHYLOCELLA SILVERSTRIS MEDIUM
 original_name: METHYLOCELLA SILVERSTRIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.8
@@ -109,10 +109,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dispense the medium into the culture vessels. For small volumes serum
-    bottles or Hungate tubes may be used. The gas phase to liquid ratio should be
-    about 1:10. Use a gas phase containing air, 20-30% methane and autoclave at 121°C
-    for 15 minutes. When the growth medium is cool the phosphate buffer is added.
+  description: Dispense the medium into the culture vessels. For small volumes serum bottles or Hungate
+    tubes may be used. The gas phase to liquid ratio should be about 1:10. Use a gas phase containing
+    air, 20-30% methane and autoclave at 121°C for 15 minutes. When the growth medium is cool the phosphate
+    buffer is added.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121°C for 15 min.

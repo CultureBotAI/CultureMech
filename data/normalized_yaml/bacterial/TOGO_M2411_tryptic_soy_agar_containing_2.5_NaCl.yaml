@@ -1,15 +1,14 @@
 name: tryptic soy agar (containing 2.5% NaCl)
 original_name: tryptic soy agar (containing 2.5% NaCl)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ingredients:
 - preferred_term: NaCl
   concentration:
     value: '2.5'
     unit: PERCENT_W_V
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,5 +36,4 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:53.681081'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: tryptic soy agar (Merck KGaA,
-    Darmstadt, Germany)'
+  notes: 'Added default concentration for ingredient: tryptic soy agar (Merck KGaA, Darmstadt, Germany)'

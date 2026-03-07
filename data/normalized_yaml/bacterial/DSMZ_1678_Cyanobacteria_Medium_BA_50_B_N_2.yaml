@@ -1,6 +1,6 @@
 name: Cyanobacteria Medium BA+50+B+N/2
 original_name: Cyanobacteria Medium BA+50+B+N/2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -149,8 +149,7 @@ preparation_steps:
   description: 'After cooling, add the following filter sterilized components:'
 - step_number: 3
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
-    MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
 applications:
 - Microbial cultivation
 curation_history:

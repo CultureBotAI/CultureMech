@@ -1,6 +1,6 @@
 name: HALOPHILE STARCH-CASEIN MEDIUM
 original_name: HALOPHILE STARCH-CASEIN MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -63,9 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components to distilled water and bring volume to 1.0 L. For preparation
-    of solid medium, add 20.0 g/L agar. Autoclave and adjust pH to 7.2 - 7.5 with
-    NaOH.
+  description: Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium,
+    add 20.0 g/L agar. Autoclave and adjust pH to 7.2 - 7.5 with NaOH.
 applications:
 - Microbial cultivation
 curation_history:

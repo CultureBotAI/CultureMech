@@ -1,6 +1,6 @@
 name: METHANOSARCINA JL01 MEDIUM
 original_name: METHANOSARCINA JL01 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -228,12 +228,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components except NaHCO3 and bring to a boil for a few seconds.
-    After cooling down under a stream of N2-CO2 (80:20, v/v), add NaHCO3 to the medium.
-    Dispense the medium into culture vessels (e.g., 20 ml of the medium in 120 ml
-    serum bottles) under the same gas mixture, seal with butyl rubber stoppers and
-    autoclave. Allow to stand the medium until re-dissolved. Then, add per liter the
-    following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components except NaHCO3 and bring to a boil for a few seconds. After cooling down
+    under a stream of N2-CO2 (80:20, v/v), add NaHCO3 to the medium. Dispense the medium into culture
+    vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under the same gas mixture, seal with
+    butyl rubber stoppers and autoclave. Allow to stand the medium until re-dissolved. Then, add per liter
+    the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH of the medium to 6.8-7.0, if necessary.

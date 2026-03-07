@@ -1,6 +1,6 @@
 name: DESULFITOCELLA MEDIUM
 original_name: DESULFITOCELLA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -124,10 +124,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH, distribute the
-    medium into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl
-    rubber stoppers and autoclave. After cooling, add per 925 ml the following solutions
-    from anaerobic stocks (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly, adjust pH to 7.0 with KOH, distribute the medium into culture
+    vessels under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave. After
+    cooling, add per 925 ml the following solutions from anaerobic stocks (autoclaved or *filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:

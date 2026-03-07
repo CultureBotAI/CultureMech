@@ -1,15 +1,14 @@
 name: MANNITOL-Yeast extract-Peptone (MYP)
 original_name: MANNITOL-Yeast extract-Peptone (MYP)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1087
   term:
     id: komodo.medium:1087
     label: MANNITOL-Yeast extract-Peptone (MYP)
-notes: 'Source: KOMODO ModelSEED | ID: 1087 | DSMZ Medium: 1087 (mediadive.medium:1087)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1087 | DSMZ Medium: 1087 (mediadive.medium:1087) | Aerobic: No'
 ingredients:
 - preferred_term: D-Mannitol
   term:

@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM CELLULOVORANS medium
 original_name: CLOSTRIDIUM CELLULOVORANS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:320
     label: CLOSTRIDIUM CELLULOVORANS medium
-notes: 'Source: KOMODO ModelSEED | ID: 320 | DSMZ Medium: 320 (mediadive.medium:320)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 320 | DSMZ Medium: 320 (mediadive.medium:320) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4 x 3 H2O
   term:

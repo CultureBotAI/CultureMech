@@ -1,6 +1,6 @@
 name: NATRANAEROFABA MEDIUM
 original_name: NATRANAEROFABA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.5
@@ -246,25 +246,23 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize solutions A and B in closed thick-walled screw-top bottles
-    (e.g., SCHOTT) for 20 min at 120°C. The pH of solution A after sterilization should
-    be 10. There is some precipitate forming that settles at the bottom after 3 -
-    4 days. It is best to remove precipitates by decantation before using solution
-    A for medium preparation.
+  description: Sterilize solutions A and B in closed thick-walled screw-top bottles (e.g., SCHOTT) for
+    20 min at 120°C. The pH of solution A after sterilization should be 10. There is some precipitate
+    forming that settles at the bottom after 3 - 4 days. It is best to remove precipitates by decantation
+    before using solution A for medium preparation.
 - step_number: 2
   action: AUTOCLAVE
-  description: Combine solution A with solution B and sparge medium with 100% N2 gas
-    for at least 30 - 45 min to make it anoxic, then dispense under same gas atmosphere
-    into anoxic Hungate-type tubes or serum vials and autoclave. Solutions C to I
-    are sterilized separately under 100% N2 gas. Vitamins and pyruvate should be sterilized
-    by filtration. To complete the medium appropriate amounts of solutions C to I
-    are added to the combined sterile solutions A and B in the sequence as indicated.
-    Final pH of the medium should be 9.5.
+  description: Combine solution A with solution B and sparge medium with 100% N2 gas for at least 30 -
+    45 min to make it anoxic, then dispense under same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave. Solutions C to I are sterilized separately under 100% N2 gas. Vitamins
+    and pyruvate should be sterilized by filtration. To complete the medium appropriate amounts of solutions
+    C to I are added to the combined sterile solutions A and B in the sequence as indicated. Final pH
+    of the medium should be 9.5.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
-    5% (w/v) solution, freshly prepared under N2 and filter-sterilized) may stimulate
-    growth at the beginning. For transfers use 5 - 10% inoculum.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution,
+    freshly prepared under N2 and filter-sterilized) may stimulate growth at the beginning. For transfers
+    use 5 - 10% inoculum.'
 - step_number: 4
   action: MIX
   description: pH 3.0-4.0
@@ -278,5 +276,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.330583Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

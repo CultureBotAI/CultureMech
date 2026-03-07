@@ -1,6 +1,6 @@
 name: TRICHOCOCCUS SKBG MEDIUM
 original_name: TRICHOCOCCUS SKBG MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.4
@@ -200,10 +200,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.2. Distribute the medium
-    into culture vessels (e.g., 10 ml in Hungate tubes) under a stream of N2-CO2 (4:1,
-    v/v) gas mixture, seal with butyl rubber stoppers and autoclave. Allow to stand
-    overnight. Aseptically and anaerobically add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.2. Distribute the medium into culture vessels
+    (e.g., 10 ml in Hungate tubes) under a stream of N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber
+    stoppers and autoclave. Allow to stand overnight. Aseptically and anaerobically add the following
+    solutions (filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 7.2-7.6, if necessary.

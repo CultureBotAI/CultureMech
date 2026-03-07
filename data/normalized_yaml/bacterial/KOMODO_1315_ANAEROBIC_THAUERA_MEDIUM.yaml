@@ -1,6 +1,6 @@
 name: ANAEROBIC THAUERA MEDIUM
 original_name: ANAEROBIC THAUERA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.1-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1315
     label: ANAEROBIC THAUERA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1315 | DSMZ Medium: 1315 (mediadive.medium:1315)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1315 | DSMZ Medium: 1315 (mediadive.medium:1315) | Aerobic: Yes'
 ingredients:
 - preferred_term: KNO3
   term:

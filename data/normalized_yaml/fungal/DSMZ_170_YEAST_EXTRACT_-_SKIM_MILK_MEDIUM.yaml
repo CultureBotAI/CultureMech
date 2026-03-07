@@ -1,8 +1,8 @@
 name: YEAST EXTRACT - SKIM MILK MEDIUM
 original_name: YEAST EXTRACT - SKIM MILK MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 170
   term:

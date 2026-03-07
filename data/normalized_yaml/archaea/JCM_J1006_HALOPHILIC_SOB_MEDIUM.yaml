@@ -1,6 +1,6 @@
 name: HALOPHILIC SOB MEDIUM
 original_name: HALOPHILIC SOB MEDIUM
-category: imported
+category: archaea
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -249,8 +249,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave. Aseptically add the following
-    solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave. Aseptically add the following solutions (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.5.

@@ -1,6 +1,6 @@
 name: HALORHODOSPIRA MEDIUM
 original_name: HALORHODOSPIRA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 7.2-7.4
@@ -166,16 +166,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'After autoclaving 20 min at 121°C, the following sterile solutions
-    are added:'
+  description: 'After autoclaving 20 min at 121°C, the following sterile solutions are added:'
 - step_number: 2
   action: HEAT
-  description: The pH is adjusted to pH 7.2-7.4 For better growth of pure cultures,
-    the growth medium should be supplemented with acetate (2 mM final concentration),
-    succinate (1 mM final concentration) and yeast extract (0.5 g/l). Pure cultures
-    should be incubated at 30°C and light intensity of 500 lux from a tungsten lamp
-    (16 h light, 8 h dark). Pure cultures in liquid medium can be stored in 60 ml
-    screw cap bottles at 4°C in the dark.
+  description: The pH is adjusted to pH 7.2-7.4 For better growth of pure cultures, the growth medium
+    should be supplemented with acetate (2 mM final concentration), succinate (1 mM final concentration)
+    and yeast extract (0.5 g/l). Pure cultures should be incubated at 30°C and light intensity of 500
+    lux from a tungsten lamp (16 h light, 8 h dark). Pure cultures in liquid medium can be stored in 60
+    ml screw cap bottles at 4°C in the dark.
 - step_number: 3
   action: MIX
   description: Sterilized by filtration.
@@ -192,5 +190,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.163762Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

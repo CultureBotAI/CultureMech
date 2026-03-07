@@ -1,8 +1,8 @@
 name: THIOTHRIX MEDIUM
 original_name: THIOTHRIX MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
 media_term:
   preferred_term: DSMZ Medium 573
@@ -127,14 +127,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v)
-    solution of Na2S x 9 H2O; add the following amount of this solution to the medium
-    after autoclaving (= shortly before using the medium).
+  description: Adjust pH to 7.5 before autoclaving. Sterilize separately a 10% (w/v) solution of Na2S
+    x 9 H2O; add the following amount of this solution to the medium after autoclaving (= shortly before
+    using the medium).
 - step_number: 2
   action: MIX
-  description: 'Note: For small volumes, such as 5 mL agar slants, you can use the
-    respective volume of a sterile neutralized 3% Na2S x 9 H2O solution (e.g., 50µL/5
-    mL = 0.3g/L)'
+  description: 'Note: For small volumes, such as 5 mL agar slants, you can use the respective volume of
+    a sterile neutralized 3% Na2S x 9 H2O solution (e.g., 50µL/5 mL = 0.3g/L)'
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 7.0.

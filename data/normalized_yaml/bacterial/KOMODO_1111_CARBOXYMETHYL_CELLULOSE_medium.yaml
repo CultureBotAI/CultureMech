@@ -1,15 +1,14 @@
 name: CARBOXYMETHYL CELLULOSE medium
 original_name: CARBOXYMETHYL CELLULOSE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1111
   term:
     id: komodo.medium:1111
     label: CARBOXYMETHYL CELLULOSE medium
-notes: 'Source: KOMODO ModelSEED | ID: 1111 | DSMZ Medium: 1111 (mediadive.medium:1111)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1111 | DSMZ Medium: 1111 (mediadive.medium:1111) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

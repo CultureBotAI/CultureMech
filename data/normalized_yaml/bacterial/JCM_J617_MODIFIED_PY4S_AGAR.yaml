@@ -1,6 +1,6 @@
 name: MODIFIED PY4S AGAR
 original_name: MODIFIED PY4S AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.8
@@ -19,8 +19,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Use Medium No. 363 supplemented with 5 mg/L hemin and 10 ï¿½g/L vitamin
-    B12. Adjust pH to 7.8.
+  description: Use Medium No. 363 supplemented with 5 mg/L hemin and 10 ï¿½g/L vitamin B12. Adjust pH
+    to 7.8.
 applications:
 - Microbial cultivation
 curation_history:

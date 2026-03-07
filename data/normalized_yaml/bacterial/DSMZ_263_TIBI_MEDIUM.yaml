@@ -1,6 +1,6 @@
 name: TIBI MEDIUM
 original_name: TIBI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -35,8 +35,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave, cool to room temperature, and inoculate with about 50 ml
-    Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged).
+  description: Autoclave, cool to room temperature, and inoculate with about 50 ml Tibi grains. Set up
+    the culture in a 1 l Erlenmeyer flask (cotton plugged).
 applications:
 - Microbial cultivation
 curation_history:

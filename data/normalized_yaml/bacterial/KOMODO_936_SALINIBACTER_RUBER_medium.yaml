@@ -1,6 +1,6 @@
 name: SALINIBACTER RUBER medium
 original_name: SALINIBACTER RUBER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:936
     label: SALINIBACTER RUBER medium
-notes: 'Source: KOMODO ModelSEED | ID: 936 | DSMZ Medium: 936 (mediadive.medium:936)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 936 | DSMZ Medium: 936 (mediadive.medium:936) | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:

@@ -1,6 +1,6 @@
 name: ANAEROBACULUM MEDIUM
 original_name: ANAEROBACULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -103,13 +103,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: 'Mix components thoroughly, bring to a boil and cool down under a stream
-    of N2. While gassing, add the following solutions and adjust pH to 7.0:'
+  description: 'Mix components thoroughly, bring to a boil and cool down under a stream of N2. While gassing,
+    add the following solutions and adjust pH to 7.0:'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Balch type
-    tubes) under N2, seal with butyl rubber stoppers and autoclave. After cooling,
-    add per liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Distribute the medium into culture vessels (e.g., 10 ml in Balch type tubes) under N2,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

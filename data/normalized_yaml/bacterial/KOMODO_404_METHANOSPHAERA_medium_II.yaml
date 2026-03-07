@@ -1,6 +1,6 @@
 name: METHANOSPHAERA medium II
 original_name: METHANOSPHAERA medium II
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:404
     label: METHANOSPHAERA medium II
-notes: 'Source: KOMODO ModelSEED | ID: 404 | DSMZ Medium: 404 (mediadive.medium:404)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 404 | DSMZ Medium: 404 (mediadive.medium:404) | Aerobic: No'
 ingredients:
 - preferred_term: Fe(NH4)2(SO4)2 x 7 H2O
   term:
@@ -298,5 +297,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.478292Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

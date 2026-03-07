@@ -1,6 +1,6 @@
 name: SYNTROPHOTHERMUS MEDIUM
 original_name: SYNTROPHOTHERMUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -253,23 +253,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve all ingredients except carbonate, crotonate, vitamins, sulfide
-    and cysteine, then sparge medium with 80% N2 and 20% CO2 gas mixture for 30 -
-    45 min to make it anoxic. Dispense medium under same gas atmosphere into anoxic
-    Hungate-type tubes or serum vials and autoclave. Add crotonate, vitamins, sulfide
-    and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas and
-    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2
-    gas atmosphere. Sterilize vitamins by filtration. Adjust pH of complete medium
-    to 7.0, if necessary.
+  description: Dissolve all ingredients except carbonate, crotonate, vitamins, sulfide and cysteine, then
+    sparge medium with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic. Dispense medium
+    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add crotonate,
+    vitamins, sulfide and cysteine from sterile anoxic stock solutions prepared under 100% N2 gas and
+    carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas atmosphere. Sterilize
+    vitamins by filtration. Adjust pH of complete medium to 7.0, if necessary.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml
-    of 10 N NaOH and adjust pH to around 7. Then add water to reach a volume of 1000
-    ml. Sterilize by filtration under 100% N2 gas atmosphere.
+  description: Dissolve crotonic acid in 800 ml distilled water, add around 100 ml of 10 N NaOH and adjust
+    pH to around 7. Then add water to reach a volume of 1000 ml. Sterilize by filtration under 100% N2
+    gas atmosphere.
 applications:
 - Microbial cultivation
 curation_history:
@@ -280,5 +278,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:55.582571Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

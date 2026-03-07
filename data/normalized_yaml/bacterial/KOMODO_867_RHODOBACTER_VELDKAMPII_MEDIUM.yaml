@@ -1,6 +1,6 @@
 name: RHODOBACTER VELDKAMPII MEDIUM
 original_name: RHODOBACTER VELDKAMPII MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:867
     label: RHODOBACTER VELDKAMPII MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 867 | DSMZ Medium: 867 (mediadive.medium:867)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 867 | DSMZ Medium: 867 (mediadive.medium:867) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

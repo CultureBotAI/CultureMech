@@ -1,6 +1,6 @@
 name: Modified hoagland trace element solution (medium 867)
 original_name: Modified hoagland trace element solution (medium 867)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 3-4
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:2016
     label: Modified hoagland trace element solution (medium 867)
-notes: 'Source: KOMODO ModelSEED | ID: 2016 | DSMZ Medium: 2016 (mediadive.medium:2016)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 2016 | DSMZ Medium: 2016 (mediadive.medium:2016) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

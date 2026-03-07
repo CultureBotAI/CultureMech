@@ -1,8 +1,8 @@
 name: MINERAL MEDIUM (BRUNNER) SUPPLEMENTED WITH TOLUENE
 original_name: MINERAL MEDIUM (BRUNNER) SUPPLEMENTED WITH TOLUENE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.9
 media_term:
   preferred_term: JCM Medium J1199
@@ -172,9 +172,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 6.9. After autoclaving, aseptically add the phosphates
-    solution to the medium. After inoculation, put several drops of toluene inside
-    of lid of petri dishes.
+  description: Adjust pH to 6.9. After autoclaving, aseptically add the phosphates solution to the medium.
+    After inoculation, put several drops of toluene inside of lid of petri dishes.
 - step_number: 2
   action: MIX
   description: 'Phosphates solution:'

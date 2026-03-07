@@ -1,6 +1,6 @@
 name: PHOTOTROPHIC MEDIUM
 original_name: PHOTOTROPHIC MEDIUM
-category: imported
+category: specialized
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -122,15 +122,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with
-    a rubber septum under a stream of nitrogen gas.
+  description: Bubble the medium with nitrogen gas and fill 10 ml in 15 ml tubes with a rubber septum
+    under a stream of nitrogen gas.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 3
   action: MIX
-  description: Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min, then
-    close tightly.
+  description: Fill in 100ml serum bottle, bubble with CO2 for approx. 15 min, then close tightly.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave in closed vessel under CO2 atmosphere.

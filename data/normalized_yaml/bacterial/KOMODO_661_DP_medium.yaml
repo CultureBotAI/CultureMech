@@ -1,15 +1,14 @@
 name: DP medium
 original_name: DP medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 661
   term:
     id: komodo.medium:661
     label: DP medium
-notes: 'Source: KOMODO ModelSEED | ID: 661 | DSMZ Medium: 661 (mediadive.medium:661)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 661 | DSMZ Medium: 661 (mediadive.medium:661) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

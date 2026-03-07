@@ -1,6 +1,6 @@
 name: TRYPTONE THIOGLYCOLATE medium
 original_name: TRYPTONE THIOGLYCOLATE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:48
     label: TRYPTONE THIOGLYCOLATE medium
-notes: 'Source: KOMODO ModelSEED | ID: 48 | DSMZ Medium: 48 (mediadive.medium:48)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 48 | DSMZ Medium: 48 (mediadive.medium:48) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

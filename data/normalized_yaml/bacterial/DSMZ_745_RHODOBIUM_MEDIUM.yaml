@@ -1,6 +1,6 @@
 name: RHODOBIUM MEDIUM
 original_name: RHODOBIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -129,8 +129,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Boil the medium under a stream of nitrogen gas for few minutes and
-    distribute in screw-capped bottles or tubes. Autoclave at 121°C for 15 minutes.
+  description: Boil the medium under a stream of nitrogen gas for few minutes and distribute in screw-capped
+    bottles or tubes. Autoclave at 121°C for 15 minutes.
 - step_number: 2
   action: MIX
   description: pH 6.8

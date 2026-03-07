@@ -1,6 +1,6 @@
 name: DESULFUROCOCCUS AMYLOLYTICUS MEDIUM
 original_name: DESULFUROCOCCUS AMYLOLYTICUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.3
@@ -225,15 +225,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, peptone, vitamins, sulfur and
-    Na2S x 9H2O, and autoclave under a N2-CO2 (80:20) atmosphere. Separately autoclave
-    yeast extract and peptone as 10% solutions and Na2S x 9H2O as a 5% solution under
-    a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Filter-sterilize
-    NaHCO3 as an 8% solution and vitamin solution while gassing with N2. Aseptically
-    and anaerobically add yeast extract, peptone, NaHCO3 and vitamin solutions, and
-    sulfur to the medium under a N2-CO2 (80:20) atmosphere. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution, and adjust pH to 6.2-6.4 with sterile 1
-    N H2SO4.
+  description: Mix ingredients, except yeast extract, peptone, vitamins, sulfur and Na2S x 9H2O, and autoclave
+    under a N2-CO2 (80:20) atmosphere. Separately autoclave yeast extract and peptone as 10% solutions
+    and Na2S x 9H2O as a 5% solution under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive
+    days. Filter-sterilize NaHCO3 as an 8% solution and vitamin solution while gassing with N2. Aseptically
+    and anaerobically add yeast extract, peptone, NaHCO3 and vitamin solutions, and sulfur to the medium
+    under a N2-CO2 (80:20) atmosphere. Prior to inoculation, add the sterile Na2S x 9H2O solution, and
+    adjust pH to 6.2-6.4 with sterile 1 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:

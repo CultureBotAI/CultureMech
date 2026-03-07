@@ -10,6 +10,7 @@ Outputs candidates for manual verification.
 
 import json
 import logging
+import os
 import re
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -58,10 +59,30 @@ class ATCCCrossReferenceBuilder:
         r'M9\s+MINIMAL': ['M9', 'M9 MINIMAL MEDIUM'],
     }
 
-    def __init__(self):
-        """Initialize cross-reference builder."""
+    def __init__(self, enable_literature_verification: bool = False):
+        """
+        Initialize cross-reference builder.
+
+        Args:
+            enable_literature_verification: Enable literature-based verification
+        """
         self.verified_refs = self.load_verified_refs()
         self.dsmz_media = self.load_dsmz_media()
+
+        if enable_literature_verification:
+            from culturemech.enrich.literature_verifier import LiteratureVerifier
+            from culturemech.enrich.atcc_crossref_verifier import ATCCCrossRefVerifier
+
+            use_scihub = os.getenv("ENABLE_SCIHUB_FALLBACK", "false").lower() == "true"
+            email = os.getenv("LITERATURE_EMAIL", "noreply@example.com")
+
+            self.lit_verifier = LiteratureVerifier(
+                use_fallback_pdf=use_scihub,
+                email=email
+            )
+            self.crossref_verifier = ATCCCrossRefVerifier(self.lit_verifier)
+        else:
+            self.crossref_verifier = None
 
     def load_verified_refs(self) -> Dict[str, Any]:
         """Load existing verified cross-references."""
@@ -215,7 +236,8 @@ class ATCCCrossReferenceBuilder:
     def generate_candidates_report(
         self,
         output_file: Path,
-        min_similarity: float = 0.8
+        min_similarity: float = 0.8,
+        verify_literature: bool = False
     ):
         """
         Generate a report of candidate ATCC-DSMZ cross-references for manual review.
@@ -223,16 +245,44 @@ class ATCCCrossReferenceBuilder:
         Args:
             output_file: Path to save candidates JSON
             min_similarity: Minimum similarity threshold
+            verify_literature: Enable literature verification for medium-confidence candidates
         """
         logger.info("Finding ATCC-DSMZ cross-reference candidates...")
 
         candidates = self.find_candidates(min_similarity=min_similarity)
 
+        # Literature verification for medium-confidence candidates
+        if verify_literature and self.crossref_verifier:
+            logger.info("\nVerifying medium-confidence candidates via literature...")
+
+            medium_confidence = [
+                c for c in candidates
+                if 0.85 <= c["similarity"] < 0.95
+            ]
+
+            verified = self.crossref_verifier.batch_verify_candidates(
+                medium_confidence,
+                min_similarity=0.85,
+                max_similarity=0.95
+            )
+
+            # Update candidates with verification results
+            for v in verified:
+                for c in candidates:
+                    if c["atcc_id"] == v["atcc_id"] and c["dsmz_id"] == v["dsmz_id"]:
+                        c["verified"] = True
+                        c["confidence"] = "high"  # Upgrade confidence
+                        c["verification_notes"] = f"Literature verified: {v['doi']}"
+                        c["evidence_snippet"] = v["evidence_snippet"]
+                        c["pdf_source"] = v["source_tier"]
+                        break
+
         # Format for manual review
         review_data = {
-            "generated_date": "2026-02-19",
+            "generated_date": "2026-02-20",
             "total_candidates": len(candidates),
             "verified_count": len(self.verified_refs),
+            "literature_verified": sum(1 for c in candidates if c.get("verified") == True) if verify_literature else 0,
             "candidates": [
                 {
                     "atcc_id": c["atcc_id"],
@@ -242,7 +292,10 @@ class ATCCCrossReferenceBuilder:
                     "similarity_score": round(c["similarity"], 3),
                     "source": c["source"],
                     "confidence": c["confidence"],
-                    "verified": False,  # For manual review
+                    "verified": c.get("verified", False),
+                    "verification_notes": c.get("verification_notes", ""),
+                    "evidence_snippet": c.get("evidence_snippet", ""),
+                    "pdf_source": c.get("pdf_source", ""),
                     "notes": ""  # For manual notes
                 }
                 for c in candidates
@@ -253,11 +306,13 @@ class ATCCCrossReferenceBuilder:
         with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(review_data, f, indent=2, ensure_ascii=False)
 
-        logger.info(f"✓ Saved {len(candidates)} candidates to {output_file}")
+        logger.info(f"\n✓ Saved {len(candidates)} candidates to {output_file}")
         logger.info(f"  Literature matches: {sum(1 for c in candidates if c['source'] == 'literature')}")
         logger.info(f"  Name matches: {sum(1 for c in candidates if c['source'] == 'name_match')}")
         logger.info(f"  High confidence: {sum(1 for c in candidates if c['confidence'] == 'high')}")
         logger.info(f"  Medium confidence: {sum(1 for c in candidates if c['confidence'] == 'medium')}")
+        if verify_literature:
+            logger.info(f"  Literature verified: {review_data['literature_verified']}")
 
         return review_data
 
@@ -353,6 +408,16 @@ def main():
         default=0.8,
         help="Minimum similarity threshold (default: 0.8)"
     )
+    gen_parser.add_argument(
+        "--verify-literature",
+        action="store_true",
+        help="Verify candidates via literature search (uses legal sources by default)"
+    )
+    gen_parser.add_argument(
+        "--enable-scihub-fallback",
+        action="store_true",
+        help="Enable Sci-Hub fallback for PDF retrieval (opt-in, may violate publisher agreements)"
+    )
 
     # Add verified
     add_parser = subparsers.add_parser("add", help="Add verified cross-references")
@@ -369,12 +434,20 @@ def main():
 
     args = parser.parse_args()
 
-    builder = ATCCCrossReferenceBuilder()
+    # Set environment variable if Sci-Hub fallback enabled
+    if hasattr(args, 'enable_scihub_fallback') and args.enable_scihub_fallback:
+        os.environ["ENABLE_SCIHUB_FALLBACK"] = "true"
+        logger.warning("⚠ Sci-Hub fallback enabled - ensure compliance with institutional policies")
+
+    # Initialize builder with literature verification if requested
+    enable_lit = hasattr(args, 'verify_literature') and args.verify_literature
+    builder = ATCCCrossReferenceBuilder(enable_literature_verification=enable_lit)
 
     if args.command == "generate":
         builder.generate_candidates_report(
             output_file=args.output,
-            min_similarity=args.similarity
+            min_similarity=args.similarity,
+            verify_literature=enable_lit
         )
     elif args.command == "add":
         builder.add_verified_crossrefs(

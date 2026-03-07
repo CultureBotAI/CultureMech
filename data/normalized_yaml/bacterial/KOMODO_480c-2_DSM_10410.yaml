@@ -1,11 +1,11 @@
 name: DSM 10410
 original_name: DSM 10410
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 480c.2 | DSMZ Medium: 480c
-  (mediadive.medium:480c) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 480c.2 | DSMZ Medium: 480c (mediadive.medium:480c)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 480c.2
   term:
@@ -234,5 +234,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.914121Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

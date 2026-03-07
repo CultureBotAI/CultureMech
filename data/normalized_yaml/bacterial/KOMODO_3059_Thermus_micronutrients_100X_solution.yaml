@@ -1,6 +1,6 @@
 name: Thermus micronutrients 100X solution
 original_name: Thermus micronutrients 100X solution
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3059
     label: Thermus micronutrients 100X solution
-notes: 'Source: KOMODO ModelSEED | ID: 3059 | DSMZ Medium: 3059 (mediadive.medium:3059)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3059 | DSMZ Medium: 3059 (mediadive.medium:3059) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

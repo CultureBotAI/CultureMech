@@ -1,6 +1,6 @@
 name: HATHEWAYA MEDIUM
 original_name: HATHEWAYA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -47,9 +47,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, adjust pH to 7.2, bring medium to the boil, then
-    cool to room temperature under 100% N2 gas atmosphere. Dispense under same gas
-    atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+  description: Dissolve ingredients, adjust pH to 7.2, bring medium to the boil, then cool to room temperature
+    under 100% N2 gas atmosphere. Dispense under same gas atmosphere into anoxic Hungate-type tubes or
+    serum vials and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

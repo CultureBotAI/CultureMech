@@ -1,8 +1,8 @@
 name: T2U MEDIUM
 original_name: T2U MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.1
 media_term:
   preferred_term: JCM Medium J264
@@ -50,8 +50,7 @@ preparation_steps:
   description: Adjust pH to 7.0-7.2 with NaOH.
 - step_number: 2
   action: AUTOCLAVE
-  description: Aseptically add 1 ml of erythromycin solution (10 mg/ml 50% ethanol)
-    to the medium autoclaved.
+  description: Aseptically add 1 ml of erythromycin solution (10 mg/ml 50% ethanol) to the medium autoclaved.
 applications:
 - Microbial cultivation
 curation_history:

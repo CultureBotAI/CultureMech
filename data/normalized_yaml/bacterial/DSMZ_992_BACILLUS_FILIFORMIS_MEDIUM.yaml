@@ -1,6 +1,6 @@
 name: BACILLUS FILIFORMIS MEDIUM
 original_name: BACILLUS FILIFORMIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -67,8 +67,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sodium carbonate and sodium chloride should separately be autoclaved.
-    pH 9.0.
+  description: Sodium carbonate and sodium chloride should separately be autoclaved. pH 9.0.
 applications:
 - Microbial cultivation
 curation_history:

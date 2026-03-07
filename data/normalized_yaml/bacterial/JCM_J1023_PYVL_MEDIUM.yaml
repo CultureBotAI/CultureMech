@@ -1,6 +1,6 @@
 name: PYVL MEDIUM
 original_name: PYVL MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.3
@@ -104,8 +104,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber
-    stopped tubes under oxygen-free N2-CO2 (95:5).
+  description: Adjust pH to 7.3. Prepare medium anaerobically and pour into rubber stopped tubes under
+    oxygen-free N2-CO2 (95:5).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: Mineral solution 2 (medium 203)
 original_name: Mineral solution 2 (medium 203)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3149
     label: Mineral solution 2 (medium 203)
-notes: 'Source: KOMODO ModelSEED | ID: 3149 | DSMZ Medium: 3149 (mediadive.medium:3149)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3149 | DSMZ Medium: 3149 (mediadive.medium:3149) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

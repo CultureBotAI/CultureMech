@@ -1,13 +1,12 @@
 name: '1135'
 original_name: '1135'
-category: imported
+category: bacterial
 description: 1135. NBRC 1132.
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ingredients:
-- preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured
-    by Asahi Breweries, Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd.,
-    Osaka, Japan.
+- preferred_term: Malt extract20gEbios (tablets)*1gDistilled water1LAgar15g*Manufactured by Asahi Breweries,
+    Ltd., Tokyo, Japan. Distributed by Tanabe Seiyaku Co. Ltd., Osaka, Japan.
 - preferred_term: ''
   concentration:
     value: Malt extract

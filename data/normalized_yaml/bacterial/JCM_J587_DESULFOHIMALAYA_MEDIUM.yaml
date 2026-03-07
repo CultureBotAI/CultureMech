@@ -1,6 +1,6 @@
 name: DESULFOHIMALAYA MEDIUM
 original_name: DESULFOHIMALAYA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -74,11 +74,10 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: ADJUST_PH
-  description: Add components except ascorbic acid and thioglycollic acid to distilled
-    water and adjust pH to 7.0 - 7.5. Thioglycollate and ascorbate should be added
-    immediately prior to sterilization. Distribute into tubes or flasks. This medium
-    may be cloudy after sterilization and turns black as a result of H2S production
-    due to bacterial growth.
+  description: Add components except ascorbic acid and thioglycollic acid to distilled water and adjust
+    pH to 7.0 - 7.5. Thioglycollate and ascorbate should be added immediately prior to sterilization.
+    Distribute into tubes or flasks. This medium may be cloudy after sterilization and turns black as
+    a result of H2S production due to bacterial growth.
 applications:
 - Microbial cultivation
 curation_history:

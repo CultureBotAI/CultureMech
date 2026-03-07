@@ -1,6 +1,6 @@
 name: METHYLOHALOMONAS MEDIUM
 original_name: METHYLOHALOMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.5
@@ -122,13 +122,11 @@ preparation_steps:
   description: pH 7.5
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without methanol, vitamin B12 MgSO4 x 7 H2O, NaHCO3
-    and NaS2O3 x 5 H2O in closed vessels with a medium to headspace ratio of 1:5 to
-    1:10. Add the methanol, MgSO4 x 7 H2O, NaHCO3 and NaS2O3 x 5 H2O from autoclaved
-    stock solutions after sterilisation of the medium. Vitamin B12 is added from a
-    filter sterilised stock solution to the sterile medium. Incubate the strains with
-    shaking at 150 rpm. Growth is faster in the presence of 20mM sodium acetate instead
-    of methanol.
+  description: Prepare the medium without methanol, vitamin B12 MgSO4 x 7 H2O, NaHCO3 and NaS2O3 x 5 H2O
+    in closed vessels with a medium to headspace ratio of 1:5 to 1:10. Add the methanol, MgSO4 x 7 H2O,
+    NaHCO3 and NaS2O3 x 5 H2O from autoclaved stock solutions after sterilisation of the medium. Vitamin
+    B12 is added from a filter sterilised stock solution to the sterile medium. Incubate the strains with
+    shaking at 150 rpm. Growth is faster in the presence of 20mM sodium acetate instead of methanol.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: DESULFOTOMACULUM TONGENSE MEDIUM
 original_name: DESULFOTOMACULUM TONGENSE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -130,11 +130,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, bring to a boil and cool down to room temperature
-    under a N2-CO2 (4:1, v/v) gas stream. Dispense the medium into culture vessels
-    under a N2-CO2 (4:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
-    After cooling, add per liter the following solutions from anaerobic stocks (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix components thoroughly, bring to a boil and cool down to room temperature under a N2-CO2
+    (4:1, v/v) gas stream. Dispense the medium into culture vessels under a N2-CO2 (4:1, v/v) gas mixture,
+    seal with butyl rubber stoppers and autoclave. After cooling, add per liter the following solutions
+    from anaerobic stocks (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: ADJUST_PH
   description: Check final pH to be 7.0 - 7.2.

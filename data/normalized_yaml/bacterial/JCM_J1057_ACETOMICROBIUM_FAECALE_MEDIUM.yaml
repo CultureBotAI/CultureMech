@@ -1,6 +1,6 @@
 name: ACETOMICROBIUM FAECALE MEDIUM
 original_name: ACETOMICROBIUM FAECALE MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -260,17 +260,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: 'Mix components thoroughly. Bring to a boil for seconds, cool down
-    under a N2-CO2 (4:1, v/v) gas mixture and add the following components to the
-    medium:'
+  description: 'Mix components thoroughly. Bring to a boil for seconds, cool down under a N2-CO2 (4:1,
+    v/v) gas mixture and add the following components to the medium:'
 - step_number: 2
   action: AUTOCLAVE
-  description: Seal with butyl rubber stoppers and autoclave. After inoculation, pressurize
-    the inoculated bottles to 200 kPa with a N2-CO2 (4:1, v/v) gas mixture.
+  description: Seal with butyl rubber stoppers and autoclave. After inoculation, pressurize the inoculated
+    bottles to 200 kPa with a N2-CO2 (4:1, v/v) gas mixture.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

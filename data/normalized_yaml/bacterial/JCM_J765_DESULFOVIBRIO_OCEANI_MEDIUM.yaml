@@ -1,6 +1,6 @@
 name: DESULFOVIBRIO OCEANI MEDIUM
 original_name: DESULFOVIBRIO OCEANI MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -186,13 +186,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
-    atmosphere. After cooling, add the following sterile solutions (autoclaved or
-    *filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) atmosphere. After cooling,
+    add the following sterile solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Finally, reduce the medium with the following solution (autoclaved
-    and stored under a N2 atmosphere):'
+  description: 'Finally, reduce the medium with the following solution (autoclaved and stored under a
+    N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:

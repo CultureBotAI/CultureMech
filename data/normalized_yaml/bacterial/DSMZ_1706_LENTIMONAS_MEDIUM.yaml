@@ -1,6 +1,6 @@
 name: LENTIMONAS MEDIUM
 original_name: LENTIMONAS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.8
@@ -201,8 +201,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'For 1 l of medium combine 500 ml of solution I, 100 ml of solution
-    II and 400 ml of solution III and add the following additives:'
+  description: 'For 1 l of medium combine 500 ml of solution I, 100 ml of solution II and 400 ml of solution
+    III and add the following additives:'
 - step_number: 2
   action: FILTER_STERILIZE
   description: Filtrate (0.22 µm).

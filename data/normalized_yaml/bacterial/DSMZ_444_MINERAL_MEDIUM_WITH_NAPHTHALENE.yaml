@@ -1,6 +1,6 @@
 name: MINERAL MEDIUM WITH NAPHTHALENE
 original_name: MINERAL MEDIUM WITH NAPHTHALENE
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -77,15 +77,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: "Use medium 442, but few pea-size crumbs of naphthalene instead of\
-    \ toluene are\r\nevaporated in a desiccator so that the atmosphere is saturated."
+  description: "Use medium 442, but few pea-size crumbs of naphthalene instead of toluene are\r\nevaporated\
+    \ in a desiccator so that the atmosphere is saturated."
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 7.0.
 - step_number: 3
   action: MIX
-  description: One drop of toluene is evaporated in a desiccator so that the atmosphere
-    is saturated. 0.1% succinate may be added to the medium as additional carbon source.
+  description: One drop of toluene is evaporated in a desiccator so that the atmosphere is saturated.
+    0.1% succinate may be added to the medium as additional carbon source.
 applications:
 - Microbial cultivation
 curation_history:

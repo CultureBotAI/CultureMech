@@ -1,6 +1,6 @@
 name: Halobacteria Medium (pH 8.0)
 original_name: Halobacteria Medium (pH 8.0)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:

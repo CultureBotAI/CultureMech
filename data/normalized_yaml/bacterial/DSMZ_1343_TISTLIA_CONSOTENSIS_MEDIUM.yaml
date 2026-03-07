@@ -1,8 +1,8 @@
 name: TISTLIA CONSOTENSIS MEDIUM
 original_name: TISTLIA CONSOTENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1343
@@ -172,8 +172,8 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 3
   action: MIX
-  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before
-    adding the other trace elements.
+  description: Neutralise the nitrilotriacetic acid to a pH of 6.5 with KOH before adding the other trace
+    elements.
 applications:
 - Microbial cultivation
 curation_history:

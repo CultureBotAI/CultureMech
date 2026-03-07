@@ -1,6 +1,6 @@
 name: METHANOBACTERIUM SUBTERRANEUM MEDIUM
 original_name: METHANOBACTERIUM SUBTERRANEUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 8.0-8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:814
     label: METHANOBACTERIUM SUBTERRANEUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 814 | DSMZ Medium: 814 (mediadive.medium:814)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 814 | DSMZ Medium: 814 (mediadive.medium:814) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

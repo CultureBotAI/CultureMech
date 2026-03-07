@@ -1,6 +1,6 @@
 name: For Allochromatium phaeobacterium DSM 19781
 original_name: For Allochromatium phaeobacterium DSM 19781
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1226.1
     label: For Allochromatium phaeobacterium DSM 19781
-notes: 'Source: KOMODO ModelSEED | ID: 1226.1 | DSMZ Medium: 1226 (mediadive.medium:1226)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1226.1 | DSMZ Medium: 1226 (mediadive.medium:1226) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

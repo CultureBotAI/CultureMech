@@ -1,8 +1,8 @@
 name: HEMIN MEDIUM FOR MYCOBACTERIUM
 original_name: HEMIN MEDIUM FOR MYCOBACTERIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 645a
   term:
@@ -31,8 +31,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with
-    60 micromoles hemin. Hemin must be solubilized with 1N NAOH.
+  description: Middlebrook 7H10 (Difco 0627) with OADC Enrichment (Difco 0722) with 60 micromoles hemin.
+    Hemin must be solubilized with 1N NAOH.
 applications:
 - Microbial cultivation
 curation_history:

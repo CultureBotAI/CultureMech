@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM medium
 original_name: CLOSTRIDIUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:143
     label: CLOSTRIDIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 143 | DSMZ Medium: 143 (mediadive.medium:143)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 143 | DSMZ Medium: 143 (mediadive.medium:143) | Aerobic: Yes'
 ingredients:
 - preferred_term: Crotonic acid
   term:

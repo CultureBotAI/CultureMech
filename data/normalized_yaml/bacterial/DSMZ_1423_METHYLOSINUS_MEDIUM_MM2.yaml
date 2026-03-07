@@ -1,6 +1,6 @@
 name: METHYLOSINUS MEDIUM MM2
 original_name: METHYLOSINUS MEDIUM MM2
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.0
@@ -108,8 +108,7 @@ preparation_steps:
   description: Adjust pH to 5.0.
 - step_number: 2
   action: POUR_PLATES
-  description: Dispense the medium into serum bottles under gassing with CH4 (20%
-    v/v).
+  description: Dispense the medium into serum bottles under gassing with CH4 (20% v/v).
 - step_number: 3
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.

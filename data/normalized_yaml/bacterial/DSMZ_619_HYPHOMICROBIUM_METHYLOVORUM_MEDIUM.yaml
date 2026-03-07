@@ -1,8 +1,8 @@
 name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
 original_name: HYPHOMICROBIUM METHYLOVORUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 619
   term:
@@ -146,8 +146,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Sterilize methanol by filtration, and add to other components sterilized
-    by autoclaving.
+  description: Sterilize methanol by filtration, and add to other components sterilized by autoclaving.
 applications:
 - Microbial cultivation
 curation_history:

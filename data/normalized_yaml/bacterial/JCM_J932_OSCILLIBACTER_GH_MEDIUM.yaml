@@ -1,6 +1,6 @@
 name: OSCILLIBACTER GH MEDIUM
 original_name: OSCILLIBACTER GH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -162,9 +162,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 6.0. Distribute the medium
-    into culture vessels under a N2 gas stream, seal with butyl rubber stoppers and
-    autoclave.
+  description: Mix components thoroughly and adjust pH to 6.0. Distribute the medium into culture vessels
+    under a N2 gas stream, seal with butyl rubber stoppers and autoclave.
 applications:
 - Microbial cultivation
 curation_history:

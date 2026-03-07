@@ -1,6 +1,6 @@
 name: ALKALIFLEXUS MEDIUM
 original_name: ALKALIFLEXUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 10.0
@@ -70,12 +70,11 @@ preparation_steps:
   description: pH 10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose
-    or yeast extract. Boil the medium in a water bath and cool under a stream of nitrogen.
-    Add the Na2CO3 and NaHCO3 to the cooled medium (the pH should be about 10.0) and
-    dispense the medium into Hungate tubes or serum bottles under a stream of nitrogen.
-    Seal the tubes under nitrogen gas and autoclave. To the cooled medium at the appropriate
-    amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic
+  description: Prepare the medium without Na2CO3, NaHCO3, Na2S x 9 H2O, cellulobiose or yeast extract.
+    Boil the medium in a water bath and cool under a stream of nitrogen. Add the Na2CO3 and NaHCO3 to
+    the cooled medium (the pH should be about 10.0) and dispense the medium into Hungate tubes or serum
+    bottles under a stream of nitrogen. Seal the tubes under nitrogen gas and autoclave. To the cooled
+    medium at the appropriate amounts of Na2S x 9 H2O, cellulobiose and yeast extract from sterile, anaerobic
     stock solutions (10% Na2S x 9 H2O, 5% cellulobiose, 10% yeast extract).
 applications:
 - Microbial cultivation

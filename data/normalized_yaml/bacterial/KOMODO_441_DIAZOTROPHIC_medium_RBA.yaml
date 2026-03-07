@@ -1,16 +1,15 @@
 name: DIAZOTROPHIC medium (RBA)
 original_name: DIAZOTROPHIC medium (RBA)
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: KOMODO Medium 441
   term:
     id: komodo.medium:441
     label: DIAZOTROPHIC medium (RBA)
-notes: 'Source: KOMODO ModelSEED | ID: 441 | DSMZ Medium: 441 (mediadive.medium:441)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 441 | DSMZ Medium: 441 (mediadive.medium:441) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

@@ -1,6 +1,6 @@
 name: RHODOVULUM MEDIUM
 original_name: RHODOVULUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -217,10 +217,10 @@ preparation_steps:
   description: Adjust ph to 7.0
 - step_number: 2
   action: AUTOCLAVE
-  description: Prepare the medium under N2 gas without the NaHCO3, Na2S x 9 H2O, VA-Vitamin
-    solution and vitamin B12. Autoclave and add the VA-Vitamin solution and vitamin
-    B12 from a filter-sterilised stock solution and the NaHCO3, Na2S x 9 H2O, from
-    sterile stock solutions. The final pH of the medium should be 7.0.
+  description: Prepare the medium under N2 gas without the NaHCO3, Na2S x 9 H2O, VA-Vitamin solution and
+    vitamin B12. Autoclave and add the VA-Vitamin solution and vitamin B12 from a filter-sterilised stock
+    solution and the NaHCO3, Na2S x 9 H2O, from sterile stock solutions. The final pH of the medium should
+    be 7.0.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 2.0 - 3.0.

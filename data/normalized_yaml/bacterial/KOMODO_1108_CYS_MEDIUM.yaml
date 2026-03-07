@@ -1,6 +1,6 @@
 name: CYS MEDIUM
 original_name: CYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1108
     label: CYS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1108 | DSMZ Medium: 1108 (mediadive.medium:1108)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1108 | DSMZ Medium: 1108 (mediadive.medium:1108) | Aerobic: No'
 ingredients:
 - preferred_term: N-Z-Case
   concentration:

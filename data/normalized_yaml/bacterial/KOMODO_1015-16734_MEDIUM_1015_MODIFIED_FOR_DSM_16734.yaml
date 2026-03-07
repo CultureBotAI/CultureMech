@@ -1,15 +1,15 @@
 name: MEDIUM 1015 MODIFIED FOR DSM 16734
 original_name: MEDIUM 1015 MODIFIED FOR DSM 16734
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 1015_16734
   term:
     id: komodo.medium:1015_16734
     label: MEDIUM 1015 MODIFIED FOR DSM 16734
-notes: 'Source: KOMODO ModelSEED | ID: 1015_16734 | DSMZ Medium: 1015 (mediadive.medium:1015)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1015_16734 | DSMZ Medium: 1015 (mediadive.medium:1015) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

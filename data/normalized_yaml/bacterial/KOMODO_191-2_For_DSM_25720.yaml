@@ -1,11 +1,11 @@
 name: For DSM 25720
 original_name: For DSM 25720
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 191.2 | DSMZ Medium: 191
-  (mediadive.medium:191) | Aerobic: Yes'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 191.2 | DSMZ Medium: 191 (mediadive.medium:191)
+  | Aerobic: Yes'
 media_term:
   preferred_term: KOMODO Medium 191.2
   term:

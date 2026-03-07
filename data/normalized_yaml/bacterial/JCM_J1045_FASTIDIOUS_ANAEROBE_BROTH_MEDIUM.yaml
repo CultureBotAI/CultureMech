@@ -1,6 +1,6 @@
 name: FASTIDIOUS ANAEROBE BROTH MEDIUM
 original_name: FASTIDIOUS ANAEROBE BROTH MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -88,13 +88,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components, adjust pH 7.2 and autoclave. Cool medium under a N2-CO2
-    (4:1, v/v) gas stream and add anaerobically the following solution (filter-sterilized).
+  description: Mix components, adjust pH 7.2 and autoclave. Cool medium under a N2-CO2 (4:1, v/v) gas
+    stream and add anaerobically the following solution (filter-sterilized).
 - step_number: 2
   action: ADJUST_PH
-  description: Aseptically and anaerobically distribute the medium into culture vessels
-    under the same gas mixture and seal with butyl rubber stoppers. Readjust pH to
-    7.0 - 7.2.
+  description: Aseptically and anaerobically distribute the medium into culture vessels under the same
+    gas mixture and seal with butyl rubber stoppers. Readjust pH to 7.0 - 7.2.
 applications:
 - Microbial cultivation
 curation_history:

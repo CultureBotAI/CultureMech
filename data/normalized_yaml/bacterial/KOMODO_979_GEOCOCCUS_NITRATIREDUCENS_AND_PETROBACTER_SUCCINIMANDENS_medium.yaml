@@ -1,6 +1,6 @@
 name: GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS medium
 original_name: GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:979
     label: GEOCOCCUS NITRATIREDUCENS AND PETROBACTER SUCCINIMANDENS medium
-notes: 'Source: KOMODO ModelSEED | ID: 979 | DSMZ Medium: 979 (mediadive.medium:979)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 979 | DSMZ Medium: 979 (mediadive.medium:979) | Aerobic: Yes'
 ingredients:
 - preferred_term: K2HPO4
   term:
@@ -250,6 +249,5 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.147525Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
 ph_value: 7.0

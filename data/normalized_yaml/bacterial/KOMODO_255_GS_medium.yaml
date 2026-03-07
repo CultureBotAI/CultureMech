@@ -1,6 +1,6 @@
 name: GS medium
 original_name: GS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:255
     label: GS medium
-notes: 'Source: KOMODO ModelSEED | ID: 255 | DSMZ Medium: 255 (mediadive.medium:255)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 255 | DSMZ Medium: 255 (mediadive.medium:255) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

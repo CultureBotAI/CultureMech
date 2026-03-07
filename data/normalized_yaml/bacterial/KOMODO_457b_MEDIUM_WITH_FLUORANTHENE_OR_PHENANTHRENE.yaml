@@ -1,15 +1,14 @@
 name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
 original_name: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 457b
   term:
     id: komodo.medium:457b
     label: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
-notes: 'Source: KOMODO ModelSEED | ID: 457b | DSMZ Medium: 457b (mediadive.medium:457b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457b | DSMZ Medium: 457b (mediadive.medium:457b) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:

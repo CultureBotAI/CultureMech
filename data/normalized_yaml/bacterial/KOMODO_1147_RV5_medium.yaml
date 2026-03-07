@@ -1,11 +1,11 @@
 name: RV5 medium
 original_name: RV5 medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.5
-notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1147 | DSMZ Medium: 1147
-  (mediadive.medium:1147) | Aerobic: No'
+notes: 'pH buffer: NaOH | Source: KOMODO ModelSEED | ID: 1147 | DSMZ Medium: 1147 (mediadive.medium:1147)
+  | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 1147
   term:

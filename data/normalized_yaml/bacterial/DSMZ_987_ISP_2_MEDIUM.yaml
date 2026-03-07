@@ -1,8 +1,8 @@
 name: ISP 2 MEDIUM
 original_name: ISP 2 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 987

@@ -1,6 +1,6 @@
 name: Luria Broth (LB)
 original_name: Luria Broth (LB)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -13,8 +13,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
-    compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -22,16 +21,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
-    Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
 - preferred_term: Triptone
   concentration:
     value: '10'
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Solution'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
@@ -66,5 +63,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.918965'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: HCl; Added default concentration
-    for ingredient: NaOH'
+  notes: 'Added default concentration for ingredient: HCl; Added default concentration for ingredient:
+    NaOH'

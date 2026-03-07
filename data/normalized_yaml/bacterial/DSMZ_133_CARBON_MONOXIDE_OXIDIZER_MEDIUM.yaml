@@ -1,8 +1,8 @@
 name: CARBON MONOXIDE OXIDIZER MEDIUM
 original_name: CARBON MONOXIDE OXIDIZER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 133
@@ -124,13 +124,11 @@ preparation_steps:
   description: Dissolve ingredients, adjust pH to 7.0 and autoclave.
 - step_number: 2
   action: MIX
-  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20
-    - 80% carbon monoxide + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding
-    2.50 g NaHCO3 per liter of medium.
+  description: For chemoautotrophic growth incubate under a gas atmosphere of a) 20 - 80% carbon monoxide
+    + 10% O2 + 70 - 10% N2 or b) 70% H2 + 20% O2 + 10% CO2 adding 2.50 g NaHCO3 per liter of medium.
 - step_number: 3
   action: MIX
-  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate
-    under air atmosphere.
+  description: For chemoorganotrophic growth add 3.00 g sodium acetate and incubate under air atmosphere.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: MODIFIED METHANOHALOPHILUS MEDIUM
 original_name: MODIFIED METHANOHALOPHILUS MEDIUM
-category: imported
+category: archaea
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.1
@@ -250,18 +250,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave the medium under a N2:CO2
-    (80:20, v/v) gas atmosphere. After cooling, add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave the medium under a N2:CO2 (80:20, v/v) gas atmosphere.
+    After cooling, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Adjust pH to 7.0-7.2, if necessary. Aseptically and anaerobically,
-    distribute the medium into culture vessels under the same gas mixture (e.g., 20
-    ml medium in 60 ml-serum bottles) and seal with butyl rubber stoppers. Add per
-    liter the following solution (autoclaved and stored under a N2 atmosphere).
+  description: Adjust pH to 7.0-7.2, if necessary. Aseptically and anaerobically, distribute the medium
+    into culture vessels under the same gas mixture (e.g., 20 ml medium in 60 ml-serum bottles) and seal
+    with butyl rubber stoppers. Add per liter the following solution (autoclaved and stored under a N2
+    atmosphere).
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

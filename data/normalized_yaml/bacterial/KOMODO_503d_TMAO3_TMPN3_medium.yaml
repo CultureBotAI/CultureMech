@@ -1,6 +1,6 @@
 name: TMAO3/TMPN3 medium
 original_name: TMAO3/TMPN3 medium
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:503d
     label: TMAO3/TMPN3 medium
-notes: 'Source: KOMODO ModelSEED | ID: 503d | DSMZ Medium: 503d (mediadive.medium:503d)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 503d | DSMZ Medium: 503d (mediadive.medium:503d) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

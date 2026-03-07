@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM M1 medium
 original_name: CLOSTRIDIUM M1 medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 7.3-7.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:487
     label: CLOSTRIDIUM M1 medium
-notes: 'Source: KOMODO ModelSEED | ID: 487 | DSMZ Medium: 487 (mediadive.medium:487)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 487 | DSMZ Medium: 487 (mediadive.medium:487) | Aerobic: Yes'
 ingredients:
 - preferred_term: Betaine x H2O
   term:
@@ -255,5 +254,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:44.417391Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

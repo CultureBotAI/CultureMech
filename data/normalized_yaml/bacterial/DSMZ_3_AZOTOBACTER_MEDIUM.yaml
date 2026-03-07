@@ -1,8 +1,8 @@
 name: AZOTOBACTER MEDIUM
 original_name: AZOTOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.3
 media_term:
   preferred_term: DSMZ Medium 3
@@ -87,11 +87,10 @@ preparation_steps:
   description: Adjust pH to 7.3.
 - step_number: 2
   action: DISSOLVE
-  description: Sterilize glucose and mannitol separately (in 50 ml H2O) and add to
-    the medium after autoclaving. Calcium carbonate in the medium serves as a buffer.
-    The calcium carbonate will settle in agar plates before the agar has set, producing
-    an opaque layer in the bottom. As the strain grows and acid is produced this will
-    react with the calcium carbonate, causing it to dissolve and form zones of clearing
+  description: Sterilize glucose and mannitol separately (in 50 ml H2O) and add to the medium after autoclaving.
+    Calcium carbonate in the medium serves as a buffer. The calcium carbonate will settle in agar plates
+    before the agar has set, producing an opaque layer in the bottom. As the strain grows and acid is
+    produced this will react with the calcium carbonate, causing it to dissolve and form zones of clearing
     immediately below the colonies.
 applications:
 - Microbial cultivation

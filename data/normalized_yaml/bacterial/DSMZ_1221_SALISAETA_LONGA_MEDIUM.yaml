@@ -1,8 +1,8 @@
 name: SALISAETA LONGA MEDIUM
 original_name: SALISAETA LONGA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.0
 media_term:
   preferred_term: DSMZ Medium 1221
@@ -68,8 +68,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates
-    should be sealed during incubation to prevent drying out.
+  description: Adjust to pH 7.0. Agar may be added at 15 g/l for solid media. Plates should be sealed
+    during incubation to prevent drying out.
 applications:
 - Microbial cultivation
 curation_history:

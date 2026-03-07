@@ -1,6 +1,6 @@
 name: DESULFOBACTERIUM CETONICUM MEDIUM
 original_name: DESULFOBACTERIUM CETONICUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.3
@@ -147,13 +147,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except sodium butyrate, NaHCO3 and Na2S x 9H2O, and
-    autoclave under a N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave sodium butyrate
-    in 10 ml distilled water under a N2 atmosphere. Filter-sterilize 5% NaHCO3 and
-    store under a N2-CO2 (4:1, v/v) atmosphere. Add the sterile sodium butyrate and
-    NaHCO3 solutions to the medium. Prior to inoculation, add a 5% Na2S x 9H2O solution
-    (anaerobically autoclaved) to the medium. Check final pH of the medium to be 7.2
-    - 7.4.
+  description: Mix ingredients, except sodium butyrate, NaHCO3 and Na2S x 9H2O, and autoclave under a
+    N2-CO2 (4:1, v/v) atmosphere. Separately, autoclave sodium butyrate in 10 ml distilled water under
+    a N2 atmosphere. Filter-sterilize 5% NaHCO3 and store under a N2-CO2 (4:1, v/v) atmosphere. Add the
+    sterile sodium butyrate and NaHCO3 solutions to the medium. Prior to inoculation, add a 5% Na2S x
+    9H2O solution (anaerobically autoclaved) to the medium. Check final pH of the medium to be 7.2 - 7.4.
 applications:
 - Microbial cultivation
 curation_history:

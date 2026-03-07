@@ -1,15 +1,14 @@
 name: REACTIVATION WITH LIQUID medium
 original_name: REACTIVATION WITH LIQUID medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535b
   term:
     id: komodo.medium:535b
     label: REACTIVATION WITH LIQUID medium
-notes: 'Source: KOMODO ModelSEED | ID: 535b | DSMZ Medium: 535b (mediadive.medium:535b)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 535b | DSMZ Medium: 535b (mediadive.medium:535b) | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

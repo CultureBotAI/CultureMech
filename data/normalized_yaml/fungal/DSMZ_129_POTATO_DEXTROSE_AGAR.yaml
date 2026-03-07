@@ -1,8 +1,8 @@
 name: POTATO DEXTROSE AGAR
 original_name: POTATO DEXTROSE AGAR
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 5.6
 media_term:
   preferred_term: DSMZ Medium 129
@@ -38,8 +38,8 @@ preparation_steps:
   description: Adjust pH to 5.6. Sterilize at 121°C for 15 min
 - step_number: 2
   action: HEAT
-  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour.
-    Pass through fine sieve. Avoid new potatoes.
+  description: Boil 200 g scrubbed and sliced potatoes in 1000 ml water for 1 hour. Pass through fine
+    sieve. Avoid new potatoes.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: METHYLOPHAGA SULFIDOVORANS MEDIUM
 original_name: METHYLOPHAGA SULFIDOVORANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.8
 media_term:
   preferred_term: DSMZ Medium 951
@@ -203,13 +203,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Prepare the medium without methanol and the vitamin solution. Adjust
-    pH to 7.5 (±0.3) with 2 N HCl. Liquid media is prepared in either Hungate tubes
-    (5ml medium) or 100ml serum bottles (10ml medium) sealed with rubber stoppers.
+  description: Prepare the medium without methanol and the vitamin solution. Adjust pH to 7.5 (±0.3) with
+    2 N HCl. Liquid media is prepared in either Hungate tubes (5ml medium) or 100ml serum bottles (10ml
+    medium) sealed with rubber stoppers.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Sterilize by autoclaving. After autoclaving add the methanol (filter
-    sterilised) and the vitamin solution (filter sterilised) from sterile stock solutions.
+  description: Sterilize by autoclaving. After autoclaving add the methanol (filter sterilised) and the
+    vitamin solution (filter sterilised) from sterile stock solutions.
 applications:
 - Microbial cultivation
 curation_history:

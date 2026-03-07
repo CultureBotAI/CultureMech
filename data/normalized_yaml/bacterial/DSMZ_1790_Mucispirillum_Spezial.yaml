@@ -1,6 +1,6 @@
 name: Mucispirillum Spezial
 original_name: Mucispirillum Spezial
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -88,12 +88,12 @@ preparation_steps:
   description: pressurize with 1 bar H2
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
-    water and filter sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
+    sterilize. Store refrigerated.
 - step_number: 7
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
-    in water and filter sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml in water and filter
+    sterilize. Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:

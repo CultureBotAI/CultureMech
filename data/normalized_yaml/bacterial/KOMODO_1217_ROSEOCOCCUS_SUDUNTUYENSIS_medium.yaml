@@ -1,6 +1,6 @@
 name: ROSEOCOCCUS SUDUNTUYENSIS medium
 original_name: ROSEOCOCCUS SUDUNTUYENSIS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1217
     label: ROSEOCOCCUS SUDUNTUYENSIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1217 | DSMZ Medium: 1217 (mediadive.medium:1217)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1217 | DSMZ Medium: 1217 (mediadive.medium:1217) | Aerobic: No'
 ingredients:
 - preferred_term: NH4Cl
   term:

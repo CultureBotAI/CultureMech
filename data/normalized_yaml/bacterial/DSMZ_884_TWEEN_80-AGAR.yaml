@@ -1,8 +1,8 @@
 name: TWEEN 80-AGAR
 original_name: TWEEN 80-AGAR
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: DSMZ Medium 884
   term:
@@ -45,8 +45,7 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine after cooling to
-    approximately 50°C.
+  description: Autoclave solutions A and B separately and combine after cooling to approximately 50°C.
 applications:
 - Microbial cultivation
 curation_history:

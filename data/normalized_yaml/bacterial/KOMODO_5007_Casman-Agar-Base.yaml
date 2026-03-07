@@ -1,6 +1,6 @@
 name: Casman-Agar-Base
 original_name: Casman-Agar-Base
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:5007
     label: Casman-Agar-Base
-notes: 'Source: KOMODO ModelSEED | ID: 5007 | DSMZ Medium: 5007 (mediadive.medium:5007)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5007 | DSMZ Medium: 5007 (mediadive.medium:5007) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

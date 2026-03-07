@@ -1,6 +1,6 @@
 name: ARCHAEOGLOBUS PROFUNDUS MEDIUM
 original_name: ARCHAEOGLOBUS PROFUNDUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.9
@@ -197,16 +197,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients except Na2S x 9H2O and adjust pH to 6.9 with H2SO4.
-    Sterilize by filtration under H2-CO2 (80:20) gas mixture. Neutralize Na2S x 9H2O
-    solution and autoclave under a N2 atmosphere. Aseptically and anaerobically add
-    the sterile Na2S x 9H2O solution to the medium under a H2-CO2 (80:20) atmosphere
-    and readjust pH to 6.9, if necessary. Pressurize inoculated bottle to 200 kPa
-    H2-CO2 (80:20).
+  description: Mix ingredients except Na2S x 9H2O and adjust pH to 6.9 with H2SO4. Sterilize by filtration
+    under H2-CO2 (80:20) gas mixture. Neutralize Na2S x 9H2O solution and autoclave under a N2 atmosphere.
+    Aseptically and anaerobically add the sterile Na2S x 9H2O solution to the medium under a H2-CO2 (80:20)
+    atmosphere and readjust pH to 6.9, if necessary. Pressurize inoculated bottle to 200 kPa H2-CO2 (80:20).
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
-    Then proceed to add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
+    add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:

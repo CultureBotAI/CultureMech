@@ -1,6 +1,6 @@
 name: THERMOCOCCUS STETTERI MEDIUM
 original_name: THERMOCOCCUS STETTERI MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -124,13 +124,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O, adjust
-    pH to 6.5 with H2SO4, and autoclave under a N2 atmosphere. Separately autoclave
-    yeast extract and peptone as 10% solutions under a N2 atmosphere. Steam sulfur
-    for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O as a 5% solution,
-    and autoclave under a N2 atmosphere. Aseptically and anaerobically add the yeast
-    extract and peptone solutions, and sulfur to the medium. Prior to inoculation,
-    add the sterile Na2S x 9H2O solution, and readjust pH to 6.5, if necessary.
+  description: Mix ingredients, except yeast extract, sulfur and Na2S x 9H2O, adjust pH to 6.5 with H2SO4,
+    and autoclave under a N2 atmosphere. Separately autoclave yeast extract and peptone as 10% solutions
+    under a N2 atmosphere. Steam sulfur for 3 hr on each of 3 successive days. Neutralize Na2S x 9H2O
+    as a 5% solution, and autoclave under a N2 atmosphere. Aseptically and anaerobically add the yeast
+    extract and peptone solutions, and sulfur to the medium. Prior to inoculation, add the sterile Na2S
+    x 9H2O solution, and readjust pH to 6.5, if necessary.
 applications:
 - Microbial cultivation
 curation_history:

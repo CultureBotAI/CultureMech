@@ -1,6 +1,6 @@
 name: METHANOTROPH 1A MEDIUM
 original_name: METHANOTROPH 1A MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 6.5
@@ -102,9 +102,9 @@ preparation_steps:
   description: Adjust pH to 6.5.
 - step_number: 2
   action: AUTOCLAVE
-  description: Distribute the medium into culture vessels (leave >80% volume gas phase),
-    seal with butyl rubber stoppers and autoclave. After cooling, add filter-sterilized
-    methane gas to make a final concentration about 20% (v/v) methane in the gas phase.
+  description: Distribute the medium into culture vessels (leave >80% volume gas phase), seal with butyl
+    rubber stoppers and autoclave. After cooling, add filter-sterilized methane gas to make a final concentration
+    about 20% (v/v) methane in the gas phase.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
 original_name: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:533
     label: THERMOPHILIC HYDROGEN BACTERIA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 533 | DSMZ Medium: 533 (mediadive.medium:533)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 533 | DSMZ Medium: 533 (mediadive.medium:533) | Aerobic: No'
 ingredients:
 - preferred_term: NH4NO3
   concentration:

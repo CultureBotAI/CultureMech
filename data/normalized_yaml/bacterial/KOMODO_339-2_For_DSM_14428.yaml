@@ -1,6 +1,6 @@
 name: For DSM 14428
 original_name: For DSM 14428
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.0-7.4
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:339.2
     label: For DSM 14428
-notes: 'Source: KOMODO ModelSEED | ID: 339.2 | DSMZ Medium: 339 (mediadive.medium:339)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 339.2 | DSMZ Medium: 339 (mediadive.medium:339) | Aerobic: Yes'
 ingredients:
 - preferred_term: dehydrated Wilkins-Chalgren medium
   concentration:

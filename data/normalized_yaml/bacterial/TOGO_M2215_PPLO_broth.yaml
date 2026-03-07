@@ -1,6 +1,6 @@
 name: PPLO broth
 original_name: PPLO broth
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -18,8 +18,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -32,8 +31,7 @@ ingredients:
   concentration:
     value: '120'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component,
-    Organic compound'
+  notes: 'Role: Antimicrobial agent; Properties: Simple component, Defined component, Organic compound'
   term:
     id: CHEBI:28971
     label: Ampicillin

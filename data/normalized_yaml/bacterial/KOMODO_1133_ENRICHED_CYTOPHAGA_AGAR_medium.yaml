@@ -1,16 +1,15 @@
 name: ENRICHED CYTOPHAGA AGAR medium
 original_name: ENRICHED CYTOPHAGA AGAR medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_range: 7.2-7.4
 media_term:
   preferred_term: KOMODO Medium 1133
   term:
     id: komodo.medium:1133
     label: ENRICHED CYTOPHAGA AGAR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1133 | DSMZ Medium: 1133 (mediadive.medium:1133)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1133 | DSMZ Medium: 1133 (mediadive.medium:1133) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

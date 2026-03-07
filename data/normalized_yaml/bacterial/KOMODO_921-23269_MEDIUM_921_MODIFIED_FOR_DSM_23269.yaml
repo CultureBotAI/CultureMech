@@ -1,15 +1,15 @@
 name: MEDIUM 921 MODIFIED FOR DSM 23269
 original_name: MEDIUM 921 MODIFIED FOR DSM 23269
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 921_23269
   term:
     id: komodo.medium:921_23269
     label: MEDIUM 921 MODIFIED FOR DSM 23269
-notes: 'Source: KOMODO ModelSEED | ID: 921_23269 | DSMZ Medium: 921 (mediadive.medium:921)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 921_23269 | DSMZ Medium: 921 (mediadive.medium:921) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Agar
   term:

@@ -1,6 +1,6 @@
 name: SPIROCHAETA MEDIUM
 original_name: SPIROCHAETA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -242,10 +242,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: For vial cultures, dissolve all compounds except Na2S x 9H2O and L-cysteine
-    x HCl x H2O, then, adjust pH to 7.5. Dispense 19 ml of medium into 50-ml vials,
-    purge with N2-CO2 (80:20) gas and fix with a stopper. After autoclaving, add filter-sterilized
-    Na2S x 9H2O and L-cysteine x HCl x H2O solution to each vial as reducing agents.
+  description: For vial cultures, dissolve all compounds except Na2S x 9H2O and L-cysteine x HCl x H2O,
+    then, adjust pH to 7.5. Dispense 19 ml of medium into 50-ml vials, purge with N2-CO2 (80:20) gas and
+    fix with a stopper. After autoclaving, add filter-sterilized Na2S x 9H2O and L-cysteine x HCl x H2O
+    solution to each vial as reducing agents.
 applications:
 - Microbial cultivation
 curation_history:

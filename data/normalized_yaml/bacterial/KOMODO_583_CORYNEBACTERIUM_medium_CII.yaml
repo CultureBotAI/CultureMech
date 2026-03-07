@@ -1,15 +1,14 @@
 name: CORYNEBACTERIUM medium CII
 original_name: CORYNEBACTERIUM medium CII
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 583
   term:
     id: komodo.medium:583
     label: CORYNEBACTERIUM medium CII
-notes: 'Source: KOMODO ModelSEED | ID: 583 | DSMZ Medium: 583 (mediadive.medium:583)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 583 | DSMZ Medium: 583 (mediadive.medium:583) | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

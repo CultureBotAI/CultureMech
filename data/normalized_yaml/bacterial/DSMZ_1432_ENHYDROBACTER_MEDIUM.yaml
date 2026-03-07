@@ -1,8 +1,8 @@
 name: ENHYDROBACTER MEDIUM
 original_name: ENHYDROBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 1432
@@ -126,13 +126,12 @@ preparation_steps:
   description: 'Sterilize 20 min. /121°C. After cooling to 60°C add to the medium:'
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve NTA first by neutralizing with KOH, then add other salts.
-    Adjust pH to 7.2 with KOH or H2SO4. Adjust volume to 1000.0 ml with distilled
-    water.
+  description: Dissolve NTA first by neutralizing with KOH, then add other salts. Adjust pH to 7.2 with
+    KOH or H2SO4. Adjust volume to 1000.0 ml with distilled water.
 - step_number: 3
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
-    precipitation of the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
+    the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:

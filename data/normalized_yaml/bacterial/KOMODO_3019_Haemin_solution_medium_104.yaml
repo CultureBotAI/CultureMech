@@ -1,6 +1,6 @@
 name: Haemin solution (medium 104)
 original_name: Haemin solution (medium 104)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3019
     label: Haemin solution (medium 104)
-notes: 'Source: KOMODO ModelSEED | ID: 3019 | DSMZ Medium: 3019 (mediadive.medium:3019)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3019 | DSMZ Medium: 3019 (mediadive.medium:3019) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

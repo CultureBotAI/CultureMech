@@ -1,6 +1,6 @@
 name: HYDROGENIVIRGA OKINAWENSIS MEDIUM
 original_name: HYDROGENIVIRGA OKINAWENSIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -282,19 +282,19 @@ preparation_steps:
   description: Sparge medium with 80% N2 and 20% CO2 gas mixture for 10 min.
 - step_number: 4
   action: POUR_PLATES
-  description: Dispense the medium (10 mL) into 100 mL serum bottles, containing 0,03g
-    sulfur (powder) under a stream of H2/CO2 (80:20) and seal with butyl rubber stoppers.
+  description: Dispense the medium (10 mL) into 100 mL serum bottles, containing 0,03g sulfur (powder)
+    under a stream of H2/CO2 (80:20) and seal with butyl rubber stoppers.
 - step_number: 5
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
 - step_number: 6
   action: FILTER_STERILIZE
-  description: Prior to inoculation, add vitamins, NaNO3, and NaHCO3 (from filter
-    sterilized stock solutions under a N2 gas atmosphere) to the medium.
+  description: Prior to inoculation, add vitamins, NaNO3, and NaHCO3 (from filter sterilized stock solutions
+    under a N2 gas atmosphere) to the medium.
 - step_number: 7
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 applications:
 - Microbial cultivation
 curation_history:

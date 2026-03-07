@@ -1,6 +1,6 @@
 name: DEINOCOCCUS medium
 original_name: DEINOCOCCUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1306
     label: DEINOCOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 1306 | DSMZ Medium: 1306 (mediadive.medium:1306)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1306 | DSMZ Medium: 1306 (mediadive.medium:1306) | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:

@@ -1,6 +1,6 @@
 name: BLAUTIA MEDIUM
 original_name: BLAUTIA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -271,24 +271,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing
-    agents), then sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic.
-    Add solid bicarbonate, adjust pH to 6.8 - 7.0 and dispense medium under 100% CO2
-    gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Add
-    glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile
-    anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium
-    should be 7.0.
+  description: Dissolve ingredients (except bicarbonate, glucose, vitamins and reducing agents), then
+    sparge medium with 100% CO2 gas for 30 - 45 min to make it anoxic. Add solid bicarbonate, adjust pH
+    to 6.8 - 7.0 and dispense medium under 100% CO2 gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Add glucose, vitamins (sterilized by filtration), cysteine and sulfide from sterile
+    anoxic stock solutions prepared under 100% N2 gas. The final pH of the medium should be 7.0.
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
-    then add minerals. Adjust final to pH 7.0 with KOH.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+    Adjust final to pH 7.0 with KOH.
 - step_number: 3
   action: AUTOCLAVE
-  description: Rumen fluid from cow or sheep (obtained from fistulated animals or
-    abattoir refuse) is filtered through muslin, autoclaved at 121°C for 15 min and
-    then centrifuged at 27,000 g for 20 min. The supernatant is made anoxic by sparging
-    with 100% N2 gas for 15 min, dispensed under same gas atmosphere into anoxic serum
-    vials to 30% of volume and then stored frozen at -20°C.
+  description: Rumen fluid from cow or sheep (obtained from fistulated animals or abattoir refuse) is
+    filtered through muslin, autoclaved at 121°C for 15 min and then centrifuged at 27,000 g for 20 min.
+    The supernatant is made anoxic by sparging with 100% N2 gas for 15 min, dispensed under same gas atmosphere
+    into anoxic serum vials to 30% of volume and then stored frozen at -20°C.
 applications:
 - Microbial cultivation
 curation_history:
@@ -299,5 +296,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:53.896005Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

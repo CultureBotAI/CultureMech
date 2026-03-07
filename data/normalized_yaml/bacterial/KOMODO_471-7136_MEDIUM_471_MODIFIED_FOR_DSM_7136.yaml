@@ -1,6 +1,6 @@
 name: MEDIUM 471 MODIFIED FOR DSM 7136
 original_name: MEDIUM 471 MODIFIED FOR DSM 7136
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 8.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:471_7136
     label: MEDIUM 471 MODIFIED FOR DSM 7136
-notes: 'Source: KOMODO ModelSEED | ID: 471_7136 | DSMZ Medium: 471 (mediadive.medium:471)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 471_7136 | DSMZ Medium: 471 (mediadive.medium:471) | Aerobic: No'
 ingredients:
 - preferred_term: K2HPO4
   term:

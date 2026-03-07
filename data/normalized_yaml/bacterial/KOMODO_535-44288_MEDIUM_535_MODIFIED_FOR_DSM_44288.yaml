@@ -1,15 +1,15 @@
 name: MEDIUM 535 MODIFIED FOR DSM 44288
 original_name: MEDIUM 535 MODIFIED FOR DSM 44288
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 535_44288
   term:
     id: komodo.medium:535_44288
     label: MEDIUM 535 MODIFIED FOR DSM 44288
-notes: 'Source: KOMODO ModelSEED | ID: 535_44288 | DSMZ Medium: 535 (mediadive.medium:535)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 535_44288 | DSMZ Medium: 535 (mediadive.medium:535) | Aerobic:
+  No'
 ingredients:
 - preferred_term: Trypticase soy broth
   concentration:

@@ -1,6 +1,6 @@
 name: ACIDIPHILIUM MEDIUM
 original_name: ACIDIPHILIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 3.0
@@ -53,8 +53,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave glucose and yeast extract separately as a 10% and 3%, resp.,
-    stock solution. Adjust pH of complete medium to 3.0 with 1 N H2SO4.
+  description: Autoclave glucose and yeast extract separately as a 10% and 3%, resp., stock solution.
+    Adjust pH of complete medium to 3.0 with 1 N H2SO4.
 applications:
 - Microbial cultivation
 curation_history:

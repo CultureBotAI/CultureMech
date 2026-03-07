@@ -1,6 +1,6 @@
 name: Sludge fluid (medium 119)
 original_name: Sludge fluid (medium 119)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3141
     label: Sludge fluid (medium 119)
-notes: 'Source: KOMODO ModelSEED | ID: 3141 | DSMZ Medium: 3141 (mediadive.medium:3141)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3141 | DSMZ Medium: 3141 (mediadive.medium:3141) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

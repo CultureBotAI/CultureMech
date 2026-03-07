@@ -1,6 +1,6 @@
 name: SULFOBACILLUS MEDIUM
 original_name: SULFOBACILLUS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.9-2.4
@@ -71,8 +71,8 @@ preparation_steps:
   description: Adjust pH to 2.0 - 2.2 with sulfuric acid.
 - step_number: 3
   action: MIX
-  description: (sterilize by filtration or handle under N2 before autoclaving to prevent
-    oxidation of the iron)
+  description: (sterilize by filtration or handle under N2 before autoclaving to prevent oxidation of
+    the iron)
 applications:
 - Microbial cultivation
 curation_history:
@@ -83,5 +83,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.799006Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

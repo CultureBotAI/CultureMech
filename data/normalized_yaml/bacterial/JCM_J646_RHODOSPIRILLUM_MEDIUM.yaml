@@ -1,6 +1,6 @@
 name: RHODOSPIRILLUM MEDIUM
 original_name: RHODOSPIRILLUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -53,8 +53,7 @@ preparation_steps:
   description: Adjust pH to 7.0.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: After autoclaving, add filter-sterilized Na2S x 9H2O solution to the
-    medium.
+  description: After autoclaving, add filter-sterilized Na2S x 9H2O solution to the medium.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,6 +1,6 @@
 name: BM7CO MEDIUM
 original_name: BM7CO MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -92,14 +92,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and adjust pH to 7.0. Distribute the medium in culture
-    vessels (e.g., 9.0 ml in Balch tubes), replace the gas phase with N2 and seal
-    with butyl rubber stoppers, and autoclave. After cooling, aseptically and anaerobically
-    add per 900 ml the following solution (autoclaved under a N2 atmosphere):'
+  description: 'Mix components and adjust pH to 7.0. Distribute the medium in culture vessels (e.g., 9.0
+    ml in Balch tubes), replace the gas phase with N2 and seal with butyl rubber stoppers, and autoclave.
+    After cooling, aseptically and anaerobically add per 900 ml the following solution (autoclaved under
+    a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2
-    M cellobiose solution.
+  description: Colloidal chitin solution can be replaced by 10% (w/v) chitin or 0.2 M cellobiose solution.
 applications:
 - Microbial cultivation
 curation_history:

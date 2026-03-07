@@ -1,6 +1,6 @@
 name: CLOSTRIDIUM ESTERTHETICUM medium
 original_name: CLOSTRIDIUM ESTERTHETICUM medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:642
     label: CLOSTRIDIUM ESTERTHETICUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 642 | DSMZ Medium: 642 (mediadive.medium:642)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 642 | DSMZ Medium: 642 (mediadive.medium:642) | Aerobic: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

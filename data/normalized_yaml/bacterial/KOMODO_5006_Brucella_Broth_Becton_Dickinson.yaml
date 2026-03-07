@@ -1,6 +1,6 @@
 name: Brucella Broth (Becton Dickinson)
 original_name: Brucella Broth (Becton Dickinson)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 6.8-7.2
@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:5006
     label: Brucella Broth (Becton Dickinson)
-notes: 'Source: KOMODO ModelSEED | ID: 5006 | DSMZ Medium: 5006 (mediadive.medium:5006)
-  | Aerobic: No | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 5006 | DSMZ Medium: 5006 (mediadive.medium:5006) | Aerobic: No
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

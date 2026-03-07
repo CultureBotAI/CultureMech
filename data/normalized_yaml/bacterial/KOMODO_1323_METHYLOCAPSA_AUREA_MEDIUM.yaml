@@ -1,6 +1,6 @@
 name: METHYLOCAPSA AUREA MEDIUM
 original_name: METHYLOCAPSA AUREA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5.0-5.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1323
     label: METHYLOCAPSA AUREA MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1323 | DSMZ Medium: 1323 (mediadive.medium:1323)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1323 | DSMZ Medium: 1323 (mediadive.medium:1323) | Aerobic: No'
 ingredients:
 - preferred_term: NaNO3
   term:

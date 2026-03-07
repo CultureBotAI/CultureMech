@@ -1,6 +1,6 @@
 name: CASTENHOLZ MEDIUM
 original_name: CASTENHOLZ MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:86
     label: CASTENHOLZ MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 86 | DSMZ Medium: 86 (mediadive.medium:86)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 86 | DSMZ Medium: 86 (mediadive.medium:86) | Aerobic: No'
 ingredients:
 - preferred_term: Nitrilotriacetic acid
   term:

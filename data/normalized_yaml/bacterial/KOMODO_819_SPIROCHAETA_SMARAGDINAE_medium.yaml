@@ -1,6 +1,6 @@
 name: SPIROCHAETA SMARAGDINAE medium
 original_name: SPIROCHAETA SMARAGDINAE medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:819
     label: SPIROCHAETA SMARAGDINAE medium
-notes: 'Source: KOMODO ModelSEED | ID: 819 | DSMZ Medium: 819 (mediadive.medium:819)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 819 | DSMZ Medium: 819 (mediadive.medium:819) | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:

@@ -1,6 +1,6 @@
 name: MEDIUM 377 MODIFIED FOR DSM 15127
 original_name: MEDIUM 377 MODIFIED FOR DSM 15127
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:377_15127
     label: MEDIUM 377 MODIFIED FOR DSM 15127
-notes: 'Source: KOMODO ModelSEED | ID: 377_15127 | DSMZ Medium: 377 (mediadive.medium:377)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 377_15127 | DSMZ Medium: 377 (mediadive.medium:377) | Aerobic:
+  No'
 ingredients:
 - preferred_term: NaCl
   term:

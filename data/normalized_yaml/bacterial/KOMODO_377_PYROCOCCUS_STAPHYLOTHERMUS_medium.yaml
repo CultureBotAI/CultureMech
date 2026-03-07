@@ -1,6 +1,6 @@
 name: PYROCOCCUS / STAPHYLOTHERMUS medium
 original_name: PYROCOCCUS / STAPHYLOTHERMUS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.5
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:377
     label: PYROCOCCUS / STAPHYLOTHERMUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 377 | DSMZ Medium: 377 (mediadive.medium:377)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 377 | DSMZ Medium: 377 (mediadive.medium:377) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

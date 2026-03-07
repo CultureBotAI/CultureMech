@@ -1,6 +1,6 @@
 name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
 original_name: THIOALKALIVIBRIO THIOCYANODENITRIFICANS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 10.0
@@ -126,9 +126,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or
-    bottle) with a liquid to air ratio of about 1:10. pH after sterilization will
-    about 10.
+  description: Sterilize at 120°C 20 min in a closed vessel (i.e. a serum tube or bottle) with a liquid
+    to air ratio of about 1:10. pH after sterilization will about 10.
 - step_number: 2
   action: MIX
   description: 'After sterilization add from sterile stock solutions:'

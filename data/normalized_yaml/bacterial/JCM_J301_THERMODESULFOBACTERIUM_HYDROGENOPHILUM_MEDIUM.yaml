@@ -1,6 +1,6 @@
 name: THERMODESULFOBACTERIUM HYDROGENOPHILUM MEDIUM
 original_name: THERMODESULFOBACTERIUM HYDROGENOPHILUM MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 9.0
@@ -284,18 +284,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.5 with HCl.
-    Distribute the medium into culture vessels (e.g., 20 ml of the medium in 120 ml
-    serum bottles) under a stream of H2-CO2 (4:1, v/v) gas mixture and seal with butyl
-    rubber stoppers, and autoclave. Neutralize Na2S x 9H2O as a 5% solution, and autoclave
-    under a N2 atmosphere. Add the sterile Na2S solution to the medium, and pressurize
-    the bottles to 200 kPa H2-CO2 (4:1, v/v). After incubation at 70C for 1 hr, readjust
+  description: Mix ingredients, except Na2S x 9H2O, and adjust pH to 6.5 with HCl. Distribute the medium
+    into culture vessels (e.g., 20 ml of the medium in 120 ml serum bottles) under a stream of H2-CO2
+    (4:1, v/v) gas mixture and seal with butyl rubber stoppers, and autoclave. Neutralize Na2S x 9H2O
+    as a 5% solution, and autoclave under a N2 atmosphere. Add the sterile Na2S solution to the medium,
+    and pressurize the bottles to 200 kPa H2-CO2 (4:1, v/v). After incubation at 70C for 1 hr, readjust
     pH to 6.5 with a sterile and anaerobic NaHCO3 stock solution.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust
-    pH to 6.5 with NaOH. Then proceed to add the minerals and bring volume to 1.0
-    L.
+  description: Dissolve nitrilotriacetic acid in 800 ml distilled water and adjust pH to 6.5 with NaOH.
+    Then proceed to add the minerals and bring volume to 1.0 L.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust pH to 9.0 with NaOH.

@@ -1,6 +1,6 @@
 name: CHLOROFLEXUS medium (modified)
 original_name: CHLOROFLEXUS medium (modified)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.2
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:87
     label: CHLOROFLEXUS medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 87 | DSMZ Medium: 87 (mediadive.medium:87)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 87 | DSMZ Medium: 87 (mediadive.medium:87) | Aerobic: Yes'
 ingredients:
 - preferred_term: Yeast extract
   concentration:

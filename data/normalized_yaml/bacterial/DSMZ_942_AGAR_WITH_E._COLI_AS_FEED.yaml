@@ -1,8 +1,8 @@
 name: AGAR WITH E. COLI AS FEED
 original_name: AGAR WITH E. COLI AS FEED
-category: imported
+category: bacterial
 medium_type: DEFINED
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.2
 media_term:
   preferred_term: DSMZ Medium 942
@@ -28,12 +28,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli
-    (e.g. DSM 498) in liquid culture, collect cells by centrifugation and resuspend
-    them in enough water to receive a thick but ready-to-pipet suspension. Autoclave.
-    Place three separate drops on one CaCl2-agar plate and streak every drop once
-    to receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate
-    E. coli lines/drops with myxobacteria.
+  description: Adjust pH to 7.2, autoclave and pour plates. Grow Escherichia coli (e.g. DSM 498) in liquid
+    culture, collect cells by centrifugation and resuspend them in enough water to receive a thick but
+    ready-to-pipet suspension. Autoclave. Place three separate drops on one CaCl2-agar plate and streak
+    every drop once to receive E. coli lines, about 3 cm long, across the E. coli drops. Inoculate E.
+    coli lines/drops with myxobacteria.
 applications:
 - Microbial cultivation
 curation_history:

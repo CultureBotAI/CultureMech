@@ -1,6 +1,6 @@
 name: THERMINCOLA MEDIUM (CO)
 original_name: THERMINCOLA MEDIUM (CO)
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -250,20 +250,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients except carbonates, sulfide, yeast extract and
-    vitamins, then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic.
-    Add carbonates and sulfide to the medium, dispense under 100% carbon monoxide
-    gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g., 10 ml medium
-    in 50 ml bottles) and autoclave. Prior to inoculation add yeast extract and vitamins
-    (sterilized by filtration) from sterile anoxic stock solutions prepared under
-    100% N2 gas. If the medium is not completely reduced after autoclaving (remains
-    pink) add 0.30 g/l sodium sulfide from a sterile anoxic stock solution prepared
-    under 100% N2 gas atmosphere. Adjust pH of complete medium to 8.0 with a sterile
-    anoxic solution of 1 N HCl.
+  description: Dissolve ingredients except carbonates, sulfide, yeast extract and vitamins, then sparge
+    medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add carbonates and sulfide to the medium,
+    dispense under 100% carbon monoxide gas atmosphere into anoxic Hungate-type tubes or serum vials (e.g.,
+    10 ml medium in 50 ml bottles) and autoclave. Prior to inoculation add yeast extract and vitamins
+    (sterilized by filtration) from sterile anoxic stock solutions prepared under 100% N2 gas. If the
+    medium is not completely reduced after autoclaving (remains pink) add 0.30 g/l sodium sulfide from
+    a sterile anoxic stock solution prepared under 100% N2 gas atmosphere. Adjust pH of complete medium
+    to 8.0 with a sterile anoxic solution of 1 N HCl.
 - step_number: 2
   action: ADJUST_PH
-  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the
-    salts.
+  description: First adjust pH to 1.0 with diluted H2SO4, then add and dissolve the salts.
 applications:
 - Microbial cultivation
 curation_history:
@@ -274,5 +271,4 @@ curation_history:
 - timestamp: '2026-02-06T05:10:17.434479Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
-    source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data

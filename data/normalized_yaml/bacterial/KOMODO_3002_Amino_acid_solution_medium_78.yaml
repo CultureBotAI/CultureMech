@@ -1,6 +1,6 @@
 name: Amino acid solution (medium 78)
 original_name: Amino acid solution (medium 78)
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:3002
     label: Amino acid solution (medium 78)
-notes: 'Source: KOMODO ModelSEED | ID: 3002 | DSMZ Medium: 3002 (mediadive.medium:3002)
-  | Aerobic: Yes | SubMedium: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 3002 | DSMZ Medium: 3002 (mediadive.medium:3002) | Aerobic: Yes
+  | SubMedium: Yes'
 ingredients: []
 applications:
 - Microbial cultivation

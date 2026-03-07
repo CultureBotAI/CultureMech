@@ -1,6 +1,6 @@
 name: THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM
 original_name: THERMOCHROMATIUM/ALLOCHROMATIUM MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 7.0
@@ -200,15 +200,13 @@ preparation_steps:
   description: Prepare solution 2
 - step_number: 3
   action: ALIQUOT
-  description: Combine solutions 1 + 2. If desired aliquot into  hungate tubes, filling
-    them up fully.
+  description: Combine solutions 1 + 2. If desired aliquot into  hungate tubes, filling them up fully.
 - step_number: 4
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
 - step_number: 5
   action: MIX
-  description: Before inoculation add the following from anaerobic, sterile stock
-    solutions.
+  description: Before inoculation add the following from anaerobic, sterile stock solutions.
 - step_number: 6
   action: MIX
   description: check pH and adjust to 7.0 if necessary
@@ -223,14 +221,13 @@ preparation_steps:
   description: allow to cool before combining with solution 2
 - step_number: 10
   action: FILTER_STERILIZE
-  description: "Boil briefly and bubble with CO2 for 30 minutes and filter sterilize\
-    \ into a sterile, gas-tight\r\nscrew-cap bottle."
+  description: "Boil briefly and bubble with CO2 for 30 minutes and filter sterilize into a sterile, gas-tight\r\
+    \nscrew-cap bottle."
 - step_number: 11
   action: HEAT
-  description: "Degas water by bringing to a boil for a minute or two. Meanwhile,\
-    \ wash sulfide before\r\nweighing – using plastic-forceps, dip a small chunk into\
-    \ dd H2O and dry sulfide and\r\nforceps with lint-free wipes. Drop weighed sulfide\
-    \ chunk into the degassed water."
+  description: "Degas water by bringing to a boil for a minute or two. Meanwhile, wash sulfide before\r\
+    \nweighing – using plastic-forceps, dip a small chunk into dd H2O and dry sulfide and\r\nforceps with\
+    \ lint-free wipes. Drop weighed sulfide chunk into the degassed water."
 - step_number: 12
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.

@@ -1,6 +1,6 @@
 name: PARACOCCUS ALCALIPHILUS MEDIUM
 original_name: PARACOCCUS ALCALIPHILUS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 9.0
@@ -91,10 +91,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Thiamine hydrochloride may be replaced by 2 g/l yeast extract. The
-    pH of the medium is adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10 ml
-    sterile methanol (filter sterilised, or autoclaved in crimp top sealed bottles)
-    is added to the sterilised medium.
+  description: Thiamine hydrochloride may be replaced by 2 g/l yeast extract. The pH of the medium is
+    adjusted to pH 9.0 with filter sterilised 10% Na2CO3. 10 ml sterile methanol (filter sterilised, or
+    autoclaved in crimp top sealed bottles) is added to the sterilised medium.
 applications:
 - Microbial cultivation
 curation_history:

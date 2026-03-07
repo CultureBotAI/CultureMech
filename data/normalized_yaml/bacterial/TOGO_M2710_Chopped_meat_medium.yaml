@@ -1,6 +1,6 @@
 name: Chopped meat medium
 original_name: Chopped meat medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
-    Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -37,8 +36,7 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -83,5 +81,5 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:55.780926'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Nitrogen gas; Added default
-    concentration for ingredient: Hydrogen gas'
+  notes: 'Added default concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    Hydrogen gas'

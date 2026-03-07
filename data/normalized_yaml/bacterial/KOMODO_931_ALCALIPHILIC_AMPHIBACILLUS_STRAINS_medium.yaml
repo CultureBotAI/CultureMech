@@ -1,6 +1,6 @@
 name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
 original_name: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 9.5-10.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:931
     label: ALCALIPHILIC AMPHIBACILLUS STRAINS medium
-notes: 'Source: KOMODO ModelSEED | ID: 931 | DSMZ Medium: 931 (mediadive.medium:931)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 931 | DSMZ Medium: 931 (mediadive.medium:931) | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:

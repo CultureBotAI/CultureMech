@@ -1,6 +1,6 @@
 name: For DSM 21709
 original_name: For DSM 21709
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 6.0
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:959.1
     label: For DSM 21709
-notes: 'Source: KOMODO ModelSEED | ID: 959.1 | DSMZ Medium: 959 (mediadive.medium:959)
-  | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 959.1 | DSMZ Medium: 959 (mediadive.medium:959) | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:

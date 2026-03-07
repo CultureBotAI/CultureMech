@@ -1,6 +1,6 @@
 name: INORGANIC SALTS-MALTOSE MEDIUM
 original_name: INORGANIC SALTS-MALTOSE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -50,12 +50,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.5 with KOH and autoclave at 121°C for 15 minutes. After
-    sterilization add 20 ml of a 25% maltose (filter-sterilized) solution.
+  description: Adjust pH to 7.5 with KOH and autoclave at 121°C for 15 minutes. After sterilization add
+    20 ml of a 25% maltose (filter-sterilized) solution.
 - step_number: 2
   action: MIX
-  description: Add the salts in the order listed to avoid the formation of a precipitate.
-    When agar medium is desired the concentration should be 0.75%.
+  description: Add the salts in the order listed to avoid the formation of a precipitate. When agar medium
+    is desired the concentration should be 0.75%.
 applications:
 - Microbial cultivation
 curation_history:

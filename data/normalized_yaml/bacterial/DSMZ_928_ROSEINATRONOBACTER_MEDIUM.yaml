@@ -1,8 +1,8 @@
 name: ROSEINATRONOBACTER MEDIUM
 original_name: ROSEINATRONOBACTER MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 10.0
 media_term:
   preferred_term: DSMZ Medium 928
@@ -145,10 +145,9 @@ preparation_steps:
   description: Final pH should be about 10.0
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Note: If the medium is solidified with agar prepare the medium given
-    above in 500 ml of distilled water and 20 g of agar in another container with
-    500 ml distilled water. Autoclave separately and allow to cool to about 50°C before
-    mixing.'
+  description: 'Note: If the medium is solidified with agar prepare the medium given above in 500 ml of
+    distilled water and 20 g of agar in another container with 500 ml distilled water. Autoclave separately
+    and allow to cool to about 50°C before mixing.'
 - step_number: 3
   action: MIX
   description: pH 3.0-4.0

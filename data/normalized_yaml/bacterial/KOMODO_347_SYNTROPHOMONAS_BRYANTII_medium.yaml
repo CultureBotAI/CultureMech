@@ -1,6 +1,6 @@
 name: SYNTROPHOMONAS BRYANTII medium
 original_name: SYNTROPHOMONAS BRYANTII medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 media_term:
@@ -8,8 +8,7 @@ media_term:
   term:
     id: komodo.medium:347
     label: SYNTROPHOMONAS BRYANTII medium
-notes: 'Source: KOMODO ModelSEED | ID: 347 | DSMZ Medium: 347 (mediadive.medium:347)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 347 | DSMZ Medium: 347 (mediadive.medium:347) | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:

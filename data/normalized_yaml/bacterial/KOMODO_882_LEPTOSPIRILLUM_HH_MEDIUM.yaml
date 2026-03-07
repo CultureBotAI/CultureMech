@@ -1,6 +1,6 @@
 name: LEPTOSPIRILLUM (HH) MEDIUM
 original_name: LEPTOSPIRILLUM (HH) MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 1.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:882
     label: LEPTOSPIRILLUM (HH) MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 882 | DSMZ Medium: 882 (mediadive.medium:882)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 882 | DSMZ Medium: 882 (mediadive.medium:882) | Aerobic: No'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:

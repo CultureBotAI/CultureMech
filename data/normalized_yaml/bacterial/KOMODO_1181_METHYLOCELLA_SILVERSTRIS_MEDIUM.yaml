@@ -1,6 +1,6 @@
 name: METHYLOCELLA SILVERSTRIS MEDIUM
 original_name: METHYLOCELLA SILVERSTRIS MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_value: 5.8
@@ -9,8 +9,7 @@ media_term:
   term:
     id: komodo.medium:1181
     label: METHYLOCELLA SILVERSTRIS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1181 | DSMZ Medium: 1181 (mediadive.medium:1181)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1181 | DSMZ Medium: 1181 (mediadive.medium:1181) | Aerobic: No'
 ingredients:
 - preferred_term: MgSO4 x 7 H2O
   term:

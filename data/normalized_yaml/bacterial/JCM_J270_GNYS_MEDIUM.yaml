@@ -1,6 +1,6 @@
 name: GNYS MEDIUM
 original_name: GNYS MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 5.0
@@ -126,8 +126,8 @@ preparation_steps:
   description: Adjust pH to 4.0-4.5.
 - step_number: 2
   action: ADJUST_PH
-  description: For preparation of solid medium, add 18.0 g/L agar and adjust pH to
-    5.0 to avoid hydrolysis of agar.
+  description: For preparation of solid medium, add 18.0 g/L agar and adjust pH to 5.0 to avoid hydrolysis
+    of agar.
 applications:
 - Microbial cultivation
 curation_history:

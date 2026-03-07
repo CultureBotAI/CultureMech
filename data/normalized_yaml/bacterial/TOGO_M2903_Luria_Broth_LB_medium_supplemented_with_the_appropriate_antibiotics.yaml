@@ -1,6 +1,6 @@
 name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
 original_name: Luria Broth (LB) medium supplemented with the appropriate antibiotics
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ingredients:
@@ -8,8 +8,7 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
-    Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
 - preferred_term: Luria Broth (LB) medium
   concentration:
     value: '1'

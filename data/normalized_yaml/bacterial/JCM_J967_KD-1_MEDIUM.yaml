@@ -1,6 +1,6 @@
 name: KD-1 MEDIUM
 original_name: KD-1 MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 8.0
@@ -225,13 +225,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components thoroughly and adjust pH to 8.0. Distribute the medium
-    into culture vessels under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber
-    stoppers and autoclave.
+  description: Mix components thoroughly and adjust pH to 8.0. Distribute the medium into culture vessels
+    under a N2-CO2 (9:1, v/v) gas mixture, seal with butyl rubber stoppers and autoclave.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH,
-    then add the remaining minerals.
+  description: Dissolve nitrilotriacetic acid at first and adjust pH to 6.5 with KOH, then add the remaining
+    minerals.
 - step_number: 3
   action: MIX
   description: Adjust final pH of the medium to 7.0 with KOH.

@@ -1,6 +1,6 @@
 name: METHYLOVIRGULA MEDIUM
 original_name: METHYLOVIRGULA MEDIUM
-category: imported
+category: bacterial
 medium_type: DEFINED
 physical_state: LIQUID
 ph_range: 5-5.5
@@ -49,9 +49,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the medium
-    into Hungate tubes. Sterilize by autoclaving. Before inoculation add filter sterilized
-    methanol (0.1% v/v).
+  description: Prepare the liquid medium. Adjust to pH 5.0 - 5.5. Dispense the medium into Hungate tubes.
+    Sterilize by autoclaving. Before inoculation add filter sterilized methanol (0.1% v/v).
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,15 +1,14 @@
 name: CAULOBACTER medium
 original_name: CAULOBACTER medium
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 media_term:
   preferred_term: KOMODO Medium 595
   term:
     id: komodo.medium:595
     label: CAULOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 595 | DSMZ Medium: 595 (mediadive.medium:595)
-  | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 595 | DSMZ Medium: 595 (mediadive.medium:595) | Aerobic: No'
 ingredients:
 - preferred_term: Bacto peptone
   concentration:

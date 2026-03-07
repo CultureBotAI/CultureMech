@@ -1,6 +1,6 @@
 name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
 original_name: SEA SALTS YEAST EXTRACT PEPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.5
@@ -40,8 +40,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix components thoroughly and adjust pH to 7.5. For preparation of
-    solid medium, add 18.0 g/L agar.
+  description: Mix components thoroughly and adjust pH to 7.5. For preparation of solid medium, add 18.0
+    g/L agar.
 applications:
 - Microbial cultivation
 curation_history:

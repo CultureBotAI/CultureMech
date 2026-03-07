@@ -1,8 +1,8 @@
 name: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
 original_name: GYP GLUCOSE-YEAST-PEPTONE MEDIUM
-category: imported
+category: fungal
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 6.8
 media_term:
   preferred_term: DSMZ Medium 852
@@ -72,8 +72,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: For solid media add 10 g/l bacteriological agar. Adjust to pH 6.8.
-    After sterilization of the medium add filter sterilized salt solution.
+  description: For solid media add 10 g/l bacteriological agar. Adjust to pH 6.8. After sterilization
+    of the medium add filter sterilized salt solution.
 applications:
 - Microbial cultivation
 curation_history:

@@ -1,8 +1,8 @@
 name: MYCOPLASMA MEDIUM
 original_name: MYCOPLASMA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
-physical_state: LIQUID
+physical_state: SOLID_AGAR
 ph_value: 7.4
 media_term:
   preferred_term: JCM Medium J761
@@ -33,12 +33,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Autoclave at 121C for 15 min. Cool to 55C and aseptically add the
-    following filter-sterilized solutions:'
+  description: 'Autoclave at 121C for 15 min. Cool to 55C and aseptically add the following filter-sterilized
+    solutions:'
 - step_number: 2
   action: ADJUST_PH
-  description: Warm serum and yeast extract solution to 55C before adding to the basal
-    medium. Adjust pH to 7.4&;0.2 (final).
+  description: Warm serum and yeast extract solution to 55C before adding to the basal medium. Adjust
+    pH to 7.4&;0.2 (final).
 applications:
 - Microbial cultivation
 curation_history:

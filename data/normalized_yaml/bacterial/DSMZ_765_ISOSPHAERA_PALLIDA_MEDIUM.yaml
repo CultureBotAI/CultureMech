@@ -1,6 +1,6 @@
 name: ISOSPHAERA PALLIDA MEDIUM
 original_name: ISOSPHAERA PALLIDA MEDIUM
-category: imported
+category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_value: 7.9
@@ -168,17 +168,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium by mixing 250 ml of solution A (without vitamins
-    added) with 650 ml distilled water. Gas with air:CO2 (95:5 v/v), and fill the
-    medium into serum bottles so that the gas to liquid ratio is about 5:1 (v/v).
-    Gas the serum bottles with air:CO2 (95:5 v/v), seal the bottles as for anaerobic
-    work and autoclave. To the cooled medium add (using a syringe) 10ml NaHCO3/ 90ml
-    medium and 0.5ml sterile vitamin solution to 100ml of the resulting medium. Final
-    pH 7.9.
+  description: Prepare the medium by mixing 250 ml of solution A (without vitamins added) with 650 ml
+    distilled water. Gas with air:CO2 (95:5 v/v), and fill the medium into serum bottles so that the gas
+    to liquid ratio is about 5:1 (v/v). Gas the serum bottles with air:CO2 (95:5 v/v), seal the bottles
+    as for anaerobic work and autoclave. To the cooled medium add (using a syringe) 10ml NaHCO3/ 90ml
+    medium and 0.5ml sterile vitamin solution to 100ml of the resulting medium. Final pH 7.9.
 - step_number: 2
   action: AUTOCLAVE
-  description: Fill into 100 ml serum bottle, gas with CO2 , seal as for anaerobic
-    work and autoclave. Cool before adding to the final medium.
+  description: Fill into 100 ml serum bottle, gas with CO2 , seal as for anaerobic work and autoclave.
+    Cool before adding to the final medium.
 - step_number: 3
   action: FILTER_STERILIZE
   description: Filter sterilise.
