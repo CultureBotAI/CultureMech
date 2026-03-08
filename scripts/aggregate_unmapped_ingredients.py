@@ -119,13 +119,19 @@ class UnmappedIngredientAggregator:
                 preferred_term = ingredient.get('preferred_term', '')
 
                 if self.is_unmapped_ingredient(preferred_term):
+                    # Skip completely empty ingredients (data quality issue)
+                    notes = ingredient.get('notes', '')
+                    if not preferred_term and not notes:
+                        if self.verbose:
+                            print(f"Skipping empty ingredient at index {idx} in {medium_name}", file=sys.stderr)
+                        continue
+
                     has_unmapped = True
 
                     # Use placeholder ID as key
                     placeholder_id = preferred_term if preferred_term else f'empty_{idx}'
 
                     # Extract information
-                    notes = ingredient.get('notes', '')
                     chemical_name = self.extract_chemical_name(notes)
 
                     # Add to aggregation
