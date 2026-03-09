@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1214
     label: HALORUBRUM CHOAVIATOR medium
-notes: 'Source: KOMODO ModelSEED | ID: 1214 | DSMZ Medium: 1214 (mediadive.medium:1214) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1214 | DSMZ Medium: 1214 (mediadive.medium:1214)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -61,3 +62,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1214
+high_metal: true

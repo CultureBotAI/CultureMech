@@ -74,8 +74,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in the water and adjustment
-    of pH.
+  description: Adjust pH to 7.4. Add the agar after dissolving all ingredients in
+    the water and adjustment of pH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +87,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

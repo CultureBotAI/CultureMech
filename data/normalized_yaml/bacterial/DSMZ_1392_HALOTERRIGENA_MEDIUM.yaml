@@ -78,8 +78,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.2 and sterilize by autoclaving. The medium may be solidified by adding 20.0
-    g/l agar.
+  description: Adjust to pH 7.2 and sterilize by autoclaving. The medium may be solidified
+    by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +91,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

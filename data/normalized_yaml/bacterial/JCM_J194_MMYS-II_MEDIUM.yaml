@@ -127,7 +127,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Separately autoclave Solutions I and II. Mix aseptically and adjust final pH to 7.7-7.8.
+  description: Separately autoclave Solutions I and II. Mix aseptically and adjust
+    final pH to 7.7-7.8.
 applications:
 - Microbial cultivation
 curation_history:
@@ -135,3 +136,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J194'
+high_metal: true

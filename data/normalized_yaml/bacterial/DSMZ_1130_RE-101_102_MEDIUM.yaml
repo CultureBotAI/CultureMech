@@ -57,12 +57,13 @@ preparation_steps:
   description: Adjust to pH 6.8-7.2
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Note: for Agar plates, autoclave NaCl separately.  Otherwise the salts will precipitate
-    and the plates not solidify properly.'
+  description: 'Note: for Agar plates, autoclave NaCl separately.  Otherwise the salts
+    will precipitate and the plates not solidify properly.'
 - step_number: 3
   action: MIX
-  description: 'Note: especially for strains DSM 17983 and 17984, yeast extract from ThermoFisher has
-    to be used. Yeast extract from other vendors might not support growth.'
+  description: 'Note: especially for strains DSM 17983 and 17984, yeast extract from
+    ThermoFisher has to be used. Yeast extract from other vendors might not support
+    growth.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +71,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1130'
+high_metal: true

@@ -150,4 +150,3 @@ curation_history:
   date: '2026-02-03T11:21:00.688850'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
-high_metal: true

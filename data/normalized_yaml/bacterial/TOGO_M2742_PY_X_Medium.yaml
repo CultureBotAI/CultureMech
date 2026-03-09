@@ -145,5 +145,3 @@ curation_history:
   date: '2026-02-03T11:20:56.159433'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas'
-high_metal: true
-high_ree: true

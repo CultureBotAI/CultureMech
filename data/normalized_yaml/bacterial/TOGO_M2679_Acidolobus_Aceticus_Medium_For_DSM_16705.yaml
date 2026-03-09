@@ -306,4 +306,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: CO2  gas; Added default concentration
     for ingredient: N2'
 high_metal: true
-high_ree: true

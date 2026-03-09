@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:371
     label: NATRONOBACTERIA medium
-notes: 'Source: KOMODO ModelSEED | ID: 371 | DSMZ Medium: 371 (mediadive.medium:371) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 371 | DSMZ Medium: 371 (mediadive.medium:371)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -160,3 +161,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 371
+high_metal: true

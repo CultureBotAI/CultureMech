@@ -67,9 +67,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve yeast extract in distilled water and add basal salts solution. Adjust to desired
-    pH with H2SO4. Dispense in suitable cultivation vessels and autoclave at 121°C for 20 min. When cool,
-    add filter sterilized ferrous sulfate solution.
+  description: Dissolve yeast extract in distilled water and add basal salts solution.
+    Adjust to desired pH with H2SO4. Dispense in suitable cultivation vessels and
+    autoclave at 121°C for 20 min. When cool, add filter sterilized ferrous sulfate
+    solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 1.8 with H2SO4; sterilize by filtration.
@@ -80,3 +81,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1190'
+high_metal: true

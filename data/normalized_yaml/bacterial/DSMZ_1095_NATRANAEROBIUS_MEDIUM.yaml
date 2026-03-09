@@ -208,15 +208,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients (except carbonates, cysteine, sucrose and vitamins), then sparge medium
-    with 100% N2 gas for 30 - 45 min to make it anoxic. Add carbonate, hydrogencarbonate and cysteine
-    and adjust pH to 8.5. Dispense medium under 100% N2 gas atmosphere into anoxic Hungate-type tubes
-    or serum vials and autoclave. After autoclaving add sucrose and vitamins from sterile anoxic stock
-    solutions prepared under 100% N2 gas and sterilized by filtration.
+  description: Dissolve ingredients (except carbonates, cysteine, sucrose and vitamins),
+    then sparge medium with 100% N2 gas for 30 - 45 min to make it anoxic. Add carbonate,
+    hydrogencarbonate and cysteine and adjust pH to 8.5. Dispense medium under 100%
+    N2 gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave.
+    After autoclaving add sucrose and vitamins from sterile anoxic stock solutions
+    prepared under 100% N2 gas and sterilized by filtration.
 - step_number: 2
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -227,4 +228,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:15.149706Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

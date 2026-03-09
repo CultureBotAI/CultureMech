@@ -354,12 +354,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components and autoclave. Cool the medium under a N2/CO2 (4:1, v/v) gas stream. Add
-    anaerobically the following solutions:'
+  description: 'Mix components and autoclave. Cool the medium under a N2/CO2 (4:1,
+    v/v) gas stream. Add anaerobically the following solutions:'
 - step_number: 2
   action: MIX
-  description: Adjust to pH 7.1-7.2 with Na2CO3 or HCl. Distribute the medium into culture vessels under
-    the N2/CO2 (4:1, v/v) gas stream and seal with a butyl stopper.
+  description: Adjust to pH 7.1-7.2 with Na2CO3 or HCl. Distribute the medium into
+    culture vessels under the N2/CO2 (4:1, v/v) gas stream and seal with a butyl stopper.
 - step_number: 3
   action: MIX
   description: Filtrate if insoluble residues remain.
@@ -374,3 +374,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

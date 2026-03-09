@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:861.2
     label: For DSM 12341
-notes: 'Source: KOMODO ModelSEED | ID: 861.2 | DSMZ Medium: 861 (mediadive.medium:861) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 861.2 | DSMZ Medium: 861 (mediadive.medium:861)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -270,4 +271,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.308314Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

@@ -260,26 +260,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach a pH below 6 (at least
-    30 - 45 min), then dispensed under the same gas atmosphere into serum vials (use at least bottles
-    of 50 ml volume filled with 30 ml medium) and autoclaved.  Solutions B and F are prepared under 80%
-    N2 and 20% CO2 gas atmosphere and sterilized. Sterile solutions C, D and E are prepared under 100%
-    N2 gas. Solutions D and F are sterilized by filtration. To complete the medium appropriate amounts
-    of solutions B to F are added to the sterile solution A in the sequence as indicated. Final pH of
-    the medium should be 7.0 - 7.2.
+  description: Solution A is sparged with 80% N2 and 20% CO2 gas mixture to reach
+    a pH below 6 (at least 30 - 45 min), then dispensed under the same gas atmosphere
+    into serum vials (use at least bottles of 50 ml volume filled with 30 ml medium)
+    and autoclaved.  Solutions B and F are prepared under 80% N2 and 20% CO2 gas atmosphere
+    and sterilized. Sterile solutions C, D and E are prepared under 100% N2 gas. Solutions
+    D and F are sterilized by filtration. To complete the medium appropriate amounts
+    of solutions B to F are added to the sterile solution A in the sequence as indicated.
+    Final pH of the medium should be 7.0 - 7.2.
 - step_number: 2
   action: MIX
   description: 'Note: For transfer of cultures use at least 10% (v/v) inoculum.'
 - step_number: 3
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 - step_number: 4
   action: FILTER_STERILIZE
-  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging with 100% N2 gas.
-    Then dissolve the Na-dithionite and filter-sterilize the solution into anoxic Hungate tubes. The final
-    pH of the solution should be between 9 and 10. Store the prepared solution in a dark and cool place.
-    Prepare only small amounts of stock solution, as Na-dithionite decomposes rapidly.
+  description: Add 1 N NaOH to distilled water and make the solution anoxic by sparging
+    with 100% N2 gas. Then dissolve the Na-dithionite and filter-sterilize the solution
+    into anoxic Hungate tubes. The final pH of the solution should be between 9 and
+    10. Store the prepared solution in a dark and cool place. Prepare only small amounts
+    of stock solution, as Na-dithionite decomposes rapidly.
 applications:
 - Microbial cultivation
 curation_history:
@@ -290,4 +292,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:37.923006Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

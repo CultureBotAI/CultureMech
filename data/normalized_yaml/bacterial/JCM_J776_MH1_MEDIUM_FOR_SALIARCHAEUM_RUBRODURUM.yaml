@@ -180,12 +180,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 5.0 with KOH.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 5.0 with KOH.
 - step_number: 2
   action: MIX
-  description: 'For preparation of solid medium, add the components listed above (reduce the amount of
-    NaCl to 150.0 g) to distilled water and bring volume to 800.0 ml. Separately prepare the following
-    solution:'
+  description: 'For preparation of solid medium, add the components listed above (reduce
+    the amount of NaCl to 150.0 g) to distilled water and bring volume to 800.0 ml.
+    Separately prepare the following solution:'
 - step_number: 3
   action: MIX
   description: Combine both solutions after autoclaving.
@@ -203,3 +204,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

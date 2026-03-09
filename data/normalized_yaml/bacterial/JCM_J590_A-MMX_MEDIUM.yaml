@@ -127,10 +127,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except Na2S x 9H2O and bubble with N2 for 30 min. Distribute the medium
-    into appropriate culture vessels (e.g., 10 ml medium in the Bellco anaerobic culture tube) under a
-    N2 atmosphere, seal with butyl rubber stoppers. Add Na2S x 9H2O as 5% solution and autoclave. Adjust
-    pH to 6.5 - 7.0, if necessary.
+  description: Mix components except Na2S x 9H2O and bubble with N2 for 30 min. Distribute
+    the medium into appropriate culture vessels (e.g., 10 ml medium in the Bellco
+    anaerobic culture tube) under a N2 atmosphere, seal with butyl rubber stoppers.
+    Add Na2S x 9H2O as 5% solution and autoclave. Adjust pH to 6.5 - 7.0, if necessary.
 - step_number: 2
   action: DISSOLVE
   description: Boil water, then, add starch and mix until dissolves thoroughly.
@@ -141,3 +141,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J590'
+high_metal: true

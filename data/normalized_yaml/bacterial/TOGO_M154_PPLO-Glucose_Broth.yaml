@@ -76,5 +76,3 @@ curation_history:
   date: '2026-02-03T11:20:48.073395'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin'
-high_metal: true
-high_ree: true

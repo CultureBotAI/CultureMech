@@ -180,5 +180,3 @@ curation_history:
   date: '2026-02-03T11:20:53.600988'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2MoO4 x 2 H2O'
-high_metal: true
-high_ree: true

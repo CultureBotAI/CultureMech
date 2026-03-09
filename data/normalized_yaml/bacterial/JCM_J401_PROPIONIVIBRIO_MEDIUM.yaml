@@ -242,11 +242,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.2. Prepare medium anaerobically under a N2-CO2 (4:1, v/v) gas mixture.
+  description: Adjust pH to 7.2. Prepare medium anaerobically under a N2-CO2 (4:1,
+    v/v) gas mixture.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -254,3 +255,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J401'
+high_metal: true

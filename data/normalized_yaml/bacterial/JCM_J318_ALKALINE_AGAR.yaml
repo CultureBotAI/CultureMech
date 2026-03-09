@@ -63,7 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave NaCl and Na2CO3 solutions separately and add the solutions to the medium aseptically.
+  description: Autoclave NaCl and Na2CO3 solutions separately and add the solutions
+    to the medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:
@@ -71,3 +72,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J318'
+high_metal: true

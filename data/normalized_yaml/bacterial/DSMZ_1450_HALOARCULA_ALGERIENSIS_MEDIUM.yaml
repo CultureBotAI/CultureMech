@@ -86,8 +86,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: When making media solidified with agar (20 g/l) the agar should not be autoclaved with
-    the NaCl.
+  description: When making media solidified with agar (20 g/l) the agar should not
+    be autoclaved with the NaCl.
 - step_number: 2
   action: MIX
   description: Adjust to pH 7.2
@@ -102,3 +102,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

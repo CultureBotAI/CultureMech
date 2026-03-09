@@ -160,5 +160,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil; Added default concentration
     for ingredient: Soil'
-high_metal: true
-high_ree: true

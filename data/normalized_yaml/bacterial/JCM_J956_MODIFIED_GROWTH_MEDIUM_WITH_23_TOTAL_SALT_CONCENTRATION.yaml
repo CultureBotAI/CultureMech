@@ -57,12 +57,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Mix components thoroughly and adjust pH to 7.0. For preparation of solid medium, add 20.0
-    g/L agar.
+  description: Mix components thoroughly and adjust pH to 7.0. For preparation of
+    solid medium, add 20.0 g/L agar.
 - step_number: 2
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.5 with 1 M
-    Tris base.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.5 with 1 M Tris base.
 applications:
 - Microbial cultivation
 curation_history:
@@ -70,3 +70,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J956'
+high_metal: true

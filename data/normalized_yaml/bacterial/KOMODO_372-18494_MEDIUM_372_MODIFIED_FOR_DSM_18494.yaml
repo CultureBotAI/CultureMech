@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: SOLID_AGAR
 ph_value: 9.0
-notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 372_18494 | DSMZ Medium: 372 (mediadive.medium:372)
-  | Aerobic: No'
+notes: 'pH buffer: Na-sesquicarbonate | Source: KOMODO ModelSEED | ID: 372_18494 |
+  DSMZ Medium: 372 (mediadive.medium:372) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 372_18494
   term:
@@ -90,3 +90,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 372
+high_metal: true

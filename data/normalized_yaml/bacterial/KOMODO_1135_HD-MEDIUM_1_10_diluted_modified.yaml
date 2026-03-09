@@ -73,5 +73,3 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1135
-high_metal: true
-high_ree: true

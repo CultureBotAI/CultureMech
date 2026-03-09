@@ -96,12 +96,20 @@ def contains_metal(ingredient_name: str, metal_patterns: List[str]) -> bool:
     """Check if ingredient name contains any metal pattern."""
     name_upper = ingredient_name.upper()
     for pattern in metal_patterns:
-        # Match pattern at word boundaries or with common prefixes
-        if re.search(rf'\b{re.escape(pattern.upper())}', name_upper):
+        pattern_upper = pattern.upper()
+
+        # Match pattern at word boundaries (for element names and symbols)
+        if re.search(rf'\b{re.escape(pattern_upper)}\b', name_upper):
             return True
-        # Also check in formula-like patterns
-        if pattern.upper() in name_upper:
-            return True
+
+        # For compound formulas (containing numbers or special chars),
+        # also check substring match to catch patterns like "FeCl3" in "FeCl3·6H2O"
+        # But skip this for short element symbols (1-2 chars) to avoid false positives
+        # like "Y" matching "Yeast" or "Ce" matching "Casein"
+        if len(pattern) > 2 and re.search(r'[\d·\(\)\.]', pattern):
+            if pattern_upper in name_upper:
+                return True
+
     return False
 
 

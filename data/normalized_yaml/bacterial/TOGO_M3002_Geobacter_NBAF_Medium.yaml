@@ -259,5 +259,3 @@ curation_history:
     CoCl2·6H2O; Added default concentration for ingredient: ZnSO4·7H2O; Added default
     concentration for ingredient: CuCl2·2H2O; Added default concentration for ingredient:
     AlK(SO4)2; Added default concentration for ingredient: NaOH'
-high_metal: true
-high_ree: true

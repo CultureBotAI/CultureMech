@@ -349,5 +349,3 @@ curation_history:
     for ingredient: H2SO4 solution; Added default concentration for ingredient: Carbon
     dioxide gas; Added default concentration for ingredient: Hydrogen gas; Added default
     concentration for ingredient: KOH solution'
-high_metal: true
-high_ree: true

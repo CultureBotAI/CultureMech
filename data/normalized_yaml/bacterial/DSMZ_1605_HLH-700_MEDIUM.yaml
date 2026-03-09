@@ -224,8 +224,8 @@ preparation_steps:
   description: Adjust pH to 8.0
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Sterilize at 121°C for 15 minutes. After sterilization add 1 ml/l filter-sterilized Wolfe´s
-    vitamin solution.
+  description: Sterilize at 121°C for 15 minutes. After sterilization add 1 ml/l filter-sterilized
+    Wolfe´s vitamin solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -237,3 +237,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

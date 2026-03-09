@@ -321,4 +321,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: nitrogen gas'
 high_metal: true
-high_ree: true

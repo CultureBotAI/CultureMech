@@ -200,8 +200,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.259619Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 185, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 185, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:08.382688Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -211,8 +211,10 @@ media_term:
   term:
     id: MEDIADB:185
     label: '''Minimal Medium w/amino acids and salt stress (Tang et al 2009'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+high_metal: true

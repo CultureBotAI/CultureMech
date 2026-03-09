@@ -79,4 +79,3 @@ curation_history:
   date: '2026-02-03T11:20:56.628393'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NH4CI'
-high_ree: true

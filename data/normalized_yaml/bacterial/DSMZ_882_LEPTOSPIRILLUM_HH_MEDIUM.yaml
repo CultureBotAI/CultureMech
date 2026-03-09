@@ -98,9 +98,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Sterilize solution A and solution C by autoclaving at 121°C for 20 min and solution B by
-    autoclaving at 112°C for 30 min. Prior to use mix solutions A and B and add trace elements solution.
-    The final pH of the medium should be 2.3.
+  description: Sterilize solution A and solution C by autoclaving at 121°C for 20
+    min and solution B by autoclaving at 112°C for 30 min. Prior to use mix solutions
+    A and B and add trace elements solution. The final pH of the medium should be
+    2.3.
 - step_number: 2
   action: MIX
   description: 'Note: At the beginning of growth incubate statically without shaking.'
@@ -117,3 +118,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 882'
+high_metal: true

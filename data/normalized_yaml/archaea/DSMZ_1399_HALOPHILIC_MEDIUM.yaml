@@ -93,8 +93,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to 1000.0 ml. Adjust to pH 7.0 and sterilize by autoclaving. The medium may be
-    solidified by adding 20.0 g/l agar.
+  description: Make up to 1000.0 ml. Adjust to pH 7.0 and sterilize by autoclaving.
+    The medium may be solidified by adding 20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -102,3 +102,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1399'
+high_metal: true

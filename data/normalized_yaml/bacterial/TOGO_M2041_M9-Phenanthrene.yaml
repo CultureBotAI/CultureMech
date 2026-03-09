@@ -126,4 +126,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Phenanthrene solution; Added
     default concentration for ingredient: dimethyl sulfoxide (DMSO)'
-high_ree: true

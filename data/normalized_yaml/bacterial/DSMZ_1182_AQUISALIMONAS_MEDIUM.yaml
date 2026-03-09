@@ -65,9 +65,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and mix when cool. The medium may be solidified
-    by adding 20 g/l agar to solution A. Solutions A and B are then cooled to 50°C, mixed and plates poured
-    immediately.
+  description: Autoclave solutions A and B separately and mix when cool. The medium
+    may be solidified by adding 20 g/l agar to solution A. Solutions A and B are then
+    cooled to 50°C, mixed and plates poured immediately.
 - step_number: 2
   action: MIX
   description: Final pH of the medium is 9.5.
@@ -78,3 +78,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1182'
+high_metal: true

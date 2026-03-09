@@ -126,10 +126,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, hydrogenphosphate, ammonium chloride and trace elements and fill
-    solution in screw capped Erlenmeyer flasks to 10% of volume. Autoclave at 110°C for 30 min. Add magnesium
-    chloride, magnesium sulfate, thiosulfate and bicarbonat from sterile stock solutions and adjust pH
-    of the medium to 8.0 - 8.5.
+  description: Dissolve sodium chloride, hydrogenphosphate, ammonium chloride and
+    trace elements and fill solution in screw capped Erlenmeyer flasks to 10% of volume.
+    Autoclave at 110°C for 30 min. Add magnesium chloride, magnesium sulfate, thiosulfate
+    and bicarbonat from sterile stock solutions and adjust pH of the medium to 8.0
+    - 8.5.
 - step_number: 2
   action: MIX
   description: pH 3.0-4.0
@@ -140,3 +141,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1014'
+high_metal: true

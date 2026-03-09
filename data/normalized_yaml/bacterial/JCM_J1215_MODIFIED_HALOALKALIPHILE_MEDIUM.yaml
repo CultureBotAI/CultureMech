@@ -86,9 +86,10 @@ preparation_steps:
   description: Add components to distilled water and bring volume to 500 ml.
 - step_number: 3
   action: AUTOCLAVE
-  description: Autoclave solutions A and B separately and combine them after cooling. For preparation
-    of solid medium, add 18.0 g agar to Solution A (500 ml), combine them after cooling to 60-70C, mix
-    well and quickly distribute into sterile petri dishes or test tubes.
+  description: Autoclave solutions A and B separately and combine them after cooling.
+    For preparation of solid medium, add 18.0 g agar to Solution A (500 ml), combine
+    them after cooling to 60-70C, mix well and quickly distribute into sterile petri
+    dishes or test tubes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -100,3 +101,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

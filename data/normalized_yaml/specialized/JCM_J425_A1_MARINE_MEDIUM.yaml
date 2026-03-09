@@ -140,24 +140,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except acetate and APM salts solutions to distilled water, bring volume
-    to 1.0 L and adjust pH to 6.8. Distribute the medium into culture vessels under a N2-CO2 (4:1, v/v)
-    gas mixture, sparge with the same gas mixture for 10 - 15 min, seal with butyl rubber stoppers and
-    autoclave. Separately autoclave acetate and APM salts solutions under a N2 gas atmosphere and add
-    to the medium anaerobically.
+  description: Add components except acetate and APM salts solutions to distilled
+    water, bring volume to 1.0 L and adjust pH to 6.8. Distribute the medium into
+    culture vessels under a N2-CO2 (4:1, v/v) gas mixture, sparge with the same gas
+    mixture for 10 - 15 min, seal with butyl rubber stoppers and autoclave. Separately
+    autoclave acetate and APM salts solutions under a N2 gas atmosphere and add to
+    the medium anaerobically.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve 108 g FeCl3 in 1.0 L distilled water. Adjust pH to 7.0 with 10 N NaOH. Allow the
-    suspension to sit for 30 min, then readjust pH to 7.0. Centrifuge the suspension at 5,000 x g for
-    20 min and pour off supernatant. Wash the precipitate with distilled water by resuspending in distilled
-    water followed by the centrifugation. Repeat the washing at least 5 times, then, resuspend in 1.0
-    L distilled water. Use the Fe(III) suspension as 0.67 M solution. More precisely, check the concentration
-    of Cl- to be less than 1 mM and determine the concentration of Fe(III) by using hydroxylamine as described
-    by Lovley and Phillips (Appl. Environ. Microbiol. 54, 751-757, 1986).
+  description: Dissolve 108 g FeCl3 in 1.0 L distilled water. Adjust pH to 7.0 with
+    10 N NaOH. Allow the suspension to sit for 30 min, then readjust pH to 7.0. Centrifuge
+    the suspension at 5,000 x g for 20 min and pour off supernatant. Wash the precipitate
+    with distilled water by resuspending in distilled water followed by the centrifugation.
+    Repeat the washing at least 5 times, then, resuspend in 1.0 L distilled water.
+    Use the Fe(III) suspension as 0.67 M solution. More precisely, check the concentration
+    of Cl- to be less than 1 mM and determine the concentration of Fe(III) by using
+    hydroxylamine as described by Lovley and Phillips (Appl. Environ. Microbiol. 54,
+    751-757, 1986).
 - step_number: 3
   action: MIX
-  description: Use Trace minerals of Medium No. 151 supplemented with 0.025 g (final) Na2MoO4 x 2H2O,
-    0.024 g NiCl2 x 6H2O and 0.025 g Na2WO4 x 2H2O (per liter).
+  description: Use Trace minerals of Medium No. 151 supplemented with 0.025 g (final)
+    Na2MoO4 x 2H2O, 0.024 g NiCl2 x 6H2O and 0.025 g Na2WO4 x 2H2O (per liter).
 - step_number: 4
   action: MIX
   description: 'Comment: For strain JCM 12378, inoculate with a 10% inoculum.'
@@ -168,3 +171,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J425'
+high_metal: true

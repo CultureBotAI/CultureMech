@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:747
     label: DSIC medium (modified)
-notes: 'Source: KOMODO ModelSEED | ID: 747 | DSMZ Medium: 747 (mediadive.medium:747) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 747 | DSMZ Medium: 747 (mediadive.medium:747)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -166,3 +167,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 747
+high_metal: true

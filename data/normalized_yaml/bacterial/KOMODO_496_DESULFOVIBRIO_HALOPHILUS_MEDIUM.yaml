@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:496
     label: DESULFOVIBRIO HALOPHILUS MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 496 | DSMZ Medium: 496 (mediadive.medium:496) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 496 | DSMZ Medium: 496 (mediadive.medium:496)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -250,4 +251,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:28.348937Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

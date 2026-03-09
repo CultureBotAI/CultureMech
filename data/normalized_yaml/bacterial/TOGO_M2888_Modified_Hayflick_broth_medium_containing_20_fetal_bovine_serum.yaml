@@ -69,4 +69,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin G (Parke, Davis &
     Co)'
-high_metal: true

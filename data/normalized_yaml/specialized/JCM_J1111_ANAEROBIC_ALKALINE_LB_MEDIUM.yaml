@@ -39,9 +39,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave under a N2-CO2 (4:1,
-    v/v) gas mixture. After cooling, add aseptically and anaerobically the following solutions (autoclaved
-    and stored under N2):'
+  description: 'Mix components thoroughly, adjust pH to 9.5 with NaOH and autoclave
+    under a N2-CO2 (4:1, v/v) gas mixture. After cooling, add aseptically and anaerobically
+    the following solutions (autoclaved and stored under N2):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -49,3 +49,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1111'
+high_metal: true

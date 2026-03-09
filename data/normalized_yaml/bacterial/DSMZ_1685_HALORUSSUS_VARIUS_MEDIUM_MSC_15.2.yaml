@@ -211,7 +211,8 @@ preparation_steps:
   description: Adjust the pH 6.9
 - step_number: 2
   action: ADJUST_PH
-  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH, then add minerals.
+  description: First dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH,
+    then add minerals.
 - step_number: 3
   action: MIX
   description: Final pH 7.0 (with KOH).
@@ -229,7 +230,8 @@ curation_history:
 - timestamp: '2026-02-06T05:10:11.843839Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 - timestamp: '2026-02-20T07:49:55.000000Z'
   curator: organism-data-backfill
   action: Added curated organism data
@@ -237,3 +239,4 @@ curation_history:
 organism_culture_type: isolate
 target_organisms:
 - preferred_term: HALORUSSUS VARIUS
+high_metal: true

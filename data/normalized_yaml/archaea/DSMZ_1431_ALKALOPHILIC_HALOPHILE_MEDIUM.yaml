@@ -81,9 +81,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Liquid medium may be prepared by adding all components together. Agar (2%) medium should
-    be prepared without Na2CO3 and sterilised by autoclaving. Add 20-30 ml of a sterile 10% Na2CO3 solution
-    to the autoclaved medium containing agar so that the final pH is 9.0.
+  description: Liquid medium may be prepared by adding all components together. Agar
+    (2%) medium should be prepared without Na2CO3 and sterilised by autoclaving. Add
+    20-30 ml of a sterile 10% Na2CO3 solution to the autoclaved medium containing
+    agar so that the final pH is 9.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -95,3 +96,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

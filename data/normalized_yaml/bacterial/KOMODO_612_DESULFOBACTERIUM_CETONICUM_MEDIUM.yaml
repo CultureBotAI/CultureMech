@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:612
     label: DESULFOBACTERIUM CETONICUM MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 612 | DSMZ Medium: 612 (mediadive.medium:612) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 612 | DSMZ Medium: 612 (mediadive.medium:612)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -152,3 +153,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 612
+high_metal: true

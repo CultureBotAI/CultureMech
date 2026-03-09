@@ -415,5 +415,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: N2; Added default concentration
     for ingredient: N2; Added default concentration for ingredient: HCl; Added default
     concentration for ingredient: NaOH'
-high_metal: true
-high_ree: true

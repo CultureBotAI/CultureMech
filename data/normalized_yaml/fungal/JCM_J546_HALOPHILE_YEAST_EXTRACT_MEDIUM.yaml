@@ -67,8 +67,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components except NaHCO3 to distilled water and bring volume to 1.0 L. Adjust pH to
-    8.0 with 1 M NaOH and autoclave. Filter-sterilize 8% (w/v) NaHCO3 and add to the medium aseptically.
+  description: Add components except NaHCO3 to distilled water and bring volume to
+    1.0 L. Adjust pH to 8.0 with 1 M NaOH and autoclave. Filter-sterilize 8% (w/v)
+    NaHCO3 and add to the medium aseptically.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +77,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J546'
+high_metal: true

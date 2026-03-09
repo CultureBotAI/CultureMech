@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:310
     label: V-8 JUICE AGAR
-notes: 'Source: KOMODO ModelSEED | ID: 310 | DSMZ Medium: 310 (mediadive.medium:310) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 310 | DSMZ Medium: 310 (mediadive.medium:310)
+  | Aerobic: No'
 ingredients:
 - preferred_term: V-8 Juice
   concentration:
@@ -40,3 +41,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 310
+high_metal: true

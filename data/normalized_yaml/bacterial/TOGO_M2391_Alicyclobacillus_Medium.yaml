@@ -187,5 +187,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: Solution A:; Added default concentration
     for ingredient: Solution B:; Added default concentration for ingredient: Solution
     C:'
-high_metal: true
-high_ree: true

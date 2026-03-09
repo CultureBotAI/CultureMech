@@ -223,5 +223,3 @@ curation_history:
     concentration for ingredient: N2; Added default concentration for ingredient:
     Hydrogen gas; Added default concentration for ingredient: clarified rumen fluid;
     Added default concentration for ingredient: NaOH'
-high_metal: true
-high_ree: true

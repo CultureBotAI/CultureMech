@@ -159,8 +159,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:47.016298Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 473, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 473, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:14.528452Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -170,8 +170,10 @@ media_term:
   term:
     id: MEDIADB:473
     label: '''McN Medium (Whitman'
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+high_metal: true

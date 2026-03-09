@@ -236,13 +236,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil, and cool down under a
-    N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture vessels (e.g., 10 ml medium in Hungate
-    tubes) under the same gas mixture, seal with butyl rubber stoppers and autoclave. After cooling, anaerobically
-    and aseptically add per liter the following solutions (autoclaved or *filter-sterilized):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil, and
+    cool down under a N2-CO2 (4:1, v/v) gas stream. Distribute the medium into culture
+    vessels (e.g., 10 ml medium in Hungate tubes) under the same gas mixture, seal
+    with butyl rubber stoppers and autoclave. After cooling, anaerobically and aseptically
+    add per liter the following solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Prior to use, add per liter the following solution (autoclaved and stored under a N2 atmosphere):'
+  description: 'Prior to use, add per liter the following solution (autoclaved and
+    stored under a N2 atmosphere):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -250,3 +252,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J439'
+high_metal: true

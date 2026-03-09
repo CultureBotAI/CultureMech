@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:549_44640
     label: MEDIUM 549 MODIFIED FOR DSM 44640
-notes: 'Source: KOMODO ModelSEED | ID: 549_44640 | DSMZ Medium: 549 (mediadive.medium:549) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 549_44640 | DSMZ Medium: 549 (mediadive.medium:549)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:
@@ -82,3 +82,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 549
+high_metal: true

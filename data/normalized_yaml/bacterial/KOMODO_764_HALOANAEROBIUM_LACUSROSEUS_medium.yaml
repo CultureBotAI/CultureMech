@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:764
     label: HALOANAEROBIUM LACUSROSEUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 764 | DSMZ Medium: 764 (mediadive.medium:764) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 764 | DSMZ Medium: 764 (mediadive.medium:764)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: NH4Cl
   term:
@@ -201,3 +202,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 764
+high_metal: true

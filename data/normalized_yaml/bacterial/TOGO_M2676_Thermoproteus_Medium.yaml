@@ -198,4 +198,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: N2 gas; Added default concentration
     for ingredient: H2SO4 solution'
 high_metal: true
-high_ree: true

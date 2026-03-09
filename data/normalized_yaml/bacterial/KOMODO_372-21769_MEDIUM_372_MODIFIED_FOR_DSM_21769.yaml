@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:372_21769
     label: MEDIUM 372 MODIFIED FOR DSM 21769
-notes: 'Source: KOMODO ModelSEED | ID: 372_21769 | DSMZ Medium: 372 (mediadive.medium:372) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 372_21769 | DSMZ Medium: 372 (mediadive.medium:372)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -89,3 +89,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 372
+high_metal: true

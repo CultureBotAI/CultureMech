@@ -236,4 +236,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: Na2CO3 solution; Added default
     concentration for ingredient: Tris base'
 high_metal: true
-high_ree: true

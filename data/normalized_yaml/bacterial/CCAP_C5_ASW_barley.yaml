@@ -143,4 +143,3 @@ curation_history:
   date: '2026-02-03T11:20:17.144515'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Soil extract'
-high_metal: true

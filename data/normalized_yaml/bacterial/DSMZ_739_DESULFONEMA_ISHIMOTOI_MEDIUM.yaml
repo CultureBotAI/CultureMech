@@ -257,26 +257,28 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min to make it anoxic
-    and reach a pH of around 6, then distribute under the same gas atmosphere into anoxic Hungate-type
-    tubes and autoclave. Solutions B and C are prepared under 100% N2 gas atmosphere and sterilized by
-    filtration. Solutions D and F are autoclaved separately under 100% N2 gas. Solution E is prepared
-    under 80% N2 and 20% CO2 gas gas atmosphere. To complete the medium appropriate amounts of solutions
-    B to F are added to the sterile solution A in the sequence as indicated. Final pH of the medium should
-    be at 7.0. After combining solutions the medium should equilibrate overnight and a white precipitate
-    should be apparent.
+  description: Sparge solution A with 80% N2 and 20% CO2 gas mixture for 30 - 45 min
+    to make it anoxic and reach a pH of around 6, then distribute under the same gas
+    atmosphere into anoxic Hungate-type tubes and autoclave. Solutions B and C are
+    prepared under 100% N2 gas atmosphere and sterilized by filtration. Solutions
+    D and F are autoclaved separately under 100% N2 gas. Solution E is prepared under
+    80% N2 and 20% CO2 gas gas atmosphere. To complete the medium appropriate amounts
+    of solutions B to F are added to the sterile solution A in the sequence as indicated.
+    Final pH of the medium should be at 7.0. After combining solutions the medium
+    should equilibrate overnight and a white precipitate should be apparent.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from 5% (w/v) solution
-    freshly prepared under N2 and filter-sterilized) just before inoculation may stimulate growth at the
-    beginning. For transfers use 5 - 10% (v/v) inoculum.'
+  description: 'Note: Addition of 10 - 20 mg sodium dithionite per liter (e.g. from
+    5% (w/v) solution freshly prepared under N2 and filter-sterilized) just before
+    inoculation may stimulate growth at the beginning. For transfers use 5 - 10% (v/v)
+    inoculum.'
 - step_number: 3
   action: MIX
   description: Adjust to pH 7.0 with 1 N NaOH.
 - step_number: 4
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -287,4 +289,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.226441Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

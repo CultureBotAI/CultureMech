@@ -158,16 +158,18 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: 'Place 1000 ml of anaerobic water (CO2 water) in a flask. Add the following compounds:'
+  description: 'Place 1000 ml of anaerobic water (CO2 water) in a flask. Add the following
+    compounds:'
 - step_number: 2
   action: MIX
   description: 'Add solutions A, B, and Trace mineral solution (see recipes below):'
 - step_number: 3
   action: AUTOCLAVE
-  description: pH the media to 6.0 and gas the flask containing the media with CO2 for 20 min at least.
-    Gas first culture tube in rack and place 5 ml of media in previous tube. Place stopper on loaded culture
-    tube, crimp tube cap onto stopper. Autoclave the medium for 20 min., 121°C. Add 1 ml of O2 to each
-    tube before inoculation. After the inoculation the tubes are pressurized with H2 (138 KP).
+  description: pH the media to 6.0 and gas the flask containing the media with CO2
+    for 20 min at least. Gas first culture tube in rack and place 5 ml of media in
+    previous tube. Place stopper on loaded culture tube, crimp tube cap onto stopper.
+    Autoclave the medium for 20 min., 121°C. Add 1 ml of O2 to each tube before inoculation.
+    After the inoculation the tubes are pressurized with H2 (138 KP).
 - step_number: 4
   action: ADJUST_PH
   description: Adjust the pH to 4 with HCl.
@@ -185,3 +187,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

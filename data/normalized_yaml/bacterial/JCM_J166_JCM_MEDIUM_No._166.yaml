@@ -63,8 +63,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0. After autoclaving,
-    readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0. After autoclaving, readjust pH to 8.5 with a sterile 5% Na2CO3 solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -76,3 +76,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

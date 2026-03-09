@@ -225,8 +225,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Mix components except Vitamin and Vitamin B12 solutions, adjust pH to 7.0 and autoclave
-    under a N2 gas atmosphere. After autoclaving, add filter-sterilized Vitamin and Vitamin B12 solutions.
+  description: Mix components except Vitamin and Vitamin B12 solutions, adjust pH
+    to 7.0 and autoclave under a N2 gas atmosphere. After autoclaving, add filter-sterilized
+    Vitamin and Vitamin B12 solutions.
 - step_number: 2
   action: FILTER_STERILIZE
   description: Filter-sterilize and store under a N2-CO2 (4:1, v/v) gas mixture.
@@ -235,9 +236,10 @@ preparation_steps:
   description: Mix components and filter-sterilize just before use.
 - step_number: 4
   action: ADJUST_PH
-  description: Separately sterilize the above described solutions. Mix Solutions A, B, C and D, distribute
-    into culture vessels under a N2-CO2 (4:1, v/v) gas mixture, and seal with butyl rubber stoppers. Then,
-    add Solution E and adjust pH to 7.2 - 7.8, if necessary.
+  description: Separately sterilize the above described solutions. Mix Solutions A,
+    B, C and D, distribute into culture vessels under a N2-CO2 (4:1, v/v) gas mixture,
+    and seal with butyl rubber stoppers. Then, add Solution E and adjust pH to 7.2
+    - 7.8, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -245,3 +247,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J501'
+high_metal: true

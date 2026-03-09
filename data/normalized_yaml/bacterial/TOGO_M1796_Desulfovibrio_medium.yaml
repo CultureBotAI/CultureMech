@@ -147,4 +147,3 @@ curation_history:
   date: '2026-02-03T11:20:49.861726'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
-high_ree: true

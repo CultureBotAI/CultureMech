@@ -231,14 +231,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v) gas mixture. After cooling,
-    add the following solutions (filter-sterilized):'
+  description: 'Mix components thoroughly and autoclave under a N2-CO2 (4:1, v/v)
+    gas mixture. After cooling, add the following solutions (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Distribute the medium into sterile culture vessels (e.g., 50 ml per 120 ml bottle) under
-    a N2-CO2 (4:1, v/v) gas mixture, and seal with sterile butyl rubber stoppers. Prior to inoculation,
-    add per liter the following solutions (autoclaved or *filter-sterilized and stored under a N2 atmosphere)
-    in the order listed:'
+  description: 'Distribute the medium into sterile culture vessels (e.g., 50 ml per
+    120 ml bottle) under a N2-CO2 (4:1, v/v) gas mixture, and seal with sterile butyl
+    rubber stoppers. Prior to inoculation, add per liter the following solutions (autoclaved
+    or *filter-sterilized and stored under a N2 atmosphere) in the order listed:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -246,3 +246,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J981'
+high_metal: true

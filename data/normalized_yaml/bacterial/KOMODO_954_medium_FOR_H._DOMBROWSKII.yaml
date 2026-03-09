@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:954
     label: medium FOR H. DOMBROWSKII
-notes: 'Source: KOMODO ModelSEED | ID: 954 | DSMZ Medium: 954 (mediadive.medium:954) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 954 | DSMZ Medium: 954 (mediadive.medium:954)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:
@@ -75,3 +76,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 954
+high_metal: true

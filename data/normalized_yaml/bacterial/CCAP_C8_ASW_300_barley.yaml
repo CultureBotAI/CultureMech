@@ -48,8 +48,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4 autoclaved \r\nbarley\
-    \ grains to a T­25 tissue culture flask (Corning 25100)."
+  description: "Add 20 ml of the autoclaved artificial seawater with 300 psu and 4\
+    \ autoclaved \r\nbarley grains to a T­25 tissue culture flask (Corning 25100)."
 applications:
 - Microbial cultivation
 curation_history:
@@ -57,3 +57,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C8'
+high_metal: true

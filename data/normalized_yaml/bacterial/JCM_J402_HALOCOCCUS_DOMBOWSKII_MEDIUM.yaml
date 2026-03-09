@@ -69,7 +69,8 @@ preparation_steps:
   description: For preparation of solid medium, add 20.0 g/L agar.
 - step_number: 4
   action: MIX
-  description: 'Comment: For cultivation of JCM 19729, supplement with 10.0 g/L sea salts (Sigma).'
+  description: 'Comment: For cultivation of JCM 19729, supplement with 10.0 g/L sea
+    salts (Sigma).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -81,3 +82,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

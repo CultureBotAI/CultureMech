@@ -77,7 +77,8 @@ preparation_steps:
   description: pH 7.4 (NaOH)
 - step_number: 2
   action: MIX
-  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml per liter medium.
+  description: Prepare 4.98% FeSO4 x 7 H2O (= 10 g Fe in 1l 0.001 M HCl); add 1 ml
+    per liter medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +90,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

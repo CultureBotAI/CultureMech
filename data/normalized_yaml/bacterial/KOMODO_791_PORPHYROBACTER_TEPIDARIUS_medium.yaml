@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:791
     label: PORPHYROBACTER TEPIDARIUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 791 | DSMZ Medium: 791 (mediadive.medium:791) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 791 | DSMZ Medium: 791 (mediadive.medium:791)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na glutamate
   term:
@@ -219,3 +220,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 791
+high_metal: true

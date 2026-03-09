@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:193a
     label: PHB/PYRUVATE MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 193a | DSMZ Medium: 193a (mediadive.medium:193a) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 193a | DSMZ Medium: 193a (mediadive.medium:193a)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -253,4 +254,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:48.307463Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

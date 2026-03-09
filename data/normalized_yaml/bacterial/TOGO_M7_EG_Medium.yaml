@@ -109,4 +109,3 @@ curation_history:
   date: '2026-02-03T11:21:00.628399'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
-high_ree: true

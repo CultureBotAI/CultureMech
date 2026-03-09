@@ -93,5 +93,3 @@ curation_history:
   date: '2026-02-03T11:20:52.967160'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 3N NaOH'
-high_metal: true
-high_ree: true

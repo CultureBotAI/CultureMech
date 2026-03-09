@@ -71,7 +71,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 - 7.2.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0 - 7.2.
 - step_number: 2
   action: MIX
   description: For preparation of solid medium, add 18.0 g/L washed agar.
@@ -86,3 +87,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

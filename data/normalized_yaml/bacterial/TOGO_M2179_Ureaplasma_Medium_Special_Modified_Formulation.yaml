@@ -120,5 +120,3 @@ curation_history:
   date: '2026-02-03T11:20:52.605084'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Fetal Bovine Serum (ATCC 30-2020)'
-high_metal: true
-high_ree: true

@@ -158,26 +158,27 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: COOL
-  description: After cooling inject 1.0 ml of solution B and 0.2 ml of solution C in each tube of solution
-    A. The pH of the complete medium is 7.0-7.1.
+  description: After cooling inject 1.0 ml of solution B and 0.2 ml of solution C
+    in each tube of solution A. The pH of the complete medium is 7.0-7.1.
 - step_number: 2
   action: AUTOCLAVE
-  description: The acronym MOPS stands for the organic buffer N-morpholinopropanesulfonic acid at pH 7.0.
-    The pH of solution A is 7.0. Boil the medium under N2 gas and distribute about 13 ml in 15 ml Hungate
-    tubes. Autoclave at 121°C for 15 minutes.
+  description: The acronym MOPS stands for the organic buffer N-morpholinopropanesulfonic
+    acid at pH 7.0. The pH of solution A is 7.0. Boil the medium under N2 gas and
+    distribute about 13 ml in 15 ml Hungate tubes. Autoclave at 121°C for 15 minutes.
 - step_number: 3
   action: MIX
   description: pH 7.0.
 - step_number: 4
   action: AUTOCLAVE
-  description: Boil medium under N2 gas and autoclave in a srew-capped bottle at 121°C for 15 minutes.
+  description: Boil medium under N2 gas and autoclave in a srew-capped bottle at 121°C
+    for 15 minutes.
 - step_number: 5
   action: FILTER_STERILIZE
   description: Filter sterilize this solution.
 - step_number: 6
   action: DISSOLVE
-  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve the other salts.
-    Finally make up to 1000.00 ml.
+  description: First dissolve FeCl2 in the HCl, then dilute in water, add and dissolve
+    the other salts. Finally make up to 1000.00 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -189,3 +190,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

@@ -4,8 +4,8 @@ category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
 ph_range: 1.6-1.8
-notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 874.1 | DSMZ Medium: 874 (mediadive.medium:874)
-  | Aerobic: No'
+notes: 'pH buffer: H2SO4 | Source: KOMODO ModelSEED | ID: 874.1 | DSMZ Medium: 874
+  (mediadive.medium:874) | Aerobic: No'
 media_term:
   preferred_term: KOMODO Medium 874.1
   term:
@@ -122,3 +122,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 874
+high_metal: true

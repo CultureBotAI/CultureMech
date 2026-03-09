@@ -129,4 +129,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: tap water; Added default concentration
     for ingredient: leafy soil'
-high_metal: true

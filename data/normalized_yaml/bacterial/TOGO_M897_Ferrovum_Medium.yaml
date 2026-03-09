@@ -67,4 +67,3 @@ curation_history:
   date: '2026-02-03T11:21:01.147362'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
-high_metal: true

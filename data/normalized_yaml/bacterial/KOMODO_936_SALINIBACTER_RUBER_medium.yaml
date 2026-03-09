@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:936
     label: SALINIBACTER RUBER medium
-notes: 'Source: KOMODO ModelSEED | ID: 936 | DSMZ Medium: 936 (mediadive.medium:936) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 936 | DSMZ Medium: 936 (mediadive.medium:936)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -75,3 +76,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 936
+high_metal: true

@@ -81,9 +81,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components, except vitamin solution, to distilled water and bring volume to 990 ml.
-    Adjust pH to 7.4. For preparation of solid medium, add 20.0 g/L Noble Agar (BD-Difco). Autoclave.
-    After cooling to 50C, aseptically add the following vitamin solution (filter-sterilized):'
+  description: 'Add components, except vitamin solution, to distilled water and bring
+    volume to 990 ml. Adjust pH to 7.4. For preparation of solid medium, add 20.0
+    g/L Noble Agar (BD-Difco). Autoclave. After cooling to 50C, aseptically add the
+    following vitamin solution (filter-sterilized):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -91,3 +92,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J170'
+high_metal: true

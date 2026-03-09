@@ -140,11 +140,12 @@ preparation_steps:
   description: Adjust pH 2.5 with H2SO4 and autoclave.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Adjust pH to 2.5 and filter-sterilize. Prepare the solution just prior to use.
+  description: Adjust pH to 2.5 and filter-sterilize. Prepare the solution just prior
+    to use.
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Aseptically combine solution A and solution B (freshly prepared). Then, add the following
-    solutions (autoclaved):'
+  description: 'Aseptically combine solution A and solution B (freshly prepared).
+    Then, add the following solutions (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -156,3 +157,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

@@ -175,12 +175,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium chloride, then sparge
-    solution with 80% N2 and 20% CO2 gas mixture for at least 30 - 45 min to remove dissolved oxygen and
-    to saturate the solution with CO2. Dispense solution under air atmosphere in Erlenmeyer flasks to
-    10% of volume, close with screw caps and autoclave. Add trace elements, calcium chloride, magnesium
-    chloride, thiosulfate, bicarbonate and vitamins from sterile stock solutions and adjust pH of the
-    medium to 7.0 - 7.2, if necessary. Incubate with shaking.
+  description: Dissolve sodium chloride, potassium hydrogenphosphate and ammonium
+    chloride, then sparge solution with 80% N2 and 20% CO2 gas mixture for at least
+    30 - 45 min to remove dissolved oxygen and to saturate the solution with CO2.
+    Dispense solution under air atmosphere in Erlenmeyer flasks to 10% of volume,
+    close with screw caps and autoclave. Add trace elements, calcium chloride, magnesium
+    chloride, thiosulfate, bicarbonate and vitamins from sterile stock solutions and
+    adjust pH of the medium to 7.0 - 7.2, if necessary. Incubate with shaking.
 - step_number: 2
   action: MIX
   description: 'Note: Use at least 10% (v/v) as inoculum.'
@@ -194,3 +195,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1058a'
+high_metal: true

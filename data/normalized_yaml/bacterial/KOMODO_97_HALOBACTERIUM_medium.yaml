@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:97
     label: HALOBACTERIUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 97 | DSMZ Medium: 97 (mediadive.medium:97) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 97 | DSMZ Medium: 97 (mediadive.medium:97)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Casamino acids
   concentration:
@@ -82,3 +83,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 97
+high_metal: true

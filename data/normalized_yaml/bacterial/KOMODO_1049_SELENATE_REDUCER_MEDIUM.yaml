@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:1049
     label: SELENATE REDUCER MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 1049 | DSMZ Medium: 1049 (mediadive.medium:1049) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1049 | DSMZ Medium: 1049 (mediadive.medium:1049)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: DL-Na-lactate
   term:
@@ -271,3 +272,4 @@ curation_history:
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1049
 ph_value: 7.0
+high_metal: true

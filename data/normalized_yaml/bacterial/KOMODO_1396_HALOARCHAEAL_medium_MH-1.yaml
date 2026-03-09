@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1396
     label: HALOARCHAEAL medium MH-1
-notes: 'Source: KOMODO ModelSEED | ID: 1396 | DSMZ Medium: 1396 (mediadive.medium:1396) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1396 | DSMZ Medium: 1396 (mediadive.medium:1396)
+  | Aerobic: No'
 ingredients:
 - preferred_term: L-Glutamic acid
   term:
@@ -170,3 +171,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1396
+high_metal: true

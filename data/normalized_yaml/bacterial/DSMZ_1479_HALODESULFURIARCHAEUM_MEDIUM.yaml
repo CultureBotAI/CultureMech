@@ -197,9 +197,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Dispense the medium into Hungate tubes or serum bottles under
-    gassing with N2. Steam medium for 3h on each of 3 successive days. Before inoculation add from sterile
-    stock solutions:'
+  description: 'Prepare the liquid medium. Dispense the medium into Hungate tubes
+    or serum bottles under gassing with N2. Steam medium for 3h on each of 3 successive
+    days. Before inoculation add from sterile stock solutions:'
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.0-4.0 with HCl.
@@ -237,4 +237,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:14.197831Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

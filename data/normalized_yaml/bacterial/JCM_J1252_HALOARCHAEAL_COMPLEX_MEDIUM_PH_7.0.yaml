@@ -127,9 +127,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Dissolve components in distilled water and bring volume to 1.0 L. Adjust pH to 7.0. For
-    preparation of solid medium, add 20.0 g/L agar (if necessary, use washed agar as described in the
-    recipe of Medium No. 574).
+  description: Dissolve components in distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0. For preparation of solid medium, add 20.0 g/L agar (if necessary, use
+    washed agar as described in the recipe of Medium No. 574).
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,3 +137,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1252'
+high_metal: true

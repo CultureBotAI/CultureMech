@@ -63,8 +63,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium,
-    add 20.0 g/L agar. Autoclave and adjust pH to 7.2 - 7.5 with NaOH.
+  description: Add components to distilled water and bring volume to 1.0 L. For preparation
+    of solid medium, add 20.0 g/L agar. Autoclave and adjust pH to 7.2 - 7.5 with
+    NaOH.
 applications:
 - Microbial cultivation
 curation_history:
@@ -72,3 +73,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1005'
+high_metal: true

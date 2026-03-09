@@ -392,4 +392,3 @@ curation_history:
     gas; Added default concentration for ingredient: 2N H2SO4; Added default concentration
     for ingredient: N2'
 high_metal: true
-high_ree: true

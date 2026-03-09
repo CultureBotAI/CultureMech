@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:195_13038
     label: MEDIUM 195 MODIFIED FOR DSM 13038
-notes: 'Source: KOMODO ModelSEED | ID: 195_13038 | DSMZ Medium: 195 (mediadive.medium:195) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 195_13038 | DSMZ Medium: 195 (mediadive.medium:195)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2SO4
   term:
@@ -250,4 +250,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:27.001111Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

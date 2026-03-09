@@ -323,4 +323,3 @@ curation_history:
     for ingredient: H2SO4 solution; Added default concentration for ingredient: 2
     N NaOH; Added default concentration for ingredient: N2'
 high_metal: true
-high_ree: true

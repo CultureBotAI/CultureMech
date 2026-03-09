@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:746
     label: RHODOVULUM STRICTUM medium
-notes: 'Source: KOMODO ModelSEED | ID: 746 | DSMZ Medium: 746 (mediadive.medium:746) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 746 | DSMZ Medium: 746 (mediadive.medium:746)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: (NH4)2SO4
   term:
@@ -135,3 +136,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 746
+high_metal: true

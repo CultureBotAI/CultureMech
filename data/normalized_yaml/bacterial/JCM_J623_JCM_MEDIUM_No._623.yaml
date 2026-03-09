@@ -60,7 +60,8 @@ preparation_steps:
   description: Adjust pH to 7.4.
 - step_number: 2
   action: AUTOCLAVE
-  description: Separately autoclave Solutions A and B and mix them aseptically. Adjust pH to 7.4, if necessary.
+  description: Separately autoclave Solutions A and B and mix them aseptically. Adjust
+    pH to 7.4, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -68,3 +69,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J623'
+high_metal: true

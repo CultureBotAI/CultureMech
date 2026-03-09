@@ -186,10 +186,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Adjust to pH 6.3 with 10 M KOH solution. Boil the medium in
-    a water bath and cool under N2:CO2 (80:20 v/v) to room temperature. Dispense the medium into Hungate
-    tubes or serum bottles under gassing with N2:CO2 (80:20 v/v). Sterilize by autoclaving. Before inoculation
-    add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 6.3 with 10 M KOH solution.
+    Boil the medium in a water bath and cool under N2:CO2 (80:20 v/v) to room temperature.
+    Dispense the medium into Hungate tubes or serum bottles under gassing with N2:CO2
+    (80:20 v/v). Sterilize by autoclaving. Before inoculation add from sterile stock
+    solutions:'
 - step_number: 2
   action: MIX
   description: Final pH 7.2 - 7.4
@@ -200,3 +201,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1410'
+high_metal: true

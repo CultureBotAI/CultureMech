@@ -189,5 +189,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: 1 N H2SO4; Added default concentration
     for ingredient: N2 gas; Added default concentration for ingredient: 1 N HCl'
-high_metal: true
-high_ree: true

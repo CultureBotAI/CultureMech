@@ -155,8 +155,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:42.639654Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 16, Reference: Mazumdar et al. (2014)
-    PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 16, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:43.772962Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -164,14 +164,17 @@ curation_history:
 - timestamp: '2026-02-06T05:10:56.409387Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
 media_term:
   preferred_term: MediaDB Medium 16
   term:
     id: MEDIADB:16
     label: Tris-buffered artificial seawater with nh4cl and sulfolactate
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+high_metal: true

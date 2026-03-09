@@ -128,4 +128,3 @@ curation_history:
   date: '2026-02-03T11:20:48.676728'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
-high_ree: true

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:598
     label: HALOVIBRIO VARIABILIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 598 | DSMZ Medium: 598 (mediadive.medium:598) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 598 | DSMZ Medium: 598 (mediadive.medium:598)
+  | Aerobic: No'
 ingredients:
 - preferred_term: NaCl
   term:
@@ -184,3 +185,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 598
+high_metal: true

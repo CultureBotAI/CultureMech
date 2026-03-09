@@ -313,4 +313,3 @@ curation_history:
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
 high_metal: true
-high_ree: true

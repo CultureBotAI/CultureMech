@@ -220,12 +220,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix two media autoclaved separately. Aseptically add the following solutions (autoclaved
-    or *filter-sterilized):'
+  description: 'Mix two media autoclaved separately. Aseptically add the following
+    solutions (autoclaved or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: Add components to distilled water and bring volume to 1.0 L. Adjust pH to 7.0 with 0.5
-    M K2HPO4 and autoclave.
+  description: Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 7.0 with 0.5 M K2HPO4 and autoclave.
 - step_number: 3
   action: AUTOCLAVE
   description: Add components to distilled water and bring volume to 1.0 L. Autoclave.
@@ -239,3 +239,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1206'
+high_metal: true

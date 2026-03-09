@@ -143,5 +143,3 @@ curation_history:
   notes: 'Added default concentration for ingredient: KOH; Added default concentration
     for ingredient: CO2; Added default concentration for ingredient: Nitrogen gas;
     Added default concentration for ingredient: clarified rumen fluid'
-high_metal: true
-high_ree: true

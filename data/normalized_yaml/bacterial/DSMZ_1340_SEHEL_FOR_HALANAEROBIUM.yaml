@@ -214,10 +214,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: POUR_PLATES
-  description: 'Prepare the liquid medium. Adjust to pH 8.3 with 10 M KOH solution. Boil the medium in
-    a water bath and cool under N2:CO2 (80:20 v/v) to room temperature. Dispense the medium into Hungate
-    tubes or serum bottles under gassing with N2:CO2 (80:20 v/v). Sterilize by autoclaving. Before inoculation
-    add from sterile stock solutions:'
+  description: 'Prepare the liquid medium. Adjust to pH 8.3 with 10 M KOH solution.
+    Boil the medium in a water bath and cool under N2:CO2 (80:20 v/v) to room temperature.
+    Dispense the medium into Hungate tubes or serum bottles under gassing with N2:CO2
+    (80:20 v/v). Sterilize by autoclaving. Before inoculation add from sterile stock
+    solutions:'
 applications:
 - Microbial cultivation
 curation_history:
@@ -229,3 +230,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
