@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:1145
     label: MS-MEDIUM (MODIFIED)
-notes: 'Source: KOMODO ModelSEED | ID: 1145 | DSMZ Medium: 1145 (mediadive.medium:1145) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 1145 | DSMZ Medium: 1145 (mediadive.medium:1145)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Double distilled water
   term:
@@ -189,3 +190,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1145
+high_metal: true

@@ -204,9 +204,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without cysteine hydrochloride, Na2S x 9 H2O and Na2CO3. Boil and then
-    cool under a gas atmosphere of N2:CO2 (80:20 v/v) and add the Na2CO3. Autoclave the medium and add
-    from sterile stock solutions cysteine hydrochloride and Na2S x 9 H2O. The final pH should be 11.0.
+  description: Prepare the medium without cysteine hydrochloride, Na2S x 9 H2O and
+    Na2CO3. Boil and then cool under a gas atmosphere of N2:CO2 (80:20 v/v) and add
+    the Na2CO3. Autoclave the medium and add from sterile stock solutions cysteine
+    hydrochloride and Na2S x 9 H2O. The final pH should be 11.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,3 +219,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

@@ -9,8 +9,8 @@ media_term:
   term:
     id: komodo.medium:246_18675
     label: MEDIUM 246 MODIFIED FOR DSM 18675
-notes: 'Source: KOMODO ModelSEED | ID: 246_18675 | DSMZ Medium: 246 (mediadive.medium:246) | Aerobic:
-  No'
+notes: 'Source: KOMODO ModelSEED | ID: 246_18675 | DSMZ Medium: 246 (mediadive.medium:246)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -91,3 +91,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 246
+high_metal: true

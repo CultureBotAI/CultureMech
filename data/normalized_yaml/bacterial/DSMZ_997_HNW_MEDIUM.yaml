@@ -298,11 +298,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: To prepare the medium, all compounds of DMJ seawater were dissolved in 1 liter of distilled
-    deionized water, and the pH was adjusted to around 7.0 with NaOH at room temperature prior to autoclaving.
-    After autoclaving, filter-sterilized NaNO3 solution (100 g/l), NaHCO3 solution (100 g/l), Na2S solution
-    (100 g/l); pH 7.5) and trace vitamin solution were added. Then the tubes were tightly sealed with
-    butyl rubber stoppers under a gas phase of 80% H2 + 20% CO2 (300 kPa).
+  description: To prepare the medium, all compounds of DMJ seawater were dissolved
+    in 1 liter of distilled deionized water, and the pH was adjusted to around 7.0
+    with NaOH at room temperature prior to autoclaving. After autoclaving, filter-sterilized
+    NaNO3 solution (100 g/l), NaHCO3 solution (100 g/l), Na2S solution (100 g/l);
+    pH 7.5) and trace vitamin solution were added. Then the tubes were tightly sealed
+    with butyl rubber stoppers under a gas phase of 80% H2 + 20% CO2 (300 kPa).
 applications:
 - Microbial cultivation
 curation_history:
@@ -317,4 +318,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:43.744276Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

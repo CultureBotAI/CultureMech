@@ -17,7 +17,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Filter natural seawater through GF/C filters and autoclave at 15 psi for 15 minutes.
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -25,3 +26,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C71'
+high_metal: true

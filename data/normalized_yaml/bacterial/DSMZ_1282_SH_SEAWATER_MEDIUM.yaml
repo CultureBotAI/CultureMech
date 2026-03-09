@@ -279,8 +279,9 @@ preparation_steps:
   description: pH 7.5 - 8.5
 - step_number: 2
   action: AUTOCLAVE
-  description: To solid media add 15.0 g/l agar. Add the vitamin solution (filter sterilized) and the
-    NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved, cooled medium.
+  description: To solid media add 15.0 g/l agar. Add the vitamin solution (filter
+    sterilized) and the NaHCO3 (0.2 g in 10 ml H2O, filter sterilized) to the autoclaved,
+    cooled medium.
 applications:
 - Microbial cultivation
 curation_history:
@@ -292,3 +293,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -24,12 +26,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -37,7 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -45,7 +50,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Sodium acetate
   concentration:
     value: '1'
@@ -58,7 +64,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -84,7 +91,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -92,12 +100,14 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: H3BO3
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -105,27 +115,32 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '250'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: ZnCl2
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:49976
     label: zinc dichloride
@@ -133,14 +148,17 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: FeCl2・4H2O
   concentration:
     value: '1800'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: HCl
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:17883
     label: hydrogen chloride
@@ -151,7 +169,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -227,3 +246,4 @@ curation_history:
   date: '2026-02-03T11:20:58.274857'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: HCl'
+high_metal: true

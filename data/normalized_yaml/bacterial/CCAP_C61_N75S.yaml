@@ -21,9 +21,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Bring 75% seawater to the boil, add the powdered cereal leaves and keep boiling \r\nfor\
-    \  5 minutes.  Allow to cool and  restore  volume to 1 litre with deionized water. \r\nFilter through\
-    \ Whatman GF/C paper.  Autoclave at 15 psi for 15 minutes."
+  description: "Bring 75% seawater to the boil, add the powdered cereal leaves and\
+    \ keep boiling \r\nfor  5 minutes.  Allow to cool and  restore  volume to 1 litre\
+    \ with deionized water. \r\nFilter through Whatman GF/C paper.  Autoclave at 15\
+    \ psi for 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -31,3 +32,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C61'
+high_metal: true

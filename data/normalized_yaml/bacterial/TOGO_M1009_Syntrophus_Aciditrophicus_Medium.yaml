@@ -34,7 +34,8 @@ ingredients:
   concentration:
     value: '810'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -42,8 +43,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -51,7 +52,8 @@ ingredients:
   concentration:
     value: '1.7'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:41131
     label: crotonic acid
@@ -71,7 +73,8 @@ ingredients:
   concentration:
     value: '70'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -79,7 +82,8 @@ ingredients:
   concentration:
     value: '3.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -87,7 +91,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -105,7 +110,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -113,7 +119,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Carbon dioxide gas
   notes: 'Properties: ガス'
   concentration:
@@ -148,6 +155,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:45.422195'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas; Added default concentration for ingredient: N2; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas; Added default concentration for ingredient:
+    N2; Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2'
+high_ree: true

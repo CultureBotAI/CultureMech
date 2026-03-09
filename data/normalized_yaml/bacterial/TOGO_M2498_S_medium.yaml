@@ -8,12 +8,14 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +23,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -29,12 +32,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -42,7 +47,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -50,7 +56,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -58,7 +65,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63675
     label: sodium succinate (anhydrous)
@@ -87,7 +95,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -95,12 +104,14 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: H3BO3
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -108,22 +119,26 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CoCl26H2O
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NiCl26H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CuCl2·2H2O
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86318
     label: copper(II) chloride dihydrate
@@ -131,7 +146,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:49976
     label: zinc dichloride
@@ -139,12 +155,14 @@ ingredients:
   concentration:
     value: '2000'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Na2SeO3
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:48843
     label: disodium selenite
@@ -157,7 +175,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -226,3 +245,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

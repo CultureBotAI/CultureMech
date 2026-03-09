@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '124'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -29,7 +30,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: 0.2 M Cellobiose solution
   concentration:
     value: '30'
@@ -73,3 +75,4 @@ curation_history:
   date: '2026-02-03T11:20:46.868488'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Na2CO3 solution'
+high_metal: true

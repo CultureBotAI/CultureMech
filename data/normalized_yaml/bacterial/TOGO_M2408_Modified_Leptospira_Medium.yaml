@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: Agar
   concentration:
     value: '1.5'
@@ -51,7 +53,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -59,7 +62,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:50385
     label: hemin
@@ -94,3 +98,5 @@ curation_history:
   date: '2026-02-03T11:20:53.668657'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+high_metal: true
+high_ree: true

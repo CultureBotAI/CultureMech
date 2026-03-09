@@ -16,7 +16,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -29,7 +30,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -39,7 +41,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component'
 - preferred_term: H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   term:
     id: CHEBI:26836
     label: sulfuric acid
@@ -50,7 +53,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -87,3 +91,4 @@ curation_history:
   date: '2026-02-03T11:20:49.032714'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: H2SO4'
+high_ree: true

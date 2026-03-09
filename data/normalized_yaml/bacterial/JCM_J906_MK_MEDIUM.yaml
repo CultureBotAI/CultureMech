@@ -131,9 +131,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 900 ml. Adjust pH to 7.0 and autoclave.
-    For preparation of solid medium, add 20.0 g/L Bacto agar (BD-Difco). Separately autoclave the following
-    solution:'
+  description: 'Add components to distilled water and bring volume to 900 ml. Adjust
+    pH to 7.0 and autoclave. For preparation of solid medium, add 20.0 g/L Bacto agar
+    (BD-Difco). Separately autoclave the following solution:'
 - step_number: 2
   action: MIX
   description: After autoclaving, add the solution to the medium.
@@ -151,3 +151,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:146
     label: HALOCOCCUS medium
-notes: 'Source: KOMODO ModelSEED | ID: 146 | DSMZ Medium: 146 (mediadive.medium:146) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 146 | DSMZ Medium: 146 (mediadive.medium:146)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Skim milk
   concentration:
@@ -72,3 +73,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 146
+high_metal: true

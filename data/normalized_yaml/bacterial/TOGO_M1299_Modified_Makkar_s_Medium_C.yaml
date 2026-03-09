@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '650'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,8 +22,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple component, Organic
-    compound'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Simple
+    component, Organic compound'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -30,7 +31,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -75,7 +77,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -83,7 +86,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -91,7 +95,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -99,12 +104,14 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: NaCl
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -112,12 +119,14 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -125,7 +134,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -153,5 +163,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.056629'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: N2'
+high_metal: true
+high_ree: true

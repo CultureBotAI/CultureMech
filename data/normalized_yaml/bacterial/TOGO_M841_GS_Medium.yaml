@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '980'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,12 +17,14 @@ ingredients:
   concentration:
     value: '3.45'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: NaCl
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,12 +32,14 @@ ingredients:
   concentration:
     value: '0.14'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -42,7 +47,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -50,8 +56,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -59,12 +65,14 @@ ingredients:
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: KCl
   concentration:
     value: '0.355'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -72,7 +80,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -80,12 +89,14 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: glucose
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -126,7 +137,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: 5% L-Cysteine・HCl・H2O solution
   concentration:
     value: '10'
@@ -166,6 +178,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.819796'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: Hydrogen gas; Added default concentration
-    for ingredient: Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: Carbon dioxide gas;
+    Added default concentration for ingredient: Nitrogen gas'
+high_metal: true
+high_ree: true

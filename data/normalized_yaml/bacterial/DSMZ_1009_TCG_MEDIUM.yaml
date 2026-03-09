@@ -39,8 +39,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved in 1000 ml distilled
-    water.
+  description: Artifical seawater (ASW, eg., Instant Ocean) = 32 g seasalt disolved
+    in 1000 ml distilled water.
 applications:
 - Microbial cultivation
 curation_history:
@@ -48,3 +48,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1009'
+high_metal: true

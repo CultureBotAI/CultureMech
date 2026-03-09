@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '40.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -24,17 +26,20 @@ ingredients:
   concentration:
     value: '29.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '203'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: KCl
   concentration:
     value: '7.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -74,3 +79,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

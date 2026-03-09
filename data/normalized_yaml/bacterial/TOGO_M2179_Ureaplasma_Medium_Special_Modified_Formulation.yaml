@@ -16,7 +16,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Agar
   concentration:
     value: '15'
@@ -47,7 +48,8 @@ ingredients:
   concentration:
     value: '205'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: 10X CMRL 1066 Medium (ATCC 20-2207)
   concentration:
     value: '50'
@@ -73,7 +75,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: Yeast Extract (Hardy C7340)
   concentration:
     value: '15'
@@ -92,7 +95,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: PERCENT_W_V
-  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: pH indicator; Properties: Defined component, Organic compound, Simple
+    component'
 media_term:
   preferred_term: TOGO Medium M2179
   term:
@@ -116,3 +120,5 @@ curation_history:
   date: '2026-02-03T11:20:52.605084'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Fetal Bovine Serum (ATCC 30-2020)'
+high_metal: true
+high_ree: true

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1050'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,7 +35,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -40,7 +44,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:63005
     label: ''
@@ -48,7 +53,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:17632
     label: nitrate
@@ -61,7 +67,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -69,7 +76,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:17201
     label: Glycyl-glycine
@@ -99,7 +107,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -107,12 +116,14 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Reducing agent; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:76209
     label: sodium sulfide nonahydrate
 - preferred_term: 2 M H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   concentration:
     value: variable
     unit: VARIABLE
@@ -125,7 +136,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -222,5 +234,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:57.146734'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
-    2 M H2SO4; Added default concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: 2 M H2SO4; Added default concentration for ingredient: N2'
+high_metal: true
+high_ree: true

@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:1282
     label: SH SEAWATER medium
-notes: 'Source: KOMODO ModelSEED | ID: 1282 | DSMZ Medium: 1282 (mediadive.medium:1282) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 1282 | DSMZ Medium: 1282 (mediadive.medium:1282)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Peptone
   concentration:
@@ -284,3 +285,5 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 1282
+high_metal: true
+high_ree: true

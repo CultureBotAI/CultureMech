@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '830'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '0.85'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -29,12 +31,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NH4Cl
   concentration:
     value: '0.85'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -42,8 +46,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -51,7 +55,8 @@ ingredients:
   concentration:
     value: '0.28'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Trace metal solution (see Medium [M288])
   concentration:
     value: '1'
@@ -84,7 +89,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined component'
+  notes: 'Role: Reducing agent; Properties: Solution, Inorganic compound, Defined
+    component'
 - preferred_term: Phosphate solution (see below)
   concentration:
     value: '25'
@@ -97,7 +103,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -105,7 +112,8 @@ ingredients:
   concentration:
     value: '0.41'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -113,7 +121,8 @@ ingredients:
   concentration:
     value: '0.43'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -141,5 +150,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.412826'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+high_metal: true
+high_ree: true

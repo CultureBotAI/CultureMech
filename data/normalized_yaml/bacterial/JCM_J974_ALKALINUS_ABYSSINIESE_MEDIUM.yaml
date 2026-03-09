@@ -109,9 +109,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 900 ml. For preparation of solid
-    medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C for agar medium). Then, add aseptically
-    the following solutions (separately autoclaved):'
+  description: 'Add components to distilled water and bring volume to 900 ml. For
+    preparation of solid medium, add 20.0 g/L agar. Autoclave and cool (to 50 - 60C
+    for agar medium). Then, add aseptically the following solutions (separately autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -119,3 +119,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J974'
+high_metal: true

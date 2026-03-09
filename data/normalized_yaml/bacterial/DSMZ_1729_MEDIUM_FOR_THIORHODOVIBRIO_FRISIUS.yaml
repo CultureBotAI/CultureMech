@@ -249,8 +249,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Bubble with nitrogen gas and fill in tubes with a rubber septum under a stream of nitrogen
-    gas.
+  description: Bubble with nitrogen gas and fill in tubes with a rubber septum under
+    a stream of nitrogen gas.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 15 min.
@@ -262,12 +262,12 @@ preparation_steps:
   description: Adjust pH to 7.2.
 - step_number: 5
   action: MIX
-  description: Add 1 ml/100ml of culture Sulfide feeding solution (Siefert and Pfennig 1984) every 3 days
-    or when the sulfide is consumed.
+  description: Add 1 ml/100ml of culture Sulfide feeding solution (Siefert and Pfennig
+    1984) every 3 days or when the sulfide is consumed.
 - step_number: 6
   action: AUTOCLAVE
-  description: Fill 50 ml in 100 ml serum bottles, bubble for 15 min with CO2 and autoclave bottle capped
-    tightly at 121°C for 15 min
+  description: Fill 50 ml in 100 ml serum bottles, bubble for 15 min with CO2 and
+    autoclave bottle capped tightly at 121°C for 15 min
 - step_number: 7
   action: ADJUST_PH
   description: Adjust pH to 6.0.
@@ -288,10 +288,12 @@ preparation_steps:
   description: Autoclave at 121 °C for 15 min.
 - step_number: 13
   action: MIX
-  description: Sterile solution is saturated with CO2 (0.8 bar) until pH is approx. 7.3.
+  description: Sterile solution is saturated with CO2 (0.8 bar) until pH is approx.
+    7.3.
 - step_number: 14
   action: MIX
-  description: 1 ml is added to 100 ml of culture approx. every 3 days or when the sulfide is consumed.
+  description: 1 ml is added to 100 ml of culture approx. every 3 days or when the
+    sulfide is consumed.
 applications:
 - Microbial cultivation
 curation_history:
@@ -299,3 +301,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1729'
+high_metal: true
+high_ree: true

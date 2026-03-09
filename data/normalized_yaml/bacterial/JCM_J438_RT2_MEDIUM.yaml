@@ -120,12 +120,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve components except sodium lactate and sodium dithionite in 900 ml distilled water
-    and adjust pH to 9.0 with NaOH. Bring to a boil, and cool down under a N2 gas stream. Distribute the
-    medium into culture vessels (e.g., 9 ml of the medium in Hungate tubes) under N2, seal with butyl
-    rubber stoppers and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere. After
-    cooling, add 1/9 volume of the sodium lactate solution to the medium. Readjust pH to 9.0, if necessary.
-    Prior to use, reduce the medium with a freshly prepared, filter-sterilize 1% sodium dithionite solution.
+  description: Dissolve components except sodium lactate and sodium dithionite in
+    900 ml distilled water and adjust pH to 9.0 with NaOH. Bring to a boil, and cool
+    down under a N2 gas stream. Distribute the medium into culture vessels (e.g.,
+    9 ml of the medium in Hungate tubes) under N2, seal with butyl rubber stoppers
+    and autoclave. Separately autoclave 0.2 M sodium lactate under a N2 atmosphere.
+    After cooling, add 1/9 volume of the sodium lactate solution to the medium. Readjust
+    pH to 9.0, if necessary. Prior to use, reduce the medium with a freshly prepared,
+    filter-sterilize 1% sodium dithionite solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -137,3 +139,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

@@ -220,20 +220,21 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'The medium was autoclaved and removed from the autoclave at 85°C. Oxygen dissolution was
-    prevented by exchanging the gas-phase with N2. The medium was complemented by addition of the following
-    stock solutions:'
+  description: 'The medium was autoclaved and removed from the autoclave at 85°C.
+    Oxygen dissolution was prevented by exchanging the gas-phase with N2. The medium
+    was complemented by addition of the following stock solutions:'
 - step_number: 2
   action: MIX
-  description: After adding bicarbonate the gas was changed from N2 to N2/CO2 (90/10 %, v/v) and the pH
-    was adjusted to 7.2 - 7.4 with sterile 2 M HCL.
+  description: After adding bicarbonate the gas was changed from N2 to N2/CO2 (90/10
+    %, v/v) and the pH was adjusted to 7.2 - 7.4 with sterile 2 M HCL.
 - step_number: 3
   action: HEAT
-  description: The trace element solution was prepared by dissolving the salts in 800 mL warm H2Obidest
+  description: The trace element solution was prepared by dissolving the salts in
+    800 mL warm H2Obidest
 - step_number: 4
   action: AUTOCLAVE
-  description: NaOH was used to adjust the pH to 6.5. The solution was added up to 1000 mL with H2Obidest
-    and autoclaved.
+  description: NaOH was used to adjust the pH to 6.5. The solution was added up to
+    1000 mL with H2Obidest and autoclaved.
 - step_number: 5
   action: FILTER_STERILIZE
   description: The solution was filter-sterilized and stored at 4°C in the dark.
@@ -242,16 +243,18 @@ preparation_steps:
   description: The solution was filter-sterilized and stored at 4°C in the dark.
 - step_number: 7
   action: AUTOCLAVE
-  description: The solution was dispensed in the required portions (40 mL per 1 L medium). The head space
-    of the bottles was flushed with CO2. Saturation of CO2 in the solution was achieved by repeated flushing
-    and shaking of the bottles. Finally, the bottles were sealed with rubber stoppers and aluminum crimps
-    and autoclaved.
+  description: The solution was dispensed in the required portions (40 mL per 1 L
+    medium). The head space of the bottles was flushed with CO2. Saturation of CO2
+    in the solution was achieved by repeated flushing and shaking of the bottles.
+    Finally, the bottles were sealed with rubber stoppers and aluminum crimps and
+    autoclaved.
 - step_number: 8
   action: AUTOCLAVE
-  description: In an ice bath ascorbic acid was dissolved in 80 mL anoxic H2Obidest (autoclaved, cooled
-    under N2 atmosphere) while flushing with N2. The pH was adjusted to 7.0 with NaOH and the solution
-    added up to 100 ml with anoxic H2Obidest. After filter-sterilization the solution was stored under
-    N2 atmosphere in a special flask (which can be flushed with gas) at 4°C in the dark.
+  description: In an ice bath ascorbic acid was dissolved in 80 mL anoxic H2Obidest
+    (autoclaved, cooled under N2 atmosphere) while flushing with N2. The pH was adjusted
+    to 7.0 with NaOH and the solution added up to 100 ml with anoxic H2Obidest. After
+    filter-sterilization the solution was stored under N2 atmosphere in a special
+    flask (which can be flushed with gas) at 4°C in the dark.
 - step_number: 9
   action: FILTER_STERILIZE
   description: The solution was filter-sterilized and stored at room temperature.
@@ -265,4 +268,7 @@ curation_history:
 - timestamp: '2026-02-06T05:10:20.974573Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true
+high_ree: true

@@ -110,12 +110,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: For f/10 medium for calcifying Emiliania, simply dilute all stock solutions by 1/5th.
+  description: For f/10 medium for calcifying Emiliania, simply dilute all stock solutions
+    by 1/5th.
 - step_number: 2
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1\
-    \ M HCl\r\nprior to autoclaving. For agar add 15g per litre Bacteriological Agar. Autoclave at 15\
-    \ psi for 15\r\nminutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1 M HCl\r\nprior to autoclaving. For agar add 15g per litre\
+    \ Bacteriological Agar. Autoclave at 15 psi for 15\r\nminutes."
 - step_number: 3
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -131,3 +132,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C36'
+high_metal: true
+high_ree: true

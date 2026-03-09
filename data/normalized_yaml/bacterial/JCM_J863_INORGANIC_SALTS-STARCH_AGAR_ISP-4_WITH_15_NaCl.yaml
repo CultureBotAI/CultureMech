@@ -31,3 +31,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J863'
+high_metal: true

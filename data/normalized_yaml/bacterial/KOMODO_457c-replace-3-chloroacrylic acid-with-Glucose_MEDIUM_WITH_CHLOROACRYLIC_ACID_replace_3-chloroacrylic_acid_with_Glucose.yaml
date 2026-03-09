@@ -8,8 +8,8 @@ media_term:
   term:
     id: komodo.medium:457c_replace_3-chloroacrylic acid_with_Glucose
     label: MEDIUM WITH CHLOROACRYLIC ACID_replace_3-chloroacrylic acid_with_Glucose
-notes: 'Source: KOMODO ModelSEED | ID: 457c_replace_3-chloroacrylic acid_with_Glucose | DSMZ Medium: 457c
-  (mediadive.medium:457c) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457c_replace_3-chloroacrylic acid_with_Glucose
+  | DSMZ Medium: 457c (mediadive.medium:457c) | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:
@@ -180,3 +180,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 457
+high_ree: true

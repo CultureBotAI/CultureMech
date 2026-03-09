@@ -76,8 +76,8 @@ preparation_steps:
   description: The pH of the medium is critical.
 - step_number: 6
   action: POUR_PLATES
-  description: Finally, add solution B. Swirl medium in flask during dispensing to petri dishes or tubes
-    in order to keep charcoal suspended.
+  description: Finally, add solution B. Swirl medium in flask during dispensing to
+    petri dishes or tubes in order to keep charcoal suspended.
 - step_number: 7
   action: MIX
   description: Dehydrated media preparations are available from media distributors.
@@ -89,8 +89,9 @@ preparation_steps:
   description: 'Note: Alternatively use CYE-ACES AGAR'
 - step_number: 10
   action: AUTOCLAVE
-  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the other components and
-    dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool to 50 - 55°C.
+  description: Dissolve ACES and bring to pH 6.9 by slowly adding 1 N KOH. Add the
+    other components and dissolve by boiling. Autoclave at 121°C for 15 minutes. Cool
+    to 50 - 55°C.
 - step_number: 11
   action: AUTOCLAVE
   description: Autoclave at 121°C and cool to 50 - 55°C.
@@ -99,12 +100,13 @@ preparation_steps:
   description: Prepare a fresh solution and filter-sterilize it.
 - step_number: 13
   action: FILTER_STERILIZE
-  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize solution
-    separately.
+  description: Prepare a fresh solution by heating to 50 - 55°C in a water-bath. Filter-sterilize
+    solution separately.
 - step_number: 14
   action: MIX
-  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in the dark. Do not use
-    if chemical looses its green colour and becomes brown or yellow.'
+  description: 'Please note: Soluble ferric pyrophosphate must be kept dry and in
+    the dark. Do not use if chemical looses its green colour and becomes brown or
+    yellow.'
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +114,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 585a'
+high_ree: true

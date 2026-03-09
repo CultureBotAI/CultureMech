@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '650'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:17992
     label: sucrose
@@ -34,7 +36,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: pH indicator; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: pH indicator; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:31991
     label: Phenol red
@@ -69,3 +72,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

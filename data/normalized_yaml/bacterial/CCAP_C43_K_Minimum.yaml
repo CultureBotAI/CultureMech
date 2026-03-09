@@ -99,8 +99,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0 with 1M NaOH or 1M\
-    \ HCl\r\nprior to autoclaving. Autoclave at 15 psi for 15 minutes."
+  description: "Make up to 1 litre with filtered natural seawater. Adjust pH to 8.0\
+    \ with 1M NaOH or 1M HCl\r\nprior to autoclaving. Autoclave at 15 psi for 15 minutes."
 - step_number: 2
   action: MIX
   description: First make primary stocks of Cyanocobalamin and Biotin.
@@ -116,3 +116,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C43'
+high_metal: true

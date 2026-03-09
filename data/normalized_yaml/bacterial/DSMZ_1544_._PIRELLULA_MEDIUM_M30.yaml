@@ -209,8 +209,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH or H2SO4.
 - step_number: 7
   action: DISSOLVE
-  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard precipitation of
-    the heavy metal ions.
+  description: Dissolve the EDTA and add a few drops of concentrated H2SO4 to retard
+    precipitation of the heavy metal ions.
 applications:
 - Microbial cultivation
 curation_history:
@@ -218,3 +218,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1544'
+high_metal: true

@@ -18,7 +18,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: 10% Toray silicone SH 5535 solution
   concentration:
     value: '5'
@@ -38,7 +39,8 @@ ingredients:
   concentration:
     value: '850'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -46,7 +48,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:17057
     label: cellobiose
@@ -54,7 +57,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -97,17 +101,20 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: n--Butyric acid
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: Acetic acid
   concentration:
     value: '17'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:15366
     label: acetic acid
@@ -115,22 +122,26 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: iso--Valeric acid
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: iso--Butyric acid
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: Propionic acid
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:30768
     label: propionic acid
@@ -138,7 +149,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -146,7 +158,8 @@ ingredients:
   concentration:
     value: '0.78'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -154,7 +167,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -162,7 +176,8 @@ ingredients:
   concentration:
     value: '1.18'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -170,7 +185,8 @@ ingredients:
   concentration:
     value: '0.47'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -178,7 +194,8 @@ ingredients:
   concentration:
     value: '1.2'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -186,7 +203,8 @@ ingredients:
   concentration:
     value: '0.12'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -194,7 +212,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 media_term:
   preferred_term: TOGO Medium M124
   term:
@@ -216,3 +235,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

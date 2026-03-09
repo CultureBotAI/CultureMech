@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:457b
     label: MEDIUM WITH FLUORANTHENE OR PHENANTHRENE
-notes: 'Source: KOMODO ModelSEED | ID: 457b | DSMZ Medium: 457b (mediadive.medium:457b) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457b | DSMZ Medium: 457b (mediadive.medium:457b)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:
@@ -179,3 +180,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 457
+high_ree: true

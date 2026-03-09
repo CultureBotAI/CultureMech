@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,12 +22,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: Nitrilotriacetic acid
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
@@ -34,7 +37,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: agar
   concentration:
     value: '28'
@@ -94,3 +98,4 @@ curation_history:
   date: '2026-02-03T11:20:45.826390'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+high_ree: true

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,7 +35,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -40,7 +44,8 @@ ingredients:
   concentration:
     value: '0.75'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -48,7 +53,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -56,7 +62,8 @@ ingredients:
   concentration:
     value: '0.78'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -64,7 +71,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:75836
     label: FeSO4 x 7 H2O
@@ -80,7 +88,8 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -106,7 +115,8 @@ ingredients:
     value: '10'
     unit: G_PER_L
 - preferred_term: 10 N H2SO4
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
   concentration:
     value: variable
     unit: VARIABLE
@@ -124,7 +134,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -132,7 +143,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -140,7 +152,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -148,7 +161,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:75215
     label: sodium molybdate (anhydrous)
@@ -156,7 +170,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -164,12 +179,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CoCl2 x 6 H2O
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:35696
     label: cobalt dichloride
@@ -177,7 +194,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:34887
     label: nickel dichloride
@@ -185,7 +203,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:49976
     label: zinc dichloride
@@ -193,7 +212,8 @@ ingredients:
   concentration:
     value: '0.03'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:48843
     label: disodium selenite
@@ -201,7 +221,8 @@ ingredients:
   concentration:
     value: '12.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:44557
     label: nitrilotriacetic acid
@@ -209,7 +230,8 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:63939
     label: sodium tungstate
@@ -217,7 +239,8 @@ ingredients:
   concentration:
     value: '0.02'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:49553
     label: copper(II) chloride
@@ -225,7 +248,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
@@ -238,7 +262,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -310,7 +335,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -346,6 +372,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:56.070916'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: 10 N H2SO4; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Hydrogen gas; Added default concentration
-    for ingredient: KOH solution; Added default concentration for ingredient: N2 gas'
+  notes: 'Added default concentration for ingredient: 10 N H2SO4; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Hydrogen gas; Added default concentration for ingredient: KOH solution; Added
+    default concentration for ingredient: N2 gas'
+high_metal: true
+high_ree: true

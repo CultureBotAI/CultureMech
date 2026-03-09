@@ -48,7 +48,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding 20.0 g/l agar.
+  description: pH 7.0. Sterilize by autoclaving. Medium may be solidified by adding
+    20.0 g/l agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -56,3 +57,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1252'
+high_metal: true

@@ -57,15 +57,15 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Adjust to pH 7.0 sterilize by autoclaving. The medium may be solidified by adding 15.0
-    g/l agar.
+  description: Adjust to pH 7.0 sterilize by autoclaving. The medium may be solidified
+    by adding 15.0 g/l agar.
 - step_number: 2
   action: MIX
   description: Sterilize by autoclaving.
 - step_number: 3
   action: MIX
-  description: After autoclaving add 10 mL of the Sucrose solution to the Mineral Salts Solution with
-    Asparagine (final volume 1 L).
+  description: After autoclaving add 10 mL of the Sucrose solution to the Mineral
+    Salts Solution with Asparagine (final volume 1 L).
 applications:
 - Microbial cultivation
 curation_history:
@@ -73,3 +73,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1749'
+high_metal: true

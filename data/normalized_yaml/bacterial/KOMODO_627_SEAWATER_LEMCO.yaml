@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:627
     label: SEAWATER LEMCO
-notes: 'Source: KOMODO ModelSEED | ID: 627 | DSMZ Medium: 627 (mediadive.medium:627) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 627 | DSMZ Medium: 627 (mediadive.medium:627)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Beef extract
   concentration:
@@ -42,3 +43,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 627
+high_metal: true

@@ -35,8 +35,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Autoclave, cool to room temperature, and inoculate with about 50 ml Tibi grains. Set up
-    the culture in a 1 l Erlenmeyer flask (cotton plugged).
+  description: Autoclave, cool to room temperature, and inoculate with about 50 ml
+    Tibi grains. Set up the culture in a 1 l Erlenmeyer flask (cotton plugged).
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,3 +44,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 263'
+high_metal: true

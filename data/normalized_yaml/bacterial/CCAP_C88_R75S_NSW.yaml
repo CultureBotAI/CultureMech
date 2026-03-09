@@ -28,15 +28,18 @@ preparation_steps:
   description: 2:1 mixture
 - step_number: 2
   action: AUTOCLAVE
-  description: See separate recipes below.  Autoclave separately.  Mix aseptically when cool.
+  description: See separate recipes below.  Autoclave separately.  Mix aseptically
+    when cool.
 - step_number: 3
   action: AUTOCLAVE
-  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep boiling for 5 \r\n\
-    minutes.  Allow to cool and  restore volume to 1 litre with deionized water.  Filter \r\nthrough Whatman\
-    \ GF/C paper.  Autoclave at 15 psi for 15 minutes."
+  description: "Bring 75% seawater to the boil, add the powdered rye grass and keep\
+    \ boiling for 5 \r\nminutes.  Allow to cool and  restore volume to 1 litre with\
+    \ deionized water.  Filter \r\nthrough Whatman GF/C paper.  Autoclave at 15 psi\
+    \ for 15 minutes."
 - step_number: 4
   action: AUTOCLAVE
-  description: Filter natural seawater through GF/C filters and autoclave at 15 psi for 15 minutes.
+  description: Filter natural seawater through GF/C filters and autoclave at 15 psi
+    for 15 minutes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -44,3 +47,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C88'
+high_metal: true
+high_ree: true

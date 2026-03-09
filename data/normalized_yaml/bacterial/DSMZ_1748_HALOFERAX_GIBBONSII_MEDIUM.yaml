@@ -98,12 +98,12 @@ preparation_steps:
   description: or
 - step_number: 2
   action: MIX
-  description: Adjust to pH 7.2 with 1 M Tris-Base and sterilize by autoclaving. The medium may be solidified
-    by adding 20.0 g/l agar.
+  description: Adjust to pH 7.2 with 1 M Tris-Base and sterilize by autoclaving. The
+    medium may be solidified by adding 20.0 g/l agar.
 - step_number: 3
   action: MIX
-  description: Adjust to pH 7.2 with 1 M Tris-Base and sterilize by autoclaving. The medium may be solidified
-    by adding 20.0 g/l agar.
+  description: Adjust to pH 7.2 with 1 M Tris-Base and sterilize by autoclaving. The
+    medium may be solidified by adding 20.0 g/l agar.
 - step_number: 4
   action: MIX
   description: Adjust to pH 7.5 with 2 M Tris-Base and sterilize by autoclaving.
@@ -114,3 +114,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1748'
+high_metal: true
+high_ree: true

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '890'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -29,8 +31,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic compound, Simple
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Defined component, Organic
+    compound, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -38,7 +40,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Surfactant; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:53426
     label: polysorbate 80
@@ -46,7 +49,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -99,7 +103,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:16236
     label: ethanol
@@ -135,5 +140,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.069743'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: CO2; Added default concentration for ingredient:
-    N2'
+  notes: 'Added default concentration for ingredient: CO2; Added default concentration
+    for ingredient: N2'
+high_ree: true

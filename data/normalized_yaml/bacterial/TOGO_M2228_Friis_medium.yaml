@@ -55,7 +55,8 @@ ingredients:
     value: '15'
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
-- preferred_term: Bacto pleuropneumonia-like organisms (PPLO) broth without crystal violet
+- preferred_term: Bacto pleuropneumonia-like organisms (PPLO) broth without crystal
+    violet
   concentration:
     value: '16'
     unit: G_PER_L
@@ -84,12 +85,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: NaCl
   concentration:
     value: '80'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -97,12 +100,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: KCl
   concentration:
     value: '4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -110,7 +115,8 @@ ingredients:
   concentration:
     value: '1.4'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
 - preferred_term: Water
   concentration:
     value: '500'
@@ -123,7 +129,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -131,7 +138,8 @@ ingredients:
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
 - preferred_term: Water
   concentration:
     value: '500'
@@ -157,3 +165,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

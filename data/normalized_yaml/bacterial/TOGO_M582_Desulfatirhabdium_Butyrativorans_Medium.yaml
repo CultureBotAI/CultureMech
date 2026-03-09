@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: L--cysteine・HCl・H2O
   concentration:
     value: '10'
@@ -31,7 +32,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -39,12 +41,14 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: KH2PO4
   concentration:
     value: '0.14'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -52,7 +56,8 @@ ingredients:
   concentration:
     value: '0.54'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -60,8 +65,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -69,12 +74,14 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: NaHCO3
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -82,7 +89,8 @@ ingredients:
   concentration:
     value: '2.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -117,7 +125,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -125,7 +134,8 @@ ingredients:
   concentration:
     value: '1.72'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:41131
     label: crotonic acid
@@ -176,7 +186,9 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.582851'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
-    Carbon dioxide gas; Added default concentration for ingredient: Nitrogen gas; Added default concentration
-    for ingredient: N2; Added default concentration for ingredient: Carbon dioxide gas; Added default
-    concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    Nitrogen gas; Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: Carbon dioxide gas; Added default concentration for ingredient:
+    N2'
+high_ree: true

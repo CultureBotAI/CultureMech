@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '980'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,12 +22,14 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Organic compound, Simple component, Defined
+    component'
 - preferred_term: Na2HPO4·2H2O
   concentration:
     value: '3.38'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -34,7 +37,8 @@ ingredients:
   concentration:
     value: '40'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -73,3 +77,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

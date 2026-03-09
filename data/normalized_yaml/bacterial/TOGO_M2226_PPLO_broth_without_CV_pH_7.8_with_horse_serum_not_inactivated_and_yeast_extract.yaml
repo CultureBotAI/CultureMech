@@ -1,5 +1,7 @@
-name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast extract
-original_name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast extract
+name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast
+  extract
+original_name: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and
+  yeast extract
 category: bacterial
 medium_type: COMPLEX
 physical_state: LIQUID
@@ -8,7 +10,8 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -31,7 +34,8 @@ media_term:
   preferred_term: TOGO Medium M2226
   term:
     id: TOGO:M2226
-    label: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast extract
+    label: PPLO broth without CV (pH 7.8) with horse serum (not inactivated) and yeast
+      extract
 notes: 'Source: https://togomedium.org/medium/M2226
 
   Original URL: https://www.atcc.org/~/media/AD2BC56A0BA94572A40803C02D24D35A.ashx'
@@ -46,3 +50,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

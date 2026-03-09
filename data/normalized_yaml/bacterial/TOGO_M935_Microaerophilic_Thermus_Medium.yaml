@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -68,5 +69,8 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:01.334214'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
-    Nitrogen gas; Added default concentration for ingredient: Oxygen gas'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: Nitrogen gas; Added default concentration for ingredient: Oxygen
+    gas'
+high_metal: true
+high_ree: true

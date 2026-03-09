@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '300'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -26,7 +27,8 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined component, Solution'
+  notes: 'Role: Mineral source, Solvating media; Properties: Complex component, Defined
+    component, Solution'
 - preferred_term: Proteose peptone no.3 (Difco)
   concentration:
     value: '1'
@@ -61,3 +63,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

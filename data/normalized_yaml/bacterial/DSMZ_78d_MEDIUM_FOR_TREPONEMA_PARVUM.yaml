@@ -267,8 +267,8 @@ preparation_steps:
   description: 'To medium 78 add per liter:'
 - step_number: 2
   action: MIX
-  description: Prepare medium anaerobically under N2:CO2 (80:20). After inoculation of the tubes, pressurize
-    them with hydrogen gas to 150 kP (1.5 bar).
+  description: Prepare medium anaerobically under N2:CO2 (80:20). After inoculation
+    of the tubes, pressurize them with hydrogen gas to 150 kP (1.5 bar).
 - step_number: 3
   action: FILTER_STERILIZE
   description: All following solutions were filter sterilized
@@ -286,45 +286,49 @@ preparation_steps:
   description: 'Peptone mixture per 50 ml:'
 - step_number: 8
   action: ADJUST_PH
-  description: Dissolve 1 g ascorbic acid in 40 ml dist. water, adjust pH to 7.0. fill up to 50 ml.
+  description: Dissolve 1 g ascorbic acid in 40 ml dist. water, adjust pH to 7.0.
+    fill up to 50 ml.
 - step_number: 9
   action: MIX
   description: 'N-Acetylglucosamin and pyruvate solution per 50 ml :'
 - step_number: 10
   action: ADJUST_PH
-  description: Dissolve 7 g glutathione in 40 ml dist. Water, adjust pH to 7.0 and fill up to 50 ml.
+  description: Dissolve 7 g glutathione in 40 ml dist. Water, adjust pH to 7.0 and
+    fill up to 50 ml.
 - step_number: 11
   action: MIX
   description: Depending on organism use different modification .
 - step_number: 12
   action: AUTOCLAVE
-  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere, add 0.5 g/l
-    L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100% N2 gas atmosphere by filling 7
-    ml medium into anoxic Hungate-type tubes (for strains demanding meat particles put those first into
-    the tube (use 1 part meat particles to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar
-    slants use 15.0 g agar per 1000.0 ml medium.
+  description: To make medium anoxic bring it to a boil, cool under 100% N2 gas atmosphere,
+    add 0.5 g/l L-cysteine hydrochloride and adjust pH to 7.0. Dispense under 100%
+    N2 gas atmosphere by filling 7 ml medium into anoxic Hungate-type tubes (for strains
+    demanding meat particles put those first into the tube (use 1 part meat particles
+    to 4 or 5 parts fluid)). Autoclave at 121°C for 30 min. For agar slants use 15.0
+    g agar per 1000.0 ml medium.
 - step_number: 13
   action: MIX
-  description: 'In some cases (as indicated in the catalogue) the addition of Haemin and Vitamin K1 or
-    Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
+  description: 'In some cases (as indicated in the catalogue) the addition of Haemin
+    and Vitamin K1 or Vitamin K3 is necessary. Add to 1000 ml of medium after autoclaving:'
 - step_number: 14
   action: FILTER_STERILIZE
-  description: "Use lean beef or horse meat. Remove fat and connective tissue before grinding. Mix\r\n\
-    meat, water and NaOH, then boil for 15 min with stirring. Cool to room temperature,\r\nskim fat off\
-    \ surface, and filter, retaining both meat particles and filtrate. To the filtrate\r\nadd water to\
-    \ a final volume of 1000 ml, and then add:"
+  description: "Use lean beef or horse meat. Remove fat and connective tissue before\
+    \ grinding. Mix\r\nmeat, water and NaOH, then boil for 15 min with stirring. Cool\
+    \ to room temperature,\r\nskim fat off surface, and filter, retaining both meat\
+    \ particles and filtrate. To the filtrate\r\nadd water to a final volume of 1000\
+    \ ml, and then add:"
 - step_number: 15
   action: FILTER_STERILIZE
-  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled water and filter
-    sterilize. Store refrigerated.
+  description: Dissolve 50 mg haemin in 1 ml 1 N NaOH; make up to 100 ml with distilled
+    water and filter sterilize. Store refrigerated.
 - step_number: 16
   action: FILTER_STERILIZE
-  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml in water and filter
-    sterilize. Store refrigerated in a brown bottle.
+  description: Dissolve 5 mg vitamin K3 in 1 ml 95% ethanol, dilute to 0.05 mg/ml
+    in water and filter sterilize. Store refrigerated in a brown bottle.
 - step_number: 17
   action: FILTER_STERILIZE
-  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize. Store refrigerated
-    in a brown bottle.
+  description: Dissolve 0.1 ml of vitamin K1 in 20 ml 95% ethanol and filter sterilize.
+    Store refrigerated in a brown bottle.
 applications:
 - Microbial cultivation
 curation_history:
@@ -336,3 +340,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_ree: true

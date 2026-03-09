@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:457_6697
     label: MEDIUM 457 MODIFIED FOR DSM 6697
-notes: 'Source: KOMODO ModelSEED | ID: 457_6697 | DSMZ Medium: 457 (mediadive.medium:457) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 457_6697 | DSMZ Medium: 457 (mediadive.medium:457)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Na2HPO4
   term:
@@ -179,3 +180,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 457
+high_ree: true

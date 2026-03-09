@@ -20,7 +20,8 @@ ingredients:
   concentration:
     value: '800'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -28,7 +29,8 @@ ingredients:
   concentration:
     value: '0.42'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -36,8 +38,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined component, Simple
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Defined
+    component, Simple component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -45,7 +47,8 @@ ingredients:
   concentration:
     value: '0.43'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -53,7 +56,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -66,7 +70,8 @@ ingredients:
   concentration:
     value: '47'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -74,7 +79,8 @@ ingredients:
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -82,12 +88,14 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NH4Cl
   concentration:
     value: '0.3'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -95,7 +103,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Trace mineral solution (see below)
   concentration:
     value: '1'
@@ -117,12 +126,14 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: Distilled water
   concentration:
     value: '49'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -130,7 +141,8 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -153,12 +165,14 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Solution, Inorganic
+    compound'
 - preferred_term: Distilled water
   concentration:
     value: '987'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -166,7 +180,8 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -174,27 +189,32 @@ ingredients:
   concentration:
     value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CoCl2・6H2O
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: NiCl2・6H2O
   concentration:
     value: '0.08'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CuCl2・2H2O
   concentration:
     value: '0.04'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: ZnCl2
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:49976
     label: zinc dichloride
@@ -202,12 +222,14 @@ ingredients:
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: AlCl3
   concentration:
     value: '0.05'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:30114
     label: aluminium trichloride
@@ -215,7 +237,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: EDTA
   concentration:
     value: '0.5'
@@ -228,7 +251,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -291,7 +315,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -309,7 +334,8 @@ ingredients:
   concentration:
     value: '990'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -317,12 +343,14 @@ ingredients:
   concentration:
     value: '33'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Na2WO4・2H2O
   concentration:
     value: '26.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 media_term:
   preferred_term: TOGO Medium M736
   term:
@@ -347,5 +375,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:21:00.318686'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
-    N2; Added default concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: N2; Added default concentration for ingredient: N2'
+high_metal: true
+high_ree: true

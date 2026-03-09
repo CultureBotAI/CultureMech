@@ -218,14 +218,16 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve components except Na2CO3, NaHCO3 and Na2S x 9H2O in 700 ml distilled water and
-    autoclave under a N2 atmosphere in a bottle capped with a butyl rubber stopper. Separately dissolve
-    Na2CO3 and NaHCO3 in 300 ml distilled water, filter-sterilize, and add to the medium aseptically and
-    anaerobically. Adjust pH to 9.0 - 9.5, if necessary. Prior to inoculation, reduce the medium by the
-    addition of a 5% Na2S x 9H2O solution autoclaved under a N2 atmosphere.
+  description: Dissolve components except Na2CO3, NaHCO3 and Na2S x 9H2O in 700 ml
+    distilled water and autoclave under a N2 atmosphere in a bottle capped with a
+    butyl rubber stopper. Separately dissolve Na2CO3 and NaHCO3 in 300 ml distilled
+    water, filter-sterilize, and add to the medium aseptically and anaerobically.
+    Adjust pH to 9.0 - 9.5, if necessary. Prior to inoculation, reduce the medium
+    by the addition of a 5% Na2S x 9H2O solution autoclaved under a N2 atmosphere.
 - step_number: 2
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then proceed to add minerals.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH. Then
+    proceed to add minerals.
 - step_number: 3
   action: ADJUST_PH
   description: Adjust final pH to 7.0.
@@ -240,3 +242,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

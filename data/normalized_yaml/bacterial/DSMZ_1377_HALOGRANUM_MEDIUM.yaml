@@ -72,8 +72,8 @@ preparation_steps:
   description: Adjust to pH 7.0 and sterilize by autoclaving.
 - step_number: 2
   action: AUTOCLAVE
-  description: The medium may be solidified by adding 20.0 g/l agar. In this case, NaCl needs to be autoclaved
-    separately.
+  description: The medium may be solidified by adding 20.0 g/l agar. In this case,
+    NaCl needs to be autoclaved separately.
 applications:
 - Microbial cultivation
 curation_history:
@@ -85,3 +85,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

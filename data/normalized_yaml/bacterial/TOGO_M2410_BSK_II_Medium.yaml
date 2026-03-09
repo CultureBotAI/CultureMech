@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '2.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32139
     label: ''
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.8'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -36,7 +39,8 @@ ingredients:
   term:
     id: CHEBI:32142
     label: sodium citrate dihydrate
-- preferred_term: bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN, No.81-003)
+- preferred_term: bovine serum albumin, FractionV (Miles Laboratories, Elkhart, IN,
+    No.81-003)
   concentration:
     value: '50'
     unit: G_PER_L
@@ -50,9 +54,10 @@ ingredients:
   concentration:
     value: '0.4'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
-- preferred_term: N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma Chemical Co., St. Louis,
-    MO)
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
+- preferred_term: N-2-hydroxyethylpiperazine-N-2-ethanesulfonic acid (HEPES, Sigma
+    Chemical Co., St. Louis, MO)
   concentration:
     value: '6'
     unit: G_PER_L
@@ -61,12 +66,13 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
-- preferred_term: 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories, GrandIsland, NY,
-    No.330-1540)
+- preferred_term: 10X concentrate of CMRL 1066 without glutamine (Gibco Laboratories,
+    GrandIsland, NY, No.330-1540)
   concentration:
     value: '100'
     unit: G_PER_L
@@ -105,3 +111,5 @@ curation_history:
   date: '2026-02-03T11:20:53.677801'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+high_metal: true
+high_ree: true

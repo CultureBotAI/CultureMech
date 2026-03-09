@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:173
     label: SPIROCHAETA LITORALIS medium
-notes: 'Source: KOMODO ModelSEED | ID: 173 | DSMZ Medium: 173 (mediadive.medium:173) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 173 | DSMZ Medium: 173 (mediadive.medium:173)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: D-Glucose
   term:
@@ -56,3 +57,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 173
+high_metal: true

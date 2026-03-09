@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,7 +22,8 @@ ingredients:
   concentration:
     value: '0.87'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -29,7 +31,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined component'
+  notes: 'Role: Antimicrobial agent; Properties: Solution, Organic compound, Defined
+    component'
 - preferred_term: Agar (if needed)
   concentration:
     value: '15'
@@ -61,3 +64,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

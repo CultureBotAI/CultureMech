@@ -137,8 +137,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1 L. Adjust pH to 6.5 and autoclave.
-    Aseptically add the following solution (autoclaved) to the medium:'
+  description: 'Add components to distilled water and bring volume to 1 L. Adjust
+    pH to 6.5 and autoclave. Aseptically add the following solution (autoclaved) to
+    the medium:'
 - step_number: 2
   action: MIX
   description: Check final pH of the medium to be 7.5-8.0.
@@ -156,3 +157,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

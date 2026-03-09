@@ -8,22 +8,26 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: Na2MoO4 (0.01 M)
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: FeSO4 (0.02 M)
   concentration:
     value: '2.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Solution, Inorganic compound, Defined
+    component'
 - preferred_term: MgSO4·7H2O
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -36,7 +40,8 @@ ingredients:
   concentration:
     value: '0.01'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -44,7 +49,8 @@ ingredients:
   concentration:
     value: '2.6'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:62946
     label: ammonium sulfate
@@ -60,12 +66,14 @@ ingredients:
   concentration:
     value: '15'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
 - preferred_term: Potassium phosphate buffer (0.02 M, pH 7.0)
   concentration:
     value: '980'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound, Complex component'
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
+    Complex component'
 - preferred_term: Sodium thioglycolate
   concentration:
     value: '0.5'
@@ -104,3 +112,5 @@ curation_history:
   date: '2026-02-03T11:20:47.706622'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: nitrogen gas'
+high_metal: true
+high_ree: true

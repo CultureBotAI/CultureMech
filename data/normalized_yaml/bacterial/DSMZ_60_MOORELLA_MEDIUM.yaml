@@ -100,11 +100,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Sparge solution A with 100% CO2 gas for 30 - 45 min to make it anoxic, then distribute
-    under same gas atmosphere into anoxic Hungate-type tubes or serum vials and autoclave. Autoclave separately
-    solutions B, C, E and F under 100% N2 gas, and solution D under 80% N2 and 20% CO2 gas atmosphere.
-    To complete the medium appropriate amounts of solutions B to F are added to the sterile solution A
-    in the sequence as indicated. Adjust pH of the complete medium to 6.9, if necessary.
+  description: Sparge solution A with 100% CO2 gas for 30 - 45 min to make it anoxic,
+    then distribute under same gas atmosphere into anoxic Hungate-type tubes or serum
+    vials and autoclave. Autoclave separately solutions B, C, E and F under 100% N2
+    gas, and solution D under 80% N2 and 20% CO2 gas atmosphere. To complete the medium
+    appropriate amounts of solutions B to F are added to the sterile solution A in
+    the sequence as indicated. Adjust pH of the complete medium to 6.9, if necessary.
 applications:
 - Microbial cultivation
 curation_history:
@@ -112,3 +113,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 60'
+high_metal: true

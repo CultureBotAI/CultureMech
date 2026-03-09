@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -31,7 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -90,3 +92,5 @@ curation_history:
   date: '2026-02-03T11:20:54.688819'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2 gas'
+high_metal: true
+high_ree: true

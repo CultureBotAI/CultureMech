@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '233'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -29,7 +30,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -37,7 +39,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:75228
     label: sodium lactate
@@ -62,7 +65,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: Potassium phosphate buffer (see Medium [M578])
   concentration:
     value: '2'
@@ -88,3 +92,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

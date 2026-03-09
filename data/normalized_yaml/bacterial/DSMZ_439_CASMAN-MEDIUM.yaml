@@ -25,7 +25,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15% water-lysed sheep blood.
+  description: Casman-Agar-Base (Difco) supplemented with 5% sheep blood and 0.15%
+    water-lysed sheep blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +34,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 439'
+high_metal: true

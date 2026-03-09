@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound'
 - preferred_term: Heart Infusion Broth
   concentration:
     value: '17.5'
@@ -32,7 +33,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Yeast
   concentration:
     value: '150'
@@ -53,3 +55,5 @@ curation_history:
   curator: togo-import
   action: Imported from TOGO Medium
   notes: 'Source: TOGO, ID: M2177'
+high_metal: true
+high_ree: true

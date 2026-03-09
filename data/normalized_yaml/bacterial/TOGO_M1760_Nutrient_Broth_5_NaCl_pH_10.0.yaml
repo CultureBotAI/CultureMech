@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -38,7 +40,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -46,7 +49,8 @@ ingredients:
   concentration:
     value: '4.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -54,7 +58,8 @@ ingredients:
   concentration:
     value: '5.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
 media_term:
   preferred_term: TOGO Medium M1760
   term:
@@ -76,3 +81,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

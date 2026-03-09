@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,12 +17,14 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Na2SO4
   concentration:
     value: '1.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -29,7 +32,8 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:3312
     label: calcium dichloride
@@ -56,7 +60,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: 5% K2HPO4 solution (autoclaved)
   concentration:
     value: '10'
@@ -92,3 +97,5 @@ curation_history:
   date: '2026-02-03T11:20:59.376619'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+high_metal: true
+high_ree: true

@@ -30,7 +30,8 @@ ingredients:
   concentration:
     value: '880'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -38,7 +39,8 @@ ingredients:
   concentration:
     value: '0.65'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -46,8 +48,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -55,7 +57,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
 - preferred_term: FeCl2 solution (see Medium [M180])
   concentration:
     value: '1'
@@ -68,7 +71,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -76,17 +80,20 @@ ingredients:
   concentration:
     value: '0.11'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Mineral source; Properties: Simple component, Inorganic compound,
+    Defined component'
 - preferred_term: MgCl2・6H2O
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Distilled water
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -94,7 +101,8 @@ ingredients:
   concentration:
     value: '3.73'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -102,7 +110,8 @@ ingredients:
   concentration:
     value: '0.44'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:184335
     label: ''
@@ -115,7 +124,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: Trace vitamins (see Medium [M190])
   concentration:
     value: '10'
@@ -133,7 +143,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Trace element solution (see Medium [M180])
   concentration:
     value: '1'
@@ -162,5 +173,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:59.692565'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: N2'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: N2'
+high_metal: true
+high_ree: true

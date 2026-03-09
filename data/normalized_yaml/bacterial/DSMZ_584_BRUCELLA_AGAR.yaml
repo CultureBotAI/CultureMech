@@ -24,8 +24,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: HEAT
-  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving, then add 100 ml/l sheep
-    blood.
+  description: Prepare Brucella agar (e.g. Merck). Cool to 50°C after autoclaving,
+    then add 100 ml/l sheep blood.
 applications:
 - Microbial cultivation
 curation_history:
@@ -33,3 +33,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 584'
+high_ree: true

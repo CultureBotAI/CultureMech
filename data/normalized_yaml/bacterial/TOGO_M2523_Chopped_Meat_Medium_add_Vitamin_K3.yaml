@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -31,7 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -39,8 +41,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple component, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Organic compound, Simple
+    component, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -78,7 +80,8 @@ ingredients:
   concentration:
     value: '99'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -86,7 +89,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Growth factor; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:50385
     label: Haemin
@@ -96,7 +100,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Role: Vitamin; Properties: Organic compound, Solution, Defined component'
 - preferred_term: 95% ethanol
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -122,5 +127,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:54.060461'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
-    95% ethanol'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: 95% ethanol'
+high_metal: true
+high_ree: true

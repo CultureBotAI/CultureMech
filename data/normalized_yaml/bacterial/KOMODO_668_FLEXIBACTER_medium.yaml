@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:668
     label: FLEXIBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 668 | DSMZ Medium: 668 (mediadive.medium:668) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 668 | DSMZ Medium: 668 (mediadive.medium:668)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Tryptone
   concentration:
@@ -114,3 +115,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 668
+high_metal: true

@@ -176,7 +176,8 @@ preparation_steps:
   description: Adjust pH to 6.8 with NaOH.
 - step_number: 3
   action: FILTER_STERILIZE
-  description: Fill up to 346ml with demineralized water and filter sterilize through 0.2µm filter
+  description: Fill up to 346ml with demineralized water and filter sterilize through
+    0.2µm filter
 - step_number: 4
   action: HEAT
   description: Aliquot 17.3ml into 50ml tubes and store at -20°C.
@@ -193,3 +194,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1600'
+high_ree: true

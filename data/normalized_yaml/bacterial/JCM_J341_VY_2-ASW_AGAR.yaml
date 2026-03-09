@@ -32,12 +32,12 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Adjust pH to 7.5. Autoclave at 120C for 20 min. Separately sterilize vitamin B12 by filtration,
-    and aseptically add to the medium.
+  description: Adjust pH to 7.5. Autoclave at 120C for 20 min. Separately sterilize
+    vitamin B12 by filtration, and aseptically add to the medium.
 - step_number: 2
   action: MIX
-  description: Wash dried yeast (e.g., Yeast from <I>Saccharomyces cerevisiae</I> Type II, Sigma) with
-    distilled water three times.
+  description: Wash dried yeast (e.g., Yeast from <I>Saccharomyces cerevisiae</I>
+    Type II, Sigma) with distilled water three times.
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +45,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J341'
+high_metal: true

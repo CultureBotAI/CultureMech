@@ -50,6 +50,10 @@ class BrowserExporter:
                 "medium_type": (recipe.get("medium_type", "") or "").lower(),
                 "physical_state": (recipe.get("physical_state", "") or "").lower(),
 
+                # Metal and REE classification
+                "high_metal": recipe.get("high_metal", False),
+                "high_ree": recipe.get("high_ree", False),
+
                 # Organisms (extract names for faceting)
                 "target_organism_names": self._extract_organism_names(recipe),
                 "organism_culture_type": recipe.get("organism_culture_type", ""),

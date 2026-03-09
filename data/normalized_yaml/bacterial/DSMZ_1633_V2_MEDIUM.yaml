@@ -348,8 +348,9 @@ preparation_steps:
   description: Adjust pH to 7.0 with 40% KOH.
 - step_number: 3
   action: ADJUST_PH
-  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about 7.3 g). Dissolve
-    other salts separately, combine and adjust the pH to 6.8 with NaOH or H2SO4.
+  description: Dissolve the nitrilotriacetic acid, adjust the pH to 7.0 with KOH (about
+    7.3 g). Dissolve other salts separately, combine and adjust the pH to 6.8 with
+    NaOH or H2SO4.
 applications:
 - Microbial cultivation
 curation_history:
@@ -361,3 +362,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

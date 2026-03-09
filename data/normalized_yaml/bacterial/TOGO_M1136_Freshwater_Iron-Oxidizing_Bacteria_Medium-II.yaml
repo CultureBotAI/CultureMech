@@ -72,5 +72,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:46.109307'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default concentration
-    for ingredient: Nitrogen gas'
+  notes: 'Added default concentration for ingredient: Carbon dioxide gas; Added default
+    concentration for ingredient: Nitrogen gas'
+high_ree: true

@@ -76,8 +76,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water and filter-sterilize
-    with 0.22 ï¿½m PES filter.
+  description: Adjust pH to 7.2 with NaOH, fill up to 584 ml with distilled water
+    and filter-sterilize with 0.22 ï¿½m PES filter.
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +89,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

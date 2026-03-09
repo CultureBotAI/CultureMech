@@ -86,19 +86,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve ingredients, except cysteine, sugar mix, and carbonate, boil medium for 1 min,
-    then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere, add 0.5 g/l L-cysteine-HCl
-    x H2O and dispense under same gas atmosphere into Hungate-type tubes (for strains demanding meat particles
-    put those first into the tube, use 1 part meat particles to 4 or 5 parts fluid). Autoclave at 121°C
-    for 20 min. After autoclaving add the sugar mix from a sterile anoxic stock solution prepared under
-    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under 80% N2 and 20% CO2 gas
-    mixture. Adjust the pH of the medium to pH 7.0, if necessary.
+  description: Dissolve ingredients, except cysteine, sugar mix, and carbonate, boil
+    medium for 1 min, then cool to room temperature under 80% N2 and 20% CO2 gas atmosphere,
+    add 0.5 g/l L-cysteine-HCl x H2O and dispense under same gas atmosphere into Hungate-type
+    tubes (for strains demanding meat particles put those first into the tube, use
+    1 part meat particles to 4 or 5 parts fluid). Autoclave at 121°C for 20 min. After
+    autoclaving add the sugar mix from a sterile anoxic stock solution prepared under
+    100% N2 gas and carbonate from a sterile anoxic stock solution prepared under
+    80% N2 and 20% CO2 gas mixture. Adjust the pH of the medium to pH 7.0, if necessary.
 - step_number: 2
   action: FILTER_STERILIZE
-  description: Use lean beef or horse meat. Remove fat and connective tissue before grinding. Mix meat,
-    water and NaOH, then boil for 15 min with stirring. Cool to room temperature, skim fat off surface,
-    and filter, retaining both meat particles and filtrate. To the filtrate add water to a final volume
-    of 1000.0 ml.
+  description: Use lean beef or horse meat. Remove fat and connective tissue before
+    grinding. Mix meat, water and NaOH, then boil for 15 min with stirring. Cool to
+    room temperature, skim fat off surface, and filter, retaining both meat particles
+    and filtrate. To the filtrate add water to a final volume of 1000.0 ml.
 applications:
 - Microbial cultivation
 curation_history:
@@ -106,3 +107,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 110a'
+high_metal: true

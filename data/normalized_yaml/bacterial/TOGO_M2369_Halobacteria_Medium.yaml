@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -29,7 +31,8 @@ ingredients:
   concentration:
     value: '200'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -37,7 +40,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -45,12 +49,14 @@ ingredients:
   concentration:
     value: '0.36'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Na-glutamate
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:29988
     label: L-glutamate(2-)
@@ -66,7 +72,8 @@ ingredients:
   concentration:
     value: '36'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:86249
     label: iron dichloride tetrahydrate
@@ -105,3 +112,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

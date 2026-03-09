@@ -75,8 +75,8 @@ curation_history:
 - timestamp: '2026-01-27T07:21:44.141292Z'
   curator: mediadb-import
   action: Imported from MediaDB
-  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 174, Reference: Mazumdar et al.
-    (2014) PLOS One'
+  notes: 'Source: MediaDB (Institute for Systems Biology), Medium ID: 174, Reference:
+    Mazumdar et al. (2014) PLOS One'
 - timestamp: '2026-01-28T19:48:34.713955Z'
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
@@ -86,8 +86,10 @@ media_term:
   term:
     id: MEDIADB:174
     label: Deferrated synbase with ferric ammonium citrate; simpson
-notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms) Reference: https://mediadb.systemsbiology.net/'
+notes: 'Source: MediaDB (Chemically-defined media for genome-sequenced organisms)
+  Reference: https://mediadb.systemsbiology.net/'
 applications:
 - Cultivation of genome-sequenced organisms
 - Metabolic modeling
 - Systems biology research
+high_ree: true

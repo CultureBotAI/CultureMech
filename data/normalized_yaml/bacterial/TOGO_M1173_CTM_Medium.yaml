@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -57,7 +58,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -65,12 +67,14 @@ ingredients:
   concentration:
     value: '3.75'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CaCl2・2H2O
   concentration:
     value: '1.8'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Citric acid
   concentration:
     value: '0.3'
@@ -87,7 +91,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -95,12 +100,14 @@ ingredients:
   concentration:
     value: '0.39'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: H3BO3
   concentration:
     value: '2.86'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -108,27 +115,32 @@ ingredients:
   concentration:
     value: '1.81'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: ZnSO4・7H2O
   concentration:
     value: '0.222'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: CuSO4・5H2O
   concentration:
     value: '0.079'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Co(NO3)2・6H2O
   concentration:
     value: '0.049'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
 - preferred_term: Distilled water
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -136,7 +148,8 @@ ingredients:
   concentration:
     value: '15.3'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -144,7 +157,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -152,7 +166,8 @@ ingredients:
   concentration:
     value: '12'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:31604
     label: ferric ammonium citrate
@@ -160,7 +175,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -176,7 +192,8 @@ ingredients:
   concentration:
     value: '19'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -184,7 +201,8 @@ ingredients:
   concentration:
     value: '0.625'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -216,7 +234,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -229,7 +248,8 @@ ingredients:
   concentration:
     value: '400'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -237,12 +257,14 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: Glycine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:57305
     label: glycine zwitterion
@@ -250,87 +272,104 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Alanine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Arginine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Aspartic acid
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Glutamine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Isoleucine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Leucine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Lysine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Phenylalanine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Proline
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Serine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Threonine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Tryptophan
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Tyrosine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Valine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Asparagine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Histidine
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Organic compound, Defined component,
+    Simple component'
 - preferred_term: L--Methionine
   concentration:
     value: '100'
@@ -340,7 +379,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound, Complex component'
+  notes: 'Role: Buffer; Properties: Defined component, Solution, Inorganic compound,
+    Complex component'
 - preferred_term: Biotin
   concentration:
     value: '10'
@@ -403,7 +443,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:17154
     label: nicotinamide
@@ -419,12 +460,14 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
 - preferred_term: Lipoic acid
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Growth factor; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:16494
     label: lipoic acid
@@ -437,7 +480,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -474,3 +518,5 @@ curation_history:
   date: '2026-02-03T11:20:46.328028'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: KOH'
+high_metal: true
+high_ree: true

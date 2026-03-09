@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '800'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -73,3 +74,4 @@ curation_history:
   date: '2026-02-03T11:20:57.976155'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NaOH'
+high_metal: true

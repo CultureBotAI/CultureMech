@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '500'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -21,8 +22,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple component, Inorganic
-    compound'
+  notes: 'Role: Protective agent, Mineral source; Properties: Defined component, Simple
+    component, Inorganic compound'
   term:
     id: CHEBI:3311
     label: calcium carbonate
@@ -30,7 +31,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Organic compound, Simple
+    component'
 - preferred_term: Table wine
   concentration:
     value: '500'
@@ -62,3 +64,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

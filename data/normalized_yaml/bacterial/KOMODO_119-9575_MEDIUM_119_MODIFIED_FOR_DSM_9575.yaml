@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:119_9575
     label: MEDIUM 119 MODIFIED FOR DSM 9575
-notes: 'Source: KOMODO ModelSEED | ID: 119_9575 | DSMZ Medium: 119 (mediadive.medium:119) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 119_9575 | DSMZ Medium: 119 (mediadive.medium:119)
+  | Aerobic: No'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -241,3 +242,4 @@ curation_history:
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 119
 ph_value: 7.6
+high_ree: true

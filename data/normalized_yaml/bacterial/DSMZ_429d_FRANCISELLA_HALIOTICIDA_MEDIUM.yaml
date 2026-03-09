@@ -75,13 +75,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Dissolve Columbia agar base in 70% artificial seawater and add additional 2 g agar per
-    liter. Autoclave and mix solution with 4% horse or sheep blood after cooling to 50°C. Add 1% glucose,
-    2 mM FeCl3 and 0.1% cysteine, mix well and pour plates. Rehydrate pellets of freeze-dried ampoules
-    in liquid medium 220 or 215.
+  description: Dissolve Columbia agar base in 70% artificial seawater and add additional
+    2 g agar per liter. Autoclave and mix solution with 4% horse or sheep blood after
+    cooling to 50°C. Add 1% glucose, 2 mM FeCl3 and 0.1% cysteine, mix well and pour
+    plates. Rehydrate pellets of freeze-dried ampoules in liquid medium 220 or 215.
 - step_number: 2
   action: ADJUST_PH
-  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid CM 131).
+  description: Adjust pH to 7.3. Medium is identical with Tryptone Soya Agar (Oxoid
+    CM 131).
 applications:
 - Microbial cultivation
 curation_history:
@@ -89,3 +90,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 429d'
+high_metal: true

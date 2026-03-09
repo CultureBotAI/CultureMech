@@ -8,8 +8,8 @@ ingredients:
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic compound, Simple
-    component'
+  notes: 'Role: Mineral source, Protective agent; Properties: Defined component, Inorganic
+    compound, Simple component'
 - preferred_term: Seawater (2% salinity)
   concentration:
     value: '800'
@@ -49,3 +49,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

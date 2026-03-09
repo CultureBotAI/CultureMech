@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:601
     label: MARINE CAULOBACTER medium
-notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 601 | DSMZ Medium: 601 (mediadive.medium:601)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Yeast extract
   concentration:
@@ -34,3 +35,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 601
+high_metal: true

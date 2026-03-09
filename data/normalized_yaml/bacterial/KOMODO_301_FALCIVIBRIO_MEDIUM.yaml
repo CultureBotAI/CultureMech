@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:301
     label: FALCIVIBRIO MEDIUM
-notes: 'Source: KOMODO ModelSEED | ID: 301 | DSMZ Medium: 301 (mediadive.medium:301) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 301 | DSMZ Medium: 301 (mediadive.medium:301)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: Wilkins-Chalgren-Anaerobe-Broth
   concentration:
@@ -43,3 +44,5 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 301
+high_metal: true
+high_ree: true

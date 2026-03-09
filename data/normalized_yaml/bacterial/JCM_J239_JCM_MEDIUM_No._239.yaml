@@ -120,8 +120,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Add components, except vitamin B solution, to distilled water and bring volume to 990 ml.
-    Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized vitamin B solution.
+  description: Add components, except vitamin B solution, to distilled water and bring
+    volume to 990 ml. Adjust pH to 7.2. After autoclaving, aseptically add filter-sterilized
+    vitamin B solution.
 applications:
 - Microbial cultivation
 curation_history:
@@ -132,4 +133,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:29.394524Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_ree: true

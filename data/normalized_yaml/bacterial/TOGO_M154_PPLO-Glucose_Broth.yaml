@@ -18,7 +18,8 @@ ingredients:
   concentration:
     value: '700'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -31,7 +32,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Simple component, Defined component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -41,7 +43,8 @@ ingredients:
     unit: G_PER_L
   notes: 'Properties: Undefined component, Complex component'
 - preferred_term: Penicillin
-  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Antimicrobial agent; Properties: Defined component, Organic compound,
+    Simple component'
   term:
     id: CHEBI:17334
     label: Penicillin
@@ -73,3 +76,5 @@ curation_history:
   date: '2026-02-03T11:20:48.073395'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: Penicillin'
+high_metal: true
+high_ree: true

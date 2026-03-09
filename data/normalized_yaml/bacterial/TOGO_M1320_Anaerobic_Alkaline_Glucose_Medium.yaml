@@ -16,7 +16,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -24,7 +25,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -32,7 +34,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -40,7 +43,8 @@ ingredients:
   concentration:
     value: '50'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -53,7 +57,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -66,7 +71,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -74,7 +80,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -82,12 +89,14 @@ ingredients:
   concentration:
     value: '0.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
 - preferred_term: Glucose
   concentration:
     value: '3'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined component'
+  notes: 'Role: Carbon source; Properties: Simple component, Organic compound, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -113,7 +122,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound, Solution'
+  notes: 'Role: Reducing agent; Properties: Defined component, Inorganic compound,
+    Solution'
 - preferred_term: 10% Peptone solution
   concentration:
     value: '10'
@@ -143,5 +153,7 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.173102'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: N2; Added default concentration for ingredient:
-    N2; Added default concentration for ingredient: N2'
+  notes: 'Added default concentration for ingredient: N2; Added default concentration
+    for ingredient: N2; Added default concentration for ingredient: N2'
+high_metal: true
+high_ree: true

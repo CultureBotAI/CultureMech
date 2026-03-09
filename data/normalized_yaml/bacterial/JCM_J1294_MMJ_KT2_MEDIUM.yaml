@@ -281,19 +281,20 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Adjust pH to 7.0 and autoclave. After cooling, add the following solutions (filter-sterilized):'
+  description: 'Adjust pH to 7.0 and autoclave. After cooling, add the following solutions
+    (filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Aseptically distribute the medium into culture vessels under a stream of H2-CO2 (4:1,
-    v/v) and seal with butyl rubber stoppers. Prior to inoculation, add per liter the following solutions
-    (autoclaved and stored under N2):'
+  description: 'Aseptically distribute the medium into culture vessels under a stream
+    of H2-CO2 (4:1, v/v) and seal with butyl rubber stoppers. Prior to inoculation,
+    add per liter the following solutions (autoclaved and stored under N2):'
 - step_number: 3
   action: MIX
   description: Pressurize the inoculated bottles to 200 kPa H2-CO2 (4:1, v/v).
 - step_number: 4
   action: ADJUST_PH
-  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution. Then proceed to
-    add minerals. Adjust final pH to 7.0.
+  description: Dissolve nitrilotriacetic acid and adjust pH to 6.5 with KOH solution.
+    Then proceed to add minerals. Adjust final pH to 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -301,3 +302,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1294'
+high_metal: true

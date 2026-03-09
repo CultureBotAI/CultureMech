@@ -197,36 +197,39 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Incubate all used glass ware and magnetic stirring rods in 0.1 M HCl and rinse 3x with
-    double distilled water to remove residual detergents (always check visual for soap bubbles).
+  description: Incubate all used glass ware and magnetic stirring rods in 0.1 M HCl
+    and rinse 3x with double distilled water to remove residual detergents (always
+    check visual for soap bubbles).
 - step_number: 2
   action: AUTOCLAVE
-  description: Autoclave the basic salt water medium and cool to room temperature. This medium should
-    be free of any precipitations!
+  description: Autoclave the basic salt water medium and cool to room temperature.
+    This medium should be free of any precipitations!
 - step_number: 3
   action: STORE
-  description: 'Aseptically, add per L of basic salt water medium the following solutions from sterile
-    stocks (do not store complemented SCM): Trace element solution (Nitrososphaera), FeNaEDTA solution,
-    NaHCO3 solution, HEPES buffer solution, NH4Cl solution, KH2PO4 solution'
+  description: 'Aseptically, add per L of basic salt water medium the following solutions
+    from sterile stocks (do not store complemented SCM): Trace element solution (Nitrososphaera),
+    FeNaEDTA solution, NaHCO3 solution, HEPES buffer solution, NH4Cl solution, KH2PO4
+    solution'
 - step_number: 4
   action: ADJUST_PH
   description: Adjust pH to 7.6.
 - step_number: 5
   action: ADJUST_PH
-  description: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH to 7.5 and fill up to
-    1000 ml volume.
+  description: Fist dissolve NaOH in ca 600 ml water, then add HEPES, adjust pH to
+    7.5 and fill up to 1000 ml volume.
 - step_number: 6
   action: HEAT
-  description: This solution contains no iron! Sterilise by autoclaving or filtration (0.2 µm) and store
-    in the dark at 4 °C.
+  description: This solution contains no iron! Sterilise by autoclaving or filtration
+    (0.2 µm) and store in the dark at 4 °C.
 - step_number: 7
   action: HEAT
   description: Sterilise by filtration (0.2 µm) and store in the dark at 4 °C.
 - step_number: 8
   action: DISSOLVE
-  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small beaker with stirring
-    rod to dissolve) and sterilize by filtration (0.2 µm) in the laminar flow hood. Store in a sterile
-    50 mL falcon tube at 4 °C. Avoid high headspace to liquid ratios to ensure stable concentration.
+  description: Dissolve 4.2 g of NaHCO3 in 50 mL Double distilled water (use a small
+    beaker with stirring rod to dissolve) and sterilize by filtration (0.2 µm) in
+    the laminar flow hood. Store in a sterile 50 mL falcon tube at 4 °C. Avoid high
+    headspace to liquid ratios to ensure stable concentration.
 - step_number: 9
   action: DISSOLVE
   description: Dissolve 2.67 g ammonium chloride in 50 mL Double distilled water.
@@ -242,3 +245,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1630e'
+high_metal: true
+high_ree: true

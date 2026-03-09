@@ -277,13 +277,14 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Prepare the medium under an atmosphere of H2/CO2 (80:20) without adding the vitamins and
-    NaHCO3 in serum bottles and seal the serum tubes with butyl rubber stoppers. Steam medium for 3 hours
-    on each of 3 successive days. To the sterile medium add, from filter sterilised stock solutions, the
-    NaHCO3 and vitamin solution.
+  description: Prepare the medium under an atmosphere of H2/CO2 (80:20) without adding
+    the vitamins and NaHCO3 in serum bottles and seal the serum tubes with butyl rubber
+    stoppers. Steam medium for 3 hours on each of 3 successive days. To the sterile
+    medium add, from filter sterilised stock solutions, the NaHCO3 and vitamin solution.
 - step_number: 2
   action: MIX
-  description: Increase the 80% H2 + 20% CO2 gas phase pressure to 300 kPa. The final pH is 7.0.
+  description: Increase the 80% H2 + 20% CO2 gas phase pressure to 300 kPa. The final
+    pH is 7.0.
 applications:
 - Microbial cultivation
 curation_history:
@@ -298,4 +299,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:22.509772Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

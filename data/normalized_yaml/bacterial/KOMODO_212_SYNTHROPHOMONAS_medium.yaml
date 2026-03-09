@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:212
     label: SYNTHROPHOMONAS medium
-notes: 'Source: KOMODO ModelSEED | ID: 212 | DSMZ Medium: 212 (mediadive.medium:212) | Aerobic: Yes'
+notes: 'Source: KOMODO ModelSEED | ID: 212 | DSMZ Medium: 212 (mediadive.medium:212)
+  | Aerobic: Yes'
 ingredients:
 - preferred_term: KH2PO4
   term:
@@ -345,3 +346,5 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 212
+high_metal: true
+high_ree: true

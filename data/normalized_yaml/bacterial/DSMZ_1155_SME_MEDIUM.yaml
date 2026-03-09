@@ -114,8 +114,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Reduction of the medium by addition of 20 ml Na2S (2.5%); then adjust pH to 5.5 with sulfuric
-    acid.
+  description: Reduction of the medium by addition of 20 ml Na2S (2.5%); then adjust
+    pH to 5.5 with sulfuric acid.
 - step_number: 2
   action: MIX
   description: 'Gas phase: H2/CO2=80/20 (250 kPa).'
@@ -132,3 +132,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1155'
+high_metal: true

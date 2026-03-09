@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Carbon source; Properties: Defined component, Organic compound, Simple
+    component'
   term:
     id: CHEBI:15978
     label: sn-glycerol 3-phosphate
@@ -76,3 +77,5 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true
+high_ree: true

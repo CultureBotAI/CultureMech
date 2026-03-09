@@ -23,7 +23,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Reducing agent; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: Basal medium (see below)
   concentration:
     value: '950'
@@ -49,7 +50,8 @@ ingredients:
   concentration:
     value: '950'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -57,12 +59,14 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Simple component, Inorganic
+    compound'
 - preferred_term: KH2PO4
   concentration:
     value: '1.4'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -70,7 +74,8 @@ ingredients:
   concentration:
     value: '0.5'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Simple component,
+    Inorganic compound'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -78,8 +83,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic compound, Defined
-    component'
+  notes: 'Role: pH dependent redox indicator; Properties: Simple component, Organic
+    compound, Defined component'
   term:
     id: CHEBI:8806
     label: Resazurin
@@ -87,7 +92,8 @@ ingredients:
   concentration:
     value: '0.2'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
 media_term:
   preferred_term: TOGO Medium M1071
   term:
@@ -113,3 +119,4 @@ curation_history:
   date: '2026-02-03T11:20:45.772384'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+high_metal: true

@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Defined component, Solution, Inorganic
+    compound'
 - preferred_term: MgSO4 solution (1 M)***
   concentration:
     value: '2.1'
@@ -30,7 +31,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Simple component, Defined component,
+    Inorganic compound'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -46,7 +48,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -54,7 +57,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Mineral source; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -62,7 +66,8 @@ ingredients:
   concentration:
     value: '30'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -70,7 +75,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Nitrogen source; Properties: Inorganic compound, Simple component,
+    Defined component'
   term:
     id: CHEBI:31206
     label: ammonium chloride
@@ -78,7 +84,8 @@ ingredients:
   concentration:
     value: '60'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Defined component, Simple component, Inorganic
+    compound'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -88,7 +95,8 @@ ingredients:
     value: variable
     unit: VARIABLE
 - preferred_term: dimethyl sulfoxide (DMSO)
-  notes: 'Role: Solvating media; Properties: Defined component, Organic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Organic compound,
+    Simple component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -116,5 +124,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:51.703732'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: Phenanthrene solution; Added default concentration
-    for ingredient: dimethyl sulfoxide (DMSO)'
+  notes: 'Added default concentration for ingredient: Phenanthrene solution; Added
+    default concentration for ingredient: dimethyl sulfoxide (DMSO)'
+high_ree: true

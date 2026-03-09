@@ -50,8 +50,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation of solid
-    medium, add 20.0 g/L agar. After autoclaving, add the following solution (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. For preparation
+    of solid medium, add 20.0 g/L agar. After autoclaving, add the following solution
+    (autoclaved):'
 - step_number: 2
   action: ADJUST_PH
   description: Readjust pH to 8.0, if necessary.
@@ -62,3 +63,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1105'
+high_metal: true

@@ -26,7 +26,8 @@ ingredients:
     value: '0.02'
     unit: MOLAR
 - preferred_term: NH4CI
-  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Nitrogen source; Properties: Defined component, Inorganic compound,
+    Simple component'
   concentration:
     value: variable
     unit: VARIABLE
@@ -34,7 +35,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -42,7 +44,8 @@ ingredients:
   concentration:
     value: '0.6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Buffer; Properties: Defined component, Inorganic compound, Simple
+    component'
   term:
     id: CHEBI:63036
     label: KH2PO4
@@ -50,7 +53,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:34683
     label: disodium hydrogenphosphate
@@ -75,3 +79,4 @@ curation_history:
   date: '2026-02-03T11:20:56.628393'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: NH4CI'
+high_ree: true

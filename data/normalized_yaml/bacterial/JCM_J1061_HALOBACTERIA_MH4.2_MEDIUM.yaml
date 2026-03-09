@@ -137,8 +137,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Add components to distilled water and bring volume to 1.0 L. For preparation of solid medium,
-    add 20.0 g agar.
+  description: Add components to distilled water and bring volume to 1.0 L. For preparation
+    of solid medium, add 20.0 g agar.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 3.6.
@@ -156,4 +156,6 @@ curation_history:
 - timestamp: '2026-02-06T05:10:36.448007Z'
   curator: invalid-chebi-removal
   action: Removed 1 invalid CHEBI ID(s)
-  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam source data
+  notes: Removed CHEBI IDs with invalid format (7+ digits) from MicrobeMediaParam
+    source data
+high_metal: true

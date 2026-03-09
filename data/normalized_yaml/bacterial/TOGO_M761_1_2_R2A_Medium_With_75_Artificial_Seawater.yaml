@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '250'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -16,7 +17,8 @@ ingredients:
   concentration:
     value: '0.025'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32599
     label: magnesium sulfate
@@ -24,7 +26,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -32,7 +35,8 @@ ingredients:
   concentration:
     value: '0.15'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:50144
     label: sodium pyruvate
@@ -40,7 +44,8 @@ ingredients:
   concentration:
     value: '0.25'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -72,7 +77,8 @@ ingredients:
   concentration:
     value: '1'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -80,7 +86,8 @@ ingredients:
   concentration:
     value: '23.5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -88,7 +95,8 @@ ingredients:
   concentration:
     value: '1.1'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86158
     label: calcium chloride dihydrate
@@ -96,7 +104,8 @@ ingredients:
   concentration:
     value: '4.9'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:86345
     label: magnesium dichloride hexahydrate
@@ -104,7 +113,8 @@ ingredients:
   concentration:
     value: '0.026'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:33118
     label: boric acid
@@ -112,7 +122,8 @@ ingredients:
   concentration:
     value: '0.66'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32588
     label: potassium chloride
@@ -120,7 +131,8 @@ ingredients:
   concentration:
     value: '0.19'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Defined component, Simple
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -128,7 +140,8 @@ ingredients:
   concentration:
     value: '3.9'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32149
     label: sodium sulfate
@@ -136,7 +149,8 @@ ingredients:
   concentration:
     value: '0.024'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:36385
     label: strontium dichloride hexahydrate
@@ -144,7 +158,8 @@ ingredients:
   concentration:
     value: '0.003'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:28741
     label: sodium fluoride
@@ -152,7 +167,8 @@ ingredients:
   concentration:
     value: '0.096'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:32030
     label: potassium bromide
@@ -177,3 +193,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

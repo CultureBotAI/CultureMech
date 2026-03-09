@@ -8,7 +8,8 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
 - preferred_term: LB Agar, Miller
   concentration:
     value: '40'
@@ -22,7 +23,8 @@ ingredients:
   concentration:
     value: '10'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Mineral source; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:26710
     label: Sodium Chloride
@@ -58,3 +60,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_ree: true

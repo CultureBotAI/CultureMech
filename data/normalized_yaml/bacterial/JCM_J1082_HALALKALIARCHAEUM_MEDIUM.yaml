@@ -81,12 +81,13 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'To complete the medium, aseptically add the following solution (autoclaved or *filter-sterilized):'
+  description: 'To complete the medium, aseptically add the following solution (autoclaved
+    or *filter-sterilized):'
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Autoclave and let it stand
-    for three days. Decant the clear solution into another empty sterile bottle. Aseptically add per liter
-    the following solutions (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Autoclave
+    and let it stand for three days. Decant the clear solution into another empty
+    sterile bottle. Aseptically add per liter the following solutions (autoclaved):'
 applications:
 - Microbial cultivation
 curation_history:
@@ -94,3 +95,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1082'
+high_metal: true

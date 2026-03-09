@@ -33,8 +33,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 7.0-7.2. Use filtrated natural seawater or artificial seawater (e.g., Jamarin,
-    S., Jamarin Laboratory).
+  description: Adjust pH to 7.0-7.2. Use filtrated natural seawater or artificial
+    seawater (e.g., Jamarin, S., Jamarin Laboratory).
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,3 +42,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J224'
+high_metal: true

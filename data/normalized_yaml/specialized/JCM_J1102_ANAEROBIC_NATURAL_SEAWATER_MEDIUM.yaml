@@ -47,15 +47,17 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and cool down under a
-    N2 gas atmosphere. Distribute the medium in culture vessels (e.g., 10 ml in Balch tubes) under N2,
-    seal with butyl rubber stoppers and autoclave. After cooling, aseptically and anaerobically add per
-    liter the following solutions (autoclaved and stored under a N2 atmosphere):'
+  description: 'Mix components thoroughly and adjust pH to 7.0. Bring to a boil and
+    cool down under a N2 gas atmosphere. Distribute the medium in culture vessels
+    (e.g., 10 ml in Balch tubes) under N2, seal with butyl rubber stoppers and autoclave.
+    After cooling, aseptically and anaerobically add per liter the following solutions
+    (autoclaved and stored under a N2 atmosphere):'
 - step_number: 2
   action: MIX
-  description: 'Comment: For strain JCM 32399, supplement with 10 mM sodium pyruvate. For JCM 33129, omit
-    resazurin and the reducing agents (L-cysteine x HCl x H2O and Na2S x 9H2O). For JCM 33131, supplement
-    with 10 ml/L trace vitamins (see Medium No. 197).'
+  description: 'Comment: For strain JCM 32399, supplement with 10 mM sodium pyruvate.
+    For JCM 33129, omit resazurin and the reducing agents (L-cysteine x HCl x H2O
+    and Na2S x 9H2O). For JCM 33131, supplement with 10 ml/L trace vitamins (see Medium
+    No. 197).'
 applications:
 - Microbial cultivation
 curation_history:
@@ -63,3 +65,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1102'
+high_metal: true

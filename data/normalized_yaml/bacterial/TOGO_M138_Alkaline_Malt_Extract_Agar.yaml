@@ -16,7 +16,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -49,7 +50,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Solvating media; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -57,7 +59,8 @@ ingredients:
   concentration:
     value: '6'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -90,5 +93,6 @@ curation_history:
 - curator: schema-defaulter-v1.0
   date: '2026-02-03T11:20:47.517477'
   action: Applied schema defaults and normalizations
-  notes: 'Added default concentration for ingredient: NaOH; Added default concentration for ingredient:
-    NaHCO3 solution'
+  notes: 'Added default concentration for ingredient: NaOH; Added default concentration
+    for ingredient: NaHCO3 solution'
+high_ree: true

@@ -13,7 +13,8 @@ ingredients:
   concentration:
     value: '2'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic compound'
+  notes: 'Role: Buffer; Properties: Simple component, Defined component, Inorganic
+    compound'
   term:
     id: CHEBI:131527
     label: dipotassium hydrogen phosphate
@@ -21,12 +22,14 @@ ingredients:
   concentration:
     value: '1000'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Simple component, Inorganic compound'
+  notes: 'Role: Solvating media; Properties: Defined component, Simple component,
+    Inorganic compound'
 - preferred_term: Glucose
   concentration:
     value: '20'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic compound'
+  notes: 'Role: Carbon source; Properties: Defined component, Simple component, Organic
+    compound'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -54,3 +57,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_ree: true

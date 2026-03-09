@@ -32,9 +32,10 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and dissolve the malt\
-    \ extract\r\nand yeast extract using a magnetic stirrer. Cool slightly then add the agar and shake\
-    \ to\r\ndisperse. Autoclave at 15 psi for 15 minutes."
+  description: "Make up the 75% seawater, heat, (do not bring to boil) then add and\
+    \ dissolve the malt extract\r\nand yeast extract using a magnetic stirrer. Cool\
+    \ slightly then add the agar and shake to\r\ndisperse. Autoclave at 15 psi for\
+    \ 15 minutes."
 applications:
 - Microbial cultivation
 curation_history:
@@ -42,3 +43,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C60'
+high_metal: true

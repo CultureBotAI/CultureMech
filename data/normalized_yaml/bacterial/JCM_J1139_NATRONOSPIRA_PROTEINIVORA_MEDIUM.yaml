@@ -165,17 +165,20 @@ preparation_steps:
   description: Aseptically combine the above described media and solutions.
 - step_number: 2
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust pH to 6.8 - 6.9 by
-    1 M K2HPO4 and autoclave. After cooling, add the following solutions (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Adjust
+    pH to 6.8 - 6.9 by 1 M K2HPO4 and autoclave. After cooling, add the following
+    solutions (autoclaved):'
 - step_number: 3
   action: AUTOCLAVE
-  description: 'Add components to distilled water and bring volume to 1.0 L. Check pH of the medium to
-    be 9.9 - 10.0. Autoclave and let it stand for three days. Decant the clear solution into another empty
-    sterile bottle. Aseptically add per liter the following solutions (autoclaved):'
+  description: 'Add components to distilled water and bring volume to 1.0 L. Check
+    pH of the medium to be 9.9 - 10.0. Autoclave and let it stand for three days.
+    Decant the clear solution into another empty sterile bottle. Aseptically add per
+    liter the following solutions (autoclaved):'
 - step_number: 4
   action: AUTOCLAVE
-  description: Suspend casein in distilled water and keep at 50C. Titrate pH to 8.2 - 8.5 with 1 M NaOH
-    solution, until pH is stabilized. Autoclave the solution at 120C for 40 min in a closed bottle.
+  description: Suspend casein in distilled water and keep at 50C. Titrate pH to 8.2
+    - 8.5 with 1 M NaOH solution, until pH is stabilized. Autoclave the solution at
+    120C for 40 min in a closed bottle.
 - step_number: 5
   action: ADJUST_PH
   description: Adjust pH to 3.6.
@@ -186,3 +189,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: JCM, ID: J1139'
+high_metal: true

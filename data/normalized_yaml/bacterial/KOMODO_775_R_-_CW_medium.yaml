@@ -9,7 +9,8 @@ media_term:
   term:
     id: komodo.medium:775
     label: R - CW medium
-notes: 'Source: KOMODO ModelSEED | ID: 775 | DSMZ Medium: 775 (mediadive.medium:775) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 775 | DSMZ Medium: 775 (mediadive.medium:775)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Trypticase
   concentration:
@@ -83,3 +84,4 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 775
+high_metal: true

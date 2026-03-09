@@ -75,7 +75,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: ADJUST_PH
-  description: Adjust pH to 5.5 and distribute into screw-capped Wheaton tubes or Hungate tubes.
+  description: Adjust pH to 5.5 and distribute into screw-capped Wheaton tubes or
+    Hungate tubes.
 applications:
 - Microbial cultivation
 curation_history:
@@ -87,3 +88,4 @@ curation_history:
   curator: chebi-enrichment
   action: Added CHEBI ontology terms to ingredients
   notes: Enriched using MicrobeMediaParam and MediaDive chemical mappings
+high_metal: true

@@ -35,9 +35,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3 g/l of L-cysteine and
-    1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen gas. To the autoclaved medium add 50
-    ml/l of sterile serum (horse, bovine or lamb).
+  description: Wilkins-Chalgren-Anaerobe-Broth (Oxoid) is supplemented with 0.3 g/l
+    of L-cysteine and 1.0 mg/l of resazurin. Prepare the medium under 100% nitrogen
+    gas. To the autoclaved medium add 50 ml/l of sterile serum (horse, bovine or lamb).
 applications:
 - Microbial cultivation
 curation_history:
@@ -45,3 +45,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 301'
+high_metal: true
+high_ree: true

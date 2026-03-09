@@ -21,8 +21,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,  ensuring \r\n\
-    homogeneity, then dispense  as  required. Autoclave  at 15 psi and  slope  (tubes) \r\nprior to cooling."
+  description: "Make  up  to 1  litre  with deionized  water.  Steam  for  30  minutes,\
+    \  ensuring \r\nhomogeneity, then dispense  as  required. Autoclave  at 15 psi\
+    \ and  slope  (tubes) \r\nprior to cooling."
 applications:
 - Microbial cultivation
 curation_history:
@@ -30,3 +31,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C95'
+high_metal: true

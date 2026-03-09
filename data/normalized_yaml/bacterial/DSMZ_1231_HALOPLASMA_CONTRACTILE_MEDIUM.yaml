@@ -127,10 +127,11 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: Prepare the medium without the Na2S x 9 H2O by boiling and cooling under a nitrogen atmosphere.
-    Adjust the pH to 6.5 - 7.0. Dispense into Hungate tubes or serum bottles fitted with butyl rubber
-    stoppers. Autoclave and reduce the medium before use by adding the appropriate amount of Na2S x 9
-    H2O from a neutralised, sterile stock solution.
+  description: Prepare the medium without the Na2S x 9 H2O by boiling and cooling
+    under a nitrogen atmosphere. Adjust the pH to 6.5 - 7.0. Dispense into Hungate
+    tubes or serum bottles fitted with butyl rubber stoppers. Autoclave and reduce
+    the medium before use by adding the appropriate amount of Na2S x 9 H2O from a
+    neutralised, sterile stock solution.
 - step_number: 2
   action: ADJUST_PH
   description: Adjust pH to 5.5 - 6.0.
@@ -141,3 +142,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1231'
+high_metal: true

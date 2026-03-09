@@ -67,7 +67,8 @@ preparation_steps:
   description: Adjust to pH 5.5 (with NaOh/HCl)
 - step_number: 2
   action: HEAT
-  description: Sterilize separately. For solid medium combine solution A with solution B at 50°C.
+  description: Sterilize separately. For solid medium combine solution A with solution
+    B at 50°C.
 - step_number: 3
   action: HEAT
   description: Liquid and solid medium possible. Incubation at 20°C, 4 days.
@@ -78,3 +79,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1135'
+high_metal: true
+high_ree: true

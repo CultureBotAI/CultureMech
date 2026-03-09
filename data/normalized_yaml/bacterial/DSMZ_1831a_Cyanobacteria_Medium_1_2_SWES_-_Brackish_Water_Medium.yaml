@@ -106,7 +106,8 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with MilliQ water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    MilliQ water.
 - step_number: 2
   action: AUTOCLAVE
   description: Autoclave at 121 °C for 20 min.
@@ -115,15 +116,16 @@ preparation_steps:
   description: 'After cooling, add the following filter sterilized components:'
 - step_number: 4
   action: MIX
-  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with Milli Q water.
+  description: Make up to <span class='amount' data-volume='1000'>1000</span> ml with
+    Milli Q water.
 - step_number: 5
   action: HEAT
   description: Prepare aliquots and store them at -20 °C.
 - step_number: 6
   action: MIX
-  description: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with H2Odist to 700 ml\r\n\
-    (The soil should not contain too much humus and not too much clay – avoid soil\r\ncontaminated with\
-    \ fertilizers, herbicides or fungicides)"
+  description: "Fill 300ml garden soil in a 1 l laboratory flask and fill up with\
+    \ H2Odist to 700 ml\r\n(The soil should not contain too much humus and not too\
+    \ much clay – avoid soil\r\ncontaminated with fertilizers, herbicides or fungicides)"
 - step_number: 7
   action: MIX
   description: Shake vigorously
@@ -152,3 +154,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 1831a'
+high_metal: true

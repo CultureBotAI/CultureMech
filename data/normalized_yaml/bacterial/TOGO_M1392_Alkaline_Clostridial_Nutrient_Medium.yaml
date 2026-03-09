@@ -21,7 +21,8 @@ ingredients:
   concentration:
     value: '900'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Solvating media; Properties: Simple component, Inorganic compound,
+    Defined component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -34,7 +35,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component, Simple component'
+  notes: 'Role: Mineral source; Properties: Inorganic compound, Defined component,
+    Simple component'
   term:
     id: CHEBI:26710
     label: sodium chloride
@@ -58,7 +60,8 @@ ingredients:
   concentration:
     value: '5'
     unit: G_PER_L
-  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined component'
+  notes: 'Role: Carbon source; Properties: Organic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:42758
     label: aldehydo-D-glucose
@@ -85,7 +88,8 @@ ingredients:
   concentration:
     value: '100'
     unit: G_PER_L
-  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound, Simple component'
+  notes: 'Role: Solvating media; Properties: Defined component, Inorganic compound,
+    Simple component'
   term:
     id: CHEBI:15377
     label: Distilled water
@@ -93,7 +97,8 @@ ingredients:
   concentration:
     value: '2.9'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined component'
+  notes: 'Role: Buffer; Properties: Inorganic compound, Simple component, Defined
+    component'
   term:
     id: CHEBI:32139
     label: sodium hydrogencarbonate
@@ -101,7 +106,8 @@ ingredients:
   concentration:
     value: '7'
     unit: G_PER_L
-  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined component'
+  notes: 'Role: Buffer; Properties: Simple component, Inorganic compound, Defined
+    component'
   term:
     id: CHEBI:29377
     label: sodium carbonate
@@ -130,3 +136,4 @@ curation_history:
   date: '2026-02-03T11:20:47.537603'
   action: Applied schema defaults and normalizations
   notes: 'Added default concentration for ingredient: N2'
+high_ree: true

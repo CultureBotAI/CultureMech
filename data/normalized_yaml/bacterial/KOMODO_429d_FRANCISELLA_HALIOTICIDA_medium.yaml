@@ -8,7 +8,8 @@ media_term:
   term:
     id: komodo.medium:429d
     label: FRANCISELLA HALIOTICIDA medium
-notes: 'Source: KOMODO ModelSEED | ID: 429d | DSMZ Medium: 429d (mediadive.medium:429d) | Aerobic: No'
+notes: 'Source: KOMODO ModelSEED | ID: 429d | DSMZ Medium: 429d (mediadive.medium:429d)
+  | Aerobic: No'
 ingredients:
 - preferred_term: Columbia agar base
   concentration:
@@ -70,3 +71,5 @@ curation_history:
   curator: dsmz-resolver-v1.0
   action: Enriched with DSMZ composition
   notes: Copied ingredients from DSMZ Medium 429
+high_metal: true
+high_ree: true

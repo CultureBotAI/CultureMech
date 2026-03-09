@@ -102,9 +102,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: AUTOCLAVE
-  description: "Dispense nutrient and vitamin solutions separately into 10 ml and 1 ml respectively \r\
-    \nand autoclave at 15 psi for 15 minutes.  Add an aliquot of each aseptically to 10\r\nlitres of sterilised\
-    \ seawater."
+  description: "Dispense nutrient and vitamin solutions separately into 10 ml and\
+    \ 1 ml respectively \r\nand autoclave at 15 psi for 15 minutes.  Add an aliquot\
+    \ of each aseptically to 10\r\nlitres of sterilised seawater."
 - step_number: 2
   action: MIX
   description: Make up to 1 litre with distilled water.
@@ -113,8 +113,8 @@ preparation_steps:
   description: Make up to 100 ml with distilled water.
 - step_number: 4
   action: MIX
-  description: "Make  up  to 100  ml with distilled  water.  This solution is  normally \r\ncloudy.  Acidify\
-    \ with a few drops of conc. HCl to give a clear solution."
+  description: "Make  up  to 100  ml with distilled  water.  This solution is  normally\
+    \ \r\ncloudy.  Acidify with a few drops of conc. HCl to give a clear solution."
 applications:
 - Microbial cultivation
 curation_history:
@@ -122,3 +122,4 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: CCAP, ID: C105'
+high_metal: true

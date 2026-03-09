@@ -31,8 +31,9 @@ ingredients:
 preparation_steps:
 - step_number: 1
   action: FILTER_STERILIZE
-  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for one hour. Filter, first
-    through cheesecloth and then paper. Make up volume to one liter. Add 20 g agar.
+  description: Suspend 50 g of dry cow-manure in one liter of tap water. Boil for
+    one hour. Filter, first through cheesecloth and then paper. Make up volume to
+    one liter. Add 20 g agar.
 applications:
 - Microbial cultivation
 curation_history:
@@ -40,3 +41,5 @@ curation_history:
   curator: mediadive-import
   action: Imported from MediaDive
   notes: 'Source: DSMZ, ID: 657'
+high_metal: true
+high_ree: true
