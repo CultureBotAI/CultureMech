@@ -128,14 +128,16 @@ class UnmappedIngredientAggregator:
 
                     has_unmapped = True
 
-                    # Use placeholder ID as key
-                    placeholder_id = preferred_term if preferred_term else f'empty_{idx}'
-
-                    # Extract information
+                    # Extract chemical name from notes
                     chemical_name = self.extract_chemical_name(notes)
 
+                    # Use chemical name as aggregation key (not placeholder_id which gets reused)
+                    # Fallback to notes if no chemical name, then preferred_term
+                    aggregation_key = chemical_name or notes or preferred_term or f'empty_{idx}'
+                    placeholder_id = preferred_term if preferred_term else f'empty_{idx}'
+
                     # Add to aggregation
-                    ing_data = self.unmapped_ingredients[placeholder_id]
+                    ing_data = self.unmapped_ingredients[aggregation_key]
                     ing_data['placeholder_id'] = placeholder_id
 
                     if notes:
@@ -209,21 +211,27 @@ class UnmappedIngredientAggregator:
 
         # Convert sets to lists and prepare output
         unmapped_list = []
-        for placeholder_id, data in sorted(filtered_ingredients.items(),
+        for aggregation_key, data in sorted(filtered_ingredients.items(),
                                           key=lambda x: x[1]['occurrence_count'],
                                           reverse=True):
+            # Get the stored placeholder_id from the first occurrence
+            actual_placeholder_id = data.get('placeholder_id', aggregation_key)
+
             ingredient_entry = {
-                'placeholder_id': placeholder_id,
+                'placeholder_id': actual_placeholder_id,
                 'raw_ingredient_text': sorted(data['raw_ingredient_text']),
                 'occurrence_count': data['occurrence_count'],
                 'media_occurrences': data['media_occurrences'],
                 'mapping_status': 'UNMAPPED'
             }
 
-            # Add parsed chemical name if available
+            # Add parsed chemical name (use aggregation_key if it looks like a chemical name)
             if 'parsed_chemical_names' in data and data['parsed_chemical_names']:
                 # Use the most common one or first one
                 ingredient_entry['parsed_chemical_name'] = sorted(data['parsed_chemical_names'])[0]
+            elif aggregation_key and not aggregation_key.startswith('empty_'):
+                # Use aggregation_key as parsed name if it's not an empty placeholder
+                ingredient_entry['parsed_chemical_name'] = aggregation_key
 
             # Add unique concentration info
             unique_conc = []
