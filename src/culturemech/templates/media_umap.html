@@ -36,6 +36,23 @@
             opacity: 0.95;
         }
 
+        .nav-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: background 0.2s;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
         .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -164,6 +181,7 @@
     <header>
         <h1>🧫 CultureMech Media UMAP Visualization</h1>
         <p>Explore {{ derived_count + direct_count }} culture media recipes through semantic similarity</p>
+        <a href="../index.html" class="nav-link">← Back to Media Browser</a>
     </header>
 
     <div class="container">
