@@ -41,6 +41,16 @@ window.searchSchema = {
       "type": "array"
     },
     {
+      "field": "high_metal",
+      "label": "High Metal Content",
+      "type": "boolean"
+    },
+    {
+      "field": "high_ree",
+      "label": "High REE Content",
+      "type": "boolean"
+    },
+    {
       "field": "ingredient_names",
       "label": "Key Ingredients",
       "type": "array"
@@ -64,16 +74,6 @@ window.searchSchema = {
       "field": "organism_culture_type",
       "label": "Culture Type",
       "type": "string"
-    },
-    {
-      "field": "high_metal",
-      "label": "High Metal Content",
-      "type": "boolean"
-    },
-    {
-      "field": "high_ree",
-      "label": "High REE Content",
-      "type": "boolean"
     }
   ],
 
