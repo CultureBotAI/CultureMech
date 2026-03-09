@@ -51,7 +51,7 @@ class UMAPVisualizationGenerator:
         print("\n[1/6] Loading embeddings...")
         embeddings = EmbeddingLoader.load_embeddings(
             embeddings_path=embeddings_path,
-            node_prefixes=["CHEBI", "NCBITaxon", "mediadive.medium", "FOODON"],
+            node_prefixes=["CHEBI", "NCBITaxon", "mediadive.medium", "FOODON", "mediadive.ingredient"],
             cache_dir=cache_dir,
             force_reload=force_reload,
         )

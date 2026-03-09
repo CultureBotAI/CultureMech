@@ -4,6 +4,7 @@ Media vector aggregator for deriving and extracting media embeddings.
 Aggregates ingredient and organism embeddings to create media-level vectors.
 """
 
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -157,17 +158,32 @@ class MediaVectorAggregator:
         return media_embeddings
 
     def _extract_ingredient_ids(self, media_data: dict) -> List[str]:
-        """Extract CHEBI/FOODON IDs from ingredients."""
+        """Extract CHEBI/FOODON/mediadive.ingredient IDs from ingredients."""
         ingredient_ids = []
 
         ingredients = media_data.get("ingredients", [])
         for ing in ingredients:
-            if isinstance(ing, dict) and "term" in ing:
+            if not isinstance(ing, dict):
+                continue
+
+            # First try to get explicit term ID
+            if "term" in ing:
                 term = ing["term"]
                 if isinstance(term, dict) and "id" in term:
                     term_id = term["id"]
-                    if term_id.startswith("CHEBI:") or term_id.startswith("FOODON:"):
+                    if term_id.startswith(("CHEBI:", "FOODON:", "mediadive.ingredient:")):
                         ingredient_ids.append(term_id)
+                        continue
+
+            # Fallback: try to extract chemical name from notes and map to mediadive.ingredient
+            if "notes" in ing and isinstance(ing["notes"], str):
+                chem_name = self._extract_chemical_from_notes(ing["notes"])
+                if chem_name:
+                    # Try to find matching mediadive.ingredient embedding
+                    # Look for exact match or normalized match
+                    ingredient_id = self._find_mediadive_ingredient(chem_name)
+                    if ingredient_id:
+                        ingredient_ids.append(ingredient_id)
 
         return ingredient_ids
 
@@ -207,6 +223,63 @@ class MediaVectorAggregator:
         # MediaDive IDs are already in the correct format
         if media_term_id.startswith("mediadive.medium:"):
             return media_term_id
+        return None
+
+
+    def _find_mediadive_ingredient(self, chem_name: str) -> Optional[str]:
+        """
+        Find mediadive.ingredient embedding ID by chemical name.
+
+        Args:
+            chem_name: Chemical name/formula extracted from notes
+
+        Returns:
+            mediadive.ingredient ID if found, None otherwise
+        """
+        # Normalize chemical name (remove spaces, lowercase for comparison)
+        chem_normalized = chem_name.replace(" ", "").lower()
+
+        # Try exact match first
+        for embedding_id in self.embeddings.keys():
+            if embedding_id.startswith("mediadive.ingredient:"):
+                # Extract the ingredient name from the ID
+                ingredient_name = embedding_id.split(":", 1)[1]
+                ingredient_normalized = ingredient_name.replace(" ", "").replace("_", "").lower()
+
+                # Check for exact match or substring match
+                if (chem_normalized == ingredient_normalized or
+                    chem_normalized in ingredient_normalized or
+                    ingredient_normalized in chem_normalized):
+                    return embedding_id
+
+        return None
+
+    def _extract_chemical_from_notes(self, notes: str) -> Optional[str]:
+        """
+        Extract chemical name from notes field.
+
+        Examples:
+            "NaNO3(Fisher BP360-500)" -> "NaNO3"
+            "Original amount: K2HPO4(Sigma P 3786)" -> "K2HPO4"
+            "CaCl2•2H2O(Sigma C-3881)" -> "CaCl2•2H2O"
+
+        Args:
+            notes: Notes field text from ingredient
+
+        Returns:
+            Extracted chemical name/formula or None
+        """
+        # Remove "Original amount:" prefix if present
+        notes = re.sub(r'^Original amount:\s*', '', notes, flags=re.IGNORECASE)
+
+        # Extract chemical formula before parenthesis (vendor info)
+        match = re.match(r'^([A-Za-z0-9•·\s-]+?)[\(]', notes)
+        if match:
+            chem_name = match.group(1).strip()
+            # Clean up bullet characters
+            chem_name = re.sub(r'[•·]', '', chem_name).strip()
+            return chem_name if chem_name else None
+
         return None
 
     def _aggregate_components(
