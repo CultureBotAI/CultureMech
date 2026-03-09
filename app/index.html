@@ -413,14 +413,27 @@
                 for (const [facet, values] of Object.entries(selectedFilters)) {
                     if (values.length === 0) continue;
 
+                    // Get facet type from schema
+                    const facetConfig = window.searchSchema.facets.find(f => f.field === facet);
+                    const facetType = facetConfig ? facetConfig.type : 'string';
+
                     const recipeValue = recipe[facet];
+
                     if (Array.isArray(recipeValue)) {
                         if (!recipeValue.some(v => values.includes(v))) {
                             return false;
                         }
                     } else {
-                        if (!values.includes(recipeValue)) {
-                            return false;
+                        // For boolean facets, convert string values to booleans for comparison
+                        if (facetType === 'boolean') {
+                            const booleanRecipeValue = String(recipeValue);
+                            if (!values.includes(booleanRecipeValue)) {
+                                return false;
+                            }
+                        } else {
+                            if (!values.includes(recipeValue)) {
+                                return false;
+                            }
                         }
                     }
                 }
