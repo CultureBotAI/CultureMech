@@ -384,12 +384,19 @@ class MediaVectorAggregatorYAML:
         return media_embeddings
 
     def _extract_media_term_id(self, media_data: dict) -> Optional[str]:
-        """Extract media term ID from media_term field."""
+        """Extract media/solution term ID from media_term or term field."""
+        # Check media_term.term.id (for media files)
         media_term = media_data.get("media_term")
         if isinstance(media_term, dict) and "term" in media_term:
             term = media_term["term"]
             if isinstance(term, dict) and "id" in term:
                 return term["id"]
+
+        # Check term.id directly (for solution files)
+        term = media_data.get("term")
+        if isinstance(term, dict) and "id" in term:
+            return term["id"]
+
         return None
 
     def _map_to_embedding_node_id(self, media_term_id: str) -> Optional[str]:
