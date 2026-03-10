@@ -453,10 +453,12 @@
 
                     if (isVisible) {
                         circle.style("opacity", 0.5);
+                        circle.style("fill", entityTypeColors[d.entity_type] || categoryColors[d.category] || categoryColors.unknown);
                         circle.style("pointer-events", "all");  // Enable tooltips
                         visibleCount++;
                     } else {
-                        circle.style("opacity", 0);  // Completely hide
+                        circle.style("opacity", 0.3);  // Light gray, visible
+                        circle.style("fill", "#e0e0e0");  // Light gray color
                         circle.style("pointer-events", "none");  // Disable tooltips
                     }
                 });
